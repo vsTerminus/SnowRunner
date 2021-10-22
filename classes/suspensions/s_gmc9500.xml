@@ -44,4 +44,40 @@
 			/>
 		</GameData>
 	</SuspensionSet>
+	<SuspensionSet
+		BrokenWheelDamageMultiplier="2"
+		CriticalDamageThreshold="0.7"
+		DamageCapacity="250"
+		Name="gmc9500_suspension_towing"
+		UiName="High Hauling"
+	>
+		<Suspension
+			Damping="0.35"
+			Height="0.30"
+			Strength="0.08"
+			WheelType="front"
+			SuspensionMax="0.1"
+			SuspensionMin="-0.45"
+		/>
+		<Suspension
+			Damping="0.4"
+			Height="0.32"
+			Strength="0.10"
+			WheelType="rear"
+			SuspensionMax="0"
+			SuspensionMin="-0.2"
+		/>
+		<GameData
+			Price="2500"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="Higher strength rear leaf springs for towing and hauling"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="High Hauling"
+			/>
+		</GameData>
+	</SuspensionSet>
 </SuspensionSetVariants>
