@@ -95,7 +95,7 @@
 		EngineIconScale="1.3"
 		EngineStartDelay="0.8"
 		ExhaustStartTime="0.9"
-		FuelCapacity="300"
+		FuelCapacity="510"
 		Responsiveness="0.2"
 		SteerSpeed="0.02"
 		TruckImage="vorongradmchr"
