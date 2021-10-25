@@ -283,7 +283,7 @@
 	<Landmark Mesh="landmarks/yar_87_lmk" MinScale="1.8" MaxScale="3.8" />
 	<HeadLight _template="Default" Color="g(255; 212; 154) x 5" Pos="(3; 1.2; 0)" />
 	<GameData
-		Country="RU,CAS"
+		Country=""
 		Price="15100"
 		UnlockByExploration="false"
 		UnlockByRank="10"

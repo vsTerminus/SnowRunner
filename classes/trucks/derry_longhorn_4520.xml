@@ -380,7 +380,7 @@
 	<Landmark Mesh="landmarks/derry_longhorn_4520_lmk" MinScale="1.8" MaxScale="3.8" />
 	<HeadLight _template="Default" Pos="(4.576; 1.033; 0)" ParentFrame="BoneCabin_cdt" />
 	<GameData
-		Country="US"
+		Country=""
 		Price="125500"
 		UnlockByExploration="false"
 		UnlockByRank="24"

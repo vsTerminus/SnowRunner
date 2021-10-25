@@ -275,8 +275,8 @@
 		ParentFrame="BoneCabin_cdt"
 	/>
 	<GameData
-		Country="US"
-		Price="3500"
+		Country=""
+		Price="0"
 		UnlockByExploration="true"
 		UnlockByRank="1"
 	>

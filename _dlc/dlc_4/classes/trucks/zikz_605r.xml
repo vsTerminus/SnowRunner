@@ -340,7 +340,7 @@
 	<Landmark Mesh="landmarks/zikz_605r_lmk" MinScale="1.8" MaxScale="2.8" />
 	<HeadLight _template="Default" Pos="(5.052; 1.103; 0)" />
 	<GameData
-		Country="RU,CAS"
+		Country=""
 		ExcludeAddons="trailer_log_pole"
 		Price="165300"
 		UnlockByExploration="true"
@@ -387,6 +387,7 @@
 			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-2.53; 1.718; 0)" />
 		</AddonSockets>
 		<AddonSockets>
+			<Socket Names="FrameAddonFlatbed1" ParentFrame="BoneAddonAttachment_cdt" Offset="(-2.90; 1.40; 0)"/>
 			<Socket Names="ZikzLogLift" ParentFrame="BoneAddonAttachment_cdt">
 				<AddonsShift Offset="(-0.35; 0; 0)" Types="zikz605rTrunk" />
 			</Socket>
@@ -399,7 +400,10 @@
 			<Socket Names="FrameAddonLogShortZikz" Offset="(-2.849; 1.64; 0)" ParentFrame="BoneAddonAttachment_cdt"/>
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="zikz605rTrunk" NamesBlock="ZikzBigCrane, ZikzFrameAddon, LargeSemitrailerOiltank, FrameAddonKungZikz, FrameAddonSeismicVibratorZikz, FrameAddonTankZikz, FrameAddonLogShortZikz" />
+	 		<Socket Names="MinicraneRU" Offset="(-0.663; 1.61; 0)" NamesBlock="zikz605rTrunk, ZikzLogLift, ZikzBigCrane, ZikzFrameAddon, LargeSemitrailerOiltank, FrameAddonKungZikz, FrameAddonSeismicVibratorZikz, FrameAddonTankZikz, FrameAddonLogShortZikz, FrameAddonKung, FrameAddonMaintainerSmall, FrameAddonTank, FrameAddonTankSmall, FrameAddon, SemitrailerOiltank" Offset="(0.21; 1.018; 0)"/>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="zikz605rTrunk" NamesBlock="ZikzBigCrane, ZikzFrameAddon, LargeSemitrailerOiltank, FrameAddonKungZikz, FrameAddonSeismicVibratorZikz, FrameAddonTankZikz, FrameAddonLogShortZikz, FrameAddonFlatbed1, FrameAddon" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="zikz_605r_horn_default">
 			<Socket Names="zikz605rHorn" />

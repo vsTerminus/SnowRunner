@@ -264,7 +264,7 @@
 	<Landmark Mesh="landmarks/tuz_420_tatarin_lmk" MinScale="1.8" MaxScale="3.8" />
 	<HeadLight _template="Default" Pos="(4.273; 1.098; 0)" />
 	<GameData
-		Country="RU,CAS"
+		Country=""
 		Price="106700"
 		UnlockByExploration="true"
 		UnlockByRank="1"

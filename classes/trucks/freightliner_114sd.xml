@@ -289,7 +289,7 @@
 	<Landmark Mesh="landmarks/freightliner_114sd_01_lmk" MinScale="1.8" MaxScale="3.8" />
 	<HeadLight _template="Default" Pos="(4.1; 1.339; 0)" ParentFrame="BoneCabin_cdt" />
 	<GameData
-		Country="US"
+		Country=""
 		Price="76600"
 		UnlockByExploration="false"
 		UnlockByRank="20"
