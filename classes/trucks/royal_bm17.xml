@@ -369,7 +369,7 @@
 	<Landmark Mesh="landmarks/royal_bm17_lmk" MinScale="1.5" MaxScale="2.5" />
 	<HeadLight _template="Default" Pos="(3.709; 1.056; 0)" ParentFrame="BoneCabin_cdt" />
 	<GameData
-		Country="US"
+		Country=""
 		Price="104500"
 		UnlockByExploration="true"
 		UnlockByRank="1"

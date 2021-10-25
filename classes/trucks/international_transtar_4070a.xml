@@ -328,7 +328,7 @@
 	<Landmark Mesh="landmarks/international_transtar_4070a_lmk" MinScale="1.8" MaxScale="3.8" />
 	<HeadLight _template="Default" Pos="(3.357; 0.832; 0)" ParentFrame="BoneCabinPrismatic_cdt" />
 	<GameData
-		Country="US"
+		Country=""
 		Price="17900"
 		UnlockByExploration="false"
 		UnlockByRank="6"

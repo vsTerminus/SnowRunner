@@ -315,7 +315,7 @@
 	<Landmark Mesh="landmarks/derry_longhorn_3194_lmk" MinScale="1.8" MaxScale="3.8" />
 	<HeadLight _template="Default" Pos="(3.479; 1.222; 0)" />
 	<GameData
-		Country="US"
+		Country=""
 		ExcludeAddons="stuff_bobblehead_joker, trailer_log_pole"
 		Price="110700"
 		UnlockByExploration="true"
