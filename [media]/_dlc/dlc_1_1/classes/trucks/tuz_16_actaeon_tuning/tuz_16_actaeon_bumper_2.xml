@@ -7,7 +7,7 @@
 		</Damage>
 	</TruckData>
 	<PhysicsModel _noinherit="true" Mesh="trucks/tuz_16_actaeon_tuning/tuz_16_actaeon_bumper_2">
-		<Body ImpactType="Truck" Mass="10" ModelFrame="BoneCabin_cdt">
+		<Body ImpactType="Truck" Mass="500" ModelFrame="BoneCabin_cdt">
 			<Constraint Type="Rigid" />
 			<Body
 				CenterOfMassOffset="(0; 0; 0)"
@@ -39,10 +39,10 @@
 		UnlockByRank="13"
 	>
 		<UiDesc
-			UiDesc="UI_TUNING_BUMPER_HEAVYDUTY_DESC"
+			UiDesc="Heavy Duty Bumper with additional weight for towing and hauling"
 			UiIcon30x30=""
 			UiIcon40x40=""
-			UiName="UI_TUNING_BUMPER_HEAVYDUTY_NAME"
+			UiName="Weighted Heavy Duty"
 		/>
 	</GameData>
 </TruckAddon>
