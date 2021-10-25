@@ -61,7 +61,7 @@
 		/>
 		<Suspension
 			Damping="0.4"
-			Height="0.32"
+			Height="0.25"
 			Strength="0.10"
 			WheelType="rear"
 			SuspensionMax="0"
