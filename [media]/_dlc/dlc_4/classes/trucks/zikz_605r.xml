@@ -384,8 +384,10 @@
 		<CraneSocket Pos="(-0.461; 1.662; 1.378)" />
 		<CraneSocket Pos="(-0.461; 1.662; -1.378)" />
 		<AddonSockets>
+			<Socket Names="ScautTrailer" Offset="(-4.823; 0.84; 0)" />
 			<Socket Names="Trailer" Offset="(-4.823; 0.838; 0)" />
-			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-2.53; 1.718; 0)" />
+			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-3.182; 1.7; 0)" />
+			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-2.65; 1.86; 0)" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="ZikzLogLift" ParentFrame="BoneAddonAttachment_cdt">
@@ -394,6 +396,14 @@
 			<Socket Names="ZikzFrameAddon" ParentFrame="BoneAddonAttachment_cdt"/>
 			<Socket Names="ZikzBigCrane" ParentFrame="BoneAddonAttachment_cdt"/>
 			<Socket Names="ZikzSaddleHigh" />
+			<Socket Names="ZikzSaddleLow" Offset="(-0.615; 0; 0)">
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.05)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.05)" />
+			</Socket>
+			<Socket Names="SaddleLow" Offset="(-3.15; 1.366; 0)">
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.05)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.05)" />
+			</Socket>
 			<Socket Names="FrameAddonKungZikz" ParentFrame="BoneAddonAttachment_cdt"/>
 			<Socket Names="FrameAddonSeismicVibratorZikz" ParentFrame="BoneAddonAttachment_cdt"/>
 			<Socket Names="FrameAddonTankZikz" ParentFrame="BoneAddonAttachment_cdt"/>
