@@ -1,0 +1,26 @@
+<_parent File="saddle_low" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/addons/saddle_high_zikz_605r">
+		<Body Mass="40">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="addon_1"
+		Category="frame_addons"
+		IsCustomizable="true"
+		Price="0"
+		SaddleType="low"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_ADDON_SADDLE_LOW_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_ADDON_SADDLE_LOW_NAME"
+		/>
+		<RequiredAddonType Type="SaddleLow" TypeUiName="UI_REQUIRED_ADDON_TYPE_SADDLE_LOW" />
+		<InstallSocket Type="ZikzSaddleLow" />
+	</GameData>
+</TruckAddon>
