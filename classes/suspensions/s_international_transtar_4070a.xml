@@ -38,7 +38,7 @@
 		_template="High"
 		BrokenWheelDamageMultiplier="2"
 		CriticalDamageThreshold="0.7"
-		DamageCapacity="100"
+		DamageCapacity="140"
 		Name="transtar_4070a_suspension_high"
 	>
 		<Suspension 
