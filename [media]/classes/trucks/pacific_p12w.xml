@@ -354,6 +354,33 @@
 		<AddonSockets DefaultAddon="pacific_p12w_exhaust_default">
 			<Socket Names="PacificP12wExhaust" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="HeavyRepairSmall" NamesBlock="LogLift, MetalDetector, PacificP12wSpareWheel, PacificP12WCabinProtector" Offset="(-3.45; 2; 0)">
+				<AddonsShift Offset="(-0.15; 0; 0)" Types="PacificP12wExhaust" />
+			</Socket>
+			<Socket Names="BunkLog" Offset="(-8.094; 1.825; 0)" />
+			<Socket Names="FrameAddonLogShort" NamesBlock="MetalDetector" Offset="(-3.7; 1.821; 0)" />
+			<Socket Names="FrameAddonLogMedium" NamesBlock="MetalDetector, LogLift" Offset="(-2.7; 1.821; 0)">
+				<AddonsShift Offset="(-0.43; 0; 0)" Types="PacificP12WCabinProtector" />
+				<AddonsShift Offset="(-1; 0; 0)" Types="PacificP12wSpareWheel" />
+			</Socket>
+			<Socket Names="SaddleHigh1" Offset="(-4.641; 1.821; 0)" />
+			<Socket Names="FrameAddonTank" Offset="(-4.36; 1.82; 0)">
+				<AddonsShift Offset="(-0.5; 0; 0)" Types="PacificP12wSpareWheel" />
+			</Socket>
+			<Socket Names="FrameAddon3" Offset="(-3.6; 1.821; 0)" NamesBlock="PacificP12wSpareWheel, PacificP12wCabinProtector, MetalDetector, LogLift" />
+			<Socket Names="FrameAddonSideboard3" Offset="(-3.7; 1.821; 0)" NamesBlock="PacificP12wSpareWheel, PacificP12wCabinProtector, MetalDetector, LogLift" />
+			<Socket Names="FrameAddonTowPlatform" NamesBlock="LogLift, MetalDetector, PacificP12wSpareWheel, Trailer" Offset="(-2.8; 1.82; 0)" />
+			<Socket Names="FrameAddonMaintainerBig" NamesBlock="PacificP12wSpareWheel, Trailer, PacificP12WCabinProtector" Offset="(0; 1.82; 0)" />
+			<Socket Names="BigCraneUs" NamesBlock="MetalDetector, PacificP12wSpareWheel, PacificP12WCabinProtector" Offset="(-3.064; 1.921; 0)">
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.1; 0)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.1; 0)" />
+			</Socket>
+			<Socket Names="BigCrane" NamesBlock="LogLift, BigCraneUs, MetalDetector, PacificP12wSpareWheel, PacificP12WCabinProtector" Offset="(-3.064; 2.028; 0)">
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.1; 0)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.1; 0)" />
+			</Socket>
+		</AddonSockets>
 		<AddonSockets DefaultAddon="pacific_p12w_horn_default">
 			<Socket
 				Names="PacificP12wHorn"
