@@ -10,7 +10,7 @@
 			SteeringAngle="30"
 			SteeringCastor="8"
 			SteeringJointOffset="0.2"
-			Torque="none"
+			Torque="full"
 			ParentFrame="BoneCabin_cdt"
 		/>
 	</Wheel>
@@ -121,7 +121,8 @@
 		<FuelTank DamageCapacity="50" />
 		<Exhaust Dir="(-0.429; -0.903; 0)" IsLight="true" Origin="(-0.642; 1.226; 0.691)" Speed="3.82" />
 		<Exhaust Dir="(-0.429; -0.903; 0)" IsLight="true" Origin="(-0.642; 1.226; -0.691)" Speed="3.82" />
-		<EngineSocket Default="us_truck_old_heavy_engine_0" Type="e_us_truck_old_heavy" />
+		<!-- <EngineSocket Default="us_truck_old_heavy_engine_0" Type="e_us_truck_old_heavy" /> -->
+		<EngineSocket Default="us_special_engine_0" Type="e_us_special" />
 		<Driver
 			AnimationSet="HeavyTruck"
 			Pos="(1.293; 2.083; 0.654)"
@@ -161,7 +162,9 @@
 				ParentFrame="BoneCabin_cdt"
 			/>
 		</Damage>
-		<CompatibleWheels OffsetZ="0.0" Scale="0.73" Type="wheels_heavy_double_p16" />
+		<CompatibleWheels OffsetZ="0.0" Scale="0.78" Type="wheels_heavy_double_p16" />
+		<CompatibleWheels OffsetZ="0.0" Scale="0.83" Type="wheels_heavy_double_p16" />
+		<CompatibleWheels OffsetZ="0.0" Scale="0.86" Type="wheels_heavy_double_p16" />
 		<Camera Center="(-1.5; 0; 0)" ParentFrame="BoneCabin_cdt">
 			<Cockpit
 				_template="Default"
