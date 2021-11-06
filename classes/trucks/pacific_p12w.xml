@@ -105,7 +105,8 @@
 		<Intake Dir="(1; 0; 0)" Origin="(3.91; 2.13; 0)" Size="1.2" />
 		<GearboxSocket Default="g_special_default" Type="gearboxes_special" />
 		<FuelTank DamageCapacity="50" />
-		<EngineSocket Default="us_truck_old_heavy_engine_0" Type="e_us_truck_old_heavy" />
+		<!-- <EngineSocket Default="us_truck_old_heavy_engine_0" Type="e_us_truck_old_heavy" /> -->
+		<EngineSocket Default="us_special_engine_0" Type="e_us_special" />
 		<Driver
 			AnimationSet="HeavyTruck"
 			Pos="(1.027; 2.59; 0.466)"
@@ -136,10 +137,16 @@
 		>
 			<DamageArea Type="Engine" Min="(2; 1.5; -0.9)" Max="(3.9; 2.9; 0.9)" ParentFrame="BoneCabin_cdt" />
 			<DamageArea Type="FuelTank" Min="(-1.2; 0.8; -1.4)" Max="(1.4; 1.6; 1.4)" ParentFrame="BoneCabin_cdt" />
-		</Damage>
-		<CompatibleWheels OffsetZ="0" Scale="0.73" Type="wheels_heavy_offroad_p12" />
-		<CompatibleWheels OffsetZ=".0" Scale="0.73" Type="wheels_heavy_double2" />
-		<CompatibleWheels OffsetZ="-0.1" Scale="0.73" Type="wheels_heavy_single" />
+		</Damage>		
+		<CompatibleWheels OffsetZ="0" Scale="0.83" Type="wheels_heavy_offroad_p12" />
+		<CompatibleWheels OffsetZ=".0" Scale="0.83" Type="wheels_heavy_double2" />
+		<CompatibleWheels OffsetZ="-0.1" Scale="0.83" Type="wheels_heavy_single" />
+		<CompatibleWheels Scale="0.83" Type="wheels_heavy_single2" />
+		
+		<CompatibleWheels OffsetZ="0" Scale="0.88" Type="wheels_heavy_offroad_p12" />
+		<CompatibleWheels OffsetZ=".0" Scale="0.88" Type="wheels_heavy_double2" />
+		<CompatibleWheels OffsetZ="-0.1" Scale="0.88" Type="wheels_heavy_single" />
+		<CompatibleWheels Scale="0.88" Type="wheels_heavy_single2" />
 		<Camera Center="(-2.5; 0; 0)" ParentFrame="BoneCabin_cdt">
 			<Cockpit
 				_template="Default"
