@@ -374,6 +374,8 @@
 			<Socket Names="FrameAddonTank" Offset="(-4.36; 1.82; 0)">
 				<AddonsShift Offset="(-0.5; 0; 0)" Types="PacificP12wSpareWheel" />
 			</Socket>
+			<Socket Names="FrameAddon3" Offset="(-3.6; 1.821; 0)" NamesBlock="PacificP12wSpareWheel, PacificP12wCabinProtector, MetalDetector, LogLift" />
+			<Socket Names="FrameAddonSideboard3" Offset="(-3.7; 1.821; 0)" NamesBlock="PacificP12wSpareWheel, PacificP12wCabinProtector, MetalDetector, LogLift" />
 			<Socket Names="FrameAddonTowPlatform" NamesBlock="LogLift, MetalDetector, PacificP12wSpareWheel, Trailer" Offset="(-2.8; 1.82; 0)" />
 			<Socket Names="FrameAddonMaintainerBig" NamesBlock="PacificP12wSpareWheel, Trailer, PacificP12WCabinProtector" Offset="(0; 1.82; 0)" />
 			<Socket Names="BigCraneUs" NamesBlock="MetalDetector, PacificP12wSpareWheel, PacificP12WCabinProtector" Offset="(-3.064; 1.921; 0)">
