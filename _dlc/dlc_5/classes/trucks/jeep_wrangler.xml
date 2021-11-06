@@ -489,9 +489,6 @@
 		<AddonSockets>
 			<Socket Names="StuffHoodJeepWrangler" ParentFrame="BoneEngine_cdt" />
 		</AddonSockets>
-		<AddonSockets DefaultAddon="jeep_wrangler_diff_lock_default">
-			<Socket Names="JeepWranglerDiffLock" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
-		</AddonSockets>
 	</GameData>
 	<ControlledConstraints>
 		<Constraint Id="chassis_steer" IsLinkedSteering="true" Name="TieRodSteer" />

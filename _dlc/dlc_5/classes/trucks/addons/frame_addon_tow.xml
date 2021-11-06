@@ -19,6 +19,7 @@
 </_templates>
 <TruckAddon>
 	<PhysicsModel Mesh="trucks/addons/frame_addon_tow">
+		<NetSync Legacy="true" />
 		<Body CenterOfMassOffset="(0; 0; 0)" Mass="800">
 			<Constraint Type="Rigid" />			
 			<Body

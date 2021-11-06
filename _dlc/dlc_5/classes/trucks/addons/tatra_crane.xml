@@ -156,10 +156,10 @@
 		UnlockByRank="1"
 	>
 		<UiDesc
-			UiDesc="UI_ADDON_MINICRANE_1_DESC"
+			UiDesc="UI_ADDON_MINICRANE_TATRAFORCE_DESC"
 			UiIcon30x30=""
 			UiIcon40x40=""
-			UiName="UI_ADDON_MINICRANE_1_NAME"
+			UiName="UI_ADDON_MINICRANE_TATRAFORCE_NAME"
 		/>
 		<SoundPoweredGroupStart Name="" Range="20" Volume="1" />
 		<SoundPoweredGroupLoop Name="addons/addon_tatra_crane/addon_tatra_crane_legs_loop" Range="20" Volume="1" />

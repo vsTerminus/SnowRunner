@@ -277,7 +277,7 @@
 		/>
 		<CustomizationCameras>
 			<CameraPos FOV="32.0" Interior="true" Name="sticker" InterestPosition="(6.6; 0.2; 1.1)" Position="(5.4; 1.5; -0.5)" />
-			<CameraPos FOV="32.0" Interior="true" Name="sticker_1" InterestPosition="(6.6; 0.2; 0.9)" Position="(5.25; 1.55; 0.1)" />
+			<CameraPos FOV="32.0" Interior="true" Name="sticker_1" InterestPosition="(6.6; 0.2; 1.7)" Position="(5.25; 1.55; -0.4)" />
 			<CameraPos FOV="32.0" Name="addon_1" InterestPosition="(3.896; 0.774; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(0.912; 4.08; 2.215)" />
 			<CameraPos FOV="32.0" Name="addon_2" InterestPosition="(4.5; 1.5; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(0; 3; -4)" />
 			<CameraPos FOV="32.0" Interior="true" Name="mirror_mount" InterestPosition="(7.1; 0.7; 1.2)" Position="(5; 1.5; -0.4)" />
@@ -336,7 +336,7 @@
 			<Socket
 				InCockpit="true"
 				Names="StuffAirfreshener"
-				Offset="(0.069; 1.454; 0.014)"
+				Offset="(0.069; 1.470; 0.014)"
 				ParentFrame="BoneCabin_cdt"
 			/>
 		</AddonSockets>

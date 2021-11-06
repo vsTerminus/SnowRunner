@@ -87,7 +87,7 @@
 		<Wheels
 			DefaultRim="rim"
 			DefaultTire="tire"
-			DefaultWheelType="wheels_tatra_t813"
+			DefaultWheelType="wheels_tatra_force_815_7"
 		>
 			<Wheel _template="FirstAxle" Pos="(2.929; 0.609; 1.047)" />
 			<Wheel _template="FirstAxle" RightSide="true" Pos="(2.981; 0.609; 1.047)" />
@@ -144,7 +144,7 @@
 		<Shafts>
 			<Shaft SocketPointA="Shaft1a" SocketPointB="Shaft1b" />
 		</Shafts>
-		<OcclusionMap HalfSizeZ="2.6" MinX="-4.2" MaxX="4.6" />
+		<OcclusionMap HalfSizeZ="2.3" MinX="-6.2" MaxX="5.1" />
 		<LimitedFluid
 			Center="(-1.208; 0.905; 0.863)"
 			SizeX="1.262"
@@ -170,7 +170,7 @@
 			<DamageArea Type="Engine" Min="(3.275; 0.813; -0.65)" Max="(4.408; 1.689; 0.65)" />
 			<DamageArea Type="FuelTank" Min="(-1.9; 0.5; 0.5)" Max="(-0.56; 1.21; 1.25)" />
 		</Damage>
-		<CompatibleWheels RearOffsetZ="0.04" Scale="0.64" Type="wheels_tatra_t813" />
+		<CompatibleWheels RearOffsetZ="0.04" Scale="0.64" Type="wheels_tatra_force_815_7" />
 		<CompatibleWheels RearOffsetZ="0.04" Scale="0.64" Type="wheels_heavy_single" />
 		<Camera Center="(-1.7; 0; 0)" ParentFrame="BoneChassis_cdt">
 			<Cockpit
