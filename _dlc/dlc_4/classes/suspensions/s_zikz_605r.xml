@@ -22,4 +22,26 @@
 			/>
 		</GameData>
 	</SuspensionSet>
+	<SuspensionSet
+		_template="High"
+		BrokenWheelDamageMultiplier="2"
+		CriticalDamageThreshold="0.7"
+		DamageCapacity="300"
+		Name="zikz_605r_suspension_high"
+	>
+		<Suspension Damping="0.2" Height="0.3" Strength="0.035" WheelType="front" SuspensionMin="-0.25" SuspensionMax="0.3" />
+		<Suspension Damping="0.8" Height="0.201" Strength="0.85" WheelType="rear" SuspensionMin="0" SuspensionMax="0.01" />
+		<GameData
+			Price="7000"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_SUSPENSION_HIGH_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_SUSPENSION_HIGH_NAME"
+			/>
+		</GameData>
+	</SuspensionSet>
 </SuspensionSetVariants>
