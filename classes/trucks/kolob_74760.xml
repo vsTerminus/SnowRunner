@@ -14,7 +14,7 @@
 			Location="front"
 			SteeringAngle="36"
 			SteeringCastor="12"
-			Torque="default"
+			Torque="full"
 		/>
 	</Wheel>
 	<Flare>
@@ -92,20 +92,20 @@
 		TruckImage="KOLOB74760mchr"
 		TruckType="HEAVY"
 	>
-		<WinchUpgradeSocket Default="w_heavy_trucks_default" IsUpgradable="true" Type="winches_heavy_trucks" />
+		<WinchUpgradeSocket Default="w_heavy_trucks_default" Type="winches_heavy_trucks" IsUpgradable="true"/>
 		<Wheels
 			DefaultRim="rim_1"
 			DefaultTire="mudtires_1"
 			DefaultWheelType="wheels_superheavy_single"
 		>
-			<Wheel _template="FirstAxle" Pos="(2.603; 0.816; 1.35)" />
-			<Wheel _template="FirstAxle" RightSide="true" Pos="(2.603; 0.816; 1.35)" />
-			<Wheel _template="SecondAxle" Pos="(0.789; 0.816; 1.35)" />
-			<Wheel _template="SecondAxle" RightSide="true" Pos="(0.789; 0.816; 1.35)" />
-			<Wheel _template="RearAxle" Pos="(-1.961; 0.743; 1.35)" />
-			<Wheel _template="RearAxle" RightSide="true" Pos="(-1.961; 0.743; 1.35)" />
-			<Wheel _template="RearAxle" Pos="(-3.661; 0.743; 1.35)" />
-			<Wheel _template="RearAxle" RightSide="true" Pos="(-3.661; 0.743; 1.35)" />
+			<Wheel _template="FirstAxle" Pos="(2.603; 0.816; 1.350)" />
+			<Wheel _template="FirstAxle" Pos="(2.603; 0.816; 1.350)" RightSide="true" />
+			<Wheel _template="SecondAxle" Pos="(0.789; 0.816; 1.350)" />
+			<Wheel _template="SecondAxle" Pos="(0.789; 0.816; 1.350)" RightSide="true" />
+			<Wheel _template="RearAxle" Pos="(-1.961; 0.743; 1.350)" />
+			<Wheel _template="RearAxle" Pos="(-1.961; 0.743; 1.350)" RightSide="true" />
+			<Wheel _template="RearAxle" Pos="(-3.661; 0.743; 1.350)" />
+			<Wheel _template="RearAxle" Pos="(-3.661; 0.743; 1.350)" RightSide="true" />
 		</Wheels>
 		<SuspensionSocket
 			Default="kolob_74760_suspension_default"
@@ -157,7 +157,7 @@
 		<LimitedFluid Center="(-0.605; 1.147; 1.112)" SizeX="0.787" SizeY="0.655" SizeZ="0.820" Type="Box" />
 		<LimitedFluid Center="(-0.605; 1.147; -1.112)" SizeX="0.787" SizeY="0.655" SizeZ="0.820" Type="Box" />
 		<Intake Dir="(1; 0; 0)" Origin="(4.971; 1.492; 0)" Size="0.8" />
-		<GearboxSocket Default="g_special_default" Type="gearboxes_special, gearboxes_special_kolob" />
+		<GearboxSocket Default="g_special_default" Type="gearboxes_special" />
 		<FuelTank DamageCapacity="100" />
 		<EngineSocket Default="ru_special_engine_0" Type="e_ru_special" />
 		<Driver AnimationSet="HeavyTruck" Pos="(3.67; 2.370; 0.669)" SteeringWheelPos="(4.057; 2.715; 0.67)" />
@@ -188,44 +188,45 @@
 				ViewPos="(3.6; 3.072; 0.669)"
 			>
 				<Mirror
-					ClipDir="(-0.91; -0.019; -0.413)"
+					ClipDir="(-0.910; -0.019; -0.413)"
 					ClipOffset="0.1"
 					FOVScale="1.8"
 					MeshFrame="mirror_left"
-					ReflectionDir="(-0.91; -0.019; -0.413)"
+					ReflectionDir="(-0.910; -0.019; -0.413)"
 					Size="(0.22; 0.451)"
 					Pos="(4.266; 2.998; 1.585)"
 				>
+
 					<SecondaryView
-						ClipDir="(-0.91; -0.019; -0.413)"
+						ClipDir="(-0.910; -0.019; -0.413)"
 						ClipOffset=".1"
 						FOVScale="1.5"
 						MeshFrame="mirror_left_1"
-						ReflectionDir="(-0.91; -0.019; -0.413)"
+						ReflectionDir="(-0.910; -0.019; -0.413)"
 						Size="(0.236; 0.194)"
 						Pos="(4.294; 2.645; 1.585)"
 					/>
 				</Mirror>
 				<Mirror
-					ClipDir="(-0.813; -0.091; 0.576)"
+					ClipDir="(-0.819; -0.041; 0.572)"
 					ClipOffset="0.1"
 					FOVScale="2.5"
 					MeshFrame="mirror_right"
-					ReflectionDir="(-0.813; -0.091; 0.576)"
+					ReflectionDir="(-0.819; -0.041; 0.572)"
 					Size="(0.22; 0.451)"
-					Pos="(4.277; 3.115; -1.569)"
+					Pos="(4.289; 2.999; -1.570)"
 				>
 					<SecondaryView
-						ClipDir="(-0.813; -0.091; 0.576)"
+						ClipDir="(-0.819; -0.041; 0.572)"
 						ClipOffset=".1"
 						CurveAngle="10"
 						FOVScale="1.5"
 						MeshFrame="mirror_right_1"
-						ReflectionDir="(-0.813; -0.091; 0.576)"
+						ReflectionDir="(-0.819; -0.041; 0.572)"
 						Size="(0.236; 0.194)"
-						Pos="(4.306; 2.761; -1.569)"
+						Pos="(4.317; 2.645; -1.570)"
 					/>
-				</Mirror>
+				</Mirror>					
 			</Cockpit>
 		</Camera>
 		<Axles>
@@ -370,13 +371,13 @@
 		Price="107700"
 		UnlockByExploration="false"
 		UnlockByRank="22"
-		ExcludeAddons="trailer_log_pole"
 	>
 		<WinchSocket Pos="(4.986; 1.302; 0.446)" />
 		<WinchSocket Pos="(4.986; 1.302; -0.446)" />
 		<WinchSocket Pos="(-4.644; 0.832; 0)" />
 		<WinchSocket Pos="(-0.605; 0.717; 1.483)" />
 		<WinchSocket Pos="(-0.605; 0.717; -1.483)" />
+		<WinchSocket Pos="(0.65; 3.717; -0.37)" />
 		<UiDesc
 			UiDesc="UI_VEHICLE_KOLOB_74760_DESC"
 			UiIcon30x30="heavyVehicleImg30"
@@ -386,25 +387,15 @@
 			UiName="UI_VEHICLE_KOLOB_74760_NAME"
 		/>
 		<CustomizationCameras>
-			<CameraPos FOV="32.0" Interior="true" Name="roof_sticker" InterestPosition="(2.004; 1.167; -0.342)" Position="(6.089; 6.363; -0.944)" />
-			<CameraPos FOV="32.0" Interior="true" Name="sticker_1" InterestPosition="(8.067; 3.057; 1.334)" Position="(5.608; 3.313; -0.554)" />
-			<CameraPos FOV="32.0" Name="addon_1" InterestPosition="(-0.28; 1.903; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-8.733; 4.067; 5.257)" />
-			<CameraPos FOV="32.0" Name="addon_2" InterestPosition="(3.5; 2.387; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-1.534; 4.27; 3.527)" />
-			<CameraPos FOV="32.0" Interior="true" Name="mirror_mount" InterestPosition="(8.067; 3.057; 1.334)" Position="(5.275; 3.338; -0.599)" />
+			<CameraPos FOV="32.0" Name="addon_1" InterestPosition="(-1.765; 1.692; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-11.556; 4.444; 8.243)" />
+			<CameraPos FOV="32.0" Name="addon_2" InterestPosition="(3.194; 1.807; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-8.093; 2.337; -6.718)" />
 			<CameraPos FOV="32.0" Name="side_r" InterestPosition="(4.764; 1.97; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-0.226; 4.969; -4.508)" />
-			<CameraPos FOV="32.0" Interior="true" Name="sticker" InterestPosition="(8.067; 1.461; 2.035)" Position="(5.914; 2.907; -0.241)" />
-			<CameraPos FOV="32.0" Interior="true" Name="door_r_sticker" InterestPosition="(7.16; 2.03; -0.145)" Position="(3.239; 2.461; 3.59)" />
 			<CameraPos FOV="32.0" Name="roof" InterestPosition="(4.758; 2.358; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(10.787; 4.806; -3.717)" />
-			<CameraPos FOV="32.0" Interior="true" Name="glass_sticker" InterestPosition="(6.227; 3.233; -1.219)" Position="(9.682; 3.105; 1.439)" />
-			<CameraPos FOV="32.0" Name="hoods" InterestPosition="(5.716; 1.735; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(13.576; 1.402; -3.863)" />
-			<CameraPos FOV="32.0" Interior="true" Name="sticker_2" InterestPosition="(8.044; 0.68; 1.138)" Position="(6.193; 3.608; -0.463)" />
 			<CameraPos FOV="32.0" Name="side_l" InterestPosition="(6.27; 2.278; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(11.866; 5.284; -4.55)" />
-			<CameraPos FOV="32.0" Interior="true" Name="bubble_head" InterestPosition="(8.067; 1.97; 1.534)" Position="(5.756; 3.132; -0.479)" />
+			<CameraPos FOV="32.0" Name="hoods" InterestPosition="(5.716; 1.735; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(13.576; 1.402; -3.863)" />
 			<CameraPos FOV="32.0" Name="wheels" InterestPosition="(3.679; 0.627; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(6.058; 2.362; -6.974)" />
 			<CameraPos FOV="32.0" Name="default" InterestPosition="(5.716; 1.735; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(13.576; 1.402; -3.863)" />
 			<CameraPos FOV="32.0" Name="rear" InterestPosition="(0.479; 0.992; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-5.767; 1.805; 2.899)" />
-			<CameraPos FOV="32.0" Interior="true" Name="door_l_sticker" InterestPosition="(4.795; 2.061; 0.11)" Position="(3.255; 2.625; -3.526)" />
-			<CameraPos FOV="32.0" Interior="true" Name="curtain" InterestPosition="(8.067; 3.057; 1.334)" Position="(5.275; 3.338; -0.599)" />
 		</CustomizationCameras>
 		<CraneSocket Pos="(4.986; 1.302; 0.446)" />
 		<CraneSocket Pos="(4.986; 1.302; -0.446)" />
@@ -413,10 +404,17 @@
 		<CraneSocket Pos="(-0.605; 0.717; -1.483)" />
 		<AddonSockets>
 			<Socket Names="Trailer" Offset="(-4.704; 0.838; 0)" />
-			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-1.95; 2; 0)" />
+			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-3.7; 1.90; 0)" />
+			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" NamesBlock="saddle_low" Offset="(-1.879; 1.835; 0)" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="SaddleHigh1" Offset="(-1.95; 1.65; -0)" />
+			<Socket Names="SaddleLow" Offset="(-3.68; 1.58; -0)" />
+			<Socket Names="FrameAddon" Offset="(-2.58; 1.76; 0)" />					
+			<Socket Names="FrameAddonTank" Offset="(-3.58; 1.8; 0)" />
+			<Socket Names="FrameAddonMaintainer" NamesBlock="Trailer" Offset="(-3.2; 0.8; 0.2)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="FrameAddonSeismicVibrator" NamesBlock="Trailer" Offset="(-0.1; 1.76; 0.2)" />
+			<Socket Names="FrameAddonKung" Offset="(-2.64; 1.76; 0)" ParentFrame="BoneChassis_cdt"/>
 		</AddonSockets>
 		<AddonSockets DefaultAddon="kolob_74760_snorkel_default">
 			<Socket Names="Kolob74760Snorkel" Offset="(0; 0; 0)" />
@@ -514,3 +512,4 @@
 		</IKBone>
 	</AutomaticIK>
 </Truck>
+SnowRunnerMods.io: bASHer1991
