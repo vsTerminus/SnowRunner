@@ -1,4 +1,4 @@
-<_templates Include="trucks">
+﻿<_templates Include="trucks">
 	<Wheel>
 		<RearWheel
 			ConnectedToHandbrake="true"
@@ -152,8 +152,15 @@
 			<DamageArea Type="Engine" Min="(2.4; 0.95; -0.6)" Max="(3.45; 2; 0.6)" ParentFrame="BoneCabin_cdt" />
 			<DamageArea Type="FuelTank" Min="(0.5; 0.45; -1.2)" Max="(2.090; 1.07; 1.2)" ParentFrame="BoneChassis_cdt" />
 		</Damage>
-		<CompatibleWheels Scale="0.50" Type="wheels_medium_double" />
-		<CompatibleWheels OffsetZ="0.02" Scale="0.55" Type="wheels_medium_double" />
+		<CompatibleWheels OffsetZ="0.08" Scale="0.50" Type="wheels_medium_double" />
+		<CompatibleWheels OffsetZ="0.09" Scale="0.55" Type="wheels_medium_double" />
+		<CompatibleWheels OffsetZ="0.10" Scale="0.60" Type="wheels_medium_double" />
+		<!-- <CompatibleWheels OffsetZ="0.10" Scale="0.60" Type="wheels_heavy_single" /> -->
+		<CompatibleWheels OffsetZ="0.08" Scale="0.50" Type="wheels_heavy_double1" />
+		<CompatibleWheels OffsetZ="0.09" Scale="0.55" Type="wheels_heavy_double1" />
+		<CompatibleWheels OffsetZ="0.10" Scale="0.60" Type="wheels_heavy_double1" />
+		<!-- <CompatibleWheels OffsetZ="0.10" Scale="0.60" Type="wheels_heavy_double2" /> -->
+		<!-- <CompatibleWheels RearOffsetZ="0.05" Scale="0.60" Type="wheels_superheavy_single" /> -->
 		<Camera Center="(-1.7; 0; 0)" ParentFrame="BoneCabin_cdt">
 			<Cockpit
 				_template="Default"
@@ -377,6 +384,7 @@
 			<Socket Names="BunkLog" Offset="(-4.642; 1.002; 0)" />
 			<Socket Names="FrameAddonLogShort" NamesBlock="MinicraneUS, MetalDetector, ChevroletKodiakC70CabinProtector" Offset="(-1.411; 1; 0)" />
 			<Socket Names="SaddleLow1" Offset="(-2.454; 1; 0)" />
+			<!-- <Socket Names="SaddleLow1" Offset="(-1.7; 1; 0)" /> -->
 			<Socket Names="SaddleHigh" Offset="(-1.7; 1; 0)" />
 			<Socket Names="FrameAddon" Offset="(-1.625; 1.050; 0)" ParentFrame="BoneChassis_cdt">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.05; 0)" />
