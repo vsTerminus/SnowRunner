@@ -1,4 +1,4 @@
-<_templates Include="trucks">
+﻿<_templates Include="trucks">
 	<Wheel>
 		<RearWheel
 			ConnectedToHandbrake="true"
@@ -39,7 +39,7 @@
 <Truck>
 	<TruckData
 		BackSteerSpeed="0.01"
-		DiffLockType="None"
+		DiffLockType="Installed"
 		EngineIconMesh="env/engine_default"
 		EngineIconScale="1.2"
 		EngineStartDelay="0.8"
@@ -137,7 +137,11 @@
 			<DamageArea Type="FuelTank" Min="(1.15; 0.35; -1.2)" Max="(2.9; 1.1; 1.2)" ParentFrame="BoneCabin_cdt" />
 		</Damage>
 		<CompatibleWheels Scale="0.55" Type="wheels_medium_double" />
+		<CompatibleWheels Scale="0.55" Type="wheels_heavy_double1" />
 		<CompatibleWheels Scale="0.60" Type="wheels_medium_double" />
+		<CompatibleWheels Scale="0.60" Type="wheels_heavy_double1" />
+		<CompatibleWheels Scale="0.65" Type="wheels_medium_double" />
+		<CompatibleWheels Scale="0.65" Type="wheels_heavy_double1" />
 		<Camera Center="(-1.4; 0; 0)" ParentFrame="BoneCabin_cdt">
 			<Cockpit
 				_template="Default"
