@@ -10,7 +10,7 @@
 			SteeringAngle="36"
 			SteeringCastor="5"
 			SteeringJointOffset="0.25"
-			Torque="connectable"
+			Torque="full"
 			ParentFrame="BoneCabin_cdt"
 		/>
 	</Wheel>
@@ -149,7 +149,8 @@
 		<Intake Dir="(1; 0; 0)" Origin="(4.734; 1.792; 0)" Size="1" />
 		<GearboxSocket Default="g_truck_default" Type="gearboxes_trucks" />
 		<FuelTank DamageCapacity="50" />
-		<EngineSocket Default="us_truck_old_heavy_engine_0" Type="e_us_truck_old_heavy" />
+		<!-- <EngineSocket Default="us_truck_old_heavy_engine_0" Type="e_us_truck_old_heavy" /> -->
+		<EngineSocket Default="us_special_engine_0" Type="e_us_special" />
 		<Driver
 			AnimationSet="HeavyTruck"
 			Pos="(1.876; 2.078; 0.37)"
@@ -181,6 +182,7 @@
 			<DamageArea Type="FuelTank" Min="(1.353; 0.609; -1.082)" Max="(2.853; 1.37; 1.082)" />
 		</Damage>
 		<CompatibleWheels Scale="0.646" Type="wheels_heavy_offroad_p512" />
+		<CompatibleWheels Scale="0.750" Type="wheels_heavy_offroad_p512" />
 		<Camera Center="(-1.2; 0; 0)" ParentFrame="BoneCabin_cdt">
 			<Cockpit
 				_template="Default"
