@@ -1,0 +1,11 @@
+<ModelBrand
+	Instanced="true"
+	InstancedAsModel="true"
+	NightLightingShadowsAllowCap="true"
+>
+	<PhysicsModel>
+		<Body Collisions="Dynamic" />
+	</PhysicsModel>
+	<Occlusion Size="(10.142375946; 22.1325531006)" Texture="occlusion_caravan_01.tga" />
+	<Landmark Mesh="landmarks/caravan_01_lmk" />
+</ModelBrand>

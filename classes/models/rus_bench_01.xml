@@ -1,0 +1,17 @@
+<_templates Include="models" />
+<ModelBrand
+	Instanced="true"
+	NightLightingShadowsAllowCap="True"
+>
+	<PhysicsModel>
+		<Body Collisions="None" Mass="0" ModelFrame="BoneRoot">
+			<Body _template="LightWeight" ModelFrame="BonePart1">
+				<Constraint _template="LightWeight" />
+				<Body _template="LightWeight" ModelFrame="BonePart2">
+					<Constraint _template="LightWeight" />
+				</Body>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<Occlusion Size="(5.0, 7.0)" Texture="occlusion_rus_bench_01.tga" />
+</ModelBrand>

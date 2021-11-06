@@ -1,0 +1,19 @@
+<OverlayBrand
+	IsExtrudable="false"
+	IsAsphalt="true"
+	Texture="overlays/asphalt_road_snowy_small__d_a.tga"
+	TextureRelief="overlays/asphalt_road_snowy_small_relief__d_a.tga"
+	WheelTracks="0"
+	IsWetnessAsIce="true"
+	GenerateDust="true"
+	IsSnow="true"
+>
+	<Prebuild
+		DefaultWidth="8"
+		FlattenPart="1"
+		SnowmapMask="overlay_asphalt_road_snowy_small_relief__s_d.tga"
+		LandmarkColor="(100; 90; 80)"
+		LandmarkPart="0.8"
+		Layer="2"
+	/>
+</OverlayBrand>

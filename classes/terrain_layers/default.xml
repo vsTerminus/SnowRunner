@@ -1,0 +1,8 @@
+<MaterialType 
+	Texture="tiles/grass_pbr_test__d_a.tga" 
+	Normal="tiles/grass_pbr_test_relief__d_a.tga"
+	GrassBrush="GrassShort,GrassShortAu" 
+	IsThickGrass="true" 
+	Sound="surfaces/surf_ground_rnd"
+	SkidSound="surfaces/skidding/skidding_ground_loop"
+/>

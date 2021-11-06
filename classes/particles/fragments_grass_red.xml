@@ -1,0 +1,18 @@
+<CombineParticles
+	AirResistance="5.0"
+	BillboardOffset="(2.0; 2.0)"
+	Gravity="(0; -2.5; 0)"
+	IsAlphaKill="true"
+>
+	<Texture
+		Diffuse="sfx/particles/grass_red__d_a.tga"
+		NumFramesX="4"
+		NumFramesY="2"
+		RandomFrameOffset="8"
+	/>
+	<Size Function="(0.06; 0.06; 0.004)" Median="0.8" />
+	<Scale Random="0.3" Value="1.0" />
+	<RotationSpeed Value="240" />
+	<Rotation Random="360" />
+	<LifeTime Value="4.0" />
+</CombineParticles>

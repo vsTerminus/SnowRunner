@@ -1,0 +1,16 @@
+<_templates Include="environment" />
+<PlantBrand _template="WoodChunk">
+	<PhysicsModel>
+		<Body
+			_template="WoodChunk"
+			CenterOfMassOffset="(0; 0; 0)"
+			ModelFrame="BoneRoot"
+		>
+			<Constraint _template="WoodChunk" />
+		</Body>
+	</PhysicsModel>
+	<ChunksBreak _template="WoodChunk" />
+	<GameData>
+		<WinchSocket Pos="(0.00; 0.1; 0)" ParentFrame="BoneRoot" />
+	</GameData>
+</PlantBrand>

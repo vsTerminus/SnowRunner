@@ -1,0 +1,10 @@
+<ModelBrand Instanced="true">
+	<PhysicsModel>
+		<Body Collisions="Dynamic" Mass="50">
+			<Constraint Type="Fixed" />
+		</Body>
+	</PhysicsModel>
+	<GameData>
+		<WinchSocket Pos="(0; 0.4; 0)" />
+	</GameData>
+</ModelBrand>

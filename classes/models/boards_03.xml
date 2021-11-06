@@ -1,0 +1,40 @@
+<_templates Include="models" />
+<ModelBrand 
+	Instanced="true"
+>
+	<PhysicsModel>
+		<Body Collisions="None" Mass="0" ModelFrame="BoneRoot_cdt">
+			<Body _template="LightWeight" ModelFrame="joint1">
+				<Constraint _template="LightWeight" />
+				<Body _template="LightWeight" ModelFrame="joint2">
+					<Constraint _template="LightWeight" />
+				</Body>
+			</Body>
+			<Body _template="LightWeight" ModelFrame="joint3">
+				<Constraint _template="LightWeight" />
+				<Body _template="LightWeight" ModelFrame="joint4">
+					<Constraint _template="LightWeight" />
+				</Body>
+			</Body>
+			<Body _template="LightWeight" ModelFrame="joint5">
+				<Constraint _template="LightWeight" />
+				<Body _template="LightWeight" ModelFrame="joint6">
+					<Constraint _template="LightWeight" />
+				</Body>
+			</Body>
+			<Body _template="LightWeight" ModelFrame="joint7">
+				<Constraint _template="LightWeight" />
+				<Body _template="LightWeight" ModelFrame="joint8">
+					<Constraint _template="LightWeight" />
+				</Body>
+			</Body>
+			<Body _template="LightWeight" ModelFrame="joint9">
+				<Constraint _template="LightWeight" />
+				<Body _template="LightWeight" ModelFrame="joint10">
+					<Constraint _template="LightWeight" />
+				</Body>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<Occlusion Size="(2; 3)" Texture="occlusion_boards_03.tga" />
+</ModelBrand>

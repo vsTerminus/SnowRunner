@@ -1,0 +1,18 @@
+<_parent File="dirt_burst_medium" />
+<CombineParticles
+	AirResistance="1.0"
+	AspectRatio="1.0"
+	Gravity="(0; -3; 0)"
+	MudDecals="0.4"
+	Orientation="Aligned"
+	ZOffset="0"
+>
+	<Size Function="(0.2; 0.4; 0.6)" Median="0.4" />
+	<LifeTime Value="1.2" />
+	<Collisions
+		Enable="true"
+		Friction="0.2"
+		Radius="0.05"
+		Restitution="0.0"
+	/>
+</CombineParticles>

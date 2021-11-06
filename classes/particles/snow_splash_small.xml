@@ -1,0 +1,40 @@
+<CombineParticles
+	AirResistance="1.6"
+	Gravity="(0; -4; 0)"
+	Orientation="AlignedBillboard"
+	ZOffset="-0.2"
+	SoftDepth="0.35"
+	Wind="(0.05; 0.01; 0)"
+	WindDivergence="30"
+	OverdrawDegradation="true"
+>
+	<Texture
+		Diffuse="sfx/substance/snow_wheel__d_a.tga"
+		Distort="sfx/substance/distort2__n_d.tga"
+		DistortMult="0.1"
+		DistortScale="1.0"
+		DistortSpeed="0.2"
+		NumFramesX="4"
+		NumFramesY="2"
+		RandomFrameOffset="8"
+	/>
+	<Subparticles
+		Density="40"
+		Offset="0.1"
+		Type="snow"
+		Divergence="2.0"
+	>
+		<ExtraLifeTime Value="2.0" />
+	</Subparticles>
+	<Size Function="(0.4; 0.8; 1.3)" Median="0.4" />
+	<LifeTime Value="1.5" />
+	<Color Value="g(255; 255; 255) x 1">
+		<Key Alpha="0" At="0.0" />
+		<Key Alpha="220" At="0.25" />
+		<Key Alpha="220" At="0.7" />
+		<Key Alpha="220" At="1.0" />
+	</Color>
+	<Scale Value="1.2" Random="0.5" />
+	<RotationSpeed Value="15" Random="15" />
+	<Rotation Random="360" />
+</CombineParticles>

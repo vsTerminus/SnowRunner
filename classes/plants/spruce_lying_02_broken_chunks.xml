@@ -1,0 +1,11 @@
+<_templates Include="environment" />
+<PlantBrand _template="LyingTreeChunks">
+	<PhysicsModel>
+		<Body _template="FallingTreeRoot" ModelFrame="BoneRoot" DamageMult="0.4">
+			<Constraint _template="TreeChunk"/>
+			<Body _template="LyingBranch" ModelFrame="BoneBranch1" DamageMult="0.0">
+				<Constraint _template="TreeChunk"/>
+			</Body>
+		</Body>
+	</PhysicsModel>
+</PlantBrand>

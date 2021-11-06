@@ -1,0 +1,83 @@
+<DriveCamera
+	CenteredOffsetEye="(-6.0; 0.75; 0)"
+	CenteredOffsetTarget="(1.5; 1.5; 0)"
+	CenteredTrailerOffsetEye="(-2.5; 0.0; 0)"
+	CenteredVer="0.32"
+	FrontHor="160"
+	FrontVer="0"
+	RearHor="15"
+	RearVer="0"
+	RightHor="320"
+	RightVer="0"
+>
+	<Position Center="(-2.0; 2.0; 0.8)">
+		<!--0-->
+		<Near Dir="(0.92; -0.36; -0.2)" Eye="(-0.65; 4.76; 2.26)" VerFPMax="0.34" />
+		<Far
+			Dir="(1.0; -0.26; -0.22)"
+			Eye="(-4.5; 3.3; 5.4)"
+			HorFPMin="-0.1"
+			VerFPMin="-0.5"
+			HorFPMax="0.7"
+		/>
+	</Position>
+	<Position Center="(0.0; 1.0; 1.0)">
+		<!--1-->
+		<Near Dir="(-0.0; -0.4; -0.74)" Eye="(1.2; 5.07; 2.8)" VerFPMax="0.46" />
+		<Far
+			Dir="(0; -0.14; -0.98)"
+			Eye="(1.0; 2.0; 10)"
+			HorFPMin="-0.4"
+			VerFPMin="-0.2"
+			HorFPMax="0.6"
+		/>
+	</Position>
+	<Position Center="(3.6; 1.0; 0.4)">
+		<!--2-->
+		<Near
+			Dir="(-0.67; -0.6; -0.44)"
+			Eye="(0.8; 4.78; 2.02)"
+			HorFPMin="-0.6"
+			VerFPMax="0.54"
+		/>
+		<Far
+			Dir="(-0.74; -0.14; -0.69)"
+			Eye="(9.6; 1.5; 5.2)"
+			HorFPMin="-0.3"
+			VerFPMin="-0.1"
+			HorFPMax="0.2"
+		/>
+	</Position>
+	<Position Center="(3.6; 1.0; -0.4)">
+		<!--3-->
+		<Near Dir="(-0.86; -0.5; 0.4)" Eye="(1.4; 5.13; -1.38)" VerFPMax="0.44" />
+		<Far
+			Dir="(-0.5; -0.08; 0.27)"
+			Eye="(9.0; 1.5; -3.0)"
+			HorFPMin="-0.36"
+			VerFPMin="-0.2"
+			HorFPMax="0.12"
+		/>
+	</Position>
+	<Position Center="(0.0; 1.0; -0.8)">
+		<!--4-->
+		<Near Dir="(0.0; -0.45; 0.69)" Eye="(0.8; 5.07; -2.0)" VerFPMax="0.54" />
+		<Far
+			Dir="(-0.0; -0.14; 0.93)"
+			Eye="(1.0; 1.6; -7)"
+			HorFPMin="-0.52"
+			HorFPMax="0.5"
+		/>
+	</Position>
+	<Position Center="(-2.0; 2.0; -0.2)">
+		<!--5-->
+		<Near Dir="(0.92; -0.36; 0.2)" Eye="(-0.65; 4.76; -2.26)" VerFPMax="0.34" />
+		<Far
+			Dir="(1.0; -0.26; 0.1)"
+			Eye="(-5.0; 2.8; -3.4)"
+			HorFPMin="-0.8"
+			VerFPMin="-0.3"
+			HorFPMax="0.2"
+		/>
+	</Position>
+</DriveCamera>

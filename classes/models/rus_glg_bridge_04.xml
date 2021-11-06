@@ -1,0 +1,48 @@
+<_templates>
+	<Constraint>
+		<Bridge
+			AxisLocal="(1; 0; 0)"
+			MinLimit="-5"
+			MaxLimit="0"
+			Type="Hinge"
+		>
+			<AllMotor Damping="10000" Spring="400000" Type="Spring" />
+		</Bridge>
+	</Constraint>
+	<Body>
+		<Bridge
+			AngularDamping="0.1"
+			Mass="1000"
+			NoSoftContacts="true"
+			
+		/>
+	</Body>
+</_templates>
+<ModelBrand
+	NightLightingShadowsAllowCap="true"
+	ClipCameraBridge="False"
+>
+	<PhysicsModel>
+		<Constraint
+			_template="Bridge"
+			ModelFrameChild="BoneBridgeL"
+			ModelFrameParent="BoneColumn"
+			PivotOffset="(0; 0; 0)"
+		/>
+		<Constraint
+			_template="Bridge"
+			ModelFrameChild="BoneBridgeR"
+			ModelFrameParent="BoneColumn"
+			PivotOffset="(0; 0; 0)"
+		/>
+		<Body _template="Bridge" Mass="0" ModelFrame="BoneColumn">
+			<Body _template="Bridge" ModelFrame="BoneBridgeL">
+				<Constraint _template="Bridge" />
+			</Body>
+			<Body _template="Bridge" ModelFrame="BoneBridgeR">
+				<Constraint _template="Bridge" />
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<Landmark Mesh="landmarks/rus_glg_bridge_04_lmk" />
+</ModelBrand>

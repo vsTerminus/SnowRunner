@@ -1,0 +1,14 @@
+<_templates Include="models"/>
+<ModelBrand Instanced="true">
+	<PhysicsModel>
+		<Body
+			Collisions="Dynamic"
+			CenterOfMassOffset="(0; 0.1; 0)"
+			Mass="100"
+		>
+			<Constraint BreakOffThreshold="105" Type="Fixed" />
+		</Body>
+	</PhysicsModel>
+	<Occlusion Size="(5; 5)" Texture="occlusion_barrel_02.tga" />
+	<Landmark Mesh="landmarks/us_dumpster_lmk" />
+</ModelBrand>

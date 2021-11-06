@@ -1,0 +1,10 @@
+<MaterialType 
+	Texture="tiles/gravel_road__d_a.tga" 
+	Normal="tiles/gravel_road_relief__d_a.tga"
+	NoGrass="true"
+	GrassBrush="DebrisStones"
+	Sound="surfaces/surf_gravel_rnd"
+	EndEffectSound="surfaces/hit/hit_gravel_rnd"
+	SkidSound="surfaces/skidding/skidding_gravel_loop"
+	WheelTracks="0"
+/>

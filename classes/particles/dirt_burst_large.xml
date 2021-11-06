@@ -1,0 +1,22 @@
+<CombineParticles
+	AirResistance="2.0"
+	AspectRatio="0.8"
+	Gravity="(0; -4; 0)"
+	MudDecals="0.25"
+	Orientation="AlignedBillboard"
+	SoftDepth="0.2"
+	OverdrawDegradation="true"
+>
+	<Texture Diffuse="sfx/substance/impact_chunky_large__d_a.tga" />
+	<Subparticles Density="32" Offset="0.2" Type="dirt_chunks">
+		<ExtraLifeTime Random="4.0" Value="2.0" />
+	</Subparticles>
+	<Size Function="(0.5; 1.5; 4.0)" Median="0.25" />
+	<LifeTime Value="2.0" />
+	<Color Value="g(143; 132; 116)">
+		<Key Alpha="540" At="0.00" />
+		<Key Alpha="400" At="0.33" />
+		<Key Alpha="280" At="0.66" />
+		<Key Alpha="0" At="1.00" />
+	</Color>
+</CombineParticles>

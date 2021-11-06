@@ -1,0 +1,258 @@
+<_templates>
+	<PlantBrand>
+		<Stump
+			AttachToGround="false"
+			DistSkipPercentage="0.4"
+			PlantingGroups="Bush,BigTree"
+		>
+		</Stump>
+		<SmallTree
+			BreakType="SmallTree"
+			CheckNoGrass="true"
+			PlantingGroups="SmallTree"
+		>
+		</SmallTree>
+		<SmallRock
+			AttachToGround="false"
+			DisableShadows="true"
+			PlantingGroups="Bush,SmallTree"
+			UseDirtTint="true"
+		/>
+		<Pine BreakType="BigTree" PlantingGroups="BigTree">
+		</Pine>
+		<Flower
+			CheckNoGrass="true"
+			DisableShadows="true"
+			LocalYOcclusionOffset="0.1"
+			PlantingGroups="Flower"
+			PlantingMinSpacing="0.05"
+		/>
+		<Fir BreakType="BigTree" PlantingGroups="BigTree">
+		</Fir>
+		<Bush
+			BreakType="SmallTree"
+			CheckNoGrass="true"
+			DistSkipPercentage="0.4"
+			LocalYOcclusionOffset="0.05"
+			PlantingGroups="Bush"
+		>
+		</Bush>
+		<Birch
+			BreakType="BigTree"
+			CheckNoGrass="true"
+			PlantingGroups="BigTree"
+		>
+		</Birch>
+	</PlantBrand>
+	<Material>
+		<NoSnowIce
+			SnowUpAngleRange="0.0"
+			SnowUpIntensity="20.0"
+			SnowUpNoiseIntensity="0.2"
+			SnowUpNoiseScale="0.7"
+		/>
+		<IceDynamic
+			SnowUpAngleRange="30.0"
+			SnowUpBacksideIntensity="0"
+			SnowUpFlatten="0.5"
+			SnowUpIntensity="3.0"
+			SnowUpNoiseIntensity="0.01"
+			SnowUpNoiseScale="0.05"
+			SnowUpNormalsSpace="object"
+			SnowifyNoiseIntensity="1"
+			SnowifyNoiseIntensityShift="0.13"
+			SnowifyNoiseTilingMult="1"
+		/>
+		<IceStatic
+			SnowUpAngleRange="30.0"
+			SnowUpBacksideIntensity="0"
+			SnowUpFlatten="0.5"
+			SnowUpIntensity="3.0"
+			SnowUpNoiseIntensity="0.01"
+			SnowUpNoiseScale="0.05"
+			SnowUpNormalsSpace="object"
+			SnowifyNoiseIntensity="1"
+			SnowifyNoiseIntensityShift="0.13"
+			SnowifyNoiseTilingMult="1"
+		>
+			<PlantMaterial IsWheelTracks="true" />
+		</IceStatic>
+		<TreeTrunk
+			SnowUpIntensity="20.0"
+			SnowUpAngleRange="50.0"
+			SnowUpNoiseIntensity="0.2"
+			SnowUpNoiseScale="0.7"
+		/>
+		<Foliage 
+			AlphaKill="true" 
+			TwoSided="true"
+			SnowUpIntensity="20.0"
+			SnowUpAngleRange="50.0"
+			SnowUpNoiseIntensity="0.2"
+			SnowUpNoiseScale="0.7"
+		>
+			<PlantMaterial IsFoliage="true" />
+		</Foliage>
+		<FoliageNoClip _template="Foliage">
+			<PlantMaterial IsNearClip="false" />
+		</FoliageNoClip>
+		<FoliageEvergreen
+			_template="Foliage"
+			SnowUpNormalsSpace="foliage"
+			SnowUpFlatten="0.0"
+			SnowUpIntensity="3.0"
+			SnowUpBacksideIntensity="4.0"
+			SnowUpAngleRange="70.0"
+			SnowUpNoiseIntensity="0.6"
+			SnowUpNoiseScale="4.0"
+		/>
+	</Material>
+	<Constraint>
+		<SmallTreeTrunk TwistAxisLocal="(0;1;0)" Type="Ragdoll">
+			<PlaneConeMotor Damping="2000" Spring="2000" Type="Spring" />
+		</SmallTreeTrunk>
+		<SmallTreeRoot
+			BreakOffThreshold="200"
+			TwistAxisLocal="(0;1;0)"
+			Type="Ragdoll"
+		>
+			<PlaneConeMotor Damping="8000" Spring="2000" Type="Spring" />
+		</SmallTreeRoot>
+		<SmallTreeBranchTop TwistAxisLocal="(0;1;0)" Type="Ragdoll">
+			<PlaneConeMotor Damping="200" Spring="200" Type="Spring" />
+		</SmallTreeBranchTop>
+		<SmallTreeBranch TwistAxisLocal="(0;1;0)" Type="Ragdoll">
+			<PlaneConeMotor Damping="200" Spring="200" Type="Spring" />
+		</SmallTreeBranch>
+		<PineTrunk2 Cone="10" TwistAxisLocal="(0;1;0)" Type="Ragdoll">
+			<PlaneConeMotor Damping="20000" Spring="100000" Type="Spring" />
+		</PineTrunk2>
+		<PineTrunk1 Cone="10" TwistAxisLocal="(0;1;0)" Type="Ragdoll">
+			<PlaneConeMotor Damping="40000" Spring="200000" Type="Spring" />
+		</PineTrunk1>
+		<PineRoot Cone="10" TwistAxisLocal="(0;1;0)" Type="Ragdoll">
+			<PlaneConeMotor Damping="100000" Spring="800000" Type="Spring" />
+		</PineRoot>
+		<Flower TwistAxisLocal="(0;1;0)" Type="Ragdoll">
+			<PlaneConeMotor Damping="1" Spring="8" Type="Spring" />
+		</Flower>
+		<BushBranch TwistAxisLocal="(0;1;0)" Type="Ragdoll">
+			<PlaneConeMotor Damping="400" Spring="200" Type="Spring" />
+		</BushBranch>
+		<BirchTrunk2 TwistAxisLocal="(0;1;0)" Type="Ragdoll">
+			<PlaneConeMotor Damping="8000" Spring="40000" Type="Spring" />
+		</BirchTrunk2>
+		<BirchTrunk1 Cone="10" TwistAxisLocal="(0;1;0)" Type="Ragdoll">
+			<PlaneConeMotor Damping="32000" Spring="120000" Type="Spring" />
+		</BirchTrunk1>
+		<BirchRoot Cone="10" TwistAxisLocal="(0;1;0)" Type="Ragdoll">
+			<PlaneConeMotor Damping="48000" Spring="240000" Type="Spring" />
+		</BirchRoot>
+		<BirchBranch TwistAxisLocal="(0;1;0)" Type="Ragdoll">
+			<PlaneConeMotor Damping="80" Spring="800" Type="Spring" />
+		</BirchBranch>
+	</Constraint>
+	<ChunksBreak>
+		<Bush
+			Brands="bush_chunk_a"
+			Handler="Bush"
+			Offsets="(-0.05; 0.02; 0),(0.03; 0.02; -0.05),(0.03; 0.02; 0.05)"
+			SpawnAngMult="8.0"
+			SpawnLinMult="0.5"
+		/>
+	</ChunksBreak>
+	<Body>
+		<SmallTreeTrunk
+			ImpactType="Foliage"
+			LinearDamping="0.5"
+			Mass="10.0"
+			NoSoftContacts="true"
+		/>
+		<SmallTreeRoot
+			ImpactType="Foliage"
+			LinearDamping="0.5"
+			Mass="20.0"
+			NoSoftContacts="true"
+		/>
+		<SmallTreeBranchTop
+			AllowedPenetrationDepth="2.0"
+			AngularDamping="0.5"
+			DebrisType="Foliage"
+			ImpactType="Foliage"
+			IsCapsuleCDT="true"
+			LinearDamping="0.5"
+			Mass="1.0"
+		/>
+		<SmallTreeBranch
+			AllowedPenetrationDepth="2.0"
+			AngularDamping="0.5"
+			DebrisType="Foliage"
+			ImpactType="Foliage"
+			IsCapsuleCDT="true"
+			LinearDamping="0.5"
+			Mass="4.0"
+		/>
+		<PineTrunk2
+			ImpactType="Foliage"
+			LinearDamping="0.5"
+			Mass="400.0"
+			NoSoftContacts="true"
+		/>
+		<PineTrunk1
+			ImpactType="Foliage"
+			LinearDamping="0.5"
+			Mass="1000.0"
+			NoSoftContacts="true"
+		/>
+		<PineRoot
+			ImpactType="Foliage"
+			LinearDamping="0.5"
+			Mass="2000.0"
+			NoSoftContacts="true"
+		/>
+		<Flower
+			AllowedPenetrationDepth="2.0"
+			AngularDamping="0.5"
+			DebrisType="Foliage"
+			ImpactType="Flower"
+			IsCapsuleCDT="true"
+			LinearDamping="0.5"
+			Mass="0.1"
+		/>
+		<BushBranch
+			AllowedPenetrationDepth="2.0"
+			AngularDamping="0.5"
+			DebrisType="Foliage"
+			ImpactType="Foliage"
+			IsCapsuleCDT="true"
+			LinearDamping="0.5"
+			Mass="0.5"
+		/>
+		<BirchTrunk2
+			ImpactType="Foliage"
+			LinearDamping="0.5"
+			Mass="200.0"
+			NoSoftContacts="true"
+		/>
+		<BirchTrunk1
+			ImpactType="Foliage"
+			LinearDamping="0.5"
+			Mass="600.0"
+			NoSoftContacts="true"
+		/>
+		<BirchRoot
+			ImpactType="Foliage"
+			LinearDamping="0.5"
+			Mass="600.0"
+			NoSoftContacts="true"
+		/>
+		<BirchBranch
+			AllowedPenetrationDepth="2.0"
+			DebrisType="Foliage"
+			ImpactType="Foliage"
+			IsCapsuleCDT="true"
+			LinearDamping="0.5"
+			Mass="8.0"
+		/>
+	</Body>
+</_templates>

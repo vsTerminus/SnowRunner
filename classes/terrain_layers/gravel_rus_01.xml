@@ -1,0 +1,8 @@
+<MaterialType 
+	Texture="tiles/gravel_rus_01__d_a.tga" 
+	Normal="tiles/gravel_rus_01_relief__d_a.tga"
+	NoGrass="true"
+	Sound="surfaces/surf_gravel_rnd"
+	EndEffectSound="surfaces/hit/hit_gravel_rnd"
+	SkidSound="surfaces/skidding/skidding_gravel_loop"
+/>

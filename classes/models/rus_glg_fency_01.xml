@@ -1,0 +1,73 @@
+<_templates Include="models" />
+<ModelBrand
+	Instanced="true"
+	NightLightingShadowsAllowCap="True"
+	Fence="True"
+>
+	<PhysicsModel>
+		<Body _template="ModelStaticRoot" ModelFrame="BoneRoot">
+			<Constraint _template="ModelStaticRoot" />
+			<Body _template="Null" ModelFrame="BoneNull2">
+				<Constraint _template="Null" />
+			</Body>
+			<Body _template="Null" ModelFrame="BoneNull">
+				<Constraint _template="Null" />
+			</Body>
+			<Body _template="StakeHard" ModelFrame="BoneStake1">
+				<Constraint _template="StakeHard" />
+			</Body>
+			<Body _template="StakeHard" ModelFrame="BoneStake2">
+				<Constraint _template="StakeHard" />
+				<Body _template="FenceStake" ModelFrame="BoneR2">
+					<Constraint _template="FenceStake" />
+				</Body>
+				<Body _template="FrameHard" ModelFrame="BoneFrame">
+					<Constraint _template="FrameHard" />
+					<Body _template="FencePart" ModelFrame="BonePart1">
+						<Constraint _template="FencePart" />
+					</Body>
+					<Body _template="FencePart" ModelFrame="BonePart2">
+						<Constraint _template="FencePart" />
+					</Body>
+					<Body _template="FencePart" ModelFrame="BonePart3">
+						<Constraint _template="FencePart" />
+					</Body>
+					<Body _template="FencePart" ModelFrame="BonePart4">
+						<Constraint _template="FencePart" />
+					</Body>
+					<Body _template="FencePart" ModelFrame="BonePart5">
+						<Constraint _template="FencePart" />
+					</Body>
+				</Body>
+				<Body _template="FrameHard" ModelFrame="BoneFrame2">
+					<Constraint _template="FrameHard" />
+					<Body _template="FencePart" ModelFrame="BonePart6">
+						<Constraint _template="FencePart" />
+					</Body>
+					<Body _template="FencePart" ModelFrame="BonePart7">
+						<Constraint _template="FencePart" />
+					</Body>
+					<Body _template="FencePart" ModelFrame="BonePart8">
+						<Constraint _template="FencePart" />
+					</Body>
+					<Body _template="FencePart" ModelFrame="BonePart9">
+						<Constraint _template="FencePart" />
+					</Body>
+					<Body _template="FencePart" ModelFrame="BonePart10">
+						<Constraint _template="FencePart" />
+					</Body>
+					<Body _template="FencePart" ModelFrame="BonePart11">
+						<Constraint _template="FencePart" />
+					</Body>
+				</Body>
+			</Body>
+			<Body _template="StakeHard" ModelFrame="BoneStake3">
+				<Constraint _template="StakeHard" />
+				<Body _template="FenceStake" ModelFrame="BoneR3">
+					<Constraint _template="FenceStake" />
+				</Body>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<Occlusion Size="(12.0, 6.0)" Texture="occlusion_rus_glg_fency_01.tga" />
+</ModelBrand>

@@ -1,0 +1,13 @@
+<ModelBrand 
+	NightLightingShadowsAllowCap="true"
+	ClipCamera="false"
+>
+	<PhysicsModel>
+		<Body Collisions="Dynamic" />
+	</PhysicsModel>
+	<Occlusion Size="(4.0; 8.0)" Texture="occlusion_banner_motel_01.tga" />
+	<GameData>
+		<WinchSocket Pos="(0.6; 0.6; 0)" />
+		<WinchSocket Pos="(-0.6; 0.6; 0)" />
+	</GameData>
+</ModelBrand>

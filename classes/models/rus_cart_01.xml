@@ -1,0 +1,15 @@
+<_templates Include="models" />
+<ModelBrand
+	NightLightingShadowsAllowCap="true"
+	Instanced="true"
+>
+	<PhysicsModel>
+		<Body _template="MediumWeight" ModelFrame="BoneRoot">
+			<Constraint _template="MediumWeight" />
+		</Body>
+	</PhysicsModel>
+	<Occlusion
+		Size="(6.0; 14.0)" 
+		Texture="occlusion_rus_cart_01.tga"
+	/>
+</ModelBrand>

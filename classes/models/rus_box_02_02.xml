@@ -1,0 +1,10 @@
+<ModelBrand
+	Instanced="true"
+	InstancedAsModel="true"
+	NightLightingShadowsAllowCap="true"
+>
+	<PhysicsModel>
+		<Body Collisions="Dynamic" />
+	</PhysicsModel>
+	<Occlusion Size="(5.0; 4.0)" Texture="occlusion_rus_box_02_02.tga" />
+</ModelBrand>

@@ -1,0 +1,13 @@
+<ModelBrand NightLightingShadowsAllowCap="true">
+	<PhysicsModel>
+		<Body Collisions="Dynamic" />
+	</PhysicsModel>
+	<Occlusion Size="(8.0; 8.0)" Texture="occlusion_rus_watchtower.tga" />
+	<GameData>
+		<WinchSocket Pos="(1.6; 0.8; 1.6)" />
+		<WinchSocket Pos="(1.6; 0.8; -1.6)" />
+		<WinchSocket Pos="(-1.45; 0.8; -1.45)" />
+		<WinchSocket Pos="(-1.6; 0.8; 1.6)" />
+	</GameData>
+	<Landmark Mesh="landmarks/rus_watchtower_lmk" />
+</ModelBrand>

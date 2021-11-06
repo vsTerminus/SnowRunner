@@ -1,0 +1,60 @@
+<_templates Include="models" />
+<ModelBrand
+	Instanced="true"
+	NightLightingShadowsAllowCap="True"
+>
+	<PhysicsModel>
+		<Body Collisions="None" Mass="0" ModelFrame="BoneRoot">
+			<Body _template="Fence" ModelFrame="BoneBaseMent">
+				<Constraint _template="Fence" />
+				<Body _template="Fence" ModelFrame="BoneWall1">
+					<Constraint _template="Fence" />
+					<Body _template="Fence" ModelFrame="BoneDoor">
+						<Constraint _template="Fence" />
+					</Body>
+					<Body _template="Fence" ModelFrame="BoneRoof">
+						<Constraint _template="Fence" />
+					</Body>
+					<Body _template="Fence" ModelFrame="BonePart8">
+						<Constraint _template="Fence" />
+					</Body>
+					<Body _template="Fence" ModelFrame="BonePart9">
+						<Constraint _template="Fence" />
+					</Body>
+					<Body _template="Fence" ModelFrame="BonePart10">
+						<Constraint _template="Fence" />
+					</Body>
+					<Body _template="Fence" ModelFrame="BonePart11">
+						<Constraint _template="Fence" />
+					</Body>
+				</Body>
+				<Body _template="Fence" ModelFrame="BoneWall2">
+					<Constraint _template="Fence" />
+					<Body _template="Fence" ModelFrame="BonePart5">
+						<Constraint _template="Fence" />
+					</Body>
+					<Body _template="Fence" ModelFrame="BonePart6">
+						<Constraint _template="Fence" />
+					</Body>
+					<Body _template="Fence" ModelFrame="BonePart7">
+						<Constraint _template="Fence" />
+					</Body>
+				</Body>
+				<Body _template="Fence" ModelFrame="BoneWall3">
+					<Constraint _template="Fence" />
+					<Body _template="Fence" ModelFrame="BonePart3">
+						<Constraint _template="Fence" />
+					</Body>
+					<Body _template="Fence" ModelFrame="BonePart4">
+						<Constraint _template="Fence" />
+					</Body>
+					<Body _template="Fence" ModelFrame="BonePart54">
+						<Constraint _template="Fence" />
+					</Body>
+				</Body>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<Occlusion Size="(5.0, 7.0)" Texture="occlusion_rus_hut_wc_01.tga" />
+	<Landmark Mesh="landmarks/rus_hut_wc_01_02_lmk" />
+</ModelBrand>

@@ -1,0 +1,27 @@
+<CombineParticles AirResistance="3.0" Gravity="(0; -6; 0)">
+	<Texture
+		Diffuse="sfx/particles/dirt_seq_small__d_a.tga"
+		NumFramesX="4"
+		NumFramesY="2"
+		RandomFrameOffset="4"
+	/>
+	<Size Constant="0.026" />
+	<Scale Random="0.8" Value="1.2" />
+	<RotationSpeed Random="200" Value="1400" />
+	<Rotation Random="360" />
+	<LifeTime Value="3.0" />
+	<Color Value="g(250; 250; 250; 255) x 0.6">
+		<Key Alpha="190" At="0.0" />
+		<Key Alpha="190" At="0.3" />
+		<Key Alpha="190" At="0.8" />
+		<Key Alpha="0" At="1.0" />
+	</Color>
+	<Collisions
+		DetectFullOcclusionBox="true"
+		DetectWheels="true"
+		Enable="true"
+		Friction="0.6"
+		Radius="0.005"
+		Restitution="0.2"
+	/>
+</CombineParticles>

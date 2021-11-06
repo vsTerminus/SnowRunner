@@ -1,0 +1,10 @@
+<ModelBrand
+	Instanced="true"
+	InstancedAsModel="true"
+	NightLightingShadowsAllowCap="true"
+>
+	<PhysicsModel>
+		<Body Collisions="Dynamic" />
+	</PhysicsModel>
+	<MeshLod Distances="30,50" HidingDistance="200" MeshName="garbage_heap" />
+</ModelBrand>

@@ -1,0 +1,9 @@
+<CargoType>
+	<UiDesc
+		UiName="UI_CARGO_PIPE_LARGE_NAME"
+		UiDesc="UI_CARGO_PIPE_LARGE_DESC"
+		UiIcon20x20="cargoTypePipeBig20"
+		UiIcon40x40="cargoTypePipeBig40"
+		UiIcon100x100="cargoTypePipeLarge"
+	/>
+</CargoType>

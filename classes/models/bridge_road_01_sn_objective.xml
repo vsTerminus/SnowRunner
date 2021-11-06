@@ -1,0 +1,248 @@
+<ModelBrand
+	NightLightingShadowsAllowCap="true"
+	DynamicModel="true"
+	CastDayLightmapShadow="false"
+	CastNightLightmapShadow="false"
+	AcceptZoneBorderDecals="true"
+	ClipCameraBridge="true"
+>
+	<Subset IsDefault="true" Name="build_stage_0">
+		<Mesh Name="base" />
+		<CdtMesh Name="base" />
+	</Subset>
+	<Subset Name="build_complete">
+		<Mesh Name="base_not_blocker" />
+		<Mesh Name="stage_1" />
+		<CdtMesh Name="base_not_blocker" />
+		<CdtMesh Name="stage_1" />
+		<AnimTrack Name="stage_1_anim" />
+		<AnimSubset Name="build_animation_0" />
+	</Subset>
+	<Subset Name="build_complete">
+		<Mesh Name="base" />
+		<CdtMesh Name="base" />
+		<AnimTrack Name="stage_2_anim" />
+		<AnimSubset Name="build_animation_1" />
+	</Subset>
+	<PhysicsModel>
+		<Body Collisions="Dynamic" ModelFrame="base">
+			<Body Collisions="Dynamic" ModelFrame="stage_1" />
+			<Body Collisions="Dynamic" ModelFrame="base_not_blocker" />
+		</Body>
+	</PhysicsModel>
+	<AnimSubset Name="build_animation_0">
+		<Mesh Name="base" />
+		<Mesh Name="animated_mesh" />
+		<CdtMesh Name="base" />
+	</AnimSubset>
+	<AnimSubset Name="build_animation_1">
+		<Mesh Name="base_not_blocker" />
+		<Mesh Name="animated_mesh" />
+		<CdtMesh Name="base_not_blocker" />
+	</AnimSubset>
+	<TrackEvents TrackName="stage_1_anim">
+		<AnimEvent Key="7">
+			<Sound Name="actors/actor_construction/actor_construct_wooden_bridge_sn" Range="200" Volume="1" />
+		</AnimEvent>
+		<AnimEvent Key="26">
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(17.403; -0.057; -0.473)" Name="bridge02_smoke_02" />
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(-17.371; -0.056; -0.139)" Name="bridge02_smoke_02" />
+		</AnimEvent>
+		<AnimEvent Key="49">
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(-13.892; 0.008; -0.138)" Name="bridge02_smoke_02" />
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(15.075; 0.043; -0.477)" Name="bridge02_smoke_02" />
+		</AnimEvent>
+		<AnimEvent Key="83">
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(10.354; 0.028; 0.055)" Name="bridge02_smoke_02" />
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(-9.375; 0.041; 0.08)" Name="bridge02_smoke_02" />
+		</AnimEvent>
+		<AnimEvent Key="109">
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(6.928; 0.01; -0.202)" Name="bridge02_smoke_02" />
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(-5.176; -0.004; 0.009)" Name="bridge02_smoke_02" />
+		</AnimEvent>
+		<AnimEvent Key="143">
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(2.172; -0.001; 0.009)" Name="bridge02_smoke_02" />
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(-1.147; -0.013; 0.117)" Name="bridge02_smoke_02" />
+		</AnimEvent>
+		<AnimEvent Key="148">
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(-13.278; 5.578; -4.415)" Name="bridge_sparks_01" />
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(13.334; 5.818; 4.096)" Name="bridge_sparks_01" />
+		</AnimEvent>
+		<AnimEvent Key="153">
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(-8.614; 7.163; -4.474)" Name="bridge_sparks_01" />
+		</AnimEvent>
+		<AnimEvent Key="158">
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(-13.193; 5.599; 4.001)" Name="bridge_sparks_01" />
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(8.400; 7.166; 4.21)" Name="bridge_sparks_01" />
+		</AnimEvent>
+		<AnimEvent Key="163">
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(-8.806; 7.014; 4.246)" Name="bridge_sparks_01" />
+		</AnimEvent>
+		<AnimEvent Key="174">
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(4.44; 7.672; 4.474)" Name="bridge_sparks_01" />
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(8.83; 3.392; 4.474)" Name="bridge_sparks_01" />
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(13.062; 5.862; -4.476)" Name="bridge_sparks_01" />
+		</AnimEvent>
+		<AnimEvent Key="179">
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(-4.074; 8.024; 3.887)" Name="bridge_sparks_01" />
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(-8.491; 3.245; 4.001)" Name="bridge_sparks_01" />
+		</AnimEvent>
+		<AnimEvent Key="187">
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(4.443; 7.754; -4.001)" Name="bridge_sparks_01" />
+		</AnimEvent>
+		<AnimEvent Key="189">
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(4.089; 3.163; -4.513)" Name="bridge_sparks_01" />
+		</AnimEvent>
+		<AnimEvent Key="192">
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(-4.29; 3.292; 4.213)" Name="bridge_sparks_01" />
+		</AnimEvent>
+		<AnimEvent Key="200">
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(0.181; 8.337; -4.003)" Name="bridge_sparks_01" />
+		</AnimEvent>
+		<AnimEvent Key="210">
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(0.18; 8.315; 4.222)" Name="bridge_sparks_01" />
+		</AnimEvent>
+		<AnimEvent Key="215">
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(-4.356; 3.4; -4.115)" Name="bridge_sparks_01" />
+		</AnimEvent>
+		<AnimEvent Key="226">
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(8.406; 3.62; -4.001)" Name="bridge_sparks_01" />
+		</AnimEvent>
+		<AnimEvent Key="260">
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(1.008; -0.016; -0.243)" Name="bridge_02_smoke_full" />
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(13.272; 5.406; 4.474)" Name="bridge_sparks_01" />
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(4.35; 3.325; 4.474)" Name="bridge_sparks_01" />
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(0.097; 7.797; 4.476)" Name="bridge_sparks_01" />
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(-3.931; 3.275; 4.476)" Name="bridge_sparks_01" />
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(-13.045; 5.377; 4.476)" Name="bridge_sparks_01" />
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(13.272; 5.406; -4.474)" Name="bridge_sparks_01" />
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(4.35; 3.325; -4.474)" Name="bridge_sparks_01" />
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(0.097; 7.797; -4.476)" Name="bridge_sparks_01" />
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(-3.931; 3.275; -4.476)" Name="bridge_sparks_01" />
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(-13.045; 5.377; -4.476)" Name="bridge_sparks_01" />
+		</AnimEvent>
+		<AnimEvent Key="161">
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(7.169; -0.033; -2.208)" Name="bridge_02_snow_smoke" />
+		</AnimEvent>
+		<AnimEvent Key="174">
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(14.929; 0.051; 0.234)" Name="bridge_02_snow_smoke" />
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(-2.515; -0.013; 3.159)" Name="bridge_02_snow_smoke" />			
+		</AnimEvent>
+		<AnimEvent Key="183">
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(16.363; -0.015; -2.208)" Name="bridge_02_snow_smoke" />
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(2.626; -0.005; 3.183)" Name="bridge_02_snow_smoke" />
+		</AnimEvent>
+		<AnimEvent Key="202">
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(-1.97; -0.026; -0.885)" Name="bridge_02_snow_smoke" />
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(17.098; -0.054; -3.419)" Name="bridge_02_snow_smoke" />
+		</AnimEvent>
+		<AnimEvent Key="213">
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(-8.509; -0.041; 1.925)" Name="bridge_02_snow_smoke" />
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(-10.446; -0.039; -1.668)" Name="bridge_02_snow_smoke" />
+		</AnimEvent>
+		<AnimEvent Key="218">
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(-13.891; -0.033; -2.501)" Name="bridge_02_snow_smoke" />
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(-15.596; -0.024; 2.387)" Name="bridge_02_snow_smoke" />
+		</AnimEvent>
+		<AnimEvent Key="226">
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(-12.834; -0.05; -3.561)" Name="bridge_02_snow_smoke" />
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(-17.167; -0.055; 3.559)" Name="bridge_02_snow_smoke" />
+		</AnimEvent>
+	</TrackEvents>
+	<TrackEvents TrackName="stage_2_anim">
+		<AnimEvent Key="4">
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(-0.315; 8.323; -4.11)" Name="bridge_sparks_02" />
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(0.225; 8.071; 4.134)" Name="bridge_sparks_02" />
+		</AnimEvent>
+		<AnimEvent Key="16">
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(-4.346; 7.871; -4.001)" Name="bridge_sparks_02" />
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(4.177; 7.766; 4.474)" Name="bridge_sparks_02" />
+		</AnimEvent>
+		<AnimEvent Key="24">
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(-4.346; 7.871; -4.001)" Name="bridge_sparks_02" />
+		</AnimEvent>
+		<AnimEvent Key="36">
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(-4.318; 8.041; 4.266)" Name="bridge_sparks_02" />
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(4.192; 3.636; 4.474)" Name="bridge_sparks_02" />
+		</AnimEvent>
+		<AnimEvent Key="42">
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(8.614; 7.419; 4.457)" Name="bridge_sparks_02" />
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(-8.597; 7.343; -3.97)" Name="bridge_sparks_02" />
+		</AnimEvent>
+		<AnimEvent Key="47">
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(12.779; 5.273; -4.688)" Name="bridge_sparks_02" />
+		</AnimEvent>
+		<AnimEvent Key="52">
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(-12.973; 5.662; 4.476)" Name="bridge_sparks_02" />
+		</AnimEvent>
+		<AnimEvent Key="57">
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(-3.939; 3.812; 4.599)" Name="bridge_sparks_02" />
+		</AnimEvent>
+		<AnimEvent Key="62">
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(-8.43; 3.297; 4.476)" Name="bridge_sparks_02" />
+		</AnimEvent>
+		<AnimEvent Key="74">
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(8.636; 3.322; 4.496)" Name="bridge_sparks_02" />
+		</AnimEvent>
+		<AnimEvent Key="76">
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(8.236; 3.317; -4.492)" Name="bridge_sparks_02" />
+		</AnimEvent>
+		<AnimEvent Key="79">
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(-13.109; 5.675; -4.508)" Name="bridge_sparks_02" />
+		</AnimEvent>
+		<AnimEvent Key="86">
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(13.086; 5.496; 3.943)" Name="bridge_sparks_02" />
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(13.274; 5.699; -4.476)" Name="bridge_sparks_02" />
+		</AnimEvent>
+		<AnimEvent Key="55">
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(17.18; -0.052; -3.037)" Name="bridge_02_snow_smoke" />
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(0.189; -0.087; 2.242)" Name="bridge_02_snow_smoke" />
+		</AnimEvent>
+		<AnimEvent Key="57">
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(10.649; -0.042; 1.778)" Name="bridge_02_snow_smoke" />
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(4.444; -0.043; -2.113)" Name="bridge_02_snow_smoke" />
+		</AnimEvent>
+		<AnimEvent Key="60">
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(-16.344; -0.048; -1.542)" Name="bridge_02_snow_smoke" />
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(10.529; -0.024; -3.176)" Name="bridge_02_snow_smoke" />
+		</AnimEvent>
+		<AnimEvent Key="62">
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(8.376; 0.001; 0.834)" Name="bridge_02_snow_smoke" />
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(-11.932; 0; 0.095)" Name="bridge_02_snow_smoke" />
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(-7.586; -0.043; 2.528)" Name="bridge_02_snow_smoke" />
+		</AnimEvent>
+		<AnimEvent Key="67">
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(-10.154; 0.034; 0.653)" Name="bridge_02_snow_smoke" />
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(-2.149; -0.016; 0.741)" Name="bridge_02_snow_smoke" />
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(14.222; 0.015; -0.264)" Name="bridge_02_snow_smoke" />
+		</AnimEvent>
+		<AnimEvent Key="86">
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(-13.109; 5.675; -4.508)" Name="bridge02_smoke_01" />
+		</AnimEvent>
+		<AnimEvent Key="106">
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(-1.837; 1.732; 0.48)" Name="bridge02_smoke_01" />
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(3.22; 1.299; 0.164)" Name="bridge02_smoke_01" />
+		</AnimEvent>
+		<AnimEvent Key="115">
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(-4.164; 1.989; -0.151)" Name="bridge02_smoke_01" />
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(5.384; 0.982; -0.419)" Name="bridge02_smoke_01" />
+		</AnimEvent>
+		<AnimEvent Key="134">
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(-5.942; 1.59; -0.021)" Name="bridge02_smoke_01" />
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(6.357; 0.769; 0.437)" Name="bridge02_smoke_01" />
+		</AnimEvent>
+		<AnimEvent Key="144">
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(9.598; 0.739; 0.219)" Name="bridge02_smoke_01" />
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(-7.76; 1.778; 0.349)" Name="bridge02_smoke_01" />
+		</AnimEvent>
+		<AnimEvent Key="168">
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(-11.128; 0.89; 0.204)" Name="bridge02_smoke_01" />
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(12.942; 1.278; 0.112)" Name="bridge02_smoke_01" />
+		</AnimEvent>
+		<AnimEvent Key="196">
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(-15.656; 1.637; 0.309)" Name="bridge02_smoke_01" />
+			<SFX Dir="(0.0; 1.0; 0.0)" Pos="(17.1; 0.838; 0.136)" Name="bridge02_smoke_01" />
+		</AnimEvent>
+	</TrackEvents>
+	<Landmark Mesh="landmarks/bridge_road_01_sn_objective_lmk"/>
+</ModelBrand>

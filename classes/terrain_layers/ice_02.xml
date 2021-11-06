@@ -1,0 +1,12 @@
+<MaterialType 
+	Texture="tiles/ice_02__d_a.tga" 
+	Normal="tiles/ice_02_relief__d_a.tga"
+	NoGrass="true"
+	IsExtrudable="true"
+	IsWetnessAsIce="true"
+	WheelTracks="0"
+	Sound="surfaces/surf_ice_rnd"
+	SkidSound="surfaces/skidding/skidding_ice_loop"
+	IsSnowParticles="true"
+	IsSoil="false"
+/>

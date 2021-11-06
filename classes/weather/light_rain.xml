@@ -1,0 +1,26 @@
+<WeatherParticles
+	ColorMult="g(236; 239; 250; 120) x 2.5"
+	DrawDistance="32"
+	FallSpeed="5"
+	LifeTime="2"
+	TurbulenceIntensity="0.0"
+	TurbulenceMagnitude="0.0"
+	Wind="(0.5; 0; -0.5)"
+	Sound="amb/amb_rain/amb_outcar_rain_light_loop"
+	InCockpitSound="amb/amb_rain/amb_incar_rain_light_loop"
+>
+	<Flying
+		AspectRatio="0.08"
+		AvgSize="0.18"
+		Diffuse="sfx/rain__d_a.tga"
+		IsAlignToVelocty="true"
+		NumFramesX="4"
+	/>
+	<Collided
+		AgeIncrease="12"
+		AvgSizeEnd="0.05"
+		AvgSizeStart="0.01"
+		Diffuse="sfx/rain_splash__d_a.tga"
+		NumFramesX="4"
+	/>
+</WeatherParticles>

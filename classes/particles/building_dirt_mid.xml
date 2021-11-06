@@ -1,0 +1,20 @@
+<CombineParticles
+	AirResistance="8.5"
+	AspectRatio="0.8"
+	Gravity="(0; -1; 0)"
+	Orientation="TrackingBillboard"
+	SortingPriority="3"
+	ZOffset="-0.4"
+>
+	<Texture
+		Diffuse="sfx/substance/water_splash__d_a.tga"
+		NumFramesX="4"
+		NumFramesY="3"
+		RandomFrameOffset="12"
+	/>
+	<Size Function="(0.2; 0.7; 1.8)" Median="0.4" />
+	<Scale Random="0.2" Value="1.8" />
+	<LifeTime Value="0.7" Random="0.3" />
+	<Color Value="g(103; 97; 86;  245) x 0.8" />
+	<AlphaClip Function="(0; 0.5; 1)" Median="0.6" />
+</CombineParticles>

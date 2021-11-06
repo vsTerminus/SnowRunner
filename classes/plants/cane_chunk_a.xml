@@ -1,0 +1,34 @@
+<_templates Include="plants">
+	<Body>
+		<Chunk
+			AllowedPenetrationDepth="0.5"
+			AngularDamping="4.0"
+			IsCapsuleCDT="true"
+			LinearDamping="2.0"
+			Mass="1"
+			RollingFrictionMultiplier="0.05"
+		/>
+	</Body>
+</_templates>
+<PlantBrand
+	AttachToGround="false"
+	DisableShadows="true"
+	DistSkipPercentage="1.0"
+>
+	<PhysicsModel>
+		<Body _template="Chunk" ModelFrame="BoneRoot_cdt">
+			<Constraint BreakOffThreshold="2" Type="Fixed" />
+			<Body _template="Chunk" ModelFrame="Bone1_cdt">
+				<Constraint
+					Cone="90"
+					TwistAxisLocal="(0;1;0)"
+					TwistMin="0"
+					TwistMax="0"
+					Type="Ragdoll"
+				>
+					<PlaneConeMotor Damping="10" Spring="10" Type="Spring" />
+				</Constraint>
+			</Body>
+		</Body>
+	</PhysicsModel>
+</PlantBrand>

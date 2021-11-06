@@ -1,0 +1,19 @@
+<ModelBrand 
+	NightLightingShadowsAllowCap="true" 
+	DynamicModel="true" 
+	AcceptZoneBorderDecals="true"
+>
+	<Subset IsDefault="true" Name="stage_visible">
+		<Mesh Name="rock" />
+		<CdtMesh Name="rock" />
+	</Subset>
+	<Subset Name="stage_hidden">
+		<OnSubsetActivateEvent>
+			<SFX Name="stone_smoke_01" Dir="(0; 1; 0)" Pos="(0.259; 0.132; -0.83)"/>
+		</OnSubsetActivateEvent>
+	</Subset>
+	<PhysicsModel>
+		<Body Collisions="Dynamic" ModelFrame="rock" />
+	</PhysicsModel>
+	<Landmark Mesh="landmarks/rock_rus_ter_01_objective_lmk"/>
+</ModelBrand>

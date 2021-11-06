@@ -1,0 +1,22 @@
+<ModelBrand NightLightingShadowsAllowCap="true" DynamicModel="true">
+	<PhysicsModel>
+		<Body Collisions="Dynamic" ModelFrame="base">
+			<Body Collisions="Dynamic" ModelFrame="pole_closed_cdt"/>
+			<Body Collisions="Dynamic" ModelFrame="pole_opened_cdt"/>
+		</Body>
+	</PhysicsModel>
+	
+	<Subset Name="stage_closed" IsDefault="true">
+		<CdtMesh Name="pole_closed_cdt" />
+		<AnimSubset Name="animation"/>
+		<AnimTrack Name="close"/>
+	</Subset>
+	<Subset Name="stage_opened">
+		<CdtMesh Name="pole_opened_cdt" />
+		<AnimSubset Name="animation"/>
+		<AnimTrack Name="open"/>
+	</Subset>
+	
+	<AnimSubset Name="animation">
+	</AnimSubset>
+</ModelBrand>

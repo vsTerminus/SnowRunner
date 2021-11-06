@@ -1,0 +1,24 @@
+<_templates Include="environment" />
+<PlantBrand
+	_template="SmallTree"
+	CheckNoGrass="false"
+	LocalYOcclusionOffset="0.1"
+	PlantingGroups="Bush,SmallTree"
+	PlantingMinSpacing="0.5"
+>
+	<PhysicsModel>
+		<Body _template="SmallTreeRoot" DebrisType="FoliageNeedles" ModelFrame="BoneRoot">
+			<Constraint _template="SmallTreeRoot" />
+			<Body _template="TrunkHead" ModelFrame="BoneTrunk">
+				<Constraint _template="TrunkHead" />
+			</Body>
+			<Body _template="BranchWithLeaves" DebrisType="FoliageNeedles" ModelFrame="BoneBranch1">
+				<Constraint _template="BranchWithLeaves" />
+			</Body>
+			<Body _template="BranchWithLeaves" ModelFrame="BoneBranch2">
+				<Constraint _template="BranchWithLeaves" />
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<Occlusion Intensity="0.6" Size="(6.0; 6.0)" />
+</PlantBrand>

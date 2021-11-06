@@ -1,0 +1,14 @@
+<_parent File="frame_addon_tank" />
+<TruckAddon>
+	<!--	<TruckData>
+		<LimitedFluid Center="(-0.014; 1.289; 0)" />
+	</TruckData>-->
+	<PhysicsModel Mesh="trucks/addons/dan_96320_frame_addon_tank" />
+	<GameData
+		Price="5700"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<InstallSocket Type="FrameAddonTankDan96320" />
+	</GameData>
+</TruckAddon>

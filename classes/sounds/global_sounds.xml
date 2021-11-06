@@ -1,0 +1,18 @@
+<GlobalSounds>
+	<StoredSounds>
+		<FuelTankFluid Sound="trucks/common/truck_fuel_tank_fluid" />
+		<DriverClothSteering Sound="trucks/common/truck_driver_cloth_steering_loop" />
+		<BirdsTakeoff Sound="actors/actor_birds_takeoff" />
+		<GameError Sound="trucks/common/truck_wrong_action" />
+	</StoredSounds>
+	<OneShotSounds>
+		<DriverCloth Sound="trucks/common/truck_driver_cloth_move" />
+		<AddonAdd Sound="trucks/common/truck_addon_add" />
+		<AddonRemove Sound="trucks/common/truck_addon_remove" />
+		<TrailerDetach Sound="trucks/common/truck_trailer_remove" />
+		<TrailerAttach Sound="trucks/common/truck_trailer_add" />
+		<CargoPack Sound="cargo/cargo_common_pack" />
+		<CargoUnpack Sound="cargo/cargo_common_unpack" />
+		<CargoUnload Sound="cargo/cargo_common_unload" />
+	</OneShotSounds>
+</GlobalSounds>

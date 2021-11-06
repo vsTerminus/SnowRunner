@@ -1,0 +1,17 @@
+<MaterialType 
+	Texture="tiles/stone_pbr_test__d_a.tga" 
+	Normal="tiles/stone_pbr_test_relief__d_a.tga"
+	NoGrass="true"
+	IsExtrudable="false"
+	SnowUpFlatten="0.75"
+	SnowUpAngleRange="30.0"
+	SnowUpIntensity="30.0"
+	SnowUpNoiseIntensity="0.7"
+	SnowUpNoiseScale="0.3"
+	SnowUpMinAngleFactor="0.2"
+	SnowUpMaxAngleFactor="0.5"
+	WheelTracks="0"
+	Sound="surfaces/surf_rock_rnd"
+	SkidSound="surfaces/skidding/skidding_snow_loop"
+	IsSnowParticles="true"
+/>

@@ -1,0 +1,18 @@
+<_templates Include="environment" />
+<PlantBrand _template="Bush" PlantingMinSpacing="1.25">
+	<PhysicsModel>
+		<Body _template="BushRoot" ModelFrame="BoneRoot">
+			<Constraint _template="BushRoot" />
+			<Body _template="BushBranch" ModelFrame="BoneTrunk">
+				<Constraint _template="BushBranch" />
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<Occlusion Intensity="0.4" Size="(5.0; 5.0)" />
+	<ChunksBreak
+		_template="Bush"
+		Brands="chunk_bush_e"
+		Offsets="(-0.08; 0.02; 0), (0.08; 0.02; 0), (0.08; 0.02; 0.02), (0.01; 0.02; 0.02), (0.0; 0.02; 0.01)"
+		Threshold="600"
+	/>
+</PlantBrand>

@@ -1,0 +1,49 @@
+<_templates>
+	<Constraint>
+		<Fence 
+BreakOffThreshold="50" 
+Type="Fixed" />
+	</Constraint>
+	<Body>
+		<Fence Mass="20" Collisions="Dynamic" NoSoftContacts="true" />
+	</Body>
+</_templates>
+<ModelBrand
+	NightLightingShadowsAllowCap="true"
+	ClipCamera="false"
+	Instanced="true"
+	Fence="true"
+>
+	<PhysicsModel>
+		<Body Collisions="None" Mass="0" ModelFrame="BoneRoot_cdt">
+			<Body _template="Fence" ModelFrame="Bone1_cdt">
+				<Constraint _template="Fence" />
+				<Body _template="Fence" ModelFrame="Bone1_1_cdt">
+					<Constraint _template="Fence" />
+					<Body _template="Fence" ModelFrame="Bone1_1_1_cdt">
+						<Constraint _template="Fence" />
+					</Body>
+				</Body>
+			</Body>
+			<Body _template="Fence" ModelFrame="Bone2_cdt">
+				<Constraint _template="Fence" />
+				<Body _template="Fence" ModelFrame="Bone2_1_cdt">
+					<Constraint _template="Fence" />
+				</Body>
+				<Body _template="Fence" ModelFrame="Bone2_2_cdt">
+					<Constraint _template="Fence" />
+					<Body _template="Fence" ModelFrame="Bone2_2_1_cdt">
+						<Constraint _template="Fence" />
+					</Body>
+				</Body>
+			</Body>
+			<Body _template="Fence" ModelFrame="Bone3_cdt">
+				<Constraint _template="Fence" />
+				<Body _template="Fence" ModelFrame="Bone3_1_cdt">
+					<Constraint _template="Fence" />
+				</Body>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<Occlusion Size="(8.0; 8.0)" Texture="occlusion_wooden_fence_a.tga" />
+</ModelBrand>

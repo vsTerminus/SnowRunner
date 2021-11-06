@@ -1,0 +1,18 @@
+<_templates Include="environment" />
+<PlantBrand _template="Bush">
+	<PhysicsModel>
+		<Body _template="SmallTreeRoot" DebrisType="Foliage" ModelFrame="BoneRoot">
+			<Constraint _template="SmallTreeRoot" />
+			<Body _template="BushBranch" DebrisType="Foliage" ModelFrame="BoneTrunk">
+				<Constraint _template="BushBranch" />
+			</Body>
+			<Body _template="BushBranch" DebrisType="Foliage" ModelFrame="Branch">
+				<Constraint _template="BushBranch" />
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<Occlusion Intensity="0.2" Size="(10.0; 10.0)" />
+	<GameData>
+		<WinchSocket Pos="(-0.011; 0.18; -0.017)" ParentFrame="BoneRoot" />
+	</GameData>
+</PlantBrand>

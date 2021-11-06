@@ -1,0 +1,11 @@
+<ModelBrand
+	Instanced="true"
+	InstancedAsModel="true"
+	NightLightingShadowsAllowCap="true"
+>
+	<PhysicsModel>
+		<Body Collisions="Dynamic" />
+	</PhysicsModel>
+	<Occlusion Size="(2.40944132373; 3.27137841571)" Texture="occlusion_tank_01.tga" />
+	<Landmark Mesh="landmarks/tank_01_lmk" />
+</ModelBrand>

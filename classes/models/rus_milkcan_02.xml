@@ -1,0 +1,21 @@
+<_templates Include="models" />
+<ModelBrand 
+	NightLightingShadowsAllowCap="True"
+	Instanced="true"
+>
+	<PhysicsModel>
+		<Body _template="ModelStaticRoot" ModelFrame="BoneRoot">
+			<Constraint _template="ModelStaticRoot" />
+			<Body _template="Round" ModelFrame="BonePart1">
+				<Constraint _template="Round" />
+			</Body>
+			<Body _template="Round" ModelFrame="BonePart2">
+				<Constraint _template="Round" />
+			</Body>
+			<Body _template="Round" ModelFrame="BonePart3">
+				<Constraint _template="Round" />
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<Occlusion Size="(6.0, 6.0)" Texture="occlusion_rus_milkcan_02.tga" />
+</ModelBrand>

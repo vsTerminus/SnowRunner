@@ -1,0 +1,49 @@
+<_templates Include="environment" />
+<PlantBrand _template="SmallTree" PlantingMinSpacing="2.8">
+	<PhysicsModel>
+		<Body _template="MediumTreeRoot" DebrisType="FoliageNeedles" ModelFrame="BoneRoot">
+			<Constraint _template="MediumTreeRoot" />
+			<Body _template="TrunkHead" ModelFrame="BoneTrunk">
+				<Constraint _template="TrunkHead" />
+			</Body>
+			<Body _template="BranchSoft" DebrisType="FoliageNeedles" ModelFrame="BoneBranch1">
+				<Constraint _template="BranchSoft" />
+			</Body>
+			<Body _template="BranchSoft" ModelFrame="BoneBranch2">
+				<Constraint _template="BranchSoft" />
+			</Body>
+			<Body _template="BranchSoft" DebrisType="FoliageNeedles" ModelFrame="BoneBranch3">
+				<Constraint _template="BranchSoft" />
+			</Body>
+			<Body _template="BranchSoft" ModelFrame="BoneBranch4">
+				<Constraint _template="BranchSoft" />
+			</Body>
+			<Body _template="BranchSoft" DebrisType="FoliageNeedles" ModelFrame="BoneBranch5">
+				<Constraint _template="BranchSoft" />
+			</Body>
+			<Body _template="BranchSoft" ModelFrame="BoneBranch6">
+				<Constraint _template="BranchSoft" />
+			</Body>
+			<Body _template="BranchSoft" DebrisType="FoliageNeedles" ModelFrame="BoneBranch7">
+				<Constraint _template="BranchSoft" />
+			</Body>
+			<Body _template="BranchSoft" ModelFrame="BoneBranch8">
+				<Constraint _template="BranchSoft" />
+			</Body>
+			<Body _template="BranchSoft" DebrisType="FoliageNeedles" ModelFrame="BoneBranch9">
+				<Constraint _template="BranchSoft" />
+			</Body>
+			<Body _template="BranchSoft" ModelFrame="BoneBranch10">
+				<Constraint _template="BranchSoft" />
+			</Body>
+			<Body _template="BranchSoft" ModelFrame="BoneBranch11">
+				<Constraint _template="BranchSoft" />
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<Occlusion Intensity="0.6" Size="(12.0; 12.0)" />
+	<Landmark Mesh="landmarks/us_tsuga_02_lmk" />
+	<GameData>
+		<WinchSocket Pos="(0; 1; 0)" ParentFrame="BoneRoot_cdt" />
+	</GameData>
+</PlantBrand>

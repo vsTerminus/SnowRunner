@@ -1,0 +1,14 @@
+<ModelBrand ClipCamera="false" DynamicModel="true">
+	<PhysicsModel>
+		<Body
+			Collisions="Dynamic"
+			Friction="1.8"
+			Mass="2000.0"
+			NoSoftContacts="true"
+		/>
+	</PhysicsModel>
+	<GameData LoadType="CargoContainerLargeDrilling" PackSlotsNumber="4">
+		<CraneSocket Pos="(0; 2.365; 0)" />
+	</GameData>
+	<Landmark Mesh="landmarks/cargo_unit_container_large_drilling_4_lmk"/>
+</ModelBrand>

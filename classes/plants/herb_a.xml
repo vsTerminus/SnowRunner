@@ -1,0 +1,19 @@
+<_templates Include="environment" />
+<PlantBrand
+    AttachToGround="false"
+    CheckNoGrass="true"
+    DisableShadows="true"
+    LocalYOcclusionOffset="0.05"
+    PlantingGroups="Bush"
+    IsEraseSnow="true"
+>
+	<PhysicsModel>
+		<Body _template="BushRoot" Collisions="None" ModelFrame="BoneRoot">
+			<Constraint _template="BushRoot" />
+			<Body _template="BushBranch" ModelFrame="BoneTrunk">
+				<Constraint _template="BushBranch" />
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<Occlusion Size="(0.8; 0.8)" />
+</PlantBrand>

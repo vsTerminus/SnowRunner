@@ -1,0 +1,23 @@
+<CombineParticles
+	IgnoreShadowmap="true"
+	Orientation="AlignedBillboard"
+	SoftDepth="3.5"
+	SortingPriority="2"
+	AirResistance="0.5"
+>
+	<Emissive Scale="4" />
+	<Texture
+		AnimSpeed="45"
+		Diffuse="sfx/particles/part_q_expl_side_seq_d_a.tga"
+		NumFramesX="15"
+		NumFramesY="8"
+	/>
+	<Size Function="(1; 1.5; 4.5)" Median="0.5" />
+	<LifeTime Value="0.85" Random="0.45"/>
+	<Color>
+		<Key At="0.0" Value="g(243; 207; 10; 0) x 0" />
+		<Key At="0.1" Value="g(245; 181; 7) x 135" />
+		<Key At="0.3" Value="g(255; 156; 0) x 55" />
+		<Key At="1.0" Value="g(255; 0; 0; 0) x 0" />
+	</Color>
+</CombineParticles>

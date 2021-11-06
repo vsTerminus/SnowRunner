@@ -1,0 +1,7 @@
+<ModelBrand NightLightingShadowsAllowCap="true">
+	<PhysicsModel>
+		<Body Collisions="Dynamic" />
+	</PhysicsModel>
+	<Occlusion Size="(9.0; 12.0)" Texture="occlusion_oil_tank_rus_01.tga" />
+	<Landmark Mesh="landmarks/oil_tank_rus_01_lmk" />
+</ModelBrand>

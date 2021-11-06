@@ -1,0 +1,16 @@
+<ModelBrand 
+	NightLightingShadowsAllowCap="true"
+	Instanced="true"
+	InstancedAsModel="true"
+>
+	<PhysicsModel>
+		<Body Collisions="Dynamic" />
+	</PhysicsModel>
+	<GameData>
+		<WinchSocket Pos="(1.9; 1.2; 1.9)" />
+		<WinchSocket Pos="(1.9; 1.2; -1.9)" />
+		<WinchSocket Pos="(-1.9; 1.2; -1.9)" />
+		<WinchSocket Pos="(-1.9; 1.2; 1.9)" />
+	</GameData>
+	<Landmark Mesh="landmarks/rus_watchtower_01_lmk" />
+</ModelBrand>

@@ -1,0 +1,11 @@
+<ModelBrand
+	Instanced="true"
+	InstancedAsModel="true"
+	NightLightingShadowsAllowCap="true"
+>
+	<PhysicsModel>
+		<Body Collisions="Dynamic" />
+	</PhysicsModel>
+	<Occlusion Size="(24.0; 69.0)" Texture="occlusion_crane_seaport_usa_01.tga" />
+	<Landmark Mesh="landmarks/crane_seaport_usa_01_lmk" />
+</ModelBrand>

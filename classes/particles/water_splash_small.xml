@@ -1,0 +1,46 @@
+<CombineParticles
+	AirResistance="3.0"
+	AspectRatio="0.85"
+	EnableColors="true"
+	ColorRandomVariation="0.1"
+	Gravity="(0; -5; 0)"
+	Orientation="TrackingBillboard"
+	SortingPriority="1"
+	WetDecals="0.25"
+	ZOffset="-0.2"
+	SoftDepth="0.1"
+	BillboardOffset="(0.0; 0.25)"
+	OverdrawDegradation="true"
+	SmAttenMult="0.5"
+	WaterShading="true"
+>
+	<Texture
+		Diffuse="sfx/substance/water_splash__d_a.tga"
+		NormalMap="sfx/substance/water_splash__n_d.tga"
+		Distort="sfx/substance/distort2__n_d.tga"
+		DistortMult="0.15"
+		DistortScale="0.5"
+		DistortSpeed="0.754"
+		NumFramesX="4"
+		NumFramesY="3"
+		RandomFrameOffset="12"
+	/>
+	<Subparticles
+		Density="48"
+		Divergence="1.0"
+		Offset="0.25"
+		Type="water_splash"
+	>
+		<ExtraLifeTime Value="0.8" />
+	</Subparticles>
+	<Specular Enable="true" Intensity="4" Power="16" />
+	<Size Function="(0.55; 0.75; 1.15)" Median="0.5" />
+	<LifeTime Random="0.1" Value="0.6" />
+	<Color>
+		<Key At="0.0" Value="g(255; 255; 255; 0)" />
+		<Key At="0.1" Value="g(255; 255; 255; 175) x 1" />
+		<Key At="0.6" Value="g(255; 255; 255; 120) x 0.7" />
+		<Key At="1.0" Value="g(255; 255; 255; 40) x 0.45" />
+	</Color>
+	<Scale Random="0.15" Value="0.95" />
+</CombineParticles>

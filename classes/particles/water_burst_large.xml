@@ -1,0 +1,16 @@
+<_parent File="water_burst_medium" />
+<CombineParticles>
+	<Texture
+		Diffuse="sfx/substance/water_splash__d_a.tga"
+		NormalMap="sfx/substance/water_splash__n_d.tga"
+		Distort="sfx/substance/distort2__n_d.tga"
+		DistortMult="0.05"
+		DistortScale="0.1"
+		DistortSpeed="0.2"
+		NumFramesX="4"
+		NumFramesY="3"
+		RandomFrameOffset="12"
+		SmAttenMult="0.5"
+	/>
+	<Specular Enable="true" Intensity="2" Power="15" />
+</CombineParticles>

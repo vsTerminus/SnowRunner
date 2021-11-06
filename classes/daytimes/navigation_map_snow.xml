@@ -1,0 +1,58 @@
+<DayTimeState
+	ColorLUT="lut/identity__vol_uncmp.tga"
+	FogColor="g(184; 218; 243) x 0.52"
+	FogScatterColor="g(149; 173; 214) x 0.95"
+	HorizonColor="g(149; 187; 214) x 1.0"
+	SSAOColor="g(242; 242; 242; 180) x 0.02"
+	SkyBloomColor="g(200; 215; 237; 100)"
+	SkyColor="g(149; 173; 214) x 1.2"
+	SunColor="g(255; 230; 200) x 1.8"
+	SunDir="(1; -1; 0)"
+	WaterCubeMapIntensity="1.0"
+	LightPbrMult="3.0"
+	ToneMapWhite="2.2"
+	EnvMap="env/default_day__d_ggxrefl.tga"
+	CubeMapScale="1.5"
+	
+	HdrAdaptationMinLum="0.1"
+	HdrAdaptationMaxLum="800.0"
+	HdrAdaptationResetLum="0.2"
+	TonemapWhitePoint="1.8"
+	HdrAdaptationSpeed="0.1"
+	HdrExposureScale="1.8"
+	HdrExposureScaleX="1.5"
+	
+	TonemapA="0.1"
+	TonemapB="0.5"
+	TonemapC="0.1"
+	TonemapD="0.3"
+	TonemapE="0.02"
+	TonemapF="0.3"
+	
+	BloomEnabled="true"
+	BloomPoint="0.5"
+	BloomIntensity="0.5"
+	BloomGamma="1.0"
+	BloomHarmonicsTint0="(255; 255; 255)"
+	BloomHarmonicsTint1="(255; 255; 255)"
+	BloomHarmonicsTint2="(255; 255; 255)"
+	BloomHarmonicsTint3="(255; 255; 255)"
+	BloomHarmonicsTint4="(255; 255; 255)"
+		
+	RadiusMinSSAO="1.5"
+	RadiusMaxSSAO="1.5"
+	
+	ShadowMapSplitSize="50.0"
+>
+	<Sky>
+		<Flare
+			AspectRatio="2.0"
+			Color="g(186; 202; 214) x 0.08"
+			Size="32.0"
+			Texture="sfx/flare_sky__s_d.tga"
+		/>
+	</Sky>
+	<Fog Density="0.0012" StartDist="-8" />
+	<Dof NearEnd="3.0" NearRange="0.5" />
+	<Ambient NegY="g(214; 214; 214) x 1.2" MidY="g(200; 210; 216) x 2.0" PosY="g(200; 210; 216) x 2.6" />
+</DayTimeState>

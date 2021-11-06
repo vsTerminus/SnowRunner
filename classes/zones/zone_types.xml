@@ -1,0 +1,19 @@
+<EditorZones>
+	<EditorZone Type = "NoType"/>
+	<EditorZone Type = "Building Map Marker"/>
+	<EditorZone Type = "Cargo Dropoff Zone"/>
+	<EditorZone Type = "Cargo Pickup Zone"/>
+	<EditorZone Type = "Fuel Station"/>
+	<EditorZone Type = "Garage Entrance"/>
+	<EditorZone Type = "Garage Interior Slot"/>
+	<EditorZone Type = "Map Transition"/>
+	<EditorZone Type = "PvP Player Spawn"/>
+	<EditorZone Type = "PvP RepairRefuel Zone"/>
+	<EditorZone Type = "PvP Upgrade Spawn Zone"/>
+	<EditorZone Type = "PvP Upgrade Station"/>
+	<EditorZone Type = "PvP Vehicle Spawn"/>
+	<EditorZone Type = "Task Zone"/>
+	<EditorZone Type = "Trailer Garage"/>
+	<EditorZone Type = "Watchpoint"/>
+</EditorZones>
+

@@ -1,0 +1,11 @@
+<MaterialType 
+	Texture="tiles/ground_frozen_01__d_a.tga" 
+	Normal="tiles/ground_frozen_01_relief__d_a.tga"
+	GenerateDust="true"
+	GrassBrush="DebrisStonesSparse"
+	NoGrass="false"
+	IsWetnessAsIce="true"
+	Sound="surfaces/surf_snow_rnd"
+	SkidSound="surfaces/skidding/skidding_snow_loop"
+	IsSnowParticles="true"
+/>

@@ -1,0 +1,11 @@
+<MaterialType 
+	Texture="tiles/ground_pbr_test__d_a.tga" 
+	Normal="tiles/ground_pbr_test_relief__d_a.tga"
+	GenerateDust="true"
+	GrassBrush="DebrisGroundStone"
+	NoGrass="true"
+	AllowHiddenExtrudes="0.3"
+	Sound="surfaces/surf_ground_rnd"
+	SkidSound="surfaces/skidding/skidding_ground_loop"
+	MinViscosity="3.0"
+/>

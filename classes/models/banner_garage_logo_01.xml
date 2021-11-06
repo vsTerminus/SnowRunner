@@ -1,0 +1,12 @@
+<ModelBrand
+	NightLightingShadowsAllowCap="true"
+	ClipCamera="false"
+>
+	<PhysicsModel>
+		<Body Collisions="Dynamic" />
+	</PhysicsModel>
+	<GameData>
+		<WinchSocket Pos="(1.8; 0.8; 0)" />
+		<WinchSocket Pos="(-1.8; 0.8; 0)" />
+	</GameData>
+</ModelBrand>

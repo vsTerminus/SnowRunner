@@ -1,0 +1,16 @@
+<_templates Include="models" />
+<ModelBrand 
+	ClipCamera="false" 
+	DynamicModel="true"
+	Instanced="true"
+>
+	<PhysicsModel>
+		<Body _template="MediumWeight" ModelFrame="BoneRoot">
+			<Constraint _template="MediumWeight" />
+		</Body>
+	</PhysicsModel>
+	<GameData LoadAddons="load_logs_medium" LoadType="MediumLogs">
+		<LoadPoint Pos="(-2.0;0;0)" />
+		<LoadPoint Pos="(2.0;0;0)" />
+	</GameData>
+</ModelBrand>

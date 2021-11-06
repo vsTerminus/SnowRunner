@@ -1,0 +1,19 @@
+<_templates Include="models" />
+<ModelBrand
+	CastDayLightmapShadow="false"
+	CastNightLightmapShadow="false"
+	NightLightingShadowsAllowCap="false"
+	Instanced="true"
+>
+	<PhysicsModel>
+		<Body Collisions="None" Mass="0" ModelFrame="BoneRoot">
+			<Body _template="Fence" ModelFrame="BonePart1">
+				<Constraint _template="Fence" />
+				<Body _template="Fence" ModelFrame="BonePart2">
+					<Constraint _template="Fence" />
+				</Body>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<Landmark Mesh="landmarks/fence_01_lmk"/>
+</ModelBrand>

@@ -1,0 +1,9 @@
+<CargoType>
+	<UiDesc
+		UiName="UI_CARGO_CONTAINER_LARGE_DRILLING_NAME"
+		UiDesc="UI_CARGO_CONTAINER_LARGE_DRILLING_DESC"
+		UiIcon20x20="cargoTypeContainerDrilling20"
+		UiIcon40x40="cargoTypeContainerDrilling40"
+		UiIcon100x100="cargoTypeContainerDrill"
+	/>
+</CargoType>

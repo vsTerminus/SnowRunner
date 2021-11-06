@@ -1,0 +1,3 @@
+<OverlayBrand IsNotStaticSoil="true" BodyFriction="0.15" UseFarLODAtMidDistance="true">
+	<Prebuild OverlayType="GeometricConform" />
+</OverlayBrand>

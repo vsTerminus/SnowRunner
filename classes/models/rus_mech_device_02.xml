@@ -1,0 +1,9 @@
+<_templates Include="models" />
+<ModelBrand NightLightingShadowsAllowCap="True">
+	<PhysicsModel>
+		<Body _template="MediumWeight" ModelFrame="BoneRoot">
+			<Constraint _template="MediumWeight" />
+		</Body>
+	</PhysicsModel>
+	<Occlusion Size="(12.0, 7.0)" Texture="occlusion_rus_mech_device_02.tga" />
+</ModelBrand>

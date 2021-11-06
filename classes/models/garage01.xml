@@ -1,0 +1,7 @@
+<ModelBrand Instanced="true" InstancedAsModel="true">
+	<PhysicsModel>
+		<Body Collisions="Dynamic" />
+	</PhysicsModel>
+	<Occlusion Size="(55.9696207971; 52.0)" Texture="occlusion_garage01.tga" />
+	<Landmark Mesh="landmarks/garage01_lmk" />
+</ModelBrand>

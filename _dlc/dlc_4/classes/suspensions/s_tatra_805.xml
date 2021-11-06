@@ -1,0 +1,39 @@
+<_templates Include="trucks" />
+<SuspensionSetVariants>
+	<SuspensionSet
+		_template="Normal"
+		BrokenWheelDamageMultiplier="2"
+		CriticalDamageThreshold="0.5"
+		DamageCapacity="160"
+		Name="tatra_805_suspension_default"
+	>
+		<Suspension 
+			Damping="0.3"
+			BrokenSuspensionMax="0.1" 
+			Height="0.15" 
+			Strength="0.035" 
+			SuspensionMin="-0.27" 
+			WheelType="front" 
+		/>
+		<Suspension 
+			Damping="0.3"
+			BrokenSuspensionMax="0.2" 
+			Height="0.15" 
+			Strength="0.055" 
+			SuspensionMin="-0.2" 
+			WheelType="rear" 
+		/>
+		<GameData
+			Price="2700"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_SUSPENSION_DEFAULT_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_SUSPENSION_DEFAULT_NAME"
+			/>
+		</GameData>
+	</SuspensionSet>
+</SuspensionSetVariants>

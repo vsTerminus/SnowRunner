@@ -1,0 +1,4 @@
+<_parent File="water_splash_small" />
+<CombineParticles WetDecals="0.0">
+	<Subparticles _inheritRemove="true" />
+</CombineParticles>

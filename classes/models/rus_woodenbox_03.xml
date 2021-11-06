@@ -1,0 +1,74 @@
+<_templates Include="models" />
+<ModelBrand 
+	NightLightingShadowsAllowCap="True"
+	Instanced="true"
+>
+	<PhysicsModel>
+		<Body Collisions="None" Mass="0" ModelFrame="BoneRoot">
+			<Body _template="LightWeight" ModelFrame="BonePart5">
+				<Constraint _template="LightWeight" />
+			</Body>
+			<Body _template="LightWeight" ModelFrame="BonePart6">
+				<Constraint _template="LightWeight" />
+			</Body>
+			<Body _template="LightWeight" ModelFrame="BonePart7">
+				<Constraint _template="LightWeight" />
+			</Body>
+			<Body _template="LightWeight" ModelFrame="BonePart12">
+				<Constraint _template="LightWeight" />
+				<Body _template="LightWeight" ModelFrame="BonePart11">
+					<Constraint _template="LightWeight" />
+				</Body>
+			</Body>
+			<Body _template="LightWeight" ModelFrame="BonePart13">
+				<Constraint _template="LightWeight" />
+			</Body>
+			<Body _template="LightWeight" ModelFrame="BonePart19">
+				<Constraint _template="LightWeight" />
+				<Body _template="LightWeight" ModelFrame="BonePart16">
+					<Constraint _template="LightWeight" />
+				</Body>
+				<Body _template="LightWeight" ModelFrame="BonePart18">
+					<Constraint _template="LightWeight" />
+				</Body>
+			</Body>
+			<Body _template="LightWeight" ModelFrame="BonePart20">
+				<Constraint _template="LightWeight" />
+				<Body _template="LightWeight" ModelFrame="BonePart9">
+					<Constraint _template="LightWeight" />
+				</Body>
+			</Body>
+			<Body _template="LightWeight" ModelFrame="BonePart21">
+				<Constraint _template="LightWeight" />
+				<Body _template="LightWeight" ModelFrame="BonePart14">
+					<Constraint _template="LightWeight" />
+					<Body _template="LightWeight" ModelFrame="BonePart10">
+						<Constraint _template="LightWeight" />
+						<Body _template="LightWeight" ModelFrame="BonePart1">
+							<Constraint _template="LightWeight" />
+						</Body>
+					</Body>
+				</Body>
+				<Body _template="LightWeight" ModelFrame="BonePart15">
+					<Constraint _template="LightWeight" />
+				</Body>
+			</Body>
+			<Body _template="LightWeight" ModelFrame="BonePart22">
+				<Constraint _template="LightWeight" />
+				<Body _template="LightWeight" ModelFrame="BonePart17">
+					<Constraint _template="LightWeight" />
+					<Body _template="LightWeight" ModelFrame="BonePart8">
+						<Constraint _template="LightWeight" />
+						<Body _template="LightWeight" ModelFrame="BonePart2">
+							<Constraint _template="LightWeight" />
+						</Body>
+					</Body>
+				</Body>
+			</Body>
+			<Body _template="LightWeight" ModelFrame="BonePart23">
+				<Constraint _template="LightWeight" />
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<Occlusion Size="(7.0, 10.0)" Texture="occlusion_rus_woodenbox_03.tga" />
+</ModelBrand>

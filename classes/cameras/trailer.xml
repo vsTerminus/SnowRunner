@@ -1,0 +1,111 @@
+<DriveCamera
+	CenteredOffsetEye="(-7; 0.5; 0)"
+	CenteredOffsetTarget="(0; 1.5; 0)"
+	CenteredVer="0.32"
+	FrontHor="160"
+	FrontVer="0"
+	RearHor="15"
+	RearVer="0"
+>
+	<Position Center="(0;0;0)">
+		<!--0-->
+		<Near
+			Dir="(0.68; -0.45; -0.57)"
+			Eye="(-0.79; 5.9; 1.47)"
+			VerFPMin="-0.6"
+			VerFPMax="0.5"
+		/>
+		<Far
+			Dir="(0.72; -0.21; -0.66)"
+			Eye="(-5.12; 2.2; 4.5)"
+			HorFPMin="-0.3"
+			VerFPMin="-0.2"
+			HorFPMax="0.4"
+		/>
+	</Position>
+	<Position Center="(0;0;0)">
+		<!--1-->
+		<Near
+			Dir="(0; -0.44; -0.9)"
+			Eye="(0; 6.0; 3.04)"
+			VerFPMin="-0.6"
+			VerFPMax="0.4"
+		/>
+		<Far
+			Dir="(0; -0.2; -0.98)"
+			Eye="(0; 2.2; 7.35)"
+			HorFPMin="-0.8"
+			VerFPMin="-0.2"
+			HorFPMax="0.5"
+		/>
+	</Position>
+	<Position Center="(0;0;0)">
+		<!--2-->
+		<Near
+			Dir="(-0.81; -0.47; -0.34)"
+			Eye="(2.57; 5.9; 2.22)"
+			VerFPMin="-0.6"
+			VerFPMax="0.5"
+		/>
+		<Far
+			Dir="(-0.93; -0.2; -0.5)"
+			Eye="(7.5; 2.6; 4.44)"
+			HorFPMin="-0.4"
+			VerFPMin="-0.6"
+			HorFPMax="0.4"
+		/>
+	</Position>
+	<Position Center="(0;0;0)">
+		<!--3-->
+		<Near Dir="(-0.89; -0.45; 0)" Eye="(3.25; 6.65; 0)" VerFPMax="0.36" />
+		<Far Dir="(-0.95; -0.32; 0)" Eye="(7.4; 5.25; 0)" VerFPMin="-0.2" />
+	</Position>
+	<Position Center="(0;0;0)">
+		<!--4-->
+		<Near
+			Dir="(-0.81; -0.47; 0.34)"
+			Eye="(2.57; 5.9; -2.22)"
+			VerFPMin="-0.6"
+			VerFPMax="0.5"
+		/>
+		<Far
+			Dir="(-0.93; -0.2; 0.5)"
+			Eye="(7.5; 2.6; -4.44)"
+			HorFPMin="-0.4"
+			VerFPMin="-0.6"
+			HorFPMax="0.4"
+		/>
+	</Position>
+	<Position Center="(0;0;0)">
+		<!--5-->
+		<Near
+			Dir="(0; -0.44; 0.9)"
+			Eye="(0; 6.0; -3.04)"
+			VerFPMin="-0.6"
+			VerFPMax="0.4"
+		/>
+		<Far
+			Dir="(0; -0.2; 0.98)"
+			Eye="(0; 2.2; -7.35)"
+			HorFPMin="-0.5"
+			VerFPMin="-0.2"
+			HorFPMax="0.8"
+		/>
+	</Position>
+	<Position Center="(0;0;0)">
+		<!--6-->
+		<Near
+			Dir="(0.68; -0.45; 0.57)"
+			Eye="(-0.79; 5.9; -1.47)"
+			VerFPMin="-0.6"
+			VerFPMax="0.5"
+		/>
+		<Far
+			Dir="(0.72; -0.21; 0.66)"
+			Eye="(-5.12; 2.2; -4.5)"
+			HorFPMin="-0.4"
+			VerFPMin="-0.2"
+			HorFPMax="0.3"
+		/>
+	</Position>
+</DriveCamera>

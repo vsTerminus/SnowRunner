@@ -1,0 +1,9 @@
+<CargoType>
+	<UiDesc
+		UiName="UI_CARGO_METAL_PLANKS_NAME"
+		UiDesc="UI_CARGO_METAL_PLANKS_DESC"
+		UiIcon20x20="cargoTypeMetall20"
+		UiIcon40x40="cargoTypeMetall40"
+		UiIcon100x100="cargoTypeMetalPlanks"
+	/>
+</CargoType>

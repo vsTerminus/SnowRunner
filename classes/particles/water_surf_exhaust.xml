@@ -1,0 +1,35 @@
+<CombineParticles
+	AirResistance="2.0"
+	EnableColors="true"
+	Gravity="(0; -8; 0)"
+	SoftDepth="0.8"
+	ZOffset="-0.4"
+	SmAttenMult="0.5"
+>
+	<Texture
+		Diffuse="sfx/substance/fluid_small__d_a.tga"
+		NormalMap="sfx/substance/fluid_small__n_d.tga"
+		NMScale="1.2"
+		Distort="sfx/substance/distort2__n_d.tga"
+		DistortMult="2.5"
+		DistortScale="0.1"
+		DistortSpeed="2.0"
+		NumFramesX="2"
+		NumFramesY="2"
+		RandomFrameOffset="4"
+	/>
+	<Size Function="(0.40; 0.50; 0.65)" Median="0.5" />
+	<Scale Random="0.3" Value="0.7" />
+	<RotationSpeed Random="120" />
+	<Rotation Random="360" />
+	<LifeTime Value="0.6" Random="0.1" />
+	<Subparticles Density="64" Offset="0.1" Type="foam" />
+	<Color Value="g(255; 255; 255; 200) x 1.25">
+		<Key Alpha="220" At="0.0" />
+		<Key Alpha="180" At="0.4" />
+		<Key Alpha="80" At="0.8" />
+		<Key Alpha="0" At="1.00" />
+	</Color>
+	<AlphaClip Function="(0; 0.5; 1)" Median="0.8" />
+	<Specular Enable="true" Power="20" Intensity="1" />
+</CombineParticles>

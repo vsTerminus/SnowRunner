@@ -1,0 +1,39 @@
+<_templates Include="models" />
+<ModelBrand 
+	NightLightingShadowsAllowCap="True" 
+	Instanced="true"
+	Fence="True"
+>
+	<PhysicsModel>
+		<Body Collisions="None" Mass="0" ModelFrame="BoneRoot">
+			<Body _template="Fence" ModelFrame="BoneStake_01">
+				<Constraint _template="Fence" />
+				<Body _template="Fence" ModelFrame="BonePart_01">
+					<Constraint _template="Fence" />
+				</Body>
+				<Body _template="Fence" ModelFrame="BonePart_02">
+					<Constraint _template="Fence" />
+				</Body>
+				<Body _template="Fence" ModelFrame="BonePart_03">
+					<Constraint _template="Fence" />
+				</Body>
+			</Body>
+			<Body _template="Fence" ModelFrame="BoneStake_02">
+				<Constraint _template="Fence" />
+				<Body _template="Fence" ModelFrame="BonePart_04">
+					<Constraint _template="Fence" />
+				</Body>
+				<Body _template="Fence" ModelFrame="BonePart_05">
+					<Constraint _template="Fence" />
+				</Body>
+				<Body _template="Fence" ModelFrame="BonePart_06">
+					<Constraint _template="Fence" />
+				</Body>
+			</Body>
+			<Body _template="Fence" ModelFrame="BoneStake_03">
+				<Constraint _template="Fence" />
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<Occlusion Size="(16.0, 4.0)" Texture="occlusion_rus_fence_03.tga" />
+</ModelBrand>

@@ -1,0 +1,9 @@
+<CargoType>
+	<UiDesc
+		UiName="UI_CARGO_RADIOCTIVE_NAME"
+		UiDesc="UI_CARGO_RADIOCTIVE_DESC"
+		UiIcon20x20="cargoTypeRadioactive20"
+		UiIcon40x40="cargoTypeRadioactive40"
+		UiIcon100x100="cargoTypeRadioactive"
+	/>
+</CargoType>

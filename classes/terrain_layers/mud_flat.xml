@@ -1,0 +1,10 @@
+<MaterialType 
+	Texture="tiles/mud_flat_pbr__d_a.tga" 
+	Normal="tiles/mud_flat_pbr_relief__d_a.tga"
+	NoGrass="true"
+	AllowHiddenExtrudes="0.25"
+	Sound="surfaces/surf_dirty_rnd"
+	EndEffectSound="surfaces/hit/hit_mud_rnd"
+	SkidSound="surfaces/skidding/skidding_dirty_loop"
+	MinViscosity="4.0"
+/>

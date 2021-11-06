@@ -1,0 +1,13 @@
+<ModelBrand
+	NightLightingShadowsAllowCap="true"
+>
+	<PhysicsModel>
+		<Body
+			Collisions="Dynamic"
+		/>
+	</PhysicsModel>
+	<Occlusion
+		Size="(5.0; 7.0)" 
+		Texture="occlusion_meteo_station_device_01.tga"
+	/>
+</ModelBrand>

@@ -1,0 +1,16 @@
+<_templates Include="models" />
+<ModelBrand
+	DynamicModel="true"
+>
+	<PhysicsModel>
+		<Body Collisions="Dynamic" />
+	</PhysicsModel>
+	<Occlusion Size="(20; 20)" Texture="occlusion_wind_mill_01.tga" />
+	<Landmark Mesh="landmarks/wind_mill_01_lmk" />
+	<GameData>
+		<WinchSocket Pos="(1.25; 1.2; 1.15)" />
+		<WinchSocket Pos="(1.25; 1.2; -1.25)" />
+		<WinchSocket Pos="(-1.15; 1.2; -1.25)" />
+		<WinchSocket Pos="(-1.15; 1.2; 1.2)" />
+	</GameData>
+</ModelBrand>

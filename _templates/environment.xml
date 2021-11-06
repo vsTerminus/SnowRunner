@@ -1,0 +1,406 @@
+<_templates>
+	<PlantBrand>
+		<WoodChunk
+			AttachToGround="false"
+			DisableShadows="true"
+			DistSkipPercentage="0.6"
+			IsAboveSnow="false"
+			PlantingGroups="Bush,SmallTree"
+			PlantingMinSpacing="0.95"
+			UseDirtTint="true"
+		/>
+		<Stump
+			AttachToGround="false"
+			BreakType="SmallTree"
+			CheckNoGrass="false"
+			DisableShadows="true"
+			LocalYOcclusionOffset="0.05"
+			PlantingGroups="Bush"
+			IsEraseSnow="true"
+		/>
+		<SmallTree
+			BreakType="SmallTree"
+			CheckNoGrass="true"
+			DeactivationPhantomExt="2"
+			PlantingGroups="SmallTree"
+			PlantingMinSpacing="2.5"
+			UsePhysicsForInstancing="true"
+		/>
+		<SmallRock
+			AttachToGround="false"
+			DisableShadows="true"
+			PlantingGroups="Bush,SmallTree"
+			UseDirtTint="true"
+		/>
+		<LyingTree
+			IsContactEventEveryFrame="true"          
+			IsKeepPhysModelAlways="true"          
+			AttachToGround="true"
+            UseGravityAlways="true"
+            DeactivationPhantomExt="10"
+			DisableShadows="true"
+			LocalYOcclusionOffset="0.1"
+			PlantingGroups="LyingTree"
+			PlantingMinSpacing="0.5"
+			PlantingOffsetY="0.01"
+			IsEraseSnow="true"
+		/>
+        <LyingTreeChunks
+			IsKeepPhysModelAlways="true"          
+			AttachToGround="true" 
+            NoTruckCollision="true" 
+            DeactivationPhantomExt="10"
+		/>
+		<Fern
+			AttachToGround="false"
+			DisableShadows="true"
+			DistSkipPercentage="0.6"
+			IsAboveSnow="false"
+			PlantingGroups="Bush,SmallTree"
+			PlantingMinSpacing="0.95"
+			UseDirtTint="true"
+			IsEraseSnow="true"
+		/>
+		<Corn
+			BreakType="SmallTree"
+			CheckNoGrass="true"
+			DeactivationPhantomExt="2"
+			PlantingGroups="SmallTree"
+			PlantingMinSpacing="2.5"
+			UsePhysicsForInstancing="true"
+			IsEraseSnow="true"
+		/>
+		<Bush
+			AttachToGround="false"
+			BreakType="SmallTree"
+			CheckNoGrass="true"
+			DisableShadows="true"
+			LocalYOcclusionOffset="0.05"
+			PlantingGroups="Bush"
+			IsEraseSnow="true"
+		/>
+		<BigTree
+			BreakType="BigTree"
+			CheckNoGrass="true"
+			PlantingGroups="BigTree"
+			PlantingMinSpacing="2.5"
+		/>
+	</PlantBrand>
+	<Constraint>
+		<WoodChunk BreakOffThreshold="200" Type="Fixed" />
+		<TrunkHeadLying Cone="30" TwistAxisLocal="(0; 1; 0)" Type="Ragdoll">
+			<PlaneConeMotor Damping="20000" Spring="20000" Type="Spring" />
+		</TrunkHeadLying>
+		<TrunkHead Cone="60" TwistAxisLocal="(0; 1; 0)" Type="Ragdoll">
+			<PlaneConeMotor Damping="10000" Spring="10000" Type="Spring" />
+		</TrunkHead>
+		<StaticRoot Cone="10" TwistAxisLocal="(0; 1; 0)" Type="Fixed">
+			<PlaneConeMotor Damping="600000000" Spring="800000000" Type="Spring" />
+		</StaticRoot>
+		<SmallTreeRoot
+			BreakOffThreshold="300"
+			TwistAxisLocal="(0; 1; 0)"
+            Cone="60"
+			Type="Ragdoll"
+		>
+			<PlaneConeMotor Damping="5000" Spring="5000" Type="Spring" />
+		</SmallTreeRoot>
+		<SecondTrunk Cone="40" TwistAxisLocal="(0; 1; 0)" Type="Ragdoll">
+			<PlaneConeMotor Damping="30000" Spring="17000" Type="Spring" />
+		</SecondTrunk>
+		<MediumTreeRoot
+			BreakOffThreshold="25000"
+			Cone="30"
+			TwistAxisLocal="(0; 1; 0)"
+			Type="Ragdoll"
+		>
+			<PlaneConeMotor Damping="2000000" Spring="4000000" Type="Spring" />
+		</MediumTreeRoot>
+		<HugeTrunk Cone="10" TwistAxisLocal="(0; 1; 0)" Type="Fixed">
+			<PlaneConeMotor Damping="600000000" Spring="800000000" Type="Spring" />
+		</HugeTrunk>
+		<HardBushBranch Cone="90" TwistAxisLocal="(0; 1; 0)" Type="Ragdoll">
+			<PlaneConeMotor Damping="25" Spring="150" Type="Spring" />
+		</HardBushBranch>
+		<Flower Cone="90" TwistAxisLocal="(0; 1; 0)" Type="Ragdoll">
+			<PlaneConeMotor Damping="25" Spring="10" Type="Spring" />
+		</Flower>
+		<FernRoot
+			BreakOffThreshold="100"
+			Cone="30"
+			TwistAxisLocal="(0; 1; 0)"
+			Type="Ragdoll"
+		>
+			<PlaneConeMotor Damping="20" Spring="30" Type="Spring" />
+		</FernRoot>
+		<FallingTreeRoot PlaneMin="-10" PlaneMax="10" TwistMin="-10" TwistMax="10" TwistAxisLocal="(0; 1; 0)" ConeMin="0" ConeMax="60" PlaneAxisLocal="(0; 0; -1)" Type="Ragdoll">
+            <PlaneConeMotor Damping="20000" Spring="2000" Type="Spring" />
+        </FallingTreeRoot>
+		<CornRoot Cone="85" TwistAxisLocal="(0; 1; 0)" Type="Ragdoll">
+			<PlaneConeMotor Damping="25" Spring="1" Type="Spring" />
+		</CornRoot>
+		<Corn2 Cone="85" TwistAxisLocal="(0; 1; 0)" Type="Ragdoll">
+			<PlaneConeMotor Damping="25" Spring="60" Type="Spring" />
+		</Corn2>
+		<Cane Cone="90" TwistAxisLocal="(0; 1; 0)" Type="Ragdoll">
+			<PlaneConeMotor Damping="25" Spring="100" Type="Spring" />
+		</Cane>
+		<BushRoot Cone="5" TwistAxisLocal="(0; 1; 0)" Type="Ragdoll">
+			<PlaneConeMotor Damping="20" Spring="30" Type="Spring" />
+		</BushRoot>
+		<BushBranch Cone="90" TwistAxisLocal="(0; 1; 0)" Type="Ragdoll">
+			<PlaneConeMotor Damping="25" Spring="250" Type="Spring" />
+		</BushBranch>
+		<BranchWithLeaves Cone="50" TwistAxisLocal="(0; 1; 0)" Type="Ragdoll">
+			<PlaneConeMotor Damping="300" Spring="8000" Type="Spring" />
+		</BranchWithLeaves>
+		<BranchSoft Cone="60" TwistAxisLocal="(0; 1; 0)" Type="Ragdoll">
+			<PlaneConeMotor Damping="150" Spring="2000" Type="Spring" />
+		</BranchSoft>
+        <BranchHard TwistMin="-5" TwistMax="5" TwistAxisLocal="(0; 1; 0)" ConeMin="0" ConeMax="10" PlaneAxisLocal="(0; 0; -1)" Type="Ragdoll">
+			<PlaneConeMotor Damping="10000" Spring="20000" Type="Spring" />
+		</BranchHard>
+        <TreeChunk BreakOffThreshold="100" Type="Fixed"/>
+		<BigTreeRoot Cone="10" TwistAxisLocal="(0; 1; 0)" Type="Ragdoll">
+			<PlaneConeMotor Damping="6000000" Spring="8000000" Type="Spring" />
+		</BigTreeRoot>
+	</Constraint>
+	<ChunksBreak>
+		<WoodChunk
+			Brands="wood_chunk"
+			Handler="Mud"
+			Offsets="(-0.08; 0.2; 0)"
+			SpawnAngMult="10.0"
+			SpawnAtEachBody="true"
+			SpawnLinMult="1.6"
+			Threshold="10"
+		/>
+		<FernChunks
+			Brands="fern_chunk_b, fern_chunk_a"
+			Handler="Mud"
+			Offsets="(-0.08; 0.2; 0)"
+			SpawnAngMult="10.0"
+			SpawnAtEachBody="true"
+			SpawnLinMult="0.1"
+			Threshold="700"
+		/>
+		<Bush
+			Brands="bush_chunk_a"
+			Handler="Bush"
+			Offsets="(-0.08; 0.02; 0)"
+			SpawnAngMult="40.0"
+			SpawnAtEachBody="true"
+			SpawnLinMult="0.8"
+			Threshold="500"
+		/>
+	</ChunksBreak>
+	<Body>
+		<WoodChunk
+			AllowedPenetrationDepth="1"
+			DamageMult="0.2"
+			ImpactType="Foliage"
+			IsCapsuleCDT="true"
+			Mass="100.0"
+			NoSoftContacts="true"
+			RollingFrictionMultiplier="0.05"
+		/>
+		<TrunkHeadLying
+			AllowedPenetrationDepth="3.0"
+			ImpactType="Foliage"
+			LinearDamping="0.5"
+			Mass="70"
+		/>
+		<TrunkHead
+			AllowedPenetrationDepth="3.0"
+			ImpactType="Foliage"
+			IsCapsuleCDT="true"
+			LinearDamping="0.5"
+			Mass="70"
+		/>
+		<SwampTrunk
+			AngularDamping="2.0"
+			DamageMult="0.1"
+			ImpactType="Foliage"
+			LinearDamping="1.0"
+			Mass="500.0"
+			NoSoftContacts="true"
+		/>
+		<SwampBranch
+			AllowedPenetrationDepth="2.0"
+			AngularDamping="4.0"
+			DamageMult="0.1"
+			ImpactType="Foliage"
+			IsCapsuleCDT="false"
+			LinearDamping="1.0"
+			Mass="30"
+		/>
+		<StaticRoot
+			AllowedPenetrationDepth="0.3"
+			IsCapsuleCDT="false"
+			LinearDamping="0.2"
+			Mass="12000"
+		/>
+		<SmallTwigs
+			AllowedPenetrationDepth="0.3"
+			AttachToGround="false"
+			DamageMult="0.0"
+			DisableShadows="true"
+			Mass="20.0"
+			NoSoftContacts="true"
+			UseDirtTint="true"
+		/>
+		<SmallTreeRootOld
+			AllowedPenetrationDepth="0.25"
+			DamageMult="100"
+			ImpactType="Foliage"
+			IsCapsuleCDT="false"
+			LinearDamping="0.2"
+			Mass="100.0"
+			NoSoftContacts="true"
+		/>
+		<SmallTreeRoot
+			AllowedPenetrationDepth="3"
+			DamageMult="2"
+			ImpactType="Foliage"
+			IsCapsuleCDT="false"
+			LinearDamping="0.2"
+			Mass="50.0"
+			NoSoftContacts="true"
+		/>
+		<SmallRock
+			AttachToGround="false"
+			DisableShadows="true"
+			PlantingGroups="Bush,SmallTree"
+			UseDirtTint="true"
+		/>
+		<SecondTrunk
+			AllowedPenetrationDepth="3.0"
+			ImpactType="Foliage"
+			IsCapsuleCDT="true"
+			LinearDamping="0.5"
+			Mass="100"
+		/>
+		<MediumTreeRoot
+			DamageMult="1"
+			ImpactType="Foliage"
+			IsCapsuleCDT="false"
+			LinearDamping="0.2"
+			Mass="600.0"
+			NoSoftContacts="true"
+		/>
+		<LyingTrunk
+			AngularDamping="2.0"
+			DebrisType="DryTwigs"
+			ImpactType="Foliage"
+			LinearDamping="1.0"
+			Mass="1000.0"
+		/>
+		<LyingBranch
+			AllowedPenetrationDepth="2.0"
+			AngularDamping="4.0"
+			DebrisType="DryTwigs"
+			ImpactType="Foliage"
+			LinearDamping="1.0"
+			Mass="50"
+		/>
+		<LyingTrunkStatic
+			DebrisType="DryTwigs"
+			ImpactType="Foliage"
+			NoSoftContacts="true"
+		/>
+		<HugeTrunk
+			DamageMult="0.5"
+			ImpactType="Foliage"
+			IsCapsuleCDT="true"
+			LinearDamping="0.2"
+			Mass="12000"
+		/>
+		<Flower
+			AllowedPenetrationDepth="3.0"
+			DamageMult="0.01"
+			ImpactType="Foliage"
+			IsCapsuleCDT="true"
+			Mass="1"
+		/>
+		<FernRoot
+			AllowedPenetrationDepth="3.0"
+			AngularDamping="0.5"
+			Collisions="None"
+			DamageMult="0.01"
+			ImpactType="Foliage"
+			IsCapsuleCDT="true"
+			Mass="20"
+			NoSoftContacts="true"
+		/>
+		<FallingTreeRoot
+			AllowedPenetrationDepth="0.5"
+			DamageMult="0.4"
+			Mass="700"
+			AngularDamping="0.3"
+		/>
+		<Corn
+			AllowedPenetrationDepth="3.0"
+			DamageMult="0.2"
+			ImpactType="Foliage"
+			IsCapsuleCDT="true"
+			Mass="1"
+		/>
+		<Cane
+			AllowedPenetrationDepth="3.0"
+			DamageMult="0.01"
+			ImpactType="Foliage"
+			IsCapsuleCDT="true"
+			Mass="5"
+		/>
+		<BushRoot
+			AllowedPenetrationDepth="3.0"
+			AngularDamping="0.5"
+			CenterOfMassOffset="(0; -0.3; 0)"
+			Collisions="None"
+			DamageMult="0.01"
+			ImpactType="Foliage"
+			IsCapsuleCDT="true"
+			LinearDamping="0.5"
+			Mass="40"
+			NoSoftContacts="true"
+		/>
+		<BushBranch
+			AllowedPenetrationDepth="3.0"
+			DamageMult="0.01"
+			ImpactType="Foliage"
+			IsCapsuleCDT="true"
+			Mass="3"
+		/>
+		<BranchWithLeaves
+			AllowedPenetrationDepth="2.0"
+			DamageMult="0.01"
+			ImpactType="Foliage"
+			IsCapsuleCDT="true"
+			LinearDamping="0.1"
+			Mass="50"
+		/>
+		<BranchSoft
+			AllowedPenetrationDepth="2.0"
+			DamageMult="0.01"
+			ImpactType="Foliage"
+			IsCapsuleCDT="true"
+			LinearDamping="0.1"
+			Mass="25"
+		/>
+		<BigTreeRoot
+			DamageMult="0.3"
+			ImpactType="Foliage"
+			IsCapsuleCDT="false"
+			LinearDamping="0.0"
+			Mass="1300"
+			NoSoftContacts="true"
+		/>
+		<BigTreeHead
+			AllowedPenetrationDepth="2.0"
+			ImpactType="Foliage"
+			IsCapsuleCDT="true"
+			LinearDamping="0.2"
+			Mass="200"
+		/>
+	</Body>
+</_templates>

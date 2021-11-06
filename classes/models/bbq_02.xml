@@ -1,0 +1,8 @@
+<_templates Include="models" />
+<ModelBrand NightLightingShadowsAllowCap="true" Instanced="true">
+	<PhysicsModel>
+		<Body CenterOfMassOffset="(0; 0.1; 0)" Mass="80" Collisions="Dynamic">
+			<Constraint BreakOffThreshold="105" Type="Fixed" />
+		</Body>
+	</PhysicsModel>
+</ModelBrand>

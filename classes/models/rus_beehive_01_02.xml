@@ -1,0 +1,28 @@
+<_templates Include="models" />
+<ModelBrand
+	Instanced="true"
+	NightLightingShadowsAllowCap="true"
+>
+	<PhysicsModel>
+		<Body _template="MediumWeight" ModelFrame="BoneRoot">
+			<Constraint _template="MediumWeight" />
+			<Body _template="MediumWeight" ModelFrame="BonePart1">
+				<Constraint _template="MediumWeight" />
+			</Body>
+			<Body _template="MediumWeight" ModelFrame="BonePart2">
+				<Constraint _template="MediumWeight" />
+			</Body>
+			<Body _template="MediumWeight" ModelFrame="BonePart3">
+				<Constraint _template="MediumWeight" />
+				<Body _template="MediumWeight" ModelFrame="BonePart4">
+					<Constraint _template="MediumWeight" />
+				</Body>
+				<Body _template="MediumWeight" ModelFrame="BonePart5">
+					<Constraint _template="MediumWeight" />
+				</Body>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<Occlusion Size="(5.0; 5.0)" Texture="occlusion_rus_beehive_01.tga" />
+	<Landmark Mesh="landmarks/rus_beehive_01_02_lmk" />	
+</ModelBrand>

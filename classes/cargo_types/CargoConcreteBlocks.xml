@@ -1,0 +1,9 @@
+<CargoType>
+	<UiDesc
+		UiName="UI_CARGO_BLOCKS_NAME"
+		UiDesc="UI_CARGO_BLOCKS_DESC"
+		UiIcon20x20="cargoTypeBlock20"
+		UiIcon40x40="cargoTypeBlock40"
+		UiIcon100x100="cargoTypeConcreteSlab"
+	/>
+</CargoType>

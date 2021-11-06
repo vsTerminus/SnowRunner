@@ -1,0 +1,11 @@
+<ModelBrand
+	NightLightingShadowsAllowCap="true"
+	Instanced="true"
+>
+	<PhysicsModel>
+		<Body
+			Collisions="Dynamic"
+			DamageMult="0.0"
+		/>
+	</PhysicsModel>
+</ModelBrand>

@@ -1,0 +1,15 @@
+<ModelBrand
+	NightLightingShadowsAllowCap="true"
+>
+	<PhysicsModel>
+		<Body
+			Collisions="Dynamic"
+		/>
+	</PhysicsModel>
+	<GameData>
+		<WinchSocket Pos="(1.25; 1.2; 1.15)" />
+		<WinchSocket Pos="(1.25; 1.2; -1.25)" />
+		<WinchSocket Pos="(-1.15; 1.2; -1.25)" />
+		<WinchSocket Pos="(-1.15; 1.2; 1.2)" />
+	</GameData>
+</ModelBrand>

@@ -1,0 +1,22 @@
+<OverlayBrand
+	IsClampV="true"
+	IsExtrudable="false"
+	IsAsphalt="true"
+	HeightMapBlendingContrast="0.05"
+	BlendBorderMin="0.0"
+	BlendBorderMax="0.2"
+	Texture="overlays/us_asphalt_road_double__d_a.tga"
+	TextureRelief="overlays/us_asphalt_road_double_relief__d_a.tga"
+	WheelTracks="0"
+>
+	<Prebuild
+		DefaultWidth="8.5"
+		FlattenPart="1"
+		Layer="4"
+		LandmarkUseAverageWidth="true"
+		LandmarkColor="(120; 120; 130)"
+		LandmarkPart="1"
+		LandmarkBorderWidth="1"
+		LandmarkBorderColor="(70;70;70)"
+	/>
+</OverlayBrand>

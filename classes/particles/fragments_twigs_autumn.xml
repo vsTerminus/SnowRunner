@@ -1,0 +1,25 @@
+<CombineParticles AspectRatio="0.5" Gravity="(0; -6; 0)" IsAlphaKill="true">
+	<Texture
+		Diffuse="sfx/particles/twigs_new__d_a.tga"
+		NumFramesX="4"
+		NumFramesY="2"
+		RandomFrameOffset="8"
+	/>
+	<Size Constant="0.1" />
+	<Scale Random="1.0" Value="2.1" />
+	<RotationSpeed Value="320" />
+	<Rotation Random="360" />
+	<LifeTime Value="4.0" />
+	<Color>
+		<Key At="0.0" Value="g(255; 255; 255) x 1.0" />
+		<Key At="0.8" Value="g(255; 255; 255) x 0.75" />
+		<Key At="0.9" Value="g(255; 255; 255; 200) x 0.75" />
+		<Key At="1.0" Value="g(255; 255; 255; 0) x 0.75" />
+	</Color>
+	<Collisions
+		Enable="true"
+		Friction="0.2"
+		Radius="0.04"
+		Restitution="0.0"
+	/>
+</CombineParticles>

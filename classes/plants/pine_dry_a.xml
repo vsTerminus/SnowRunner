@@ -1,0 +1,28 @@
+<_templates Include="environment" />
+<PlantBrand _template="BigTree" CheckNoGrass="false">
+	<PhysicsModel>
+		<Body _template="BigTreeRoot" DebrisType="FoliageAutumn" ModelFrame="BoneRoot">
+			<Constraint _template="BigTreeRoot" />
+			<Body _template="TrunkHead" ModelFrame="BoneTrunk">
+				<Constraint _template="TrunkHead" />
+			</Body>
+			<Body _template="BranchSoft" DebrisType="FoliageAutumn" ModelFrame="BoneBranch1">
+				<Constraint _template="BranchSoft" />
+			</Body>
+			<Body _template="BranchSoft" ModelFrame="BoneBranch2">
+				<Constraint _template="BranchSoft" />
+			</Body>
+			<Body _template="BranchSoft" DebrisType="FoliageAutumn" ModelFrame="BoneBranch3">
+				<Constraint _template="BranchSoft" />
+			</Body>
+			<Body _template="BranchSoft" ModelFrame="BoneBranch4">
+				<Constraint _template="BranchSoft" />
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<Occlusion Intensity="0.6" Size="(6.0; 6.0)" />
+	<Landmark Mesh="landmarks/pine_dry_a_lmk" />
+	<GameData>
+		<WinchSocket Pos="(0; 0.3; 0)" ParentFrame="BoneRoot_cdt" />
+	</GameData>
+</PlantBrand>

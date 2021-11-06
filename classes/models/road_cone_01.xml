@@ -1,0 +1,7 @@
+<ModelBrand NightLightingShadowsAllowCap="true" Instanced="true">
+	<PhysicsModel>
+		<Body CenterOfMassOffset="(0; 0.1; 0)" Mass="15" Collisions="Dynamic" DamageMult="0.0">
+			<Constraint BreakOffThreshold="20" Type="Fixed" />
+		</Body>
+	</PhysicsModel>
+</ModelBrand>

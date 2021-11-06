@@ -1,0 +1,14 @@
+<ModelBrand
+	NightLightingShadowsAllowCap="true"
+>
+	<PhysicsModel>
+		<Body
+			Collisions="Dynamic"
+		/>
+	</PhysicsModel>
+	<Occlusion
+		Size="(43.0; 49.0)" 
+		Texture="occlusion_us_airplane_01.tga"
+	/>
+	<Landmark Mesh="landmarks/us_airplane_01_lmk" />
+</ModelBrand>

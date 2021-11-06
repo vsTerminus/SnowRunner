@@ -1,0 +1,8 @@
+<ModelBrand 
+	NightLightingShadowsAllowCap="True"
+	ClipCameraBridge="true">
+	<PhysicsModel>
+		<Body Collisions="Dynamic" />
+	</PhysicsModel>
+	<Occlusion Size="(15.0, 13.0)" Texture="occlusion_rus_glg_gate_01.tga" />
+</ModelBrand>

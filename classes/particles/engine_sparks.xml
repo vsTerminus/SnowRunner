@@ -1,0 +1,30 @@
+<CombineParticles
+	AirResistance="0.5"
+	AspectRatio="0.2"
+	Gravity="(0; -4; 0)"
+	IgnoreShadowmap="true"
+	IsAdditive="true"
+	Orientation="TrackingBillboard"
+	SortingPriority="3"
+>
+	<Texture
+		Diffuse="sfx/particles/fragments__d_a.tga"
+		NumFramesY="4"
+		RandomFrameOffset="4"
+	/>
+	<Size Function="(0.04; 0.03; 0.000)" Median="0.8" />
+	<Scale Random="0.6" Value="1.4" />
+	<LifeTime Random="0.25" Value="2.0" />
+	<Color>
+		<Key At="0.0" Value="g(255; 218; 138; 0) x 8" />
+		<Key At="0.2" Value="g(255; 127; 50) x 4" />
+		<Key At="0.8" Value="g(255; 18; 0) x 4" />
+		<Key At="1.0" Value="g(255; 0; 0; 0) x 4" />
+	</Color>
+	<Collisions
+		Enable="true"
+		Friction="0.2"
+		Radius="0.1"
+		Restitution="0.4"
+	/>
+</CombineParticles>

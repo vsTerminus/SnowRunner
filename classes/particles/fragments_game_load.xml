@@ -1,0 +1,18 @@
+<CombineParticles AirResistance="0.5" Gravity="(0; -6; 0)">
+	<Texture Diffuse="sfx/particles/fragments_game__d_a.tga" />
+	<Size Function="(0.4; 0.2; 0.18)" Median="0.1" />
+	<Scale Random="0.5" Value="1.0" />
+	<LifeTime Random="0.5" Value="2.5" />
+	<Color >
+		<Key At="0.0" Value="(0; 0; 0; 255)" />
+		<Key At="0.2" Value="(255; 255; 255; 20)" />
+		<Key At="0.8" Value="(255; 255; 255; 20)"/>
+		<Key At="1.0" Value="(255; 255; 255; 0)" />
+	</Color>
+	<Collisions
+		Enable="true"
+		Friction="0.6"
+		Radius="0.1"
+		Restitution="0.4"
+	/>
+</CombineParticles>

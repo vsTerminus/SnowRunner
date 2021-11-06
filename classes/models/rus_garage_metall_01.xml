@@ -1,0 +1,15 @@
+<ModelBrand
+	NightLightingShadowsAllowCap="true"
+	Instanced="true"
+	InstancedAsModel="true"
+>
+	<PhysicsModel>
+		<Body
+			Collisions="Dynamic"
+		/>
+	</PhysicsModel>
+	<Occlusion
+		Size="(9.0; 7.0)" 
+		Texture="occlusion_rus_garage_metall_01.tga"
+	/>
+</ModelBrand>

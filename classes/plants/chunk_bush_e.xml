@@ -1,0 +1,20 @@
+<_templates Include="plants" />
+<PlantBrand
+	AttachToGround="false"
+	DisableShadows="true"
+	DistSkipPercentage="1.0"
+>
+	<PhysicsModel>
+		<Body
+			RollingFrictionMultiplier="0.05"
+			AllowedPenetrationDepth="0.5"
+			AngularDamping="6.0"
+			IsCapsuleCDT="false"
+			LinearDamping="1.0"
+			Mass="1"
+			DamageMult="0.01"
+		>
+			<Constraint BreakOffThreshold="2" Type="Fixed" />
+		</Body>
+	</PhysicsModel>
+</PlantBrand>

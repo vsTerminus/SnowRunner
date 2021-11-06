@@ -1,0 +1,14 @@
+<_templates Include="models" />
+<ModelBrand Instanced="true" InstancedAsModel="true">
+	<PhysicsModel>
+		<Body Collisions="Dynamic" />
+	</PhysicsModel>
+	<Occlusion Size="(15; 15)" Texture="occlusion_us_tower.tga" />
+	<Landmark Mesh="landmarks/water_tower_01_lmk" />
+	<GameData>
+		<WinchSocket Pos="(1.5; 1.2; 1.5)" />
+		<WinchSocket Pos="(1.5; 1.2; -1.5)" />
+		<WinchSocket Pos="(-1.5; 1.2; -1.5)" />
+		<WinchSocket Pos="(-1.5; 1.2; 1.5)" />
+	</GameData>
+</ModelBrand>

@@ -1,0 +1,13 @@
+<OverlayBrand
+	GenerateDust="true"
+	Texture="overlays/dirt_road_snowy__d_a.tga"
+	TextureRelief="overlays/dirt_road_snowy_relief__d_a.tga"
+	IsWetnessAsIce="true"
+>
+	<Prebuild
+		DefaultWidth="6"
+		HeightmapOffset="hmoffset_dirt_road__s.tga"
+		SnowmapMask="overlay_dirt_path_sn_01__s_d.tga"
+		MaskPlants="false"
+	/>
+</OverlayBrand>

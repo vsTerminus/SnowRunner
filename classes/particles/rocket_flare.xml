@@ -1,0 +1,17 @@
+<CombineParticles
+	IgnoreShadowmap="true"
+	AspectRatio="2"
+	SortingPriority="6"
+>
+	<Emissive Scale="4" />
+	<Texture Diffuse="sfx/flare_line__s_d.tga" />
+	<Size Function="(0.8; 2; 0.7)" Median="0.5" />
+	<Scale  Value="320" />
+	<LifeTime Random="0.05" Value="0.1" />
+	<Color>
+		<Key At="0.0" Value="g(255; 218; 138; 0) x 0" />
+		<Key At="0.2" Value="g(255; 127; 50) x 20" />
+		<Key At="0.8" Value="g(255; 18; 0) x 20" />
+		<Key At="1.0" Value="g(255; 0; 0; 0) x 0" />
+	</Color>
+</CombineParticles>

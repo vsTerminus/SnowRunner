@@ -1,0 +1,27 @@
+<CombineParticles
+	AirResistance="2.0"
+	AspectRatio="0.7"
+	IsDistortion="true"
+	Orientation="AlignedBillboard"
+	SoftDepth="0.2"
+	Wind="(0.1; 0.2; 0)"
+	WindDivergence="180"
+	ZOffset="-0.2"
+>
+	<Texture Diffuse="sfx/particles/heat__n_d.tga" />
+	<Size Function="(0.6; 1.2; 2.2)" Median="0.6" />
+	<LifeTime Value="1.0" />
+	<Color>
+		<Key At="0.0" Value="g(0; 0; 0; 0)" />
+		<Key At="0.2" Value="g(0; 0; 0; 140)" />
+		<Key At="0.6" Value="g(0; 0; 0; 140)" />
+		<Key At="1.0" Value="g(0; 0; 0; 0)" />
+	</Color>
+	<Collisions
+		DetectWater="true"
+		Enable="true"
+		Friction="0.01"
+		Radius="0.1"
+		Restitution="0"
+	/>
+</CombineParticles>

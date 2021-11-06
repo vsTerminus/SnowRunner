@@ -1,0 +1,56 @@
+<_templates>
+	<Constraint>
+		<Bridge
+			PlaneAxisLocal="(1; 0; 0)"
+			TwistAxisLocal="(0; 1; 0)"
+			TwistMin="-5"
+			TwistMax="-5"
+			Type="Ragdoll"
+		>
+			<AllMotor Damping="200000" Spring="1000000" Type="Spring" />
+		</Bridge>
+	</Constraint>
+	<Body>
+		<Bridge
+			AngularDamping="0.1"
+			Mass="1000"
+			NoSoftContacts="true"
+			
+		/>
+	</Body>
+</_templates>
+<ModelBrand
+	AcceptZoneBorderDecals="true"
+	ClipCameraBridge="true"
+>
+	<PhysicsModel>
+		<Constraint
+			_template="Bridge"
+			ModelFrameChild="BoneBridgeR1_cdt"
+			ModelFrameParent="BoneColumn_cdt"
+			PivotOffset="(2.4; 0; 0)"
+		/>
+		<Constraint
+			_template="Bridge"
+			ModelFrameChild="BoneBridgeL1_cdt"
+			ModelFrameParent="BoneColumn_cdt"
+			PivotOffset="(2.4; 0; 0)"
+		/>
+		<Body _template="Bridge" Mass="0" ModelFrame="BoneColumn_cdt">
+			<Body _template="Bridge" ModelFrame="BoneBridgeL0_cdt">
+				<Constraint _template="Bridge" />
+				<Body _template="Bridge" ModelFrame="BoneBridgeL1_cdt">
+					<Constraint _template="Bridge" />
+				</Body>
+			</Body>
+			<Body _template="Bridge" ModelFrame="BoneBridgeR0_cdt">
+				<Constraint _template="Bridge" />
+				<Body _template="Bridge" ModelFrame="BoneBridgeR1_cdt">
+					<Constraint _template="Bridge" />
+				</Body>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<Occlusion Size="(12.0; 24.0)" Texture="occlusion_bridge_wooden.tga" />
+	<Landmark Mesh="landmarks/bridge_wooden_lmk"/>
+</ModelBrand>

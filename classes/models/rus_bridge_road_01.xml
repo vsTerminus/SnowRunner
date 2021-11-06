@@ -1,0 +1,12 @@
+<ModelBrand
+	NightLightingShadowsAllowCap="true"
+	ClipCameraBridge="True"
+	AcceptZoneBorderDecals="true"
+>
+	<PhysicsModel>
+		<Body
+			Collisions="Dynamic"
+		/>
+	</PhysicsModel>
+	<Landmark Mesh="landmarks/rus_bridge_road_01_lmk"/>
+</ModelBrand>

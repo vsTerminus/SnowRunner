@@ -1,0 +1,12 @@
+<ModelBrand
+	AcceptZoneBorderDecals="true"
+	Instanced="true"
+	InstancedAsModel="true"
+	NightLightingShadowsAllowCap="true"
+>
+	<PhysicsModel>
+		<Body Collisions="Dynamic" />
+	</PhysicsModel>
+	<Occlusion Size="(20.0; 8.0)" Texture="occlusion_cargo_platform_us_01.tga" />
+	<Landmark Mesh="landmarks/cargo_platform_us_01_lmk" />
+</ModelBrand>

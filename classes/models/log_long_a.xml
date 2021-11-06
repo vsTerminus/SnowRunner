@@ -1,0 +1,14 @@
+<ModelBrand ClipCamera="false" DynamicModel="true">
+	<PhysicsModel>
+		<Body
+			Collisions="Dynamic"
+			Friction="1.8"
+			Mass="400.0"
+			NoSoftContacts="true"
+		/>
+	</PhysicsModel>
+	<GameData LoadAddons="load_logs_long" LoadType="LongLogs">
+		<LoadPoint Pos="(-3.8;0;0)" />
+		<LoadPoint Pos="(3.8;0;0)" />
+	</GameData>
+</ModelBrand>

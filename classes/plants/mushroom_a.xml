@@ -1,0 +1,17 @@
+<PlantBrand
+	BreakType="Mushroom"
+	DeleteOnBreak="true"
+	DisableShadows="true"
+	DistSkipPercentage="1.0"
+	PlantingGroups="Flower"
+	PlantingMinSpacing="0.1"
+	UseDirtTint="true"
+	CheckNoGrass="true"
+>
+	<PhysicsModel>
+		<Body Mass="1.0" NoSoftContacts="true">
+			<Constraint BreakOffThreshold="5" Type="Fixed" />
+		</Body>
+	</PhysicsModel>
+	<Occlusion Intensity="0.7" Size="(3.0; 3.0)" />
+</PlantBrand>

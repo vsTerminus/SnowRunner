@@ -1,0 +1,13 @@
+<CombineParticles IsDistortion="true" ViewSpace="true">
+	<Texture Diffuse="sfx/particles/heat__n_d.tga" />
+	<Size Function="(1.2; 1.0; 0.6)" Median="0.4" />
+	<RotationSpeed Value="40" />
+	<Rotation Random="360" />
+	<LifeTime Value="2" />
+	<Color>
+		<Key At="0.0" Value="(0; 0; 0; 255)" />
+		<Key At="0.1" Value="(0; 0; 0; 255)" />
+		<Key At="0.8" Value="(0; 0; 0; 128)" />
+		<Key At="1.0" Value="(0; 0; 0; 0)" />
+	</Color>
+</CombineParticles>

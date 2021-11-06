@@ -1,0 +1,83 @@
+<ModelBrand
+	NightLightingShadowsAllowCap="true"
+	Instanced="false"
+	DynamicModel="true"
+>
+	<StaticLights>
+		<StaticLight
+			Dir="(-27.331; 90; 0)"
+			Pos="(-2.45; 8.3; 0)"
+			AttenEnd="12"
+			Color="g(227; 249; 255) x 14"
+			CreateSuperLight="true"
+			InnerCone="0"
+			OuterCone="160"
+			Shadows="false"
+		/>
+	</StaticLights>
+	<PhysicsModel>
+		<Body Collisions="Dynamic" />
+		<Flare
+			AttenEnd="300"
+			AttenStart="27"
+			ColorMultAtDay="0"
+			Color="g(255; 255; 255) x 0.3"
+			OcclusionOffset="-0.2"
+			Dir="(-26.528; 90; 0)" 
+			Pos="(-2.318; 8.344; 0)"
+			Size="0.7"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+			<Flare
+			AttenEnd="300"
+			AttenStart="27"
+			ColorMultAtDay="0"
+			Color="g(255; 0; 0) x 0.3"
+			OcclusionOffset="-0.3"
+			Dir="(0; -1; 0)"
+			Pos="(-2.123; 21.811; 3.405)"
+			Size="1.1"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+		<Flare
+			AttenEnd="300"
+			AttenStart="27"
+			ColorMultAtDay="0"
+			Color="g(255; 0; 0) x 0.3"
+			OcclusionOffset="-0.3"
+			Dir="(0; -1; 0)"
+			Pos="(3.467; 21.811; 3.405)"
+			Size="1.1"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+		<Flare
+			AttenEnd="300"
+			AttenStart="27"
+			ColorMultAtDay="0"
+			Color="g(255; 0; 0) x 0.3"
+			OcclusionOffset="-0.3"
+			Dir="(0; -1; 0)"
+			Pos="(3.467; 21.811; -3.552)"
+			Size="1.1"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+		<Flare
+			AttenEnd="300"
+			AttenStart="27"
+			ColorMultAtDay="0"
+			Color="g(255; 0; 0) x 0.3"
+			OcclusionOffset="-0.3"
+			Dir="(0; -1; 0)"
+			Pos="(-3.412; 21.811; -3.552)"
+			Size="1.1"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+	</PhysicsModel>
+	<GameData>
+		<WinchSocket Pos="(2.100; 1.2; 2.100)" />
+		<WinchSocket Pos="(2.100; 1.2; -2.100)" />
+		<WinchSocket Pos="(-2.100; 1.2; -2.100)" />
+		<WinchSocket Pos="(-2.100; 1.2; 2.100)" />
+	</GameData>
+	<Landmark Mesh="landmarks/us_tower_lmk" />
+</ModelBrand>

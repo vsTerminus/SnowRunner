@@ -1,0 +1,200 @@
+<Mutators>
+    <Mutator Name="test">
+        <Mutations>
+		    <ModelMutation />
+            <MaterialLayerMutation />
+
+            <BrushMutation />
+            <PlantMutation />
+
+            <OverlayMutation />
+        </Mutations>
+    </Mutator>
+	<Mutator Name="rus">
+        <Mutations>
+		    
+			<ModelMutation Source = "rock_03"  Target = "rock_03_rus"/>
+			<ModelMutation Source = "rock_06"  Target = "rock_04_rus"/>
+			<ModelMutation Source = "rock_05"  Target = "rock_rus_ter_01"/>
+			<ModelMutation Source = "rock_06a"  Target = "rock_04a_rus"/>
+            
+			<MaterialLayerMutation Source = "grass_test"      Target = "grass_rus_01"/>
+			<MaterialLayerMutation Source = "ground_test"     Target = "ground_rus_01"/>
+			<MaterialLayerMutation Source = "stone_test"      Target = "rocks_rus_01"/>
+			<MaterialLayerMutation Source = "gravel_pbr_test" Target = "gravel_rus_01"/>
+			<MaterialLayerMutation Source = "default"         Target = "grass_rus_01"/>
+
+            <BrushMutation Source = "Birches01"        Target = "Birches01Rus"/>
+			<BrushMutation Source = "Birches02"        Target = "Birches01Rus"/>
+			<BrushMutation Source = "Birches03"        Target = "Birches01Rus"/>
+			<BrushMutation Source = "Bushes"           Target = "BushesRus"/>
+			<BrushMutation Source = "BushesBig"        Target = "Birches04Rus"/>
+			<BrushMutation Source = "SmallTrees"       Target = "Birches04Rus"/>
+			<BrushMutation Source = "SmallRocks"       Target = "RocksRus"/>
+			<BrushMutation Source = "FernField"        Target = "FernsRus"/>
+			<BrushMutation Source = "Spruces_usa"      Target = "SprucesRus"/>
+			<BrushMutation Source = "Tsugas"           Target = "LarchesRus"/>
+			<BrushMutation Source = "Canes"            Target = "CanesRus"/>
+			<BrushMutation Source = "LeavesAutumn"     Target = "LeavesSummer"/>
+			<BrushMutation Source = "GrassTallAutumnA" Target = "GrassTallSummerB"/>
+			<BrushMutation Source = "GrassTallAutumnB" Target = "GrassTallSummerB"/>
+			<BrushMutation Source = "Maples"           Target = "Pines"/>
+			<BrushMutation Source = "Oaks"             Target = "LarchesRus"/>
+			<BrushMutation Source = "Aspens"           Target = "AspensRus"/>
+			
+            <PlantMutation Source = "birch_01"       Target = "birch_01_rus" />
+			<PlantMutation Source = "oak_02"         Target = "pine_03_rus" />
+			<PlantMutation Source = "sugar_maple_02" Target = "pine_03_rus" />
+
+            <OverlayMutation Source = "cliff_dirt"       Target = "cliff_dirt_rus"/>
+			<OverlayMutation Source = "cliff_dirt_large" Target = "cliff_dirt_large_rus"/>
+        
+		</Mutations>
+    </Mutator>
+	<Mutator Name="wis">
+        <Mutations>
+            
+			<ModelMutation Source = "water_tower_01"  Target = "water_tower_01_no_banner_02"/>
+			
+			<MaterialLayerMutation Source = "grass_test"      Target = "grass_rus_01"/>
+			<MaterialLayerMutation Source = "default"         Target = "grass_rus_01"/>
+			<MaterialLayerMutation Source = "grass_spring_01"      Target = "grass_rus_01"/>
+
+            <BrushMutation Source = "Birches01"        Target = "Birches01Rus"/>
+			<BrushMutation Source = "Birches02"        Target = "Birches01Rus"/>
+			<BrushMutation Source = "Birches03"        Target = "Birches01Rus"/>
+			<BrushMutation Source = "Bushes"           Target = "BushesRus"/>
+			<BrushMutation Source = "BushesBig"        Target = "Birches04Rus"/>
+			<BrushMutation Source = "SmallTrees"       Target = "Birches04Rus"/>
+			<BrushMutation Source = "FernField"        Target = "FernsRus"/>
+			<BrushMutation Source = "Canes"            Target = "CanesRus"/>
+			<BrushMutation Source = "LeavesAutumn"     Target = "LeavesSummer"/>
+			<BrushMutation Source = "GrassTallAutumnA" Target = "GrassTallSummerB"/>
+			<BrushMutation Source = "GrassTallAutumnB" Target = "GrassTallSummerB"/>
+			<BrushMutation Source = "Maples"           Target = "Tsugas"/>
+			<BrushMutation Source = "Oaks"             Target = "Tsugas"/>
+			<BrushMutation Source = "Aspens"           Target = "AspensRus"/>
+
+            <OverlayMutation Source = "cliff_dirt"       Target = "cliff_dirt_rus"/>
+			<OverlayMutation Source = "cliff_dirt_large" Target = "cliff_dirt_large_rus"/>
+        
+		</Mutations>
+    </Mutator>
+	<Mutator Name="rus_sn">
+        <Mutations>
+		    
+			<ModelMutation Source = "rock_03"  Target = "rock_03_rus"/>
+			<ModelMutation Source = "rock_06"  Target = "rock_04_rus"/>
+			<ModelMutation Source = "rock_05"  Target = "rock_rus_ter_01"/>
+			<ModelMutation Source = "rock_06a"  Target = "rock_04a_rus"/>
+            
+			<MaterialLayerMutation Source = "stone_test"      Target = "rocks_rus_01"/>
+			<MaterialLayerMutation Source = "gravel_pbr_test" Target = "gravel_rus_01"/>
+
+            <BrushMutation Source = "BirchesSnowy"     Target = "BirchesSnowyRus"/>
+            <BrushMutation Source = "AspensSnowy"      Target = "BirchesSnowyRus"/>
+			<BrushMutation Source = "SmallRocks"       Target = "RocksRus"/>
+			<BrushMutation Source = "Spruces_usa"      Target = "FirsSnowyRus"/>
+			<BrushMutation Source = "TsugasSnowy"      Target = "FirsSnowyRus"/>			
+			<BrushMutation Source = "Tsugas"           Target = "FirsSnowyRus"/>
+			<BrushMutation Source = "DebrisStones"     Target = "DebrisStonesRus"/>
+        
+		</Mutations>
+    </Mutator>
+	<Mutator Name="tayga_sn">
+        <Mutations>
+		    
+			<ModelMutation Source = "rock_03"  Target = "rock_03_rus"/>
+			<ModelMutation Source = "rock_06"  Target = "rock_04_rus"/>
+			<ModelMutation Source = "rock_05"  Target = "rock_rus_ter_01"/>
+			<ModelMutation Source = "rock_06a"  Target = "rock_04a_rus"/>
+            
+			<MaterialLayerMutation Source = "stone_test"      Target = "rocks_rus_01_snowy"/>
+			<MaterialLayerMutation Source = "gravel_pbr_test" Target = "gravel_rus_01"/>
+			<MaterialLayerMutation Source = "stone_snowy" Target = "rocks_rus_01_snowy"/>
+
+			<BrushMutation Source = "SmallRocks"       Target = "RocksRus"/>
+			<BrushMutation Source = "Spruces_usa"      Target = "LarchesRus"/>
+			<BrushMutation Source = "TsugasSnowy"      Target = "LarchesRus"/>			
+			<BrushMutation Source = "Tsugas"           Target = "LarchesRus"/>
+			<BrushMutation Source = "DebrisStones"     Target = "DebrisStonesRus"/>
+        
+		</Mutations>
+    </Mutator>
+	<Mutator Name="can">
+        <Mutations>
+		    
+			<ModelMutation Source = "us_flagpole"  Target = "ca_flagpole"/>
+			<ModelMutation Source = "us_flag"  Target = "ca_flag"/>
+			<ModelMutation Source = "water_tower_01"  Target = "water_tower_01_no_banner"/>
+			
+			<MaterialLayerMutation Source = "grass_test"      Target = "grass_spring_01"/>
+			<MaterialLayerMutation Source = "ground_test"     Target = "ground_spring_01"/>
+			<MaterialLayerMutation Source = "default"         Target = "grass_spring_01"/>
+			<MaterialLayerMutation Source = "grass_rus_01"      Target = "grass_spring_01"/>
+			<MaterialLayerMutation Source = "snow_layer"      Target = "snow_spring"/>
+
+            <BrushMutation Source = "Birches01"        Target = "BirchesSnowy"/>
+			<BrushMutation Source = "Birches02"        Target = "BirchesSnowy"/>
+			<BrushMutation Source = "Birches03"        Target = "BirchesSnowy"/>
+			<BrushMutation Source = "Birches04"        Target = "SmallTreesSnowy"/>
+			<BrushMutation Source = "Bushes"           Target = "BushesSnowy"/>
+			<BrushMutation Source = "BushesRus"        Target = "BushesSnowy"/>
+			<BrushMutation Source = "BushesBig"        Target = "FirsSmallSping"/>
+			<BrushMutation Source = "FirsSmall"        Target = "FirsSmallSping"/>
+			<BrushMutation Source = "SmallTrees"       Target = "SmallTreesSnowy"/>
+			<BrushMutation Source = "FernField"        Target = "GrassTallAutumnA"/>
+			<BrushMutation Source = "Spruces_usa"      Target = "SprucesRus"/>
+			<BrushMutation Source = "Tsugas"           Target = "TsugasBig"/>
+			<BrushMutation Source = "Canes"            Target = "CanesDry"/>
+			<BrushMutation Source = "LeavesAutumn"     Target = "LeavesFirs"/>
+			<BrushMutation Source = "GrassTallAutumnB" Target = "GrassTallCanC"/>
+			<BrushMutation Source = "Maples"           Target = "AspensSnowy"/>
+			<BrushMutation Source = "Oaks"             Target = "BirchesSnowy"/>
+			<BrushMutation Source = "Aspens"           Target = "AspensSnowy"/>
+			<BrushMutation Source = "GrassTallSummerB"           Target = "GrassTallCanC"/>
+
+            <OverlayMutation Source = "dirt_road_pbr"       Target = "dirt_road_can"/>
+			<OverlayMutation Source = "grass_road_01"       Target = "grass_road_can"/>
+            <OverlayMutation Source = "cliff_dirt"          Target = "cliff_dirt_can"/>
+            <OverlayMutation Source = "cliff_dirt_rus"       Target = "cliff_dirt_can"/>
+        
+		</Mutations>
+    </Mutator>
+		<Mutator Name="ru_05">
+        <Mutations>
+		    
+			<ModelMutation Source = "rock_03"  Target = "rock_03_rus"/>
+			<ModelMutation Source = "rock_06"  Target = "rock_04_rus"/>
+			<ModelMutation Source = "rock_05"  Target = "rock_rus_ter_01"/>
+			<ModelMutation Source = "rock_06a"  Target = "rock_04a_rus"/>
+            
+			<MaterialLayerMutation Source = "grass_rus_01"      Target = "grass_test"/>
+			<MaterialLayerMutation Source = "ground_test"     Target = "ground_rus_01"/>
+			<MaterialLayerMutation Source = "stone_test"      Target = "rocks_rus_01"/>
+			<MaterialLayerMutation Source = "gravel_pbr_test" Target = "gravel_rus_01"/>
+
+            <BrushMutation Source = "Birches01Rus"        Target = "Birches01"/>
+			<BrushMutation Source = "BushesRus"           Target = "Bushes"/>
+			<BrushMutation Source = "Birches04Rus"        Target = "Birches04"/>
+			<BrushMutation Source = "SmallRocks"       Target = "RocksRus"/>
+			<BrushMutation Source = "FernsRus"        Target = "FernField"/>
+			<BrushMutation Source = "Spruces_usa"      Target = "SprucesRus"/>
+			<BrushMutation Source = "Tsugas"           Target = "Firs"/>
+			<BrushMutation Source = "CanesRus"            Target = "Canes"/>
+			<BrushMutation Source = "LeavesSummer"     Target = "LeavesAutumn"/>
+			<BrushMutation Source = "GrassTallSummerB" Target = "GrassTallAutumnA"/>
+			<BrushMutation Source = "Pines"           Target = "Firs"/>
+			<BrushMutation Source = "LarchesRus"             Target = "Birches01"/>
+			<BrushMutation Source = "AspensRus"           Target = "Aspens"/>
+			
+            <PlantMutation Source = "birch_01_rus"       Target = "birch_01" />
+			<PlantMutation Source = "pine_03_rus"         Target = "oak_02" />
+
+            <OverlayMutation Source = "cliff_dirt_rus"       Target = "cliff_dirt"/>
+			<OverlayMutation Source = "cliff_dirt_large_rus" Target = "cliff_dirt_large"/>
+			<OverlayMutation Source = "grass_road_rus" Target = "grass_road_01"/>
+        
+		</Mutations>
+    </Mutator>
+</Mutators>

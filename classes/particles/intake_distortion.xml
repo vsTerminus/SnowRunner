@@ -1,0 +1,17 @@
+<CombineParticles
+	AirResistance="0.0"
+	IsDistortion="true"
+	SoftDepth="0.1"
+	ZOffset="-0.2"
+>
+	<Texture Diffuse="sfx/particles/heat__n_d.tga" />
+	<Size Function="(1.6; 1.0; 0.8)" Median="0.5" />
+	<Scale Random="0.2" Value="0.8" />
+	<LifeTime Value="0.4" />
+	<Color>
+		<Key At="0.0" Value="g(0; 0; 0; 20)" />
+		<Key At="0.2" Value="g(0; 0; 0; 60)" />
+		<Key At="0.9" Value="g(0; 0; 0; 40)" />
+		<Key At="1.0" Value="g(0; 0; 0; 20)" />
+	</Color>
+</CombineParticles>

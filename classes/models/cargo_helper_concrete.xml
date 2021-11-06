@@ -1,0 +1,13 @@
+<ModelBrand ClipCamera="false" DynamicModel="true">
+	<PhysicsModel>
+		<Body
+			Collisions="Dynamic"
+			Friction="255.0"
+			Mass="2000.0"
+			NoSoftContacts="true"
+		/>
+	</PhysicsModel>
+	<GameData LoadType="CargoMetalPlanks" PackSlotsNumber="2">
+		<CraneSocket Pos="(0; 0.234; 0)" />
+	</GameData>
+</ModelBrand>

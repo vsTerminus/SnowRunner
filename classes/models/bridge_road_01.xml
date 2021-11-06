@@ -1,0 +1,15 @@
+<ModelBrand DayShadowOffsetMult="0.1"
+            AcceptZoneBorderDecals="true"
+			ClipCameraBridge="true"
+>
+	<PhysicsModel>
+		<Body
+			Collisions="Dynamic"
+			NoSoftContacts="true"
+			
+			IsGameAsphalt="true"
+		/>
+	</PhysicsModel>
+	<Occlusion Size="(40.0; 40.0)" Texture="occlusion_bridge_asphalt_double_us.tga" />
+	<Landmark Mesh="landmarks/bridge_road_01_lmk" />
+</ModelBrand>

@@ -1,0 +1,9 @@
+<_templates Include="models" />
+<ModelBrand 
+	Instanced="true">
+	<PhysicsModel>
+		<Body _template="Cars" ModelFrame="BoneRoot">
+			<Constraint _template="Cars" />
+		</Body>
+	</PhysicsModel>
+</ModelBrand>

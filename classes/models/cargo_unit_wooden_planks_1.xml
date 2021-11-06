@@ -1,0 +1,16 @@
+<ModelBrand ClipCamera="false" DynamicModel="true">
+	<PhysicsModel>
+		<Body
+			Collisions="Dynamic"
+			Friction="1.8"
+			Mass="1000.0"
+			NoSoftContacts="true"
+		/>
+	</PhysicsModel>
+	<GameData PackSlotsNumber="1" LoadType="CargoWoodenPlanks">
+		
+		<CraneSocket Pos="(0.000; 1.431; 0.000)" />		
+
+    </GameData>
+		<Landmark Mesh="landmarks/cargo_unit_wooden_planks_1_lmk" MinScale="1.8" MaxScale="3.8"/>
+</ModelBrand>

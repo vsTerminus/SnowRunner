@@ -1,0 +1,37 @@
+<_templates Include="environment" />
+<PlantBrand _template="SmallTree" PlantingMinSpacing="1.4">
+	<PhysicsModel>
+		<Body _template="MediumTreeRoot" DebrisType="FoliageAutumn" ModelFrame="BoneRoot">
+			<Constraint _template="MediumTreeRoot" />
+			<Body _template="TrunkHead" ModelFrame="BoneTrunk">
+				<Constraint _template="TrunkHead" />
+			</Body>
+			<Body _template="BranchWithLeaves" DebrisType="FoliageAutumn" ModelFrame="BoneBranch1">
+				<Constraint _template="BranchWithLeaves" />
+			</Body>
+			<Body _template="BranchWithLeaves" ModelFrame="BoneBranch2">
+				<Constraint _template="BranchWithLeaves" />
+			</Body>
+			<Body _template="BranchWithLeaves" DebrisType="FoliageAutumn" ModelFrame="BoneBranch3">
+				<Constraint _template="BranchWithLeaves" />
+			</Body>
+			<Body _template="BranchWithLeaves" ModelFrame="BoneBranch4">
+				<Constraint _template="BranchWithLeaves" />
+			</Body>
+			<Body _template="BranchWithLeaves" DebrisType="FoliageAutumn" ModelFrame="BoneBranch5">
+				<Constraint _template="BranchWithLeaves" />
+			</Body>
+			<Body _template="BranchWithLeaves" ModelFrame="BoneBranch6">
+				<Constraint _template="BranchWithLeaves" />
+			</Body>
+			<Body _template="BranchWithLeaves" ModelFrame="BoneBranch7">
+				<Constraint _template="BranchWithLeaves" />
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<Landmark Mesh="landmarks/aspen_dry_lmk"/>
+	<Occlusion Intensity="0.32" Size="(10.0; 10.0)" />
+	<GameData>
+		<WinchSocket Pos="(-0.015; 0.575; -0.039)" ParentFrame="BoneRoot" />
+	</GameData>
+</PlantBrand>

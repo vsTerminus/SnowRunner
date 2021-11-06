@@ -1,0 +1,161 @@
+<ModelBrand
+	NightLightingShadowsAllowCap="true"
+	DynamicModel="true"
+>
+	<PhysicsModel>
+		<Body Collisions="Dynamic" ModelFrame="base">
+			<Body Collisions="Dynamic" ModelFrame="stage_1" />
+		</Body>
+	</PhysicsModel>
+	<Subset Name="build_stage_0" IsDefault="true">
+		<Mesh Name="base" />
+		<CdtMesh Name="base" />
+	</Subset>
+	<Subset Name="build_stage_1">
+		<Mesh Name="base" />
+		<CdtMesh Name="base" />
+		<Mesh Name="stage_1" />
+		<CdtMesh Name="stage_1" />
+		<AnimSubset Name="build_animation_0" />
+		<AnimTrack Name="stage_1_anim" />
+	</Subset>
+	<AnimSubset Name="build_animation_0">
+		<Mesh Name="base" />
+		<Mesh Name="animated_mesh" />
+		<CdtMesh Name="base" />
+	</AnimSubset>
+	<TrackEvents TrackName="stage_1_anim">
+		<AnimEvent Key="0">
+			<Sound Name="actors/actor_construction/actor_construct_pier" Range="200" Volume="1" />
+		</AnimEvent>
+		<AnimEvent Key="14">
+			<SFX Name="pier_smoke_02" Dir="(0; 1; 0)" Pos="(-8.923; 4.6; 30.128)" />
+		</AnimEvent>
+		<AnimEvent Key="19">
+			<SFX Name="pier_smoke_02" Dir="(0; 1; 0)" Pos="(3.322; 2.724; 24.112)" />
+		</AnimEvent>
+		<AnimEvent Key="25">
+			<SFX Name="pier_smoke_02" Dir="(0; 1; 0)" Pos="(3.572; 4.266; 29.709)" />
+		</AnimEvent>
+		<AnimEvent Key="37">
+			<SFX Name="pier_smoke_02" Dir="(0; 1; 0)" Pos="(-3.148; 4.371; 24.018)" />
+		</AnimEvent>
+		<AnimEvent Key="39">
+			<SFX Name="pier_smoke_02" Dir="(0; 1; 0)" Pos="(-9.258; 4.35; 17.936)" />
+		</AnimEvent>
+		<AnimEvent Key="45">
+			<SFX Name="pier_smoke_02" Dir="(0; 1; 0)" Pos="(3.402; 4.35; 17.936)" />
+		</AnimEvent>
+		<AnimEvent Key="57">
+			<SFX Name="pier_smoke_02" Dir="(0; 1; 0)" Pos="(-3.148; 4.371; 12.4)" />
+		</AnimEvent>
+		<AnimEvent Key="59">
+			<SFX Name="pier_smoke_02" Dir="(0; 1; 0)" Pos="(3.547; 2.734; 12.441)" />
+		</AnimEvent>
+		<AnimEvent Key="65">
+			<SFX Name="pier_smoke_02" Dir="(0; 1; 0)" Pos="(-8.927; 4.399; 6.174)" />
+		</AnimEvent>
+		<AnimEvent Key="77">
+			<SFX Name="pier_smoke_02" Dir="(0; 1; 0)" Pos="(-3.148; 4.371; 0.172)" />
+		</AnimEvent>
+		<AnimEvent Key="81">
+			<SFX Name="pier_smoke_02" Dir="(0; 1; 0)" Pos="(3.707; 4.463; 6.183)" />
+		</AnimEvent>
+		<AnimEvent Key="87">
+			<SFX Name="pier_smoke_02" Dir="(0; 1; 0)" Pos="(3.742; 2.839; 0.008)" />
+		</AnimEvent>
+		<AnimEvent Key="93">
+			<SFX Name="pier_smoke_02" Dir="(0; 1; 0)" Pos="(-8.934; 4.184; -5.8)" />
+		</AnimEvent>
+		<AnimEvent Key="105">
+			<SFX Name="pier_smoke_02" Dir="(0; 1; 0)" Pos="(-3.148; 4.371; -12.013)" />
+		</AnimEvent>
+		<AnimEvent Key="111">
+			<SFX Name="pier_smoke_02" Dir="(0; 1; 0)" Pos="(3.653; 4.36; -5.805)" />
+		</AnimEvent>
+		<AnimEvent Key="115">
+			<SFX Name="pier_smoke_02" Dir="(0; 1; 0)" Pos="(3.742; 2.839; -11.892)" />
+		</AnimEvent>
+		<AnimEvent Key="125">
+			<SFX Name="pier_smoke_02" Dir="(0; 1; 0)" Pos="(-8.974; 4.536; -17.945)" />
+		</AnimEvent>
+		<AnimEvent Key="137">
+			<SFX Name="pier_smoke_02" Dir="(0; 1; 0)" Pos="(-3.148; 4.371; -23.752)" />
+		</AnimEvent>
+		<AnimEvent Key="141">
+			<SFX Name="pier_smoke_02" Dir="(0; 1; 0)" Pos="(3.715; 4.46; -18.029)" />
+		</AnimEvent>
+		<AnimEvent Key="145">
+			<SFX Name="pier_smoke_02" Dir="(0; 1; 0)" Pos="(3.742; 2.839; -23.863)" />
+		</AnimEvent>
+		<AnimEvent Key="155">
+			<SFX Name="pier_smoke_02" Dir="(0; 1; 0)" Pos="(-9.019; 4.32; -29.939)" />
+		</AnimEvent>
+		<AnimEvent Key="177">
+			<SFX Name="pier_smoke_02" Dir="(0; 1; 0)" Pos="(-2.996; 4.371; -35.851)" />
+		</AnimEvent>
+		<AnimEvent Key="229">
+			<SFX Name="pier_smoke_01" Dir="(0; 1; 0)" Pos="(-2.459; 5.225; 34.583)" />
+		</AnimEvent>
+		<AnimEvent Key="259">
+			<SFX Name="pier_smoke_01" Dir="(0; 1; 0)" Pos="(-2.459; 5.225; 30.714)" />
+		</AnimEvent>
+		<AnimEvent Key="289">
+			<SFX Name="pier_smoke_01" Dir="(0; 1; 0)" Pos="(-2.459; 5.225; 26.506)" />
+		</AnimEvent>
+		<AnimEvent Key="309">
+			<SFX Name="pier_smoke_01" Dir="(0; 1; 0)" Pos="(-2.459; 5.225; 22.716)" />
+		</AnimEvent>
+		<AnimEvent Key="319">
+			<SFX Name="pier_smoke_01" Dir="(0; 1; 0)" Pos="(-2.459; 5.225; 18.842)" />
+		</AnimEvent>
+		<AnimEvent Key="329">
+			<SFX Name="pier_smoke_01_half" Dir="(0; 1; 0)" Pos="(-6.207; 5.225; 15.78)" />
+		</AnimEvent>
+		<AnimEvent Key="335">
+			<SFX Name="pier_smoke_01_half" Dir="(0; 1; 0)" Pos="(0.196; 5.225; 15.78)" />
+		</AnimEvent>
+		<AnimEvent Key="341">
+			<SFX Name="pier_smoke_01" Dir="(0; 1; 0)" Pos="(-2.459; 5.225; 12.019)" />
+		</AnimEvent>
+		<AnimEvent Key="351">
+			<SFX Name="pier_smoke_01" Dir="(0; 1; 0)" Pos="(-2.459; 5.225; 8.404)" />
+		</AnimEvent>
+		<AnimEvent Key="361">
+			<SFX Name="pier_smoke_01" Dir="(0; 1; 0)" Pos="(-2.459; 5.225; 4.303)" />
+		</AnimEvent>
+		<AnimEvent Key="371">
+			<SFX Name="pier_smoke_01" Dir="(0; 1; 0)" Pos="(-2.459; 5.225; -1.439)" />
+		</AnimEvent>
+		<AnimEvent Key="381">
+			<SFX Name="pier_smoke_01" Dir="(0; 1; 0)" Pos="(-2.459; 5.225; -6.868)" />
+		</AnimEvent>
+		<AnimEvent Key="387">
+			<SFX Name="pier_smoke_01_half" Dir="(0; 1; 0)" Pos="(-6.073; 5.279; -10.429)" />
+		</AnimEvent>
+		<AnimEvent Key="391">
+			<SFX Name="pier_smoke_01_half" Dir="(0; 1; 0)" Pos="(0.699; 5.14; -10.489)" />
+		</AnimEvent>
+		<AnimEvent Key="395">
+			<SFX Name="pier_smoke_01" Dir="(0; 1; 0)" Pos="(-2.213; 5.555; -14.216)" />
+		</AnimEvent>
+		<AnimEvent Key="399">
+			<SFX Name="pier_smoke_01" Dir="(0; 1; 0)" Pos="(-2.213; 5.555; -18.104)" />
+		</AnimEvent>
+		<AnimEvent Key="409">
+			<SFX Name="pier_smoke_01" Dir="(0; 1; 0)" Pos="(-2.528; 5.505; -21.979)" />
+		</AnimEvent>
+		<AnimEvent Key="419">
+			<SFX Name="pier_smoke_01_half" Dir="(0; 1; 0)" Pos="(-6.117; 5.218; -25.509)" />
+		</AnimEvent>
+		<AnimEvent Key="429">
+			<SFX Name="pier_smoke_01_half" Dir="(0; 1; 0)" Pos="(-6.115; 5.168; -29.394)" />
+		</AnimEvent>
+		<AnimEvent Key="439">
+			<SFX Name="pier_smoke_01_half" Dir="(0; 1; 0)" Pos="(-6.09; 5.167; -32.832)" />
+		</AnimEvent>
+		<AnimEvent Key="469">
+			<SFX Name="pier_smoke_full" Dir="(0; 1; 0)" Pos="(-3.558; 5.258; 6.434)" />
+		</AnimEvent>
+	</TrackEvents>
+</ModelBrand>

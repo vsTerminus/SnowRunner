@@ -1,0 +1,23 @@
+<CombineParticles AirResistance="0.5" Gravity="(0; -4; 0)">
+	<Texture
+		Diffuse="sfx/particles/fragments_contour__d_a.tga"
+		NumFramesX="4"
+		RandomFrameOffset="4"
+	/>
+	<Size Constant="0.04" />
+	<Scale Random="1.0" Value="1.6" />
+	<RotationSpeed Random="200" Value="600" />
+	<Color Value="g(255; 255; 255; 200) x 1.0">
+		<Key Alpha="180" At="0.00" />
+		<Key Alpha="180" At="0.3" />
+		<Key Alpha="180" At="0.6" />
+		<Key Alpha="0" At="1.00" />
+	</Color>
+	<Collisions
+		DetectWheels="true"
+		Enable="true"
+		Friction="0.4"
+		Radius="0.04"
+		Restitution="0.4"
+	/>
+</CombineParticles>

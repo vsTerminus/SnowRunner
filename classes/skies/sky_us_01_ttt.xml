@@ -1,0 +1,67 @@
+<!-- 
+<CombineSky Mesh="env/sky" Scale="1024" OffsetY="-0.16">
+   <Cloud Frame="clouds1" AngularSpeed="1.2605">
+      +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++   Утром и вечером нормальное, днём красное, ночью синее
+      <DayTimeGroup DiffuseMultiplier="g(255; 0; 0) x 10">
+         <DayTimeOverride DayTime="day__1" />
+         <DayTimeOverride DayTime="day__2" />
+         <DayTimeOverride DayTime="day__2_snow" />
+         <DayTimeOverride DayTime="day__3" />
+      </DayTimeGroup>
+      <DayTimeGroup DiffuseMultiplier="g(0; 0; 255) x 10">
+         <DayTimeOverride DayTime="night" />
+      </DayTimeGroup>
+   </Cloud>
+   <Cloud Frame="clouds2" AngularSpeed="-0.9167">
+      +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++   Ночью показывать другую текстуру, но вечером держать старые облака подольше поверх новых 
+      <DayTimeGroup DiffuseMap="env/cloud_hor_02_night__s_d_a.tga">
+         <DayTimeOverride DayTime="night" />
+      </DayTimeGroup>
+      <DayTimeGroup>
+         <DayTimeOverride DayTime="day_to_night" FadeOutStart="0.6" FadeOutEnd="0.9" />
+      </DayTimeGroup>
+   </Cloud>
+   <Cloud Frame="clouds3" AngularSpeed="1.0313" SkyColorFactor="0.75">
+       +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++   Ночью скрывать, чтобы не светились сквозь тёмный SkyColor/HorizonColor из-за SkyColorFactor не 1 
+      <DayTimeGroup Diffuse="">
+         <DayTimeOverride DayTime="night" />
+      </DayTimeGroup>
+   </Cloud>
+</CombineSky>
+-->
+
+
+<CombineSky Mesh="env/sky_02" Scale="1080" OffsetY="-0.11">
+   <Cloud Frame="clouds1" AngularSpeed="0.8" SkyColorFactor="1" DiffuseMap="env/cloud_01_us_01__s_d_a.tga" DiffuseMultiplier="g(255; 0; 0; 255) x 12">
+	<DayTimeOverride DayTime="day__1_us_01" Diffuse="env/cloud_04_us_02_night__d_a.tga" DiffuseMultiplier="g(255; 255; 255; 100) x 9"/>
+	<DayTimeOverride DayTime="day__2_us_01" Diffuse="env/cloud_04_us_02_night__d_a.tga" DiffuseMultiplier="g(255; 255; 255; 100) x 9"/>
+	<DayTimeOverride DayTime="day__3_us_01" Diffuse="env/cloud_04_us_02_night__d_a.tga" DiffuseMultiplier="g(255; 255; 255; 100) x 9"/>
+	<DayTimeOverride DayTime="night_to_day_us_01" Diffuse="env/cloud_04_us_02_night__d_a.tga" DiffuseMultiplier="g(255; 255; 255; 100) x 9"/>
+	<DayTimeOverride DayTime="day_to_night_us_01" Diffuse="env/cloud_04_us_02_night__d_a.tga" DiffuseMultiplier="g(255; 255; 255; 100) x 9"/>
+	<DayTimeOverride DayTime="night_us_01" Diffuse="env/cloud_04_us_02_night__d_a.tga" DiffuseMultiplier="g(255; 255; 255; 100) x 9"/>
+   <Cloud/>
+   <Cloud
+      Frame="clouds2"
+      AngularSpeed="0.4"
+      SkyColorFactor="1" 
+      DiffuseMap="env/cloud_02_us_01__s_d_a.tga"
+      DiffuseMultiplier="g(255; 197; 78; 50) x 18"/>
+   <Cloud
+      Frame="clouds3"
+      AngularSpeed="0.6"
+      SkyColorFactor="1"
+      DiffuseMap="env/cloud_03_us_01__s_d_a.tga"
+      DiffuseMultiplier="g(42; 47; 249)"/>
+   <Cloud
+      Frame="clouds4"
+      AngularSpeed="0.2"
+      SkyColorFactor="1"
+      DiffuseMap="env/cloud_04_us_01__d_a.tga"
+      DiffuseMultiplier="g(255; 255; 255; 210) x 5"/>
+   <Cloud
+      Frame="clouds5"
+      AngularSpeed="0.0"
+      SkyColorFactor="1"
+      DiffuseMap="env/sun_disc_01__d_a.tga"
+      DiffuseMultiplier="g(255; 255; 255; 210) x 120"/>
+</CombineSky>

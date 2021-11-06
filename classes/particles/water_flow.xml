@@ -1,0 +1,28 @@
+<CombineParticles
+	AspectRatio="0.5"
+	EnableColors="true"
+	Gravity="(0; -2; 0)"
+	Orientation="AlignedBillboard"
+	SoftDepth="0.2"
+	ZOffset="-0.1"
+>
+	<Texture
+		Diffuse="sfx/substance/upspray_fast__d_a.tga"
+		Distort="sfx/substance/distort__n_d.tga"
+		DistortMult="1.0"
+		DistortScale="0.4"
+		DistortSpeed="1.6"
+	/>
+	<Subparticles
+		Density="8"
+		Divergence="0.6"
+		Offset="0.15"
+		Type="water_splash"
+	>
+		<ExtraLifeTime Value="0.8" />
+	</Subparticles>
+	<Size Function="(0.6; 0.8; 1.2)" Median="0.5" />
+	<LifeTime Value="1.0" />
+	<Color Value="(255; 255; 255; 105) x 0.6" />
+	<AlphaClip Function="(1.0; 0.2; 0.0)" Median="0.2" />
+</CombineParticles>

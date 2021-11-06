@@ -1,0 +1,55 @@
+<_templates Include="models" />
+<ModelBrand
+	NightLightingShadowsAllowCap="true">
+	<PhysicsModel>
+		<Body Collisions="None" _template="ModelStaticRoot" ModelFrame="BoneRoot">
+			<Constraint _template="ModelStaticRoot" />
+			<Body IsCapsuleCDT="False" Mass="100" NoSoftContacts="true" ModelFrame="part_1">
+				<Constraint _template="FenceStake" />
+			</Body>
+			<Body IsCapsuleCDT="False" Mass="100" NoSoftContacts="true" ModelFrame="part_2">
+				<Constraint _template="FenceStake" />
+			</Body>
+			<Body IsCapsuleCDT="False" Mass="100" NoSoftContacts="true" ModelFrame="part_3">
+				<Constraint _template="FenceStake" />
+			</Body>
+			<Body IsCapsuleCDT="False" Mass="100" NoSoftContacts="true" ModelFrame="part_4">
+				<Constraint _template="FenceStake" />
+			</Body>
+			<Body IsCapsuleCDT="False" Mass="100" NoSoftContacts="true" ModelFrame="part_5">
+				<Constraint _template="FenceStake" />
+			</Body>
+			<Body IsCapsuleCDT="False" Mass="100" NoSoftContacts="true" ModelFrame="part_6">
+				<Constraint _template="FenceStake" />
+			</Body>
+			<Body IsCapsuleCDT="False" Mass="100" NoSoftContacts="true" ModelFrame="part_7">
+				<Constraint _template="FenceStake" />
+			</Body>
+			<Body IsCapsuleCDT="False" Mass="100" NoSoftContacts="true" ModelFrame="part_8">
+				<Constraint _template="FenceStake" />
+			</Body>
+				<Body sCapsuleCDT="False" Mass="100" NoSoftContacts="true" ModelFrame="part_9">
+					<Constraint _template="FencePart" />
+				</Body>
+				<Body IsCapsuleCDT="False" Mass="100" NoSoftContacts="true" ModelFrame="part_10">
+					<Constraint _template="FencePart" />
+				</Body>
+			<Body IsCapsuleCDT="False" Mass="100" NoSoftContacts="true" ModelFrame="part_11">
+				<Constraint _template="FencePart" />
+			</Body>
+				<Body IsCapsuleCDT="False" Mass="100" NoSoftContacts="true" ModelFrame="part_12">
+					<Constraint _template="FencePart" />
+				</Body>
+			<Body IsCapsuleCDT="False" Mass="100" NoSoftContacts="true" ModelFrame="part_13">
+				<Constraint _template="FenceStake" />
+			</Body>
+				<Body IsCapsuleCDT="False" Mass="100" NoSoftContacts="true" ModelFrame="part_14">
+					<Constraint _template="FencePart" />
+				</Body>
+		</Body>
+	</PhysicsModel>
+	<Occlusion
+		Size="(5.0; 7.0)" 
+		Texture="occlusion_rus_glg_bed_02.tga"
+	/>
+</ModelBrand>

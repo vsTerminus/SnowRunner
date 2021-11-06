@@ -1,0 +1,14 @@
+<ImpactTypes>
+	<ImpactType
+		CollideWithTerrain="true"
+		IgnoreImpacts="Foliage,Flower"
+		MinVelocity="0.2"
+		Name="Truck"
+		Sound=""
+		SoundTerrain="trucks/common/truck_hit_terrain_rnd_set/truck_hit_terrain_rnd"
+		StoreTruckCollision="true"
+	/>
+	<ImpactType MinMass="20" Name="Foliage" Sound="trucks/common/truck_foliage_rnd_set/truck_foliage_hit_rnd" />
+	<ImpactType MinVelocity="0.2" Name="Flower" />
+	<ImpactType MinMass="2500" MinVelocity="0.5" Name="IceChunk" Sound="surfaces/surf_ice_break_rnd" />
+</ImpactTypes>

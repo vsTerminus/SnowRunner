@@ -1,0 +1,26 @@
+<CombineParticles AirResistance="16.0" SoftDepth="1.0" ZOffset="-1.0">
+	<Texture
+		Diffuse="sfx/particles/rolling_dust__d_a.tga"
+		RollEnd="1.0"
+		RollStart="0.05"
+		RollingMask="sfx/particles/rolling_smoke_mask_small__s_d.tga"
+	/>
+	<Size Function="(1.0; 3.0; 8.0)" Median="0.5" />
+	<Scale Random="0.05" Value="0.5" />
+	<RotationSpeed Random="180" />
+	<Rotation Random="360" />
+	<LifeTime Random="0.2" Value="0.6" />
+	<Color>
+		<Key At="0.0" Value="(250; 200; 133; 0)" />
+		<Key At="0.1" Value="(250; 200; 133; 50)" />
+		<Key At="0.6" Value="(250; 200; 133; 70)" />
+		<Key At="1.0" Value="(250; 200; 133; 0)" />
+	</Color>
+	<Collisions
+		DetectWater="true"
+		Enable="true"
+		Friction="0.0"
+		Radius="0.5"
+		Restitution="0"
+	/>
+</CombineParticles>

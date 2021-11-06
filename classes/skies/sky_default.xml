@@ -1,0 +1,5 @@
+<CombineSky Mesh="env/sky" Scale="1024" OffsetY="-0.16">
+	<Cloud Frame="clouds1" AngularSpeed="1.2605"/>
+	<Cloud Frame="clouds2" AngularSpeed="-0.9167"/>
+	<Cloud Frame="clouds3" AngularSpeed="1.0313"/>
+</CombineSky>

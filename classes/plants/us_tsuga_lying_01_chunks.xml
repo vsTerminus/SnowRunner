@@ -1,0 +1,32 @@
+<_templates Include="environment" />
+<PlantBrand _template="LyingTreeChunks">
+	<PhysicsModel>
+		<Body _template="FallingTreeRoot" ModelFrame="BoneRoot">
+			<Constraint _template="TreeChunk"/>
+			<Body _template="LyingBranch" ModelFrame="BoneBranch1">
+				<Constraint _template="TreeChunk"/>
+			</Body>
+			<Body _template="LyingBranch" ModelFrame="BoneBranch2">
+				<Constraint _template="TreeChunk"/>
+			</Body>
+			<Body _template="LyingBranch" ModelFrame="BoneBranch3">
+				<Constraint _template="TreeChunk"/>
+			</Body>
+			<Body _template="LyingBranch" ModelFrame="BoneBranch6">
+				<Constraint _template="TreeChunk"/>
+			</Body>
+			<Body _template="LyingBranch" ModelFrame="BoneBranch7">
+				<Constraint _template="TreeChunk"/>
+			</Body>			
+			<Body _template="LyingTrunk" ModelFrame="BoneEnd">
+				<Constraint _template="TreeChunk"/>
+				<Body _template="LyingBranch" ModelFrame="BoneBranch5">
+					<Constraint _template="TreeChunk"/>
+				</Body>
+				<Body _template="LyingBranch" ModelFrame="BoneBranch4">
+					<Constraint _template="TreeChunk"/>
+				</Body>
+			</Body>
+		</Body>
+	</PhysicsModel>
+</PlantBrand>

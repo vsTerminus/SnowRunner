@@ -1,0 +1,101 @@
+<_templates>
+	<Constraint>
+		<Railing AxisLocal="(1;0;0)" Type="Hinge">
+			<Motor Damping="60000" Spring="400000" Type="Spring" />
+		</Railing>
+		<Bridge
+			PlaneAxisLocal="(0; 1; 0)"
+			TwistAxisLocal="(1; 0; 0)"
+			TwistMin="-0.2"
+			TwistMax="0.25"
+			Type="Ragdoll"
+		>
+			<AllMotor Damping="80000" Spring="400000" Type="Spring" />
+		</Bridge>
+	</Constraint>
+	<Body>
+		<Railing Mass="200" NoSoftContacts="true"  />
+		<Bridge
+			AngularDamping="0.1"
+			Mass="1000"
+			NoSoftContacts="true"
+			
+		/>
+	</Body>
+</_templates>
+<ModelBrand
+	NightLightingShadowsAllowCap="true"
+	ClipCameraBridge="true"
+>
+	<PhysicsModel>
+		<Constraint
+			_template="Bridge"
+			ModelFrameChild="BoneBridgeR1"
+			ModelFrameParent="BoneColumn"
+			PivotOffset="(2.9; 0; 0)"
+		/>
+		<Constraint
+			_template="Bridge"
+			ModelFrameChild="BoneBridgeL1"
+			ModelFrameParent="BoneColumn"
+			PivotOffset="(2.9; 0; 0)"
+		/>
+		<Constraint
+			_template="Bridge"
+			ModelFrameChild="BoneBridgeR3"
+			ModelFrameParent="BoneColumn"
+			PivotOffset="(2.4; 0; 0)"
+		/>
+		<Constraint
+			_template="Bridge"
+			ModelFrameChild="BoneBridgeL3"
+			ModelFrameParent="BoneColumn"
+			PivotOffset="(2.4; 0; 0)"
+		/>
+		<Body _template="Bridge" Mass="0" ModelFrame="BoneColumn">
+			<Body _template="Bridge" ModelFrame="BoneBridgeL0">
+				<Constraint _template="Bridge" />
+				<Body _template="Bridge" ModelFrame="BoneBridgeL1">
+					<Constraint _template="Bridge" />
+				</Body>
+			</Body>
+			<Body _template="Bridge" ModelFrame="BoneBridgeR0">
+				<Constraint _template="Bridge" />
+				<Body _template="Bridge" ModelFrame="BoneBridgeR1">
+					<Constraint _template="Bridge" />
+				</Body>
+			</Body>
+			<Body _template="Bridge" ModelFrame="BoneBridgeL2">
+				<Constraint _template="Bridge" />
+				<Body _template="Bridge" ModelFrame="BoneBridgeL3">
+					<Constraint _template="Bridge" />
+				</Body>
+				<Body _template="Railing" ModelFrame="BoneSideL0">
+					<Constraint _template="Railing" />
+				</Body>
+				<Body _template="Railing" ModelFrame="BoneSideR0">
+					<Constraint _template="Railing" />
+				</Body>
+			</Body>
+			<Body _template="Bridge" ModelFrame="BoneBridgeR2">
+				<Constraint _template="Bridge" />
+				<Body _template="Bridge" ModelFrame="BoneBridgeR3">
+					<Constraint _template="Bridge" />
+				</Body>
+				<Body _template="Railing" ModelFrame="BoneSideL2">
+					<Constraint _template="Railing" />
+				</Body>
+				<Body _template="Railing" ModelFrame="BoneSideR2">
+					<Constraint _template="Railing" />
+				</Body>
+			</Body>
+			<Body _template="Railing" ModelFrame="BoneSideL1">
+				<Constraint _template="Railing" />
+			</Body>
+			<Body _template="Railing" ModelFrame="BoneSideR1">
+				<Constraint _template="Railing" />
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<Landmark Mesh="landmarks/bridge_wooden_big_01_lmk" />
+</ModelBrand>

@@ -1,0 +1,24 @@
+<ModelBrand NightLightingShadowsAllowCap="true" DynamicModel="true">
+	<Subset IsDefault="true" Name="state_start">
+		<Mesh Name="state_start" />
+		<CdtMesh Name="state_start" />
+	</Subset>
+	<Subset Name="state_end">
+		<Mesh Name="state_end" />
+		<CdtMesh Name="state_end" />
+		<OnSubsetActivateEvent>
+			<Sound Name="actors/actor_construction/actor_construct_wooden_power_line" Range="50" Volume="1" Pos="(0; 3; 0)"/>
+			<SFX Name="pole_smoke_01" Dir="(0; 1; 0)" Pos="(3.697; 0.3; -0.053)"/>
+			<SFX Name="pole_smoke_02" Dir="(0; 1; 0)" Pos="(0.022; 4.397; 0.174)"/>
+			<SFX Name="bridge_sparks_02" Dir="(0; 1; 0)" Pos="(0.685; 7.089; 0.25)"/>
+			<SFX Name="bridge_sparks_02" Dir="(0; 1; 0)" Pos="(-0.736; 7.663; 0.159)"/>
+			<SFX Name="bridge_sparks_02" Dir="(0; 1; 0)" Pos="(0.782; 7.617; 0.212)"/>
+		</OnSubsetActivateEvent>
+	</Subset>
+	<PhysicsModel>
+		<Body Collisions="Dynamic" ModelFrame="state_start">
+			<Body Collisions="Dynamic" ModelFrame="state_end"/>
+		</Body>
+	</PhysicsModel>
+	<Landmark Mesh="landmarks/pole_a_objective_lmk"/>
+</ModelBrand>

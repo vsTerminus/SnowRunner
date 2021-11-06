@@ -1,0 +1,9 @@
+<CargoType>
+	<UiDesc
+		UiName="UI_CARGO_SERVICE_SPARE_PARTS_NAME"
+		UiDesc="UI_CARGO_SERVICE_SPARE_PARTS_DESC"
+		UiIcon20x20="cargoTypeServiceSpareParts20"
+		UiIcon40x40="cargoTypeServiceSpareParts40"
+		UiIcon100x100="cargoTypeServiceSpareParts"
+	/>
+</CargoType>

@@ -1,0 +1,10 @@
+<_templates Include="models" />
+<ModelBrand>
+	<StaticLights>
+		<StaticLight _template="Red" Dir="(0; -0.9; -0.2)" Pos="(-2.778; 3.409; -3.072)" />
+	</StaticLights>
+	<PhysicsModel>
+		<Body Collisions="Dynamic" />
+	</PhysicsModel>
+	<Occlusion Size="(12.5; 25)" Texture="occlusion_fuel_tank.tga" />
+</ModelBrand>

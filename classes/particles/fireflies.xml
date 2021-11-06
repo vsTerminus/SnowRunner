@@ -1,0 +1,26 @@
+<CombineParticles
+	BillboardOffset="(2.0; 2.0)"
+	IgnoreShadowmap="true"
+	IsAdditive="true"
+	Wind="(0; 0.1; 0)"
+	WindDivergence="60"
+>
+	<Texture Diffuse="sfx/particles/firefly__d_a.tga" />
+	<Size Function="(0.1; 0.1; 0.0)" Median="0.8" />
+	<Scale Random="0.4" Value="0.8" />
+	<RotationSpeed Random="20" Value="50" />
+	<LifeTime Random="4.0" Value="10.0" />
+	<Color>
+		<Key At="0.0" Value="g(142; 124; 198) x 1" />
+		<Key At="0.3" Value="g(225; 176; 195) x 6" />
+		<Key At="0.6" Value="g(161; 148; 203) x 1" />
+		<Key At="1.0" Value="g(199; 160; 169) x 2" />
+	</Color>
+	<Collisions
+		DetectTruckCapsule="true"
+		Enable="true"
+		Friction="0.0"
+		Radius="1.0"
+		Restitution="0.05"
+	/>
+</CombineParticles>

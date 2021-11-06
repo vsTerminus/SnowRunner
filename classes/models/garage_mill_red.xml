@@ -1,0 +1,8 @@
+<_templates Include="models" />
+<ModelBrand Instanced="true" InstancedAsModel="true">
+	<PhysicsModel>
+		<Body Collisions="Dynamic" />
+	</PhysicsModel>
+	<Occlusion Size="(30.0; 14.0)" Texture="occlusion_garage_mill_red.tga" />
+	<Landmark Mesh="landmarks/garage_mill_red_lmk" />
+</ModelBrand>

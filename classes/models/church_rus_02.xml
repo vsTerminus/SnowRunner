@@ -1,0 +1,16 @@
+<ModelBrand
+	NightLightingShadowsAllowCap="true"
+>
+	<PhysicsModel>
+		<Body
+			Collisions="Dynamic"
+		/>
+	</PhysicsModel>
+	<Landmark
+		Mesh="landmarks/church_rus_02_lmk"
+	/>
+	<Occlusion
+		Size="(10.0; 16.0)" 
+		Texture="occlusion_church_rus_02.tga"
+	/>
+</ModelBrand>

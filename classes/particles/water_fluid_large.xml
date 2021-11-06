@@ -1,0 +1,27 @@
+<CombineParticles
+	AirResistance="2.0"
+	EnableColors="true"
+	Gravity="(0; -4; 0)"
+	SoftDepth="0.4"
+	WetDecals="0.25"
+	ZOffset="-0.1"
+>
+	<Texture
+		Diffuse="sfx/substance/fluid__d_a.tga"
+		Distort="sfx/substance/distort__n_d.tga"
+		DistortMult="0.4"
+		DistortScale="1"
+		DistortSpeed="0.35"
+		NumFramesX="2"
+		NumFramesY="2"
+		RandomFrameOffset="4"
+	/>
+	<Subparticles Density="32" Type="water_droplet" />
+	<Size Function="(0.4; 0.8; 1.4)" Median="0.5" />
+	<Scale Random="0.4" Value="1.0" />
+	<RotationSpeed Value="20" />
+	<Rotation Random="360" />
+	<LifeTime Value="1.5" />
+	<Color Value="(255; 255; 255) x 0.6" />
+	<AlphaClip Function="(0.0; 0.4; 1.0)" Median="0.6" />
+</CombineParticles>

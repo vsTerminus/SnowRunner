@@ -1,0 +1,8 @@
+<_templates Include="models" />
+<ModelBrand Instanced="true" InstancedAsModel="true">
+	<PhysicsModel>
+		<Body Collisions="Dynamic" />
+	</PhysicsModel>
+	<Occlusion Size="(7.0; 7.0)" Texture="occlusion_barn_01.tga" />
+	<Landmark Mesh="landmarks/barn_01_lmk" />
+</ModelBrand>

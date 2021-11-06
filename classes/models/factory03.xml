@@ -1,0 +1,7 @@
+<ModelBrand NightLightingShadowsAllowCap="true">
+	<PhysicsModel>
+		<Body Collisions="Dynamic" />
+	</PhysicsModel>
+	<Occlusion Size="(44.0; 24.0)" Texture="occlusion_factory03.tga" />
+	<Landmark Mesh="landmarks/factory03_lmk" />
+</ModelBrand>

@@ -1,0 +1,34 @@
+<_templates Include="models" />
+<ModelBrand 
+	NightLightingShadowsAllowCap="True"
+	Instanced="true"
+	Fence="True"
+>
+	<PhysicsModel>
+		<Body _template="ModelStaticRoot" ModelFrame="BoneRoot">
+			<Constraint _template="ModelStaticRoot" />
+			<Body _template="StakeBeton" ModelFrame="BoneStake">
+				<Constraint _template="StakeBeton" />
+				<Body _template="FenceStake" ModelFrame="BonePart2">
+					<Constraint _template="FenceStake" />
+				</Body>
+			</Body>
+			<Body _template="StakeBeton" ModelFrame="BoneStake1">
+				<Constraint _template="StakeBeton" />
+				<Body _template="FenceStake" ModelFrame="BonePart3">
+					<Constraint _template="FenceStake" />
+				</Body>
+			</Body>
+			<Body _template="Null" ModelFrame="BonePart1">
+				<Constraint _template="Null" />
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<Occlusion Size="(12.0, 6.0)" Texture="occlusion_rus_glg_fency_04_a.tga" />
+	<GameData>
+		<WinchSocket Pos="(0.2, 0.8, '-0.05')" />
+		<WinchSocket Pos="('-0.75', 0.8, '-0.05')" />
+		<WinchSocket Pos="(0.2, 0.8, '-4.05')" />
+		<WinchSocket Pos="('-0.75', 0.8, '-4.05')" />
+	</GameData>
+</ModelBrand>

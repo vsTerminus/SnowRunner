@@ -1,0 +1,19 @@
+<CombineParticles
+	AirResistance="5.0"
+	AspectRatio="0.6"
+	BillboardOffset="(2.0; 2.0)"
+	Gravity="(0; -0.4; 0)"
+	IsAlphaKill="true"
+>
+	<Texture
+		Diffuse="sfx/particles/leaves_winter__d_a.tga"
+		NumFramesX="8"
+		NumFramesY="2"
+		RandomFrameOffset="16"
+	/>
+	<Size Function="(0.06; 0.06; 0.004)" Median="0.8" />
+	<Scale Random="0.2" Value="0.8" />
+	<RotationSpeed Value="240" />
+	<Rotation Random="360" />
+	<LifeTime Value="4.0" />
+</CombineParticles>

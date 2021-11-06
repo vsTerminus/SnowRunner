@@ -1,0 +1,27 @@
+<ModelBrand
+	ApplyNormalInReference="false"
+	CastDayLightmapShadow="false"
+	CastNightLightmapShadow="false"
+	ClipCamera="false"
+	DynamicModel="false"
+	Instanced="false"
+>
+	<StaticLights>
+		<StaticLight
+			AttenEnd="30"
+			Color="g(140; 196; 248) x 0.11"
+			CreateSuperLight="true"
+			Dir="(0; -1; 0)"
+			InnerCone="0"
+			OuterCone="100"
+			Pos="(0; 25; 0)"
+			Shadows="true"
+		/>
+	</StaticLights>
+	
+	<PhysicsModel>
+		<Body
+			Collisions="None"
+		/>
+	</PhysicsModel>
+</ModelBrand>

@@ -1,0 +1,9 @@
+<_templates Include="models" />
+<ModelBrand NightLightingShadowsAllowCap="True">
+	<PhysicsModel>
+		<Body _template="HeavyWeight" ModelFrame="BoneRoot">
+			<Constraint _template="HeavyWeight" />
+		</Body>
+	</PhysicsModel>
+	<Occlusion Size="(7.0, 13.0)" Texture="occlusion_rus_trailer_02.tga" />
+</ModelBrand>

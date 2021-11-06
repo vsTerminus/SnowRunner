@@ -1,0 +1,9 @@
+<MudType 
+	Texture="tiles/mud_pbr_2__d_a.tga" 
+	Normal="tiles/mud_pbr_relief_2__d_a.tga"
+	UvTiling="2"
+
+	FlatTexture="tiles/mud_flat_pbr_2__d_a.tga" 
+	FlatNormal="tiles/mud_flat_pbr_relief_2__d_a.tga"
+	FlatUvTiling="1"
+/>

@@ -1,0 +1,28 @@
+<_templates Include="environment" />
+<PlantBrand
+	_template="SmallRock"
+	DistSkipPercentage="0.4"
+	PlantingMinSpacing="0.35"
+	PlantingOffsetY="-0.01"
+>
+	<PhysicsModel>
+		<Body
+			AllowedPenetrationDepth="0.5"
+			AngularDamping="1.0"
+			LinearDamping="1.0"
+			Mass="20.0"
+			NoSoftContacts="true"
+		>
+			<Constraint BreakOffThreshold="100" Type="Fixed" />
+		</Body>
+	</PhysicsModel>
+	<Occlusion Intensity="0.8" Size="(0.8; 0.8)" />
+	<ChunksBreak
+		Brands="mud_chunk_a"
+		Handler="Mud"
+		Offsets="(-0.15; 0.12; 0),(0.12; 0.12; -0.15),(0.12; 0.12; 0.15)"
+		SpawnAngMult="8.0"
+		SpawnLinMult="0.5"
+		Threshold="15"
+	/>
+</PlantBrand>

@@ -1,0 +1,29 @@
+<CombineParticles
+	AirResistance="1.0"
+	AspectRatio="0.4"
+	Gravity="(0; -8; 0)"
+	MudDecals="0"
+	Orientation="TrackingBillboard"
+	SortingPriority="-1"
+>
+	<Texture Diffuse="sfx/substance/sheet_large__d_a.tga" />
+	<Size Function="(0.2; 0.4; 0.6)" Median="0.4" />
+	<Scale Random="0.2" Value="1.0" />
+	<LifeTime Value="1.2" />
+	<!--<Color Value="g(117; 105; 89; 220) x 0.8" />-->
+	
+	<Color Value="g(117; 105; 89) x 0.8">
+		<Key Alpha="0" At="0.00" />
+		<Key Alpha="180" At="0.25" />
+		<Key Alpha="60" At="0.5" />
+		<Key Alpha="0" At="1.00" />
+	</Color>	
+	<!--<AlphaClip Function="(0.0; 0.5; 1.0)" Median="0.6" />	-->
+	
+	<Collisions
+		Enable="true"
+		Friction="0.15"
+		Radius="0.01"
+		Restitution="0.0"
+	/>	
+</CombineParticles>

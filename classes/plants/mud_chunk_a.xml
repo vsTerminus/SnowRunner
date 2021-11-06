@@ -1,0 +1,18 @@
+<_templates Include="environment" />
+<PlantBrand
+	_template="SmallRock"
+	DistSkipPercentage="0.6"
+	PlantingMinSpacing="0.15"
+	PlantingOffsetY="-0.01"
+>
+	<PhysicsModel>
+		<Body
+			AllowedPenetrationDepth="0.5"
+			Mass="10.0"
+			NoSoftContacts="true"
+		>
+			<Constraint BreakOffThreshold="100" Type="Fixed" />
+		</Body>
+	</PhysicsModel>
+	<Occlusion Intensity="0.6" Size="(0.8; 0.8)" />
+</PlantBrand>

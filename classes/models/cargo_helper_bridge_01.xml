@@ -1,0 +1,14 @@
+<ModelBrand ClipCamera="false" DynamicModel="true">
+	<PhysicsModel>
+		<Body
+			Collisions="Dynamic"
+			Friction="5"
+			Mass="200.0"
+			NoSoftContacts="true"
+		/>
+	</PhysicsModel>
+	<GameData>
+		<WinchSocket Pos="(-5.4; 0.15; 0)"/>
+		<CraneSocket Pos="(0.000; 0.234; 0.000)" />
+	</GameData>
+</ModelBrand>

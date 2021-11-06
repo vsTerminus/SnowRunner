@@ -1,0 +1,36 @@
+<CombineParticles
+	AirResistance="1.2"
+	ApplyMudVertexDecals="true"
+	AspectRatio="0.8"
+	Gravity="(0; -4; 0)"
+	IsAlphaKill="true"
+	MudDecals="0.5"
+	Orientation="AlignedBillboard"
+>
+	<Texture
+		Diffuse="sfx/substance/dirt_seq01__d_a.tga"
+		Distort="sfx/substance/distort2__n_d.tga"
+		DistortMult="0.3"
+		DistortScale="1.0"
+		DistortSpeed="0.12"
+		NumFramesX="4"
+		NumFramesY="2"
+		RandomFrameOffset="8"
+	/>
+	<Subparticles
+		Density="64"
+		Divergence="0.75"
+		Offset="0.1"
+		Type="mud"
+	>
+		<ExtraLifeTime Value="2.0" />
+	</Subparticles>
+	<Size Function="(0.5; 2.5; 5.0)" Median="0.5" />
+	<LifeTime Value="2.0" />
+	<Color Value="g(146; 132; 109) x 0.13">
+		<Key Alpha="455" At="0.0" />
+		<Key Alpha="255" At="0.2" />
+		<Key Alpha="240" At="0.4" />
+		<Key Alpha="140" At="1.0" />
+	</Color>
+</CombineParticles>

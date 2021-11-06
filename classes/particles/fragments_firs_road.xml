@@ -1,0 +1,25 @@
+<CombineParticles
+	AirResistance="5.0"
+	AspectRatio="1.0"
+	BillboardOffset="(2.0; 2.0)"
+	Gravity="(0; -3; 0)"
+	IsAlphaKill="true"
+>
+	<Texture
+		Diffuse="sfx/particles/leaves_firs__d_a.tga"
+		NumFramesX="4"
+		NumFramesY="2"
+		RandomFrameOffset="8"
+	/>
+	<Size Function="(0.06; 0.06; 0.004)" Median="0.8" />
+	<Scale Random="0.3" Value="1.3" />
+	<RotationSpeed Value="240" />
+	<Rotation Random="360" />
+	<LifeTime Value="4.0" />
+	<Color>
+		<Key At="0.0" Value="g(154; 154; 154)" />
+		<Key At="0.8" Value="g(154; 154; 154)" />
+		<Key At="0.9" Value="g(154; 154; 154; 200)" />
+		<Key At="1.0" Value="g(154; 154; 154; 0)" />
+	</Color>
+</CombineParticles>

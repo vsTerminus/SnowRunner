@@ -1,0 +1,29 @@
+<_templates Include="models" />
+<ModelBrand 
+	NightLightingShadowsAllowCap="true" 
+	Instanced="true"
+	Fence="True"
+>
+	<PhysicsModel>
+		<Body Collisions="None" Mass="0" ModelFrame="BoneRoot">
+			<Body _template="Fence" ModelFrame="pillar">
+				<Constraint _template="Fence" />
+				<Body _template="Fence" ModelFrame="part_01_01">
+					<Constraint _template="Fence" />
+					<Body _template="Fence" ModelFrame="part_01_02">
+						<Constraint _template="Fence" />
+					</Body>
+				</Body>
+				<Body _template="Fence" ModelFrame="part_02_01">
+					<Constraint _template="Fence" />
+				</Body>
+				<Body _template="Fence" ModelFrame="part_03_01">
+					<Constraint _template="Fence" />
+					<Body _template="Fence" ModelFrame="part_03_02">
+						<Constraint _template="Fence" />
+					</Body>
+				</Body>
+			</Body>
+		</Body>
+	</PhysicsModel>
+</ModelBrand>

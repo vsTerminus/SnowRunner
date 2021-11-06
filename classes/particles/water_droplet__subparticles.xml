@@ -1,0 +1,38 @@
+<CombineParticles
+	AirResistance="1.5"
+	AspectRatio="0.5"
+	Gravity="(0; -2.0; 0)"
+	Orientation="TrackingBillboard"
+>
+	<Texture
+		Diffuse="sfx/particles/fragments__d_a.tga"
+		NormalMap="sfx/particles/fragments__n_d.tga"
+		NumFramesY="4"
+		RandomFrameOffset="4"
+		Distort="sfx/substance/distort__n_d.tga"
+		DistortMult="1.0"
+		DistortScale="0.05"
+		DistortSpeed="0.5"	
+	/>
+	<Size Function="(0.06; 0.04; 0.02)" Median="0.3" />
+	<Scale Random="0.6" Value="1.0" />
+	<Color Value="(150; 150; 150; 160) x 1.0">
+		<Key Alpha="170" At="0.0" />
+		<Key Alpha="150" At="0.3" />
+		<Key Alpha="120" At="0.8" />
+		<Key Alpha="0" At="1.0" />
+	</Color>
+	<Collisions
+		DetectWater="true"
+		DetectWheels="true"
+		Enable="true"
+		Friction="0.5"
+		Radius="0.1"
+		Restitution="0.1"
+	/>
+	<Specular
+		Enable="true"
+		Power="12"
+		Intensity="3"
+	/>
+</CombineParticles>

@@ -1,0 +1,23 @@
+<CombineParticles
+	AspectRatio="0.6"
+	IgnoreShadowmap="true"
+	IsAdditive="true"
+	Orientation="AlignedBillboard"
+	SoftDepth="0.6"
+	SortingPriority="3"
+>
+	<Texture
+		AnimSpeed="64"
+		Diffuse="sfx/particles/dust_atlas__d_a.tga"
+		NumFramesX="10"
+		NumFramesY="5"
+	/>
+	<Size Function="(0.1; 0.8; 1.2)" Median="0.5" />
+	<LifeTime Value="0.5" />
+	<Color>
+		<Key At="0.0" Value="g(255; 216; 0; 0) x 8" />
+		<Key At="0.1" Value="g(255; 127; 50) x 8" />
+		<Key At="0.6" Value="g(255; 60; 0) x 8" />
+		<Key At="1.0" Value="g(255; 0; 0; 0) x 8" />
+	</Color>
+</CombineParticles>

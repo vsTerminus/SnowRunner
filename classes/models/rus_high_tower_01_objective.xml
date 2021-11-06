@@ -1,0 +1,15 @@
+<ModelBrand NightLightingShadowsAllowCap="true" DynamicModel="true">
+	<Subset IsDefault="true" Name="stage_visible">
+		<Mesh Name="geo" />
+		<CdtMesh Name="geo" />
+	</Subset>
+	<Subset Name="stage_hidden">
+		<OnSubsetActivateEvent>
+			<Sound Name="actors/actor_construction/actor_construct_high_tower_01_rus" Range="200" Volume="1"/>
+			<SFX Name="rus_high_tower" Dir="(0; 1; 0)" Pos="(-8.7; 0.221; 0.023)"/>
+		</OnSubsetActivateEvent>
+	</Subset>
+	<PhysicsModel>
+		<Body Collisions="Dynamic" ModelFrame="geo" />
+	</PhysicsModel>
+</ModelBrand>

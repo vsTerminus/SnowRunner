@@ -1,0 +1,44 @@
+<_templates Include="models" />
+<ModelBrand
+	NightLightingShadowsAllowCap="true"
+	Instanced="true"
+	Fence="True"
+>
+	<PhysicsModel>
+		<Body Collisions="None" Mass="0" ModelFrame="BoneRoot_cdt">
+			<Body _template="Fence" ModelFrame="pillar1_cdt">
+				<Constraint _template="Fence" />
+				<Body _template="Fence" ModelFrame="barling1_1_cdt">
+					<Constraint _template="Fence" />
+					<Body _template="Fence" ModelFrame="barling1_2_cdt">
+						<Constraint _template="Fence" />
+					</Body>
+					<Body _template="Fence" ModelFrame="barling1_3_cdt">
+						<Constraint _template="Fence" />
+					</Body>
+				</Body>
+			</Body>					
+			<Body _template="Fence" ModelFrame="pillar2_cdt">
+				<Constraint _template="Fence" />
+				<Body _template="Fence" ModelFrame="barling2_1_cdt">
+					<Constraint _template="Fence" />
+					<Body _template="Fence" ModelFrame="barling2_2_cdt">
+						<Constraint _template="Fence" />
+						<Body _template="Fence" ModelFrame="barling2_4_cdt">
+							<Constraint _template="Fence" />
+						</Body>
+					</Body>
+					<Body _template="Fence" ModelFrame="barling2_3_cdt">
+						<Constraint _template="Fence" />
+						<Body _template="Fence" ModelFrame="barling2_5_cdt">
+							<Constraint _template="Fence" />
+						</Body>
+					</Body>
+				</Body>
+				<Body _template="Fence" ModelFrame="barling2_0_cdt">
+					<Constraint _template="Fence" />
+				</Body>				
+			</Body>				
+		</Body>
+	</PhysicsModel>
+</ModelBrand>

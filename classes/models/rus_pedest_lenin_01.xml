@@ -1,0 +1,13 @@
+<ModelBrand
+	NightLightingShadowsAllowCap="true"
+>
+	<PhysicsModel>
+		<Body
+			Collisions="Dynamic"
+		/>
+	</PhysicsModel>
+	<Occlusion
+		Size="(7.0; 7.0)" 
+		Texture="occlusion_rus_pedest_lenin_01.tga"
+	/>
+</ModelBrand>

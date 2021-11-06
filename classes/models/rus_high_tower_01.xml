@@ -1,0 +1,64 @@
+<ModelBrand
+	Instanced="true"
+	InstancedAsModel="true"
+	NightLightingShadowsAllowCap="true"
+>
+	<PhysicsModel>
+		<Flare
+			AttenEnd="500"
+			AttenStart="50"
+			Color="g(255; 72; 0) x 0.4"
+			ColorMultAtDay="0"
+			Dir="(0; -1; 0)"
+			OcclusionOffset="-1"
+			Pos="(1.2; 18.4; 1.76)"
+			Size="0.3"
+			SizeMultAtDay="0"
+			Texture="sfx/flare_simple__s_d.tga"
+		/>
+		<Flare
+			AttenEnd="500"
+			AttenStart="50"
+			Color="g(255; 72; 0) x 0.4"
+			ColorMultAtDay="0"
+			Dir="(0; -1; 0)"
+			OcclusionOffset="-1"
+			Pos="(-1.2; 18.4; 1.76)"
+			Size="0.3"
+			SizeMultAtDay="0"
+			Texture="sfx/flare_simple__s_d.tga"
+		/>
+		<Flare
+			AttenEnd="500"
+			AttenStart="50"
+			Color="g(255; 72; 0) x 0.4"
+			ColorMultAtDay="0"
+			Dir="(0; -1; 0)"
+			OcclusionOffset="-1"
+			Pos="(-1.2; 18.4; -1.76)"
+			Size="0.3"
+			SizeMultAtDay="0"
+			Texture="sfx/flare_simple__s_d.tga"
+		/>
+		<Flare
+			AttenEnd="500"
+			AttenStart="50"
+			Color="g(255; 72; 0) x 0.4"
+			ColorMultAtDay="0"
+			Dir="(0; -1; 0)"
+			OcclusionOffset="-1"
+			Pos="(1.2; 18.4; -1.76)"
+			Size="0.3"
+			SizeMultAtDay="0"
+			Texture="sfx/flare_simple__s_d.tga"
+		/>
+		<Body Collisions="Dynamic" />
+	</PhysicsModel>
+	<Occlusion Size="(4.0; 4.0)" Texture="occlusion_rus_high_tower_01.tga" />
+	<GameData>
+		<WinchSocket Pos="(0.5; 0.8; 0.5)" />
+		<WinchSocket Pos="(0.5; 0.8; -0.5)" />
+		<WinchSocket Pos="(-0.5; 0.8; -0.5)" />
+		<WinchSocket Pos="(-0.5; 0.8; 0.5)" />
+	</GameData>
+</ModelBrand>

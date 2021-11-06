@@ -1,0 +1,8 @@
+<MaterialType 
+	Texture="tiles/rocks_rus_01__d_a.tga" 
+	Normal="tiles/rocks_rus_01_relief__d_a.tga"
+	NoGrass="true"
+	IsExtrudable="false"
+	WheelTracks="0.5"
+	Sound="surfaces/surf_rock_rnd"
+/>

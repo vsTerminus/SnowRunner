@@ -1,0 +1,12 @@
+<_templates Include="environment" />
+<PlantBrand _template="SmallTree">
+	<PhysicsModel>
+		<Body _template="HugeTrunk" Collisions="None" ModelFrame="BoneRoot">
+			<Constraint _template="HugeTrunk" />
+			<Body _template="Flower" ModelFrame="BoneTrunk">
+				<Constraint _template="Flower" />
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<Occlusion Size="(0.8; 0.8)" />
+</PlantBrand>

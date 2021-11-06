@@ -1,0 +1,56 @@
+<_templates Include="models" />
+<ModelBrand
+	NightLightingShadowsAllowCap="true"
+	Instanced="true"
+>
+	<PhysicsModel>
+		<Body Collisions="None" Mass="0" ModelFrame="BoneRoot">
+			<Body _template="LightWeight" ModelFrame="part_1">
+				<Constraint _template="LightWeight" />
+			</Body>
+			<Body _template="LightWeight" ModelFrame="part_2">
+				<Constraint _template="LightWeight" />
+			</Body>
+			<Body _template="LightWeight" ModelFrame="part_3">
+				<Constraint _template="LightWeight" />
+			</Body>
+			<Body _template="LightWeight" ModelFrame="part_4">
+				<Constraint _template="LightWeight" />
+			</Body>
+			<Body _template="LightWeight" ModelFrame="part_5">
+				<Constraint _template="LightWeight" />
+			</Body>
+			<Body _template="LightWeight" ModelFrame="part_6">
+				<Constraint _template="LightWeight" />
+			</Body>
+			<Body _template="LightWeight" ModelFrame="part_7">
+				<Constraint _template="LightWeight" />
+			</Body>
+			<Body _template="LightWeight" ModelFrame="part_8">
+				<Constraint _template="LightWeight" />
+			</Body>
+				<Body _template="LightWeight" ModelFrame="part_9">
+					<Constraint _template="LightWeight" />
+				</Body>
+				<Body _template="LightWeight" ModelFrame="part_10">
+					<Constraint _template="LightWeight" />
+				</Body>
+			<Body _template="LightWeight" ModelFrame="part_11">
+				<Constraint _template="LightWeight" />
+			</Body>
+				<Body _template="LightWeight" ModelFrame="part_12">
+					<Constraint _template="LightWeight" />
+				</Body>
+			<Body _template="LightWeight" ModelFrame="part_13">
+				<Constraint _template="LightWeight" />
+			</Body>
+				<Body _template="LightWeight" ModelFrame="part_14">
+					<Constraint _template="LightWeight" />
+				</Body>
+				<Body _template="LightWeight" ModelFrame="part_15">
+					<Constraint _template="LightWeight" />
+				</Body>
+		</Body>
+	</PhysicsModel>
+	<Occlusion Size="(14.0; 11.0)" Texture="occlusion_rus_glg_logs_01.tga" />
+</ModelBrand>

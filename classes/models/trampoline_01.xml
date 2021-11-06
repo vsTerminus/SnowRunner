@@ -1,0 +1,40 @@
+<_templates Include="models" />
+<ModelBrand
+	NightLightingShadowsAllowCap="true"
+>
+	<PhysicsModel>
+		<Body Collisions="None" Mass="0" ModelFrame="BoneRoot">
+			<Body _template="MediumWeight" ModelFrame="BonePart1">
+				<Constraint _template="MediumWeight" />
+				<Body _template="MediumWeight" ModelFrame="BonePart2">
+					<Constraint _template="MediumWeight" />
+				</Body>
+				<Body _template="MediumWeight" ModelFrame="BonePart3">
+					<Constraint _template="MediumWeight" />
+				</Body>
+				<Body _template="MediumWeight" ModelFrame="BonePart4">
+					<Constraint _template="MediumWeight" />
+				</Body>
+				<Body _template="MediumWeight" ModelFrame="BonePart5">
+					<Constraint _template="MediumWeight" />
+				</Body>
+				<Body _template="MediumWeight" ModelFrame="BonePart6">
+					<Constraint _template="MediumWeight" />
+				</Body>
+				<Body _template="MediumWeight" ModelFrame="BonePart7">
+					<Constraint _template="MediumWeight" />
+				</Body>
+				<Body _template="MediumWeight" ModelFrame="BonePart8">
+					<Constraint _template="MediumWeight" />
+				</Body>
+				<Body _template="MediumWeight" ModelFrame="BonePart9">
+					<Constraint _template="MediumWeight" />
+				</Body>
+			</Body>		
+		</Body>
+	</PhysicsModel>
+	<Occlusion
+		Size="(8.0; 8.0)" 
+		Texture="occlusion_trampoline_01.tga"
+	/>
+</ModelBrand>

@@ -1,0 +1,9 @@
+<CargoType>
+	<UiDesc
+		UiName="UI_CARGO_PIPES_MEDIUM_NAME"
+		UiDesc="UI_CARGO_PIPES_MEDIUM_DESC"
+		UiIcon20x20="cargoTypePipeAverage20"
+		UiIcon40x40="cargoTypePipeAverage40"
+		UiIcon100x100="cargoTypePipesMedium"
+	/>
+</CargoType>

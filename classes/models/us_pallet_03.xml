@@ -1,0 +1,10 @@
+<_templates Include="models" />
+<ModelBrand Instanced="true">
+	<PhysicsModel>
+		<Body _template="LightWeight" ModelFrame="BoneRoot">
+			<Constraint _template="LightWeight" />
+		</Body>
+	</PhysicsModel>
+	<Occlusion Size="(3.0; 3.0)" Texture="occlusion_us_pallet_03.tga" />
+	<Landmark Mesh="landmarks/us_pallet_03_lmk" />
+</ModelBrand>

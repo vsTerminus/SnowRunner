@@ -1,0 +1,40 @@
+<DriveCamera
+	CenteredOffsetEye="(-7; 0.5; 4)"
+	CenteredOffsetTarget="(1; 1.5; 1)"
+	CenteredVer="0.32"
+	FrontHor="160"
+	FrontVer="0"
+	RearHor="15"
+	RearVer="0"
+>
+	<Position Center="(-2.0; 2.0; 0.8)">
+		<!--0-->
+		<Near Dir="(0.97; -0.22; -0.11)" Eye="(-3.4; 3.77; 2.45)" />
+		<Far Dir="(1.0; -0.25; -0.26)" Eye="(-7.6; 4.0; 3.4)" />
+	</Position>
+	<Position Center="(0.0; 1.0; 1.0)">
+		<!--1-->
+		<Near Dir="(-0.3; -0.36; -0.87)" Eye="(1.6; 4.2; 6.7)" />
+		<Far Dir="(-0.3; -0.05; -0.98)" Eye="(2.2; 2.6; 11)" />
+	</Position>
+	<Position Center="(3.6; 1.0; 0.4)">
+		<!--2-->
+		<Near Dir="(-0.96; -0.19; -0.71)" Eye="(6.0; 3.27; 4.09)" />
+		<Far Dir="(-1.9; -0.08; -0.98)" Eye="(10.4; 1.8; 5.2)" />
+	</Position>
+	<Position Center="(3.6; 1.0; -0.4)">
+		<!--3-->
+		<Near Dir="(-0.85; -0.19; 0.39)" Eye="(5.37; 3.22; -0.31)" />
+		<Far Dir="(-0.7; -0.05; 0.3)" Eye="(9.8; 2.1; -3.0)" />
+	</Position>
+	<Position Center="(0.0; 1.0; -0.8)">
+		<!--4-->
+		<Near Dir="(-0.25; -0.45; 0.89)" Eye="(0.37; 4.94; -2.64)" />
+		<Far Dir="(-0.29; -0.5; 0.93)" Eye="(1.6; 5.0; -5)" />
+	</Position>
+	<Position Center="(-2.0; 2.0; -0.2)">
+		<!--5-->
+		<Near Dir="(0.82; -0.5; 0.6)" Eye="(-1.56; 4.67; -1.8)" />
+		<Far Dir="(0.69; -0.37; 0.62)" Eye="(-2.87; 4.63; -2.13)" />
+	</Position>
+</DriveCamera>

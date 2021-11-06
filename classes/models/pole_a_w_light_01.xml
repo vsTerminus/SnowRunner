@@ -1,0 +1,44 @@
+<ModelBrand 
+	ApplyNormalInReference="false"	
+	ClipCamera="false"	
+	Instanced="true"
+	InstancedAsModel="true"
+	CastDayLightmapShadow="false" 
+	CastNightLightmapShadow="false"
+>
+	<StaticLights>
+		<StaticLight
+			AttenEnd="15"
+			Color="g(214; 239; 246) x 0.8"
+			CreateSuperLight="true"
+			Dir="(0; -1; 0)"
+			InnerCone="0"
+			OuterCone="45"
+			Pos="(0.0; 7.3; 1.3)"
+			Shadows="true"
+		/>
+	</StaticLights>
+	<PhysicsModel>
+		<Body Collisions="Dynamic" />
+		<Flare      
+			AttenEnd="300"
+			AttenStart="27"
+			SizeMultAtDay="0"
+			ColorMultAtDay="0"
+			Color="g(210; 233; 240) x 0.32"
+			Dir="(0; -1; 0)" 
+			Pos="(0.013; 7.33; 1.5)"
+			Size="2.3"
+			Texture="sfx/flare_simple__s_d.tga"
+		/>
+	</PhysicsModel>
+	<GameData>
+		<WinchSocket Pos="(0; 0.8; 0)"/>
+	</GameData>
+	<Occlusion Intensity="0.8" Size="(4.0; 4.0)" />
+	<SnapPoint Pos="(-0.729; 7.733; -0.169)" />
+	<SnapPoint Pos="(-0.681; 7.121; -0.102)" />
+	<SnapPoint Pos="(0.789; 7.664; -0.063)" />
+	<SnapPoint Pos="(0.696; 7.114; 0.226)" />
+	<Landmark Mesh="landmarks/pole_a_lmk"/>
+</ModelBrand>

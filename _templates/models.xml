@@ -1,0 +1,355 @@
+<_templates>
+	<StaticLight>
+		<Red
+			AttenEnd="16"
+			Color="g(255; 181; 0) x 2.5"
+			CreateSuperLight="true"
+			InnerCone="0"
+			OuterCone="80"
+			Shadows="true"
+		/>
+		<Blue
+			AttenEnd="16"
+			Color="g(228; 209; 255) x 2"
+			CreateSuperLight="true"
+			InnerCone="0"
+			OuterCone="80"
+			Shadows="true"
+		/>
+	</StaticLight>
+	<Material>
+		<SmallObjectDynamic
+			SnowUpAngleRange="45.0"
+			SnowUpFlatten="0.9"
+			SnowUpIntensity="10.0"
+			SnowUpNoiseIntensity="0.72"
+			SnowUpNoiseScale="0.9"
+			SnowUpNormalsSpace="object"
+			SnowifyNoiseIntensity="2"
+			SnowifyNoiseIntensityShift="0.13"
+			SnowifyNoiseTilingMult="2"
+		/>
+		<SmallObject
+			SnowUpAngleRange="45.0"
+			SnowUpFlatten="0.2"
+			SnowUpIntensity="10.0"
+			SnowUpNoiseIntensity="0.72"
+			SnowUpNoiseScale="0.9"
+			SnowifyNoiseIntensity="2"
+			SnowifyNoiseIntensityShift="0.13"
+			SnowifyNoiseTilingMult="2"
+		/>
+		<RoofSmallObject
+			SnowUpAngleRange="45"
+			SnowUpFlatten="0.9"
+			SnowUpIntensity="10.0"
+			SnowUpNoiseIntensity="0.72"
+			SnowUpNoiseScale="0.8"
+			SnowifyNoiseIntensity="2"
+			SnowifyNoiseIntensityShift="0.13"
+			SnowifyNoiseTilingMult="2"
+		/>
+		<RoofObject
+			SnowUpAngleRange="40.0"
+			SnowUpFlatten="0.9"
+			SnowUpIntensity="10.0"
+			SnowUpNoiseIntensity="0.65"
+			SnowUpNoiseScale="0.05"
+			SnowifyNoiseIntensity="2"
+			SnowifyNoiseIntensityShift="0.13"
+			SnowifyNoiseTilingMult="2"
+		/>
+		<Red
+			Blending="additive"
+			DiffuseMap="sfx/light_ray__s_d.tga"
+			DiffuseMultiplier="g(168; 136; 0) x 0.24"
+			IsSfx="true"
+			TwoSided="true"
+		/>
+		<NoSnow
+			SnowUpAngleRange="0.0"
+			SnowUpIntensity="3.0"
+			SnowUpNoiseIntensity="0.2"
+			SnowUpNoiseScale="0.7"
+		/>
+		<Middle
+			SnowUpAngleRange="45.0"
+			SnowUpIntensity="10.0"
+			SnowUpNoiseIntensity="0.7"
+			SnowUpNoiseScale="0.25"
+		/>
+		<MediumSizeObject
+			SnowUpAngleRange="45.0"
+			SnowUpIntensity="10.0"
+			SnowUpNoiseIntensity="0.7"
+			SnowUpNoiseScale="0.5"
+		/>
+		<DefaultNarrow
+			SnowUpAngleRange="35.0"
+			SnowUpBacksideIntensity="0"
+			SnowUpFlatten="0"
+			SnowUpIntensity="7"
+			SnowUpNoiseIntensity="0.2"
+			SnowUpNoiseScale="0.5"
+			SnowUpNormalsSpace="world"
+			SnowifyNoiseIntensity="2"
+			SnowifyNoiseIntensityShift="0.13"
+			SnowifyNoiseTilingMult="2"
+		/>
+		<Farplane_ru03
+			SnowUpAngleRange="25.0"
+			SnowUpBacksideIntensity="0"
+			SnowUpFlatten="0"
+			SnowUpIntensity="5.0"
+			SnowUpNoiseIntensity="0.1"
+			SnowUpNoiseScale="0.5"
+			SnowUpNormalsSpace="world"
+			SnowifyNoiseIntensity="2"
+			SnowifyNoiseIntensityShift="0.13"
+			SnowifyNoiseTilingMult="2"
+		/>
+		<DefaultDynamic
+			SnowUpAngleRange="45.0"
+			SnowUpBacksideIntensity="0"
+			SnowUpFlatten="0"
+			SnowUpIntensity="10.0"
+			SnowUpNoiseIntensity="0.2"
+			SnowUpNoiseScale="0.5"
+			SnowUpNormalsSpace="object"
+			SnowifyNoiseIntensity="2"
+			SnowifyNoiseIntensityShift="0.13"
+			SnowifyNoiseTilingMult="2"
+		/>
+		<BigDynamic
+			SnowUpAngleRange="45.0"
+			SnowUpBacksideIntensity="0"
+			SnowUpFlatten="0"
+			SnowUpIntensity="10.0"
+			SnowUpNoiseIntensity="0.2"
+			SnowUpNoiseScale="0.1"
+			SnowUpNormalsSpace="object"
+			SnowifyNoiseIntensity="1"
+			SnowifyNoiseIntensityShift="0.13"
+			SnowifyNoiseTilingMult="2"
+		/>
+		<Blue
+			Blending="additive"
+			DiffuseMap="sfx/light_ray__s_d.tga"
+			DiffuseMultiplier="g(213; 208; 235) x 0.06"
+			IsSfx="true"
+			TwoSided="true"
+		/>
+		<BigSizeObject
+			SnowUpAngleRange="45.0"
+			SnowUpIntensity="10.0"
+			SnowUpNoiseIntensity="0.75"
+			SnowUpNoiseScale="0.1"
+			SnowifyNoiseIntensity="2"
+			SnowifyNoiseIntensityShift="0.13"
+			SnowifyNoiseTilingMult="2"
+		/>
+		<BigMetallObject
+			SnowUpAngleRange="20.0"
+			SnowUpFlatten="0.9"
+			SnowUpIntensity="20.0"
+			SnowUpNoiseIntensity="0.65"
+			SnowUpNoiseScale="0.05"
+			SnowifyNoiseIntensity="2"
+			SnowifyNoiseIntensityShift="0.13"
+			SnowifyNoiseTilingMult="2"
+		/>
+		<FlatConcreteObject
+			SnowUpAngleRange="5.0"
+			SnowUpFlatten="0.5"
+			SnowUpIntensity="7.0"
+			SnowUpNoiseIntensity="0.65"
+			SnowUpNoiseScale="0.05"
+			SnowifyNoiseIntensity="2"
+			SnowifyNoiseIntensityShift="0.13"
+			SnowifyNoiseTilingMult="2"
+		/>
+		<BigIce
+			SnowUpAngleRange="80.0"
+			SnowUpIntensity="7.0"
+			SnowUpNoiseIntensity="0.2"
+			SnowUpNoiseScale="0.7"
+		>
+			<ModelMaterial IsWheelTracks="true" />
+		</BigIce>
+		<RailwayNear
+			SnowUpAngleRange="35.0"
+			SnowUpBacksideIntensity="0"
+			SnowUpFlatten="0"
+			SnowUpIntensity="1"
+			SnowUpNoiseIntensity="0.2"
+			SnowUpNoiseScale="0.5"
+			SnowUpNormalsSpace="world"
+			SnowifyNoiseIntensity="2"
+			SnowifyNoiseIntensityShift="0.13"
+			SnowifyNoiseTilingMult="2"
+		/>
+		<RailwayFar
+			SnowUpAngleRange="20.0"
+			SnowUpBacksideIntensity="0"
+			SnowUpFlatten="0"
+			SnowUpIntensity="1"
+			SnowUpNoiseIntensity="0.2"
+			SnowUpNoiseScale="0.5"
+			SnowUpNormalsSpace="world"
+			SnowifyNoiseIntensity="2"
+			SnowifyNoiseIntensityShift="0.13"
+			SnowifyNoiseTilingMult="2"
+		/>
+	</Material>
+	<Flare>
+		<Red
+			AttenEnd="90"
+			AttenStart="60"
+			Color="g(168; 136; 0) x 1.9"
+			ColorMultAtDay="0.5"
+			DirAngle="120"
+			Size="4.5"
+			SizeAtDay="3.5"
+		/>
+		<Blue
+			AttenEnd="90"
+			AttenStart="60"
+			Color="g(213; 208; 235) x 0.8"
+			ColorMultAtDay="0.45"
+			DirAngle="120"
+			Size="4.5"
+			SizeAtDay="3.5"
+		/>
+	</Flare>
+	<Constraint>
+		<StakeHard
+			BreakOffThreshold="10000"
+			Cone="15"
+			TwistAxisLocal="(0; 1; 0)"
+			Type="Ragdoll"
+		>
+			<PlaneConeMotor Damping="200000" Spring="800000" Type="Spring" />
+		</StakeHard>
+		<StakeBeton BreakOffThreshold="25000" Type="Fixed" />
+		<Sign
+			BreakOffThreshold="800"
+			Cone="30"
+			TwistAxisLocal="(0; 1; 0)"
+			Type="Ragdoll"
+		>
+			<PlaneConeMotor Damping="6000" Spring="600" Type="Spring" />
+		</Sign>
+		<Chain
+			BreakOffThreshold="10000"
+			Cone="90"
+			TwistAxisLocal="(0; 1; 0)"
+			Type="Ragdoll"
+		>
+			<PlaneConeMotor Damping="200" Spring="100" Type="Spring" />
+		</Chain>`
+		<Round BreakOffThreshold="40" Type="Fixed" />
+		<Null BreakOffThreshold="1" Type="Fixed" />
+		<ModelStaticRoot BreakOffThreshold="600000" Type="Fixed" />
+		<HeavyCart BreakOffThreshold="200" Type="Fixed" />
+		<HeavyBasement BreakOffThreshold="2000" Type="Fixed" />
+		<FrameHard BreakOffThreshold="2500" Type="Fixed" />
+		<FrameBeton BreakOffThreshold="20000" Type="Fixed" />
+		<Frame BreakOffThreshold="500" Type="Fixed" />
+		<FenceStake BreakOffThreshold="300" Type="Fixed" />
+		<FencePart BreakOffThreshold="5" Type="Fixed" />
+		<FenceHinge
+			AxisLocal="(0; 1; 0)"
+			BreakOffThreshold="350"
+			MinLimit="-70"
+			MaxLimit="70"
+			Type="Hinge"
+		/>
+		<FenceFrame BreakOffThreshold="100" Type="Fixed" />
+		
+		<!--New setup physics-->
+		<LightWeight 
+			BreakOffThreshold="100"
+			Type="Fixed"
+		/>
+		<Sign 
+			BreakOffThreshold="100"
+			Type="Fixed"
+		/>
+		<MediumWeight 
+			BreakOffThreshold="200" 
+			Type="Fixed"
+		/>
+		<HeavyWeight 
+			BreakOffThreshold="300" 
+			Type="Fixed"
+		/>
+		<Cars
+			BreakOffThreshold="200" 
+			Type="Fixed"
+		/>
+		<Fence 
+			BreakOffThreshold="100"
+			Type="Fixed"
+		/>
+		
+	</Constraint>
+	<Body>
+		<StakeHard IsCapsuleCDT="true" Mass="200" NoSoftContacts="true" />
+		<StakeBeton IsCapsuleCDT="true" Mass="500" NoSoftContacts="true" />
+		<Sign Mass="100" NoSoftContacts="true" />
+		<Round IsCapsuleCDT="true" Mass="60" NoSoftContacts="true" Collisions="Dynamic" />
+		<Null
+			Collisions="None"
+			Mass="1000000"
+			NoSoftContacts="true"
+		/>
+		<ModelStaticRoot
+			Collisions="None"
+			Mass="100"
+			NoSoftContacts="true"
+		/>
+		<HeavyCart Mass="5000" NoSoftContacts="true" />
+		<HeavyBasement Mass="1000" NoSoftContacts="true" />
+		<FrameHard Mass="80" NoSoftContacts="true" />
+		<FrameBeton Mass="500" NoSoftContacts="true" />
+		<Frame Mass="60" NoSoftContacts="true" />
+		<FenceStake IsCapsuleCDT="true" Mass="40" NoSoftContacts="true" />
+		<FencePart Mass="2" NoSoftContacts="true" />
+		<FenceHinge Mass="40" NoSoftContacts="true" />
+		<FenceFrame Mass="30" NoSoftContacts="true" />
+		<Chain Mass="30" NoSoftContacts="true" />
+		
+		<!--New setup physics-->
+		<LightWeight 
+			Mass="200" 
+			NoSoftContacts="True" 
+			Collisions="Dynamic"
+		/>
+		<MediumWeight 
+			Mass="500" 
+			NoSoftContacts="True" 
+			Collisions="Dynamic"
+		/>
+		<HeavyWeight 
+			Mass="800" 
+			NoSoftContacts="True" 
+			Collisions="Dynamic"
+		/>
+		<Sign
+			Mass="200"
+			NoSoftContacts="True"
+			Collisions="Dynamic"
+			CenterOfMassOffset="(0; 0; 0)"
+		/>
+		<Cars
+			Mass="1500"
+			NoSoftContacts="True" 
+			Collisions="Dynamic"
+		/>
+		<Fence
+			Mass="150"
+			NoSoftContacts="True" 
+			Collisions="Dynamic"
+		/>
+	</Body>
+</_templates>

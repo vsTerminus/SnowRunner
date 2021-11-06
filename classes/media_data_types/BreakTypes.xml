@@ -1,0 +1,8 @@
+<BreakTypes>
+		<BreakType Name="SmallTree" Sound="trucks/common/truck_foliage_rnd_set/truck_foliage_hit_rnd" />
+		<BreakType Name="BigTree" Sound="trucks/common/truck_foliage_rnd_set/truck_foliage_break_rnd" />
+		<BreakType Name="LyingSpruce" Sound="trucks/common/truck_foliage_rnd_set/truck_foliage_break_rnd" />
+		<BreakType Name="Mushroom" Sound="" />
+		<BreakType Name="Pumpkin" Sound="" />
+		<BreakType Name="Ice" Sound="surfaces/surf_ice_break_rnd" />
+</BreakTypes>

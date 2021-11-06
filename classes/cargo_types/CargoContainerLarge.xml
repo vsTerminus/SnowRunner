@@ -1,0 +1,9 @@
+<CargoType>
+	<UiDesc
+		UiName="UI_CARGO_CONTAINER_LARGE_NAME"
+		UiDesc="UI_CARGO_CONTAINER_LARGE_DESC"
+		UiIcon20x20="cargoTypeContainerAlt20"
+		UiIcon40x40="cargoTypeContainerAlt40"
+		UiIcon100x100="cargoTypeContainerLarge"
+	/>
+</CargoType>

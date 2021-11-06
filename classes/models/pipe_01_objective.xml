@@ -1,0 +1,29 @@
+<ModelBrand NightLightingShadowsAllowCap="true" DynamicModel="true">
+	<Subset IsDefault="true" Name="state_start">
+		<Mesh Name="mesh_start" />
+		<CdtMesh Name="mesh_start" />
+	</Subset>
+	<Subset Name="state_end">
+		<Mesh Name="mesh_end" />
+		<CdtMesh Name="mesh_end" />
+		<OnSubsetActivateEvent>
+			<Sound Name="actors/actor_construction/actor_construct_metal_tube" Range="200" Volume="1"/>
+			<SFX Name="pipe_smoke_01" Dir="(0; 1; 0)" Pos="(-0.073; 1.108; -0.022)"/>
+			<SFX Name="pipe_smoke_02" Dir="(0; 1; 0)" Pos="(0.165; 7.309; 0.2)"/>
+			<SFX Name="bridge_sparks_02" Dir="(0; 1; 0)" Pos="(-1.226; 6.286; 4.921)"/>
+			<SFX Name="bridge_sparks_02" Dir="(0; 1; 0)" Pos="(1.256; 6.324; 4.818)"/>
+			<SFX Name="bridge_sparks_02" Dir="(0; 1; 0)" Pos="(-1.315; 6.324; -4.519)"/>
+			<SFX Name="bridge_sparks_02" Dir="(0; 1; 0)" Pos="(1.421; 6.324; -4.57)"/>
+			<SFX Name="bridge_sparks_02" Dir="(0; 1; 0)" Pos="(1.04; 3.409; -7.538)"/>
+			<SFX Name="bridge_sparks_02" Dir="(0; 1; 0)" Pos="(-0.895; 3.409; -7.538)"/>			
+			<SFX Name="bridge_sparks_02" Dir="(0; 1; 0)" Pos="(-1.075; 3.396; 7.305)"/>
+			<SFX Name="bridge_sparks_02" Dir="(0; 1; 0)" Pos="(1; 3.396; 7.305)"/>
+		</OnSubsetActivateEvent>
+	</Subset>
+	<PhysicsModel>
+		<Body Collisions="Dynamic" ModelFrame="mesh_start">
+			<Body Collisions="Dynamic" ModelFrame="mesh_end"/>
+		</Body>
+	</PhysicsModel>
+	<Landmark Mesh="landmarks/pipe_01_objective_lmk"/>
+</ModelBrand>

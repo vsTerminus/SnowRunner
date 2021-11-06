@@ -1,0 +1,18 @@
+<CombineParticles
+	AirResistance="0.5"
+	AspectRatio="0.8"
+	Gravity="(0; -6; 0)"
+	Orientation="AlignedBillboard"
+	SortingPriority="3"
+	ZOffset="-0.4"
+>
+	<Texture Diffuse="sfx/substance/sheet_large__d_a.tga" />
+	<Subparticles Density="4" Offset="0.2" Type="snow_frag">
+		<ExtraLifeTime Random="1.0" Value="1.5" />
+	</Subparticles>
+	<Size Function="(0.2; 0.7; 1.8)" Median="0.4" />
+	<Scale Random="0.2" Value="1.0" />
+	<LifeTime Value="1.5" />
+	<Color Value="g(238; 248; 255; 220) x 0.8" />
+	<AlphaClip Function="(0.0; 0.5; 1.0)" Median="0.6" />
+</CombineParticles>

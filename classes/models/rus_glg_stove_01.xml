@@ -1,0 +1,18 @@
+<_templates Include="models" />
+<ModelBrand NightLightingShadowsAllowCap="True">
+	<PhysicsModel>
+		<Body _template="ModelStaticRoot" ModelFrame="BoneRoot">
+			<Constraint _template="ModelStaticRoot" />
+			<Body _template="HeavyBasement" ModelFrame="BoneBase">
+				<Constraint _template="HeavyBasement" />
+				<Body _template="FenceHinge" ModelFrame="BoneHinge">
+					<Constraint _template="FenceHinge" />
+				</Body>
+				<Body _template="FenceStake" ModelFrame="BonePipe">
+					<Constraint _template="FenceStake" />
+				</Body>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<Occlusion Size="(6.0, 6.0)" Texture="occlusion_rus_glg_stove_01.tga" />
+</ModelBrand>

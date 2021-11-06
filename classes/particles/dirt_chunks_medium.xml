@@ -1,0 +1,23 @@
+<CombineParticles
+	AirResistance="2.0"
+	AspectRatio="0.8"
+	Gravity="(0; -4; 0)"
+	IsAlphaKill="true"
+	Orientation="AlignedBillboard"
+>
+	<Texture
+		Diffuse="sfx/substance/impact_chunky_medium__d_a.tga"
+		Distort="sfx/substance/distort__n_d.tga"
+		DistortMult="0.4"
+		DistortScale="0.6"
+		DistortSpeed="0.04"
+	/>
+	<Size Function="(1.2; 2.0; 2.5)" Median="0.5" />
+	<LifeTime Value="2.0" />
+	<Color Value="g(143; 132; 116)">
+		<Key Alpha="440" At="0.00" />
+		<Key Alpha="300" At="0.33" />
+		<Key Alpha="200" At="0.66" />
+		<Key Alpha="150" At="1.00" />
+	</Color>
+</CombineParticles>

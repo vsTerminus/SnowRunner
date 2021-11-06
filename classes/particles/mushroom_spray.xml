@@ -1,0 +1,24 @@
+<CombineParticles
+	AirResistance="1.0"
+	AspectRatio="1.0"
+	Gravity="(0; -3; 0)"
+	Orientation="Aligned"
+	EnableColors="true"
+>
+	<Texture
+		Diffuse="sfx/particles/fragments__d_a.tga"
+		NumFramesY="4"
+		RandomFrameOffset="4"
+	/>
+	<Size Function="(0.24; 0.15; 0.0)" Median="0.8" />
+	<Scale Random="0.6" Value="1.0" />
+	<LifeTime Value="4.0" />
+	<Color Value="(255; 255; 255; 300)" />
+	<Collisions
+		Enable="true"
+		Friction="0.2"
+		Radius="0.05"
+		Restitution="0.0"
+	/>
+	<AlphaClip Function="(0.25; 0.25; 1.0)" Median="0.6" />
+</CombineParticles>

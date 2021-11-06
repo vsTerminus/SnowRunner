@@ -1,0 +1,12 @@
+<_templates Include="models" />
+<ModelBrand
+	DeactivationPhantomExt="2"
+	Instanced="true"
+	UsePhysicsForInstancing="true"
+>
+	<PhysicsModel>
+		<Body _template="Sign" ModelFrame="BoneRoot1">
+			<Constraint _template="Sign" />
+		</Body>
+	</PhysicsModel>
+</ModelBrand>
