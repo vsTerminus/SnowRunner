@@ -29,8 +29,8 @@
 		DamageCapacity="140"
 		Name="ford_clt_suspension_high"
 	>
-		<Suspension Damping="0.3" Height="0.4" Strength="0.04" WheelType="front" BrokenSuspensionMax="0.05" SuspensionMin="-0.45" />
-		<Suspension Damping="0.3" Height="0.3" Strength="0.04" WheelType="rear" BrokenSuspensionMax="0.05" SuspensionMin="-0.35" />
+		<Suspension Damping="0.4" Height="0.4" Strength="0.04" WheelType="front" BrokenSuspensionMax="0.05" SuspensionMin="-0.45" />
+		<Suspension Damping="0.4" Height="0.3" Strength="0.04" WheelType="rear" BrokenSuspensionMax="0.05" SuspensionMin="-0.35" />
 		<GameData
 			Price="7400"
 			UnlockByExploration="true"
