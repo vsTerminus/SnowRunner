@@ -2,12 +2,12 @@
 <TruckAddon>
 	<TruckData AllWheelDriveInstalled="false">
 		<Shafts>
-		    <Shaft 
-			PointAConnectedToAddon="true"
-			PointBConnectedToAddon="true"
-			SocketPointA="ShaftEngine" 
-			SocketPointB="ShaftRearGimbal" 
-			/> 			
+			<Shaft
+				PointAConnectedToAddon="true"
+				PointBConnectedToAddon="true"
+				SocketPointA="ShaftEngine"
+				SocketPointB="ShaftRearGimbal"
+			/>
 		</Shafts>
 	</TruckData>
 	<PhysicsModel Mesh="trucks/cat_ct681_tuning/cat_ct681_transferbox_default">
@@ -33,7 +33,7 @@
 		/>
 		<InstallSocket Type="CatCt681TransferBox" />
 	</GameData>
-	<ExplicitParents>		
+	<ExplicitParents>
 		<ExplicitParent ExplicitParentFrame="1" Frame="BoneTieRodAWD_extra_cdt" />
 		<ExplicitParent ExplicitParentFrame="2" Frame="BoneAxleFront" />
 		<ExplicitParent ExplicitParentFrame="3" Frame="BoneRackLeft" />
@@ -43,31 +43,11 @@
 	</ExplicitParents>
 	<AutomaticIK>
 		<IKBone ModelFrame="BoneTieRodRWD_IK1" ParentFrame="BoneTieRodRWD_cdt">
-			<IKJoint AxisLocal="(1; 0; 0)" Type="Hinge2" />
+			<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
 			<IKBone
 				AttachOffset="(0; 0; 0)"
 				AttachToFrame="BoneRackLeft"
 				ModelFrame="BoneTieRodRWD_IK2"
-			>
-				<IKJoint AxisLocal="(1; 0; 0)" Type="Slider" />
-			</IKBone>
-		</IKBone>
-		<IKBone ModelFrame="BoneAxleFrontL_IK1" ParentFrame="BoneCabin_cdt">
-			<IKJoint AxisLocal="(1; 0; 0)" Type="Hinge2" />
-			<IKBone
-				AttachOffset="(0; 0; 0)"
-				AttachToFrame="BoneAxleFront"
-				ModelFrame="BoneAxleFrontL_IK2"
-			>
-				<IKJoint AxisLocal="(1; 0; 0)" Type="Slider" />
-			</IKBone>
-		</IKBone>
-		<IKBone ModelFrame="BoneAxleFrontR_IK1" ParentFrame="BoneCabin_cdt">
-			<IKJoint AxisLocal="(1; 0; 0)" Type="Hinge2" />
-			<IKBone
-				AttachOffset="(0; 0; 0)"
-				AttachToFrame="BoneAxleFront"
-				ModelFrame="BoneAxleFrontR_IK2"
 			>
 				<IKJoint AxisLocal="(1; 0; 0)" Type="Slider" />
 			</IKBone>

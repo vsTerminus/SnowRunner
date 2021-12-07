@@ -197,4 +197,59 @@
         
 		</Mutations>
     </Mutator>
+	<Mutator Name="maine">
+        <Mutations>
+		    
+			<ModelMutation Source = "water_tower_01"  Target = "water_tower_01_no_banner"/>
+			<ModelMutation Source = "streetlamp_01"  Target = "streetlamp_01_us06"/>
+			<ModelMutation Source = "water_tower_01"  Target = "water_tower_01_instanced"/>
+			<ModelMutation Source = "road_marking_nosn_10"  Target = "road_marking_10_instanced"/>
+			<ModelMutation Source = "rus_launchpad_fence_01"  Target = "rus_launchpad_fence_01_instanced"/>
+			<ModelMutation Source = "country_building_05"  Target = "country_building_05_instanced"/>
+			<ModelMutation Source = "country_building_05a"  Target = "country_building_05a_instanced"/>			
+			<ModelMutation Source = "country_building_05b"  Target = "country_building_05b_instanced"/>
+			<ModelMutation Source = "rus_launchpad_fence_01_blue"  Target = "rus_launchpad_fence_01_blue_instanced"/>
+			<ModelMutation Source = "parking_stop_01"  Target = "parking_stop_01_instanced"/>
+			<ModelMutation Source = "station_05"  Target = "station_05_instanced"/>
+			<ModelMutation Source = "asphalt_border_01"  Target = "asphalt_border_01_instanced"/>
+			<ModelMutation Source = "road_marking_nosn_11"  Target = "road_marking_nosn_11_instanced"/>
+			<ModelMutation Source = "fence_02_rus"  Target = "fence_02_rus_instanced"/>
+			<ModelMutation Source = "boards_osb_01"  Target = "boards_osb_01_instanced"/>
+			<ModelMutation Source = "container_04"  Target = "container_04_instanced"/>
+
+			
+			<MaterialLayerMutation Source = "grass_test"      Target = "grass_spring_02"/>
+			<MaterialLayerMutation Source = "ground_test"     Target = "ground_spring_01"/>
+			<MaterialLayerMutation Source = "default"         Target = "grass_spring_02"/>
+			<MaterialLayerMutation Source = "grass_rus_01"      Target = "grass_spring_02"/>
+			<MaterialLayerMutation Source = "grass_spring_01"      Target = "grass_spring_02"/>
+
+            <BrushMutation Source = "Birches01"        Target = "BirchesSnowy"/>
+			<BrushMutation Source = "Birches02"        Target = "BirchesSnowy"/>
+			<BrushMutation Source = "Birches03"        Target = "BirchesSnowy"/>
+			<BrushMutation Source = "Birches04"        Target = "SmallTreesSnowy"/>
+			<BrushMutation Source = "Bushes"           Target = "BushesSnowy"/>
+			<BrushMutation Source = "BushesRus"        Target = "BushesSnowy"/>
+			<BrushMutation Source = "BushesBig"        Target = "FirsSmallSping"/>
+			<BrushMutation Source = "FirsSmall"        Target = "FirsSmallSping"/>
+			<BrushMutation Source = "SmallTrees"       Target = "SmallTreesSnowy"/>
+			<BrushMutation Source = "FernField"        Target = "GrassTallAutumnA"/>
+			<BrushMutation Source = "Spruces_usa"      Target = "SprucesRus"/>
+			<BrushMutation Source = "Canes"            Target = "CanesDry"/>
+			<BrushMutation Source = "LeavesAutumn"     Target = "LeavesFirs"/>
+			<BrushMutation Source = "GrassTallAutumnB" Target = "GrassTallCanC"/>
+			<BrushMutation Source = "Maples"           Target = "AspensSnowy"/>
+			<BrushMutation Source = "Oaks"             Target = "BirchesSnowy"/>
+			<BrushMutation Source = "Aspens"           Target = "AspensSnowy"/>
+			<BrushMutation Source = "TsugasBig"           Target = "TsugasSmallSnowy"/>
+			<BrushMutation Source = "FernsRus"           Target = "BushesSnowy"/>
+			<BrushMutation Source = "GrassTallSummerB"           Target = "GrassTallCanC"/>
+
+            <OverlayMutation Source = "dirt_road_pbr"       Target = "dirt_road_can"/>
+			<OverlayMutation Source = "grass_road_01"       Target = "grass_road_can"/>
+            <OverlayMutation Source = "cliff_dirt"          Target = "cliff_dirt_can"/>
+            <OverlayMutation Source = "cliff_dirt_rus"       Target = "cliff_dirt_can"/>
+        
+		</Mutations>
+    </Mutator>
 </Mutators>

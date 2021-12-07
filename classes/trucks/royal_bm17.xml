@@ -432,6 +432,7 @@
 			<Socket Names="LogLift" Offset="(-0.693; 1.345; 0)" NamesBlock="MetalDetector, MinicraneUS" />
 			<Socket Names="BunkLog" Offset="(-6.611; 1.344; 0)" NamesBlock="MinicraneUS, MetalDetector" />
 			<Socket Names="FrameAddonLogShort" NamesBlock="MinicraneUS, MetalDetector, RoyalBM17CabinProtector" Offset="(-2.18; 1.34; 0)" />
+			<Socket Names="FrameAddonLogMedium" NamesBlock="MinicraneUS, MetalDetector, RoyalBM17CabinProtector, Trailer" Offset="(-2.18; 1.34; 0)" />
 			<Socket Names="SaddleLowRoyalBm17" Offset="(-3.095; 1.34; 0)">
 				<ExtraParent Frame="BoneCabin_cdt" />
 			</Socket>

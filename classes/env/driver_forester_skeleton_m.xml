@@ -1,0 +1,305 @@
+<_templates>
+	<Body>
+		<Spine1 AngularDamping="0.99">
+			<Constraint
+				PlaneAxisLocal="(0; 1; 0)"
+				TwistAxisLocal="(1; 0; 0)"
+				Type="Ragdoll"
+				ConeMax="2"
+				TwistMin="-90"
+				TwistMax="90"
+			>
+				<AllMotor
+					Damping=".99"
+					ProportinalRecoveryVelocity="2"
+					Tau=".9"
+					Type="Position"
+				/>
+			</Constraint>
+		</Spine1>
+		<Spine AngularDamping="0.99">
+			<Constraint
+				PlaneAxisLocal="(0; 1; 0)"
+				TwistAxisLocal="(1; 0; 0)"
+				Type="Ragdoll"
+				ConeMin="-30"
+				ConeMax="9"
+				TwistMin="-50"
+				TwistMax="50"
+			>
+				<AllMotor
+					Damping=".999"
+					ProportinalRecoveryVelocity="2"
+					Tau=".9"
+					Type="Position"
+				/>
+			</Constraint>
+		</Spine>
+		<Neck AngularDamping="0.9" Collisions="OnlyWithAll">
+			<Constraint
+				PlaneAxisLocal="(0; 1; 0)"
+				TwistAxisLocal="(1; 0; 0)"
+				Type="Ragdoll"
+				ConeMax="7"
+				TwistMin="-50"
+				TwistMax="50"
+			>
+				<AllMotor
+					Damping=".6"
+					ProportinalRecoveryVelocity="4"
+					Tau=".6"
+					Type="Position"
+				/>
+			</Constraint>
+		</Neck>
+		<Centre AngularDamping="0.99">
+			<Constraint
+				PlaneAxisLocal="(0; 1; 0)"
+				TwistAxisLocal="(1; 0; 0)"
+				Type="Ragdoll"
+				ConeMax="17"
+				TwistMin="-50"
+				TwistMax="50"
+			>
+				<AllMotor
+					Damping=".99"
+					ProportinalRecoveryVelocity="10"
+					Tau=".9"
+					Type="Position"
+				/>
+			</Constraint>
+		</Centre>
+	</Body>
+</_templates>
+<DriveCharacterSkeleton
+	ForwarderAnimationSet="env/driver_animation_m_forwarder"
+	ForwarderSteeringAnimationSpeedMult=".0"
+	ForwarderSteeringWheelOffset="(0; 0; 0)"
+	HeavyTruckAnimationSet="env/driver_animation_m_ht"
+	HeavyTruckSteeringAnimationSpeedMult=".8"
+	HeavyTruckSteeringWheelOffset="(0.387; 0.345; 0.001)"
+	ScoutAnimationSet="env/driver_animation_m_s"
+	ScoutSteeringAnimationSpeedMult=".5"
+	ScoutSteeringWheelOffset="(0.306; 0.387; -0.007)"
+	TruckAnimationSet="env/driver_animation_m_t"
+	TruckSteeringAnimationSpeedMult=".7"
+	TruckSteeringWheelOffset="(0.384; 0.328; -0.007)"
+>
+	<PhysicsModel>
+		<Body Collisions="None" Mass="30" ModelFrame="ROOT">
+			<Constraint Type="Fixed" />
+			<!-- <Constraint
+				LinearLimitsX="(-.3;0.25)"
+				LinearLimitsY="(-.03; .5)"
+				LinearLimitsZ="(-0.25;0.25)"
+				Type="Fixed"
+			>
+				<Motor Damping="2000" Spring="50000" Type="Spring" />
+			</Constraint> -->
+			<Body _template="Centre" Mass="22" ModelFrame="CENTRE">
+				<Constraint PlaneAxisLocal="(0; 0; 1)">
+					<AllMotor Force="1000" />
+				</Constraint>
+				<Body
+					_template="Spine1"
+					Collisions="None"
+					Mass="8"
+					ModelFrame="BACKdown"
+				>
+					<Constraint PlaneAxisLocal="(0; 0; 1)">
+						<AllMotor Force="800" />
+					</Constraint>
+					<Body
+						_template="Spine"
+						Collisions="None"
+						Mass="8"
+						ModelFrame="BACKdown1"
+					>
+						<Constraint PlaneAxisLocal="(0; 0; 1)">
+							<AllMotor Force="800" />
+						</Constraint>
+						<Body _template="Spine" Mass="5" ModelFrame="BACKmiddle">
+							<Constraint PlaneAxisLocal="(0; 0; 1)">
+								<AllMotor Force="700" />
+							</Constraint>
+							<Body _template="Spine" Mass="3" ModelFrame="BACKup">
+								<Constraint PlaneAxisLocal="(0; 0; 1)">
+									<AllMotor Force="600" />
+								</Constraint>
+								<Body
+									_template="Neck"
+									Collisions="None"
+									Mass="2"
+									ModelFrame="NECK"
+								>
+									<Constraint>
+										<AllMotor Force="50" />
+									</Constraint>
+									<Body _template="Neck" Mass="4" ModelFrame="HEAD">
+										<Constraint>
+											<AllMotor Force="15" />
+										</Constraint>
+									</Body>
+								</Body>
+							</Body>
+						</Body>
+					</Body>
+				</Body>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<IK>
+		<!--<IKBone ModelFrame="clavicleR" ParentFrame="BACKup">
+			<IKJoint AxisLocal="(0;0;1)" Type="Hinge" />-->
+		<IKBone ModelFrame="ARM1R" ParentFrame="BACKup">
+			<IKJoint AxisLocal="(1; 0; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(-0.259; 0; 0)"
+				AttachToFrame="HANDR"
+				ModelFrame="ARM2R"
+			>
+				<IKJoint AxisLocal="(1; 0; 0)" Type="Hinge2" />
+			</IKBone>
+		</IKBone>
+		<!--		</IKBone>-->
+		<!--		<IKBone ModelFrame="clavicleL" ParentFrame="BACKup">
+			<IKJoint AxisLocal="(0;0;-1)" Type="Hinge" />-->
+		<IKBone ModelFrame="ARM1L" ParentFrame="BACKup">
+			<IKJoint AxisLocal="(-1; 0; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0.259; 0; 0)"
+				AttachToFrame="HANDL"
+				ModelFrame="ARM2L"
+			>
+				<IKJoint AxisLocal="(-1; 0; 0)" Type="Hinge2" />
+			</IKBone>
+		</IKBone>
+		<!--		</IKBone>-->
+		<IKBone ModelFrame="LEG1L" ParentFrame="CENTRE">
+			<IKJoint AxisLocal="(1; 0; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0.367; 0; 0)"
+				AttachToFrame="FOOT1L"
+				ModelFrame="LEG2L"
+			>
+				<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge2" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="LEG1R" ParentFrame="CENTRE">
+			<IKJoint AxisLocal="(1; 0; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(-0.367; 0; 0)"
+				AttachToFrame="FOOT1R"
+				ModelFrame="LEG2R"
+			>
+				<IKJoint AxisLocal="(1; 0; 0)" Type="Hinge2" />
+			</IKBone>
+		</IKBone>
+	</IK>
+	<AnimationTrack Name="sleep">
+		<EnableIK FrameBegin="0" FrameEnd="45" Type="LHand" />
+		<EnableIK FrameBegin="0" FrameEnd="45" Type="RHand" />
+	</AnimationTrack>    
+	<AnimationTrack Name="idle_loop">
+		<EnableIK FrameBegin="0" FrameEnd="69" Type="LHand" />
+		<EnableIK FrameBegin="0" FrameEnd="69" Type="RHand" />
+	</AnimationTrack>
+	<AnimationTrack Name="idle_loop2">
+		<EnableIK FrameBegin="0" FrameEnd="68" Type="LHand" />
+		<EnableIK FrameBegin="0" FrameEnd="68" Type="RHand" />
+	</AnimationTrack>
+	<AnimationTrack Name="idle_move5">
+		<EnableIK FrameBegin="0" FrameEnd="122" Type="LHand" />
+		<EnableIK FrameBegin="0" FrameEnd="122" Type="RHand" />
+		<EnableIK FrameBegin="3" FrameEnd="122" Type="DisableLookAt" />
+	</AnimationTrack>
+	<AnimationTrack Name="steer_right_loop">
+		<EnableIK FrameBegin="0" FrameEnd="48" Type="LHand" />
+		<EnableIK FrameBegin="0" FrameEnd="48" Type="RHand" />
+	</AnimationTrack>
+	<AnimationTrack Name="steer_left_loop">
+		<EnableIK FrameBegin="0" FrameEnd="50" Type="LHand" />
+		<EnableIK FrameBegin="0" FrameEnd="50" Type="RHand" />
+	</AnimationTrack>
+	<AnimationTrack Name="gear_next">
+		<EnableIK FrameBegin="0" FrameEnd="36" Type="LHand" />
+		<EnableIK FrameBegin="0" FrameEnd="36" Type="RHand" />
+	</AnimationTrack>
+	<AnimationTrack Name="gear_prev">
+		<EnableIK FrameBegin="0" FrameEnd="41" Type="LHand" />
+		<EnableIK FrameBegin="0" FrameEnd="41" Type="RHand" />
+	</AnimationTrack>
+	<AnimationTrack Name="handbrake">
+		<EnableIK FrameBegin="0" FrameEnd="34" Type="LHand" />
+		<EnableIK FrameBegin="0" FrameEnd="34" Type="RHand" />
+	</AnimationTrack>
+	<AnimationTrack Name="idle_move0">
+		<EnableIK FrameBegin="0" FrameEnd="122" Type="LHand" />
+		<EnableIK FrameBegin="0" FrameEnd="122" Type="RHand" />
+	</AnimationTrack>
+	<AnimationTrack Name="idle_move1">
+		<EnableIK FrameBegin="0" FrameEnd="55" Type="LHand" />
+		<EnableIK FrameBegin="0" FrameEnd="55" Type="RHand" />
+		<EnableIK FrameBegin="13" FrameEnd="41" Type="DisableLookAt" />
+	</AnimationTrack>
+	<AnimationTrack Name="idle_move2">
+		<EnableIK FrameBegin="0" FrameEnd="121" Type="LHand" />
+		<EnableIK FrameBegin="84" FrameEnd="121" Type="RHand" />
+		<EnableIK FrameBegin="10" FrameEnd="76" Type="DisableLookAt" />
+	</AnimationTrack>
+	<AnimationTrack Name="idle_move3">
+		<EnableIK FrameBegin="0" FrameEnd="33" Type="LHand" />
+		<EnableIK FrameBegin="29" FrameEnd="33" Type="RHand" />
+		<EnableIK FrameBegin="0" FrameEnd="19" Type="DisableLookAt" />
+	</AnimationTrack>
+	<AnimationTrack Name="idle_move4">
+		<EnableIK FrameBegin="0" FrameEnd="43" Type="LHand" />
+		<EnableIK FrameBegin="0" FrameEnd="43" Type="RHand" />
+		<EnableIK FrameBegin="0" FrameEnd="30" Type="DisableLookAt" />
+	</AnimationTrack>
+	<AnimationTrack Name="hide">
+		<EnableIK FrameBegin="0" FrameEnd="160" Type="LHand" />
+		<EnableIK FrameBegin="0" FrameEnd="160" Type="RHand" />
+		<EnableIK FrameBegin="0" FrameEnd="160" Type="DisableLookAt" />
+	</AnimationTrack>
+	<AnimationTrack Name="unhide">
+		<EnableIK FrameBegin="0" FrameEnd="36" Type="LHand" />
+		<EnableIK FrameBegin="0" FrameEnd="36" Type="RHand" />
+	</AnimationTrack>
+	<AnimationTrack Name="honk">
+		<EnableIK FrameBegin="0" FrameEnd="37" Type="LHand" />
+		<EnableIK FrameBegin="0" FrameEnd="4" Type="RHand" />
+		<EnableIK FrameBegin="14" FrameEnd="37" Type="RHand" />
+	</AnimationTrack>
+	<!--<AnimationTrack Name="honk1">
+		<EnableIK FrameBegin="0" FrameEnd="37" Type="LHand" />
+		<EnableIK FrameBegin="12" FrameEnd="19" Type="RHand" />		   
+		<EnableIK FrameBegin="27" FrameEnd="30" Type="RHand" />
+		<EnableIK FrameBegin="37" FrameEnd="37" Type="RHand" />		   
+	</AnimationTrack>-->
+	<AnimationTrack Name="look_left">
+		<EnableIK FrameBegin="0" FrameEnd="18" Type="LHand" />
+		<EnableIK FrameBegin="0" FrameEnd="18" Type="RHand" />
+	</AnimationTrack>
+	<AnimationTrack Name="look_left_rev">
+		<EnableIK FrameBegin="0" FrameEnd="36" Type="RHand" />
+		<EnableIK FrameBegin="0" FrameEnd="36" Type="LHand" />
+	</AnimationTrack>
+	<AnimationTrack Name="look_right">
+		<EnableIK FrameBegin="0" FrameEnd="29" Type="LHand" />
+		<EnableIK FrameBegin="0" FrameEnd="29" Type="RHand" />
+	</AnimationTrack>
+	<AnimationTrack Name="look_right_rev">
+		<EnableIK FrameBegin="0" FrameEnd="29" Type="LHand" />
+		<EnableIK FrameBegin="0" FrameEnd="29" Type="RHand" />
+	</AnimationTrack>
+	<AnimationTrack Name="idle_move6">
+		<EnableIK FrameBegin="0" FrameEnd="122" Type="LHand" />
+		<EnableIK FrameBegin="0" FrameEnd="122" Type="RHand" />
+	</AnimationTrack>
+	<AnimationTrack Name="idle_move7">
+		<EnableIK FrameBegin="0" FrameEnd="121" Type="LHand" />
+		<EnableIK FrameBegin="0" FrameEnd="121" Type="RHand" />
+		<EnableIK FrameBegin="0" FrameEnd="121" Type="DisableLookAt" />
+	</AnimationTrack>
+</DriveCharacterSkeleton>

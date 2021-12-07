@@ -59,6 +59,7 @@
 		LoadPoints="6"
 		ManualLoads="2"
 		UnpackOnTrailerDetach="True"
+		RecreateOnZoneChange="True"
 	>
 		<SpawnLoadOrigin Position="(-4.502; 1.548; 0)" />
 		<Sounds
@@ -73,6 +74,13 @@
 			CargoLength="1"
 			CargoType="CargoLogsLong"
 			ManualLoads="3"
+		/>
+		<LongLogsAlignData
+			TargetOffset="(0.0, 0.0, 0.0)"
+			CargoPivotBody="BoneRoot_cdt"
+			CargoBodiesToAlign="BoneBottom_cdt,BoneTop_cdt,BoneRoot_cdt"
+			TruckAddonBodiesToAlign="BoneFork_cdt"
+			TrailerBodiesToAlign="BoneFork_cdt"
 		/>
 	</GameData>
 </TruckAddon>

@@ -91,8 +91,8 @@
 		<Ignition>
 			<Flare _template="IgnitionSignalRed" Size="0.2" Pos="(-4.637; 3.019; -1.137)" ParentFrame="BoneBacklights_cdt" />
 			<Flare _template="IgnitionSignalRed" Size="0.2" Pos="(-4.637; 3.019; 1.137)" ParentFrame="BoneBacklights_cdt" />
-			<Flare _template="IgnitionSignalOrange" Dir="(0; 0; -1)" Size="0.2" Pos="(-4.516; 3.126; -1.504)" ParentFrame="BoneBacklights_cdt" />
-			<Flare _template="IgnitionSignalOrange" Dir="(0; 0; 1)" Size="0.2" Pos="(-4.516; 3.126; 1.504)" ParentFrame="BoneBacklights_cdt" />
+			<Flare _template="IgnitionSignalOrange" Dir="(0; 0; -1)" Size="0.2" Pos="(-4.516; 3.126; -1.504)" ParentFrame="BoneRamp1_cdt" />
+			<Flare _template="IgnitionSignalOrange" Dir="(0; 0; 1)" Size="0.2" Pos="(-4.516; 3.126; 1.504)" ParentFrame="BoneRamp1_cdt" />
 		</Ignition>
 	</ModelAttachments>
 	<GameData
@@ -104,6 +104,7 @@
 		UnlockByExploration="false"
 		UnlockByRank="1"
 	>
+        <AddonType Name="TowingPlatform" />
 		<WinchSocket Pos="(1.563; 0.467; 0)" ParentFrame="BoneRoot_cdt" />
 		<UiDesc
 			UiDesc="UI_ADDON_FRAME_TOW_PLATFORM_DESC"

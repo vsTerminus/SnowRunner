@@ -147,8 +147,7 @@
 	<Truck _template="OutsideSticker1x1" Name="sticker_door_r_1x1_jeep_wrangler" />
 	<Truck _template="OutsideSticker1x1" Name="sticker_roof_1x1_jeep_wrangler" />
 	<Truck _template="OutsideSticker1x1" Name="sticker_capote_1x1_jeep_wrangler" />
-	<Truck _template="GlassStickerTopCut" Name="sticker_glass_top_jeep_wrangler" />
-	<Truck _template="GlassStickerBottomCut" Name="sticker_glass_bottom_jeep_wrangler" />
+	<Truck _template="GlassStickerTop2x16" Name="sticker_glass_top_jeep_wrangler" />
 	<!--<- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -/>-->
 	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_01_tuz_420_tatarin" />
 	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_02_tuz_420_tatarin" />
@@ -802,5 +801,28 @@
 	<Truck _template="OutsideSticker1x1" Name="sticker_door_r_1x1_jeep_cj7_renegade" />
 	<Truck _template="OutsideSticker1x1" Name="sticker_door_l_1x1_jeep_cj7_renegade" />
 	<Truck _template="GlassStickerTop2x16" Name="sticker_glass_top_jeep_cj7_renegade" />
+	<!--<- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -/>-->
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_01_tayga_6455b" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_02_tayga_6455b" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_03_tayga_6455b" />
+	<Truck _template="InsideSticker1x2" Name="sticker_inside_1x2_01_tayga_6455b" />
+	<Truck _template="InsideSticker1x2" Name="sticker_inside_1x2_02_tayga_6455b" />
+	<Truck _template="InsideSticker1x4" Name="sticker_inside_1x4_01_tayga_6455b" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_capote_1x1_tayga_6455b" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_door_r_1x1_tayga_6455b" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_door_l_1x1_tayga_6455b" />
+	<Truck _template="GlassStickerTopCut" Name="sticker_glass_top_tayga_6455b" />
+	<Truck _template="GlassStickerBottomCut" Name="sticker_glass_bottom_tayga_6455b" />
+	<!--<- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -/>-->
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_01_aramatsu_forester" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_02_aramatsu_forester" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_03_aramatsu_forester" />
+	<Truck _template="InsideSticker1x2" Name="sticker_inside_1x2_01_aramatsu_forester" />
+	<Truck _template="InsideSticker1x2" Name="sticker_inside_1x2_02_aramatsu_forester" />
+	<Truck _template="InsideSticker1x4" Name="sticker_inside_1x4_01_aramatsu_forester" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_capote_1x1_aramatsu_forester" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_roof_1x1_aramatsu_forester" />
+	<Truck _template="GlassStickerTop2x16" Name="sticker_glass_top_aramatsu_forester" />
+	<Truck _template="GlassStickerBottom2x16" Name="sticker_glass_bottom_aramatsu_forester" />
 	<!--<- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -/>-->
 </TruckSet>

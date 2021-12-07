@@ -389,6 +389,7 @@
 		<AddonSockets>
 			<Socket Names="BunkLog" Offset="(-6.4; 1.329; 0)" />
 			<Socket Names="FrameAddonLogShort" NamesBlock="MinicraneRU, Azov5319Fender" Offset="(-1.4; 1.334; 0)" />
+			<Socket Names="FrameAddonLogMedium" NamesBlock="MinicraneRU, Azov5319Fender" Offset="(-1.125; 1.334; 0)" />
 			<Socket Names="SaddleLow" Offset="(-3.171; 1.329; 0)">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.05)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.05)" />

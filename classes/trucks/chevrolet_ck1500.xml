@@ -240,6 +240,10 @@
 			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.07" Size="0.7" Pos="(2.25; 1.038; 0.73)" />
 		</HeadLight>
 	</ModelAttachments>
+	<BreakableLight Pos="(2.185; 0.868; 0.6)" Min="(1; 0; -1)" Max="(3; 1; 0)" BreakThreshold=".1" />
+	<BreakableLight Pos="(2.185; 0.868; -0.6)" Min="(1; 0; -1)" Max="(3; 1; 0)" BreakThreshold=".1" />
+	<BreakableLight Pos="(-2.46; 0.925; -0.762)" Min="(1; 0; -1)" Max="(3; 1; 0)" BreakThreshold=".1" />
+	<BreakableLight Pos="(-2.46; 0.925; 0.762)" Min="(1; 0; -1)" Max="(3; 1; 0)" BreakThreshold=".1" />
 	<Landmark Mesh="landmarks/chevrolet_ck1500_lmk" MinScale="1.8" MaxScale="3.8" />
 	<HeadLight _template="Default" Pos="(2.166; 1.038; 0)" />
 	<GameData

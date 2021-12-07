@@ -424,16 +424,14 @@
 			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" NamesBlock="SaddleLow" Offset="(-3.244; 1.755; 0)" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket 
-				Names="LogLift" 
-			    NamesBlock="MinicraneRU, LargeSemitrailer, LargeSemitrailerOiltank, SemitrailerOiltank, FrameAddon, FrameAddonTank, 
-							FrameAddonSeismicVibrator, FrameAddonKung, BigCraneRu, FrameAddonMaintainerBig " 
-				Offset="(0.287; 1.271; 0)" 
-			/>
+			<Socket Names="LogLift" NamesBlock="MinicraneRU, LargeSemitrailer, LargeSemitrailerOiltank, SemitrailerOiltank, FrameAddon, FrameAddonTank,         FrameAddonSeismicVibrator, FrameAddonKung, BigCraneRu, FrameAddonMaintainerBig " Offset="(0.287; 1.271; 0)" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="BunkLog" NamesBlock="Azov73210RearFender" Offset="(-6.639; 1.272; 0)" />
 			<Socket Names="FrameAddonLogShort" NamesBlock="MinicraneRU, LogLift, Azov73210RearFender" Offset="(-2.4; 1.268; 0)" />
+			<Socket Names="FrameAddonLogMedium" NamesBlock="MinicraneRU, LogLift, Azov73210RearFender" Offset="(-1.33; 1.268; 0)">
+				<AddonsShift Offset="(-0.75; 0; 0)" Types="Azov73210SpareWheel" />
+			</Socket>
 			<Socket Names="SaddleLow" Offset="(-3.244; 1.233; 0)">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.087)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.087)" />

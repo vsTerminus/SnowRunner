@@ -1,0 +1,4 @@
+<DriveCharacter
+	Mesh="env/driver_m_ru"
+	Skeleton="driver_forester_skeleton_m"
+/>

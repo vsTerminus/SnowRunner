@@ -34,4 +34,44 @@
 			/>
 		</GameData>
 	</SuspensionSet>
+	<SuspensionSet
+		_template="Active"
+		BrokenWheelDamageMultiplier="2"
+		CriticalDamageThreshold="0.55"
+		DamageCapacity="220"
+		Name="dan_96320_suspension_active"
+		DeviationDelta=".002"
+	>
+		<Suspension 
+			Height="0.2" 
+			Strength="0.08" 
+			WheelType="front" 
+			SuspensionMin="-0.3" 
+			SuspensionMax="0.3" 
+			DeviationMax="0.13"
+			BrokenSuspensionMax="0.2"
+		/>
+		
+		<Suspension  
+			Height="0.1" 
+			Strength="0.04" 
+			WheelType="rear" 
+			SuspensionMin="-0.3" 
+			SuspensionMax="0.3" 
+			DeviationMax="0.11"
+		/>
+		
+		<GameData
+			Price="9200"
+			UnlockByExploration="true"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_SUSPENSION_ACTIVE_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_SUSPENSION_ACTIVE_NAME"
+			/>
+		</GameData>
+	</SuspensionSet>
 </SuspensionSetVariants>

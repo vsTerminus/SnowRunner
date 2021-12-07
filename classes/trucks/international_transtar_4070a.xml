@@ -57,7 +57,7 @@
 		<SuspensionSocket
 			Default="transtar_4070a_suspension_default"
 			Type="s_international_transtar_4070a"
-			MaxWheelRadiusWithoutSuspension="0.39"
+			MaxWheelRadiusWithoutSuspension="0.27"
 		/>
 		<SteeringWheel Frame="BoneSteering" />
 		<SteeringRack
@@ -136,7 +136,8 @@
 			<DamageArea Type="Engine" Min="(1.9; 0.55; -0.6)" Max="(3.3; 1.9; 0.6)" ParentFrame="BoneCabin_cdt" />
 			<DamageArea Type="FuelTank" Min="(0.6; 0.37; -1.25)" Max="(1.7; 1.1; 1.25)" ParentFrame="BoneChassis_cdt" />
 		</Damage>
-		<CompatibleWheels Scale="0.50" Type="wheels_medium_double" />
+		<CompatibleWheels Scale="0.5" Type="wheels_medium_double" />
+		<CompatibleWheels Scale="0.53" Type="wheels_medium_double" />
 		<Camera Center="(-1.5; 0; 0)" ParentFrame="BoneCabin_cdt">
 			<Cockpit
 				_template="Default"

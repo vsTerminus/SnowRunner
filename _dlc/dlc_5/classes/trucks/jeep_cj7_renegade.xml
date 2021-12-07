@@ -298,6 +298,7 @@
 		</CustomizationCameras>
 		<CraneSocket Pos="(1.786; 0.464; 0.373)" />
 		<CraneSocket Pos="(1.786; 0.464; -0.373)" />
+		<CraneSocket Pos="(-0.5; 1.65; 0)" />
 		<CraneSocket Pos="(-0.072; 0.499; 0.814)" />
 		<CraneSocket Pos="(-0.072; 0.499; -0.814)" />
 		<CraneSocket Pos="(-1.9; 0.568; 0)" />

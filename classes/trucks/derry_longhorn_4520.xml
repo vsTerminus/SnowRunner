@@ -153,7 +153,7 @@
 		<Intake Dir="(1; 0; 0)" Origin="(4.19; 1.61; 0)" Size="0.8" />
 		<GearboxSocket Default="g_truck_default" Type="gearboxes_trucks" />
 		<FuelTank DamageCapacity="100" />
-		<EngineSocket Default="us_truck_modern_engine_0" Type="e_us_truck_modern" />
+		<EngineSocket Default="us_truck_modern_engine_0" Type="e_us_truck_modern, e_us_truck_modern_longhorn_4520" />
 		<Driver AnimationSet="HeavyTruck" Pos="(1.938; 2.213; 0.742)" SteeringWheelPos="(2.327; 2.554; 0.746)" />
 		<Dashboard>
 			<Gauge Dir="(-0.707; 0.707; 0)" InputRange="(0;100)" InputType="speed" Mesh="trucks/arrows/derry_longhorn_4520_arrow_1" Org="(2.64; 2.449; 0.72)" OutputAngles="(-133; 137)" />

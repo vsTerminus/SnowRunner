@@ -358,12 +358,6 @@
 			<Socket _template="Cabin2Chassis" Names="AnkMk38Beacon" NamesBlock="AnkMk38SpotlightBeacon" />
 			<Socket _template="Cabin2Chassis" Names="AnkMk38BeaconGabarite" />
 		</AddonSockets>
-		<!--		<AddonSockets>
-			<Socket _template="Cabin2Chassis" InCockpit="true" Names="AnkMk38Sticker" />
-		</AddonSockets>
-		<AddonSockets>
-			<Socket _template="Cabin2Chassis" InCockpit="true" Names="AnkMk38StickerDashboard" />
-		</AddonSockets>-->
 		<AddonSockets>
 			<Socket _template="Cabin2Chassis" InCockpit="true" Names="AnkMk38Sticker_1x1_01" />
 		</AddonSockets>

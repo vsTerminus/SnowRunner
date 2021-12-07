@@ -431,6 +431,7 @@
 		<AddonSockets>
 			<Socket Names="BunkLog" Offset="(-5.046; 1.096; 0)" NamesBlock="MinicraneRU, MetalDetector" />
 			<Socket Names="FrameAddonLogShort" NamesBlock="MinicraneRU, MetalDetector, step_310eCabinProtector" Offset="(-0.265; 1.093; 0)" />
+			<Socket Names="FrameAddonLogMedium" NamesBlock="MinicraneRU, MetalDetector, step_310eCabinProtector, Trailer" Offset="(-0.265; 1.093; 0)" />
 			<Socket Names="SaddleLow" Offset="(-1.559; 1.092; 0)" />
 			<Socket Names="SaddleHigh" Offset="(-0.7; 1.092; 0)">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.012)" />

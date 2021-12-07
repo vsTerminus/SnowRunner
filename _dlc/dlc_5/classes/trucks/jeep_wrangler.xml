@@ -224,8 +224,8 @@
 				<Body _template="SideMirror" ModelFrame="BoneMirrorRight_cdt">
 					<Constraint AxisLocal="(0; 1; 0)" />
 				</Body>
-				<Body _template="Sunshield" ModelFrame="BoneSunshieldL_cdt" />
-				<Body _template="Sunshield" ModelFrame="BoneSunshieldR_cdt" />
+				<Body _template="Sunshield" ModelFrame="BoneSunshieldLeft_cdt" />
+				<Body _template="Sunshield" ModelFrame="BoneSunshieldRight_cdt" />
 				<Body _template="Antenna" ModelFrame="BoneAntenna_cdt" />
 				<Body Mass="0.2" ModelFrame="BoneKeyFob_cdt">
 					<Constraint
@@ -331,7 +331,7 @@
 		</CustomizationCameras>
 		<CraneSocket Pos="(2.51; 0.66; -0.398)" />
 		<CraneSocket Pos="(2.51; 0.66; 0.398)" />
-		<CraneSocket Pos="(0; 2; 0)" />
+		<CraneSocket Pos="(0; 1.85; 0)" />
 		<CraneSocket Pos="(-2.365; 0.661; -0.532)" />
 		<CraneSocket Pos="(-2.365; 0.661; 0.532)" />
 		<CraneSocket Pos="(0.189; 0.505; 1.025)" />

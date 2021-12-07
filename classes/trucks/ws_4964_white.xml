@@ -378,8 +378,11 @@
 		<AddonSockets>
 			<Socket Names="FrameAddonTowPlatform" Offset="(-0.85; 1.091; 0)" NamesBlock="WS4964WhiteCabinProtector, MinicraneUS, Trailer" />
 			<Socket Names="LogLift" Offset="(0.123; 1.091; 0)" NamesBlock="MinicraneUS, Ws4964WhiteSpareWheel" />
-			<Socket Names="BunkLog" Offset="(-4.772; 1.093; 0)" NamesBlock="MinicraneUS" />
+			<Socket Names="BunkLog" Offset="(-4.772; 1.143; 0)" NamesBlock="MinicraneUS" >
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.05; 0)" />
+			</Socket>	
 			<Socket Names="FrameAddonLogShort" NamesBlock="MinicraneUS, WS4964WhiteCabinProtector" Offset="(-1.37; 1.089; 0)" />
+			<Socket Names="FrameAddonLogMedium" NamesBlock="MinicraneUS, WS4964WhiteCabinProtector" Offset="(-1.37; 1.089; 0)" />
 			<Socket Names="SaddleLow1" Offset="(-2.747; 1.11; 0)" />
 			<Socket Names="SaddleHigh" Offset="(-1.8; 1.11; 0)" />
 			<Socket Names="FrameAddon" Offset="(-1.5; 1.09; 0)" ParentFrame="BoneChassis_cdt">

@@ -318,7 +318,7 @@
 			<Flare _template="MarkerBeacon" Pos="(2.531; 3.245; 0)" ParentFrame="BoneCabin_cdt" />
 			<Flare _template="IgnitionSignalOrange" Size="0.2" Pos="(4.518; 1.426; -0.941)" ParentFrame="BoneCabin_cdt" />
 			<Flare _template="IgnitionSignalOrange" Size="0.2" Pos="(4.518; 1.426; 0.941)" ParentFrame="BoneCabin_cdt" />
-			<Flare _template="IgnitionSignalOrange" Dir="(0.5; 0; -0.5)" Size="0.1" Pos="(2.291; 2.692; -1.410)" ParentFrame="BoneMirrorR_cdt" />
+			<Flare _template="IgnitionSignalOrange" Dir="(0.5; 0; -0.5)" Size="0.1" Pos="(2.291; 2.692; -1.41)" ParentFrame="BoneMirrorR_cdt" />
 			<Flare _template="IgnitionSignalOrange" Dir="(0.5; 0; 0.5)" Size="0.1" Pos="(2.412; 2.698; 1.43)" ParentFrame="BoneMirrorL_cdt" />
 			<Flare _template="IgnitionSignalOrange" Dir="(0.5; 0; -0.5)" Size="0.1" Pos="(2.292; 2.618; -1.409)" ParentFrame="BoneMirrorR_cdt" />
 			<Flare _template="IgnitionSignalOrange" Dir="(0.5; 0; 0.5)" Size="0.1" Pos="(2.412; 2.618; 1.43)" ParentFrame="BoneMirrorL_cdt" />
@@ -384,18 +384,30 @@
 		<AddonSockets>
 			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-2.878; 1.81; 0)" />
 			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-2.878; 1.642; 0)" />
-			<Socket Names="Trailer" Offset="(-4.813; 1.189; 0)"/>
+			<Socket Names="Trailer" Offset="(-4.813; 1.189; 0)">
+				<AddonsShift Offset="(0; 0; 0)" TrailerNamesBlock="Trailer" Types="FrameAddonLogMedium, Pacific512CabinProtector" />
+			</Socket>
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="LogLift" NamesBlock="FrameAddonKung, BigCraneUs, MinicraneUS, SaddleLow, SaddleHigh, FrameAddon, FrameAddonTank, FrameAddonMaintainer, FrameAddonSeismicVibrator, Pacific512SpareWheel" Offset="(0.6; 1.324; 0)" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="FrameAddonKung" NamesBlock="MetalDetector, MinicraneUS" Offset="(-2.4; 1.41; 0)" ParentFrame="BoneChassis_cdt" >
+			<Socket
+				Names="FrameAddonKung"
+				NamesBlock="MetalDetector, MinicraneUS"
+				Offset="(-2.4; 1.41; 0)"
+				ParentFrame="BoneChassis_cdt"
+			>
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.07)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.07)" />
 			</Socket>
 			<Socket Names="BunkLog" Offset="(-6.5; 1.33; 0)" />
-			<Socket Names="FrameAddonLogShort" NamesBlock="MinicraneUS, MetalDetector, LogLift, Pacific512SpareWheel" Offset="(-1.455; 1.324; 0)" />
+			<Socket Names="FrameAddonLogShort" NamesBlock="MinicraneUS, MetalDetector, LogLift, Pacific512SpareWheel" Offset="(-1.455; 1.324; 0)">
+				<AddonsShift Offset="(-0.25; 0; 0)" Types="Pacific512CabinProtector" />
+			</Socket>
+			<Socket Names="FrameAddonLogMedium" NamesBlock="MinicraneUS, MetalDetector, LogLift, Pacific512SpareWheel" Offset="(-1.455; 1.324; 0)">
+				<AddonsShift Offset="(-0.25; 0; 0)" Types="Pacific512CabinProtector" />
+			</Socket>
 			<Socket Names="BigCraneUs" Offset="(-3.07; 1.324; 0)">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.03)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.03)" />

@@ -1,8 +1,16 @@
 <_templates Include="trucks" />
 <TruckAddon IsChassisFullOcclusion="true">
 	<PhysicsModel Mesh="trucks/addons/frame_addon_log_short">
-		<Body ImpactType="Truck" Mass="700">
+		<Body ImpactType="Truck" Mass="400">
 			<Constraint Type="Rigid" />
+			<Body
+				NoCameraCollision="True"
+				ImpactType="Truck"
+				Mass="300"
+				ModelFrame="BoneFork_cdt"
+			>
+				<Constraint Type="Fixed" />
+			</Body>
 		</Body>
 	</PhysicsModel>
 	<ModelAttachments/>

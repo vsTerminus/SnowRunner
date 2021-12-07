@@ -36,7 +36,7 @@
 		TruckImage="cat770gmchr"
 		TruckType="HEAVY"
 	>
-		<WinchUpgradeSocket Default="w_any_default" IsUpgradable="false" Type="winches_default" />
+		<WinchUpgradeSocket Default="w_heavy_trucks_default" IsUpgradable="true" Type="winches_heavy_trucks" />
 		<Wheels
 			DefaultRim="rim_1"
 			DefaultTire="mudtires_1"

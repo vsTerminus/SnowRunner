@@ -42,7 +42,7 @@
   </ExplicitParents>
   <AutomaticIK>
     <IKBone ModelFrame="BonePiston1L" ParentFrame="BoneCabin_cdt">
-      <IKJoint AxisLocal="(1; 0; 0)" Type="Hinge2" />
+      <IKJoint AxisLocal="(0; 1; 0)" Type="Hinge" />
       <IKBone
         AttachOffset="(0; 0; 0)"
         AttachToFrame="BoneAxleFront"
@@ -52,7 +52,7 @@
       </IKBone>
     </IKBone>
     <IKBone ModelFrame="BonePiston1R" ParentFrame="BoneCabin_cdt">
-      <IKJoint AxisLocal="(1; 0; 0)" Type="Hinge2" />
+      <IKJoint AxisLocal="(0; 1; 0)" Type="Hinge" />
       <IKBone
         AttachOffset="(0; 0; 0)"
         AttachToFrame="BoneAxleFront"

@@ -107,7 +107,7 @@
 			Type="Cylinder"
 		/>
 		<Intake Dir="(1; 0; 0)" Origin="(3.437; 1.593; 0)" Size="1" />
-		<GearboxSocket Default="g_truck_unique_offroad" Type="gearboxes_trucks_unique_offroad" />
+		<GearboxSocket Default="g_truck_unique_offroad" Type="gearboxes_trucks_unique_offroad, gearboxes_trucks_unique_m916a1_finetune" />
 		<FuelTank DamageCapacity="50" />
 		<EngineSocket Default="us_truck_modern_engine_0" Type="e_us_truck_modern" />
 		<Driver

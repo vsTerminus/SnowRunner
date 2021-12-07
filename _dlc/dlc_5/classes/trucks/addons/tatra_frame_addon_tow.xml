@@ -86,6 +86,7 @@
 		WheelToPack="2"
 		ShowPackingStoppers="false"
 	>
+        <AddonType Name="TowingPlatform" />
 		<WinchSocket Pos="(-5.856; 1.904; 0)" ParentFrame="BoneRoot_cdt" />
 		<UiDesc
 			UiDesc="UI_ADDON_FRAME_TOW_PLATFORM_DESC"

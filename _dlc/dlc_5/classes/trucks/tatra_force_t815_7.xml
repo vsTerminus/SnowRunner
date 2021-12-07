@@ -346,7 +346,7 @@
 			<Flare _template="IgnitionSignalOrange" Pos="(-5.451; 0.882; 0.968)" />
 			<Flare _template="IgnitionSignalOrange" Pos="(-5.451; 0.882; -0.968)" /> -->
 			<Flare _template="IgnitionSignalOrange" Dir="(0; 0; 1)" Size="0.15" Pos="(-2.197; 1.248; 1.21)" />
-			<Flare _template="IgnitionSignalOrange" Dir="(0; 0; -1)" Size="0.15" Pos="(-2.14; 1.248; -1.21)" />
+			<!--<Flare _template="IgnitionSignalOrange" Dir="(0; 0; -1)" Size="0.15" Pos="(-2.14; 1.248; -1.21)" />-->
 			<Flare _template="IgnitionSignalOrange" Dir="(0; 0; 1)" Size="0.15" Pos="(3.048; 1.417; 1.279)" />
 			<Flare _template="IgnitionSignalOrange" Dir="(0; 0; -1)" Size="0.15" Pos="(3.048; 1.417; -1.279)" />
 			<Flare _template="IgnitionSignalOrange" Dir="(1; 0; 0)" Size="0.2" Pos="(4.174; 2.614; 1.045)" />
@@ -601,6 +601,26 @@
 				ModelFrame="BoneAxle4R_IK_B"
 			>
 				<IKJoint AxisLocal="(1; 0; 0)" Type="Hinge" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="BonePistonIKR" ParentFrame="BoneAxle4R_IK_A">
+			<IKJoint AxisLocal="(1; 0; 0)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneChassis_cdt"
+				ModelFrame="BonePistonIKRend"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="BonePistonIKL" ParentFrame="BoneAxle4L_IK_A">
+			<IKJoint AxisLocal="(1; 0; 0)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneChassis_cdt"
+				ModelFrame="BonePistonIKLend"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
 			</IKBone>
 		</IKBone>
 	</AutomaticIK>

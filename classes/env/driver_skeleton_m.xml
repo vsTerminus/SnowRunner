@@ -35,7 +35,7 @@
 				/>
 			</Constraint>
 		</Spine>
-		<Neck AngularDamping="0.9">
+		<Neck AngularDamping="0.9" Collisions="OnlyWithAll">
 			<Constraint
 				ConeMax="7"			
 				PlaneAxisLocal="(0; 1; 0)"
@@ -81,6 +81,9 @@
 	TruckAnimationSet="env/driver_animation_m_t"
 	TruckSteeringWheelOffset="(0.384; 0.328; -0.007)"
 	TruckSteeringAnimationSpeedMult=".7"
+	ForwarderAnimationSet="env/driver_animation_m_forwarder"
+	ForwarderSteeringWheelOffset="(0; 0; 0)"
+	ForwarderSteeringAnimationSpeedMult=".0"
 >
 	<PhysicsModel>
 		<Body Collisions="None" Mass="30" ModelFrame="ROOT">

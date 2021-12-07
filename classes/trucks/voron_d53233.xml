@@ -490,6 +490,7 @@
 			<Socket Names="FrameAddonLogShort" NamesBlock="MinicraneRU, MetalDetector" Offset="(-1.68; 1.157; 0)">
 				<AddonsShift Offset="(-0.44; 0; 0)" Types="VoronD53233WheelAddon" />
 			</Socket>
+			<Socket Names="FrameAddonLogMedium" NamesBlock="MinicraneRU, MetalDetector, VoronD53233WheelAddon" Offset="(-1.68; 1.157; 0)"/>
 			<Socket Names="SaddleLow" Offset="(-2.817; 1.16; -0.002)">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.02)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.02)" />

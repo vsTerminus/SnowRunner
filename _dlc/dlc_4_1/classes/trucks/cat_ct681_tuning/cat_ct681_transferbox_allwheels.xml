@@ -53,7 +53,7 @@
 	</ExplicitParents>
 	<AutomaticIK>
 		<IKBone ModelFrame="BoneTieRodAWD_IK1" ParentFrame="BoneTieRodAWD_cdt">
-			<IKJoint AxisLocal="(1; 0; 0)" Type="Hinge2" />
+			<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
 			<IKBone
 				AttachOffset="(0; 0; 0)"
 				AttachToFrame="BoneRackLeft"

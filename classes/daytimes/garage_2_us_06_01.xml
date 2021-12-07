@@ -1,0 +1,53 @@
+<DayTimeState
+	ColorLUT="lut/garage__vol_uncmp.tga"
+	SunColor="g(255; 238; 196) x 1.4"
+	SunDir="(-0.095; -0.49; 0.22)"
+	EnvMap="env/garage__d_ggxrefl.tga"
+	CubeMapScale="6"
+	
+	FogColor="g(119; 135; 150) x 0.08"
+	FogScatterColor="g(246; 234; 198; 0) x 0"
+	HorizonColor="g(215; 231; 255) x 0.9"
+	WaterCubeMapIntensity="1.0"
+	VignetteFlareColor="g(232; 206; 126; 0)"
+	LightPbrMult="5"
+	
+	SSAOColor="g(1; 1; 1; 255) x 1"
+	RadiusMinSSAO="0.5"
+	RadiusMaxSSAO="3"
+	
+	ToneMapWhite="3"
+	HdrAdaptationMinLum="0.08"
+	HdrAdaptationMaxLum="800.0"
+	HdrAdaptationResetLum="0.08"
+	TonemapWhitePoint="0.5"
+	HdrAdaptationSpeed="0.1"
+	HdrExposureScale="1"
+	HdrExposureScaleX="1"
+	
+	TonemapA="0.32"
+	TonemapB="0.16"
+	TonemapC="0.55"
+	TonemapD="0.11"
+	TonemapE="0.03"
+	TonemapF="0.058"
+	
+	BloomEnabled="true"
+	BloomPoint="5"
+	BloomIntensity="0.7"
+	BloomGamma="0.85"
+	BloomHarmonicsTint0="g(255; 236; 107)"
+	BloomHarmonicsTint1="g(255; 156; 60)"
+	BloomHarmonicsTint2="g(255; 195; 100)"
+	BloomHarmonicsTint3="g(255; 65; 65)"
+	BloomHarmonicsTint4="g(255; 93; 162)"
+	
+
+	ShadowMapSplitSize="25.0"
+	ShadowMapResolution="2048"
+>
+	<Fog Density="0.03" StartDist="2" ScatterAngle="0" Alpha="0.8"/>
+	<VolumeFog Density="1" />
+	<Dof NearEnd="3.0" NearRange="0.5" />	
+	<Ambient NegY="g(250; 246; 230) x 1.6" MidY="g(212; 238; 240) x 1.6" PosY="g(255; 252; 225) x 1.4" />
+</DayTimeState>

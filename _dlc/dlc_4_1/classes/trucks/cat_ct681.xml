@@ -457,6 +457,7 @@
 			</Socket>
 			<Socket Names="BunkLog" Offset="(-6.6; 1.074; 0)" />
 			<Socket Names="FrameAddonLogShort" NamesBlock="MinicraneUS" Offset="(-3.56; 1.066; 0)" />
+			<Socket Names="FrameAddonLogMedium" NamesBlock="MinicraneUS, Trailer" Offset="(-3.56; 1.066; 0)" />
 			<Socket Names="SaddleLow1" Offset="(-4.9; 1.067; 0)" ParentFrame="BoneChassis_cdt">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.015)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.015)" />

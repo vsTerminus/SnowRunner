@@ -41,7 +41,7 @@
 	</TruckData>
 	<PhysicsModel Mesh="trucks/trailers/trailer_log">
 		<Body ImpactType="Truck" Mass="600" ModelFrame="BoneFront_cdt">
-			<Body ImpactType="Truck" Mass="2000" ModelFrame="BoneRear_cdt">
+			<Body ImpactType="Truck" Mass="1500" ModelFrame="BoneRear_cdt">
 				<Constraint
 					AxisLocal="(1; 0; 0)"
 					Type="Hinge"
@@ -50,6 +50,14 @@
 				>
 					<Motor Damping="32000" Spring="120000" Type="Spring" />
 				</Constraint>
+				<Body
+					ImpactType="Truck"
+					Mass="500"
+					ModelFrame="BoneFork_cdt"
+					NoCameraCollision="True"
+				>
+					<Constraint Type="Fixed" />
+				</Body>
 				<Body ImpactType="Truck" Mass="5" ModelFrame="BoneBeltShifterRear_cdt">
 					<Constraint
 						AxisLocal="(1; 0; 0)"
@@ -141,7 +149,7 @@
 		<Ignition>
 			<Light _template="IgnitionSignalRed" Pos="(-3.142; 1.423; 0)" ParentFrame="BoneRear_cdt" />
 			<Flare _template="IgnitionSignalRed" Pos="(-3.356; 1.246; 1.081)" ParentFrame="BoneRear_cdt" />
-			<Flare _template="IgnitionSignalRed" Pos="(3.356; 1.246; 1.081)" ParentFrame="BoneRear_cdt" />
+			<Flare _template="IgnitionSignalRed" Pos="(-3.356; 1.246; -1.081)" ParentFrame="BoneRear_cdt" />
 		</Ignition>
 	</ModelAttachments>
 	<Landmark Mesh="landmarks/trailer_log_lmk" MinScale="1.2" MaxScale="2.2" />

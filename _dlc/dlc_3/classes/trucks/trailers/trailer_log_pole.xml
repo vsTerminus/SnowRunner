@@ -50,11 +50,19 @@
 				>
 					<Motor Damping="1000" Spring="1000" Type="Spring" />
 				</Constraint>
-				<Body _template="CartForkBase" ModelFrame="BoneFork_cdt">
-					<Body _template="CartFork" ModelFrame="BoneForkLeft_cdt">
+				<Body
+					_template="CartForkBase"
+					ModelFrame="BoneFork_cdt"
+					NoCameraCollision="True"
+				>
+					<Body
+						_template="CartFork"
+						ModelFrame="BoneForkLeft_cdt"
+						NoCameraCollision="True"
+					>
 						<Constraint AxisLocal="(-1; 0; 0)" />
 					</Body>
-					<Body _template="CartFork" ModelFrame="BoneForkRight_cdt" />
+					<Body _template="CartFork" ModelFrame="BoneForkRight_cdt" NoCameraCollision="True" />
 				</Body>
 				<Body ImpactType="Truck" Mass="500" ModelFrame="BoneSuspension_cdt">
 					<Constraint
@@ -71,7 +79,8 @@
 	</PhysicsModel>
 	<ModelAttachments/>
 	<Landmark Mesh="landmarks/trailer_log_pole_lmk" MinScale="1.2" MaxScale="2.2" />
-	<GameData Price="14100">
+	<GameData FrameAlign="" Price="14100">
+		<TractorCargoSlotsOverride InitialOffset="(0.0, 2.0, 0.0)" OffsetStep="(-5.0; 0; 0)" />
 		<WinchSocket Pos="(-3.086; 0.948; 0)" />
 		<WinchSocket WinchableWhenAttached="false" Pos="(1.922; 1.105; 0)" />
 		<UiDesc
@@ -85,9 +94,10 @@
 			Subtype="TrailerPoleLogLong"
 			TrailerLoad="true"
 			Type="CargoLogsLong"
-			Min="(-6.14; 1.423; -1.498)"
-			Max="(-2.524; 2.8; 1.4)"
+			Min="(-9.14; 1.423; -2.498)"
+			Max="(-2.524; 2.8; 2.4)"
 		/>
 		<InstallSocket Offset="(1.922; 1.105; 0)" Type="Trailer" />
+		<LongLogsAlignTarget Pos="(0.0, 1.050, 0.0)"/>
 	</GameData>
 </Truck>

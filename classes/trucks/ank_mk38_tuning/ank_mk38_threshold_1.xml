@@ -4,8 +4,8 @@
 	<PhysicsModel Mesh="trucks/ank_mk38_tuning/ank_mk38_threshold_1" />
 	<GameData
 		_noinherit="true"
-		CameraPreset="addon_1"
-		Category="fender_front"
+		CameraPreset="side_r"
+		Category="miscellenious"
 		Price="700"
 		UnlockByExploration="false"
 		UnlockByRank="1"

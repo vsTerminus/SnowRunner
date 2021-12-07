@@ -359,6 +359,10 @@
 		<AddonSockets>
 			<Socket Names="BunkLog" Offset="(-8.094; 1.825; 0)" />
 			<Socket Names="FrameAddonLogShort" NamesBlock="MetalDetector" Offset="(-3.7; 1.821; 0)" />
+			<Socket Names="FrameAddonLogMedium" NamesBlock="MetalDetector, LogLift" Offset="(-2.7; 1.821; 0)">
+				<AddonsShift Offset="(-0.43; 0; 0)" Types="PacificP12WCabinProtector" />
+				<AddonsShift Offset="(-1; 0; 0)" Types="PacificP12wSpareWheel" />
+			</Socket>
 			<Socket Names="SaddleHigh1" Offset="(-4.641; 1.821; 0)" />
 			<Socket Names="FrameAddonTank" Offset="(-4.36; 1.82; 0)">
 				<AddonsShift Offset="(-0.5; 0; 0)" Types="PacificP12wSpareWheel" />
