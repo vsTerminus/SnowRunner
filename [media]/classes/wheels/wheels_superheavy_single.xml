@@ -19,7 +19,7 @@
 			</GameData>
 		</TruckTire>
 		<TruckTire _template="Mudtires" Mesh="wheels/tire_superheavy_mudtires_2" Name="mudtires_2">
-			<WheelFriction _template="HeavyMudtires" SubstanceFriction="3.2"/>
+			<WheelFriction _template="HeavyMudtires"/>
 			<GameData
 				Price="8100"
 				UnlockByExploration="false"
@@ -29,7 +29,7 @@
 			</GameData>
 		</TruckTire>
 		<TruckTire _template="Mudtires" Mesh="wheels/tire_superheavy_mudtires_3" Name="mudtires_3">
-			<WheelFriction _template="HeavyMudtires" BodyFriction="2.0"/>
+			<WheelFriction _template="HeavyMudtires"/>
 			<GameData
 				Price="9000"
 				UnlockByExploration="false"
@@ -39,7 +39,7 @@
 			</GameData>
 		</TruckTire>
 		<TruckTire _template="Mudtires" Mesh="wheels/tire_superheavy_mudtires_4_cat745" Name="mudtires_cat745">
-			<WheelFriction _template="HeavyMudtires" BodyFrictionAsphalt="1.0"/>
+			<WheelFriction _template="HeavyMudtires"/>
 			<GameData
 				Price="7500"
 				UnlockByExploration="false"

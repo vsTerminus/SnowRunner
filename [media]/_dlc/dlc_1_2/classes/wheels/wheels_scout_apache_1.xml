@@ -39,7 +39,7 @@
 			</GameData>
 		</TruckTire>
 		<TruckTire _template="ScoutAllterrain" Mesh="wheels/tire_scout_apache_offroad_1" Name="allterrain_1">
-			<WheelFriction _template="ScoutAllterrain" BodyFriction="1.4" />
+			<WheelFriction _template="ScoutAllterrain"/>
 			<GameData
 				Price="2700"
 				UnlockByExploration="false"
@@ -49,7 +49,7 @@
 			</GameData>
 		</TruckTire>
 		<TruckTire _template="ScoutAllterrain" Mesh="wheels/tire_scout_apache_offroad_2" Name="allterrain_2">
-			<WheelFriction _template="ScoutAllterrain" SubstanceFriction="1.2" />
+			<WheelFriction _template="ScoutAllterrain"/>
 			<GameData
 				Price="3000"
 				UnlockByExploration="false"
@@ -59,7 +59,7 @@
 			</GameData>
 		</TruckTire>
 		<TruckTire _template="ScoutAllterrain" Mesh="wheels/tire_scout_apache_offroad_3" Name="allterrain_3">
-			<WheelFriction _template="ScoutAllterrain" BodyFrictionAsphalt="1.2" />
+			<WheelFriction _template="ScoutAllterrain"/>
 			<GameData
 				Price="3400"
 				UnlockByExploration="false"

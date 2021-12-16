@@ -11,8 +11,6 @@
 		<TruckTire _template="Offroad" Mesh="wheels/tire_derry_special_15c177" Name="tire">
 			<WheelFriction
 				_template="Offroad"
-				BodyFrictionAsphalt="1.0"
-				SubstanceFriction="1.7"
 			/>
 			<GameData
 				Price="5500"
