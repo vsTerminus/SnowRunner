@@ -9,7 +9,7 @@
 		CriticalDamageThreshold="0.6"
 		DamageCapacity="100"
 		DamagedConsumptionModifier="1.8"
-		FuelConsumption="3.3"
+		FuelConsumption="0.3"
 		Name="us_scout_old_engine_ck1500"
 		Torque="60000"
 		DamagedMinTorqueMultiplier="1.0"

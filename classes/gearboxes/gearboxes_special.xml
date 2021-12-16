@@ -73,11 +73,11 @@
 		</GameData>
 	</Gearbox>
 	<Gearbox
-		AWDConsumptionModifier="1.2"
+		AWDConsumptionModifier="1.0"
 		CriticalDamageThreshold="0.7"
 		DamageCapacity="180"
 		DamagedConsumptionModifier="1.9"
-		FuelConsumption="4.0"
+		FuelConsumption="3.0"
 		IdleFuelModifier="0.3"
 		Name="g_special_finetune"
 		MinBreakFreq="0.0"

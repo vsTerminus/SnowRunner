@@ -10,7 +10,7 @@
 		DamageCapacity="90"
 		DamagedConsumptionModifier="1.2"
 		EngineResponsiveness="0.01"
-		FuelConsumption="1.1"
+		FuelConsumption="0.4"
 		Name="us_special_cat_th357_engine_0"
 		Torque="90000"
 		DamagedMinTorqueMultiplier="1.0"

@@ -10,7 +10,7 @@
 		DamageCapacity="200"
 		DamagedConsumptionModifier="1.1"
 		EngineResponsiveness="0.1"
-		FuelConsumption="6.5"
+		FuelConsumption="4.5"
 		Name="us_truck_modern_engine_cathx"
 		Torque="210000"
 		DamagedMinTorqueMultiplier="1.0"

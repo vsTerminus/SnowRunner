@@ -50,7 +50,7 @@
 		EngineIconScale="0.9"
 		EngineStartDelay="0.8"
 		ExhaustStartTime="0.9"
-		FuelCapacity="190"
+		FuelCapacity="100"
 		Responsiveness="0.15"
 		SteerSpeed="0.025"
 		TruckImage="tatra805mchr"

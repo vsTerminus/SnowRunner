@@ -17,7 +17,7 @@
 		CriticalDamageThreshold="0.5"
 		DamageCapacity="200"
 		DamagedConsumptionModifier="1.8"
-		FuelConsumption="7.0"
+		FuelConsumption="5.7"
 		Name="us_truck_old_engine_4070"
 		Torque="160000"
 		DamagedMinTorqueMultiplier="1.0"
