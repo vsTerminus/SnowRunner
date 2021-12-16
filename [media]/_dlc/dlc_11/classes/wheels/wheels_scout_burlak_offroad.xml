@@ -11,10 +11,6 @@
 		<TruckTire _template="Offroad" Mesh="wheels/tire_burlak_6x6" Name="tire">
 			<WheelFriction 
 				_template="Offroad"
-				BodyFriction="3.3"
-				BodyFrictionAsphalt="0.6"
-				SubstanceFriction="2.2"
-				IsIgnoreIce="true"
 			/>
 			<GameData
 				Price="2300"
