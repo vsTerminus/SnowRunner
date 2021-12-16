@@ -9,7 +9,7 @@
 <TruckWheels DamageCapacity="50" Radius="1" Width="0.84">
 	<TruckTires>
 		<TruckTire _template="Offroad" Mesh="wheels/tire_kenworth_963" Name="allterrain_1">
-			<WheelFriction _template="Allterrain" BodyFrictionAsphalt="1.6" BodyFriction="1.7" SubstanceFriction="1.0"/>
+			<WheelFriction _template="Allterrain" />
 			<GameData
 				Price="4900"
 				UnlockByExploration="false"
