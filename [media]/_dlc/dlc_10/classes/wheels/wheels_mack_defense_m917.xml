@@ -11,9 +11,6 @@
 		<TruckTire _template="Offroad" Mesh="wheels/tire_mack_defense_m917" Name="offroad">
 			<WheelFriction 
 				_template="Offroad"
-				BodyFriction="2.8"
-				BodyFrictionAsphalt="1.2"
-				SubstanceFriction="1.8"
 			/>
 			<GameData
 				Price="5700"

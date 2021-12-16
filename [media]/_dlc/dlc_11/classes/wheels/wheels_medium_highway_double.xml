@@ -18,7 +18,7 @@
 	<TruckTires>
         <!--  Highway tires -->
 		<TruckTire _template="Highway" Mesh="wheels/tire_medium_highway_double_10" Name="JAT HMD I">
-			<WheelFriction _template="Highway" BodyFriction="1" BodyFrictionAsphalt="3" SubstanceFriction="0.4"/>
+			<WheelFriction _template="Highway" />
 			<GameData
 				Price="2300"
 				UnlockByExploration="false"
@@ -28,7 +28,7 @@
 			</GameData>
 		</TruckTire>
 		<TruckTire _template="Highway" Mesh="wheels/tire_medium_highway_double_11" Name="JAT HMD II">
-			<WheelFriction _template="Highway" BodyFriction="1.1" BodyFrictionAsphalt="3" SubstanceFriction="0.3"/>
+			<WheelFriction _template="Highway" />
 			<GameData
 				Price="2500"
 				UnlockByExploration="false"
@@ -38,7 +38,7 @@
 			</GameData>
 		</TruckTire>
 		<TruckTire _template="Highway" Mesh="wheels/tire_medium_highway_double_12" Name="JAT HMD III">
-			<WheelFriction _template="Highway" BodyFriction="0.9" BodyFrictionAsphalt="3.2" SubstanceFriction="0.4"/>
+			<WheelFriction _template="Highway" />
 			<GameData
 				Price="2900"
 				UnlockByExploration="false"
