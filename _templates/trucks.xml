@@ -16,56 +16,64 @@
 	<WheelFriction>
 		<ScoutOffroad
 			BodyFriction="2.0"
-			BodyFrictionAsphalt="1"
-			SubstanceFriction="1.2"
+			BodyFrictionAsphalt="4.0"
+			IsIgnoreIce="true"
+			SubstanceFriction="4.0"
 			UiName="UI_TIRE_TYPE_OFFROAD_NAME"
 		/>
 		<ScoutMudtires
-			BodyFriction="3.0"
-			BodyFrictionAsphalt="1.0"
-			SubstanceFriction="1.6"
+			BodyFriction="4.0"
+			BodyFrictionAsphalt="4.0"
+			IsIgnoreIce="true"
+			SubstanceFriction="4.0"
 			UiName="UI_TIRE_TYPE_MUDTIRES_NAME"
 		/>
 		<ScoutHighway
-			BodyFriction="0.8"
-			BodyFrictionAsphalt="2"
-			SubstanceFriction="0.2"
+			BodyFriction="4.0"
+			BodyFrictionAsphalt="4.0"
+			IsIgnoreIce="true"
+			SubstanceFriction="4.0"
 			UiName="UI_TIRE_TYPE_HIGHWAY_NAME"
 		/>
 		<ScoutChains
-			BodyFriction="2.0"
-			BodyFrictionAsphalt="1.1"
+			BodyFriction="4.0"
+			BodyFrictionAsphalt="4.0"
 			IsIgnoreIce="true"
-			SubstanceFriction="1.6"
+			SubstanceFriction="4.0"
 			UiName="UI_TIRE_TYPE_CHAINS_NAME"
 		/>
 		<ScoutAllterrain
-			BodyFriction="1"
-			BodyFrictionAsphalt="1.0"
-			SubstanceFriction="1.0"
+			BodyFriction="4.0"
+			BodyFrictionAsphalt="4.0"
+			IsIgnoreIce="true"
+			SubstanceFriction="4.0"
 			UiName="UI_TIRE_TYPE_ALLTERRAIN_NAME"
 		/>
 		<Offroad
 			BodyFriction="3.0"
 			BodyFrictionAsphalt="0.8"
+			IsIgnoreIce="true"
 			SubstanceFriction="1.5"
 			UiName="UI_TIRE_TYPE_OFFROAD_NAME"
 		/>
 		<Mudtires
 			BodyFriction="2.0"
 			BodyFrictionAsphalt="1.0"
+			IsIgnoreIce="true"
 			SubstanceFriction="2.0"
 			UiName="UI_TIRE_TYPE_MUDTIRES_NAME"
 		/>
 		<Highway
 			BodyFriction="1.0"
 			BodyFrictionAsphalt="3.0"
+			IsIgnoreIce="true"
 			SubstanceFriction="0.2"
 			UiName="UI_TIRE_TYPE_HIGHWAY_NAME"
 		/>
 		<HeavyMudtires
 			BodyFriction="1.7"
 			BodyFrictionAsphalt="1.0"
+			IsIgnoreIce="true"
 			SubstanceFriction="3.0"
 			UiName="UI_TIRE_TYPE_MUDTIRES_NAME"
 		/>
@@ -79,6 +87,7 @@
 		<Allterrain
 			BodyFriction="1.5"
 			BodyFrictionAsphalt="1.5"
+			IsIgnoreIce="true"
 			SubstanceFriction="1.0"
 			UiName="UI_TIRE_TYPE_ALLTERRAIN_NAME"
 		/>
