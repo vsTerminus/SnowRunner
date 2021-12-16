@@ -10,7 +10,7 @@
 <TruckWheels DamageCapacity="50" Radius="1" Width="0.863">
 	<TruckTires>
 		<TruckTire _template="Mudtires" Mesh="wheels/tire_scout_mudtires1_1" Name="mudtires_1">
-			<WheelFriction _template="Mudtires" BodyFriction="2.4" />
+			<WheelFriction _template="Mudtires"/>
 			<GameData
 				Price="4900"
 				UnlockByExploration="false"
@@ -20,7 +20,7 @@
 			</GameData>
 		</TruckTire>
 		<TruckTire _template="Mudtires" Mesh="wheels/tire_scout_mudtires1_2" Name="mudtires_2">
-			<WheelFriction _template="Mudtires" SubstanceFriction="2.4" />
+			<WheelFriction _template="Mudtires"/>
 			<GameData
 				Price="5300"
 				UnlockByExploration="false"

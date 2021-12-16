@@ -14,7 +14,7 @@
 >
 	<TruckTires>
 		<TruckTire _template="Offroad" Mesh="wheels/tire_ank_mk38_1" Name="offroad_ank_nk38_1">
-			<WheelFriction _template="Offroad" SubstanceFriction="1.7"/>
+			<WheelFriction _template="Offroad"/>
 			<GameData
 				Price="5700"
 				UnlockByExploration="false"
