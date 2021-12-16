@@ -16,7 +16,7 @@
 >
 	<TruckTires>
 		<TruckTire _template="Mudtires" Mesh="wheels/tire_double_cat_770g" Name="mudtires_1">
-			<WheelFriction _template="Mudtires" SubstanceFriction="3.5" />
+			<WheelFriction _template="Mudtires" />
 			<GameData
 				Price="7900"
 				UnlockByExploration="false"

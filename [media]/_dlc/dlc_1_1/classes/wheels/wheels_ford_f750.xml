@@ -34,7 +34,7 @@
 >
 	<TruckTires>
 		<TruckTire _template="Highway" Mesh="wheels/tire_ford_f750_1" Name="highway_ford_f750">
-			<WheelFriction _template="Highway" SubstanceFriction="0.4" />
+			<WheelFriction _template="ScoutHighway"/>
 			<GameData
 				Price="2300"
 				UnlockByExploration="false"
@@ -44,7 +44,7 @@
 			</GameData>
 		</TruckTire>
 		<TruckTire _template="Offroad" Mesh="wheels/tire_ford_f750_offroad_1" Name="offroad_1">
-			<WheelFriction _template="Offroad" BodyFrictionAsphalt="1.0" />
+			<WheelFriction _template="ScoutOffroad"/>
 			<GameData
 				Price="4400"
 				UnlockByExploration="false"
@@ -54,7 +54,7 @@
 			</GameData>
 		</TruckTire>
 		<TruckTire _template="Offroad" Mesh="wheels/tire_ford_f750_offroad_2" Name="offroad_2">
-			<WheelFriction _template="Offroad" SubstanceFriction="1.9" />
+			<WheelFriction _template="ScoutOffroad"/>
 			<GameData
 				Price="4900"
 				UnlockByExploration="false"
@@ -64,7 +64,7 @@
 			</GameData>
 		</TruckTire>
 		<TruckTire _template="Offroad" Mesh="wheels/tire_ford_f750_offroad_3" Name="offroad_3">
-			<WheelFriction _template="Offroad" BodyFriction="3.2" />
+			<WheelFriction _template="ScoutOffroad"/>
 			<GameData
 				Price="5700"
 				UnlockByExploration="false"
@@ -74,6 +74,7 @@
 			</GameData>
 		</TruckTire>
 		<TruckTire _template="Chains" Mesh="wheels/tire_ford_f750_chains" Name="chains_all">
+			<WheelFriction _template="ScoutOffroad"/>
 			<GameData
 				Price="6000"
 				UnlockByExploration="false"
