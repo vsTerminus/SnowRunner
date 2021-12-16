@@ -55,7 +55,7 @@
 		EngineIconScale="1"
 		EngineStartDelay="1.7"
 		ExhaustStartTime="1.6"
-		FuelCapacity="140"
+		FuelCapacity="265"
 		Responsiveness="0.6"
 		SteerSpeed="0.03"
 		TruckImage="ford750mchr"

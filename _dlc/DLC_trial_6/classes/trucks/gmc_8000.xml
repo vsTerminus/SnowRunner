@@ -45,7 +45,7 @@
 		EngineIconScale="1.2"
 		EngineStartDelay="0.8"
 		ExhaustStartTime="0.9"
-		FuelCapacity="285"
+		FuelCapacity="663"
 		Responsiveness="0.25"
 		SteerSpeed="0.02"
 		TruckImage="gmcBrigadier8000mchr"

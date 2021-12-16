@@ -76,7 +76,7 @@
 		EngineIconScale="0.8"
 		EngineStartDelay="3.2"
 		ExhaustStartTime="2.8"
-		FuelCapacity="380"
+		FuelCapacity="460"
 		Responsiveness="0.2"
 		SteerSpeed="0.022"
 		TruckImage="tatraforcemchr"

@@ -17,7 +17,7 @@
 		CriticalDamageThreshold="0.6"
 		DamageCapacity="240"
 		DamagedConsumptionModifier="1.9"
-		FuelConsumption="7.5"
+		FuelConsumption="6.3"
 		Name="us_truck_old_engine_gmc9500"
 		Torque="140000"
 		DamagedMinTorqueMultiplier="1.0"

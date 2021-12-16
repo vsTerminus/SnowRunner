@@ -10,7 +10,7 @@
 		DamageCapacity="190"
 		DamagedConsumptionModifier="1.2"
 		EngineResponsiveness="0.25"
-		FuelConsumption="8.0"
+		FuelConsumption="3.2"
 		Name="us_truck_modern_engine_longhorn_4520"
 		Torque="230000"
 		DamagedMinTorqueMultiplier="1.0"
