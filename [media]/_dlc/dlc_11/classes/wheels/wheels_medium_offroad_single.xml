@@ -18,7 +18,7 @@
         <!-- Offroad tires -->
 
         <TruckTire _template="Offroad" Mesh="wheels/tire_medium_offroad_single_10" Name="JAT OMS I">
-			<WheelFriction _template="Offroad" BodyFriction="3" BodyFrictionAsphalt="1" SubstanceFriction="1.7"/>
+			<WheelFriction _template="Offroad" />
 			<GameData
 				Price="4900"
 				UnlockByExploration="false"
@@ -28,7 +28,7 @@
 			</GameData>
 		</TruckTire>
         <TruckTire _template="Offroad" Mesh="wheels/tire_medium_offroad_single_11" Name="JAT OMS II">
-			<WheelFriction _template="Offroad" BodyFriction="3.1" BodyFrictionAsphalt="0.8" SubstanceFriction="1.6"/>
+			<WheelFriction _template="Offroad" />
 			<GameData
 				Price="5100"
 				UnlockByExploration="false"
@@ -38,7 +38,7 @@
 			</GameData>
 		</TruckTire>
         <TruckTire _template="Offroad" Mesh="wheels/tire_medium_offroad_single_12" Name="JAT OMS III">
-			<WheelFriction _template="Offroad" BodyFriction="3.2" BodyFrictionAsphalt="0.6" SubstanceFriction="1.6"/>
+			<WheelFriction _template="Offroad" />
 			<GameData
 				Price="5700"
 				UnlockByExploration="false"
