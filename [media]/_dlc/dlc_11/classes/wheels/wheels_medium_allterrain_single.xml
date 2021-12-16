@@ -17,7 +17,7 @@
 	<TruckTires>
         <!-- Allterrain tires -->
         <TruckTire _template="Allterrain" Mesh="wheels/tire_medium_allterrain_single_10" Name="JAT ATMS I">
-			<WheelFriction _template="Allterrain" BodyFriction="1.7" BodyFrictionAsphalt="1.5" SubstanceFriction="1"/>
+			<WheelFriction _template="Allterrain" />
 			<GameData
 				Price="3800"
 				UnlockByExploration="false"
@@ -27,7 +27,7 @@
 			</GameData>
 		</TruckTire>
         <TruckTire _template="Allterrain" Mesh="wheels/tire_medium_allterrain_single_11" Name="JAT ATMS II">
-			<WheelFriction _template="Allterrain" BodyFriction="1.5" BodyFrictionAsphalt="1.7" SubstanceFriction="1.1"/>
+			<WheelFriction _template="Allterrain" />
 			<GameData
 				Price="4200"
 				UnlockByExploration="false"
@@ -37,7 +37,7 @@
 			</GameData>
 		</TruckTire>
         <TruckTire _template="Allterrain" Mesh="wheels/tire_medium_allterrain_single_12" Name="JAT ATMS III">
-			<WheelFriction _template="Allterrain" BodyFriction="1.5" BodyFrictionAsphalt="1.4" SubstanceFriction="1.4"/>
+			<WheelFriction _template="Allterrain" />
 			<GameData
 				Price="4500"
 				UnlockByExploration="false"
