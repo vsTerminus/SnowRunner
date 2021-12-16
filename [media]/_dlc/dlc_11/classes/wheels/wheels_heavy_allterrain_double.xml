@@ -11,7 +11,7 @@
 <TruckWheels DamageCapacity="50" Radius="1" Width="0.62" WidthRear="1.24" Mass="200">
 	<TruckTires>
 		<TruckTire _template="Allterrain" Mesh="wheels/tire_heavy_allterrain_double_10" Name="JAT ATHD I">
-			<WheelFriction _template="Allterrain" BodyFriction="1.7" BodyFrictionAsphalt="1.5" SubstanceFriction="1"/>
+			<WheelFriction _template="Allterrain" />
 			<GameData
 				Price="4900"
 				UnlockByExploration="false"
@@ -21,7 +21,7 @@
 			</GameData>
 		</TruckTire>
 		<TruckTire _template="Allterrain" Mesh="wheels/tire_heavy_allterrain_double_11" Name="JAT ATHD II">
-			<WheelFriction _template="Allterrain" BodyFriction="1.5" BodyFrictionAsphalt="1.7" SubstanceFriction="1.1"/>
+			<WheelFriction _template="Allterrain" />
 			<GameData
 				Price="5300"
 				UnlockByExploration="false"
@@ -31,7 +31,7 @@
 			</GameData>
 		</TruckTire>
 		<TruckTire _template="Allterrain" Mesh="wheels/tire_heavy_allterrain_double_12" Name="JAT ATHD III">
-			<WheelFriction _template="Allterrain" BodyFriction="1.5" BodyFrictionAsphalt="1.4" SubstanceFriction="1.4"/>
+			<WheelFriction _template="Allterrain" />
 			<GameData
 				Price="5700"
 				UnlockByExploration="false"

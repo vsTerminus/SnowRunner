@@ -34,7 +34,7 @@
 >
 	<TruckTires>
 		<TruckTire _template="Highway" Mesh="wheels/tire_medium_highway_double_1" Name="highway_1">
-			<WheelFriction _template="Highway" SubstanceFriction="0.4"/>
+			<WheelFriction _template="Highway"/>
 			<GameData
 				Price="2300"
 				UnlockByExploration="false"
@@ -44,7 +44,7 @@
 			</GameData>
 		</TruckTire>
 		<TruckTire _template="Highway" Mesh="wheels/tire_medium_highway_double_2" Name="highway_2">
-			<WheelFriction _template="Highway" BodyFriction="1.2"/>
+			<WheelFriction _template="Highway"/>
 			<GameData
 				Price="2500"
 				UnlockByExploration="false"
@@ -54,7 +54,7 @@
 			</GameData>
 		</TruckTire>
 		<TruckTire _template="Highway" Mesh="wheels/tire_medium_highway_double_3" Name="highway_3">
-			<WheelFriction _template="Highway" BodyFrictionAsphalt="3.2"/>
+			<WheelFriction _template="Highway"/>
 			<GameData
 				Price="2900"
 				UnlockByExploration="false"
@@ -64,7 +64,7 @@
 			</GameData>
 		</TruckTire>
 		<TruckTire _template="Allterrain" Mesh="wheels/tire_medium_allterrain_double_1" Name="allterrain_1">
-			<WheelFriction _template="Allterrain" BodyFrictionAsphalt="1.9"/>
+			<WheelFriction _template="Allterrain"/>
 			<GameData
 				Price="3800"
 				UnlockByExploration="false"
@@ -74,7 +74,7 @@
 			</GameData>
 		</TruckTire>
 		<TruckTire _template="Allterrain" Mesh="wheels/tire_medium_allterrain_double_2" Name="allterrain_2">
-			<WheelFriction _template="Allterrain" SubstanceFriction="1.2"/>
+			<WheelFriction _template="Allterrain"/>
 			<GameData
 				Price="4200"
 				UnlockByExploration="false"
@@ -84,7 +84,7 @@
 			</GameData>
 		</TruckTire>
 		<TruckTire _template="Allterrain" Mesh="wheels/tire_medium_allterrain_double_3" Name="allterrain_3">
-			<WheelFriction _template="Allterrain" BodyFriction="1.7"/>
+			<WheelFriction _template="Allterrain"/>
 			<GameData
 				Price="4500"
 				UnlockByExploration="false"
@@ -94,7 +94,7 @@
 			</GameData>
 		</TruckTire>
 		<TruckTire _template="Offroad" Mesh="wheels/tire_medium_offroad_double_1" Name="offroad_1">
-			<WheelFriction _template="Offroad" BodyFrictionAsphalt="1.0"/>
+			<WheelFriction _template="Offroad"/>
 			<GameData
 				Price="4900"
 				UnlockByExploration="false"
@@ -104,7 +104,7 @@
 			</GameData>
 		</TruckTire>
 		<TruckTire _template="Offroad" Mesh="wheels/tire_medium_offroad_double_2" Name="offroad_2">
-			<WheelFriction _template="Offroad" SubstanceFriction="1.9"/>
+			<WheelFriction _template="Offroad"/>
 			<GameData
 				Price="5100"
 				UnlockByExploration="false"
@@ -114,7 +114,7 @@
 			</GameData>
 		</TruckTire>
 		<TruckTire _template="Offroad" Mesh="wheels/tire_medium_offroad_double_3" Name="offroad_3">
-			<WheelFriction _template="Offroad" BodyFriction="3.2"/>
+			<WheelFriction _template="Offroad"/>
 			<GameData
 				Price="5700"
 				UnlockByExploration="false"
@@ -123,8 +123,8 @@
 				<UiDesc UiDesc="UI_TIRE_OFFROAD_DESC" UiName="UI_TIRE_OFFROAD_DOUBLE_3_NAME" />
 			</GameData>
 		</TruckTire>
-		<TruckTire _template="Offroad" Mesh="wheels/tire_medium_chains_rear_double" Name="chains_rear">
-			<WheelFriction _template="Chains" Rear="true"/>       
+		<TruckTire _template="Allterrain" Mesh="wheels/tire_medium_chains_rear_double" Name="chains_rear">
+			<WheelFriction _template="Allterrain" Rear="true"/>       
 			<GameData
 				Price="6100"
 				UnlockByExploration="false"
@@ -134,6 +134,7 @@
 			</GameData>
 		</TruckTire>
 		<TruckTire _template="Chains" Mesh="wheels/tire_medium_chains_all_double" Name="chains_all">
+			<WheelFriction _template="Allterrain"/>
 			<GameData
 				Price="6400"
 				UnlockByExploration="false"
