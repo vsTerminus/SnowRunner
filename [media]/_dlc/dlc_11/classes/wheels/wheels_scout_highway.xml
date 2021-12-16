@@ -10,7 +10,7 @@
 <TruckWheels DamageCapacity="50" Radius="1" Width="0.57" Mass="50">
 	<TruckTires>
 		<TruckTire _template="ScoutHighway" Mesh="wheels/tire_scout_highway_10" Name="JAT HS I">
-			<WheelFriction _template="ScoutHighway" BodyFriction="0.7" BodyFrictionAsphalt="2.2" SubstanceFriction="0.3"/>
+			<WheelFriction _template="ScoutHighway" />
 			<GameData
 				Price="1200"
 				UnlockByExploration="false"
@@ -20,7 +20,7 @@
 			</GameData>
 		</TruckTire>     
 		<TruckTire _template="ScoutHighway" Mesh="wheels/tire_scout_highway_11" Name="JAT HS II">
-			<WheelFriction _template="ScoutHighway" BodyFriction="1" BodyFrictionAsphalt="2.3" SubstanceFriction="0.2"/>
+			<WheelFriction _template="ScoutHighway" />
 			<GameData
 				Price="1400"
 				UnlockByExploration="false"
