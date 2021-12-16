@@ -5,9 +5,6 @@
 			<WheelSoftness _template="Average" SoftForceScale="0.18"/>
 			<WheelFriction
 				_template="HeavyMudtires"
-				BodyFriction="2"
-				BodyFrictionAsphalt="1.0"
-				SubstanceFriction="3.35"
 			/>
 		</Mudtires>
 	</TruckTire>

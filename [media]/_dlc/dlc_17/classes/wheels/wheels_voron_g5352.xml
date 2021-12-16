@@ -9,7 +9,7 @@
 <TruckWheels DamageCapacity="50" Radius="1" Width="0.66">
 	<TruckTires>
 		<TruckTire _template="Offroad" Mesh="wheels/tire_voron_g5352" Name="tire">
-			<WheelFriction _template="Offroad" BodyFrictionAsphalt="1" SubstanceFriction="1.8" BodyFriction="3"/>
+			<WheelFriction _template="Offroad"/>
 			<GameData
 				Price="7500"
 				UnlockByExploration="false"
