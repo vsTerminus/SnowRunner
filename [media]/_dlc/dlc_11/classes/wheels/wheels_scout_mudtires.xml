@@ -10,7 +10,7 @@
 <TruckWheels DamageCapacity="50" Radius="1" Width="0.93" Mass="50">
 	<TruckTires>
 		<TruckTire _template="ScoutMudtires" Mesh="wheels/tire_scout_mudtires_10" Name="JAT MS I">
-			<WheelFriction _template="ScoutMudtires" BodyFriction="2.7" BodyFrictionAsphalt="1.0" SubstanceFriction="1.8"/>
+			<WheelFriction _template="ScoutMudtires" />
 			<GameData
 				Price="5100"
 				UnlockByExploration="false"
@@ -20,7 +20,7 @@
 			</GameData>
 		</TruckTire>
         <TruckTire _template="ScoutMudtires" Mesh="wheels/tire_scout_mudtires_11" Name="JAT MS II">
-			<WheelFriction _template="ScoutMudtires" BodyFriction="2.4" BodyFrictionAsphalt="1.0" SubstanceFriction="2.1"/>
+			<WheelFriction _template="ScoutMudtires" />
 			<GameData
 				Price="5500"
 				UnlockByExploration="false"
@@ -30,7 +30,7 @@
 			</GameData>
 		</TruckTire>
         <TruckTire _template="ScoutMudtires" Mesh="wheels/tire_scout_mudtires_12" Name="JAT MS III">
-			<WheelFriction _template="ScoutMudtires" BodyFriction="2.1" BodyFrictionAsphalt="1.0" SubstanceFriction="2.5"/>
+			<WheelFriction _template="ScoutMudtires" />
 			<GameData
 				Price="5900"
 				UnlockByExploration="false"
