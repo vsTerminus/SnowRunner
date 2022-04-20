@@ -37,7 +37,11 @@
 			<Multiplier Multiplier="1.0" Type="Engine" />
 		</Damage>
 	</TruckData>
-	<PhysicsModel Mesh="trucks/tayga_6436_tuning/tayga_6436_bumper_3" />
+	<PhysicsModel Mesh="trucks/tayga_6436_tuning/tayga_6436_bumper_3">
+		<Body ImpactType="Truck" Mass="10" ModelFrame="BoneCabin_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
 	<ModelAttachments _noinherit="True">
 		<MainHeadLight>
 			<Model _template="HeadLightRay" Org="(3.937; 1.445; -0.824)" />

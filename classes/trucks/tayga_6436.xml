@@ -298,15 +298,15 @@
 			<CameraPos FOV="32.0" Interior="true" Name="mirror_mount" InterestPosition="(6.729; 2.666; -0.34)" Position="(4.147; 2.501; -0.111)" />
 			<CameraPos FOV="32.0" Name="side_r" InterestPosition="(4.764; 1.97; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-0.226; 4.969; -4.508)" />
 			<CameraPos FOV="32.0" Interior="true" Name="sticker" InterestPosition="(6.729; 1.044; 1.759)" Position="(4.199; 2.517; -0.369)" />
-			<CameraPos FOV="32.0" Interior="true" Name="sticker_1" InterestPosition="(6.729; 1.845; 0.266)" Position="(4.380; 2.452; -0.529)" />
-			<CameraPos FOV="32.0" Interior="true" Name="glass_sticker" InterestPosition="(4.252; 2.181; -0.988)" Position="(8.710; 3.42; 1.018)" />
+			<CameraPos FOV="32.0" Interior="true" Name="sticker_1" InterestPosition="(6.729; 1.845; 0.266)" Position="(4.38; 2.452; -0.529)" />
+			<CameraPos FOV="32.0" Interior="true" Name="glass_sticker" InterestPosition="(4.252; 2.181; -0.988)" Position="(8.71; 3.42; 1.018)" />
 			<CameraPos FOV="32.0" Interior="true" Name="door_r_sticker" InterestPosition="(6.426; 0.918; 0)" Position="(3.929; 2.715; 3.395)" />
 			<CameraPos FOV="32.0" Name="roof" InterestPosition="(5.584; 1.615; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(9.203; 3.854; 5.047)" />
-			<CameraPos FOV="32.0" Interior="true" Name="capote_sticker" InterestPosition="(4.348; 0.1; 0.007)" Position="(8.161; 4.170; -0.723)" />
+			<CameraPos FOV="32.0" Interior="true" Name="capote_sticker" InterestPosition="(4.348; 0.1; 0.007)" Position="(8.161; 4.17; -0.723)" />
 			<CameraPos FOV="32.0" Name="hoods" InterestPosition="(5.275; 1.623; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(12.823; 1.44; -4.73)" />
 			<CameraPos FOV="32.0" Name="side_l" InterestPosition="(4.737; 2.557; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(9.507; 4.376; -3.37)" />
 			<CameraPos FOV="32.0" Interior="true" Name="bubble_head" InterestPosition="(6.729; 2.108; 1.201)" Position="(4.573; 2.407; -0.249)" />
-			<CameraPos FOV="32.0" Name="wheels" InterestPosition="(4.756; 1.133; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-4.539; 2.191; -5.755)" />
+			<CameraPos FOV="32.0" Name="wheels" InterestPosition="(2.46; 1.133; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-4.539; 1.488; -5.755)" />
 			<CameraPos FOV="32.0" Name="default" InterestPosition="(5.275; 1.623; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(12.823; 1.44; -4.73)" />
 			<CameraPos FOV="32.0" Name="rear" InterestPosition="(0.733; 0.896; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-4.606; 3.102; 2.778)" />
 			<CameraPos FOV="32.0" Interior="true" Name="door_l_sticker" InterestPosition="(4.595; 1.16; 0)" Position="(3.968; 2.793; -3.391)" />
@@ -414,7 +414,7 @@
 		<AddonSockets>
 			<Socket
 				Names="Tayga6436SpotLight2"
-				NamesBlock="Tayga6436SpotLight, Tayga6436Beacon, Tayga6436AirConditioner"
+				NamesBlock="Tayga6436SpotLight, Tayga6436Beacon"
 				Offset="(0; 0; 0)"
 				ParentFrame="BoneCabinDamper_cdt"
 			>

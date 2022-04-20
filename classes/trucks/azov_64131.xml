@@ -352,30 +352,30 @@
 	</PhysicsModel>
 	<ModelAttachments>
 		<Ignition>
-			<Light _template="IgnitionSignalWhite" Pos="(4.55; 1.013; 0.7)" />
-			<Light _template="IgnitionSignalWhite" Pos="(4.55; 1.013; -0.7)" />
+			<Light _template="IgnitionSignalWhite" Pos="(4.55; 1.013; 0.7)" ParentFrame="BoneCabin_cdt" />
+			<Light _template="IgnitionSignalWhite" Pos="(4.55; 1.013; -0.7)" ParentFrame="BoneCabin_cdt" />
 			<Light _template="IgnitionSignalRed" Pos="(-4.8; 1.025; -0)" />
-			<Flare _template="IgnitionSignalWhite" Size=".15" Pos="(4.259; 0.94; -0.87)" />
-			<Flare _template="IgnitionSignalWhite" Size=".15" Pos="(4.259; 0.94; 0.87)" />
-			<Flare _template="IgnitionSignalWhite" AspectRatio="2" Pos="(4.239; 1.202; -0.876)" />
-			<Flare _template="IgnitionSignalWhite" AspectRatio="2" Pos="(4.239; 1.202; 0.876)" />
-			<Flare _template="IgnitionSignalWhite" Size=".15" Pos="(4.259; 0.94; -0.68)" />
-			<Flare _template="IgnitionSignalWhite" Size=".15" Pos="(4.259; 0.94; 0.68)" />
-			<Flare _template="MarkerBeacon" Size="0.3" Pos="(3.597; 1.067; -1.257)" />
-			<Flare _template="MarkerBeacon" Size="0.3" Pos="(3.597; 1.067; 1.257)" />
-			<Flare _template="MarkerBeacon" Size="0.3" Pos="(2.289; 1.281; -1.183)" />
-			<Flare _template="MarkerBeacon" Size="0.3" Pos="(2.289; 1.281; 1.183)" />
-			<Flare _template="IgnitionSignalOrange" Color="g(255; 160; 10) x 0.3" Size="0.3" Pos="(3.79; 3.255; -0.147)" />
-			<Flare _template="IgnitionSignalOrange" Color="g(255; 160; 10) x 0.3" Size="0.3" Pos="(3.79; 3.255; 0)" />
-			<Flare _template="IgnitionSignalOrange" Color="g(255; 160; 10) x 0.3" Size="0.3" Pos="(3.79; 3.255; 0.147)" />
+			<Flare _template="IgnitionSignalWhite" Size=".15" Pos="(4.259; 0.94; -0.87)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhite" Size=".15" Pos="(4.259; 0.94; 0.87)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhite" AspectRatio="2" Pos="(4.239; 1.202; -0.876)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhite" AspectRatio="2" Pos="(4.239; 1.202; 0.876)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhite" Size=".15" Pos="(4.259; 0.94; -0.68)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhite" Size=".15" Pos="(4.259; 0.94; 0.68)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="MarkerBeacon" Size="0.3" Pos="(3.597; 1.067; -1.257)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="MarkerBeacon" Size="0.3" Pos="(3.597; 1.067; 1.257)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="MarkerBeacon" Size="0.3" Pos="(2.289; 1.281; -1.183)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="MarkerBeacon" Size="0.3" Pos="(2.289; 1.281; 1.183)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalOrange" Color="g(255; 160; 10) x 0.3" Size="0.3" Pos="(3.79; 3.255; -0.147)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalOrange" Color="g(255; 160; 10) x 0.3" Size="0.3" Pos="(3.79; 3.255; 0)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalOrange" Color="g(255; 160; 10) x 0.3" Size="0.3" Pos="(3.79; 3.255; 0.147)" ParentFrame="BoneCabin_cdt" />
 		</Ignition>
 		<HeadLight>
-			<Model _template="HeadLightRay" Org="(4.239; 1.202; -0.876)" />
-			<Model _template="HeadLightRay" Org="(4.239; 1.202; 0.876)" />
-			<Flare _template="HeadLight" AspectRatio="2" Color="g(255; 235; 200) x 0.6" DirAngle="140" Size=".35" Pos="(4.239; 1.202; -0.876)" />
-			<Flare _template="HeadLight" AspectRatio="2" Color="g(255; 235; 200) x 0.6" DirAngle="140" Size=".35" Pos="(4.239; 1.202; 0.876)" />
-			<Flare _template="BlueStreak" Pos="(4.239; 1.202; -0.876)" />
-			<Flare _template="BlueStreak" Pos="(4.239; 1.202; 0.876)" />
+			<Model _template="HeadLightRay" Org="(4.239; 1.202; -0.876)" ParentFrame="BoneCabin_cdt" />
+			<Model _template="HeadLightRay" Org="(4.239; 1.202; 0.876)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="HeadLight" AspectRatio="2" Color="g(255; 235; 200) x 0.6" DirAngle="140" Size=".35" Pos="(4.239; 1.202; -0.876)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="HeadLight" AspectRatio="2" Color="g(255; 235; 200) x 0.6" DirAngle="140" Size=".35" Pos="(4.239; 1.202; 0.876)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="BlueStreak" Pos="(4.239; 1.202; -0.876)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="BlueStreak" Pos="(4.239; 1.202; 0.876)" ParentFrame="BoneCabin_cdt" />
 		</HeadLight>
 	</ModelAttachments>
 	<Landmark Mesh="landmarks/azov_64131_lmk" MinScale="1.5" MaxScale="2.5" />
@@ -432,7 +432,7 @@
 			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" NamesBlock="SaddleLow" Offset="(-1.864; 1.765; 0)" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="BunkLog" Offset="(-6.; 1.266; 0)" />
+			<Socket Names="BunkLog" Offset="(-6; 1.266; 0)" />
 			<Socket Names="SaddleLow" Offset="(-2.709; 1.266; 0)">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.05)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.05)" />
@@ -444,7 +444,7 @@
 			<Socket Names="FrameAddon" Offset="(-2.165; 1.267; 0)">
 				<AddonsShift Offset="(-1.1; 0; 0)" Types="MinicraneRU" />
 			</Socket>
-			<Socket Names="FrameAddonTowPlatform" Offset="(-1.6; 1.267; 0)" NamesBlock="MinicraneRU, MetalDetector, Trailer" />
+			<Socket Names="FrameAddonTowPlatform" NamesBlock="MinicraneRU, MetalDetector, Trailer" Offset="(-1.6; 1.267; 0)" />
 			<Socket Names="FrameAddonTank" Offset="(-3.2; 1.267; 0)" />
 			<Socket Names="FrameAddonMaintainer" NamesBlock="Trailer" Offset="(-2.861; 0.238; 0)" ParentFrame="BoneChassis_cdt" />
 			<Socket Names="FrameAddonSeismicVibrator" NamesBlock="Trailer" Offset="(0.2; 1.267; 0)" />

@@ -144,7 +144,7 @@
 		<EngineSocket Default="us_truck_modern_engine_0" Type="e_us_truck_modern, e_us_truck_modern_catroyal" />
 		<Driver
 			AnimationSet="HeavyTruck"
-			Pos="(-0.671; 1.924; 0.475)"
+			Pos="(-0.55; 1.924; 0.475)"
 			SteeringWheelPos="(-0.175; 2.284; 0.482)"
 			ParentFrame="BoneCabin_cdt"
 		/>
@@ -173,9 +173,9 @@
 			<Cockpit
 				_template="Default"
 				WindshieldDetailDensity="6.0"
-				WindshieldDiffuseTexture="trucks/cat_ct681_glass__d_a.tga"
-				WindshieldShadingTexture="trucks/cat_ct681_glass__sh_d.tga"
-				ViewPos="(-0.677; 2.662; 0.487)"
+				WindshieldDiffuseTexture="trucks/international_hx520_glass__d_a.tga"
+				WindshieldShadingTexture="trucks/international_hx520_glass__sh_d.tga"
+				ViewPos="(-0.59; 2.662; 0.487)"
 			>
 				<Mirror
 					ClipDir="(-0.878; -0.051; -0.476)"
