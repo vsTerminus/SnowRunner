@@ -258,6 +258,10 @@
 		<CompatibleWheels OffsetZ="0.03" RearOffsetZ=".22" Scale="0.63" Type="wheels_heavy_double2" />
 		<CompatibleWheels Scale="0.63" Type="wheels_heavy_single" />
 		<CompatibleWheels OffsetZ="-0.03" RearOffsetZ=".1" Scale="0.63" Type="wheels_heavy_single2" />
+		<CompatibleWheels RearOffsetZ=".22" Scale="0.70" Type="wheels_heavy_double1" />
+		<CompatibleWheels OffsetZ="0.03" RearOffsetZ=".22" Scale="0.70" Type="wheels_heavy_double2" />
+		<CompatibleWheels Scale="0.70" Type="wheels_heavy_single" />
+		<CompatibleWheels OffsetZ="-0.03" RearOffsetZ=".1" Scale="0.70" Type="wheels_heavy_single2" />
 		<Camera
 			Center="(-2; 0; 0)"
 			RadiusMultiplier="1.4"
