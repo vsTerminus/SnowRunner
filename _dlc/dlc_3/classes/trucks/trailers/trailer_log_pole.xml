@@ -54,6 +54,7 @@
 					_template="CartForkBase"
 					ModelFrame="BoneFork_cdt"
 					NoCameraCollision="True"
+					NetSyncUseGravity="True"
 				>
 					<Body
 						_template="CartFork"
@@ -98,6 +99,10 @@
 			Max="(-2.524; 2.8; 2.4)"
 		/>
 		<InstallSocket Offset="(1.922; 1.105; 0)" Type="Trailer" />
-		<LongLogsAlignTarget Pos="(0.0, 1.050, 0.0)"/>
+		<LongLogsAlignTarget 
+			Pos="(0.0, 1.0, 0.0)" 
+			TruckAddonFork="BoneFork_cdt"
+			TrailerFork="BoneFork_cdt"
+		/>
 	</GameData>
 </Truck>

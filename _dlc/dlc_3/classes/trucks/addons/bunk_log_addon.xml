@@ -12,6 +12,7 @@
 				Mass="800"
 				ModelFrame="BoneFork_cdt"
 				NoCameraCollision="True"
+				NetSyncUseGravity="True"
 			>
 				<Constraint
 					AxisLocal="(0; 1; 0)"

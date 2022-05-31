@@ -38,6 +38,7 @@
 				ImpactType="Foliage"
 				Mass="6000"
 				ModelFrame="BoneBottom_cdt"
+				NetSyncUseGravity="True"
 			>
 				<Constraint
 					Cone="10"

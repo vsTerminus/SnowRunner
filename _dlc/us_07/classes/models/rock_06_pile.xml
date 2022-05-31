@@ -1,7 +1,6 @@
 <ModelBrand
 	AcceptZoneBorderDecals="true"
 	Instanced="true"
-	InstancedAsModel="true"
 	NightLightingShadowsAllowCap="true"
 >
 	<PhysicsModel>

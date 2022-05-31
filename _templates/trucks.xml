@@ -1020,6 +1020,55 @@
 				ShadingMap="trucks/outside_sticker_1x1_very_loud__sh_d.tga"
 				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
 			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_born_to_be_ride__d_a.tga"
+				Name="skin_50"
+				NormalMap="trucks/outside_sticker_1x1_born_to_be_ride__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_born_to_be_ride__sh_d.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_hoonk__d_a.tga"
+				Name="skin_51"
+				NormalMap="trucks/outside_sticker_1x1_hoonk__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_hoonk__sh_d.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_kamaz__d_a.tga"
+				Name="skin_52"
+				NormalMap="trucks/outside_sticker_1x1_kamaz__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_kamaz__sh_d.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_lucky_time__d_a.tga"
+				Name="skin_53"
+				NormalMap="trucks/outside_sticker_1x1_lucky_time__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_lucky_time__sh_d.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_nice_dirt__d_a.tga"
+				Name="skin_54"
+				NormalMap="trucks/outside_sticker_1x1_nice_dirt__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_nice_dirt__sh_d.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_pro_piston__d_a.tga"
+				Name="skin_55"
+				NormalMap="trucks/outside_sticker_1x1_pro_piston__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_pro_piston__sh_d.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_pumped_up_turtle__d_a.tga"
+				Name="skin_56"
+				NormalMap="trucks/outside_sticker_1x1_pumped_up_turtle__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_pumped_up_turtle__sh_d.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
 		</OutsideSticker1x1>
 		<GlassStickerTopCut>
 			<MaterialOverride
@@ -1329,6 +1378,13 @@
 			<CustomizationPreset Id="47" MaterialOverrideName="skin_47" UiName="UI_STUFF_STICKER_TRANSFORMER_2_NAME" />
 			<CustomizationPreset Id="48" MaterialOverrideName="skin_48" UiName="UI_STUFF_STICKER_TROLL_NAME" />
 			<CustomizationPreset Id="49" MaterialOverrideName="skin_49" UiName="UI_STUFF_STICKER_VERY_LOUD_NAME" />
+			<CustomizationPreset Id="50" MaterialOverrideName="skin_50" UiName="UI_STUFF_STICKER_BORN_TO_BE_RIDE_NAME" />
+			<CustomizationPreset Id="51" MaterialOverrideName="skin_51" UiName="UI_STUFF_STICKER_HOONK_NAME" />
+			<CustomizationPreset Id="52" MaterialOverrideName="skin_52" UiName="UI_STUFF_STICKER_KAMAZ_NAME" />
+			<CustomizationPreset Id="53" MaterialOverrideName="skin_53" UiName="UI_STUFF_STICKER_LUCKY_TIME_NAME" />
+			<CustomizationPreset Id="54" MaterialOverrideName="skin_54" UiName="UI_STUFF_STICKER_NICE_DIRT_NAME" />
+			<CustomizationPreset Id="55" MaterialOverrideName="skin_55" UiName="UI_STUFF_STICKER_PRO_PISTON_NAME" />
+			<CustomizationPreset Id="56" MaterialOverrideName="skin_56" UiName="UI_STUFF_STICKER_PUMPED_UP_TURTLE_NAME" />
 		</OutsideSticker1x1>
 		<GlassStickerTopCut>
 			<CustomizationPreset Id="0" MaterialOverrideName="skin_00" UiName="UI_STUFF_GLASS_STICKER_ATTENTION_PIG_NAME" />

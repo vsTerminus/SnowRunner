@@ -125,8 +125,8 @@
 		<WinchSocket Pos="(-4.652; 0.874; 1.247)" />
 		<UiDesc
 			UiDesc="UI_TRAILER_SCOUT_OFFROAD_TENT_DESC"
-			UiIcon30x30="trailerSemiImg30"
-			UiIcon40x40="trailerSemiImg"
+			UiIcon30x30="trailerSemiFullImg30"
+			UiIcon40x40="trailerSemiFullImg"
 			UiName="UI_TRAILER_SCOUT_OFFROAD_TENT_NAME"
 		/>
 		<InstallSocket Offset="(3.995; 0.865; 0)" Type="ScautTrailer" />

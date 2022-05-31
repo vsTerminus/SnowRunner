@@ -344,6 +344,9 @@
 			<Socket _template="Cabin2Chassis" Names="Step3364CrocodileSpotLight" />
 		</AddonSockets>
 		<AddonSockets>
+			<Socket _template="Cabin2Chassis" Names="Step3364CrocodileSpotLight2" />
+		</AddonSockets>
+		<AddonSockets>
 			<Socket _template="Cabin2Chassis" Names="Step3364CrocodileBeacon" />
 		</AddonSockets>
 		<AddonSockets>

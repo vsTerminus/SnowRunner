@@ -1,4 +1,9 @@
 <TruckAddon IsChassisFullOcclusion="true">
+	<TruckData FuelCapacity="60">
+		<LimitedFluid Center="(-2.735; 1.026; 0.989)" SizeX="0.128" SizeY="0.305" SizeZ="0.360" Type="Box" />
+		<LimitedFluid Center="(-2.939; 1.026; 0.989)" SizeX="0.128" SizeY="0.305" SizeZ="0.360" Type="Box" />
+		<LimitedFluid Center="(-3.279; 1.026; 0.989)" SizeX="0.128" SizeY="0.305" SizeZ="0.360" Type="Box" />
+	</TruckData>
 	<PhysicsModel Mesh="trucks/step_3364_crocodile_tuning/step_3364_crocodile_sideboard">
 		<Body Mass="400">
 			<Constraint Type="Rigid" />
@@ -21,4 +26,7 @@
 		<InstallSocket Type="Step3364CrocodileSideboard" />
 		<AddonSlots InitialOffset="(-1.879; 1.266; 0)" Quantity="1" />
 	</GameData>
+	<FuelHide>
+		<Mesh Frame="fuel" HideThreshold="0.0" />
+	</FuelHide>
 </TruckAddon>

@@ -136,21 +136,6 @@
 				ViewPos="(-0.138; 2; 0.702)"
 			>
 				<Rear _inheritRemove="true" />
-				<Monitor
-					BlackValue="0.025"
-					CameraDir="(-1; -0.021; 0)"
-					CurveAngle="60"
-					FOV="45"
-					Intensity="3.5"
-					MeshFrame="hp_cab_monitor"
-					Overlay=""
-					Size="(.094; .146)"
-					SurfaceDir="(-0.856; 0.5; 0.135)"
-					SurfaceUp="(0.5; 0.865; -0.035)"
-					UnskinnedCoordinates="false"
-					CameraPos="(-2.183; 1.155; 0.021)"
-					Pos="(0.58; 1.674; 0.442)"
-				/>
 				<Mirror ClipDir="(-0.934; -0.244; -0.259)" ClipOffset="0.05" FOVScale="2.5" MeshFrame="mirror_left" ReflectionDir="(-0.934; -0.244; -0.259)" Size="(0.234; 0.329)" Pos="(0.617; 2.307; 1.34)" />
 				<Mirror
 					ClipDir="(-0.918; -0.107; 0.383)"

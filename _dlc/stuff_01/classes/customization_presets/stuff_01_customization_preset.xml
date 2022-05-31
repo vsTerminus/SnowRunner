@@ -814,6 +814,18 @@
 	<Truck _template="GlassStickerTopCut" Name="sticker_glass_top_tayga_6455b" />
 	<Truck _template="GlassStickerBottomCut" Name="sticker_glass_bottom_tayga_6455b" />
 	<!--<- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -/>-->
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_01_land_rover_defender_90" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_02_land_rover_defender_90" />
+	<Truck _template="InsideSticker1x2" Name="sticker_inside_1x2_01_land_rover_defender_90" />
+	<Truck _template="InsideSticker1x2" Name="sticker_inside_1x2_02_land_rover_defender_90" />
+	<Truck _template="InsideSticker1x2" Name="sticker_inside_1x2_03_land_rover_defender_90" />
+	<Truck _template="InsideSticker1x4" Name="sticker_inside_1x4_01_land_rover_defender_90" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_door_r_1x1_land_rover_defender_90" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_door_l_1x1_land_rover_defender_90" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_capote_1x1_land_rover_defender_90" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_roof_1x1_land_rover_defender_90" />
+	<Truck _template="GlassStickerTop2x16" Name="sticker_glass_top_land_rover_defender_90" />
+	<!--<- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -/>-->
 	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_01_aramatsu_forester" />
 	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_02_aramatsu_forester" />
 	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_03_aramatsu_forester" />
@@ -824,6 +836,18 @@
 	<Truck _template="OutsideSticker1x1" Name="sticker_roof_1x1_aramatsu_forester" />
 	<Truck _template="GlassStickerTop2x16" Name="sticker_glass_top_aramatsu_forester" />
 	<Truck _template="GlassStickerBottom2x16" Name="sticker_glass_bottom_aramatsu_forester" />
+	<!--<- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -/>-->
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_01_land_rover_defender_110" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_02_land_rover_defender_110" />
+	<Truck _template="InsideSticker1x2" Name="sticker_inside_1x2_01_land_rover_defender_110" />
+	<Truck _template="InsideSticker1x2" Name="sticker_inside_1x2_02_land_rover_defender_110" />
+	<Truck _template="InsideSticker1x4" Name="sticker_inside_1x4_01_land_rover_defender_110" />
+	<Truck _template="InsideSticker1x4" Name="sticker_inside_1x4_02_land_rover_defender_110" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_door_r_1x1_land_rover_defender_110" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_door_l_1x1_land_rover_defender_110" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_capote_1x1_land_rover_defender_110" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_roof_1x1_land_rover_defender_110" />
+	<Truck _template="GlassStickerBottom2x16" Name="sticker_glass_bottom_land_rover_defender_110" />
 	<!--<- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -/>-->
 	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_01_step_3364_crocodile" />
 	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_02_step_3364_crocodile" />
@@ -837,6 +861,29 @@
 	<Truck _template="GlassStickerTopCut" Name="sticker_glass_top_step_3364_crocodile" />
 	<Truck _template="GlassStickerBottomCut" Name="sticker_glass_bottom_step_3364_crocodile" />
 	<!--<- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -/>-->
-
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_01_gor_by4" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_02_gor_by4" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_03_gor_by4" />
+	<Truck _template="InsideSticker1x2" Name="sticker_inside_1x2_01_gor_by4" />
+	<Truck _template="InsideSticker1x2" Name="sticker_inside_1x2_02_gor_by4" />
+	<Truck _template="InsideSticker1x4" Name="sticker_inside_1x4_01_gor_by4" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_door_r_1x1_gor_by4" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_door_l_1x1_gor_by4" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_capote_1x1_gor_by4" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_roof_1x1_gor_by4" />
+	<Truck _template="GlassStickerTop2x16" Name="sticker_glass_top_gor_by4" />
+	<!--<- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -/>-->
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_01_azov_43_191_sprinter" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_02_azov_43_191_sprinter" />
+	<Truck _template="InsideSticker1x2" Name="sticker_inside_1x2_01_azov_43_191_sprinter" />
+	<Truck _template="InsideSticker1x2" Name="sticker_inside_1x2_02_azov_43_191_sprinter" />
+	<Truck _template="InsideSticker1x4" Name="sticker_inside_1x4_01_azov_43_191_sprinter" />
+	<Truck _template="InsideSticker1x4" Name="sticker_inside_1x4_02_azov_43_191_sprinter" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_door_r_1x1_azov_43_191_sprinter" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_door_l_1x1_azov_43_191_sprinter" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_roof_1x1_azov_43_191_sprinter" />
+	<Truck _template="GlassStickerTop2x16" Name="sticker_glass_top_azov_43_191_sprinter" />
+	<Truck _template="GlassStickerBottom2x16" Name="sticker_glass_bottom_azov_43_191_sprinter" />
+	<!--<- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -/>-->
 	
 </TruckSet>

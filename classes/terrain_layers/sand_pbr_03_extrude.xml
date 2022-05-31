@@ -1,0 +1,12 @@
+<MaterialType 
+	Texture="tiles/sand_pbr_03__d_a.tga" 
+	Normal="tiles/sand_pbr_03_relief__d_a.tga"
+	NoGrass="true"
+	GenerateDust="true"
+	GrassBrush="DebrisStonesSparse"
+	AllowHiddenExtrudes="0.7"
+	Sound="surfaces/surf_sand_rnd"
+	SkidSound="surfaces/skidding/skidding_gravel_loop"
+	MinViscosity="4.0"
+IsSoil="false"
+/>

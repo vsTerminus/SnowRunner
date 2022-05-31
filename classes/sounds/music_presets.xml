@@ -54,6 +54,12 @@
 			FadeOutTime="10"
 			Volume="1"
 		/>
+		<Tennessee
+			SoundName="music/tenn/garage_tenn"
+			FadeInTime="30"
+			FadeOutTime="10"
+			Volume="1"
+		/>
 	</GarageMusic>
 </_templates>
 <MusicPresets>
@@ -78,6 +84,9 @@
 	</LevelMusic>
 	<LevelMusic LevelName="level_main_menu_us06">
 		<Sound Name="music/maine/maine_menu" StartTime="0" EndTime="24" FadeInTime="20" FadeOutTime="5" Volume="2" />
+	</LevelMusic>
+	<LevelMusic LevelName="level_main_menu_us07">
+		<Sound Name="music/tenn/tenn_race" StartTime="0" EndTime="24" FadeInTime="0" FadeOutTime="5" Volume="2" />
 	</LevelMusic>
 
 	<!-- ALASKA -->
@@ -281,4 +290,12 @@
 		<GarageMusic _template="Maine" />
 	</LevelMusic>
 
+	<!-- TENNESSEE -->
+	<LevelMusic LevelName="level_us_07_01">
+		<Sound Name="music/tenn/tenn_night" StartTime="24" EndTime="6" FadeInTime="30" FadeOutTime="10"  />
+		<Sound Name="music/tenn/tenn_morning" StartTime="6" EndTime="13" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/tenn/tenn_day" StartTime="13" EndTime="20.5" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/tenn/tenn_evening" StartTime="20.5" EndTime="24" FadeInTime="30" FadeOutTime="10" />
+		<GarageMusic _template="Tennessee" />
+	</LevelMusic>
 </MusicPresets>

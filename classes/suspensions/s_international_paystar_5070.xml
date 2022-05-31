@@ -20,7 +20,7 @@
 			BrokenSuspensionMax="0.25" 
 			Height="0.15" 
 			Strength="0.04" 
-			SuspensionMin="-0.25" 
+			SuspensionMin="-0.1" 
 			WheelType="rear" 
 		/>
 		<GameData

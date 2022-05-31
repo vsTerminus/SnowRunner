@@ -368,8 +368,8 @@
 			</Socket>
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="Dan96320WheelAddon" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt">
-				<ExtraParent Frame="BoneCabin_cdt" />
+			<Socket Names="Dan96320WheelAddon" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt">
+				<ExtraParent Frame="BoneChassis_cdt" />
 			</Socket>
 		</AddonSockets>
 		<AddonSockets DefaultAddon="dan_96320_beacon_default">
