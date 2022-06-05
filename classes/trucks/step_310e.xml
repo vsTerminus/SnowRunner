@@ -194,6 +194,8 @@
 		</Damage>
 		<CompatibleWheels OffsetZ="0.02" Scale="0.5" Type="wheels_medium_double" />
 		<CompatibleWheels OffsetZ="0.04" RearOffsetZ="0.06" Scale="0.55" Type="wheels_medium_double" />
+		<CompatibleWheels OffsetZ="0.05" RearOffsetZ="0.08" Scale="0.60" Type="wheels_medium_double" />
+		<CompatibleWheels OffsetZ="0.05" RearOffsetZ="0.10" Scale="0.60" Type="wheels_heavy_double2" />
 		<Camera Center="(-0.9; 0; 0)" ParentFrame="BoneCabin_cdt">
 			<Cockpit
 				_template="Default"

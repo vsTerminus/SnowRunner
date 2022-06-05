@@ -46,7 +46,7 @@
 		<Suspension 
 			Damping="0.2"
 			BrokenSuspensionMax="0.1" 
-			Height="0.15" 
+			Height="0.20" 
 			Strength="0.05" 
 			SuspensionMin="-0.25" 
 			WheelType="front" 
@@ -54,7 +54,7 @@
 		<Suspension 
 			Damping="0.2"
 			BrokenSuspensionMax="0.2" 
-			Height="0.11" 
+			Height="0.20" 
 			Strength="0.04" 
 			SuspensionMin="-0.28" 
 			WheelType="rear" 
@@ -72,5 +72,41 @@
 			/>
 		</GameData>
 	</SuspensionSet> 
+	<SuspensionSet
+		BrokenWheelDamageMultiplier="2"
+		CriticalDamageThreshold="0.7"
+		DamageCapacity="250"
+		Name="step_310e_suspension_towing"
+		UiName="High Hauling"
+	>
+		<Suspension
+			Damping="0.35"
+			Height="0.20"
+			Strength="0.05"
+			WheelType="front"
+			SuspensionMax="0.1"
+			SuspensionMin="-0.35"
+		/>
+		<Suspension
+			Damping="0.4"
+			Height="0.20"
+			Strength="0.08"
+			WheelType="rear"
+			SuspensionMax="0"
+			SuspensionMin="-0.35"
+		/>
+		<GameData
+			Price="7500"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="Higher strength rear leaf springs for towing and hauling"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="High Hauling"
+			/>
+		</GameData>
+	</SuspensionSet>
 	
 </SuspensionSetVariants>
