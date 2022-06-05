@@ -12,7 +12,7 @@
 		EngineResponsiveness="0.35"
 		FuelConsumption="0.4"
 		Name="ru_scout_modern_engine_0"
-		Torque="70000"
+		Torque="80000"
 		DamagedMinTorqueMultiplier="1.0"
 		DamagedMaxTorqueMultiplier="0.6"
 		MaxDeltaAngVel="0.01"
@@ -38,7 +38,7 @@
 		EngineResponsiveness="0.4"
 		FuelConsumption="0.6"
 		Name="ru_scout_modern_engine_1"
-		Torque="80000"
+		Torque="90000"
 		DamagedMinTorqueMultiplier="1.0"
 		DamagedMaxTorqueMultiplier="0.7"
 		MaxDeltaAngVel="0.01"
@@ -64,13 +64,13 @@
 		EngineResponsiveness="0.45"
 		FuelConsumption="0.8"
 		Name="ru_scout_modern_engine_2"
-		Torque="90000"
+		Torque="100000"
 		DamagedMinTorqueMultiplier="1.0"
 		DamagedMaxTorqueMultiplier="0.8"
 		MaxDeltaAngVel="0.01"
 	>
 		<GameData
-			Price="6600"
+			Price="7700"
 			UnlockByExploration="true"
 			UnlockByRank="1"
 		>
