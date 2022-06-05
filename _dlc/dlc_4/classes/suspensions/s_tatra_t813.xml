@@ -22,4 +22,26 @@
 			/>
 		</GameData>
 	</SuspensionSet>
+	<SuspensionSet
+		_template="Normal"
+		BrokenWheelDamageMultiplier="2"
+		CriticalDamageThreshold="0.6"
+		DamageCapacity="300"
+		Name="tatra_t813_suspension_raised"
+	>
+		<Suspension Damping="0.5" Height="0.3" Strength="0.035" WheelType="front" SuspensionMin="-0.35" BrokenSuspensionMax="0.3" />
+		<Suspension Damping="0.5" Height="0.28" Strength="0.036" WheelType="rear"  SuspensionMin="-0.35" BrokenSuspensionMax="0.3" />
+		<GameData
+			Price="9000"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_SUSPENSION_HIGH_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_SUSPENSION_HIGH_NAME"
+			/>
+		</GameData>
+	</SuspensionSet>
 </SuspensionSetVariants>
