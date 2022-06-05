@@ -144,7 +144,7 @@
 			Origin="(-1.215; 0.729; -0.528)"
 			Speed="2.0"
 		/>
-		<EngineSocket Default="ru_scout_modern_engine_0" Type="e_ru_scout_modern" />
+		<EngineSocket Default="ru_scout_modern_engine_0" Type="e_ru_scout_modern, e_us_truck_old_gmc9500" />
 		<Driver
 			AnimationSet="Scout"
 			LegsOffset="(0; -0.03; 0)"
