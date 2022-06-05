@@ -150,8 +150,10 @@
 		</Damage>
 		<CompatibleWheels Scale="0.5" Type="wheels_step_3364_crocodile" />
 		<CompatibleWheels OffsetZ="0.16" RearOffsetZ="0.13" Scale="0.52" Type="wheels_heavy_mudtires_tayga" />
+		<CompatibleWheels OffsetZ="0.17" RearOffsetZ="0.14" Scale="0.56" Type="wheels_heavy_mudtires_tayga" />
 		<CompatibleWheels OffsetZ="0.1" RearOffsetZ="0.03" Scale="0.5" Type="wheels_medium_double" />
 		<CompatibleWheels OffsetZ="0.1" RearOffsetZ="0.03" Scale="0.53" Type="wheels_medium_double" />
+		<CompatibleWheels OffsetZ="0.12" RearOffsetZ="0.05" Scale="0.56" Type="wheels_medium_double" />
 		<Camera Center="(-1; 0; 0)" ParentFrame="BoneCabinDamper_cdt">
 			<Cockpit
 				_template="Default"
