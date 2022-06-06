@@ -57,5 +57,28 @@
 				UiName="UI_SUSPENSION_HIGH_NAME"
 			/>
 		</GameData>
-	</SuspensionSet>	
+	</SuspensionSet>
+	<SuspensionSet
+		_template="Active"
+		BrokenWheelDamageMultiplier="2"
+		CriticalDamageThreshold="0.6"
+		DamageCapacity="300"
+		Name="kolob_74760_suspension_active"
+		DeviationDelta=".002"
+	>
+		<Suspension Height="0" Strength="0.05" WheelType="front" BrokenSuspensionMax="1" SuspensionMin="-0.15" DeviationMax="0.2"/>
+		<Suspension Height="0" Strength="0.05" WheelType="rear" BrokenSuspensionMax="1" SuspensionMin="-0.15" DeviationMax="0.2"/>
+		<GameData
+			Price="11700"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_SUSPENSION_ACTIVE_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_SUSPENSION_ACTIVE_NAME"
+			/>
+		</GameData>
+	</SuspensionSet>
 </SuspensionSetVariants>

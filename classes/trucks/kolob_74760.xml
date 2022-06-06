@@ -81,7 +81,7 @@
 <Truck>
 	<TruckData
 		BackSteerSpeed="0.01"
-		DiffLockType="Always"
+		DiffLockType="Installed"
 		EngineIconMesh="env/engine_pacific_p16"
 		EngineIconScale="0.8"
 		EngineStartDelay="3.2"
@@ -157,7 +157,7 @@
 		<LimitedFluid Center="(-0.605; 1.147; 1.112)" SizeX="0.787" SizeY="0.655" SizeZ="0.820" Type="Box" />
 		<LimitedFluid Center="(-0.605; 1.147; -1.112)" SizeX="0.787" SizeY="0.655" SizeZ="0.820" Type="Box" />
 		<Intake Dir="(1; 0; 0)" Origin="(4.971; 1.492; 0)" Size="0.8" />
-		<GearboxSocket Default="g_special_default" Type="gearboxes_special" />
+		<GearboxSocket Default="g_special_default" Type="gearboxes_special, gearboxes_special_kolob" />
 		<FuelTank DamageCapacity="100" />
 		<EngineSocket Default="ru_special_engine_0" Type="e_ru_special" />
 		<Driver AnimationSet="HeavyTruck" Pos="(3.67; 2.370; 0.669)" SteeringWheelPos="(4.057; 2.715; 0.67)" />
@@ -408,6 +408,9 @@
 			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-3.7; 1.90; 0)" />
 			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" NamesBlock="saddle_low" Offset="(-2.815; 1.95; 0)" />
 		</AddonSockets>
+		<AddonSockets DefaultAddon="kolob_74760_diff_lock_default">
+			<Socket Names="kolob74135DiffLock" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="BunkLog" Offset="(-6.35; 1.825; 0)" />
 			<Socket Names="FrameAddonLogShort" NamesBlock="Trailer" Offset="(-2.5; 1.821; 0)" />
@@ -515,4 +518,3 @@
 		</IKBone>
 	</AutomaticIK>
 </Truck>
-SnowRunnerMods.io: bASHer1991
