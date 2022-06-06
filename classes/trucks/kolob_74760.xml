@@ -405,7 +405,7 @@
 		<CraneSocket Pos="(-0.605; 0.717; -1.483)" />
 		<AddonSockets>
 			<Socket Names="Trailer" Offset="(-4.704; 0.838; 0)" />
-			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-3.7; 1.90; 0)" />
+			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-3.7; 1.95; 0)" />
 			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" NamesBlock="saddle_low" Offset="(-2.815; 1.95; 0)" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="kolob_74760_diff_lock_default">
