@@ -137,7 +137,7 @@
 			Origin="(0.74; 0.604; -0.445)"
 			Speed="3.00"
 		/>
-		<EngineSocket Default="us_truck_old_engine_0" Type="e_us_truck_old" />
+		<EngineSocket Default="us_truck_old_engine_0" Type="e_us_truck_old, e_us_truck_old_top" />
 		<Driver Pos="(1.601; 1.673; 0.457)" SteeringWheelPos="(1.984; 2; 0.45)" ParentFrame="BoneCabinRagdoll_cdt" />
 		<Dashboard>
 			<Gauge Damping="0.9" Dir="(-0.956; 0.185; -0.23)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/chevrolet_kodiakC70_arrow_01" Org="(2.235; 1.966; 0.742)" OutputAngles="(-45;-5)" />
@@ -368,10 +368,10 @@
 			<Socket Names="Trailer" Offset="(-4.739; 0.866; 0)" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="MetalDetector" NamesBlock="BunkLog, FrameAddonKung, FrameAddonTank, FrameAddon, BigCraneUs, BigCraneRu, ChevroletKodiakc70SpareWheel, LargeSemitrailerOiltank" Offset="(-0.203; -0.053; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="MetalDetector" NamesBlock="BunkLog, BigCraneUs, BigCraneRu, ChevroletKodiakc70SpareWheel, LargeSemitrailerOiltank" Offset="(-0.203; -0.053; 0)" ParentFrame="BoneChassis_cdt" />
 			<Socket
 				Names="MinicraneUS"
-				NamesBlock="BunkLog, FrameAddonKung, FrameAddonTank, FrameAddon"
+				NamesBlock="BunkLog, FrameAddonTank"
 				Offset="(0.52; 1; 0)"
 				ParentFrame="BoneChassis_cdt"
 			>
@@ -389,17 +389,14 @@
 			<Socket Names="FrameAddon" Offset="(-1.625; 1.050; 0)" ParentFrame="BoneChassis_cdt">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.05; 0)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.05; 0)" />
+				<AddonsShift Offset="(-0.75; 0; 0)" Types="MinicraneUS" />
 			</Socket>
 			<Socket Names="FrameAddonTow" Offset="(-2.3; 0.9; 0)" NamesBlock="MinicraneUS, MetalDetector, Trailer" ParentFrame="BoneChassis_cdt">
 			</Socket>
-			<Socket
-				Names="FrameAddonKung"
-				NamesBlock="ChevroletKodiakC70CabinProtector"
-				Offset="(-1.5; 1.08; 0)"
-				ParentFrame="BoneChassis_cdt"
-			>
+			<Socket Names="FrameAddonKung" NamesBlock="ChevroletKodiakC70CabinProtector" Offset="(-1.5; 1.08; 0)" ParentFrame="BoneChassis_cdt">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.12)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.12)" />
+				<AddonsShift Offset="(-1; 0; 0)" Types="MinicraneUS" />
 			</Socket>
 			<Socket Names="FrameAddonTank" NamesBlock="ChevroletKodiakC70CabinProtector" Offset="(-2.335; 1; 0)" ParentFrame="BoneChassis_cdt" />
 			<Socket Names="BigCraneUs" NamesBlock="MinicraneUS, ChevroletKodiakC70CabinProtector" Offset="(-2; 1.01; 0)"/>
