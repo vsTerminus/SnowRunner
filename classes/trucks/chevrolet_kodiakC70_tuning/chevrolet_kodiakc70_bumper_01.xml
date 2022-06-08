@@ -7,7 +7,7 @@
 		</Damage>
 	</TruckData>
 	<PhysicsModel Mesh="trucks/chevrolet_kodiakC70_tuning/chevrolet_kodiakc70_bumper_01" />
-		<Body ImpactType="Truck" Mass="2500">
+		<Body ImpactType="Truck" Mass="2000">
 			<Constraint Type="Rigid" />
 		</Body>
 	</PhysicsModel>
