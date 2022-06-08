@@ -6,7 +6,7 @@
 		</Damage>
 	</TruckData>
 	<PhysicsModel Mesh="trucks/gmc_9500_tuning/gmc_9500_bumper_01">
-		<Body ImpactType="Truck" Mass="2500">
+		<Body ImpactType="Truck" Mass="2000">
 			<Constraint Type="Rigid" />
 		</Body>
 	</PhysicsModel>
