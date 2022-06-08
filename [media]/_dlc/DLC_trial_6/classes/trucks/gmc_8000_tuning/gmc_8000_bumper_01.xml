@@ -5,7 +5,11 @@
 			<Multiplier Multiplier="1.0" Type="Engine" />
 		</Damage>
 	</TruckData>
-	<PhysicsModel Mesh="trucks/gmc_8000_tuning/gmc_8000_bumper_01" />
+	<PhysicsModel Mesh="trucks/gmc_8000_tuning/gmc_8000_bumper_01">
+		<Body ImpactType="Truck" Mass="2000">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
 	<GameData
 		Price="700"
 		UnlockByExploration="false"
