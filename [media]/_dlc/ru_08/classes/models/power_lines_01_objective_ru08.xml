@@ -1,4 +1,4 @@
-<ModelBrand NightLightingShadowsAllowCap="true" DynamicModel="true">
+<ModelBrand NightLightingShadowsAllowCap="true" DynamicModel="true" ClipCamera="false">
 	<Subset IsDefault="true" Name="state_start">
 		<Mesh Name="mesh_start" />
 		<CdtMesh Name="mesh_start" />
