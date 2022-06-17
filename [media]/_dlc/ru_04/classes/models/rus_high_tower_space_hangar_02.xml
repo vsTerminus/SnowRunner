@@ -1,5 +1,6 @@
 <ModelBrand
 	NightLightingShadowsAllowCap="true"
+	ClipCamera="false"
 >
 	<StaticLights>
 		<StaticLight

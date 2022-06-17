@@ -2,6 +2,7 @@
 	Instanced="true"
 	InstancedAsModel="true"
 	NightLightingShadowsAllowCap="true"
+	ClipCamera="false"
 >
 	<SnapPoint Pos="(6.243; 22.844; 0)" />
 	<SnapPoint Pos="(-6.32; 22.844; -0)" />
