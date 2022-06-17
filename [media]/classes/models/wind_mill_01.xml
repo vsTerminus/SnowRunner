@@ -1,6 +1,6 @@
 <_templates Include="models" />
 <ModelBrand
-	DynamicModel="true"
+	DynamicModel="true" ClipCamera="false"
 >
 	<PhysicsModel>
 		<Body Collisions="Dynamic" />
