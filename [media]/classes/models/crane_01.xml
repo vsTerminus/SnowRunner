@@ -1,4 +1,4 @@
-<ModelBrand NightLightingShadowsAllowCap="true" Instanced="true">
+<ModelBrand NightLightingShadowsAllowCap="true" Instanced="true" ClipCamera="false">
 	<PhysicsModel>
 		<Body Collisions="Dynamic" />
 	</PhysicsModel>
