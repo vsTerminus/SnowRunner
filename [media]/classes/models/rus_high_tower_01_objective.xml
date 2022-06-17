@@ -1,4 +1,4 @@
-<ModelBrand NightLightingShadowsAllowCap="true" DynamicModel="true">
+<ModelBrand NightLightingShadowsAllowCap="true" DynamicModel="true" ClipCamera="false">
 	<Subset IsDefault="true" Name="stage_visible">
 		<Mesh Name="geo" />
 		<CdtMesh Name="geo" />
