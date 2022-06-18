@@ -42,7 +42,6 @@
 			<Body _template="LimitsFuel" ModelFrame="BoneFuel_cdt" />
 			<Body
 				_template="Limits"
-				LinearDamping="2"
 				Mass="30"
 				ModelFrame="BoneWheel_cdt"
 			>
@@ -88,7 +87,7 @@
 			UiDesc="UI_TUNING_ROOFRACK_SMALL_DESC"
 			UiIcon30x30=""
 			UiIcon40x40=""
-			UiName="UI_TUNING_ROOFRACK_SMALL_NAME"
+			UiName="No Drag Small Roof Rack"
 		/>
 		<InstallSocket Type="FordF750Rooftrunk" />
 	</GameData>

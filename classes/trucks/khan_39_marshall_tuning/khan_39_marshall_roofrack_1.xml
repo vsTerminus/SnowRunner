@@ -36,7 +36,6 @@
 			<Constraint Type="Rigid" />
 			<Body
 				_template="Limits"
-				LinearDamping="2"
 				Mass="40"
 				ModelFrame="BoneFuel1_cdt"
 			>
@@ -44,7 +43,6 @@
 			</Body>
 			<Body
 				_template="Limits"
-				LinearDamping="2"
 				Mass="40"
 				ModelFrame="BoneFuel2_cdt"
 			>
@@ -52,7 +50,6 @@
 			</Body>
 			<Body
 				_template="Limits"
-				LinearDamping="1"
 				Mass="20"
 				ModelFrame="BoneRepair_cdt"
 			>
@@ -89,7 +86,7 @@
 			UiDesc="UI_TUNING_ROOFRACK_REGULAR_DESC"
 			UiIcon30x30=""
 			UiIcon40x40=""
-			UiName="UI_TUNING_ROOFRACK_REGULAR_NAME"
+			UiName="No Drag Roof Rack"
 		/>
 		<InstallSocket Type="KHAN39MarshallRooftopTrunk" />
 	</GameData>

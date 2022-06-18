@@ -38,7 +38,6 @@
 			<Constraint Type="Rigid" />
 			<Body
 				_template="Limits"
-				LinearDamping="5"
 				Mass="20"
 				ModelFrame="BoneFuel_cdt"
 			>
@@ -46,7 +45,6 @@
 			</Body>
 			<Body
 				_template="Limits"
-				LinearDamping="10"
 				Mass="25"
 				ModelFrame="BoneRepair1_cdt"
 			>
@@ -54,13 +52,12 @@
 			</Body>
 			<Body
 				_template="Limits"
-				LinearDamping="10"
 				Mass="25"
 				ModelFrame="BoneRepair2_cdt"
 			>
 				<Constraint LinearLimitsZ="(-0.01;0.01)" />
 			</Body>
-			<Body _template="Limits" LinearDamping="3" Mass="30" ModelFrame="BoneWheel_cdt" />
+			<Body _template="Limits" Mass="30" ModelFrame="BoneWheel_cdt" />
 		</Body>
 	</PhysicsModel>
 	<GameData
@@ -75,7 +72,7 @@
 			UiDesc="UI_TUNING_ROOFRACK_SMALL_DESC"
 			UiIcon30x30=""
 			UiIcon40x40=""
-			UiName="UI_TUNING_ROOFRACK_SMALL_NAME"
+			UiName="No Drag Small Roof Rack"
 		/>
 		<InstallSocket Type="Don71Roofrack" />
 	</GameData>

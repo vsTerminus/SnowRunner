@@ -31,7 +31,6 @@
 			<Constraint Type="Rigid" />
 			<Body
 				_template="Limits"
-				LinearDamping="2"
 				Mass="80"
 				ModelFrame="BoneFuel1_cdt"
 			>
@@ -39,7 +38,6 @@
 			</Body>
 			<Body
 				_template="Limits"
-				LinearDamping="2"
 				Mass="40"
 				ModelFrame="BoneFuel2_cdt"
 			>
@@ -47,7 +45,6 @@
 			</Body>
 			<Body
 				_template="Limits"
-				LinearDamping="2"
 				Mass="80"
 				ModelFrame="BoneRepair_cdt"
 			>
@@ -55,7 +52,6 @@
 			</Body>
 			<Body
 				_template="Limits"
-				LinearDamping="2"
 				Mass="50"
 				ModelFrame="BoneWheel_cdt"
 			>
@@ -75,7 +71,7 @@
 			UiDesc="UI_TUNING_ROOFRACK_REGULAR_DESC"
 			UiIcon30x30=""
 			UiIcon40x40=""
-			UiName="UI_TUNING_ROOFRACK_REGULAR_NAME"
+			UiName="No Drag Roof Rack"
 		/>
 		<InstallSocket Type="Tuz420TatarinTrunk" />
 	</GameData>

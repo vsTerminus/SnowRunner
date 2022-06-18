@@ -23,7 +23,6 @@
 			<Constraint Type="Rigid" />
 			<Body
 				_template="Limits"
-				LinearDamping="2"
 				Mass="15"
 				ModelFrame="BoneFuel1_cdt"
 			>
@@ -31,7 +30,6 @@
 			</Body>
 			<Body
 				_template="Limits"
-				LinearDamping="2"
 				Mass="15"
 				ModelFrame="BoneFuel2_cdt"
 			>
@@ -39,7 +37,6 @@
 			</Body>
 			<Body
 				_template="Limits"
-				LinearDamping="2"
 				Mass="10"
 				ModelFrame="BoneWheel_cdt"
 			>
@@ -70,7 +67,7 @@
 			UiDesc="UI_TUNING_ROOFRACK_SMALL_DESC"
 			UiIcon30x30=""
 			UiIcon40x40=""
-			UiName="UI_TUNING_ROOFRACK_SMALL_NAME"
+			UiName="No Drag Small Roof Rack"
 		/>
 		<InstallSocket Type="Tuz166Roofrack" />
 	</GameData>

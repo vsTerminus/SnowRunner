@@ -28,7 +28,6 @@
 			<Constraint Type="Rigid" />
 			<Body
 				_template="LimitsZ"
-				LinearDamping="2"
 				Mass="40"
 				ModelFrame="BoneWheel_cdt"
 			>
@@ -79,7 +78,7 @@
 			UiDesc="UI_TUNING_SCOUT_TRUNK_SUPPLIES_DESC"
 			UiIcon30x30=""
 			UiIcon40x40=""
-			UiName="UI_TUNING_SCOUT_TRUNK_SUPPLIES_NAME"
+			UiName="No Drag Trunk Repair Supplies"
 		/>
 		<InstallSocket Type="tuz108warthogTrunk" />
 	</GameData>
