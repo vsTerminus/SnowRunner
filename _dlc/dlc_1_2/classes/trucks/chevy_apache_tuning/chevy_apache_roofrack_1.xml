@@ -40,7 +40,6 @@
 			</Body>
 			<Body
 				_template="LimitsZ"
-				LinearDamping="2"
 				Mass="40"
 				ModelFrame="BoneWheel1_cdt"
 			>
@@ -48,7 +47,6 @@
 			</Body>
 			<Body
 				_template="Limits"
-				LinearDamping="2"
 				Mass="100"
 				ModelFrame="BoneRepairFuel1_cdt"
 			>
@@ -56,7 +54,6 @@
 			</Body>
 			<Body
 				_template="Limits"
-				LinearDamping="2"
 				Mass="120"
 				ModelFrame="BoneWheelFuel1_cdt"
 			>
@@ -99,7 +96,7 @@
 			UiDesc="UI_TUNING_ROOFRACK_REGULAR_DESC"
 			UiIcon30x30=""
 			UiIcon40x40=""
-			UiName="UI_TUNING_ROOFRACK_REGULAR_NAME"
+			UiName="No Drag Roof Rack"
 		/>
 		<InstallSocket Type="ChevyApacheRooftopTrunk" />
 	</GameData>

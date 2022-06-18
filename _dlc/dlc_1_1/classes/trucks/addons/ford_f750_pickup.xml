@@ -29,7 +29,6 @@
 			<Constraint Type="Rigid" />
 			<Body
 				_template="Limits"
-				LinearDamping="2"
 				Mass="30"
 				ModelFrame="BoneWheel_cdt"
 			>
@@ -41,7 +40,6 @@
 			</Body>
 			<Body
 				_template="Limits"
-				LinearDamping="2"
 				Mass="30"
 				ModelFrame="BoneRepair_cdt"
 			>
@@ -84,7 +82,7 @@
 			UiDesc="UI_ADDONS_FORD_F750_PICKUP_DESC"
 			UiIcon30x30=""
 			UiIcon40x40=""
-			UiName="UI_ADDONS_FORD_F750_PICKUP_NAME"
+			UiName="No Drag Pickup Bed"
 		/>
 		<InstallSocket Type="FordF750Pickup" />
 	</GameData>

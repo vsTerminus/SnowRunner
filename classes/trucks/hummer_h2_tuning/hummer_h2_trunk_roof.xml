@@ -5,7 +5,6 @@
 			<Constraint Type="Rigid" />
 			<Body
 				Collisions="None"
-				LinearDamping="10"
 				Mass="3"
 				ModelFrame="BoneTent_cdt"
 			>
@@ -33,7 +32,7 @@
 			UiDesc="UI_ADDON_HUMMER_H2_TRUNK_ROOF_DESC"
 			UiIcon30x30=""
 			UiIcon40x40=""
-			UiName="UI_ADDON_HUMMER_H2_TRUNK_ROOF_NAME"
+			UiName="No Drag Slant Back Trunk Kit"
 		/>
 		<InstallSocket Type="HummerH2TrunkRoof" />
 	</GameData>

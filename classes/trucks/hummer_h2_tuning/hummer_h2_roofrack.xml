@@ -30,11 +30,10 @@
 	<PhysicsModel Mesh="trucks/hummer_h2_tuning/hummer_h2_roofrack">
 		<Body Mass="100">
 			<Constraint Type="Rigid" />
-			<Body _template="Limits" LinearDamping="1" Mass="40" ModelFrame="BoneFuel_cdt" />
-			<Body _template="Limits" LinearDamping="10" Mass="50" ModelFrame="BoneRepair_cdt" />
+			<Body _template="Limits" Mass="40" ModelFrame="BoneFuel_cdt" />
+			<Body _template="Limits" Mass="50" ModelFrame="BoneRepair_cdt" />
 			<Body
 				_template="Limits"
-				LinearDamping="3"
 				Mass="50"
 				ModelFrame="BoneWheel_cdt"
 			>
@@ -54,7 +53,7 @@
 			UiDesc="UI_TUNING_ROOFRACK_SMALL_DESC"
 			UiIcon30x30=""
 			UiIcon40x40=""
-			UiName="UI_TUNING_ROOFRACK_SMALL_NAME"
+			UiName="No Drag Small Roof Rack"
 		/>
 		<InstallSocket Type="HummerH2Roofrack" />
 	</GameData>

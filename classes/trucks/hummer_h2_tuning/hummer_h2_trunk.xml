@@ -28,7 +28,7 @@
 	<PhysicsModel Mesh="trucks/hummer_h2_tuning/hummer_h2_trunk">
 		<Body Mass="50">
 			<Constraint Type="Rigid" />
-			<Body _template="Limits" LinearDamping="10" Mass="50" ModelFrame="BoneRepair_cdt" />
+			<Body _template="Limits" Mass="50" ModelFrame="BoneRepair_cdt" />
 			<Body _template="FuelLimit" Mass="20" ModelFrame="BoneFuel1_cdt" />
 			<Body _template="FuelLimit" Mass="20" ModelFrame="BoneFuel2_cdt" />
 		</Body>
@@ -45,7 +45,7 @@
 			UiDesc="UI_TUNING_SCOUT_TRUNK_SUPPLIES_DESC"
 			UiIcon30x30=""
 			UiIcon40x40=""
-			UiName="UI_TUNING_SCOUT_TRUNK_SUPPLIES_NAME"
+			UiName="No Drag Trunk Repair Supplies"
 		/>
 		<InstallSocket Type="HummerH2Trunk" />
 	</GameData>

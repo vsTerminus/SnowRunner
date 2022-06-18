@@ -42,10 +42,9 @@
 	<PhysicsModel Mesh="trucks/chevrolet_ck1500_tuning/chevrolet_ck1500_rooftop_trunk">
 		<Body Mass="100">
 			<Constraint Type="Rigid" />
-			<Body _template="Limits" LinearDamping="1" Mass="3" ModelFrame="BoneFuel1_cdt" />
+			<Body _template="Limits" Mass="3" ModelFrame="BoneFuel1_cdt" />
 			<Body
 				_template="Limits"
-				LinearDamping="2"
 				Mass="3"
 				ModelFrame="BoneFuel2_cdt"
 			>
@@ -53,7 +52,6 @@
 			</Body>
 			<Body
 				_template="Limits"
-				LinearDamping="4.1"
 				Mass="3"
 				ModelFrame="BoneFuel3_cdt"
 			>
@@ -61,14 +59,13 @@
 			</Body>
 			<Body
 				_template="Limits"
-				LinearDamping=".01"
 				Mass="3"
 				ModelFrame="BoneFuel4_cdt"
 			>
 				<Constraint LinearLimitsX="(-0.02; 0.01)" LinearLimitsY="(-0.043;0)" />
 			</Body>
-			<Body _template="Limits" LinearDamping="10" Mass="50" ModelFrame="BoneRepair_cdt" />
-			<Body _template="Limits" LinearDamping="3" Mass="50" ModelFrame="BoneWheel_cdt" />
+			<Body _template="Limits" Mass="50" ModelFrame="BoneRepair_cdt" />
+			<Body _template="Limits" Mass="50" ModelFrame="BoneWheel_cdt" />
 		</Body>
 	</PhysicsModel>
 	<ModelAttachments>
@@ -96,7 +93,7 @@
 			UiDesc="UI_TUNING_ROOFRACK_REGULAR_DESC"
 			UiIcon30x30=""
 			UiIcon40x40=""
-			UiName="UI_TUNING_ROOFRACK_REGULAR_NAME"
+			UiName="No Drag Roof Rack"
 		/>
 		<InstallSocket Type="ChevroletCK1500RooftopTrunk" />
 	</GameData>
