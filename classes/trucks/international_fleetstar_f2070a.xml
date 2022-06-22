@@ -124,6 +124,8 @@
 		</Damage>
 		<CompatibleWheels Scale="0.53" Type="wheels_medium_double" />
 		<CompatibleWheels Scale="0.57" Type="wheels_medium_double" />
+		<CompatibleWheels Scale="0.60" Type="wheels_medium_double" />
+		<CompatibleWheels Scale="0.60" Type="wheels_heavy_double2" />
 		<Camera Center="(-1.2; 0; 0)" ParentFrame="BoneCabin_cdt">
 			<Cockpit
 				_template="Default"
