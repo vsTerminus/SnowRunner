@@ -397,7 +397,7 @@
 		<AddonSockets>
 			<Socket
 				Names="FrameAddonKung"
-				NamesBlock="MetalDetector, MinicraneUS"
+				NamesBlock="MetalDetector"
 				Offset="(-2.4; 1.41; 0)"
 				ParentFrame="BoneChassis_cdt"
 			>
