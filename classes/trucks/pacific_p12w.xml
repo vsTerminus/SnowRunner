@@ -24,7 +24,7 @@
 <Truck>
 	<TruckData
 		BackSteerSpeed="0.01"
-		DiffLockType="Always"
+		DiffLockType="Installed"
 		EngineIconMesh="env/engine_default"
 		EngineIconScale="1.6"
 		EngineStartDelay="0.8"
@@ -106,7 +106,7 @@
 		<GearboxSocket Default="g_special_default" Type="gearboxes_special" />
 		<FuelTank DamageCapacity="50" />
 		<!-- <EngineSocket Default="us_truck_old_heavy_engine_0" Type="e_us_truck_old_heavy" /> -->
-		<EngineSocket Default="us_special_engine_0" Type="e_us_special" />
+		<EngineSocket Default="us_special_engine_0" Type="e_us_special, e_us_truck_modern_longhorn_4520" />
 		<Driver
 			AnimationSet="HeavyTruck"
 			Pos="(1.027; 2.59; 0.466)"
@@ -353,6 +353,9 @@
 		<AddonSockets>
 			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-4.641; 2.15; 0)" />
 			<Socket Names="Trailer" Offset="(-6.94; 1.35; 0)" />
+		</AddonSockets>
+		<AddonSockets DefaultAddon="pacific_p12w_diff_lock_default">
+			<Socket Names="PacificP512DiffLock" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="pacific_p12w_bumper_default">
 			<Socket Names="PacificP12Bumper" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
