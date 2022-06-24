@@ -29,4 +29,29 @@
 			/>
 		</GameData>
 	</Engine>
+	<Engine
+		_template="USTruckModernEngine"
+		CriticalDamageThreshold="0.5"
+		DamageCapacity="190"
+		DamagedConsumptionModifier="1.2"
+		EngineResponsiveness="0.25"
+		FuelConsumption="3.2"
+		Name="us_truck_modern_engine_longhorn_4520_Westline"
+		Torque="310000"
+		DamagedMinTorqueMultiplier="1.0"
+		DamagedMaxTorqueMultiplier="0.8"
+	>
+		<GameData
+			Price="23000"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="Twin Turbo Aftercooled version of the M2450, boosting its power even more. This engine is so big it can only fit in the largest of trucks."
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="Westline V16 M2450TTA"
+			/>
+		</GameData>
+	</Engine>
 </EngineVariants>
