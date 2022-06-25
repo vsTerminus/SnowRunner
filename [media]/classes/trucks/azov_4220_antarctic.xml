@@ -6,7 +6,7 @@
 			Torque="default"
 			ParentFrame="BoneSuspension_cdt"
 		/>
-		<FrontWheel Location="front" Torque="full" />
+		<FrontWheel Location="front" Torque="full" SteeringAngle="40" />
 	</Wheel>
 	<Flare>
 		<ReverseSignal
@@ -78,7 +78,7 @@
 		ExhaustStartTime="0.6"
 		FuelCapacity="700"
 		Responsiveness="0.4"
-		SteerSpeed="0.03"
+		SteerSpeed="0.020"
 		TruckImage="Azov4220Antarcticmchr"
 		TruckType="HEAVY"
 	>
@@ -298,9 +298,10 @@
 				<Constraint
 					AxisLocal="(0; 1; 0)"
 					Name="ChassisSteer"
-					Type="Hinge"
-					MinLimit="-35"
-					MaxLimit="35"
+					Type="Fixed"
+					LinearLimitsX="(-0.001; 0.001)"
+					LinearLimitsY="(-0.001; 0.001)"
+					LinearLimitsZ="(-0.001; 0.001)"
 				>
 					<Motor
 						Damping="1.0"
