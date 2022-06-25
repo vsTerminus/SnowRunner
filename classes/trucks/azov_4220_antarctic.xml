@@ -6,7 +6,7 @@
 			Torque="default"
 			ParentFrame="BoneSuspension_cdt"
 		/>
-		<FrontWheel Location="front" Torque="full" />
+		<FrontWheel Location="front" Torque="full" SteeringAngle="40" />
 	</Wheel>
 	<Flare>
 		<ReverseSignal
@@ -297,9 +297,10 @@
 				<Constraint
 					AxisLocal="(0; 1; 0)"
 					Name="ChassisSteer"
-					Type="Hinge"
-					MinLimit="-35"
-					MaxLimit="35"
+					Type="Fixed"
+					LinearLimitsX="(-0.001; 0.001)"
+					LinearLimitsY="(-0.001; 0.001)"
+					LinearLimitsZ="(-0.001; 0.001)"
 				>
 					<Motor
 						Damping="1.0"
