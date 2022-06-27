@@ -210,9 +210,11 @@
 			<DamageArea Type="FuelTank" Min="(-3.75; 0.65; -1.4)" Max="(1.8; 1.6; 1.4)" ParentFrame="BoneChassis_cdt" />
 		</Damage>
 		<CompatibleWheels Scale="0.7" Type="wheels_heavy_single" />
-		<CompatibleWheels Scale="0.8" Type="wheels_heavy_single" />
 		<CompatibleWheels OffsetZ="-0.1" Scale="0.7" Type="wheels_heavy_double1" />
 		<CompatibleWheels OffsetZ="-0.01" Scale="0.7" Type="wheels_heavy_double2" />
+		<CompatibleWheels Scale="0.8" Type="wheels_heavy_single" />
+		<CompatibleWheels OffsetZ="0.1" Scale="0.8" Type="wheels_heavy_double1" />
+		<CompatibleWheels OffsetZ="0.01" Scale="0.8" Type="wheels_heavy_double2" />
 		<Camera
 			Center="(-2; 0; 0)"
 			RadiusMultiplier="1.4"
@@ -275,7 +277,7 @@
 	<PhysicsModel Mesh="trucks/ws_6900xd_twin">
 		<NetSync Legacy="false" />
 		<Body
-			CenterOfMassOffset="(0; 0; 0)"
+			CenterOfMassOffset="(0; -0.5; 0)"
 			ImpactType="Truck"
 			Mass="10200"
 			ModelFrame="BoneChassis_cdt"
