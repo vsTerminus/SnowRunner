@@ -138,8 +138,15 @@
 			<DamageArea Type="Engine" Min="(3; 0.8; -0.45)" Max="(4.5; 1.9; 0.45)" />
 			<DamageArea Type="FuelTank" Min="(-0.6; 0.55; -1.2)" Max="(0.3; 1.2; 1.2)" />
 		</Damage>
-		<CompatibleWheels RearOffsetZ="0.04" Scale="0.58" Type="wheels_tatra_phoenix" />
-		<CompatibleWheels RearOffsetZ="0.04" Scale="0.58" Type="wheels_heavy_single" />
+		<CompatibleWheels OffsetZ="0.04" Scale="0.58" Type="wheels_tatra_phoenix" />
+		<CompatibleWheels OffsetZ="0.04" Scale="0.58" Type="wheels_heavy_single" />
+		<CompatibleWheels OffsetZ="0.04" Scale="0.58" Type="wheels_heavy_single2" />
+		<CompatibleWheels OffsetZ="0.08" Scale="0.62" Type="wheels_tatra_phoenix" />
+		<CompatibleWheels OffsetZ="0.08" Scale="0.62" Type="wheels_heavy_single" />
+		<CompatibleWheels OffsetZ="0.08" Scale="0.62" Type="wheels_heavy_single2" />
+		<CompatibleWheels OffsetZ="0.12" Scale="0.66" Type="wheels_tatra_phoenix" />
+		<CompatibleWheels OffsetZ="0.12" Scale="0.66" Type="wheels_heavy_single" />
+		<CompatibleWheels OffsetZ="0.12" Scale="0.66" Type="wheels_heavy_single2" />
 		<Camera Center="(-1; 0; 0)" ParentFrame="BoneChassis_cdt">
 			<Cockpit
 				_template="Default"
@@ -350,15 +357,21 @@
 		<CraneSocket Pos="(-0.65; 1; -0.46)" />
 		<CraneSocket Pos="(-3.968; 1.028; 0)" />
 		<AddonSockets>
-			<Socket Names="TatraCrane" Offset="(-0.4; -0.02; 0)" NamesBlock="TatraSideboard, TatraFrameAddonTank" />
+			<!--<Socket Names="TatraCrane" Offset="(-0.4; -0.02; 0)" NamesBlock="TatraSideboard, TatraFrameAddonTank, MinicraneRU, BigCraneRu" />-->
+			<Socket Names="TatraCrane" Offset="(1.215; -0.02; 0)" NamesBlock="TatraFrameAddonTank, FrameAddonKung" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="Trailer" Offset="(-3.968; 1.028; 0)" />
+			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-2.173; 1.500; 0)" />
 			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-2.173; 1.647; 0)" />
 		</AddonSockets>
 		<AddonSockets>
 			<!--<Socket Names="BigCraneRu" Offset="(-2.52; 1.174; 0)" />-->
 			<Socket Names="SaddleHigh" Offset="(-2.17; 1.182; 0)">
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.02)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.02)" />
+			</Socket>
+			<Socket Names="SaddleLow" Offset="(-2.17; 1.182; 0)">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.02)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.02)" />
 			</Socket>
