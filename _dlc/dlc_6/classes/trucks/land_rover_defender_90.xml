@@ -306,6 +306,7 @@
 		<CraneSocket Pos="(-0.27; 0.537; -0.824)" />
 		<CraneSocket Pos="(-0.27; 0.537; 0.824)" />
 		<CraneSocket Pos="(-1.883; 0.447; 0)" />
+		<CraneSocket Pos="(-0.466; 1.991; 0)" />
 		<AddonSockets DefaultAddon="land_rover_defender_90_bumper_default">
 			<Socket Names="LandRoverDef90Bumper" />
 		</AddonSockets>

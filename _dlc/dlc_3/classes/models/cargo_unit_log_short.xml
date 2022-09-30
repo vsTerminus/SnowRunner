@@ -10,5 +10,5 @@
 		<LoadPoint Pos="(1.365; 0; 0.000)" />
 		<LoadPoint Pos="(-1.365; 0; 0.000)" />
 	</GameData>
-	<!-- <Landmark Mesh="landmarks/cargo_unit_bricks_lmk" MinScale="1.8" MaxScale="3.8"/> -->
+	<Landmark Mesh="landmarks/cargo_unit_log_short_lmk" MinScale="1.8" MaxScale="3.8" />
 </ModelBrand>

@@ -241,6 +241,7 @@
 		<CraneSocket Pos="(0.062; 0.547; 0.925)" />
 		<CraneSocket Pos="(-2.316; 0.697; 0.438)" />
 		<CraneSocket Pos="(-2.316; 0.697; -0.438)" />
+		<CraneSocket Pos="(-0.254; 1.935; 0)" />
 		<AddonSockets>
 			<Socket Names="LandRoverDef110Bumper" />
 			<Socket Names="LandRoverDef110BumperRope" />

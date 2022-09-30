@@ -293,19 +293,20 @@
 		</StopSignals>
 		<ReverseSignals>
 			<Light
-				AttenEnd="2.0"
-				Color="(80; 80; 80)"
+				AttenEnd="2.0" Color="(80; 80; 80)"
 				Dir="(-1; -0.2; 0)"
 				InnerCone="120"
 				OuterCone="160"
 				Pos="(-4.941; 0.555; -0.388)"
 			/>
-			<Flare AspectRatio="1.4" Color="g(200; 200; 200) x 0.8" ColorMultAtDay="0.6" Dir="(-1; 0; 0)" DirAngle="90" Reflections="true" Size="0.4" Pos="(-4.798; 0.555; -0.388)" />
-			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.05" Dir="(-1; 0; 0)" Size="0.4" Pos="(-4.798; 0.555; -0.388)" />
+			<Flare AspectRatio="1.4" Color="g(200; 200; 200) x 0.6" ColorMultAtDay="0.6" Dir="(-1; 0; 0)" DirAngle="90" Reflections="true" Size="0.4" Pos="(-4.894; 0.72; 0.383)" />
+			<Flare AspectRatio="1.4" Color="g(200; 200; 200) x 0.6" ColorMultAtDay="0.6" Dir="(-1; 0; 0)" DirAngle="90" Reflections="true" Size="0.4" Pos="(-4.894; 0.72; -0.383)" />
+			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.05" Dir="(-1; 0; 0)" Size="0.4" Pos="(-4.894; 0.72; 0.383)" />
+			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.05" Dir="(-1; 0; 0)" Size="0.4" Pos="(-4.894; 0.72; -0.383)" />
 		</ReverseSignals>
 		<Ignition>
-			<Light _template="IgnitionSignalWhite" Color="g(255; 186; 112) x .5" Pos="(4.5; 1.013; 0.8)" />
-			<Light _template="IgnitionSignalWhite" Color="g(255; 186; 112) x .5" Pos="(4.5; 1.013; -0.8)" />
+			<Light _template="IgnitionSignalWhite" Color="g(255; 235; 215) x 1.0" Pos="(4.5; 1.013; 0.8)" />
+			<Light _template="IgnitionSignalWhite" Color="g(255; 235; 215) x 1.0" Pos="(4.5; 1.013; -0.8)" />
 			<Light _template="IgnitionSignalRed" Color="g(255; 10; 10) x 0.4" Pos="(-5; 0.643; 0)" />
 			<Flare _template="IgnitionSignalRed" Size="0.2" Pos="(-4.889; 0.643; 0.388)" />
 			<Flare _template="IgnitionSignalRed" Size="0.2" Pos="(-4.889; 0.643; -0.388)" />
@@ -313,10 +314,10 @@
 			<Flare _template="IgnitionSignalOrange" Color="g(255; 140; 0) x 0.5" Dir="(0; 0; -1)" Size="0.2" Pos="(3.069; 1.352; -1.248)" ParentFrame="BoneCabin_cdt" />
 			<Flare _template="IgnitionSignalOrange" AspectRatio="0.5" Color="g(255; 140; 0) x 0.3" Dir="(1; 0; 0)" Size="0.8" Pos="(2.69; 1.724; 1.060)" ParentFrame="BoneCabin_cdt" />
 			<Flare _template="IgnitionSignalOrange" AspectRatio="0.5" Color="g(255; 140; 0) x 0.3" Dir="(1; 0; 0)" Size="0.8" Pos="(2.69; 1.724; -1.060)" ParentFrame="BoneCabin_cdt" />
-			<Flare _template="IgnitionSignalOrange" AspectRatio="3" Color="g(255; 140; 0) x 0.3" Dir="(0.589; 0; -0.808)" Size="0.5" Pos="(2.803; 1.823; -0.995)" ParentFrame="BoneCabin_cdt" />
-			<Flare _template="IgnitionSignalOrange" AspectRatio="3" Color="g(255; 140; 0) x 0.3" Dir="(0.589; 0; -0.808)" Size="0.5" Pos="(2.807; 1.623; -1.005)" ParentFrame="BoneCabin_cdt" />
-			<Flare _template="IgnitionSignalOrange" AspectRatio="3" Color="g(255; 140; 0) x 0.3" Dir="(0.589; 0; 0.808)" Size="0.5" Pos="(2.803; 1.823; 0.995)" ParentFrame="BoneCabin_cdt" />
-			<Flare _template="IgnitionSignalOrange" AspectRatio="3" Color="g(255; 140; 0) x 0.3" Dir="(0.589; 0; 0.808)" Size="0.5" Pos="(2.807; 1.623; 1.005)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalOrange" AspectRatio="3" Color="g(255; 140; 0) x 0.2" Dir="(0.589; 0; -0.808)" Size="0.3" Pos="(2.803; 1.823; -0.995)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalOrange" AspectRatio="3" Color="g(255; 140; 0) x 0.2" Dir="(0.589; 0; -0.808)" Size="0.3" Pos="(2.807; 1.623; -1.005)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalOrange" AspectRatio="3" Color="g(255; 140; 0) x 0.2" Dir="(0.589; 0; 0.808)" Size="0.3" Pos="(2.803; 1.823; 0.995)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalOrange" AspectRatio="3" Color="g(255; 140; 0) x 0.2" Dir="(0.589; 0; 0.808)" Size="0.3" Pos="(2.807; 1.623; 1.005)" ParentFrame="BoneCabin_cdt" />
 			<Flare _template="IgnitionSignalOrange" AspectRatio="3" Color="g(255; 140; 0) x 0.4" Dir="(1; 0; 0)" Size="0.4" Pos="(3.729; 1.237; 1.017)" ParentFrame="BoneCabin_cdt" />
 			<Flare _template="IgnitionSignalOrange" AspectRatio="3" Color="g(255; 140; 0) x 0.4" Dir="(1; 0; 0)" Size="0.4" Pos="(3.729; 1.237; -1.017)" ParentFrame="BoneCabin_cdt" />
 			<Flare _template="IgnitionSignalWhite" Color="g(255; 235; 215) x 0.3" Size="0.2" Pos="(3.714; 1.173; -0.955)" ParentFrame="BoneCabin_cdt" />

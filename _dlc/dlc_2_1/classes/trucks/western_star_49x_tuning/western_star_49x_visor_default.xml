@@ -10,11 +10,11 @@
 	</PhysicsModel>
 	<ModelAttachments>
 		<Ignition>
-			<Flare _template="MarkerBeacon" Pos="(2.186; 2.808; -0.803)" />
-			<Flare _template="MarkerBeacon" Pos="(2.28; 2.8; -0.225)" />
-			<Flare _template="MarkerBeacon" Pos="(2.284; 2.8; 0)" />
-			<Flare _template="MarkerBeacon" Pos="(2.28; 2.8; 0.225)" />
-			<Flare _template="MarkerBeacon" Pos="(2.186; 2.808; 0.803)" />
+			<Flare _template="MarkerBeacon" Color="g(255; 140; 0) x 0.3" Size="0.4" Pos="(2.186; 2.808; -0.803)" />
+			<Flare _template="MarkerBeacon" Color="g(255; 140; 0) x 0.3" Size="0.4" Pos="(2.28; 2.8; -0.225)" />
+			<Flare _template="MarkerBeacon" Color="g(255; 140; 0) x 0.3" Size="0.4" Pos="(2.284; 2.8; 0)" />
+			<Flare _template="MarkerBeacon" Color="g(255; 140; 0) x 0.3" Size="0.4" Pos="(2.28; 2.8; 0.225)" />
+			<Flare _template="MarkerBeacon" Color="g(255; 140; 0) x 0.3" Size="0.4" Pos="(2.186; 2.808; 0.803)" />
 		</Ignition>
 	</ModelAttachments>
 	<GameData
