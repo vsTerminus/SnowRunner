@@ -7,16 +7,16 @@
 	</PhysicsModel>
 	<GameData
 		CameraPreset="rear"
-		Category="rear"
-		Price="800"
+		Category="miscellenious"
+		Price="600"
 		UnlockByExploration="false"
 		UnlockByRank="1"
 	>
 		<UiDesc
-			UiDesc="UI_TUNING_BUMPER_STOCK_DESC"
+			UiDesc=""
 			UiIcon30x30=""
 			UiIcon40x40=""
-			UiName="UI_TUNING_BUMPER_STOCK_NAME"
+			UiName="UI_TUNING_WINGS_DEFAULT_NAME"
 		/>
 		<InstallSocket Type="ws57xWings" />
 	</GameData>

@@ -1585,7 +1585,78 @@
 				Perpendicularity="0.3"
 				PlaceOnlyInWater="false"
 			/>
-		</CanesRus>		
+		</CanesRus>	
+
+		<PotatoCore PlantsPerBlock="4000">
+			<PlantType
+				Brand="potato_core_a"
+				
+				MinSize="0.9"
+				MaxSize="1"
+				
+				PlaceOnlyOutsideWater="false"
+			/>
+			<PlantType
+				Brand="potato_core_b"
+				
+				MinSize="0.9"
+				MaxSize="1"
+				
+				PlaceOnlyOutsideWater="false"
+			/>
+			<PlantType
+				Brand="potato_core_c"
+				
+				MinSize="0.9"
+				MaxSize="1"
+				
+				PlaceOnlyOutsideWater="false"
+			/>
+			
+		</PotatoCore>
+
+		<PotatoSmall PlantsPerBlock="400">
+			<PlantType
+				Brand="potato_small_a"
+				Divergence="0.1"
+				MinSize="0.6"
+				MaxSize="1.2"
+				Perpendicularity="0.3"
+				PlaceOnlyOutsideWater="false"
+			/>
+			<PlantType
+				Brand="potato_small_b"
+				Divergence="0.1"
+				MinSize="0.6"
+				MaxSize="1.2"
+				Perpendicularity="0.3"
+				PlaceOnlyInWater="false"
+			/>
+			<PlantType
+				Brand="potato_small_c"
+				Divergence="0.1"
+				MinSize="0.6"
+				MaxSize="1.2"
+				Perpendicularity="0.3"
+				PlaceOnlyInWater="false"
+			/>
+		</PotatoSmall>	
+
+		<PotatoBig PlantsPerBlock="1400">
+
+			<PlantType
+				Brand="potato_big_a"
+				Divergence="0.01"
+				MinSize="0.6"
+				MaxSize="1.2"
+				Perpendicularity="0.3"
+				PlaceOnlyOutsideWater="false"
+			/>
+			
+		</PotatoBig>
+
+	
+
 		<Canes PlantsPerBlock="400">
 			<PlantType
 				Brand="cane_a"

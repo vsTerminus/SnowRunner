@@ -2,6 +2,7 @@
 	NightLightingShadowsAllowCap="true"
 	ClipCameraBridge="true"
 	DynamicModel="true"
+	ClipCamera="false"
 >
 	<PhysicsModel>
 		<Body Collisions="Dynamic" ModelFrame="base">

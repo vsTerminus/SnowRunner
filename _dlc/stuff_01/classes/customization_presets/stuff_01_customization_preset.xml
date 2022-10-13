@@ -1,5 +1,5 @@
 <_templates Include="trucks" />
-<TruckSet>
+<TruckSet>	
 	<!--<- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -/>-->
 	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_01_cat_745c" />
 	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_02_cat_745c" />
@@ -732,7 +732,7 @@
 	<Truck _template="OutsideSticker1x1" Name="sticker_roof_1x1_zikz_605r" />
 	<Truck _template="GlassStickerTopCut" Name="sticker_glass_top_zikz_605r" />
 	<Truck _template="GlassStickerBottomCut" Name="sticker_glass_bottom_zikz_605r" />
-		<!--<- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -/>-->
+	<!--<- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -/>-->
 	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_01_khan_317_sentinel" />
 	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_02_khan_317_sentinel" />
 	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_03_khan_317_sentinel" />
@@ -895,6 +895,7 @@
 	<Truck _template="OutsideStickerWS" Name="sticker_capote_1x1_western_star_nf1424" />
 	<Truck _template="OutsideStickerWS" Name="sticker_roof_1x1_western_star_nf1424" />
 	<Truck _template="GlassStickerBottom2x16" Name="sticker_glass_bottom_western_star_nf1424" />
+	<Truck _template="Curtain" Name="stuff_curtain_western_star_nf1424" />
 	<!--<- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -/>-->
 	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_01_western_star_nf1430" />
 	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_02_western_star_nf1430" />
@@ -907,6 +908,7 @@
 	<Truck _template="OutsideStickerWS" Name="sticker_capote_1x1_western_star_nf1430" />
 	<Truck _template="OutsideStickerWS" Name="sticker_roof_1x1_western_star_nf1430" />
 	<Truck _template="GlassStickerBottom2x16" Name="sticker_glass_bottom_western_star_nf1430" />
+	<Truck _template="Curtain" Name="stuff_curtain_western_star_nf1430" />
 	<!--<- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -/>-->
 	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_01_azov_43_191_sprinter" />
 	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_02_azov_43_191_sprinter" />
@@ -920,6 +922,31 @@
 	<Truck _template="GlassStickerTop2x16" Name="sticker_glass_top_azov_43_191_sprinter" />
 	<Truck _template="GlassStickerBottom2x16" Name="sticker_glass_bottom_azov_43_191_sprinter" />
 	<!--<- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -/>-->
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_01_kirovets_k700" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_02_kirovets_k700" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_03_kirovets_k700" />
+	<Truck _template="InsideSticker1x2" Name="sticker_inside_1x2_01_kirovets_k700" />
+	<Truck _template="InsideSticker1x2" Name="sticker_inside_1x2_02_kirovets_k700" />
+	<Truck _template="InsideSticker1x4" Name="sticker_inside_1x4_01_kirovets_k700" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_door_r_1x1_kirovets_k700" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_door_l_1x1_kirovets_k700" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_capote_1x1_kirovets_k700" />
+	<Truck _template="GlassStickerTopCut" Name="sticker_glass_top_kirovets_k700" />
+	<Truck _template="GlassStickerBottomCut" Name="sticker_glass_bottom_kirovets_k700" />
+	<!--<- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -/>-->
+	<Truck _template="OutsideSticker1x1" Name="sticker_capote_1x1_kirovets_k7m" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_roof_1x1_kirovets_k7m" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_roof_2_1x1_kirovets_k7m" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_wing_l_1x1_kirovets_k7m" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_wing_r_1x1_kirovets_k7m" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_01_kirovets_k7m" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_02_kirovets_k7m" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_03_kirovets_k7m" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_04_kirovets_k7m" />
+	<Truck _template="InsideSticker1x2" Name="sticker_inside_1x2_01_kirovets_k7m" />
+	<Truck _template="InsideSticker1x4" Name="sticker_inside_1x4_01_kirovets_k7m" />
+	<Truck _template="GlassStickerTop2x16" Name="sticker_glass_top_kirovets_k7m" />
+	<Truck _template="Curtain" Name="stuff_curtain_kirovets_k7m" />
 	<!--<- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -/>-->
 	<Truck _template="OutsideStickerWS57X" Name="sticker_door_r_1x1_western_star_57x" />
 	<Truck _template="OutsideStickerWS57X" Name="sticker_door_l_1x1_western_star_57x" />
@@ -933,5 +960,16 @@
 	<Truck _template="InsideSticker1x4" Name="sticker_inside_1x4_02_western_star_57x" />
 	<Truck _template="GlassStickerBottom2x16" Name="sticker_glass_bottom_western_star_57x" />
 	<!--<- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -/>-->
-	
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_01_step_39331_pike" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_02_step_39331_pike" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_03_step_39331_pike" />
+	<Truck _template="InsideSticker1x2" Name="sticker_inside_1x2_01_step_39331_pike" />
+	<Truck _template="InsideSticker1x2" Name="sticker_inside_1x2_02_step_39331_pike" />
+	<Truck _template="InsideSticker1x4" Name="sticker_inside_1x4_01_step_39331_pike" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_door_r_1x1_step_39331_pike" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_door_l_1x1_step_39331_pike" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_capote_1x1_step_39331_pike" />
+	<Truck _template="GlassStickerTopCut" Name="sticker_glass_top_step_39331_pike" />
+	<Truck _template="GlassStickerBottomCut" Name="sticker_glass_bottom_step_39331_pike" />
+	<!--<- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -/>-->
 </TruckSet>

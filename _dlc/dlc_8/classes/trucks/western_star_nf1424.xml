@@ -328,6 +328,7 @@
 			<CameraPos FOV="32.0" InterestPosition="(0.5466;1.8845;0.3445)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Name="addon_1" Position="(-6.316;3.3053;-4.9618)" />
 			<CameraPos FOV="32.0" InterestPosition="(4.5224;0.2354;-0.9034)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Name="addon_2" Position="(10.2762;3.817;4.3185)" />
 			<CameraPos FOV="32.0" InterestPosition="(8.2266;1.9061;1.0326)" Interior="true" Name="mirror_mount" Position="(4.4868;2.6778;0.0316)" />
+			<CameraPos FOV="32.0" InterestPosition="(8.2266;1.9061;1.0326)" Interior="true" Name="curtain" Position="(4.4868;2.6778;0.0316)" />
 			<CameraPos FOV="32.0" InterestPosition="(6.1747;1.9965;-0.1672)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Name="side_r" Position="(-0.9184;3.1908;5.3884)" />
 			<CameraPos FOV="32.0" InterestPosition="(6.7755;1.7628;-1.0293)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Name="hood_ornament" Position="(9.4264;2.5184;-1.3906)" />
 			<CameraPos FOV="32.0" InterestPosition="(5.0793;1.2141;1.2461)" Interior="true" Name="sticker" Position="(4.9177;2.6401;-0.488)" />
@@ -369,6 +370,8 @@
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.02)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.02)" />
 			</Socket>
+			<!-- <Socket Names="FrameAddonTank" Offset="(0; 1.082; 0)" /> too heavy for default wheels -->
+			<Socket Names="FrameAddonMaintainer" NamesBlock="Trailer" Offset="(0.3; 0.082; 0)" ParentFrame="BoneChassis_cdt" />
 			<Socket Names="FrameAddon" Offset="(0.9; 1.08; 0)" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="western_star_nf1424_bumper_default">
@@ -406,6 +409,9 @@
 		</AddonSockets>
 		<AddonSockets >
 			<Socket Names="nf1424Roofrack" ParentFrame="BoneCabinDamper_cdt" />
+		</AddonSockets>
+		<AddonSockets DefaultAddon="western_star_nf1424_transferbox_default">
+			<Socket Names="WSnf1424TransferBox" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt"/>
 		</AddonSockets>
 		<AddonSockets>
 			<Socket InCockpit="true" Names="westernStarNf1424Sticker_1x1_01" ParentFrame="BoneCabinDamper_cdt" />
@@ -458,6 +464,9 @@
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="StuffHoodNF1424" ParentFrame="BoneCabinDamper_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="StuffCurtainNF1424" ParentFrame="BoneCabinDamper_cdt" />
 		</AddonSockets>
 	</GameData>
 	<ControlledConstraints>

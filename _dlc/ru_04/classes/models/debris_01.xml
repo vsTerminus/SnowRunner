@@ -10,4 +10,5 @@
 		Size="(14.0; 17.0)" 
 		Texture="occlusion_ruins_01.tga"
 	/>
+	<Landmark Mesh="landmarks/debris_01_lmk" />
 </ModelBrand>

@@ -89,7 +89,7 @@
 		Category="frame_addons"
 		IsCustomizable="true"
 		Price="0"
-		UnlockByExploration="true"
+		UnlockByExploration="false"
 		UnlockByRank="1"
 	>
 		<UiDesc

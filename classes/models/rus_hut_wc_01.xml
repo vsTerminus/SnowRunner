@@ -56,4 +56,5 @@
 		</Body>
 	</PhysicsModel>
 	<Occlusion Size="(5.0, 7.0)" Texture="occlusion_rus_hut_wc_01.tga" />
+	<Landmark Mesh="landmarks/rus_hut_wc_01_lmk" />
 </ModelBrand>

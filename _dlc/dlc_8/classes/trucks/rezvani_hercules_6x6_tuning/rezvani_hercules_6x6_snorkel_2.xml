@@ -10,9 +10,9 @@
 		</Ignition>
 	</ModelAttachments>
 	<GameData
-		Price="1400"
+		Price="2900"
 		UnlockByExploration="false"
-		UnlockByRank="1"
+		UnlockByRank="9"
 	>
 		<UiDesc
 			UiDesc="UI_TUNING_SNORKEL_FRONTFACE_TALL_DESC"

@@ -20,7 +20,7 @@
 		<Mesh Frame="repair" HideThreshold="0.0" />
 	</RepairsHide>
 	<PhysicsModel Mesh="trucks/rezvani_hercules_6x6_tuning/rezvani_hercules_6x6_trunk_1">
-		<Body Collisions="None" Mass="1">
+		<Body Collisions="None" Mass="80">
 			<Constraint Type="Rigid" />
 			<Body Collisions="None" Mass="50" ModelFrame="BoneRepair_cdt">
 				<Constraint
@@ -88,9 +88,9 @@
 		CameraPreset="addon_1"
 		Category="frame_addons"
 		IsCustomizable="true"
-		Price="2100"
+		Price="2900"
 		UnlockByExploration="false"
-		UnlockByRank="1"
+		UnlockByRank="12"
 	>
 		<UiDesc
 			UiDesc="UI_TUNING_SCOUT_TRUNK_SUPPLIES_DESC"

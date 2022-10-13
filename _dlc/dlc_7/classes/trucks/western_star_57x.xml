@@ -57,9 +57,9 @@
 		ExhaustStartTime="2.8"
 		FuelCapacity="290"
 		Responsiveness="0.3"
-		SteerSpeed="0.02"
+		SteerSpeed="0.02"	
 		TruckImage="ws57xmchr"
-		TruckType="HEAVY"
+		TruckType="HIGHWAY"
 	>
 		<WinchUpgradeSocket Default="w_heavy_trucks_default" IsUpgradable="true" Type="winches_heavy_trucks" />
 		<Wheels
@@ -138,7 +138,7 @@
 		<Driver Pos="(1.92; 1.821; 0.609)" SteeringWheelPos="(2.354; 2.178; 0.602)" />
 		<Dashboard>
 			<Gauge Dir="(-0.917; 0.4; 0)" InputRange="(0;135)" InputType="speed" Mesh="trucks/arrows/western_star_57x_arrow_1" Org="(2.672; 2.096; 0.601)" OutputAngles="(-118; 26)" />
-			<Gauge Damping="0.99" Dir="(-0.917; 0.4; 0)" InputRange="(0;1)" InputType="rpm" Mesh="trucks/arrows/western_star_57x_arrow_1" Org="(2.672; 2.096; 0.602)" OutputAngles="(119; 45)" />
+			<Gauge Damping="0.97" Dir="(-0.917; 0.4; 0)" InputRange="(0;1)" InputType="rpm" Mesh="trucks/arrows/western_star_57x_arrow_1" Org="(2.672; 2.096; 0.602)" OutputAngles="(119; 45)" />
 		</Dashboard>
 		<Damage>
 			<DamageArea Type="Engine" Min="(2.802; 0.929; -1.008)" Max="(4.493; 1.758; 1.008)" ParentFrame="BoneCabinDamper_cdt" />
@@ -207,7 +207,7 @@
 		<Body
 			CenterOfMassOffset="(-1.5; -0.2; 0)"
 			ImpactType="Truck"
-			Mass="2000"
+			Mass="3500"
 			NetSync="pv"
 		>
 			<Body _template="Mudguard" ModelFrame="BoneMudguardL_cdt" />
@@ -215,7 +215,7 @@
 			<Body
 				CenterOfMassOffset="(2.7; 0.4; 0)"
 				ImpactType="Truck"
-				Mass="1250"
+				Mass="2750"
 				ModelFrame="BoneCabin_cdt"
 				NetSync="pv"
 			>
@@ -337,7 +337,7 @@
 	<HeadLight _template="Default" Pos="(7.084; 1.180; 0)" ParentFrame="BoneCabinDamper_cdt" />
 	<GameData
 		Country="US"
-		Price="43600"
+		Price="115700"
 		UnlockByExploration="false"
 		UnlockByRank="1"
 	>
@@ -422,6 +422,12 @@
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="ws57xSpotlight" ParentFrame="BoneCabinDamper_cdt" />
+		</AddonSockets>
+		<AddonSockets DefaultAddon="western_star_57x_diff_lock_default">
+			<Socket Names="WesternStar57xDiffLock" />
+		</AddonSockets>
+		<AddonSockets DefaultAddon="western_star_57x_transferbox_default">
+			<Socket Names="WesternStar57xTransferBox" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt"/>
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="westernStar57XSticker_Door_R" ParentFrame="BoneCabinDamper_cdt" />

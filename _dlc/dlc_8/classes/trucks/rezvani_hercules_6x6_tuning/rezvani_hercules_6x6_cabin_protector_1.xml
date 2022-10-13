@@ -31,9 +31,9 @@
 	<GameData
 		CameraPreset="hoods"
 		Category="frame_addons"
-		Price="800"
+		Price="2100"
 		UnlockByExploration="false"
-		UnlockByRank="1"
+		UnlockByRank="8"
 	>
 		<UiDesc
 			UiDesc="UI_TUNING_SAFETY_CAGE_DESC"

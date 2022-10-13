@@ -15,10 +15,4 @@
 		</Body>
 	</PhysicsModel>
 	<Occlusion Intensity="0.4" Size="(5.0; 5.0)" />
-	<ChunksBreak
-		_template="Bush"
-		Brands="chunk_bush_d"
-		Offsets="(-0.08; 0.02; 0), (0.08; 0.02; 0)"
-		Threshold="100"
-	/>
 </PlantBrand>

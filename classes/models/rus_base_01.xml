@@ -10,4 +10,5 @@
 		Size="(23.0; 13.0)" 
 		Texture="occlusion_rus_base_01.tga"
 	/>
+	<Landmark Mesh="landmarks/rus_base_01_lmk"/>
 </ModelBrand>

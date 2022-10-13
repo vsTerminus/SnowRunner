@@ -10,4 +10,5 @@
 		Size="(8.0; 5.0)" 
 		Texture="occlusion_meteo_station_device_02.tga"
 	/>
+	<Landmark Mesh="landmarks/meteo_station_device_02_lmk" />
 </ModelBrand>

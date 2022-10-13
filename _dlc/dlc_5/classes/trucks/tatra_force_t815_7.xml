@@ -356,7 +356,7 @@
 	<Landmark Mesh="landmarks/tatra_force_t815_7_lmk" MinScale="1.8" MaxScale="2.8" />
 	<HeadLight _template="Default" Pos="(4.541; 1.196; 0)" />
 	<GameData
-		Country="RU"
+		Country="RU,CAS"
 		ExcludeAddons="trailer_log_pole"
 		Price="182600"
 		UnlockByExploration="true"

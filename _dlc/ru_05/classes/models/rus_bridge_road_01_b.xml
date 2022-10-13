@@ -1,6 +1,7 @@
 <ModelBrand
 	NightLightingShadowsAllowCap="true"
 	ClipCameraBridge="true"
+	ClipCamera="false"
 >
 	<PhysicsModel>
 		<Body

@@ -58,6 +58,36 @@
 				<UiDesc UiDesc="UI_TIRE_CHAINS_DESC" UiName="UI_TIRE_HEAVY_CHAINS_SINGLE_1_NAME" />
 			</GameData>
 		</TruckTire>
+		<TruckTire _template="Offroad" Mesh="wheels/tire_dlc8_offroad_single_1" Name="mudtires_2">
+			<WheelFriction _template="Mudtires"/>
+			<GameData
+				Price="8500"
+				UnlockByExploration="false"
+				UnlockByRank="15"
+			>
+				<UiDesc UiDesc="UI_TIRE_MUDTIRES_DESC" UiName="UI_DLC_TIRE_HEAVY_MUDTIRES_SINGLE_1_NAME" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="Offroad" Mesh="wheels/tire_dlc8_offroad_single_2" Name="mudtires_3">
+			<WheelFriction _template="Mudtires"/>
+			<GameData
+				Price="7900"
+				UnlockByExploration="false"
+				UnlockByRank="14"
+			>
+				<UiDesc UiDesc="UI_TIRE_MUDTIRES_DESC" UiName="UI_DLC_TIRE_HEAVY_MUDTIRES_SINGLE_2_NAME" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="Offroad" Mesh="wheels/tire_dlc8_offroad_single_3" Name="mudtires_4">
+			<WheelFriction _template="Mudtires"/>
+			<GameData
+				Price="7500"
+				UnlockByExploration="false"
+				UnlockByRank="14"
+			>
+				<UiDesc UiDesc="UI_TIRE_MUDTIRES_DESC" UiName="UI_DLC_TIRE_HEAVY_MUDTIRES_SINGLE_3_NAME" />
+			</GameData>
+		</TruckTire>
 	</TruckTires>
 	<TruckRims>
 		<TruckRim Mesh="wheels/rim_heavy_offroad_single_1" Name="rim_1">

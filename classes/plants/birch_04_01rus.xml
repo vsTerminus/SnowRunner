@@ -12,6 +12,12 @@
 		</Body>
 	</PhysicsModel>
 	<Occlusion Intensity="0.2" Size="(10.0; 10.0)" />
+	<ChunksBreak
+		_template="Bush"
+		Brands="birch_04_01rus"
+		Offsets="(-0.006; 0.02; -0.006)"
+		Threshold="1200"
+	/>
 	<GameData>
 		<WinchSocket Pos="(-0.011; 0.18; -0.017)" ParentFrame="BoneRoot" />
 	</GameData>

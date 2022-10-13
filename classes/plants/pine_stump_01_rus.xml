@@ -12,5 +12,5 @@
 	<GameData>
 		<WinchSocket Pos="(0.081; 0.492; 0.025)" ParentFrame="BoneRoot" />
 	</GameData>
-	<Landmark Mesh="landmarks/birch_lmk"/>
+	
 </PlantBrand>

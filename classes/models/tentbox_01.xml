@@ -6,4 +6,5 @@
 	<PhysicsModel>
 		<Body Collisions="Dynamic" />
 	</PhysicsModel>
+	<Landmark Mesh="landmarks/tentbox_01_lmk" />
 </ModelBrand>

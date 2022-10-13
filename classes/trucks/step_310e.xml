@@ -371,7 +371,7 @@
 	<Landmark Mesh="landmarks/step_310e_01_lmk" MinScale="1.8" MaxScale="3.8" />
 	<HeadLight _template="Default" Pos="(4.299; 1.241; 0)" ParentFrame="BoneCabin_cdt" />
 	<GameData
-		Country="RU"
+		Country="RU,CAS"
 		Price="75500"
 		UnlockByExploration="true"
 		UnlockByRank="1"

@@ -220,22 +220,21 @@
 		</Body>
 	</PhysicsModel>
 	<ModelAttachments>
-		<ReverseSignals>
-			<Light _template="ReverseSignal" Pos="(-1.668; 1.147; 0)" ParentFrame="BoneBack_cdt" />
-			<Flare _template="ReverseSignal" Color="g(220; 220; 225) x 0.5" Size="0.3" Pos="(-1.268; 1.147; -0.944)" ParentFrame="BoneBack_cdt" />
-			<Flare _template="ReverseSignal" Color="g(220; 220; 225) x 0.5" Size="0.3" Pos="(-1.268; 1.147; 0.944)" ParentFrame="BoneBack_cdt" />
-			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.15" Dir="(-1; 0; 0)" Size="0.2" Pos="(-1.268; 1.147; -0.944)" ParentFrame="BoneBack_cdt" />
-			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.15" Dir="(-1; 0; 0)" Size="0.2" Pos="(-1.268; 1.147; 0.944)" ParentFrame="BoneBack_cdt" />
-			
-		</ReverseSignals>
 		<StopSignals>
-			<Light _template="StopSignal" Pos="(-1.429; 1.126; 0)" />
-			<Flare _template="StopSignal" AspectRatio="3" Size=".4" Pos="(-1.279; 1.395; 0)" />
-			<Flare _template="StopSignal" Dir="(-1; 0; 1)" Size=".4" Pos="(-1.222; 1.201; 1.003)" />
-			<Flare _template="StopSignal" Dir="(-1; 0; 1)" Size=".4" Pos="(-1.222; 1.079; 1.003)" />
-			<Flare _template="StopSignal" Dir="(-1; 0; -1)" Size=".4" Pos="(-1.222; 1.201; -1.003)" />
-			<Flare _template="StopSignal" Dir="(-1; 0; -1)" Size=".4" Pos="(-1.222; 1.079; -1.003)" />
+			<Light _template="StopSignal" Pos="(-1.429; 1.126; 0)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="StopSignal" AspectRatio="3" Size=".4" Pos="(-1.279; 1.395; 0)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="StopSignal" Dir="(-1; 0; 1)" Size=".4" Pos="(-1.222; 1.201; 1.003)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="StopSignal" Dir="(-1; 0; 1)" Size=".4" Pos="(-1.222; 1.079; 1.003)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="StopSignal" Dir="(-1; 0; -1)" Size=".4" Pos="(-1.222; 1.201; -1.003)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="StopSignal" Dir="(-1; 0; -1)" Size=".4" Pos="(-1.222; 1.079; -1.003)" ParentFrame="BoneCabin_cdt" />
 		</StopSignals>
+		<ReverseSignals>
+			<Light _template="ReverseSignal" Pos="(-1.668; 1.147; 0)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="ReverseSignal" Color="g(220; 220; 225) x 0.5" Size="0.3" Pos="(-1.268; 1.147; -0.944)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="ReverseSignal" Color="g(220; 220; 225) x 0.5" Size="0.3" Pos="(-1.268; 1.147; 0.944)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.15" Dir="(-1; 0; 0)" Size="0.2" Pos="(-1.268; 1.147; -0.944)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.15" Dir="(-1; 0; 0)" Size="0.2" Pos="(-1.268; 1.147; 0.944)" ParentFrame="BoneCabin_cdt" />
+		</ReverseSignals>
 		<Ignition>
 			<Light _template="IgnitionSignalWhite" Color="g(255; 235; 225) x 0.9" Pos="(4.397; 1.159; -0.718)" ParentFrame="BoneCabin_cdt" />
 			<Light _template="IgnitionSignalWhite" Color="g(255; 235; 225) x 0.9" Pos="(4.397; 1.159; 0.718)" ParentFrame="BoneCabin_cdt" />
@@ -288,11 +287,7 @@
 	</ModelAttachments>
 	<Landmark Mesh="landmarks/rezvani_hercules_6x6_lmk" MinScale="1.8" MaxScale="3.8" />
 	<HeadLight _template="Default" Pos="(2.842; 1.041; 0)" />
-	<GameData
-		Country="US"
-		Price="5100"
-		UnlockByRank="1"
-	>
+	<GameData Country="US" Price="25800" UnlockByRank="1">
 		<WinchSocket Pos="(4.657; 0.605; 0)" />
 		<WinchSocket Pos="(2.051; 0.589; -0.901)" />
 		<WinchSocket Pos="(2.051; 0.589; 0.901)" />
@@ -306,24 +301,24 @@
 			UiName="UI_VEHICLE_REZVANI_NAME"
 		/>
 		<CustomizationCameras>
-			<CameraPos FOV="32.0" Interior="true" InterestPosition="(3.9262;0.1992;-0.7518)" Name="roof_sticker" Position="(8.2646;5.6997;-0.5723)" />
-			<CameraPos FOV="32.0" InterestPosition="(6.0694;1.2067;1.4035)" Interior="true" Name="sticker_1" Position="(4.7239;1.6492;0.0381)" />
-			<CameraPos FOV="32.0" InterestPosition="(1.9767;1.6924;-0.3039)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Name="addon_1" Position="(-2.8118;4.0521;-4.5453)" />
-			<CameraPos FOV="32.0" InterestPosition="(4.5224;0.2354;-0.9034)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Name="addon_2" Position="(10.2762;3.817;4.3185)" />
-			<CameraPos FOV="32.0" InterestPosition="(8.2266;0.9619;1.4099)" Interior="true" Name="mirror_mount" Position="(4.6771;1.6818;-0.1197)" />
-			<CameraPos FOV="32.0" InterestPosition="(7.1257;1.1426;-0.1672)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Name="side_r" Position="(10.6004;2.3429;2.5943)" />
-			<CameraPos FOV="32.0" Interior="true" InterestPosition="(5.439; 0.327; 2.169)" Name="hood_ornament" Position="(7.506; 1.983; -1.708)" />
-			<CameraPos FOV="32.0" InterestPosition="(4.4784;1.5577;1.6148)" Interior="true" Name="sticker" Position="(5.1113;1.6704;-0.6359)" />
-			<CameraPos FOV="32.0" Interior="true" InterestPosition="(6.6406;0.8455;0.6143)" Name="door_r_sticker" Position="(3.5311;1.7476;3.7046)" />
-			<CameraPos FOV="32.0" InterestPosition="(4.7344;0.4703;-0.6974)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Name="roof" Position="(11.5944;4.8779;2.5392)" />
-			<CameraPos FOV="32.0" Interior="true" InterestPosition="(6.1056;1.1255;-0.684)" Name="glass_sticker" Position="(10.7196;2.8267;1.399)" />
-			<CameraPos FOV="32.0" InterestPosition="(4.917;0.8751;0.0416)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Name="hoods" Position="(11.6598;1.8993;-2.3478)" />
-			<CameraPos FOV="32.0" InterestPosition="(5.8923;0.953;-1.0337)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Name="side_l" Position="(10.1381;1.9411;-2.8692)" />
-			<CameraPos FOV="32.0" InterestPosition="(8.2266;0.5958;0.5375)" Interior="true" Name="bubble_head" Position="(4.7926;1.7853;-0.1185)" />
-			<CameraPos FOV="32.0" InterestPosition="(4.3918;0.2334;0.06)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Name="wheels" Position="(8.8983;0.8722;-3.2576)" />
-			<CameraPos FOV="32.0" InterestPosition="(3.5757;0.4839;0.7916)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Name="default" Position="(12.5057;1.8379;-3.0936)" />
-			<CameraPos FOV="32.0" InterestPosition="(4.0558;0.4434;0.0672)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Name="rear" Position="(-2.7801;1.9549;2.0037)" />
-			<CameraPos FOV="32.0" Interior="true" InterestPosition="(4.6823;0.9909;-0.2061)" Name="door_l_sticker" Position="(3.8966;1.5348;-3.7377)" />
+			<CameraPos FOV="32.0" Interior="true" Name="roof_sticker" InterestPosition="(3.926; 0.199; -0.752)" Position="(8.265; 5.7; -0.572)" />
+			<CameraPos FOV="32.0" Interior="true" Name="sticker_1" InterestPosition="(6.069; 1.207; 1.403)" Position="(4.724; 1.649; 0.038)" />
+			<CameraPos FOV="32.0" Name="addon_1" InterestPosition="(1.977; 1.692; -0.304)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-2.812; 4.052; -4.545)" />
+			<CameraPos FOV="32.0" Name="addon_2" InterestPosition="(4.522; 0.235; -0.903)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(10.276; 3.817; 4.319)" />
+			<CameraPos FOV="32.0" Interior="true" Name="mirror_mount" InterestPosition="(8.227; 0.962; 1.41)" Position="(4.677; 1.682; -0.12)" />
+			<CameraPos FOV="32.0" Name="side_r" InterestPosition="(7.126; 1.143; -0.167)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(10.6; 2.343; 2.594)" />
+			<CameraPos FOV="32.0" Interior="true" Name="hood_ornament" InterestPosition="(5.439; 0.327; 2.169)" Position="(7.506; 1.983; -1.708)" />
+			<CameraPos FOV="32.0" Interior="true" Name="sticker" InterestPosition="(4.478; 1.558; 1.615)" Position="(5.111; 1.67; -0.636)" />
+			<CameraPos FOV="32.0" Interior="true" Name="door_r_sticker" InterestPosition="(6.641; 0.845; 0.614)" Position="(3.531; 1.748; 3.705)" />
+			<CameraPos FOV="32.0" Name="roof" InterestPosition="(4.734; 0.47; -0.697)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(11.594; 4.878; 2.539)" />
+			<CameraPos FOV="32.0" Interior="true" Name="glass_sticker" InterestPosition="(6.106; 1.125; -0.684)" Position="(10.72; 2.827; 1.399)" />
+			<CameraPos FOV="32.0" Name="hoods" InterestPosition="(4.917; 0.875; 0.042)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(11.66; 1.899; -2.348)" />
+			<CameraPos FOV="32.0" Name="side_l" InterestPosition="(5.892; 0.953; -1.034)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(10.138; 1.941; -2.869)" />
+			<CameraPos FOV="32.0" Interior="true" Name="bubble_head" InterestPosition="(8.227; 0.596; 0.538)" Position="(4.793; 1.785; -0.119)" />
+			<CameraPos FOV="32.0" Name="wheels" InterestPosition="(4.392; 0.233; 0.06)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(8.898; 0.872; -3.258)" />
+			<CameraPos FOV="32.0" Name="default" InterestPosition="(3.576; 0.484; 0.792)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(12.506; 1.838; -3.094)" />
+			<CameraPos FOV="32.0" Name="rear" InterestPosition="(4.056; 0.443; 0.067)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-2.78; 1.955; 2.004)" />
+			<CameraPos FOV="32.0" Interior="true" Name="door_l_sticker" InterestPosition="(4.682; 0.991; -0.206)" Position="(3.897; 1.535; -3.738)" />
 		</CustomizationCameras>
 		<CraneSocket Pos="(4.657; 0.605; 0)" />
 		<CraneSocket Pos="(2.051; 0.589; -0.901)" />
@@ -363,22 +358,22 @@
 			</Socket>
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="rezvaniHercules6X6Sticker_1x1_01" InCockpit="true" ParentFrame="BoneCabin_cdt" />
+			<Socket InCockpit="true" Names="rezvaniHercules6X6Sticker_1x1_01" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="rezvaniHercules6X6Sticker_1x1_02" InCockpit="true" ParentFrame="BoneCabin_cdt" />
+			<Socket InCockpit="true" Names="rezvaniHercules6X6Sticker_1x1_02" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="rezvaniHercules6X6Sticker_1x2_01" InCockpit="true" ParentFrame="BoneCabin_cdt" />
+			<Socket InCockpit="true" Names="rezvaniHercules6X6Sticker_1x2_01" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="rezvaniHercules6X6Sticker_1x2_02" InCockpit="true" ParentFrame="BoneCabin_cdt" />
+			<Socket InCockpit="true" Names="rezvaniHercules6X6Sticker_1x2_02" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="rezvaniHercules6X6Sticker_1x4_01" InCockpit="true" ParentFrame="BoneCabin_cdt" />
+			<Socket InCockpit="true" Names="rezvaniHercules6X6Sticker_1x4_01" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="rezvaniHercules6X6Sticker_1x4_02" InCockpit="true" ParentFrame="BoneCabin_cdt" />
+			<Socket InCockpit="true" Names="rezvaniHercules6X6Sticker_1x4_02" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="rezvaniHercules6X6Sticker_Door_R" ParentFrame="BoneCabin_cdt" />
@@ -390,7 +385,7 @@
 			<Socket Names="rezvaniHercules6X6Sticker_Roof" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="rezvaniHercules6X6Sticker_GlassBot" InCockpit="true" ParentFrame="BoneCabin_cdt" />
+			<Socket InCockpit="true" Names="rezvaniHercules6X6Sticker_GlassBot" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="StuffHoodRezvani6x6" ParentFrame="BoneCabin_cdt" />

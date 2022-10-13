@@ -6,4 +6,5 @@
 	<PhysicsModel>
 		<Body Collisions="Dynamic" />
 	</PhysicsModel>
+	<Landmark Mesh="landmarks/rus_rail_carriage_05_lmk" />
 </ModelBrand>

@@ -3,15 +3,15 @@
 <TruckAddon>
 	<PhysicsModel Mesh="trucks/western_star_57x_tuning/western_star_57x_side_bumper_1"/>
 	<GameData
-		Price="800"
+		Price="1400"
 		UnlockByExploration="false"
 		UnlockByRank="1"
 	>
 		<UiDesc
-			UiDesc="UI_TUNING_BUMPER_STOCK_DESC"
+			UiDesc=""
 			UiIcon30x30=""
 			UiIcon40x40=""
-			UiName="UI_TUNING_BUMPER_STOCK_NAME"
+			UiName="UI_TUNING_BUMPER_SHORT_NAME"
 		/>
 	</GameData>
 </TruckAddon>

@@ -24,4 +24,5 @@
 		</Body>
 	</PhysicsModel>
 	<Occlusion Size="(5.0; 5.0)" Texture="occlusion_rus_beehive_01.tga" />
+	<Landmark Mesh="landmarks/rus_beehive_01_lmk" />	
 </ModelBrand>

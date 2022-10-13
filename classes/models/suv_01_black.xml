@@ -6,4 +6,8 @@
 			<Constraint _template="Cars" />
 		</Body>
 	</PhysicsModel>
+	
+	<Landmark 
+		Mesh="landmarks/suv_01_black_lmk" 
+	/>
 </ModelBrand>

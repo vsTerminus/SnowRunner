@@ -8,4 +8,5 @@
 			Collisions="Dynamic"
 		/>
 	</PhysicsModel>
+	<Landmark Mesh="landmarks/vhc_excavator_01_lmk" />
 </ModelBrand>

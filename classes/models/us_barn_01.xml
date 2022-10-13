@@ -10,4 +10,5 @@
 		Size="(7.0; 6.0)" 
 		Texture="occlusion_us_barn_01.tga"
 	/>
+	<Landmark Mesh="landmarks/us_barn_01_lmk" />
 </ModelBrand>

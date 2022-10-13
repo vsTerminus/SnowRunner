@@ -281,25 +281,25 @@
 			UiName="UI_VEHICLE_LAND_ROVER_DEFENDER_90_NAME"
 		/>
 		<CustomizationCameras>
-			<CameraPos FOV="32.0" Name="roof_sticker" InterestPosition="(4.581; 0.199; -0.407)" Position="(9.599; 5.956; -1.296)" />
-			<CameraPos FOV="32.0" Interior="true" Name="sticker_1" InterestPosition="(5.35; 0.856; 0.922)" Position="(4.907; 1.956; -0.497)" />
-			<CameraPos FOV="32.0" Name="addon_1" InterestPosition="(4.019; 1.692; -0.304)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(9.861; 2.363; 5.417)" />
-			<CameraPos FOV="32.0" Name="addon_2" InterestPosition="(3.917; 2.341; -1.149)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(9.628; 4.331; 1.437)" />
-			<CameraPos FOV="32.0" Interior="true" Name="mirror_mount" InterestPosition="(8.128; 0.962; 1.539)" Position="(4.578; 1.827; -0.238)" />
-			<CameraPos FOV="32.0" Name="side_r" InterestPosition="(7.126; 1.143; -0.167)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(10.936; 2.033; 2.748)" />
-			<CameraPos FOV="32.0" Name="hood_ornament" InterestPosition="(3.103; 0.502; 1.197)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(8.998; 1.656; -1.195)" />
-			<CameraPos FOV="32.0" Interior="true" Name="sticker" InterestPosition="(5.094; 0.926; 1.129)" Position="(4.953; 1.956; -0.29)" />
-			<CameraPos FOV="32.0" Name="glass_sticker" InterestPosition="(6.106; 1.303; -0.684)" Position="(10.515; 2.648; 1.649)" />
-			<CameraPos FOV="32.0" Name="door_r_sticker" InterestPosition="(6.662; 0.911; 0.614)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(3.88; 1.505; 3.658)" />
-			<CameraPos FOV="32.0" Name="roof" InterestPosition="(6.833; 1.898; -0.074)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(10.798; 3.557; 2.637)" />
-			<CameraPos FOV="32.0" Name="capote_sticker" InterestPosition="(5.823; 0.87; -0.407)" Position="(10.927; 3.805; -1.296)" />
-			<CameraPos FOV="32.0" Name="hoods" InterestPosition="(5.17; 0.711; -0.037)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(11.913; 1.434; -2.143)" />
-			<CameraPos FOV="32.0" Name="side_l" InterestPosition="(6.409; 1.497; -0.536)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-0.335; 4.157; 4.161)" />
-			<CameraPos FOV="32.0" Interior="true" Name="bubble_head" InterestPosition="(8.128; 0.786; 2.689)" Position="(4.994; 1.712; -0.165)" />
-			<CameraPos FOV="32.0" Name="wheels" InterestPosition="(3.885; 0.419; 1.796)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(8.593; 0.755; -3.212)" />
-			<CameraPos FOV="32.0" Name="default" InterestPosition="(3.576; 0.624; 0.792)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(12.482; 1.848; -3.093)" />
-			<CameraPos FOV="32.0" Name="rear" InterestPosition="(5.929; 0.792; 0.099)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-0.495; 1.605; 2.687)" />
-			<CameraPos FOV="32.0" Name="door_l_sticker" InterestPosition="(5.129; 0.991; -0.206)" Position="(3.570; 1.413; -3.453)" />
+			<CameraPos FOV="32.0" InterestPosition="(4.581;0.1992;-0.4071)" Name="roof_sticker" Position="(9.599;5.9558;-1.2961)" />
+			<CameraPos FOV="32.0" InterestPosition="(5.3503;0.8562;0.9219)" Interior="true" Name="sticker_1" Position="(4.9068;1.9559;-0.4972)" />
+			<CameraPos FOV="32.0" InterestPosition="(4.0195;1.6924;-0.3039)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Name="addon_1" Position="(9.8613;2.3627;5.4165)" />
+			<CameraPos FOV="32.0" InterestPosition="(3.9168;2.3406;-1.1494)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Name="addon_2" Position="(9.6278;4.3308;1.4367)" />
+			<CameraPos FOV="32.0" InterestPosition="(8.128;0.9619;1.5392)" Interior="true" Name="mirror_mount" Position="(4.5785;1.8266;-0.2378)" />
+			<CameraPos FOV="32.0" InterestPosition="(7.1257;1.1426;-0.1672)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Name="side_r" Position="(10.9365;2.033;2.7476)" />
+			<CameraPos FOV="32.0" InterestPosition="(3.1035;0.5016;1.1968)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Name="hood_ornament" Position="(8.9979;1.6562;-1.1952)" />
+			<CameraPos FOV="32.0" InterestPosition="(5.0939;0.926;1.1292)" Interior="true" Name="sticker" Position="(4.9534;1.9559;-0.2898)" />
+			<CameraPos FOV="32.0" InterestPosition="(6.1056;1.3034;-0.684)" Name="glass_sticker" Position="(10.515;2.6477;1.6487)" />
+			<CameraPos FOV="32.0" InterestPosition="(6.6624;0.9107;0.6143)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Name="door_r_sticker" Position="(3.8799;1.5048;3.6583)" />
+			<CameraPos FOV="32.0" InterestPosition="(6.8329;1.8979;-0.074)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Name="roof" Position="(10.798;3.557;2.6366)" />
+			<CameraPos FOV="32.0" InterestPosition="(5.8229;0.8703;-0.4071)" Name="capote_sticker" Position="(10.9271;3.805;-1.2961)" />
+			<CameraPos FOV="32.0" InterestPosition="(5.1701;0.7106;-0.0374)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Name="hoods" Position="(11.9129;1.4341;-2.1432)" />
+			<CameraPos FOV="32.0" InterestPosition="(6.4091;1.4974;-0.536)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Name="side_l" Position="(-0.3354;4.1567;4.1608)" />
+			<CameraPos FOV="32.0" InterestPosition="(8.128;0.786;2.6892)" Interior="true" Name="bubble_head" Position="(4.9937;1.7121;-0.1654)" />
+			<CameraPos FOV="32.0" InterestPosition="(3.8847;0.4191;1.7965)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Name="wheels" Position="(8.5928;0.7552;-3.2119)" />
+			<CameraPos FOV="32.0" InterestPosition="(5.8715;1.0183;-0.5759)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Name="default" Position="(12.4819;1.8482;-3.0931)" />
+			<CameraPos FOV="32.0" InterestPosition="(5.9294;0.7922;0.099)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Name="rear" Position="(-0.4953;1.6047;2.6866)" />
+			<CameraPos FOV="32.0" InterestPosition="(5.1287;0.9909;-0.2061)" Name="door_l_sticker" Position="(3.5705;1.413;-3.4531)" />
 		</CustomizationCameras>
 		<CraneSocket Pos="(1.971; 0.485; -0.354)" />
 		<CraneSocket Pos="(1.971; 0.485; 0.354)" />

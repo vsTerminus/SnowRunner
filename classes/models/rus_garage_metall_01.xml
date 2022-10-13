@@ -12,4 +12,5 @@
 		Size="(9.0; 7.0)" 
 		Texture="occlusion_rus_garage_metall_01.tga"
 	/>
+	<Landmark Mesh="landmarks/rus_garage_metall_01_lmk"/>
 </ModelBrand>

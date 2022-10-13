@@ -193,9 +193,6 @@
 				>
 					<Motor Damping="24000" Spring="240000" Type="Spring" />
 				</Constraint>
-				<Body Mass="500" ModelFrame="BoneDriverStopper_cdt" Collisions="All">
-					<Constraint Type="Fixed" />
-				</Body>
 				<Body _template="Sunshield" ModelFrame="BoneSunshieldRight_cdt" />
 				<Body _template="Sunshield" ModelFrame="BoneSunshieldLeft_cdt" />
 				<Body _template="SideMirror" ModelFrame="BoneMirrorRight_cdt" />
@@ -250,7 +247,7 @@
 	<Landmark Mesh="landmarks/tatra_805_lmk" MinScale="1.8" MaxScale="3.8" />
 	<HeadLight _template="Default" Pos="(2.577; 0.917; 0)" ParentFrame="BoneCabin_cdt" />
 	<GameData
-		Country="RU"
+		Country="RU,CAS"
 		ExcludeAddons="trailer_log_pole"
 		Price="22500"
 		UnlockByExploration="false"
@@ -272,19 +269,19 @@
 			UiName="UI_VEHICLE_TATRA_805_NAME"
 		/>
 		<CustomizationCameras>
-			<CameraPos FOV="32.0" InterestPosition="(6.9538;1.5709;-0.8489)" Name="glass_sticker" Position="(11.5262;2.3107;1.4654)" />
-			<CameraPos FOV="32.0" InterestPosition="(8.4388;1.5315;0.5438)" Interior="true" Name="mirror_mount" Position="(5.8988;2.0332;-0.5645)" />
-			<CameraPos FOV="32.0" InterestPosition="(10.2144;0.8661;0.7695)" Interior="true" Name="sticker" Position="(6.1937;1.8725;-0.2421)" />
-			<CameraPos FOV="32.0" InterestPosition="(9.1929;0.9379;-2.2663)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Name="door_r_sticker" Position="(4.4593;1.672;4.4369)" />
-			<CameraPos FOV="32.0" InterestPosition="(7.0133;1.7039;-1.2022)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Name="roof" Position="(11.3168;3.473;-1.5716)" />
-			<CameraPos FOV="32.0" InterestPosition="(8.8831;2.1637;0.494)" Interior="true" Name="sticker_1" Position="(5.9237;1.8743;-0.3663)" />
-			<CameraPos FOV="32.0" InterestPosition="(5.4274;0.9922;-0.2182)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Name="hoods" Position="(11.6419;1.6423;-1.777)" />
-			<CameraPos FOV="32.0" InterestPosition="(9.0628;0.0797;1.9149)" Interior="true" Name="bubble_head" Position="(6.0097;1.9194;-0.4154)" />
-			<CameraPos FOV="32.0" InterestPosition="(3.9904;0.6001;0.4294)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Name="wheels" Position="(9.2453;0.4371;-3.5883)" />
-			<CameraPos FOV="32.0" InterestPosition="(6.4467;1.1937;0.1816)" Name="door_l_sticker" Position="(4.3787;1.818;-4.5568)" />
-			<CameraPos FOV="32.0" InterestPosition="(4.9204;0.8409;0.2627)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Name="default" Position="(13.3648;1.8436;-4.0436)" />
-			<CameraPos FOV="32.0" InterestPosition="(8.0881;0.6856;2.0109)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Name="rear" Position="(1.8789;2.8757;-3.8681)" />
-			<CameraPos FOV="32.0" InterestPosition="(4.7291;0.4987;-0.6735)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Name="addon_1" Position="(-4.754;3.5563;5.4775)" />
+			<CameraPos FOV="32.0" Name="glass_sticker" InterestPosition="(6.954; 1.571; -0.849)" Position="(11.526; 2.311; 1.465)" />
+			<CameraPos FOV="32.0" Interior="true" Name="mirror_mount" InterestPosition="(8.439; 1.531; 0.544)" Position="(5.899; 2.033; -0.564)" />
+			<CameraPos FOV="32.0" Interior="true" Name="sticker" InterestPosition="(10.214; 0.866; 0.77)" Position="(6.194; 1.872; -0.242)" />
+			<CameraPos FOV="32.0" Name="door_r_sticker" InterestPosition="(9.193; 0.938; -2.266)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(4.459; 1.672; 4.437)" />
+			<CameraPos FOV="32.0" Name="roof" InterestPosition="(7.013; 1.704; -1.202)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(11.317; 3.473; -1.572)" />
+			<CameraPos FOV="32.0" Interior="true" Name="sticker_1" InterestPosition="(8.883; 2.164; 0.494)" Position="(5.924; 1.874; -0.366)" />
+			<CameraPos FOV="32.0" Name="hoods" InterestPosition="(5.427; 0.992; -0.218)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(11.642; 1.642; -1.777)" />
+			<CameraPos FOV="32.0" Interior="true" Name="bubble_head" InterestPosition="(9.063; 0.08; 1.915)" Position="(6.01; 1.919; -0.415)" />
+			<CameraPos FOV="32.0" Name="wheels" InterestPosition="(3.99; 0.6; 0.429)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(9.245; 0.437; -3.588)" />
+			<CameraPos FOV="32.0" Name="door_l_sticker" InterestPosition="(6.447; 1.194; 0.182)" Position="(4.379; 1.818; -4.557)" />
+			<CameraPos FOV="32.0" Name="default" InterestPosition="(4.92; 0.841; 0.263)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(13.365; 1.844; -4.044)" />
+			<CameraPos FOV="32.0" Name="rear" InterestPosition="(8.088; 0.686; 2.01)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(1.879; 2.876; -3.868)" />
+			<CameraPos FOV="32.0" Name="addon_1" InterestPosition="(4.729; 0.499; -0.674)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-4.754; 3.556; 5.477)" />
 		</CustomizationCameras>
 		<CraneSocket Pos="(2.262; 0.758; -0.415)" ParentFrame="BoneCabin_cdt" />
 		<CraneSocket Pos="(2.262; 0.758; 0.415)" ParentFrame="BoneCabin_cdt" />

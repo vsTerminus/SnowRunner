@@ -3,7 +3,7 @@
 <TruckAddon>
 	<PhysicsModel Mesh="trucks/western_star_57x_tuning/western_star_57x_horn_2" />
 	<GameData
-		Price="600"
+		Price="800"
 		UnlockByExploration="false"
 		UnlockByRank="1"
 	>

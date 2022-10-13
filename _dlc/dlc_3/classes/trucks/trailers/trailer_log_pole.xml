@@ -6,9 +6,9 @@
 			SuspensionHeight="0.1"
 			SuspensionStrength="0.1"
 			Torque="default"
-			SuspensionMin="-0.1"
+			SuspensionMin="-0.02"
 			ParentFrame="BoneSuspension_cdt"
-		/>
+		/>	
 	</Wheel>
 </_templates>
 <Truck Type="Trailer">
@@ -72,7 +72,7 @@
 						MinLimit="-15"
 						MaxLimit="15"
 					>
-						<Motor Damping="500" Spring="1000" Type="Spring" />
+						<Motor Damping="500" Spring="100" Type="Spring" />
 					</Constraint>
 				</Body>
 			</Body>

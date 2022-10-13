@@ -14,7 +14,7 @@
 		Price="5700"
 		UnlockByExploration="false"
 		UnlockByRank="12"
-		ExcludedCargoTypes = "CargoBags2, CargoCellulose, CargoRailway, CargoForcklift, CargoForkliftCaravanContainer2, CargoSequoia, CargoLogsShort, CargoLogsMedium, CargoLogsLong, CargoBarrels, CargoMetalPlanks, CargoWoodenPlanks, CargoWoodenPlanks2, CargoWoodenPlanks4, CargoMetalRoll, CargoWing1, CargoWing2, CargoServiceSpareParts, CargoPipesMedium, CargoBags, CargoServiceSparePartsSpecial, CargoPlane, CargoCrateLarge, CargoRadioactive, CargoContainerLarge, CargoConcreteSlab, CargoContainerLargeDrilling, CargoBigDrill, CargoRocks, CargoBA20, CargoBarrelsOil, CargoVehiclesSpareParts, CargoPipesSmall, CargoBA20Add, CargoConcreteBlocks, CargoPipeLarge, CargoBricks, CargoRocketPart2, CargoRocketPart1, CargoRocketEngine, CargoBoiler, CargoIronRoad, CargoSolarPanel"
+		IncludedCargoTypes="CargoContainerSmall, CargoContainerSmallSpecial"
 	>
 		<UiDesc
 			UiDesc="UI_ADDON_CAT_745C_CONTAINER_CARRIER_DESC"

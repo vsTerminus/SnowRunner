@@ -173,14 +173,14 @@
 		<Body
 			CenterOfMassOffset="(-0.2; 0; -0.2)"
 			ImpactType="Truck"
-			Mass="1500"
+			Mass="2000"
 			ModelFrame="BoneChassis_cdt"
 			NetSync="pv"
 		>
 			<Body
 				CenterOfMassOffset="(-0.5; 0; 0)"
 				ImpactType="Truck"
-				Mass="500"
+				Mass="1500"
 				ModelFrame="BoneCabin_cdt"
 				NetSync="pv"
 			>
@@ -188,18 +188,25 @@
 					AxisLocal="(1; 0; 0)"
 					PivotOffset="(0; 0; 0)"
 					Type="Hinge"
-					MinLimit="-22"
-					MaxLimit="22"
+					MinLimit="-10"
+					MaxLimit="10"
 				>
 					<Motor Damping="15000" Spring="300000" Type="Spring" />
 				</Constraint>
 				<Body
-					CenterOfMassOffset="(0.2; 0.4; 0)"
+					CenterOfMassOffset="(0; 0; 0)"
 					ImpactType="Truck"
-					Mass="2500"
+					Mass="1000"
 					ModelFrame="BoneCabinDamper_cdt"
 				>
-					<Constraint Type="Fixed" />
+					<Constraint
+						AxisLocal="(1; 0; 0)"
+						Type="Hinge"
+						MinLimit="-8"
+						MaxLimit="8"
+					>
+						<Motor Damping="12000" Spring="48000" Type="Spring" />
+					</Constraint>
 					<Body Collisions="None" Mass="1" ModelFrame="BoneCord_cdt">
 						<Constraint
 							AxisLocal="(0; 0; 1)"
@@ -255,7 +262,7 @@
 	</ModelAttachments>
 	<Landmark Mesh="landmarks/step_3364_crocodile_lmk" MinScale="1.8" MaxScale="3.8" />
 	<HeadLight _template="Default" Pos="(3.2; 0.8; 0)" />
-	<GameData Country="RU" Price="1" UnlockByRank="1">
+	<GameData Country="RU,CAS" Price="1" UnlockByRank="1">
 		<WinchSocket Pos="(2.881; 0.925; -0.438)" ParentFrame="BoneCabin_cdt" />
 		<WinchSocket Pos="(2.881; 0.925; 0.438)" ParentFrame="BoneCabin_cdt" />
 		<WinchSocket Pos="(-1.21; 0.748; -0.426)" />

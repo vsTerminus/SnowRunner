@@ -10,4 +10,5 @@
 		Size="(9.0; 7.0)" 
 		Texture="occlusion_rus_rabbit_hut_02.tga"
 	/>
+	<Landmark Mesh="landmarks/rus_rabbit_hut_02_lmk" />
 </ModelBrand>
