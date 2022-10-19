@@ -75,26 +75,28 @@
 			ParentFrame="BoneFront_cdt"
 		>
 			<Reverse		_inheritRemove="true" />
-			<EngineTrans	Sound="trucks/azov_4220_antarctic/azov_4220_antarctic_turbo" />
-			<Reverse		Sound="trucks/cat_ct680/cat_ct680_back_beeper" />
-			<BrakeRelease	Sound="trucks/cat_ct680/cat_ct680_brake_release" />
-			<BrakesSqueal	Sound="trucks/azov_4220_antarctic/azov_4220_antarctic_brakes_squeal" />
-			<Handbrake		Sound="trucks/chevrolet_kodiakc70/chevrolet_kodiakc70_handbrake_on" />
-			<HandbrakeOff	Sound="trucks/chevrolet_kodiakc70/chevrolet_kodiakc70_handbrake_off" />
-			<Honk			Sound="trucks/azov_4220_antarctic/azov_4220_antarctic_honk" />
-			<EngineRev		Sound="trucks/azov_4220_antarctic/azov_4220_antarctic_rev" />
-			<EngineAccel	Sound="trucks/azov_4220_antarctic/azov_4220_antarctic_acc" />
-			<EngineStart	Sound="trucks/azov_4220_antarctic/azov_4220_antarctic_start" />
-			<EngineStop		Sound="trucks/azov_4220_antarctic/azov_4220_antarctic_stop" />
-			<EngineIdle		Sound="trucks/azov_4220_antarctic/azov_4220_antarctic_idle" />
-			<EngineIdle_2d	Sound="trucks/azov_4220_antarctic/azov_4220_antarctic_idle_2d"	IsSound2D="true" />
-			<EngineLow		Sound="trucks/azov_4220_antarctic/azov_4220_antarctic_low" />
-			<EngineLow_2d	Sound="trucks/azov_4220_antarctic/azov_4220_antarctic_low_2d"	IsSound2D="true" />
-			<EngineHigh		Sound="trucks/azov_4220_antarctic/azov_4220_antarctic_high" />
-			<EngineHigh_2d	Sound="trucks/azov_4220_antarctic/azov_4220_antarctic_high_2d"	IsSound2D="true" />
-			<EngineHeavy	Sound="trucks/azov_4220_antarctic/azov_4220_antarctic_heavy" />
-			<EngineHeavy_2d	Sound="trucks/azov_4220_antarctic/azov_4220_antarctic_heavy_2d"	IsSound2D="true" />
-			<AbruptStop		Sound="trucks/common/truck_swing_big_rnd_set/truck_swing_big_rnd" />
+			<EngineTrans	Sound="trucks/kirovets_k7m/kirovets_k7m_turbo" />
+			<Reverse		Sound="trucks/kirovets_k7m/kirovets_k7m_back_beeper" />
+			<BrakePull		Sound="trucks/kirovets_k7m/kirovets_k7m_brake_pull" />
+			<BrakeRelease	Sound="trucks/common/truck_brake_release_alt2_rnd_set/truck_brake_release_alt2_rnd" />
+			<BrakesSqueal	Sound="trucks/kirovets_k7m/kirovets_k7m_brake_squeal" />
+			<Handbrake		Sound="trucks/kirovets_k7m/kirovets_k7m_handbrake_on" />
+			<HandbrakeOff	Sound="trucks/kirovets_k7m/kirovets_k7m_handbrake_off" />
+			<Honk			Sound="trucks/kirovets_k7m/kirovets_k7m_honk" />
+			<EngineRev		Sound="trucks/kirovets_k7m/kirovets_k7m_rev" />
+			<EngineAccel	Sound="trucks/kirovets_k7m/kirovets_k7m_acc" />
+			<EngineStart	Sound="trucks/kirovets_k7m/kirovets_k7m_start" />
+			<EngineStop		Sound="trucks/kirovets_k7m/kirovets_k7m_stop" />
+			<EngineIdle		Sound="trucks/kirovets_k7m/kirovets_k7m_idle" />
+			<EngineIdle_2d	Sound="trucks/kirovets_k7m/kirovets_k7m_idle_2d"	IsSound2D="true" />
+			<EngineLow		Sound="trucks/kirovets_k7m/kirovets_k7m_low" />
+			<EngineLow_2d	Sound="trucks/kirovets_k7m/kirovets_k7m_low_2d"	IsSound2D="true" />
+			<EngineHigh		Sound="trucks/kirovets_k7m/kirovets_k7m_high" />
+			<EngineHigh_2d	Sound="trucks/kirovets_k7m/kirovets_k7m_high_2d"	IsSound2D="true" />
+			<EngineHeavy	Sound="trucks/kirovets_k7m/kirovets_k7m_heavy" />
+			<EngineHeavy_2d	Sound="trucks/kirovets_k7m/kirovets_k7m_heavy_2d"	IsSound2D="true" />
+			<ChassisStress	Sound="trucks/common/truck_stress_rnd_set/truck_stress_rnd" />			
+			<AbruptStop		Sound="trucks/common/truck_swing_big_old_rnd_set/truck_swing_big_old_rnd" />
 		</Sounds>
 		<Shakers>
 			<Shaker

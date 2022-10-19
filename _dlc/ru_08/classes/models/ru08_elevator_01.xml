@@ -1,9 +1,9 @@
 <ModelBrand
-	DayShadowOffsetMult="3.0"
+	DayShadowOffsetMult="10.0"
 	NightLightingShadowsAllowCap="true"
 >
 	<PhysicsModel>
-		<Bodyx
+		<Body
 			Collisions="Dynamic"
 		/>
 	</PhysicsModel>

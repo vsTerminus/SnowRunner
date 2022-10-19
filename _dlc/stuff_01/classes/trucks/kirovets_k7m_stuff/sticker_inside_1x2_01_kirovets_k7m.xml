@@ -12,7 +12,7 @@
 			UiDesc="UI_STUFF_STICKER_DESC"
 			UiIcon30x30=""
 			UiIcon40x40=""
-			UiName="UI_STUFF_STICKER_INSIDE_1X1_NAME"
+			UiName="UI_STUFF_STICKER_INSIDE_1X2_NAME"
 		/>
 		<InstallSocket Type="KirovetsK7MSticker_1x2_01" />
 	</GameData>

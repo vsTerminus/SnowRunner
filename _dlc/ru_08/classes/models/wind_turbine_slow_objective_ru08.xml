@@ -1,4 +1,5 @@
 <ModelBrand
+	DayShadowOffsetMult = "2.0"
 	DynamicModel="true"
 	NightLightingShadowsAllowCap="true"
 	

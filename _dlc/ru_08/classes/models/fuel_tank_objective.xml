@@ -16,5 +16,6 @@
 			<Body Collisions="Dynamic" ModelFrame="stage_1" />
 		</Body>
 	</PhysicsModel>
+	<Landmark Mesh="landmarks/fuel_tank_objective_lmk" />
 	<Occlusion Size="(12.5; 25)" Texture="occlusion_fuel_tank.tga" />
 </ModelBrand>

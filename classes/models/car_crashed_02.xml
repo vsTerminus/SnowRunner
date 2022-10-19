@@ -6,4 +6,5 @@
 	<PhysicsModel>
 		<Body Collisions="Dynamic" />
 	</PhysicsModel>
+	<Landmark Mesh="landmarks/car_crashed_02_lmk" />
 </ModelBrand>
