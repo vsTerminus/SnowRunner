@@ -116,6 +116,9 @@
 		<CompatibleWheels OffsetZ="0.04" Scale="0.39" Type="wheels_scout1" />
 		<CompatibleWheels OffsetZ="0.04" Scale="0.39" Type="wheels_scout2" />
 		<CompatibleWheels OffsetZ="0.04" Scale="0.41" Type="wheels_scout2" />
+		<CompatibleWheels OffsetZ="-0.02" RearOffsetZ="0.01" Scale="0.44" Type="wheels_land_rover_defender_110" />
+		<CompatibleWheels OffsetZ="-0.02" RearOffsetZ="0.01" Scale="0.47" Type="wheels_land_rover_defender_110" />
+		
 		<Camera Center="(-1.2; 0; 0)" RadiusMultiplier="0.8">
 			<Cockpit
 				_template="Default"
