@@ -51,8 +51,8 @@
 		DamageCapacity="200"
 		Name="chevrolet_kodiakC70_suspension_ultimate"
 	>
-		<Suspension Damping="0.5" Height="0.25" Strength="0.05" WheelType="front" BrokenSuspensionMax="0.1" SuspensionMin="-0.3" />
-		<Suspension Damping="0.5" Height="0.25" Strength="0.08" WheelType="rear" BrokenSuspensionMax="0.1" SuspensionMin="-0.3" />
+		<Suspension Damping="0.5" Height="0.30" Strength="0.05" WheelType="front" BrokenSuspensionMax="0.1" SuspensionMin="-0.3" />
+		<Suspension Damping="0.5" Height="0.30" Strength="0.08" WheelType="rear" BrokenSuspensionMax="0.1" SuspensionMin="-0.3" />
 		<GameData
 			Price="9001"
 			UnlockByExploration="false"

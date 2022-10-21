@@ -152,15 +152,15 @@
 			<DamageArea Type="Engine" Min="(2.4; 0.95; -0.6)" Max="(3.45; 2; 0.6)" ParentFrame="BoneCabin_cdt" />
 			<DamageArea Type="FuelTank" Min="(0.5; 0.45; -1.2)" Max="(2.090; 1.07; 1.2)" ParentFrame="BoneChassis_cdt" />
 		</Damage>
-		<CompatibleWheels OffsetZ="0.08" Scale="0.50" Type="wheels_medium_double" />
-		<CompatibleWheels OffsetZ="0.09" Scale="0.55" Type="wheels_medium_double" />
-		<CompatibleWheels OffsetZ="0.10" Scale="0.60" Type="wheels_medium_double" />
-		<!-- <CompatibleWheels OffsetZ="0.10" Scale="0.60" Type="wheels_heavy_single" /> -->
-		<CompatibleWheels OffsetZ="0.08" Scale="0.50" Type="wheels_heavy_double1" />
-		<CompatibleWheels OffsetZ="0.09" Scale="0.55" Type="wheels_heavy_double1" />
-		<CompatibleWheels OffsetZ="0.10" Scale="0.60" Type="wheels_heavy_double1" />
-		<!-- <CompatibleWheels OffsetZ="0.10" Scale="0.60" Type="wheels_heavy_double2" /> -->
-		<!-- <CompatibleWheels RearOffsetZ="0.05" Scale="0.60" Type="wheels_superheavy_single" /> -->
+		<CompatibleWheels OffsetZ="0.06" Scale="0.50" Type="wheels_medium_double" />
+		<CompatibleWheels OffsetZ="0.06" Scale="0.55" Type="wheels_medium_double" />
+		<CompatibleWheels OffsetZ="0.07" Scale="0.60" Type="wheels_medium_double" />
+		<CompatibleWheels OffsetZ="0.06" Scale="0.50" Type="wheels_heavy_double1" />
+		<CompatibleWheels OffsetZ="0.06" Scale="0.55" Type="wheels_heavy_double1" />
+		<CompatibleWheels OffsetZ="0.07" Scale="0.60" Type="wheels_heavy_double1" />
+		<CompatibleWheels RearOffsetZ="-0.035" OffsetZ="-0.01" Scale="0.60" Type="wheels_heavy_single" />
+		<CompatibleWheels RearOffsetZ="-0.035" OffsetZ="-0.01" Scale="0.65" Type="wheels_heavy_single" />
+		
 		<Camera Center="(-1.7; 0; 0)" ParentFrame="BoneCabin_cdt">
 			<Cockpit
 				_template="Default"
@@ -366,40 +366,80 @@
 			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-2.2; 1.30; 0)" />
 			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-2.0; 1.468; 0)" />
 			<Socket Names="Trailer" Offset="(-4.739; 0.866; 0)" />
+			<Socket Names="ScautTrailer" Offset="(-4.739; 0.866; 0)" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="MetalDetector" NamesBlock="BunkLog, BigCraneUs, BigCraneRu, ChevroletKodiakc70SpareWheel, LargeSemitrailerOiltank" Offset="(-0.203; -0.053; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="FordF750Trunk" 
+					NamesBlock="FrameAddonTank, BigCraneUs, FrameAddonKung, BunkLog, FrameAddonLogShort, Cat745CLogBunk" 
+					Offset="(0.875; 0.325; 0)" ParentFrame="BoneChassis_cdt">
+					   <AddonsShift Offset="(-0.100; 0; 0)" Types="ChevroletKodiakC70CabinProtector" />
+					   <AddonsShift Offset="(-0.600; 0; 0)" Types="MetalDetector" />
+					   <AddonsShift Offset="(-0.015; 0; 0)" Types="FleetstarF2070aCabinProtector" />
+			</Socket>
+		</AddonSockets>
+		<AddonSockets>
 			<Socket
 				Names="MinicraneUS"
-				NamesBlock="BunkLog, FrameAddonTank"
+				NamesBlock="BunkLog, Cat745CLogBunk, FrameAddonTank"
 				Offset="(0.52; 1; 0)"
 				ParentFrame="BoneChassis_cdt"
 			>
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.04)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.04)" />
 				<AddonsShift Offset="(-0.3; 0; 0)" Types="ChevroletKodiakC70CabinProtector" />
+				<AddonsShift Offset="(-0.88; 0; 0)" Types="FordF750Trunk" />
 			</Socket>
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="BunkLog" Offset="(-4.642; 1.002; 0)" />
-			<Socket Names="FrameAddonLogShort" NamesBlock="MinicraneUS, MetalDetector, ChevroletKodiakC70CabinProtector" Offset="(-1.411; 1; 0)" />
+			<Socket Names="FordF750Pickup" 
+					NamesBlock="BigCraneUs, FrameAddonKung, FrameAddonSeismicVibrator, MinicraneRU, BunkLog, Cat745CLogBunk, FrameAddonLogShort, SaddleLow1, SaddleHigh, MetalDetector" 
+					Offset="(-0.100; 0.175; 0)" ParentFrame="BoneChassis_cdt" />			
+			<Socket Names="Loadstar1700Pickup" 
+					NamesBlock="BigCraneUs, FrameAddonKung, FrameAddonSeismicVibrator, MinicraneRU, BunkLog, Cat745CLogBunk, FrameAddonLogShort, SaddleLow1, SaddleHigh, MetalDetector" 
+					Offset="(-0.350; 0.210; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="Loadstar1700ServiceBody" 
+					NamesBlock="BigCraneUs, FrameAddonKung, FrameAddonSeismicVibrator, MinicraneRU, BunkLog, Cat745CLogBunk, FrameAddonLogShort, SaddleLow1, SaddleHigh, MetalDetector" 
+					Offset="(-0.350; 0.300; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="FrameAddonFlatbed3" 
+					NamesBlock="BigCraneUs, FrameAddonKung, MetalDetector, FrameAddonSeismicVibrator, FordF750Trunk, MinicraneRU, LogLift, MinicraneUS, BunkLog, Cat745CLogBunk" 
+					Offset="(-2.680; 1.000; 0)" ParentFrame="BoneChassis_cdt">			
+					<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.05; 0)" />
+					<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.05; 0)" />
+					<AddonsShift Offset="(-0.020; 0; 0)" Types="FleetstarF2070aCabinProtector" />
+			</Socket>
+			<Socket Names="Cat745CLogBunk" 
+					NamesBlock="BunkLog, FrameAddonLogShort" 
+					Offset="(1.000; -0.625; 0)" ParentFrame="BoneBackRot_cdt"> 
+			</Socket>
+			<Socket Names="BunkLog" Offset="(-4.642; 1.002; 0)" NamesBlock="Cat745CLogBunk" />
+			<Socket Names="FrameAddonLogShort" NamesBlock="MinicraneUS, FordF750Trunk, MetalDetector, ChevroletKodiakC70CabinProtector" Offset="(-1.411; 1; 0)" />
 			<!-- <Socket Names="SaddleLow" Offset="(-2.454; 1; 0)" /> -->
 			<Socket Names="SaddleLow" Offset="(-2.2; 1; 0)" />
 			<Socket Names="SaddleHigh" Offset="(-2.0; 1; 0)" />
 			<Socket Names="FrameAddon" Offset="(-1.625; 1.050; 0)" ParentFrame="BoneChassis_cdt">
-				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.05; 0)" />
-				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.05; 0)" />
-				<AddonsShift Offset="(-0.75; 0; 0)" Types="MinicraneUS" />
+					<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.05; 0)" />
+					<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.05; 0)" />
+					<AddonsShift Offset="(-0.75; 0; 0)" Types="MinicraneUS" />
+					<AddonsShift Offset="(-0.85; 0; 0)" Types="FordF750Trunk" />
 			</Socket>
-			<Socket Names="FrameAddonTow" Offset="(-2.3; 0.9; 0)" NamesBlock="MinicraneUS, MetalDetector, Trailer" ParentFrame="BoneChassis_cdt">
+			<Socket Names="FrameAddonFlatbed1" 
+					NamesBlock="FrameAddonSeismicVibrator, BigCraneUs, FrameAddonKung, MetalDetector, ActaeonWheelAddonCrane, Cat745CLogBunk" 
+					Offset="(-.550; 1.025; 0)" ParentFrame="BoneChassis_cdt">
+					<AddonsShift Offset="(-0.025; 0; 0)" Types="ChevroletKodiakC70CabinProtector" />
+					<AddonsShift Offset="(-0.95; 0; 0)" Types="MinicraneUS" />
+					<AddonsShift Offset="(-0.85; 0; 0)" Types="FordF750Trunk" />
+					<AddonsShift Offset="(-1.130; 0; 0)" Types="LogLift" />
+			</Socket>
+			<Socket Names="FrameAddonTow" Offset="(-2.3; 0.9; 0)" NamesBlock="MinicraneUS, FordF750Trunk, MetalDetector, Trailer" ParentFrame="BoneChassis_cdt">
 			</Socket>
 			<Socket Names="FrameAddonKung" NamesBlock="ChevroletKodiakC70CabinProtector" Offset="(-1.5; 1.08; 0)" ParentFrame="BoneChassis_cdt">
-				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.12)" />
-				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.12)" />
-				<AddonsShift Offset="(-1; 0; 0)" Types="MinicraneUS" />
+					<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.12)" />
+					<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.12)" />
+					<AddonsShift Offset="(-1; 0; 0)" Types="MinicraneUS" />
+					<AddonsShift Offset="(-1; 0; 0)" Types="FordF750Trunk" />
 			</Socket>
 			<Socket Names="FrameAddonTank" NamesBlock="ChevroletKodiakC70CabinProtector" Offset="(-2.335; 1; 0)" ParentFrame="BoneChassis_cdt" />
-			<Socket Names="BigCraneUs" NamesBlock="MinicraneUS, ChevroletKodiakC70CabinProtector" Offset="(-2; 1.01; 0)"/>
+			<Socket Names="BigCraneUs" NamesBlock="MinicraneUS, FordF750Trunk, ChevroletKodiakC70CabinProtector" Offset="(-2; 1.01; 0)"/>
 			<Socket Names="LogLift" Offset="(0.339; 1; 0)" NamesBlock="ChevroletKodiakc70SpareWheel, MetalDetector, MinicraneUS"/>
 			<!-- <Socket Names="BigCraneRu" NamesBlock="Minicrane, Semitrailer, LargeSemitrailer, ChevroletKodiakC70CabinProtector" Offset="(-2.15; 1.01; 0)" /> -->
 		</AddonSockets>
