@@ -1979,6 +1979,14 @@
 			MaterialOverrideName = "skin_01"
 			IsSpecialSkin = "true"
 		/>
+		<CustomizationPreset
+			Id = "33"
+			TintColor1 = "g(45; 45; 45)"
+			TintColor2 = "g(45; 45; 45)"
+			TintColor3 = "g(45; 45; 45)"
+			MaterialOverrideName = "skin_02"
+			IsSpecialSkin = "true"
+		/>
 	</Truck>
 	<Truck Name = "derry_longhorn_4520">
 			<CustomizationPreset
@@ -2716,6 +2724,14 @@
 			TintColor3 = "g(192; 115; 0)"
 			MaterialOverrideName = "skin_00"
 		/>
+			<CustomizationPreset
+			Id = "32"
+			TintColor1 = "g(45; 45; 45)"
+			TintColor2 = "g(45; 45; 45)"
+			TintColor3 = "g(45; 45; 45)"
+			MaterialOverrideName = "skin_01"
+			IsSpecialSkin = "true"
+		/>
 	</Truck>
 	<Truck Name = "freightliner_m916a1">
 		<CustomizationPreset
@@ -2958,6 +2974,14 @@
 			TintColor2 = "g(179; 174; 169)"
 			TintColor3 = "g(45; 45; 45)"
 			MaterialOverrideName = "skin_00"
+		/>
+			<CustomizationPreset
+			Id = "32"
+			TintColor1 = "g(45; 45; 45)"
+			TintColor2 = "g(45; 45; 45)"
+			TintColor3 = "g(45; 45; 45)"
+			MaterialOverrideName = "skin_01"
+			IsSpecialSkin = "true"
 		/>
 	</Truck>
 	<Truck Name = "international_fleetstar_f2070a">
@@ -13606,6 +13630,14 @@
 			TintColor2 = "g(45; 45; 45)"
 			TintColor3 = "g(190; 190; 190)"
 			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "32"
+			TintColor1 = "g(45; 45; 45)"
+			TintColor2 = "g(45; 45; 45)"
+			TintColor3 = "g(45; 45; 45)"
+			MaterialOverrideName = "skin_01"
+			IsSpecialSkin = "true"
 		/>
 	</Truck>
 	<Truck Name = "tatra_t813">
