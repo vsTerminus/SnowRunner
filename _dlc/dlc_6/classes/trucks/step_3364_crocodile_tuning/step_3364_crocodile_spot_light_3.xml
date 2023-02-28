@@ -33,10 +33,10 @@
 		UnlockByRank="1"
 	>
 		<UiDesc
-			UiDesc="UI_TUNING_SIDE_CABIN_FOGLIGHTS_NAME"
+			UiName="UI_TUNING_SIDE_CABIN_FOGLIGHTS_NAME"
 			UiIcon30x30=""
 			UiIcon40x40=""
-			UiName="UI_TUNING_SIDE_CABIN_FOGLIGHTS_DESC"
+			UiDesc="UI_TUNING_SIDE_CABIN_FOGLIGHTS_DESC"
 		/>
 		<InstallSocket Type="Step3364CrocodileSpotLight2" />
 	</GameData>

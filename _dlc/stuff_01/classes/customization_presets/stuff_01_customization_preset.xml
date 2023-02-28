@@ -1,5 +1,5 @@
 <_templates Include="trucks" />
-<TruckSet>	
+<TruckSet>
 	<!--<- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -/>-->
 	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_01_cat_745c" />
 	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_02_cat_745c" />
@@ -971,5 +971,39 @@
 	<Truck _template="OutsideSticker1x1" Name="sticker_capote_1x1_step_39331_pike" />
 	<Truck _template="GlassStickerTopCut" Name="sticker_glass_top_step_39331_pike" />
 	<Truck _template="GlassStickerBottomCut" Name="sticker_glass_bottom_step_39331_pike" />
+	<!--<- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -/>-->
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_01_derry_special_15c177" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_02_derry_special_15c177" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_03_derry_special_15c177" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_04_derry_special_15c177" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_05_derry_special_15c177" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_06_derry_special_15c177" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_07_derry_special_15c177" />
+	<Truck _template="InsideSticker1x2" Name="sticker_inside_1x2_01_derry_special_15c177" />
+	<Truck _template="InsideSticker1x4" Name="sticker_inside_1x4_01_derry_special_15c177" />
+	<Truck _template="InsideSticker1x4" Name="sticker_inside_1x4_02_derry_special_15c177" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_door_l_1x1_derry_special_15c177" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_door_r_1x1_derry_special_15c177" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_roof_1x1_derry_special_15c177" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_roof_1x2_derry_special_15c177" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_roof_1x3_derry_special_15c177" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_roof_1x4_derry_special_15c177" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_roof_1x5_derry_special_15c177" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_roof_1x6_derry_special_15c177" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_roof_1x7_derry_special_15c177" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_roof_1x8_derry_special_15c177" />
+	<Truck _template="GlassStickerTopCut" Name="sticker_glass_top_derry_special_15c177" />
+	<Truck _template="GlassStickerBottomCut" Name="sticker_glass_bottom_derry_special_15c177" />
+	<Truck _template="Curtain" Name="stuff_curtain_derry_special_15c177" />
+	<!--<- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -/>-->
+	<Truck _template="OutsideSticker1x1" Name="sticker_door_l_1x1_zikz_566a" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_door_r_1x1_zikz_566a" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_back_1x1_zikz_566a" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_roof_1x1_zikz_566a" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_01_zikz_566a" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_02_zikz_566a" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_03_zikz_566a" />
+	<Truck _template="InsideSticker1x4" Name="sticker_inside_1x4_01_zikz_566a" />
+	<Truck _template="GlassStickerBottomCut" Name="sticker_glass_botom_zikz_566a" />
 	<!--<- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -/>-->
 </TruckSet>

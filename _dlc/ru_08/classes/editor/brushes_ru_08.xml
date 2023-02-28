@@ -27,7 +27,7 @@
 		<LavenderBigDense PlantsPerBlock="1390">
 			<PlantType Brand="grass_lavender_a_big_01" />
 		</LavenderBigDense>
-		<WheatKubanMenu PlantsPerBlock="7000">
+		<WheatKubanMenu PlantsPerBlock="4096">
 			<PlantType Brand="wheat_01_menu" />
 		</WheatKubanMenu>
 		<DebrisStonesAz PlantsPerBlock="600">

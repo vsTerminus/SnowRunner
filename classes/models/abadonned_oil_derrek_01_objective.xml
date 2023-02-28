@@ -9,7 +9,7 @@
 		<Mesh Name="stage_0" />
 		<CdtMesh Name="stage_0" />
 	</Subset>
-	<Subset Name="build_complete" HidePreviousSubsetBeforeAnim="true">
+	<Subset Name="build_stage_1" HidePreviousSubsetBeforeAnim="true">
 		<Mesh Name="stage_1" />
 		<CdtMesh Name="stage_1" />
 		<AnimSubset Name="build_animation_0" />

@@ -8,6 +8,7 @@
 			PlantingGroups="Bush,SmallTree"
 			PlantingMinSpacing="0.95"
 			UseDirtTint="true"
+				
 		/>
 		<Stump
 			AttachToGround="false"
@@ -169,6 +170,24 @@
 		<WoodChunk
 			Brands="wood_chunk"
 			Handler="Mud"
+			Offsets="(-0.08; 0.2; 0)"
+			SpawnAngMult="10.0"
+			SpawnAtEachBody="true"
+			SpawnLinMult="1.6"
+			Threshold="10"
+		/>
+		<SparksChunk
+			Brands="wood_chunk"
+			Handler="Sparks"
+			Offsets="(-0.08; 0.2; 0)"
+			SpawnAngMult="10.0"
+			SpawnAtEachBody="true"
+			SpawnLinMult="1.6"
+			Threshold="10"
+		/>
+		<AshChunk
+			Brands="wood_chunk"
+			Handler="AshDust"
 			Offsets="(-0.08; 0.2; 0)"
 			SpawnAngMult="10.0"
 			SpawnAtEachBody="true"

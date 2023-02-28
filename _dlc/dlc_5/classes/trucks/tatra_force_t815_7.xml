@@ -81,7 +81,7 @@
 		SteerSpeed="0.022"
 		TruckImage="tatraforcemchr"
 		TruckType="HEAVY"
-		WheelToPack="3"
+		SetHandbrakeOnWinchRelease="false"
 	>
 		<WinchUpgradeSocket Default="w_heavy_trucks_default" IsUpgradable="true" Type="winches_heavy_trucks" />
 		<Wheels

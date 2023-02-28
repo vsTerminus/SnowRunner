@@ -1,0 +1,9 @@
+<CargoType>
+	<UiDesc
+		UiName="UI_CARGO_WATER_NAME"
+		UiDesc="UI_CARGO_WATER_DESC"
+		UiIcon20x20="waterRefillImg20"
+		UiIcon40x40="cargoTypeWater40"
+		UiIcon100x100="cargoTypeWater"
+	/>
+</CargoType>

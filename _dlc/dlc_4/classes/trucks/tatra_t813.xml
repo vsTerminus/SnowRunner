@@ -153,8 +153,8 @@
 				WindshieldShadingTexture="trucks/tatra_t813_glass__sh_d.tga"
 				ViewPos="(2.971; 2.402; 0.722)"
 			>
-				<Mirror ClipDir="(-0.557; 0.2; -0.806)" ClipOffset="0.1" FOVScale="1.2" MeshFrame="mirror_left" ReflectionDir="(-0.914; 0.034; -0.405)" Size="(0.18; 0.26)" Pos="(3.267; 2.304; 1.181)" />
-				<Mirror ClipDir="(-0.303; 0.037; 0.952)" ClipOffset="0.1" FOVScale="1.6" MeshFrame="mirror_right" ReflectionDir="(-0.793; -0.044; 0.608)" Size="(0.18; 0.26)" Pos="(3.279; 2.304; -1.16)" />
+				<Mirror ClipDir="(-0.940; 0.000; -0.342)" ClipOffset="0.1" FOVScale="1.2" MeshFrame="mirror_left" ReflectionDir="(-0.921; 0.000; -0.391)" Size="(0.18; 0.26)" Pos="(3.267; 2.304; 1.181)" />
+				<Mirror ClipDir="(-0.766; 0.000; 0.643)" ClipOffset="0.1" FOVScale="1.6" MeshFrame="mirror_right" ReflectionDir="(-0.788; 0.000; 0.616)" Size="(0.18; 0.26)" Pos="(3.279; 2.304; -1.16)" />
 			</Cockpit>
 		</Camera>
 		<Axles>
