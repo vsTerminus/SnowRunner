@@ -3,7 +3,7 @@
 		<RearWheel
 			ConnectedToHandbrake="true"
 			Location="rear"
-			Torque="default"
+			Torque="full"
 			ParentFrame="BoneBack_cdt"
 		/>
 		<FrontWheel
@@ -29,14 +29,14 @@
 <Truck>
 	<TruckData
 		BackSteerSpeed="0.02"
-		DiffLockType="Always"
+		DiffLockType="Installed"
 		EngineIconMesh="env/engine_default"
 		EngineIconScale="1.6"
 		EngineStartDelay="0.6"
 		ExhaustStartTime="0.6"
 		FuelCapacity="340"
 		Responsiveness="0.4"
-		SteerSpeed="0.015"
+		SteerSpeed="0.035"
 		TruckImage="kirovets_k700_mchr"
 		TruckType="HEAVY"
 	>
@@ -191,8 +191,8 @@
 					AxisLocal="(0; 1; 0)"
 					Name="ChassisSteer"
 					Type="Hinge"
-					MinLimit="-25"
-					MaxLimit="25"
+					MinLimit="-30"
+					MaxLimit="30"
 				>
 					<Motor
 						Damping="1.0"
@@ -314,6 +314,9 @@
 			<Socket Names="KirovetsK700Kung" ParentFrame="BoneBack_cdt" />
 			<Socket Names="K700Coupler" Offset="(0; 0; 0)" ParentFrame="BoneBack_cdt" />
 			<Socket Names="KirovetsK700Manipulator" ParentFrame="BoneBack_cdt" />
+		</AddonSockets>
+		<AddonSockets DefaultAddon="KirovetsK700_diff_lock_default">
+			<Socket Names="WesternStarNF1424DiffLock" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="kirovets_k700_fender">
 			<Socket Names="KirovetsK700Fender" NamesBlock="KirovetsK700Manipulator" ParentFrame="BoneBack_cdt" />
