@@ -42,5 +42,5 @@
 	<GameData>
 		<WinchSocket Pos="(0; 0; 0)" ParentFrame="BoneEnd" />
 	</GameData>	
-    <ChunksBreak Brands="burnt_pine_lying_b_chunks_us_09" Threshold="5000" />
+    <ChunksBreak Brands="burnt_pine_lying_b_chunks_us_09" Threshold="600" />
 </PlantBrand>

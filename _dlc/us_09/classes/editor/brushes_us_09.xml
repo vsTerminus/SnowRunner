@@ -201,29 +201,29 @@
 			<PlantType
 				Brand="smoldering_pine_03_us_09"
 				Divergence="0.06"
-				MinSize="1.2"
-				MaxSize="1.8"
+				MinSize="0.8"
+				MaxSize="1.2"
 				Perpendicularity="0.2"
 			/>
 			<PlantType
 				Brand="smoldering_pine_04_us_09"
 				Divergence="0.06"
-				MinSize="1.2"
-				MaxSize="1.8"
+				MinSize="0.8"
+				MaxSize="1.2"
 				Perpendicularity="0.2"
 			/>
 			<PlantType
 				Brand="smoldering_pine_05_us_09"
 				Divergence="0.06"
-				MinSize="1.2"
-				MaxSize="1.8"
+				MinSize="0.8"
+				MaxSize="1.2"
 				Perpendicularity="0.2"
 			/>
 			<PlantType
 				Brand="smoldering_pine_06_us_09"
 				Divergence="0.06"
-				MinSize="1.2"
-				MaxSize="1.8"
+				MinSize="0.8"
+				MaxSize="1.2"
 				Perpendicularity="0.2"
 			/>
 		</SmolderingForest>

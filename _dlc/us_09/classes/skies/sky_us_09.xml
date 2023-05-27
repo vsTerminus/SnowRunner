@@ -38,8 +38,8 @@
 		<DayTimeOverride DayTime="day__3_ca_01" DiffuseMap="env/sun_disc_01__d_a.tga" DiffuseMultiplier="g(255; 218; 181; 150) x 39" />
 		<DayTimeOverride DayTime="day__3a_ca_01" DiffuseMap="env/sun_disc_01__d_a.tga" DiffuseMultiplier="g(255; 218; 181; 150) x 4" />
 		<DayTimeOverride DayTime="day_to_night_ca_01" DiffuseMap="env/sun_disc_01__d_a.tga" DiffuseMultiplier="g(255; 148; 51; 210) x 39"/>
-		<DayTimeOverride DayTime="night_ca_01" DiffuseMap="env/sun_disc_01__d_a" DiffuseMultiplier="g(255; 218; 181; 210) x 12" />	
-		<DayTimeOverride DayTime="night_to_day_ca_01" DiffuseMap="env/sun_disc_01__d_a" DiffuseMultiplier="g(255; 218; 181; 210) x 12" />
+		<DayTimeOverride DayTime="night_ca_01" DiffuseMap="env/sun_disc_01__d_a.tga" DiffuseMultiplier="g(255; 218; 181; 210) x 12" />	
+		<DayTimeOverride DayTime="night_to_day_ca_01" DiffuseMap="env/sun_disc_01__d_a.tga" DiffuseMultiplier="g(255; 218; 181; 210) x 12" />
 	</Cloud>
 	
 	<!-- sun_halo -->

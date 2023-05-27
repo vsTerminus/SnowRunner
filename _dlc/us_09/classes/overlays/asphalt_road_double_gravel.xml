@@ -10,7 +10,7 @@
 	WheelTracks="0"
 >
 	<Prebuild
-		DefaultWidth="10.5"
+		DefaultWidth="9.5"
 		FlattenPart="1"
 		LandmarkColor="(100; 100; 100)"
 		LandmarkPart="1"

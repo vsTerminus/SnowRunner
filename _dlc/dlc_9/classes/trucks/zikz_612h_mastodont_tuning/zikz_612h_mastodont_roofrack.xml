@@ -1,0 +1,69 @@
+<_templates Include="trucks">
+	<Constraint>
+		<TrunkFixed LinearLimitsX="(0;0.05)" LinearLimitsZ="(0;0.05)" Type="Fixed">
+			<Motor Damping="70" Spring="100" Type="Spring" />
+		</TrunkFixed>
+	</Constraint>
+</_templates>
+<TruckAddon>
+	<TruckData FuelCapacity="140" RepairsCapacity="150">
+		<LimitedFluid Center="(8.297; 3.111; 0.168)" SizeX="0.574" SizeY="0.203" SizeZ="0.406" Type="Box" ParentFrame="BoneFuel_cdt" />
+		<LimitedFluid Center="(8.293; 3.111; 0.575)" SizeX="0.574" SizeY="0.203" SizeZ="0.406" Type="Box" ParentFrame="BoneFuel_cdt" />
+		<LimitedFluid Center="(8.298; 3.111; 0.979)" SizeX="0.574" SizeY="0.203" SizeZ="0.406" Type="Box" ParentFrame="BoneFuel_cdt" />
+		<LimitedFluid Center="(7.714; 3.111; 1)" SizeX="0.574" SizeY="0.203" SizeZ="0.406" Type="Box" ParentFrame="BoneFuel_cdt" />
+		<LimitedFluid Center="(7.714; 3.111; 0.596)" SizeX="0.574" SizeY="0.203" SizeZ="0.406" Type="Box" ParentFrame="BoneFuel_cdt" />
+		<LimitedFluid Center="(7.714; 3.111; 0.185)" SizeX="0.574" SizeY="0.203" SizeZ="0.406" Type="Box" ParentFrame="BoneFuel_cdt" />
+		<LimitedFluid Center="(7.107; 3.111; 1)" SizeX="0.574" SizeY="0.203" SizeZ="0.406" Type="Box" ParentFrame="BoneFuel_cdt" />
+		<LimitedFluid Center="(7.105; 3.111; 0.595)" SizeX="0.574" SizeY="0.203" SizeZ="0.406" Type="Box" ParentFrame="BoneFuel_cdt" />
+		<LimitedFluid Center="(7.105; 3.111; 0.185)" SizeX="0.574" SizeY="0.203" SizeZ="0.406" Type="Box" ParentFrame="BoneFuel_cdt" />
+		
+	</TruckData>
+	<RepairsHide>
+		<Mesh Frame="repair_1a" HideThreshold="0.0" />
+	</RepairsHide>
+	<PhysicsModel Mesh="trucks/zikz_612h_mastodont_tuning/zikz_612h_mastodont_roofrack" >
+		<Body ImpactType="Truck" Mass="30" ModelFrame="BoneAddon_cdt">
+			<Constraint Type="Rigid" />
+			<Body
+				CenterOfMassOffset="(0; 0; 0)"
+				ImpactType="Truck"
+				Mass="60"
+				ModelFrame="BoneRepair_cdt"
+				collisions="None"
+			>
+				<Constraint _template="TrunkFixed">
+					<TrunkFixed/>
+				</Constraint>
+			</Body>
+			<Body
+				CenterOfMassOffset="(0; 0; 0)"
+				ImpactType="Truck"
+				Mass="270"
+				ModelFrame="BoneFuel_cdt"
+				collisions="None"
+			>
+				<Constraint _template="TrunkFixed">
+					<TrunkFixed/>
+				</Constraint>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="roofrack"
+		Category="top"
+		Price="2700"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SCOUT_TRUNK_SUPPLIES_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SCOUT_TRUNK_SUPPLIES_NAME"
+		/>
+		<InstallSocket Type="MastodonRoofrack" />
+	</GameData>
+	<FuelHide>
+		<Mesh Frame="fuel_1a" HideThreshold="0.0" />
+	</FuelHide>
+</TruckAddon>

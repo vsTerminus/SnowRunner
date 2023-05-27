@@ -19,10 +19,11 @@
 		NumFramesY="7"
 		
 	/>
-	<Size Function="(2.0; 2.5; 3.5)" Median="0.8" />
+	<Size Function="(2.0; 2.5; 1.5)" Median="0.8" />
 	<Scale Random="0.6" Value="1.0" />
 
-	<LifeTime Random="2.0" Value="5.0" />
+	<LifeTime Random="3.1" Value="15.0" />
+	<!-- <LifeTime Value="5.0" /> -->
 	<Color>
 		<Key At="0.0" Value="g(255; 255; 255; 0)" />
 		<Key At="0.3" Value="g(100; 100; 100; 60)" />

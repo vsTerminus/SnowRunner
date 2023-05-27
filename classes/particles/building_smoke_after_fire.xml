@@ -7,7 +7,7 @@
 	Orientation = "AlignedBillboard"
 	BillboardOffset="(0; 0)"
 	IgnoreShadowmap="true"
-	SoftDepth="10.5"
+	SoftDepth="1.5"
 
 >
 	<Texture
@@ -19,8 +19,8 @@
 		NumFramesY="7"
 		
 	/>
-	<Size Function="(1.0; 1.5; 1.0)" Median="0.5" />
-	<Scale Random="0.6" Value="1.5" />
+	<Size Function="(3.0; 3.5; 3.0)" Median="0.5" />
+	<Scale Random="0.8" Value="1.5" />
 	<RotationSpeed Random="100.0" />
 	<Rotation Random="360.0" />
 	<LifeTime Random="5.0" Value="8.0" />

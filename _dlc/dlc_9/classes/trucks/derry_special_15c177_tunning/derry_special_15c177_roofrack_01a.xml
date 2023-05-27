@@ -7,12 +7,12 @@
 </_templates>
 <TruckAddon>
 	<TruckData FuelCapacity="140" RepairsCapacity="150">
-		<LimitedFluid Center="(2.638; 2.932; 0)" SizeX="0.397" SizeY="0.208" SizeZ="0.576" Type="Box" ParentFrame="BoneFuel_cdt" />
-		<LimitedFluid Center="(2.225; 2.932; 0)" SizeX="0.397" SizeY="0.208" SizeZ="0.576" Type="Box" ParentFrame="BoneFuel_cdt" />
-		<LimitedFluid Center="(1.817; 2.932; 0)" SizeX="0.397" SizeY="0.208" SizeZ="0.576" Type="Box" ParentFrame="BoneFuel_cdt" />
-		<LimitedFluid Center="(1.817; 2.932; -0.616)" SizeX="0.397" SizeY="0.208" SizeZ="0.576" Type="Box" ParentFrame="BoneFuel_cdt" />
-		<LimitedFluid Center="(2.225; 2.932; -0.616)" SizeX="0.397" SizeY="0.208" SizeZ="0.576" Type="Box" ParentFrame="BoneFuel_cdt" />
-		<LimitedFluid Center="(2.638; 2.932; -0.616)" SizeX="0.397" SizeY="0.208" SizeZ="0.576" Type="Box" ParentFrame="BoneFuel_cdt" />
+		<LimitedFluid Center="(2.642; 2.932; 0.02)" SizeX="0.32" SizeY="0.15" SizeZ="0.45" Type="Box" ParentFrame="BoneFuel_cdt" />
+		<LimitedFluid Center="(2.225; 2.932; 0.02)" SizeX="0.32" SizeY="0.15" SizeZ="0.45" Type="Box" ParentFrame="BoneFuel_cdt" />
+		<LimitedFluid Center="(1.817; 2.932; 0.02)" SizeX="0.32" SizeY="0.15" SizeZ="0.45" Type="Box" ParentFrame="BoneFuel_cdt" />
+		<LimitedFluid Center="(1.817; 2.932; -0.636)" SizeX="0.32" SizeY="0.15" SizeZ="0.45" Type="Box" ParentFrame="BoneFuel_cdt" />
+		<LimitedFluid Center="(2.225; 2.932; -0.636)" SizeX="0.32" SizeY="0.15" SizeZ="0.45" Type="Box" ParentFrame="BoneFuel_cdt" />
+		<LimitedFluid Center="(2.638; 2.932; -0.636)" SizeX="0.32" SizeY="0.15" SizeZ="0.45" Type="Box" ParentFrame="BoneFuel_cdt" />
 	</TruckData>
 	<RepairsHide>
 		<Mesh Frame="repair" HideThreshold="0.0" />

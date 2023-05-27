@@ -1,4 +1,6 @@
 <ModelBrand
+	Instanced="true"
+	InstancedAsModel="true"
 >
 	<PhysicsModel>
 		<Body

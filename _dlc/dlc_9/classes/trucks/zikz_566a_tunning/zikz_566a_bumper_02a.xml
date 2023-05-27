@@ -1,10 +1,4 @@
-<_templates Include="trucks">
-	<Constraint>
-		<TrunkFixed LinearLimitsX="(0;0.01)" LinearLimitsZ="(0;0.01)" Type="Fixed">
-			<Motor Damping="400" Spring="700" Type="Spring" />
-		</TrunkFixed>
-	</Constraint>
-</_templates>
+<_templates Include="trucks" />
 <TruckAddon>
 	<TruckData>
 		<Damage>
@@ -17,11 +11,12 @@
 			<Body
 				CenterOfMassOffset="(0; -0.1; 0)"
 				ImpactType="Truck"
-				Mass="60"
+				Mass="6"
 				ModelFrame="BoneRope_cdt"
+				Collisions="None"
 			>
-				<Constraint _template="TrunkFixed">
-					<TrunkFixed/>
+				<Constraint Type="Hinge" AxisLocal="(0; 0; 1)" MinLimit="-15" MaxLimit="18">
+					<Motor Damping="1" Spring="0" Type="Spring" />
 				</Constraint>
 			</Body>
 		</Body>

@@ -65,15 +65,8 @@
 		</SteeringShaft>
 		<SideMirror Collisions="None" Mass="5">
 			<Constraint
-				AxisLocal="(0; 1; 0)"
 				Type="Fixed"
-				LinearLimitsX="(0.1; 0.1; 0.1)"
-				LinearLimitsY="(0.1; 0.1; 0.1)"
-				LinearLimitsZ="(0.1; 0.1; 0.1)"
-
-			>
-				<Motor Damping="250" Spring="250" Type="Spring" />
-			</Constraint>
+			/>
 		</SideMirror>
 		<RearMudguard Collisions="None" Mass="10">
 			<Constraint
@@ -134,8 +127,8 @@
 	>
 		<WinchUpgradeSocket Default="w_heavy_trucks_default" IsUpgradable="true" Type="winches_heavy_trucks" />
 		<Wheels
-			DefaultRim="rim_1"
-			DefaultTire="offroad_1"
+			DefaultRim="rim"
+			DefaultTire="tire"
 			DefaultWheelType="wheels_derry_special_15c177"
 		>
 			<Wheel _template="FirstAxle" Pos="(1.276; 0.623; 1.1)" />
@@ -190,8 +183,6 @@
 			<ChassisStress	Sound="trucks/common/truck_swing_big_old_rnd_set/truck_swing_big_old_rnd" />
 		</Sounds>
 		<Shakers>
-			<Shaker Frame="BoneExhaustCover" LimitDirectionY="Negative" MinAngle="(0; 20; 0)" MaxAngle="(0; 130; 0)" MaxFrequency="0.15" ParentFrame="BoneExhaust" />
-			<Shaker Frame="BoneExhaust" LimitDirectionY="Negative" MinAngle="(0.2; 0.7; 0.2)" MaxAngle="(0.4; 0.7; 0.4)" MaxFrequency="0.2" ParentFrame="BoneExhaust" />
 			<Shaker Frame="BoneEngine_Shaker" MinAngle="(0; 0.3; 0)" MaxAngle="(0; 1; 0)" MaxFrequency="2.5" ParentFrame="BoneChassis_cdt" />
 		</Shakers>
 		<Shafts>

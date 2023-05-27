@@ -1006,4 +1006,21 @@
 	<Truck _template="InsideSticker1x4" Name="sticker_inside_1x4_01_zikz_566a" />
 	<Truck _template="GlassStickerBottomCut" Name="sticker_glass_botom_zikz_566a" />
 	<!--<- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -/>-->
+	<Truck _template="Curtain" Name="stuff_curtain_zikz_612h_mastodont" />
+	<Truck _template="GlassStickerTopCut" Name="sticker_glass_top_zikz_612h_mastodont" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_01_zikz_612h_mastodont" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_02_zikz_612h_mastodont" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_03_zikz_612h_mastodont" />
+	<Truck _template="InsideSticker1x2" Name="sticker_inside_1x2_01_zikz_612h_mastodont" />
+	<Truck _template="InsideSticker1x4" Name="sticker_inside_1x4_01_zikz_612h_mastodont" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_capote_1x1_zikz_612h_mastodont" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_door_l_1x1_zikz_612h_mastodont" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_door_r_1x1_zikz_612h_mastodont" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_door_r_1x1_02_zikz_612h_mastodont" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_door_l_1x1_02_zikz_612h_mastodont" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_roof_1x1_01_zikz_612h_mastodont" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_roof_1x1_02_zikz_612h_mastodont" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_roof_1x1_03_zikz_612h_mastodont" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_roof_1x1_04_zikz_612h_mastodont" />
+	<!--<- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -/>-->
 </TruckSet>

@@ -383,7 +383,7 @@
 			<Socket InCockpit="true" Names="ChevroletCk1500Sticker_GlassTop" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="StuffHoodChevroletCk1500" />
+			<Socket Names="StuffHoodChevroletCk1500" Offset="(-0.08; 0.01; 0)"/>
 		</AddonSockets>
 	</GameData>
 	<AutomaticIK>
