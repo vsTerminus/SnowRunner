@@ -103,6 +103,7 @@
 		SoundForEachConstraint="true"
 		UnlockByExploration="false"
 		UnlockByRank="1"
+		WheelToPack="1"
 	>
         <AddonType Name="TowingPlatform" />
 		<WinchSocket Pos="(1.563; 0.467; 0)" ParentFrame="BoneRoot_cdt" />
