@@ -524,6 +524,9 @@
 		<AddonSockets>
 			<Socket Names="StuffHoodFreightlinerM916A1" ParentFrame="BoneCabinDamper_cdt" />
 		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="AddonHornsSmall" NamesBlock="StuffHoodFreightlinerM916A1" Offset="(3.322; 2.050; 0)" ParentFrame="BoneCabinDamper_cdt" />
+		</AddonSockets>
 	</GameData>
 	<ControlledConstraints>
 		<Constraint Id="chassis_steer" IsLinkedSteering="true" Name="TieRodSteer" />

@@ -351,5 +351,8 @@
 		<AddonSockets>
 			<Socket Names="khanLo4FSticker_Roof" />
 		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="AddonHornsSmall" NamesBlock="Khanlo4fConditioner, Khanlo4fBeacon, Khanlo4fGabarite, Khanlo4fGabarite2" Offset="(1.480; 2.040; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
 	</GameData>
 </Truck>

@@ -548,6 +548,9 @@
 		<AddonSockets>
 			<Socket Names="StuffHoodStep310E" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="AddonHornsSmall" NamesBlock="StuffHoodStep310E" Offset="(4.444; 1.870; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
 	</GameData>
 	<ControlledConstraints>
 		<Constraint Id="chassis_steer" IsLinkedSteering="true" Name="TieRodSteer" />

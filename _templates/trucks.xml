@@ -1146,6 +1146,41 @@
 				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
 			/>
 			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_crush_tester__d_a.tga"
+				Name="skin_66"
+				NormalMap="trucks/outside_sticker_1x1_crush_tester__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_crush_tester__sh_d.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_doomed__d_a.tga"
+				Name="skin_67"
+				NormalMap="trucks/outside_sticker_1x1_doomed__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_doomed__sh_d.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_giant__d_a.tga"
+				Name="skin_68"
+				NormalMap="trucks/outside_sticker_1x1_giant__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_giant__sh_d.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_snowrunner_legend__d_a.tga"
+				Name="skin_69"
+				NormalMap="trucks/outside_sticker_1x1_snowrunner_legend__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_snowrunner_legend__sh_d.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_unstopable__d_a.tga"
+				Name="skin_70"
+				NormalMap="trucks/outside_sticker_1x1_unstopable__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_unstopable__sh_d.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
 				AlbedoMap="trucks/outside_sticker_1x1_milk_power_eng__d_a.tga"
 				Name="skin_71"
 				NormalMap="trucks/outside_sticker_1x1_milk_power_eng__n_d.tga"
@@ -1220,6 +1255,83 @@
 				Name="skin_81"
 				NormalMap="trucks/outside_sticker_1x1_planet_b__n_d.tga"
 				ShadingMap="trucks/outside_sticker_1x1_planet_b__sh_d.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_dump__d_a.tga"
+				Name="skin_82"
+				NormalMap="trucks/outside_sticker_1x1_dump__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_dump__sh_d.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_forest_spirit__d_a.tga"
+				Name="skin_83"
+				NormalMap="trucks/outside_sticker_1x1_forest_spirit__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_forest_spirit__sh_d.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_light__d_a.tga"
+				Name="skin_84"
+				NormalMap="trucks/outside_sticker_1x1_light__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_light__sh_d.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_nature_saving__d_a.tga"
+				Name="skin_85"
+				NormalMap="trucks/outside_sticker_1x1_nature_saving__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_nature_saving__sh_d.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_no_plan_b__d_a.tga"
+				Name="skin_86"
+				NormalMap="trucks/outside_sticker_1x1_no_plan_b__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_no_plan_b__sh_d.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_owl__d_a.tga"
+				Name="skin_87"
+				NormalMap="trucks/outside_sticker_1x1_owl__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_owl__sh_d.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_pluggin__d_a.tga"
+				Name="skin_88"
+				NormalMap="trucks/outside_sticker_1x1_pluggin__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_pluggin__sh_d.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_poe__d_a.tga"
+				Name="skin_89"
+				NormalMap="trucks/outside_sticker_1x1_poe__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_poe__sh_d.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_spark__d_a.tga"
+				Name="skin_90"
+				NormalMap="trucks/outside_sticker_1x1_spark__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_spark__sh_d.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_thunderstroke__d_a.tga"
+				Name="skin_91"
+				NormalMap="trucks/outside_sticker_1x1_thunderstroke__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_thunderstroke__sh_d.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_watchmen__d_a.tga"
+				Name="skin_92"
+				NormalMap="trucks/outside_sticker_1x1_watchmen__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_watchmen__sh_d.tga"
 				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
 			/>
 			<MaterialOverride
@@ -1320,6 +1432,7 @@
 				ShadingMap="trucks/outside_sticker_1x1_worthy_of_a_saga__sh_d.tga"
 				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
 			/>
+			
 		</OutsideSticker1x1>
 		<OutsideStickerWS>
 			<MaterialOverride
@@ -1785,6 +1898,41 @@
 				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
 			/>
 			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_crush_tester__d_a.tga"
+				Name="skin_66"
+				NormalMap="trucks/outside_sticker_1x1_crush_tester__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_crush_tester__sh_d.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_doomed__d_a.tga"
+				Name="skin_67"
+				NormalMap="trucks/outside_sticker_1x1_doomed__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_doomed__sh_d.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_giant__d_a.tga"
+				Name="skin_68"
+				NormalMap="trucks/outside_sticker_1x1_giant__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_giant__sh_d.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_snowrunner_legend__d_a.tga"
+				Name="skin_69"
+				NormalMap="trucks/outside_sticker_1x1_snowrunner_legend__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_snowrunner_legend__sh_d.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_unstopable__d_a.tga"
+				Name="skin_70"
+				NormalMap="trucks/outside_sticker_1x1_unstopable__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_unstopable__sh_d.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
 				AlbedoMap="trucks/outside_sticker_1x1_milk_power_eng__d_a.tga"
 				Name="skin_71"
 				NormalMap="trucks/outside_sticker_1x1_milk_power_eng__n_d.tga"
@@ -1859,6 +2007,83 @@
 				Name="skin_81"
 				NormalMap="trucks/outside_sticker_1x1_planet_b__n_d.tga"
 				ShadingMap="trucks/outside_sticker_1x1_planet_b__sh_d.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_dump__d_a.tga"
+				Name="skin_82"
+				NormalMap="trucks/outside_sticker_1x1_dump__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_dump__sh_d.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_forest_spirit__d_a.tga"
+				Name="skin_83"
+				NormalMap="trucks/outside_sticker_1x1_forest_spirit__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_forest_spirit__sh_d.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_light__d_a.tga"
+				Name="skin_84"
+				NormalMap="trucks/outside_sticker_1x1_light__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_light__sh_d.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_nature_saving__d_a.tga"
+				Name="skin_85"
+				NormalMap="trucks/outside_sticker_1x1_nature_saving__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_nature_saving__sh_d.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_no_plan_b__d_a.tga"
+				Name="skin_86"
+				NormalMap="trucks/outside_sticker_1x1_no_plan_b__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_no_plan_b__sh_d.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_owl__d_a.tga"
+				Name="skin_87"
+				NormalMap="trucks/outside_sticker_1x1_owl__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_owl__sh_d.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_pluggin__d_a.tga"
+				Name="skin_88"
+				NormalMap="trucks/outside_sticker_1x1_pluggin__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_pluggin__sh_d.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_poe__d_a.tga"
+				Name="skin_89"
+				NormalMap="trucks/outside_sticker_1x1_poe__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_poe__sh_d.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_spark__d_a.tga"
+				Name="skin_90"
+				NormalMap="trucks/outside_sticker_1x1_spark__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_spark__sh_d.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_thunderstroke__d_a.tga"
+				Name="skin_91"
+				NormalMap="trucks/outside_sticker_1x1_thunderstroke__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_thunderstroke__sh_d.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_watchmen__d_a.tga"
+				Name="skin_92"
+				NormalMap="trucks/outside_sticker_1x1_watchmen__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_watchmen__sh_d.tga"
 				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
 			/>
 			<MaterialOverride
@@ -2452,6 +2677,41 @@
 				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
 			/>
 			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_crush_tester__d_a.tga"
+				Name="skin_66"
+				NormalMap="trucks/outside_sticker_1x1_crush_tester__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_crush_tester__sh_d.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_doomed__d_a.tga"
+				Name="skin_67"
+				NormalMap="trucks/outside_sticker_1x1_doomed__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_doomed__sh_d.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_giant__d_a.tga"
+				Name="skin_68"
+				NormalMap="trucks/outside_sticker_1x1_giant__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_giant__sh_d.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_snowrunner_legend__d_a.tga"
+				Name="skin_69"
+				NormalMap="trucks/outside_sticker_1x1_snowrunner_legend__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_snowrunner_legend__sh_d.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_unstopable__d_a.tga"
+				Name="skin_70"
+				NormalMap="trucks/outside_sticker_1x1_unstopable__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_unstopable__sh_d.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
 				AlbedoMap="trucks/outside_sticker_1x1_milk_power_eng__d_a.tga"
 				Name="skin_71"
 				NormalMap="trucks/outside_sticker_1x1_milk_power_eng__n_d.tga"
@@ -2526,6 +2786,83 @@
 				Name="skin_81"
 				NormalMap="trucks/outside_sticker_1x1_planet_b__n_d.tga"
 				ShadingMap="trucks/outside_sticker_1x1_planet_b__sh_d.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_dump__d_a.tga"
+				Name="skin_82"
+				NormalMap="trucks/outside_sticker_1x1_dump__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_dump__sh_d.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_forest_spirit__d_a.tga"
+				Name="skin_83"
+				NormalMap="trucks/outside_sticker_1x1_forest_spirit__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_forest_spirit__sh_d.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_light__d_a.tga"
+				Name="skin_84"
+				NormalMap="trucks/outside_sticker_1x1_light__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_light__sh_d.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_nature_saving__d_a.tga"
+				Name="skin_85"
+				NormalMap="trucks/outside_sticker_1x1_nature_saving__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_nature_saving__sh_d.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_no_plan_b__d_a.tga"
+				Name="skin_86"
+				NormalMap="trucks/outside_sticker_1x1_no_plan_b__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_no_plan_b__sh_d.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_owl__d_a.tga"
+				Name="skin_87"
+				NormalMap="trucks/outside_sticker_1x1_owl__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_owl__sh_d.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_pluggin__d_a.tga"
+				Name="skin_88"
+				NormalMap="trucks/outside_sticker_1x1_pluggin__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_pluggin__sh_d.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_poe__d_a.tga"
+				Name="skin_89"
+				NormalMap="trucks/outside_sticker_1x1_poe__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_poe__sh_d.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_spark__d_a.tga"
+				Name="skin_90"
+				NormalMap="trucks/outside_sticker_1x1_spark__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_spark__sh_d.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_thunderstroke__d_a.tga"
+				Name="skin_91"
+				NormalMap="trucks/outside_sticker_1x1_thunderstroke__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_thunderstroke__sh_d.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_watchmen__d_a.tga"
+				Name="skin_92"
+				NormalMap="trucks/outside_sticker_1x1_watchmen__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_watchmen__sh_d.tga"
 				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
 			/>
 			<MaterialOverride
@@ -3007,6 +3344,11 @@
 			<CustomizationPreset Id="63" MaterialOverrideName="skin_63" UiName="UI_STUFF_STICKER_HARSH_FARMER_NAME" />
 			<CustomizationPreset Id="64" MaterialOverrideName="skin_64" UiName="UI_STUFF_STICKER_SPICA_RUS_NAME" />
 			<CustomizationPreset Id="65" MaterialOverrideName="skin_65" UiName="UI_STUFF_STICKER_TRAKTOR_RUS_NAME" />
+			<CustomizationPreset Id="66" MaterialOverrideName="skin_66" UiName="UI_STUFF_STICKER_CRUSH_TESTER_NAME" />
+			<CustomizationPreset Id="67" MaterialOverrideName="skin_67" UiName="UI_STUFF_STICKER_DOOMED_NAME" />
+			<CustomizationPreset Id="68" MaterialOverrideName="skin_68" UiName="UI_STUFF_STICKER_GIANT_NAME" />
+			<CustomizationPreset Id="69" MaterialOverrideName="skin_69" UiName="UI_STUFF_STICKER_SNOWRUNNER_LEGEND_NAME" />
+			<CustomizationPreset Id="70" MaterialOverrideName="skin_70" UiName="UI_STUFF_STICKER_UNSTOPABLE_NAME" />
 			<CustomizationPreset Id="71" MaterialOverrideName="skin_71" UiName="UI_STUFF_STICKER_MILK_POWER_NAME" />
 			<CustomizationPreset Id="72" MaterialOverrideName="skin_72" UiName="UI_STUFF_STICKER_DONT_TOUCH_MY_TREE_NAME" />
 			<CustomizationPreset Id="73" MaterialOverrideName="skin_73" UiName="UI_STUFF_STICKER_THE_FIRE_BENDER_NAME" />
@@ -3018,6 +3360,17 @@
 			<CustomizationPreset Id="79" MaterialOverrideName="skin_79" UiName="UI_STUFF_STICKER_MAPLE_SYRUP_NAME" />
 			<CustomizationPreset Id="80" MaterialOverrideName="skin_80" UiName="UI_STUFF_STICKER_MAPLE_SYRUP_2_NAME" />
 			<CustomizationPreset Id="81" MaterialOverrideName="skin_81" UiName="UI_STUFF_STICKER_PLANET_B_NAME" />
+			<CustomizationPreset Id="82" MaterialOverrideName="skin_82" UiName="UI_STUFF_STICKER_DUMP_NAME" />
+			<CustomizationPreset Id="83" MaterialOverrideName="skin_83" UiName="UI_STUFF_STICKER_FOREST_SPIRIT_NAME" />
+			<CustomizationPreset Id="84" MaterialOverrideName="skin_84" UiName="UI_STUFF_STICKER_LIGHT_NAME" />
+			<CustomizationPreset Id="85" MaterialOverrideName="skin_85" UiName="UI_STUFF_STICKER_NATURE_SAVING_NAME" />
+			<CustomizationPreset Id="86" MaterialOverrideName="skin_86" UiName="UI_STUFF_STICKER_NO_PLAN_B_NAME" />
+			<CustomizationPreset Id="87" MaterialOverrideName="skin_87" UiName="UI_STUFF_STICKER_OWL_NAME" />
+			<CustomizationPreset Id="88" MaterialOverrideName="skin_88" UiName="UI_STUFF_STICKER_PLUGGIN_NAME" />
+			<CustomizationPreset Id="89" MaterialOverrideName="skin_89" UiName="UI_STUFF_STICKER_POE_NAME" />
+			<CustomizationPreset Id="90" MaterialOverrideName="skin_90" UiName="UI_STUFF_STICKER_SPARK_NAME" />
+			<CustomizationPreset Id="91" MaterialOverrideName="skin_91" UiName="UI_STUFF_STICKER_THUNDERSTROKE_NAME" />
+			<CustomizationPreset Id="92" MaterialOverrideName="skin_92" UiName="UI_STUFF_STICKER_WATCHMEN_NAME" />
 			<CustomizationPreset Id="93" MaterialOverrideName="skin_93" UiName="UI_STUFF_STICKER_ADEPTS_OF_THE_OMNISSIAH_NAME" />
 			<CustomizationPreset Id="94" MaterialOverrideName="skin_94" UiName="UI_STUFF_STICKER_ANGELS_OF_CALIBAN_NAME" />
 			<CustomizationPreset Id="95" MaterialOverrideName="skin_95" UiName="UI_STUFF_STICKER_BRUTAL_BUT_KUNNIN_NAME" />
@@ -3100,6 +3453,11 @@
 			<CustomizationPreset Id="63" MaterialOverrideName="skin_63" UiName="UI_STUFF_STICKER_HARSH_FARMER_NAME" />
 			<CustomizationPreset Id="64" MaterialOverrideName="skin_64" UiName="UI_STUFF_STICKER_SPICA_RUS_NAME" />
 			<CustomizationPreset Id="65" MaterialOverrideName="skin_65" UiName="UI_STUFF_STICKER_TRAKTOR_RUS_NAME" />
+			<CustomizationPreset Id="66" MaterialOverrideName="skin_66" UiName="UI_STUFF_STICKER_CRUSH_TESTER_NAME" />
+			<CustomizationPreset Id="67" MaterialOverrideName="skin_67" UiName="UI_STUFF_STICKER_DOOMED_NAME" />
+			<CustomizationPreset Id="68" MaterialOverrideName="skin_68" UiName="UI_STUFF_STICKER_GIANT_NAME" />
+			<CustomizationPreset Id="69" MaterialOverrideName="skin_69" UiName="UI_STUFF_STICKER_SNOWRUNNER_LEGEND_NAME" />
+			<CustomizationPreset Id="70" MaterialOverrideName="skin_70" UiName="UI_STUFF_STICKER_UNSTOPABLE_NAME" />
 			<CustomizationPreset Id="71" MaterialOverrideName="skin_71" UiName="UI_STUFF_STICKER_MILK_POWER_NAME" />
 			<CustomizationPreset Id="72" MaterialOverrideName="skin_72" UiName="UI_STUFF_STICKER_DONT_TOUCH_MY_TREE_NAME" />
 			<CustomizationPreset Id="73" MaterialOverrideName="skin_73" UiName="UI_STUFF_STICKER_THE_FIRE_BENDER_NAME" />
@@ -3111,6 +3469,17 @@
 			<CustomizationPreset Id="79" MaterialOverrideName="skin_79" UiName="UI_STUFF_STICKER_MAPLE_SYRUP_NAME" />
 			<CustomizationPreset Id="80" MaterialOverrideName="skin_80" UiName="UI_STUFF_STICKER_MAPLE_SYRUP_2_NAME" />
 			<CustomizationPreset Id="81" MaterialOverrideName="skin_81" UiName="UI_STUFF_STICKER_PLANET_B_NAME" />
+			<CustomizationPreset Id="82" MaterialOverrideName="skin_82" UiName="UI_STUFF_STICKER_DUMP_NAME" />
+			<CustomizationPreset Id="83" MaterialOverrideName="skin_83" UiName="UI_STUFF_STICKER_FOREST_SPIRIT_NAME" />
+			<CustomizationPreset Id="84" MaterialOverrideName="skin_84" UiName="UI_STUFF_STICKER_LIGHT_NAME" />
+			<CustomizationPreset Id="85" MaterialOverrideName="skin_85" UiName="UI_STUFF_STICKER_NATURE_SAVING_NAME" />
+			<CustomizationPreset Id="86" MaterialOverrideName="skin_86" UiName="UI_STUFF_STICKER_NO_PLAN_B_NAME" />
+			<CustomizationPreset Id="87" MaterialOverrideName="skin_87" UiName="UI_STUFF_STICKER_OWL_NAME" />
+			<CustomizationPreset Id="88" MaterialOverrideName="skin_88" UiName="UI_STUFF_STICKER_PLUGGIN_NAME" />
+			<CustomizationPreset Id="89" MaterialOverrideName="skin_89" UiName="UI_STUFF_STICKER_POE_NAME" />
+			<CustomizationPreset Id="90" MaterialOverrideName="skin_90" UiName="UI_STUFF_STICKER_SPARK_NAME" />
+			<CustomizationPreset Id="91" MaterialOverrideName="skin_91" UiName="UI_STUFF_STICKER_THUNDERSTROKE_NAME" />
+			<CustomizationPreset Id="92" MaterialOverrideName="skin_92" UiName="UI_STUFF_STICKER_WATCHMEN_NAME" />
 			<CustomizationPreset Id="93" MaterialOverrideName="skin_93" UiName="UI_STUFF_STICKER_ADEPTS_OF_THE_OMNISSIAH_NAME" />
 			<CustomizationPreset Id="94" MaterialOverrideName="skin_94" UiName="UI_STUFF_STICKER_ANGELS_OF_CALIBAN_NAME" />
 			<CustomizationPreset Id="95" MaterialOverrideName="skin_95" UiName="UI_STUFF_STICKER_BRUTAL_BUT_KUNNIN_NAME" />
@@ -3197,6 +3566,11 @@
 			<CustomizationPreset Id="63" MaterialOverrideName="skin_63" UiName="UI_STUFF_STICKER_HARSH_FARMER_NAME" />
 			<CustomizationPreset Id="64" MaterialOverrideName="skin_64" UiName="UI_STUFF_STICKER_SPICA_RUS_NAME" />
 			<CustomizationPreset Id="65" MaterialOverrideName="skin_65" UiName="UI_STUFF_STICKER_TRAKTOR_RUS_NAME" />
+			<CustomizationPreset Id="66" MaterialOverrideName="skin_66" UiName="UI_STUFF_STICKER_CRUSH_TESTER_NAME" />
+			<CustomizationPreset Id="67" MaterialOverrideName="skin_67" UiName="UI_STUFF_STICKER_DOOMED_NAME" />
+			<CustomizationPreset Id="68" MaterialOverrideName="skin_68" UiName="UI_STUFF_STICKER_GIANT_NAME" />
+			<CustomizationPreset Id="69" MaterialOverrideName="skin_69" UiName="UI_STUFF_STICKER_SNOWRUNNER_LEGEND_NAME" />
+			<CustomizationPreset Id="70" MaterialOverrideName="skin_70" UiName="UI_STUFF_STICKER_UNSTOPABLE_NAME" />
 			<CustomizationPreset Id="71" MaterialOverrideName="skin_71" UiName="UI_STUFF_STICKER_MILK_POWER_NAME" />
 			<CustomizationPreset Id="72" MaterialOverrideName="skin_72" UiName="UI_STUFF_STICKER_DONT_TOUCH_MY_TREE_NAME" />
 			<CustomizationPreset Id="73" MaterialOverrideName="skin_73" UiName="UI_STUFF_STICKER_THE_FIRE_BENDER_NAME" />
@@ -3208,6 +3582,17 @@
 			<CustomizationPreset Id="79" MaterialOverrideName="skin_79" UiName="UI_STUFF_STICKER_MAPLE_SYRUP_NAME" />
 			<CustomizationPreset Id="80" MaterialOverrideName="skin_80" UiName="UI_STUFF_STICKER_MAPLE_SYRUP_2_NAME" />
 			<CustomizationPreset Id="81" MaterialOverrideName="skin_81" UiName="UI_STUFF_STICKER_PLANET_B_NAME" />
+			<CustomizationPreset Id="82" MaterialOverrideName="skin_82" UiName="UI_STUFF_STICKER_DUMP_NAME" />
+			<CustomizationPreset Id="83" MaterialOverrideName="skin_83" UiName="UI_STUFF_STICKER_FOREST_SPIRIT_NAME" />
+			<CustomizationPreset Id="84" MaterialOverrideName="skin_84" UiName="UI_STUFF_STICKER_LIGHT_NAME" />
+			<CustomizationPreset Id="85" MaterialOverrideName="skin_85" UiName="UI_STUFF_STICKER_NATURE_SAVING_NAME" />
+			<CustomizationPreset Id="86" MaterialOverrideName="skin_86" UiName="UI_STUFF_STICKER_NO_PLAN_B_NAME" />
+			<CustomizationPreset Id="87" MaterialOverrideName="skin_87" UiName="UI_STUFF_STICKER_OWL_NAME" />
+			<CustomizationPreset Id="88" MaterialOverrideName="skin_88" UiName="UI_STUFF_STICKER_PLUGGIN_NAME" />
+			<CustomizationPreset Id="89" MaterialOverrideName="skin_89" UiName="UI_STUFF_STICKER_POE_NAME" />
+			<CustomizationPreset Id="90" MaterialOverrideName="skin_90" UiName="UI_STUFF_STICKER_SPARK_NAME" />
+			<CustomizationPreset Id="91" MaterialOverrideName="skin_91" UiName="UI_STUFF_STICKER_THUNDERSTROKE_NAME" />
+			<CustomizationPreset Id="92" MaterialOverrideName="skin_92" UiName="UI_STUFF_STICKER_WATCHMEN_NAME" />
 			<CustomizationPreset Id="93" MaterialOverrideName="skin_93" UiName="UI_STUFF_STICKER_ADEPTS_OF_THE_OMNISSIAH_NAME" />
 			<CustomizationPreset Id="94" MaterialOverrideName="skin_94" UiName="UI_STUFF_STICKER_ANGELS_OF_CALIBAN_NAME" />
 			<CustomizationPreset Id="95" MaterialOverrideName="skin_95" UiName="UI_STUFF_STICKER_BRUTAL_BUT_KUNNIN_NAME" />

@@ -472,6 +472,9 @@
 		<AddonSockets>
 			<Socket _template="Cabin2Chassis" InCockpit="true" Names="StuffDashboard" Offset="(2.641; 2.298; -0.089)" Dir="(0.492; -0.003; 0.871)" UpDir="(0.281; 0.947; -0.155)" />
 		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="AddonHornsSmall" NamesBlock="StuffHoodFreightliner114Sd" Offset="(4.256; 1.900; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
 	</GameData>
 	<ControlledConstraints>
 		<Constraint Id="chassis_steer" IsLinkedSteering="true" Name="TieRodSteer" />

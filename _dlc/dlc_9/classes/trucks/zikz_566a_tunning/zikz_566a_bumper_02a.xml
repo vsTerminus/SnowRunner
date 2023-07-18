@@ -31,6 +31,7 @@
 			<Flare _template="BlueStreak" Size="0.6" Pos="(3.242; 1.059; 0.28)" ParentFrame="BoneAddon_cdt" />
 		</HeadLight>
 	</ModelAttachments>
+	<MainHeadLight _template="Multiply2" AttenEnd="75"/>
 	<GameData
 		CameraPreset="hoods"
 		Category="bumper"

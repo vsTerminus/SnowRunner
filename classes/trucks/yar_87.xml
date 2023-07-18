@@ -440,6 +440,9 @@
 		<AddonSockets>
 			<Socket Names="StuffHoodYar87" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="AddonHornsSmall" NamesBlock="StuffHoodYar87" Offset="(2.277; 1.560; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
 	</GameData>
 	<ControlledConstraints>
 		<Constraint Id="chassis_steer" IsLinkedSteering="true" Name="TieRodSteer" />

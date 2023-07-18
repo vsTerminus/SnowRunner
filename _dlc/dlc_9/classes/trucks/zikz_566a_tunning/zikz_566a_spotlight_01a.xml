@@ -15,6 +15,7 @@
 			<Flare _template="BlueStreak" Size="0.6" Pos="(1.518; 2.631	; 0.412)" ParentFrame="BoneAddon_cdt" />
 		</HeadLight>
 	</ModelAttachments>
+	<MainHeadLight _template="Multiply2"/>
 	<GameData
 		CameraPreset="roof"
 		Category="top"

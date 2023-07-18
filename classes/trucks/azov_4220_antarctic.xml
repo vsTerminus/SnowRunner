@@ -602,6 +602,9 @@
 		<AddonSockets>
 			<Socket InCockpit="true" Names="Azov4220AntarcticSticker_Door_L" ParentFrame="BoneFront_cdt" />
 		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="AddonHorns" Offset="(3.793; 3.580; 0)" ParentFrame="BoneCabinRagdoll_cdt" />
+		</AddonSockets>
 	</GameData>
 	<ControlledConstraints>
 		<Constraint Id="chassis_steer" IsLinkedSteering="true" Name="ChassisSteer" />

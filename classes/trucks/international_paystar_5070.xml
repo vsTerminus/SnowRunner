@@ -384,7 +384,6 @@
 			</Socket>
 			<Socket Names="FrameAddonTank" NamesBlock="InternationalPaystar5070CabinProtector" Offset="(-3.46; 1.23; 0)" ParentFrame="BoneChassis_cdt" />
 			<Socket Names="BigCraneUs" NamesBlock="MinicraneUS, Semitrailer, InternationalPaystar5070CabinProtector" Offset="(-3.182; 1.247; 0)" />
-			<AddonSockets/>
 			<!-- <Socket Names="BigCraneRu" NamesBlock="Minicrane, Semitrailer, InternationalPaystar5070CabinProtector" Offset="(-3.65; 1.231; 0)" /> -->
 			<Socket Names="FrameAddonSeismicVibrator" NamesBlock="MinicraneUS, Trailer, InternationalPaystar5070CabinProtector" Offset="(-0.68; 1.231; 0)" ParentFrame="BoneChassis_cdt" />
 			<Socket Names="FrameAddonMaintainer" NamesBlock="Trailer, MinicraneUS, InternationalPaystar5070CabinProtector" Offset="(-3.4; 0.2; 0)" ParentFrame="BoneChassis_cdt" />
@@ -474,6 +473,9 @@
 				Offset="(1.092; 2.789; 0.038)"
 				ParentFrame="BoneCabin_cdt"
 			/>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="AddonHornsSmall" Offset="(2.511; 2.120; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 	</GameData>
 	<ControlledConstraints>

@@ -440,6 +440,9 @@
 		<AddonSockets>
 			<Socket Names="StuffHoodHummerH2" ParentFrame="BoneChassis_cdt" />
 		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="AddonHornsSmall" Offset="(2.42; 1.31; 0)" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>
 	</GameData>
 	<AutomaticIK>
 		<IKBone ModelFrame="BoneRackRHinge" ParentFrame="BoneRackRight">

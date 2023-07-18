@@ -492,6 +492,9 @@
 		<AddonSockets>
 			<Socket InCockpit="true" Names="ChevroletKodiakC70Sticker_Door_L" ParentFrame="BoneCabinRagdoll_cdt" />
 		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="AddonHornsSmall" NamesBlock="StuffHoodChevroletKodiakC70" Offset="(3.37; 1.880; 0)" ParentFrame="BoneCabinRagdoll_cdt" />
+		</AddonSockets>
 	</GameData>
 	<ControlledConstraints>
 		<Constraint Id="chassis_steer" IsLinkedSteering="true" Name="TieRodSteer1" />

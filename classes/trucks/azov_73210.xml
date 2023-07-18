@@ -424,7 +424,7 @@
 			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" NamesBlock="SaddleLow" Offset="(-3.244; 1.755; 0)" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="LogLift" NamesBlock="MinicraneRU, LargeSemitrailer, LargeSemitrailerOiltank, SemitrailerOiltank, FrameAddon, FrameAddonTank,         FrameAddonSeismicVibrator, FrameAddonKung, BigCraneRu, FrameAddonMaintainerBig " Offset="(0.287; 1.271; 0)" />
+			<Socket Names="LogLift" NamesBlock="MinicraneRU, LargeSemitrailer, LargeSemitrailerOiltank, SemitrailerOiltank, FrameAddon, FrameAddonTank, FrameAddonSeismicVibrator, FrameAddonKung, BigCraneRu, BigCrane, FrameAddonMaintainerBig " Offset="(0.287; 1.271; 0)" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="BunkLog" NamesBlock="Azov73210RearFender" Offset="(-6.639; 1.272; 0)" />
@@ -460,11 +460,15 @@
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.088; -0.05)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.088; 0.05)" />
 			</Socket>
+			<Socket Names="BigCrane" Offset="(-2.05; 1.355; 0)" ParentFrame="BoneChassis_cdt">
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.088; -0.05)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.088; 0.05)" />
+			</Socket>
 			<!-- <Socket Names="LogLift" Offset="(0.287; 1.271; 0)" /> -->
 			<Socket Names="FrameAddonMaintainerBig" NamesBlock="Azov73210RearFender, Azov73210SpareWheel, Trailer" Offset="(1; 1.269; 0)" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="MinicraneRU" NamesBlock="BunkLog, FrameAddonTank, FrameAddonKung, BigCraneUs, BigCraneRu, FrameAddonMaintainerBig" Offset="(-0.3; 1.27; 0)">
+			<Socket Names="MinicraneRU" NamesBlock="BunkLog, FrameAddonTank, FrameAddonKung, BigCraneUs, BigCrane, BigCraneRu, FrameAddonMaintainerBig" Offset="(-0.3; 1.27; 0)">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.07)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.07)" />
 			</Socket>
@@ -589,6 +593,9 @@
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="azov73210Sticker_Door_R" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="AddonHornsSmall" Offset="(4.480; 2.540; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 	</GameData>
 	<ControlledConstraints>

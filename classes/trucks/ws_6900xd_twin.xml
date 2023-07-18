@@ -724,6 +724,9 @@
 		<AddonSockets>
 			<Socket Names="StuffHoodWS6900XDTwin" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="AddonHorns" NamesBlock="StuffHoodWS6900XDTwin" Offset="(7.355; 2.370; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
 		<AddonSlots
 			InitialOffset="(1.157; 1.86; 0)"
 			OffsetStep="(-2.559; 0; 0)"

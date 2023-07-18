@@ -628,6 +628,9 @@
 		<AddonSockets>
 			<Socket Names="StuffHoodVoronGrad" Offset="(0; 0; 0)" ParentFrame="BoneCabinDamper_cdt" />
 		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="AddonHornsSmall" NamesBlock="StuffHoodVoronGrad" Offset="(3.627; 1.950; 0)" ParentFrame="BoneCabinDamper_cdt" />
+		</AddonSockets>
 	</GameData>
 	<ControlledConstraints>
 		<Constraint Id="chassis_steer" IsLinkedSteering="true" Name="TieRodSteer" />

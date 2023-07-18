@@ -7,10 +7,10 @@
 		DamageCapacity="160"
 		Name="zikz_612h_mastodont_suspension_default"
 	>
-		<Suspension Damping="0.55" Height="0.13" Strength="0.075" WheelType="front" BrokenSuspensionMin="-0.3" BrokenSuspensionMax="0.1" SuspensionMin="-0.3" SuspensionMax="0.1" />
-		<Suspension Damping="0.6" Height="0.13" Strength="0.08" WheelType="front2" BrokenSuspensionMin="-0.25" BrokenSuspensionMax="0.1" SuspensionMin="-0.25" SuspensionMax="0.1" />
-		<Suspension Damping="0.8" Height="0.03" Strength="0.1" WheelType="rear" BrokenSuspensionMin="-0.2" BrokenSuspensionMax="0.1" SuspensionMin="-0.2" SuspensionMax="0.1" />
-		<Suspension Damping="0.9" Height="0.03" Strength="0.12" WheelType="rear2" BrokenSuspensionMin="-0.2" BrokenSuspensionMax="0.1" SuspensionMin="-0.2" SuspensionMax="0.1" />
+		<Suspension Damping="0.5" Height="0.065" Strength="0.065" WheelType="front" BrokenSuspensionMin="-0.2" BrokenSuspensionMax="0.2" SuspensionMin="-0.25" SuspensionMax="0.1" />
+		<Suspension Damping="0.55" Height="0.07" Strength="0.07" WheelType="front2" BrokenSuspensionMin="-0.25" BrokenSuspensionMax="0.1" SuspensionMin="-0.25" SuspensionMax="0.1" />
+		<Suspension Damping="0.75" Height="0.03" Strength="0.1" WheelType="rear" BrokenSuspensionMin="-0.2" BrokenSuspensionMax="0.1" SuspensionMin="-0.2" SuspensionMax="0.1" />
+		<Suspension Damping="0.85" Height="0.03" Strength="0.12" WheelType="rear2" BrokenSuspensionMin="-0.2" BrokenSuspensionMax="0.1" SuspensionMin="-0.2" SuspensionMax="0.1" />
 		<GameData
 			Price="4000"
 			UnlockByExploration="false"

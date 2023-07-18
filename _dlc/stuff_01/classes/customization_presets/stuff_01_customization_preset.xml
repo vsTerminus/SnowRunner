@@ -16,7 +16,9 @@
 	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_02_azov_64131" />
 	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_03_azov_64131" />
 	<Truck _template="InsideSticker1x2" Name="sticker_inside_1x2_01_azov_64131" />
-	<Truck _template="InsideSticker1x4" Name="sticker_inside_1x4_01_azov_64131" />
+	<Truck _template="InsideSticker1x4" Name="sticker_inside_1x4_01_azov_64131" >
+
+</Truck>
 	<Truck _template="InsideSticker1x4" Name="sticker_inside_1x4_02_azov_64131" />
 	<Truck _template="OutsideSticker1x1" Name="sticker_door_l_1x1_azov_64131" />
 	<Truck _template="OutsideSticker1x1" Name="sticker_door_r_1x1_azov_64131" />
@@ -1005,6 +1007,63 @@
 	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_03_zikz_566a" />
 	<Truck _template="InsideSticker1x4" Name="sticker_inside_1x4_01_zikz_566a" />
 	<Truck _template="GlassStickerBottomCut" Name="sticker_glass_botom_zikz_566a" />
+	<!--<- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -/>-->
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_01_kenworth_963" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_02_kenworth_963" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_03_kenworth_963" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_04_kenworth_963" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_05_kenworth_963" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_06_kenworth_963" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_07_kenworth_963" />
+	<Truck _template="InsideSticker1x2" Name="sticker_inside_1x2_01_kenworth_963" />
+	<Truck _template="InsideSticker1x4" Name="sticker_inside_1x4_01_kenworth_963" />
+	<Truck _template="InsideSticker1x4" Name="sticker_inside_1x4_02_kenworth_963" />
+	<Truck _template="InsideSticker1x4" Name="sticker_inside_1x4_03_kenworth_963" />
+	<Truck _template="InsideSticker1x4" Name="sticker_inside_1x4_04_kenworth_963" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_door_l_1x1_kenworth_963" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_door_r_1x1_kenworth_963" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_hood_r_t_1x1_kenworth_963" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_hood_r_b_1x1_kenworth_963" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_hood_l_t_1x1_kenworth_963" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_hood_l_b_1x1_kenworth_963" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_roof_1x1_kenworth_963" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_roof_1x2_kenworth_963" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_roof_1x3_kenworth_963" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_roof_1x4_kenworth_963" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_roof_1x5_kenworth_963" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_roof_1x6_kenworth_963" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_roof_1x7_kenworth_963" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_roof_1x8_kenworth_963" />
+	<Truck _template="GlassStickerTopCut" Name="sticker_glass_top_kenworth_963" />
+	<Truck _template="GlassStickerBottomCut" Name="sticker_glass_bottom_kenworth_963" />
+	<Truck _template="Curtain" Name="stuff_curtain_kenworth_963" />
+	<!--<- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -/>-->
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_01_mack_defense_m917" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_02_mack_defense_m917" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_03_mack_defense_m917" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_04_mack_defense_m917" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_05_mack_defense_m917" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_06_mack_defense_m917" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_07_mack_defense_m917" />
+	<Truck _template="InsideSticker1x2" Name="sticker_inside_1x2_01_mack_defense_m917" />
+	<Truck _template="InsideSticker1x4" Name="sticker_inside_1x4_01_mack_defense_m917" />
+	<Truck _template="InsideSticker1x4" Name="sticker_inside_1x4_02_mack_defense_m917" />
+	<Truck _template="InsideSticker1x4" Name="sticker_inside_1x4_03_mack_defense_m917" />
+	<Truck _template="InsideSticker1x4" Name="sticker_inside_1x4_04_mack_defense_m917" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_door_l_1x1_mack_defense_m917" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_door_r_1x1_mack_defense_m917" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_capote_1x1_mack_defense_m917" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_roof_1x1_mack_defense_m917" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_roof_1x2_mack_defense_m917" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_roof_1x3_mack_defense_m917" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_roof_1x4_mack_defense_m917" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_roof_1x5_mack_defense_m917" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_roof_1x6_mack_defense_m917" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_roof_1x7_mack_defense_m917" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_roof_1x8_mack_defense_m917" />
+	<Truck _template="GlassStickerTopCut" Name="sticker_glass_top_mack_defense_m917" />
+	<Truck _template="GlassStickerBottomCut" Name="sticker_glass_bottom_mack_defense_m917" />
+	<Truck _template="Curtain" Name="stuff_curtain_mack_defense_m917" />
 	<!--<- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -/>-->
 	<Truck _template="Curtain" Name="stuff_curtain_zikz_612h_mastodont" />
 	<Truck _template="GlassStickerTopCut" Name="sticker_glass_top_zikz_612h_mastodont" />

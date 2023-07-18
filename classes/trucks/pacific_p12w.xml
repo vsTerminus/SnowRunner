@@ -373,6 +373,10 @@
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.1; 0)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.1; 0)" />
 			</Socket>
+			<Socket Names="BigCrane" NamesBlock=" BigCraneUs, MetalDetector, PacificP12wSpareWheel, PacificP12WCabinProtector" Offset="(-3.064; 1.921; 0)">
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.1; 0)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.1; 0)" />
+			</Socket>
 		</AddonSockets>
 		<AddonSockets DefaultAddon="pacific_p12w_horn_default">
 			<Socket
@@ -457,6 +461,9 @@
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="StuffHoodPacificP12W" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="AddonHornsSmall" NamesBlock="StuffHoodPacificP12W" Offset="(3.818; 2.945; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 	</GameData>
 	<ControlledConstraints>

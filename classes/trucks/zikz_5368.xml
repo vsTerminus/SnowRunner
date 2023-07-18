@@ -491,6 +491,9 @@
 		<AddonSockets>
 			<Socket _template="Cabin2Chassis" Names="StuffHoodZikz5368" />
 		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="AddonHornsSmall" NamesBlock="zikz5368Visor" Offset="(2.510; 2.594; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
 	</GameData>
 	<ControlledConstraints>
 		<Constraint Id="chassis_steer" IsLinkedSteering="true" Name="TieRodSteer" />

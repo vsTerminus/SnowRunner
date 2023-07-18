@@ -384,6 +384,9 @@
 		<AddonSockets>
 			<Socket Names="StuffHoodDon71" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="AddonHornsSmall" NamesBlock="StuffHoodDon71" Offset="(1.644; 1.025; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
 	</GameData>
 	<AutomaticIK>
 		<IKBone ModelFrame="BoneBalancerTop1_L" ParentFrame="BoneCabin_cdt">

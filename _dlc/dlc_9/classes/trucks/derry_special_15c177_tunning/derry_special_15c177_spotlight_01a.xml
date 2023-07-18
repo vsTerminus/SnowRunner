@@ -18,6 +18,7 @@
 			<Flare _template="BlueStreak" Size="0.6" Pos="(3.32; 2.77; 0.492)" ParentFrame="BoneAddon_cdt" />
 		</HeadLight>
 	</ModelAttachments>
+	<MainHeadLight _template="Multiply1" />
 	<GameData
 		CameraPreset="vizors"
 		Category="top"

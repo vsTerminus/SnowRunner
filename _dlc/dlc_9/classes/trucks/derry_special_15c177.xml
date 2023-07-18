@@ -135,7 +135,7 @@
 			<Wheel _template="FirstAxle" RightSide="true" Pos="(1.276; 0.623; 1.1)" />
 			<Wheel _template="SecondAxle" Pos="(-0.261; 0.623; 1.1)" />
 			<Wheel _template="SecondAxle" RightSide="true" Pos="(-0.261; 0.623; 1.1)" />
-			<Wheel _template="MiddleAxle" Pos="(-4.122; 0.623q; 1.1)" />
+			<Wheel _template="MiddleAxle" Pos="(-4.122; 0.623; 1.1)" />
 			<Wheel _template="MiddleAxle" RightSide="true" Pos="(-4.122; 0.623; 1.1)" />
 			<Wheel _template="MiddleAxle" Pos="(-5.659; 0.623; 1.1)" />
 			<Wheel _template="MiddleAxle" RightSide="true" Pos="(-5.659; 0.623; 1.1)" />
@@ -555,7 +555,7 @@
 			<Socket Names="DerrySpecial15c177Exhaust" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" >
 				<ExtraParent Offset="(0; 0; 0)" Frame="BoneChassis_cdt"/>
 			</Socket>
-			<Socket Names="FrameAddonDerryFirefighter" Offset="(0; 0.0; 0)" ParentFrame="BoneChassis_cdt" NamesBlock="SaddleHigh1, FrameAddonSeismicVibrator, FrameAddonMaintainer, Trailer, LargeSemitrailer, LargeSemitrailerOiltank, BunkLog, FrameAddonLogShort, FrameAddon, FrameAddon3" >
+			<Socket Names="FrameAddonDerryFirefighter" Offset="(0; 0.0; 0)" ParentFrame="BoneChassis_cdt" NamesBlock="SaddleHigh1, FrameAddonSeismicVibrator, FrameAddonMaintainer, LargeSemitrailer, LargeSemitrailerOiltank, BunkLog, FrameAddonLogShort, FrameAddon, FrameAddon3" >
 				<ExtraParent Offset="(0; 0; 0)" Frame="BoneCabin_cdt"/>
 			</Socket>
 		</AddonSockets>
@@ -607,10 +607,14 @@
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.095; -0.05)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.095; 0.05)" />
 			</Socket>
+			<Socket Names="BigCrane" Offset="(-4.15; 1.574; 0)" ParentFrame="BoneChassis_cdt" NamesBlock="BigCraneUs, FrameAddonDerryFirefighter">
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.095; -0.05)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.095; 0.05)" />
+			</Socket>
 			<Socket Names="SaddleHigh1" Offset="(-4.84; 1.48; 0)" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="MinicraneUS" Offset="(-1.65; 1.48; 0)" NamesBlock="FrameAddonDerryFirefighter, BunkLog, FrameAddonTank, FrameAddonKung, BigCraneUs, BigCraneRu, FrameAddonMaintainerBig" >
+			<Socket Names="MinicraneUS" Offset="(-1.65; 1.48; 0)" NamesBlock="FrameAddonDerryFirefighter, BunkLog, FrameAddonTank, FrameAddonKung, BigCraneUs, BigCrane, BigCraneRu, FrameAddonMaintainerBig" >
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.02)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.02)" />
 			</Socket>

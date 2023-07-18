@@ -620,10 +620,10 @@
 		<AddonSockets>
 			<Socket Names="StuffHoodVoronAE4380" ParentFrame="BoneCabinDamper_cdt" />
 		</AddonSockets>
-        
-<WinchSocket Pos="(2.656; 0.562; 0.153)" />        
-        
-        
+        <AddonSockets>
+			<Socket Names="AddonHornsSmall" NamesBlock="StuffHoodVoronAE4380" Offset="(3.405; 1.935; 0)" ParentFrame="BoneCabinDamper_cdt" />
+		</AddonSockets>
+	<WinchSocket Pos="(2.656; 0.562; 0.153)" />        
 	</GameData>
 	<ControlledConstraints>
 		<Constraint Id="chassis_steer" IsLinkedSteering="true" Name="TieRodSteer" />

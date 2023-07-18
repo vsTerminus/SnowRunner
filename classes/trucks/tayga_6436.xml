@@ -534,6 +534,9 @@
 				<ExtraParent Frame="BoneChassis_cdt" />
 			</Socket>
 		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="AddonHornsSmall" NamesBlock="StuffHoodTayga6436" Offset="(3.943; 2.030; 0)" ParentFrame="BoneCabinDamper_cdt" />
+		</AddonSockets>
 	</GameData>
 	<ControlledConstraints>
 		<Constraint Id="chassis_steer" IsLinkedSteering="true" Name="TieRodSteer" />

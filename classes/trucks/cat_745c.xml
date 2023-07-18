@@ -427,6 +427,9 @@
 				ParentFrame="BoneFront_cdt"
 			/>
 		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="AddonHorns" Offset="(5.310; 2.690; 0)" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>
 <!--		<AddonSockets>
 			<Socket Names="Trailer" Offset="(-5.069; 1.236; 0.000)" ParentFrame="BoneBackRot_cdt" />
 		</AddonSockets>     -->   

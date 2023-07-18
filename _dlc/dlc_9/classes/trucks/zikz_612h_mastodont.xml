@@ -4,7 +4,7 @@
 			CamberAngleRender="2"
 			ConnectedToHandbrake="true"
 			Location="front"
-			SteeringAngle="29"
+			SteeringAngle="35"
 			SteeringJointOffset="0.36"
 			Torque="default"
 		/>
@@ -12,7 +12,7 @@
 			CamberAngleRender="1"
 			ConnectedToHandbrake="true"
 			Location="front2"
-			SteeringAngle="24"
+			SteeringAngle="29.7"
 			SteeringJointOffset="0.36"
 			Torque="default"
 		/>
@@ -48,6 +48,7 @@
 		SteerSpeed="0.016"
 		TruckImage="zikz612mchr"
 		TruckType="HEAVY"
+
 	>
 		<WinchUpgradeSocket Default="w_heavy_trucks_default" IsUpgradable="true" Type="winches_heavy_trucks" />
 		<Wheels
@@ -56,17 +57,17 @@
 			DefaultWheelType="wheels_zikz_612h_mastodont"
 		>
 			<!-- First Axle -->
-			<Wheel _template="FirstAxle" Pos="(6.532; 0.758; 1.069)" ParentFrame="BoneCabin_cdt" />
-			<Wheel _template="FirstAxle" RightSide="true" Pos="(6.532; 0.758; 1.069)" ParentFrame="BoneCabin_cdt" />
+			<Wheel _template="FirstAxle" Pos="(6.539; 0.758; 1.069)" ParentFrame="BoneCabin_cdt" />
+			<Wheel _template="FirstAxle" RightSide="true" Pos="(6.539; 0.758; 1.069)" ParentFrame="BoneCabin_cdt" />
 			<!-- Second Axle -->
-			<Wheel _template="SecondAxle" Pos="(4.332; 0.758; 1.069)" ParentFrame="BoneCabin_cdt" />
-			<Wheel _template="SecondAxle" RightSide="true" Pos="(4.332; 0.758; 1.069)" ParentFrame="BoneCabin_cdt" />
+			<Wheel _template="SecondAxle" Pos="(4.334; 0.758; 1.069)" ParentFrame="BoneCabin_cdt" />
+			<Wheel _template="SecondAxle" RightSide="true" Pos="(4.334; 0.758; 1.069)" ParentFrame="BoneCabin_cdt" />
 			<!-- Third Axle-->
-			<Wheel _template="ThirdAxle" Pos="(1.119; 0.758; 1.069)" ParentFrame="BoneChassis_cdt" />
-			<Wheel _template="ThirdAxle" RightSide="true" Pos="(1.119; 0.758; 1.069)" ParentFrame="BoneChassis_cdt" />
+			<Wheel _template="ThirdAxle" Pos="(1.122; 0.758; 1.069)" ParentFrame="BoneChassis_cdt" />
+			<Wheel _template="ThirdAxle" RightSide="true" Pos="(1.122; 0.758; 1.069)" ParentFrame="BoneChassis_cdt" />
 			<!-- Fourth Axle-->
-			<Wheel _template="FourthAxle" Pos="(-1.086; 0.758; 1.069)" ParentFrame="BoneChassis_cdt" />
-			<Wheel _template="FourthAxle" RightSide="true" Pos="(-1.086; 0.758; 1.069)" ParentFrame="BoneChassis_cdt" />
+			<Wheel _template="FourthAxle" Pos="(-1.084; 0.758; 1.069)" ParentFrame="BoneChassis_cdt" />
+			<Wheel _template="FourthAxle" RightSide="true" Pos="(-1.084; 0.758; 1.069)" ParentFrame="BoneChassis_cdt" />
 		</Wheels>
 		<SuspensionSocket
 			Default="zikz_612h_mastodont_suspension_default"
@@ -76,13 +77,13 @@
 		<SteeringWheel Frame="BoneSteering" />
 		<SteeringRack Frame="BoneRack1" FrameSteerLeft="BoneRackL1" FrameSteerRight="BoneRackR1" RackHalfSizeZ="1.01" />
 		<SteeringRack Frame="BoneRack" FrameSteerLeft="BoneRackL2" FrameSteerRight="BoneRackR2" RackHalfSizeZ="1.01" />
-		<Steam Origin="(9.101; 1.884; 0)" />
+		<Steam Origin="(2.101; 1.884; 0)" />
 		<SoundsWheels _template="Default" />
 		<SoundsDamage _template="Heavy" />
 		<Sounds
 			_template="Default"
 			DisableReversePitch="true"
-			Origin="(1.34; 0.33; 0)"
+			Origin="(2; 0.33; 0)"
 			MinDist="15.0"
 		>
 			<Reverse		Sound="" />
@@ -126,9 +127,10 @@
 			<Shaft SocketPointA="Shaft5a" SocketPointB="Shaft5b" />
 		</Shafts>
 		<OcclusionMap HalfSizeZ="3" MinX="-3.5" MaxX="10" />
+		<Messages Pos="(8.417; 2.922; 0.034)" ParentFrame="BoneCabin_cdt"/>
 		<CompatibleWheels OffsetZ="0.36" Scale="0.78" Type="wheels_zikz_612h_mastodont" />
-		<CompatibleWheels OffsetZ="0.34" Scale="0.77" Type="wheels_heavy_single" />
-		<CompatibleWheels OffsetZ="0.34" Scale="0.77" Type="wheels_heavy_single2" />
+		<CompatibleWheels OffsetZ="0.34" Scale="0.77" Type="wheels_heavy_single_zikz_612h" />
+		<CompatibleWheels OffsetZ="0.34" Scale="0.77" Type="wheels_heavy_single2_zikz_612h" />
 		<!--<LimitedFluid
 			Center="(5.483; 1.498; 1.235)"
 			SizeX="0.773"
@@ -176,18 +178,21 @@
 			<DamageArea Type="FuelTank" Min="(5.82; 1.169; 1.671)" Max="(5.15; 1.739; -1.671)" ParentFrame="BoneCabin_cdt" />
 			<DamageArea Type="Gearbox" Min="(2.686; 0.85; -0.26)" Max="(6.15; 1.4; 0.26)" ParentFrame="BoneCabin_cdt" />
 		</Damage>
-		<Camera Center="(2; 0; 0)" ParentFrame="BoneCabin_cdt">
+		<Camera Center="(2; 0; 0)" RadiusMultiplier="1.3" ParentFrame="BoneCabin_cdt">
 			<Cockpit
 				_template="Default"
 				LimitsHor="(-2.4; 1.5)"
 				WindshieldDiffuseTexture="trucks/zikz_612h_mastodon_glass__d_a.tga"
 				WindshieldShadingTexture="trucks/zikz_612h_mastodon_glass__sh_d.tga"
 				ViewPos="(7.9; 2.4; 1.050)"
+				
 			>
 				<Rear
 					HorTransitionEnd="-1.5"
 					HorTransitionStart="-0.95"
 					ViewPosOffset="(0.65; -0.1; 0.7)"
+					RollAngle="-15"
+					ViewDir="(1; -0.05; 0.5)"
 				/>
 				<Mirror
 					ClipDir="(-1; 0; -0.22)"
@@ -247,7 +252,7 @@
 						<Motor Damping="0.1" Spring="3" Type="Spring" />
 					</Constraint>
 				</Body>
-				<Body Collisions="None" Mass="0.5" ModelFrame="BoneInteriorArm_cdt">
+				<!--<Body Collisions="None" Mass="0.5" ModelFrame="BoneInteriorArm_cdt">
 					<Constraint
 						AxisLocal="(0; 1; 0)"
 						Type="Hinge"
@@ -256,7 +261,7 @@
 					>
 						<Motor Damping="0.2" Spring="0.3" Type="Spring" />
 					</Constraint>
-				</Body>
+				</Body>-->
 				<Body Collisions="None" Mass="2.5" ModelFrame="BoneCurtainHank01_cdt">
 					<Constraint
 						AxisLocal="(0; -1; 0)"
@@ -490,7 +495,7 @@
 				Pos="(-2.199; 1.189; 0)"
 				ParentFrame="BoneChassis_cdt"
 			/>
-			<Flare AspectRatio="1.4" Color="g(200; 200; 200) x 0.4" ColorMultAtDay="0.6" Dir="(-1; 0; 0)" DirAngle="90" Reflections="true" Size="0.2" Pos="(-2.2; 1.189; -1.035)" ParentFrame="BoneChassis_cdt" />
+			<Flare AspectRatio="1.4" Color="g(200; 200; 200) x 0.4" ColorMultAtDay="0.6" Dir="(-1; 0; 0)" DirAngle="90" Reflections="true" Size="0.5" Pos="(-2.2; 1.189; -1.035)" ParentFrame="BoneChassis_cdt" />
 			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.2" Dir="(-1; 0; 0)" Size="0.1" Pos="(-2.2; 1.189; -0.99)" ParentFrame="BoneChassis_cdt" />
 			<Flare AspectRatio="1.4" Color="g(200; 200; 200) x 0.4" ColorMultAtDay="0.6" Dir="(-1; 0; 0)" DirAngle="90" Reflections="true" Size="0.5" Pos="(-2.2; 1.189; 1.035)" ParentFrame="BoneChassis_cdt" />
 			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.2" Dir="(-1; 0; 0)" Size="0.1" Pos="(-2.2; 1.189; 0.99)" ParentFrame="BoneChassis_cdt" />
@@ -516,8 +521,8 @@
 			<Model _template="HeadLightRay" Org="(9.12; 1.551; -1.306)" ParentFrame="BoneCabin_cdt" />
 			<Flare _template="HeadLight" Color="g(255; 190; 100) x 0.5" Size="0.4" Pos="(9.1; 1.24; 1.15)" ParentFrame="BoneCabin_cdt" />
 			<Flare _template="HeadLight" Color="g(255; 190; 100) x 0.5" Size="0.4" Pos="(9.1; 1.24; -1.15)" ParentFrame="BoneCabin_cdt" />
-			<Flare _template="HeadLight" Color="g(255; 235; 200) x 0.5" Size="1" Pos="(9.; 1.547; 1.292)" ParentFrame="BoneCabin_cdt" />
-			<Flare _template="HeadLight" Color="g(255; 235; 200) x 0.5" Size="1" Pos="(9.; 1.547; -1.292)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="HeadLight" Color="g(255; 235; 200) x 0.5" Size="1" Pos="(9; 1.547; 1.292)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="HeadLight" Color="g(255; 235; 200) x 0.5" Size="1" Pos="(9; 1.547; -1.292)" ParentFrame="BoneCabin_cdt" />
 			<Flare _template="BlueStreak" Size="0.3" Pos="(9.025; 1.551; 1.306)" ParentFrame="BoneCabin_cdt" />
 			<Flare _template="BlueStreak" Size="0.3" Pos="(9.025; 1.551; -1.306)" ParentFrame="BoneCabin_cdt" />
 		</HeadLight>
@@ -555,16 +560,16 @@
 			<CameraPos FOV="32.0" Name="spotlight1" InterestPosition="(6.868; 2.765; -1.5)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(9.036; 3.486; -2.129)" />
 			<CameraPos FOV="32.0" Name="spotlight2" InterestPosition="(6.4; 2.765; -1.8)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(9.036; 3.486; -2.129)" />
 			<CameraPos FOV="32.0" Name="outerframe" InterestPosition="(6.193; 2.053; -2.008)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(10.132; 2.689; -4.48)" />
-			<CameraPos FOV="32.0" Name="addon_1" InterestPosition="(1.332; 1.692; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-8.55; 4.273; 9.315)" />
+			<CameraPos FOV="32.0" Name="addon_1" InterestPosition="(-2.0; 2.2; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-12.55; 5.273; 9.315)" />
 			<CameraPos FOV="32.0" Name="addon_2" InterestPosition="(3.917; 2.341; -1.149)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(9.628; 4.331; 1.437)" />
 			<CameraPos FOV="32.0" Interior="true" Name="mirror_mount" InterestPosition="(8.439; 2.221; 1.066)" Position="(5.714; 2.661; -0.37)" />
 			<CameraPos FOV="32.0" Name="roofs" InterestPosition="(7.013; 2.118; -0.523)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(12.239; 4.145; 2.722)" />
 			<CameraPos FOV="32.0" Name="hood_ornament" InterestPosition="(6.727; 2.16; -0.851)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(9.918; 2.816; -1.653)" />
 			<CameraPos FOV="32.0" Interior="true" Name="sticker" InterestPosition="(8.595; 1.207; 2.389)" Position="(6.062; 2.498; -0.015)" />
-			<CameraPos FOV="32.0" Interior="true" Name="ins_sticker01" InterestPosition="(7.85; 0.87; -0.85)" MaxZoom="2" Position="(6.6; 2.4; -0.9)" />
+			<CameraPos FOV="32.0" Interior="true" Name="ins_sticker01" InterestPosition="(7.85; 0.87; -0.85)" MaxZoom="2" Position="(6.5; 2.4; -0.9)" />
 			<CameraPos FOV="32.0" Interior="true" Name="ins_sticker02" InterestPosition="(7.5; 0.9; 0.8)" MaxZoom="2" Position="(6.4; 2.4; -1.2)" />
 			<CameraPos FOV="32.0" Interior="true" Name="ins_sticker03" InterestPosition="(7.5; 1.5; 0.8)" MaxZoom="2" Position="(6.4; 2.4; -1.2)" />
-			<CameraPos FOV="32.0" Interior="true" Name="ins_sticker04" InterestPosition="(7.8; 0.88; -1.2)" MaxZoom="2" Position="(6.6; 2.4; -0.95)" />
+			<CameraPos FOV="32.0" Interior="true" Name="ins_sticker04" InterestPosition="(7.8; 0.92; -1.2)" MaxZoom="2" Position="(6.5; 2.4; -0.95)" />
 			<CameraPos FOV="32.0" Interior="true" Name="ins_sticker05" InterestPosition="(6; 0.8; 2.5)" MaxZoom="2" Position="(6.4; 2.4; -1.2)" />
 			<CameraPos FOV="32.0" Name="out_sticker01" InterestPosition="(7.076; 1.95; -0.8)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(8.531; 3.782; 0.7)" />
 			<CameraPos FOV="32.0" Name="out_sticker02" InterestPosition="(5.6; 1.665; -1.464)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(6.5; 1.779; -3.042)" />
@@ -593,7 +598,7 @@
 		<CraneSocket Pos="(2.5; 1.15; 0.55)" />
 		<CraneSocket Pos="(2.5; 1.15; -0.55)" />
 		<AddonSockets>
-			<Socket Names="Trailer" NamesBlock="MastodonSideboard, MastodonWatertank, FrameAddonSeismicVibratorZikz, FrameAddonLogShortMastodon" Offset="(-2.33; 0.93; 0)" />
+			<Socket Names="Trailer, MastodonLogPoleTrailer" NamesBlock="MastodonSideboard, MastodonWatertank, FrameAddonSeismicVibratorZikz, FrameAddonLogMediumMastodon" Offset="(-2.33; 0.93; 0)" />
 			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" NamesBlock="SaddleLow" Offset="(-0.4; 1.85; 0)" />
 			<Socket Names="Semitrailer, SemitrailerOiltank" NamesBlock="SaddleHigh" Offset="(-1; 1.65; 0)" />
 		</AddonSockets>
@@ -601,14 +606,15 @@
 			<Socket
 				AddonShift="(1; 0; 0)"
 				Names="ZikzFrameAddon"
-				Offset="(3.28; -0.08; 0)"
+				Offset="(3.35; -0.08; 0)"
 				ParentFrame="BoneChassis_cdt"
 			>
 				<AddonsShift Offset="(1.2; 0; 0)" Types="MinicraneRU" />
 			</Socket>
-			<Socket Names="MastodonSideboard" ParentFrame="BoneChassis_cdt" />
-			<Socket Names="MastodonWatertank" ParentFrame="BoneChassis_cdt" Offset="(-0.17; 0; 0)"/>
-			<Socket Names="MastodonBigCrane" Offset="(3; 0.12; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="MastodonSideboard" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="MastodonWatertank" ParentFrame="BoneChassis_cdt" Offset="(-0.17; 0; 0)" />
+			<Socket Names="MastodonBigCrane" Offset="(3; 0.08; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="MastodonLongBigCrane" Offset="(0.5; 1.54; 0)" ParentFrame="BoneChassis_cdt" NamesBlock="Trailer, MastodonLogPoleTrailer, LargeSemitrailer, LargeSemitrailerOiltank, Semitrailer, SemitrailerOiltank"/>
 			<Socket Names="SaddleHigh" Offset="(-0.4; 1.3; 0)" ParentFrame="BoneChassis_cdt">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.149)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.149)" />
@@ -618,56 +624,59 @@
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.149)" />
 			</Socket>
 			<Socket Names="FrameAddonKungZikz" NamesBlock="MinicraneRU" Offset="(3.8; -0.08; 0)" ParentFrame="BoneChassis_cdt" />
-			<Socket Names="FrameAddonSeismicVibratorZikz" Offset="(2.3; -0.08; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="FrameAddonSeismicVibratorZikz" Offset="(2; -0.07; 0)" ParentFrame="BoneChassis_cdt" />
 			<Socket Names="FrameAddonTankZikz" Offset="(2.95; -0.08; 0)" ParentFrame="BoneChassis_cdt" />
 			<Socket Names="FrameAddonLogShortMastodon" Offset="(1; 1.7; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="FrameAddonLogMediumMastodon" Offset="(1; 1.7; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="MastodonBunkLog" Offset="(-4.5; 1.5; 0)" />
+			<Socket Names="MastodonFrameAddonTowPlatform" NamesBlock="MinicraneRU, ZikzLogLift" Offset="(1.5; 1.55; 0)" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket
 				Names="MinicraneRU"
-				NamesBlock="MastodonSideboard, MastodonWatertank, MastodonBigCrane, FrameAddonSeismicVibratorZikz, FrameAddonTankZikz, FrameAddonLogShortMastodon"
+				NamesBlock="MastodonSideboard, MastodonWatertank, MastodonBigCrane, MastodonLongBigCrane, FrameAddonSeismicVibratorZikz, FrameAddonTankZikz, FrameAddonLogShortMastodon, FrameAddonLogMediumMastodon"
 				Offset="(2.22; 1.29; 0)"
 				ParentFrame="BoneChassis_cdt"
 			>
-				<AddonsShift Offset="(-4.02; 0; 0)" Types="ZikzFrameAddon" />
+				<AddonsShift Offset="(-4; 0; 0)" Types="ZikzFrameAddon" />
 			</Socket>
-			<Socket Names="ZikzLogLift" NamesBlock="MastodonSideboard, MastodonWatertank, MastodonBigCrane, FrameAddonSeismicVibratorZikz, FrameAddonTankZikz, FrameAddonLogShortMastodon, FrameAddonKungZikz, ZikzFrameAddon, SaddleHigh" Offset="(4.4; -0.08; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="ZikzLogLift" NamesBlock="MastodonSideboard, MastodonWatertank, MastodonBigCrane, MastodonLongBigCrane, FrameAddonSeismicVibratorZikz, FrameAddonTankZikz, FrameAddonLogShortMastodon, FrameAddonLogMediumMastodon, FrameAddonKungZikz, ZikzFrameAddon, SaddleHigh" Offset="(4.4; -0.05; 0)" ParentFrame="BoneChassis_cdt" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="zikz_612h_mastodont_electricbox" RequiredAddonIfNoConflicts="zikz_612h_mastodont_electricbox">
-			<Socket Names="MastodonElectricbox" NamesBlock="MastodonWatertank, FrameAddonKungZikz" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="MastodonElectricbox" Offset="(0; 0; 0)" NamesBlock="MastodonWatertank, FrameAddonKungZikz" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="zikz_612h_mastodont_spare_wheel">
-			<Socket Names="MastodonSpareWheel" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="MastodonSpareWheel" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="MastodonSpareWheel2" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="MastodonSpareWheel2" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="MastodonBeacon" ParentFrame="BoneCabin_cdt" NamesBlock="zikz_612h_mastodont_roofrack"/>
+			<Socket Names="MastodonBeacon" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" NamesBlock="zikz_612h_mastodont_roofrack"/>
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="MastodonOuterframe" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="MastodonOuterframe" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="MastodonRoofrack" ParentFrame="BoneCabin_cdt" Offset="(-0.1; 0; 0)"/>
+			<Socket Names="MastodonRoofrack"  ParentFrame="BoneCabin_cdt" Offset="(0.1; 0; 0)"/>
 		</AddonSockets>
 		<AddonSockets DefaultAddon="zikz_612h_mastodont_exhaust_default">
-			<Socket Names="MastodonExhaust" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="MastodonExhaust" Offset="(0; -0.02; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="zikz_612h_mastodont_bumper_default">
-			<Socket Names="MastodonBumper" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="MastodonBumper" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="zikz_612h_mastodont_spot_light_default">
-			<Socket Names="MastodonSpotlight" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="MastodonSpotlight" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="MastodonVisor" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="MastodonVisor" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="MastodonAirFilter" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="MastodonAirFilter" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="MastodonHorns" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="MastodonHorns" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<!-- stuff -->
 		<AddonSockets>
@@ -778,7 +787,7 @@
 			<Socket
 				InCockpit="true"
 				Names="StuffZikz612hRoof_1x1_1"
-				Offset="(0; 0; 0)"
+				Offset="(0.15; 0; 0)"
 				ParentFrame="BoneCabin_cdt"
 			/>
 		</AddonSockets>
@@ -786,7 +795,7 @@
 			<Socket
 				InCockpit="true"
 				Names="StuffZikz612hRoof_1x1_2"
-				Offset="(0; 0; 0)"
+				Offset="(0.15; 0; 0)"
 				ParentFrame="BoneCabin_cdt"
 			/>
 		</AddonSockets>

@@ -92,9 +92,9 @@
 			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.2" Dir="(-1; 0; 0)" Size="0.1" Pos="(-3.19; 1.6; 1.51)" ParentFrame="BoneAddon_cdt" />
 		</ReverseSignals>
 		<Ignition>
-			<Light _template="IgnitionSignalWhite" Color="g(255; 190; 100) x 0.4" Dir="(0; 0; 1)" Pos="(2.5; 2.489; 2.5)" ParentFrame="BoneAddon_cdt" />
-			<Light _template="IgnitionSignalWhite" Color="g(255; 190; 100) x 0.4" Dir="(0; 0; -1)" Pos="(2.5; 2.489; -2.5)" ParentFrame="BoneAddon_cdt" />
-			<Light _template="IgnitionSignalWhite" Color="g(255; 190; 100) x 0.4" Dir="(-1; 0; 0)" Pos="(-2.978; 2.797; -0.536)" ParentFrame="BoneAddon_cdt" />
+			<Light _template="IgnitionSignalWhite" Color="g(255; 190; 100) x 1" Dir="(0; 0; 1)" Pos="(2.5; 2.489; 2.5)" ParentFrame="BoneAddon_cdt" />
+			<Light _template="IgnitionSignalWhite" Color="g(255; 190; 100) x 1" Dir="(0; 0; -1)" Pos="(2.5; 2.489; -2.5)" ParentFrame="BoneAddon_cdt" />
+			<Light _template="IgnitionSignalWhite" Color="g(255; 190; 100) x 1" Dir="(-1; 0; 0)" Pos="(-2.978; 2.797; -0.536)" ParentFrame="BoneAddon_cdt" />
 			<Light _template="IgnitionSignalRed" Color="g(102; 1; 1) x 2" Pos="(-3.19; 1.57; 1.515)" ParentFrame="BoneAddon_cdt" />
 			<Light _template="IgnitionSignalRed" Color="g(102; 1; 1) x 2" Pos="(-3.19; 1.57; -1.515)" ParentFrame="BoneAddon_cdt" />
 			<Flare _template="IgnitionSignalRed" AspectRatio="1" Dir="(-1; 0; 0)" Size="0.66" Pos="(-3.19; 1.57; 1.515)" />
@@ -105,9 +105,9 @@
 			<Flare _template="IgnitionSignalOrange" Color="g(255; 140; 0) x 0.35" Dir="(0; 0; 0.5)" Size="0.66" Pos="(-1.8; 1.8; 1.71)" ParentFrame="BoneAddon_cdt" />
 			<Flare _template="IgnitionSignalOrange" Color="g(255; 140; 0) x 0.35" Dir="(0; 0; 0.5)" Size="0.66" Pos="(0.95; 1.8; 1.71)" ParentFrame="BoneAddon_cdt" />
 			<Flare _template="IgnitionSignalOrange" Color="g(255; 140; 0) x 0.35" Dir="(0; 0; 0.5)" Size="0.66" Pos="(4.35; 1.8; 1.71)" ParentFrame="BoneAddon_cdt" />
-			<Flare _template="IgnitionSignalWhite" Dir="(0; 0; 1)" Size="0.4" Pos="(2.983; 2.489; 1.678)" />
-			<Flare _template="IgnitionSignalWhite" Dir="(0; 0; -1)" Size="0.4" Pos="(2.983; 2.489; -1.678)" />
-			<Flare _template="IgnitionSignalWhite" Dir="(-1; 0; 0)" Size="0.4" Pos="(-2.978; 2.797; -0.536)" />
+			<Flare _template="IgnitionSignalWhite" Dir="(0; 0; 1)" Color="g(255; 235; 200) x 0.8"  Size="0.4" Pos="(2.983; 2.489; 1.678)" />
+			<Flare _template="IgnitionSignalWhite" Dir="(0; 0; -1)" Color="g(255; 235; 200) x 0.8"  Size="0.4" Pos="(2.983; 2.489; -1.678)" />
+			<Flare _template="IgnitionSignalWhite" Dir="(-1; 0; 0)" Color="g(255; 235; 200) x 0.8"  Size="0.4" Pos="(-2.978; 2.797; -0.536)" />
 		</Ignition>
 		<HeadLight>
 			<Model _template="HeadLightRay" Dir="(0; -0.5; 1)" Org="(2.983; 2.489; 1.678)" />

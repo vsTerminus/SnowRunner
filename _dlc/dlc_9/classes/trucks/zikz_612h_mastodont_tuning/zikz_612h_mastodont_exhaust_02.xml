@@ -2,7 +2,7 @@
 <TruckAddon>
 	<TruckData>
 		<Shakers>
-			<Shaker Frame="BoneExhaust" LimitDirectionY="Negative" MinAngle="(0.2; 0.7; 0.2)" MaxAngle="(0.4; 0.7; 0.4)" MaxFrequency="0.2" ParentFrame="BoneExhaust" />
+			<Shaker Frame="BoneExhaust" LimitDirectionY="Negative" MinAngle="(0.1; 0.2; 0.2)" MaxAngle="(0.4; 0.2; 0.4)" MaxFrequency="0.2" ParentFrame="BoneExhaust" />
 		</Shakers>
 	</TruckData>
 	<PhysicsModel Mesh="trucks/zikz_612h_mastodont_tuning/zikz_612h_mastodont_exhaust_02">

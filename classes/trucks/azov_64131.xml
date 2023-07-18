@@ -583,6 +583,9 @@
 		<AddonSockets>
 			<Socket InCockpit="true" Names="StuffCurtainAzov64131" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="AddonHornsSmall" NamesBlock="Azov64131AirConditioner" Offset="(2.655; 3.270; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
 	</GameData>
 	<ControlledConstraints>
 		<Constraint Id="chassis_steer" IsLinkedSteering="true" Name="TieRod1Rocker" />

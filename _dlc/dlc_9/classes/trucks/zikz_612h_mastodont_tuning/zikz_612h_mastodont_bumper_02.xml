@@ -63,6 +63,7 @@
 			<Flare _template="BlueStreak" Pos="(9.312; 1.769; -0.384)" />
 		</HeadLight>
 	</ModelAttachments>
+	<MainHeadLight _template="Multiply1" />
 	<GameData
 		CameraPreset="hoods"
 		Category="bumper"

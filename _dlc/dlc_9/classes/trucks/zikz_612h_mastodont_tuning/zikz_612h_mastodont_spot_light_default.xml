@@ -7,14 +7,15 @@
 	</PhysicsModel>
 	<ModelAttachments>
 		<Ignition>
-			<Flare _template="IgnitionSignalWhite" AspectRatio="1" Color="g(255; 190; 100) x 0.4" Size="0.3" Pos="(8.858; 2.947; 0.909)" ParentFrame="BoneAddon_cdt" />
+			<Flare _template="IgnitionSignalWhite" AspectRatio="1" Color="g(255; 190; 100) x 0.8" Size="0.3" Pos="(8.858; 2.947; 0.909)" ParentFrame="BoneAddon_cdt" />
 		</Ignition>
 		<HeadLight>
 			<Model _template="HeadLightRay" Org="(9; 2.947; 0.925)" ParentFrame="BoneAddon_cdt" />
-			<Flare _template="HeadLight" Color="g(255; 235; 200) x 0.5" Size="0.5" Pos="(8.89; 2.947; 0.925)" ParentFrame="BoneAddon_cdt" />
+			<Flare _template="HeadLight" Color="g(255; 235; 200) x 0.8" Size="0.5" Pos="(8.89; 2.947; 0.925)" ParentFrame="BoneAddon_cdt" />
 			<Flare _template="BlueStreak" Size="0.3" Pos="(8.858; 2.947; 0.909)" ParentFrame="BoneAddon_cdt" />
 		</HeadLight>
 	</ModelAttachments>
+	<MainHeadLight _template="Multiply1"/>
 	<GameData
 		CameraPreset="spotlight2"
 		Category="top"

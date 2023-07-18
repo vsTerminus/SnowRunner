@@ -371,5 +371,8 @@
 		<AddonSockets>
 			<Socket InCockpit="true" Names="StuffAirfreshener" Offset="(0.387; 1.686; -0.005)" />
 		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="AddonHornsSmall" NamesBlock="StuffHoodTuz166" Offset="(1.770; 1.225; 0)" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>
 	</GameData>
 </Truck>

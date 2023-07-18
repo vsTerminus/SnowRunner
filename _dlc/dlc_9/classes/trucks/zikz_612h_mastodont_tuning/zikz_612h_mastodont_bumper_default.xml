@@ -2,7 +2,7 @@
 <TruckAddon>
 	<TruckData>
 		<Damage>
-			<Multiplier Multiplier="0.8" Type="Engine" />
+			<Multiplier Multiplier="1.0" Type="Engine" />
 		</Damage>
 	</TruckData>
 	<PhysicsModel Mesh="trucks/zikz_612h_mastodont_tuning/zikz_612h_mastodont_bumper_default">

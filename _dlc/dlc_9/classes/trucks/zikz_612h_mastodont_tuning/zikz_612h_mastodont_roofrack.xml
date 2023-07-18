@@ -7,15 +7,15 @@
 </_templates>
 <TruckAddon>
 	<TruckData FuelCapacity="140" RepairsCapacity="150">
-		<LimitedFluid Center="(8.297; 3.111; 0.168)" SizeX="0.574" SizeY="0.203" SizeZ="0.406" Type="Box" ParentFrame="BoneFuel_cdt" />
-		<LimitedFluid Center="(8.293; 3.111; 0.575)" SizeX="0.574" SizeY="0.203" SizeZ="0.406" Type="Box" ParentFrame="BoneFuel_cdt" />
-		<LimitedFluid Center="(8.298; 3.111; 0.979)" SizeX="0.574" SizeY="0.203" SizeZ="0.406" Type="Box" ParentFrame="BoneFuel_cdt" />
-		<LimitedFluid Center="(7.714; 3.111; 1)" SizeX="0.574" SizeY="0.203" SizeZ="0.406" Type="Box" ParentFrame="BoneFuel_cdt" />
-		<LimitedFluid Center="(7.714; 3.111; 0.596)" SizeX="0.574" SizeY="0.203" SizeZ="0.406" Type="Box" ParentFrame="BoneFuel_cdt" />
-		<LimitedFluid Center="(7.714; 3.111; 0.185)" SizeX="0.574" SizeY="0.203" SizeZ="0.406" Type="Box" ParentFrame="BoneFuel_cdt" />
-		<LimitedFluid Center="(7.107; 3.111; 1)" SizeX="0.574" SizeY="0.203" SizeZ="0.406" Type="Box" ParentFrame="BoneFuel_cdt" />
-		<LimitedFluid Center="(7.105; 3.111; 0.595)" SizeX="0.574" SizeY="0.203" SizeZ="0.406" Type="Box" ParentFrame="BoneFuel_cdt" />
-		<LimitedFluid Center="(7.105; 3.111; 0.185)" SizeX="0.574" SizeY="0.203" SizeZ="0.406" Type="Box" ParentFrame="BoneFuel_cdt" />
+		<LimitedFluid Center="(8.248; 3.11; 0.165)" SizeX="0.43" SizeY="0.158" SizeZ="0.355" Type="Box" ParentFrame="BoneFuel_cdt" />
+		<LimitedFluid Center="(8.248; 3.11; 0.577)" SizeX="0.43" SizeY="0.158" SizeZ="0.355" Type="Box" ParentFrame="BoneFuel_cdt" />
+		<LimitedFluid Center="(8.248; 3.11; 0.982)" SizeX="0.43" SizeY="0.158" SizeZ="0.355" Type="Box" ParentFrame="BoneFuel_cdt" />
+		<LimitedFluid Center="(7.746; 3.11; 0.17)" SizeX="0.43" SizeY="0.158" SizeZ="0.355" Type="Box" ParentFrame="BoneFuel_cdt" />
+		<LimitedFluid Center="(7.746; 3.11; 0.578)" SizeX="0.43" SizeY="0.158" SizeZ="0.355" Type="Box" ParentFrame="BoneFuel_cdt" />
+		<LimitedFluid Center="(7.746; 3.11; 0.987)" SizeX="0.43" SizeY="0.158" SizeZ="0.355" Type="Box" ParentFrame="BoneFuel_cdt" />
+		<LimitedFluid Center="(7.07; 3.111; 0.17)" SizeX="0.43" SizeY="0.158" SizeZ="0.355" Type="Box" ParentFrame="BoneFuel_cdt" />
+		<LimitedFluid Center="(7.07; 3.111; 0.578)" SizeX="0.43" SizeY="0.158" SizeZ="0.355" Type="Box" ParentFrame="BoneFuel_cdt" />
+		<LimitedFluid Center="(7.07; 3.111; 0.987)" SizeX="0.43" SizeY="0.158" SizeZ="0.355" Type="Box" ParentFrame="BoneFuel_cdt" />
 		
 	</TruckData>
 	<RepairsHide>

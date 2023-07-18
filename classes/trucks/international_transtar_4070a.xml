@@ -494,6 +494,9 @@
 			/>
 			<Socket InCockpit="true" Names="StuffCurtainInternationalTranstar4070a" ParentFrame="BoneCabinPrismatic_cdt" />
 		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="AddonHornsSmall" NamesBlock="InternationalTranstar4070AirConditioner" Offset="(2.610; 2.815; 0)" ParentFrame="BoneCabinPrismatic_cdt" />
+		</AddonSockets>
 	</GameData>
 	<ControlledConstraints>
 		<Constraint Id="chassis_steer" IsLinkedSteering="true" Name="TieRodSteer" />

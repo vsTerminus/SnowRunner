@@ -385,6 +385,9 @@
 		<AddonSockets>
 			<Socket Names="StuffHoodChevroletCk1500" Offset="(-0.08; 0.01; 0)"/>
 		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="AddonHornsSmall" NamesBlock="StuffHoodChevroletCk1500" Offset="(2.243; 1.190; 0)" />
+		</AddonSockets>
 	</GameData>
 	<AutomaticIK>
 		<IKBone ModelFrame="BoneRackSlider" ParentFrame="BoneRackRight">

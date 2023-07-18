@@ -405,6 +405,9 @@
 		<AddonSockets>
 			<Socket _template="Cabin2Chassis" Names="StuffHoodAnkMk38" />
 		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="AddonHornsSmall" NamesBlock="StuffHoodAnkMk38" Offset="(3.432; 2.085; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
 		<AddonSlots InitialOffset="(-1.131; 1.419; 0)" OffsetStep="(-2.486; 0; 0)" Quantity="2" />
 	</GameData>
 	<ControlledConstraints>

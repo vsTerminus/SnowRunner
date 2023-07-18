@@ -487,6 +487,9 @@
 		<AddonSockets>
 			<Socket InCockpit="true" Names="StuffCurtainKolob74760" />
 		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="AddonHorns" Offset="(4.059; 3.630; 0)" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>
 	</GameData>
 	<AutomaticIK>
 		<IKBone ModelFrame="BoneIKLeft1" ParentFrame="BoneAxleL4">

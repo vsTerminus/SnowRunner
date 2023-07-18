@@ -403,6 +403,9 @@
 		<AddonSockets>
 			<Socket Names="tuz420TatarinSticker_Roof" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="AddonHornsSmall" Offset="(3.613; 1.472; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
 	</GameData>
 	<AutomaticIK>
 		<IKBone ModelFrame="BoneBalancer1_L1" ParentFrame="BoneCabin_cdt">

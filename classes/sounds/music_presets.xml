@@ -72,6 +72,12 @@
 			FadeOutTime="10"
 			Volume="1"
 		/>
+		<Canada
+			SoundName="music/canada/garage_canada"
+			FadeInTime="30"
+			FadeOutTime="10"
+			Volume="1"
+		/>
 	</GarageMusic>
 </_templates>
 <MusicPresets>
@@ -105,6 +111,9 @@
 	</LevelMusic>
 	<LevelMusic LevelName="level_main_menu_us09">
 		<Sound Name="music/ontario/ontario_menu" StartTime="0" EndTime="24" FadeInTime="0" FadeOutTime="5" Volume="2" />
+	</LevelMusic>
+	<LevelMusic LevelName="level_main_menu_us10">
+		<Sound Name="music/canada/canada_menu" StartTime="0" EndTime="24" FadeInTime="0" FadeOutTime="5" Volume="2" />
 	</LevelMusic>
 	
 	<!-- ALASKA -->
@@ -361,5 +370,21 @@
 		<Sound Name="music/ontario/ontario_day" StartTime="13" EndTime="20.5" FadeInTime="30" FadeOutTime="10" />
 		<Sound Name="music/ontario/ontario_evening" StartTime="20.5" EndTime="24" FadeInTime="30" FadeOutTime="10" />
 		<GarageMusic _template="Ontario" />
+	</LevelMusic>
+
+	<!-- CANADA -->
+	<LevelMusic LevelName="level_us_10_01">
+		<Sound Name="music/canada/canada_night" StartTime="24" EndTime="6" FadeInTime="30" FadeOutTime="10"  />
+		<Sound Name="music/canada/canada_morning" StartTime="6" EndTime="13" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/canada/canada_day" StartTime="13" EndTime="20.5" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/canada/canada_evening" StartTime="20.5" EndTime="24" FadeInTime="30" FadeOutTime="10" />
+		<GarageMusic _template="Canada" />
+	</LevelMusic>
+	<LevelMusic LevelName="level_us_10_02">
+		<Sound Name="music/canada/canada_night" StartTime="24" EndTime="6" FadeInTime="30" FadeOutTime="10"  />
+		<Sound Name="music/canada/canada_morning" StartTime="6" EndTime="13" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/canada/canada_day" StartTime="13" EndTime="20.5" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/canada/canada_evening" StartTime="20.5" EndTime="24" FadeInTime="30" FadeOutTime="10" />
+		<GarageMusic _template="Canada" />
 	</LevelMusic>
 </MusicPresets>

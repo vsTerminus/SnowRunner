@@ -638,6 +638,9 @@
 		<AddonSockets>
 			<Socket _template="Cabin2Chassis" InCockpit="true" Names="StuffCurtainCatCt680" />
 		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="AddonHornsSmall"  NamesBlock="StuffHoodCat680" Offset="(3.748; 2.0; 0)" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>
 	</GameData>
 	<ControlledConstraints>
 		<Constraint Id="chassis_steer" IsLinkedSteering="true" Name="TieRodSteer" />

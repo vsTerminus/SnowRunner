@@ -510,6 +510,9 @@
 		<AddonSockets>
 			<Socket Names="StuffHoodInternationalFleetstarF2070A" ParentFrame="BoneCabinRagdoll_cdt" />
 		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="AddonHornsSmall" NamesBlock="StuffHoodInternationalFleetstarF2070A" Offset="(4.091; 1.880; 0)" ParentFrame="BoneCabinRagdoll_cdt" />
+		</AddonSockets>
 	</GameData>
 	<ControlledConstraints>
 		<Constraint Id="chassis_steer" IsLinkedSteering="true" Name="TieRodSteer" />

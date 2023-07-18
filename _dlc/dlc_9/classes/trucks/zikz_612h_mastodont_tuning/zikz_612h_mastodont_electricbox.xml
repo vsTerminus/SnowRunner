@@ -6,8 +6,8 @@
 		FuelCapacity="50"
 		RepairsCapacity="300"
 	>
-		<LimitedFluid Center="(4.382; 2.061; 1.137)" SizeX="0.154" SizeY="0.439" SizeZ="0.329" Type="Box" ParentFrame="BoneFuel01_cdt"/>
-		<LimitedFluid Center="(4.382; 2.061; 0.672)" SizeX="0.154" SizeY="0.439" SizeZ="0.329" Type="Box" ParentFrame="BoneFuel02_cdt"/>
+		<LimitedFluid Center="(4.361; 2.032; 1.139)" SizeX="0.154" SizeY="0.331" SizeZ="0.301" Type="Box" ParentFrame="BoneFuel01_cdt"/>
+		<LimitedFluid Center="(4.361; 2.032; 0.676)" SizeX="0.155" SizeY="0.331" SizeZ="0.301" Type="Box" ParentFrame="BoneFuel02_cdt"/>
 	</TruckData>
 	<PhysicsModel Mesh="trucks/zikz_612h_mastodont_tuning/zikz_612h_mastodont_electricbox">
 		<Body ModelFrame="BoneAddon_cdt" Mass="15" ImpactType="Truck">

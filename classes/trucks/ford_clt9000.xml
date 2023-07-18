@@ -530,5 +530,8 @@
 		<AddonSockets>
 			<Socket InCockpit="true" Names="StuffCurtainFordClt9000" ParentFrame="BoneCabinPrismatic_cdt" />
 		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="AddonHorns" NamesBlock="FordClt9000Top" Offset="(3.137; 3.212; 0)" ParentFrame="BoneCabinPrismatic_cdt" />
+		</AddonSockets>
 	</GameData>
 </Truck>
