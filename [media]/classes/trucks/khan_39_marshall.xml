@@ -65,7 +65,7 @@
 		EngineIconScale="1"
 		EngineStartDelay="1.7"
 		ExhaustStartTime="1.6"
-		FuelCapacity="40"
+		FuelCapacity="78"
 		FueltankMarkerOffset="(1; 0.4; 0)"
 		Responsiveness="0.6"
 		SteerSpeed="0.03"

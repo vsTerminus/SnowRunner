@@ -34,7 +34,7 @@
 		EngineIconScale="1.3"
 		EngineStartDelay="0.8"
 		ExhaustStartTime="0.9"
-		FuelCapacity="200"
+		FuelCapacity="379"
 		Responsiveness="0.3"
 		SteerSpeed="0.025"
 		TruckImage="freightlinerM916A1mchr"

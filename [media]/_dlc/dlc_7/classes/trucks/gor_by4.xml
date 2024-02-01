@@ -35,7 +35,7 @@
 		EngineIconScale="1"
 		EngineStartDelay="1.7"
 		ExhaustStartTime="1.6"
-		FuelCapacity="50"
+		FuelCapacity="30"
 		Responsiveness="0.6"
 		SteerSpeed="0.03"
 		TruckImage="gorbymchr"

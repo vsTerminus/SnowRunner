@@ -9,7 +9,7 @@
 		CriticalDamageThreshold="0.4"
 		DamageCapacity="300"
 		DamagedConsumptionModifier="1.5"
-		FuelConsumption="12"
+		FuelConsumption="5.5"
 		Name="us_truck_modern_engine_derry_special"
 		Torque="280000"
 		DamagedMinTorqueMultiplier="1.0"

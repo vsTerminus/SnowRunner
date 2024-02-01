@@ -10,7 +10,7 @@
 		DamageCapacity="300"
 		DamagedConsumptionModifier="1.4"
 		EngineResponsiveness="0.2"
-		FuelConsumption="13.0"
+		FuelConsumption="4.3"
 		Name="ru_tuz_tatarin"
 		Torque="200000"
 		DamagedMinTorqueMultiplier="1.0"

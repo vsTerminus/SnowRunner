@@ -74,7 +74,7 @@
 		EngineIconScale="1.3"
 		EngineStartDelay="3"
 		ExhaustStartTime="3.2"
-		FuelCapacity="150"
+		FuelCapacity="450"
 		Responsiveness="0.12"
 		SteerSpeed="0.022"
 		TruckImage="zikz566amchr"

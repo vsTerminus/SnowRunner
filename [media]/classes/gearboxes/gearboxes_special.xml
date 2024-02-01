@@ -5,7 +5,7 @@
 		DamageCapacity="220"
 		DamagedConsumptionModifier="1.6"
 		FuelConsumption="2.0"
-		IdleFuelModifier="0.3"
+		IdleFuelModifier="0.05"
 		Name="g_special_default"
 		MinBreakFreq="0.0"
 		MaxBreakFreq="15.0"
@@ -41,7 +41,7 @@
 		DamageCapacity="250"
 		DamagedConsumptionModifier="1.7"
 		FuelConsumption="3.0"
-		IdleFuelModifier="0.3"
+		IdleFuelModifier="0.05"
 		Name="g_special_offroad"
 		MinBreakFreq="0.0"
 		MaxBreakFreq="20.0"
@@ -73,12 +73,12 @@
 		</GameData>
 	</Gearbox>
 	<Gearbox
-		AWDConsumptionModifier="1.2"
+		AWDConsumptionModifier="1.0"
 		CriticalDamageThreshold="0.7"
 		DamageCapacity="180"
 		DamagedConsumptionModifier="1.9"
-		FuelConsumption="4.0"
-		IdleFuelModifier="0.3"
+		FuelConsumption="3.0"
+		IdleFuelModifier="0.05"
 		Name="g_special_finetune"
 		MinBreakFreq="0.0"
 		MaxBreakFreq="25.0"

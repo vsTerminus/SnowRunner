@@ -57,7 +57,7 @@
 		EngineIconScale="1.15"
 		EngineStartDelay="1.8"
 		ExhaustStartTime="1.6"
-		FuelCapacity="75"
+		FuelCapacity="76"
 		Responsiveness="0.6"
 		SteerSpeed="0.032"
 		TruckImage="jeeprenegatemchr"

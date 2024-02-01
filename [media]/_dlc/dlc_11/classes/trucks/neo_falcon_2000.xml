@@ -94,7 +94,7 @@
 		EngineIconScale="0.8"
 		EngineStartDelay="1.8"
 		ExhaustStartTime="1.6"
-		FuelCapacity="90"
+		FuelCapacity="60"
 		Responsiveness="0.65"
 		SteerSpeed="0.032"
 		TruckImage="NeoFalcon2000mchr"

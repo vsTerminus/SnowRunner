@@ -55,7 +55,7 @@
 		EngineIconScale="1"
 		EngineStartDelay="0.8"
 		ExhaustStartTime="0.9"
-		FuelCapacity="110"
+		FuelCapacity="210"
 		Responsiveness="0.15"
 		SteerSpeed="0.03"
 		TruckImage="tuz16mchr"
