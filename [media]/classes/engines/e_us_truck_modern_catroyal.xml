@@ -10,7 +10,7 @@
 		DamageCapacity="150"
 		DamagedConsumptionModifier="1.2"
 		EngineResponsiveness="0.15"
-		FuelConsumption="5.0"
+		FuelConsumption="3.8"
 		Name="us_truck_modern_engine_cat_royal"
 		Torque="160000"
 		DamagedMinTorqueMultiplier="1.0"

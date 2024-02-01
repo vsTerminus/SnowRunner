@@ -59,7 +59,7 @@
 		EngineIconScale="0.8"
 		EngineStartDelay="1.8"
 		ExhaustStartTime="1.6"
-		FuelCapacity="80"
+		FuelCapacity="63"
 		Responsiveness="0.85"
 		SteerSpeed="0.032"
 		TruckImage="mtb8106mchr"

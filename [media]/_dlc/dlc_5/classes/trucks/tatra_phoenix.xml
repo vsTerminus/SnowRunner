@@ -53,7 +53,7 @@
 		EngineIconScale="0.8"
 		EngineStartDelay="3.2"
 		ExhaustStartTime="2.8"
-		FuelCapacity="345"
+		FuelCapacity="300"
 		Responsiveness="0.2"
 		SteerSpeed="0.015"
 		TruckImage="tatraphoenixmchr"

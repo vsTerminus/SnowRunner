@@ -45,7 +45,7 @@
 		EngineIconScale="1.3"
 		EngineStartDelay="0.8"
 		ExhaustStartTime="0.9"
-		FuelCapacity="250"
+		FuelCapacity="340"
 		Responsiveness="0.15"
 		SteerSpeed="0.03"
 		TruckImage="steppikemchr"

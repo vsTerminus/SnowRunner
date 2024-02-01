@@ -76,7 +76,7 @@
 		EngineIconScale="1.7"
 		EngineStartDelay="0.6"
 		ExhaustStartTime="0.6"
-		FuelCapacity="340"
+		FuelCapacity="700"
 		Responsiveness="0.4"
 		SteerSpeed="0.03"
 		TruckImage="Azov4220Antarcticmchr"

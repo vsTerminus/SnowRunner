@@ -53,7 +53,7 @@
 		EngineIconScale="1.4"
 		EngineStartDelay="3.2"
 		ExhaustStartTime="2.8"
-		FuelCapacity="340"
+		FuelCapacity="530"
 		Responsiveness="0.45"
 		SteerSpeed="0.025"
 		TruckImage="navistar5000mchr"
