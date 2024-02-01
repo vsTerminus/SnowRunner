@@ -6,7 +6,7 @@
 			<WheelFriction
 				_template="HeavyMudtires"
 				BodyFriction="2"
-				BodyFrictionAsphalt="0.3"
+				BodyFrictionAsphalt="1.0"
 				SubstanceFriction="3.35"
 			/>
 		</Mudtires>
