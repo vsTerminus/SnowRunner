@@ -30,7 +30,7 @@
 		EngineIconScale="1"
 		EngineStartDelay="0.8"
 		ExhaustStartTime="0.9"
-		FuelCapacity="300"
+		FuelCapacity="454"
 		Responsiveness="0.15"
 		SteerSpeed="0.02"
 		TruckImage="pacificp16mchr"

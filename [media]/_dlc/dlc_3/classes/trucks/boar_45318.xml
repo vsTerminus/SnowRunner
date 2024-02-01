@@ -45,7 +45,7 @@
 		EngineIconScale="1.3"
 		EngineStartDelay="0.8"
 		ExhaustStartTime="0.9"
-		FuelCapacity="300"
+		FuelCapacity="1220"
 		Responsiveness="0.15"
 		SteerSpeed="0.025"
 		TruckImage="Boar45318mchr"

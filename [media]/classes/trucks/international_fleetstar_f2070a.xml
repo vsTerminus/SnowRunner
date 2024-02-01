@@ -34,7 +34,7 @@
 		EngineIconScale="1.2"
 		EngineStartDelay="0.8"
 		ExhaustStartTime="0.9"
-		FuelCapacity="240"
+		FuelCapacity="379"
 		Responsiveness="0.1"
 		SteerSpeed="0.033"
 		TruckImage="fleetstarF2070A1mchr"
