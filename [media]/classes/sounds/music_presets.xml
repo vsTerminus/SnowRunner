@@ -1,0 +1,454 @@
+<_templates>
+	<GarageMusic>
+		<Taymyr
+			SoundName="music/taymyr/garage_taymyr"
+			FadeInTime="30"
+			FadeOutTime="10"
+			Volume="1"
+		/>
+		<Alaska	
+			SoundName="music/alaska/garage_alaska"
+			FadeInTime="30"
+			FadeOutTime="10"
+			Volume="1"
+		/>
+		<Michigan
+			SoundName="music/michigan/garage_michigan"
+			FadeInTime="30"
+			FadeOutTime="10"
+			Volume="1"
+		/>
+		<Kola
+			SoundName="music/kola/garage_kola"
+			FadeInTime="30"
+			FadeOutTime="10"
+			Volume="1"
+		/>
+		<Yukon
+			SoundName="music/yukon/garage_yukon"
+			FadeInTime="30"
+			FadeOutTime="10"
+			Volume="1"
+		/>
+		<Wisconsin
+			SoundName="music/wisconsin/garage_wisconsin"
+			FadeInTime="30"
+			FadeOutTime="10"
+			Volume="1"
+		/>
+		<Amur
+			SoundName="music/amur/garage_amur"
+			FadeInTime="30"
+			FadeOutTime="10"
+			Volume="1"
+		/>
+		<Don
+			SoundName="music/don/garage_don"
+			FadeInTime="30"
+			FadeOutTime="10"
+			Volume="1"
+		/>
+		<Maine
+			SoundName="music/maine/garage_maine"
+			FadeInTime="30"
+			FadeOutTime="10"
+			Volume="1"
+		/>
+		<Tennessee
+			SoundName="music/tenn/garage_tenn"
+			FadeInTime="30"
+			FadeOutTime="10"
+			Volume="1"
+		/>
+		<Belozersk
+			SoundName="music/belozersk/garage_belozersk"
+			FadeInTime="30"
+			FadeOutTime="10"
+			Volume="1"
+		/>
+		<Ontario
+			SoundName="music/ontario/garage_ontario"
+			FadeInTime="30"
+			FadeOutTime="10"
+			Volume="1"
+		/>
+		<Canada
+			SoundName="music/canada/garage_canada"
+			FadeInTime="30"
+			FadeOutTime="10"
+			Volume="1"
+		/>
+		<Norway
+			SoundName="music/norway/garage_norway"
+			FadeInTime="30"
+			FadeOutTime="10"
+			Volume="1"
+		/>
+		<Carolina
+			SoundName="music/carolina/garage_carolina"
+			FadeInTime="30"
+			FadeOutTime="10"
+			Volume="1"
+		/>
+	</GarageMusic>
+</_templates>
+<MusicPresets>
+	<!-- MAIN MENU -->
+	<LevelMusic LevelName="level_main_menu">
+		<Sound Name="music/main_menu_a" StartTime="0" EndTime="24" FadeInTime="20" FadeOutTime="5" Volume="2" />
+	</LevelMusic>
+	<LevelMusic LevelName="level_main_menu_ru03">
+		<Sound Name="music/main_menu_a" StartTime="0" EndTime="24" FadeInTime="20" FadeOutTime="5" Volume="2" />
+	</LevelMusic>
+	<LevelMusic LevelName="level_main_menu_us04">
+		<Sound Name="music/yukon/yukon_menu" StartTime="0" EndTime="24" FadeInTime="20" FadeOutTime="5" Volume="2" />
+	</LevelMusic>
+	<LevelMusic LevelName="level_main_menu_us03">
+		<Sound Name="music/wisconsin/wisconsin_menu" StartTime="0" EndTime="24" FadeInTime="20" FadeOutTime="5" Volume="2" />
+	</LevelMusic>
+	<LevelMusic LevelName="level_main_menu_ru04">
+		<Sound Name="music/amur/amur_menu" StartTime="0" EndTime="24" FadeInTime="20" FadeOutTime="5" Volume="2" />
+	</LevelMusic>
+	<LevelMusic LevelName="level_main_menu_ru05">
+		<Sound Name="music/don/don_menu" StartTime="0" EndTime="24" FadeInTime="20" FadeOutTime="5" Volume="2" />
+	</LevelMusic>
+	<LevelMusic LevelName="level_main_menu_us06">
+		<Sound Name="music/maine/maine_menu" StartTime="0" EndTime="24" FadeInTime="20" FadeOutTime="5" Volume="2" />
+	</LevelMusic>
+	<LevelMusic LevelName="level_main_menu_us07">
+		<Sound Name="music/tenn/tenn_race" StartTime="0" EndTime="24" FadeInTime="0" FadeOutTime="5" Volume="2" />
+	</LevelMusic>
+	<LevelMusic LevelName="level_main_menu_ru08">
+		<Sound Name="music/belozersk/belozersk_menu" StartTime="0" EndTime="24" FadeInTime="0" FadeOutTime="5" Volume="2" />
+	</LevelMusic>
+	<LevelMusic LevelName="level_main_menu_us09">
+		<Sound Name="music/ontario/ontario_menu" StartTime="0" EndTime="24" FadeInTime="0" FadeOutTime="5" Volume="2" />
+	</LevelMusic>
+	<LevelMusic LevelName="level_main_menu_us10">
+		<Sound Name="music/canada/canada_menu" StartTime="0" EndTime="24" FadeInTime="0" FadeOutTime="5" Volume="2" />
+	</LevelMusic>
+	<LevelMusic LevelName="level_main_menu_us11">
+		<Sound Name="music/norway/norway_menu" StartTime="0" EndTime="24" FadeInTime="0" FadeOutTime="5" Volume="2" />
+	</LevelMusic>
+	<LevelMusic LevelName="level_main_menu_us12">
+		<Sound Name="music/carolina/carolina_menu" StartTime="0" EndTime="24" FadeInTime="0" FadeOutTime="5" Volume="2" />
+	</LevelMusic>
+	
+	<!-- ALASKA -->
+	<LevelMusic LevelName="level_us_02_01">
+		<Sound Name="music/alaska/alaska_night" StartTime="24" EndTime="6" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/alaska/alaska_morning" StartTime="6" EndTime="13" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/alaska/alaska_day" StartTime="13" EndTime="20.5" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/alaska/alaska_evening" StartTime="20.5" EndTime="24" FadeInTime="30" FadeOutTime="10" />
+		<GarageMusic _template="Alaska" />
+	</LevelMusic>
+	<LevelMusic LevelName="level_us_02_02_new">
+		<Sound Name="music/alaska/alaska_night" StartTime="24" EndTime="6" FadeInTime="30" FadeOutTime="10"  />
+		<Sound Name="music/alaska/alaska_morning" StartTime="6" EndTime="13" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/alaska/alaska_day" StartTime="13" EndTime="20.5" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/alaska/alaska_evening" StartTime="20.5" EndTime="24" FadeInTime="30" FadeOutTime="10" />
+		<GarageMusic _template="Alaska" />
+	</LevelMusic>
+	<LevelMusic LevelName="level_us_02_03_new">
+		<Sound Name="music/alaska/alaska_night" StartTime="24" EndTime="6" FadeInTime="30" FadeOutTime="10"  />
+		<Sound Name="music/alaska/alaska_morning" StartTime="6" EndTime="13" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/alaska/alaska_day" StartTime="13" EndTime="20.5" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/alaska/alaska_evening" StartTime="20.5" EndTime="24" FadeInTime="30" FadeOutTime="10" />
+		<GarageMusic _template="Alaska" />
+	</LevelMusic>
+	<LevelMusic LevelName="level_us_02_04_new">
+		<Sound Name="music/alaska/alaska_night" StartTime="24" EndTime="6" FadeInTime="30" FadeOutTime="10"  />
+		<Sound Name="music/alaska/alaska_morning" StartTime="6" EndTime="13" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/alaska/alaska_day" StartTime="13" EndTime="20.5" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/alaska/alaska_evening" StartTime="20.5" EndTime="24" FadeInTime="30" FadeOutTime="10" />
+		<GarageMusic _template="Alaska" />
+	</LevelMusic>
+	
+	<!-- MICHIGAN -->
+	<LevelMusic LevelName="level_us_01_01">
+		<Sound Name="music/michigan/michigan_night" StartTime="24" EndTime="6" FadeInTime="30" FadeOutTime="10"  />
+		<Sound Name="music/michigan/michigan_morning" StartTime="6" EndTime="13" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/michigan/michigan_day" StartTime="13" EndTime="20.5" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/michigan/michigan_evening" StartTime="20.5" EndTime="24" FadeInTime="30" FadeOutTime="10" />
+		<GarageMusic _template="Michigan" />
+	</LevelMusic>
+	<LevelMusic LevelName="level_us_01_02">
+		<Sound Name="music/michigan/michigan_night" StartTime="24" EndTime="6" FadeInTime="30" FadeOutTime="10"  />
+		<Sound Name="music/michigan/michigan_morning" StartTime="6" EndTime="13" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/michigan/michigan_day" StartTime="13" EndTime="20.5" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/michigan/michigan_evening" StartTime="20.5" EndTime="24" FadeInTime="30" FadeOutTime="10" />
+		<GarageMusic _template="Michigan" />
+	</LevelMusic>
+	<LevelMusic LevelName="level_us_01_03">
+		<Sound Name="music/michigan/michigan_night" StartTime="24" EndTime="6" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/michigan/michigan_morning" StartTime="6" EndTime="13" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/michigan/michigan_day" StartTime="13" EndTime="20.5" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/michigan/michigan_evening" StartTime="20.5" EndTime="24" FadeInTime="30" FadeOutTime="10" />
+		<GarageMusic _template="Michigan" />
+	</LevelMusic>
+	<LevelMusic LevelName="level_us_01_04_new">
+		<Sound Name="music/michigan/michigan_night" StartTime="24" EndTime="6" FadeInTime="30" FadeOutTime="10"  />
+		<Sound Name="music/michigan/michigan_morning" StartTime="6" EndTime="13" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/michigan/michigan_day" StartTime="13" EndTime="20.5" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/michigan/michigan_evening" StartTime="20.5" EndTime="24" FadeInTime="30" FadeOutTime="10" />
+		<GarageMusic _template="Michigan" />
+	</LevelMusic>
+	
+	<!-- TAYMYR -->
+	<LevelMusic LevelName="level_ru_02_01_crop">
+		<Sound Name="music/taymyr/taymyr_night" StartTime="24" EndTime="6" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/taymyr/taymyr_morning" StartTime="6" EndTime="13" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/taymyr/taymyr_day" StartTime="13" EndTime="20.5" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/taymyr/taymyr_evening" StartTime="20.5" EndTime="24" FadeInTime="30" FadeOutTime="10" />
+		<GarageMusic _template="Taymyr" />
+	</LevelMusic>
+	<LevelMusic LevelName="level_ru_02_02">
+		<Sound Name="music/taymyr/taymyr_night" StartTime="24" EndTime="6" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/taymyr/taymyr_morning" StartTime="6" EndTime="13" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/taymyr/taymyr_day" StartTime="13" EndTime="20.5" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/taymyr/taymyr_evening" StartTime="20.5" EndTime="24" FadeInTime="30" FadeOutTime="10" />
+		<GarageMusic _template="Taymyr" />
+	</LevelMusic>
+	<LevelMusic LevelName="level_ru_02_03">
+		<Sound Name="music/taymyr/taymyr_night" StartTime="24" EndTime="6" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/taymyr/taymyr_morning" StartTime="6" EndTime="13" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/taymyr/taymyr_day" StartTime="13" EndTime="20.5" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/taymyr/taymyr_evening" StartTime="20.5" EndTime="24" FadeInTime="30" FadeOutTime="10" />
+		<GarageMusic _template="Taymyr" />
+	</LevelMusic>
+		<GarageMusic _template="Taymyr" />
+	<LevelMusic LevelName="level_ru_02_04">
+		<Sound Name="music/taymyr/taymyr_night" StartTime="24" EndTime="6" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/taymyr/taymyr_morning" StartTime="6" EndTime="13" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/taymyr/taymyr_day" StartTime="13" EndTime="20.5" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/taymyr/taymyr_evening" StartTime="20.5" EndTime="24" FadeInTime="30" FadeOutTime="10" />
+		<GarageMusic _template="Taymyr" />
+	</LevelMusic>
+
+	<!-- KOLA -->
+	<LevelMusic LevelName="level_ru_03_01">
+		<Sound Name="music/kola/kola_night" StartTime="24" EndTime="6" FadeInTime="30" FadeOutTime="10"  />
+		<Sound Name="music/kola/kola_morning" StartTime="6" EndTime="13" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/kola/kola_day" StartTime="13" EndTime="20.5" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/kola/kola_evening" StartTime="20.5" EndTime="24" FadeInTime="30" FadeOutTime="10" />
+		<GarageMusic _template="Kola" />
+	</LevelMusic>
+	<LevelMusic LevelName="level_ru_03_02">
+		<Sound Name="music/kola/kola_night" StartTime="24" EndTime="6" FadeInTime="30" FadeOutTime="10"  />
+		<Sound Name="music/kola/kola_morning" StartTime="6" EndTime="13" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/kola/kola_day" StartTime="13" EndTime="20.5" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/kola/kola_evening" StartTime="20.5" EndTime="24" FadeInTime="30" FadeOutTime="10" />
+		<GarageMusic _template="Kola" />
+	</LevelMusic>
+	
+	<!-- YUKON -->
+	<LevelMusic LevelName="level_us_04_01">
+		<Sound Name="music/yukon/yukon_night" StartTime="24" EndTime="6" FadeInTime="30" FadeOutTime="10"  />
+		<Sound Name="music/yukon/yukon_morning" StartTime="6" EndTime="13" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/yukon/yukon_day" StartTime="13" EndTime="20.5" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/yukon/yukon_evening" StartTime="20.5" EndTime="24" FadeInTime="30" FadeOutTime="10" />
+		<GarageMusic _template="Yukon" />
+	</LevelMusic>
+	<LevelMusic LevelName="level_us_04_02">
+		<Sound Name="music/yukon/yukon_night" StartTime="24" EndTime="6" FadeInTime="30" FadeOutTime="10"  />
+		<Sound Name="music/yukon/yukon_morning" StartTime="6" EndTime="13" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/yukon/yukon_day" StartTime="13" EndTime="20.5" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/yukon/yukon_evening" StartTime="20.5" EndTime="24" FadeInTime="30" FadeOutTime="10" />
+		<GarageMusic _template="Yukon" />
+	</LevelMusic>
+	
+	<!-- WISCONSIN -->
+	<LevelMusic LevelName="level_us_03_01">
+		<Sound Name="music/wisconsin/wisconsin_night" StartTime="24" EndTime="6" FadeInTime="30" FadeOutTime="10"  />
+		<Sound Name="music/wisconsin/wisconsin_morning" StartTime="6" EndTime="13" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/wisconsin/wisconsin_day" StartTime="13" EndTime="20.5" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/wisconsin/wisconsin_evening" StartTime="20.5" EndTime="24" FadeInTime="30" FadeOutTime="10" />
+		<GarageMusic _template="Wisconsin" />
+	</LevelMusic>
+	<LevelMusic LevelName="level_us_03_02">
+		<Sound Name="music/wisconsin/wisconsin_night" StartTime="24" EndTime="6" FadeInTime="30" FadeOutTime="10"  />
+		<Sound Name="music/wisconsin/wisconsin_morning" StartTime="6" EndTime="13" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/wisconsin/wisconsin_day" StartTime="13" EndTime="20.5" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/wisconsin/wisconsin_evening" StartTime="20.5" EndTime="24" FadeInTime="30" FadeOutTime="10" />
+		<GarageMusic _template="Wisconsin" />
+	</LevelMusic>
+
+	<!-- AMUR -->
+	<LevelMusic LevelName="level_ru_04_01">
+		<Sound Name="music/amur/amur_night" StartTime="24" EndTime="6" FadeInTime="30" FadeOutTime="10"  />
+		<Sound Name="music/amur/amur_morning" StartTime="6" EndTime="13" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/amur/amur_day" StartTime="13" EndTime="20.5" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/amur/amur_evening" StartTime="20.5" EndTime="24" FadeInTime="30" FadeOutTime="10" />
+		<GarageMusic _template="Amur" />
+	</LevelMusic>
+	<LevelMusic LevelName="level_ru_04_02">
+		<Sound Name="music/amur/amur_night" StartTime="24" EndTime="6" FadeInTime="30" FadeOutTime="10"  />
+		<Sound Name="music/amur/amur_morning" StartTime="6" EndTime="13" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/amur/amur_day" StartTime="13" EndTime="20.5" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/amur/amur_evening" StartTime="20.5" EndTime="24" FadeInTime="30" FadeOutTime="10" />
+		<GarageMusic _template="Amur" />
+	</LevelMusic>
+	<LevelMusic LevelName="level_ru_04_03">
+		<Sound Name="music/amur/amur_night" StartTime="24" EndTime="6" FadeInTime="30" FadeOutTime="10"  />
+		<Sound Name="music/amur/amur_morning" StartTime="6" EndTime="13" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/amur/amur_day" StartTime="13" EndTime="20.5" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/amur/amur_evening" StartTime="20.5" EndTime="24" FadeInTime="30" FadeOutTime="10" />
+		<GarageMusic _template="Amur" />
+	</LevelMusic>
+	<LevelMusic LevelName="level_ru_04_04">
+		<Sound Name="music/amur/amur_night" StartTime="24" EndTime="6" FadeInTime="30" FadeOutTime="10"  />
+		<Sound Name="music/amur/amur_morning" StartTime="6" EndTime="13" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/amur/amur_day" StartTime="13" EndTime="20.5" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/amur/amur_evening" StartTime="20.5" EndTime="24" FadeInTime="30" FadeOutTime="10" />
+		<GarageMusic _template="Amur" />
+	</LevelMusic>
+
+	<!-- DON -->
+	<LevelMusic LevelName="level_ru_05_01">
+		<Sound Name="music/don/don_night" StartTime="24" EndTime="6" FadeInTime="30" FadeOutTime="10"  />
+		<Sound Name="music/don/don_morning" StartTime="6" EndTime="13" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/don/don_day" StartTime="13" EndTime="20.5" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/don/don_evening" StartTime="20.5" EndTime="24" FadeInTime="30" FadeOutTime="10" />
+		<GarageMusic _template="Don" />
+	</LevelMusic>
+	<LevelMusic LevelName="level_ru_05_02">
+		<Sound Name="music/don/don_night" StartTime="24" EndTime="6" FadeInTime="30" FadeOutTime="10"  />
+		<Sound Name="music/don/don_morning" StartTime="6" EndTime="13" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/don/don_day" StartTime="13" EndTime="20.5" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/don/don_evening" StartTime="20.5" EndTime="24" FadeInTime="30" FadeOutTime="10" />
+		<GarageMusic _template="Don" />
+	</LevelMusic>
+
+	<!-- MAINE -->
+	<LevelMusic LevelName="level_us_06_01">
+		<Sound Name="music/maine/maine_night" StartTime="24" EndTime="6" FadeInTime="30" FadeOutTime="10"  />
+		<Sound Name="music/maine/maine_morning" StartTime="6" EndTime="13" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/maine/maine_day" StartTime="13" EndTime="20.5" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/maine/maine_evening" StartTime="20.5" EndTime="24" FadeInTime="30" FadeOutTime="10" />
+		<GarageMusic _template="Maine" />
+	</LevelMusic>
+	<LevelMusic LevelName="level_us_06_02">
+		<Sound Name="music/maine/maine_night" StartTime="24" EndTime="6" FadeInTime="30" FadeOutTime="10"  />
+		<Sound Name="music/maine/maine_morning" StartTime="6" EndTime="13" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/maine/maine_day" StartTime="13" EndTime="20.5" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/maine/maine_evening" StartTime="20.5" EndTime="24" FadeInTime="30" FadeOutTime="10" />
+		<GarageMusic _template="Maine" />
+	</LevelMusic>
+
+	<!-- TENNESSEE -->
+	<LevelMusic LevelName="level_us_07_01">
+		<Sound Name="music/tenn/tenn_night" StartTime="24" EndTime="6" FadeInTime="30" FadeOutTime="10"  />
+		<Sound Name="music/tenn/tenn_morning" StartTime="6" EndTime="13" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/tenn/tenn_day" StartTime="13" EndTime="20.5" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/tenn/tenn_evening" StartTime="20.5" EndTime="24" FadeInTime="30" FadeOutTime="10" />
+		<GarageMusic _template="Tennessee" />
+	</LevelMusic>
+
+	<!-- BELOZERSK -->
+	<LevelMusic LevelName="level_ru_08_01">
+		<Sound Name="music/belozersk/belozersk_night" StartTime="24" EndTime="6" FadeInTime="30" FadeOutTime="10"  />
+		<Sound Name="music/belozersk/belozersk_morning" StartTime="6" EndTime="13" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/belozersk/belozersk_day" StartTime="13" EndTime="20.5" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/belozersk/belozersk_evening" StartTime="20.5" EndTime="24" FadeInTime="30" FadeOutTime="10" />
+		<GarageMusic _template="Belozersk" />
+	</LevelMusic>
+	<LevelMusic LevelName="level_ru_08_02">
+		<Sound Name="music/belozersk/belozersk_night" StartTime="24" EndTime="6" FadeInTime="30" FadeOutTime="10"  />
+		<Sound Name="music/belozersk/belozersk_morning" StartTime="6" EndTime="13" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/belozersk/belozersk_day" StartTime="13" EndTime="20.5" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/belozersk/belozersk_evening" StartTime="20.5" EndTime="24" FadeInTime="30" FadeOutTime="10" />
+		<GarageMusic _template="Belozersk" />
+	</LevelMusic>
+	<LevelMusic LevelName="level_ru_08_03">
+		<Sound Name="music/belozersk/belozersk_night" StartTime="24" EndTime="6" FadeInTime="30" FadeOutTime="10"  />
+		<Sound Name="music/belozersk/belozersk_morning" StartTime="6" EndTime="13" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/belozersk/belozersk_day" StartTime="13" EndTime="20.5" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/belozersk/belozersk_evening" StartTime="20.5" EndTime="24" FadeInTime="30" FadeOutTime="10" />
+		<GarageMusic _template="Belozersk" />
+	</LevelMusic>
+	<LevelMusic LevelName="level_ru_08_04">
+		<Sound Name="music/belozersk/belozersk_night" StartTime="24" EndTime="6" FadeInTime="30" FadeOutTime="10"  />
+		<Sound Name="music/belozersk/belozersk_morning" StartTime="6" EndTime="13" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/belozersk/belozersk_day" StartTime="13" EndTime="20.5" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/belozersk/belozersk_evening" StartTime="20.5" EndTime="24" FadeInTime="30" FadeOutTime="10" />
+		<GarageMusic _template="Belozersk" />
+	</LevelMusic>
+
+	<!-- ONTARIO -->
+	<LevelMusic LevelName="level_us_09_01">
+		<Sound Name="music/ontario/ontario_night" StartTime="24" EndTime="6" FadeInTime="30" FadeOutTime="10"  />
+		<Sound Name="music/ontario/ontario_morning" StartTime="6" EndTime="13" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/ontario/ontario_day" StartTime="13" EndTime="20.5" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/ontario/ontario_evening" StartTime="20.5" EndTime="24" FadeInTime="30" FadeOutTime="10" />
+		<GarageMusic _template="Ontario" />
+	</LevelMusic>
+	<LevelMusic LevelName="level_us_09_02">
+		<Sound Name="music/ontario/ontario_night" StartTime="24" EndTime="6" FadeInTime="30" FadeOutTime="10"  />
+		<Sound Name="music/ontario/ontario_morning" StartTime="6" EndTime="13" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/ontario/ontario_day" StartTime="13" EndTime="20.5" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/ontario/ontario_evening" StartTime="20.5" EndTime="24" FadeInTime="30" FadeOutTime="10" />
+		<GarageMusic _template="Ontario" />
+	</LevelMusic>
+
+	<!-- CANADA -->
+	<LevelMusic LevelName="level_us_10_01">
+		<Sound Name="music/canada/canada_night" StartTime="24" EndTime="6" FadeInTime="30" FadeOutTime="10"  />
+		<Sound Name="music/canada/canada_morning" StartTime="6" EndTime="13" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/canada/canada_day" StartTime="13" EndTime="20.5" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/canada/canada_evening" StartTime="20.5" EndTime="24" FadeInTime="30" FadeOutTime="10" />
+		<GarageMusic _template="Canada" />
+	</LevelMusic>
+	<LevelMusic LevelName="level_us_10_02">
+		<Sound Name="music/canada/canada_night" StartTime="24" EndTime="6" FadeInTime="30" FadeOutTime="10"  />
+		<Sound Name="music/canada/canada_morning" StartTime="6" EndTime="13" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/canada/canada_day" StartTime="13" EndTime="20.5" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/canada/canada_evening" StartTime="20.5" EndTime="24" FadeInTime="30" FadeOutTime="10" />
+		<GarageMusic _template="Canada" />
+	</LevelMusic>
+
+	<!-- NORWAY -->
+	<LevelMusic LevelName="level_us_11_01">
+		<Sound Name="music/norway/norway_night" StartTime="24" EndTime="6" FadeInTime="30" FadeOutTime="10"  />
+		<Sound Name="music/norway/norway_morning" StartTime="6" EndTime="13" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/norway/norway_day" StartTime="13" EndTime="20.5" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/norway/norway_evening" StartTime="20.5" EndTime="24" FadeInTime="30" FadeOutTime="10" />
+		<GarageMusic _template="Norway" />
+	</LevelMusic>
+	<LevelMusic LevelName="level_us_11_02">
+		<Sound Name="music/norway/norway_night" StartTime="24" EndTime="6" FadeInTime="30" FadeOutTime="10"  />
+		<Sound Name="music/norway/norway_morning" StartTime="6" EndTime="13" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/norway/norway_day" StartTime="13" EndTime="20.5" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/norway/norway_evening" StartTime="20.5" EndTime="24" FadeInTime="30" FadeOutTime="10" />
+		<GarageMusic _template="Norway" />
+	</LevelMusic>
+
+	<!-- NORTH CAROLINA -->
+	<LevelMusic LevelName="level_us_12_01">
+		<Sound Name="music/carolina/carolina_night" StartTime="24" EndTime="6" FadeInTime="30" FadeOutTime="10"  />
+		<Sound Name="music/carolina/carolina_morning" StartTime="6" EndTime="13" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/carolina/carolina_day" StartTime="13" EndTime="20.5" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/carolina/carolina_evening" StartTime="20.5" EndTime="24" FadeInTime="30" FadeOutTime="10" />
+		<GarageMusic _template="Carolina" />
+	</LevelMusic>
+	<LevelMusic LevelName="level_us_12_02">
+		<Sound Name="music/carolina/carolina_night" StartTime="24" EndTime="6" FadeInTime="30" FadeOutTime="10"  />
+		<Sound Name="music/carolina/carolina_morning" StartTime="6" EndTime="13" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/carolina/carolina_day" StartTime="13" EndTime="20.5" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/carolina/carolina_evening" StartTime="20.5" EndTime="24" FadeInTime="30" FadeOutTime="10" />
+		<GarageMusic _template="Carolina" />
+	</LevelMusic>
+	<LevelMusic LevelName="level_us_12_03">
+		<Sound Name="music/carolina/carolina_night" StartTime="24" EndTime="6" FadeInTime="30" FadeOutTime="10"  />
+		<Sound Name="music/carolina/carolina_morning" StartTime="6" EndTime="13" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/carolina/carolina_day" StartTime="13" EndTime="20.5" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/carolina/carolina_evening" StartTime="20.5" EndTime="24" FadeInTime="30" FadeOutTime="10" />
+		<GarageMusic _template="Carolina" />
+	</LevelMusic>
+	<LevelMusic LevelName="level_us_12_04">
+		<Sound Name="music/carolina/carolina_night" StartTime="24" EndTime="6" FadeInTime="30" FadeOutTime="10"  />
+		<Sound Name="music/carolina/carolina_morning" StartTime="6" EndTime="13" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/carolina/carolina_day" StartTime="13" EndTime="20.5" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/carolina/carolina_evening" StartTime="20.5" EndTime="24" FadeInTime="30" FadeOutTime="10" />
+		<GarageMusic _template="Carolina" />
+	</LevelMusic>
+</MusicPresets>

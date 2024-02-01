@@ -1,0 +1,23 @@
+<ModelBrand>
+
+	<PhysicsModel>
+		<Body Collisions="Dynamic" ModelFrame="cube" />
+		
+	</PhysicsModel>
+
+	<Subset IsDefault="true" Name="stage_visible">
+	
+		<OnSubsetActivateEvent>
+			<SFX Name="fog_water_us_12" Dir="(1; 0; 0)" Pos="(2; 0; 0)"/>
+		</OnSubsetActivateEvent>
+		
+		<Mesh Name="cube" />
+		<CdtMesh Name="cube" />
+	</Subset>
+
+
+
+
+	<!-- <OnSubsetActivateEvent> </OnSubsetActivateEvent> -->
+
+</ModelBrand>

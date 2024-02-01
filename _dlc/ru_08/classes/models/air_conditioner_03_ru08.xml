@@ -1,9 +1,0 @@
-<ModelBrand DayShadowOffsetMult="2.0"
-	Instanced="true"
-	InstancedAsModel="true"
-	NightLightingShadowsAllowCap="true"
->
-	<PhysicsModel>
-		<Body Collisions="Dynamic" />
-	</PhysicsModel>
-</ModelBrand>

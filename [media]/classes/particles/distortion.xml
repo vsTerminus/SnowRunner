@@ -1,0 +1,20 @@
+<CombineParticles
+	SoftDepth="5.5"
+	Wind="(0; 1.0; 0)"
+	Gravity="(0; 1; 0)"
+	IsDistortion = "true"
+	>
+	
+	<Texture 	
+		Diffuse="sfx/particles/dust_atlas__d_a.tga"
+		RollingMask="sfx/particles/rolling_smoke_mask_small__s_d.tga"
+	/>
+	
+	<Size Function="(0.8; 1.0; 0.8)" Median="0.1" />
+	<Scale Random="0.2" Value="0.3" />
+	<RotationSpeed Random="1" />
+	<Rotation Random="180" />
+	<LifeTime Random="0.2" Value="0.8" />
+</CombineParticles>
+
+

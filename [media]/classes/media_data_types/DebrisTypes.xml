@@ -1,0 +1,12 @@
+<DebrisTypes>
+	<DebrisType MinVelocity="1.0" Name="Foliage" />
+	<DebrisType MinVelocity="1.0" Name="FoliageAshTree" />
+	<DebrisType MinVelocity="1.0" Name="FoliageChestnut" />
+	<DebrisType MinVelocity="1.0" Name="FoliageSummer" />
+	<DebrisType MinVelocity="1.0" Name="FoliageAutumn" />
+	<DebrisType MinVelocity="1.0" Name="FoliageNeedles" />
+	<DebrisType MinVelocity="1.0" Name="FoliageSnow" />
+	<DebrisType MinVelocity="1.0" Name="AshDust" />
+	<DebrisType MinVelocity="1.0" Name="DryTwigs" />	
+	<DebrisType MinVelocity="1.0" Name="Sparks" />	
+</DebrisTypes>

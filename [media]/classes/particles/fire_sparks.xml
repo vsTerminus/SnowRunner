@@ -1,0 +1,23 @@
+<CombineParticles
+	IgnoreShadowmap="true"
+	Orientation="AlignedBillboard"
+	SoftDepth="10"
+	SortingPriority="4"
+	BillboardOffset="(0; 1.0)"
+>
+	<Emissive Scale="5" />
+	<Texture
+		AnimSpeed="25"
+		Diffuse="sfx/particles/fire_sparks_seq_d_a.tga"
+		NumFramesX="8"
+		NumFramesY="7"
+	/>
+	
+	<LifeTime Value="1.0" />
+	<Color>
+		<Key At="0.0" Value="g(255; 216; 0; 0) x 0" />
+		<Key At="0.3" Value="g(248; 185; 147) x 20" />
+		<Key At="0.6" Value="g(255; 60; 0) x 8" />
+		<Key At="1.0" Value="g(255; 0; 0; 0) x 0" />
+	</Color>
+</CombineParticles>

@@ -1,0 +1,13 @@
+<_templates Include="models" />
+<ModelBrand>
+	<StaticLights>
+		<StaticLight _template="Red" Dir="(0; -1.0; 0)" Pos="(0.128; 3.985; -0.047)" />
+	</StaticLights>
+	<PhysicsModel>
+		<Body Collisions="Dynamic" />
+	</PhysicsModel>
+	<Occlusion Size="(8.0; 8.0)" Texture="occlusion_logs_scavenge.tga" />
+	<Prebuild>
+		<Locator Pos="(0; 1.446; -0.07)" Type="log_scavenge" />
+	</Prebuild>
+</ModelBrand>

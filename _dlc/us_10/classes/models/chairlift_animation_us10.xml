@@ -1,7 +1,0 @@
-<ModelBrand>
-	<PhysicsModel>
-		<Body
-			Collisions="Dynamic"
-		/>
-	</PhysicsModel>
-</ModelBrand>
