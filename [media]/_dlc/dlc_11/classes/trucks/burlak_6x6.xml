@@ -80,7 +80,7 @@
 		EngineIconScale="1"
 		EngineStartDelay="2.2"
 		ExhaustStartTime="1.8"
-		FuelCapacity="280"
+		FuelCapacity="400"
 		InstallTrailerAddonRequired="burlak_6x6_farkop_trailer, burlak_6x6_farkop_scout_trailer"
 		Responsiveness="0.5"
 		SteerSpeed="0.03"

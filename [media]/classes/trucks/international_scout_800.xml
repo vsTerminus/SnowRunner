@@ -73,7 +73,7 @@
 		EngineIconScale="1"
 		EngineStartDelay="1.7"
 		ExhaustStartTime="1.6"
-		FuelCapacity="72"
+		FuelCapacity="79"
 		Responsiveness="0.6"
 		SteerSpeed="0.03"
 		TruckImage="scout8001mchr"

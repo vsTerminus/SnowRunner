@@ -5,7 +5,7 @@
 		DamageCapacity="100"
 		DamagedConsumptionModifier="1.6"
 		FuelConsumption="3.0"
-		IdleFuelModifier="0.3"
+		IdleFuelModifier="0.05"
 		Name="g_truck_unique_m916a1_finetune"
 		MinBreakFreq="0.0"
 		MaxBreakFreq="20.0"
