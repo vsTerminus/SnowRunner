@@ -9,7 +9,7 @@
 		CriticalDamageThreshold="0.6"
 		DamageCapacity="100"
 		DamagedConsumptionModifier="1.6"
-		FuelConsumption="0.7"
+		FuelConsumption="0.2"
 		Name="ru_scout_old_engine_don"
 		Torque="25000"
 		DamagedMinTorqueMultiplier="1.0"

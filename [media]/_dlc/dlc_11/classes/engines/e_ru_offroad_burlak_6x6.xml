@@ -10,7 +10,7 @@
 		DamageCapacity="150"
 		DamagedConsumptionModifier="1.2"
 		EngineResponsiveness="0.1"
-		FuelConsumption="5.2"
+		FuelConsumption="4.1"
 		Name="ru_offroad_burlak_engine"
 		Torque="80000"
 		DamagedMinTorqueMultiplier="1.0"
