@@ -63,7 +63,7 @@
 		EngineIconScale="1.35"
 		EngineStartDelay="2"
 		ExhaustStartTime="1.8"
-		FuelCapacity="150"
+		FuelCapacity="500"
 		Responsiveness="0.55"
 		SteerSpeed="0.035"
 		TruckImage="banditmchr"
