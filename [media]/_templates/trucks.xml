@@ -22,7 +22,7 @@
 		/>
 		<ScoutMudtires
 			BodyFriction="3.0"
-			BodyFrictionAsphalt="0.5"
+			BodyFrictionAsphalt="1.0"
 			SubstanceFriction="1.6"
 			UiName="UI_TIRE_TYPE_MUDTIRES_NAME"
 		/>
@@ -34,9 +34,9 @@
 		/>
 		<ScoutChains
 			BodyFriction="2.0"
-			BodyFrictionAsphalt="0.9"
+			BodyFrictionAsphalt="1.1"
 			IsIgnoreIce="true"
-			SubstanceFriction="1.1"
+			SubstanceFriction="1.6"
 			UiName="UI_TIRE_TYPE_CHAINS_NAME"
 		/>
 		<ScoutAllterrain
@@ -47,13 +47,13 @@
 		/>
 		<Offroad
 			BodyFriction="3.0"
-			BodyFrictionAsphalt="0.8"
+			BodyFrictionAsphalt="1.0"
 			SubstanceFriction="1.5"
 			UiName="UI_TIRE_TYPE_OFFROAD_NAME"
 		/>
 		<Mudtires
 			BodyFriction="2.0"
-			BodyFrictionAsphalt="0.5"
+			BodyFrictionAsphalt="1.0"
 			SubstanceFriction="2.0"
 			UiName="UI_TIRE_TYPE_MUDTIRES_NAME"
 		/>
@@ -65,15 +65,15 @@
 		/>
 		<HeavyMudtires
 			BodyFriction="1.7"
-			BodyFrictionAsphalt="0.5"
+			BodyFrictionAsphalt="1.0"
 			SubstanceFriction="3.0"
 			UiName="UI_TIRE_TYPE_MUDTIRES_NAME"
 		/>
 		<Chains
 			BodyFriction="3.0"
-			BodyFrictionAsphalt="1.2"
+			BodyFrictionAsphalt="1.4"
 			IsIgnoreIce="true"
-			SubstanceFriction="1.3"
+			SubstanceFriction="2.2"
 			UiName="UI_TIRE_TYPE_CHAINS_NAME"
 		/>
 		<Allterrain
