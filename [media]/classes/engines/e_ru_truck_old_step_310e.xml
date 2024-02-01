@@ -16,7 +16,7 @@
 		CriticalDamageThreshold="0.5"
 		DamageCapacity="150"
 		DamagedConsumptionModifier="2.0"
-		FuelConsumption="5.0"
+		FuelConsumption="2.8"
 		Name="ru_truck_old_engine_step_310e"
 		Torque="150000"
 		DamagedMinTorqueMultiplier="1.0"

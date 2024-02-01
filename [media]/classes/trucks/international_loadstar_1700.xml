@@ -45,7 +45,7 @@
 		EngineIconScale="1"
 		EngineStartDelay="1.7"
 		ExhaustStartTime="1.6"
-		FuelCapacity="130"
+		FuelCapacity="379"
 		Responsiveness="0.6"
 		SteerSpeed="0.03"
 		TruckImage="interloadstarmchr"

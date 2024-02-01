@@ -72,7 +72,7 @@
 		EngineIconScale="1.5"
 		EngineStartDelay="0.8"
 		ExhaustStartTime="0.9"
-		FuelCapacity="380"
+		FuelCapacity="605"
 		Responsiveness="0.45"
 		SteerSpeed="0.025"
 		TruckImage="kenworth990mchr"

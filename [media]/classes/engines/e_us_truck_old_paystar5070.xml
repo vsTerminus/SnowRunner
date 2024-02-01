@@ -18,7 +18,7 @@
 		DamageCapacity="180"
 		DamagedConsumptionModifier="1.6"
 		EngineResponsiveness="0.04"
-		FuelConsumption="7.0"
+		FuelConsumption="1.1"
 		Name="us_truck_old_paystar5070"
 		Torque="150000"
 		DamagedMinTorqueMultiplier="1.0"

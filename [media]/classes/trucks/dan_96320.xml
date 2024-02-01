@@ -49,7 +49,7 @@
 		EngineIconScale="1"
 		EngineStartDelay="3.2"
 		ExhaustStartTime="2.8"
-		FuelCapacity="350"
+		FuelCapacity="665"
 		Responsiveness="0.15"
 		SteerSpeed="0.018"
 		TruckImage="DANmchr"

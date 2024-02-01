@@ -61,7 +61,7 @@
 		EngineIconScale="1.3"
 		EngineStartDelay="0.8"
 		ExhaustStartTime="0.9"
-		FuelCapacity="300"
+		FuelCapacity="454"
 		Responsiveness="0.25"
 		SteerSpeed="0.025"
 		TruckImage="freightliner114SDmchr"

@@ -41,7 +41,7 @@
 		EngineIconScale="1.3"
 		EngineStartDelay="0.8"
 		ExhaustStartTime="0.9"
-		FuelCapacity="330"
+		FuelCapacity="500"
 		Responsiveness="0.15"
 		SteerSpeed="0.03"
 		TruckImage="Tayga6436mchr"

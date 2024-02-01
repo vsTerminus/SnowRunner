@@ -73,7 +73,7 @@
 		EngineIconScale="1"
 		EngineStartDelay="1.7"
 		ExhaustStartTime="1.6"
-		FuelCapacity="72"
+		FuelCapacity="79"
 		SuspensionMarkerOffset="(-0.75; 0; 0)"
 		GearboxMarkerOffset="(0.8; 0; 0)"
 		FueltankMarkerOffset="(-0.05; 0; 0)"
