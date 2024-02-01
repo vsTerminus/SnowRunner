@@ -12,7 +12,7 @@
 		CriticalDamageThreshold="0.7"
 		DamageCapacity="100"
 		DamagedConsumptionModifier="1.7"
-		FuelConsumption="8.5"
+		FuelConsumption="4.2"
 		Name="ru_truck_old_engine_zikz_566a"
 		Torque="200000"
 		DamagedMinTorqueMultiplier="1.0"

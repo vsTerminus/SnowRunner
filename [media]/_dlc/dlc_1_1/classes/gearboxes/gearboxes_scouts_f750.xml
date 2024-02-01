@@ -5,7 +5,7 @@
 		DamageCapacity="75"
 		DamagedConsumptionModifier="1.4"
 		FuelConsumption="1.8"
-		IdleFuelModifier="0.2"
+		IdleFuelModifier="0.05"
 		Name="g_scout_f750"
 		MinBreakFreq="0.0"
 		MaxBreakFreq="15.0"

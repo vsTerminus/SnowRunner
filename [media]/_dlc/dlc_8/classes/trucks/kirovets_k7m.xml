@@ -41,7 +41,7 @@
 		EngineIconScale="1.6"
 		EngineStartDelay="0.6"
 		ExhaustStartTime="0.6"
-		FuelCapacity="340"
+		FuelCapacity="800"
 		Responsiveness="0.4"
 		SteerSpeed="0.015"
 		TruckImage="kirovets_k7m_mchr"

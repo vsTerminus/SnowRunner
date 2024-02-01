@@ -63,7 +63,7 @@
 		EngineIconScale="1.3"
 		EngineStartDelay="0.8"
 		ExhaustStartTime="0.9"
-		FuelCapacity="190"
+		FuelCapacity="200"
 		Responsiveness="0.15"
 		SteerSpeed="0.025"
 		TruckImage="ZIKZ5368mchr"

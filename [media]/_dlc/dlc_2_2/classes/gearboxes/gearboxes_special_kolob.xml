@@ -5,7 +5,7 @@
 		DamageCapacity="220"
 		DamagedConsumptionModifier="1.5"
 		FuelConsumption="1.9"
-		IdleFuelModifier="0.2"
+		IdleFuelModifier="0.05"
 		Name="g_special_kolob"
 		MinBreakFreq="0.0"
 		MaxBreakFreq="15.0"

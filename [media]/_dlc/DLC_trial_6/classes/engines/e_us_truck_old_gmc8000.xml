@@ -17,7 +17,7 @@
 		CriticalDamageThreshold="0.6"
 		DamageCapacity="230"
 		DamagedConsumptionModifier="1.9"
-		FuelConsumption="9.5"
+		FuelConsumption="4.5"
 		Name="us_truck_old_engine_gmc8000"
 		Torque="170000"
 		DamagedMinTorqueMultiplier="1.0"

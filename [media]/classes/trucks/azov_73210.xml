@@ -67,7 +67,7 @@
 		EngineIconScale="1.2"
 		EngineStartDelay="0.6"
 		ExhaustStartTime="0.6"
-		FuelCapacity="350"
+		FuelCapacity="420"
 		Responsiveness="0.15"
 		SteerSpeed="0.017"
 		TruckImage="Azov73210mchr"
