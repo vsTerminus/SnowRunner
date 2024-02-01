@@ -30,7 +30,7 @@
 			</GameData>
 		</TruckTire>
         <TruckTire _template="ScoutMudtires" Mesh="wheels/tire_scout_mudtires_12" Name="JAT MS III">
-			<WheelFriction _template="ScoutMudtires" BodyFriction="2.1" BodyFrictionAsphalt="0.4" SubstanceFriction="2.5"/>
+			<WheelFriction _template="ScoutMudtires" BodyFriction="2.1" BodyFrictionAsphalt="1.0" SubstanceFriction="2.5"/>
 			<GameData
 				Price="5900"
 				UnlockByExploration="false"
