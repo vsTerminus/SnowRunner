@@ -1,11 +1,11 @@
 <GearboxVariants>
 	<Gearbox
-		AWDConsumptionModifier="1.2"
+		AWDConsumptionModifier="1.0"
 		CriticalDamageThreshold="0.4"
 		DamageCapacity="180"
 		DamagedConsumptionModifier="1.5"
 		FuelConsumption="2.5"
-		IdleFuelModifier="0.3"
+		IdleFuelModifier="0.05"
 		Name="g_truck_default"
 		MinBreakFreq="0.0"
 		MaxBreakFreq="15.0"
@@ -37,12 +37,12 @@
 		</GameData>
 	</Gearbox>
 	<Gearbox
-		AWDConsumptionModifier="1.3"
+		AWDConsumptionModifier="1.0"
 		CriticalDamageThreshold="0.4"
 		DamageCapacity="150"
 		DamagedConsumptionModifier="1.7"
 		FuelConsumption="2.0"
-		IdleFuelModifier="0.3"
+		IdleFuelModifier="0.05"
 		Name="g_truck_highrange"
 		MinBreakFreq="0.0"
 		MaxBreakFreq="20.0"
@@ -77,12 +77,12 @@
 		</GameData>
 	</Gearbox>
 	<Gearbox
-		AWDConsumptionModifier="1.4"
+		AWDConsumptionModifier="1.0"
 		CriticalDamageThreshold="0.4"
 		DamageCapacity="220"
 		DamagedConsumptionModifier="1.6"
 		FuelConsumption="3.0"
-		IdleFuelModifier="0.3"
+		IdleFuelModifier="0.05"
 		Name="g_truck_offroad"
 		MinBreakFreq="0.0"
 		MaxBreakFreq="25.0"
@@ -113,22 +113,22 @@
 		</GameData>
 	</Gearbox>
 		<Gearbox
-		AWDConsumptionModifier="1.6"
+		AWDConsumptionModifier="1.0"
 		CriticalDamageThreshold="0.4"
 		DamageCapacity="130"
 		DamagedConsumptionModifier="1.5"
-		FuelConsumption="3.2"
-		IdleFuelModifier="0.3"
+		FuelConsumption="3.0"
+		IdleFuelModifier="0.05"
 		Name="g_truck_finetune"
 		MinBreakFreq="0.0"
 		MaxBreakFreq="30.0"
 	>
 		<ReverseGear AngVel="0.7" FuelModifier="0.9" />
-		<HighGear AngVel="9.0" FuelModifier="1.8" />
+		<HighGear AngVel="9.0" FuelModifier="1.7" />
 		<Gear AngVel="2.0" FuelModifier="1.6" />
-		<Gear AngVel="5.0" FuelModifier="1.5" />
-		<Gear AngVel="7.5" FuelModifier="1.4" />
-		<Gear AngVel="10.0" FuelModifier="1.2" />
+		<Gear AngVel="5.0" FuelModifier="1.4" />
+		<Gear AngVel="7.5" FuelModifier="1.3" />
+		<Gear AngVel="10.0" FuelModifier="1.1" />
 		<GameData
 			Price="4700"
 			UnlockByExploration="true"
