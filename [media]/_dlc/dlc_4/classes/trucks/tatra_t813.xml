@@ -146,10 +146,16 @@
 		</Damage>
 		<CompatibleWheels RearOffsetZ="0.04" Scale="0.64" Type="wheels_tatra_t813" />
 		<CompatibleWheels RearOffsetZ="0.04" Scale="0.64" Type="wheels_heavy_single" />
+		<CompatibleWheels RearOffsetZ="0.04" Scale="0.70" Type="wheels_tatra_t813" />
+		<CompatibleWheels RearOffsetZ="0.04" Scale="0.70" Type="wheels_heavy_single" />
 
 		<CompatibleWheels RearOffsetZ="0.04" Scale="0.64" Type="wheels_heavy_offroad_single" />
 		<CompatibleWheels RearOffsetZ="0.04" Scale="0.64" Type="wheels_heavy_mudtires_single" />
 		<CompatibleWheels RearOffsetZ="0.04" Scale="0.64" Type="wheels_heavy_mudtires_single2" />
+
+		<CompatibleWheels RearOffsetZ="0.04" Scale="0.70" Type="wheels_heavy_offroad_single" />
+		<CompatibleWheels RearOffsetZ="0.04" Scale="0.70" Type="wheels_heavy_mudtires_single" />
+		<CompatibleWheels RearOffsetZ="0.04" Scale="0.70" Type="wheels_heavy_mudtires_single2" />
 
 		<Camera Center="(-1.7; 0; 0)" ParentFrame="BoneChassis_cdt">
 			<Cockpit
