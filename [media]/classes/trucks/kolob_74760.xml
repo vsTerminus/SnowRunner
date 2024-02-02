@@ -416,13 +416,13 @@
 		<CraneSocket Pos="(-0.605; 0.717; -1.483)" />
 		<AddonSockets>
 			<Socket Names="Trailer" Offset="(-4.704; 0.838; 0)" />
-			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-1.95; 2; 0)" />
-			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-3.7; 1.90; 0)" />
+			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" NamesBlock="saddle_low" Offset="(-2.815; 1.95; 0)" />
+			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-3.7; 1.95; 0)" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="BunkLog" Offset="(-6.35; 1.825; 0)" />
 			<Socket Names="FrameAddonLogShort" NamesBlock="Trailer" Offset="(-2.5; 1.821; 0)" />
-			<Socket Names="SaddleHigh1" Offset="(-1.95; 1.65; -0)" />
+			<Socket Names="SaddleHigh1" Offset="(-2.815; 1.65; -0)" />
 			<Socket Names="SaddleLow" Offset="(-3.68; 1.58; -0)" />
 			<Socket Names="FrameAddon" Offset="(-2.58; 1.76; 0)" />
 			<Socket Names="FrameAddonTank" Offset="(-3.58; 1.8; 0)" />
