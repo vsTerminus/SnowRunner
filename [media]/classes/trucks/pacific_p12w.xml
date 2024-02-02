@@ -24,7 +24,7 @@
 <Truck>
 	<TruckData
 		BackSteerSpeed="0.01"
-		DiffLockType="Always"
+		DiffLockType="Installed"
 		EngineIconMesh="env/engine_default"
 		EngineIconScale="1.6"
 		EngineStartDelay="0.8"
@@ -353,6 +353,9 @@
 		<AddonSockets>
 			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-4.641; 2.15; 0)" />
 			<Socket Names="Trailer" Offset="(-6.94; 1.35; 0)" />
+		</AddonSockets>
+		<AddonSockets DefaultAddon="pacific_p12w_diff_lock_default">
+			<Socket Names="PacificP512DiffLock" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="pacific_p12w_bumper_default">
 			<Socket Names="PacificP12Bumper" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
