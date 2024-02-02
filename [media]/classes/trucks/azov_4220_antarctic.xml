@@ -158,7 +158,7 @@
 		<Intake Dir="(1; 0; 0)" Origin="(5.432; 2.075; 0)" Size="1.2" />
 		<GearboxSocket Default="g_special_default" Type="gearboxes_special" />
 		<FuelTank DamageCapacity="50" />
-		<EngineSocket Default="ru_special_engine_0" Type="e_ru_special" />
+		<EngineSocket Default="ru_special_engine_0" Type="e_ru_special, e_us_truck_modern_longhorn_4520" />
 		<Driver Pos="(4.08; 2.32; 0.729)" SteeringWheelPos="(4.467; 2.647; 0.726)" ParentFrame="BoneCabinRagdoll_cdt" />
 		<Dashboard>
 			<Gauge Damping="0.9" Dir="(-0.952; 0.305; 0)" InputRange="(0;1)" InputType="rpm" Mesh="trucks/arrows/azov_4220_antarctic_arrow_02" Org="(4.814; 2.607; 0.833)" OutputAngles="(-130;130)" />
