@@ -105,7 +105,7 @@
 		<Intake Dir="(1; 0; 0)" Origin="(3.91; 2.13; 0)" Size="1.2" />
 		<GearboxSocket Default="g_special_default" Type="gearboxes_special" />
 		<FuelTank DamageCapacity="50" />
-		<EngineSocket Default="us_truck_old_heavy_engine_0" Type="e_us_truck_old_heavy" />
+		<EngineSocket Default="us_special_engine_0" Type="e_us_special, e_us_truck_modern_longhorn_4520" />
 		<Driver
 			AnimationSet="HeavyTruck"
 			Pos="(1.027; 2.59; 0.466)"
