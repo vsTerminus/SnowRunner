@@ -287,7 +287,7 @@
 	<PhysicsModel Mesh="trucks/ws_6900xd_twin">
 		<NetSync Legacy="false" />
 		<Body
-			CenterOfMassOffset="(0; 0; 0)"
+			CenterOfMassOffset="(0; -0.5; 0)"
 			ImpactType="Truck"
 			Mass="10200"
 			ModelFrame="BoneChassis_cdt"
