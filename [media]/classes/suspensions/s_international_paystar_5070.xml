@@ -54,8 +54,8 @@
 		<Suspension 
 			Damping="0.2"
 			BrokenSuspensionMax="0.25" 
-			Height="0.25" 
-			Strength="0.04" 
+			Height="0.35" 
+			Strength="0.05" 
 			SuspensionMin="-0.25" 
 			WheelType="rear" 
 		/>
