@@ -2,10 +2,14 @@
 <TruckAddon>
 	<TruckData>
 		<Damage>
-			<Multiplier Multiplier="1.0" Type="Engine" />
+			<Multiplier Multiplier="0.8" Type="Engine" />
 		</Damage>
 	</TruckData>
-	<PhysicsModel Mesh="trucks/gmc_9500_tuning/gmc_9500_bumper_01" />
+	<PhysicsModel Mesh="trucks/gmc_9500_tuning/gmc_9500_bumper_01">
+		<Body ImpactType="Truck" Mass="2000">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
 	<GameData
 		Price="600"
 		UnlockByExploration="false"
