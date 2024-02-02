@@ -440,9 +440,9 @@
 	/>
 	<GameData
 		Country=""
-		Price="111600"
+		Price="90000"
 		UnlockByExploration="false"
-		UnlockByRank="26"
+		UnlockByRank="10"
 		FrameAlign="BoneBack_cdt"
 		FrameAlignOffset="(-3; 0; 0)"
 		ResetTruckAfterGateway="true"
