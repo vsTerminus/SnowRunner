@@ -184,6 +184,10 @@
 		</Damage>
 		<CompatibleWheels Scale="0.646" Type="wheels_heavy_offroad_p512" />
 		<CompatibleWheels Scale="0.646" OffsetZ="0.03" Type="wheels_heavy_offroad_double_p512" />
+		<CompatibleWheels Scale="0.646" Type="wheels_heavy_offroad_double" />
+		<CompatibleWheels Scale="0.750" Type="wheels_heavy_offroad_p512" />
+		<CompatibleWheels Scale="0.750" OffsetZ="0.03" Type="wheels_heavy_offroad_double_p512" />
+		<CompatibleWheels Scale="0.750" Type="wheels_heavy_offroad_double" />
 		<Camera Center="(-1.2; 0; 0)" ParentFrame="BoneCabin_cdt">
 			<Cockpit
 				_template="Default"
