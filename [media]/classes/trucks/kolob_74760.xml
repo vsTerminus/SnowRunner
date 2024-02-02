@@ -81,7 +81,7 @@
 <Truck>
 	<TruckData
 		BackSteerSpeed="0.01"
-		DiffLockType="Always"
+		DiffLockType="Installed"
 		EngineIconMesh="env/engine_pacific_p16"
 		EngineIconScale="0.8"
 		EngineStartDelay="3.2"
@@ -418,6 +418,9 @@
 			<Socket Names="Trailer, LogTrailer" Offset="(-4.704; 0.838; 0)" />
 			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" NamesBlock="saddle_low" Offset="(-2.815; 1.95; 0)" />
 			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-3.7; 1.95; 0)" />
+		</AddonSockets>
+		<AddonSockets DefaultAddon="kolob_74760_diff_lock_default">
+			<Socket Names="kolob74135DiffLock" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="BunkLog" Offset="(-6.35; 1.825; 0)" />
