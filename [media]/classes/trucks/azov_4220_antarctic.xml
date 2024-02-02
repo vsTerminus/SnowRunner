@@ -194,12 +194,12 @@
 			<Axle Frame="BoneAxle3" />
 		</Axles>
 	</TruckData>
-	<Rotator EngineTorqueFactor="0" Frame="BoneRotatorL" RotationSpeed="4" />
-	<Rotator EngineTorqueFactor="0" Frame="BoneRotatorR" RotationSpeed="4.1" />
+	<Rotator EngineTorqueFactor="0" Frame="BoneRotatorL" RotationSpeed="7" />
+	<Rotator EngineTorqueFactor="0" Frame="BoneRotatorR" RotationSpeed="7.1" />
 	<PhysicsModel Mesh="trucks/azov_4220_antarctic">
 		<NetSync Legacy="false" />
 		<Body
-			CenterOfMassOffset="(1; -1; 0)"
+			CenterOfMassOffset="(1; -1.5; 0)"
 			ImpactType="Truck"
 			Mass="10000"
 			NetSync="pv"
