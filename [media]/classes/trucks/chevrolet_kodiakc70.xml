@@ -137,7 +137,7 @@
 			Origin="(0.74; 0.604; -0.445)"
 			Speed="3.00"
 		/>
-		<EngineSocket Default="us_truck_old_engine_0" Type="e_us_truck_old" />
+		<EngineSocket Default="us_truck_old_engine_0" Type="e_us_truck_old, e_us_truck_old_top" />
 		<Driver Pos="(1.601; 1.673; 0.457)" SteeringWheelPos="(1.984; 2; 0.45)" ParentFrame="BoneCabinRagdoll_cdt" />
 		<Dashboard>
 			<Gauge Damping="0.9" Dir="(-0.956; 0.185; -0.23)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/chevrolet_kodiakC70_arrow_01" Org="(2.235; 1.966; 0.742)" OutputAngles="(-45;-5)" />
