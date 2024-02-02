@@ -7,7 +7,7 @@
 		</Damage>
 	</TruckData>
 	<PhysicsModel _noinherit="true" Mesh="trucks/ws_4964_white_tuning/ws_4964_white_bumper_4">
-		<Body ImpactType="Truck" Mass="40" ModelFrame="BoneCabin_cdt">
+		<Body ImpactType="Truck" Mass="2000" ModelFrame="BoneCabin_cdt">
 			<Constraint Type="Rigid" />
 		</Body>
 	</PhysicsModel>
