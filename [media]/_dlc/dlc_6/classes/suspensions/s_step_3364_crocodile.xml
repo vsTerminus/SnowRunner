@@ -45,7 +45,7 @@
 	>
 		<Suspension 
 			Damping="0.3" 
-			Height="0.29" 
+			Height="0.35" 
 			Strength="0.03" 
 			WheelType="front" 
 			BrokenSuspensionMax="0.1" 
@@ -53,7 +53,7 @@
 		/>
 		<Suspension 
 			Damping="0.4" 
-			Height="0.29" 
+			Height="0.36" 
 			Strength="0.05" 
 			WheelType="rear" 
 			BrokenSuspensionMax="0.1" 
