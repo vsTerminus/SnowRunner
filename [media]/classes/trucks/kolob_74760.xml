@@ -181,6 +181,8 @@
 		</Damage>
 		<CompatibleWheels Scale="0.745" Type="wheels_superheavy_single" />
 		<CompatibleWheels Scale="0.745" Type="wheels_superheavy_mudtires" />
+		<CompatibleWheels Scale="0.825" Type="wheels_superheavy_single" />
+		<CompatibleWheels Scale="0.825" Type="wheels_superheavy_mudtires" />
 		<Camera Center="(-0.5; 0; 0)" ParentFrame="BoneChassis_cdt">
 			<Cockpit
 				_template="Default"
