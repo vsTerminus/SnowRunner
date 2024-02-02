@@ -118,7 +118,7 @@
 			<BrakesSqueal	Sound="trucks/azov_4220_antarctic/azov_4220_antarctic_brakes_squeal" />
 			<Handbrake		Sound="trucks/chevrolet_kodiakc70/chevrolet_kodiakc70_handbrake_on" />
 			<HandbrakeOff	Sound="trucks/chevrolet_kodiakc70/chevrolet_kodiakc70_handbrake_off" />
-			<Honk			Sound="trucks/azov_4220_antarctic/azov_4220_antarctic_honk" />
+			<Honk			Sound="trucks/cat_ct680/cat_ct680_honk" />
 			<EngineRev		Sound="trucks/azov_4220_antarctic/azov_4220_antarctic_rev" />
 			<EngineAccel	Sound="trucks/azov_4220_antarctic/azov_4220_antarctic_acc" />
 			<EngineStart	Sound="trucks/azov_4220_antarctic/azov_4220_antarctic_start" />
