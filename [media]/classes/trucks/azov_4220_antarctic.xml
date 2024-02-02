@@ -6,7 +6,7 @@
 			Torque="default"
 			ParentFrame="BoneSuspension_cdt"
 		/>
-		<FrontWheel Location="front" Torque="default" />
+		<FrontWheel Location="front" Torque="full" />
 	</Wheel>
 	<Flare>
 		<ReverseSignal
