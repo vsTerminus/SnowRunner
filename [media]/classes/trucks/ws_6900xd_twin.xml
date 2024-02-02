@@ -212,7 +212,9 @@
 		<CompatibleWheels Scale="0.7" Type="wheels_heavy_single" />
 		<CompatibleWheels Scale="0.8" Type="wheels_heavy_single" />
 		<CompatibleWheels Scale="0.7" Type="wheels_heavy_double1" />
+		<CompatibleWheels Scale="0.8" Type="wheels_heavy_double1" />
 		<CompatibleWheels OffsetZ="-0.01" Scale="0.7" Type="wheels_heavy_double2" />
+		<CompatibleWheels OffsetZ="-0.01" Scale="0.8" Type="wheels_heavy_double2" />
 
 		<CompatibleWheels Scale="0.7" Type="wheels_heavy_offroad_single" />
 		<CompatibleWheels Scale="0.7" Type="wheels_heavy_mudtires_single" />
