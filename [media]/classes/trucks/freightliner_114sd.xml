@@ -132,7 +132,7 @@
 		<Intake Dir="(1; 0; 0)" Origin="(4.409; 1.469; -0)" Size="1" />
 		<GearboxSocket Default="g_truck_default" Type="gearboxes_trucks" />
 		<FuelTank DamageCapacity="50" />
-		<EngineSocket Default="us_truck_old_engine_0" Type="e_us_truck_old" />
+		<EngineSocket Default="us_truck_old_engine_0" Type="e_us_truck_old, e_us_truck_old_4070" />
 		<Driver Pos="(2.061; 1.939; 0.548)" SteeringWheelPos="(2.444; 2.267; 0.545)" ParentFrame="BoneCabin_cdt" />
 		<Dashboard>
 			<Gauge Damping="0.99" Dir="(-0.902; 0.431; -0.028)" InputRange="(0;1)" InputType="rpm" Mesh="trucks/arrows/freightliner_114sd_arrow_01" Org="(2.759; 2.128; 0.583)" OutputAngles="(-137;44)" />
