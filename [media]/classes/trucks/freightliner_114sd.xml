@@ -154,6 +154,7 @@
 		</Damage>
 		<CompatibleWheels Scale="0.55" Type="wheels_medium_double" />
 		<CompatibleWheels Scale="0.60" Type="wheels_medium_double" />
+		<CompatibleWheels Scale="0.65" Type="wheels_medium_double" />
 
 		<CompatibleWheels Scale="0.55" Type="wheels_medium_offroad_double" />
 		<CompatibleWheels Scale="0.55" Type="wheels_medium_highway_double" />
@@ -163,6 +164,10 @@
 		<CompatibleWheels Scale="0.60" Type="wheels_medium_offroad_double" />
 		<CompatibleWheels Scale="0.60" Type="wheels_medium_highway_double" />
 		<CompatibleWheels Scale="0.60" Type="wheels_medium_allterrain_double" />
+
+		<CompatibleWheels Scale="0.65" Type="wheels_medium_offroad_double" />
+		<CompatibleWheels Scale="0.65" Type="wheels_medium_highway_double" />
+		<CompatibleWheels Scale="0.65" Type="wheels_medium_allterrain_double" />
 
 		<Camera Center="(-1.3; 0; 0)" ParentFrame="BoneCabin_cdt">
 			<Cockpit
