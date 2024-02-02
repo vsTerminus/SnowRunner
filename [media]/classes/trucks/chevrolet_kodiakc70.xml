@@ -152,17 +152,22 @@
 			<DamageArea Type="Engine" Min="(2.4; 0.95; -0.6)" Max="(3.45; 2; 0.6)" ParentFrame="BoneCabin_cdt" />
 			<DamageArea Type="FuelTank" Min="(0.5; 0.45; -1.2)" Max="(2.090; 1.07; 1.2)" ParentFrame="BoneChassis_cdt" />
 		</Damage>
-		<CompatibleWheels Scale="0.50" Type="wheels_medium_double" />
-		<CompatibleWheels OffsetZ="0.02" Scale="0.55" Type="wheels_medium_double" />
-		
-		<CompatibleWheels Scale="0.50" Type="wheels_medium_offroad_double" />
-		<CompatibleWheels Scale="0.50" Type="wheels_medium_highway_double" />
-		<CompatibleWheels Scale="0.50" Type="wheels_medium_allterrain_double" />
-		
-		<CompatibleWheels OffsetZ="0.02" Scale="0.55" Type="wheels_medium_offroad_double" />
-		<CompatibleWheels OffsetZ="0.02" Scale="0.55" Type="wheels_medium_highway_double" />
-		<CompatibleWheels OffsetZ="0.02" Scale="0.55" Type="wheels_medium_allterrain_double" />
-		
+		<CompatibleWheels OffsetZ="0.08" Scale="0.50" Type="wheels_medium_double" />
+		<CompatibleWheels OffsetZ="0.09" Scale="0.55" Type="wheels_medium_double" />
+		<CompatibleWheels OffsetZ="0.10" Scale="0.60" Type="wheels_medium_double" />
+
+		<CompatibleWheels OffsetZ="0.08" Scale="0.50" Type="wheels_medium_offroad_double" />
+		<CompatibleWheels OffsetZ="0.08" Scale="0.50" Type="wheels_medium_highway_double" />
+		<CompatibleWheels OffsetZ="0.08" Scale="0.50" Type="wheels_medium_allterrain_double" />
+
+		<CompatibleWheels OffsetZ="0.09" Scale="0.55" Type="wheels_medium_offroad_double" />
+		<CompatibleWheels OffsetZ="0.09" Scale="0.55" Type="wheels_medium_highway_double" />
+		<CompatibleWheels OffsetZ="0.09" Scale="0.55" Type="wheels_medium_allterrain_double" />
+
+		<CompatibleWheels OffsetZ="0.10" Scale="0.60" Type="wheels_medium_offroad_double" />
+		<CompatibleWheels OffsetZ="0.10" Scale="0.60" Type="wheels_medium_highway_double" />
+		<CompatibleWheels OffsetZ="0.10" Scale="0.60" Type="wheels_medium_allterrain_double" />
+
 		<Camera Center="(-1.7; 0; 0)" ParentFrame="BoneCabin_cdt">
 			<Cockpit
 				_template="Default"
