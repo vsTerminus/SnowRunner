@@ -1,5 +1,5 @@
 <TruckAddon IsChassisFullOcclusion="true">
-	<TruckData FuelCapacity="900">
+	<TruckData FuelCapacity="1500">
 		<LimitedFluid
 			Center="(-1.683; 1.748; 0)"
 			LengthX="3.142"
