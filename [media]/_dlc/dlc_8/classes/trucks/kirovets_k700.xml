@@ -36,7 +36,7 @@
 		ExhaustStartTime="0.6"
 		FuelCapacity="450"
 		Responsiveness="0.4"
-		SteerSpeed="0.015"
+		SteerSpeed="0.025"
 		TruckImage="kirovets_k700_mchr"
 		TruckType="HEAVY"
 	>
@@ -192,8 +192,8 @@
 					AxisLocal="(0; 1; 0)"
 					Name="ChassisSteer"
 					Type="Hinge"
-					MinLimit="-25"
-					MaxLimit="25"
+					MinLimit="-30"
+					MaxLimit="30"
 				>
 					<Motor
 						Damping="1.0"
