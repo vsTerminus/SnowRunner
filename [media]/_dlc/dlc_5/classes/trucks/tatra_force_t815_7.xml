@@ -404,6 +404,7 @@
 		<CraneSocket Pos="(-5.546; 1.002; 0)" />
 		<AddonSockets>
 			<Socket Names="Trailer" Offset="(-5.546; 1.002; 0)" />
+			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-3.452; 1.600; 0)" />
 			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-3.452; 1.746; 0)" />
 		</AddonSockets>
 		<AddonSockets>
@@ -413,6 +414,10 @@
 				<AddonsShift Offset="(-0.33; 0; 0)" Types="TatraCrane" />
 			</Socket>
 			<Socket Names="SaddleHigh" Offset="(-3.437; 1.207; 0)">
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.015)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.015)" />
+			</Socket>
+			<Socket Names="SaddleLow" Offset="(-3.437; 1.207; 0)">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.015)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.015)" />
 			</Socket>
