@@ -3,7 +3,7 @@
 		<RearWheel
 			ConnectedToHandbrake="true"
 			Location="rear"
-			Torque="default"
+			Torque="full"
 			ParentFrame="BoneBack_cdt"
 		/>
 		<FrontWheel Location="front" Torque="default" ParentFrame="BoneFront_cdt" />
@@ -36,7 +36,7 @@
 <Truck>
 	<TruckData
 		BackSteerSpeed="0.02"
-		DiffLockType="Always"
+		DiffLockType="Installed"
 		EngineIconMesh="env/engine_default"
 		EngineIconScale="1.6"
 		EngineStartDelay="0.6"
@@ -381,6 +381,9 @@
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="Trailer" Offset="(-3.945; 0.6; 0)" ParentFrame="BoneBack_cdt"/>
+		</AddonSockets>
+		<AddonSockets DefaultAddon="KirovetsK7M_diff_lock_default" >
+			<Socket Names="WesternStarNF1424DiffLock" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="KirovetsK7MSticker_Capote" ParentFrame="BoneFront_cdt" />
