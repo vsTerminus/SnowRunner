@@ -50,7 +50,7 @@
 <Truck>
 	<TruckData
 		BackSteerSpeed="0.025"
-		DiffLockType="Uninstalled"
+		DiffLockType="Installed"
 		EngineIconMesh="env/engine_default"
 		EngineIconScale="1.4"
 		EngineStartDelay="3.2"
@@ -401,6 +401,9 @@
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.02)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.02)" />
 			</Socket>
+		</AddonSockets>
+		<AddonSockets DefaultAddon="western_star_57x_diff_lock_default">
+			<Socket Names="WesternStarNF1424DiffLock" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="western_star_57x_bumper_default">
 			<Socket Names="ws57xBumper" ParentFrame="BoneCabin_cdt" />
