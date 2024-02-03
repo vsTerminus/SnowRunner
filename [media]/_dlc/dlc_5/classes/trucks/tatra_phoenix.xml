@@ -354,17 +354,20 @@
 		<CraneSocket Pos="(-0.65; 1; -0.46)" />
 		<CraneSocket Pos="(-3.968; 1.028; 0)" />
 		<AddonSockets>
-			<Socket Names="TatraCrane" Offset="(-0.4; 0.17; 0)" NamesBlock="TatraFrameAddonTank">
-				<AddonsShift Offset="(1.64; 0; -0.025)" Types="TatraSideboard" />
-			</Socket>
+			<Socket Names="TatraCrane" Offset="(1.215; -0.02; 0)" NamesBlock="TatraFrameAddonTank, FrameAddonKung" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="Trailer" Offset="(-3.968; 1.028; 0)" />
+			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-2.173; 1.550; 0)" />
 			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-2.173; 1.647; 0)" />
 		</AddonSockets>
 		<AddonSockets>
 			<!--<Socket Names="BigCraneRu" Offset="(-2.52; 1.174; 0)" />-->
 			<Socket Names="SaddleHigh" Offset="(-2.17; 1.182; 0)">
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.02)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.02)" />
+			</Socket>
+			<Socket Names="SaddleLow" Offset="(-2.17; 1.182; 0)">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.02)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.02)" />
 			</Socket>
