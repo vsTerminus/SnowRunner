@@ -416,6 +416,14 @@
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.017)" />
 			</Socket>
 			<Socket Names="FrameAddon" Offset="(0.441; 1.08; 0)" />
+			<Socket Names="FrameAddon3" Offset="(0.439; 1.08; 0)"
+				NamesBlock="MinicraneUS"
+				ParentFrame="BoneChassis_cdt">
+			</Socket>
+			<Socket Names="FrameAddonSideboard3" Offset="(0.263; 1.108; 0)"
+				NamesBlock="MinicraneUS"
+				ParentFrame="BoneChassis_cdt">
+			</Socket>
 			<Socket Names="FrameAddonTank" Offset="(0.309; 1.08; 0)" />
 			<Socket Names="FrameAddonSeismicVibrator" NamesBlock="Trailer" Offset="(2.56; 1.08; 0)" />
 			<Socket Names="FrameAddonMaintainer" NamesBlock="Trailer" Offset="(0.554; 0.05; 0)" />
