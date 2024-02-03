@@ -441,6 +441,9 @@
 			</Socket>
 			
 		</AddonSockets>
+		<AddonSockets DefaultAddon="western_star_nf1430_diff_lock_default">
+			<Socket Names="WesternStarNF1424DiffLock" />
+		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="LogLift" NamesBlock="FrameAddonKung, BigCraneUs, BigCrane, MinicraneUS, FrameAddon, FrameAddonTank, FrameAddonMaintainer, FrameAddonSeismicVibrator, FrameAddonTowPlatform, FrameAddonLogMedium" Offset="(4.352; 1.093; 0)" />
 		</AddonSockets>
