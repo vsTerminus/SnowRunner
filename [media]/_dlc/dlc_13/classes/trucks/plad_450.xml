@@ -451,7 +451,7 @@
 	<Landmark Mesh="landmarks/plad_450_lmk" MinScale="1.5" MaxScale="2.5" />
 	<HeadLight _template="Default" Pos="(5.874; 1.374; 0)" ParentFrame="BoneCabin_cdt" />
 	<GameData
-		Country="US,NE,CAS,CE"
+		Country=""
 		Price="113600"
 		UnlockByExploration="true"
 		UnlockByRank="1"

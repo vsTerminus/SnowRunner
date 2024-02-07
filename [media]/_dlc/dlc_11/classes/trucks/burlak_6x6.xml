@@ -334,7 +334,7 @@
 	<Landmark Mesh="landmarks/burlak_6x6_lmk" MinScale="1.8" MaxScale="3.8" />
 	<HeadLight _template="Default" Pos="(3.8; 1.131; 0)" />
 	<GameData
-		Country="RU,CAS,NE,CE"
+		Country=""
 		ExcludeAddons="trailer_log_pole,trailer_flatbed_ramps_4,trailer_log"
 		Price="97500"
 		UnlockByExploration="true"
@@ -345,8 +345,6 @@
 		<WinchSocket Pos="(-0.503; 1.921; 1.328)" ParentFrame="BoneChassis_cdt" />
 		<WinchSocket Pos="(-0.503; 1.921; -1.328)" ParentFrame="BoneChassis_cdt" />
 		<WinchSocket Pos="(-4.21; 1.306; -0.0)" ParentFrame="BoneChassis_cdt" />
-		<WinchSocket Pos="(-0.475; 3.268; 1.136)" ParentFrame="BoneChassis_cdt" />
-		<WinchSocket Pos="(-0.475; 3.268; -1.136)" ParentFrame="BoneChassis_cdt" />
 		<UiDesc
 			UiDesc="UI_VEHICLE_BURLAK_6X6_DESC"
 			UiIcon30x30="scoutVehicleImg30"
@@ -391,9 +389,6 @@
 		<CraneSocket Pos="(0.692; 1.14; 1.328)" ParentFrame="BoneChassis_cdt" />
 		<CraneSocket Pos="(0.692; 1.44; -1.328)" ParentFrame="BoneChassis_cdt" />
 		<CraneSocket Pos="(-4.21; 1.306; -0.0)" ParentFrame="BoneChassis_cdt" />
-		<CraneSocket Pos="(-0.475; 3.268; 1.136)" ParentFrame="BoneChassis_cdt" />
-		<CraneSocket Pos="(-0.475; 3.268; -1.136)" ParentFrame="BoneChassis_cdt" />
-		<CraneSocket Pos="(0.374; 3.351; -0.0)" ParentFrame="BoneChassis_cdt" />
 		<!-- <ADDONS> -->
 		<AddonSockets DefaultAddon="burlak_6x6_finder_light">
 			<Socket Names="BurlakFinderLight" />
@@ -518,12 +513,12 @@
 			<Socket Names="BurlakDiffLock" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="Trailer, LogTrailer" Offset="(-4.385; 1.14; 0)" />
+			<Socket Names="Trailer" Offset="(-4.351; 1.143; 0)" />
 			<Socket Names="ScautTrailer" Offset="(-4.238; 0.913; 0)" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="burlak_6x6_farkop_trailer">
 			<Socket Names="BurlakFarkop" NamesBlock="ScautTrailer" />
-			<Socket Names="BurlakFarkopScout" NamesBlock="Trailer, LogTrailer" />
+			<Socket Names="BurlakFarkopScout" NamesBlock="Trailer" />
 		</AddonSockets>
 	</GameData>
 	<AutomaticIK>

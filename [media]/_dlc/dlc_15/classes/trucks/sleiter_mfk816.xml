@@ -282,7 +282,7 @@
 	<HeadLight _template="Default" Pos="(4.258; 1.240; 0)" ParentFrame="BoneCabin_cdt" />
 	<Landmark Mesh="landmarks/sleiter_mfk816_lmk" MinScale="1.5" MaxScale="2.5" />
 	<GameData
-		Country="US,NE,CE"
+		Country=""
 		Price="160400"
 		UnlockByExploration="true"
 		UnlockByRank="1"

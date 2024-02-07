@@ -282,7 +282,7 @@
 	<Landmark Mesh="landmarks/tuz_166_lmk" MinScale="1.8" MaxScale="3.8" />
 	<HeadLight _template="Default" Pos="(1.707; 0.928; 0)" ParentFrame="BoneChassis_cdt" />
 	<GameData
-		Country="RU,CAS"
+		Country=""
 		Price="7200"
 		Recallable="true"
 		UnlockByExploration="true"

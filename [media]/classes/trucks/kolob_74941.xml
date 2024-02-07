@@ -426,7 +426,7 @@
 	<Landmark Mesh="landmarks/kolob_74941_lmk" MinScale="1.8" MaxScale="2.8" />
 	<HeadLight _template="Default" Pos="(5.052; 1.103; 0)" ParentFrame="BoneChassis_cdt" />
 	<GameData
-		Country="RU,CAS"
+		Country=""
 		Price="92300"
 		UnlockByExploration="false"
 		UnlockByRank="1"

@@ -347,7 +347,7 @@
 	<Landmark Mesh="landmarks/plad_440_lmk" MinScale="1.8" MaxScale="3.8" />
 	<HeadLight _template="Default" Pos="(3.837; 0.987; 0)" />
 	<GameData
-		Country="US,NE,CE"
+		Country=""
 		ExcludeAddons="frame_addon_sideboard_2"
 		Price="86300"
 		UnlockByExploration="true"

@@ -526,7 +526,7 @@
 	<Landmark Mesh="landmarks/sleiter_st833_chimera_lmk" MinScale="1.5" MaxScale="2.2" />
 	<HeadLight _template="Default" Pos="(4.542; 2.006; 0)" />
 	<GameData
-		Country="US,NE,CE"
+		Country=""
 		Price="156600"
 		UnlockByExploration="true"
 		UnlockByRank="1"

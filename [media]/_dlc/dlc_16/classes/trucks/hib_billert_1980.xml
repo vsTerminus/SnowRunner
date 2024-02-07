@@ -367,7 +367,7 @@
 	<Landmark Mesh="landmarks/hib_billert_1980_lmk" MinScale="1.8" MaxScale="2.8" />
 	<HeadLight _template="Default" Pos="(3.366; 1.139; 0)" ParentFrame="BoneCabin_cdt" />
 	<GameData
-		Country="US,NE,CE"
+		Country=""
 		ExcludeAddons="semitrailer_foldable_log,       stuff_bobblehead_joker,       stuff_bobblehead_penguin,       stuff_bobblehead_walrus,       stuff_dog,       stuff_masha,       stuff_hula_girl"
 		Price="51800"
 		UnlockByExploration="true"

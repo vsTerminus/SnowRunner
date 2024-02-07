@@ -315,7 +315,7 @@
 	<Landmark Mesh="landmarks/khan_317_sentinel_lmk" MinScale="1.8" MaxScale="3.8" />
 	<HeadLight _template="Default" Pos="(4.142; 0.963; 0)" />
 	<GameData
-		Country="RU,CAS"
+		Country=""
 		Price="28200"
 		Recallable="true"
 		UnlockByExploration="false"
