@@ -531,7 +531,7 @@
 	<Landmark Mesh="landmarks/zikz_612h_mastodont_lmk" MinScale="1.8" MaxScale="2.8" />
 	<HeadLight _template="Default" Pos="(9.025; 1.551; 0)" />
 	<GameData
-		Country="RU,CAS"
+		Country=""
 		ExcludeAddons="trailer_log_pole"
 		Price="191300"
 		UnlockByExploration="false"

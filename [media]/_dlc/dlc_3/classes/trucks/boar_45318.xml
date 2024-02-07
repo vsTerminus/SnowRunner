@@ -288,7 +288,7 @@
 	<Landmark Mesh="landmarks/boar_45318_lmk" MinScale="1.5" MaxScale="2.5" />
 	<HeadLight _template="Default" Pos="(4.5; 1.343; 0)" ParentFrame="BoneCabin_cdt" />
 	<GameData
-		Country="RU,CAS"
+		Country=""
 		Price="155800"
 		UnlockByExploration="false"
 		UnlockByRank="1"
