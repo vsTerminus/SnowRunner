@@ -495,7 +495,7 @@
 	<Landmark Mesh="landmarks/mercedes_mamute_1519_lmk" MinScale="1.5" MaxScale="2.2" />
 	<HeadLight _template="Default" Pos="(3.69; 1.753; 0)" />
 	<GameData
-		Country="US,NE,CE,CA"
+		Country=""
 		ExcludeAddons="frame_addon_sideboard_2, trailer_log_pole_zikz_612h, pacific_p16_trailer_log_pole"
 		Price="113300"
 		UnlockByExploration="false"

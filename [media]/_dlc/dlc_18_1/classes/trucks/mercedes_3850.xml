@@ -317,7 +317,7 @@
 	</PhysicsModel>
 	<Landmark Mesh="landmarks/mercedes_3850_lmk" MinScale="1.5" MaxScale="2.2" />
 	<GameData
-		Country="US,NE,CE"
+		Country=""
 		ExcludeAddons="pacific_p16_trailer_log_pole, trailer_log_pole_zikz_612h"
 		Price="94100"
 		UnlockByExploration="false"

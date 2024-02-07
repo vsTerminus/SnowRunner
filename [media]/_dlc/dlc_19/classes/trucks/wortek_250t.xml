@@ -456,7 +456,7 @@
 	<Landmark Mesh="landmarks/wortek_250t_lmk" MinScale="1.5" MaxScale="2.5" />
 	<HeadLight _template="Default" Pos="(3.553; 1.476; 0.000)" />
 	<GameData
-		Country="US,NE,CE"
+		Country=""
 		Price="94100"
 		UnlockByExploration="true"
 		UnlockByRank="1"

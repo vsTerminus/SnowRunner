@@ -369,7 +369,7 @@
 	<Rotator EngineTorqueFactor="0" Frame="BoneEngineFan" RotationAxis="(0; 1; 0)" RotationSpeed="10" />
 
 	<GameData
-		Country="US,NE,CE"
+		Country=""
 		Price="10000"
 		UnlockByExploration="true"
 		UnlockByRank="1"
