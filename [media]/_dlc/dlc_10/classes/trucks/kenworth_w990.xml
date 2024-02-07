@@ -11,7 +11,7 @@
 			Location="front"
 			SteeringAngle="40"
 			SteeringCastor="8"
-			Torque="none"
+			Torque="full"
 			ParentFrame="BoneCabin_cdt"
 		/>
 	</Wheel>
