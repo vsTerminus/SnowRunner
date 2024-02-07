@@ -306,7 +306,7 @@
 	<Landmark Mesh="landmarks/gmc_8000_lmk" MinScale="1.8" MaxScale="3.8" />
 	<HeadLight _template="Default" Pos="(2.513; 1.167; 0)" />
 	<GameData
-		Country="US,NE"
+		Country=""
 		Price="90000"
 		UnlockByExploration="false"
 		UnlockByRank="1"

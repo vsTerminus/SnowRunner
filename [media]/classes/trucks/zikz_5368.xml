@@ -296,7 +296,7 @@
 	<Landmark Mesh="landmarks/zikz_5368_lmk" MinScale="1.5" MaxScale="2.5" />
 	<HeadLight _template="Default" Pos="(2.969; 1.14; 0)" ParentFrame="BoneCabin_cdt" />
 	<GameData
-		Country="RU,CAS"
+		Country=""
 		Price="17800"
 		UnlockByExploration="false"
 		UnlockByRank="1"

@@ -333,7 +333,7 @@
 	<Landmark Mesh="landmarks/international_fleetstar_f2070a_lmk" MinScale="1.8" MaxScale="3.8" />
 	<HeadLight _template="Default" Pos="(4.200; 1.283; 0.949)" />
 	<GameData
-		Country="US,NE"
+		Country=""
 		ExcludeAddons="semitrailer_stepdeck_5, semitrailer_gooseneck_4"
 		Price="13800"
 		UnlockByExploration="false"

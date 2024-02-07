@@ -274,7 +274,7 @@
 	</ModelAttachments>
 	<Landmark Mesh="landmarks/step_3364_crocodile_lmk" MinScale="1.8" MaxScale="3.8" />
 	<HeadLight _template="Default" Pos="(3.2; 0.8; 0)" />
-	<GameData Country="RU,CAS" Price="12000" UnlockByRank="1">
+	<GameData Country="" Price="12000" UnlockByRank="1">
 		<WinchSocket Pos="(2.881; 0.925; -0.438)" ParentFrame="BoneCabin_cdt" />
 		<WinchSocket Pos="(2.881; 0.925; 0.438)" ParentFrame="BoneCabin_cdt" />
 		<WinchSocket Pos="(-1.21; 0.748; -0.426)" />

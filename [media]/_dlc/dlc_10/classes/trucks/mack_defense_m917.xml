@@ -387,7 +387,7 @@
 	<Landmark Mesh="landmarks/mack_defense_m917_lmk" MinScale="1.7" MaxScale="3.7" />
 	<HeadLight _template="Default" Pos="(5; 1.287; 0)" ParentFrame="BoneCabin_cdt" />
 	<GameData
-		Country="US,NE"
+		Country=""
 		Price="95500"
 		UnlockByExploration="true"
 		UnlockByRank="1"

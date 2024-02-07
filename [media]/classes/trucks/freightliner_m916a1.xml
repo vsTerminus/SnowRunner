@@ -382,7 +382,7 @@
 	<Landmark Mesh="landmarks/freightliner_m916a1_lmk" MinScale="1.8" MaxScale="3.8" />
 	<HeadLight _template="Default" Pos="(4; 1.287; 0)" ParentFrame="BoneCabin_cdt" />
 	<GameData
-		Country="US,NE"
+		Country=""
 		Price="74200"
 		UnlockByExploration="false"
 		UnlockByRank="17"

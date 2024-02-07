@@ -269,7 +269,7 @@
 	<Landmark Mesh="landmarks/land_rover_defender_90_lmk" MinScale="1.8" MaxScale="3.8" />
 	<HeadLight _template="Default" Pos="(1.49; 0.853; 0)" />
 	<GameData
-		Country="US,NE"
+		Country=""
 		Price="2500"
 		Recallable="true"
 		UnlockByExploration="false"

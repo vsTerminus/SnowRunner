@@ -528,7 +528,7 @@
 	<Landmark Mesh="landmarks/paystar_5600ts_lmk" MinScale="1.5" MaxScale="2.5" />
 	<HeadLight _template="Default" Pos="(6.917; 0.94; 0)" ParentFrame="BoneCabinSusp_cdt" />
 	<GameData
-		Country="US,NE"
+		Country=""
 		ExcludeAddons="frame_addon_sideboard_2"
 		Price="102600"
 		UnlockByExploration="true"

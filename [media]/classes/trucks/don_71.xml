@@ -262,7 +262,7 @@
 	<Landmark Mesh="landmarks/don_71_lmk" MinScale="1.8" MaxScale="3.8" />
 	<HeadLight _template="Default" Pos="(1.858; 0.74; 0)" />
 	<GameData
-		Country="RU,CAS"
+		Country=""
 		Price="3600"
 		Recallable="true"
 		UnlockByExploration="false"

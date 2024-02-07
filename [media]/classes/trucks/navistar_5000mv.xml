@@ -308,7 +308,7 @@
 	<Landmark Mesh="landmarks/navistar_5000mv_lmk" MinScale="1.8" MaxScale="3.8" />
 	<HeadLight _template="Default" Pos="(2; 1.121; 0)" />
 	<GameData
-		Country="US,NE"
+		Country=""
 		Price="113600"
 		UnlockByExploration="false"
 		UnlockByRank="1"
