@@ -180,6 +180,7 @@
 		</Damage>
 		<CompatibleWheels Scale="0.56" Type="wheels_kenworth_990" />
 		<CompatibleWheels Scale="0.66" Type="wheels_kenworth_990" />
+		<CompatibleWheels Scale="0.70" Type="wheels_kenworth_990" />
 		<CompatibleWheels OffsetZ="0.13" Scale="0.56" Type="wheels_heavy_double1" />
 		<CompatibleWheels OffsetZ="0.13" Scale="0.56" Type="wheels_heavy_double2" />
 		<CompatibleWheels OffsetZ="0.13" RearOffsetZ=".02" Scale="0.66" Type="wheels_heavy_double1" />
@@ -192,6 +193,10 @@
 		<CompatibleWheels OffsetZ="0.13" Scale="0.66" Type="wheels_heavy_offroad_double" />
 		<CompatibleWheels OffsetZ="0.13" Scale="0.66" Type="wheels_heavy_allterrain_double" />
 		<CompatibleWheels OffsetZ="0.13" Scale="0.66" Type="wheels_heavy_highway_double" />
+
+		<CompatibleWheels OffsetZ="0.13" Scale="0.70" Type="wheels_heavy_offroad_double" />
+		<CompatibleWheels OffsetZ="0.13" Scale="0.70" Type="wheels_heavy_allterrain_double" />
+		<CompatibleWheels OffsetZ="0.13" Scale="0.70" Type="wheels_heavy_highway_double" />
 
 		<Camera Center="(-0.94; -0.35; 0)" RadiusMultiplier="1.1" ParentFrame="BoneCabin_cdt">
 			<Cockpit
