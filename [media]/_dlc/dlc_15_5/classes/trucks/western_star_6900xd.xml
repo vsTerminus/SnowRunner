@@ -448,7 +448,7 @@
 	<Landmark Mesh="landmarks/western_star_6900xd_lmk" MinScale="1.5" MaxScale="2.5" />
 	<HeadLight _template="Default" Pos="(5.8 1.287; 0)" ParentFrame="BoneCabin_cdt" />
 	<GameData
-		Country="US,NE,CE"
+		Country=""
 		Price="137900"
 		UnlockByExploration="false"
 		UnlockByRank="1"

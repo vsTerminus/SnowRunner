@@ -337,7 +337,7 @@
 	<Landmark Mesh="landmarks/krs_58_bandit_lmk" MinScale="1.8" MaxScale="3.8" />
 	<HeadLight _template="Default" Pos="(5.107; 0.573; 0)" ParentFrame="BoneCabin_cdt" />
 	<GameData
-		Country="RU,CAS"
+		Country=""
 		Price="98500"
 		UnlockByExploration="false"
 		UnlockByRank="1"

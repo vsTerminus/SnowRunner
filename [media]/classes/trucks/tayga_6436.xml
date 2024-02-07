@@ -290,7 +290,7 @@
 	<Landmark Mesh="landmarks/tayga_6436_lmk" MinScale="1.8" MaxScale="3.8" />
 	<HeadLight _template="Default" Pos="(5; 1.131; 0)" />
 	<GameData
-		Country="RU,CAS"
+		Country=""
 		Price="57100"
 		UnlockByExploration="true"
 		UnlockByRank="1"

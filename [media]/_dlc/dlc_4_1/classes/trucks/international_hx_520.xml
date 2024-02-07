@@ -419,7 +419,7 @@
 	<Landmark Mesh="landmarks/international_hx_520_lmk" MinScale="1.8" MaxScale="3.8" />
 	<HeadLight _template="Default" Pos="(4.21; 0.864; 0)" ParentFrame="BoneCabin_cdt" />
 	<GameData
-		Country="US,NE,CE"
+		Country=""
 		Price="151900"
 		UnlockByExploration="false"
 		UnlockByRank="1"
@@ -482,7 +482,7 @@
 			<Socket Names="FrameAddon" Offset="(-4.01; 1.125; 0)">
 				<AddonsShift Offset="(-1.15; 0; 0)" Types="MinicraneUS" />
 			</Socket>
-			<Socket Names="FrameAddonTow" NamesBlock="MetalDetector, Trailer, LogTrailer" Offset="(-4.6; 1.125; 0)" >
+			<Socket Names="FrameAddonTow" NamesBlock="MetalDetector, Trailer" Offset="(-4.6; 1.125; 0)" >
 				<AddonsShift Offset="(-1.2; 0; 0)" Types="MinicraneUS" />
 			</Socket>
 			<Socket Names="FrameAddonKung" Offset="(-4.749; 1.209; 0)">

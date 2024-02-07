@@ -292,7 +292,7 @@
 	<Landmark Mesh="landmarks/ank_mk38_lmk" MinScale="1.8" MaxScale="3.8" />
 	<HeadLight _template="Default" Pos="(5; 1.287; 0)" ParentFrame="BoneCabin_cdt" />
 	<GameData
-		Country="US,NE,CE"
+		Country=""
 		Price="51100"
 		UnlockByExploration="false"
 		UnlockByRank="1"
