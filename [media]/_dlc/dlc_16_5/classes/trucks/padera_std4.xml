@@ -441,7 +441,7 @@
 	
 	<Landmark Mesh="landmarks/padera_std4_lmk" MinScale="1.8" MaxScale="3.2" />
 	<GameData
-		Country="US,NE,CAS,CE"
+		Country=""
 		Price="113200"
 		UnlockByExploration="false"
 		UnlockByRank="1"

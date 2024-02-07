@@ -378,7 +378,7 @@
 	<HeadLight _template="Default" Pos="(4.865; 1.233; 0)" ParentFrame="BoneCabin_cdt" />
 	<Landmark Mesh="landmarks/mack_pinnacle_lmk" MinScale="1.5" MaxScale="2.5" />
 	<GameData
-		Country="US,NE,CE"
+		Country=""
 		ExcludeAddons="semitrailer_gooseneck_3"
 		Price="108000"
 		UnlockByExploration="false"

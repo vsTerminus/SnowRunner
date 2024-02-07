@@ -398,7 +398,7 @@
 	<HeadLight _template="Default" Pos="(5.11; 1.374; 0)" ParentFrame="BoneCabinTwist_cdt" />
 	<Landmark Mesh="landmarks/avenhorn_a15_lmk" MinScale="1.5" MaxScale="2.5" />
 	<GameData
-		Country="US,NE,CAS,CE"
+		Country=""
 		Price="140700"
 		UnlockByExploration="false"
 		UnlockByRank="1"

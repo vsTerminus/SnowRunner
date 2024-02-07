@@ -350,7 +350,7 @@
 	<HeadLight _template="Default" Pos="(2.893; 0; 0)" />
 	<Landmark Mesh="landmarks/jangsu_rx600_lmk" MinScale="1.8" MaxScale="3.8" />
 	<GameData
-		Country="RU,CAS,WA"
+		Country=""
 		ExcludeAddons="pacific_p16_trailer_log_pole"
 		Price="63800"
 		UnlockByExploration="true"

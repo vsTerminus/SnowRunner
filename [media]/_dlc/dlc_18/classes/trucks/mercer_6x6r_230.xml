@@ -363,7 +363,7 @@
 	<Rotator EngineTorqueFactor="0" Frame="BoneEngineFan" RotationAxis="(0; 1; 0)" RotationSpeed="10" />
 	<Landmark Mesh="landmarks/mercer_6x6r_230_lmk" MinScale="1.8" MaxScale="3.8" />
 	<GameData
-		Country="US,NE,CE"
+		Country=""
 		Price="63000"
 		UnlockByExploration="true"
 		UnlockByRank="1"
