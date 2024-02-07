@@ -365,7 +365,7 @@
 	</ModelAttachments>
 	<Landmark Mesh="landmarks/mercedes_benz_actros_6x6_lmk" MinScale="1.8" MaxScale="3.2" />
 	<GameData
-		Country="US,NE,CAS,CE,WA"
+		Country=""
 		Price="121000"
 		UnlockByExploration="false"
 		UnlockByRank="1"

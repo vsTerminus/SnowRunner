@@ -392,7 +392,7 @@
 	<HeadLight _template="Default" Pos="(3.690; 0.795; 0)" ParentFrame="BoneCabinTwist_cdt" />
 	<Landmark Mesh="landmarks/mercedes_benz_zetros_6x6_lmk" MinScale="1.8" MaxScale="3.2" />
 	<GameData
-		Country="US,NE,CAS,CE,WA"
+		Country=""
 		Price="122000"
 		UnlockByExploration="false"
 		UnlockByRank="1"
