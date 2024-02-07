@@ -435,7 +435,7 @@
 	<Landmark Mesh="landmarks/voron_ae4380_lmk" MinScale="1.8" MaxScale="3.8" />
 	<HeadLight _template="Default" Pos="(3.707; 1.456; 0)" />
 	<GameData
-		Country="RU,CAS"
+		Country=""
 		ExcludeAddons="stuff_hula_girl, stuff_masha, stuff_bobblehead_joker"
 		Price="64900"
 		UnlockByExploration="false"

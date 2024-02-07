@@ -326,7 +326,7 @@
 	<Landmark Mesh="landmarks/western_star_nf1430_lmk" MinScale="1.8" MaxScale="3.8" />
 	<HeadLight _template="Default" Pos="(7.291; 1.135; 0)" ParentFrame="BoneCabinDamper_cdt" />
 	<GameData
-		Country="US,NE"
+		Country=""
 		Price="120600"
 		UnlockByExploration="false"
 		UnlockByRank="1"

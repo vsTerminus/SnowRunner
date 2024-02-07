@@ -344,7 +344,7 @@
 	<Landmark Mesh="landmarks/tuz_16_actaeon_lmk" MinScale="1.5" MaxScale="2.5" />
 	<HeadLight _template="Default" Pos="(2.865; 1.326; 0)" ParentFrame="BoneCabin_cdt" />
 	<GameData
-		Country="RU,CAS"
+		Country=""
 		Price="54400"
 		UnlockByExploration="true"
 		UnlockByRank="1"

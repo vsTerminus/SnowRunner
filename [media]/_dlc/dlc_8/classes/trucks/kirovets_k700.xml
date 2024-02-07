@@ -264,7 +264,7 @@
 	<Landmark Mesh="landmarks/kirovets_k700_lmk" MinScale="1.8" MaxScale="2.8" />
 	<HeadLight _template="Default" Pos="(3.6; 1.2; 0)" ParentFrame="BoneFront_cdt" />
 	<GameData
-		Country="RU,CAS"
+		Country=""
 		Price="126100"
 		UnlockByExploration="true"
 		UnlockByRank="1"

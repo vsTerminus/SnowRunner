@@ -341,7 +341,7 @@
 	<Landmark Mesh="landmarks/zikz_605r_lmk" MinScale="1.8" MaxScale="2.8" />
 	<HeadLight _template="Default" Pos="(5.052; 1.103; 0)" />
 	<GameData
-		Country="RU,CAS"
+		Country=""
 		ExcludeAddons="trailer_log_pole"
 		Price="165300"
 		UnlockByExploration="true"

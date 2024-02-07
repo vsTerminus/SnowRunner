@@ -319,7 +319,7 @@
 	<Landmark Mesh="landmarks/azov_43_191_sprinter_lmk" MinScale="1.5" MaxScale="2.5" />
 	<HeadLight _template="Default" Pos="(4.239; 1.202; 0)" ParentFrame="BoneCabin_cdt" />
 	<GameData
-		Country="RU,CAS"
+		Country=""
 		Price="58500"
 		UnlockByExploration="true"
 		UnlockByRank="1"

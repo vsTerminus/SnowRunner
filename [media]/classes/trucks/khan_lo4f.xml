@@ -228,7 +228,7 @@
 	<Landmark Mesh="landmarks/khan_lo4f_lmk" MinScale="1.8" MaxScale="3.5" />
 	<HeadLight _template="Default" Pos="(2.307; 0.985; 0)" />
 	<GameData
-		Country="RU,CAS"
+		Country=""
 		Price="3400"
 		Recallable="true"
 		UnlockByExploration="false"

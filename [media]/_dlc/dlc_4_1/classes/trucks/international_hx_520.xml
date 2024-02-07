@@ -419,7 +419,7 @@
 	<Landmark Mesh="landmarks/international_hx_520_lmk" MinScale="1.8" MaxScale="3.8" />
 	<HeadLight _template="Default" Pos="(4.21; 0.864; 0)" ParentFrame="BoneCabin_cdt" />
 	<GameData
-		Country="US,NE"
+		Country=""
 		Price="151900"
 		UnlockByExploration="false"
 		UnlockByRank="1"
