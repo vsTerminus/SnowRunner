@@ -379,7 +379,7 @@
 	<HeadLight _template="Default" Pos="(4.563; 1.247; 0)" ParentFrame="BoneCabin_cdt" />
 	<Landmark Mesh="landmarks/voron_g5352_lmk" MinScale="1.5" MaxScale="2.5" />
 	<GameData
-		Country="US,NE,CAS,CE"
+		Country=""
 		Price="121000"
 		UnlockByExploration="true"
 		UnlockByRank="1"
