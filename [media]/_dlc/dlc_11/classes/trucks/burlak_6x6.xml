@@ -334,7 +334,7 @@
 	<Landmark Mesh="landmarks/burlak_6x6_lmk" MinScale="1.8" MaxScale="3.8" />
 	<HeadLight _template="Default" Pos="(3.8; 1.131; 0)" />
 	<GameData
-		Country="RU,CAS,NE"
+		Country=""
 		ExcludeAddons="trailer_log_pole,trailer_flatbed_ramps_4,trailer_log"
 		Price="97500"
 		UnlockByExploration="true"

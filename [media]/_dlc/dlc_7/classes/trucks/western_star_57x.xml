@@ -345,7 +345,7 @@
 	<Landmark Mesh="landmarks/western_star_57x_lmk" MinScale="1.8" MaxScale="3.8" />
 	<HeadLight _template="Default" Pos="(7.084; 1.180; 0)" ParentFrame="BoneCabinDamper_cdt" />
 	<GameData
-		Country="US,NE"
+		Country=""
 		Price="115700"
 		UnlockByExploration="false"
 		UnlockByRank="1"

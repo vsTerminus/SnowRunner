@@ -374,7 +374,7 @@
 	<Landmark Mesh="landmarks/pacific_p16_lmk" MinScale="1.8" MaxScale="3.5" />
 	<HeadLight _template="Default" Pos="(3.65; 1.709; 0)" ParentFrame="BoneCabin_cdt" />
 	<GameData
-		Country="US,NE"
+		Country=""
 		ExcludeAddons="ford_clt9000_top_fender, semitrailer_m747"
 		Price="116000"
 		UnlockByExploration="true"

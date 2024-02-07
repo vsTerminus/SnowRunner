@@ -323,7 +323,7 @@
 	<Landmark Mesh="landmarks/ws_4964_white_lmk" MinScale="1.8" MaxScale="3.8" />
 	<HeadLight _template="Default" Pos="(4.539; 1.163; -0)" ParentFrame="BoneCabin_cdt" />
 	<GameData
-		Country="US,NE"
+		Country=""
 		Price="32200"
 		UnlockByExploration="true"
 		UnlockByRank="1"

@@ -295,7 +295,7 @@
 	<Landmark Mesh="landmarks/pacific_p12w_lmk" MinScale="1.8" MaxScale="3.5" />
 	<HeadLight _template="Default" Pos="(3.65; 1.709; 0)" ParentFrame="BoneCabin_cdt" />
 	<GameData
-		Country="US,NE"
+		Country=""
 		Price="104400"
 		UnlockByExploration="false"
 		UnlockByRank="1"
