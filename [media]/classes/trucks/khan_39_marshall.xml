@@ -289,7 +289,7 @@
 	<Landmark Mesh="landmarks/khan_39_marshall_lmk" MinScale="1.8" MaxScale="3.8" />
 	<HeadLight _template="Default" Pos="(2.178; 1.377; 0)" />
 	<GameData
-		Country="RU,CAS"
+		Country=""
 		ExcludeAddons="scout_trailer_flatbed_1, scout_trailer_flatbed_2, scout_trailer_oiltank"
 		Price="2700"
 		Recallable="true"
