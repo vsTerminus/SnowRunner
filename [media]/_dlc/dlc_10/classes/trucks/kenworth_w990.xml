@@ -67,7 +67,7 @@
 <Truck>
 	<TruckData
 		BackSteerSpeed="0.025"
-		DiffLockType="Always"
+		DiffLockType="Installed"
 		EngineIconMesh="env/engine_default"
 		EngineIconScale="1.5"
 		EngineStartDelay="0.8"
@@ -510,9 +510,9 @@
 			<CameraPos FOV="32.0" Interior="true" Name="mirror_mount" Position="(4.15; 2.35; -1.05)" InterestPosition="(5.29; 2.72; 1.1)" />
 		</CustomizationCameras>
 		
-		<!-- <AddonSockets DefaultAddon="kenworth_w990_diff_lock_default">
+		<AddonSockets DefaultAddon="kenworth_w990_diff_lock_default">
 			<Socket Names="Kenworth990DiffLock" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
-		</AddonSockets> -->
+		</AddonSockets>
 		
 		<AddonSockets DefaultAddon="kenworth_w990_wings_default">
 			<Socket Names="KenworthW990Wings" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
