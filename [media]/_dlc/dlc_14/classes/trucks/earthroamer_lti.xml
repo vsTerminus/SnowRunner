@@ -331,7 +331,7 @@
 	<Landmark Mesh="landmarks/earthroamer_lti_lmk" MinScale="1.5" MaxScale="2.5" />
 	<HeadLight _template="Default" Pos="(3.993; 0.979; 0)" />
 	<GameData
-		Country="US,NE,CE"
+		Country=""
 		Price="50700"
 		UnlockByExploration="true"
 		UnlockByRank="1"

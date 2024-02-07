@@ -378,7 +378,7 @@
 	<Landmark Mesh="landmarks/azov_73210_lmk" MinScale="1.5" MaxScale="2.5" />
 	<HeadLight _template="Default" Pos="(5.239; 1.202; 0)" ParentFrame="BoneCabin_cdt" />
 	<GameData
-		Country="RU,CAS"
+		Country=""
 		Price="66000"
 		UnlockByExploration="false"
 		UnlockByRank="20"
