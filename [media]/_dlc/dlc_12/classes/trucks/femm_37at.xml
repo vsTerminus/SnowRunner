@@ -6,7 +6,7 @@
 			Torque="default"
 			ParentFrame="BoneBack_cdt"
 		/>
-		<FrontWheel Location="front" Torque="default" ParentFrame="BoneFront_cdt" ConnectedToHandbrake="true"/>
+		<FrontWheel Location="front" Torque="default" SteeringAngle="30" ParentFrame="BoneFront_cdt" ConnectedToHandbrake="true"/>
 	</Wheel>
 </_templates>
 <Truck>
@@ -19,7 +19,7 @@
 		ExhaustStartTime="1.9"
 		FuelCapacity="840"
 		Responsiveness="0.3"
-		SteerSpeed="0.035"
+		SteerSpeed="0.025"
 		TruckImage="femm37atmchr"
 		TruckType="HEAVY"
 	>
@@ -271,9 +271,10 @@
 				<Constraint
 					AxisLocal="(0; 1; 0)"
 					Name="ChassisSteer"
-					Type="Hinge"
-					MinLimit="-40"
-					MaxLimit="40"
+					Type="Fixed"
+					LinearLimitsX="(-0.001; 0.001)"
+					LinearLimitsY="(-0.001; 0.001)"
+					LinearLimitsZ="(-0.001; 0.001)"
 				>
 					<Motor
 						Damping="1.0"
