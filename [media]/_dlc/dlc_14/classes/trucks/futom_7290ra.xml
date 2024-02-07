@@ -451,7 +451,7 @@
 	<Landmark Mesh="landmarks/futom_7290ra_lmk" MinScale="1.8" MaxScale="2.4" />
 	<HeadLight _template="Default" Pos="(3.6; 1.2; 0)" ParentFrame="BoneChassis_cdt" />
 	<GameData
-		Country="RU,CAS,NE,CE"
+		Country=""
 		Price="174400"
 		UnlockByExploration="true"
 		UnlockByRank="1"

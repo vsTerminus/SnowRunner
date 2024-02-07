@@ -521,7 +521,7 @@
 	</ModelAttachments>
 	<HeadLight _template="Default" Color="g(197; 233; 250) x 6.5" Pos="(2.320; 1.040; 0)" />
 	<Landmark Mesh="landmarks/rezvani_tank_lmk" MinScale="1.8" MaxScale="3.8" />
-	<GameData Country="US,NE,CE" Price="4400" UnlockByRank="1">
+	<GameData Country="" Price="4400" UnlockByRank="1">
 		<WinchSocket Pos="(2.357; 0.557; 0)" />
 		<WinchSocket Pos="(-0.057; 0.593; -0.923)" />
 		<WinchSocket Pos="(-0.057; 0.593; 0.923)" />

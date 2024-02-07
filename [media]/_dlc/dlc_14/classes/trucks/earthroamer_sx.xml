@@ -419,7 +419,7 @@
 	<Landmark Mesh="landmarks/earthromer_sx_lmk" MinScale="1.5" MaxScale="2.5" />
 	<HeadLight _template="Default" Pos="(3.638; 0.979; 0)" />
 	<GameData
-		Country="US,NE,CE"
+		Country=""
 		Price="56300"
 		UnlockByExploration="true"
 		UnlockByRank="1"
