@@ -481,9 +481,25 @@
 			</Socket>
 			<Socket Names="KenworthFrameAddonMaintainerBig" NamesBlock="SaddleHighFemm37at, Trailer" Offset="(1.5; 1.79; 0)" ParentFrame="BoneChassisBack_cdt"/>
 			<Socket Names="FrameAddonTank" NamesBlock="SaddleHighFemm37at" Offset="(-4; 1.683; 0)" ParentFrame="BoneChassisBack_cdt" />
+			<Socket Names="FrameAddonTankLong" NamesBlock="SaddleHighFemm37at" Offset="(-2.297; 1.683; 0)" ParentFrame="BoneChassisBack_cdt" />
+			<Socket Names="FrameAddonLogShort" NamesBlock="SaddleHighFemm37at" Offset="(-3; 1.683; 0)" ParentFrame="BoneChassisBack_cdt" >
+				<AddonsShift Offset="(2; 0; 0)" Types="LogLift" />
+			</Socket>
+			<Socket Names="FrameAddonLogMedium" NamesBlock="SaddleHighFemm37at" Offset="(-2.4; 1.683; 0)" ParentFrame="BoneChassisBack_cdt" >
+				<AddonsShift Offset="(1.8; 0; 0)" Types="LogLift" />
+			</Socket>
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="Femm37atMinicraneRU" NamesBlock="FemmSideboard, KenworthFrameAddonMaintainerBig, FrameAddonTankLong, BigCrane" Offset="(1.1; 1.68; 0)" ParentFrame="BoneBack_cdt"/>
+			<Socket 
+				Names="LogLift" 
+				NamesBlock="FrameAddon3, FrameAddonSideboard3, FemmSideboard, KenworthFrameAddonMaintainerBig, FrameAddonTank, FrameAddonTankLong, BigCrane" 
+				Offset="(-5.20; 1.68; 0)" 
+				ParentFrame="BoneBack_cdt"
+			>
+				<AddonsShift Offset="(7.0; 0; 0)" Types="SaddleHighFemm37at" />
+			</Socket>
+			<Socket Names="TatraCrane" Offset="(2.150; 0.45; 0)" NamesBlock="FemmSideboard, BigCrane" ParentFrame="BoneBack_cdt"/>
 		</AddonSockets>
 		<!-- STICKERS -->
 		<AddonSockets>
