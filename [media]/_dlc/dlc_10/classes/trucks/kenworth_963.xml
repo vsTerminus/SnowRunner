@@ -80,7 +80,7 @@
 <Truck>
 	<TruckData
 		BackSteerSpeed="0.01"
-		DiffLockType="Always"
+		DiffLockType="Installed"
 		EngineIconMesh="env/engine_kenworth_963"
 		EngineIconScale="0.978"
 		EngineStartDelay="1.8"
@@ -634,6 +634,9 @@
 				Offset="(0; 0; 0)"
 				ParentFrame="BoneCabin_cdt"
 			/>
+		</AddonSockets>
+		<AddonSockets DefaultAddon="kenworth_963_diff_lock_default" >
+			<Socket Names="FemmDiffLock" Offset="(0; 0; 0)" ParentFrame="BoneFront_cdt" />
 		</AddonSockets>
 		<!-- FRAME/TRAILER SOCKETS -->
 		<AddonSockets>
