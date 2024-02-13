@@ -20,7 +20,7 @@
 		EngineResponsiveness="0.1"
 		FuelConsumption="8.5"
 		Name="us_truck_old_heavy_engine_0"
-		Torque="175000"
+		Torque="210000"
 		DamagedMinTorqueMultiplier="1.0"
 		DamagedMaxTorqueMultiplier="0.6"
 	>
@@ -45,7 +45,7 @@
 		EngineResponsiveness="0.15"
 		FuelConsumption="9.0"
 		Name="us_truck_old_heavy_engine_1"
-		Torque="190000"
+		Torque="265000"
 		DamagedMinTorqueMultiplier="1.0"
 		DamagedMaxTorqueMultiplier="0.7"
 	>
@@ -68,7 +68,7 @@
 		DamagedConsumptionModifier="1.6"
 		FuelConsumption="12.0"
 		Name="us_truck_old_heavy_engine_kenworth_963"
-		Torque="265000"
+		Torque="330000"
 		BrakesDelay="0.5"
 		EngineResponsiveness="0.2"
 		DamagedMinTorqueMultiplier="1.0"
