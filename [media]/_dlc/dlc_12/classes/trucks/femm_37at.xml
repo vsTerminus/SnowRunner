@@ -6,7 +6,7 @@
 			Torque="default"
 			ParentFrame="BoneBack_cdt"
 		/>
-		<FrontWheel Location="front" Torque="default" SteeringAngle="40" ParentFrame="BoneFront_cdt" ConnectedToHandbrake="true"/>
+		<FrontWheel Location="front" Torque="full" SteeringAngle="40" ParentFrame="BoneFront_cdt" ConnectedToHandbrake="true"/>
 	</Wheel>
 </_templates>
 <Truck>
