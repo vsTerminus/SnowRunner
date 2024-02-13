@@ -17,7 +17,7 @@
 	<TruckTires>
         <!-- Mud tires -->
         <TruckTire _template="Mudtires" Mesh="wheels/tire_medium_mudtires_double_10" Name="JAT MMD I">
-			<WheelFriction _template="Mudtires" BodyFriction="2" BodyFrictionAsphalt="0.5" SubstanceFriction="2.2"/>
+			<WheelFriction _template="Mudtires" />
 			<GameData
 				Price="5200"
 				UnlockByExploration="false"
@@ -27,7 +27,7 @@
 			</GameData>
 		</TruckTire>
         <TruckTire _template="Mudtires" Mesh="wheels/tire_medium_mudtires_double_11" Name="JAT MMD II">
-			<WheelFriction _template="Mudtires" BodyFriction="2.2" BodyFrictionAsphalt="0.4" SubstanceFriction="2"/>
+			<WheelFriction _template="Mudtires" />
 			<GameData
 				Price="5600"
 				UnlockByExploration="false"
@@ -37,7 +37,7 @@
 			</GameData>
 		</TruckTire>
         <TruckTire _template="Mudtires" Mesh="wheels/tire_medium_mudtires_double_12" Name="JAT MMD III">
-			<WheelFriction _template="Mudtires" BodyFriction="2.1" BodyFrictionAsphalt="0.4" SubstanceFriction="2.1"/>
+			<WheelFriction _template="Mudtires" />
 			<GameData
 				Price="5900"
 				UnlockByExploration="false"

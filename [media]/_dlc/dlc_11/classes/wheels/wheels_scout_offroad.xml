@@ -10,7 +10,7 @@
 <TruckWheels DamageCapacity="50" Radius="1" Width="0.76">
 	<TruckTires>
 		<TruckTire _template="ScoutOffroad" Mesh="wheels/tire_scout_offroad_10" Name="JAT OS I">
-			<WheelFriction _template="ScoutOffroad" BodyFriction="2" BodyFrictionAsphalt="1" SubstanceFriction="1.2"/>
+			<WheelFriction _template="ScoutOffroad" />
 			<GameData
 				Price="4200"
 				UnlockByExploration="false"
@@ -20,7 +20,7 @@
 			</GameData>
 		</TruckTire>
         <TruckTire _template="ScoutOffroad" Mesh="wheels/tire_scout_offroad_11" Name="JAT OS II">
-			<WheelFriction _template="ScoutOffroad" BodyFriction="2.2" BodyFrictionAsphalt="0.8" SubstanceFriction="1.2"/>
+			<WheelFriction _template="ScoutOffroad" />
 			<GameData
 				Price="4600"
 				UnlockByExploration="false"
@@ -30,7 +30,7 @@
 			</GameData>
 		</TruckTire>
         <TruckTire _template="ScoutOffroad" Mesh="wheels/tire_scout_offroad_12" Name="JAT OS III">
-			<WheelFriction _template="ScoutOffroad" BodyFriction="2.3" BodyFrictionAsphalt="1" SubstanceFriction="1.1"/>
+			<WheelFriction _template="ScoutOffroad" />
 			<GameData
 				Price="5000"
 				UnlockByExploration="false"
@@ -40,7 +40,7 @@
 			</GameData>
 		</TruckTire>
         <TruckTire _template="ScoutOffroad" Mesh="wheels/tire_scout_offroad_13" Name="JAT OS IV">
-			<WheelFriction _template="ScoutOffroad" BodyFriction="2.2" BodyFrictionAsphalt="1.1" SubstanceFriction="1.2"/>
+			<WheelFriction _template="ScoutOffroad" />
 			<GameData
 				Price="5200"
 				UnlockByExploration="false"
