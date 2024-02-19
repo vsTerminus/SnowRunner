@@ -393,9 +393,11 @@
 			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-4.4; 1.64; 0)" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="BunkLog" Offset="(-7.993; 1.155; 0)" NamesBlock="Navistar5000mvSpareWheel" />
+			<Socket Names="BunkLog" Offset="(-7.993; 1.155; 0)" NamesBlock="Navistar5000mvSpareWheel, MinicraneNavistar" />
+			<Socket Names="FrameAddonFlatbed1" Offset="(-4.500; 1.155; 0)" NamesBlock="MinicraneNavistar" />
 			<Socket Names="SaddleLow" Offset="(-4.747; 1.15; 0)" />
 			<Socket Names="SaddleHigh" Offset="(-4.4; 1.15; 0)" />
+			<!-- Note: MinicraneUS is too narrow, and there isn't enough room for a saddle trailer + crane even with the crane shoved up against the bunk. -->
 			<Socket Names="MinicraneNavistar" Offset="(-3.6; 1.15; 0)" />
 		</AddonSockets>
 		<AddonSockets>
