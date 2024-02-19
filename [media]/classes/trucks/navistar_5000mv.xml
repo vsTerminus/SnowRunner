@@ -48,7 +48,7 @@
 <Truck>
 	<TruckData
 		BackSteerSpeed="0.02"
-		DiffLockType="Installed"
+		DiffLockType="Always"
 		EngineIconMesh="env/engine_default"
 		EngineIconScale="1.4"
 		EngineStartDelay="3.2"
