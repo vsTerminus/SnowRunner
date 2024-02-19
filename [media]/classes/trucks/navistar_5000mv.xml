@@ -57,7 +57,7 @@
 		Responsiveness="0.45"
 		SteerSpeed="0.025"
 		TruckImage="navistar5000mchr"
-		TruckType="HEAVY"
+		TruckType="HIGHWAY"
 	>
 		<WinchUpgradeSocket Default="w_medium_trucks_default" IsUpgradable="true" Type="winches_medium_trucks" />
 		<Wheels
@@ -322,9 +322,9 @@
 		<WinchSocket Pos="(-1.747; 3.375; -1.188)" ParentFrame="BoneCabin_cdt" />
 		<UiDesc
 			UiDesc="UI_VEHICLE_NAVISTAR_5000_DESC"
-			UiIcon30x30="heavyVehicleImg30"
+			UiIcon30x30="highwayVehicleImg30"
 			UiIcon328x458="shopImgNavi500"
-			UiIcon40x40="heavyVehicleImg"
+			UiIcon40x40="highwayVehicleImg"
 			UiIconLogo="InternationalNavistarLogo80"
 			UiName="UI_VEHICLE_NAVISTAR_5000_NAME"
 		/>
