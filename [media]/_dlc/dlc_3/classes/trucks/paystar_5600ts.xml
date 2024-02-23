@@ -590,6 +590,7 @@
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="FrameAddonTowPlatform" Offset="(-1.85; 1.14; 0)"  NamesBlock="FrameAddonKung, Trailer"/>
+			<Socket Names="FrameAddonTow" Offset="(-3.60; 1.14; 0)" NamesBlock="FrameAddonKung, Trailer"/>
 			<Socket Names="BunkLog" Offset="(-6.097; 1.14; 0)" />
 			<Socket Names="FrameAddonLogShort" Offset="(-2.857; 1.136; 0)" />
 			<Socket Names="FrameAddonLogMediumHigh" Offset="(-1.89; 1.136; 0)" />
