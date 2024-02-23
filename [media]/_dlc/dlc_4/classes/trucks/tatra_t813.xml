@@ -333,6 +333,11 @@
 			<Socket Names="TatraT813Sideboard" Offset="(0; 0; 0)" ParentFrame="BoneAddonAttachment_cdt" />
 			<!-- <Socket Names="FrameAddonTowPlatform" NamesBlock="Trailer" Offset="(-1.15; 1.25; 0)" ParentFrame="BoneChassis_cdt" /> -->
 			<Socket Names="FrameAddonTow" NamesBlock="Trailer, SaddleHigh, SaddleLow, TatraT813ChassisWinch" Offset="(-2.3; 1.08; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="FrameAddonFlatbed1" NamesBlock="Trailer, SaddleHigh, SaddleLow, TatraT813ChassisWinch" Offset="(-2.3; 1.15; 0)" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="CraneKrs58Bandit" NamesBlock="SaddleHigh, FrameAddonTow, TatraT813Sideboard" Offset="(-1.18; -0.02; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="MinicraneRU" NamesBlock="SaddleHigh, FrameAddonTow, TatraT813Sideboard" Offset="(-0.18; 1.34; 0)" ParentFrame="BoneChassis_cdt" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="TatraT813ChassisWinch" />
