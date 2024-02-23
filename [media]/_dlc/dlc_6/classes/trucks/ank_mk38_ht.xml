@@ -346,6 +346,12 @@
 			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-2.65; 1.77; 0)" />
 		</AddonSockets>
 		<AddonSockets>
+			<Socket Names="FrameAddon" Offset="(-2.00; 1.275; 0)" >
+				<AddonsShift Offset="(-1.10; -0.05; 0)" Types="MinicraneUS" />
+			</Socket>
+			<Socket Names="FrameAddonTow" NamesBlock="Trailer" Offset="(-3.00; 1.125; 0)" >
+				<AddonsShift Offset="(-0.90; 0; 0)" Types="MinicraneUS" />
+			</Socket>
 			<Socket Names="FrameAddonKung" Offset="(-2.55; 1.325; 0)" >
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.07)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.07)" />
@@ -368,6 +374,14 @@
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(1.400; 0.000; 0.000)" />
 			</Socket>
 			
+		</AddonSockets>
+		<AddonSockets>
+			<Socket
+				Names="MinicraneUS"
+				NamesBlock="FrameAddonKung, FrameAddonTank"
+				Offset="(-0.30; 1.155; 0)"
+				ParentFrame="BoneCabin_cdt"
+			/>
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="AnkMk38WheelAddon" Offset="(0; 0; 0)" />
