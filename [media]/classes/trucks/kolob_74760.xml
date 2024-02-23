@@ -428,6 +428,7 @@
 			<Socket Names="SaddleHigh1" Offset="(-2.815; 1.65; -0)" />
 			<Socket Names="SaddleLow" Offset="(-3.68; 1.58; -0)" />
 			<Socket Names="FrameAddon" Offset="(-2.58; 1.76; 0)" />
+			<Socket Names="FrameAddonTow" NamesBlock="Trailer" Offset="(-3.25; 1.76; 0)" />
 			<Socket Names="FrameAddonTank" Offset="(-3.58; 1.8; 0)" />
 			<Socket Names="FrameAddonMaintainer" NamesBlock="Trailer" Offset="(-3.2; 0.8; 0.2)" ParentFrame="BoneChassis_cdt" />
 			<Socket Names="FrameAddonSeismicVibrator" NamesBlock="Trailer" Offset="(-0.1; 1.76; 0.2)" />
