@@ -488,6 +488,7 @@
 			<Socket Names="FrameAddonLogMedium" NamesBlock="SaddleHighFemm37at" Offset="(-2.4; 1.683; 0)" ParentFrame="BoneChassisBack_cdt" >
 				<AddonsShift Offset="(1.8; 0; 0)" Types="LogLift" />
 			</Socket>
+			<Socket Names="FrameAddonTow" NamesBlock="SaddleHighFemm37at, LogLift" Offset="(-3.5; 1.683; 0)" ParentFrame="BoneChassisBack_cdt" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="Femm37atMinicraneRU" NamesBlock="FemmSideboard, KenworthFrameAddonMaintainerBig, FrameAddonTankLong, BigCrane" Offset="(1.1; 1.68; 0)" ParentFrame="BoneBack_cdt"/>
