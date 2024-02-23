@@ -390,6 +390,8 @@
 			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-2.65; 1.86; 0)" />
 		</AddonSockets>
 		<AddonSockets>
+			<Socket Names="FrameAddonTow" NamesBlock="CraneKrs58Bandit, MinicraneRU, Trailer, ScoutTrailer, zikz605rTrunk" Offset="(-3.25; 1.5; 0)" ParentFrame="BoneAddonAttachment_cdt" />
+			<Socket Names="FrameAddonFlatbed1" Offset="(-3.0; 1.6; 0)" ParentFrame="BoneAddonAttachment_cdt" />
 			<Socket Names="ZikzLogLift" ParentFrame="BoneAddonAttachment_cdt">
 				<AddonsShift Offset="(-0.35; 0; 0)" Types="zikz605rTrunk" />
 			</Socket>
@@ -410,10 +412,8 @@
 			<Socket Names="FrameAddonLogShortZikz" Offset="(-2.849; 1.64; 0)" ParentFrame="BoneAddonAttachment_cdt"/>
 		</AddonSockets>
 		<AddonSockets>
-	 		<Socket Names="MinicraneRU" Offset="(-0.663; 1.61; 0)" NamesBlock="CraneKrs58Bandit, zikz605rTrunk, ZikzLogLift, ZikzBigCrane, ZikzFrameAddon, LargeSemitrailerOiltank, FrameAddonKungZikz, FrameAddonSeismicVibratorZikz, FrameAddonTankZikz, FrameAddonLogShortZikz, FrameAddonKung, FrameAddonMaintainerSmall, FrameAddonTank, FrameAddonTankSmall, FrameAddon, SemitrailerOiltank" Offset="(0.21; 1.018; 0)"/>
-		</AddonSockets>
-		<AddonSockets>
-			<Socket Names="CraneKrs58Bandit" Offset="(-1.663; 0.25; 0)" NamesBlock="MinicraneRU, zikz605rTrunk, ZikzLogLift, ZikzBigCrane, ZikzFrameAddon, LargeSemitrailerOiltank, FrameAddonKungZikz, FrameAddonSeismicVibratorZikz, FrameAddonTankZikz, FrameAddonLogShortZikz, FrameAddonKung, FrameAddonMaintainerSmall, FrameAddonTank, FrameAddonTankSmall, FrameAddon, SemitrailerOiltank" Offset="(0.21; 1.018; 0)"/>
+	 		<Socket Names="MinicraneRU" Offset="(-0.663; 1.61; 0)" NamesBlock="zikz605rTrunk, ZikzLogLift, ZikzBigCrane, ZikzFrameAddon, LargeSemitrailerOiltank, FrameAddonKungZikz, FrameAddonSeismicVibratorZikz, FrameAddonTankZikz, FrameAddonLogShortZikz, FrameAddonKung, FrameAddonMaintainerSmall, FrameAddonTank, FrameAddonTankSmall, FrameAddon, SemitrailerOiltank" Offset="(0.21; 1.018; 0)"/>
+			<Socket Names="CraneKrs58Bandit" Offset="(-1.663; 0.25; 0)" NamesBlock="zikz605rTrunk, ZikzLogLift, ZikzBigCrane, ZikzFrameAddon, LargeSemitrailerOiltank, FrameAddonKungZikz, FrameAddonSeismicVibratorZikz, FrameAddonTankZikz, FrameAddonLogShortZikz, FrameAddonKung, FrameAddonMaintainerSmall, FrameAddonTank, FrameAddonTankSmall, FrameAddon, SemitrailerOiltank" Offset="(0.21; 1.018; 0)"/>
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="zikz605rTrunk" NamesBlock="ZikzBigCrane, ZikzFrameAddon, LargeSemitrailerOiltank, FrameAddonKungZikz, FrameAddonSeismicVibratorZikz, FrameAddonTankZikz, FrameAddonLogShortZikz, FrameAddonFlatbed1, FrameAddon" />
