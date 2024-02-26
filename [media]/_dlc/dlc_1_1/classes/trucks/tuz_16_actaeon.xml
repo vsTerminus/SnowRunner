@@ -59,7 +59,7 @@
 		Responsiveness="0.15"
 		SteerSpeed="0.03"
 		TruckImage="tuz16mchr"
-		TruckType="OFFROAD"
+		TruckType="SCOUT"
 	>
 		<WinchUpgradeSocket Default="w_medium_trucks_default" IsUpgradable="true" Type="winches_medium_trucks, winches_actaeon" />
 		<Wheels
@@ -356,9 +356,9 @@
 		<WinchSocket Pos="(-1.138; 1.125; -0.445)" />
 		<UiDesc
 			UiDesc="UI_VEHICLE_TUZ_16_ACTAEON_DESC"
-			UiIcon30x30="offroadVehicleImg30"
+			UiIcon30x30="scoutVehicleImg30"
 			UiIcon328x458="shopImgActeon"
-			UiIcon40x40="offroadVehicleImg"
+			UiIcon40x40="scoutVehicleImg"
 			UiIconLogo="TUZLogo80"
 			UiName="UI_VEHICLE_TUZ_16_ACTAEON_NAME"
 		/>
