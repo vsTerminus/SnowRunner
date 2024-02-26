@@ -54,7 +54,7 @@
 		Responsiveness="0.15"
 		SteerSpeed="0.03"
 		TruckImage="step3364crocodilemchr"
-		TruckType="OFFROAD"
+		TruckType="SCOUT"
 	>
 		<WinchUpgradeSocket Default="w_medium_trucks_default" IsUpgradable="true" Type="winches_medium_trucks" />
 		<Wheels
@@ -290,9 +290,9 @@
 		<WinchSocket Pos="(-3.061; 0.794; 0.427)" />
 		<UiDesc
 			UiDesc="UI_VEHICLE_STEP_3364_CROCODILE_DESC"
-			UiIcon30x30="offroadVehicleImg30"
+			UiIcon30x30="scoutVehicleImg30"
 			UiIcon328x458="shopImgStep3364Crocodile"
-			UiIcon40x40="offroadVehicleImg"
+			UiIcon40x40="scoutVehicleImg"
 			UiIconLogo="StepLogo80"
 			UiName="UI_VEHICLE_STEP_3364_CROCODILE_NAME"
 		/>
