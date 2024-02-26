@@ -72,4 +72,27 @@
 			/>
 		</GameData>
 	</SuspensionSet>
+	<SuspensionSet
+		_template="Active"
+		BrokenWheelDamageMultiplier="2"
+		CriticalDamageThreshold="0.8"
+		DamageCapacity="280"
+		Name="boar_45318_suspension_active"
+		DeviationDelta=".002"
+	>
+		<Suspension Damping="0.3" Height="0.25" Strength="0.1" WheelType="front" SuspensionMin="-0.3" SuspensionMax="0.28" DeviationMax="0.2" />
+		<Suspension Damping="0.3" Height="0.15" Strength="0.08" WheelType="rear" SuspensionMin="-0.25" SuspensionMax="0.28" DeviationMax="0.2" />
+		<GameData
+			Price="9001"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_SUSPENSION_ACTIVE_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_SUSPENSION_ACTIVE_NAME"
+			/>
+		</GameData>
+	</SuspensionSet>
 </SuspensionSetVariants>
