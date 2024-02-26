@@ -63,7 +63,7 @@
 		Responsiveness="0.15"
 		SteerSpeed="0.03"
 		TruckImage="chevkodiak70blazer"
-		TruckType="HEAVY_DUTY"
+		TruckType="SCOUT"
 	>
 		<WinchUpgradeSocket Default="w_medium_trucks_default" IsUpgradable="true" Type="winches_medium_trucks, winches_actaeon" />
 		<Wheels
@@ -351,9 +351,9 @@
 		<WinchSocket Pos="(-1.492; 0.928; -0.454)" />
 		<UiDesc
 			UiDesc="UI_VEHICLE_CHEVROLET_KODIAKC70_DESC"
-			UiIcon30x30="heavyDutyVehicleImg30"
+			UiIcon30x30="scoutVehicleImg30"
 			UiIcon328x458="shopImgChevroletKodiakC70"
-			UiIcon40x40="heavyDutyVehicleImg"
+			UiIcon40x40="scoutVehicleImg"
 			UiIconLogo="ChevroletLogo80"
 			UiName="UI_VEHICLE_CHEVROLET_KODIAKC70_NAME"
 		/>
