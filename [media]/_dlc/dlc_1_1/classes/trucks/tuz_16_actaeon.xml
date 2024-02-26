@@ -399,13 +399,10 @@
 			<Socket Names="SaddleHigh" Offset="(-1.8; 1.15; 0)" />
 		</AddonSockets>
 		<AddonSockets>
-<<<<<<< HEAD
 			<Socket Names="Trailer, LogTrailer" Offset="(-3.128; 1.045; 0)" />
-=======
-			<Socket Names="Trailer" Offset="(-3.128; 1.045; 0)" />
+			<Socket Names="ScautTrailer" Offset="(-3.128; 1.045; 0)" />
 			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-1.8; 1.45; 0)" />
 			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-1.8; 1.618; 0)" />
->>>>>>> 3237ac7b (TUZ 16 Actaeon gets saddles and a weighted bumper)
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="MinicraneRU" NamesBlock="BunkLog, FrameAddonMaintainerSmall, FrameAddonTankSmall" Offset="(-0.1; 1.141; 0)">
