@@ -399,6 +399,7 @@
 			<Socket Names="SaddleHigh" Offset="(-1.8; 1.15; 0)" />
 		</AddonSockets>
 		<AddonSockets>
+			<Socket Names="ScautTrailer" Offset="(-3.128; 1.045; 0)" />
 			<Socket Names="Trailer" Offset="(-3.128; 1.045; 0)" />
 			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-1.8; 1.45; 0)" />
 			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-1.8; 1.618; 0)" />
