@@ -158,11 +158,22 @@
 			<DamageArea Type="FuelTank" Min="(3.799; 0.388; 0.492)" Max="(5.026; 1.029; 1.13)" ParentFrame="BoneCabin_cdt" />
 		</Damage>
 		<CompatibleWheels RearOffsetZ="0.07" Scale="0.56" Type="wheels_heavy_double1" />
-		<CompatibleWheels RearOffsetZ="0.07" OffsetZ="-0.03" Scale="0.56" Type="wheels_heavy_double2" />
+		<CompatibleWheels RearOffsetZ="0.07" Scale="0.56" Type="wheels_heavy_double2" />
+		<CompatibleWheels RearOffsetZ="0.10" Scale="0.56" Type="wheels_heavy_single" />
 
-		<CompatibleWheels RearOffsetZ="0.07" OffsetZ="-0.03" Scale="0.56" Type="wheels_heavy_highway_double" />
-		<CompatibleWheels RearOffsetZ="0.07" OffsetZ="-0.03" Scale="0.56" Type="wheels_heavy_offroad_double" />
-		<CompatibleWheels RearOffsetZ="0.07" OffsetZ="-0.03" Scale="0.56" Type="wheels_heavy_allterrain_double" /> 
+		<CompatibleWheels RearOffsetZ="0.07" Scale="0.64" Type="wheels_heavy_double1" />
+		<CompatibleWheels RearOffsetZ="0.07" Scale="0.64" Type="wheels_heavy_double2" />
+		<CompatibleWheels RearOffsetZ="0.10" Scale="0.64" Type="wheels_heavy_single" />
+
+		<CompatibleWheels RearOffsetZ="0.07" Scale="0.56" Type="wheels_heavy_highway_double" />
+		<CompatibleWheels RearOffsetZ="0.07" Scale="0.56" Type="wheels_heavy_offroad_double" />
+		<CompatibleWheels RearOffsetZ="0.07" Scale="0.56" Type="wheels_heavy_allterrain_double" />
+		<CompatibleWheels RearOffsetZ="0.10" Scale="0.56" Type="wheels_heavy_mudtires_single" />
+
+		<CompatibleWheels RearOffsetZ="0.07" Scale="0.64" Type="wheels_heavy_highway_double" />
+		<CompatibleWheels RearOffsetZ="0.07" Scale="0.64" Type="wheels_heavy_offroad_double" />
+		<CompatibleWheels RearOffsetZ="0.07" Scale="0.64" Type="wheels_heavy_allterrain_double" />
+		<CompatibleWheels RearOffsetZ="0.10" Scale="0.64" Type="wheels_heavy_mudtires_single" />
 
 		<Camera Center="(1.050; 0; 0)" ParentFrame="BoneCabin_cdt">
 			<Cockpit
