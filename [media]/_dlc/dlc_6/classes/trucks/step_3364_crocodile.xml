@@ -56,7 +56,7 @@
 		TruckImage="step3364crocodilemchr"
 		TruckType="SCOUT"
 	>
-		<WinchUpgradeSocket Default="w_medium_trucks_default" IsUpgradable="true" Type="winches_medium_trucks" />
+		<WinchUpgradeSocket Default="w_medium_trucks_default" IsUpgradable="true" Type="winches_medium_trucks, winches_actaeon" />
 		<Wheels
 			DefaultRim="rim_1"
 			DefaultTire="tire_1"
