@@ -7,7 +7,7 @@
 		</Damage>
 	</TruckData>
 	<PhysicsModel Mesh="trucks/step_3364_crocodile_tuning/step_3364_crocodile_bumper_2">
-		<Body ImpactType="Truck" Mass="50">
+		<Body ImpactType="Truck" Mass="2500">
 			<Constraint Type="Rigid" />
 			<Body
 				AngularDamping="7"
