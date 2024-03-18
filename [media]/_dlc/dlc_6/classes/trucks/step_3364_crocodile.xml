@@ -10,7 +10,7 @@
 			SteeringAngle="30"
 			SteeringCastor="0"
 			SteeringJointOffset="0.08"
-			Torque="default"
+			Torque="full"
 			ParentFrame="BoneCabin_cdt"
 		/>
 	</Wheel>
