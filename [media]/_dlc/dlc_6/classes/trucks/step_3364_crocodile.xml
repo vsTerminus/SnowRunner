@@ -341,6 +341,7 @@
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.06)" />
 			</Socket>
 			<Socket Names="Step3364CrocodileSideboard" />
+			<Socket Names="FrameAddonFlatbed1" NamesBlock="Step3364CrocodileWheelAddon" Offset="(-1.80, 0.85, 0.0)"/>
 			<Socket Names="Step3364CrocodileTank" />
 			<Socket Names="Step3364CrocodileKung" />
 		</AddonSockets>
