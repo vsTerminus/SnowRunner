@@ -197,10 +197,16 @@
 		</Damage>
 		<CompatibleWheels Scale="0.6" Type="wheels_mack_defense_m917" />
 		<CompatibleWheels Scale="0.6" Type="wheels_heavy_single" />
+		<CompatibleWheels Scale="0.68" Type="wheels_mack_defense_m917" />
+		<CompatibleWheels Scale="0.68" Type="wheels_heavy_single" />
 
 		<CompatibleWheels RearOffsetZ="0.05" Scale="0.6" Type="wheels_heavy_offroad_single" />
 		<CompatibleWheels RearOffsetZ="0.1" Scale="0.6" Type="wheels_heavy_mudtires_single" />
 		<CompatibleWheels RearOffsetZ="0.1" Scale="0.6" Type="wheels_heavy_mudtires_single2" />
+
+		<CompatibleWheels RearOffsetZ="0.05" Scale="0.68" Type="wheels_heavy_offroad_single" />
+		<CompatibleWheels RearOffsetZ="0.1" Scale="0.68" Type="wheels_heavy_mudtires_single" />
+		<CompatibleWheels RearOffsetZ="0.1" Scale="0.68" Type="wheels_heavy_mudtires_single2" />
 
 		<Camera Center="(-0.94; -0.35; 0)" ParentFrame="BoneCabin_cdt">
 			<Cockpit
