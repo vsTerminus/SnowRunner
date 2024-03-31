@@ -12,7 +12,7 @@
 		EngineResponsiveness="0.045"
 		FuelConsumption="3.2"
 		Name="ru_kirovets_k700_engine_0"
-		Torque="130000"
+		Torque="170000"
 		DamagedMinTorqueMultiplier="1.0"
 		DamagedMaxTorqueMultiplier="0.6"
 	>
@@ -36,7 +36,7 @@
 		DamagedConsumptionModifier="1.3"
 		FuelConsumption="3.5"
 		Name="ru_kirovets_k700_engine_1"
-		Torque="150000"
+		Torque="190000"
 		DamagedMinTorqueMultiplier="1.0"
 		DamagedMaxTorqueMultiplier="0.8"
 	>
@@ -60,7 +60,7 @@
 		DamagedConsumptionModifier="1.5"
 		FuelConsumption="4.0"
 		Name="ru_kirovets_k700_engine_2"
-		Torque="175000"
+		Torque="215000"
 		DamagedMinTorqueMultiplier="1.0"
 		DamagedMaxTorqueMultiplier="0.7"
 	>
