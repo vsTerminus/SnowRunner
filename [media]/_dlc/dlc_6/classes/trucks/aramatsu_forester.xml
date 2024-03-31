@@ -126,7 +126,7 @@
 			Speed="3.00"
             ParentFrame="BoneFront_cdt"
 		/>
-		<EngineSocket Default="us_truck_modern_engine_0" Type="e_us_truck_modern" />
+		<EngineSocket Default="ru_kirovets_k7m_engine_0" Type="e_ru_kirovets_k7m_special" />
 		<Driver
 			AnimationSet="Forwarder"
 			DriverCharacter="driver_forester_m"
