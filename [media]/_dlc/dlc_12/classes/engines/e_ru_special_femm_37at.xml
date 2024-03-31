@@ -33,7 +33,7 @@
 		DamageCapacity="240"
 		DamagedConsumptionModifier="1.8"
 		EngineResponsiveness="0.06"
-		FuelConsumption="18"
+		FuelConsumption="12"
 		Name="ru_special_femm_37at_sbr_r2"
 		Torque="288000"
 		DamagedMinTorqueMultiplier="0.8"
