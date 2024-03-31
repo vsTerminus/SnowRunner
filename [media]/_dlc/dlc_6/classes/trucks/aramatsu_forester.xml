@@ -150,6 +150,10 @@
 		<CompatibleWheels Scale=".66" Type="wheels_heavy_single2" />
 		<CompatibleWheels Scale=".66" Type="wheels_heavy_mudtires_single" />
 		<CompatibleWheels Scale=".66" Type="wheels_heavy_mudtires_single2" />
+
+		<CompatibleWheels Scale=".70" Type="wheels_heavy_single2" />
+		<CompatibleWheels Scale=".70" Type="wheels_heavy_mudtires_single" />
+		<CompatibleWheels Scale=".70" Type="wheels_heavy_mudtires_single2" />
 		<Camera
 			Center="(-1.5; 0; 0)"
 			RadiusMultiplier="1.1"
