@@ -50,7 +50,7 @@
 			UiName="UI_TIRE_TYPE_ALLTERRAIN_NAME"
 		/>
 		<Offroad
-			BodyFriction="2.4"
+			BodyFriction="3.2"
 			BodyFrictionAsphalt="80.0"
 			IsIgnoreIce="true"
 			SubstanceFriction="3.2"
@@ -58,7 +58,7 @@
 		/>
 		<Mudtires
 			BodyFriction="2.4"
-			BodyFrictionAsphalt="4.0"
+			BodyFrictionAsphalt="80.0"
 			IsIgnoreIce="true"
 			SubstanceFriction="3.2"
 			UiName="UI_TIRE_TYPE_MUDTIRES_NAME"
@@ -78,7 +78,7 @@
 			UiName="UI_TIRE_TYPE_MUDTIRES_NAME"
 		/>
 		<Chains
-			BodyFriction="2.4"
+			BodyFriction="3.0"
 			BodyFrictionAsphalt="80.0"
 			IsIgnoreIce="true"
 			SubstanceFriction="3.2"
