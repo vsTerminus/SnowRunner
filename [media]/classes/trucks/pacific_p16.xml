@@ -450,6 +450,7 @@
 			<Socket Names="SaddleLow" Offset="(-3.75; 1.63; -0)" />
 			<Socket Names="FrameAddonLogShort" NamesBlock="Trailer" Offset="(-2.50; 1.783; 0)" ParentFrame="BoneChassisBack_cdt" />
 			<Socket Names="FrameAddonLogMedium" NamesBlock="Trailer" Offset="(-2.60; 1.783; 0)" ParentFrame="BoneChassisBack_cdt" />
+			<Socket Names="Cat745CLogBunk" NamesBlock="Trailer" Offset="(-0.05; 0.150; 0)" ParentFrame="BoneChassisBack_cdt" />
 			<Socket Names="FrameAddonTow" NamesBlock="Trailer" Offset="(-3.25; 1.783; 0)" ParentFrame="BoneChassisBack_cdt" />
 		</AddonSockets>
 		<AddonSockets>
