@@ -127,7 +127,7 @@
 		/>
 		<Intake
 			Dir="(1; 0; 0)"
-			Origin="(3.078; 1.855; 0.000)" 
+			Origin="(-0.832; 3.45; -1.122)"
 			Size="2"
 		/>
 		<GearboxSocket Default="g_special_default" Type="gearboxes_special" />
