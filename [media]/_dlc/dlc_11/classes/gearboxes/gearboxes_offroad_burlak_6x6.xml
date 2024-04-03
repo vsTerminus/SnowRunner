@@ -11,7 +11,7 @@
 		MaxBreakFreq="15.0"
 	>
 		<ReverseGear AngVel="0.5" FuelModifier="0.9" />
-		<HighGear AngVel="3.0" FuelModifier="1.5" />
+		<HighGear AngVel="5.2" FuelModifier="1.2" />
 		<Gear AngVel="0.9" FuelModifier="1.6" />
 		<Gear AngVel="1.7" FuelModifier="1.4" />
 		<Gear AngVel="2.5" FuelModifier="1.22" />

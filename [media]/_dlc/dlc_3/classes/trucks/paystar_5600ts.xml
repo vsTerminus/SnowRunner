@@ -155,10 +155,11 @@
 			DefaultTire="highway_1"
 			DefaultWheelType="wheels_heavy_double1"
 		>
-			<Wheel _template="FirstAxle" Pos="(4.852; 0.548; 1.061)" />
-			<Wheel _template="FirstAxle" RightSide="true" Pos="(4.852; 0.548; 1.061)" />
-			<Wheel _template="SecondAxle" Pos="(3.232; 0.548; 1.061)" />
-			<Wheel _template="SecondAxle" RightSide="true" Pos="(3.232; 0.548; 1.061)" />
+			<!-- <Wheel _template="FirstAxle" Pos="(4.852; 0.548; 1.195)" /> -->
+			<Wheel _template="FirstAxle" Pos="(4.852; 0.548; 1.18)" />
+			<Wheel _template="FirstAxle" RightSide="true" Pos="(4.852; 0.548; 1.18)" />
+			<Wheel _template="SecondAxle" Pos="(3.232; 0.548; 1.18)" />
+			<Wheel _template="SecondAxle" RightSide="true" Pos="(3.232; 0.548; 1.18)" />
 			<Wheel _template="RearAxle" Pos="(-1.861; 0.548; 0.9)" />
 			<Wheel _template="RearAxle" RightSide="true" Pos="(-1.861; 0.548; 0.9)" />
 			<Wheel _template="RearAxle" Pos="(-3.282; 0.548; 0.9)" />
@@ -259,21 +260,21 @@
 		<CompatibleWheels Scale="0.63" Type="wheels_heavy_single" />
 		<CompatibleWheels OffsetZ="-0.03" RearOffsetZ=".1" Scale="0.63" Type="wheels_heavy_single2" />
 
-		<CompatibleWheels RearOffsetZ=".16" Scale="0.545" Type="wheels_heavy_highway_double" />
-		<CompatibleWheels RearOffsetZ=".18" OffsetZ="0.14" Scale="0.545" Type="wheels_heavy_offroad_double" />
-		<CompatibleWheels RearOffsetZ=".18s" Scale="0.545" Type="wheels_heavy_allterrain_double" />
+		<CompatibleWheels RearOffsetZ="0.16" Scale="0.545" Type="wheels_heavy_highway_double" />
+		<CompatibleWheels RearOffsetZ="0.18" Scale="0.545" Type="wheels_heavy_offroad_double" />
+		<CompatibleWheels RearOffsetZ="0.18" Scale="0.545" Type="wheels_heavy_allterrain_double" />
 
 		<CompatibleWheels RearOffsetZ="0.06" Scale="0.545" Type="wheels_heavy_offroad_single" />
-		<CompatibleWheels RearOffsetZ=".14" Scale="0.545" Type="wheels_heavy_mudtires_single" />
-		<CompatibleWheels RearOffsetZ=".14" Scale="0.545" Type="wheels_heavy_mudtires_single2" />
+		<CompatibleWheels RearOffsetZ="0.14" Scale="0.545" Type="wheels_heavy_mudtires_single" />
+		<CompatibleWheels RearOffsetZ="0.14" Scale="0.545" Type="wheels_heavy_mudtires_single2" />
 
-		<CompatibleWheels RearOffsetZ=".22" Scale="0.63"  Type="wheels_heavy_highway_double" />
-		<CompatibleWheels RearOffsetZ=".22" OffsetZ="0.14" Scale="0.63"  Type="wheels_heavy_offroad_double" />
-		<CompatibleWheels RearOffsetZ=".22" Scale="0.63"  Type="wheels_heavy_allterrain_double" />
+		<CompatibleWheels RearOffsetZ="0.22" Scale="0.63" Type="wheels_heavy_highway_double" />
+		<CompatibleWheels RearOffsetZ="0.22" Scale="0.63" Type="wheels_heavy_offroad_double" />
+		<CompatibleWheels RearOffsetZ="0.22" Scale="0.63" Type="wheels_heavy_allterrain_double" />
 
-		<CompatibleWheels Scale="0.63" RearOffsetZ="0.08" Type="wheels_heavy_offroad_single" />
-		<CompatibleWheels RearOffsetZ=".14" Scale="0.63" Type="wheels_heavy_mudtires_single" />
-		<CompatibleWheels RearOffsetZ=".14" Scale="0.63" Type="wheels_heavy_mudtires_single2" />
+		<CompatibleWheels RearOffsetZ="0.08" Scale="0.63" Type="wheels_heavy_offroad_single" />
+		<CompatibleWheels RearOffsetZ="0.14" Scale="0.63" Type="wheels_heavy_mudtires_single" />
+		<CompatibleWheels RearOffsetZ="0.14" Scale="0.63" Type="wheels_heavy_mudtires_single2" />
 
 		<Camera
 			Center="(-2; 0; 0)"

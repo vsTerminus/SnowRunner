@@ -1,13 +1,9 @@
 <_templates Include="trucks" />
-
 <TruckAddon>
-
 	<WheelRepairsHide>
-		<Mesh Frame="wheel" HideThreshold="0.0" />
+		<Mesh Frame="tire_front" HideThreshold="0.0" />
 	</WheelRepairsHide>
-	
 	<TruckData WheelRepairsCapacity="1" />
-	
 	<PhysicsModel Mesh="trucks/kenworth_w990_tuning/kenworth_w990_spare_wheel">
 		<Body Mass="10" ModelFrame="BoneCabin_cdt" ImpactType="Truck">
 			<Constraint Type="Rigid" />
@@ -23,7 +19,6 @@
 			</Body>
 		</Body>
 	</PhysicsModel>
-	
 	<GameData
 		CameraPreset="spare_wheel"
 		Category="wheel_addon"
@@ -40,5 +35,4 @@
 		/>
 		<InstallSocket Offset="(0; 0; 0)" Type="KenworthW990SpareWheel" />
 	</GameData>
-	
 </TruckAddon>

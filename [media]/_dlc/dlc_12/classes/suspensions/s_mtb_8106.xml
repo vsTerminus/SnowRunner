@@ -6,8 +6,8 @@
 		DamageCapacity="80"
 		Name="mtb_8106_suspension_default"
 	>
-		<Suspension Damping="0.55" Height="0.23" Strength="0.03" WheelType="front" BrokenSuspensionMax="0.15" SuspensionMin="-0.2" />
-		<Suspension Damping="0.55" Height="0.24" Strength="0.04" WheelType="rear" BrokenSuspensionMax="0.15" SuspensionMin="-0.23" />
+		<Suspension Damping="0.55" Height="0.23" Strength="0.032" WheelType="front" BrokenSuspensionMax="0.15" SuspensionMin="-0.2" />
+		<Suspension Damping="0.55" Height="0.24" Strength="0.043" WheelType="rear" BrokenSuspensionMax="0.15" SuspensionMin="-0.23" />
 		<GameData
 			Price="3800"
 			UnlockByExploration="false"
@@ -50,8 +50,8 @@
 		DamageCapacity="80"
 		Name="mtb_8106_suspension_crawler"
 	>
-		<Suspension Damping="0.55" Height="0.43" Strength="0.014" WheelType="front" BrokenSuspensionMax="0.15" SuspensionMin="-0.35" />
-		<Suspension Damping="0.55" Height="0.44" Strength="0.015" WheelType="rear" BrokenSuspensionMax="0.15" SuspensionMin="-0.4" />
+		<Suspension Damping="0.55" Height="0.43" Strength="0.02" WheelType="front" BrokenSuspensionMax="0.15" SuspensionMin="-0.35" />
+		<Suspension Damping="0.55" Height="0.44" Strength="0.021" WheelType="rear" BrokenSuspensionMax="0.15" SuspensionMin="-0.4" />
 		<GameData
 			Price="6600"
 			UnlockByExploration="true"

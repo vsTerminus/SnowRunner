@@ -145,17 +145,17 @@
 			<DamageArea Type="Engine" Min="(1.916; 1.145; -0.932)" Max="(4.457; 2.73; 0.932)" ParentFrame="BoneCabin_cdt" />
 			<DamageArea Type="FuelTank" Min="(-1.125; 0.56; -1.57)" Max="(0.014; 1.53; 1.57)" ParentFrame="BoneChassis_cdt" />
 		</Damage>
-		<CompatibleWheels OffsetZ="0.2" RearOffsetZ="0.06" Scale="0.69" Type="wheels_medium_double" />
-		<CompatibleWheels OffsetZ="0.2" RearOffsetZ="0.08" Scale="0.74" Type="wheels_medium_double" />
-		<CompatibleWheels OffsetZ="0.2" RearOffsetZ="0.1" Scale="0.74" Type="wheels_heavy_double2" />
+		<CompatibleWheels OffsetZ="0.04" RearOffsetZ="0.06" Scale="0.69" Type="wheels_medium_double" />
+		<CompatibleWheels OffsetZ="0.04" RearOffsetZ="0.08" Scale="0.74" Type="wheels_medium_double" />
+		<CompatibleWheels OffsetZ="0.04" RearOffsetZ="0.1" Scale="0.74" Type="wheels_heavy_double2" />
 
-		<CompatibleWheels OffsetZ="0.2" RearOffsetZ="0.06" Scale="0.69" Type="wheels_medium_offroad_double" />
-		<CompatibleWheels OffsetZ="0.2" RearOffsetZ="0.06" Scale="0.69" Type="wheels_medium_highway_double" />
-		<CompatibleWheels OffsetZ="0.2" RearOffsetZ="0.06" Scale="0.69" Type="wheels_medium_allterrain_double" />
+		<CompatibleWheels OffsetZ="0.04" RearOffsetZ="0.06" Scale="0.69" Type="wheels_medium_offroad_double" />
+		<CompatibleWheels OffsetZ="0.04" RearOffsetZ="0.06" Scale="0.69" Type="wheels_medium_highway_double" />
+		<CompatibleWheels OffsetZ="0.04" RearOffsetZ="0.06" Scale="0.69" Type="wheels_medium_allterrain_double" />
 
-		<CompatibleWheels OffsetZ="0.2" RearOffsetZ="0.08" Scale="0.74" Type="wheels_medium_offroad_double" />
-		<CompatibleWheels OffsetZ="0.2" RearOffsetZ="0.08" Scale="0.74" Type="wheels_medium_highway_double" />
-		<CompatibleWheels OffsetZ="0.2" RearOffsetZ="0.08" Scale="0.74" Type="wheels_medium_allterrain_double" />
+		<CompatibleWheels OffsetZ="0.04" RearOffsetZ="0.06" Scale="0.74" Type="wheels_medium_offroad_double" />
+		<CompatibleWheels OffsetZ="0.04" RearOffsetZ="0.06" Scale="0.74" Type="wheels_medium_highway_double" />
+		<CompatibleWheels OffsetZ="0.04" RearOffsetZ="0.06" Scale="0.74" Type="wheels_medium_allterrain_double" />
 
 		<Camera Center="(-1.5; 0; 0)" ParentFrame="BoneCabin_cdt">
 			<Cockpit
