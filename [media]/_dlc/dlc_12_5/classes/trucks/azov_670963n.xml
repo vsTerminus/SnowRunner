@@ -676,6 +676,10 @@
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0)" />
 				<ExtraParent Frame="BoneCabin_cdt" Offset="(0; 0; 0)" />	
 			</Socket>
+			<Socket Names="FemmSideboard" NamesBlock="MinicraneRU, LogLiftKenworth, Trailer" ParentFrame="BoneChassis_cdt" Offset="(-1; -0.335; 0)">
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0)" />
+				<ExtraParent Frame="BoneCabin_cdt" Offset="(0; 0; 0)" />
+			</Socket>
 			<Socket Names="Azov670963nTank" ParentFrame="BoneChassis_cdt">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0)" />
 				<ExtraParent Frame="BoneCabin_cdt" Offset="(0; 0; 0)" />
