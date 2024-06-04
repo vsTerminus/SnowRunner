@@ -168,7 +168,7 @@
 		<Dashboard>
 			<Gauge Dir="(-0.905; 0.42; 0)" InputRange="(0;130)" InputType="speed" Mesh="trucks/arrows/burlak_6x6_arrow_01" Org="(2.164; 2.552; 0.5)" OutputAngles="(-125;120)" />
 			<Gauge Damping="0.99" Dir="(-0.905; 0.42; 0)" InputRange="(0;1)" InputType="rpm" Mesh="trucks/arrows/burlak_6x6_arrow_01" Org="(2.164; 2.551; 0.679)" OutputAngles="(-118; 120)" />
-			<Gauge Damping="0.99" Dir="(-0.905; 0.42; 0)" InputRange="(0;1)" InputType="fuel" Mesh="trucks/arrows/burlak_6x6_arrow_02" Org="(2.187; 2.592; 0.561)" OutputAngles="(-57; 25)" />
+			<Gauge Damping="0.99" Dir="(-0.905; 0.42; 0)" InputRange="(0;1)" InputType="fuel" Mesh="trucks/arrows/burlak_6x6_arrow_02" Org="(2.187; 2.592; 0.561)" OutputAngles="(-57; 60)" />
 			<Gauge Damping="0.99" Dir="(-0.905; 0.42; 0)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/burlak_6x6_arrow_02" Org="(2.187; 2.592; 0.618)" OutputAngles="(-50; 10)" />
 			<Gauge Damping="0.99" Dir="(-0.905; 0.42; 0)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/burlak_6x6_arrow_03" Org="(2; 2.451; 0.139)" OutputAngles="(-130; -50)" />
 		</Dashboard>

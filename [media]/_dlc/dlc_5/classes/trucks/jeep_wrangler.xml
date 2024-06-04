@@ -176,6 +176,7 @@
 			<DamageArea Type="FuelTank" Min="(-0.5; 0.34; -0.6)" Max="(1; 0.64; 0.6)" ParentFrame="BoneChassis_cdt" />
 		</Damage>
 		<CompatibleWheels Scale="0.41" Type="wheels_scout_offroad2_jeep_wrangler" />
+		<CompatibleWheels OffsetZ="0.12" Scale="0.46" Type="wheels_scout_offroad2_jeep_wrangler" />
 		<CompatibleWheels OffsetZ="0.05" Scale="0.41" Type="wheels_scout1" />
 		<CompatibleWheels OffsetZ="0.05" Scale="0.41" Type="wheels_scout2" />
 		<CompatibleWheels OffsetZ="0.05" Scale="0.46" Type="wheels_scout2" />

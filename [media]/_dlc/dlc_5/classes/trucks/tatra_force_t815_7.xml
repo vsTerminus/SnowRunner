@@ -201,7 +201,7 @@
 	<PhysicsModel Mesh="trucks/tatra_force_t815_7">
 		<NetSync Legacy="false" />
 		<Body
-			CenterOfMassOffset="(1; 0; 0)"
+			CenterOfMassOffset="(-1; 0; 0)"
 			ImpactType="Truck"
 			Mass="12000"
 			ModelFrame="BoneChassis_cdt"
@@ -419,7 +419,7 @@
 			<Socket Names="TatraFrameAddonTow" NamesBlock="TatraFrameAddonTow, Trailer, LargeSemitrailerOiltank" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="TatraCrane" NamesBlock="TatraForceT8157Fender, TatraFrameAddonTank" />
+			<Socket Names="TatraCrane" Offset="(0; 0.2; 0)" NamesBlock="TatraFrameAddonTank" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="tatra_force_t815_7_bumper_default">
 			<Socket Names="TatraForceT8157Bumper" />

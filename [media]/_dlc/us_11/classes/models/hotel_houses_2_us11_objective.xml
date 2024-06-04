@@ -6,6 +6,10 @@
 		<Mesh Name="mesh_start" />
 		<CdtMesh Name="mesh_start" />
 	</Subset>
+	<Subset Name="state_end">
+		<Mesh Name="mesh_start" />
+		<CdtMesh Name="mesh_start" />
+	</Subset>
 	<Subset Name="state_fin">
 		<Mesh Name="mesh_end" />
 		<CdtMesh Name="mesh_end" />

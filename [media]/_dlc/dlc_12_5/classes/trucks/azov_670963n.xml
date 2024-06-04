@@ -47,7 +47,7 @@
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
-				MinLimit="-5"
+				MinLimit="2"
 				MaxLimit="14"
 			>
 				<Motor Damping=".1" Spring="10" Type="Spring" />
@@ -235,7 +235,7 @@
 	<PhysicsModel Mesh="trucks/azov_670963n">
 		<NetSync Legacy="false" />
 		<Body
-			CenterOfMassOffset="(0; 0; 0)"
+			CenterOfMassOffset="(0; -0.3; 0)"
 			ImpactType="Truck"
 			Mass="10000"
 			NetSync="pv"
@@ -244,7 +244,7 @@
 			<Body _template="Mudguard" ModelFrame="BoneMudguardRearRight_cdt" />
 		
 			<Body
-				CenterOfMassOffset="(0; 0; 0)"
+				CenterOfMassOffset="(0; -0.6; 0)"
 				ImpactType="Truck"
 				Mass="5500"
 				ModelFrame="BoneCabin_cdt"
@@ -667,11 +667,9 @@
 		</AddonSockets>
 		<!-- FRAME/TRAILER SOCKETS -->
 		<AddonSockets>
-			<Socket Names="Trailer" Offset="(-6.1; 1.209; 0)">
-				<AddonsShift Offset="(0; 0; 0)" TrailerNamesBlock="Trailer" Types="MinicraneRU, FrameAddon" />
-			</Socket>
-			<Socket Names="Semitrailer, SemitrailerOiltank" NamesBlock="SaddleHigh" Offset="(-4.376; 1.715; 0)" />
-			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" NamesBlock="SaddleLow" Offset="(-3.291; 1.869; 0)" />
+			<Socket Names="Trailer" Offset="(-6.1; 1.209; 0)" />
+			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-4.376; 1.715; 0)" />
+			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-3.291; 1.869; 0)" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="Azov670963nSideboard" ParentFrame="BoneChassis_cdt" Offset="(0; 0.166; 0)">
@@ -706,10 +704,12 @@
 			</Socket>
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="MinicraneRU" NamesBlock="LogLift, BigCrane, LargeSemitrailerOiltank, FrameAddonTankLong, SaddleHigh, SaddleLow, Azov670963nSideboard, Azov670963nTank" Offset="(-5.2; 1.394; 0)">
+			<Socket Names="MinicraneRU" NamesBlock="LogLift, BigCrane, LargeSemitrailerOiltank, SemitrailerOiltank, FrameAddonTankLong, Azov670963nSideboard, Azov670963nTank" Offset="(-5.2; 1.394; 0)">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.07)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.07)" />
 				<AddonsShift Offset="(-0.23; 0; 0)" Types="FrameAddon3" />
+				<AddonsShift Offset="(2.65; 0; 0)" Types="SaddleLow" />
+				<AddonsShift Offset="(3.4; 0; 0)" Types="SaddleHigh" />
 			</Socket>
 			<Socket Names="LogLiftKenworth" NamesBlock="FrameAddon3, FrameAddonSideboard3, FrameAddonTankLong, FrameAddonLogMediumHighKenworth, BigCrane, Azov670963nSideboard, Azov670963nTank" Offset="(-0.1; 1.595; 0)" ParentFrame="BoneChassis_cdt"/>
 		</AddonSockets>

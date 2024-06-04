@@ -388,8 +388,10 @@
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.08)" />
 			</Socket>
 			<Socket Names="BunkLog" Offset="(-3.25; 1.08; 0)" />
-			<Socket Names="FrameAddonLogShort" Offset="(1.64; 1.08; 0)" />
-			<Socket Names="FrameAddonLogMedium" Offset="(0.999; 1.08; 0)" />
+			<Socket Names="FrameAddonLogShort" Offset="(1.5; 1.08; 0)" >
+				<AddonsShift Offset="(-1.3; 0; 0)" Types="LogLift" />
+			</Socket>
+			<Socket Names="FrameAddonLogMedium" Offset="(1.8; 1.08; 0)" />
 			<Socket Names="SaddleLow" Offset="(-0.419; 1.08; 0)" />
 			<Socket Names="SaddleHigh" Offset="(0.042; 1.08; 0)">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.017)" />
@@ -413,7 +415,7 @@
 			</Socket>
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="LogLift" NamesBlock="FrameAddonKung, BigCraneUs, BigCrane, MinicraneUS, FrameAddon, FrameAddonTank, FrameAddonMaintainer, FrameAddonSeismicVibrator, FrameAddonTowPlatform, FrameAddonLogShort, FrameAddonLogMedium" Offset="(4.352; 1.093; 0)" />
+			<Socket Names="LogLift" NamesBlock="FrameAddonKung, BigCraneUs, BigCrane, MinicraneUS, FrameAddon, FrameAddonTank, FrameAddonMaintainer, FrameAddonSeismicVibrator, FrameAddonTowPlatform, FrameAddonLogMedium" Offset="(4.352; 1.093; 0)" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="MinicraneUS" NamesBlock="BigCraneUs, BigCrane, FrameAddonTank, FrameAddonMaintainer, FrameAddonTowPlatform, FrameAddonLogShort, FrameAddonLogMedium" Offset="(3.557; 1.08; 0)" ParentFrame="BoneCabin_cdt" />

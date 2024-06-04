@@ -162,8 +162,8 @@
 				WindshieldShadingTexture="trucks/ford_f750_glass__sh_d.tga"
 				ViewPos="(1.585; 1.98; 0.457)"
 			>
-				<Mirror ClipDir="(-0.899; 0; -0.438)" ClipOffset="0.05" FOVScale="1.5" MeshFrame="mirror_left" ReflectionDir="(-0.899; 0; -0.438)" Size="(0.15; 0.22)" Pos="(2.026; 2.029; 1.094)" />
-				<Mirror ClipDir="(-0.777; 0; 0.629)" ClipOffset="0.05" FOVScale="1.5" MeshFrame="mirror_right" ReflectionDir="(-0.777; 0; 0.629)" Size="(0.15; 0.22)" Pos="(2.029; 2.029; -1.089)" />
+				<Mirror ClipDir="(-0.899; 0; -0.438)" LookAtOffset="(0; -0.15; 0)" ClipOffset="0.05" FOVScale="1.5" MeshFrame="mirror_left" ReflectionDir="(-0.899; 0; -0.438)" Size="(0.15; 0.22)" Pos="(2.026; 2.029; 1.094)" />
+				<Mirror ClipDir="(-0.777; 0; 0.629)" LookAtOffset="(0; -0.08; 0)" ClipOffset="0.05" FOVScale="1.5" MeshFrame="mirror_right" ReflectionDir="(-0.777; 0; 0.629)" Size="(0.15; 0.22)" Pos="(2.029; 2.029; -1.089)" />
 			</Cockpit>
 		</Camera>
 		<Axles>
@@ -434,7 +434,7 @@
 			<Socket
 				InCockpit="true"
 				Names="StuffDashboard"
-				Offset="(2.225; 1.764; -0)"
+				Offset="(2.27; 1.764; -0)"
 				ParentFrame="BoneCabin_cdt"
 			/>
 		</AddonSockets>

@@ -1,11 +1,5 @@
 <_templates Include="trucks">
 	<Flare>
-		<FrontMarker
-			_template="MarkerBeacon"
-			Dir="(1; 0; 0)"
-			DirAngle="140"
-			Size="0.3"
-		/>
 		<ReverseSignal
 			AspectRatio="4"
 			Color="g(255; 255; 255) x 0.2"
@@ -25,14 +19,19 @@
 		/>
 		<LED01
 			AspectRatio="1.4"
-			Color="g(146; 137; 121) x 1.5"
+			Color="g(146; 137; 121) x 1.6"
 			ColorMultAtDay="0.6"
 			Dir="(1; 0; 0)"
 			DirAngle="135"
 			Size="0.04"
 		/>
+		<FrontMarker
+			_template="MarkerBeacon"
+			Dir="(1; 0; 0)"
+			DirAngle="140"
+			Size="0.3"
+		/>
 	</Flare>
-	
 </_templates>
 <TruckAddon>
 	<PhysicsModel Mesh="trucks/navistar_5000mv_tuning/navistar_5000mv_lights_01">
@@ -44,42 +43,25 @@
 		</Body>
 	</PhysicsModel>
 	<ModelAttachments _noinherit="true">
-		<Ignition>			
-			<!-- <Flare _template="FrontMarker" Pos="(-0.211; 3.066; 0.622)" />
-			<Flare _template="FrontMarker" Pos="(-0.211; 3.066; -0.622)" />
-			<Flare _template="FrontMarker" Pos="(-0.202; 3.038; 0)" />
-			<Flare _template="FrontMarker" Dir="(0; 0; 1)" Pos="(-1.366; 3.436; 1.148)" />
-			<Flare _template="FrontMarker" Dir="(0; 0; -1)" Pos="(-1.366; 3.436; -1.148)" /> -->
-		</Ignition>		
 		<MainHeadLight>
 			<Model _template="HeadLightRay" Color="g(146; 137; 121) x 0.7" Org="(-0.212; 3.068; -0.621)" />
 			<Model _template="HeadLightRay" Color="g(146; 137; 121) x 0.7" Org="(-0.212; 3.068; 0.621)" />
-			<Model _template="HeadLightRay" Color="g(146; 137; 121) x 0.7" Org="(-0.201; 3.038; 0.0)" />
-		<!--Upper LED Panel-->
-			<Flare _template="LED01" Pos="(-0.212; 3.083; -0.571)" ParentFrame="BoneCabin_cdt" />
-			<Flare _template="LED01" Pos="(-0.212; 3.083; -0.606)" ParentFrame="BoneCabin_cdt" />
-			<Flare _template="LED01" Pos="(-0.212; 3.083; -0.638)" ParentFrame="BoneCabin_cdt" />
-			<Flare _template="LED01" Pos="(-0.212; 3.083; -0.671)" ParentFrame="BoneCabin_cdt" />
-			<Flare _template="LED01" Pos="(-0.212; 3.05; -0.571)" ParentFrame="BoneCabin_cdt" />
-			<Flare _template="LED01" Pos="(-0.212; 3.05; -0.606)" ParentFrame="BoneCabin_cdt" />
-			<Flare _template="LED01" Pos="(-0.212; 3.05; -0.638)" ParentFrame="BoneCabin_cdt" />
-			<Flare _template="LED01" Pos="(-0.212; 3.05; -0.671)" ParentFrame="BoneCabin_cdt" />
-			
-			<Flare _template="LED01" Pos="(-0.212; 3.083; 0.571)" ParentFrame="BoneCabin_cdt" />
-			<Flare _template="LED01" Pos="(-0.212; 3.083; 0.606)" ParentFrame="BoneCabin_cdt" />
-			<Flare _template="LED01" Pos="(-0.212; 3.083; 0.638)" ParentFrame="BoneCabin_cdt" />
-			<Flare _template="LED01" Pos="(-0.212; 3.083; 0.671)" ParentFrame="BoneCabin_cdt" />
-			<Flare _template="LED01" Pos="(-0.212; 3.05; 0.571)" ParentFrame="BoneCabin_cdt" />
-			<Flare _template="LED01" Pos="(-0.212; 3.05; 0.606)" ParentFrame="BoneCabin_cdt" />
-			<Flare _template="LED01" Pos="(-0.212; 3.05; 0.638)" ParentFrame="BoneCabin_cdt" />
-			<Flare _template="LED01" Pos="(-0.212; 3.05; 0.671)" ParentFrame="BoneCabin_cdt" />
-			
-			<Flare _template="LED01" Color="g(126; 127; 121) x 1.0" Size="0.5" Pos="(-0.201; 3.038; 0.02)" ParentFrame="BoneCabin_cdt" />
-			<Flare _template="LED01" Color="g(126; 127; 121) x 2.0" Size="0.3" Pos="(-0.201; 3.038; 0.02)" ParentFrame="BoneCabin_cdt" />
-			<Flare _template="LED01" Color="g(126; 127; 121) x 0.9" Size="0.5" Pos="(-0.212; 3.068; -0.621)" ParentFrame="BoneCabin_cdt" />
-			<Flare _template="LED01" Color="g(126; 127; 121) x 0.9" Size="0.5" Pos="(-0.212; 3.068; 0.621)" ParentFrame="BoneCabin_cdt" />
-			
+			<Model _template="HeadLightRay" Color="g(146; 137; 121) x 0.7" Org="(-0.201; 3.038; 0)" />
+			<Flare
+				_template="LED01"
+				Color="g(146; 137; 121) x 0.5"
+				Size="2"
+				Pos="(-0.202; 3.038; 0)"
+				ParentFrame="BoneCabin_cdt"
+			/>
 		</MainHeadLight>
+		<Ignition>
+			<Flare _template="LED01" Dir="(0; 0; 1)" Size="1" Pos="(-1.366; 3.436; 1.148)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED01" Dir="(0; 0; -1)" Size="1" Pos="(-1.366; 3.436; -1.148)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED01" Color="g(146; 137; 121) x 1.3" Size="1" Pos="(-0.21; 3.066; 0.622)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED01" Color="g(146; 137; 121) x 1.3" Size="1" Pos="(-0.21; 3.066; -0.622)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED01" Color="g(146; 137; 121) x 1.3" Size="1" Pos="(-0.202; 3.038; 0)" ParentFrame="BoneCabin_cdt" />
+		</Ignition>
 	</ModelAttachments>
 	<GameData
 		CameraPreset="roof"

@@ -17,7 +17,7 @@
 				/>
 			</Constraint>
 		</Spine1>
-		<Spine AngularDamping="0.99">
+		<Spine AngularDamping="0.99" Collisions="None">
 			<Constraint
 				ConeMin="-30"
 				ConeMax="9"
@@ -102,7 +102,6 @@
 				</Constraint>
 				<Body
 					_template="Spine1"
-					Collisions="None"
 					Mass="8"
 					ModelFrame="BACKdown"
 				>
@@ -111,7 +110,6 @@
 					</Constraint>
 					<Body
 						_template="Spine"
-						Collisions="None"
 						Mass="8"
 						ModelFrame="BACKdown1"
 					>
@@ -135,7 +133,7 @@
 									<Constraint>
 										<AllMotor Force="50" />
 									</Constraint>
-									<Body _template="Neck" Mass="4" ModelFrame="HEAD">
+									<Body _template="Neck" Mass="4" ModelFrame="HEAD" Collisions="None">
 										<Constraint>
 											<AllMotor Force="15" />
 										</Constraint>

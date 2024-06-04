@@ -1579,6 +1579,76 @@
 				ShadingMap="trucks/outside_sticker_1x1_expeditions_01__sh_s.tga"
 				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
 			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_ancient_traditions__d_a.tga"
+				Name="skin_128"
+				NormalMap="trucks/outside_sticker_1x1_ancient_traditions__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_ancient_traditions__sh_s.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_explosive_mare__d_a.tga"
+				Name="skin_129"
+				NormalMap="trucks/outside_sticker_1x1_explosive_mare__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_explosive_mare__sh_s.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_extraction__d_a.tga"
+				Name="skin_130"
+				NormalMap="trucks/outside_sticker_1x1_extraction__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_extraction__sh_s.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_miner__d_a.tga"
+				Name="skin_131"
+				NormalMap="trucks/outside_sticker_1x1_miner__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_miner__sh_s.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_miners_banner__d_a.tga"
+				Name="skin_132"
+				NormalMap="trucks/outside_sticker_1x1_miners_banner__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_miners_banner__sh_s.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_miners_of_the_east__d_a.tga"
+				Name="skin_133"
+				NormalMap="trucks/outside_sticker_1x1_miners_of_the_east__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_miners_of_the_east__sh_s.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_miners_of_the_west__d_a.tga"
+				Name="skin_134"
+				NormalMap="trucks/outside_sticker_1x1_miners_of_the_west__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_miners_of_the_west__sh_s.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_nugget_hunter__d_a.tga"
+				Name="skin_135"
+				NormalMap="trucks/outside_sticker_1x1_nugget_hunter__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_nugget_hunter__sh_s.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_rock_to_crumb__d_a.tga"
+				Name="skin_136"
+				NormalMap="trucks/outside_sticker_1x1_rock_to_crumb__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_rock_to_crumb__sh_s.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_work_of_mine__d_a.tga"
+				Name="skin_137"
+				NormalMap="trucks/outside_sticker_1x1_work_of_mine__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_work_of_mine__sh_s.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
 		</OutsideSticker1x1>
 		<OutsideStickerWS>
 			<MaterialOverride
@@ -2475,6 +2545,76 @@
 				Name="skin_127"
 				NormalMap="trucks/outside_sticker_1x1_expeditions_01__n_d.tga"
 				ShadingMap="trucks/outside_sticker_1x1_expeditions_01__sh_s.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_ancient_traditions__d_a.tga"
+				Name="skin_128"
+				NormalMap="trucks/outside_sticker_1x1_ancient_traditions__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_ancient_traditions__sh_s.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_explosive_mare__d_a.tga"
+				Name="skin_129"
+				NormalMap="trucks/outside_sticker_1x1_explosive_mare__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_explosive_mare__sh_s.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_extraction__d_a.tga"
+				Name="skin_130"
+				NormalMap="trucks/outside_sticker_1x1_extraction__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_extraction__sh_s.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_miner__d_a.tga"
+				Name="skin_131"
+				NormalMap="trucks/outside_sticker_1x1_miner__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_miner__sh_s.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_miners_banner__d_a.tga"
+				Name="skin_132"
+				NormalMap="trucks/outside_sticker_1x1_miners_banner__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_miners_banner__sh_s.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_miners_of_the_east__d_a.tga"
+				Name="skin_133"
+				NormalMap="trucks/outside_sticker_1x1_miners_of_the_east__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_miners_of_the_east__sh_s.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_miners_of_the_west__d_a.tga"
+				Name="skin_134"
+				NormalMap="trucks/outside_sticker_1x1_miners_of_the_west__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_miners_of_the_west__sh_s.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_nugget_hunter__d_a.tga"
+				Name="skin_135"
+				NormalMap="trucks/outside_sticker_1x1_nugget_hunter__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_nugget_hunter__sh_s.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_rock_to_crumb__d_a.tga"
+				Name="skin_136"
+				NormalMap="trucks/outside_sticker_1x1_rock_to_crumb__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_rock_to_crumb__sh_s.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_work_of_mine__d_a.tga"
+				Name="skin_137"
+				NormalMap="trucks/outside_sticker_1x1_work_of_mine__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_work_of_mine__sh_s.tga"
 				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
 			/>
 			<MaterialOverride
@@ -3401,6 +3541,76 @@
 				Name="skin_127"
 				NormalMap="trucks/outside_sticker_1x1_expeditions_01__n_d.tga"
 				ShadingMap="trucks/outside_sticker_1x1_expeditions_01__sh_s.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_ancient_traditions__d_a.tga"
+				Name="skin_128"
+				NormalMap="trucks/outside_sticker_1x1_ancient_traditions__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_ancient_traditions__sh_s.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_explosive_mare__d_a.tga"
+				Name="skin_129"
+				NormalMap="trucks/outside_sticker_1x1_explosive_mare__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_explosive_mare__sh_s.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_extraction__d_a.tga"
+				Name="skin_130"
+				NormalMap="trucks/outside_sticker_1x1_extraction__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_extraction__sh_s.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_miner__d_a.tga"
+				Name="skin_131"
+				NormalMap="trucks/outside_sticker_1x1_miner__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_miner__sh_s.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_miners_banner__d_a.tga"
+				Name="skin_132"
+				NormalMap="trucks/outside_sticker_1x1_miners_banner__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_miners_banner__sh_s.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_miners_of_the_east__d_a.tga"
+				Name="skin_133"
+				NormalMap="trucks/outside_sticker_1x1_miners_of_the_east__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_miners_of_the_east__sh_s.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_miners_of_the_west__d_a.tga"
+				Name="skin_134"
+				NormalMap="trucks/outside_sticker_1x1_miners_of_the_west__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_miners_of_the_west__sh_s.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_nugget_hunter__d_a.tga"
+				Name="skin_135"
+				NormalMap="trucks/outside_sticker_1x1_nugget_hunter__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_nugget_hunter__sh_s.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_rock_to_crumb__d_a.tga"
+				Name="skin_136"
+				NormalMap="trucks/outside_sticker_1x1_rock_to_crumb__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_rock_to_crumb__sh_s.tga"
+				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
+			/>
+			<MaterialOverride
+				AlbedoMap="trucks/outside_sticker_1x1_work_of_mine__d_a.tga"
+				Name="skin_137"
+				NormalMap="trucks/outside_sticker_1x1_work_of_mine__n_d.tga"
+				ShadingMap="trucks/outside_sticker_1x1_work_of_mine__sh_s.tga"
 				TargetMaterialName="outside_sticker_1x1_electro_moose_01_mat"
 			/>
 			<MaterialOverride
@@ -3846,6 +4056,16 @@
 			<CustomizationPreset Id="125" MaterialOverrideName="skin_125" UiName="UI_STUFF_STICKER_RADMAT_NAME" />
 			<CustomizationPreset Id="126" MaterialOverrideName="skin_126" UiName="UI_STUFF_STICKER_STAY_GND_NAME" />
 			<CustomizationPreset Id="127" MaterialOverrideName="skin_127" UiName="UI_STUFF_STICKER_EXPEDITIONS_NAME" />
+			<CustomizationPreset Id="128" MaterialOverrideName="skin_128" UiName="UI_STUFF_STICKER_ANCIENT_TRADITIONS" />
+			<CustomizationPreset Id="129" MaterialOverrideName="skin_129" UiName="UI_STUFF_STICKER_EXPLOSIVE_MARE" />
+			<CustomizationPreset Id="130" MaterialOverrideName="skin_130" UiName="UI_STUFF_STICKER_EXTRACTION" />
+			<CustomizationPreset Id="131" MaterialOverrideName="skin_131" UiName="UI_STUFF_STICKER_MINER" />
+			<CustomizationPreset Id="132" MaterialOverrideName="skin_132" UiName="UI_STUFF_STICKER_MINERS_BANNER" />
+			<CustomizationPreset Id="133" MaterialOverrideName="skin_133" UiName="UI_STUFF_STICKER_MINERS_OF_THE_EAST" />
+			<CustomizationPreset Id="134" MaterialOverrideName="skin_134" UiName="UI_STUFF_STICKER_MINERS_OF_THE_WEST" />
+			<CustomizationPreset Id="135" MaterialOverrideName="skin_135" UiName="UI_STUFF_STICKER_NUGGET_HUNTER" />
+			<CustomizationPreset Id="136" MaterialOverrideName="skin_136" UiName="UI_STUFF_STICKER_ROCK_TO_CRUMB" />
+			<CustomizationPreset Id="137" MaterialOverrideName="skin_137" UiName="UI_STUFF_STICKER_WORK_OF_MINE" />
 		</OutsideSticker1x1>
 		<OutsideStickerWS>
 			<CustomizationPreset Id="0" MaterialOverrideName="skin_00" UiName="UI_STUFF_STICKER_HARSH_DRIVER_NAME" />
@@ -3976,6 +4196,16 @@
 			<CustomizationPreset Id="125" MaterialOverrideName="skin_125" UiName="UI_STUFF_STICKER_RADMAT_NAME" />
 			<CustomizationPreset Id="126" MaterialOverrideName="skin_126" UiName="UI_STUFF_STICKER_STAY_GND_NAME" />
 			<CustomizationPreset Id="127" MaterialOverrideName="skin_127" UiName="UI_STUFF_STICKER_EXPEDITIONS_NAME" />
+			<CustomizationPreset Id="128" MaterialOverrideName="skin_128" UiName="UI_STUFF_STICKER_ANCIENT_TRADITIONS" />
+			<CustomizationPreset Id="129" MaterialOverrideName="skin_129" UiName="UI_STUFF_STICKER_EXPLOSIVE_MARE" />
+			<CustomizationPreset Id="130" MaterialOverrideName="skin_130" UiName="UI_STUFF_STICKER_EXTRACTION" />
+			<CustomizationPreset Id="131" MaterialOverrideName="skin_131" UiName="UI_STUFF_STICKER_MINER" />
+			<CustomizationPreset Id="132" MaterialOverrideName="skin_132" UiName="UI_STUFF_STICKER_MINERS_BANNER" />
+			<CustomizationPreset Id="133" MaterialOverrideName="skin_133" UiName="UI_STUFF_STICKER_MINERS_OF_THE_EAST" />
+			<CustomizationPreset Id="134" MaterialOverrideName="skin_134" UiName="UI_STUFF_STICKER_MINERS_OF_THE_WEST" />
+			<CustomizationPreset Id="135" MaterialOverrideName="skin_135" UiName="UI_STUFF_STICKER_NUGGET_HUNTER" />
+			<CustomizationPreset Id="136" MaterialOverrideName="skin_136" UiName="UI_STUFF_STICKER_ROCK_TO_CRUMB" />
+			<CustomizationPreset Id="137" MaterialOverrideName="skin_137" UiName="UI_STUFF_STICKER_WORK_OF_MINE" />
 			<CustomizationPreset Id="1000" MaterialOverrideName="skin_1000" UiName="UI_STUFF_STICKER_HEAD_OF_THE_PACK_NAME" />
 			<CustomizationPreset Id="1001" MaterialOverrideName="skin_1001" UiName="UI_STUFF_STICKER_MOONKEEPER_NAME" />
 			<CustomizationPreset Id="1002" MaterialOverrideName="skin_1002" UiName="UI_STUFF_STICKER_WOLF_NAME" />
@@ -4110,6 +4340,16 @@
 			<CustomizationPreset Id="125" MaterialOverrideName="skin_125" UiName="UI_STUFF_STICKER_RADMAT_NAME" />
 			<CustomizationPreset Id="126" MaterialOverrideName="skin_126" UiName="UI_STUFF_STICKER_STAY_GND_NAME" />
 			<CustomizationPreset Id="127" MaterialOverrideName="skin_127" UiName="UI_STUFF_STICKER_EXPEDITIONS_NAME" />
+			<CustomizationPreset Id="128" MaterialOverrideName="skin_128" UiName="UI_STUFF_STICKER_ANCIENT_TRADITIONS" />
+			<CustomizationPreset Id="129" MaterialOverrideName="skin_129" UiName="UI_STUFF_STICKER_EXPLOSIVE_MARE" />
+			<CustomizationPreset Id="130" MaterialOverrideName="skin_130" UiName="UI_STUFF_STICKER_EXTRACTION" />
+			<CustomizationPreset Id="131" MaterialOverrideName="skin_131" UiName="UI_STUFF_STICKER_MINER" />
+			<CustomizationPreset Id="132" MaterialOverrideName="skin_132" UiName="UI_STUFF_STICKER_MINERS_BANNER" />
+			<CustomizationPreset Id="133" MaterialOverrideName="skin_133" UiName="UI_STUFF_STICKER_MINERS_OF_THE_EAST" />
+			<CustomizationPreset Id="134" MaterialOverrideName="skin_134" UiName="UI_STUFF_STICKER_MINERS_OF_THE_WEST" />
+			<CustomizationPreset Id="135" MaterialOverrideName="skin_135" UiName="UI_STUFF_STICKER_NUGGET_HUNTER" />
+			<CustomizationPreset Id="136" MaterialOverrideName="skin_136" UiName="UI_STUFF_STICKER_ROCK_TO_CRUMB" />
+			<CustomizationPreset Id="137" MaterialOverrideName="skin_137" UiName="UI_STUFF_STICKER_WORK_OF_MINE" />
 			<CustomizationPreset Id="1000" MaterialOverrideName="skin_1000" UiName="UI_STUFF_STICKER_HEAD_OF_THE_PACK_NAME" />
 			<CustomizationPreset Id="1001" MaterialOverrideName="skin_1001" UiName="UI_STUFF_STICKER_MOONKEEPER_NAME" />
 			<CustomizationPreset Id="1002" MaterialOverrideName="skin_1002" UiName="UI_STUFF_STICKER_WOLF_NAME" />

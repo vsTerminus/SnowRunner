@@ -24,6 +24,6 @@
 			UiName="UI_ADDON_AZOV67096_SIDEBOARD_NAME"
 		/>
 		<InstallSocket Type="Azov670963nSideboard" />
-		<AddonSlots InitialOffset="(1.110; 1.521; 0.000)" OffsetStep="(-3; 0; 0)" ParentFrames="BoneAddon_cdt, BoneAddon_cdt, BoneAddon_cdt, BoneAddon_cdt" Quantity="3" />
+		<AddonSlots InitialOffset="(1.110; 1.535; 0.000)" OffsetStep="(-3; 0; 0)" ParentFrames="BoneAddon_cdt, BoneAddon_cdt, BoneAddon_cdt, BoneAddon_cdt" Quantity="3" />
 	</GameData>
 </TruckAddon>

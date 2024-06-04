@@ -137,6 +137,7 @@
 			<Shaft SocketPointA="Shaft2a" SocketPointB="Shaft2b" />
 			<Shaft SocketPointA="Shaft3a" SocketPointB="Shaft3b" />
 			<Shaft SocketPointA="Shaft4a" SocketPointB="Shaft4b" />
+			<Shaft SocketPointA="Shaft5a" SocketPointB="Shaft5b" />
 		</Shafts>
 		<OcclusionMap HalfSizeZ="1.7" MinX="-5.1" MaxX="5.1" />
 		<!--<Messages Pos="(4.278; 1.859; 0)" ParentFrame="BoneCabin_cdt" />-->

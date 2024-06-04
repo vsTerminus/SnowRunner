@@ -354,7 +354,9 @@
 		<CraneSocket Pos="(-0.65; 1; -0.46)" />
 		<CraneSocket Pos="(-3.968; 1.028; 0)" />
 		<AddonSockets>
-			<Socket Names="TatraCrane" Offset="(-0.4; -0.02; 0)" NamesBlock="TatraSideboard, TatraFrameAddonTank" />
+			<Socket Names="TatraCrane" Offset="(-0.4; 0.17; 0)" NamesBlock="TatraFrameAddonTank">
+				<AddonsShift Offset="(1.64; 0; -0.025)" Types="TatraSideboard" />
+			</Socket>
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="Trailer" Offset="(-3.968; 1.028; 0)" />
@@ -368,6 +370,9 @@
 			</Socket>
 			<Socket Names="TatraSideboard" />
 			<Socket Names="TatraFrameAddonTank" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="TatraPhoenixSpareWheel" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="tatra_phoenix_bumper_default">
 			<Socket Names="TatraPhoenixBumper" />
@@ -383,9 +388,6 @@
 		</AddonSockets>
 		<AddonSockets DefaultAddon="tatra_phoenix_fender">
 			<Socket Names="TatraPhoenixFender" />
-		</AddonSockets>
-		<AddonSockets>
-			<Socket Names="TatraPhoenixSpareWheel" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="TatraPhoenixSpotlight" ParentFrame="BoneCabinRagdoll_cdt" />

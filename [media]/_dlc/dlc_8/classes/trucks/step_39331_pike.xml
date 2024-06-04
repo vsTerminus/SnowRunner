@@ -156,6 +156,7 @@
 			<DamageArea Type="FuelTank" Min="(-0.6; 0.7; -1.2)" Max="(0.45; 1.1; 1.2)" ParentFrame="BoneChassis_cdt" />
 		</Damage>
 		<CompatibleWheels RearOffsetZ="0.03" Scale="0.52" Type="wheels_step_39331_pike" />
+		<CompatibleWheels RearOffsetZ="0.06" Scale="0.55" Type="wheels_step_39331_pike" />
 		<CompatibleWheels OffsetZ="0.06" RearOffsetZ="0.01" Scale="0.52" Type="wheels_heavy_single2" />
 		<CompatibleWheels OffsetZ="0.06" RearOffsetZ="0.01" Scale="0.55" Type="wheels_heavy_single2" />
 		<CompatibleWheels OffsetZ="0.1" RearOffsetZ="0.03" Scale="0.52" Type="wheels_heavy_double1" />

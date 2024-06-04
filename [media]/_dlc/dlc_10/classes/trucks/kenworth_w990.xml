@@ -465,9 +465,9 @@
 		<CraneSocket Pos="(-4.286; 0.711; 0)" ParentFrame="BoneChassis_cdt" />
 		<UiDesc
 			UiDesc="UI_VEHICLE_KENWORTH_W990_DESC"
-			UiIcon30x30="offroadVehicleImg30"
+			UiIcon30x30="highwayVehicleImg30"
 			UiIcon328x458="shopImgKenworth990"
-			UiIcon40x40="offroadVehicleImg"
+			UiIcon40x40="highwayVehicleImg"
 			UiIconLogo="KenworthLogo80"
 			UiName="UI_VEHICLE_KENWORTH_W990_NAME"
 		/>

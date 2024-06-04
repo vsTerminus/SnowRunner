@@ -121,7 +121,7 @@
 		/>
 		<LimitedFluid Center="(3.007; 0.721; 0.807)" LengthX="1.126" RadiusY="0.317" RadiusZ="0.317" Type="Cylinder" />
 		<LimitedFluid Center="(3.266; 0.721; -0.805)" LengthX="1.126" RadiusY="0.317" RadiusZ="0.317" Type="Cylinder" />
-		<Intake Dir="(1; 0; 0)" Origin="(6.979; 1.344; 0)" Size="0.8" />
+		<Intake Dir="(1; 0; 0)" Origin="(6.979; 1.413; 0)" Size="0.8" />
 		<GearboxSocket Default="g_truck_default" Type="gearboxes_trucks" />
 		<FuelTank DamageCapacity="100" />
 		<EngineSocket Default="us_truck_modern_engine_0" Type="e_us_truck_modern, e_us_truck_modern_ws_49x" />
@@ -205,7 +205,7 @@
 			<Axle Frame="BoneAxle3" />
 		</Axles>
 	</TruckData>
-	<Snorkel Origin="(5.875; 1.721; 0)" />
+	<Snorkel Origin="(3.854; 1.172; 0)" />
 	<PhysicsModel Mesh="trucks/western_star_nf1424">
 		<NetSync Legacy="false" />
 		<Body
@@ -363,10 +363,14 @@
 		<CraneSocket Pos="(-0.921; 0.883; 0.426)" />
 		<CraneSocket Pos="(-1.155; 0.847; 0)" />
 		<AddonSockets>
-			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(1.08; 1.597; 0)" />
-			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(0.715; 1.433; 0)" />
+			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(1.08; 1.597; 0)">
+				<AddonsShift Offset="(-0.5; 0; 0)" Types="MinicraneNavistar" />
+			</Socket>
+			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(0.715; 1.433; 0)">
+				<AddonsShift Offset="(-0.5; 0; 0)" Types="MinicraneNavistar" />
+			</Socket>
 			<Socket Names="Trailer" Offset="(-1.15; 0.838; 0)">
-				<AddonsShift Offset="(0; 0; 0)" TrailerNamesBlock="Trailer" Types="MinicraneUS, FrameAddon" />
+				<AddonsShift Offset="(-0.5; 0; 0)" TrailerNamesBlock="Trailer" Types="FrameAddon" />
 			</Socket>
 		</AddonSockets>
 		<AddonSockets DefaultAddon="western_star_nf1424_diff_lock_default">
@@ -374,14 +378,22 @@
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="BunkLog" Offset="(-2.544; 1.068; 0)" />
-			<Socket Names="SaddleLow" Offset="(0.715; 1.077; 0)" />
+			<Socket Names="SaddleLow" Offset="(0.715; 1.077; 0)" >
+				<AddonsShift Offset="(-0.5; 0; 0)" Types="MinicraneNavistar" />
+			</Socket>
 			<Socket Names="SaddleHigh" Offset="(1.08; 1.077; 0)">
+			    <AddonsShift Offset="(-0.5; 0; 0)" Types="MinicraneNavistar" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.02)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.02)" />
 			</Socket>
-			<!-- <Socket Names="FrameAddonTank" Offset="(0; 1.082; 0)" /> too heavy for default wheels -->
 			<Socket Names="FrameAddonMaintainer" NamesBlock="Trailer" Offset="(0.3; 0.082; 0)" ParentFrame="BoneChassis_cdt" />
 			<Socket Names="FrameAddon" Offset="(0.9; 1.08; 0)" />
+			<Socket Names="FrameAddonFlatbed1" Offset="(1.77; 1.08; 0)" >
+				<AddonsShift Offset="(-1.1; 0; 0)" Types="MinicraneNavistar" />
+			</Socket>
+		</AddonSockets>
+		<AddonSockets >
+			<Socket Names="MinicraneNavistar" NamesBlock="FrameAddon, FrameAddonMaintainer, BunkLog" Offset="(2.75; 1.07; 0)" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="western_star_nf1424_bumper_default">
 			<Socket Names="nf1424Bumper" ParentFrame="BoneCabin_cdt" />

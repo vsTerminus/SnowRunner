@@ -14,6 +14,10 @@
 			<SFX Name="constr_wood_01" Dir="(0; 1; 0)" Pos="(-0.107; 0.562; -0.11)"/>
 		</OnSubsetActivateEvent>
 	</Subset>
+	<Subset Name="state_fin">
+		<Mesh Name="mesh_end" />
+		<CdtMesh Name="mesh_end" />
+	</Subset>
 	<PhysicsModel>
 		<Body Collisions="Dynamic" ModelFrame="mesh_start">
 			<Body Collisions="Dynamic" ModelFrame="mesh_end"/>

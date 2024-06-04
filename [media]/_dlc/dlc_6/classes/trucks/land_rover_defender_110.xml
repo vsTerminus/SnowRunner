@@ -113,6 +113,7 @@
 			<DamageArea Type="FuelTank" Min="(-2.091; 0.404; -0.838)" Max="(-1.309; 1.177; -0.117)" />
 		</Damage>
 		<CompatibleWheels Scale="0.39" Type="wheels_land_rover_defender_110" />
+		<CompatibleWheels OffsetZ="0.02" Scale="0.41" Type="wheels_land_rover_defender_110" />
 		<CompatibleWheels OffsetZ="0.04" Scale="0.39" Type="wheels_scout1" />
 		<CompatibleWheels OffsetZ="0.04" Scale="0.39" Type="wheels_scout2" />
 		<CompatibleWheels OffsetZ="0.04" Scale="0.41" Type="wheels_scout2" />

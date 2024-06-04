@@ -149,7 +149,7 @@
 			<Axle Frame="BoneAxle2" />
 		</Axles>
 	</TruckData>
-	<Snorkel Origin="(2.335; 2.76; -1.632)" />
+	<Snorkel Origin="(2.335; 2.66; -1.632)" />
 	<PhysicsModel Mesh="trucks/cat_770g">
 		<NetSync Legacy="false" />
 		<Body

@@ -5,4 +5,5 @@
 		<BreakType Name="Mushroom" Sound="" />
 		<BreakType Name="Pumpkin" Sound="" />
 		<BreakType Name="Ice" Sound="surfaces/surf_ice_break_rnd" />
+		<BreakType Name="Rockfall" Sound="surfaces/surf_rock_break_rnd" />
 </BreakTypes>

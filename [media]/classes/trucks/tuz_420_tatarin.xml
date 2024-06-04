@@ -4,6 +4,7 @@
 			_template="FirstAxle"
 			SteeringAngle="24"
 			SteeringCastor="4"
+			ConnectedToHandbrake="true"
 		/>
 		<RearAxle
 			ConnectedToHandbrake="true"
@@ -17,6 +18,7 @@
 			SteeringJointOffset="0.3"
 			Torque="default"
 			ParentFrame="BoneCabin_cdt"
+			ConnectedToHandbrake="true"
 		/>
 	</Wheel>
 	<Body>

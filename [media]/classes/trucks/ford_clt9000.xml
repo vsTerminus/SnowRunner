@@ -127,21 +127,22 @@
 				<Gauge Damping="0.9992" Dir="(-0.626; 0.359; 0.692)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/ford_clt9000_arrow_01" Org="(3.612; 2.438; 0.184)" OutputAngles="(20;110)" />
 			</region:default>
 			<region:cis>
-				<Gauge Damping="0.9" Dir="(-2; 1; 0)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/ford_clt9000_arrow_01" Org="(3.814; 2.417; 1.031)" OutputAngles="(-50;90)" />
-				<Gauge Damping="0.9996" Dir="(-2; 1; 0)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/ford_clt9000_arrow_01" Org="(3.814; 2.417; 0.963)" OutputAngles="(-120;80)" />
-				<Gauge Damping="0.9" Dir="(-2; 1; 0)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/ford_clt9000_arrow_01" Org="(3.773; 2.315; 0.893)" OutputAngles="(-40;70)" />
-				<Gauge Damping="0.9" Dir="(-2; 1; 0)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/ford_clt9000_arrow_01" Org="(3.773; 2.315; 0.822)" OutputAngles="(-135;100)" />
-				<Gauge Damping="0.9997" Dir="(-2; 1; 0)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/ford_clt9000_arrow_01" Org="(3.773; 2.315; 0.752)" OutputAngles="(-120;95)" />
-				<Gauge Dir="(-2; 1; 0)" InputRange="(0;1)" InputType="fuel" Mesh="trucks/arrows/ford_clt9000_arrow_01" Org="(3.773; 2.315; 0.683)" OutputAngles="(20;150)" />
-				<Gauge Dir="(-2; 1; 0)" InputRange="(0;1)" InputType="none" Mesh="trucks/arrows/ford_clt9000_arrow_01" Org="(3.814; 2.416; 0.613)" OutputAngles="(-85;100)" />
-				<Gauge Dir="(-2; 1; 0)" InputRange="(0;1)" InputType="none" Mesh="trucks/arrows/ford_clt9000_arrow_01" Org="(3.814; 2.417; 0.613)" OutputAngles="(-85;100)" />
-				<Gauge Dir="(-2; 1; 0)" InputRange="(0;1)" InputType="none" Mesh="trucks/arrows/ford_clt9000_arrow_01" Org="(3.814; 2.416; 0.545)" OutputAngles="(-85;100)" />
-				<Gauge Dir="(-2; 1; 0)" InputRange="(0;1)" InputType="none" Mesh="trucks/arrows/ford_clt9000_arrow_01" Org="(3.814; 2.417; 0.545)" OutputAngles="(-85;100)" />
-				<Gauge Damping="0.5" Dir="(-2; 1; 0)" InputRange="(0;1)" InputType="rpm" Mesh="trucks/arrows/ford_clt9000_arrow_02" Org="(3.808; 2.398; 0.858)" OutputAngles="(-135;100)" />
-				<Gauge Dir="(-2; 1; 0)" InputRange="(0;160)" InputType="speed" Mesh="trucks/arrows/ford_clt9000_arrow_02" Org="(3.808; 2.398; 0.717)" OutputAngles="(-135;100)" />
-				<Gauge Damping="0.9994" Dir="(-0.626; 0.359; 0.692)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/ford_clt9000_arrow_01" Org="(3.715; 2.414; 0.291)" OutputAngles="(-90;100)" />
-				<Gauge Damping="0.9992" Dir="(-0.626; 0.359; 0.692)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/ford_clt9000_arrow_01" Org="(3.660; 2.414; 0.241)" OutputAngles="(-90;100)" />
-				<Gauge Damping="0.9992" Dir="(-0.626; 0.359; 0.692)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/ford_clt9000_arrow_01" Org="(3.604; 2.414; 0.191)" OutputAngles="(20;110)" />
+				<Gauge Damping="0.9" Dir="(-0.927; 0.376; 0)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/awmg_ac1610_arrow_01" Org="(3.824; 2.409; 1.031)" OutputAngles="(-50;90)" />
+				<Gauge Damping="0.9996" Dir="(-0.927; 0.376; 0)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/awmg_ac1610_arrow_01" Org="(3.824; 2.409; 0.963)" OutputAngles="(-120;80)" />
+				<Gauge Damping="0.9" Dir="(-0.927; 0.376; 0)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/awmg_ac1610_arrow_01" Org="(3.824; 2.409; 0.893)" OutputAngles="(-40;70)" />
+				<Gauge Damping="0.9" Dir="(-0.927; 0.376; 0)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/awmg_ac1610_arrow_01" Org="(3.824; 2.409; 0.822)" OutputAngles="(-135;100)" />
+				<Gauge Damping="0.9997" Dir="(-0.927; 0.376; 0)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/awmg_ac1610_arrow_01" Org="(3.824; 2.409; 0.752)" OutputAngles="(-120;95)" />
+				<Gauge Dir="(-0.927; 0.376; 0)" InputRange="(0;1)" InputType="fuel" Mesh="trucks/arrows/awmg_ac1610_arrow_01" Org="(3.824; 2.409; 0.683)" OutputAngles="(20;150)" />
+				<Gauge Dir="(-0.927; 0.376; 0)" InputRange="(0;1)" InputType="none" Mesh="trucks/arrows/awmg_ac1610_arrow_01" Org="(3.824; 2.409; 0.613)" OutputAngles="(-85;100)" />
+				<Gauge Dir="(-0.927; 0.376; 0)" InputRange="(0;1)" InputType="none" Mesh="trucks/arrows/awmg_ac1610_arrow_01" Org="(3.824; 2.410; 0.613)" OutputAngles="(-85;100)" />
+				<Gauge Dir="(-0.927; 0.376; 0)" InputRange="(0;1)" InputType="none" Mesh="trucks/arrows/awmg_ac1610_arrow_01" Org="(3.824; 2.409; 0.545)" OutputAngles="(-85;100)" />
+				<Gauge Dir="(-0.927; 0.376; 0)" InputRange="(0;1)" InputType="none" Mesh="trucks/arrows/awmg_ac1610_arrow_01" Org="(3.824; 2.410; 0.545)" OutputAngles="(-85;100)" />
+				
+				<Gauge Damping="0.5" Dir="(-0.927;0.376; 0)" InputRange="(0;1)" InputType="rpm" Mesh="trucks/arrows/awmg_ac1610_arrow_02" Org="(3.794; 2.325; 0.858)" OutputAngles="(-135;100)" />
+				<Gauge Dir="(-0.927;0.376; 0)" InputRange="(0;160)" InputType="speed" Mesh="trucks/arrows/awmg_ac1610_arrow_02" Org="(3.794; 2.325; 0.717)" OutputAngles="(-135;100)" />
+				<Gauge Damping="0.9994" Dir="(-0.626; 0.359; 0.692)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/awmg_ac1610_arrow_01" Org="(3.723; 2.409; 0.282)" OutputAngles="(-90;100)" />
+				<Gauge Damping="0.9992" Dir="(-0.626; 0.359; 0.692)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/awmg_ac1610_arrow_01" Org="(3.667; 2.409; 0.232)" OutputAngles="(-90;100)" />
+				<Gauge Damping="0.9992" Dir="(-0.626; 0.359; 0.692)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/awmg_ac1610_arrow_01" Org="(3.612; 2.409; 0.182)" OutputAngles="(20;110)" />
 			</region:cis>
 		</Dashboard>
 		<Damage>
@@ -284,7 +285,7 @@
 						<Constraint AxisLocal="(1; 0; 0)" MinLimit="4" MaxLimit="22" />
 					</Body>
 					<Body _template="Mudguard" ModelFrame="BoneCabinTrinket01_cdt">
-						<Constraint AxisLocal="(0; 0; 1)" MinLimit="-50" MaxLimit="50" />
+						<Constraint AxisLocal="(0; 0; 1)" MinLimit="-40" MaxLimit="40" />
 					</Body>
 					<Body
 						CenterOfMassOffset="(0; 0; 0)"
@@ -563,7 +564,7 @@
 			<Socket
 				InCockpit="true"
 				Names="StuffAirfreshener"
-				Offset="(3.648; 3.081; 0.368)"
+				Offset="(3.648; 3.070; 0.368)"
 				ParentFrame="BoneCabinPrismatic_cdt"
 			/>
 		</AddonSockets>
@@ -571,7 +572,7 @@
 			<Socket InCockpit="true" Names="StuffCurtainFordClt9000" ParentFrame="BoneCabinPrismatic_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="AddonHorns" NamesBlock="FordClt9000Top" Offset="(3.137; 3.212; 0)" ParentFrame="BoneCabinPrismatic_cdt" />
+			<Socket Names="AddonHorns" NamesBlock="FordClt9000Top" Offset="(3.137; 3.182; 0)" ParentFrame="BoneCabinPrismatic_cdt" />
 		</AddonSockets>
 	</GameData>
 </Truck>

@@ -90,6 +90,12 @@
 			FadeOutTime="10"
 			Volume="1"
 		/>
+		<Asia
+			SoundName="music/central_asia/garage_central_asia"
+			FadeInTime="30"
+			FadeOutTime="10"
+			Volume="1"
+		/>
 	</GarageMusic>
 </_templates>
 <MusicPresets>
@@ -132,6 +138,9 @@
 	</LevelMusic>
 	<LevelMusic LevelName="level_main_menu_us12">
 		<Sound Name="music/carolina/carolina_menu" StartTime="0" EndTime="24" FadeInTime="0" FadeOutTime="5" Volume="2" />
+	</LevelMusic>
+	<LevelMusic LevelName="level_main_menu_ru13">
+		<Sound Name="music/central_asia/central_asia_menu" StartTime="0" EndTime="24" FadeInTime="0" FadeOutTime="5" Volume="2" />
 	</LevelMusic>
 	
 	<!-- ALASKA -->
@@ -450,5 +459,14 @@
 		<Sound Name="music/carolina/carolina_day" StartTime="13" EndTime="20.5" FadeInTime="30" FadeOutTime="10" />
 		<Sound Name="music/carolina/carolina_evening" StartTime="20.5" EndTime="24" FadeInTime="30" FadeOutTime="10" />
 		<GarageMusic _template="Carolina" />
+	</LevelMusic>
+
+	<!-- CENTRAL ASIA -->
+	<LevelMusic LevelName="level_ru_13_01">
+		<Sound Name="music/central_asia/central_asia_night" StartTime="24" EndTime="6" FadeInTime="30" FadeOutTime="10"  />
+		<Sound Name="music/central_asia/central_asia_morning" StartTime="6" EndTime="13" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/central_asia/central_asia_day" StartTime="13" EndTime="20.5" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/central_asia/central_asia_evening" StartTime="20.5" EndTime="24" FadeInTime="30" FadeOutTime="10" />
+		<GarageMusic _template="Asia" />
 	</LevelMusic>
 </MusicPresets>
