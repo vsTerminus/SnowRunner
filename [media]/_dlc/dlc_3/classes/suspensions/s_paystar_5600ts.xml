@@ -8,7 +8,7 @@
 		Name="paystar_5600ts_suspension_default"
 	>
 		<Suspension Damping="0.3" Height="0.08" Strength="0.08" WheelType="front" BrokenSuspensionMax="0.15" SuspensionMin="-0.25" />
-		<Suspension Damping="0.2" Height="0.08" Strength="0.025" WheelType="rear" BrokenSuspensionMax="0.15" SuspensionMin="-0.3" />
+		<Suspension Damping="0.2" Height="0.08" Strength="0.045" WheelType="rear" BrokenSuspensionMax="0.15" SuspensionMin="-0.3" />
 		<GameData
 			Price="4500"
 			UnlockByExploration="false"
@@ -29,8 +29,8 @@
 		DamageCapacity="240"
 		Name="paystar_5600ts_suspension_high"
 	>
-		<Suspension Damping="0.3" Height="0.18" Strength="0.07" WheelType="front" BrokenSuspensionMax="0.15" SuspensionMin="-0.4" />
-		<Suspension Damping="0.2" Height="0.2" Strength="0.022" WheelType="rear" BrokenSuspensionMax="0.15" SuspensionMin="-0.45" />
+		<Suspension Damping="0.3" Height="0.21" Strength="0.09" WheelType="front" BrokenSuspensionMax="0.15" SuspensionMin="-0.4" />
+		<Suspension Damping="0.2" Height="0.22" Strength="0.055" WheelType="rear" BrokenSuspensionMax="0.15" SuspensionMin="-0.45" />
 		<GameData
 			Price="9400"
 			UnlockByExploration="true"
