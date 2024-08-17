@@ -167,6 +167,11 @@
 		<CompatibleWheels Scale="0.6" Type="wheels_heavy_offroad_single" />
 		<CompatibleWheels Scale="0.6" Type="wheels_heavy_mudtires_single" />
 		<CompatibleWheels Scale="0.6" Type="wheels_heavy_mudtires_single2" />
+
+		<CompatibleWheels Scale="0.65" RearOffsetZ="0.04" Type="wheels_heavy_single" />
+		<CompatibleWheels Scale="0.65" RearOffsetZ="0.04" Type="wheels_heavy_offroad_single" />
+		<CompatibleWheels Scale="0.65" RearOffsetZ="0.04" Type="wheels_heavy_mudtires_single" />
+		<CompatibleWheels Scale="0.65" RearOffsetZ="0.04" Type="wheels_heavy_mudtires_single2" />
 		<Camera Center="(-1.5; 0; 0)" ParentFrame="BoneCabin_cdt">
 			<Cockpit
 				_template="Default"
