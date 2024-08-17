@@ -462,50 +462,67 @@
 		<AddonSockets>
 			<Socket
 				Names="SaddleHighFemm37at"
-				NamesBlock="Femm37atMinicraneRU, LogLift"
+				NamesBlock="Femm37atMinicraneRU, LogLift, LogLiftKenworth"
 				Offset="(-4.200; 1.6882; 0)"
 				ParentFrame="BoneChassisBack_cdt"
 			/>
-			<Socket Names="FemmSideboard" NamesBlock="Femm37atMinicraneRU, LogLift" ParentFrame="BoneChassisBack_cdt" Offset="(0; -0.02; 0)">
+			<Socket Names="FemmSideboard" NamesBlock="TatraCrane, Femm37atMinicraneRU, LogLift, LogLiftKenworth" ParentFrame="BoneChassisBack_cdt" Offset="(0; -0.02; 0)">
 				<ExtraParent Frame="BoneChassisBack_cdt"/>
 				<ExtraParent Frame="BoneBack_cdt"/>
 			</Socket>
-			<Socket Names="Azov670963nSideboard" NamesBlock="TatraCrane" ParentFrame="BoneChassisBack_cdt" Offset="(1.2; 0.440; 0)">
+			<Socket Names="Azov670963nSideboard" NamesBlock="TatraCrane, LogLiftKenworth" ParentFrame="BoneChassisBack_cdt" Offset="(1.2; 0.440; 0)">
 				<ExtraParent Frame="BoneChassisBack_cdt" Offset="(0; 0; 0)" />
 				<ExtraParent Frame="BoneCabin_cdt" Offset="(0; 0; 0)" />
 			</Socket>
-			<Socket Names="BigCrane" NamesBlock="LogLift, Femm37atMinicraneRU, TatraCrane, Femm37AtTop, Femm37AtRoofrack" Offset="(-1.5; 1.76; 0)" ParentFrame="BoneChassisBack_cdt"/>
-			<Socket Names="FrameAddon3" NamesBlock="LogLift, Femm37atMinicraneRU" Offset="(-2.35; 1.683; 0)" ParentFrame="BoneChassisBack_cdt" />
-			<Socket Names="FrameAddonSideboard3" NamesBlock="LogLift, Femm37atMinicraneRU" Offset="(-2.35; 1.683; 0)" ParentFrame="BoneChassisBack_cdt" />
-			<Socket Names="KenworthFrameAddonMaintainerBig" NamesBlock="LogLift, Femm37atMinicraneRU, Trailer" Offset="(1.5; 1.79; 0)" ParentFrame="BoneChassisBack_cdt"/>
+			<Socket Names="BigCrane" NamesBlock="LogLift, LogLiftKenworth, Femm37atMinicraneRU, TatraCrane, Femm37AtTop, Femm37AtRoofrack" Offset="(-1.5; 1.76; 0)" ParentFrame="BoneChassisBack_cdt"/>
+			<Socket Names="FrameAddon3" NamesBlock="LogLift, LogLiftKenworth, Femm37atMinicraneRU" Offset="(-2.35; 1.683; 0)" ParentFrame="BoneChassisBack_cdt" />
+			<Socket Names="FrameAddonSideboard3" NamesBlock="LogLift, LogLiftKenworth, Femm37atMinicraneRU" Offset="(-2.35; 1.683; 0)" ParentFrame="BoneBack_cdt" >
+				<ExtraParent Frame="BoneChassisBack_cdt" Offset="(0; 0; 0)" />
+			</Socket>
+			<Socket Names="KenworthFrameAddonMaintainerBig" NamesBlock="LogLift, LogLiftKenworth, Femm37atMinicraneRU, Trailer" Offset="(1.5; 1.79; 0)" ParentFrame="BoneChassisBack_cdt"/>
 			<Socket Names="FrameAddonTank" NamesBlock="" Offset="(-4; 1.683; 0)" ParentFrame="BoneChassisBack_cdt" >
 				<AddonsShift Offset="(2.25; 0; 0)" Types="LogLift" />
+				<AddonsShift Offset="(2.25; 0; 0)" Types="LogLiftKenworth" />
 				<AddonsShift Offset="(2.25; 0; 0)" Types="Femm37atMinicraneRU" />
 			</Socket>
-			<Socket Names="FrameAddonTankLong" NamesBlock="LogLift, Femm37atMinicraneRU" Offset="(-2.0; 1.683; 0)" ParentFrame="BoneChassisBack_cdt" />
-			<Socket Names="FrameAddonLogShort" NamesBlock="" Offset="(-3; 1.683; 0)" ParentFrame="BoneChassisBack_cdt" >
+			<Socket Names="FrameAddonTankLong" NamesBlock="LogLift, LogLiftKenworth, Femm37atMinicraneRU" Offset="(-2.0; 1.683; 0)" ParentFrame="BoneChassisBack_cdt">
+				<ExtraParent Frame="BoneChassisBack_cdt" Offset="(0; 0; 0)" />
+				<ExtraParent Frame="BoneCabin_cdt" Offset="(0; 0; 0)" />
+			</Socket>
+			<Socket Names="FrameAddonLogShort" NamesBlock="" Offset="(-3; 1.683; 0)" ParentFrame="BoneBack_cdt" >
 				<AddonsShift Offset="(2.25; 0; 0)" Types="LogLift" />
+				<AddonsShift Offset="(2.25; 0; 0)" Types="LogLiftKenworth" />
 				<AddonsShift Offset="(2.25; 0; 0)" Types="Femm37atMinicraneRU" />
+				<ExtraParent Frame="BoneChassisBack_cdt" Offset="(0; 0; 0)" />
+				<ExtraParent Frame="BoneCabin_cdt" Offset="(0; 0; 0)" />
 			</Socket>
-			<Socket Names="FrameAddonLogMedium" NamesBlock="" Offset="(-2.4; 1.683; 0)" ParentFrame="BoneChassisBack_cdt" >
+			<Socket Names="FrameAddonLogMedium" NamesBlock="LogLiftKenworth" Offset="(-2.4; 1.683; 0)" ParentFrame="BoneBack_cdt" >
 				<AddonsShift Offset="(1.75; 0; 0)" Types="LogLift" />
+				<AddonsShift Offset="(1.75; 0; 0)" Types="LogLiftKenworth" />
 				<AddonsShift Offset="(1.75; 0; 0)" Types="Femm37atMinicraneRU" />
+				<ExtraParent Frame="BoneChassisBack_cdt" Offset="(0; 0; 0)" />
+				<ExtraParent Frame="BoneCabin_cdt" Offset="(0; 0; 0)" />
 			</Socket>
-			<Socket Names="FrameAddonTow" NamesBlock="LogLift, Femm37atMinicraneRU" Offset="(-3.5; 1.683; 0)" ParentFrame="BoneChassisBack_cdt" />
+			<Socket Names="FrameAddonTow" NamesBlock="LogLift, LogLiftKenworth, Femm37atMinicraneRU" Offset="(-3.5; 1.683; 0)" ParentFrame="BoneChassisBack_cdt" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="Femm37atMinicraneRU" 
 				NamesBlock="" 
 				Offset="(-5.75; 1.68; 0)" 
-				ParentFrame="BoneBack_cdt">
+				ParentFrame="BoneChassisBack_cdt">
 				<AddonsShift Offset="(7.0; 0; 0)" Types="SaddleHighFemm37at" />
 			</Socket>
 			<Socket 
 				Names="LogLift" 
 				NamesBlock="" 
-				Offset="(-5.20; 1.68; 0)" 
+				Offset="(-5.30; 1.68; 0)" 
 				ParentFrame="BoneBack_cdt">
-				<AddonsShift Offset="(7.0; 0; 0)" Types="SaddleHighFemm37at" />
+			</Socket>
+			<Socket 
+				Names="LogLiftKenworth" 
+				NamesBlock="" 
+				Offset="(-6.40; 1.84; 0)" 
+				ParentFrame="BoneChassisBack_cdt">
 			</Socket>
 			<Socket 
 				Names="TatraCrane" 
