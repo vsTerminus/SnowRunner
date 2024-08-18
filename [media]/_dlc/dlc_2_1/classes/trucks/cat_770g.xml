@@ -32,7 +32,7 @@
 		ExhaustStartTime="0.6"
 		FuelCapacity="530"
 		Responsiveness="0.05"
-		SteerSpeed="0.017"
+		SteerSpeed="0.020"
 		TruckImage="cat770gmchr"
 		TruckType="HEAVY"
 		InstallTrailerAddonRequired="cat_770g_farkop"
