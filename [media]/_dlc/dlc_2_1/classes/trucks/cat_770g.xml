@@ -437,18 +437,22 @@
 			<Socket Names="Cat770GFarkop" ParentFrame="BoneChassis_cdt"/>
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="Cat770gSaddle" ParentFrame="BoneChassis_cdt" />
-			<Socket Names="Cat770gSaddleHigh" ParentFrame="BoneChassis_cdt" />
-			<Socket Names="Cat770gTank" NamesBlock="Cat770GFarkop" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="Cat770gSaddle" NamesBlock="LargeSemitrailer, LargeSemitrailerOilTank, SemiTrailer" Offset="(0; 0; 0)" />
+			<Socket Names="Cat770gTank" NamesBlock="SemitrailerCat770g, Cat770GFarkop" Offset="(0; 0; 0)" />
 			<Socket Names="Cat770GService" NamesBlock="Cat770GFarkop" ParentFrame="BoneChassis_cdt"/>
+			<Socket Names="SaddleHigh" NamesBlock="SemitrailerCat770g" Offset="(-1.493; 1.708; 0)" />
+			<!-- This one lines up with the holes at the back of the frame. It's cool but also silly. -->
+			<Socket Names="SaddleLow" NamesBlock="SemitrailerCat770g" Offset="(-2.780; 1.858; 0)" />
+			<!-- This one lines up with the frame itself. It's less cool but also less silly. -->
+			<!-- <Socket Names="SaddleLow" NamesBlock="SemitrailerCat770g" Offset="(-2.500; 1.758; 0)" /> -->
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="Trailer, LogTrailer" Offset="(-3.294; 1.414; -0.000)" ParentFrame="BoneChassis_cdt" />
-			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" NamesBlock="Cat770gSaddle" Offset="(-1.5; 2.4; -0.000)" ParentFrame="BoneChassis_cdt" />
 			<Socket Names="SemitrailerCat770g" Offset="(-1.493; 2.04; 0)" ParentFrame="BoneChassis_cdt" />
-		</AddonSockets>
-		<AddonSockets>
-			<Socket Names="SemitrailerCat770g" Offset="(-1.493; 2.04; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-1.493; 2.14; 0)" />
+			<!-- This one lines up with the holes at the back of the frame. It's cool but also silly. -->
+			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-2.780; 2.182; 0)" />
+			<!-- This one lines up with the frame itself. It's less cool but also less silly. -->
+			<!-- <Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-2.500; 2.072; 0)" /> -->
 		</AddonSockets>
 		<AddonSockets>
 			<Socket
