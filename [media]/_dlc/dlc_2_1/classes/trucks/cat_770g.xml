@@ -130,6 +130,7 @@
 		</Damage>
 		<CompatibleWheels Scale="0.94" Type="wheels_superheavy_cat770g_double" />
 		<CompatibleWheels Scale="0.94" Type="wheels_superheavy_mudtires" />
+		<CompatibleWheels Scale="0.94" Type="wheels_superheavy_single" />
 		<Camera Center="(-1.5; 0; 0)" RadiusMultiplier="1.1">
 			<Cockpit
 				_template="Default"
