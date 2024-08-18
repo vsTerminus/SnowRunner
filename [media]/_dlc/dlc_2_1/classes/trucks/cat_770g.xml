@@ -431,11 +431,21 @@
 		<CraneSocket Pos="(0.173; 1.63; 0.532)" />
 		<CraneSocket Pos="(-2.594; 1.57; 0)" />
 		<AddonSockets>
-			<Socket Names="Cat770gSaddle" Offset="(0; 0; 0)" />
+			<Socket Names="Cat770gSaddle" NamesBlock="LargeSemitrailer, LargeSemitrailerOilTank, SemiTrailer" Offset="(0; 0; 0)" />
 			<Socket Names="Cat770gTank" NamesBlock="SemitrailerCat770g" Offset="(0; 0; 0)" />
+			<Socket Names="SaddleHigh" NamesBlock="SemitrailerCat770g" Offset="(-1.493; 1.708; 0)" />
+			<!-- This one lines up with the holes at the back of the frame. It's cool but also silly. -->
+			<Socket Names="SaddleLow" NamesBlock="SemitrailerCat770g" Offset="(-2.780; 1.858; 0)" />
+			<!-- This one lines up with the frame itself. It's less cool but also less silly. -->
+			<!-- <Socket Names="SaddleLow" NamesBlock="SemitrailerCat770g" Offset="(-2.500; 1.758; 0)" /> -->
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="SemitrailerCat770g" Offset="(-1.493; 2.04; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-1.493; 2.14; 0)" />
+			<!-- This one lines up with the holes at the back of the frame. It's cool but also silly. -->
+			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-2.780; 2.172; 0)" />
+			<!-- This one lines up with the frame itself. It's less cool but also less silly. -->
+			<!-- <Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-2.500; 2.072; 0)" /> -->
 		</AddonSockets>
 		<AddonSockets>
 			<Socket
