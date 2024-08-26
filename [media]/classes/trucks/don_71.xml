@@ -155,6 +155,14 @@
 		<CompatibleWheels Scale="0.45" Type="wheels_scout_highway" />
 		<CompatibleWheels Scale="0.45" Type="wheels_scout_offroad" />
 		<CompatibleWheels OffsetZ="0.1" Scale="0.45" Type="wheels_scout_mudtires" />
+		
+		<CompatibleWheels OffsetZ="0" Scale="0.35" Type="wheels_scout_allterrain" />
+		<CompatibleWheels OffsetZ="0" Scale="0.35" Type="wheels_scout_allterrain_chain" />
+		<CompatibleWheels OffsetZ="0" Scale="0.4" Type="wheels_scout_allterrain" />
+		<CompatibleWheels OffsetZ="0" Scale="0.4" Type="wheels_scout_allterrain_chain" />
+		<CompatibleWheels OffsetZ="0" Scale="0.45" Type="wheels_scout_allterrain" />
+		<CompatibleWheels OffsetZ="0" Scale="0.45" Type="wheels_scout_allterrain_chain" />
+		
 		<Camera Center="(-1.2; 0; 0)" RadiusMultiplier="0.8">
 			<Cockpit
 				_template="Default"

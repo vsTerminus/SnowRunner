@@ -6,7 +6,7 @@
 		DamageCapacity="80"
 		Name="mtb_8106_suspension_default"
 	>
-		<Suspension Damping="0.55" Height="0.23" Strength="0.032" WheelType="front" BrokenSuspensionMax="0.15" SuspensionMin="-0.2" />
+		<Suspension Damping="0.55" Height="0.23" Strength="0.035" WheelType="front" BrokenSuspensionMax="0.15" SuspensionMin="-0.2" />
 		<Suspension Damping="0.55" Height="0.24" Strength="0.043" WheelType="rear" BrokenSuspensionMax="0.15" SuspensionMin="-0.23" />
 		<GameData
 			Price="3800"

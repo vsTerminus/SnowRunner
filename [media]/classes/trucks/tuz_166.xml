@@ -141,14 +141,21 @@
 
 		<CompatibleWheels Scale="0.40" Type="wheels_scout_highway" />
 		<CompatibleWheels Scale="0.40" Type="wheels_scout_offroad" />
-		<CompatibleWheels Scale="0.40" Type="wheels_scout_mudtires" />
+		<CompatibleWheels OffsetZ="0.04" Scale="0.40" Type="wheels_scout_mudtires" />
 
 		<CompatibleWheels Scale="0.45" Type="wheels_scout_highway" />
 		<CompatibleWheels Scale="0.45" Type="wheels_scout_offroad" />
-		<CompatibleWheels Scale="0.45" Type="wheels_scout_mudtires" />
+		<CompatibleWheels OffsetZ="0.02" Scale="0.45" Type="wheels_scout_mudtires" />
 
 		<CompatibleWheels OffsetZ="0.045" Scale="0.50" Type="wheels_scout_offroad" />
 		<CompatibleWheels OffsetZ="0.045" Scale="0.50" Type="wheels_scout_mudtires" />
+		
+		<CompatibleWheels OffsetZ="0" Scale="0.4" Type="wheels_scout_allterrain" />
+		<CompatibleWheels OffsetZ="0" Scale="0.4" Type="wheels_scout_allterrain_chain" />
+		<CompatibleWheels OffsetZ="0.03" Scale="0.45" Type="wheels_scout_allterrain" />
+		<CompatibleWheels OffsetZ="0.03" Scale="0.45" Type="wheels_scout_allterrain_chain" />
+		<CompatibleWheels OffsetZ="0.045" Scale="0.5" Type="wheels_scout_allterrain" />
+		<CompatibleWheels OffsetZ="0.045" Scale="0.5" Type="wheels_scout_allterrain_chain" />
 
 	
 

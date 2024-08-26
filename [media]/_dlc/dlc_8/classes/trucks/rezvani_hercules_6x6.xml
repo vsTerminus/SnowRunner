@@ -160,6 +160,11 @@
 		<CompatibleWheels Scale="0.49" Type="wheels_scout_highway" />
 		<CompatibleWheels Scale="0.49" Type="wheels_scout_offroad" />
 		<CompatibleWheels Scale="0.49" Type="wheels_scout_mudtires" />
+		
+		<CompatibleWheels Scale="0.47" Type="wheels_scout_allterrain" />
+		<CompatibleWheels Scale="0.47" Type="wheels_scout_allterrain_chain" />
+		<CompatibleWheels Scale="0.49" Type="wheels_scout_allterrain" />
+		<CompatibleWheels Scale="0.49" Type="wheels_scout_allterrain_chain" />
 		<Camera Center="(0.3; 0; 0)" RadiusMultiplier="0.8">
 			<Cockpit
 				_template="Default"

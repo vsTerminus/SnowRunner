@@ -369,9 +369,7 @@
 			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(0.715; 1.433; 0)">
 				<AddonsShift Offset="(-0.5; 0; 0)" Types="MinicraneNavistar" />
 			</Socket>
-			<Socket Names="Trailer" Offset="(-1.15; 0.838; 0)">
-				<AddonsShift Offset="(-0.5; 0; 0)" TrailerNamesBlock="Trailer" Types="FrameAddon" />
-			</Socket>
+			<Socket Names="Trailer" Offset="(-1.15; 0.838; 0)"/>
 		</AddonSockets>
 		<AddonSockets DefaultAddon="western_star_nf1424_diff_lock_default">
 			<Socket Names="WesternStarNF1424DiffLock" />

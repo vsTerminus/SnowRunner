@@ -342,8 +342,8 @@
 	>
 		<WinchSocket Pos="(3.4; 1.491; -0.54)" ParentFrame="BoneChassis_cdt" />
 		<WinchSocket Pos="(3.4; 1.54; 0.54)" ParentFrame="BoneChassis_cdt" />
-		<WinchSocket Pos="(-0.503; 1.921; 0.615)" ParentFrame="BoneChassis_cdt" />
-		<WinchSocket Pos="(-0.503; 1.921; -0.615)" ParentFrame="BoneChassis_cdt" />
+		<WinchSocket Pos="(-0.503; 1.921; 1.328)" ParentFrame="BoneChassis_cdt" />
+		<WinchSocket Pos="(-0.503; 1.921; -1.328)" ParentFrame="BoneChassis_cdt" />
 		<WinchSocket Pos="(-4.21; 1.306; -0.0)" ParentFrame="BoneChassis_cdt" />
 		<UiDesc
 			UiDesc="UI_VEHICLE_BURLAK_6X6_DESC"

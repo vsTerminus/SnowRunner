@@ -1227,4 +1227,17 @@
 	<Truck _template="OutsideSticker1x1" Name="sticker_roof_1x1_aac_58dw" />
 	<Truck _template="GlassStickerBottom2x16" Name="sticker_glass_bottom_aac_58dw" />
 	<!--<- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -/>-->
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_01_rezvani_tank" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_02_rezvani_tank" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_03_rezvani_tank" />
+	<Truck _template="InsideSticker1x2" Name="sticker_inside_1x2_01_rezvani_tank" />
+	<Truck _template="InsideSticker1x2" Name="sticker_inside_1x2_02_rezvani_tank" />
+	<Truck _template="InsideSticker1x4" Name="sticker_inside_1x4_01_rezvani_tank" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_roof_1x1_rezvani_tank" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_door_l_1x1_rezvani_tank" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_door_r_1x1_rezvani_tank" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_capote_1x1_rezvani_tank" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_roof_1x1_rezvani_tank" />
+	<Truck _template="GlassStickerBottom2x16" Name="sticker_glass_bottom_rezvani_tank" />
+	<!--<- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -/>-->
 </TruckSet>

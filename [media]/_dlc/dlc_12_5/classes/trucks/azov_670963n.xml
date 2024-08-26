@@ -315,92 +315,19 @@
 	<ModelAttachments>
 		<StopSignals>
 			<Light _template="StopSignal" Pos="(-6.28; 1.025; 0)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.25" Size="0.06" Pos="(-6.075; 1.19; 0.669)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.25" Size="0.06" Pos="(-6.075; 1.164; 0.669)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.25" Size="0.06" Pos="(-6.075; 1.142; 0.669)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.25" Size="0.06" Pos="(-6.075; 1.118; 0.669)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.25" Size="0.06" Pos="(-6.075; 1.19; 0.698)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.25" Size="0.06" Pos="(-6.075; 1.164; 0.698)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.25" Size="0.06" Pos="(-6.075; 1.142; 0.698)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.25" Size="0.06" Pos="(-6.075; 1.118; 0.698)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.2" Size="0.05" Pos="(-6.075; 1.19; 0.728)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.2" Size="0.05" Pos="(-6.075; 1.164; 0.728)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.2" Size="0.05" Pos="(-6.075; 1.142; 0.728)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.2" Size="0.05" Pos="(-6.075; 1.118; 0.728)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.2" Size="0.05" Pos="(-6.075; 1.19; 0.756)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.2" Size="0.05" Pos="(-6.075; 1.164; 0.756)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.2" Size="0.05" Pos="(-6.075; 1.142; 0.756)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.2" Size="0.05" Pos="(-6.075; 1.118; 0.756)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.2" Size="0.05" Pos="(-6.075; 1.19; 0.786)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.2" Size="0.05" Pos="(-6.075; 1.164; 0.786)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.2" Size="0.05" Pos="(-6.075; 1.142; 0.786)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.2" Size="0.05" Pos="(-6.075; 1.118; 0.786)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.2" Size="0.05" Pos="(-6.075; 1.19; 0.993)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.2" Size="0.05" Pos="(-6.075; 1.164; 0.993)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.2" Size="0.05" Pos="(-6.075; 1.142; 0.993)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.2" Size="0.05" Pos="(-6.075; 1.118; 0.993)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.2" Size="0.05" Pos="(-6.075; 1.19; 1.024)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.2" Size="0.05" Pos="(-6.075; 1.164; 1.024)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.2" Size="0.05" Pos="(-6.075; 1.142; 1.024)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.2" Size="0.05" Pos="(-6.075; 1.118; 1.024)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.2" Size="0.05" Pos="(-6.075; 1.19; 1.053)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.2" Size="0.05" Pos="(-6.075; 1.164; 1.053)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.2" Size="0.05" Pos="(-6.075; 1.142; 1.053)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.2" Size="0.05" Pos="(-6.075; 1.118; 1.053)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.25" Size="0.06" Pos="(-6.075; 1.19; -0.669)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.25" Size="0.06" Pos="(-6.075; 1.164; -0.669)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.25" Size="0.06" Pos="(-6.075; 1.142; -0.669)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.25" Size="0.06" Pos="(-6.075; 1.118; -0.669)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.25" Size="0.06" Pos="(-6.075; 1.19; -0.698)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.25" Size="0.06" Pos="(-6.075; 1.164; -0.698)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.25" Size="0.06" Pos="(-6.075; 1.142; -0.698)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.25" Size="0.06" Pos="(-6.075; 1.118; -0.698)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.2" Size="0.05" Pos="(-6.075; 1.19; -0.728)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.2" Size="0.05" Pos="(-6.075; 1.164; -0.728)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.2" Size="0.05" Pos="(-6.075; 1.142; -0.728)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.2" Size="0.05" Pos="(-6.075; 1.118; -0.728)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.2" Size="0.05" Pos="(-6.075; 1.19; -0.756)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.2" Size="0.05" Pos="(-6.075; 1.164; -0.756)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.2" Size="0.05" Pos="(-6.075; 1.142; -0.756)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.2" Size="0.05" Pos="(-6.075; 1.118; -0.756)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.2" Size="0.05" Pos="(-6.075; 1.19; -0.786)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.2" Size="0.05" Pos="(-6.075; 1.164; -0.786)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.2" Size="0.05" Pos="(-6.075; 1.142; -0.786)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.2" Size="0.05" Pos="(-6.075; 1.118; -0.786)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.2" Size="0.05" Pos="(-6.075; 1.19; -0.993)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.2" Size="0.05" Pos="(-6.075; 1.164; -0.993)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.2" Size="0.05" Pos="(-6.075; 1.142; -0.993)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.2" Size="0.05" Pos="(-6.075; 1.118; -0.993)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.2" Size="0.05" Pos="(-6.075; 1.19; -1.024)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.2" Size="0.05" Pos="(-6.075; 1.164; -1.024)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.2" Size="0.05" Pos="(-6.075; 1.142; -1.024)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.2" Size="0.05" Pos="(-6.075; 1.118; -1.024)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.2" Size="0.05" Pos="(-6.075; 1.19; -1.053)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.2" Size="0.05" Pos="(-6.075; 1.164; -1.053)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.2" Size="0.05" Pos="(-6.075; 1.142; -1.053)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.2" Size="0.05" Pos="(-6.075; 1.118; -1.053)" ParentFrame="BoneChassis_cdt" />
-					
+			<Flare _template="StopSignal" AspectRatio="2" Color="g(255; 0; 0) x 0.3" Dir="(-1; 0; 0)" Size="0.2" Pos="(-6.072; 1.150; -0.729)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="StopSignal" AspectRatio="2" Color="g(255; 0; 0) x 0.3" Dir="(-1; 0; 0)" Size="0.2" Pos="(-6.072; 1.150; 0.729)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="StopSignal" AspectRatio="2" Color="g(255; 0; 0) x 0.3" Dir="(-1; 0; 0)" Size="0.2" Pos="(-6.072; 1.150; -1.022)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="StopSignal" AspectRatio="2" Color="g(255; 0; 0) x 0.3" Dir="(-1; 0; 0)" Size="0.2" Pos="(-6.072; 1.150; 1.022)" ParentFrame="BoneChassis_cdt" />	
 		</StopSignals>
 		<Ignition>
 			<Light _template="IgnitionSignalWhite" Color="g(170; 160; 160) x 1.2" Pos="(5.691; 1.028; 0.967)" ParentFrame="BoneCabin_cdt" />
 			<Light _template="IgnitionSignalWhite" Color="g(170; 160; 160) x 1.2" Pos="(5.691; 1.028; -0.967)" ParentFrame="BoneCabin_cdt" />
-			<Flare _template="IgnitionSignalRed" AspectRatio="6" Size="0.05" Pos="(-6.075; 1.18; 0.843)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="IgnitionSignalRed" AspectRatio="6" Size="0.05" Pos="(-6.075; 1.158; 0.843)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="IgnitionSignalRed" AspectRatio="6" Size="0.05" Pos="(-6.075; 1.136; 0.843)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="IgnitionSignalRed" AspectRatio="6" Size="0.05" Pos="(-6.075; 1.11; 0.843)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="IgnitionSignalRed" AspectRatio="3" Size="0.05" Pos="(-6.075; 1.18; 1.11)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="IgnitionSignalRed" AspectRatio="3" Size="0.05" Pos="(-6.075; 1.158; 1.11)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="IgnitionSignalRed" AspectRatio="3" Size="0.05" Pos="(-6.075; 1.136; 1.11)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="IgnitionSignalRed" AspectRatio="3" Size="0.05" Pos="(-6.075; 1.11; 1.11)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="IgnitionSignalRed" AspectRatio="6" Size="0.05" Pos="(-6.075; 1.18; -0.843)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="IgnitionSignalRed" AspectRatio="6" Size="0.05" Pos="(-6.075; 1.158; -0.843)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="IgnitionSignalRed" AspectRatio="6" Size="0.05" Pos="(-6.075; 1.136; -0.843)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="IgnitionSignalRed" AspectRatio="6" Size="0.05" Pos="(-6.075; 1.11; -0.843)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="IgnitionSignalRed" AspectRatio="3" Size="0.05" Pos="(-6.075; 1.18; -1.11)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="IgnitionSignalRed" AspectRatio="3" Size="0.05" Pos="(-6.075; 1.158; -1.11)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="IgnitionSignalRed" AspectRatio="3" Size="0.05" Pos="(-6.075; 1.136; -1.11)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="IgnitionSignalRed" AspectRatio="3" Size="0.05" Pos="(-6.075; 1.11; -1.11)" ParentFrame="BoneChassis_cdt" />
 			<Light _template="IgnitionSignalRed" Pos="(-6.28; 1.025; 0)" />
+			<Flare _template="IgnitionSignalRed" AspectRatio="1" Size="0.32" Pos="(-6.072; 1.155; 1.109)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="IgnitionSignalRed" AspectRatio="1" Size="0.32" Pos="(-6.072; 1.155; -1.109)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="IgnitionSignalRed" AspectRatio="1" Size="0.32" Pos="(-6.072; 1.155; 0.844)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="IgnitionSignalRed" AspectRatio="1" Size="0.32" Pos="(-6.072; 1.155; -0.844)" ParentFrame="BoneChassis_cdt" />
 			<Flare _template="IgnitionSignalWhite" ColorMultAtDay=".05" Color="g(143; 125; 112) x 1.2" Size="0.2" Pos="(5.558; 1.028; -0.967)" Dir="(1; 0; 0)" ParentFrame="BoneCabin_cdt" />
 			<Flare _template="IgnitionSignalWhite" ColorMultAtDay=".05" Color="g(143; 125; 112) x 1.2" Size="0.2" Pos="(5.558; 1.028; 0.967)" Dir="(1; 0; 0)" ParentFrame="BoneCabin_cdt" />
 			<Flare _template="IgnitionSignalWhite" ColorMultAtDay=".05" Color="g(170; 160; 160) x 1.2" Size="0.2" Pos="(5.606; 1.348; -0.853)" ParentFrame="BoneCabin_cdt" />
@@ -435,43 +362,13 @@
 			<Flare _template="BlueStreak" Pos="(5.573; 1.348; 1.025)" ParentFrame="BoneCabin_cdt" />
 		</HeadLight>
 		<ReverseSignals>
-			<Light _template="ReverseSignal" Pos="(-6.075; 1.092; 0.909)" />
-			<Light _template="ReverseSignal" Pos="(-6.075; 1.092; -0.909)" />
-			<Flare _template="ReverseSignal" Color="g(220; 220; 225) x 0.3" Size="0.06" Pos="(-6.075; 1.095; -0.67)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="ReverseSignal" Color="g(220; 220; 225) x 0.3" Size="0.06" Pos="(-6.075; 1.095; -0.699)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="ReverseSignal" Color="g(220; 220; 225) x 0.3" Size="0.06" Pos="(-6.075; 1.095; -0.728)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="ReverseSignal" Color="g(220; 220; 225) x 0.3" Size="0.06" Pos="(-6.075; 1.095; -0.758)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="ReverseSignal" Color="g(220; 220; 225) x 0.3" Size="0.06" Pos="(-6.075; 1.095; -0.788)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="ReverseSignal" Color="g(220; 220; 225) x 0.3" Size="0.06" Pos="(-6.075; 1.095; -0.817)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="ReverseSignal" Color="g(220; 220; 225) x 0.3" Size="0.06" Pos="(-6.075; 1.095; -0.846)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="ReverseSignal" Color="g(220; 220; 225) x 0.3" Size="0.06" Pos="(-6.075; 1.095; -0.877)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="ReverseSignal" Color="g(220; 220; 225) x 0.3" Size="0.06" Pos="(-6.075; 1.095; -0.906)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="ReverseSignal" Color="g(220; 220; 225) x 0.3" Size="0.06" Pos="(-6.075; 1.095; -0.936)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="ReverseSignal" Color="g(220; 220; 225) x 0.3" Size="0.06" Pos="(-6.075; 1.095; -0.967)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="ReverseSignal" Color="g(220; 220; 225) x 0.3" Size="0.06" Pos="(-6.075; 1.095; -0.995)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="ReverseSignal" Color="g(220; 220; 225) x 0.3" Size="0.06" Pos="(-6.075; 1.095; -1.025)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="ReverseSignal" Color="g(220; 220; 225) x 0.3" Size="0.06" Pos="(-6.075; 1.095; -1.056)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="ReverseSignal" Color="g(220; 220; 225) x 0.3" Size="0.06" Pos="(-6.075; 1.095; -1.082)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="ReverseSignal" Color="g(220; 220; 225) x 0.3" Size="0.06" Pos="(-6.075; 1.095; -1.113)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="ReverseSignal" Color="g(220; 220; 225) x 0.3" Size="0.06" Pos="(-6.075; 1.095; 0.67)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="ReverseSignal" Color="g(220; 220; 225) x 0.3" Size="0.06" Pos="(-6.075; 1.095; 0.699)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="ReverseSignal" Color="g(220; 220; 225) x 0.3" Size="0.06" Pos="(-6.075; 1.095; 0.728)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="ReverseSignal" Color="g(220; 220; 225) x 0.3" Size="0.06" Pos="(-6.075; 1.095; 0.758)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="ReverseSignal" Color="g(220; 220; 225) x 0.3" Size="0.06" Pos="(-6.075; 1.095; 0.788)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="ReverseSignal" Color="g(220; 220; 225) x 0.3" Size="0.06" Pos="(-6.075; 1.095; 0.817)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="ReverseSignal" Color="g(220; 220; 225) x 0.3" Size="0.06" Pos="(-6.075; 1.095; 0.846)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="ReverseSignal" Color="g(220; 220; 225) x 0.3" Size="0.06" Pos="(-6.075; 1.095; 0.877)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="ReverseSignal" Color="g(220; 220; 225) x 0.3" Size="0.06" Pos="(-6.075; 1.095; 0.906)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="ReverseSignal" Color="g(220; 220; 225) x 0.3" Size="0.06" Pos="(-6.075; 1.095; 0.936)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="ReverseSignal" Color="g(220; 220; 225) x 0.3" Size="0.06" Pos="(-6.075; 1.095; 0.967)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="ReverseSignal" Color="g(220; 220; 225) x 0.3" Size="0.06" Pos="(-6.075; 1.095; 0.995)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="ReverseSignal" Color="g(220; 220; 225) x 0.3" Size="0.06" Pos="(-6.075; 1.095; 1.025)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="ReverseSignal" Color="g(220; 220; 225) x 0.3" Size="0.06" Pos="(-6.075; 1.095; 1.056)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="ReverseSignal" Color="g(220; 220; 225) x 0.3" Size="0.06" Pos="(-6.075; 1.095; 1.082)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="ReverseSignal" Color="g(220; 220; 225) x 0.3" Size="0.06" Pos="(-6.075; 1.095; 1.113)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.15" Dir="(-1; 0; 0)" Size="0.2" Pos="(-6.072; 1.087; -0.892)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.15" Dir="(-1; 0; 0)" Size="0.2" Pos="(-6.072; 1.087; 0.892)" ParentFrame="BoneChassis_cdt" />
-		</ReverseSignals>	
+			<Light _template="ReverseSignal" Pos="(-6.075; 1.092; 0.909)" ParentFrame="BoneChassis_cdt" />
+			<Light _template="ReverseSignal" Pos="(-6.075; 1.092; -0.909)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="ReverseSignal" Color="g(220; 220; 225) x 0.3" Size="0.2" Pos="(-6.072; 1.087; -0.892)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="ReverseSignal" Color="g(220; 220; 225) x 0.3" Size="0.2" Pos="(-6.072; 1.087; 0.892)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.2" Dir="(-1; 0; 0)" Size="0.2" Pos="(-6.072; 1.087; -0.892)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.2" Dir="(-1; 0; 0)" Size="0.2" Pos="(-6.072; 1.087; 0.892)" ParentFrame="BoneChassis_cdt" />
+		</ReverseSignals>
 	</ModelAttachments>
 	<Landmark Mesh="landmarks/azov_670963n_lmk" MinScale="1.5" MaxScale="2.5" />
 	<HeadLight _template="Default" Pos="(5.874; 1.374; 0)" ParentFrame="BoneCabin_cdt" />

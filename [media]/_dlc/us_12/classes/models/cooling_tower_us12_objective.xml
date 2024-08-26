@@ -53,7 +53,6 @@
 	</AnimSubset>
 	<TrackEvents TrackName="anim_stage_1">
 		<AnimEvent Key="10">
-			<SFX Name="steam_us_12_grad" Dir="(0; 1; 0)" Pos="(0; 70.5; 0)"/>
 			<SFX Dir="(0; -1; 0)" Name="conveyor_smoke_02" Pos="(-14.72; -0.8; -10.86)" />
 			<SFX Dir="(0; -1; 0)" Name="conveyor_smoke_02" Pos="(-20.03; -0.35; 0.77)" />
 			<SFX Dir="(0; -1; 0)" Name="conveyor_smoke_02" Pos="(-18.48; -0.87; 13.54)" />
@@ -92,7 +91,6 @@
 
 		<AnimEvent Key="40">
 			<Sound Name="actors/actor_construction/actor_construct_container_03" Range="200" Volume="1"/>
-			<SFX Name="steam_down_us_12_grad" Dir="(0; 1; 0)" Pos="(0; -3.5; 0)"/>
 			<SFX Dir="(0; -1; 0)" Name="conveyor_smoke_02" Pos="(-14.72; -0.8; -10.86)" />
 			<SFX Dir="(0; -1; 0)" Name="conveyor_smoke_02" Pos="(-20.03; -0.35; 0.77)" />
 			<SFX Dir="(0; -1; 0)" Name="conveyor_smoke_02" Pos="(-18.48; -0.87; 13.54)" />

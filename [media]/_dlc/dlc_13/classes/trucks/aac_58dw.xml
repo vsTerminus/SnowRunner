@@ -137,12 +137,12 @@
 			SteeringWheelPos="(0.31; 1.322; 0.421)"
 		/>
 		<Dashboard>
-			<Gauge Damping="0.9" Dir="(-0.851; 0.65; -0.001)" InputRange="(0;200)" InputType="speed" Mesh="trucks/arrows/aac_58dw_arrow_03" Org="(0.546; 1.368; 0.338)" OutputAngles="(-122;90)" />
-			<Gauge Damping="0.9" Dir="(-0.851; 0.65; -0.001)" InputRange="(0;1)" InputType="rpm" Mesh="trucks/arrows/aac_58dw_arrow_02" Org="(0.541; 1.381; 0.421)" OutputAngles="(-122;90)" />
-			<Gauge Damping="0.5" Dir="(-0.851; 0.65; -0.001)" InputRange="(0;1)" InputType="fuel" Mesh="trucks/arrows/aac_58dw_arrow_01" Org="(0.556; 1.377; 0.493)" OutputAngles="(70; 5)" />
-			<Gauge Damping="0.9" Dir="(-0.851; 0.65; -0.001)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/aac_58dw_arrow_01" Org="(0.556; 1.377; 0.516)" OutputAngles="(-61; -30)" />
-			<Gauge Damping="0.9" Dir="(-0.851; 0.65; -0.001)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/aac_58dw_arrow_01" Org="(0.542; 1.361; 0.519)" OutputAngles="(-140; -87)" />
-			<Gauge Damping="0.9" Dir="(-0.851; 0.65; -0.001)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/aac_58dw_arrow_01" Org="(0.543; 1.361; 0.488)" OutputAngles="(140; 110)" />
+			<Gauge Damping="0.9" Dir="(-0.750; 0.661; 0)" InputRange="(0;200)" InputType="speed" Mesh="trucks/arrows/aac_58dw_arrow_03" Org="(0.546; 1.368; 0.338)" OutputAngles="(-122;90)" />
+			<Gauge Damping="0.9" Dir="(-0.750; 0.661; 0)" InputRange="(0;1)" InputType="rpm" Mesh="trucks/arrows/aac_58dw_arrow_02" Org="(0.541; 1.381; 0.421)" OutputAngles="(-122;90)" />
+			<Gauge Damping="0.5" Dir="(-0.750; 0.661; 0)" InputRange="(0;1)" InputType="fuel" Mesh="trucks/arrows/aac_58dw_arrow_01" Org="(0.556; 1.377; 0.493)" OutputAngles="(70; 5)" />
+			<Gauge Damping="0.9" Dir="(-0.750; 0.661; 0)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/aac_58dw_arrow_01" Org="(0.556; 1.377; 0.516)" OutputAngles="(-61; -30)" />
+			<Gauge Damping="0.9" Dir="(-0.750; 0.661; 0)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/aac_58dw_arrow_01" Org="(0.542; 1.361; 0.519)" OutputAngles="(-140; -87)" />
+			<Gauge Damping="0.9" Dir="(-0.750; 0.661; 0)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/aac_58dw_arrow_01" Org="(0.543; 1.361; 0.488)" OutputAngles="(140; 110)" />
 		</Dashboard>
 		<Damage>
 			<DamageArea Type="Engine" Min="(0.89; 0.547; -0.365)" Max="(1.746; 1.145; 0.365)" ParentFrame="BoneChassis_cdt" />
@@ -160,6 +160,11 @@
 		<CompatibleWheels Scale="0.44" Type="wheels_scout_highway" />
 		<CompatibleWheels OffsetZ="0.05" Scale="0.44" Type="wheels_scout_offroad" />
 		<CompatibleWheels OffsetZ="0.09" Scale="0.44" Type="wheels_scout_mudtires" />
+		
+		<CompatibleWheels OffsetZ="0.05" Scale="0.41" Type="wheels_scout_allterrain" />
+		<CompatibleWheels OffsetZ="0.05" Scale="0.41" Type="wheels_scout_allterrain_chain" />
+		<CompatibleWheels OffsetZ="0.05" Scale="0.44" Type="wheels_scout_allterrain" />
+		<CompatibleWheels OffsetZ="0.05" Scale="0.44" Type="wheels_scout_allterrain_chain" />
 		<Camera Center="(-1.3; 0; 0)" RadiusMultiplier="0.8">
 			<Cockpit
 				_template="Default"
