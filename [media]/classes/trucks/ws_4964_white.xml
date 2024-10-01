@@ -323,7 +323,7 @@
 	<Landmark Mesh="landmarks/ws_4964_white_lmk" MinScale="1.8" MaxScale="3.8" />
 	<HeadLight _template="Default" Pos="(4.539; 1.163; -0)" ParentFrame="BoneCabin_cdt" />
 	<GameData
-		Country="US,NE"
+		Country="US,NE,CE"
 		Price="32200"
 		UnlockByExploration="true"
 		UnlockByRank="1"
@@ -379,13 +379,13 @@
 				<AddonsShift Offset="(0; 0; 0)" TrailerNamesBlock="LargeSemitrailerOiltank" Types="MinicraneUS, WS4964WhiteCabinProtector" />
 			</Socket>
 			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-2.76; 1.62; 0)" />
-			<Socket Names="Trailer" Offset="(-4.329; 0.865; 0)">
-				<AddonsShift Offset="(0; 0; 0)" TrailerNamesBlock="Trailer" Types="MinicraneUS, FrameAddon" />
-				<AddonsShift Offset="(0; 0; 0)" TrailerNamesBlock="Trailer" Types="WS4964WhiteCabinProtector, FrameAddon" />
+			<Socket Names="Trailer, LogTrailer" Offset="(-4.329; 0.865; 0)">
+				<AddonsShift Offset="(0; 0; 0)" TrailerNamesBlock="Trailer, LogTrailer" Types="MinicraneUS, FrameAddon" />
+				<AddonsShift Offset="(0; 0; 0)" TrailerNamesBlock="Trailer, LogTrailer" Types="WS4964WhiteCabinProtector, FrameAddon" />
 			</Socket>
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="FrameAddonTowPlatform" Offset="(-0.85; 1.091; 0)" NamesBlock="WS4964WhiteCabinProtector, MinicraneUS, Trailer" />
+			<Socket Names="FrameAddonTowPlatform" Offset="(-0.85; 1.091; 0)" NamesBlock="WS4964WhiteCabinProtector, MinicraneUS, Trailer, LogTrailer" />
 			<Socket Names="LogLift" Offset="(0.123; 1.091; 0)" NamesBlock="MinicraneUS, Ws4964WhiteSpareWheel" />
 			<Socket Names="BunkLog" Offset="(-4.772; 1.143; 0)" NamesBlock="MinicraneUS" >
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.05; 0)" />
@@ -404,7 +404,7 @@
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.16)" />
 			</Socket>
 			<Socket Names="FrameAddonTank" Offset="(-2.370; 1.09; 0)" ParentFrame="BoneChassis_cdt" />
-			<Socket Names="FrameAddonMaintainer" NamesBlock="MinicraneUS, WS4964WhiteCabinProtector, Trailer" Offset="(-2.05; 0.061; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="FrameAddonMaintainer" NamesBlock="MinicraneUS, WS4964WhiteCabinProtector, Trailer, LogTrailer" Offset="(-2.05; 0.061; 0)" ParentFrame="BoneChassis_cdt" />
 			<Socket Names="BigCraneUsWS4964" NamesBlock="MinicraneUS, WS4964WhiteCabinProtector" Offset="(-1.947; 1.097; 0)" />
 		</AddonSockets>
 		<AddonSockets>

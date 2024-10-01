@@ -522,12 +522,12 @@
 			<!-- <Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-2.817; 1.46; -0.002)" /> -->
 			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-3.017; 1.46; -0.002)" />
 			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-2; 1.62; -0.002)" />
-			<Socket Names="Trailer" Offset="(-5; 1.013; 0)">
-				<AddonsShift Offset="(0; 0; 0)" TrailerNamesBlock="Trailer" Types="MinicraneRU, FrameAddon" />
+			<Socket Names="Trailer, LogTrailer" Offset="(-5; 1.013; 0)">
+				<AddonsShift Offset="(0; 0; 0)" TrailerNamesBlock="Trailer, LogTrailer" Types="MinicraneRU, FrameAddon" />
 			</Socket>
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="FrameAddonTowPlatform" Offset="(-1.45; 1.15; 0)" NamesBlock="MinicraneRU, Trailer" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="FrameAddonTowPlatform" Offset="(-1.45; 1.15; 0)" NamesBlock="MinicraneRU, Trailer, LogTrailer" ParentFrame="BoneChassis_cdt" />
 			<Socket Names="BunkLog" Offset="(-6.339; 1.160; 0)" NamesBlock="MinicraneRU" />
 			<Socket Names="SaddleLow" Offset="(-3.017; 1.16; -0.002)">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.02)" />
@@ -552,7 +552,7 @@
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.1; 0)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.1; 0)" />
 			</Socket>
-			<Socket Names="FrameAddonMaintainer" NamesBlock="Trailer, MinicraneRU" Offset="(-2.87; 0.126; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="FrameAddonMaintainer" NamesBlock="Trailer, MinicraneRU, LogTrailer" Offset="(-2.87; 0.126; 0)" ParentFrame="BoneChassis_cdt" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="voron_grad_diff_lock_default">
 			<Socket Names="VoronGradDiffLock" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />

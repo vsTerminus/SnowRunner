@@ -308,7 +308,7 @@
 	<Landmark Mesh="landmarks/navistar_5000mv_lmk" MinScale="1.8" MaxScale="3.8" />
 	<HeadLight _template="Default" Pos="(2; 1.121; 0)" />
 	<GameData
-		Country="US,NE"
+		Country="US,NE,CE"
 		Price="113600"
 		UnlockByExploration="false"
 		UnlockByRank="1"
@@ -383,7 +383,7 @@
 			<Socket Names="Navistar5000mvBumper" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="Trailer" Offset="(-6.356; 0.87; 0)" />
+			<Socket Names="Trailer, LogTrailer" Offset="(-6.356; 0.87; 0)" />
 			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-4.747; 1.47; 0)" />
 			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-4.4; 1.64; 0)" />
 		</AddonSockets>

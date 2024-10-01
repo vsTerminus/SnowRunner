@@ -566,7 +566,7 @@
 	<Landmark Mesh="landmarks/ws_6900xd_twin_lmk" MinScale="1.5" MaxScale="2.5" />
 	<HeadLight _template="Default" Pos="(8.318; 1.103; 0)" ParentFrame="BoneCabin_cdt" />
 	<GameData
-		Country="US,NE"
+		Country="US,NE,CE"
 		ExcludedCargoTypes="CargoPlane, CargoWing1, CargoWing2"
 		Price="90300"
 		UnlockByExploration="false"

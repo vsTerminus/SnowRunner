@@ -397,7 +397,7 @@
 			<Socket Names="FrameAddonMaintainerSmall" Offset="(-1.3; 1.141; 0)" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="Trailer" Offset="(-3.128; 1.045; 0)" />
+			<Socket Names="Trailer, LogTrailer" Offset="(-3.128; 1.045; 0)" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="MinicraneRU" NamesBlock="BunkLog, FrameAddonMaintainerSmall, FrameAddonTankSmall" Offset="(-0.1; 1.141; 0)">

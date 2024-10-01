@@ -252,7 +252,7 @@
 	<Landmark Mesh="landmarks/tatra_805_lmk" MinScale="1.8" MaxScale="3.8" />
 	<HeadLight _template="Default" Pos="(2.577; 0.917; 0)" ParentFrame="BoneCabin_cdt" />
 	<GameData
-		Country="RU,CAS,NE"
+		Country="RU,CAS,NE,CE"
 		ExcludeAddons="trailer_log_pole"
 		Price="22500"
 		UnlockByExploration="false"

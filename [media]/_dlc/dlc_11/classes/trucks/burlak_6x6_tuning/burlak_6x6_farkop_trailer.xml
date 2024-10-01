@@ -11,8 +11,8 @@
 		UnlockByExploration="false"
 		UnlockByRank="1"
 	>
-		<WinchSocket Pos="(-4.351; 1.143; 0)" ParentFrame="BoneChassis_cdt" />
-		<CraneSocket Pos="(-4.351; 1.143; 0)" ParentFrame="BoneChassis_cdt" />
+		<WinchSocket Pos="(-4.351; 1.143; 0)" FixedToTruck="true" />
+		<CraneSocket Pos="(-4.351; 1.143; 0)" FixedToTruck="true" />
 		<UiDesc
 			UiDesc="UI_TUNING_FARKOP_TRAILER_DESC"
 			UiIcon30x30=""

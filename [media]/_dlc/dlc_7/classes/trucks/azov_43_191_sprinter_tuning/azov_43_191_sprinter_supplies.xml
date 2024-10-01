@@ -1,6 +1,6 @@
 <_templates Include="trucks" />
 <TruckAddon>
-	<TruckData FuelCapacity="50" RepairsCapacity="150">
+	<TruckData FuelCapacity="200" RepairsCapacity="350" WheelRepairsCapacity="4">
 		<LimitedFluid Center="(-0.55; 1.609; 0.24)" SizeX="0.308" SizeY="0.121" SizeZ="0.352" Type="Box" />
 		<LimitedFluid Center="(-0.55; 1.609; -0.158)" SizeX="0.308" SizeY="0.121" SizeZ="0.352" Type="Box" />
 	</TruckData>

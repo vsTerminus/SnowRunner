@@ -1,0 +1,32 @@
+<CombineParticles 
+	AirResistance="20.0" 
+	Gravity="(-0.1; 0.2; 0)"
+	Wind="(0.5; 0.7; 0.0)"
+	WindDivergence="70"
+>
+	<Texture
+		Diffuse="sfx/particles/dandelion__d_a.tga"
+		NumFramesX="1"
+		NumFramesY="1"
+	/>
+	<Size Function="(0.06; 0.03; 0.00)" Median="0.8" />
+	<Size Constant="0.01" />
+	<Scale Random="0.2" Value="1.8" />
+	<RotationSpeed Random="200" Value="100" />
+	<Rotation Random="180" />
+	<LifeTime Random="2.5" Value="4.0" />
+	<Color Value="g(255; 255; 255) x 0.9">
+		<Key Alpha="190" At="0.0" />
+		<Key Alpha="190" At="0.3" />
+		<Key Alpha="190" At="0.8" />
+		<Key Alpha="0" At="1.0" />
+	</Color>
+	<Collisions
+		DetectFullOcclusionBox="true"
+		DetectWheels="true"
+		Enable="true"
+		Friction="0.6"
+		Radius="0.007"
+		Restitution="0.2"
+	/>
+</CombineParticles>

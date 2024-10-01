@@ -302,7 +302,7 @@
 	<Landmark Mesh="landmarks/jeep_wrangler_lmk" MinScale="1.8" MaxScale="3.8" />
 	<HeadLight _template="Default" Pos="(2.5; 0.979; 0)" />
 	<GameData
-		Country="US,NE"
+		Country="US,NE,CE"
 		Price="2900"
 		Recallable="true"
 		UnlockByExploration="false"

@@ -405,7 +405,7 @@
 		<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 		<AddonSockets>
 			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-2.6; 1.4; 0)" />
-			<Socket Names="Trailer" Offset="(-3.747; 0.604; 0)">
+			<Socket Names="Trailer, LogTrailer" Offset="(-3.747; 0.604; 0)">
 				<AddonsShift Offset="(-0.64; 0.02; 0)" Types="ZiKZ566aFirefighterAddon" />
 			</Socket>
 		</AddonSockets>

@@ -282,7 +282,7 @@
 	<Landmark Mesh="landmarks/hummer_h2_lmk" MinScale="1.8" MaxScale="3.8" />
 	<HeadLight _template="Default" Pos="(2.842; 1.041; 0)" />
 	<GameData
-		Country="US,NE"
+		Country="US,NE,CE"
 		Price="5100"
 		Recallable="true"
 		UnlockByExploration="true"

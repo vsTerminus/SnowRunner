@@ -492,10 +492,10 @@
 			<Socket Names="BunkLog" Offset="(-6.038; 1.891; 0)" ParentFrame="BoneBack_cdt" />
 			<Socket Names="LogLift" Offset="(-1.840; 1.885; 0)" ParentFrame="BoneBack_cdt" />
 			<Socket Names="FrameAddon" Offset="(-2.47; 1.865; 0)" ParentFrame="BoneBack_cdt" />
-			<Socket Names="FrameAddonTowPlatform" Offset="(-1.92; 1.891; 0)" NamesBlock="MinicraneUS, MetalDetector, Trailer" ParentFrame="BoneBack_cdt"/>		
+			<Socket Names="FrameAddonTowPlatform" Offset="(-1.92; 1.891; 0)" NamesBlock="MinicraneUS, MetalDetector, Trailer, LogTrailer" ParentFrame="BoneBack_cdt"/>		
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="Trailer" Offset="(-5.23; 1.265; 0)" ParentFrame="BoneBack_cdt" />
+			<Socket Names="Trailer, LogTrailer" Offset="(-5.23; 1.265; 0)" ParentFrame="BoneBack_cdt" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="azov_4220_antarctic_diff_lock_default">
 			<Socket Names="azov4220antarcticDiffLock" Offset="(0; 0; 0)" ParentFrame="BoneFront_cdt" />

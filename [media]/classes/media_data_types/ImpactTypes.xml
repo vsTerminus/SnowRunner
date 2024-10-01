@@ -11,4 +11,5 @@
 	<ImpactType MinMass="20" Name="Foliage" Sound="trucks/common/truck_foliage_rnd_set/truck_foliage_hit_rnd" />
 	<ImpactType MinVelocity="0.2" Name="Flower" />
 	<ImpactType MinMass="2500" MinVelocity="0.5" Name="IceChunk" Sound="surfaces/surf_ice_break_rnd" />
+	<ImpactType MinVelocity="0.2" Name="Bell" Sound="actors/actor_us_motel_deskbell_rnd_set/actor_us_motel_deskbell_rnd" />
 </ImpactTypes>

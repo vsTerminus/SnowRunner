@@ -287,7 +287,7 @@
 	<Landmark Mesh="landmarks/international_scout_800_lmk" MinScale="1.8" MaxScale="3.8" />
 	<HeadLight _template="Default" Pos="(1.96; 0.739; 0)" />
 	<GameData
-		Country="US,NE"
+		Country="US,NE,CE"
 		Price="4800"
 		Recallable="true"
 		UnlockByExploration="true"

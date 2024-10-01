@@ -304,7 +304,7 @@
 	<Landmark Mesh="landmarks/chevy_apache_lmk" MinScale="1.8" MaxScale="3.8" />
 	<HeadLight _template="Default" Pos="(2.583; 1.579; 0)" ParentFrame="BoneCabin_cdt" />
 	<GameData
-		Country="US,NE"
+		Country="US,NE,CE"
 		Price="29300"
 		UnlockByExploration="false"
 		UnlockByRank="1"

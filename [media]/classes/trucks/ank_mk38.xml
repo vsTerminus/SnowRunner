@@ -292,7 +292,7 @@
 	<Landmark Mesh="landmarks/ank_mk38_lmk" MinScale="1.8" MaxScale="3.8" />
 	<HeadLight _template="Default" Pos="(5; 1.287; 0)" ParentFrame="BoneCabin_cdt" />
 	<GameData
-		Country="US,NE"
+		Country="US,NE,CE"
 		Price="51100"
 		UnlockByExploration="true"
 		UnlockByRank="1"
@@ -339,7 +339,7 @@
 		<CraneSocket Pos="(-0.721; 1.09; -0.429)" />
 		<CraneSocket Pos="(-0.721; 1.09; 0.429)" />
 		<AddonSockets>
-			<Socket Names="Trailer" Offset="(-5.209; 0.919; 0)" />
+			<Socket Names="Trailer, LogTrailer" Offset="(-5.209; 0.919; 0)" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="AnkMk38WheelAddon" Offset="(0; 0; 0)" />

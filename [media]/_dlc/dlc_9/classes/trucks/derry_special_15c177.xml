@@ -504,7 +504,7 @@
 	<Landmark Mesh="landmarks/derry_special_15c177_lmk" MinScale="1.5" MaxScale="2.5" />
 	<HeadLight _template="Default" Pos="(5; 1.287; 0)" ParentFrame="BoneCabin_cdt" />
 	<GameData
-		Country="US,NE"
+		Country="US,NE,CE"
 		Price="150000"
 		UnlockByExploration="true"
 		UnlockByRank="1"
@@ -595,8 +595,8 @@
 			<Socket Names="DerrySpecial15c177SpareWheel" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="Trailer" Offset="(-6.84; 1.060; 0)">
-				<AddonsShift Offset="(0; 0; 0)" TrailerNamesBlock="Trailer" Types="MinicraneRU, FrameAddon" />
+			<Socket Names="Trailer, LogTrailer" Offset="(-6.84; 1.060; 0)">
+				<AddonsShift Offset="(0; 0; 0)" TrailerNamesBlock="Trailer, LogTrailer" Types="MinicraneRU, FrameAddon" />
 			</Socket>
 			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" NamesBlock="SaddleLow" Offset="(-4.85; 1.755; 0)" />
 		</AddonSockets>
@@ -607,8 +607,8 @@
 			<Socket Names="FrameAddon" Offset="(-4.031; 1.479; 0)">
 				<AddonsShift Offset="(-0.6; 0; 0)" Types="MinicraneUS" />
 			</Socket>
-			<Socket Names="FrameAddonMaintainer" NamesBlock="MinicraneUS, Trailer" Offset="(-4.5; 0.45; 0)" ParentFrame="BoneChassis_cdt" />
-			<Socket Names="FrameAddonSeismicVibrator" NamesBlock="Trailer" Offset="(-2.123; 1.482; 0)" />
+			<Socket Names="FrameAddonMaintainer" NamesBlock="MinicraneUS, Trailer, LogTrailer" Offset="(-4.5; 0.45; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="FrameAddonSeismicVibrator" NamesBlock="Trailer, LogTrailer" Offset="(-2.123; 1.482; 0)" />
 			<Socket Names="BigCraneUs" Offset="(-4.2; 1.574; 0)" ParentFrame="BoneChassis_cdt" NamesBlock="FrameAddonDerryFirefighter">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.095; -0.05)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.095; 0.05)" />

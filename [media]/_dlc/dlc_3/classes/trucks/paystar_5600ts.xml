@@ -528,7 +528,7 @@
 	<Landmark Mesh="landmarks/paystar_5600ts_lmk" MinScale="1.5" MaxScale="2.5" />
 	<HeadLight _template="Default" Pos="(6.917; 0.94; 0)" ParentFrame="BoneCabinSusp_cdt" />
 	<GameData
-		Country="US,NE"
+		Country="US,NE,CE"
 		ExcludeAddons="frame_addon_sideboard_2"
 		Price="102600"
 		UnlockByExploration="true"
@@ -577,7 +577,7 @@
 			<Socket Names="LogLift" NamesBlock="FrameAddonLogMediumHigh, SemitrailerOiltank, BigCraneUs, BigCrane, MinicraneUS, FrameAddon3, FrameAddonSideboard3, FrameAddonTankLong, FrameAddonKung" Offset="(1.9; 1.136; 0)" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="FrameAddonTowPlatform" Offset="(-1.85; 1.14; 0)"  NamesBlock="FrameAddonKung, Trailer"/>
+			<Socket Names="FrameAddonTowPlatform" Offset="(-1.85; 1.14; 0)"  NamesBlock="FrameAddonKung, Trailer, LogTrailer"/>
 			<Socket Names="BunkLog" Offset="(-6.097; 1.14; 0)" />
 			<Socket Names="FrameAddonLogShort" Offset="(-2.857; 1.136; 0)" />
 			<Socket Names="FrameAddonLogMediumHigh" Offset="(-1.89; 1.136; 0)" />
@@ -624,7 +624,7 @@
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-3.98; 1.44; 0)" />
-			<Socket Names="Trailer" Offset="(-5.935; 0.98; 0)" />
+			<Socket Names="Trailer, LogTrailer" Offset="(-5.935; 0.98; 0)" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="paystar_5600ts_bumper_default">
 			<Socket Names="paystar5600TsBumper" ParentFrame="BoneCabin_cdt" />

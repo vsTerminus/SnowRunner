@@ -295,7 +295,7 @@
 	<Landmark Mesh="landmarks/pacific_p12w_lmk" MinScale="1.8" MaxScale="3.5" />
 	<HeadLight _template="Default" Pos="(3.65; 1.709; 0)" ParentFrame="BoneCabin_cdt" />
 	<GameData
-		Country="US,NE"
+		Country="US,NE,CE"
 		Price="104400"
 		UnlockByExploration="false"
 		UnlockByRank="1"
@@ -352,7 +352,7 @@
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-4.641; 2.15; 0)" />
-			<Socket Names="Trailer" Offset="(-6.94; 1.35; 0)" />
+			<Socket Names="Trailer, LogTrailer" Offset="(-6.94; 1.35; 0)" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="pacific_p12w_bumper_default">
 			<Socket Names="PacificP12Bumper" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
@@ -377,8 +377,8 @@
 			<Socket Names="FrameAddonTank" Offset="(-4.36; 1.82; 0)">
 				<AddonsShift Offset="(-0.5; 0; 0)" Types="PacificP12wSpareWheel" />
 			</Socket>
-			<Socket Names="FrameAddonTowPlatform" NamesBlock="LogLift, MetalDetector, PacificP12wSpareWheel, Trailer" Offset="(-2.8; 1.82; 0)" />
-			<Socket Names="FrameAddonMaintainerBig" NamesBlock="PacificP12wSpareWheel, Trailer, PacificP12WCabinProtector" Offset="(0; 1.82; 0)" />
+			<Socket Names="FrameAddonTowPlatform" NamesBlock="LogLift, MetalDetector, PacificP12wSpareWheel, Trailer, LogTrailer" Offset="(-2.8; 1.82; 0)" />
+			<Socket Names="FrameAddonMaintainerBig" NamesBlock="PacificP12wSpareWheel, Trailer, LogTrailer, PacificP12WCabinProtector" Offset="(0; 1.82; 0)" />
 			<Socket Names="BigCraneUs" NamesBlock="MetalDetector, PacificP12wSpareWheel, PacificP12WCabinProtector" Offset="(-3.064; 1.921; 0)">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.1; 0)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.1; 0)" />

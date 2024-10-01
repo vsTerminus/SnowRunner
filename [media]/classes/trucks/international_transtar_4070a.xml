@@ -334,7 +334,7 @@
 	<Landmark Mesh="landmarks/international_transtar_4070a_lmk" MinScale="1.8" MaxScale="3.8" />
 	<HeadLight _template="Default" Pos="(3.357; 0.832; 0)" ParentFrame="BoneCabinPrismatic_cdt" />
 	<GameData
-		Country="US,NE"
+		Country="US,NE,CE"
 		Price="17900"
 		UnlockByExploration="false"
 		UnlockByRank="6"
@@ -387,8 +387,8 @@
 		<AddonSockets>
 			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-1.2; 1.58; 0)" />
 			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-2.084; 1.58; 0)" />
-			<Socket Names="Trailer" Offset="(-3.49; 0.886; 0)">
-				<AddonsShift Offset="(0; 0; 0)" TrailerNamesBlock="Trailer" Types="MinicraneUS, FrameAddon" />
+			<Socket Names="Trailer, LogTrailer" Offset="(-3.49; 0.886; 0)">
+				<AddonsShift Offset="(0; 0; 0)" TrailerNamesBlock="Trailer, LogTrailer" Types="MinicraneUS, FrameAddon" />
 			</Socket>
 		</AddonSockets>
 		<AddonSockets>
@@ -405,7 +405,7 @@
 			<Socket Names="FrameAddon" Offset="(-1; 1.063; 0)">
 				<AddonsShift Offset="(-1; 0; 0)" Types="MinicraneUS" />
 			</Socket>
-			<Socket Names="FrameAddonTowPlatform" Offset="(-0.5; 1.068; 0)" NamesBlock="MinicraneUS, MetalDetector, Trailer" />
+			<Socket Names="FrameAddonTowPlatform" Offset="(-0.5; 1.068; 0)" NamesBlock="MinicraneUS, MetalDetector, Trailer, LogTrailer" />
 			<Socket Names="FrameAddonKung" Offset="(-1.62; 1.14; 0)" ParentFrame="BoneChassis_cdt">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.12)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.12)" />

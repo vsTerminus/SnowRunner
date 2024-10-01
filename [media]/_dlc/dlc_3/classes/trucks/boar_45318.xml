@@ -335,7 +335,7 @@
 		<AddonSockets>
 			<Socket Names="LargeSemitrailer" Offset="(-2.517; 2.068; 0)" />
 			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-2.517; 2.068; 0)" />
-			<Socket Names="Trailer" Offset="(-4.653; 1.228; 0)"/>
+			<Socket Names="Trailer, LogTrailer" Offset="(-4.653; 1.228; 0)"/>
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="BunkLog" Offset="(-6.3; 1.568; 0)" />        
@@ -343,7 +343,7 @@
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.134)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.134)" />
 			</Socket>
-			<Socket Names="FrameAddonSeismicVibrator" NamesBlock="Trailer" Offset="(-0.08; 1.341; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="FrameAddonSeismicVibrator" NamesBlock="Trailer, LogTrailer" Offset="(-0.08; 1.341; 0)" ParentFrame="BoneChassis_cdt" />
 			<Socket Names="FrameAddonKung" Offset="(-3; 1.65; 0)" ParentFrame="BoneChassis_cdt" >
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.3)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.3)" />

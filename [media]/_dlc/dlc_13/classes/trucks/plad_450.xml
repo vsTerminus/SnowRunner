@@ -175,7 +175,7 @@
 			<Gauge Damping="0.9" Dir="(-0.635; 0.772; 0)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/plad_450_arrow_06" Org="(3.025; 2.836; 0.758)" OutputAngles="(-140;-40)" />
 			<Gauge Damping="0.9" Dir="(-0.635; 0.772; 0)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/plad_450_arrow_04" Org="(3.025; 2.836; 0.685)" OutputAngles="(-140; -75)" />
 			
-			<Gauge Damping="0.9" Dir="(-0.635; 0.772; 0)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/plad_450_arrow_03" Org="(3.083; 2.884; 0.386)" OutputAngles="(-210;-40)" />
+			<Gauge Damping="0.9" Dir="(-0.635; 0.772; 0)" InputRange="(0;1)" InputType="rpm" Mesh="trucks/arrows/plad_450_arrow_03" Org="(3.083; 2.884; 0.386)" OutputAngles="(-180;40)" />
 			<Gauge Damping="0.9" Dir="(-0.635; 0.772; 0)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/plad_450_arrow_02" Org="(3.027; 2.837; 0.317)" OutputAngles="(-130; -100)" />
 		</Dashboard>
 		
@@ -451,7 +451,7 @@
 	<Landmark Mesh="landmarks/plad_450_lmk" MinScale="1.5" MaxScale="2.5" />
 	<HeadLight _template="Default" Pos="(5.874; 1.374; 0)" ParentFrame="BoneCabin_cdt" />
 	<GameData
-		Country="US,NE,CAS"
+		Country="US,NE,CAS,CE"
 		Price="113600"
 		UnlockByExploration="true"
 		UnlockByRank="1"
@@ -564,7 +564,7 @@
 			<Socket Names="Plad450Saddle" Offset="(0; 0; 0)" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="Trailer" Offset="(-5.885; 1.127; 0)" />
+			<Socket Names="Trailer, LogTrailer" Offset="(-5.885; 1.127; 0)" />
 			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-3.809; 1.951; 0)" />
 		</AddonSockets>
 		<AddonSockets>

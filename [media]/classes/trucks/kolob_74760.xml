@@ -413,7 +413,7 @@
 		<CraneSocket Pos="(-0.605; 0.717; 1.483)" />
 		<CraneSocket Pos="(-0.605; 0.717; -1.483)" />
 		<AddonSockets>
-			<Socket Names="Trailer" Offset="(-4.704; 0.838; 0)" />
+			<Socket Names="Trailer, LogTrailer" Offset="(-4.704; 0.838; 0)" />
 			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-1.95; 2; 0)" />
 		</AddonSockets>
 		<AddonSockets>

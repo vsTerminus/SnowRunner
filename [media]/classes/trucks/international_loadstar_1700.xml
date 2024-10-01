@@ -269,7 +269,7 @@
 	<Landmark Mesh="landmarks/international_loadstar_1700_lmk" MinScale="1.8" MaxScale="3.8" />
 	<HeadLight _template="Default" Pos="(3.294; 0.961; 0)" />
 	<GameData
-		Country="US,NE"
+		Country="US,NE,CE"
 		Price="28200"
 		Recallable="true"
 		UnlockByExploration="false"

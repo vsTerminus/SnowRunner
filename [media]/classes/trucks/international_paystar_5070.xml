@@ -315,7 +315,7 @@
 	<Landmark Mesh="landmarks/international_paystar_5070_lmk" MinScale="1.8" MaxScale="3.8" />
 	<HeadLight _template="Default" Pos="(3.25; 0.535; 0)" ParentFrame="BoneCabin_cdt" />
 	<GameData
-		Country="US,NE"
+		Country="US,NE,CE"
 		Price="63400"
 		UnlockByExploration="false"
 		UnlockByRank="1"
@@ -364,7 +364,7 @@
 		<AddonSockets>
 			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-2.9; 1.7; 0)" />
 			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-3.734; 1.53; 0)" />
-			<Socket Names="Trailer" Offset="(-5.35; 0.9; 0)" />
+			<Socket Names="Trailer, LogTrailer" Offset="(-5.35; 0.9; 0)" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="LogLift" NamesBlock="MetalDetector, MinicraneUS" Offset="(-0.433; 1.235; 0)">
@@ -377,7 +377,7 @@
 			<Socket Names="FrameAddonLogMedium" NamesBlock="MinicraneUS, MetalDetector, InternationalPaystar5070CabinProtector" Offset="(-2.76; 1.231; 0)" />
 			<Socket Names="SaddleLow" Offset="(-3.734; 1.21; 0)" />
 			<Socket Names="SaddleHigh" Offset="(-2.9; 1.21; 0)" />
-			<Socket Names="FrameAddonTowPlatform"  Offset="(-2.05; 1.23; 0)" NamesBlock="MinicraneUS, MetalDetector, InternationalPaystar5070CabinProtector, Trailer" />
+			<Socket Names="FrameAddonTowPlatform"  Offset="(-2.05; 1.23; 0)" NamesBlock="MinicraneUS, MetalDetector, InternationalPaystar5070CabinProtector, Trailer, LogTrailer" />
 			<Socket Names="FrameAddon" Offset="(-2.7; 1.23; 0)" ParentFrame="BoneChassis_cdt">
 				<AddonsShift Offset="(-0.93; 0; 0)" Types="MinicraneUS" />
 				<AddonsShift Offset="(-0.91; 0; 0)" Types="InternationalPaystar5070CabinProtector" />
@@ -394,8 +394,8 @@
 			<Socket Names="FrameAddonTank" NamesBlock="InternationalPaystar5070CabinProtector" Offset="(-3.46; 1.23; 0)" ParentFrame="BoneChassis_cdt" />
 			<Socket Names="BigCraneUs" NamesBlock="MinicraneUS, Semitrailer, InternationalPaystar5070CabinProtector" Offset="(-3.182; 1.247; 0)" />
 			<!-- <Socket Names="BigCraneRu" NamesBlock="Minicrane, Semitrailer, InternationalPaystar5070CabinProtector" Offset="(-3.65; 1.231; 0)" /> -->
-			<Socket Names="FrameAddonSeismicVibrator" NamesBlock="MinicraneUS, Trailer, InternationalPaystar5070CabinProtector" Offset="(-0.68; 1.231; 0)" ParentFrame="BoneChassis_cdt" />
-			<Socket Names="FrameAddonMaintainer" NamesBlock="Trailer, MinicraneUS, InternationalPaystar5070CabinProtector" Offset="(-3.4; 0.2; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="FrameAddonSeismicVibrator" NamesBlock="MinicraneUS, Trailer, InternationalPaystar5070CabinProtector, LogTrailer" Offset="(-0.68; 1.231; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="FrameAddonMaintainer" NamesBlock="Trailer, MinicraneUS, InternationalPaystar5070CabinProtector, LogTrailer" Offset="(-3.4; 0.2; 0)" ParentFrame="BoneChassis_cdt" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="MetalDetector" NamesBlock="SemitrailerOiltank, InternationalPaystar5070SpareWheel, FrameAddonKung, FrameAddonTank, FrameAddonSeismicVibrator, FrameAddonMaintainer, FrameAddon, BigCraneUs, BigCraneRu, SaddleHigh" Offset="(-1.864; 0.178; 0)" ParentFrame="BoneChassis_cdt" />

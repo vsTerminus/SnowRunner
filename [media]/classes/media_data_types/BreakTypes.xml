@@ -6,4 +6,10 @@
 		<BreakType Name="Pumpkin" Sound="" />
 		<BreakType Name="Ice" Sound="surfaces/surf_ice_break_rnd" />
 		<BreakType Name="Rockfall" Sound="surfaces/surf_rock_break_rnd" />
+		<BreakType Name="Dandelion" Sound="" />
+		<BreakType Name="SparksCoal" Sound="" />
+		<BreakType Name="FirefliesGrass" Sound="" />
+		<BreakType Name="Tomato" Sound="" />
+		<BreakType Name="Apple" Sound="" />
+		<BreakType Name="ClayJug" Sound="" />
 </BreakTypes>

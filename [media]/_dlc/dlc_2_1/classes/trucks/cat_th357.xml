@@ -302,7 +302,7 @@
 		Pos="(2.059; 1.466; 0)"
 	/>
 	<GameData
-		Country="US,NE"
+		Country="US,NE,CE"
 		Price="85200"
 		UnlockByExploration="true"
 		UnlockByRank="1"

@@ -326,7 +326,7 @@
 	<Landmark Mesh="landmarks/western_star_nf1430_lmk" MinScale="1.8" MaxScale="3.8" />
 	<HeadLight _template="Default" Pos="(7.291; 1.135; 0)" ParentFrame="BoneCabinDamper_cdt" />
 	<GameData
-		Country="US,NE"
+		Country="US,NE,CE"
 		Price="120600"
 		UnlockByExploration="false"
 		UnlockByRank="1"
@@ -383,7 +383,7 @@
 		<CraneSocket Pos="(-1.918; 0.924; 0.429)" />
 		<CraneSocket Pos="(-2.181; 0.841; 0.001)" />
 		<AddonSockets>
-			<Socket Names="FrameAddonTowPlatform" NamesBlock="Trailer" Offset="(1.953; 1.157; 0)">
+			<Socket Names="FrameAddonTowPlatform" NamesBlock="Trailer, LogTrailer" Offset="(1.953; 1.157; 0)">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.08)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.08)" />
 			</Socket>
@@ -399,8 +399,8 @@
 			</Socket>
 			<Socket Names="FrameAddon" Offset="(0.441; 1.08; 0)" />
 			<Socket Names="FrameAddonTank" Offset="(0.309; 1.08; 0)" />
-			<Socket Names="FrameAddonSeismicVibrator" NamesBlock="Trailer" Offset="(2.56; 1.08; 0)" />
-			<Socket Names="FrameAddonMaintainer" NamesBlock="Trailer" Offset="(0.554; 0.05; 0)" />
+			<Socket Names="FrameAddonSeismicVibrator" NamesBlock="Trailer, LogTrailer" Offset="(2.56; 1.08; 0)" />
+			<Socket Names="FrameAddonMaintainer" NamesBlock="Trailer, LogTrailer" Offset="(0.554; 0.05; 0)" />
 			<Socket Names="FrameAddonKung" Offset="(0.346; 1.165; 0)">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.07)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.07)" />
@@ -423,7 +423,7 @@
 		<AddonSockets>
 			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-0.419; 1.457; 0)" />
 			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(0.042; 1.593; 0)" />
-			<Socket Names="Trailer" Offset="(-2.195; 0.835; 0)" />
+			<Socket Names="Trailer, LogTrailer" Offset="(-2.195; 0.835; 0)" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="western_star_nf1430_bumper_default">
 			<Socket Names="nf1430Bumper" ParentFrame="BoneCabin_cdt" />

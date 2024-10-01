@@ -319,7 +319,7 @@
 	<Landmark Mesh="landmarks/derry_longhorn_3194_lmk" MinScale="1.8" MaxScale="3.8" />
 	<HeadLight _template="Default" Pos="(3.479; 1.222; 0)" />
 	<GameData
-		Country="US,NE"
+		Country="US,NE,CE"
 		ExcludeAddons="stuff_bobblehead_joker, trailer_log_pole"
 		Price="110700"
 		UnlockByExploration="true"
@@ -376,7 +376,7 @@
 			</Socket>
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="Trailer" Offset="(-5.987; 1.12; 0)" />
+			<Socket Names="Trailer, LogTrailer" Offset="(-5.987; 1.12; 0)" />
 			<Socket Names="Semitrailer, SemitrailerOiltank" NamesBlock="SaddleHigh" Offset="(-4.21; 1.656; 0)" />
 			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" NamesBlock="SaddleLow" Offset="(-3.46; 1.836; 0)" />
 		</AddonSockets>

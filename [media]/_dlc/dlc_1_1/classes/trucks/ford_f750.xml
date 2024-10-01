@@ -291,7 +291,7 @@
 	<Landmark Mesh="landmarks/ford_f750_lmk" MinScale="1.8" MaxScale="3.8" />
 	<HeadLight _template="Default" Pos="(4; 1; 0)" />
 	<GameData
-		Country="US,NE"
+		Country="US,NE,CE"
 		Price="43600"
 		Recallable="true"
 		UnlockByExploration="true"
@@ -351,7 +351,7 @@
 		<CraneSocket Pos="(-0.104; 0.795; 0.46)" />
 		<CraneSocket Pos="(-3.879; 0.761; 0)" />
 		<AddonSockets>
-			<Socket Names="Trailer" Offset="(-3.89; 0.776; 0)" />
+			<Socket Names="Trailer, LogTrailer" Offset="(-3.89; 0.776; 0)" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="ford_f750_bumper_default">
 			<Socket Names="FordF750Bumper" ParentFrame="BoneCabin_cdt" />

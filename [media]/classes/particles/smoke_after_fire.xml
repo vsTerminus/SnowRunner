@@ -1,0 +1,42 @@
+<CombineParticles
+	AirResistance="100.0"
+	ZOffset = "0.1"
+	Wind="(0.0; -0.01; 0.0)"
+	Gravity="(-0.04; -0.05; 0.05)"
+	WindDivergence = "200.0"
+	Orientation = "AlignedBillboard"
+	BillboardOffset="(0; 0)"
+	IgnoreShadowmap="true"
+	SoftDepth="1.5"
+
+>
+	<Texture
+	
+		
+		AnimSpeed="1"
+		Diffuse="sfx/particles/smoke_atlas__s_d_a.tga"
+		NumFramesX="8"
+		NumFramesY="7"
+		
+	/>
+	<Size Function="(2.0; 1.5; 1.5)" Median="0.8" />
+	<Scale Random="2.5" Value="3.0" />
+
+	<LifeTime Random="3.1" Value="15.0" />
+	<!-- <LifeTime Value="5.0" /> -->
+	<Color>
+		<Key At="0.0" Value="(200; 220; 255; 0)" />
+		<Key At="0.1" Value="(200; 220; 255; 50)" />
+		<Key At="0.8" Value="(200; 220; 255; 100)" />
+		<Key At="1.0" Value="(200; 220; 255; 50)" />
+	</Color>
+</CombineParticles>
+
+	<!-- 	Diffuse="sfx/particles/rolling_dust__d_a.tga"
+		Distort="sfx/substance/distort__n_d.tga"
+		DistortMult="0.8"
+		DistortScale="0.2"
+		DistortSpeed="0.05"
+		RollEnd="0.6"
+		RollStart="0.8"
+		RollingMask="sfx/particles/rolling_smoke_mask_small__s_d.tga" -->

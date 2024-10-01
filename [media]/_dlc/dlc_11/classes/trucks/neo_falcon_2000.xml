@@ -194,7 +194,7 @@
 		<EngineSocket Default="us_scout_old_engine_0" Type="e_us_scout_old" />
 		<Driver AnimationSet="Scout" Pos="(0.135; 0.998; 0.425)" SteeringWheelPos="(0.414; 1.382; 0.411)" />
 		<Dashboard>
-			<Gauge Dir="(-0.98; 0.2; 0.0)" InputRange="(0;230)" InputType="speed" Mesh="trucks/arrows/neo_falcon_2000_arrow_01" Org="(0.664; 0.831; 0.398)" OutputAngles="(-7.5;20)" />
+			<Gauge Dir="(-0.98; 0.2; 0.0)" InputRange="(0;230)" InputType="speed" Mesh="trucks/arrows/neo_falcon_2000_arrow_01" Org="(0.6665; 0.831; 0.398)" OutputAngles="(-7.5;20)" />
 			<Gauge Damping="0.99" Dir="(-0.98; 0.2; 0.0)" InputRange="(0;1)" InputType="fuel" Mesh="trucks/arrows/neo_falcon_2000_arrow_02" Org="(0.779; 1.383; 0.464)" OutputAngles="(0; 32)" />
 			<Gauge Damping="0.99" Dir="(-0.98; 0.2; 0.0)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/neo_falcon_2000_arrow_03" Org="(0.779; 1.383; 0.316)" OutputAngles="(0; -5)" />
 		</Dashboard>
@@ -376,7 +376,7 @@
 		ParentFrame="BoneCabin_cdt"
 	/>
 	<GameData
-		Country="US,NE"
+		Country="US,NE,CE"
 		Price="2600"
 		UnlockByExploration="true"
 		UnlockByRank="1"

@@ -449,7 +449,7 @@
 	<HeadLight _template="Default" Pos="(5.4; 1.287; 0)" ParentFrame="BoneCabin_cdt" />
 	<Landmark Mesh="landmarks/kenworth_w990_lmk" MinScale="1.8" MaxScale="3.8" />
 	<GameData
-		Country="US,NE"
+		Country="US,NE,CE"
 		Price="100800"
 		UnlockByExploration="false"
 		UnlockByRank="1"
@@ -559,7 +559,7 @@
 			<Socket Names="KenworthW990Spotlight" NamesBlock="KenworthW990Roofrack, KenworthW990Horn, KenworthW990Beacon" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="Trailer" Offset="(-4.37; 0.643; 0.000)" />
+			<Socket Names="Trailer, LogTrailer" Offset="(-4.37; 0.643; 0.000)" />
 			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-2.804; 1.376; 0)" />
 			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" NamesBlock="SaddleLow" Offset="(-2.804; 1.6; 0)" />
 		</AddonSockets>
@@ -571,11 +571,11 @@
 				<AddonsShift Offset="(-0.95; 0; 0)" Types=" LogLift" />
 				<AddonsShift Offset="(-0.4; 0; 0)" Types="KenworthW990SpareWheel" />
 			</Socket>
-			<Socket Names="FrameAddonTow" Offset="(-1.8; 1.087; 0)" NamesBlock="Trailer">
+			<Socket Names="FrameAddonTow" Offset="(-1.8; 1.087; 0)" NamesBlock="Trailer, LogTrailer">
 				<AddonsShift Offset="(-0.95; 0; 0)" Types="MinicraneUS" />
 				<AddonsShift Offset="(-0.42; 0; 0)" Types="KenworthW990SpareWheel" />
 			</Socket>
-			<Socket Names="FrameAddonTowPlatform" NamesBlock="MinicraneUS, Trailer, KenworthW990SpareWheel" Offset="(-0.52; 1.15; 0)" />
+			<Socket Names="FrameAddonTowPlatform" NamesBlock="MinicraneUS, Trailer, LogTrailer, KenworthW990SpareWheel" Offset="(-0.52; 1.15; 0)" />
 			<Socket Names="BigCraneUs" Offset="(-2; 1.112; 0)" NamesBlock="KenworthW990Roofrack, KenworthW990Top, MinicraneUS, KenworthW990SpareWheel" />
 			<Socket Names="SaddleHigh" Offset="(-2.792; 1.098; 0)" />
 			<Socket Names="SaddleLow" Offset="(-2.792; 1.096; 0)" />
@@ -583,11 +583,11 @@
 			<Socket Names="FrameAddonTank" Offset="(-2.05; 1.098; 0)" NamesBlock="MinicraneUS">
 				<AddonsShift Offset="(-0.6; 0; 0)" Types="KenworthW990SpareWheel" />
 			</Socket>
-			<Socket Names="FrameAddonLogMedium" Offset="(-1.3; 1.098; 0)" NamesBlock="MinicraneUS, KenworthW990SpareWheel, Trailer" />
-			<Socket Names="FrameAddonMaintainer" Offset="(-2; 0.07; 0)" NamesBlock="MinicraneUS, Trailer">
+			<Socket Names="FrameAddonLogMedium" Offset="(-1.3; 1.098; 0)" NamesBlock="MinicraneUS, KenworthW990SpareWheel, Trailer, LogTrailer" />
+			<Socket Names="FrameAddonMaintainer" Offset="(-2; 0.07; 0)" NamesBlock="MinicraneUS, Trailer, LogTrailer">
 				<AddonsShift Offset="(-0.2; 0; 0)" Types="KenworthW990SpareWheel" />
 			</Socket>
-			<Socket Names="FrameAddonSeismicVibrator" Offset="(0.32; 1.098; 0)" NamesBlock="MinicraneUS, Trailer"/>
+			<Socket Names="FrameAddonSeismicVibrator" Offset="(0.32; 1.098; 0)" NamesBlock="MinicraneUS, Trailer, LogTrailer"/>
 			
 		</AddonSockets>
 		

@@ -487,7 +487,7 @@
 		<AddonSockets>
 			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-2.2; 1.66; 0)" />
 			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-2.84; 1.45; 0)" />
-			<Socket Names="Trailer" Offset="(-4.996; 0.988; 0)" />
+			<Socket Names="Trailer, LogTrailer" Offset="(-4.996; 0.988; 0)" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="VoronAE4380WheelAddon" ParentFrame="BoneCabin_cdt">
@@ -513,9 +513,9 @@
 				<AddonsShift Offset="(-0.5; 0; 0)" Types="VoronAE4380WheelAddon" />
 				<AddonsShift Offset="(-1; 0; 0)" Types="MinicraneRU" />
 				<AddonsShift Offset="(0; 0; 0)" TrailerNamesBlock="FrameAddon" Types="MinicraneRU, VoronAE4380WheelAddon" />
-				<AddonsShift Offset="(0; 0; 0)" TrailerNamesBlock="FrameAddon" Types="MinicraneRU, Trailer" />
+				<AddonsShift Offset="(0; 0; 0)" TrailerNamesBlock="FrameAddon" Types="MinicraneRU, Trailer, LogTrailer" />
 			</Socket>
-			<Socket Names="FrameAddonTow" Offset="(-2.4; 1.15; 0.000)" NamesBlock="Trailer" ParentFrame="BoneChassis_cdt">
+			<Socket Names="FrameAddonTow" Offset="(-2.4; 1.15; 0.000)" NamesBlock="Trailer, LogTrailer" ParentFrame="BoneChassis_cdt">
 				<AddonsShift Offset="(-0.5; 0; 0)" Types="VoronAE4380WheelAddon" />
 				<AddonsShift Offset="(-1; 0; 0)" Types="MinicraneRU" />
 				<AddonsShift Offset="(0; 0; 0)" TrailerNamesBlock="FrameAddonTow" Types="MinicraneRU, VoronAE4380WheelAddon" />

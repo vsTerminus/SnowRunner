@@ -317,7 +317,7 @@
 	<Landmark Mesh="landmarks/aac_58dw_lmk" MinScale="1.8" MaxScale="3.8" />
 	<HeadLight _template="Default" Pos="(2.182; 0.857; 0)" />
 	<GameData
-		Country="US,NE,CAS"
+		Country="US,NE,CAS,CE"
 		Price="6400"
 		UnlockByExploration="true"
 		UnlockByRank="1"

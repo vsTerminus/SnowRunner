@@ -564,7 +564,7 @@
 		</AddonSockets>
 		<!-- FRAME/TRAILER SOCKETS -->
 		<AddonSockets>
-			<Socket Names="Trailer" Offset="(-6.1; 1.209; 0)" />
+			<Socket Names="Trailer, LogTrailer" Offset="(-6.1; 1.209; 0)" />
 			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-4.376; 1.715; 0)" />
 			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-3.291; 1.869; 0)" />
 		</AddonSockets>

@@ -277,7 +277,7 @@
 		ParentFrame="BoneCabin_cdt"
 	/>
 	<GameData
-		Country="US,NE"
+		Country="US,NE,CE"
 		Price="3500"
 		UnlockByExploration="true"
 		UnlockByRank="1"
@@ -328,7 +328,7 @@
 			<Socket Names="FrameAddonLogsMediumAramatsu" Offset="(0; 0; 0)" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="Trailer" Offset="(-5.282; 1.047; 0)">
+			<Socket Names="Trailer, LogTrailer" Offset="(-5.282; 1.047; 0)">
 				<AddonsShift Offset="(-1.038; 0; 0)" Types="FrameAddonLogsMediumAramatsu" />
 			</Socket>
 		</AddonSockets>

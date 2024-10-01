@@ -36,7 +36,7 @@
 <Truck>
 	<TruckData
 		BackSteerSpeed="0.02"
-		DiffLockType="Always"
+		DiffLockType="Installed"
 		EngineIconMesh="env/engine_default"
 		EngineIconScale="1.6"
 		EngineStartDelay="0.6"
@@ -326,7 +326,7 @@
 	<Landmark Mesh="landmarks/kirovets_k7m_lmk" MinScale="1.8" MaxScale="2.8" />
 	<HeadLight _template="Default" Pos="(3.6; 1.2; 0)" ParentFrame="BoneFront_cdt" />
 	<GameData
-		Country="RU,CAS"
+		Country="RU,CAS,CE"
 		Price="172300"
 		UnlockByExploration="true"
 		UnlockByRank="1"
@@ -376,11 +376,17 @@
 			<Socket Names="KirovetsK7MKung" ParentFrame="BoneBack_cdt" />
 			<Socket Names="K7MCoupler" Offset="(0; 0; 0)" ParentFrame="BoneBack_cdt" />
 		</AddonSockets>
+		<AddonSockets DefaultAddon="kirovets_k7m_diff_lock_default">
+			<Socket Names="KirovetsK7mDiffLock" />
+		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="TrailerFarm" Offset="(-4.5; 1.21; 0)" ParentFrame="BoneBack_cdt" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="Trailer" Offset="(-3.945; 0.6; 0)" ParentFrame="BoneBack_cdt"/>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="LogTrailer" NamesBlock="Trailer, KirovetsK7MKung" Offset="(-4.5; 1.21; 0)" ParentFrame="BoneBack_cdt"/>
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="KirovetsK7MSticker_Capote" ParentFrame="BoneFront_cdt" />

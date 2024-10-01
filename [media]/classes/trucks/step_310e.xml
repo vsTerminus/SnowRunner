@@ -408,21 +408,21 @@
 		<AddonSockets>
 			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-1.559; 1.42; 0)" />
 			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-0.7; 1.59; 0)" />
-			<Socket Names="Trailer" Offset="(-3.18; 1.007; 0)">
-				<AddonsShift Offset="(0; 0; 0)" TrailerNamesBlock="Trailer" Types="MinicraneRU, FrameAddon" />
-				<AddonsShift Offset="(0; 0; 0)" TrailerNamesBlock="Trailer" Types="step_310eCabinProtector, FrameAddon" />
+			<Socket Names="Trailer, LogTrailer" Offset="(-3.18; 1.007; 0)">
+				<AddonsShift Offset="(0; 0; 0)" TrailerNamesBlock="Trailer, LogTrailer" Types="MinicraneRU, FrameAddon" />
+				<AddonsShift Offset="(0; 0; 0)" TrailerNamesBlock="Trailer, LogTrailer" Types="step_310eCabinProtector, FrameAddon" />
 			</Socket>
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="BunkLog" Offset="(-5.046; 1.096; 0)" NamesBlock="MinicraneRU, MetalDetector" />
 			<Socket Names="FrameAddonLogShort" NamesBlock="MinicraneRU, MetalDetector, step_310eCabinProtector" Offset="(-0.265; 1.093; 0)" />
-			<Socket Names="FrameAddonLogMedium" NamesBlock="MinicraneRU, MetalDetector, step_310eCabinProtector, Trailer" Offset="(-0.265; 1.093; 0)" />
+			<Socket Names="FrameAddonLogMedium" NamesBlock="MinicraneRU, MetalDetector, step_310eCabinProtector, Trailer, LogTrailer" Offset="(-0.265; 1.093; 0)" />
 			<Socket Names="SaddleLow" Offset="(-1.559; 1.092; 0)" />
 			<Socket Names="SaddleHigh" Offset="(-0.7; 1.092; 0)">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.012)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.012)" />
 			</Socket>
-			<Socket Names="FrameAddonTowPlatform" Offset="(0.1; 1.092; 0)" NamesBlock="Trailer, MinicraneRU, MetalDetector, step_310eCabinProtector"/>
+			<Socket Names="FrameAddonTowPlatform" Offset="(0.1; 1.092; 0)" NamesBlock="Trailer, LogTrailer, MinicraneRU, MetalDetector, step_310eCabinProtector"/>
 			<Socket Names="FrameAddon" Offset="(-0.354; 1.095; 0)" ParentFrame="BoneChassis_cdt">
 				<AddonsShift Offset="(-1.08; 0; 0)" Types="MinicraneRU" />
 				<AddonsShift Offset="(-1.08; 0; 0)" Types="step_310eCabinProtector" />
@@ -432,7 +432,7 @@
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.1)" />
 			</Socket>
 			<Socket Names="FrameAddonTank" Offset="(-1.34; 1.09; 0)" ParentFrame="BoneChassis_cdt" />
-			<Socket Names="FrameAddonMaintainer" NamesBlock="Trailer, MinicraneRU, step_310eCabinProtector" Offset="(-1.08; 0.063; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="FrameAddonMaintainer" NamesBlock="Trailer, LogTrailer, MinicraneRU, step_310eCabinProtector" Offset="(-1.08; 0.063; 0)" ParentFrame="BoneChassis_cdt" />
 			<Socket
 				Names="BigCraneRu"
 				NamesBlock="MetalDetector, MinicraneRU, step_310eCabinProtector"

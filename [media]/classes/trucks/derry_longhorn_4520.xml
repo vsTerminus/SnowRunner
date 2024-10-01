@@ -384,7 +384,7 @@
 	<Landmark Mesh="landmarks/derry_longhorn_4520_lmk" MinScale="1.8" MaxScale="3.8" />
 	<HeadLight _template="Default" Pos="(4.576; 1.033; 0)" ParentFrame="BoneCabin_cdt" />
 	<GameData
-		Country="US,NE"
+		Country="US,NE,CE"
 		Price="125500"
 		UnlockByExploration="false"
 		UnlockByRank="24"
@@ -442,7 +442,7 @@
 		<AddonSockets>
 			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-2.82; 1.6; 0)" />
 			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-3.5; 1.57; 0)" />
-			<Socket Names="Trailer" Offset="(-4.772; 1.02; 0)" />
+			<Socket Names="Trailer, LogTrailer" Offset="(-4.772; 1.02; 0)" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="derry_longhorn_4520_bumper_default">
 			<Socket Names="DerryLonghorn4520Bumper" ParentFrame="BoneCabin_cdt" />

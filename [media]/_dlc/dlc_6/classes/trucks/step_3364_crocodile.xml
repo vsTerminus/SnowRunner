@@ -319,7 +319,7 @@
 		<AddonSockets>
 			<Socket Names="Semitrailer, SemitrailerOiltank" NamesBlock="SaddleHigh, MinicraneRU" Offset="(-2; 1.156; 0)" />
 			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" NamesBlock="SaddleLow, MinicraneRU" Offset="(-2; 1.325; 0)" />
-			<Socket Names="Trailer" Offset="(-3.63; 0.793; 0)" />
+			<Socket Names="Trailer, LogTrailer" Offset="(-3.63; 0.793; 0)" />
 		</AddonSockets>
 		<AddonSockets>
 			<!--<Socket Names="BunkLog" Offset="()" />-->

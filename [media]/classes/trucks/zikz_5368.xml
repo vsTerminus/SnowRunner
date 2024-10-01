@@ -345,7 +345,7 @@
 			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-1.835; 1.34; 0)">
 				<!-- <AddonsShift Offset="(0; 0; 0)" TrailerNamesBlock="Semitrailer, SemitrailerOiltank" Types="zikz_5368WheelAddon" /> -->
 			</Socket>
-			<Socket Names="Trailer" Offset="(-3.311; 0.9; 0)" />
+			<Socket Names="Trailer, LogTrailer" Offset="(-3.311; 0.9; 0)" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="BunkLog" Offset="(-4.600; 1.023; 0.000)" NamesBlock="MetalDetector, MinicraneRU, zikz_5368WheelAddon" />
@@ -354,7 +354,7 @@
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.02)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.02)" />
 			</Socket>
-			<Socket Names="FrameAddon" NamesBlock="Trailer" Offset="(-1.674; 1.021; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="FrameAddon" NamesBlock="Trailer, LogTrailer" Offset="(-1.674; 1.021; 0)" ParentFrame="BoneChassis_cdt" />
 			<Socket
 				Names="FrameAddonKung"
 				NamesBlock="zikz_5368WheelAddon"
@@ -364,7 +364,7 @@
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.12)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.12)" />
 			</Socket>
-			<Socket Names="FrameAddonTank" NamesBlock="zikz_5368WheelAddon, Trailer" Offset="(-2.65; 1.018; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="FrameAddonTank" NamesBlock="zikz_5368WheelAddon, Trailer, LogTrailer" Offset="(-2.65; 1.018; 0)" ParentFrame="BoneChassis_cdt" />
 			<Socket Names="FrameAddonSideboard1" Offset="(-1.762; 1.018; 0)" ParentFrame="BoneChassis_cdt" />
 			<Socket Names="FrameAddonMaintainerSmall" Offset="(-1.22; 1.018; 0)" ParentFrame="BoneChassis_cdt" />
 			<Socket Names="FrameAddonTankSmall" Offset="(-1.095; 1.018; 0)" ParentFrame="BoneChassis_cdt" >

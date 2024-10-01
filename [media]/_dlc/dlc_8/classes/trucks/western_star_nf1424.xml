@@ -310,7 +310,7 @@
 	<Landmark Mesh="landmarks/western_star_nf1424_lmk" MinScale="1.8" MaxScale="3.8" />
 	<HeadLight _template="Default" Pos="(7.084; 1.180; 0)" ParentFrame="BoneCabinDamper_cdt" />
 	<GameData
-		Country="US,NE"
+		Country="US,NE,CE"
 		Price="113500"
 		UnlockByExploration="false"
 		UnlockByRank="1"
@@ -369,7 +369,7 @@
 			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(0.715; 1.433; 0)">
 				<AddonsShift Offset="(-0.5; 0; 0)" Types="MinicraneNavistar" />
 			</Socket>
-			<Socket Names="Trailer" Offset="(-1.15; 0.838; 0)"/>
+			<Socket Names="Trailer, LogTrailer" Offset="(-1.15; 0.838; 0)"/>
 		</AddonSockets>
 		<AddonSockets DefaultAddon="western_star_nf1424_diff_lock_default">
 			<Socket Names="WesternStarNF1424DiffLock" />
@@ -384,7 +384,7 @@
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.02)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.02)" />
 			</Socket>
-			<Socket Names="FrameAddonMaintainer" NamesBlock="Trailer" Offset="(0.3; 0.082; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="FrameAddonMaintainer" NamesBlock="Trailer, LogTrailer" Offset="(0.3; 0.082; 0)" ParentFrame="BoneChassis_cdt" />
 			<Socket Names="FrameAddon" Offset="(0.9; 1.08; 0)" />
 			<Socket Names="FrameAddonFlatbed1" Offset="(1.77; 1.08; 0)" >
 				<AddonsShift Offset="(-1.1; 0; 0)" Types="MinicraneNavistar" />

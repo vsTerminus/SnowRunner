@@ -344,11 +344,11 @@
 				<AddonsShift Offset="(0; 0; 0)" TrailerNamesBlock="SemitrailerOiltank" Types="MinicraneRU, Tayga6436WheelAddon" />
 			</Socket>
 			<Socket Names="Semitrailer" Offset="(-2.5; 1.58; 0)" />
-			<Socket Names="Trailer" Offset="(-4.23; 1.060; 0)" />
+			<Socket Names="Trailer, LogTrailer" Offset="(-4.23; 1.060; 0)" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="BunkLog" Offset="(-5.958; 1.249; 0)" />
-			<Socket Names="FrameAddonLogShort" NamesBlock="MinicraneRU, Tayga6436WheelAddon, Trailer" Offset="(-1.97; 1.244; 0)" />
+			<Socket Names="FrameAddonLogShort" NamesBlock="MinicraneRU, Tayga6436WheelAddon, Trailer, LogTrailer" Offset="(-1.97; 1.244; 0)" />
 			<Socket Names="SaddleLow" Offset="(-2.5; 1.245; 0)">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.04)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.04)" />
@@ -368,10 +368,10 @@
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.11)" />
 			</Socket>
 			<Socket Names="FrameAddonTank" Offset="(-3.1; 1.244; 0)" ParentFrame="BoneChassis_cdt" />
-			<Socket Names="FrameAddonSeismicVibrator" NamesBlock="Trailer" Offset="(0.378; 1.244; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="FrameAddonSeismicVibrator" NamesBlock="Trailer, LogTrailer" Offset="(0.378; 1.244; 0)" ParentFrame="BoneChassis_cdt" />
 			<Socket
 				Names="BigCraneRu"
-				NamesBlock="MinicraneRU, Tayga6436WheelAddon, Trailer"
+				NamesBlock="MinicraneRU, Tayga6436WheelAddon, Trailer, LogTrailer"
 				Offset="(-3.152; 1.348; 0)"
 				ParentFrame="BoneChassis_cdt"
 			>

@@ -96,6 +96,12 @@
 			FadeOutTime="10"
 			Volume="1"
 		/>
+		<Austria
+			SoundName="music/austria/garage_austria"
+			FadeInTime="30"
+			FadeOutTime="10"
+			Volume="1"
+		/>
 	</GarageMusic>
 </_templates>
 <MusicPresets>
@@ -141,6 +147,9 @@
 	</LevelMusic>
 	<LevelMusic LevelName="level_main_menu_ru13">
 		<Sound Name="music/central_asia/central_asia_menu" StartTime="0" EndTime="24" FadeInTime="0" FadeOutTime="5" Volume="2" />
+	</LevelMusic>
+	<LevelMusic LevelName="level_main_menu_us14">
+		<Sound Name="music/austria/austria_menu" StartTime="0" EndTime="24" FadeInTime="0" FadeOutTime="5" Volume="2" />
 	</LevelMusic>
 	
 	<!-- ALASKA -->
@@ -469,4 +478,21 @@
 		<Sound Name="music/central_asia/central_asia_evening" StartTime="20.5" EndTime="24" FadeInTime="30" FadeOutTime="10" />
 		<GarageMusic _template="Asia" />
 	</LevelMusic>
+	
+	<!-- AUSTRIA -->
+	<LevelMusic LevelName="level_us_14_01">
+		<Sound Name="music/austria/austria_night" StartTime="24" EndTime="6" FadeInTime="30" FadeOutTime="10"  />
+		<Sound Name="music/austria/austria_morning" StartTime="6" EndTime="13" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/austria/austria_day" StartTime="13" EndTime="20.5" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/austria/austria_evening" StartTime="20.5" EndTime="24" FadeInTime="30" FadeOutTime="10" />
+		<GarageMusic _template="Austria" />
+	</LevelMusic>
+	<LevelMusic LevelName="level_us_14_02">
+		<Sound Name="music/austria/austria_night" StartTime="24" EndTime="6" FadeInTime="30" FadeOutTime="10"  />
+		<Sound Name="music/austria/austria_morning" StartTime="6" EndTime="13" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/austria/austria_day" StartTime="13" EndTime="20.5" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/austria/austria_evening" StartTime="20.5" EndTime="24" FadeInTime="30" FadeOutTime="10" />
+		<GarageMusic _template="Austria" />
+	</LevelMusic>
+	
 </MusicPresets>

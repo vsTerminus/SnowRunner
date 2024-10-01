@@ -4,6 +4,7 @@
 			ConnectedToHandbrake="true"
 			Location="rear"
 			Torque="default"
+			ConnectedToHandbrake="true"
 		/>
 		<FrontWheel
 			Location="front"
@@ -12,6 +13,7 @@
 			SteeringJointOffset="0.25"
 			Torque="default"
 			ParentFrame="BoneCabin_cdt"
+			ConnectedToHandbrake="true"
 		/>
 	</Wheel>
 	<Socket>

@@ -394,7 +394,7 @@
 	<HeadLight _template="Default" Pos="(4.9; 1.709; 0)" ParentFrame="BoneCabin_cdt" />
 	<Landmark Mesh="landmarks/kenworth_963_lmk" MinScale="1.7" MaxScale="3.5" />
 	<GameData
-		Country="US,NE"
+		Country="US,NE,CE"
 		Price="121200"
 		UnlockByExploration="true"
 		UnlockByRank="1"

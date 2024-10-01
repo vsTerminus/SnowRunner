@@ -378,7 +378,7 @@
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="Semitrailer" Offset="(-1.89; 1.458; 0)" />
-			<Socket Names="Trailer" NamesBlock="FrameAddonMaintainerSmall" Offset="(-3.065; 1.071; 0)" />
+			<Socket Names="Trailer, LogTrailer" NamesBlock="FrameAddonMaintainerSmall" Offset="(-3.065; 1.071; 0)" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="tuz_108_warthog_diff_lock_default">
 			<Socket Names="TUZ108DiffLock" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />

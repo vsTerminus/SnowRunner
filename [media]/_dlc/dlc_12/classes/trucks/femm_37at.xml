@@ -464,7 +464,7 @@
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names=" LargeSemitrailer, LargeSemitrailerOiltank" NamesBlock="FemmSideboard" Offset="(-4.200; 2.14; 0)" ParentFrame="BoneChassisBack_cdt" />
-			<Socket Names="Trailer" Offset="(-6.342; 1.189; 0)" ParentFrame="BoneBack_cdt" />
+			<Socket Names="Trailer, LogTrailer" Offset="(-6.342; 1.189; 0)" ParentFrame="BoneBack_cdt" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="FemmSideboard" ParentFrame="BoneChassisBack_cdt" Offset="(0; -0.02; 0)">
@@ -478,7 +478,7 @@
 			<Socket Names="FrameAddonSideboard3" NamesBlock="SaddleHighFemm37at" Offset="(-2.35; 1.683; 0)" ParentFrame="BoneChassisBack_cdt">
 				<AddonsShift Offset="(-1.25; 0; 0)" Types="Femm37atMinicraneRU" />
 			</Socket>
-			<Socket Names="KenworthFrameAddonMaintainerBig" NamesBlock="SaddleHighFemm37at, Trailer" Offset="(1.5; 1.79; 0)" ParentFrame="BoneChassisBack_cdt"/>
+			<Socket Names="KenworthFrameAddonMaintainerBig" NamesBlock="SaddleHighFemm37at, Trailer, LogTrailer" Offset="(1.5; 1.79; 0)" ParentFrame="BoneChassisBack_cdt"/>
 			<Socket Names="FrameAddonTank" NamesBlock="SaddleHighFemm37at" Offset="(-4; 1.683; 0)" ParentFrame="BoneChassisBack_cdt" />
 		</AddonSockets>
 		<AddonSockets>

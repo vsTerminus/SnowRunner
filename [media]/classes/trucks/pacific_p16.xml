@@ -374,7 +374,7 @@
 	<Landmark Mesh="landmarks/pacific_p16_lmk" MinScale="1.8" MaxScale="3.5" />
 	<HeadLight _template="Default" Pos="(3.65; 1.709; 0)" ParentFrame="BoneCabin_cdt" />
 	<GameData
-		Country="US,NE"
+		Country="US,NE,CE"
 		ExcludeAddons="ford_clt9000_top_fender, semitrailer_m747"
 		Price="116000"
 		UnlockByExploration="true"
@@ -420,7 +420,7 @@
 		<CraneSocket Pos="(0.006; 1.625; -1.243)" ParentFrame="BoneCabin_cdt" />
 		<AddonSockets>
 			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-2.379; 2.26; 0)" />
-			<Socket Names="Trailer" Offset="(-4.959; 1.239; 0)" />
+			<Socket Names="Trailer, LogTrailer" Offset="(-4.959; 1.239; 0)" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="pacific_p16_bumper_default">
 			<Socket Names="PacificP16Bumper" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />

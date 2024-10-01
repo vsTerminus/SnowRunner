@@ -345,7 +345,7 @@
 	<Landmark Mesh="landmarks/western_star_57x_lmk" MinScale="1.8" MaxScale="3.8" />
 	<HeadLight _template="Default" Pos="(7.084; 1.180; 0)" ParentFrame="BoneCabinDamper_cdt" />
 	<GameData
-		Country="US,NE"
+		Country="US,NE,CE"
 		Price="115700"
 		UnlockByExploration="false"
 		UnlockByRank="1"
@@ -389,7 +389,7 @@
 		<CraneSocket Pos="(-0.153; 0.802; 1.188)" ParentFrame="BoneCabin_cdt" />
 		<CraneSocket Pos="(-4.729; 0.854; 0)" />
 		<AddonSockets>
-			<Socket Names="Trailer" Offset="(-4.73; 0.847; 0)" />
+			<Socket Names="Trailer, LogTrailer" Offset="(-4.73; 0.847; 0)" />
 			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-3.004; 1.425; 0)" />
 			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-3.004; 1.605; 0)" />
 		</AddonSockets>

@@ -333,7 +333,7 @@
 	<Landmark Mesh="landmarks/international_fleetstar_f2070a_lmk" MinScale="1.8" MaxScale="3.8" />
 	<HeadLight _template="Default" Pos="(4.200; 1.283; 0.949)" />
 	<GameData
-		Country="US,NE"
+		Country="US,NE,CE"
 		ExcludeAddons="semitrailer_stepdeck_5, semitrailer_gooseneck_4"
 		Price="13800"
 		UnlockByExploration="false"
@@ -428,19 +428,19 @@
 			<Socket Names="LargeSemitrailerOiltank" Offset="(-1.2; 1.5; 0)">
 				<AddonsShift Offset="(0; 0; 0)" TrailerNamesBlock="LargeSemitrailerOiltank" Types="MinicraneUS, InternationalFleetstarF2070aCabinProtector" />
 			</Socket>
-			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-1.5; 1.5; 0)" />
-			<Socket Names="Trailer" Offset="(-4.205; 0.841; 0)" />
+			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-1.7; 1.5; 0)" />
+			<Socket Names="Trailer, LogTrailer" Offset="(-4.205; 0.841; 0)" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="BunkLog" Offset="(-5.060; 1.015; 0)" NamesBlock="MinicraneUS, MetalDetector" />
 			<Socket Names="FrameAddonLogShort" NamesBlock="MinicraneUS, MetalDetector, InternationalFleetstarF2070aFender, InternationalFleetstarF2070aCabinProtector" Offset="(-0.86; 1.01; 0)" />
-			<Socket Names="SaddleLow1" Offset="(-1.5; 1.01; 0)" />
+			<Socket Names="SaddleLow1" Offset="(-1.7; 1.01; 0)" />
 			<Socket Names="SaddleHigh" Offset="(-1.2; 1.01; 0)" />
 			<Socket Names="FrameAddon" Offset="(-0.95; 1.008; 0)" ParentFrame="BoneChassis_cdt">
 				<AddonsShift Offset="(-1; 0; 0)" Types="MinicraneUS" />
 				<AddonsShift Offset="(-0.26; 0; 0)" Types="InternationalFleetstarF2070aCabinProtector" />
 			</Socket>
-			<Socket Names="FrameAddonTow" Offset="(-1.45; 1.008; 0)" NamesBlock="MinicraneUS, MetalDetector, Trailer" ParentFrame="BoneChassis_cdt"  >				
+			<Socket Names="FrameAddonTow" Offset="(-1.45; 1.008; 0)" NamesBlock="MinicraneUS, MetalDetector, Trailer, LogTrailer" ParentFrame="BoneChassis_cdt"  >				
 				<AddonsShift Offset="(-.15; 0; 0)" Types="InternationalFleetstarF2070aCabinProtector" />				
 			</Socket>				
 			<Socket Names="FrameAddonKung" Offset="(-1.1; 1.08; 0)" ParentFrame="BoneChassis_cdt">
@@ -451,7 +451,7 @@
 			<Socket Names="BigCraneUs" NamesBlock="MinicraneUS" Offset="(-1.754; 1.015; 0)" />
 			<Socket Names="LogLift" Offset="(0.998; 1.011; 0)" NamesBlock="MetalDetector, MinicraneUS"/>
 			<!-- <Socket Names="BigCraneRu" NamesBlock="Minicrane, Semitrailer" Offset="(-2; 1.01; 0)" /> -->
-			<Socket Names="FrameAddonMaintainer" NamesBlock="Trailer, MinicraneUS" Offset="(-1.95; -0.022; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="FrameAddonMaintainer" NamesBlock="Trailer, MinicraneUS, LogTrailer" Offset="(-1.95; -0.022; 0)" ParentFrame="BoneChassis_cdt" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="international_fleetstar_f2070a_diff_lock_default">
 			<Socket Names="FleetstarF2070ADiffLock" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />

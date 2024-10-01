@@ -382,7 +382,7 @@
 	<Landmark Mesh="landmarks/freightliner_m916a1_lmk" MinScale="1.8" MaxScale="3.8" />
 	<HeadLight _template="Default" Pos="(4; 1.287; 0)" ParentFrame="BoneCabin_cdt" />
 	<GameData
-		Country="US,NE"
+		Country="US,NE,CE"
 		Price="74200"
 		UnlockByExploration="false"
 		UnlockByRank="17"
@@ -434,7 +434,7 @@
 		<AddonSockets>
 			<Socket Names="LargeSemitrailer" Offset="(-1.9; 1.79; 0)" />
 			<Socket Names="Semitrailer" Offset="(-2.02; 1.576; 0)" />
-			<Socket Names="Trailer" Offset="(-3.64; 0.915; -0)" />
+			<Socket Names="Trailer, LogTrailer" Offset="(-3.64; 0.915; -0)" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="SaddleLow" Offset="(-2.02; 1.276; -0)">
