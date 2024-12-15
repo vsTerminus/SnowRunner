@@ -1,0 +1,29 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<WheelRepairsHide>
+		<Mesh Frame="tire_front" HideThreshold="0.0" />
+	</WheelRepairsHide>
+	<TruckData WheelRepairsCapacity="1" />
+	<PhysicsModel Mesh="trucks/kenworth_t880_tuning/kenworth_t880_spare_wheel">
+		<Body Mass="10" ModelFrame="BoneAddon_cdt" ImpactType="Truck">
+			<Constraint Type="Rigid" />
+				<Body Mass="15" ModelFrame="BoneWheel1_cdt" ImpactType="Truck"/>
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="spare_wheel"
+		Category="wheel_addon"
+		IsCustomizable="true"
+		Price="2900"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SPARE_WHEEL_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SPARE_WHEEL_NAME"
+		/>
+		<InstallSocket Offset="(0; 0; 0)" Type="KenworthT880SpareWheel" />
+	</GameData>
+</TruckAddon>

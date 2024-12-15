@@ -1,0 +1,50 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/kenworth_t880_tuning/kenworth_t880_spot_light_1">
+		<Body ImpactType="Truck" Mass="20" ModelFrame="BoneCabin_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<HeadLight>
+			<Model _template="HeadLightRay" Org="(2.871; 3.010; -0.294)" />
+			<Model _template="HeadLightRay" Org="(2.871; 3.010; 0.294)" />
+			
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" DirAngle="90" Color="g(230; 230; 235) x 0.8" Size="0.08" Pos="(2.871; 3.010; -0.396)" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" DirAngle="90" Color="g(230; 230; 235) x 0.8" Size="0.08" Pos="(2.871; 3.010; -0.328)" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" DirAngle="90" Color="g(230; 230; 235) x 0.8" Size="0.08" Pos="(2.871; 3.010; -0.260)" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" DirAngle="90" Color="g(230; 230; 235) x 0.8" Size="0.08" Pos="(2.871; 3.010; -0.192)" />
+			<Flare _template="BlueStreak" AspectRatio="4.0" Color="g(220; 220; 235) x 01" Size="0.3" Pos="(2.871; 3.010; -0.260)" />
+			
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" DirAngle="90" Color="g(230; 230; 235) x 0.8" Size="0.08" Pos="(2.871; 3.010; 0.396)" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" DirAngle="90" Color="g(230; 230; 235) x 0.8" Size="0.08" Pos="(2.871; 3.010; 0.328)" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" DirAngle="90" Color="g(230; 230; 235) x 0.8" Size="0.08" Pos="(2.871; 3.010; 0.260)" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" DirAngle="90" Color="g(230; 230; 235) x 0.8" Size="0.08" Pos="(2.871; 3.010; 0.192)" />
+			<Flare _template="BlueStreak" AspectRatio="4.0" Color="g(220; 220; 235) x 0.25" Size="0.3" Pos="(2.871; 3.010; 0.260)" />
+			
+			
+			
+			<!-- <Flare _template="HeadLight" Color="g(245; 235; 215) x 0.2" ColorMultAtDay=".25" DirAngle="100" Size="0.25" Pos="(2.871; 3.010; 0.294)" /> -->
+		</HeadLight>
+		<Ignition>
+			
+		</Ignition>
+	</ModelAttachments>
+	<MainHeadLight _template="Multiply1" />
+	<GameData
+		CameraPreset="roof"
+		Category="top"
+		IsCustomizable="true"
+		Price="800"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_ROOFBAR_FOGLIGHTS_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_ROOFBAR_FOGLIGHTS_NAME"
+		/>
+		<InstallSocket Type="KenworthT880Spotlight" />
+	</GameData>
+</TruckAddon>

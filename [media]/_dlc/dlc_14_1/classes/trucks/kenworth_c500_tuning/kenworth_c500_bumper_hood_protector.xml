@@ -1,0 +1,19 @@
+<_templates Include="trucks"/>
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/kenworth_c500_tuning/kenworth_c500_bumper_hood_protector" />
+	<GameData
+		CameraPreset="default"
+		Category="fender_front"
+		Price="400"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc=""
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_BUMPER_HOODPROTECTOR_NAME"
+		/>
+		<InstallSocket Type="KenworthC500BumperProtector" />
+	</GameData>
+</TruckAddon>

@@ -1,0 +1,56 @@
+<_templates Include="trucks"/>
+<TruckAddon>
+	<TruckData>
+		<Damage>
+			<Multiplier Multiplier="0.9" Type="Engine" />
+		</Damage>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/kenworth_c500_tuning/kenworth_c500_cabin_protector">
+		<Body ImpactType="Truck" Mass="40">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<Ignition>
+			<Flare _template="IgnitionSignalOrange" Size="0.2" AspectRatio="1.5" ColorMultAtDay="0.3" Color="g(255; 160; 0) x 0.5" Dir="(0; 0; 1)" Pos="(2.577; 0.959; 1.169)" ParentFrame="BoneCabin_cdt"/>
+			<Flare _template="IgnitionSignalOrange" Size="0.2" AspectRatio="1.5" ColorMultAtDay="0.3" Color="g(255; 160; 0) x 0.5" Dir="(0; 0; 1)" Pos="(1.982; 0.959; 1.169)" ParentFrame="BoneCabin_cdt"/>
+			<Flare _template="IgnitionSignalOrange" Size="0.2" AspectRatio="1.5" ColorMultAtDay="0.3" Color="g(255; 160; 0) x 0.5" Dir="(0; 0; 1)" Pos="(2.577; 0.514; 1.302)" ParentFrame="BoneCabin_cdt"/>
+			<Flare _template="IgnitionSignalOrange" Size="0.2" AspectRatio="1.5" ColorMultAtDay="0.3" Color="g(255; 160; 0) x 0.5" Dir="(0; 0; 1)" Pos="(1.982; 0.514; 1.302)" ParentFrame="BoneCabin_cdt"/>
+			<Flare _template="IgnitionSignalOrange" Size="0.2" AspectRatio="1.5" ColorMultAtDay="0.3" Color="g(255; 160; 0) x 0.5" Dir="(0; 0; -1)" Pos="(2.577; 0.959; -1.169)" ParentFrame="BoneCabin_cdt"/>
+			<Flare _template="IgnitionSignalOrange" Size="0.2" AspectRatio="1.5" ColorMultAtDay="0.3" Color="g(255; 160; 0) x 0.5" Dir="(0; 0; -1)" Pos="(1.982; 0.959; -1.169)" ParentFrame="BoneCabin_cdt"/>
+			<Flare _template="IgnitionSignalOrange" Size="0.2" AspectRatio="1.5" ColorMultAtDay="0.3" Color="g(255; 160; 0) x 0.5" Dir="(0; 0; -1)" Pos="(2.577; 0.514; -1.302)" ParentFrame="BoneCabin_cdt"/>
+			<Flare _template="IgnitionSignalOrange" Size="0.2" AspectRatio="1.5" ColorMultAtDay="0.3" Color="g(255; 160; 0) x 0.5" Dir="(0; 0; -1)" Pos="(1.982; 0.514; -1.302)" ParentFrame="BoneCabin_cdt"/>
+
+			<Flare _template="IgnitionSignalOrange" Color="g(255; 140; 0) x 0.8" Dir="(1; 0; 0)" Pos="(3.028; 3.217; 1.227)" ParentFrame="BoneCabin_cdt"/>
+			<Flare _template="IgnitionSignalOrange" Color="g(255; 140; 0) x 0.8" Dir="(-1; 0; 0)" Pos="(1.563; 3.217; 1.227)" ParentFrame="BoneCabin_cdt"/>
+			<Flare _template="IgnitionSignalOrange" Color="g(255; 140; 0) x 0.8" Dir="(1; 0; 0)" Pos="(3.028; 3.217; -1.227)" ParentFrame="BoneCabin_cdt"/>
+			<Flare _template="IgnitionSignalOrange" Color="g(255; 140; 0) x 0.8" Dir="(-1; 0; 0)" Pos="(1.563; 3.217; -1.227)" ParentFrame="BoneCabin_cdt"/>
+
+			
+		</Ignition>
+		<HeadLight>
+			<Model _template="HeadLightRay" Org="(3.159; 3.234; 0.459)" ParentFrame="BoneCabin_cdt"/>
+			<Model _template="HeadLightRay" Org="(3.159; 3.234; -0.459)" ParentFrame="BoneCabin_cdt"/>
+			<Flare _template="HeadLight" Size="0.3" Color="g(255; 235; 215) x 1.3" Pos="(3.159; 3.234; 0.459)" ParentFrame="BoneCabin_cdt"/>
+			<Flare _template="HeadLight" Size="0.3" Color="g(255; 235; 215) x 1.3" Pos="(3.159; 3.234; -0.459)" ParentFrame="BoneCabin_cdt"/>
+			<Flare _template="BlueStreak" Size="0.4" Pos="(3.159; 3.234; 0.459)" ParentFrame="BoneCabin_cdt"/>
+			<Flare _template="BlueStreak" Size="0.4" Pos="(3.159; 3.234; -0.459)" ParentFrame="BoneCabin_cdt"/>
+		</HeadLight>
+	</ModelAttachments>
+	<MainHeadLight _template="Multiply2"/>
+	<GameData
+		CameraPreset="default"
+		Category="frame_addons"
+		Price="1900"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SAFETY_CAGE_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SAFETY_CAGE_NAME"
+		/>
+		<InstallSocket Type="KenworthC500Protector" />
+	</GameData>
+</TruckAddon>

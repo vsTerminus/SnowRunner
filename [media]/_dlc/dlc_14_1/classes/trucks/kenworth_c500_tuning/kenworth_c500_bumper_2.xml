@@ -1,0 +1,60 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<TruckData>
+		<Damage>
+			<Multiplier Multiplier="0.85" Type="Engine" />
+		</Damage>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/kenworth_c500_tuning/kenworth_c500_bumper_2">
+		<Body ImpactType="Truck" Mass="115" ModelFrame="BoneCabin_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<Ignition>
+			<Flare _template="IgnitionSignalOrange" Size="0.1" ColorMultAtDay="0.3" Color="g(255; 160; 0) x 0.5" Dir="(1; 0; 0)" Pos="(4.892; 1.873; -1.22)" ParentFrame="BoneCabin_cdt"/>
+			<Flare _template="IgnitionSignalOrange" Size="0.1" ColorMultAtDay="0.3" Color="g(255; 160; 0) x 0.5" Dir="(1; 0; 0)" Pos="(4.892; 1.873; 1.22)" ParentFrame="BoneCabin_cdt"/>
+			<Flare _template="IgnitionSignalOrange" Size="0.2" AspectRatio="1.5" ColorMultAtDay="0.3" Color="g(255; 160; 0) x 0.5" Dir="(0; 0; -1)" Pos="(4.294; 0.968; -1.294)" ParentFrame="BoneCabin_cdt"/>
+			<Flare _template="IgnitionSignalOrange" Size="0.2" AspectRatio="1.5" ColorMultAtDay="0.3" Color="g(255; 160; 0) x 0.5" Dir="(0; 0; 1)" Pos="(4.294; 0.968; 1.294)" ParentFrame="BoneCabin_cdt"/>
+		</Ignition>
+		<HeadLight>
+			<Model _template="HeadLightRay" Org="(5.111; 1.296; 0.324)" ParentFrame="BoneCabin_cdt" />
+			<Model _template="HeadLightRay" Org="(5.111; 1.296; -0.324)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhite" Color="g(230; 230; 235) x 0.8" Size="0.05" Pos="(5.111; 1.296; 0.208)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhite" Color="g(230; 230; 235) x 0.8" Size="0.05" Pos="(5.111; 1.296; 0.266)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhite" Color="g(230; 230; 235) x 0.8" Size="0.05" Pos="(5.111; 1.296; 0.324)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhite" Color="g(230; 230; 235) x 0.8" Size="0.05" Pos="(5.111; 1.296; 0.382)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhite" Color="g(230; 230; 235) x 0.8" Size="0.05" Pos="(5.111; 1.296; 0.44)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhite" Color="g(230; 230; 235) x 0.8" Size="0.05" Pos="(5.111; 1.296; -0.208)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhite" Color="g(230; 230; 235) x 0.8" Size="0.05" Pos="(5.111; 1.296; -0.266)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhite" Color="g(230; 230; 235) x 0.8" Size="0.05" Pos="(5.111; 1.296; -0.324)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhite" Color="g(230; 230; 235) x 0.8" Size="0.05" Pos="(5.111; 1.296; -0.382)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhite" Color="g(230; 230; 235) x 0.8" Size="0.05" Pos="(5.111; 1.296; -0.44)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="BlueStreak" AspectRatio="4.0" Color="g(220; 220; 235) x 0.25" Size="0.4" Pos="(5.111; 1.296; 0.324)" ParentFrame="BoneCabin_cdt"/>
+			<Flare _template="BlueStreak" AspectRatio="4.0" Color="g(220; 220; 235) x 0.25" Size="0.4" Pos="(5.111; 1.296; -0.324)" ParentFrame="BoneCabin_cdt"/>
+			
+		</HeadLight>
+	</ModelAttachments>
+	<!-- <MainHeadLight _template="Multiply2" /> -->
+	<GameData
+		CameraPreset="hoods"
+		Category="bumper"
+		Price="1800"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<WinchSocket Pos="(5.03; 0.823; 0.423)" FixedToTruck="true"/>
+		<WinchSocket Pos="(5.03; 0.823; -0.423)" FixedToTruck="true"/>
+		<WinchSocket Pos="(4.929; 1.011; 0.0)" FixedToTruck="true"/>
+		<CraneSocket Pos="(5.03; 0.823; 0.423)" FixedToTruck="true"/>
+		<CraneSocket Pos="(5.03; 0.823; -0.423)" FixedToTruck="true"/>
+		<CraneSocket Pos="(4.929; 1.011; 0.0)" FixedToTruck="true"/>
+		<UiDesc
+			UiDesc="UI_TUNING_BUMPER_HEAVYDUTY_PIPE_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_BUMPER_HEAVYDUTY_PIPE_NAME"
+		/>
+		<InstallSocket Type="KenworthC500Bumper" />
+	</GameData>
+</TruckAddon>

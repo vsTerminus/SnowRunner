@@ -281,15 +281,6 @@
 						<Motor Damping="0.3" Spring="30" Type="Spring" />
 					</Constraint>
 				</Body>
-				<Body ModelFrame="BoneCabMirror_cdt" Collisions="None" Mass="3">
-					<Constraint
-						Type="Fixed"
-						LinearLimitsY="(-0.005; 0.005)"
-						LinearLimitsZ="(-0.001; 0.001)"
-					>
-						<Motor Damping="50" Spring="3000" Type="Spring" />
-					</Constraint>
-				</Body>
 				<Body Mass="1" ModelFrame="BoneWiperR_cdt">
 					<Constraint
 						AxisLocal="(0; 0; 1)"

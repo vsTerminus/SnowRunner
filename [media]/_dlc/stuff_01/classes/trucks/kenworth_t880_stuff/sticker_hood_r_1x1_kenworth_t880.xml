@@ -1,0 +1,7 @@
+<_parent File="sticker_capote_1x1_ford_f750" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/kenworth_t880_stuff/sticker_hood_r_1x1_kenworth_t880" />
+	<GameData CameraPreset="capote_sticker">
+			<InstallSocket Type="KenworthT880Sticker_Hood_R" />
+	</GameData>
+</TruckAddon>

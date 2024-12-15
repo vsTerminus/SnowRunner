@@ -1,0 +1,40 @@
+<_templates Include="trucks">
+	<Body>
+		<Mudguard Collisions="None" Mass="5">
+			<Constraint
+				AxisLocal="(0; 0; 1)"
+				Type="Hinge"
+				MinLimit="-12"
+				MaxLimit="7"
+			>
+				<Motor Damping="3" Spring="5" Type="Spring" />
+			</Constraint>
+		</Mudguard>
+	</Body>
+</_templates>
+
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/addons/kenworth_t880_mudguards">
+		<Body ImpactType="Truck" Mass="10">
+			<Constraint Type="Rigid" />
+				<Body _template="Mudguard" ModelFrame="BoneRearMudguardR_cdt" />
+				<Body _template="Mudguard" ModelFrame="BoneRearMudguardL_cdt" />
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="addon_1"
+		Category="frame_addons"
+		IsCustomizable="true"
+		Price="0"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_REAR_BUMPER_MUDFLAPS_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_REAR_BUMPER_MUDFLAPS_NAME"
+		/>
+		<InstallSocket Type="KenworthT880Mudguards" />
+	</GameData>
+</TruckAddon>

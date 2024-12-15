@@ -1295,4 +1295,44 @@
 	<Truck _template="OutsideSticker1x1" Name="sticker_kung_2_1x1_earthroamer_lti" />
 	<Truck _template="GlassStickerTop2x16" Name="sticker_glass_top_earthroamer_lti" />
 	<!--<- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -/>-->
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_01_kenworth_t880" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_02_kenworth_t880" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_03_kenworth_t880" />
+	<Truck _template="InsideSticker1x2" Name="sticker_inside_1x2_01_kenworth_t880" />
+	<Truck _template="InsideSticker1x2" Name="sticker_inside_1x2_02_kenworth_t880" />
+	<Truck _template="InsideSticker1x4" Name="sticker_inside_1x4_01_kenworth_t880" />
+	<Truck _template="InsideSticker1x4" Name="sticker_inside_1x4_02_kenworth_t880" />
+	<Truck _template="InsideSticker1x4" Name="sticker_inside_1x4_03_kenworth_t880" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_door_l_1x1_kenworth_t880" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_door_r_1x1_kenworth_t880" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_hood_l_1x1_kenworth_t880" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_hood_r_1x1_kenworth_t880" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_roof_1x1_kenworth_t880" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_roof_1x2_kenworth_t880" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_roof_1x3_kenworth_t880" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_roof_1x4_kenworth_t880" />	
+	<Truck _template="GlassStickerTop2x16" Name="sticker_glass_top_kenworth_t880" />
+	<Truck _template="GlassStickerBottom2x16" Name="sticker_glass_bottom_kenworth_t880" />
+	<Truck _template="Curtain" Name="stuff_curtain_kenworth_t880" />
+	<!--<- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -/>-->
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_01_kenworth_c500" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_02_kenworth_c500" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_03_kenworth_c500" />
+	<Truck _template="InsideSticker1x2" Name="sticker_inside_1x2_01_kenworth_c500" />
+	<Truck _template="InsideSticker1x2" Name="sticker_inside_1x2_02_kenworth_c500" />
+	<Truck _template="InsideSticker1x4" Name="sticker_inside_1x4_01_kenworth_c500" />
+	<Truck _template="InsideSticker1x4" Name="sticker_inside_1x4_02_kenworth_c500" />
+	<Truck _template="InsideSticker1x4" Name="sticker_inside_1x4_03_kenworth_c500" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_door_l_1x1_kenworth_c500" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_door_r_1x1_kenworth_c500" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_hood_l_1x1_kenworth_c500" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_hood_r_1x1_kenworth_c500" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_roof_1x1_kenworth_c500" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_roof_1x2_kenworth_c500" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_roof_1x3_kenworth_c500" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_roof_1x4_kenworth_c500" />	
+	<Truck _template="GlassStickerTopCut" Name="sticker_glass_top_kenworth_c500" />
+	<Truck _template="GlassStickerBottomCut" Name="sticker_glass_bottom_kenworth_c500" />
+	<Truck _template="Curtain" Name="stuff_curtain_kenworth_c500" />
+	<!--<- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -/>-->
 </TruckSet>

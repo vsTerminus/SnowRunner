@@ -1,0 +1,20 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<Snorkel Origin="(3.208; 2; 0)" />
+	<PhysicsModel Mesh="trucks/kenworth_t880_tuning/kenworth_t880_snorkel_1"/>
+	<GameData
+		CameraPreset="snorkels"
+		Category="snorkel"
+		Price="1000"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SNORKEL_SIDESWEPT_TALL_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SNORKEL_SIDESWEPT_TALL_NAME"
+		/>
+		<InstallSocket Type="KenworthT880Snorkel" />
+	</GameData>
+</TruckAddon>

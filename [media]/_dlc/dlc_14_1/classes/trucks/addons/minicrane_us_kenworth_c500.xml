@@ -1,0 +1,52 @@
+<_parent File="minicrane_us" />
+<TruckAddon>
+	<PoweredConstraints>
+		<Chain>
+			<Group/>
+			<Group>
+				<Constraint
+					InitialFix="true"
+					Name="Anchor"
+					TerminalFix="true"
+					Position="1.4"
+				/>
+			</Group>
+		</Chain>
+	</PoweredConstraints>
+	<PhysicsModel Mesh="trucks/addons/minicrane_us_loadstar">
+		<NetSync Legacy="true" />
+		<Body>
+			<Constraint/>
+			<Body/>
+			<Body >
+				<Constraint />
+				<Body>
+					<Constraint
+						MaxLimit="1.5"
+					>
+						<Motor/>
+					</Constraint>
+				</Body>
+			</Body>
+			<Body >
+				<Constraint />
+				<Body>
+					<Constraint
+						MaxLimit="1.5"
+					>
+						<Motor/>
+					</Constraint>
+				</Body>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<GameData>
+		<InstallSocket
+			_noinherit="true"
+			Price="5700"
+			Type="MinicraneKenworthC500"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		/>
+	</GameData>
+</TruckAddon>

@@ -11,37 +11,32 @@
 		</Body>
 	</PhysicsModel>
 	<ModelAttachments>
-		<Ignition>
-			<!-- Flares -->
-			<Flare _template="IgnitionSignalWhite" Color="g(255; 245; 215) x 0.2" Dir="(1; 0; 0)" Size="0.3" Pos="(3.784; 0.906; -0.891)" />
-			<Flare _template="IgnitionSignalWhite" Color="g(255; 245; 215) x 0.2" Dir="(1; 0; 0)" Size="0.3" Pos="(3.784; 0.906; 0.891)" />
-			<Flare _template="IgnitionSignalWhite" Color="g(255; 245; 215) x 0.2" Dir="(1; 0; 0)" Size="0.3" Pos="(3.881; 0.895; -0.720)" />
-			<Flare _template="IgnitionSignalWhite" Color="g(255; 245; 215) x 0.2" Dir="(1; 0; 0)" Size="0.3" Pos="(3.881; 0.895; 0.720)" />
-			<!-- Beam Flares -->
-			<Flare _template="IgnitionSignalWhite" Color="g(255; 245; 215) x 0.2" Dir="(1; 0; 0)" Size="0.3" Pos="(4.071; 1.311; -0.474)" />
-			<Flare _template="IgnitionSignalWhite" Color="g(255; 245; 215) x 0.2" Dir="(1; 0; 0)" Size="0.3" Pos="(4.071; 1.311; 0.474)" />
-			<Flare _template="IgnitionSignalWhite" Color="g(255; 245; 215) x 0.2" Dir="(1; 0; 0)" Size="0.3" Pos="(4.092; 1.311; -0.317)" />
-			<Flare _template="IgnitionSignalWhite" Color="g(255; 245; 215) x 0.2" Dir="(1; 0; 0)" Size="0.3" Pos="(4.092; 1.311; 0.317)" />
-			<Flare _template="IgnitionSignalWhite" Color="g(255; 245; 215) x 0.2" Dir="(1; 0; 0)" Size="0.3" Pos="(4.105; 1.311; -0.159)" />
-			<Flare _template="IgnitionSignalWhite" Color="g(255; 245; 215) x 0.2" Dir="(1; 0; 0)" Size="0.3" Pos="(4.105; 1.311; 0.159)" />
-			<Flare _template="IgnitionSignalWhite" Color="g(255; 245; 215) x 0.2" Dir="(1; 0; 0)" Size="0.3" Pos="(4.109; 1.311; 0.000)" />
-		</Ignition>
 		<HeadLight>
-			<!-- Bumper Beam Flares right -->
-			<Flare _template="LED" Color="g(230; 230; 235) x 0.8" Size=".05" Pos="(4.076; 1.333; 0.452)" />
-			<Flare _template="LED" Color="g(230; 230; 235) x 0.8" Size=".05" Pos="(4.068; 1.333; 0.496)" />
-			<Flare _template="LED" Color="g(230; 230; 235) x 0.8" Size=".05" Pos="(4.076; 1.289; 0.452)" />
-			<Flare _template="LED" Color="g(230; 230; 235) x 0.8" Size=".05" Pos="(4.076; 1.289; 0.496)" />
+			<!-- Bumper Flares -->
+			<Flare _template="LED" Color="g(230; 230; 235) x 0.6" Size=".05" Pos="(3.881; 0.915; -0.7)" />
+			<Flare _template="LED" Color="g(230; 230; 235) x 0.6" Size=".05" Pos="(3.881; 0.876; -0.7)" />
+			<Flare _template="LED" Color="g(230; 230; 235) x 0.6" Size=".05" Pos="(3.881; 0.915; -0.739)" />
+			<Flare _template="LED" Color="g(230; 230; 235) x 0.6" Size=".05" Pos="(3.881; 0.876; -0.739)" />
+			<Flare _template="BlueStreak" AspectRatio="4.0" Color="g(220; 220; 235) x 0.25" Size="0.3" Pos="(3.881; 0.895; -0.72)" />
 			
-			<Flare _template="LED" Color="g(230; 230; 235) x 0.8" Size=".05" Pos="(4.076; 1.333; 0.295)" />
-			<Flare _template="LED" Color="g(230; 230; 235) x 0.8" Size=".05" Pos="(4.068; 1.333; 0.339)" />
-			<Flare _template="LED" Color="g(230; 230; 235) x 0.8" Size=".05" Pos="(4.096; 1.289; 0.295)" />
-			<Flare _template="LED" Color="g(230; 230; 235) x 0.8" Size=".05" Pos="(4.091; 1.289; 0.339)" />
+			<Flare _template="LED" Color="g(230; 230; 235) x 0.6" Size=".05" Pos="(3.784; 0.923; -0.874)" />
+			<Flare _template="LED" Color="g(230; 230; 235) x 0.6" Size=".05" Pos="(3.784; 0.89; -0.874)" />
+			<Flare _template="LED" Color="g(230; 230; 235) x 0.6" Size=".05" Pos="(3.784; 0.923; -0.907)" />
+			<Flare _template="LED" Color="g(230; 230; 235) x 0.6" Size=".05" Pos="(3.784; 0.89; -0.907)" />
+			<Flare _template="BlueStreak" AspectRatio="4.0" Color="g(220; 220; 235) x 0.25" Size="0.3" Pos="(3.784; 0.905; -0.91)" />
 			
-			<Flare _template="LED" Color="g(230; 230; 235) x 0.8" Size=".05" Pos="(4.107; 1.333; 0.137)" />
-			<Flare _template="LED" Color="g(230; 230; 235) x 0.8" Size=".05" Pos="(4.105; 1.333; 0.181)" />
-			<Flare _template="LED" Color="g(230; 230; 235) x 0.8" Size=".05" Pos="(4.107; 1.289; 0.137)" />
-			<Flare _template="LED" Color="g(230; 230; 235) x 0.8" Size=".05" Pos="(4.105; 1.289; 0.181)" />
+			<Flare _template="LED" Color="g(230; 230; 235) x 0.6" Size=".05" Pos="(3.881; 0.915; 0.7)" />
+			<Flare _template="LED" Color="g(230; 230; 235) x 0.6" Size=".05" Pos="(3.881; 0.876; 0.7)" />
+			<Flare _template="LED" Color="g(230; 230; 235) x 0.6" Size=".05" Pos="(3.881; 0.915; 0.739)" />
+			<Flare _template="LED" Color="g(230; 230; 235) x 0.6" Size=".05" Pos="(3.881; 0.876; 0.739)" />
+			<Flare _template="BlueStreak" AspectRatio="4.0" Color="g(220; 220; 235) x 0.25" Size="0.3" Pos="(3.881; 0.895; 0.72)" />
+			
+			<Flare _template="LED" Color="g(230; 230; 235) x 0.6" Size=".05" Pos="(3.784; 0.923; 0.874)" />
+			<Flare _template="LED" Color="g(230; 230; 235) x 0.6" Size=".05" Pos="(3.784; 0.89; 0.874)" />
+			<Flare _template="LED" Color="g(230; 230; 235) x 0.6" Size=".05" Pos="(3.784; 0.923; 0.907)" />
+			<Flare _template="LED" Color="g(230; 230; 235) x 0.6" Size=".05" Pos="(3.784; 0.89; 0.907)" />
+			<Flare _template="BlueStreak" AspectRatio="4.0" Color="g(220; 220; 235) x 0.25" Size="0.3" Pos="(3.784; 0.905; 0.91)" />
+			
 			<!-- Bumper Beam Flares left -->
 			<Flare _template="LED" Color="g(230; 230; 235) x 0.8" Size=".05" Pos="(4.076; 1.333; -0.452)" />
 			<Flare _template="LED" Color="g(230; 230; 235) x 0.8" Size=".05" Pos="(4.068; 1.333; -0.496)" />
@@ -62,26 +57,22 @@
 			<Flare _template="LED" Color="g(230; 230; 235) x 0.8" Size=".05" Pos="(4.11; 1.333; -0.022)" />
 			<Flare _template="LED" Color="g(230; 230; 235) x 0.8" Size=".05" Pos="(4.11; 1.289; 0.022)" />
 			<Flare _template="LED" Color="g(230; 230; 235) x 0.8" Size=".05" Pos="(4.11; 1.289; -0.022)" />
-			<!-- Bumper Flares -->
-			<Flare _template="LED" Color="g(230; 230; 235) x 0.6" Size=".05" Pos="(3.881; 0.915; -0.7)" />
-			<Flare _template="LED" Color="g(230; 230; 235) x 0.6" Size=".05" Pos="(3.881; 0.876; -0.7)" />
-			<Flare _template="LED" Color="g(230; 230; 235) x 0.6" Size=".05" Pos="(3.881; 0.915; -0.739)" />
-			<Flare _template="LED" Color="g(230; 230; 235) x 0.6" Size=".05" Pos="(3.881; 0.876; -0.739)" />
+			<Flare _template="BlueStreak" AspectRatio="8.0" Color="g(220; 220; 235) x 0.25" Size="0.25" Pos="(4.11; 1.311; 0.0)" />
+			<!-- Bumper Beam Flares right -->
+			<Flare _template="LED" Color="g(230; 230; 235) x 0.8" Size=".05" Pos="(4.076; 1.333; 0.452)" />
+			<Flare _template="LED" Color="g(230; 230; 235) x 0.8" Size=".05" Pos="(4.068; 1.333; 0.496)" />
+			<Flare _template="LED" Color="g(230; 230; 235) x 0.8" Size=".05" Pos="(4.076; 1.289; 0.452)" />
+			<Flare _template="LED" Color="g(230; 230; 235) x 0.8" Size=".05" Pos="(4.076; 1.289; 0.496)" />
 			
-			<Flare _template="LED" Color="g(230; 230; 235) x 0.6" Size=".05" Pos="(3.784; 0.923; -0.874)" />
-			<Flare _template="LED" Color="g(230; 230; 235) x 0.6" Size=".05" Pos="(3.784; 0.89; -0.874)" />
-			<Flare _template="LED" Color="g(230; 230; 235) x 0.6" Size=".05" Pos="(3.784; 0.923; -0.907)" />
-			<Flare _template="LED" Color="g(230; 230; 235) x 0.6" Size=".05" Pos="(3.784; 0.89; -0.907)" />
+			<Flare _template="LED" Color="g(230; 230; 235) x 0.8" Size=".05" Pos="(4.076; 1.333; 0.295)" />
+			<Flare _template="LED" Color="g(230; 230; 235) x 0.8" Size=".05" Pos="(4.068; 1.333; 0.339)" />
+			<Flare _template="LED" Color="g(230; 230; 235) x 0.8" Size=".05" Pos="(4.096; 1.289; 0.295)" />
+			<Flare _template="LED" Color="g(230; 230; 235) x 0.8" Size=".05" Pos="(4.091; 1.289; 0.339)" />
 			
-			<Flare _template="LED" Color="g(230; 230; 235) x 0.6" Size=".05" Pos="(3.881; 0.915; 0.7)" />
-			<Flare _template="LED" Color="g(230; 230; 235) x 0.6" Size=".05" Pos="(3.881; 0.876; 0.7)" />
-			<Flare _template="LED" Color="g(230; 230; 235) x 0.6" Size=".05" Pos="(3.881; 0.915; 0.739)" />
-			<Flare _template="LED" Color="g(230; 230; 235) x 0.6" Size=".05" Pos="(3.881; 0.876; 0.739)" />
-			
-			<Flare _template="LED" Color="g(230; 230; 235) x 0.6" Size=".05" Pos="(3.784; 0.923; 0.874)" />
-			<Flare _template="LED" Color="g(230; 230; 235) x 0.6" Size=".05" Pos="(3.784; 0.89; 0.874)" />
-			<Flare _template="LED" Color="g(230; 230; 235) x 0.6" Size=".05" Pos="(3.784; 0.923; 0.907)" />
-			<Flare _template="LED" Color="g(230; 230; 235) x 0.6" Size=".05" Pos="(3.784; 0.89; 0.907)" />
+			<Flare _template="LED" Color="g(230; 230; 235) x 0.8" Size=".05" Pos="(4.107; 1.333; 0.137)" />
+			<Flare _template="LED" Color="g(230; 230; 235) x 0.8" Size=".05" Pos="(4.105; 1.333; 0.181)" />
+			<Flare _template="LED" Color="g(230; 230; 235) x 0.8" Size=".05" Pos="(4.107; 1.289; 0.137)" />
+			<Flare _template="LED" Color="g(230; 230; 235) x 0.8" Size=".05" Pos="(4.105; 1.289; 0.181)" />
 		</HeadLight>
 	</ModelAttachments>
 	<GameData

@@ -1,0 +1,34 @@
+<_templates Include="trucks">
+	<TruckTire>
+		<Allterrain _template="Heavy" RearMassScale="2">
+			<WheelTracks _template="Default" />
+			<WheelTracks _template="DefaultDouble" Rear="true" />
+			<WheelSoftness _template="Average" />
+		</Allterrain>
+	</TruckTire>
+</_templates>
+<TruckWheels DamageCapacity="50" Radius="1" Width="0.717" WidthRear="1.05">
+	<TruckTires>
+		<TruckTire _template="Allterrain" Mesh="wheels/tire_kenworth_c500" Name="tire_1">
+			<WheelFriction 
+				_template="Allterrain"
+				BodyFriction="1.6"
+				BodyFrictionAsphalt="1.8"
+			/>
+			<GameData
+				Price="7000"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_ALLTERRAIN_DESC" UiName="UI_TIRE_HEAVY_OFFROAD_KENWORTH_C500_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>
+		<TruckRim Mesh="wheels/rim_kenworth_c500" Name="rim_1">
+			<GameData>
+				<UiDesc UiDesc="UI_RIM_HEAVY_OFFROAD_DOUBLE_1_DESC" UiName="UI_RIM_HEAVY_OFFROAD_DOUBLE_KENWORTH_C500_NAME" />
+			</GameData>
+		</TruckRim>
+	</TruckRims>
+</TruckWheels>

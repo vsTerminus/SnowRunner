@@ -367,7 +367,7 @@
 			UiDesc="UI_VEHICLE_ZiKZ_566A_DESC"
 			UiIcon30x30="heavyDutyVehicleImg30"
 			UiIcon328x458="shopImgZikz566a"
-			UiIcon40x40="heavyDutyVehicleImg30"
+			UiIcon40x40="heavyDutyVehicleImg"
 			UiIconLogo="ZiKZLogo80"
 			UiName="UI_VEHICLE_ZiKZ_566A_NAME"
 		/>

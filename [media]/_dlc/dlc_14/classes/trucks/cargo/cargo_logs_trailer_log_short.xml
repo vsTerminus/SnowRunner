@@ -21,6 +21,7 @@
 					LinearLimitsX="(-0.1; 0.1)"
 					LinearLimitsY="(0; 0.5)"
 					LinearLimitsZ="(-0.005; 0.005)"
+                    LinearLimitsX_OSX="(-0.1; -0.05)"
 					Type="Fixed"
 				>
 					<Motor Damping="4000" Spring="100" Type="Spring" />

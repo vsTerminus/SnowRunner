@@ -1,0 +1,61 @@
+<_templates Include="trucks">
+	<Flare>
+		<MarkerBeacon Color="g(125; 81; 18) x 0.7" Size="0.2" />
+	</Flare>
+</_templates>
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/kenworth_t880_tuning/kenworth_t880_top_fender">
+		<Body ImpactType="Truck" Mass="40" ModelFrame="BoneCabin_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<HeadLight>
+			<Model _template="HeadLightRay" Org="(2.873; 3.033; -0.385)" />
+			<Model _template="HeadLightRay" Org="(2.873; 3.033; 0.385)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.3" DirAngle="100" Size=".4" Pos="(2.873; 3.035; -0.490)" />
+			<Flare _template="HeadLight" Color="g(245; 235; 215) x 0.3" DirAngle="100" Size=".4" Pos="(2.873; 3.035; -0.420)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.3" DirAngle="100" Size=".4" Pos="(2.873; 3.035; -0.350)" />
+			<Flare _template="HeadLight" Color="g(245; 235; 215) x 0.3" DirAngle="100" Size=".4" Pos="(2.873; 3.035; -0.280)" />
+			
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.3" DirAngle="100" Size=".4" Pos="(2.873; 3.035; 0.490)" />
+			<Flare _template="HeadLight" Color="g(245; 235; 215) x 0.3" DirAngle="100" Size=".4" Pos="(2.873; 3.035; 0.420)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.3" DirAngle="100" Size=".4" Pos="(2.873; 3.035; 0.350)" />
+			<Flare _template="HeadLight" Color="g(245; 235; 215) x 0.3" DirAngle="100" Size=".4" Pos="(2.873; 3.035; 0.280)" />
+		</HeadLight>
+		<Ignition>
+			<Flare _template="MarkerBeacon" Color="g(255; 140; 0) x 0.3" Size="0.2" Pos="(2.813; 2.856; -0.726)" Dir="(1; 0; 0)" DirAngle="110" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="MarkerBeacon" Color="g(255; 140; 0) x 0.3" Size="0.2" Pos="(2.902; 2.853; -0.386)" Dir="(1; 0; 0)" DirAngle="110" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="MarkerBeacon" Color="g(255; 140; 0) x 0.3" Size="0.2" Pos="(2.922; 2.855; 0)" Dir="(1; 0; 0)" DirAngle="120" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="MarkerBeacon" Color="g(255; 140; 0) x 0.3" Size="0.2" Pos="(2.902; 2.853; 0.386)" Dir="(1; 0; 0)" DirAngle="110" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="MarkerBeacon" Color="g(255; 140; 0) x 0.3" Size="0.2" Pos="(2.813; 2.856; 0.726)" Dir="(1; 0; 0)" DirAngle="110" ParentFrame="BoneCabin_cdt" />
+			
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay=".03" DirAngle="90" Color="g(253; 220; 186) x 0.3" Size="0.2" Pos="(2.873; 3.035; -0.490)" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay=".03" DirAngle="90" Color="g(253; 220; 186) x 0.3" Size="0.2" Pos="(2.873; 3.035; -0.420)" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay=".03" DirAngle="90" Color="g(253; 220; 186) x 0.3" Size="0.2" Pos="(2.873; 3.035; -0.350)" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay=".03" DirAngle="90" Color="g(253; 220; 186) x 0.3" Size="0.2" Pos="(2.873; 3.035; -0.280)" />
+			
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay=".03" DirAngle="90" Color="g(253; 220; 186) x 0.3" Size="0.2" Pos="(2.873; 3.035; 0.490)" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay=".03" DirAngle="90" Color="g(253; 220; 186) x 0.3" Size="0.2" Pos="(2.873; 3.035; 0.420)" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay=".03" DirAngle="90" Color="g(253; 220; 186) x 0.3" Size="0.2" Pos="(2.873; 3.035; 0.350)" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay=".03" DirAngle="90" Color="g(253; 220; 186) x 0.3" Size="0.2" Pos="(2.873; 3.035; 0.280)" />
+		</Ignition>
+	</ModelAttachments>
+	<MainHeadLight _template="Multiply1" />
+	<GameData
+		CameraPreset="roof"
+		Category="top"
+		IsCustomizable="true"
+		Price="700"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_FORD_CLT9000_CLT_TOP_FENDER_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_FORD_CLT9000_CLT_TOP_FENDER_NAME"
+		/>
+		<InstallSocket Type="KenworthT880Top" />
+	</GameData>
+</TruckAddon>

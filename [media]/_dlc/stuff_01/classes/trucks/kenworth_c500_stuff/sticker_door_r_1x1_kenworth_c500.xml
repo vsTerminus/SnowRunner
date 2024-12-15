@@ -1,0 +1,7 @@
+<_parent File="sticker_door_r_1x1_ford_f750" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/kenworth_c500_stuff/sticker_door_r_1x1_kenworth_c500" />
+	<GameData>
+			<InstallSocket Type="KenworthC500Sticker_Door_R" />
+	</GameData>
+</TruckAddon>

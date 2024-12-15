@@ -1,0 +1,57 @@
+<_templates>
+	<Engine>
+		<USTruckModernEngine BrakesDelay="0.5" MaxDeltaAngVel="0.01" />
+	</Engine>
+</_templates>
+<EngineVariants>
+	<Engine
+		_template="USTruckModernEngine"
+		CriticalDamageThreshold="0.4"
+		DamageCapacity="180"
+		DamagedConsumptionModifier="1.2"
+		EngineResponsiveness="0.16"
+		FuelConsumption="8.0"
+		Name="us_truck_modern_engine_kenworth_880_0"
+		Torque="255000"
+		DamagedMinTorqueMultiplier="1.0"
+		DamagedMaxTorqueMultiplier="0.6"
+	>
+		<GameData
+			Price="21600"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_ENGINE_US_TRUCK_MODERN_KENWORTH_880_0_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_ENGINE_US_TRUCK_MODERN_KENWORTH_880_0_NAME"
+			/>
+		</GameData>
+	</Engine>
+	<Engine
+		_template="USTruckModernEngine"
+		CriticalDamageThreshold="0.5"
+		DamageCapacity="210"
+		DamagedConsumptionModifier="1.2"
+		EngineResponsiveness="0.2"
+		FuelConsumption="9.1"
+		Name="us_truck_modern_engine_kenworth_880_1"
+		Torque="288000"
+		DamagedMinTorqueMultiplier="1.0"
+		DamagedMaxTorqueMultiplier="0.7"
+	>
+		<GameData
+			Price="23500"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_ENGINE_US_TRUCK_MODERN_KENWORTH_880_1_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_ENGINE_US_TRUCK_MODERN_KENWORTH_880_1_NAME"
+			/>
+		</GameData>
+	</Engine>
+</EngineVariants>

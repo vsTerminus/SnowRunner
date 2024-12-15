@@ -1,0 +1,25 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<Snorkel Origin="(3.111; 2.4; 1.089)" />
+	<Snorkel Origin="(3.111; 2.4; -1.089)" />
+	<PhysicsModel Mesh="trucks/kenworth_c500_tuning/kenworth_c500_snorkel_1">
+		<Body ImpactType="Truck" Mass="40" ModelFrame="BoneCabin_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="snorkels"
+		Category="snorkel"
+		Price="1100"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SNORKEL_FRONTFACE_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SNORKEL_FRONTFACE_NAME"
+		/>
+		<InstallSocket Type="KenworthC500Snorkel" />
+	</GameData>
+</TruckAddon>

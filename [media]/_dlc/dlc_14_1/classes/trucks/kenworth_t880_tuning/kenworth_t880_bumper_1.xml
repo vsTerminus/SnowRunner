@@ -1,0 +1,66 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<TruckData>
+		<Damage>
+			<Multiplier Multiplier="0.7" Type="Engine" />
+		</Damage>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/kenworth_t880_tuning/kenworth_t880_bumper_1">
+		<Body ImpactType="Truck" Mass="120" ModelFrame="BoneChassis_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<HeadLight>
+			<Model _template="HeadLightRay" Org="(5.143; 1.241; -0.382)" />
+			<Model _template="HeadLightRay" Org="(5.143; 1.241; 0.382)" />
+			
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" DirAngle="90" Color="g(230; 230; 235) x 0.8" Size="0.08" Pos="(5.117; 1.244; -0.485)" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" DirAngle="90" Color="g(230; 230; 235) x 0.8" Size="0.08" Pos="(5.117; 1.244; -0.417)" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" DirAngle="90" Color="g(230; 230; 235) x 0.8" Size="0.08" Pos="(5.117; 1.244; -0.349)" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" DirAngle="90" Color="g(230; 230; 235) x 0.8" Size="0.08" Pos="(5.117; 1.244; -0.281)" />
+			<Flare _template="BlueStreak" AspectRatio="4.0" Color="g(220; 220; 235) x 0.15" Size="0.3" Pos="(5.117; 1.244; -0.349)" ParentFrame="BoneCabin_cdt"/>
+			
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" DirAngle="90" Color="g(230; 230; 235) x 0.8" Size="0.08" Pos="(5.117; 1.244; 0.485)" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" DirAngle="90" Color="g(230; 230; 235) x 0.8" Size="0.08" Pos="(5.117; 1.244; 0.417)" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" DirAngle="90" Color="g(230; 230; 235) x 0.8" Size="0.08" Pos="(5.117; 1.244; 0.349)" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" DirAngle="90" Color="g(230; 230; 235) x 0.8" Size="0.08" Pos="(5.117; 1.244; 0.281)" />
+			<Flare _template="BlueStreak" AspectRatio="4.0" Color="g(220; 220; 235) x 0.15" Size="0.3" Pos="(5.117; 1.244; 0.349)" ParentFrame="BoneCabin_cdt"/>
+
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" DirAngle="90" Color="g(230; 230; 235) x 0.8" Size="0.08" Pos="(4.745; 0.456; 1.077)" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" DirAngle="90" Color="g(230; 230; 235) x 0.8" Size="0.08" Pos="(4.772; 0.456; 1.013)" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" DirAngle="90" Color="g(230; 230; 235) x 0.8" Size="0.08" Pos="(4.798; 0.456; 0.951)" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" DirAngle="90" Color="g(230; 230; 235) x 0.8" Size="0.08" Pos="(4.824; 0.456; 0.888)" />
+			<Flare _template="BlueStreak" AspectRatio="4.0" Color="g(220; 220; 235) x 0.15" Size="0.3" Pos="(4.798; 0.456; 0.951)" ParentFrame="BoneCabin_cdt"/>
+			
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" DirAngle="90" Color="g(230; 230; 235) x 0.8" Size="0.08" Pos="(4.745; 0.456; -1.077)" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" DirAngle="90" Color="g(230; 230; 235) x 0.8" Size="0.08" Pos="(4.772; 0.456; -1.013)" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" DirAngle="90" Color="g(230; 230; 235) x 0.8" Size="0.08" Pos="(4.798; 0.456; -0.951)" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" DirAngle="90" Color="g(230; 230; 235) x 0.8" Size="0.08" Pos="(4.824; 0.456; -0.888)" />
+			<Flare _template="BlueStreak" AspectRatio="4.0" Color="g(220; 220; 235) x 0.15" Size="0.3" Pos="(4.798; 0.456; -0.951)" ParentFrame="BoneCabin_cdt"/>
+		</HeadLight>
+		<Ignition>
+			
+		</Ignition>
+	</ModelAttachments>
+	<MainHeadLight _template="Multiply1"/>
+	<GameData
+		CameraPreset="hoods"
+		Category="bumper"
+		Price="1200"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<WinchSocket Pos="(5.157; 0.636; 0.605)" FixedToTruck="true"/>
+		<WinchSocket Pos="(5.157; 0.636; -0.605)" FixedToTruck="true"/>
+		<CraneSocket Pos="(5.157; 0.636; 0.605)" FixedToTruck="true"/>
+		<CraneSocket Pos="(5.157; 0.636; -0.605)" FixedToTruck="true"/>
+		<UiDesc
+			UiDesc="UI_TUNING_BUMPER_REBAR_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_BUMPER_REBAR_NAME"
+		/>
+		<InstallSocket Type="KenworthT880Bumper" />
+	</GameData>
+</TruckAddon>

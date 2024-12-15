@@ -1,0 +1,100 @@
+<_templates Include="trucks" >
+</_templates>
+
+<TruckAddon>
+	<WheelRepairsHide>
+		<Mesh Frame="spare_wheel_01" HideThreshold="0.0" />
+		<Mesh Frame="spare_wheel_02" HideThreshold="0.5" />
+	</WheelRepairsHide>
+	<TruckData WheelRepairsCapacity="2" />
+	<PhysicsModel Mesh="trucks/kenworth_c500_tuning/kenworth_c500_spare_wheel_02">
+		<Body Mass="15" ModelFrame="BoneWheel2_cdt" ImpactType="Truck">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<StopSignals>
+			<Flare _template="StopSignal" Color="g(255; 0; 0) x 0.35" Size="0.2" Pos="(1.539; 3.006; 0.196)" />
+			<Flare _template="StopSignal" Color="g(255; 0; 0) x 0.35" Size="0.2" Pos="(1.539; 3.006; -0.196)" />
+			
+			<Light _template="StopSignal" Color="g(255; 0; 0) x 0.9" Pos="(1.530; 3.165; 0)" />
+		</StopSignals>
+		<Ignition>
+			<Flare _template="IgnitionSignalRed" Color="g(255; 0; 0) x 0.4" Size="0.2" Pos="(1.539; 3.006; 0.196)" />
+			<Flare _template="IgnitionSignalRed" Color="g(255; 0; 0) x 0.4" Size="0.2" Pos="(1.539; 3.006; -0.196)" />
+		</Ignition>
+		<ReverseSignals>	
+			<Flare _template="IgnitionSignalWhite" Dir="(-1; 0; 0)" Color="g(255; 235; 215) x 0.2" Size="0.1" Pos="(1.530; 3.175; 0.817)" ParentFrame="BoneWheel2_cdt" />
+			<Flare _template="IgnitionSignalWhite" Dir="(-1; 0; 0)" Color="g(255; 235; 215) x 0.2" Size="0.1" Pos="(1.530; 3.176; 0.789)" ParentFrame="BoneWheel2_cdt" />
+			<Flare _template="IgnitionSignalWhite" Dir="(-1; 0; 0)" Color="g(255; 235; 215) x 0.2" Size="0.1" Pos="(1.530; 3.176; 0.763)" ParentFrame="BoneWheel2_cdt" />
+			<Flare _template="IgnitionSignalWhite" Dir="(-1; 0; 0)" Color="g(255; 235; 215) x 0.2" Size="0.1" Pos="(1.530; 3.177; 0.735)" ParentFrame="BoneWheel2_cdt" />
+			<Flare _template="IgnitionSignalWhite" Dir="(-1; 0; 0)" Color="g(255; 235; 215) x 0.2" Size="0.1" Pos="(1.530; 3.178; 0.708)" ParentFrame="BoneWheel2_cdt" />
+			<Flare _template="IgnitionSignalWhite" Dir="(-1; 0; 0)" Color="g(255; 235; 215) x 0.2" Size="0.1" Pos="(1.530; 3.179; 0.681)" ParentFrame="BoneWheel2_cdt" />
+			<Flare _template="IgnitionSignalWhite" Dir="(-1; 0; 0)" Color="g(255; 235; 215) x 0.2" Size="0.1" Pos="(1.530; 3.180; 0.654)" ParentFrame="BoneWheel2_cdt" />
+			<Flare _template="IgnitionSignalWhite" Dir="(-1; 0; 0)" Color="g(255; 235; 215) x 0.2" Size="0.1" Pos="(1.530; 3.181; 0.626)" ParentFrame="BoneWheel2_cdt" />
+			<Flare _template="IgnitionSignalWhite" Dir="(-1; 0; 0)" Color="g(255; 235; 215) x 0.2" Size="0.1" Pos="(1.530; 3.182; 0.599)" ParentFrame="BoneWheel2_cdt" />
+			<Flare _template="IgnitionSignalWhite" Dir="(-1; 0; 0)" Color="g(255; 235; 215) x 0.2" Size="0.1" Pos="(1.530; 3.183; 0.572)" ParentFrame="BoneWheel2_cdt" />
+			<Flare _template="IgnitionSignalWhite" Dir="(-1; 0; 0)" Color="g(255; 235; 215) x 0.2" Size="0.1" Pos="(1.530; 3.184; 0.544)" ParentFrame="BoneWheel2_cdt" />
+			<Flare _template="IgnitionSignalWhite" Dir="(-1; 0; 0)" Color="g(255; 235; 215) x 0.2" Size="0.1" Pos="(1.530; 3.184; 0.544)" ParentFrame="BoneWheel2_cdt" />
+			
+			<Flare _template="IgnitionSignalWhite" Dir="(-1; 0; 0)" Color="g(255; 235; 215) x 0.2" Size="0.1" Pos="(1.530; 3.145; 0.816)" ParentFrame="BoneWheel2_cdt" />
+			<Flare _template="IgnitionSignalWhite" Dir="(-1; 0; 0)" Color="g(255; 235; 215) x 0.2" Size="0.1" Pos="(1.530; 3.146; 0.789)" ParentFrame="BoneWheel2_cdt" />
+			<Flare _template="IgnitionSignalWhite" Dir="(-1; 0; 0)" Color="g(255; 235; 215) x 0.2" Size="0.1" Pos="(1.530; 3.146; 0.789)" ParentFrame="BoneWheel2_cdt" />
+			<Flare _template="IgnitionSignalWhite" Dir="(-1; 0; 0)" Color="g(255; 235; 215) x 0.2" Size="0.1" Pos="(1.530; 3.148; 0.735)" ParentFrame="BoneWheel2_cdt" />
+			<Flare _template="IgnitionSignalWhite" Dir="(-1; 0; 0)" Color="g(255; 235; 215) x 0.2" Size="0.1" Pos="(1.530; 3.149; 0.707)" ParentFrame="BoneWheel2_cdt" />
+			<Flare _template="IgnitionSignalWhite" Dir="(-1; 0; 0)" Color="g(255; 235; 215) x 0.2" Size="0.1" Pos="(1.530; 3.150; 0.680)" ParentFrame="BoneWheel2_cdt" />
+			<Flare _template="IgnitionSignalWhite" Dir="(-1; 0; 0)" Color="g(255; 235; 215) x 0.2" Size="0.1" Pos="(1.530; 3.151; 0.653)" ParentFrame="BoneWheel2_cdt" />
+			<Flare _template="IgnitionSignalWhite" Dir="(-1; 0; 0)" Color="g(255; 235; 215) x 0.2" Size="0.1" Pos="(1.530; 3.152; 0.626)" ParentFrame="BoneWheel2_cdt" />
+			<Flare _template="IgnitionSignalWhite" Dir="(-1; 0; 0)" Color="g(255; 235; 215) x 0.2" Size="0.1" Pos="(1.530; 3.153; 0.599)" ParentFrame="BoneWheel2_cdt" />
+			<Flare _template="IgnitionSignalWhite" Dir="(-1; 0; 0)" Color="g(255; 235; 215) x 0.2" Size="0.1" Pos="(1.530; 3.153; 0.599)" ParentFrame="BoneWheel2_cdt" />
+			<Flare _template="IgnitionSignalWhite" Dir="(-1; 0; 0)" Color="g(255; 235; 215) x 0.2" Size="0.1" Pos="(1.530; 3.154; 0.544)" ParentFrame="BoneWheel2_cdt" />
+			<Flare _template="IgnitionSignalWhite" Dir="(-1; 0; 0)" Color="g(255; 235; 215) x 0.2" Size="0.1" Pos="(1.530; 3.156; 0.517)" ParentFrame="BoneWheel2_cdt" />
+			
+			<Flare _template="IgnitionSignalWhite" Dir="(-1; 0; 0)" Color="g(255; 235; 215) x 0.2" Size="0.1" Pos="(1.530; 3.175; -0.817)" ParentFrame="BoneWheel2_cdt" />
+			<Flare _template="IgnitionSignalWhite" Dir="(-1; 0; 0)" Color="g(255; 235; 215) x 0.2" Size="0.1" Pos="(1.530; 3.176; -0.789)" ParentFrame="BoneWheel2_cdt" />
+			<Flare _template="IgnitionSignalWhite" Dir="(-1; 0; 0)" Color="g(255; 235; 215) x 0.2" Size="0.1" Pos="(1.530; 3.176; -0.763)" ParentFrame="BoneWheel2_cdt" />
+			<Flare _template="IgnitionSignalWhite" Dir="(-1; 0; 0)" Color="g(255; 235; 215) x 0.2" Size="0.1" Pos="(1.530; 3.177; -0.735)" ParentFrame="BoneWheel2_cdt" />
+			<Flare _template="IgnitionSignalWhite" Dir="(-1; 0; 0)" Color="g(255; 235; 215) x 0.2" Size="0.1" Pos="(1.530; 3.178; -0.708)" ParentFrame="BoneWheel2_cdt" />
+			<Flare _template="IgnitionSignalWhite" Dir="(-1; 0; 0)" Color="g(255; 235; 215) x 0.2" Size="0.1" Pos="(1.530; 3.179; -0.681)" ParentFrame="BoneWheel2_cdt" />
+			<Flare _template="IgnitionSignalWhite" Dir="(-1; 0; 0)" Color="g(255; 235; 215) x 0.2" Size="0.1" Pos="(1.530; 3.180; -0.654)" ParentFrame="BoneWheel2_cdt" />
+			<Flare _template="IgnitionSignalWhite" Dir="(-1; 0; 0)" Color="g(255; 235; 215) x 0.2" Size="0.1" Pos="(1.530; 3.181; -0.626)" ParentFrame="BoneWheel2_cdt" />
+			<Flare _template="IgnitionSignalWhite" Dir="(-1; 0; 0)" Color="g(255; 235; 215) x 0.2" Size="0.1" Pos="(1.530; 3.182; -0.599)" ParentFrame="BoneWheel2_cdt" />
+			<Flare _template="IgnitionSignalWhite" Dir="(-1; 0; 0)" Color="g(255; 235; 215) x 0.2" Size="0.1" Pos="(1.530; 3.183; -0.572)" ParentFrame="BoneWheel2_cdt" />
+			<Flare _template="IgnitionSignalWhite" Dir="(-1; 0; 0)" Color="g(255; 235; 215) x 0.2" Size="0.1" Pos="(1.530; 3.184; -0.544)" ParentFrame="BoneWheel2_cdt" />
+			<Flare _template="IgnitionSignalWhite" Dir="(-1; 0; 0)" Color="g(255; 235; 215) x 0.2" Size="0.1" Pos="(1.530; 3.184; -0.544)" ParentFrame="BoneWheel2_cdt" />
+			
+			<Flare _template="IgnitionSignalWhite" Dir="(-1; 0; 0)" Color="g(255; 235; 215) x 0.2" Size="0.1" Pos="(1.530; 3.145; -0.816)" ParentFrame="BoneWheel2_cdt" />
+			<Flare _template="IgnitionSignalWhite" Dir="(-1; 0; 0)" Color="g(255; 235; 215) x 0.2" Size="0.1" Pos="(1.530; 3.146; -0.789)" ParentFrame="BoneWheel2_cdt" />
+			<Flare _template="IgnitionSignalWhite" Dir="(-1; 0; 0)" Color="g(255; 235; 215) x 0.2" Size="0.1" Pos="(1.530; 3.146; -0.789)" ParentFrame="BoneWheel2_cdt" />
+			<Flare _template="IgnitionSignalWhite" Dir="(-1; 0; 0)" Color="g(255; 235; 215) x 0.2" Size="0.1" Pos="(1.530; 3.148; -0.735)" ParentFrame="BoneWheel2_cdt" />
+			<Flare _template="IgnitionSignalWhite" Dir="(-1; 0; 0)" Color="g(255; 235; 215) x 0.2" Size="0.1" Pos="(1.530; 3.149; -0.707)" ParentFrame="BoneWheel2_cdt" />
+			<Flare _template="IgnitionSignalWhite" Dir="(-1; 0; 0)" Color="g(255; 235; 215) x 0.2" Size="0.1" Pos="(1.530; 3.150; -0.680)" ParentFrame="BoneWheel2_cdt" />
+			<Flare _template="IgnitionSignalWhite" Dir="(-1; 0; 0)" Color="g(255; 235; 215) x 0.2" Size="0.1" Pos="(1.530; 3.151; -0.653)" ParentFrame="BoneWheel2_cdt" />
+			<Flare _template="IgnitionSignalWhite" Dir="(-1; 0; 0)" Color="g(255; 235; 215) x 0.2" Size="0.1" Pos="(1.530; 3.152; -0.626)" ParentFrame="BoneWheel2_cdt" />
+			<Flare _template="IgnitionSignalWhite" Dir="(-1; 0; 0)" Color="g(255; 235; 215) x 0.2" Size="0.1" Pos="(1.530; 3.153; -0.599)" ParentFrame="BoneWheel2_cdt" />
+			<Flare _template="IgnitionSignalWhite" Dir="(-1; 0; 0)" Color="g(255; 235; 215) x 0.2" Size="0.1" Pos="(1.530; 3.153; -0.599)" ParentFrame="BoneWheel2_cdt" />
+			<Flare _template="IgnitionSignalWhite" Dir="(-1; 0; 0)" Color="g(255; 235; 215) x 0.2" Size="0.1" Pos="(1.530; 3.154; -0.544)" ParentFrame="BoneWheel2_cdt" />
+			<Flare _template="IgnitionSignalWhite" Dir="(-1; 0; 0)" Color="g(255; 235; 215) x 0.2" Size="0.1" Pos="(1.530; 3.156; -0.517)" ParentFrame="BoneWheel2_cdt" />
+			
+			<Light _template="ReverseSignal" Pos="(1.530; 3.165; 0)" />
+			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.1" Dir="(-1; 0; 0)" Size="0.4" Pos="(1.530; 3.165; 0.667)" />
+			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.1" Dir="(-1; 0; 0)" Size="0.4" Pos="(1.530; 3.165; -0.667)" />
+		</ReverseSignals>
+	</ModelAttachments>
+	<GameData
+		CameraPreset="rear"
+		Category="wheel_addon"
+		IsCustomizable="true"
+		Price="6000"
+		UnlockByExploration="false"
+		UnlockByRank="10"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SPARE_WHEELS_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SPARE_WHEELS_NAME"
+		/>
+		<InstallSocket Offset="(0; 0; 0)" Type="KenworthC500SpareWheel2" />
+	</GameData>
+</TruckAddon>

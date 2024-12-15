@@ -1,0 +1,38 @@
+<_templates Include="trucks" />
+<TruckAddon IsChassisFullOcclusion="true">
+	<PhysicsModel Mesh="trucks/addons/frame_addon_flatbed_2_kenworth_c500">
+		<Body Mass="400">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<Ignition>
+			<Flare _template="MarkerBeacon" ColorMultAtDay="0.3" AspectRatio="1.5" Color="g(255; 140; 0) x 0.5" Dir="(0; 1; 0)" Size="0.08" Pos="(0.849; 1.468; 1.367)" />
+			<Flare _template="MarkerBeacon" ColorMultAtDay="0.3" AspectRatio="1.5" Color="g(255; 140; 0) x 0.5" Dir="(0; 1; 0)" Size="0.08" Pos="(-1.500; 1.468; 1.367)" />
+			<Flare _template="MarkerBeacon" ColorMultAtDay="0.3" AspectRatio="1.5" Color="g(255; 140; 0) x 0.5" Dir="(0; 1; 0)" Size="0.08" Pos="(-1.714; 1.468; 1.367)" />
+			<Flare _template="MarkerBeacon" ColorMultAtDay="0.3" AspectRatio="1.5" Color="g(255; 140; 0) x 0.5" Dir="(0; 1; 0)" Size="0.08" Pos="(-4.541; 1.468; 1.367)" />
+			
+			<Flare _template="MarkerBeacon" ColorMultAtDay="0.3" AspectRatio="1.5" Color="g(255; 140; 0) x 0.5" Dir="(0; 1; 0)" Size="0.08" Pos="(0.849; 1.468; -1.367)" />
+			<Flare _template="MarkerBeacon" ColorMultAtDay="0.3" AspectRatio="1.5" Color="g(255; 140; 0) x 0.5" Dir="(0; 1; 0)" Size="0.08" Pos="(-1.500; 1.468; -1.367)" />
+			<Flare _template="MarkerBeacon" ColorMultAtDay="0.3" AspectRatio="1.5" Color="g(255; 140; 0) x 0.5" Dir="(0; 1; 0)" Size="0.08" Pos="(-1.714; 1.468; -1.367)" />
+			<Flare _template="MarkerBeacon" ColorMultAtDay="0.3" AspectRatio="1.5" Color="g(255; 140; 0) x 0.5" Dir="(0; 1; 0)" Size="0.08" Pos="(-4.541; 1.468; -1.367)" />
+		</Ignition>
+	</ModelAttachments>
+	<GameData
+		CameraPreset="addon_1"
+		Category="frame_addons"
+		IsCustomizable="true"
+		Price="4400"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_ADDON_FRAME_FLATBED_2_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_ADDON_FRAME_FLATBED_2_NAME"
+		/>
+		<InstallSocket Type="FrameAddonFlatbedKenworthC500" />
+		<AddonSlots InitialOffset="(-0.64; 1.53; 0)" OffsetStep="(-2.574; 0; 0)" Quantity="2" />
+	</GameData>
+</TruckAddon>

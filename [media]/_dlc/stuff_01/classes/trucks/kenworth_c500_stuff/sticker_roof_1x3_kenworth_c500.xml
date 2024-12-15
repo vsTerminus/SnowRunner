@@ -1,0 +1,7 @@
+<_parent File="sticker_roof_1x1_ford_f750" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/kenworth_c500_stuff/sticker_roof_1x3_kenworth_c500" />
+	<GameData CameraPreset="sticker_back">
+		<InstallSocket Type="KenworthC500Sticker_Roof_03" />
+	</GameData>
+</TruckAddon>

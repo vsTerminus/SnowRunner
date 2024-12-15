@@ -195,7 +195,7 @@
 					ReflectionDir="(-1; -0.06; 0.32)"
 					ClipDir="(-1.0; 0.0; 0.0)"
 					ClipOffset="7.88"
-					FOVScale="3.0"
+					FOVScale="1.5"
 					MeshFrame="mirror_cab"
 					Size="(0.220; 0.223)"
 					Pos="(2.001; 1.967; 0.035)"

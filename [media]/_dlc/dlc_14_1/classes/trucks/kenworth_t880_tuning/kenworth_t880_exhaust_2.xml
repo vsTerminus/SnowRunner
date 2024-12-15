@@ -1,0 +1,31 @@
+<_templates Include="trucks"/>
+<TruckAddon>
+	<TruckData>
+		<Shakers>
+			<Shaker Frame="BoneExhaustRight" LimitDirectionY="Negative" MaxAngle="(0.7; 0.7; 0.7)" MaxFrequency="4.0" ParentFrame="BoneCabin_cdt" />
+			<Shaker Frame="BoneExhaustLeft" LimitDirectionY="Negative" MaxAngle="(0.7; 0.7; 0.7)" MaxFrequency="3.6" ParentFrame="BoneCabin_cdt" />
+		</Shakers>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/kenworth_t880_tuning/kenworth_t880_exhaust_2">
+		<Body ImpactType="Truck" Mass="40">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="exhaust"
+		Category="exhaust"
+		Price="1500"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_EXHAUST_OUTROLLED_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_EXHAUST_OUTROLLED_NAME"
+		/>
+		<InstallSocket Type="KenworthT880Exhaust" />
+	</GameData>
+	<Exhaust Dir="(-0.531; 0.139; -0.836)" IsLight="true" Origin="(1.657; 3.276; -1.308)" Speed="3.82" ParentFrame="BoneExhaustRight"/>
+	<Exhaust Dir="-0.531; 0.139; 0.836" IsLight="true" Origin="(1.657; 3.276; 1.308)" Speed="3.82" ParentFrame="BoneExhaustLeft"/>
+</TruckAddon>

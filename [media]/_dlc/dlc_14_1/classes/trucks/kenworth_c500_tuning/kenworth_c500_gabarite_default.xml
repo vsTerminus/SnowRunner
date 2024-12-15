@@ -1,0 +1,34 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/kenworth_c500_tuning/kenworth_c500_gabarite_default" />
+	<ModelAttachments>
+		<Ignition>
+			<Flare _template="MarkerBeacon" ColorMultAtDay="0.3" Dir="(1; 0; 0)" DirAngle="130" Size="0.4" Pos="(2.76; 3.033; 0.701)" />
+			<Flare _template="MarkerBeacon" ColorMultAtDay="0.3" Dir="(1; 0; 0)" DirAngle="130" Size="0.4" Pos="(2.861; 3.044; 0.202)" />
+			<Flare _template="MarkerBeacon" ColorMultAtDay="0.3" Dir="(1; 0; 0)" DirAngle="130" Size="0.4" Pos="(2.86; 3.053; -0.0)" />
+			<Flare _template="MarkerBeacon" ColorMultAtDay="0.3" Dir="(1; 0; 0)" DirAngle="130" Size="0.4" Pos="(2.861; 3.044; -0.202)" />
+			<Flare _template="MarkerBeacon" ColorMultAtDay="0.3" Dir="(1; 0; 0)" DirAngle="130" Size="0.4" Pos="(2.76; 3.033; -0.701)" />
+			
+			<Flare _template="MarkerBeacon" ColorMultAtDay="0.3" AspectRatio="1.5" Color="g(255; 140; 0) x 0.5" Dir="(1; 0; 0)" Size="0.08" Pos="(2.76; 3.033; 0.701)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="MarkerBeacon" ColorMultAtDay="0.3" AspectRatio="1.5" Color="g(255; 140; 0) x 0.5" Dir="(1; 0; 0)" Size="0.08" Pos="(2.861; 3.044; 0.202)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="MarkerBeacon" ColorMultAtDay="0.3" AspectRatio="1.5" Color="g(255; 140; 0) x 0.5" Dir="(1; 0; 0)" Size="0.08" Pos="(2.86; 3.053; -0.0)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="MarkerBeacon" ColorMultAtDay="0.3" AspectRatio="1.5" Color="g(255; 140; 0) x 0.5" Dir="(1; 0; 0)" Size="0.08" Pos="(2.861; 3.044; -0.202)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="MarkerBeacon" ColorMultAtDay="0.3" AspectRatio="1.5" Color="g(255; 140; 0) x 0.5" Dir="(1; 0; 0)" Size="0.08" Pos="(2.76; 3.033; -0.701)" ParentFrame="BoneCabin_cdt" />
+		</Ignition>
+	</ModelAttachments>
+	<GameData
+		CameraPreset="roof"
+		Category="miscellenious"
+		Price="700"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_PARKLIGHTS_FACTORY_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_PARKLIGHTS_FACTORY_NAME"
+		/>
+		<InstallSocket Type="KenworthC500Gabarite" />
+	</GameData>
+</TruckAddon>

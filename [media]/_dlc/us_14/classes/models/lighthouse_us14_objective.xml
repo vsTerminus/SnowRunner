@@ -33,6 +33,8 @@
 	<AnimSubset Name="build_animation_0">
 		<Mesh Name="animesh" />
 		<Mesh Name="ligthouse" />
+		<Mesh Name="ligthouse_lod1" />
+		<CdtMesh Name="cdt_ligthouse" />
 		<AnimTrack Name="stage_1_anim" />
 		<AnimTrackSubset Name="anim_loop" />
 	</AnimSubset>

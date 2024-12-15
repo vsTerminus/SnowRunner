@@ -1,0 +1,99 @@
+<_templates Include="trucks">
+	<Body>
+		<Limits Collisions="None">
+			<Constraint
+				LinearLimitsX="(-0.01;0.01)"
+				LinearLimitsY="(0;0.01)"
+				LinearLimitsZ="(0;0)"
+				Type="Fixed"
+			>
+				<Motor Damping="10" Spring="0.001" Type="Spring" />
+			</Constraint>
+		</Limits>
+	</Body>
+</_templates>
+<TruckAddon>
+	 <TruckData
+		FuelCapacity="140"
+		RepairsCapacity="300"
+	>
+		<LimitedFluid Center="2.561; 2.995; 0.622" SizeX="0.365" SizeY="0.154" SizeZ="0.472" Type="Box" ParentFrame="BoneFuel1_cdt" />
+		<LimitedFluid Center="2.561; 2.995; -0.108" SizeX="0.365" SizeY="0.154" SizeZ="0.472" Type="Box" ParentFrame="BoneFuel2_cdt" />
+		<LimitedFluid Center="2.061; 2.995; -0.108" SizeX="0.365" SizeY="0.154" SizeZ="0.472" Type="Box" ParentFrame="BoneFuel2_cdt" />
+		<LimitedFluid Center="2.061; 2.995; 0.622" SizeX="0.365" SizeY="0.154" SizeZ="0.472" Type="Box" ParentFrame="BoneFuel1_cdt" />
+	</TruckData>
+	<RepairsHide>
+		<Mesh Frame="repair" HideThreshold="0.0" />
+	</RepairsHide>
+	<FuelHide>
+		<Mesh Frame="fuel2" HideThreshold="0.0" />
+		<Mesh Frame="fuel1" HideThreshold="0.5" />
+	</FuelHide>
+	<PhysicsModel Mesh="trucks/kenworth_t880_tuning/kenworth_t880_roofrack_1">
+		<Body ImpactType="Truck" Mass="60" ModelFrame="BoneCabin_cdt">
+			<Constraint Type="Rigid" />
+			<Body
+				Mass="50"
+				ModelFrame="BoneRepair_cdt"
+			>
+				<Constraint Type="Fixed" LinearLimitsX="(-0.01; 0.02)" LinearLimitsY="(0; 0)" LinearLimitsZ="(-0.007; 0.005)" >
+					<Motor Damping="210" Spring="0.70" Type="Spring" />
+				</Constraint>
+			</Body>
+			<Body
+				Mass="40"
+				ModelFrame="BoneFuel1_cdt"
+			>
+				<Constraint Type="Fixed" LinearLimitsX="(-0.004; 0.02)" LinearLimitsZ="(0; 0.006)" LinearLimitsY="(0; 0)" >
+					<Motor Damping="250" Spring="0.75" Type="Spring" />
+				</Constraint>
+			</Body>
+			<Body
+				Mass="40"
+				ModelFrame="BoneFuel2_cdt"
+			>
+				<Constraint Type="Fixed" LinearLimitsX="(-0.013; 0.03)" LinearLimitsZ="(0; 0.005)" LinearLimitsY="(0; 0)" >
+					<Motor Damping="230" Spring="0.73" Type="Spring" />
+				</Constraint>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<HeadLight>
+			<Model _template="HeadLightRay" Org="(2.972; 3.144; -0.487)" />
+			<Model _template="HeadLightRay" Org="(2.972; 3.144; 0.487)" />
+			
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" DirAngle="90" Color="g(230; 230; 235) x 0.8" Size="0.08" Pos="(2.972; 3.145; -0.592)" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" DirAngle="90" Color="g(230; 230; 235) x 0.8" Size="0.08" Pos="(2.972; 3.145; -0.522)" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" DirAngle="90" Color="g(230; 230; 235) x 0.8" Size="0.08" Pos="(2.972; 3.145; -0.453)" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" DirAngle="90" Color="g(230; 230; 235) x 0.8" Size="0.08" Pos="(2.972; 3.145; -0.382)" />
+			<Flare _template="BlueStreak" AspectRatio="4.0" Color="g(220; 220; 235) x 0.15" Size="0.3" Pos="(2.972; 3.145; -0.453)" ParentFrame="BoneCabin_cdt"/>
+			
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" DirAngle="90" Color="g(230; 230; 235) x 0.8" Size="0.08" Pos="(2.972; 3.145; 0.592)" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" DirAngle="90" Color="g(230; 230; 235) x 0.8" Size="0.08" Pos="(2.972; 3.145; 0.522)" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" DirAngle="90" Color="g(230; 230; 235) x 0.8" Size="0.08" Pos="(2.972; 3.145; 0.453)" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" DirAngle="90" Color="g(230; 230; 235) x 0.8" Size="0.08" Pos="(2.972; 3.145; 0.382)" />
+			<Flare _template="BlueStreak" AspectRatio="4.0" Color="g(220; 220; 235) x 0.15" Size="0.3" Pos="(2.972; 3.145; 0.453)" ParentFrame="BoneCabin_cdt"/>
+		</HeadLight>
+		<Ignition>
+			
+		</Ignition>
+	</ModelAttachments>
+	<MainHeadLight _template="Multiply1" />
+	<GameData
+		CameraPreset="roof"
+		Category="frame_addons"
+		IsCustomizable="true"
+		Price="3800"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SCOUT_TRUNK_SUPPLIES_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SCOUT_TRUNK_SUPPLIES_NAME"
+		/>
+		<InstallSocket Type="KenworthT880Roofrack" />
+	</GameData>
+</TruckAddon>
