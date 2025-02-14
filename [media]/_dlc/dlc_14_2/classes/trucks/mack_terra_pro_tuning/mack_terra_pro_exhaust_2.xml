@@ -1,0 +1,47 @@
+<TruckAddon>
+	<TruckData>
+		<Shakers>
+			<Shaker
+				Frame="BoneExhaust"
+				MinAngle="(0; 1.0; 1.0)"
+				MaxAngle="(0; 1.3; 1.3)"
+				MaxFrequency="4"
+				ParentFrame="BoneChassis_cdt"
+			/>
+			<Shaker
+				Frame="BoneExhaustCover"
+				LimitDirectionY="Positive"
+				MinAngle="(0; 45; 0)"
+				MaxAngle="(0; 60; 0)"
+				MaxFrequency="0.15"
+				ParentFrame="BoneExhaust"
+			/>
+		</Shakers>
+	</TruckData>
+	<Exhaust
+			Dir="(-0.5; 0.5; -1.0)"
+			IsLight="true"
+			Origin="(2.545; 3.250; -0.6)"
+			Speed="3.82"
+	/>
+	<PhysicsModel Mesh="trucks/mack_terra_pro_tuning/mack_terra_pro_exhaust_2">
+		<Body Collisions="None" Mass="10" ModelFrame="BoneChassis_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="exhaust"
+		Category="exhaust"
+		Price="1700"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_EXHAUST_FLAPCAP_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_EXHAUST_FLAPCAP_NAME"
+		/>
+		<InstallSocket Type="MackTerraProExhaust" />
+	</GameData>
+</TruckAddon>

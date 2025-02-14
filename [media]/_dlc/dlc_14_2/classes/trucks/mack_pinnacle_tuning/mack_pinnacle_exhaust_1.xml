@@ -1,0 +1,32 @@
+<TruckAddon>
+	<TruckData>
+		<Shakers>
+			<Shaker Frame="BoneExhaustLeft" MinAngle="(0.03; 0.03; 0.03)" MaxAngle="(0.1; 0.1; 0.1)" MaxFrequency="1.3" />
+			<Shaker Frame="BoneExhaustRight" MinAngle="(0.03; 0.03; 0.03)" MaxAngle="(0.1; 0.1; 0.1)" MaxFrequency="1.3" />
+			<Shaker Frame="BoneExhaustCapR"  LimitDirectionZ="Negative" MinAngle="(0; 0; 17)" MaxAngle="(0; 0; 52)" MaxFrequency="0.15" ParentFrame="BoneExhaustRight" />
+			<Shaker Frame="BoneExhaustCapL"  LimitDirectionZ="Negative" MinAngle="(0; 0; 15)" MaxAngle="(0; 0; 55)" MaxFrequency="0.13" ParentFrame="BoneExhaustLeft" />
+		</Shakers>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/mack_pinnacle_tuning/mack_pinnacle_exhaust_1">
+		<Body Collisions="None" Mass="10" ModelFrame="BoneCabin_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="exhaust"
+		Category="exhaust"
+		Price="1400"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_EXHAUST_FLAPCAP_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_EXHAUST_FLAPCAP_NAME"
+		/>
+		<InstallSocket Type="MackPinnacleExhaust" />
+	</GameData>
+	<Exhaust Dir="(0; 1; 0)" IsLight="true" Origin="(1.59; 3.164; 0.84)" Speed="3.82" ParentFrame="BoneExhaustLeft" />
+	<Exhaust Dir="(0; 1; 0)" IsLight="true" Origin="(1.590; 3.164; -0.840)" Speed="3.8" ParentFrame="BoneExhaustRight" />
+</TruckAddon>

@@ -1,0 +1,18 @@
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/mack_pinnacle_stuff/stuff_hood_mack_bulldog_mack_pinnacle"/>
+	<GameData
+		Price="1200"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+		CameraPreset="hood_figure"
+		Category="hood_ornament"
+	>
+		<InstallSocket Type="StuffHoodMackPinnacle" />
+		<UiDesc
+			UiDesc="UI_STUFF_HOOD_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_STUFF_HOOD_BULLDOG_KING_NAME"
+		/>
+	</GameData>
+</TruckAddon>

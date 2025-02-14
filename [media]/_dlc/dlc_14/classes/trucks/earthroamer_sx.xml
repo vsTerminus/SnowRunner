@@ -383,13 +383,6 @@
 			<Flare _template="IgnitionSignalOrange" Color="g(255; 165; 80) x 0.5" Size="0.1" AspectRatio="1.5" Pos="(-1.059; 3.168; -1.173)" Dir="(0; 0; -1)" />
 			<Flare _template="IgnitionSignalOrange" Color="g(255; 165; 80) x 0.5" Size="0.1" AspectRatio="1.5" Pos="(-1.059; 1.130; 1.196)" Dir="(0; 0; 1)" />
 			<Flare _template="IgnitionSignalOrange" Color="g(255; 165; 80) x 0.5" Size="0.1" AspectRatio="1.5" Pos="(-1.059; 1.130; -1.196)" Dir="(0; 0; -1)" />
-			<!-- Tresholds Beacons Flares -->
-			<Flare _template="IgnitionSignalOrange" Color="g(255; 165; 80) x 0.5" Size="0.1" AspectRatio="1.5" Pos="(0.150; 0.621; -1.082)" Dir="(0; 0; -1)" />
-			<Flare _template="IgnitionSignalOrange" Color="g(255; 165; 80) x 0.5" Size="0.1" AspectRatio="1.5" Pos="(0.150; 0.621; 1.082)" Dir="(0; 0; 1)" />
-			<Flare _template="IgnitionSignalOrange" Color="g(255; 165; 80) x 0.5" Size="0.1" AspectRatio="1.5" Pos="(1.166; 0.621; -1.082)" Dir="(0; 0; -1)" />
-			<Flare _template="IgnitionSignalOrange" Color="g(255; 165; 80) x 0.5" Size="0.1" AspectRatio="1.5" Pos="(1.166; 0.621; 1.082)" Dir="(0; 0; 1)" />
-			<Flare _template="IgnitionSignalOrange" Color="g(255; 165; 80) x 0.5" Size="0.1" AspectRatio="1.5" Pos="(2.192; 0.621; -1.082)" Dir="(0; 0; -1)" />
-			<Flare _template="IgnitionSignalOrange" Color="g(255; 165; 80) x 0.5" Size="0.1" AspectRatio="1.5" Pos="(2.192; 0.621; 1.082)" Dir="(0; 0; 1)" />
 			<!-- Rear Red Signals Flares -->
 			<Flare _template="IgnitionSignalRed" Size="0.2" Dir="(-1; 0; 0)" Pos="(-5.305; 3.060; 0.935)" />
 			<Flare _template="IgnitionSignalRed" Size="0.2" Dir="(-1; 0; 0)" Pos="(-5.305; 3.060; -0.935)" />

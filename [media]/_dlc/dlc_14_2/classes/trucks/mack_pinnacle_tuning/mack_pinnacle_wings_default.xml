@@ -1,0 +1,23 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/mack_pinnacle_tuning/mack_pinnacle_wings_default">
+		<Body ImpactType="Truck" Mass="10" ModelFrame="BoneWings_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="default"
+		Category="fender_rear"
+		Price="400"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc=""
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_WINGS_DEFAULT_NAME"
+		/>
+		<InstallSocket Type="MackPinnacleWingsStock" />
+	</GameData>
+</TruckAddon>

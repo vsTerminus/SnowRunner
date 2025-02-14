@@ -1,0 +1,94 @@
+<_templates Include="trucks" >
+	<Body>
+		<Limits Collisions="None">
+			<Constraint Type="Fixed">
+				<Motor Damping="250" Spring="0.75" Type="Spring" />
+			</Constraint>
+		</Limits>
+	</Body>
+</_templates>
+<TruckAddon>
+	<TruckData
+		FuelCapacity="100"
+		RepairsCapacity="200"
+	>
+		<LimitedFluid Center="(3.644; 2.997; -0.680)" SizeX="0.425" SizeY="0.145" SizeZ="0.370" Type="Box" ParentFrame="BoneFuel1_cdt" />
+		<LimitedFluid Center="(3.561; 2.997; -0.255)" SizeX="0.425" SizeY="0.145" SizeZ="0.370" Type="Box" ParentFrame="BoneFuel2_cdt" />
+		<LimitedFluid Center="(3.062; 2.997; -0.659)" SizeX="0.370" SizeY="0.145" SizeZ="0.425" Type="Box" ParentFrame="BoneFuel3_cdt" />
+		<LimitedFluid Center="(2.994; 3.102; 0.045)" SizeX="0.145" SizeY="0.370" SizeZ="0.425" Type="Box" ParentFrame="BoneFuel4_cdt" />
+		<LimitedFluid Center="(2.997; 3.102; 0.639)" SizeX="0.145" SizeY="0.370" SizeZ="0.425" Type="Box" ParentFrame="BoneFuel5_cdt" />
+	</TruckData>
+	<RepairsHide>
+		<Mesh Frame="repair" HideThreshold="0.0" />
+	</RepairsHide>
+	<FuelHide>
+		<Mesh Frame="fuel1" HideThreshold="0.0" />
+		<Mesh Frame="fuel2" HideThreshold="0.2" />
+		<Mesh Frame="fuel3" HideThreshold="0.4" />
+		<Mesh Frame="fuel4" HideThreshold="0.6" />
+		<Mesh Frame="fuel5" HideThreshold="0.8" />
+	</FuelHide>
+	<PhysicsModel Mesh="trucks/mack_terra_pro_tuning/mack_terra_pro_roofrack_1">
+		<Body Mass="60" ModelFrame="BoneChassis_cdt">
+			<Constraint Type="Rigid" />
+			<Body
+				_template="Limits"
+				Mass="40"
+				ModelFrame="BoneRepair_cdt"
+			>
+				<Constraint LinearLimitsX="(-0.005; 0.005)" LinearLimitsY="(0; 0)" LinearLimitsZ="(-0.005; 0.005)"/>
+			</Body>
+			<Body
+				_template="Limits"
+				Mass="20"
+				ModelFrame="BoneFuel1_cdt"
+			>
+				<Constraint LinearLimitsX="(-0.005; 0.005)" LinearLimitsY="(0; 0)" LinearLimitsZ="(-0.005; 0.005)"/>
+			</Body>
+			<Body
+				_template="Limits"
+				Mass="20"
+				ModelFrame="BoneFuel2_cdt"
+			>
+				<Constraint LinearLimitsX="(-0.005; 0.005)" LinearLimitsY="(0; 0)" LinearLimitsZ="(-0.005; 0.005)"/>
+			</Body>
+			<Body
+				_template="Limits"
+				Mass="20"
+				ModelFrame="BoneFuel3_cdt"
+			>
+				<Constraint LinearLimitsX="(-0.005; 0.005)" LinearLimitsY="(0; 0)" LinearLimitsZ="(-0.005; 0.005)"/>
+			</Body>
+			<Body
+				_template="Limits"
+				Mass="20"
+				ModelFrame="BoneFuel4_cdt"
+			>
+				<Constraint LinearLimitsX="(-0.005; 0.005)" LinearLimitsY="(0; 0)" LinearLimitsZ="(-0.005; 0.005)"/>
+			</Body>
+			<Body
+				_template="Limits"
+				Mass="20"
+				ModelFrame="BoneFuel5_cdt"
+			>
+				<Constraint LinearLimitsX="(-0.005; 0.005)" LinearLimitsY="(0; 0)" LinearLimitsZ="(-0.005; 0.005)"/>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="roof"
+		Category="frame_addons"
+		IsCustomizable="true"
+		Price="3800"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_ROOFRACK_REGULAR_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_ROOFRACK_REGULAR_NAME"
+		/>
+		<InstallSocket Type="MackTerraProRoofrack" />
+	</GameData>
+</TruckAddon>

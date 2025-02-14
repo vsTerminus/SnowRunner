@@ -7,6 +7,6 @@
 		UnlockByRank="1"
 		CameraPreset="hood_figure"
 	>
-		<InstallSocket Type="StuffHoodBurlak" />
+		<InstallSocket Type="StuffHoodPlad450" />
 	</GameData>
 </TruckAddon>

@@ -1,0 +1,52 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<Rotator
+		Frame="BoneRotatorLeft"
+		EngineTorqueFactor="0"
+		RotationAxis="(0; 1; 0)"
+		RotationSpeed="4.0" 
+	/>
+	<Rotator
+		Frame="BoneRotatorRight"
+		EngineTorqueFactor="0"
+		RotationAxis="(0; 1; 0)"
+		RotationSpeed="4.1"
+	/>
+	<PhysicsModel Mesh="trucks/mack_terra_pro_tuning/mack_terra_pro_beacon_1" >
+		<Body Mass="1" ModelFrame="BoneChassis_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<Ignition _template="Flasher">
+			<Model Dir="(0; 0; 1)" Org="(2.918; 2.848; 1.300)" ParentFrame="BoneRotatorLeft" />
+			<Light Dir="(0; 0; 1)" Pos="(2.918; 2.848; 1.300)" ParentFrame="BoneRotatorLeft" />
+			<Flare Dir="(0; 0; 1)" Pos="(2.918; 2.848; 1.300)" ParentFrame="BoneRotatorLeft" />
+			<Flare Dir="(0; 0; 1)" Pos="(2.918; 2.848; 1.300)" ParentFrame="BoneRotatorLeft" />
+			<Flare Pos="(2.918; 2.848; -1.228)" ParentFrame="BoneChassis_cdt" />
+		</Ignition>
+		<Ignition _template="Flasher">
+			<Model Dir="(0; 0; -1)" Org="(2.918; 2.848; -1.300)" ParentFrame="BoneRotatorRight" />
+			<Light Dir="(0; 0; -1)" Pos="(2.918; 2.848; -1.300)" ParentFrame="BoneRotatorRight" />
+			<Flare Dir="(0; 0; -1)" Pos="(2.918; 2.848; -1.300)" ParentFrame="BoneRotatorRight" />
+			<Flare Dir="(0; 0; -1)" Pos="(2.918; 2.848; -1.300)" ParentFrame="BoneRotatorRight" />
+			<Flare Pos="(2.918; 2.848; 1.228)" ParentFrame="BoneChassis_cdt" />
+		</Ignition>
+	</ModelAttachments>
+	<GameData
+		CameraPreset="roof"
+		Category="top"
+		Price="700"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_BEACONS_DOUBLE_RAISED_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_BEACONS_DOUBLE_RAISED_NAME"
+		/>
+		<InstallSocket Type="MackTerraProBeacon" />
+		<RequiredAddon Types="mack_terra_pro_cabin_protector_1" />
+	</GameData>
+</TruckAddon>

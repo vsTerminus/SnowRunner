@@ -325,7 +325,7 @@
 		<AddonSockets>
 			<Socket Names="TatraT813Sideboard" Offset="(0; 0; 0)" ParentFrame="BoneAddonAttachment_cdt" />
 			<!-- <Socket Names="FrameAddonTowPlatform" NamesBlock="Trailer" Offset="(-1.15; 1.25; 0)" ParentFrame="BoneChassis_cdt" /> -->
-			<Socket Names="FrameAddonTow" NamesBlock="Trailer, SaddleHigh, TatraT813ChassisWinch" Offset="(-2.3; 1.08; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="FrameAddonTowTatraT813" NamesBlock="Trailer, SaddleHigh, TatraT813ChassisWinch" Offset="(-2.3; 1.21; 0)" ParentFrame="BoneChassis_cdt" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="TatraT813ChassisWinch" />

@@ -1,0 +1,66 @@
+<_templates Include="trucks">
+	<_parent File="mack_pinnacle_bumper_default" />
+</_templates>
+<TruckAddon>
+	<TruckData>
+		<Damage>
+			<Multiplier Multiplier="1.0" Type="Engine" />
+		</Damage>
+	</TruckData>
+	<PhysicsModel _noinherit="true" Mesh="trucks/mack_pinnacle_tuning/mack_pinnacle_bumper_2">
+		<Body ImpactType="Truck" Mass="20" ModelFrame="BoneChassis_cdt">
+			<Constraint Type="Rigid" ExplicitParentFrame="0"/>
+			<Body Mass="4" ModelFrame="BoneRoof_cdt">
+				<Constraint Type="Fixed" ExplicitParentFrame="1"/>
+			</Body>
+			<Body
+				AngularDamping="6"
+				Collisions="None"
+				Mass="1"
+				ModelFrame="BoneHook_cdt"
+			>
+				<Constraint
+					AxisLocal="(0; 0; 1)"
+					Type="Hinge"
+					MinLimit="-15"
+					MaxLimit="8.5"
+				/>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+	<Ignition>
+		<Flare _template="IgnitionSignalWhite" Color="g(255; 235; 215) x 0.3" Size="0.2" Pos="(4.679; 0.842; -0.982)" ParentFrame="BoneChassis_cdt" />
+		<Flare _template="IgnitionSignalWhite" Color="g(255; 235; 215) x 0.3" Size="0.2" Pos="(4.679; 0.842; 0.982)" ParentFrame="BoneChassis_cdt" />
+	</Ignition>
+		<HeadLight>
+			<Model _template="HeadLightRay" Org="(4.679; 0.842; -0.982)" ParentFrame="BoneChassis_cdt" />
+			<Model _template="HeadLightRay" Org="(4.679; 0.842; 0.982)" ParentFrame="BoneChassis_cdt" />
+			
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.3" DirAngle="135" Size=".4" Pos="(4.917; 1.680; -0.138)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.3" DirAngle="135" Size=".4" Pos="(4.917; 1.680; -0.046)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.3" DirAngle="135" Size=".4" Pos="(4.917; 1.680; 0.046)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.3" DirAngle="135" Size=".4" Pos="(4.917; 1.680; 0.138)" />
+		</HeadLight>	
+	</ModelAttachments>
+	<MainHeadLight _template="Multiply2" />
+	<GameData
+		CameraPreset="default"
+		Category="bumper"
+		Price="1500"
+		UnlockByExploration="false"
+		UnlockByRank="10"
+	>
+		<WinchSocket Pos="(4.986; 0.856; 0.416)" FixedToTruck="true"/>
+		<WinchSocket Pos="(4.986; 0.856; -0.416)" FixedToTruck="true"/>
+		<CraneSocket Pos="(4.986; 0.856; 0.416)" FixedToTruck="true"/>
+		<CraneSocket Pos="(4.986; 0.856; -0.416)" FixedToTruck="true"/>
+		<UiDesc
+			UiDesc="UI_TUNING_BUMPER_REBAR_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_BUMPER_REBAR_NAME"
+		/>
+		<InstallSocket Type="MackPinnacleBumper" />
+	</GameData>
+</TruckAddon>

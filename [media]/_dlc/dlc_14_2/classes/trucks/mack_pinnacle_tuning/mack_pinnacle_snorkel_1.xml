@@ -1,0 +1,20 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<Snorkel Origin="(3.208; 2.188; 0)" />
+	<PhysicsModel Mesh="trucks/mack_pinnacle_tuning/mack_pinnacle_snorkel_1"/>
+	<GameData
+		CameraPreset="snorkels"
+		Category="snorkel"
+		Price="1100"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SNORKEL_SIDESWEPT_TALL_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SNORKEL_EXT_AIRFILTER_NAME"
+		/>
+		<InstallSocket Type="MackPinnacleSnorkel" />
+	</GameData>
+</TruckAddon>

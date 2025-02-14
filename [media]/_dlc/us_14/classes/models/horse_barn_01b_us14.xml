@@ -6,4 +6,5 @@
 	<PhysicsModel>
 		<Body Collisions="Dynamic" />
 	</PhysicsModel>
+	<Landmark Mesh="landmarks/horse_barn_01b_us14_lmk" />
 </ModelBrand>

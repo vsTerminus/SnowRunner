@@ -2,6 +2,7 @@
 	Texture="tiles/sand_pbr_02__d_a.tga" 
 	Normal="tiles/sand_pbr_02_relief__d_a.tga"
 	NoGrass="true"
+	IsSand="true"
 	GenerateDust="true"
 	GrassBrush="DebrisStonesSparse"
 		AllowHiddenExtrudes="0.7"

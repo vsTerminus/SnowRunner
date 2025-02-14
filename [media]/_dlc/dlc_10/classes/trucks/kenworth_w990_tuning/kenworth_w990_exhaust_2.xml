@@ -27,7 +27,7 @@
 	<Exhaust Dir="(-0.430; 0.030; 0.903)" IsLight="true" Origin="(1.501; 3.141; 1.048)" Speed="3.82" />
 	<Exhaust Dir="(-0.462; 0.010; 0.887)" IsLight="true" Origin="(1.452; 3.357; 0.998)" Speed="3.82" />
 	<Exhaust Dir="(-0.430; 0.030; 0.903)" IsLight="true" Origin="(1.406; 3.561; 0.947)" Speed="3.82" />
-	<Exhaust Dir="(0.430; 0.030; -0.903)" IsLight="true" Origin="(1.501; 3.141; -1.048)" Speed="3.82" />
+	<Exhaust Dir="(-0.430; 0.030; -0.903)" IsLight="true" Origin="(1.501; 3.141; -1.048)" Speed="3.82" />
 	<Exhaust Dir="(-0.462; 0.010; -0.887)" IsLight="true" Origin="(1.452; 3.357; -0.998)" Speed="3.82" />
 	<Exhaust Dir="(-0.430; 0.030; -0.903)" IsLight="true" Origin="(1.406; 3.561; -0.947)" Speed="3.82" />
 </TruckAddon>

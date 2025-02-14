@@ -1,0 +1,19 @@
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/mack_terra_pro_stuff/sticker_inside_1x4_02_mack_terra_pro" />
+	<GameData
+		CameraPreset="sticker_3"
+		Category="sticker"
+		Price="100"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+		IsCustomizable="false"
+	>
+		<UiDesc
+			UiDesc="UI_STUFF_STICKER_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_STUFF_STICKER_INSIDE_1X4_NAME"
+		/>
+		<InstallSocket Type="MackTerraProSticker_1x4_02" />
+	</GameData>
+</TruckAddon>

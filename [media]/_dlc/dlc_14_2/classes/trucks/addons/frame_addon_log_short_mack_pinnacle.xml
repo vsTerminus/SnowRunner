@@ -1,0 +1,31 @@
+<_templates Include="trucks" />
+<TruckAddon IsChassisFullOcclusion="true">
+	<PhysicsModel Mesh="trucks/addons/frame_addon_log_short_mack_pinnacle">
+		<Body ImpactType="Truck" Mass="500">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments/>
+	<GameData
+		CameraPreset="addon_1"
+		Category="frame_addons"
+		Price="6400"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_ADDON_MACK_PINNACLE_LOG_SHORT_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_ADDON_MACK_PINNACLE_LOG_SHORT_NAME"
+		/>
+		<LoadArea Subtype="MackPinnacleLogShort" TrailerLoad="true" Type="CargoLogsShort" Min="(-2.393, 1.291, -1.220)" Max="(0.297, 2.748, 1.220)" ParentFrame="BoneRoot_cdt" />
+		<LoadArea Subtype="MackPinnacleLogShort" TrailerLoad="true" Type="CargoLogsShort" Min="(-5.084, 1.291, -1.220)" Max="(-2.393, 2.748, 1.220)" ParentFrame="BoneRoot_cdt" />
+		<AddonSlots
+			InitialOffset="(0; 0; 0)"
+			ParentFrames="BoneRoot_cdt"
+			Quantity="1"
+		/>
+		<InstallSocket Offset="(0; 0; 0)" Type="FrameAddonMackPinnacleLogsShort" ParentFrame="BoneRoot_cdt" />
+	</GameData>
+</TruckAddon>

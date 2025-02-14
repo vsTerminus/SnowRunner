@@ -1,0 +1,31 @@
+<TruckAddon IsChassisFullOcclusion="true">
+	<WheelRepairsHide>
+		<Mesh Frame="spare_wheel" HideThreshold="0.0" />
+	</WheelRepairsHide>
+	<TruckData WheelRepairsCapacity="1" />
+	<PhysicsModel Mesh="trucks/addons/frame_addon_mack_terra_pro_sideboard_2">
+		<Body Mass="600" ModelFrame="BoneAddon_cdt" >
+			<Constraint Type="Rigid" />	
+			<Body Mass="50" ModelFrame="BoneWheel_cdt" >
+				<Constraint Type="Fixed" />	
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="addon_1"
+		Category="frame_addons"
+		IsCustomizable="true"
+		Price="5300"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_ADDON_MACK_TERRA_PRO_SIDEBOARD_2_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_ADDON_MACK_TERRA_PRO_SIDEBOARD_2_NAME"
+		/>
+		<InstallSocket Type="FrameAddonMackTerraPro" />
+		<AddonSlots InitialOffset="(0.15; 1.338; 0.000)" OffsetStep="(-2.65; 0; 0)" Quantity="2" />
+	</GameData>
+</TruckAddon>

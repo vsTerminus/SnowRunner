@@ -1,0 +1,28 @@
+<_templates Include="trucks"/>
+<TruckAddon>
+	<TruckData>
+		<Damage>
+			<Multiplier Multiplier="0.9" Type="Engine" />
+		</Damage>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/mack_terra_pro_tuning/mack_terra_pro_cabin_protector_1">
+		<Body ImpactType="Truck" Mass="80">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="default"
+		Category="frame_addons"
+		Price="1900"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_CABIN_PROTECTOR_1_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_CABIN_PROTECTOR_1_NAME"
+		/>
+		<InstallSocket Type="MackTerraProProtector" />
+	</GameData>
+</TruckAddon>

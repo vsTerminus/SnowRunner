@@ -1,0 +1,35 @@
+<_templates Include="trucks">
+	<TruckTire>
+		<Allterrain _template="Heavy" RearMassScale="2">
+			<WheelTracks _template="Default" />
+			<WheelTracks _template="DefaultDouble" Rear="true" />
+			<WheelSoftness _template="Average" />
+		</Allterrain>
+	</TruckTire>
+</_templates>
+<TruckWheels DamageCapacity="100" Radius="1" Width="0.61" WidthRear="1.254">
+	<TruckTires>
+		<TruckTire _template="Allterrain" Mesh="wheels/tire_mack_pinnacle" Name="tire_mack">
+			<WheelFriction 
+				_template="Allterrain"
+				BodyFriction="1.5"
+				BodyFrictionAsphalt="1.1"
+				SubstanceFriction="2"
+			/>
+			<GameData
+				Price="6600"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_ALLTERRAIN_DESC" UiName="UI_TIRE_MACK_PINNACLE_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>
+		<TruckRim Mesh="wheels/rim_mack_pinnacle" Name="rim_1">
+			<GameData>
+				<UiDesc UiDesc="UI_RIM_HEAVY_OFFROAD_DOUBLE_1_DESC" UiName="UI_RIM_MACK_PINNACLE_NAME" />
+			</GameData>
+		</TruckRim>
+	</TruckRims>
+</TruckWheels>

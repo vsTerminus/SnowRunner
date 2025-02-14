@@ -22,9 +22,9 @@
 					</Constraint>
 				</Body>
 			</Body>
-			<Body Collisions="None" Mass="0.5" ModelFrame="BoneExtraChassis_cdt">
+			<!-- <Body Collisions="None" Mass="0.5" ModelFrame="BoneExtraChassis_cdt">
 				<Constraint ExplicitParentFrame="0" Type="Fixed" />
-			</Body>
+			</Body> -->
 		</Body>
 	</PhysicsModel>
 	<GameData

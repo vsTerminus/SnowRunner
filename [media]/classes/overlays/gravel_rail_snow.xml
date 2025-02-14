@@ -1,5 +1,6 @@
 <OverlayBrand
 	GenerateDust="true"
+	IsGravel="true"
 	Texture="overlays/gravel_rail_snow__d_a.tga"
 	TextureRelief="overlays/gravel_rail_relief__d_a.tga"
 >

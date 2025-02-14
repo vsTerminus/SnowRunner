@@ -1,0 +1,7 @@
+<_parent File="frame_addon_tow" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/addons/frame_addon_tow_tatra_t813"/>
+	<GameData>
+		<InstallSocket Offset="(0; 0; 0)" Type="FrameAddonTowTatraT813" />
+	</GameData>
+</TruckAddon>

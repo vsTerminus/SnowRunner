@@ -1,0 +1,70 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/mack_pinnacle_tuning/mack_pinnacle_spot_light_1">
+		<Body ImpactType="Truck" Mass="30" ModelFrame="BoneChassis_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<HeadLight>
+			<Model _template="HeadLightRay" Org="(2.951; 2.948; -0.526)" />
+			<Model _template="HeadLightRay" Org="(2.951; 2.948; 0.526)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(2.948; 2.963; -0.580)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(2.948; 2.963; -0.544)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(2.948; 2.963; -0.508)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(2.948; 2.963; -0.472)" />
+			
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(2.948; 2.934; -0.580)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(2.948; 2.934; -0.544)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(2.948; 2.934; -0.508)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(2.948; 2.934; -0.472)" />
+
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(2.948; 2.963; -0.232)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(2.948; 2.963; -0.195)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(2.948; 2.963; -0.159)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(2.948; 2.963; -0.123)" />
+			
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(2.948; 2.934; -0.232)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(2.948; 2.934; -0.195)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(2.948; 2.934; -0.159)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(2.948; 2.934; -0.123)" />
+			
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(2.948; 2.963; 0.232)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(2.948; 2.963; 0.195)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(2.948; 2.963; 0.159)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(2.948; 2.963; 0.123)" />
+			
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(2.948; 2.934; 0.232)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(2.948; 2.934; 0.195)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(2.948; 2.934; 0.159)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(2.948; 2.934; 0.123)" />
+			
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(2.948; 2.963; 0.580)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(2.948; 2.963; 0.544)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(2.948; 2.963; 0.508)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(2.948; 2.963; 0.472)" />
+			
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(2.948; 2.934; 0.580)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(2.948; 2.934; 0.544)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(2.948; 2.934; 0.508)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(2.948; 2.934; 0.472)" />
+		</HeadLight>
+	</ModelAttachments>
+	<MainHeadLight _template="Multiply1" />
+	<GameData
+		CameraPreset="roof"
+		Category="top"
+		IsCustomizable="true"
+		Price="900"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_ROOFBAR_FOGLIGHTS_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_ROOFBAR_FOGLIGHTS_NAME"
+		/>
+		<InstallSocket Type="MackPinnacleSpotlight" />
+	</GameData>
+</TruckAddon>

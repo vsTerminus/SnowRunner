@@ -1,0 +1,83 @@
+<_templates Include="trucks">
+	<Flare>
+		<MarkerBeacon Color="g(125; 81; 18) x 0.7" Size="0.2" />
+	</Flare>
+</_templates>
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/mack_pinnacle_tuning/mack_pinnacle_top_fender">
+		<Body ImpactType="Truck" Mass="50" ModelFrame="BoneChassis_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<Ignition>
+			<!-- FRONT -->
+			<Flare _template="MarkerBeacon" Color="g(255; 140; 0) x 0.3" Size="0.2" Pos="(2.989; 2.810; -0.756)" Dir="(1; 0; 0)" DirAngle="120" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="MarkerBeacon" Color="g(255; 140; 0) x 0.3" Size="0.2" Pos="(3.056; 2.817; -0.381)" Dir="(1; 0; 0)" DirAngle="120" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="MarkerBeacon" Color="g(255; 140; 0) x 0.3" Size="0.2" Pos="(3.070; 2.825; 0)" Dir="(1; 0; 0)" DirAngle="120" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="MarkerBeacon" Color="g(255; 140; 0) x 0.3" Size="0.2" Pos="(3.056; 2.817; 0.381)" Dir="(1; 0; 0)" DirAngle="120" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="MarkerBeacon" Color="g(255; 140; 0) x 0.3" Size="0.2" Pos="(2.989; 2.810; 0.756)" Dir="(1; 0; 0)" DirAngle="120" ParentFrame="BoneChassis_cdt" />
+			<!-- RIGHT -->
+			<Flare _template="MarkerBeacon" Color="g(255; 140; 0) x 0.3" Size="0.2" Pos="(1.906; 2.792; -0.967)" Dir="(0; 0; -1)" DirAngle="110" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="MarkerBeacon" Color="g(255; 140; 0) x 0.3" Size="0.2" Pos="(2.276; 2.792; -0.970)" Dir="(0; 0; -1)" DirAngle="110" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="MarkerBeacon" Color="g(255; 140; 0) x 0.3" Size="0.2" Pos="(2.650; 2.792; -0.970)" Dir="(0; 0; -1)" DirAngle="110" ParentFrame="BoneChassis_cdt" />
+			<!-- LEFT -->
+			<Flare _template="MarkerBeacon" Color="g(255; 140; 0) x 0.3" Size="0.2" Pos="(1.906; 2.792; 0.967)" Dir="(0; 0; 1)" DirAngle="110" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="MarkerBeacon" Color="g(255; 140; 0) x 0.3" Size="0.2" Pos="(2.276; 2.792; 0.970)" Dir="(0; 0; 1)" DirAngle="110" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="MarkerBeacon" Color="g(255; 140; 0) x 0.3" Size="0.2" Pos="(2.650; 2.792; 0.970)" Dir="(0; 0; 1)" DirAngle="110" ParentFrame="BoneChassis_cdt" />
+		</Ignition>
+		<HeadLight>
+			<Model _template="HeadLightRay" Org="(3.100; 2.994; -0.454)" />
+			<Model _template="HeadLightRay" Org="(3.100; 2.994; 0.454)" />
+			
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.100; 3.008; -0.561)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.100; 3.008; -0.525)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.100; 3.008; -0.487)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.100; 3.007; -0.455)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.100; 3.007; -0.421)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.100; 3.007; -0.384)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.100; 3.007; -0.348)" />
+			
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.100; 2.979; -0.561)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.100; 2.979; -0.525)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.100; 2.979; -0.487)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.100; 2.979; -0.455)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.100; 2.979; -0.421)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.100; 2.979; -0.384)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.100; 2.979; -0.348)" />
+			
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.100; 3.008; 0.561)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.100; 3.008; 0.525)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.100; 3.008; 0.487)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.100; 3.007; 0.455)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.100; 3.007; 0.421)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.100; 3.007; 0.384)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.100; 3.007; 0.348)" />
+			
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.100; 2.979; 0.561)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.100; 2.979; 0.525)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.100; 2.979; 0.487)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.100; 2.979; 0.455)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.100; 2.979; 0.421)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.100; 2.979; 0.384)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.100; 2.979; 0.348)" />
+		</HeadLight>
+	</ModelAttachments>
+	<MainHeadLight _template="Multiply1" />
+	<GameData
+		CameraPreset="roof"
+		Category="top"
+		IsCustomizable="true"
+		Price="900"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_FORD_CLT9000_CLT_TOP_FENDER_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_FORD_CLT9000_CLT_TOP_FENDER_NAME"
+		/>
+		<InstallSocket CameraPreset="roof" Type="MackPinnacleTop" />
+	</GameData>
+</TruckAddon>

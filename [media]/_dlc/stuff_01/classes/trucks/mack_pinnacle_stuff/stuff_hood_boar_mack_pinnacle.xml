@@ -1,0 +1,12 @@
+<_parent File="stuff_hood_boar_ford_f750" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/mack_pinnacle_stuff/stuff_hood_boar_mack_pinnacle"/>
+	<GameData
+		Price="1200"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+		CameraPreset="hood_figure"
+	>
+		<InstallSocket Type="StuffHoodMackPinnacle" />
+	</GameData>
+</TruckAddon>

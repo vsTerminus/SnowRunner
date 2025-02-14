@@ -456,9 +456,9 @@
 		<CraneSocket Pos="(-4.402; 0.585; 0)" ParentFrame="BoneChassis_cdt" />
 		<UiDesc
 			UiDesc="UI_VEHICLE_KENWORTH_T880_DESC"
-			UiIcon30x30="heavyDutyVehicleImg30"
+			UiIcon30x30="highwayVehicleImg30"
 			UiIcon328x458="shopImgKenworth880"
-			UiIcon40x40="heavyDutyVehicleImg"
+			UiIcon40x40="highwayVehicleImg"
 			UiIconLogo="KenworthLogo80"
 			UiName="UI_VEHICLE_KENWORTH_T880_NAME"
 		/>

@@ -1,0 +1,71 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<TruckData>
+		<Damage>
+			<Multiplier Multiplier="0.9" Type="Engine" />
+		</Damage>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/mack_terra_pro_tuning/mack_terra_pro_bumper_2">
+		<Body ImpactType="Truck" Mass="40" ModelFrame="BoneChassis_cdt">
+			<Constraint Type="Rigid" />
+				<Body Mass="30" Collisions="None" ModelFrame="BoneRope_cdt" CenterOfMassOffset="(0.0; 0.1; 0.0)">
+					<Constraint
+						Type="Hinge"
+						AxisLocal="(0.0; 0.0; 1.0)"
+						MinLimit="-30.0"
+						MaxLimit="7.0"
+					>
+						<Motor Damping="0.5" Spring="8" Type="Spring" />
+					</Constraint>
+				</Body>
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<Ignition>			
+			<Light _template="IgnitionSignalWhite" Size="2" Pos="(4.525; 1.310; -0.000)" Dir="(1; -0.15; 0)"/>
+			<Flare _template="IgnitionSignalWhite" Size="0.5" Pos="(4.525; 0.745; -0.871)" />
+			<Flare _template="IgnitionSignalWhite" Size="0.5" Pos="(4.525; 0.745; 0.871)" />
+		</Ignition>
+		<HeadLight>
+			<Model _template="HeadLightRay" Org="(4.573; 1.310; 0.000)" />
+			<Flare _template="LED" Size="0.05" Pos="(4.568; 1.310; -0.282)" />
+			<Flare _template="LED" Size="0.05" Pos="(4.568; 1.310; -0.247)" />
+			<Flare _template="LED" Size="0.05" Pos="(4.568; 1.310; -0.212)" />
+			<Flare _template="LED" Size="0.05" Pos="(4.568; 1.310; -0.176)" />
+			<Flare _template="LED" Size="0.05" Pos="(4.568; 1.310; -0.141)" />
+			<Flare _template="LED" Size="0.05" Pos="(4.568; 1.310; -0.106)" />
+			<Flare _template="LED" Size="0.05" Pos="(4.568; 1.310; -0.071)" />
+			<Flare _template="LED" Size="0.05" Pos="(4.568; 1.310; -0.035)" />
+			
+			<Flare _template="LED" Size="0.05" Pos="(4.568; 1.310; 0.000)" />
+			
+			<Flare _template="LED" Size="0.05" Pos="(4.568; 1.310; 0.282)" />
+			<Flare _template="LED" Size="0.05" Pos="(4.568; 1.310; 0.247)" />
+			<Flare _template="LED" Size="0.05" Pos="(4.568; 1.310; 0.212)" />
+			<Flare _template="LED" Size="0.05" Pos="(4.568; 1.310; 0.176)" />
+			<Flare _template="LED" Size="0.05" Pos="(4.568; 1.310; 0.141)" />
+			<Flare _template="LED" Size="0.05" Pos="(4.568; 1.310; 0.106)" />
+			<Flare _template="LED" Size="0.05" Pos="(4.568; 1.310; 0.071)" />
+			<Flare _template="LED" Size="0.05" Pos="(4.568; 1.310; 0.035)" />
+		</HeadLight>
+	</ModelAttachments>
+	<GameData
+		CameraPreset="hoods_default"
+		Category="bumper"
+		Price="1500"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<WinchSocket Pos="(4.724; 0.768; 0.507)" FixedToTruck="True" />
+		<WinchSocket Pos="(4.724; 0.768; -0.507)" FixedToTruck="True" />
+		<CraneSocket Pos="(4.724; 0.768; 0.507)" FixedToTruck="True" />
+		<CraneSocket Pos="(4.724; 0.768; -0.507)" FixedToTruck="True" />
+		<UiDesc
+			UiDesc="UI_TUNING_BUMPER_DEFENDER_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_BUMPER_DEFENDER_NAME"
+		/>
+		<InstallSocket Type="MackTerraProBumper" />
+	</GameData>
+</TruckAddon>

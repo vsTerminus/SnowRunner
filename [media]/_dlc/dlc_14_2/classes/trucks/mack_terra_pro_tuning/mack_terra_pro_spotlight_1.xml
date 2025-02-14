@@ -1,0 +1,44 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/mack_terra_pro_tuning/mack_terra_pro_spotlight_1">
+		<Body ImpactType="Truck" Mass="10" ModelFrame="BoneChassis_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<Ignition>
+			<Flare _template="HeadLight" Color="g(255; 235; 215) x 0.35" DirAngle="135" Size="0.25" Pos="(4.3; 2.840; -0.322)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 215) x 0.35" DirAngle="135" Size="0.25" Pos="(4.3; 2.840; 0.001)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 215) x 0.35" DirAngle="135" Size="0.25" Pos="(4.3; 2.840; 0.322)" />
+		</Ignition>
+		<HeadLight>
+			<Model _template="HeadLightRay" Org="(4.317; 2.840; -0.322)" Color="g(255; 235; 215) x 0.1"/>
+			<Model _template="HeadLightRay" Org="(4.317; 2.840; 0.001)" Color="g(255; 235; 215) x 0.1"/>
+			<Model _template="HeadLightRay" Org="(4.317; 2.840; 0.322)" Color="g(255; 235; 215) x 0.1"/>
+			<Flare _template="HeadLight" Color="g(255; 235; 215) x 0.35" DirAngle="135" Size="0.35" Pos="(4.317; 2.840; -0.322)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 215) x 0.35" DirAngle="135" Size="0.35" Pos="(4.317; 2.840; 0.001)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 215) x 0.35" DirAngle="135" Size="0.35" Pos="(4.317; 2.840; 0.322)" />
+			
+			<Flare _template="BlueStreak" Pos="(4.317; 2.840; -0.322)" Size="0.4" AspectRatio="2" />
+			<Flare _template="BlueStreak" Pos="(4.317; 2.840; 0.001)" Size="0.4" AspectRatio="2" />
+			<Flare _template="BlueStreak" Pos="(4.317; 2.840; 0.322)" Size="0.4" AspectRatio="2" />
+		</HeadLight>
+	</ModelAttachments>
+	<MainHeadLight _template="Default" Color="g(255; 235; 215) x 0.1"/>
+	<GameData
+		CameraPreset="roof"
+		Category="top"
+		Price="1300"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_YAR_87_SPOTLIGHT_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_YAR_87_SPOTLIGHT_NAME"
+		/>
+		<InstallSocket Type="MackTerraProSpotlight" />
+		<RequiredAddon Types="mack_terra_pro_cabin_protector_1" />
+	</GameData>
+</TruckAddon>

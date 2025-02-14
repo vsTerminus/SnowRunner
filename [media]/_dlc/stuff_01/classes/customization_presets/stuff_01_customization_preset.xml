@@ -1335,4 +1335,37 @@
 	<Truck _template="GlassStickerBottomCut" Name="sticker_glass_bottom_kenworth_c500" />
 	<Truck _template="Curtain" Name="stuff_curtain_kenworth_c500" />
 	<!--<- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -/>-->
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_01_mack_pinnacle" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_02_mack_pinnacle" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_03_mack_pinnacle" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_04_mack_pinnacle" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_05_mack_pinnacle" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_06_mack_pinnacle" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_07_mack_pinnacle" />
+	<Truck _template="InsideSticker1x2" Name="sticker_inside_1x2_01_mack_pinnacle" />
+	<Truck _template="InsideSticker1x4" Name="sticker_inside_1x4_01_mack_pinnacle" />
+	<Truck _template="InsideSticker1x4" Name="sticker_inside_1x4_02_mack_pinnacle" />
+	<Truck _template="InsideSticker1x4" Name="sticker_inside_1x4_03_mack_pinnacle" />
+	<Truck _template="InsideSticker1x4" Name="sticker_inside_1x4_04_mack_pinnacle" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_door_l_1x1_mack_pinnacle" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_door_r_1x1_mack_pinnacle" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_capote_1x1_mack_pinnacle" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_roof_1x1_mack_pinnacle" />
+	<Truck _template="GlassStickerTopCut" Name="sticker_glass_top_mack_pinnacle" />
+	<Truck _template="GlassStickerBottomCut" Name="sticker_glass_bottom_mack_pinnacle" />
+	<Truck _template="Curtain" Name="stuff_curtain_mack_pinnacle" />
+	<!--<- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -/>-->
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_01_mack_terra_pro" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_02_mack_terra_pro" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_03_mack_terra_pro" />
+	<Truck _template="InsideSticker1x2" Name="sticker_inside_1x2_01_mack_terra_pro" />
+	<Truck _template="InsideSticker1x4" Name="sticker_inside_1x4_01_mack_terra_pro" />
+	<Truck _template="InsideSticker1x4" Name="sticker_inside_1x4_02_mack_terra_pro" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_door_l_1x1_mack_terra_pro" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_door_r_1x1_mack_terra_pro" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_roof_1x1_mack_terra_pro" />
+	<Truck _template="GlassStickerTopCut" Name="sticker_glass_top_mack_terra_pro" />
+	<Truck _template="GlassStickerBottomCut" Name="sticker_glass_bottom_mack_terra_pro" />
+	<Truck _template="Curtain" Name="stuff_curtain_mack_terra_pro" />
+	<!--<- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -/>-->
 </TruckSet>

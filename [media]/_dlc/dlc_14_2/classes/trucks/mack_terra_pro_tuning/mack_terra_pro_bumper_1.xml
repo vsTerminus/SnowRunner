@@ -1,0 +1,49 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<TruckData>
+		<Damage>
+			<Multiplier Multiplier="0.9" Type="Engine" />
+		</Damage>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/mack_terra_pro_tuning/mack_terra_pro_bumper_1">
+		<Body ImpactType="Truck" Mass="20" ModelFrame="BoneChassis_cdt">
+			<Constraint Type="Rigid" />
+				<Body Mass="30" Collisions="None" ModelFrame="BoneRope_cdt" CenterOfMassOffset="(0.0; 0.1; 0.0)">
+					<Constraint
+						Type="Hinge"
+						AxisLocal="(0; 0; 1)"
+						MinLimit="-40.0"
+						MaxLimit="10.0"
+					>
+						<Motor Damping="0.5" Spring="5" Type="Spring" />
+					</Constraint>
+				</Body>
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<Ignition>			
+			<Light _template="IgnitionSignalWhite" Size="2" Pos="(4.701; 1.152; 0.000)" Dir="(1; -0.15; 0)"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(4.701; 1.152; -0.477)" />
+			<Flare _template="IgnitionSignalWhite" Pos="(4.701; 1.152; 0.477)" />
+		</Ignition>
+	</ModelAttachments>
+	<GameData
+		CameraPreset="hoods_default"
+		Category="bumper"
+		Price="1300"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<WinchSocket Pos="(4.800; 0.741; 0.528)" FixedToTruck="True" />
+		<WinchSocket Pos="(4.800; 0.741; -0.528)" FixedToTruck="True" />
+		<CraneSocket Pos="(4.800; 0.741; 0.528)" FixedToTruck="True" />
+		<CraneSocket Pos="(4.800; 0.741; -0.528)" FixedToTruck="True" />
+		<UiDesc
+			UiDesc="UI_TUNING_BUMPER_HEAVYDUTY_PIPE_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_BUMPER_HEAVYDUTY_PIPE_NAME"
+		/>
+		<InstallSocket Type="MackTerraProBumper" />
+	</GameData>
+</TruckAddon>

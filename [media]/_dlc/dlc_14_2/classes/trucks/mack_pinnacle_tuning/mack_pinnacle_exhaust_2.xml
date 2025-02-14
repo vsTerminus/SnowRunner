@@ -1,0 +1,29 @@
+<_templates Include="trucks" />
+<_parent File="mack_pinnacle_exhaust_default" />
+<TruckAddon>
+	<TruckData>
+		<Shakers>
+			<Shaker Frame="BoneExhaustLeft" LimitDirectionY="Negative" MaxAngle="(0.5; 0.5; 0.5)" MaxFrequency="0.44" ParentFrame="BoneExhaustLeft" />
+			<Shaker Frame="BoneExhaustRight" LimitDirectionY="Negative" MaxAngle="(0.45; 0.45; 0.45)" MaxFrequency="0.42" ParentFrame="BoneExhaustRight" />
+		</Shakers>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/mack_pinnacle_tuning/mack_pinnacle_exhaust_2">
+		<Body ImpactType="Truck" Mass="10" ModelFrame="BoneCabin_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<GameData
+		Price="1500"
+		UnlockByExploration="false"
+		UnlockByRank="12"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_EXHAUST_SLANTCUT_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_EXHAUST_SLANTCUT_NAME"
+		/>
+	</GameData>
+	<Exhaust Dir="(-0.717; 0.103; 0.690)" IsLight="true" Origin="(1.476; 3.484; 0.992)" Speed="3.82" ParentFrame="BoneExhaustLeft"/>
+	<Exhaust Dir="(-0.717; 0.103; -0.690)" IsLight="true" Origin="(1.476; 3.484; -0.992)" Speed="3.82" ParentFrame="BoneExhaustRight"/>
+</TruckAddon>

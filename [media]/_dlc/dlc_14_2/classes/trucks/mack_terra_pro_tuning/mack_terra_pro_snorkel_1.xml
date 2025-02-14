@@ -1,0 +1,23 @@
+<TruckAddon>
+	<Snorkel Origin="(2.938; 2.666; -0.833)" />
+	<PhysicsModel Mesh="trucks/mack_terra_pro_tuning/mack_terra_pro_snorkel_1">
+		<Body Collisions="None" Mass="10" ModelFrame="BoneChassis_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="snorkels"
+		Category="snorkel"
+		Price="1600"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SNORKEL_FRONTFACE_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SNORKEL_FRONTFACE_NAME"
+		/>
+		<InstallSocket Type="MackTerraProSnorkel" />
+	</GameData>
+</TruckAddon>

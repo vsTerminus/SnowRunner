@@ -1,0 +1,19 @@
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/mack_terra_pro_stuff/stuff_hood_horns_mack_terra_pro"/>
+	<GameData
+		CameraPreset="hood_figure"
+		Category="hood_ornament"
+		Price="1200"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+		TrialsToUnlock="4"
+	>
+		<InstallSocket Type="StuffHoodMackTerraPro" />
+		<UiDesc
+			UiDesc="UI_STUFF_HOOD_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_STUFF_HOOD_HORNS_NAME"
+		/>
+	</GameData>
+</TruckAddon>

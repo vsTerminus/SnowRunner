@@ -1,0 +1,28 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/mack_pinnacle_tuning/mack_pinnacle_visor_01" />
+	<ModelAttachments>
+		<Ignition>
+			<Flare _template="IgnitionSignalOrange" AspectRatio="1" Color="g(255; 140; 0) x 0.5" Dir="(0; 0; -1)" Size="0.5" Pos="(3.061; 2.749; -0.755)" DirAngle="110" />
+			<Flare _template="IgnitionSignalOrange" AspectRatio="1" Color="g(255; 140; 0) x 0.5" Dir="(0; 0; -1)" Size="0.5" Pos="(3.106; 2.818; -0.194)" DirAngle="110" />
+			<Flare _template="IgnitionSignalOrange" AspectRatio="1" Color="g(255; 140; 0) x 0.5" Dir="(0; 0; -1)" Size="0.5" Pos="(3.105; 2.822; 0)" DirAngle="110" />
+			<Flare _template="IgnitionSignalOrange" AspectRatio="1" Color="g(255; 140; 0) x 0.5" Dir="(0; 0; -1)" Size="0.5" Pos="(3.106; 2.818; 0.194)" DirAngle="110" />
+			<Flare _template="IgnitionSignalOrange" AspectRatio="1" Color="g(255; 140; 0) x 0.5" Dir="(0; 0; -1)" Size="0.5" Pos="(3.061; 2.749; 0.755)" DirAngle="110" />
+		</Ignition>
+	</ModelAttachments>
+	<GameData
+		CameraPreset="roof"
+		Category="fender_front"
+		Price="1000"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SUNVISOR_STRAIGHTCAP_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SUNVISOR_STRAIGHTCAP_NAME"
+		/>
+		<InstallSocket Type="MackPinnacleVisor1" />
+	</GameData>
+</TruckAddon>

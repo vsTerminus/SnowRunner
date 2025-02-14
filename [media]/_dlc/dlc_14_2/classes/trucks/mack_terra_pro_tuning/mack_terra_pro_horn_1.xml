@@ -1,0 +1,19 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/mack_terra_pro_tuning/mack_terra_pro_horn_1" />
+	<GameData
+		CameraPreset="roof"
+		Category="miscellenious"
+		Price="1000"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_HORNS_TWIN_TWOSIDE_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_HORNS_TWIN_TWOSIDE_NAME"
+		/>
+		<InstallSocket Type="MackTerraProHorns" />
+	</GameData>
+</TruckAddon>

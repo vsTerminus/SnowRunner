@@ -1,0 +1,32 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<WheelRepairsHide>
+		<Mesh Frame="wheel_01" HideThreshold="0.5" />
+		<Mesh Frame="wheel_02" HideThreshold="0.0" />
+	</WheelRepairsHide>
+	<TruckData WheelRepairsCapacity="2" />
+	<PhysicsModel Mesh="trucks/mack_pinnacle_tuning/mack_pinnacle_spare_wheel_01">
+		<Body Mass="15" ModelFrame="BoneWheel1_cdt" ImpactType="Truck">
+			<Constraint Type="Rigid" />
+		</Body>
+		<Body Mass="15" ModelFrame="BoneWheel2_cdt" ImpactType="Truck">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="spare_wheel_1"
+		Category="wheel_addon"
+		IsCustomizable="true"
+		Price="2300"
+		UnlockByExploration="false"
+		UnlockByRank="10"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SPARE_WHEELS_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SPARE_WHEELS_NAME"
+		/>
+		<InstallSocket Offset="(0; 0; 0)" Type="MackPinnacleSpareWheel1" />
+	</GameData>
+</TruckAddon>

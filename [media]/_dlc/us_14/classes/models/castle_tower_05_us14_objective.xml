@@ -3,16 +3,30 @@
 	<Landmark Mesh="landmarks/castle_tower_05_objective_us14_lmk" />
 	<Subset IsDefault="true" Name="state_start">
 		<Mesh Name="mesh_start_01" />
+		<Mesh Name="mesh_start_01_lod1" />
+		<Mesh Name="mesh_start_01_lod2" />
 		<Mesh Name="mesh_start_02" />
+		<Mesh Name="mesh_start_02_lod1" />
+		<Mesh Name="mesh_start_02_lod2" />
 		<Mesh Name="mesh_start_03" />
+		<Mesh Name="mesh_start_03_lod1" />
+		<Mesh Name="mesh_start_03_lod2" />
 		<Mesh Name="mesh_start_04" />
+		<Mesh Name="mesh_start_04_lod1" />
+		<Mesh Name="mesh_start_04_lod2" />
 		<Mesh Name="mesh_start_05" />
+		<Mesh Name="mesh_start_05_lod1" />
+		<Mesh Name="mesh_start_05_lod2" />
 		<Mesh Name="mesh_start_06" />
+		<Mesh Name="mesh_start_06_lod1" />
+		<Mesh Name="mesh_start_06_lod2" />
 		<Mesh Name="mesh_start_07" />
 		<CdtMesh Name="cdt_mesh_start_01" />
 	</Subset>
 	<Subset Name="state_end">
 		<Mesh Name="mesh_end" />
+		<Mesh Name="mesh_end_lod1" />
+		<Mesh Name="mesh_end_lod2" />
 		<Mesh Name="flag" />
 		<CdtMesh Name="cdt_mesh_end" />
 		<AnimSubset Name="build_animation_0" /> 

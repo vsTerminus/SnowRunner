@@ -1,0 +1,34 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<Snorkel Origin="(3.37; 2.494; 0)" />
+	<PhysicsModel Mesh="trucks/mack_pinnacle_tuning/mack_pinnacle_snorkel_2">
+		<Body ImpactType="Truck" Mass="8" ModelFrame="BoneChassis_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<Ignition>
+			<Flare _template="IgnitionSignalOrange" ColorMultAtDay=".2" Color="g(255; 160; 2) x .5" Size="0.2" Pos="(3.311; 1.882; -1.114)" />
+			<Flare _template="IgnitionSignalOrange" ColorMultAtDay=".2" Color="g(255; 160; 2) x .5" Size="0.2" Pos="(3.311; 1.989; -1.114)" />
+			<Flare _template="IgnitionSignalOrange" ColorMultAtDay=".2" Color="g(255; 160; 2) x .5" Size="0.2" Pos="(3.311; 2.097; -1.114)" />
+			<Flare _template="IgnitionSignalOrange" ColorMultAtDay=".2" Color="g(255; 160; 2) x .5" Size="0.2" Pos="(3.311; 1.882; 1.114)" />
+			<Flare _template="IgnitionSignalOrange" ColorMultAtDay=".2" Color="g(255; 160; 2) x .5" Size="0.2" Pos="(3.311; 1.989; 1.114)" />
+			<Flare _template="IgnitionSignalOrange" ColorMultAtDay=".2" Color="g(255; 160; 2) x .5" Size="0.2" Pos="(3.311; 2.097; 1.114)" />
+		</Ignition>
+	</ModelAttachments>
+	<GameData
+		CameraPreset="snorkels"
+		Category="snorkel"
+		Price="1400"
+		UnlockByExploration="false"
+		UnlockByRank="12"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SNORKEL_FLATCAP_TALL_TWIN_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SNORKEL_FLATCAP_TALL_TWIN_NAME"
+		/>
+		<InstallSocket Type="MackPinnacleSnorkel" />
+	</GameData>
+</TruckAddon>

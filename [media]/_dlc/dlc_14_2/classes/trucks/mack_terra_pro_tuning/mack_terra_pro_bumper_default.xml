@@ -1,0 +1,24 @@
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/mack_terra_pro_tuning/mack_terra_pro_bumper_default">
+		<Body ImpactType="Truck" Mass="10" ModelFrame="BoneChassis_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="hoods_default"
+		Category="bumper"
+		Price="1000"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<WinchSocket Pos="(4.400; 0.850; 0.000)" FixedToTruck="True" />
+		<CraneSocket Pos="(4.400; 0.850; 0.000)" FixedToTruck="True" />
+		<UiDesc
+			UiDesc="UI_TUNING_BUMPER_STOCK_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_BUMPER_STOCK_NAME"
+		/>
+		<InstallSocket Type="MackTerraProBumper" />
+	</GameData>
+</TruckAddon>

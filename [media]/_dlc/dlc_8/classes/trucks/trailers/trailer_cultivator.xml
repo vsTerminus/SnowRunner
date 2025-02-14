@@ -268,4 +268,7 @@
 			</IKBone>
 		</IKBone>
 	</AutomaticIK>
+
+	<!-- "Offset" is the Y offset of the trailer in world coordinates, 0.0 - full deformation depth (default) -->
+	<MudExtrude Offset="0.2" ActivatingPowerGroup="side_lift"/>
 </Truck>

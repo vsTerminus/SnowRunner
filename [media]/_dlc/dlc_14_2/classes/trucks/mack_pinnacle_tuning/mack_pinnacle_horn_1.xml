@@ -1,0 +1,20 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/mack_pinnacle_tuning/mack_pinnacle_horn_1">
+	</PhysicsModel>
+	<GameData
+		CameraPreset="horn1"
+		Category="miscellenious"
+		Price="500"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_HORNS_SINGLE_TWOSIDE_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_HORNS_SINGLE_TWOSIDE_NAME"
+		/>
+		<InstallSocket Type="MackPinnacleHorn1" />
+	</GameData>
+</TruckAddon>

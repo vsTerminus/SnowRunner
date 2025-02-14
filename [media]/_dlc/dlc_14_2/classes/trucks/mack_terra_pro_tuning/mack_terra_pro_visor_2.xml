@@ -1,0 +1,21 @@
+<_templates Include="trucks" />
+<_parent File="mack_terra_pro_horn_1" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/mack_terra_pro_tuning/mack_terra_pro_visor_2" />
+	<GameData
+		_noinherit="true"
+		CameraPreset="roof"
+		Category="fender_front"
+		Price="1300"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SUNVISOR_STRAIGHTCAP_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SUNVISOR_STRAIGHTCAP_NAME"
+		/>
+		<InstallSocket Type="MackTerraProVisor" />
+	</GameData>
+</TruckAddon>
