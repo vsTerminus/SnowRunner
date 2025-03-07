@@ -4,7 +4,7 @@
 		CriticalDamageThreshold="0.4"
 		DamageCapacity="200"
 		DamagedConsumptionModifier="1.6"
-		FuelConsumption="1.3"
+		FuelConsumption="1.8"
 		IdleFuelModifier="0.3"
 		Name="g_special_mack_terra_pro"
 		MinBreakFreq="0.0"

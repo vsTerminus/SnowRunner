@@ -10,7 +10,7 @@
 			Location="front"
 			SteeringAngle="40"
 			SteeringCastor="8"
-			Torque="none"
+			Torque="connectable"
 			ParentFrame="BoneCabin_cdt"
 		/>
 	</Wheel>
@@ -77,7 +77,7 @@
 		EngineStartDelay="1.8"
 		ExhaustStartTime="1.5"
 		FuelCapacity="350"
-		Responsiveness="0.15"
+		Responsiveness="0.12"
 		SteerSpeed="0.02"
 		TruckImage="MackPinnaclemchr"
 		TruckType="HEAVY_DUTY"
@@ -102,10 +102,16 @@
 		/>
 		<SteeringWheel Frame="BoneSteering" />
 		<SteeringRack
-			Frame="BoneRack"
+			Frame="BoneRackRWD"
 			FrameSteerLeft="BoneRackLeft"
 			FrameSteerRight="BoneRackRight"
 			RackHalfSizeZ="0.848"
+		/>
+		<SteeringRack
+			Frame="BoneRackAWD"
+			FrameSteerLeft="BoneRackLeft"
+			FrameSteerRight="BoneRackRight"
+			RackHalfSizeZ="0.851"
 		/>
 		<Steam Origin="(3.825; 1.5; -0.022)" ParentFrame="BoneCabin_cdt" />
 		<SoundsWheels _template="Default" />
@@ -142,8 +148,7 @@
 			<AbruptStop		Sound="trucks/common/truck_swing_big_rnd_set/truck_swing_big_rnd" />
 		</Sounds>
 		<Shafts>
-			<Shaft SocketPointA="Shaft1a" SocketPointB="Shaft1b" />
-			<Shaft SocketPointA="Shaft2a" SocketPointB="Shaft2b" />
+			<Shaft SocketPointA="ShaftWheel2WheelA" SocketPointB="ShaftWheel2WheelB" />
 		</Shafts>
 		<Shakers>
 			<Shaker Frame="BoneGearStick" MinAngle="(0.05; 0.05; 0.05)" MaxAngle="(0.1; 0.1; 0.1)" MaxFrequency="0.1" />
@@ -154,7 +159,7 @@
 		<Intake Dir="(1; 0; 0)" Origin="(4.635; 1.451; 0)" Size="1.2" />
 		<GearboxSocket Default="g_special_mack_pinnacle" Type="gearboxes_mack_pinnacle" />
 		<FuelTank DamageCapacity="100" />
-		<EngineSocket Default="us_special_mack_defense_mcv6" Type="e_us_truck_modern_mack_defense_m917" />
+		<EngineSocket Default="us_special_mack_mcv6" Type="e_us_truck_modern_mack_trucks" />
 		<Driver
 			AnimationSet="Truck"
 			LegsOffset="(0; 0.03; 0)"
@@ -188,6 +193,7 @@
 		<CompatibleWheels Scale="0.54" Type="wheels_heavy_offroad_double" />
 		<CompatibleWheels Scale="0.54" Type="wheels_heavy_highway_double" />
 		<CompatibleWheels Scale="0.54" Type="wheels_heavy_allterrain_double" />
+		<CompatibleWheels Scale="0.54" OffsetZ="0.04" RearOffsetZ="0.04"  Type="wheels_medium_mudtires_double" />
 		
 		<CompatibleWheels Scale="0.58" Type="wheels_mack_pinnacle" />
 		<CompatibleWheels Scale="0.58" RearOffsetZ="0.08" Type="wheels_heavy_double1" />
@@ -195,6 +201,7 @@
 		<CompatibleWheels Scale="0.58" RearOffsetZ="0.08" Type="wheels_heavy_offroad_double" />
 		<CompatibleWheels Scale="0.58" RearOffsetZ="0.04" Type="wheels_heavy_highway_double" />
 		<CompatibleWheels Scale="0.58" RearOffsetZ="0.06" Type="wheels_heavy_allterrain_double" />
+		<CompatibleWheels Scale="0.58" OffsetZ="0.04" RearOffsetZ="0.06"  Type="wheels_medium_mudtires_double" />
 		<Camera
 			Center="(-1.8; 0.07; 0)"
 			RadiusMultiplier="1.1"
@@ -430,6 +437,18 @@
 			<CameraPos FOV="32.0" Interior="true" Name="hood_figure" Position="(8.333; 2.674; -1.652)" InterestPosition="(6; 1.39; 0.328)" />
 		</CustomizationCameras>
 		
+		<AddonSockets DefaultAddon="mack_pinnacle_transferbox_default">
+			<Socket Names="MackPinnacleTransferBox" ParentFrame="BoneCabin_cdt" >
+				<ExtraParent Frame="BoneAxle" />
+				<ExtraParent Frame="BoneRackRight" />
+				<ExtraParent Frame="BoneRackLeft" />
+				<ExtraParent Frame="BoneRackAWD" />
+				<ExtraParent Frame="BoneRackRWD" />
+				<ExtraParent Frame="BoneTieRodHinge" />
+				<ExtraParent Frame="BoneTieRodPrismatic" />
+			</Socket>
+		</AddonSockets>
+		
 		<AddonSockets DefaultAddon="mack_pinnacle_bumper_default">
 			<Socket Names="MackPinnacleBumper" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt"/>
 		</AddonSockets>
@@ -481,10 +500,7 @@
 		<AddonSockets>
 			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-3.5; 1.5; 0)" />
 			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-3.2; 1.6; 0)" />
-			<Socket Names="Trailer" Offset="(-5.660; 0.65; 0)">
-				<AddonsShift Offset="(0; 0; 0)" TrailerNamesBlock="Trailer" Types="MinicraneUS, FrameAddon" />
-				<AddonsShift Offset="(-0.345; 0.23; 0)" Types="CraneMackPinnacle" />
-			</Socket>
+			<Socket Names="Trailer" Offset="(-5.660; 0.65; 0)"/>
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="FrameAddonMackPinnacleLogMedium" NamesBlock="MinicraneUS, MackPinnacleWingsStock, MackPinnacleSpareWheel1"/>
@@ -516,7 +532,7 @@
 				<AddonsShift Offset="(-1.28; 0; 0)" Types="LogLift" />
 				<AddonsShift Offset="(-0.35; 0; 0)" Types="MackPinnacleSpareWheel1" />
 			</Socket>
-			<Socket Names="FrameAddonSideboard3" NamesBlock="MinicraneUS, MackPinnacleWingsStock, CraneMackPinnacle" Offset="(-2.6; 1.097; 0)" ParentFrame="BoneChassis_cdt">
+			<Socket Names="FrameAddonSideboard3" NamesBlock="MinicraneUS, MackPinnacleWingsStock, CraneMackPinnacle, Trailer" Offset="(-2.6; 1.097; 0)" ParentFrame="BoneChassis_cdt">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.1)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.1)" />
 				<AddonsShift Offset="(-0.42; 0; 0)" Types="MackPinnacleSpareWheel1" />

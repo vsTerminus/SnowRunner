@@ -141,7 +141,7 @@
 		<Intake Dir="(1; 0; 0)" Origin="(4.324; 1.136; 0.000)" Size="0.17" />
 		<GearboxSocket Default="g_special_mack_terra_pro" Type="gearboxes_mack_terra_pro" />
 		<FuelTank DamageCapacity="100" />
-		<EngineSocket Default="us_special_mack_defense_mcv6" Type="e_us_truck_modern_mack_defense_m917" />
+		<EngineSocket Default="us_special_mack_mcv6" Type="e_us_truck_modern_mack_trucks" />
 		<Driver
 			AnimationSet="Truck"
 			LegsOffset="(0; 0.03; 0)"
@@ -169,13 +169,17 @@
 		<CompatibleWheels Scale="0.56" OffsetZ="0.0" RearOffsetZ="0.0" Type="wheels_heavy_offroad_double" />
 		<CompatibleWheels Scale="0.56" OffsetZ="0.0" RearOffsetZ="0.0" Type="wheels_heavy_allterrain_double" />
 		<CompatibleWheels Scale="0.56" OffsetZ="0.0" RearOffsetZ="0.0" Type="wheels_heavy_highway_double" />
+		<CompatibleWheels Scale="0.56" OffsetZ="-0.03" RearOffsetZ="0"  Type="wheels_medium_mudtires_double" />
+		
 		<CompatibleWheels Scale="0.56" OffsetZ="-0.03" RearOffsetZ="0.0" Type="wheels_mack_pinnacle" />
-
+		
 		<CompatibleWheels Scale="0.60" OffsetZ="0.0" RearOffsetZ="0.0" Type="wheels_heavy_double1" />
 		<CompatibleWheels Scale="0.60" OffsetZ="0.0" RearOffsetZ="0.0" Type="wheels_heavy_double2" />
 		<CompatibleWheels Scale="0.60" OffsetZ="0.0" RearOffsetZ="0.0" Type="wheels_heavy_offroad_double" />
 		<CompatibleWheels Scale="0.60" OffsetZ="0.0" RearOffsetZ="0.0" Type="wheels_heavy_allterrain_double" />
 		<CompatibleWheels Scale="0.60" OffsetZ="0.0" RearOffsetZ="0.0" Type="wheels_heavy_highway_double" />
+		<CompatibleWheels Scale="0.60" OffsetZ="-0.03" RearOffsetZ="0"  Type="wheels_medium_mudtires_double" />
+		
 		<CompatibleWheels Scale="0.60" OffsetZ="-0.03" RearOffsetZ="0.0" Type="wheels_mack_pinnacle" />
 		
 		<Camera
@@ -475,18 +479,6 @@
 			<CameraPos FOV="32.0" Interior="true" Name="sticker_2" 		InterestPosition="(8.000; 3.000; 0.900)"	Position="(5.900; 2.200; -0.700)" />
 			<CameraPos FOV="32.0" Interior="true" Name="sticker_3" 		InterestPosition="(8.000; 3.000; 2.500)"	Position="(5.900; 2.200; -0.700)" />
 			
-			<!--
-			<CameraPos FOV="32.0" Interior="true" Name="sticker_4" InterestPosition="(7.224; 4.068; -0.295)" Position="(4.019; 3.259; -0.24)" />
-			<CameraPos FOV="32.0" Interior="true" Name="sticker_5" InterestPosition="(7.224; 4; 2.542)" Position="(4.019; 3.259; 0.24)" />
-			<CameraPos FOV="32.0" Interior="true" Name="sticker_6" InterestPosition="(0.476; 3.943; 0.541)" Position="(4.928; 3.259; 0.318)" />
-			<CameraPos FOV="32.0" Interior="true" Name="sticker_7" InterestPosition="(0.476; 3.597; 0)" Position="(4.928; 3.259; 0)" />
-			<CameraPos FOV="32.0" Interior="true" Name="sticker_8" InterestPosition="(2.529; 3.624; 1.31)" Position="(4.237; 3.259; -0.574)" />
-			<CameraPos FOV="32.0" Interior="true" Name="sticker_02_1" InterestPosition="(3.022; 0.28; 4.062)" Position="(4.326; 3.07; 0.059)" />
-			<CameraPos FOV="32.0" Interior="true" Name="sticker_04_1" InterestPosition="(6.813; 0.368; 2.484)" Position="(4.019; 3.259; 0.24)" />
-			<CameraPos FOV="32.0" Interior="true" Name="sticker_04_2" InterestPosition="(6.507; 3.764; -1.347)" Position="(3.736; 3.07; 0.059)" />
-			<CameraPos FOV="32.0" Interior="true" Name="sticker_04_3" InterestPosition="(6.096; 4.613; 4.062)" Position="(3.736; 3.07; 0.059)" />
-			<CameraPos FOV="32.0" Interior="true" Name="sticker_04_4" InterestPosition="(1.91; 3.534; -0.530)" Position="(4.888; 3.093; -0.577)" />
-			-->
 		</CustomizationCameras>
 		<CraneSocket Pos="(-4.455; 0.933; 0)" ParentFrame="BoneChassis_cdt" />
 		<CraneSocket Pos="(0.440; 0.780; -0.420)" ParentFrame="BoneChassis_cdt" />

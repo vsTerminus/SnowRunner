@@ -1,0 +1,38 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<TruckData
+		_noinherit="true"
+		AllWheelDriveInstalled="true"
+	>
+		<Shafts _template="AllWheelsTransferbox" />
+	</TruckData>
+	<PhysicsModel Mesh="trucks/mack_pinnacle_tuning/mack_pinnacle_transferbox_allwheels">
+		<Body ImpactType="Truck" Mass="40" ModelFrame="BoneCabin_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="default"
+		Category="awd"
+		Price="2400"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_UPGRADE_TRANSFERBOX_AWDSWITCHABLE_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_UPGRADE_TRANSFERBOX_AWDSWITCHABLE_NAME"
+		/>
+		<InstallSocket Type="MackPinnacleTransferBox" />
+	</GameData>
+	<ExplicitParents>
+		<ExplicitParent ExplicitParentFrame="0" Frame="BoneAxle" />
+		<ExplicitParent ExplicitParentFrame="1" Frame="BoneRackRight" />
+		<ExplicitParent ExplicitParentFrame="2" Frame="BoneRackLeft" />
+		<ExplicitParent ExplicitParentFrame="3" Frame="BoneRackAWD" />
+		<ExplicitParent ExplicitParentFrame="4" Frame="BoneRackRWD" />
+		<ExplicitParent ExplicitParentFrame="5" Frame="BoneTieRodHinge" />
+		<ExplicitParent ExplicitParentFrame="6" Frame="BoneTieRodPrismatic" />
+	</ExplicitParents>
+</TruckAddon>

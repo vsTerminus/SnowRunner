@@ -1,6 +1,6 @@
 <GearboxVariants>
 	<Gearbox
-		AWDConsumptionModifier="1.6"
+		AWDConsumptionModifier="1.2"
 		CriticalDamageThreshold="0.4"
 		DamageCapacity="200"
 		DamagedConsumptionModifier="1.6"
@@ -12,13 +12,13 @@
 	>
 		<ReverseGear AngVel="1.4" FuelModifier="0.9" />
 		<HighGear AngVel="9.5" FuelModifier="1.3" />
-		<Gear AngVel="1.5" FuelModifier="1.5" />
-		<Gear AngVel="4.0" FuelModifier="1.4" />
-		<Gear AngVel="8.0" FuelModifier="1.3" />
-		<Gear AngVel="10.0" FuelModifier="1.2" />
-		<Gear AngVel="11.5" FuelModifier="1.1" />
-		<Gear AngVel="13.0" FuelModifier="1.0" />
-		<Gear AngVel="14.0" FuelModifier="0.9" />
+		<Gear AngVel="1.5" FuelModifier="1.6" />
+		<Gear AngVel="4.0" FuelModifier="1.5" />
+		<Gear AngVel="8.0" FuelModifier="1.4" />
+		<Gear AngVel="10.0" FuelModifier="1.3" />
+		<Gear AngVel="11.5" FuelModifier="1.2" />
+		<Gear AngVel="13.0" FuelModifier="1.1" />
+		<Gear AngVel="14.0" FuelModifier="0.95" />
 		<Gear AngVel="14.5" FuelModifier="0.7" />
 		<GameData
 			Price="2600"
@@ -117,8 +117,8 @@
 			/>
 		</GameData>
 	</Gearbox>
-		<Gearbox
-		AWDConsumptionModifier="1.6"
+	<Gearbox
+		AWDConsumptionModifier="1.5"
 		CriticalDamageThreshold="0.4"
 		DamageCapacity="130"
 		DamagedConsumptionModifier="1.5"
