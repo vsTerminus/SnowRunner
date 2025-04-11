@@ -1,0 +1,7 @@
+<_parent File="sticker_capote_1x1_ford_f750" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/mercer_k520_stuff/sticker_capote_1x1_mercer_k520"/>
+	<GameData CameraPreset="capote_sticker">
+		<InstallSocket Type="MercerK520Sticker_Capote" />
+	</GameData>
+</TruckAddon>

@@ -1,0 +1,79 @@
+<DayTimeState
+	ColorLUT="lut/identity__vol_uncmp.tga"
+	FogColor="g(185; 204; 240) x 2.8"
+	FogScatterColor="g(251; 252; 232) x 0.44"
+	HorizonColor="g(224; 231; 242) x 2.8"
+	HorizonHeight="0.20"
+	HorizonAlphaHeight="1"
+	HorizonSharpness="2"
+	SkySharpness="2"
+	SSAOColor="g(221; 225; 230; 200) x 0.14"
+	SkyBloomColor="g(214; 221; 255; 20) x 0.2"
+	SkyColor="g(201; 239; 255) x 0.8"
+	SunColor="g(255; 248; 246) x 2.2"
+	SunDir="(1; -0.65; 0)"
+	
+	WaterCubeMapIntensity="0.6"
+	LightPbrMult="3"
+	ToneMapWhite="2"
+	VignetteFlareColor="g(255; 255; 255; 2) x 0.02"
+	
+	EnvMap="env/day_al_01__d_ggxrefl.tga"
+	CubeMapScale="1.6"
+	
+	SceneUiIntensityFactor="4"
+	SparklesIntensity="600.0"
+	
+	HdrAdaptationMinLum="0.1"
+	HdrAdaptationMaxLum="800.0"
+	TonemapWhitePoint="2.0"
+	HdrAdaptationSpeed="0.1"
+	HdrExposureScale="1"
+	HdrExposureScaleX="1"
+	
+	TonemapA="0.26"
+	TonemapB="0.19"
+	TonemapC="0.23"
+	TonemapD="0.2"
+	TonemapE="0.021"
+	TonemapF="0.3"
+	
+	BloomEnabled="true"
+	BloomPoint="0.6"
+	BloomIntensity="1"
+	BloomGamma="0.8"
+	BloomHarmonicsTint0="(255; 255; 255)"
+	BloomHarmonicsTint1="(255; 255; 255)"
+	BloomHarmonicsTint2="(255; 255; 255)"
+	BloomHarmonicsTint3="(255; 255; 255)"
+	BloomHarmonicsTint4="(255; 255; 255)"
+	
+	RadiusMinSSAO="1.5"
+	RadiusMaxSSAO="4.0"
+	
+	ShadowMapSplitSize="50.0"
+	ShadowMapResolution="2048"
+>
+	<Sky>
+		<Lightshaft
+			Tint="g(255; 230; 214)"
+			Intensity="0.1"
+			BlurRadius="12"
+			FalloffRadius="0.6"
+			FalloffInnerRadius="0.04"
+		/>
+		<Flare
+			AspectRatio="2"
+			Color="g(255; 228; 180; 5) x 0.07"
+			Size="24.0"
+			Texture="sfx/flare_sky__s_d.tga"
+		/>
+	</Sky>
+	<Fog Density="0.0039" StartDist="30" ScatterAngle="90" Alpha="1" Height="15" UpperScale="0.02" LowerScale="0.0"/>
+	<SecondaryFog Density="0.005" Height="15" UpperScale="0.2" LowerScale="0.0"/>
+	<DistantFog StartDistance="10" EndDistance="3000" Height="60" DensityMultiplier="1"/>
+	<VolumeFog Density="0.3" />
+	<Dof NearEnd="3.0" NearRange="0.5" />
+	<Ambient NegY="g(173; 198; 237) x 1" MidY="g(173; 198; 237) x 1" PosY="g(177; 204; 240) x 1.75" />
+	<WeatherParticles Type="heavy_snow_ru_04_01" MinIntensity="0.6" MaxIntensity="1" IntensityChangeInterval="30" />
+</DayTimeState>

@@ -1,0 +1,14 @@
+<MaterialType 
+	Texture="tiles/us_snow_asphalt_b_us15__d_a.tga" 
+	Normal="tiles/us_snow_asphalt_b_us15_relief__d_a.tga"
+	NoGrass="true"
+	IsExtrudable="false"
+	IsAsphalt="true"
+	WheelTracks="1"
+	Sound="surfaces/surf_concrete_rnd"
+	SkidSound="surfaces/skidding/skidding_concrete_loop"
+	IsSnowParticles="true"
+	IsWetnessAsIce="true" 
+	WetnessRoughnessMultiplier="0"
+	WetnessAlbedoMultiplier="0.1"
+/>

@@ -379,10 +379,12 @@
 		<AddonSockets DefaultAddon="ankatra_1160_diff_lock_default">
 			<Socket Names="Ankatra1160DiffLock" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
 		</AddonSockets>
-		<AddonSockets DefaultAddon="ankatra_1160_coupler">
-			<Socket Names="Ankatra1160Coupler" ParentFrame="BoneChassis_cdt" />
-			<Socket Names="Ankatra1160Farkop" ParentFrame="BoneChassis_cdt" />
-		</AddonSockets>
+        <AddonSockets DefaultAddon="ankatra_1160_coupler">
+            <Socket Names="Ankatra1160Coupler" ParentFrame="BoneChassis_cdt" NamesBlock="Ankatra1160Farkop" />
+        </AddonSockets>
+        <AddonSockets>
+            <Socket Names="Ankatra1160Farkop" ParentFrame="BoneChassis_cdt" NamesBlock="Ankatra1160Coupler" />
+        </AddonSockets>
 		<!-- STUFF ADDONS -->
 		<AddonSockets>
 			<Socket

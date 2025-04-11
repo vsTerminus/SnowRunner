@@ -12,8 +12,8 @@
 			Height="0.1" 
 			Strength="0.15" 
 			WheelType="front" 
-			BrokenSuspensionMax="0.2" 
-			SuspensionMin="-0.3"
+			BrokenSuspensionMax="3.5" 
+			SuspensionMin="-0.25"
 		/>
 		<Suspension
 			Damping="0.7"

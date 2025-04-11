@@ -1,0 +1,9 @@
+<ModelBrand 
+	Instanced="true" 
+	InstancedAsModel="true" 
+	NightLightingShadowsAllowCap="true">
+	<PhysicsModel>
+		<Body Collisions="Dynamic" />
+	</PhysicsModel>
+	<Landmark Mesh="landmarks/port_ladder_01_us15_lmk" />
+</ModelBrand>

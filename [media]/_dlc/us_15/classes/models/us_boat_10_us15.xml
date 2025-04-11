@@ -1,0 +1,53 @@
+<_templates>
+	<Flare>
+		<NaviLamp
+			AttenEnd="290"
+			AttenStart="160"
+			ColorMultAtDay="0.15"
+			DirAngle="120"
+			Size="2.3"
+			SizeAtDay="1.3"
+			Texture="sfx/flare_simple__s_d.tga"
+
+		/>
+	</Flare>
+</_templates>
+<ModelBrand
+	NightLightingShadowsAllowCap="true"
+	Instanced="true"
+	InstancedAsModel="true"
+>
+	<PhysicsModel>
+		<Body
+			Collisions="Dynamic"
+		/>
+	<!-- 
+		<Flare
+			_template="NaviLamp"
+			Pos="(-1.163; 11.234; -4.550)"
+			Color="g(255; 0; 0) x 0.7"
+		/>
+		<Flare
+			_template="NaviLamp"
+			Pos="(-1.194; 12.124; 0.354)"
+			Color="g(255; 0; 0) x 0.7"
+		/>
+	-->
+		<Flare
+			_template="NaviLamp"
+			Pos="(-0.425; 17.891; -5.275)"
+			Color="g(0; 255; 0) x 0.7"
+		/>
+		<Flare
+			_template="NaviLamp"
+			Pos="(-0.644; 18.627; -1.490)"
+			Color="g(255; 0; 0) x 1.1"
+		/>
+		<Flare
+			_template="NaviLamp"
+			Pos="(1.169; 23.57; -4.288)"
+			Color="g(255; 240; 200) x 0.5"
+		/>
+	</PhysicsModel>
+	<Landmark Mesh="landmarks/us_boat_10_us06_lmk" />
+</ModelBrand>

@@ -503,9 +503,6 @@
 			<Socket Names="Trailer" Offset="(-5.660; 0.65; 0)"/>
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="FrameAddonMackPinnacleLogMedium" NamesBlock="MinicraneUS, MackPinnacleWingsStock, MackPinnacleSpareWheel1"/>
-			<Socket Names="FrameAddonMackPinnacleLogsShort" NamesBlock="MinicraneUS, MackPinnacleWingsStock" />
-			<Socket Names="BunkLog" NamesBlock="MackPinnacleWingsStock, FrameAddonMackPinnacleLogsShort, CraneMackPinnacle" Offset="(-6.5; 1.097; 0)" />
 			<Socket Names="SaddleLow" Offset="(-3.5; 1.097; 0)" ParentFrame="BoneChassis_cdt">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.02)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.02)" />
@@ -514,6 +511,21 @@
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.02)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.02)" />
 			</Socket>
+			<Socket Names="FrameAddon" Offset="(-1.1; 1.097; 0)" NamesBlock="MackPinnacleWingsStock" ParentFrame="BoneChassis_cdt">
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.1)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.1)" />
+				<AddonsShift Offset="(-1.1; 0; 0)" Types="MinicraneUS" />
+				<AddonsShift Offset="(-1.28; 0; 0)" Types="LogLift" />
+				<AddonsShift Offset="(-0.35; 0; 0)" Types="MackPinnacleSpareWheel1" />
+			</Socket>
+			<Socket Names="FrameAddon3" NamesBlock="MinicraneUS, MackPinnacleWingsStock, CraneMackPinnacle" Offset="(-2.6; 1.097; 0)" ParentFrame="BoneChassis_cdt">
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.1)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.1)" />
+				<AddonsShift Offset="(-0.38; 0; 0)" Types="MackPinnacleSpareWheel1" />
+			</Socket>
+			<Socket Names="FrameAddonMackPinnacleLogMedium" NamesBlock="MinicraneUS, MackPinnacleWingsStock, MackPinnacleSpareWheel1"/>
+			<Socket Names="FrameAddonMackPinnacleLogsShort" NamesBlock="MinicraneUS, MackPinnacleWingsStock" />
+			<Socket Names="BunkLog" NamesBlock="MackPinnacleWingsStock, FrameAddonMackPinnacleLogsShort, CraneMackPinnacle" Offset="(-6.5; 1.097; 0)" />
 			<Socket
 				Names="FrameAddonTowPlatform"
 				NamesBlock="MackPinnacleWingsStock, CraneMackPinnacle, Trailer"
@@ -525,22 +537,10 @@
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.09)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.09)" />
 			</Socket>
-			<Socket Names="FrameAddon" Offset="(-1.1; 1.097; 0)" NamesBlock="MackPinnacleWingsStock" ParentFrame="BoneChassis_cdt">
-				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.1)" />
-				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.1)" />
-				<AddonsShift Offset="(-1.1; 0; 0)" Types="MinicraneUS" />
-				<AddonsShift Offset="(-1.28; 0; 0)" Types="LogLift" />
-				<AddonsShift Offset="(-0.35; 0; 0)" Types="MackPinnacleSpareWheel1" />
-			</Socket>
 			<Socket Names="FrameAddonSideboard3" NamesBlock="MinicraneUS, MackPinnacleWingsStock, CraneMackPinnacle, Trailer" Offset="(-2.6; 1.097; 0)" ParentFrame="BoneChassis_cdt">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.1)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.1)" />
 				<AddonsShift Offset="(-0.42; 0; 0)" Types="MackPinnacleSpareWheel1" />
-			</Socket>
-			<Socket Names="FrameAddon3" NamesBlock="MinicraneUS, MackPinnacleWingsStock, CraneMackPinnacle" Offset="(-2.6; 1.097; 0)" ParentFrame="BoneChassis_cdt">
-				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.1)" />
-				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.1)" />
-				<AddonsShift Offset="(-0.38; 0; 0)" Types="MackPinnacleSpareWheel1" />
 			</Socket>
 			<Socket Names="FrameAddonKung" Offset="(-1.5; 1.16; 0)" NamesBlock="MackPinnacleWingsStock" ParentFrame="BoneChassis_cdt">
 				<AddonsShift Offset="(-1.32; 0; 0)" Types="MinicraneUS" />
@@ -556,7 +556,7 @@
 			<Socket Names="FrameAddonMaintainer" NamesBlock="Trailer, MackPinnacleWingsStock, CraneMackPinnacle" Offset="(-3.05; 0.07; 0)" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="MinicraneUS" NamesBlock="" ParentFrame="BoneCabin_cdt" Offset="(0.85; 1.1; 0)">
+			<Socket Names="MinicraneUS" ParentFrame="BoneCabin_cdt" Offset="(0.85; 1.1; 0)">
 				<ExtraParent Frame="BoneCabin_cdt" Offset="(0; 0; 0.03)" />
 				<ExtraParent Frame="BoneCabin_cdt" Offset="(0; 0; -0.03)" />
 				<AddonsShift Offset="(-0.44; 0; 0)" Types="MackPinnacleSpareWheel1" />

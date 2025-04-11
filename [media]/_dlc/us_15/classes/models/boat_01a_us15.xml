@@ -1,0 +1,21 @@
+<_templates Include="models" />
+<ModelBrand
+	NightLightingShadowsAllowCap="true"
+	Instanced="true"
+>
+	<PhysicsModel>
+		<Body _template="Cars" LinearDamping="3" ModelFrame="BoneRoot" >
+			<Constraint _template="Cars" />
+				<Body Mass="200" Friction="2" ModelFrame="BoneFront" >
+					<Constraint Type="UnlimitedHinge" AxisLocal="(0; 1; 0)" />
+				</Body>
+				<Body Mass="200" Friction="1.5" ModelFrame="BoneBack" >
+					<Constraint Type="UnlimitedHinge" AxisLocal="(0; 1; 0)" />
+				</Body>
+			<Body _template="LightWeight"  ModelFrame="BoneBoat" >
+				<Constraint _template="MediumWeight" />
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<Landmark Mesh="landmarks/boat_01a_us15_lmk" />
+</ModelBrand>

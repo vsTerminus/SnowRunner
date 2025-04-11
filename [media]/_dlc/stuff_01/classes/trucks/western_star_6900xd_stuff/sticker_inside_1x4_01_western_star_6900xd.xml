@@ -1,0 +1,15 @@
+<_parent File="sticker_inside_1x1_01_chevrolet_ck1500" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/western_star_6900xd_stuff/sticker_inside_1x4_01_western_star_6900xd" />
+	<GameData
+		CameraPreset="sticker_04"
+		Category="sticker"
+		IsCustomizable="false"
+		Price="100"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc UiName="UI_STUFF_STICKER_INSIDE_1X4_NAME" />
+		<InstallSocket _noinherit="true" Type="WesternStar6900XDSticker_1x4_01" />
+	</GameData>
+</TruckAddon>

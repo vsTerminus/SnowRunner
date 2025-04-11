@@ -1,0 +1,66 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/sleiter_mfk816_tuning/sleiter_mfk816_wings_default">
+		<Body Mass="100" ImpactType="Truck" Collisions="None">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<Ignition>
+			<Light _template="IgnitionSignalRed" Color="g(255; 0; 0)x 0.5" Pos="(-5.186; 1.422; 1.5)" />
+			<Light _template="IgnitionSignalRed" Color="g(255; 0; 0)x 0.5" Pos="(-5.186; 1.422; -1.5)" />
+			
+			<Flare _template="IgnitionSignalRed" ColorMultAtDay="0.3" Color="g(169; 0; 0) x 0.5" Dir="(-1; 0; 0)" Size="0.3" Pos="(-5.186; 1.422; 1.537)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="IgnitionSignalRed" ColorMultAtDay="0.3" Color="g(169; 0; 0) x 0.5" Dir="(-1; 0; 0)" Size="0.3" Pos="(-5.186; 1.509; 1.537)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="IgnitionSignalRed" ColorMultAtDay="0.3" Color="g(169; 0; 0) x 0.5" Dir="(-1; 0; 0)" Size="0.3" Pos="(-5.186; 1.509; 1.363)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="IgnitionSignalOrange" ColorMultAtDay="0.3" Color="g(255; 160; 2) x 0.5" Dir="(-1; 0; 0)" Size="0.2" Pos="(-5.186; 1.466; 1.233)" ParentFrame="BoneRoot_cdt" />
+
+			<Flare _template="IgnitionSignalRed" ColorMultAtDay="0.3" Color="g(169; 0; 0) x 0.5" Dir="(-1; 0; 0)" Size="0.3" Pos="(-5.186; 1.422; -1.537)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="IgnitionSignalRed" ColorMultAtDay="0.3" Color="g(169; 0; 0) x 0.5" Dir="(-1; 0; 0)" Size="0.3" Pos="(-5.186; 1.509; -1.537)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="IgnitionSignalRed" ColorMultAtDay="0.3" Color="g(169; 0; 0) x 0.5" Dir="(-1; 0; 0)" Size="0.3" Pos="(-5.186; 1.509; -1.363)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="IgnitionSignalOrange" ColorMultAtDay="0.3" Color="g(255; 160; 2) x 0.5" Dir="(-1; 0; 0)" Size="0.2" Pos="(-5.186; 1.466; -1.233)" ParentFrame="BoneRoot_cdt" />
+
+			<Flare _template="IgnitionSignalOrange" ColorMultAtDay="0.2" Color="g(255; 160; 2) x 0.5" Dir="(0; 0; 1)" Size="0.2" Pos="(-2.284; 1.966; 1.891)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="IgnitionSignalOrange" ColorMultAtDay="0.2" Color="g(255; 160; 2) x 0.5" Dir="(0; 0; 1)" Size="0.2" Pos="(-4.081; 1.966; 1.891)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="IgnitionSignalOrange" ColorMultAtDay="0.2" Color="g(255; 160; 2) x 0.5" Dir="(0; 0; -1)" Size="0.2" Pos="(-2.284; 1.966; -1.891)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="IgnitionSignalOrange" ColorMultAtDay="0.2" Color="g(255; 160; 2) x 0.5" Dir="(0; 0; -1)" Size="0.2" Pos="(-4.081; 1.966; -1.891)" ParentFrame="BoneRoot_cdt" />
+		</Ignition>
+		<StopSignals>
+			<Light _template="StopSignal" Pos="(-5.2; 1.422; 0)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="IgnitionSignalRed" ColorMultAtDay="0.3" Color="g(169; 0; 0) x 0.5" Dir="(-1; 0; 0)" Size="0.3" Pos="(-5.186; 1.422; 1.537)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="IgnitionSignalRed" ColorMultAtDay="0.3" Color="g(169; 0; 0) x 0.5" Dir="(-1; 0; 0)" Size="0.3" Pos="(-5.186; 1.509; 1.537)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="IgnitionSignalRed" ColorMultAtDay="0.3" Color="g(169; 0; 0) x 0.5" Dir="(-1; 0; 0)" Size="0.3" Pos="(-5.186; 1.509; 1.363)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="IgnitionSignalRed" ColorMultAtDay="0.3" Color="g(169; 0; 0) x 0.5" Dir="(-1; 0; 0)" Size="0.3" Pos="(-5.186; 1.422; -1.537)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="IgnitionSignalRed" ColorMultAtDay="0.3" Color="g(169; 0; 0) x 0.5" Dir="(-1; 0; 0)" Size="0.3" Pos="(-5.186; 1.509; -1.537)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="IgnitionSignalRed" ColorMultAtDay="0.3" Color="g(169; 0; 0) x 0.5" Dir="(-1; 0; 0)" Size="0.3" Pos="(-5.186; 1.509; -1.363)" ParentFrame="BoneRoot_cdt" />
+		</StopSignals>
+		<ReverseSignals>
+			<Light _template="ReverseSignal" Pos="(-5.2; 1.422; 0)" />
+			<Flare _template="ReverseSignal" ColorMultAtDay="0.3" Dir="(-1; 0; 0)" Size="0.4" Pos="(-5.186; 1.422; 1.363)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="ReverseSignal" ColorMultAtDay="0.3" Dir="(-1; 0; 0)" Size="0.4" Pos="(-5.186; 1.422; -1.363)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="BlueStreak" ColorMultAtDay="0.3" Dir="(-1; 0; 0)" Size="0.4" Pos="(-5.186; 1.422; 1.363)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="BlueStreak" ColorMultAtDay="0.3" Dir="(-1; 0; 0)" Size="0.4" Pos="(-5.186; 1.422; -1.363)" ParentFrame="BoneRoot_cdt" />
+		</ReverseSignals>
+	</ModelAttachments>
+	<GameData
+		CameraPreset="fenders"
+		Category="frame_addons"
+		Price="0"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc=""
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_WINGS_DEFAULT_NAME"
+		/>
+		<WinchSocket Pos="(-5.33; 1.44; -0.000)" FixedToTruck="true" />
+		<WinchSocket Pos="(-5.087; 1.001; 1.017)" FixedToTruck="true" />
+		<WinchSocket Pos="(-5.087; 1.001; -1.017)" FixedToTruck="true" />
+		<CraneSocket Pos="(-5.33; 1.44; -0.000)" FixedToTruck="true" />
+		<CraneSocket Pos="(-5.087; 1.001; 1.017)" FixedToTruck="true" />
+		<CraneSocket Pos="(-5.087; 1.001; -1.017)" FixedToTruck="true" />
+		<InstallSocket Offset="(0; 0; 0)" Type="SleiterMFK816WingsDefault" />
+	</GameData>
+</TruckAddon>

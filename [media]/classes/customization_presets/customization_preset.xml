@@ -25087,4 +25087,456 @@
 			MaterialOverrideName = "skin_00"
 		/>
 	</Truck>
+	<Truck Name = "mercer_k520">
+		<CustomizationPreset
+			Id = "0"
+			TintColor1 = "g(117; 18; 38)"
+			TintColor2 = "g(117; 18; 38)"
+			TintColor3 = "g(117; 18; 38)"
+			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "1"
+			TintColor1 = "g(190; 20; 20)"
+			TintColor2 = "g(190; 20; 20)"
+			TintColor3 = "g(190; 20; 20)"
+			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "2"
+			TintColor1 = "g(205; 65; 65)"
+			TintColor2 = "g(205; 65; 65)"
+			TintColor3 = "g(205; 65; 65)"
+			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "3"
+			TintColor1 = "g(94; 47; 41)"
+			TintColor2 = "g(94; 47; 41)"
+			TintColor3 = "g(94; 47; 41)"
+			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "4"
+			TintColor1 = "g(137; 76; 54)"
+			TintColor2 = "g(137; 76; 54)"
+			TintColor3 = "g(137; 76; 54)"
+			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "5"
+			TintColor1 = "g(99; 76; 65)"
+			TintColor2 = "g(99; 76; 65)"
+			TintColor3 = "g(99; 76; 65)"
+			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "6"
+			TintColor1 = "g(144; 126; 105)"
+			TintColor2 = "g(144; 126; 105)"
+			TintColor3 = "g(144; 126; 105)"
+			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "7"
+			TintColor1 = "g(220; 85; 0)"
+			TintColor2 = "g(220; 85; 0)"
+			TintColor3 = "g(220; 85; 0)"
+			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "8"
+			TintColor1 = "g(205; 132; 09)"
+			TintColor2 = "g(205; 132; 09)"
+			TintColor3 = "g(205; 132; 09)"
+			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "9"
+			TintColor1 = "g(205; 178; 21)"
+			TintColor2 = "g(205; 178; 21)"
+			TintColor3 = "g(205; 178; 21)"
+			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "10"
+			TintColor1 = "g(185; 177; 107)"
+			TintColor2 = "g(185; 177; 107)"
+			TintColor3 = "g(185; 177; 107)"
+			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "11"
+			TintColor1 = "g(88; 83; 42)"
+			TintColor2 = "g(88; 83; 42)"
+			TintColor3 = "g(88; 83; 42)"
+			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "12"
+			TintColor1 = "g(12; 149; 63)"
+			TintColor2 = "g(12; 149; 63)"
+			TintColor3 = "g(12; 149; 63)"
+			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "13"
+			TintColor1 = "g(40; 82; 68)"
+			TintColor2 = "g(40; 82; 68)"
+			TintColor3 = "g(40; 82; 68)"
+			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "14"
+			TintColor1 = "g(42; 158; 122)"
+			TintColor2 = "g(42; 158; 122)"
+			TintColor3 = "g(42; 158; 122)"
+			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "15"
+			TintColor1 = "g(33; 113; 132)"
+			TintColor2 = "g(33; 113; 132)"
+			TintColor3 = "g(33; 113; 132)"
+			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "16"
+			TintColor1 = "g(39; 154; 166)"
+			TintColor2 = "g(39; 154; 166)"
+			TintColor3 = "g(39; 154; 166)"
+			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "17"
+			TintColor1 = "g(41; 65; 100)"
+			TintColor2 = "g(41; 65; 100)"
+			TintColor3 = "g(41; 65; 100)"
+			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "18"
+			TintColor1 = "g(15; 101; 192)"
+			TintColor2 = "g(15; 101; 192)"
+			TintColor3 = "g(15; 101; 192)"
+			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "19"
+			TintColor1 = "g(12; 72; 167)"
+			TintColor2 = "g(12; 72; 167)"
+			TintColor3 = "g(12; 72; 167)"
+			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "20"
+			TintColor1 = "g(68; 107; 139)"
+			TintColor2 = "g(68; 107; 139)"
+			TintColor3 = "g(68; 107; 139)"
+			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "21"
+			TintColor1 = "g(24; 50; 115)"
+			TintColor2 = "g(24; 50; 115)"
+			TintColor3 = "g(24; 50; 115)"
+			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "22"
+			TintColor1 = "g(90; 21; 91)"
+			TintColor2 = "g(90; 21; 91)"
+			TintColor3 = "g(90; 21; 91)"
+			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "23"
+			TintColor1 = "g(195; 88; 185)"
+			TintColor2 = "g(195; 88; 185)"
+			TintColor3 = "g(195; 88; 185)"
+			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "24"
+			TintColor1 = "g(45; 45; 45)"
+			TintColor2 = "g(45; 45; 45)"
+			TintColor3 = "g(45; 45; 45)"
+			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "25"
+			TintColor1 = "g(70; 70; 75)"
+			TintColor2 = "g(70; 70; 75)"
+			TintColor3 = "g(70; 70; 75)"
+			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "26"
+			TintColor1 = "g(200; 200; 200)"
+			TintColor2 = "g(200; 200; 200)"
+			TintColor3 = "g(200; 200; 200)"
+			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "27"
+			TintColor1 = "g(169; 20; 31)"
+			TintColor2 = "g(215; 102; 34)"
+			TintColor3 = "g(209; 209; 172)"
+			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "28"
+			TintColor1 = "g(98; 98; 177)"
+			TintColor2 = "g(118; 161; 234)"
+			TintColor3 = "g(16; 27; 52)"
+			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "29"
+			TintColor1 = "g(48; 66; 48)"
+			TintColor2 = "g(113; 89; 24)"
+			TintColor3 = "g(181; 175; 140)"
+			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "30"
+			TintColor1 = "g(12; 132; 140)"
+			TintColor2 = "g(93; 237; 133)"
+			TintColor3 = "g(138; 59; 127)"
+			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "31"
+			TintColor1 = "g(142; 124; 85)"
+			TintColor2 = "g(162; 184; 181)"
+			TintColor3 = "g(107; 62; 46)"
+			MaterialOverrideName = "skin_00"
+		/>
+	</Truck>
+	<Truck Name = "sleiter_mfk816">
+		<CustomizationPreset
+			Id = "0"
+			TintColor1 = "g(117; 18; 38)"
+			TintColor2 = "g(117; 18; 38)"
+			TintColor3 = "g(117; 18; 38)"
+			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "1"
+			TintColor1 = "g(190; 20; 20)"
+			TintColor2 = "g(190; 20; 20)"
+			TintColor3 = "g(190; 20; 20)"
+			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "2"
+			TintColor1 = "g(205; 65; 65)"
+			TintColor2 = "g(205; 65; 65)"
+			TintColor3 = "g(205; 65; 65)"
+			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "3"
+			TintColor1 = "g(94; 47; 41)"
+			TintColor2 = "g(94; 47; 41)"
+			TintColor3 = "g(94; 47; 41)"
+			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "4"
+			TintColor1 = "g(137; 76; 54)"
+			TintColor2 = "g(137; 76; 54)"
+			TintColor3 = "g(137; 76; 54)"
+			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "5"
+			TintColor1 = "g(99; 76; 65)"
+			TintColor2 = "g(99; 76; 65)"
+			TintColor3 = "g(99; 76; 65)"
+			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "6"
+			TintColor1 = "g(144; 126; 105)"
+			TintColor2 = "g(144; 126; 105)"
+			TintColor3 = "g(144; 126; 105)"
+			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "7"
+			TintColor1 = "g(220; 85; 0)"
+			TintColor2 = "g(220; 85; 0)"
+			TintColor3 = "g(220; 85; 0)"
+			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "8"
+			TintColor1 = "g(205; 132; 09)"
+			TintColor2 = "g(205; 132; 09)"
+			TintColor3 = "g(205; 132; 09)"
+			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "9"
+			TintColor1 = "g(205; 178; 21)"
+			TintColor2 = "g(205; 178; 21)"
+			TintColor3 = "g(205; 178; 21)"
+			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "10"
+			TintColor1 = "g(185; 177; 107)"
+			TintColor2 = "g(185; 177; 107)"
+			TintColor3 = "g(185; 177; 107)"
+			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "11"
+			TintColor1 = "g(88; 83; 42)"
+			TintColor2 = "g(88; 83; 42)"
+			TintColor3 = "g(88; 83; 42)"
+			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "12"
+			TintColor1 = "g(12; 149; 63)"
+			TintColor2 = "g(12; 149; 63)"
+			TintColor3 = "g(12; 149; 63)"
+			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "13"
+			TintColor1 = "g(40; 82; 68)"
+			TintColor2 = "g(40; 82; 68)"
+			TintColor3 = "g(40; 82; 68)"
+			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "14"
+			TintColor1 = "g(42; 158; 122)"
+			TintColor2 = "g(42; 158; 122)"
+			TintColor3 = "g(42; 158; 122)"
+			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "15"
+			TintColor1 = "g(33; 113; 132)"
+			TintColor2 = "g(33; 113; 132)"
+			TintColor3 = "g(33; 113; 132)"
+			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "16"
+			TintColor1 = "g(39; 154; 166)"
+			TintColor2 = "g(39; 154; 166)"
+			TintColor3 = "g(39; 154; 166)"
+			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "17"
+			TintColor1 = "g(41; 65; 100)"
+			TintColor2 = "g(41; 65; 100)"
+			TintColor3 = "g(41; 65; 100)"
+			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "18"
+			TintColor1 = "g(15; 101; 192)"
+			TintColor2 = "g(15; 101; 192)"
+			TintColor3 = "g(15; 101; 192)"
+			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "19"
+			TintColor1 = "g(12; 72; 167)"
+			TintColor2 = "g(12; 72; 167)"
+			TintColor3 = "g(12; 72; 167)"
+			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "20"
+			TintColor1 = "g(68; 107; 139)"
+			TintColor2 = "g(68; 107; 139)"
+			TintColor3 = "g(68; 107; 139)"
+			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "21"
+			TintColor1 = "g(24; 50; 115)"
+			TintColor2 = "g(24; 50; 115)"
+			TintColor3 = "g(24; 50; 115)"
+			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "22"
+			TintColor1 = "g(90; 21; 91)"
+			TintColor2 = "g(90; 21; 91)"
+			TintColor3 = "g(90; 21; 91)"
+			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "23"
+			TintColor1 = "g(195; 88; 185)"
+			TintColor2 = "g(195; 88; 185)"
+			TintColor3 = "g(195; 88; 185)"
+			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "24"
+			TintColor1 = "g(45; 45; 45)"
+			TintColor2 = "g(45; 45; 45)"
+			TintColor3 = "g(45; 45; 45)"
+			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "25"
+			TintColor1 = "g(70; 70; 75)"
+			TintColor2 = "g(70; 70; 75)"
+			TintColor3 = "g(70; 70; 75)"
+			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "26"
+			TintColor1 = "g(200; 200; 200)"
+			TintColor2 = "g(200; 200; 200)"
+			TintColor3 = "g(200; 200; 200)"
+			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "27"
+			TintColor1 = "g(223; 157; 6)"
+			TintColor2 = "g(145; 37; 27)"
+			TintColor3 = "g(201; 215; 224)"
+			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "28"
+			TintColor1 = "g(0; 53; 72)"
+			TintColor2 = "g(152; 197; 238)"
+			TintColor3 = "g(255; 93; 0)"
+			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "29"
+			TintColor1 = "g(0; 105; 140)"
+			TintColor2 = "g(36; 51; 64)"
+			TintColor3 = "g(154; 169; 177)"
+			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "30"
+			TintColor1 = "g(48; 56; 46)"
+			TintColor2 = "g(170; 215; 186)"
+			TintColor3 = "g(0; 209; 0)"
+			MaterialOverrideName = "skin_00"
+		/>
+		<CustomizationPreset
+			Id = "31"
+			TintColor1 = "g(225; 217; 190)"
+			TintColor2 = "g(96; 84; 84)"
+			TintColor3 = "g(221; 154; 55)"
+			MaterialOverrideName = "skin_00"
+		/>
+	</Truck>
 </TruckSet>

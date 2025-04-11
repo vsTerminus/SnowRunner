@@ -1,0 +1,31 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<TruckData>
+		<Shakers>
+			<Shaker Frame="BoneExhaustLeft" MinAngle="(0.07; 0.07; 0.07)" MaxAngle="(0.25; 0.25; 0.25)" MaxFrequency="3.5" />
+			<Shaker Frame="BoneExhaustRight" MinAngle="(0.07; 0.07; 0.07)" MaxAngle="(0.25; 0.25; 0.25)" MaxFrequency="3.8" />
+		</Shakers>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/sleiter_mfk816_tuning/sleiter_mfk816_exhaust_2">
+		<Body ImpactType="Truck" Mass="75">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="exhaust"
+		Category="exhaust"
+		Price="2000"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_EXHAUST_OUTROLLED_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_EXHAUST_OUTROLLED_NAME"
+		/>
+		<InstallSocket Type="SleiterMFK816Exhaust" />
+	</GameData>
+	<Exhaust Dir="(-0.705; 0.078; 0.705)" Origin="(0.158; 4.008; 1.355)" Speed="3.62" ParentFrame="BoneExhaustLeft"/>
+	<Exhaust Dir="(-0.705; -0.078; -0.705)" Origin="(0.158; 4.008; -1.355)" Speed="3.62" ParentFrame="BoneExhaustRight"/>
+</TruckAddon>

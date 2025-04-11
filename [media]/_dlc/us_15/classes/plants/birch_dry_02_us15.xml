@@ -1,0 +1,31 @@
+<_templates Include="environment" />
+<PlantBrand _template="BigTree" PlantingMinSpacing="3.3">
+	<PhysicsModel>
+		<Body _template="BigTreeRoot" DebrisType="FoliageAutumn" ModelFrame="BoneRoot">
+			<Constraint _template="BigTreeRoot" />
+			<Body _template="TrunkHead" ModelFrame="BoneTrunk">
+				<Constraint _template="TrunkHead" />
+			</Body>
+			<Body _template="BranchSoft" ModelFrame="BoneBranch">
+				<Constraint _template="BranchSoft" />
+			</Body>
+			<Body _template="BranchSoft" DebrisType="FoliageAutumn" ModelFrame="BoneBranch1">
+				<Constraint _template="BranchSoft" />
+			</Body>
+			<Body _template="BranchSoft" ModelFrame="BoneBranch2">
+				<Constraint _template="BranchSoft" />
+			</Body>
+			<Body _template="BranchSoft" DebrisType="FoliageAutumn" ModelFrame="BoneBranch3">
+				<Constraint _template="BranchSoft" />
+			</Body>
+			<Body _template="BranchSoft" ModelFrame="BoneBranch4">
+				<Constraint _template="BranchSoft" />
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<Occlusion Intensity="0.32" Size="(10.0; 10.0)" />
+	<Landmark Mesh="landmarks/birch_dry_02_us15_lmk" />
+	<GameData>
+		<WinchSocket Pos="(0.037; 0.339; -0.095)" ParentFrame="BoneRoot" />
+	</GameData>
+</PlantBrand>

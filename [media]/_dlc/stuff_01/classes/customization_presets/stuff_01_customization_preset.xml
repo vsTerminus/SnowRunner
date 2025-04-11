@@ -1368,4 +1368,45 @@
 	<Truck _template="GlassStickerBottomCut" Name="sticker_glass_bottom_mack_terra_pro" />
 	<Truck _template="Curtain" Name="stuff_curtain_mack_terra_pro" />
 	<!--<- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -/>-->
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_01_western_star_6900xd" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_02_western_star_6900xd" />
+	<Truck _template="InsideSticker1x2" Name="sticker_inside_1x2_01_western_star_6900xd" />
+	<Truck _template="InsideSticker1x2" Name="sticker_inside_1x2_02_western_star_6900xd" />
+	<Truck _template="InsideSticker1x4" Name="sticker_inside_1x4_01_western_star_6900xd" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_door_l_1x1_western_star_6900xd" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_door_r_1x1_western_star_6900xd" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_capote_1x1_western_star_6900xd" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_roof_1x1_western_star_6900xd" />
+	<Truck _template="GlassStickerTopCut" Name="sticker_glass_top_western_star_6900xd" />
+	<Truck _template="GlassStickerBottomCut" Name="sticker_glass_bottom_western_star_6900xd" />
+	<Truck _template="Curtain" Name="stuff_curtain_western_star_6900xd" />
+	<!--<- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -/>-->
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_01_sleiter_mfk816" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_02_sleiter_mfk816" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_03_sleiter_mfk816" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_04_sleiter_mfk816" />
+	<Truck _template="InsideSticker1x2" Name="sticker_inside_1x2_01_sleiter_mfk816" />
+	<Truck _template="InsideSticker1x2" Name="sticker_inside_1x2_02_sleiter_mfk816" />
+	<Truck _template="InsideSticker1x4" Name="sticker_inside_1x4_01_sleiter_mfk816" />
+	<Truck _template="InsideSticker1x4" Name="sticker_inside_1x4_02_sleiter_mfk816" />
+	<Truck _template="InsideSticker1x4" Name="sticker_inside_1x4_03_sleiter_mfk816" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_door_l_1x1_sleiter_mfk816" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_door_r_1x1_sleiter_mfk816" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_roof_1x1_sleiter_mfk816" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_capote_1x1_sleiter_mfk816" />
+	<Truck _template="GlassStickerTopCut" Name="sticker_glass_top_sleiter_mfk816" />
+	<!--<- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -/>-->
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_01_mercer_k520" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_02_mercer_k520" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_03_mercer_k520" />
+	<Truck _template="InsideSticker1x2" Name="sticker_inside_1x2_01_mercer_k520" />
+	<Truck _template="InsideSticker1x4" Name="sticker_inside_1x4_01_mercer_k520" />
+	<Truck _template="InsideSticker1x4" Name="sticker_inside_1x4_02_mercer_k520" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_door_l_1x1_mercer_k520" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_door_r_1x1_mercer_k520" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_roof_1x1_mercer_k520" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_capote_1x1_mercer_k520" />
+	<Truck _template="GlassStickerTopCut" Name="sticker_glass_top_mercer_k520" />
+	<Truck _template="GlassStickerBottomCut" Name="sticker_glass_bottom_mercer_k520" />
+	<!--<- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -/>-->
 </TruckSet>

@@ -1,0 +1,25 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<Snorkel Origin="(3.008; 2.911; 1.579)" />
+	<Snorkel Origin="(3.008; 2.911; -1.579)" />
+	<PhysicsModel Mesh="trucks/sleiter_mfk816_tuning/sleiter_mfk816_snorkel_2">
+		<Body ImpactType="Truck" Mass="55" ModelFrame="BoneCabin_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="snorkels"
+		Category="snorkel"
+		Price="2000"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SNORKEL_WEDGECAP_TWIN_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SNORKEL_WEDGECAP_TWIN_NAME"
+		/>
+		<InstallSocket Type="SleiterMFK816Snorkel" />
+	</GameData>
+</TruckAddon>

@@ -1,0 +1,7 @@
+<_parent File="sticker_capote_1x1_ford_f750" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/western_star_6900xd_stuff/sticker_capote_1x1_western_star_6900xd" />
+	<GameData CameraPreset="capote_sticker">
+			<InstallSocket Type="WesternStar6900XDSticker_Capote" />
+	</GameData>
+</TruckAddon>

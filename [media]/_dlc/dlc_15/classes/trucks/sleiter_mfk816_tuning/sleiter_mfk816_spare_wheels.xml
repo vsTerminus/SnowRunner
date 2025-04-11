@@ -1,0 +1,51 @@
+<_templates Include="trucks" >
+</_templates>
+
+<TruckAddon>
+	<WheelRepairsHide>
+		<Mesh Frame="wheel_l" HideThreshold="0.0" />
+		<Mesh Frame="wheel_r" HideThreshold="0.5" />
+	</WheelRepairsHide>
+	<TruckData WheelRepairsCapacity="2" />
+	<PhysicsModel Mesh="trucks/sleiter_mfk816_tuning/sleiter_mfk816_spare_wheels">
+		<Body Mass="100" ImpactType="Truck" Collisions="None">
+			<Constraint Type="Rigid" />
+			<Body Mass="600" ModelFrame="BoneWheelL_cdt" ImpactType="Truck">
+				<Constraint
+					AxisLocal="(1; 0; 0)"
+					Type="Hinge"
+					MinLimit="-2"
+					MaxLimit="0"
+				>
+					<Motor Damping="3000" Spring="4" Type="Spring" />
+				</Constraint>
+			</Body>
+			<Body Mass="600" ModelFrame="BoneWheelR_cdt" ImpactType="Truck">
+				<Constraint
+					AxisLocal="(1; 0; 0)"
+					Type="Hinge"
+					MinLimit="-2"
+					MaxLimit="0"
+				>
+					<Motor Damping="3000" Spring="4" Type="Spring" />
+				</Constraint>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="rear"
+		Category="wheel_addon"
+		IsCustomizable="true"
+		Price="5600"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SPARE_WHEELS_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SPARE_WHEELS_NAME"
+		/>
+		<InstallSocket Offset="(0; 0; 0)" Type="SleiterMFK816SpareWheels" />
+	</GameData>
+</TruckAddon>

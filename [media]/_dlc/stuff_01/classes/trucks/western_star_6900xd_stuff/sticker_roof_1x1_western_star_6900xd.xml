@@ -1,0 +1,7 @@
+<_parent File="sticker_roof_1x1_ford_f750" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/western_star_6900xd_stuff/sticker_roof_1x1_western_star_6900xd" />
+	<GameData CameraPreset="roof_sticker">
+		<InstallSocket Type="WesternStar6900XDSticker_Roof_01" />
+	</GameData>
+</TruckAddon>

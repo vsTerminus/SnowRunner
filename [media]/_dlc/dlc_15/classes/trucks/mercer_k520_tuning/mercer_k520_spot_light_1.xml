@@ -1,0 +1,47 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/mercer_k520_tuning/mercer_k520_spot_light_1">
+		<Body ImpactType="Truck" Mass="30" ModelFrame="BoneCabin_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<HeadLight>
+			<Model _template="HeadLightRay" Org="(2.174; 3.118; -0.528)" />
+			<Model _template="HeadLightRay" Org="(2.174; 3.118; 0.528)" />
+			
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.1" Pos="(2.174; 3.194; 0.528)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.1" Pos="(2.174; 3.117; 0.528)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.1" Pos="(2.174; 3.041; 0.528)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.1" Pos="(2.174; 3.156; 0.462)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.1" Pos="(2.174; 3.079; 0.462)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.1" Pos="(2.174; 3.079; 0.595)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.1" Pos="(2.174; 3.155; 0.595)" />
+			
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.1" Pos="(2.174; 3.194; -0.528)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.1" Pos="(2.174; 3.117; -0.528)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.1" Pos="(2.174; 3.041; -0.528)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.1" Pos="(2.174; 3.156; -0.462)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.1" Pos="(2.174; 3.079; -0.462)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.1" Pos="(2.174; 3.079; -0.595)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.1" Pos="(2.174; 3.155; -0.595)" />
+		</HeadLight>
+	</ModelAttachments>
+	<MainHeadLight _template="Multiply1" />
+	<GameData
+		CameraPreset="roof"
+		Category="top"
+		IsCustomizable="true"
+		Price="800"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_ROOFBAR_FOGLIGHTS_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_ROOFBAR_FOGLIGHTS_NAME"
+		/>
+		<InstallSocket Type="MercerK520Spotlight" />
+	</GameData>
+</TruckAddon>

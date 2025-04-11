@@ -1,0 +1,10 @@
+<ModelBrand 
+	Instanced="true" 
+	InstancedAsModel="true" 
+	NightLightingShadowsAllowCap="true"
+	DayShadowOffsetMult="2.0">
+	<PhysicsModel>
+		<Body Collisions="Dynamic" />
+	</PhysicsModel>
+	<Landmark Mesh="landmarks/port_gate_01_us15_lmk" />
+</ModelBrand>

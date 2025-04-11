@@ -1,0 +1,15 @@
+<_parent File="sticker_inside_1x1_01_chevrolet_ck1500" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/sleiter_mfk816_stuff/sticker_inside_1x4_02_sleiter_mfk816" />
+	<GameData
+		CameraPreset="sticker_03"
+		Category="sticker"
+		IsCustomizable="false"
+		Price="100"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc UiName="UI_STUFF_STICKER_INSIDE_1X4_NAME" />
+		<InstallSocket _noinherit="true" Type="SleiterMFK816Sticker_1x4_02" />
+	</GameData>
+</TruckAddon>

@@ -1,0 +1,33 @@
+<ModelBrand
+	NightLightingShadowsAllowCap="true"
+	DynamicModel="true"
+>
+	<Subset IsDefault="true" Name="state_start">
+		<Mesh Name="stage_1" />
+		<CdtMesh Name="cdt_stage_1" />
+	</Subset>
+	<Subset Name="state_end">
+		<Mesh Name="stage_2" />
+		<CdtMesh Name="cdt_stage_2" />
+		<AnimSubset Name="build_animation_0" />
+		<AnimTrack Name="stage_1_anim" />
+	</Subset>
+	<AnimSubset Name="build_animation_0">
+	    <Mesh Name="anim_mesh"/>
+		<CdtMesh Name="cdt_stage_2"/>
+	</AnimSubset>
+	<PhysicsModel>
+		<Body Collisions="Dynamic" ModelFrame="stage_1">
+			<Body Collisions="Dynamic" ModelFrame="stage_2"/>
+		</Body>
+	</PhysicsModel>
+	<TrackEvents TrackName="stage_1_anim">
+	<AnimEvent Key="1">
+		<Sound Name="addons/addon_tatra_crane/addon_tatra_crane_open_start" Range="240" Volume="0.5" />
+	</AnimEvent>
+	<AnimEvent Key="44">
+		<Sound Name="addons/addon_tatra_crane/addon_tatra_crane_move_stop" Range="240" Volume="1" />
+	</AnimEvent>
+</TrackEvents>
+		<Landmark Mesh="landmarks/road_blocker_01_us15_objective_lmk"/>
+</ModelBrand>

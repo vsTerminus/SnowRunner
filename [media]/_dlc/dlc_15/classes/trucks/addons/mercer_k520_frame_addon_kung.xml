@@ -1,0 +1,193 @@
+<_templates Include="trucks">
+	<Constraint>
+		<Locks Type="Hinge" MinLimit="-2" MaxLimit="3">
+			<Motor Damping="0.25" Spring="2" Type="Spring" />
+		</Locks>
+	</Constraint>
+	<Body>
+		<Top Collisions="None" Mass="30">
+			<Constraint
+				AxisLocal="(0; 1; 0)"
+				Type="Prismatic"
+				MinLimit="-.06"
+				MaxLimit=".04"
+			>
+				<Motor Damping="80" Spring="3000" Type="Spring" />
+			</Constraint>
+		</Top>
+		<Side Collisions="None" Mass="30">
+			<Constraint
+				AxisLocal="(0; 0; 1)"
+				Type="Prismatic"
+				MinLimit="-.06"
+				MaxLimit=".06"
+			>
+				<Motor Damping="50" Spring="3000" Type="Spring" />
+			</Constraint>
+		</Side>
+	</Body>
+</_templates>
+<TruckAddon IsChassisFullOcclusion="true">
+	<WheelRepairsHide>
+		<Mesh Frame="mercer_k520_tarp1" HideThreshold="0.0" />
+	</WheelRepairsHide>
+	<TruckData 
+		FuelCapacity="220" 
+		RepairsCapacity="600"
+		WheelRepairsCapacity="2"
+	>
+		<LimitedFluid Center="(-3.131; 1.216; 1.069)" SizeX="0.128" SizeY="0.305" SizeZ="0.360" Type="Box" ParentFrame="BoneFuel_cdt"/>
+		<LimitedFluid Center="(-3.301; 1.216; 1.069)" SizeX="0.128" SizeY="0.305" SizeZ="0.360" Type="Box" ParentFrame="BoneFuel_cdt"/>
+		<LimitedFluid Center="(-3.468; 1.216; 1.069)" SizeX="0.128" SizeY="0.305" SizeZ="0.360" Type="Box" ParentFrame="BoneFuel_cdt"/>
+		
+		<LimitedFluid Center="(-3.408; 1.696; -1.001)" SizeX="0.128" SizeY="0.360" SizeZ="0.305"  Type="Box" ParentFrame="BoneChassis_cdt"/>
+		<LimitedFluid Center="(-3.408; 1.696; -0.597)" SizeX="0.128" SizeY="0.360" SizeZ="0.305" Type="Box" ParentFrame="BoneChassis_cdt"/>
+		<LimitedFluid Center="(-3.199; 1.696; -1.001)" SizeX="0.128" SizeY="0.360" SizeZ="0.305" Type="Box" ParentFrame="BoneChassis_cdt"/>
+		<LimitedFluid Center="(-3.199; 1.696; -0.597)" SizeX="0.128" SizeY="0.360" SizeZ="0.305" Type="Box" ParentFrame="BoneChassis_cdt"/>
+		
+		<LimitedFluid Center="(-2.990; 1.696; -0.597)" SizeX="0.128" SizeY="0.360" SizeZ="0.305" Type="Box" ParentFrame="BoneChassis_cdt"/>
+		<LimitedFluid Center="(-2.990; 1.696; -1.001)" SizeX="0.128" SizeY="0.360" SizeZ="0.305" Type="Box" ParentFrame="BoneChassis_cdt"/>
+		<LimitedFluid Center="(-2.776; 1.696; -0.597)" SizeX="0.128" SizeY="0.360" SizeZ="0.305" Type="Box" ParentFrame="BoneChassis_cdt"/>
+		<LimitedFluid Center="(-2.776; 1.696; -1.001)" SizeX="0.128" SizeY="0.360" SizeZ="0.305" Type="Box" ParentFrame="BoneChassis_cdt"/>
+	</TruckData>
+	<FuelHide>
+		<Mesh Frame="mercer_k520_kung_fuel" HideThreshold="0.5" />
+		<Mesh Frame="fuel" HideThreshold="0.0" />
+	</FuelHide>
+	<RepairsHide>
+		<Mesh Frame="repair1" HideThreshold="0.8" />
+		<Mesh Frame="repair2" HideThreshold="0.6" />
+		<Mesh Frame="repair3" HideThreshold="0.4" />
+		<Mesh Frame="repair4" HideThreshold="0.0" />
+	</RepairsHide>
+	<PhysicsModel Mesh="trucks/addons/mercer_k520_frame_addon_kung">
+		<Body Mass="600">
+			<Constraint Type="Rigid" />
+			
+				<Body _template="Top" MinLimit="-.05" MaxLimit=".05" ModelFrame="BoneTentTop1_cdt" />
+				<Body _template="Top" MinLimit="-.04" MaxLimit=".03" ModelFrame="BoneTentTop2_cdt" />
+				<Body _template="Side" MinLimit="-.11" MaxLimit=".14" ModelFrame="BoneTentLeft1_cdt" />
+				<Body _template="Side" MinLimit="-.12" MaxLimit=".12" ModelFrame="BoneTentLeft2_cdt" />
+				<Body _template="Side" MinLimit="-.15" MaxLimit=".1" ModelFrame="BoneTentRight1_cdt" />
+				<Body _template="Side" MinLimit="-.14" MaxLimit=".1" ModelFrame="BoneTentRight2_cdt" />
+				
+				<Body Collisions="None" Mass="500" ModelFrame="BoneTentBeam1_cdt">
+					<Constraint
+						AxisLocal="(1; 0; 0)"
+						Type="Hinge"
+						MinLimit="-2"
+						MaxLimit="2"
+					>
+						<Motor Damping="1500" Spring="9000" Type="Spring" />		
+					</Constraint>
+					
+					<Body Collisions="None" Mass="20" ModelFrame="BoneTentBack_cdt">
+						<Constraint
+							AxisLocal="(1; 0; 0)"
+							Type="Hinge"
+							MinLimit="-15"
+							MaxLimit="28"
+						>
+							<Motor Damping="0.4" Spring="0.1" Type="Spring" />
+						</Constraint>
+					</Body>
+				</Body>
+			
+				<Body Collisions="None" Mass="500" ModelFrame="BoneTentBeam2_cdt">
+					<Constraint
+						AxisLocal="(1; 0; 0)"
+						Type="Hinge"
+						MinLimit="-1"
+						MaxLimit="1"
+					>
+						<Motor Damping="1500" Spring="9000" Type="Spring" />
+					</Constraint>
+				</Body>
+			
+				<Body Collisions="None" Mass="500" ModelFrame="BoneTentBeam3_cdt">
+					<Constraint
+						AxisLocal="(1; 0; 0)"
+						Type="Hinge"
+						MinLimit="-2"
+						MaxLimit="2"
+					>
+						<Motor Damping="1500" Spring="9000" Type="Spring" />
+					</Constraint>
+				</Body>
+			
+				<Body Collisions="None" Mass="500" ModelFrame="BoneTentBeam4_cdt">
+					<Constraint
+						AxisLocal="(1; 0; 0)"
+						Type="Hinge"
+						MinLimit="-1"
+						MaxLimit="1"
+					>
+						<Motor Damping="1500" Spring="9000" Type="Spring" />
+					</Constraint>
+				</Body>
+			
+				<Body Collisions="None" Mass="500" ModelFrame="BoneTentBeam5_cdt">
+					<Constraint
+						AxisLocal="(1; 0; 0)"
+						Type="Hinge"
+						MinLimit="-2"
+						MaxLimit="2"
+					>
+						<Motor Damping="1500" Spring="9000" Type="Spring" />
+					</Constraint>
+				</Body>
+			
+				<Body Collisions="None" Mass="40" ModelFrame="BoneFuel_cdt">
+					<Constraint
+						AxisLocal="(1; 0; 0)"
+						Type="Prismatic"
+						MinLimit="-0.009"
+						MaxLimit="0.001"
+					>
+						<Motor Damping="2100" Spring="3000" Type="Spring" />
+					</Constraint>
+				</Body>
+			
+				<Body Collisions="None" Mass="2" ModelFrame="BoneLockLeft_cdt">
+					<Constraint _template="Locks" AxisLocal="(1; 0; 0)" />
+				</Body>
+			
+				<Body Collisions="None" Mass="2" ModelFrame="BoneLockRight_cdt">
+					<Constraint _template="Locks" AxisLocal="(-1; 0; 0)" />
+				</Body>
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<StopSignals>
+			<Light _template="StopSignal" Pos="(-4.755; 0.709; -1)" />
+			<Light _template="StopSignal" Pos="(-4.755; 0.709; 1)" />
+			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 1" Size="0.15" Pos="(-3.667; 1.035; -0.950)" />
+			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 1" Size="0.15" Pos="(-3.667; 1.035; 0.950)" />
+		</StopSignals>
+		<Ignition>
+			<Light _template="IgnitionSignalRed" Color="g(255; 0; 0)x 0.4" Pos="(-4.675; 0.589; 0)" />
+			<Flare _template="IgnitionSignalRed" Dir="(-1; 0; 0)" Size="0.4" Pos="(-3.667; 1.035; -0.950)" />
+			<Flare _template="IgnitionSignalRed" Dir="(-1; 0; 0)" Size="0.4" Pos="(-3.667; 1.035; 0.950)" />
+			<Flare _template="IgnitionSignalRed" Dir="(-1; 0; 0)" Size="0.2" Pos="(-3.626; 1.065; -1.180)" />
+			<Flare _template="IgnitionSignalRed" Dir="(-1; 0; 0)" Size="0.2" Pos="(-3.626; 1.065; 1.180)" />
+			<Flare _template="IgnitionSignalRed" Dir="(0; 0; -1)" Size="0.3" Pos="(-3.512; 1.363; -1.353)" />
+			<Flare _template="IgnitionSignalRed" Dir="(0; 0; 1)" Size="0.3" Pos="(-3.512; 1.363; 1.353)" />
+		</Ignition>
+	</ModelAttachments>
+	<GameData
+		CameraPreset="addon_1"
+		Category="frame_addons"
+		IsCustomizable="true"
+		Price="5700"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_ADDON_MERCER_K520_KUNG_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_ADDON_MERCER_K520_KUNG_NAME"
+		/>
+		<InstallSocket Type="MercerK520Kung" />
+	</GameData>
+</TruckAddon>

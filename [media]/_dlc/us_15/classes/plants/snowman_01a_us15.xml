@@ -1,0 +1,21 @@
+<_templates Include="environment" />
+<PlantBrand
+	AttachToGround="false"
+	DisableShadows="true"
+	PlantingGroups="Bush,SmallTree"
+	UseDirtTint="true"
+	DistSkipPercentage="0.6"
+	LocalYOcclusionOffset="0.1"
+	PlantingMinSpacing="0.5"
+>
+	<PhysicsModel>
+		<Body Mass="10" NoSoftContacts="true" ModelFrame="plant" ImpactType="Bell">
+			<Constraint _template="SmallTreeRoot" BreakOffThreshold="1" />
+		</Body>
+	</PhysicsModel>
+	<ChunksBreak
+		Brands="snowman_01a_us15_chunk"
+		Handler="Snowman"
+		Threshold="2.0"
+	/>
+</PlantBrand>

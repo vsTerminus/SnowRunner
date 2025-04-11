@@ -1,0 +1,26 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/mercer_k520_tuning/mercer_k520_gabarite_default" />
+	<ModelAttachments>
+		<Ignition>
+			<Flare _template="MarkerBeacon" Size="0.4" Pos="(2.075; 2.879; -0.721)" />
+			<Flare _template="MarkerBeacon" Size="0.4" Pos="(2.075; 2.879; 0.721)" />
+		</Ignition>
+	</ModelAttachments>
+	<GameData
+		CameraPreset="roof"
+		Category="top"
+		Price="500"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_PARKLIGHTS_FACTORY_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_PARKLIGHTS_FACTORY_NAME"
+		>
+		</UiDesc>
+		<InstallSocket Type="MercerK520Gabarite" />
+	</GameData>
+</TruckAddon>

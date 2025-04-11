@@ -1,0 +1,92 @@
+<_templates Include="trucks">
+	<_parent File="mercer_k520_bumper_default" />
+	<Body>
+		<Limits Collisions="None" Mass="0.1">
+			<Constraint LinearLimitsY="(-0.01; 0.01)" LinearLimitsZ="(-0.01; 0.01)" Type="Fixed">
+				<Motor Damping="0.1" Spring="280" Type="Spring" />
+			</Constraint>
+		</Limits>
+	</Body>
+</_templates>
+<TruckAddon>
+	<TruckData>
+		<Damage>
+			<Multiplier Multiplier="1.0" Type="Engine" />
+		</Damage>
+	</TruckData>
+	<PhysicsModel _noinherit="true" Mesh="trucks/mercer_k520_tuning/mercer_k520_bumper_2">
+		<Body ImpactType="Truck" Mass="20" ModelFrame="BoneCabin_cdt">
+			<Constraint Type="Rigid" />
+			<Body _template="Limits" ModelFrame="BoneStringLeft_cdt" />
+			<Body _template="Limits" ModelFrame="BoneStringRight_cdt" />
+			<Body
+				AngularDamping="6"
+				Collisions="None"
+				Mass="1"
+				ModelFrame="BoneHook_cdt"
+			>
+				<Constraint
+					AxisLocal="(0; 0; 1)"
+					Type="Hinge"
+					MinLimit="-15"
+					MaxLimit="8.5"
+				/>
+			</Body>
+			<Body
+				AngularDamping="1"
+				Collisions="None"
+				Mass="1"
+				ModelFrame="BoneChain_cdt"
+			>
+				<Constraint
+					AxisLocal="(0; 0; 1)"
+					Type="Hinge"
+					MinLimit="-20"
+					MaxLimit="8"
+				/>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<HeadLight>
+			<Model _template="HeadLightRay" Org="(3.981; 1.710; -0.812)" />
+			<Model _template="HeadLightRay" Org="(3.981; 1.710; 0.812)" />
+
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" Dir="(1; 0; 0)" Size="0.1" Pos="(4; 1.700; 0.672)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" Dir="(1; 0; 0)" Size="0.1" Pos="(4; 1.766; 0.672)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" Dir="(1; 0; 0)" Size="0.1" Pos="(4; 1.633; 0.672)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" Dir="(1; 0; 0)" Size="0.1" Pos="(4; 1.733; 0.730)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" Dir="(1; 0; 0)" Size="0.1" Pos="(4; 1.666; 0.730)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" Dir="(1; 0; 0)" Size="0.1" Pos="(4; 1.733; 0.614)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" Dir="(1; 0; 0)" Size="0.1" Pos="(4; 1.666; 0.614)" />
+			
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" Dir="(1; 0; 0)" Size="0.1" Pos="(4; 1.700; -0.672)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" Dir="(1; 0; 0)" Size="0.1" Pos="(4; 1.766; -0.672)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" Dir="(1; 0; 0)" Size="0.1" Pos="(4; 1.633; -0.672)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" Dir="(1; 0; 0)" Size="0.1" Pos="(4; 1.733; -0.730)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" Dir="(1; 0; 0)" Size="0.1" Pos="(4; 1.666; -0.730)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" Dir="(1; 0; 0)" Size="0.1" Pos="(4; 1.733; -0.614)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" Dir="(1; 0; 0)" Size="0.1" Pos="(4; 1.666; -0.614)" />
+		</HeadLight>
+	</ModelAttachments>
+	<MainHeadLight _template="Multiply2" />
+	<GameData
+		CameraPreset="default"
+		Category="bumper"
+		Price="1200"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<WinchSocket Pos="(4.171; 1.023; 0.477)" FixedToTruck="true"/>
+		<WinchSocket Pos="(4.171; 1.023; -0.477)" FixedToTruck="true"/>
+		<CraneSocket Pos="(4.171; 1.023; 0.477)" FixedToTruck="true"/>
+		<CraneSocket Pos="(4.171; 1.023; -0.477)" FixedToTruck="true"/>
+		<UiDesc
+			UiDesc="UI_TUNING_BUMPER_REBAR_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_BUMPER_REBAR_NAME"
+		/>
+		<InstallSocket Type="MercerK520Bumper" />
+	</GameData>
+</TruckAddon>

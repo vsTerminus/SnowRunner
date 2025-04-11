@@ -1,0 +1,9 @@
+<ModelBrand 
+	NightLightingShadowsAllowCap="true"
+	Instanced="true"
+	InstancedAsModel="true">
+	<PhysicsModel>
+		<Body Collisions="Dynamic" />
+	</PhysicsModel>
+	<Landmark Mesh="landmarks/barn_round_01_us15_lmk" />
+</ModelBrand>

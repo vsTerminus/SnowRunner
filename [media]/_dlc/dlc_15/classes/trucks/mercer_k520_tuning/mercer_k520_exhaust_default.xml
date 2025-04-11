@@ -1,0 +1,32 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<TruckData>
+		<Shakers>
+			<Shaker Frame="BoneShakerExhaust" MinAngle="(0.3; 0.3; 0.3)" MaxAngle="(1; 1; 1)" MaxFrequency="3.9" ParentFrame="BoneCabin_cdt" />
+		</Shakers>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/mercer_k520_tuning/mercer_k520_exhaust_default">
+		<Body Collisions="None" Mass="20" ModelFrame="BoneCabin_cdt">
+			<Constraint Type="Rigid" />
+			<Body Collisions="None" Mass="50" ModelFrame="BoneChassis_cdt">
+				<Constraint ExplicitParentFrame="0" Type="Fixed" />
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="exhaust"
+		Category="exhaust"
+		Price="1000"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_EXHAUST_DEFAULT_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_EXHAUST_DEFAULT_NAME"
+		/>
+		<InstallSocket Type="MercerK520Exhaust" />
+	</GameData>
+	<Exhaust Dir="(-0.150; -0.917; -0.369)" IsLight="false" Origin="(-0.236; 0.805; -0.517)" Speed="3.8" />
+</TruckAddon>

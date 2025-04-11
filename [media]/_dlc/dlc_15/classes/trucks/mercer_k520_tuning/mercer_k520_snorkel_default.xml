@@ -1,0 +1,20 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<Snorkel Origin="(2.921; 2.029; -1.027)" />
+	<PhysicsModel Mesh="trucks/mercer_k520_tuning/mercer_k520_snorkel_default"/>
+	<GameData
+		CameraPreset="side_l"
+		Category="snorkel"
+		Price="1000"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SNORKEL_ROUNDCAP_SHORT_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SNORKEL_ROUNDCAP_SHORT_NAME"
+		/>
+		<InstallSocket Type="MercerK520Snorkel" />
+	</GameData>
+</TruckAddon>

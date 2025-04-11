@@ -1,0 +1,77 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<TruckData>
+		<Damage>
+			<Multiplier Multiplier="0.75" Type="Engine" />
+		</Damage>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/sleiter_mfk816_tuning/sleiter_mfk816_bumper_2">
+		<Body ImpactType="Truck" Mass="80" ModelFrame="BoneRoot_cdt">
+			<Constraint Type="Rigid" />
+			<Body
+				Collisions="None"
+				Mass="10"
+				ModelFrame="BoneHook_cdt"
+			>
+				<Constraint
+					AxisLocal="(0; 0; 1)"
+					Type="Hinge"
+					MinLimit="-45"
+					MaxLimit="45"
+				>
+					<Motor Damping="0.1" Spring="0.1" Type="Spring" />
+				</Constraint>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<Ignition>
+			<Light _template="IgnitionSignalWhite" Pos="(5.33; 0.81; -1.28)" />
+			<Light _template="IgnitionSignalWhite" Pos="(5.33; 0.81; 1.28)" />
+			<Flare _template="IgnitionSignalOrange" ColorMultAtDay="0.2" Color="g(255; 160; 2) x 0.5" Dir="(0; 0; 1)" Size="0.2" Pos="(4.978; 1.598; 1.532)" />
+			<Flare _template="IgnitionSignalOrange" ColorMultAtDay="0.2" Color="g(255; 160; 2) x 0.5" Dir="(0; 0; -1)" Size="0.2" Pos="(4.978; 1.598; -1.532)" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="0.2" Dir="(1; 0; 0)" Size="0.2" Pos="(5.173; 1.598; 1.302)" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="0.2" Dir="(1; 0; 0)" Size="0.2" Pos="(5.173; 1.598; -1.302)" />
+		</Ignition>
+		<HeadLight>
+			<Model _template="HeadLightRay" Org="(5.173; 1.598; 1.302)" />
+			<Model _template="HeadLightRay" Org="(5.173; 1.598; -1.302)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 200) x 0.6" Size=".2" Pos="(5.173; 1.598; 1.302)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 200) x 0.6" Size=".2" Pos="(5.173; 1.598; -1.302)" />
+			<Flare _template="BlueStreak" Pos="(5.173; 1.598; 1.302)" Size=".2" />
+			<Flare _template="BlueStreak" Pos="(5.173; 1.598; -1.302)" Size=".2" />
+		</HeadLight>
+		<MainHeadLight>
+			<Model _template="HeadLightRay" Org="(5.250; 2.074; 0.000)" />
+			<Flare _template="HeadLight" Color="g(215; 215; 215) x 0.5" Size="0.2" Pos="(5.250; 2.074; 0.483)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="HeadLight" Color="g(215; 215; 215) x 0.5" Size="0.2" Pos="(5.250; 2.074; 0.433)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="HeadLight" Color="g(215; 215; 215) x 0.5" Size="0.2" Pos="(5.250; 2.074; 0.383)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="HeadLight" Color="g(215; 215; 215) x 0.5" Size="0.2" Pos="(5.250; 2.074; 0.333)" ParentFrame="BoneChassis_cdt" />
+
+			<Flare _template="HeadLight" Color="g(215; 215; 215) x 0.5" Size="0.2" Pos="(5.250; 2.074; -0.483)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="HeadLight" Color="g(215; 215; 215) x 0.5" Size="0.2" Pos="(5.250; 2.074; -0.433)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="HeadLight" Color="g(215; 215; 215) x 0.5" Size="0.2" Pos="(5.250; 2.074; -0.383)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="HeadLight" Color="g(215; 215; 215) x 0.5" Size="0.2" Pos="(5.250; 2.074; -0.333)" ParentFrame="BoneChassis_cdt" />
+		</MainHeadLight>
+	</ModelAttachments>
+	<MainHeadLight _template="Multiply1"/>
+	<GameData
+		CameraPreset="default"
+		Category="bumper"
+		Price="2500"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_BUMPER_REBAR_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_BUMPER_REBAR_NAME"
+		/>
+		<WinchSocket Pos="(5.274; 1.307; 0.891)" FixedToTruck="true" />
+		<WinchSocket Pos="(5.274; 1.307; -0.891)" FixedToTruck="true" />
+		<CraneSocket Pos="(5.274; 1.307; 0.891)" FixedToTruck="true" />
+		<CraneSocket Pos="(5.274; 1.307; -0.891)" FixedToTruck="true" />
+		<InstallSocket Type="SleiterMFK816Bumper" />
+	</GameData>
+</TruckAddon>

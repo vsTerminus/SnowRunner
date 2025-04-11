@@ -1,0 +1,93 @@
+<ModelBrand 
+	NightLightingShadowsAllowCap="true"
+	IsKeepPhysModelAlways="true"
+>
+	<Subset IsDefault="true" Name="stage_start">
+	</Subset>
+	<Subset Name="stage_end">
+		<Mesh Name="mesh" />
+		<CdtMesh Name="Bone.002" />
+		<AnimSubset Name="build_animation_0" />
+		<AnimTrack Name="stage_1_anim" />
+		<OnSubsetActivateEvent>
+			<SFX Name="pontoon_water_01" Dir="(0; 1; 0)" Pos="(2.5; 0; 2)"/>
+			<SFX Name="pontoon_water_01" Dir="(0; 1; 0)" Pos="(2.5; 0; 0)"/>
+			<SFX Name="pontoon_water_01" Dir="(0; 1; 0)" Pos="(2.5; 0; -2)"/>
+			<SFX Name="pontoon_water_01" Dir="(0; 1; 0)" Pos="(-2.5; 0; 2)"/>
+			<SFX Name="pontoon_water_01" Dir="(0; 1; 0)" Pos="(-2.5; 0; 0)"/>
+			<SFX Name="pontoon_water_01" Dir="(0; 1; 0)" Pos="(-2.5; 0; -2)"/>
+		</OnSubsetActivateEvent>	
+	</Subset>
+	<AnimSubset Name="build_animation_0">
+		<Mesh Name="anim_mesh"/>
+		<CdtMesh Name="Bone.002" />
+	</AnimSubset>
+	<TrackEvents TrackName="stage_1_anim">
+		<AnimEvent Key="10">
+			<SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-3.1; 0.2; 0.0)" />
+			<SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(3.1; 0.2; 0.0)" />
+
+			<SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-2.57; 0.2; -1.9)" />
+			<SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(2.57; 0.2; -1.9)" />
+
+			<SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-2.57; 0.2; 1.9)" />
+			<SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(2.57; 0.2; 1.9)" />
+		</AnimEvent>
+		<AnimEvent Key="11">
+			<Sound Name="trucks/common/truck_hit_water_rnd_set/truck_hit_water_rnd" Range="240" Volume="0.5" />
+		</AnimEvent>
+		<AnimEvent Key="15">
+			<SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-2.8; 0.2; 0.0)" />
+			<SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(2.8; 0.2; 0.0)" />
+
+			<SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-2.57; 0.2; -1.9)" />
+			<SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(2.57; 0.2; -1.9)" />
+
+			<SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-2.57; 0.2; 1.9)" />
+			<SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(2.57; 0.2; 1.9)" />
+		</AnimEvent>
+		<AnimEvent Key="22">
+			<SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-2.8; 0.2; 0.0)" />
+			<SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(2.8; 0.2; 0.0)" />
+
+			<SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-2.57; 0.2; -1.9)" />
+			<SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(2.57; 0.2; -1.9)" />
+
+			<SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-2.57; 0.2; 1.9)" />
+			<SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(2.57; 0.2; 1.9)" />
+		</AnimEvent>
+	</TrackEvents>
+	<PhysicsModel>
+		<Body   
+			Collisions="None"  
+			Mass="40.0"
+			ModelFrame="BoneRoot">
+			<Constraint Type="Prismatic" MinLimit="-0.3" MaxLimit="0.3" AxisLocal="(1; 1; 0)">
+					<Motor Type="Spring" Spring="0.01" Damping="0.1" />
+			</Constraint>
+			<Body   
+				LinearDamping="20.0"
+				Collisions="None" 
+				Mass="40.0" 
+				ModelFrame="Bone.001">
+				<Constraint Type="Ragdoll" PlaneAxisLocal="(0; 1; 0)" Cone="3.0" PlaneMin="-2.0" PlaneMax="2.0">
+					<AllMotor Type="Spring" Spring="500000.0" Damping="5000.0" />
+				</Constraint>
+			
+				<Body 
+					AllowedPenetrationDepth="0.0"
+					LinearDamping="40.05"
+					Collisions="Dynamic"
+					NoSoftContacts="True"
+					Friction="4.2" 
+					Mass="1200.0" 
+					ModelFrame="Bone.002">
+					<Constraint Type="Prismatic" MinLimit="-0.02" MaxLimit="0.0" AxisLocal="(0; 0; 1)">
+						<Motor Type="Spring" Spring="300000.0" Damping="1.0" />
+					</Constraint>
+				</Body>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<Landmark Mesh="landmarks/bridge_pontoon_01_us15_objective_lmk" />
+</ModelBrand>

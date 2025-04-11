@@ -1,0 +1,121 @@
+<_templates Include="trucks">
+	<Body>
+		<Fuel Collisions="None" Mass="120">
+			<Constraint
+				AxisLocal="(1; 0; 0)"
+				Type="Prismatic"
+				MinLimit="-0.015"
+				MaxLimit="0.015"
+			>
+				<Motor Damping="2000" Spring="2500" Type="Spring" />
+			</Constraint>
+		</Fuel>
+		<Repair Collisions="None" Mass="50">
+			<Constraint
+				AxisLocal="(1; 0; 0)"
+				Type="Prismatic"
+				MinLimit="-0.015"
+				MaxLimit="0.015"
+			>
+				<Motor Damping="2100" Spring="3000" Type="Spring" />
+			</Constraint>
+		</Repair>
+	</Body>
+</_templates>
+<TruckAddon>
+	<RepairsHide>
+		<Mesh Frame="repair_1" HideThreshold="0.0" />
+		<Mesh Frame="repair_2" HideThreshold="0.3" />
+		<Mesh Frame="repair_3" HideThreshold="0.7" />
+		<Mesh Frame="repair_4" HideThreshold="0.9" />
+	</RepairsHide>
+	<FuelHide>
+		<Mesh Frame="fuel_1" HideThreshold="0.9" />
+		<Mesh Frame="fuel_2" HideThreshold="0.83" />
+		<Mesh Frame="fuel_3" HideThreshold="0.72" />
+		<Mesh Frame="fuel_4" HideThreshold="0.64" />
+		<Mesh Frame="fuel_5" HideThreshold="0.56" />
+		<Mesh Frame="fuel_6" HideThreshold="0.48" />
+		<Mesh Frame="fuel_7" HideThreshold="0.40" />
+		<Mesh Frame="fuel_8" HideThreshold="0.32" />
+		<Mesh Frame="fuel_9" HideThreshold="0.24" />
+		<Mesh Frame="fuel_10" HideThreshold="0.16" />
+		<Mesh Frame="fuel_11" HideThreshold="0.08" />
+		<Mesh Frame="fuel_12" HideThreshold="0.0" />
+	</FuelHide>
+	<TruckData
+		FuelCapacity="240"
+		RepairsCapacity="600"
+	>
+		<LimitedFluid Center="(1.021, 4.052, 0.543)" SizeX="0.323" SizeY="0.360" SizeZ="0.150" Type="Box" ParentFrame="BoneFuelRear_cdt" />
+		<LimitedFluid Center="(1.374, 4.052, 0.543)" SizeX="0.323" SizeY="0.360" SizeZ="0.150" Type="Box" ParentFrame="BoneFuelRear_cdt" />
+		<LimitedFluid Center="(1.726, 4.052, 0.543)" SizeX="0.323" SizeY="0.360" SizeZ="0.150" Type="Box" ParentFrame="BoneFuelRear_cdt" />
+		<LimitedFluid Center="(2.078, 4.052, 0.543)" SizeX="0.323" SizeY="0.360" SizeZ="0.150" Type="Box" ParentFrame="BoneFuelRear_cdt" />
+		<LimitedFluid Center="(1.021, 4.058, -0.539)" SizeX="0.323" SizeY="0.360" SizeZ="0.150" Type="Box" ParentFrame="BoneFuelRear_cdt" />
+		<LimitedFluid Center="(1.374, 4.052, -0.539)" SizeX="0.323" SizeY="0.360" SizeZ="0.150" Type="Box" ParentFrame="BoneFuelRear_cdt" />
+		<LimitedFluid Center="(1.726, 4.052, -0.539)" SizeX="0.323" SizeY="0.360" SizeZ="0.150" Type="Box" ParentFrame="BoneFuelRear_cdt" />
+		<LimitedFluid Center="(2.078, 4.052, -0.539)" SizeX="0.323" SizeY="0.360" SizeZ="0.150" Type="Box" ParentFrame="BoneFuelRear_cdt" />
+
+		<LimitedFluid Center="(2.545, 4.030, 0.537)" SizeX="0.360" SizeY="0.323" SizeZ="0.150" Type="Box" ParentFrame="BoneFuelFront_cdt" />
+		<LimitedFluid Center="(2.632, 4.030, -0.203)" SizeX="0.360" SizeY="0.150" SizeZ="0.323" Type="Box" ParentFrame="BoneFuelFront_cdt" />
+		<LimitedFluid Center="(2.611, 4.030, -0.539)" SizeX="0.360" SizeY="0.323" SizeZ="0.150" Type="Box" ParentFrame="BoneFuelFront_cdt" />
+		<LimitedFluid Center="(2.632, 4.030, 0.197)" SizeX="0.360" SizeY="0.150" SizeZ="0.323" Type="Box" ParentFrame="BoneFuelFront_cdt" />
+	</TruckData>
+	<PhysicsModel Mesh="trucks/sleiter_mfk816_tuning/sleiter_mfk816_roofrack">
+		<Body ImpactType="Truck" Mass="100" ModelFrame="BoneRoofrack_cdt">
+			<Constraint Type="Rigid" />
+			<Body _template="Fuel" ModelFrame="BoneFuelRear_cdt" />
+			<Body _template="Fuel" ModelFrame="BoneFuelFront_cdt">
+				<Constraint
+					MinLimit="-0.005"
+					MaxLimit="0.005"
+				/>
+			</Body>
+			<Body _template="Repair" ModelFrame="BoneRepair1_cdt" />
+			<Body _template="Repair" ModelFrame="BoneRepair2_cdt" />
+			<Body _template="Repair" ModelFrame="BoneRepair3_cdt" />
+			<Body _template="Repair" ModelFrame="BoneRepair4_cdt" />
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<MainHeadLight>
+			<!-- <Model _template="HeadLightRay" Org="(3.199; 3.915; 0)" /> -->
+
+			<Flare _template="HeadLight" Color="g(215; 215; 215) x 0.5" Size="0.2" Pos="(3.199; 3.915; 0.926)" />
+			<Flare _template="HeadLight" Color="g(215; 215; 215) x 0.5" Size="0.2" Pos="(3.199; 3.915; 0.861)" />
+			<Flare _template="HeadLight" Color="g(215; 215; 215) x 0.5" Size="0.2" Pos="(3.199; 3.915; 0.795)" />
+			<Flare _template="HeadLight" Color="g(215; 215; 215) x 0.5" Size="0.2" Pos="(3.199; 3.915; 0.730)" />
+
+			<Flare _template="HeadLight" Color="g(215; 215; 215) x 0.5" Size="0.2" Pos="(3.199; 3.915; 0.098)" />
+			<Flare _template="HeadLight" Color="g(215; 215; 215) x 0.5" Size="0.2" Pos="(3.199; 3.915; 0.033)" />
+			<Flare _template="HeadLight" Color="g(215; 215; 215) x 0.5" Size="0.2" Pos="(3.199; 3.915; -0.032)" />
+			<Flare _template="HeadLight" Color="g(215; 215; 215) x 0.5" Size="0.2" Pos="(3.199; 3.915; -0.098)" />
+
+			<Flare _template="HeadLight" Color="g(215; 215; 215) x 0.5" Size="0.2" Pos="(3.199; 3.915; -0.926)" />
+			<Flare _template="HeadLight" Color="g(215; 215; 215) x 0.5" Size="0.2" Pos="(3.199; 3.915; -0.861)" />
+			<Flare _template="HeadLight" Color="g(215; 215; 215) x 0.5" Size="0.2" Pos="(3.199; 3.915; -0.795)" />
+			<Flare _template="HeadLight" Color="g(215; 215; 215) x 0.5" Size="0.2" Pos="(3.199; 3.915; -0.730)" />
+		</MainHeadLight>
+	</ModelAttachments>
+	<!-- <MainHeadLight _template="Multiply1"/> -->
+	<GameData
+		CameraPreset="roof"
+		Category="frame_addons"
+		IsCustomizable="true"
+		Price="9500"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SCOUT_TRUNK_SUPPLIES_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SCOUT_TRUNK_SUPPLIES_NAME"
+		/>
+		<WinchSocket Pos="(1.854; 3.877; 1.367)" FixedToTruck="true" />
+		<WinchSocket Pos="(1.854; 3.877; -1.367)" FixedToTruck="true" />
+		<CraneSocket Pos="(1.854; 3.877; 1.367)" FixedToTruck="true" />
+		<CraneSocket Pos="(1.854; 3.877; -1.367)" FixedToTruck="true" />
+		<InstallSocket Type="SleiterMFK816Roofrack" />
+	</GameData>
+</TruckAddon>

@@ -1,0 +1,372 @@
+<ModelBrand
+	NightLightingShadowsAllowCap="true"
+	DayShadowOffsetMult="13"
+	Instanced="true"
+	InstancedAsModel="true"
+>
+	<PhysicsModel>
+		<Flare
+			AttenEnd="350"
+			AttenStart="27"
+			Color="g(255; 0; 0) x 0.4"
+			ColorMultAtDay="0"
+			Dir="(0; -1; 0)"
+			OcclusionOffset="-0.3"
+			Pos="(-82.96; 75.48; -95.78)"
+			Size="1.0"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+		<Flare
+			AttenEnd="350"
+			AttenStart="27"
+			Color="g(255; 0; 0) x 0.4"
+			ColorMultAtDay="0"
+			Dir="(0; -1; 0)"
+			OcclusionOffset="-0.3"
+			Pos="(-86.21; 75.48; -95.7)"
+			Size="1.0"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+		<Flare
+			AttenEnd="350"
+			AttenStart="27"
+			Color="g(255; 0; 0) x 0.4"
+			ColorMultAtDay="0"
+			Dir="(0; -1; 0)"
+			OcclusionOffset="-0.3"
+			Pos="(-86.21; 75.48; -92.4)"
+			Size="1.0"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+		<Flare
+			AttenEnd="350"
+			AttenStart="27"
+			Color="g(255; 0; 0) x 0.4"
+			ColorMultAtDay="0"
+			Dir="(0; -1; 0)"
+			OcclusionOffset="-0.3"
+			Pos="(-82.96; 75.48; -92.4)"
+			Size="1.0"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+
+		<Flare
+			AttenEnd="350"
+			AttenStart="27"
+			Color="g(255; 0; 0) x 0.4"
+			ColorMultAtDay="0"
+			Dir="(0; -1; 0)"
+			OcclusionOffset="-0.3"
+			Pos="(-82.96; 67.09; -95.78)"
+			Size="1.0"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+		<Flare
+			AttenEnd="350"
+			AttenStart="27"
+			Color="g(255; 0; 0) x 0.4"
+			ColorMultAtDay="0"
+			Dir="(0; -1; 0)"
+			OcclusionOffset="-0.3"
+			Pos="(-86.21; 67.09; -95.7)"
+			Size="1.0"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+		<Flare
+			AttenEnd="350"
+			AttenStart="27"
+			Color="g(255; 0; 0) x 0.4"
+			ColorMultAtDay="0"
+			Dir="(0; -1; 0)"
+			OcclusionOffset="-0.3"
+			Pos="(-86.21; 67.09; -92.4)"
+			Size="1.0"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+		<Flare
+			AttenEnd="350"
+			AttenStart="27"
+			Color="g(255; 0; 0) x 0.4"
+			ColorMultAtDay="0"
+			Dir="(0; -1; 0)"
+			OcclusionOffset="-0.3"
+			Pos="(-82.96; 67.09; -92.4)"
+			Size="1.0"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+
+		<Flare
+			AttenEnd="350"
+			AttenStart="27"
+			Color="g(255; 0; 0) x 0.4"
+			ColorMultAtDay="0"
+			Dir="(0; -1; 0)"
+			OcclusionOffset="-0.3"
+			Pos="(-82.96; 51.15; -95.78)"
+			Size="1.0"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+		<Flare
+			AttenEnd="350"
+			AttenStart="27"
+			Color="g(255; 0; 0) x 0.4"
+			ColorMultAtDay="0"
+			Dir="(0; -1; 0)"
+			OcclusionOffset="-0.3"
+			Pos="(-86.21; 51.15; -95.7)"
+			Size="1.0"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+		<Flare
+			AttenEnd="350"
+			AttenStart="27"
+			Color="g(255; 0; 0) x 0.4"
+			ColorMultAtDay="0"
+			Dir="(0; -1; 0)"
+			OcclusionOffset="-0.3"
+			Pos="(-86.21; 51.15; -92.4)"
+			Size="1.0"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+		<Flare
+			AttenEnd="350"
+			AttenStart="27"
+			Color="g(255; 0; 0) x 0.4"
+			ColorMultAtDay="0"
+			Dir="(0; -1; 0)"
+			OcclusionOffset="-0.3"
+			Pos="(-82.96; 51.15; -92.4)"
+			Size="1.0"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+
+		<Flare
+			AttenEnd="350"
+			AttenStart="27"
+			Color="g(255; 0; 0) x 0.4"
+			ColorMultAtDay="0"
+			Dir="(0; -1; 0)"
+			OcclusionOffset="-0.3"
+			Pos="(-82.96; 35.15; -95.78)"
+			Size="1.0"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+		<Flare
+			AttenEnd="350"
+			AttenStart="27"
+			Color="g(255; 0; 0) x 0.4"
+			ColorMultAtDay="0"
+			Dir="(0; -1; 0)"
+			OcclusionOffset="-0.3"
+			Pos="(-86.21; 35.15; -95.7)"
+			Size="1.0"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+		<Flare
+			AttenEnd="350"
+			AttenStart="27"
+			Color="g(255; 0; 0) x 0.4"
+			ColorMultAtDay="0"
+			Dir="(0; -1; 0)"
+			OcclusionOffset="-0.3"
+			Pos="(-86.21; 35.15; -92.4)"
+			Size="1.0"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+		<Flare
+			AttenEnd="350"
+			AttenStart="27"
+			Color="g(255; 0; 0) x 0.4"
+			ColorMultAtDay="0"
+			Dir="(0; -1; 0)"
+			OcclusionOffset="-0.3"
+			Pos="(-82.96; 35.15; -92.4)"
+			Size="1.0"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+
+		<Flare
+			AttenEnd="350"
+			AttenStart="27"
+			Color="g(255; 0; 0) x 0.4"
+			ColorMultAtDay="0"
+			Dir="(0; -1; 0)"
+			OcclusionOffset="-0.3"
+			Pos="(-82.96; 75.48; -85.54)"
+			Size="1.0"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+		<Flare
+			AttenEnd="350"
+			AttenStart="27"
+			Color="g(255; 0; 0) x 0.4"
+			ColorMultAtDay="0"
+			Dir="(0; -1; 0)"
+			OcclusionOffset="-0.3"
+			Pos="(-86.21; 75.48; -85.54)"
+			Size="1.0"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+		<Flare
+			AttenEnd="350"
+			AttenStart="27"
+			Color="g(255; 0; 0) x 0.4"
+			ColorMultAtDay="0"
+			Dir="(0; -1; 0)"
+			OcclusionOffset="-0.3"
+			Pos="(-86.21; 75.48; -82.16)"
+			Size="1.0"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+		<Flare
+			AttenEnd="350"
+			AttenStart="27"
+			Color="g(255; 0; 0) x 0.4"
+			ColorMultAtDay="0"
+			Dir="(0; -1; 0)"
+			OcclusionOffset="-0.3"
+			Pos="(-82.96; 75.48; -82.16)"
+			Size="1.0"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+
+		<Flare
+			AttenEnd="350"
+			AttenStart="27"
+			Color="g(255; 0; 0) x 0.4"
+			ColorMultAtDay="0"
+			Dir="(0; -1; 0)"
+			OcclusionOffset="-0.3"
+			Pos="(-82.96; 67.06; -85.54)"
+			Size="1.0"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+		<Flare
+			AttenEnd="350"
+			AttenStart="27"
+			Color="g(255; 0; 0) x 0.4"
+			ColorMultAtDay="0"
+			Dir="(0; -1; 0)"
+			OcclusionOffset="-0.3"
+			Pos="(-86.21; 67.06; -85.54)"
+			Size="1.0"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+		<Flare
+			AttenEnd="350"
+			AttenStart="27"
+			Color="g(255; 0; 0) x 0.4"
+			ColorMultAtDay="0"
+			Dir="(0; -1; 0)"
+			OcclusionOffset="-0.3"
+			Pos="(-86.21; 67.06; -82.16)"
+			Size="1.0"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+		<Flare
+			AttenEnd="350"
+			AttenStart="27"
+			Color="g(255; 0; 0) x 0.4"
+			ColorMultAtDay="0"
+			Dir="(0; -1; 0)"
+			OcclusionOffset="-0.3"
+			Pos="(-82.96; 67.06; -82.16)"
+			Size="1.0"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+
+		<Flare
+			AttenEnd="350"
+			AttenStart="27"
+			Color="g(255; 0; 0) x 0.4"
+			ColorMultAtDay="0"
+			Dir="(0; -1; 0)"
+			OcclusionOffset="-0.3"
+			Pos="(-82.96; 51.15; -85.54)"
+			Size="1.0"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+		<Flare
+			AttenEnd="350"
+			AttenStart="27"
+			Color="g(255; 0; 0) x 0.4"
+			ColorMultAtDay="0"
+			Dir="(0; -1; 0)"
+			OcclusionOffset="-0.3"
+			Pos="(-86.21; 51.15; -85.54)"
+			Size="1.0"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+		<Flare
+			AttenEnd="350"
+			AttenStart="27"
+			Color="g(255; 0; 0) x 0.4"
+			ColorMultAtDay="0"
+			Dir="(0; -1; 0)"
+			OcclusionOffset="-0.3"
+			Pos="(-86.21; 51.15; -82.16)"
+			Size="1.0"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+		<Flare
+			AttenEnd="350"
+			AttenStart="27"
+			Color="g(255; 0; 0) x 0.4"
+			ColorMultAtDay="0"
+			Dir="(0; -1; 0)"
+			OcclusionOffset="-0.3"
+			Pos="(-82.96; 51.15; -82.16)"
+			Size="1.0"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+
+		<Flare
+			AttenEnd="350"
+			AttenStart="27"
+			Color="g(255; 0; 0) x 0.4"
+			ColorMultAtDay="0"
+			Dir="(0; -1; 0)"
+			OcclusionOffset="-0.3"
+			Pos="(-82.96; 35.12; -85.54)"
+			Size="1.0"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+		<Flare
+			AttenEnd="350"
+			AttenStart="27"
+			Color="g(255; 0; 0) x 0.4"
+			ColorMultAtDay="0"
+			Dir="(0; -1; 0)"
+			OcclusionOffset="-0.3"
+			Pos="(-86.21; 35.12; -85.54)"
+			Size="1.0"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+		<Flare
+			AttenEnd="350"
+			AttenStart="27"
+			Color="g(255; 0; 0) x 0.4"
+			ColorMultAtDay="0"
+			Dir="(0; -1; 0)"
+			OcclusionOffset="-0.3"
+			Pos="(-86.21; 35.12; -82.16)"
+			Size="1.0"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+		<Flare
+			AttenEnd="350"
+			AttenStart="27"
+			Color="g(255; 0; 0) x 0.4"
+			ColorMultAtDay="0"
+			Dir="(0; -1; 0)"
+			OcclusionOffset="-0.3"
+			Pos="(-82.96; 35.12; -82.16)"
+			Size="1.0"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+		<Body
+			Collisions="Dynamic"
+		/>
+	</PhysicsModel>
+	<Landmark Mesh="landmarks/factory_metal_06_us15_lmk" />	
+</ModelBrand>

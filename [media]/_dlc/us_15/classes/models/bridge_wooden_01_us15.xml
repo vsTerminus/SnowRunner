@@ -1,0 +1,10 @@
+<ModelBrand 
+	NightLightingShadowsAllowCap="true"
+	Instanced="true"
+	InstancedAsModel="true"
+>
+	<PhysicsModel>
+		<Body Collisions="Dynamic" />
+	</PhysicsModel>
+<Landmark Mesh="landmarks/bridge_wooden_01_us15_lmk" />
+</ModelBrand>

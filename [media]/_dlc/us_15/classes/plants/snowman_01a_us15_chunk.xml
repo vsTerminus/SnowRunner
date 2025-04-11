@@ -1,0 +1,132 @@
+<_templates Include="models">
+	<Body>
+		<snowman_01_us15
+			GravityFactor="0.55"
+			Mass="20.0"
+			NoSoftContacts="true"
+			LinearDamping="1.5"
+			IsCapsuleCDT="true"
+		/>
+	</Body>
+	<Constraint>
+		<snowman_01_us15
+			BreakOffThreshold="2"
+			Type="Fixed"
+		/>
+	</Constraint>
+</_templates>
+<PlantBrand
+	PlantingGroups="LyingTree"                  
+	AttachToGround="false"
+	UseGravityAlways="true"
+	DeactivationPhantomExt="10"
+	IsContactEventEveryFrame="true"
+	UsePhysicsForInstancing="true"
+>
+	<PhysicsModel>
+		<Body Collisions="None" ModelFrame="BoneRoot">
+			<Body _template="snowman_01_us15" Collisions="Dynamic" ModelFrame="Bone1">
+				<Constraint _template="snowman_01_us15" />
+				<Body _template="snowman_01_us15" Collisions="Dynamic" ModelFrame="Bone4">
+					<Constraint _template="snowman_01_us15" />
+				</Body>
+				<Body _template="snowman_01_us15" Collisions="Dynamic" ModelFrame="Bone5">
+					<Constraint _template="snowman_01_us15" />
+				</Body>
+				<Body _template="snowman_01_us15" Collisions="Dynamic" ModelFrame="Bone7">
+					<Constraint _template="snowman_01_us15" />
+				</Body>
+				<Body _template="snowman_01_us15" Collisions="Dynamic" ModelFrame="Bone8">
+					<Constraint _template="snowman_01_us15" />
+				</Body>
+				<Body _template="snowman_01_us15" Collisions="Dynamic" ModelFrame="Bone10">
+					<Constraint _template="snowman_01_us15" />
+					<Body _template="snowman_01_us15" Collisions="Dynamic" ModelFrame="Bone11">
+						<Constraint _template="snowman_01_us15" />
+					</Body>
+					<Body _template="snowman_01_us15" Collisions="Dynamic" ModelFrame="Bone12">
+						<Constraint _template="snowman_01_us15" />
+					</Body>
+					<Body _template="snowman_01_us15" Collisions="Dynamic" ModelFrame="Bone13">
+						<Constraint _template="snowman_01_us15" />
+					</Body>
+					<Body _template="snowman_01_us15" Collisions="Dynamic" ModelFrame="Bone14">
+						<Constraint _template="snowman_01_us15" />
+					</Body>
+					<Body _template="snowman_01_us15" Collisions="Dynamic" ModelFrame="Bone15">
+						<Constraint _template="snowman_01_us15" />
+					</Body>
+					<Body _template="snowman_01_us15" Collisions="Dynamic" ModelFrame="Bone17">
+						<Constraint _template="snowman_01_us15" />
+					</Body>
+					<Body _template="snowman_01_us15" Collisions="Dynamic" ModelFrame="Bone18">
+						<Constraint _template="snowman_01_us15" />
+					</Body>
+					<Body _template="snowman_01_us15" Collisions="Dynamic" ModelFrame="Bone19">
+						<Constraint _template="snowman_01_us15" />
+					</Body>
+					<Body _template="snowman_01_us15" Collisions="Dynamic" ModelFrame="Bone20">
+						<Constraint _template="snowman_01_us15" />
+					</Body>
+					<Body _template="snowman_01_us15" Collisions="Dynamic" ModelFrame="Bone21">
+						<Constraint _template="snowman_01_us15" />
+					</Body>
+				</Body>
+				<Body _template="snowman_01_us15" Collisions="Dynamic" ModelFrame="Bone22">
+						<Constraint _template="snowman_01_us15" />
+					<Body _template="snowman_01_us15" Collisions="Dynamic" ModelFrame="Bone23">
+						<Constraint _template="snowman_01_us15" />
+					</Body>
+					<Body _template="snowman_01_us15" Collisions="Dynamic" ModelFrame="Bone24">
+						<Constraint _template="snowman_01_us15" />
+					</Body>
+					<Body _template="snowman_01_us15" Collisions="Dynamic" ModelFrame="Bone25">
+						<Constraint _template="snowman_01_us15" />
+					</Body>
+					<Body _template="snowman_01_us15" Collisions="Dynamic" ModelFrame="Bone26">
+						<Constraint _template="snowman_01_us15" />
+					</Body>
+					<Body _template="snowman_01_us15" Collisions="Dynamic" ModelFrame="Bone27">
+						<Constraint _template="snowman_01_us15" />
+					</Body>
+					<Body _template="snowman_01_us15" Collisions="Dynamic" ModelFrame="Bone28">
+						<Constraint _template="snowman_01_us15" />
+					</Body>
+					<Body _template="snowman_01_us15" Collisions="Dynamic" ModelFrame="Bone29">
+						<Constraint _template="snowman_01_us15" />
+					</Body>
+					<Body _template="snowman_01_us15" Collisions="Dynamic" ModelFrame="Bone31">
+						<Constraint _template="snowman_01_us15" />
+					</Body>
+					<Body _template="snowman_01_us15" Collisions="Dynamic" ModelFrame="Bone32">
+						<Constraint _template="snowman_01_us15" />
+					</Body>
+					<Body _template="snowman_01_us15" Collisions="Dynamic" ModelFrame="Bone33">
+						<Constraint _template="snowman_01_us15" />
+					</Body>
+					<Body _template="snowman_01_us15" Collisions="Dynamic" ModelFrame="Bone34">
+						<Constraint _template="snowman_01_us15" />
+					</Body>
+					<Body _template="snowman_01_us15" Collisions="Dynamic" ModelFrame="Bone35">
+						<Constraint _template="snowman_01_us15" />
+					</Body>
+					<Body _template="snowman_01_us15" Collisions="Dynamic" ModelFrame="Bone36">
+						<Constraint _template="snowman_01_us15" />
+					</Body>
+					<Body _template="snowman_01_us15" Collisions="Dynamic" ModelFrame="Bone39">
+						<Constraint _template="snowman_01_us15" />
+					</Body>
+					<Body _template="snowman_01_us15" Collisions="Dynamic" ModelFrame="Bone40">
+						<Constraint _template="snowman_01_us15" />
+					</Body>
+					<Body _template="snowman_01_us15" Collisions="Dynamic" ModelFrame="Bone41">
+						<Constraint _template="snowman_01_us15" />
+					</Body>
+					<Body _template="snowman_01_us15" Collisions="Dynamic" ModelFrame="Bone45">
+						<Constraint _template="snowman_01_us15" />
+					</Body>
+				</Body>
+			</Body>
+		</Body>
+	</PhysicsModel>
+</PlantBrand>

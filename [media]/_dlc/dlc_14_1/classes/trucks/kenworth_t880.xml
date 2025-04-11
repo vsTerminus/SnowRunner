@@ -548,10 +548,15 @@
 		<AddonSockets>
 			<Socket Names="KenworthT880SpareWheel" Offset="(0; 0; 0)" NamesBlock="FlatbedKenworthT880" ParentFrame="BoneCabinTwist_cdt" />
 			<Socket Names="LogLift" NamesBlock="FlatbedKenworthT880, FrameAddonMaintainer, FrameAddonLogMediumMastodon" Offset="(1.5; 1.035; 0)" ParentFrame="BoneСabinTwist_cdt" />
-			<Socket Names="MinicraneUS" NamesBlock="FlatbedKenworthT880, KenworthT880SpareWheel, FrameAddon, FrameAddonMaintainer, FrameAddonLogMediumMastodon" Offset="(0.8; 1.055; 0)" ParentFrame="BoneCabin_cdt"/>
+			<Socket Names="MinicraneUS" NamesBlock="FlatbedKenworthT880, KenworthT880SpareWheel, FrameAddonMaintainer, FrameAddonLogMediumMastodon" Offset="(0.8; 1.055; 0)" ParentFrame="BoneCabin_cdt">
+				<AddonsShift Offset="(0.1; 0; 0)" Types="FrameAddon" />
+			</Socket>
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="FrameAddonKung" NamesBlock="FlatbedKenworthT880, MinicraneUS, LogLift" Offset="(-2; 1.05; 0)" ParentFrame="BoneChassis_cdt"/>
+			<Socket Names="FrameAddon" NamesBlock="FlatbedKenworthT880, LogLift" Offset="(-1; 1.0; 0)" ParentFrame="BoneChassis_cdt">
+				<AddonsShift Offset="(-0.95; 0; 0)" Types="MinicraneUS" />
+			</Socket>
 			<Socket Names="FrameAddonTank" NamesBlock="FlatbedKenworthT880, MinicraneUS, LogLift" Offset="(-2; 1.018; 0)" ParentFrame="BoneChassis_cdt">
 				<AddonsShift Offset="(-0.3; 0; 0)" Types="KenworthT880SpareWheel" />
 			</Socket>

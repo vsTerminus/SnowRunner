@@ -117,7 +117,7 @@
 										</Constraint>
 										<Body ForceBodyParams="true" Mass="40" Collisions="All" ModelFrame="BoneGrabberHingeOX_cdt">
 											<Constraint
-												AxisLocal="(0; -1; 0)"
+												AxisLocal="(0; 1; 0)"
 												Name="GrapplerBase"
 												Type="Hinge"
 												MinLimit="-180"

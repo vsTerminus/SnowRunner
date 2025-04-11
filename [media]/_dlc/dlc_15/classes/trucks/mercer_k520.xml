@@ -1,0 +1,608 @@
+<_templates Include="trucks">
+	<Wheel>
+		<RearWheel
+			ConnectedToHandbrake="true"
+			Location="rear"
+			Torque="default"
+		/>
+		<FrontWheel
+			ConnectedToHandbrake="true"
+			Location="front"
+			SteeringAngle="36"
+			SteeringCastor="0"
+			SteeringJointOffset="0.1224"
+			Torque="full"
+			ParentFrame="BoneCabin_cdt"
+		/>
+	</Wheel>
+	<Body>
+		<Mudguard Collisions="None" Mass="5">
+			<Constraint
+				AxisLocal="(0; 0; 1)"
+				Type="Hinge"
+				MinLimit="-12"
+				MaxLimit="8"
+			>
+				<Motor Damping="2" Spring="0.1" Type="Spring" />
+			</Constraint>
+		</Mudguard>
+	</Body>
+</_templates>
+<Truck>
+	<TruckData
+		BackSteerSpeed="0.03"
+		DiffLockType="Installed"
+		EngineIconMesh="env/engine_mercer_k520"
+		EngineIconScale="1"
+		EngineStartDelay="0.8"
+		ExhaustStartTime="0.9"
+		FuelCapacity="240"
+		Responsiveness="0.15"
+		SteerSpeed="0.03"
+		TruckImage="MercerK520mchr"
+		TruckType="OFFROAD"
+	>
+		<WinchUpgradeSocket Default="w_medium_trucks_default" IsUpgradable="true" Type="winches_medium_trucks" />
+		<Wheels
+			DefaultRim="rim_1"
+			DefaultTire="tire_1"
+			DefaultWheelType="wheels_mercer_k520"
+		>
+			<Wheel _template="FrontWheel" Pos="(2.538; 0.602; 1.052)" />
+			<Wheel _template="FrontWheel" RightSide="true" Pos="(2.538; 0.602; 1.052)" />
+			<Wheel _template="RearWheel" Pos="(-0.909; 0.602; 1.052)" />
+			<Wheel _template="RearWheel" RightSide="true" Pos="(-0.909; 0.602; 1.052)" />
+			<Wheel _template="RearWheel" Pos="(-2.317; 0.602; 1.052)" />
+			<Wheel _template="RearWheel" RightSide="true" Pos="(-2.317; 0.602; 1.052)" />
+		</Wheels>
+		<SuspensionSocket
+			Default="mercer_k520_suspension_default"
+			Type="s_mercer_k520"
+			MaxWheelRadiusWithoutSuspension="0.56"
+		/>
+		<SteeringWheel Frame="BoneSteering" />
+		<SteeringRack
+			Frame="BoneRack"
+			FrameSteerLeft="BoneRackLeft"
+			FrameSteerRight="BoneRackRight"
+			RackHalfSizeZ="0.817"
+		/>
+		<Shakers>
+			<Shaker Frame="BoneShakerGearstick" MinAngle="(0.5; 0.5; 0.5)" MaxAngle="(2; 2; 2)" MaxFrequency="0.1" ParentFrame="BoneCabinPrismatic_cdt"/>
+		</Shakers>
+		<Steam Origin="(2.657; 1.307; 0)" />
+		<SoundsWheels _template="Default" />
+		<SoundsDamage _template="Heavy" />
+		<Sounds
+			_template="Default"
+			AirHissInterval="12.0"
+			MinDist="15.0"
+			DisableReversePitch="false"
+			Origin="(2.806; 1.419; -0.092)"
+			ParentFrame="BoneCabin_cdt"
+		>
+			<Reverse		Sound="" />
+			<BrakePull		Sound="trucks/common/truck_brake_pull" />
+			<BrakeRelease	Sound="trucks/common/truck_brake_release_alt2_rnd_set/truck_brake_release_alt2_rnd" />
+			<BrakesSqueal	Sound="trucks/mercer_k520/mercer_k520_brakes_squeal" />
+			<Handbrake		Sound="trucks/mercer_k520/mercer_k520_handbrake_on" />
+			<HandbrakeOff	Sound="trucks/mercer_k520/mercer_k520_handbrake_off" />
+			<Honk			Sound="trucks/mercer_k520/mercer_k520_honk" />
+			<EngineRev		Sound="" />
+			<EngineAccel	Sound="trucks/mercer_k520/mercer_k520_acc" />
+			<EngineStart	Sound="trucks/mercer_k520/mercer_k520_start" />
+			<EngineStop		Sound="trucks/mercer_k520/mercer_k520_stop" />
+			<EngineIdle		Sound="trucks/mercer_k520/mercer_k520_idle" />
+			<EngineIdle_2d	Sound="trucks/mercer_k520/mercer_k520_idle_2d"	IsSound2D="true" />
+			<EngineLow		Sound="trucks/mercer_k520/mercer_k520_low" />
+			<EngineLow_2d	Sound="trucks/mercer_k520/mercer_k520_low_2d"	IsSound2D="true" />
+			<EngineHigh		Sound="" />
+			<EngineHigh_2d	Sound=""	IsSound2D="true" />
+			<EngineHeavy	Sound="" />
+			<EngineHeavy_2d	Sound=""	IsSound2D="true" />
+			<EngineTurbo	Sound="" />
+			<ChassisStress	Sound="trucks/common/truck_swing_big_old_rnd_set/truck_swing_big_old_rnd" />
+			<AbruptStop		Sound="trucks/common/truck_swing_big_rnd_set/truck_swing_big_rnd" />
+		</Sounds>
+		<Shafts>
+			<Shaft SocketPointA="Shaft1a" SocketPointB="Shaft1b" />
+			<Shaft SocketPointA="Shaft2a" SocketPointB="Shaft2b" />
+			<Shaft SocketPointA="Shaft3a" SocketPointB="Shaft3b" />
+			<Shaft SocketPointA="Shaft4a" SocketPointB="Shaft4b" />
+			<Shaft SocketPointA="Shaft5a" SocketPointB="Shaft5b" />
+		</Shafts>
+		<OcclusionMap HalfSizeZ="1.92" MinX="-4" MaxX="4" />
+		<LimitedFluid Center="(0.579; 0.946; 0.869)" SizeX="1.240" SizeY="0.473" SizeZ="0.478" Type="Box" ParentFrame="BoneCabin_cdt"/>
+		<LimitedFluid Center="(0.579; 0.946; -0.869)" SizeX="1.240" SizeY="0.473" SizeZ="0.478" Type="Box" ParentFrame="BoneCabin_cdt"/>
+		<Intake Dir="(1; 0; 0)" Origin="(3.862; 1.699; 0)" Size="1" />
+		<GearboxSocket Default="g_truck_default" Type="gearboxes_trucks, gearboxes_special_mercer_k520" />
+		<FuelTank DamageCapacity="80" />
+		<EngineSocket Default="us_truck_old_engine_0" Type="e_us_truck_old, e_us_truck_old_mercer_k520" />
+		<Damage>
+			<DamageArea Type="Engine" Min="(1.981, 0.970, -0.354)" Max="(3.575, 1.855, 0.354)" ParentFrame="BoneCabin_cdt" />
+			<DamageArea Type="FuelTank" Min="(-0.054, 0.665, -1.194)" Max="(1.212, 1.221, -0.548)" ParentFrame="BoneChassis_cdt" />
+			<DamageArea Type="FuelTank" Min="(-0.054, 0.665, 0.548)" Max="(1.212, 1.221, 1.194)" ParentFrame="BoneChassis_cdt" />
+		</Damage>
+		<Driver
+			AnimationSet="HeavyTruck"
+			LegsOffset="(-0.03; 0.03; 0)"
+			Pos="(1.745; 1.900; 0.501)"
+			SteeringWheelPos="(2.126; 2.277; 0.494)"
+			ParentFrame="BoneCabinPrismatic_cdt"
+		/>
+		<Dashboard>
+			<Gauge Dir="(-0.500; 0.866; 0)" InputRange="(0;100)" InputType="speed" Mesh="trucks/arrows/mercer_k520_arrow_01" Org="(2.243; 2.249; 0.364)" OutputAngles="(-156; 150)" />
+			<Gauge Damping="0.99" Dir="(-0.500; 0.866; 0)" InputRange="(0;1)" InputType="rpm" Mesh="trucks/arrows/mercer_k520_arrow_01" Org="(2.243; 2.249; 0.624)" OutputAngles="(-156; 150)" />
+			<Gauge Damping="0.99" Dir="(-0.500; 0.866; 0)" InputRange="(0;1)" InputType="fuel" Mesh="trucks/arrows/mercer_k520_arrow_03" Org="(2.295; 2.285; 0.494)" OutputAngles="(-65; 65)" />
+			
+			<Gauge Damping="0.99" Dir="(-0.500; 0.866; 0)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/mercer_k520_arrow_02" Org="(2.244; 2.247; 0.689)" OutputAngles="(140; 130)" />
+			<Gauge Damping="0.99" Dir="(-0.500; 0.866; 0)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/mercer_k520_arrow_02" Org="(2.244; 2.247; 0.560)" OutputAngles="(-140; -110)" />
+			<Gauge Damping="0.99" Dir="(-0.500; 0.866; 0)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/mercer_k520_arrow_02" Org="(2.300; 2.280; 0.627)" OutputAngles="(215; 200)" />
+			
+			<Gauge Damping="0.99" Dir="(-0.500; 0.866; 0)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/mercer_k520_arrow_04" Org="(2.244; 2.245; 0.406)" OutputAngles="(140; 120)" />
+			<Gauge Damping="0.99" Dir="(-0.500; 0.866; 0)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/mercer_k520_arrow_04" Org="(2.244; 2.245; 0.322)" OutputAngles="(-120; -110)" />
+			<Gauge Damping="0.99" Dir="(-0.500; 0.866; 0)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/mercer_k520_arrow_04" Org="(2.281; 2.267; 0.367)" OutputAngles="(205; 190)" />
+		</Dashboard>
+		
+		<CompatibleWheels RearOffsetZ="0.04" Scale="0.59" Type="wheels_mercer_k520" />
+		<CompatibleWheels OffsetZ="0.0" RearOffsetZ="0.1" Scale="0.59" Type="wheels_heavy_double1" />
+		<CompatibleWheels OffsetZ="0.0" RearOffsetZ="0.1" Scale="0.59" Type="wheels_heavy_double2" />
+		<CompatibleWheels OffsetZ="0.0" RearOffsetZ="0.1" Scale="0.59" Type="wheels_heavy_offroad_double" />
+		<CompatibleWheels OffsetZ="0.0" RearOffsetZ="0.1" Scale="0.59" Type="wheels_heavy_highway_double" />
+		<CompatibleWheels OffsetZ="0.0" RearOffsetZ="0.08" Scale="0.59" Type="wheels_heavy_allterrain_double" />
+		
+		<CompatibleWheels OffsetZ="0.06" RearOffsetZ="0.01" Scale="0.59" Type="wheels_heavy_single2" />
+		
+		<CompatibleWheels OffsetZ="0.06" RearOffsetZ="0.01" Scale="0.59" Type="wheels_heavy_mudtires_single" />
+		<CompatibleWheels OffsetZ="0.06" RearOffsetZ="0.01" Scale="0.59" Type="wheels_heavy_mudtires_single2" />
+		
+		<CompatibleWheels RearOffsetZ="0.04" Scale="0.62" Type="wheels_mercer_k520" />
+		<CompatibleWheels OffsetZ="0.04" RearOffsetZ="0.12" Scale="0.62" Type="wheels_heavy_double1" />
+		<CompatibleWheels OffsetZ="0.04" RearOffsetZ="0.12" Scale="0.62" Type="wheels_heavy_double2" />
+		<CompatibleWheels OffsetZ="0.04" RearOffsetZ="0.12" Scale="0.62" Type="wheels_heavy_offroad_double" />
+		<CompatibleWheels OffsetZ="0.04" RearOffsetZ="0.12" Scale="0.62" Type="wheels_heavy_highway_double" />
+		<CompatibleWheels OffsetZ="0.04" RearOffsetZ="0.12" Scale="0.62" Type="wheels_heavy_allterrain_double" />
+		
+		<CompatibleWheels OffsetZ="0.06" RearOffsetZ="0.01" Scale="0.62" Type="wheels_heavy_single2" />
+		
+		<CompatibleWheels OffsetZ="0.06" RearOffsetZ="0.01" Scale="0.62" Type="wheels_heavy_mudtires_single" />
+		<CompatibleWheels OffsetZ="0.06" RearOffsetZ="0.01" Scale="0.62" Type="wheels_heavy_mudtires_single2" />
+		
+		
+		
+		<Camera Center="(-1; 0; 0)" ParentFrame="BoneCabinPrismatic_cdt">
+			<Cockpit
+				_template="Default"
+				WindshieldDiffuseTexture="trucks/mercer_k520_cab_glass__d_a.tga"
+				WindshieldShadingTexture="trucks/mercer_k520_cab_glass__sh_d.tga"
+				ViewPos="(1.676; 2.56; 0.494)"
+			>
+				<Mirror ClipDir="(-1.1; -0.13; -0.428)" ClipOffset="0.1" FOVScale="2" MeshFrame="mirror_left" ReflectionDir="(-1.1; -0.13; -0.428)" Size="(0.2; 0.2)" Pos="(2.156; 2.498; 1.166)" />
+				<Mirror ClipDir="(-0.788; 0; 0.616)" ClipOffset="0.1" FOVScale="2" MeshFrame="mirror_right" ReflectionDir="(-0.788; 0; 0.616)" Size="(0.2; 0.2)" Pos="(2.156; 2.498; -1.166)" />
+			</Cockpit>
+		</Camera>
+		<Axles>
+			<Axle Frame="BoneAxle1" />
+			<Axle Frame="BoneAxle2" />
+			<Axle Frame="BoneAxle3" />
+		</Axles>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/mercer_k520">
+		<NetSync Legacy="false" />
+		<Body
+			CenterOfMassOffset="(0.2; 0; 0)"
+			ImpactType="Truck"
+			Mass="3500"
+			ModelFrame="BoneChassis_cdt"
+			NetSync="pv"
+		>
+			<Body
+				CenterOfMassOffset="(0; 0; 0)"
+				ImpactType="Truck"
+				Mass="3500"
+				ModelFrame="BoneCabin_cdt"
+				NetSync="pv"
+			>
+				<Constraint
+					AxisLocal="(1; 0; 0)"
+					Type="Hinge"
+					MinLimit="-12"
+					MaxLimit="12"
+				>
+					<Motor Damping="15000" Spring="300000" Type="Spring" />
+				</Constraint>
+				
+				<Body Mass="1" ModelFrame="BoneTieRodBaseA_cdt">
+					<Constraint
+						AxisLocal="(0; 1; 0)"
+						Type="Hinge"
+						MinLimit="-90"
+						MaxLimit="90"
+						Name="TieRodBaseA"
+					>
+						<Motor Damping="1.0" Force="6000" Tau="1" Type="Position"/>
+					</Constraint>
+				</Body>
+				<Body Mass="1" ModelFrame="BoneTieRodBaseB_cdt">
+					<Constraint
+						AxisLocal="(0; 1; 0)"
+						Type="Hinge"
+						MinLimit="-90"
+						MaxLimit="90"
+						Name="TieRodBaseB"
+					>
+						<Motor Damping="1.0" Force="6000" Tau="1" Type="Position"/>
+					</Constraint>
+				</Body>
+				
+				<Body
+					Mass="1000"
+					ImpactType="Truck"
+					ModelFrame="BoneCabinPrismatic_cdt"
+				>
+					<Constraint
+						AxisLocal="(0; 1; 0)"
+						Type="Prismatic"
+						MinLimit="-0.01"
+						MaxLimit="0.01"
+					>
+						<Motor Damping="24000" Spring="96000" Type="Spring" />
+					</Constraint>
+					
+					<Body Mass="0.3" ModelFrame="BoneKeyFob_cdt">
+						<Constraint
+							Cone="20"
+							PlaneAxisLocal="(0; 0; 1)"
+							TwistAxisLocal="(0; 1; 0)"
+							Type="Ragdoll"
+							PlaneMin="-60"
+							TwistMin="-50"
+							PlaneMax="60"
+							TwistMax="50"
+						>
+							<TwistMotor Damping="0.002" Spring="0" Type="Spring" />
+							<PlaneMotor Damping="0.0007" Spring="0" Type="Spring" />
+							<ConeMotor Damping="0.0006" Spring="0" Type="Spring" />
+						</Constraint>
+					</Body>
+					
+					<Body Mass="3" ModelFrame="BoneBelt_cdt">
+						<Constraint
+							AxisLocal="(1; 0; 0)"
+							Type="Prismatic"
+							MinLimit="-0.02"
+							MaxLimit="0.05"
+						>
+							<Motor Damping="300" Spring="3" Type="Spring" />
+						</Constraint>
+					</Body>
+					
+					<Body Mass="3" ModelFrame="BoneExtinguisher_cdt">
+						<Constraint
+							Cone="1"
+							PlaneAxisLocal="(0; 0; 1)"
+							TwistAxisLocal="(0; 1; 0)"
+							Type="Ragdoll"
+							PlaneMin="-3"
+							TwistMin="-2"
+							PlaneMax="3"
+							TwistMax="2"
+						>
+							<TwistMotor Damping="0.002" Spring="0" Type="Spring" />
+							<PlaneMotor Damping="0.0003" Spring="0" Type="Spring" />
+							<ConeMotor Damping="0.4" Spring="0" Type="Spring" />
+						</Constraint>
+					</Body>
+					
+					<Body _template="Mudguard" ModelFrame="BoneFrontMudguardRight_cdt" />
+					<Body _template="Mudguard" ModelFrame="BoneFrontMudguardLeft_cdt" />
+				</Body>
+				<Body _template="TieRod" ModelFrame="BoneTieRod_cdt">
+					<Constraint
+						AxisLocal="(0; 0; 1)"
+						Name="TieRodSteer"
+						MinLimit="-25"
+						MaxLimit="25"
+					/>
+				</Body>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<Ignition>
+			<Flare _template="MarkerBeacon" Size="0.4" Pos="(3.126; 1.619; -1.254)" ParentFrame="BoneCabinPrismatic_cdt" />
+			<Flare _template="MarkerBeacon" Size="0.4" Pos="(3.126; 1.619; 1.254)" ParentFrame="BoneCabinPrismatic_cdt" />
+			
+			<Light _template="IgnitionSignalWhite" Color="g(240; 200; 165) x 1.0" Pos="(4.490; 0.868; 0)" ParentFrame="BoneCabinPrismatic_cdt" />
+			<Flare _template="IgnitionSignalWhite" Color="g(255; 235; 215) x 0.5" Size="0.5" Pos="(3.923; 1.294; -0.772)" ParentFrame="BoneCabinPrismatic_cdt" />
+			<Flare _template="IgnitionSignalWhite" Color="g(255; 235; 215) x 0.5" Size="0.5" Pos="(3.923; 1.294; 0.772)" ParentFrame="BoneCabinPrismatic_cdt" />
+		</Ignition>
+		<ReverseSignals>
+			<Light _template="ReverseSignal" Pos="(-4; 0.720; 0)"/>
+			<Flare _template="ReverseSignal" Color="g(255; 235; 245) x 0.5" Size="0.2" Pos="(-3.692; 1.157; 0.400)" />
+			<Flare _template="ReverseSignal" Color="g(255; 235; 245) x 0.5" Size="0.2" Pos="(-3.692; 1.157; -0.400)" />
+			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.05" Dir="(-1; 0; 0)" Size="0.2" Pos="(-3.692; 1.157; 0.400)"/>
+			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.05" Dir="(-1; 0; 0)" Size="0.2" Pos="(-3.692; 1.157; -0.400)"/>	
+		</ReverseSignals>
+		<HeadLight>
+			<Model _template="HeadLightRay" Org="(3.923; 1.294; -0.772)" ParentFrame="BoneCabinPrismatic_cdt" />
+			<Model _template="HeadLightRay" Org="(3.923; 1.294; 0.772)" ParentFrame="BoneCabinPrismatic_cdt" />
+			<Flare _template="HeadLight" Color="g(255; 235; 215) x 0.5" Size="0.5" Pos="(3.923; 1.294; -0.772)" ParentFrame="BoneCabinPrismatic_cdt" />
+			<Flare _template="HeadLight" Color="g(255; 235; 215) x 0.5" Size="0.5" Pos="(3.923; 1.294; 0.772)" ParentFrame="BoneCabinPrismatic_cdt" />
+			<Flare _template="BlueStreak" Pos="(3.923; 1.294; -0.772)" Size="0.3" ParentFrame="BoneCabinPrismatic_cdt" />
+			<Flare _template="BlueStreak" Pos="(3.923; 1.294; 0.772)" Size="0.3" ParentFrame="BoneCabinPrismatic_cdt" />
+		</HeadLight>
+	</ModelAttachments>
+	<HeadLight _template="Default" Pos="(4.7; 0.8; 0)" />
+	<Landmark Mesh="landmarks/mercer_k520_lmk" MinScale="1.8" MaxScale="3.8" />
+	<GameData 
+		Country="US,NE,CE"
+		Price="86300"
+		UnlockByExploration="true"
+		UnlockByRank="1"
+		ExcludeAddons="frame_addon_sideboard_2"
+	>
+		<WinchSocket Pos="(-0.301; 1.162; 0.521)" />
+		<WinchSocket Pos="(-0.301; 1.162; -0.521)" />
+		<WinchSocket Pos="(-3.573; 0.951; -0.463)" />
+		<WinchSocket Pos="(-3.573; 0.951; 0.463)" />
+		<WinchSocket Pos="(-3.874; 1.160; 0)" />
+		<UiDesc
+			UiDesc="UI_VEHICLE_MERCER_K520_DESC"
+			UiIcon30x30="offroadVehicleImg30"
+			UiIcon328x458="shopImgMercerK520"
+			UiIcon40x40="offroadVehicleImg"
+			UiIconLogo="MercerLogo80"
+			UiName="UI_VEHICLE_MERCER_K520_NAME"
+		/>
+		<CustomizationCameras>
+			<!-- ADDONS -->
+			<CameraPos FOV="32.0" Name="default" InterestPosition="(5.5; 1.48; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(12.728; 2.6; -4.2)" />
+			<CameraPos FOV="32.0" Name="addon_1" InterestPosition="(2.5; 1.35; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-4.2; 4.2; 8)" />
+			<CameraPos FOV="32.0" Name="addon_2" InterestPosition="(4.066; 0.7; -0.192)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(8.434; 2.902; 5.717)" />
+			<CameraPos FOV="32.0" Name="side_l" InterestPosition="(6; 1.3; -0.817)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(11.014; 3; 3.127)" />
+			<CameraPos FOV="32.0" Name="side_r" InterestPosition="(6; 1.35; -0.35)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(11.014; 3; -3.127)" />
+			<CameraPos FOV="32.0" Name="wheels" InterestPosition="(5.483; 0.419; -1.3)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(9.772; 1.4; -4.3)" />
+			<CameraPos FOV="32.0" Name="roof" InterestPosition="(5.2; 2.6; -0.25)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(8.4; 5.1; -3.2)" />
+			<CameraPos FOV="32.0" Name="hoods" InterestPosition="(6.507; 0.995; -0.954)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(12.171; 1.377; -1.669)" />
+			<CameraPos FOV="32.0" Name="rear" InterestPosition="(5.929; 0.792; -0.468)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-0.649; 1.605; 1.978)" />
+			<CameraPos FOV="32.0" Name="spare_wheel" InterestPosition="(4.6; 1.6; 0.5)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(1.2; 2.814; 3.953)" />
+			<CameraPos FOV="32.0" Name="exhaust" InterestPosition="(5.3; 2; 0.5)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(0.4; 4; 3.92)" />
+			<!-- <STICKERS> -->
+			<CameraPos FOV="32.0" Interior="true" Name="roof_sticker" InterestPosition="(4.347; 2; -0.640)" Position="(7.4; 4.75; -0.7)" />
+			<CameraPos FOV="32.0" Interior="true" Name="capote_sticker" InterestPosition="(5.823; 1.2; -0.407)" Position="(9.5; 4.3; -1.296)" />
+			<CameraPos FOV="32.0" Interior="true" Name="door_r_sticker" InterestPosition="(6.8; 1.8; 0.614)" Position="(3.5; 1.5; 3.895)" />
+			<CameraPos FOV="32.0" Interior="true" Name="door_l_sticker" InterestPosition="(4.688; 1.8; -0.206)" Position="(3.303; 1.6; -3.775)" />
+			<CameraPos FOV="32.0" Interior="true" Name="glass_sticker" InterestPosition="(4.737; 2.15; -0.951)" Position="(8.594; 3.15; 0.88)" />
+			<CameraPos FOV="32.0" Interior="true" Name="sticker" InterestPosition="(5.784; 1.884; 0.720)" Position="(4.764; 2.634; -0.088)" />
+			<CameraPos FOV="32.0" Interior="true" Name="sticker_1" InterestPosition="(5.689; 3.23; 0.595)" Position="(4.745; 2.189; -0.127)" />
+			<CameraPos FOV="32.0" Interior="true" Name="sticker_2" InterestPosition="(5.766; 1.573; 1.44)" Position="(4.863; 2.551; 0.2)" />
+			<CameraPos FOV="32.0" Interior="true" Name="sticker_3" InterestPosition="(5.689; 3.23; 1.2)" Position="(4.745; 2.189; -0.127)" />
+			<!-- <STUFF> -->
+			<CameraPos FOV="32.0" Interior="true" Name="bubble_head" InterestPosition="(6.316; 2.26; 0.8)" Position="(4.45; 2.6; -0.3)" />
+			<CameraPos FOV="32.0" Interior="true" Name="mirror_mount" InterestPosition="(8.187; 2.5; 1)" Position="(4.637; 2.4; -0.2)" />
+			<CameraPos FOV="32.0" Interior="true" Name="hood_ornament" InterestPosition="(3.5; 1.2; 1.2)" Position="(9.5; 2.2; -1.3)" />
+			<CameraPos FOV="32.0" Interior="true" Name="hood_figure" Position="(8.333; 2.674; -1.2)" InterestPosition="(6; 1.7; 0.328)" />
+		</CustomizationCameras>
+		<CraneSocket Pos="(-0.301; 1.162; 0.521)" />
+		<CraneSocket Pos="(-0.301; 1.162; -0.521)" />
+		<CraneSocket Pos="(-3.573; 0.951; -0.463)" />
+		<CraneSocket Pos="(-3.573; 0.951; 0.463)" />
+		<CraneSocket Pos="(-3.874; 1.160; 0)" />
+
+		<AddonSockets>
+			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-2; 1.6; 0)" />
+			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-1.613; 1.78; 0)" />
+			<Socket Names="Trailer, LogTrailer" Offset="(-3.853; 1.14; 0)">
+				<AddonsShift Offset="(0; 0; 0)" TrailerNamesBlock="LogTrailer" Types="MinicraneUS, FrameAddon" />
+				<AddonsShift Offset="(0; 0; 0)" TrailerNamesBlock="LogTrailer" Types="FrameAddon" />
+			</Socket>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="FrameAddon" NamesBlock="MercerK520Kung, MercerK520Sideboard" Offset="(-1.28; 1.275; 0)" ParentFrame="BoneChassis_cdt">
+				<AddonsShift Offset="(-0.5; 0; 0)" Types="MercerK520SpareWheel" />
+			</Socket>
+			<Socket Names="FrameAddonLogShort" NamesBlock="MercerK520SpareWheel, MercerK520Kung, MercerK520Sideboard, MinicraneUS" Offset="(-1.25; 1.24; 0)" >
+			</Socket>
+			<Socket Names="FrameAddonTow" Offset="(-1.9; 1.2; 0)" NamesBlock="MinicraneUS, MercerK520Kung, MercerK520SpareWheel, MercerK520Sideboard, Trailer, LogTrailer, MetalDetector"/>
+			<Socket Names="FrameAddonTank" NamesBlock="MercerK520Kung, MercerK520Sideboard" Offset="(-2.25; 1.275; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="BigCraneUs" NamesBlock="MercerK520Roofrack, MercerK520SpareWheel, MinicraneUS, LogLift" Offset="(-1.9; 1.35; 0)">
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.095; 0)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.095; 0)" />
+			</Socket>
+			<Socket Names="SaddleLow" NamesBlock="MercerK520Kung, MercerK520Sideboard" Offset="(-2; 1.275; 0)">
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.05)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.05)" />
+			</Socket>
+			<Socket Names="SaddleHigh" NamesBlock="MercerK520Kung, MercerK520Sideboard" Offset="(-1.613; 1.275; 0)">
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.08)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.08)" />
+			</Socket>
+			<Socket Names="LogLift" Offset="(1.116; 1.275; 0)" NamesBlock="MercerK520SpareWheel, MercerK520Kung, MercerK520Sideboard, MinicraneUS" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="BunkLog" Offset="(-5.5; 1.275; 0)" NamesBlock="FrameAddon, FrameAddonLogShort, FrameAddonTow, FrameAddonTank, BigCraneUs, SaddleLow, SaddleHigh, MercerK520Kung, MercerK520Sideboard, MinicraneUS" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="MinicraneUS" NamesBlock="FrameAddonMaintainerSmall, LogLift, LargeSemitrailerOiltank, SemitrailerOiltank, MercerK520Kung, FrameAddonTank, FrameAddon" Offset="(0.5; 1.275; 0)" >
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.04)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.04)" />
+				<AddonsShift Offset="(-0.4; 0; 0)" Types="MercerK520SpareWheel" />
+			</Socket>
+		</AddonSockets>
+		
+		<AddonSockets 
+			DefaultAddon="mercer_k520_rear_part_chassis" 
+			RequiredAddonIfNoConflicts="mercer_k520_rear_part_chassis"
+		>
+			<Socket Names="MercerK520RearPartChassis" />
+			<Socket Names="MercerK520Sideboard" NamesBlock="MinicraneUS, BigCraneUs" ParentFrame="BoneChassis_cdt">
+				<ExtraParent Frame="BoneCabin_cdt" Offset="(0; 0; 0)" />
+			</Socket>
+			<Socket Names="MercerK520Kung" NamesBlock="MinicraneUS, BigCraneUs" ParentFrame="BoneChassis_cdt">
+				<ExtraParent Frame="BoneCabin_cdt" Offset="(0; 0; 0)" />
+			</Socket>
+		</AddonSockets>
+		<AddonSockets DefaultAddon="mercer_k520_bumper_default">
+			<Socket Names="MercerK520Bumper" ParentFrame="BoneCabinPrismatic_cdt" />
+		</AddonSockets>
+		<AddonSockets DefaultAddon="mercer_k520_exhaust_default" RequiredAddonIfNoConflicts="mercer_k520_exhaust_default" >
+			<Socket Names="MercerK520Exhaust" ParentFrame="BoneChassis_cdt" >
+				<ExtraParent Frame="BoneCabin_cdt" Offset="(0; 0; 0)" />
+			</Socket>
+		</AddonSockets>
+		<AddonSockets DefaultAddon="mercer_k520_wheel_addon" RequiredAddonIfNoConflicts="mercer_k520_wheel_addon">
+			<Socket Names="MercerK520SpareWheel" NamesBlock="FrameAddonTank" ParentFrame="BoneChassis_cdt">
+				<ExtraParent Frame="BoneCabin_cdt" />
+			</Socket>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="MercerK520Roofrack" NamesBlock="MercerK520Beacon" ParentFrame="BoneCabinPrismatic_cdt" />
+			<Socket Names="MercerK520Spotlight" ParentFrame="BoneCabinPrismatic_cdt" />
+		</AddonSockets>
+		<AddonSockets DefaultAddon="mercer_k520_snorkel_default">
+			<Socket Names="MercerK520Snorkel" ParentFrame="BoneCabinPrismatic_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="MercerK520Beacon" ParentFrame="BoneCabinPrismatic_cdt" />
+		</AddonSockets>
+		<AddonSockets DefaultAddon="mercer_k520_visor_default">
+			<Socket Names="MercerK520Visor" ParentFrame="BoneCabinPrismatic_cdt" />
+		</AddonSockets>
+		<AddonSockets DefaultAddon="mercer_k520_gabarite_default">
+			<Socket Names="MercerK520Gabarite" ParentFrame="BoneCabinPrismatic_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="MercerK520Horn" ParentFrame="BoneCabinPrismatic_cdt" />
+		</AddonSockets>
+		
+		<AddonSockets DefaultAddon="mercer_k520_diff_lock_default">
+			<Socket Names="MercerK520DiffLock" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>
+		
+		<AddonSockets>
+			<Socket InCockpit="true" Names="MercerK520Sticker_1x1_01" ParentFrame="BoneCabinPrismatic_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="MercerK520Sticker_1x1_02" ParentFrame="BoneCabinPrismatic_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="MercerK520Sticker_1x1_03" ParentFrame="BoneCabinPrismatic_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="MercerK520Sticker_1x2_01" ParentFrame="BoneCabinPrismatic_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="MercerK520Sticker_1x2_02" ParentFrame="BoneCabinPrismatic_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="MercerK520Sticker_1x4_01" ParentFrame="BoneCabinPrismatic_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket
+				InCockpit="true"
+				Names="StuffAirfreshener"
+				Offset="(2.225; 2.703; 0.059)"
+				ParentFrame="BoneCabinPrismatic_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="MercerK520Sticker_Capote" ParentFrame="BoneCabinPrismatic_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="MercerK520Sticker_Door_L" ParentFrame="BoneCabinPrismatic_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="MercerK520Sticker_Door_R" ParentFrame="BoneCabinPrismatic_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="MercerK520Sticker_Roof" ParentFrame="BoneCabinPrismatic_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="MercerK520Sticker_GlassTop" ParentFrame="BoneCabinPrismatic_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="MercerK520Sticker_GlassBottom" ParentFrame="BoneCabinPrismatic_cdt" />
+		</AddonSockets>		
+		<AddonSockets>
+			<Socket Names="StuffHoodMercerK520" ParentFrame="BoneCabinPrismatic_cdt" />
+		</AddonSockets>
+	</GameData>
+	<ControlledConstraints>
+		<Constraint Id="chassis_steer" IsLinkedSteering="true" Name="TieRodSteer" />
+		<Constraint Id="chassis_steer" IsLinkedSteering="true" Name="TieRodBaseA" />
+		<Constraint Id="chassis_steer" IsLinkedSteering="true" Name="TieRodBaseB" />
+	</ControlledConstraints>
+	<AutomaticIK>
+		<IKBone ModelFrame="IK_BoneFrontPistonLeft_B" ParentFrame="BoneCabin_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle1"
+				ModelFrame="IK_BoneFrontPistonLeft_A"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="IK_BoneFrontPistonRight_B" ParentFrame="BoneCabin_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle1"
+				ModelFrame="IK_BoneFrontPistonRight_A"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="IK_BoneAxle2RearLeft_B" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle2"
+				ModelFrame="IK_BoneAxle2RearLeft_A"
+			>
+				<IKJoint AxisLocal="(-1; 0; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="IK_BoneAxle2RearRight_B" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle2"
+				ModelFrame="IK_BoneAxle2RearRight_A"
+			>
+				<IKJoint AxisLocal="(-1; 0; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="IK_BoneAxle3RearLeft_B" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle3"
+				ModelFrame="IK_BoneAxle3RearLeft_A"
+			>
+				<IKJoint AxisLocal="(-1; 0; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="IK_BoneAxle3RearRight_B" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle3"
+				ModelFrame="IK_BoneAxle3RearRight_A"
+			>
+				<IKJoint AxisLocal="(-1; 0; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="BoneTieRodHinge2" ParentFrame="BoneTieRod_cdt">
+			<IKJoint AxisLocal="(1; 0; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneRackLeft"
+				ModelFrame="BoneTieRodPrismatic"
+			>
+				<IKJoint AxisLocal="(1; 0; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+	</AutomaticIK>
+</Truck>

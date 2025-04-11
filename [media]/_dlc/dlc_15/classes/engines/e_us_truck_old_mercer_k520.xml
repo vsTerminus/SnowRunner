@@ -1,0 +1,29 @@
+<_templates/>
+<EngineVariants>
+	<Engine
+		MaxDeltaAngVel="0.08"
+		BrakesDelay="0.5"
+		CriticalDamageThreshold="0.38"
+		DamageCapacity="180"
+		DamagedConsumptionModifier="1.8"
+		EngineResponsiveness="0.035"
+		FuelConsumption="6.0"
+		Name="us_truck_old_mercer_k520"
+		Torque="150000"
+		DamagedMinTorqueMultiplier="1.0"
+		DamagedMaxTorqueMultiplier="0.5"
+	>
+		<GameData
+			Price="17500"
+			UnlockByExploration="true"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_ENGINE_US_OLD_MERCER_K520_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_ENGINE_US_OLD_MERCER_K520_NAME"
+			/>
+		</GameData>
+	</Engine>
+</EngineVariants>

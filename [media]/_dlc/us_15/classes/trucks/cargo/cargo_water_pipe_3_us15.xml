@@ -1,0 +1,27 @@
+<TruckAddon _noinherit="true">
+	<PhysicsModel Mesh="trucks/cargo/cargo_water_pipe_3_us15">
+		<NetSync Legacy="false" />
+		<Body Mass="2000" ModelFrame="Bone">
+			<Constraint ExplicitParentFrame="0" Type="Fixed" />
+			<Body Mass="2000" ModelFrame="Bone_1">
+				<Constraint ExplicitParentFrame="1" Type="Fixed" />
+				<Body Mass="2000" ModelFrame="Bone_2">
+					<Constraint ExplicitParentFrame="2" Type="Fixed" />
+				</Body>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<GameData>
+		<Sounds
+			InstallSound="cargo_manual/cargo_manual_pipe_large"
+			TransportedSound="load/pipe_large/pipe_large_rnd"
+			ManualSound="cargo_manual/cargo_manual_pipe_large"
+		/>
+		<InstallSlot
+			CargoLength="3"
+			CargoType="CargoWaterPipe"
+			CargoValue="1"
+			Offset="(2.25; 0; 0)"
+		/>
+	</GameData>
+</TruckAddon>

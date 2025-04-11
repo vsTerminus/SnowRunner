@@ -1,0 +1,29 @@
+<_templates/>
+<EngineVariants>
+	<Engine
+		BrakesDelay="0.5"
+		MaxDeltaAngVel="0.01"
+		CriticalDamageThreshold="0.73"
+		DamageCapacity="250"
+		DamagedConsumptionModifier="1.5"
+		EngineResponsiveness="0.21"
+		FuelConsumption="10.8"
+		Name="us_truck_old_heavy_sleiter_mfk816_1"
+		Torque="245000"
+		DamagedMinTorqueMultiplier="1.0"
+		DamagedMaxTorqueMultiplier="0.35"
+	>
+		<GameData
+			Price="16000"
+			UnlockByExploration="true"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_ENGINE_US_OLD_HEAVY_SLEITER_MFK816_1_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_ENGINE_US_OLD_HEAVY_SLEITER_MFK816_1_NAME"
+			/>
+		</GameData>
+	</Engine>
+</EngineVariants>

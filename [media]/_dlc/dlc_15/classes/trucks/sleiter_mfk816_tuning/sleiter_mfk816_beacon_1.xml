@@ -1,0 +1,47 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<Rotator
+		EngineTorqueFactor="0"
+		RotationAxis="(0; -1; 0)"
+		Frame="BoneRotatorLeft"
+		RotationSpeed="3.7"
+	/>
+	<Rotator
+		EngineTorqueFactor="0"
+		RotationAxis="(0; 1; 0)"
+		Frame="BoneRotatorRight" 
+		RotationSpeed="4"
+	/>
+	<PhysicsModel Mesh="trucks/sleiter_mfk816_tuning/sleiter_mfk816_beacon_1" />
+	<ModelAttachments>
+		<Ignition _template="Flasher">
+			<Model Dir="(0.55; 0.071; 0.829)" Org="(0.818; 3.835; 1.493)" ParentFrame="BoneRotatorLeft" />
+			<Light Dir="(0.55; 0.071; 0.829)" Pos="(0.818; 3.835; 1.493)" ParentFrame="BoneRotatorLeft" />
+			<Flare Dir="(0.55; 0.071; 0.829)" Pos="(0.818; 3.835; 1.493)" ParentFrame="BoneRotatorLeft" />
+			<Flare Dir="(0.55; 0.071; 0.829)" Pos="(0.818; 3.835; 1.493)" ParentFrame="BoneRotatorLeft" />
+			<Flare Pos="(0.818; 3.835; 1.493)" />
+		</Ignition>
+		<Ignition _template="Flasher">
+			<Model Dir="(0.55; 0.071; -0.829)" Org="(0.818; 3.835; -1.493)" ParentFrame="BoneRotatorRight" />
+			<Light Dir="(0.55; 0.071; -0.829)" Pos="(0.818; 3.835; -1.493)" ParentFrame="BoneRotatorRight" />
+			<Flare Dir="(0.55; 0.071; -0.829)" Pos="(0.818; 3.835; -1.493)" ParentFrame="BoneRotatorRight" />
+			<Flare Dir="(0.55; 0.071; -0.829)" Pos="(0.818; 3.835; -1.493)" ParentFrame="BoneRotatorRight" />
+			<Flare Pos="(0.818; 3.835; -1.493)" />
+		</Ignition>
+	</ModelAttachments>
+	<GameData
+		CameraPreset="roof"
+		Category="top"
+		Price="700"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_BEACONS_STOCK_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_BEACONS_STOCK_NAME"
+		/>
+		<InstallSocket Type="SleiterMFK816Beacon" />
+	</GameData>
+</TruckAddon>

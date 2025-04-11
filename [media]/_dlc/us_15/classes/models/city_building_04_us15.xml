@@ -1,0 +1,8 @@
+<_templates Include="models" />
+<ModelBrand Instanced="true" InstancedAsModel="true">
+	<PhysicsModel>
+		<Body Collisions="Dynamic" />
+	</PhysicsModel>
+	<Occlusion Size="(13.0; 11.0)" Texture="occlusion_city_building_04.tga" />
+	<Landmark Mesh="landmarks/city_building_04_us15_lmk" />
+</ModelBrand>

@@ -151,7 +151,10 @@
 	<LevelMusic LevelName="level_main_menu_us14">
 		<Sound Name="music/austria/austria_menu" StartTime="0" EndTime="24" FadeInTime="0" FadeOutTime="5" Volume="2" />
 	</LevelMusic>
-	
+	<LevelMusic LevelName="level_main_menu_us15">
+		<Sound Name="music/ontario/ontario_menu" StartTime="0" EndTime="24" FadeInTime="0" FadeOutTime="5" Volume="2" />
+	</LevelMusic>
+
 	<!-- ALASKA -->
 	<LevelMusic LevelName="level_us_02_01">
 		<Sound Name="music/alaska/alaska_night" StartTime="24" EndTime="6" FadeInTime="30" FadeOutTime="10" />
@@ -493,6 +496,22 @@
 		<Sound Name="music/austria/austria_day" StartTime="13" EndTime="20.5" FadeInTime="30" FadeOutTime="10" />
 		<Sound Name="music/austria/austria_evening" StartTime="20.5" EndTime="24" FadeInTime="30" FadeOutTime="10" />
 		<GarageMusic _template="Austria" />
+	</LevelMusic>
+
+	<!-- CANADA WINTER -->
+	<LevelMusic LevelName="level_us_15_01">
+		<Sound Name="music/ontario/ontario_night" StartTime="24" EndTime="6" FadeInTime="30" FadeOutTime="10"  />
+		<Sound Name="music/ontario/ontario_morning" StartTime="6" EndTime="13" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/ontario/ontario_day" StartTime="13" EndTime="20.5" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/ontario/ontario_evening" StartTime="20.5" EndTime="24" FadeInTime="30" FadeOutTime="10" />
+		<GarageMusic _template="Ontario" />
+	</LevelMusic>
+	<LevelMusic LevelName="level_us_15_02">
+		<Sound Name="music/ontario/ontario_night" StartTime="24" EndTime="6" FadeInTime="30" FadeOutTime="10"  />
+		<Sound Name="music/ontario/ontario_morning" StartTime="6" EndTime="13" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/ontario/ontario_day" StartTime="13" EndTime="20.5" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/ontario/ontario_evening" StartTime="20.5" EndTime="24" FadeInTime="30" FadeOutTime="10" />
+		<GarageMusic _template="Ontario" />
 	</LevelMusic>
 	
 </MusicPresets>

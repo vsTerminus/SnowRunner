@@ -1,0 +1,118 @@
+<_templates Include="trucks"/>
+<TruckAddon>
+	<RepairsHide>
+		<Mesh Frame="repair" HideThreshold="0.0" />
+	</RepairsHide>
+	<FuelHide>
+		<Mesh Frame="fuel" HideThreshold="0.0" />
+	</FuelHide>
+	<TruckData
+		FuelCapacity="40"
+		RepairsCapacity="300"
+	>
+		<LimitedFluid Center="1.616; 3.150; 0.272" SizeZ="0.365" SizeY="0.154" SizeX="0.472" Type="Box" ParentFrame="BoneFuel_cdt" />
+		<LimitedFluid Center="1.616; 3.150; 0.673" SizeZ="0.365" SizeY="0.154" SizeX="0.472" Type="Box" ParentFrame="BoneFuel_cdt" />
+	</TruckData>
+	<PhysicsModel Mesh="trucks/mercer_k520_tuning/mercer_k520_roofrack_1">
+		<Body ImpactType="Truck" Mass="60" ModelFrame="BoneCabin_cdt">
+			<Constraint Type="Rigid" />
+			<Body
+				Collisions="None"
+				Mass="50"
+				ModelFrame="BoneRepair_cdt"
+			>
+				<Constraint
+					AxisLocal="(1; 0; 0)"
+					Type="Prismatic"
+					MinLimit="-0.02"
+					MaxLimit="0.012"
+				>
+					<Motor Damping="10" Spring="0.4" Type="Spring" />
+				</Constraint>
+			</Body>
+			<Body
+				Collisions="None"
+				Mass="40"
+				ModelFrame="BoneFuel_cdt"
+			>
+				<Constraint
+					AxisLocal="(1; 0; 0)"
+					Type="Prismatic"
+					MinLimit="-0.02"
+					MaxLimit="0.01"
+				>
+					<Motor Damping="10" Spring="0.4" Type="Spring" />
+				</Constraint>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<Rotator EngineTorqueFactor="0" Frame="BoneRotatorLeft" RotationSpeed="3.8" />
+	<Rotator EngineTorqueFactor="0" Frame="BoneRotatorRight" RotationSpeed="3.7" />
+	<ModelAttachments>
+		<Ignition _template="Flasher">
+			<Model
+				Color="g(255; 111; 5) x 0.55"
+				Dir="(1; 0.222; 0.563)"
+				Org="(1.484; 3.307; 0.987)"
+				Scale="(0.19; 0.19; 0.19)"
+				ParentFrame="BoneRotatorLeft"
+				Reflections="false"
+			/>
+			<Light Dir="(-0.796; 0.222; 0.563)" Pos="(1.484; 3.307; 0.987)" ParentFrame="BoneRotatorLeft" />
+			<Flare Color="g(255; 111; 5) x 0.45" Dir="(-0.796; 0.222; 0.563)" Size="1" Pos="(1.484; 3.307; 0.987)" ParentFrame="BoneRotatorLeft" />
+			<Flare Color="g(255; 111; 5) x 0.7" Dir="(-0.796; 0.222; 0.563)" Size="0.7" Pos="(1.484; 3.307; 0.987)" ParentFrame="BoneRotatorLeft" />
+			<Flare Color="g(255; 111; 5) x 0.55" Size="1" Pos="(1.484; 3.307; 0.987)" ParentFrame="BoneRotatorLeft" />
+		</Ignition>	
+		<Ignition _template="Flasher">
+			<Model
+				Color="g(255; 111; 5) x 0.55"
+				Dir="(1; 0.222; 0.563)"
+				Org="(1.484; 3.307; -0.987)"
+				Scale="(0.19; 0.19; 0.19)"
+				ParentFrame="BoneRotatorRight"
+				Reflections="false"
+			/>
+			<Light Dir="(-0.796; 0.222; 0.563)" Pos="(1.484; 3.307; -0.987)" ParentFrame="BoneRotatorRight" />
+			<Flare Color="g(255; 111; 5) x 0.45" Dir="(-0.796; 0.222; 0.563)" Size="1" Pos="(1.484; 3.307; -0.987)" ParentFrame="BoneRotatorRight" />
+			<Flare Color="g(255; 111; 5) x 0.7" Dir="(-0.796; 0.222; 0.563)" Size="0.7" Pos="(1.484; 3.307; -0.987)" ParentFrame="BoneRotatorRight" />
+			<Flare Color="g(255; 111; 5) x 0.55" Size="1" Pos="(1.484; 3.307; -0.987)" ParentFrame="BoneRotatorRight" />
+		</Ignition>
+		<HeadLight>
+			<Model _template="HeadLightRay" Org="(2.386; 3.129; -0.741)" />
+			<Model _template="HeadLightRay" Org="(2.386; 3.129; 0.741)" />
+			
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.1" Pos="(2.386; 3.129; 0.741)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.1" Pos="(2.386; 3.052; 0.740)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.1" Pos="(2.386; 3.204; 0.740)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.1" Pos="(2.386; 3.166; 0.674)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.1" Pos="(2.386; 3.089; 0.674)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.1" Pos="(2.386; 3.090; 0.807)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.1" Pos="(2.386; 3.166; 0.807)" />
+			
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.1" Pos="(2.386; 3.129; -0.741)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.1" Pos="(2.386; 3.052; -0.740)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.1" Pos="(2.386; 3.204; -0.740)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.1" Pos="(2.386; 3.166; -0.674)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.1" Pos="(2.386; 3.089; -0.674)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.1" Pos="(2.386; 3.090; -0.807)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.1" Pos="(2.386; 3.166; -0.807)" />
+		</HeadLight>
+	</ModelAttachments>
+	<MainHeadLight _template="Multiply1" />
+	<GameData
+		CameraPreset="roof"
+		Category="frame_addons"
+		IsCustomizable="true"
+		Price="1800"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SCOUT_TRUNK_SUPPLIES_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SCOUT_TRUNK_SUPPLIES_NAME"
+		/>
+		<InstallSocket Type="MercerK520Roofrack" />
+	</GameData>
+</TruckAddon>

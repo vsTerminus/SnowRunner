@@ -1,0 +1,55 @@
+<_templates Include="trucks"/>
+<TruckAddon IsChassisFullOcclusion="true">
+	<TruckData FuelCapacity="40" RepairsCapacity="100">
+		<LimitedFluid Center="(-3.795; 1.115; 0.915)" SizeX="0.128" SizeY="0.305" SizeZ="0.360" Type="Box" ParentFrame="BoneFuel_cdt"/>
+		<LimitedFluid Center="(-3.620; 1.115; 0.915)" SizeX="0.128" SizeY="0.305" SizeZ="0.360" Type="Box" ParentFrame="BoneFuel_cdt"/>
+	</TruckData>
+	<FuelHide>
+		<Mesh Frame="mercer_k520_fuel" HideThreshold="0.0" />
+	</FuelHide>
+	<PhysicsModel Mesh="trucks/addons/mercer_k520_frame_addon_sideboard">
+		<Body Mass="700">
+			<Constraint Type="Rigid" />
+			<Body Collisions="None" Mass="40" ModelFrame="BoneFuel_cdt">
+				<Constraint
+					AxisLocal="(1; 0; 0)"
+					Type="Prismatic"
+					MinLimit="-0.002"
+					MaxLimit="0.018"
+				>
+					<Motor Damping="2100" Spring="3000" Type="Spring" />
+				</Constraint>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<StopSignals>
+			<Light _template="StopSignal" Pos="(-4.755; 0.709; -1)" />
+			<Light _template="StopSignal" Pos="(-4.755; 0.709; 1)" />
+			<Flare _template="StopSignal" Pos="(-4.399; 1.115; -1.037)" />
+			<Flare _template="StopSignal" Pos="(-4.399; 1.115; 1.037)" />
+		</StopSignals>
+		<Ignition>
+			<Light _template="IgnitionSignalRed" Color="g(255; 0; 0)x 0.4" Pos="(-4.675; 0.589; 0)" />
+			<Flare _template="IgnitionSignalRed" Dir="(-1; 0; 0)" Size="0.22" Pos="(-4.399; 1.115; -1.037)" />
+			<Flare _template="IgnitionSignalRed" Dir="(-1; 0; 0)" Size="0.22" Pos="(-4.399; 1.115; 1.037)" />
+		</Ignition>
+	</ModelAttachments>
+	<GameData
+		CameraPreset="addon_1"
+		Category="frame_addons"
+		IsCustomizable="true"
+		Price="5200"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_ADDON_MERCER_K520_SIDEBOARD_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_ADDON_MERCER_K520_SIDEBOARD_NAME"
+		/>
+		<InstallSocket Type="MercerK520Sideboard" />
+		<AddonSlots InitialOffset="(-0.677; 1.492; 0)" OffsetStep="(-2.53; 0; 0)" Quantity="2" />
+	</GameData>
+</TruckAddon>

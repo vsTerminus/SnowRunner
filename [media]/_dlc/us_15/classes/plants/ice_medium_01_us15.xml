@@ -1,0 +1,15 @@
+<_templates Include="environment" />
+<PlantBrand
+	_template="SmallRock"
+	DistSkipPercentage="0.6"
+	PlantingMinSpacing="0.2"
+	PlantingOffsetY="0.05"
+	BreakType="Ice"
+>
+	<PhysicsModel>
+		<Body
+			Collisions="Dynamic"
+		/>
+	</PhysicsModel>
+	<Landmark Mesh="landmarks/ice_medium_01_us15_lmk" />
+</PlantBrand>

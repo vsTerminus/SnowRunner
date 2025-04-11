@@ -1,0 +1,73 @@
+<_templates Include="trucks">
+	<Body>
+		<Antenna Collisions="None" Mass="2">
+			<Constraint
+				Cone="10"
+				PlaneAxisLocal="(0; 0; 1)"
+				TwistAxisLocal="(0; 1; 0)"
+				Type="Ragdoll"
+				PlaneMin="-8"
+				PlaneMax="8"
+			>
+				<AllMotor Damping=".1" Spring="60" Type="Spring" />
+			</Constraint>
+		</Antenna>
+		
+		<Limits Collisions="None" Mass="0.1">
+			<Constraint LinearLimitsY="(-0.008; 0.008)" LinearLimitsZ="(-0.008;0.008)" Type="Fixed">
+				<Motor Damping="0.1" Spring="100" Type="Spring" />
+			</Constraint>
+		</Limits>
+	</Body>
+</_templates>
+
+<TruckAddon>
+	<TruckData>
+		<Damage>
+			<Multiplier Multiplier="1.0" Type="Engine" />
+		</Damage>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/mercer_k520_tuning/mercer_k520_bumper_default">
+		<Body ImpactType="Truck" Mass="20" ModelFrame="BoneCabin_cdt">
+			<Constraint Type="Rigid" />
+			<Body _template="Limits" ModelFrame="BoneStringLeft_cdt" />
+			<Body _template="Limits" ModelFrame="BoneStringRight_cdt" />
+			<Body _template="Antenna" ModelFrame="BoneAntennaLeft_cdt" />
+			<Body _template="Antenna" ModelFrame="BoneAntennaRight_cdt" />
+			<Body
+				AngularDamping="1.2"
+				Collisions="None"
+				Mass="1"
+				ModelFrame="BoneChain_cdt"
+			>
+				<Constraint
+					AxisLocal="(0; 0; 1)"
+					Type="Hinge"
+					MinLimit="-22"
+					MaxLimit="20"
+				/>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="default"
+		Category="bumper"
+		Price="950"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<WinchSocket Pos="(4.056; 1.033; 0)" FixedToTruck="true"/>
+		<WinchSocket Pos="(3.690; 0.777; -1.040)" FixedToTruck="true"/>
+		<WinchSocket Pos="(3.690; 0.777; 1.040)" FixedToTruck="true"/>
+		<CraneSocket Pos="(4.056; 1.033; 0)" FixedToTruck="true"/>
+		<CraneSocket Pos="(3.690; 0.777; -1.040)" FixedToTruck="true"/>
+		<CraneSocket Pos="(3.690; 0.777; 1.040)" FixedToTruck="true"/>
+		<UiDesc
+			UiDesc="UI_TUNING_BUMPER_STOCK_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_BUMPER_STOCK_NAME"
+		/>
+		<InstallSocket Type="MercerK520Bumper" />
+	</GameData>
+</TruckAddon>

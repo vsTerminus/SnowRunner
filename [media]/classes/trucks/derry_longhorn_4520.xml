@@ -424,6 +424,7 @@
 			<CameraPos FOV="32.0" Interior="true" Name="door_l_sticker" InterestPosition="(4.170; 1.898; 0.086" Position="(2.566; 2.602; -3.115)" />
 			<CameraPos FOV="32.0" Interior="true" Name="hood_ornament" InterestPosition="(7.506; 2.247; -1.339)" Position="(8.557; 2.563; -1.339)" />
 			<CameraPos FOV="32.0" Interior="true" Name="curtain" InterestPosition="(6.764; 2.94; -0.145)" Position="(4.241; 3.049; -0.565)" />
+			<CameraPos FOV="32.0" Name="spare_wheel" InterestPosition="(4.494; 0.9; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-0.753; 4.897; 5.666)" />
 		</CustomizationCameras>
 		<CraneSocket Pos="(4.432; 0.723; -0.481)" ParentFrame="BoneCabin_cdt" />
 		<CraneSocket Pos="(4.432; 0.723; 0.481)" ParentFrame="BoneCabin_cdt" />
@@ -451,6 +452,9 @@
 			<Socket Names="DerryLonghorn4520Exhaust" ParentFrame="BoneCabin_cdt">
 				<ExtraParent Frame="BoneChassis_cdt" />
 			</Socket>
+		</AddonSockets>
+		<AddonSockets DefaultAddon="derry_longhorn_4520_spare_wheel_01">
+			<Socket Names="DerryLonghorn4520SpareWheel" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="derry_longhorn_4520_gabarite_default">
 			<Socket Names="DerryLonghorn4520GabariteDefault" ParentFrame="BoneCabin_cdt" />

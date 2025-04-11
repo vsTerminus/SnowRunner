@@ -1,0 +1,29 @@
+<OverlayBrand
+	IsClampV="true"
+	IsExtrudable="false"
+	IsWetnessAsIce="true"
+	IsAsphalt="true"
+	HeightMapBlendingContrast="0.05"
+	BlendBorderMin="0.0"
+	BlendBorderMax="0.2"
+	Texture="overlays/us_asphalt_road_snowy_us15__d_a.tga"
+	TextureRelief="overlays/us_asphalt_road_snowy_us15_relief__d_a.tga"
+	WheelTracks="0"
+	GenerateDust="true"
+	IsSnow="true"
+>
+	<Prebuild
+		DefaultWidth="8.5"
+		FlattenPart="1"
+		SnowmapMask="overlay_us_asphalt_road_snowy__s_d.tga"
+		LandmarkColor="(100; 100; 100)"
+		LandmarkPart="1"
+		Layer="4"
+	/>
+
+</OverlayBrand>
+	<MaterialType
+		WetnessRoughnessMultiplier="0.1"
+		WetnessAlbedoMultiplier="0.1"
+
+	/>

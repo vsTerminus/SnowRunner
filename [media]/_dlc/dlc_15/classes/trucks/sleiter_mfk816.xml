@@ -1,0 +1,646 @@
+<_templates Include="trucks">
+	<Wheel>
+		<RearWheel
+			ConnectedToHandbrake="true"
+			Location="rear"
+			Torque="default"
+		/>
+		<FrontWheel
+			ConnectedToHandbrake="true"
+			Location="front"
+			SteeringAngle="36"
+			SteeringCastor="8"
+			Torque="full"
+			ParentFrame="BoneCabin_cdt"
+		/>
+	</Wheel>
+	<Body>
+		<Mirror Collisions="None" Mass="5">
+			<Constraint
+				AxisLocal="(0; 1; 0)"
+				Type="Hinge"
+				MinLimit="-10"
+				MaxLimit="10"
+			>
+				<Motor Damping="1" Spring="40" Type="Spring" />
+			</Constraint>
+		</Mirror>
+		<Sunshield Collisions="None" Mass="3">
+			<Constraint
+				AxisLocal="(0; 0; -1)"
+				Type="Hinge"
+				MinLimit="-10"
+				MaxLimit="10"
+			>
+				<Motor Damping="0.7" Spring="20" Type="Spring" />
+			</Constraint>
+		</Sunshield>
+	</Body>
+</_templates>
+<Truck>
+	<TruckData
+		BackSteerSpeed="0.01"
+		DiffLockType="Always"
+		EngineIconMesh="env/engine_sleiter_mfk816"
+		EngineIconScale="0.978"
+		EngineStartDelay="1.8"
+		ExhaustStartTime="1.5"
+		FuelCapacity="380"
+		Responsiveness="0.15"
+		SteerSpeed="0.02"
+		TruckImage="SleiterMfk816Elephantmchr"
+		TruckType="HEAVY"
+	>
+		<WinchUpgradeSocket Default="w_heavy_trucks_default" IsUpgradable="true" Type="winches_heavy_trucks" />
+		<Wheels
+			DefaultRim="sleiter_rim_1"
+			DefaultTire="sleiter_tire_1"
+			DefaultWheelType="wheels_superheavy_single_sleiter_mfk816"
+		>
+			<Wheel _template="FrontWheel" SteeringJointOffset="0.38" Pos="(2.858; 0.851; 1.492)" ParentFrame="BoneChassis_cdt" />
+			<Wheel _template="FrontWheel" RightSide="true" SteeringJointOffset="0.38" Pos="(2.858; 0.851; 1.492)" ParentFrame="BoneChassis_cdt" />
+			<Wheel _template="RearWheel" Pos="(-2.150; 0.851; 1.492)" ParentFrame="BoneChassis_cdt" />
+			<Wheel _template="RearWheel" RightSide="true" Pos="(-2.150; 0.851; 1.492)" ParentFrame="BoneChassis_cdt" />
+			<Wheel _template="RearWheel" Pos="(-4.140; 0.851; 1.492)" ParentFrame="BoneChassis_cdt" />
+			<Wheel _template="RearWheel" RightSide="true" Pos="(-4.140; 0.851; 1.492)" ParentFrame="BoneChassis_cdt" />
+		</Wheels>
+		<SuspensionSocket
+			Default="sleiter_mfk816_suspension_default"
+			Type="s_sleiter_mfk816"
+			MaxWheelRadiusWithoutSuspension="1"
+		/>
+		<SteeringWheel Frame="BoneSteering" />
+		<SteeringRack
+			Frame="BoneRack"
+			FrameSteerLeft="BoneRackLeft"
+			FrameSteerRight="BoneRackRight"
+			RackHalfSizeZ="0.99"
+		/>
+		<Steam Origin="(4.127; 2.35; 0.000)" ParentFrame="BoneCabin_cdt" />
+		<SoundsWheels _template="Default" />
+		<SoundsDamage _template="Heavy" />
+		<Sounds
+			_template="Default"
+			AirHissInterval="12.0"
+			MinDist="15.0"
+			DisableReversePitch="true"
+			Origin="(4.0; 2.037; -0.002)"
+			ParentFrame="BoneCabin_cdt"
+		>
+			<Reverse		Sound="trucks/sleiter_mfk816/sleiter_mfk816_back_beeper" />
+			<BrakesSqueal	Sound="trucks/sleiter_mfk816/sleiter_mfk816_brakes_squeal" />
+			<BrakePull		Sound="trucks/sleiter_mfk816/sleiter_mfk816_brake_pull" />
+			<BrakeRelease	Sound="trucks/sleiter_mfk816/sleiter_mfk816_brake_release" />
+			<Handbrake		Sound="trucks/sleiter_mfk816/sleiter_mfk816_handbrake_on" />
+			<HandbrakeOff	Sound="trucks/sleiter_mfk816/sleiter_mfk816_handbrake_off" />
+			<Honk			Sound="trucks/sleiter_mfk816/sleiter_mfk816_honk" />
+			<EngineRev		Sound="" />
+			<EngineAccel	Sound="trucks/sleiter_mfk816/sleiter_mfk816_acc" />
+			<EngineStart	Sound="trucks/sleiter_mfk816/sleiter_mfk816_start" />
+			<EngineStop		Sound="trucks/sleiter_mfk816/sleiter_mfk816_stop" />
+			<EngineIdle		Sound="trucks/sleiter_mfk816/sleiter_mfk816_idle" />
+			<EngineIdle_2d	Sound="trucks/sleiter_mfk816/sleiter_mfk816_idle_2d"	IsSound2D="true" />
+			<EngineLow		Sound="trucks/sleiter_mfk816/sleiter_mfk816_low" />
+			<EngineLow_2d	Sound="trucks/sleiter_mfk816/sleiter_mfk816_low_2d"	IsSound2D="true" />
+			<EngineHigh		Sound="trucks/sleiter_mfk816/sleiter_mfk816_high" />
+			<EngineHigh_2d	Sound="trucks/sleiter_mfk816/sleiter_mfk816_high_2d"	IsSound2D="true" />
+			<EngineHeavy	Sound="" />
+			<EngineHeavy_2d	Sound=""	IsSound2D="true" />
+			<EngineTurbo	Sound="trucks/sleiter_mfk816/sleiter_mfk816_turbo" />
+			<ChassisStress	Sound="trucks/common/truck_swing_big_old_rnd_set/truck_swing_big_old_rnd" />
+			<AbruptStop		Sound="trucks/common/truck_swing_big_rnd_set/truck_swing_big_rnd" />
+		</Sounds>
+		<Shakers>
+			<Shaker Frame="BoneGearstick" MinAngle="(0.05; 0.05; 0.05)" MaxAngle="(0.1; 0.1; 0.1)" MaxFrequency="0.1" />
+		</Shakers>
+		<Shafts>
+			<Shaft SocketPointA="Shaft1a" SocketPointB="Shaft1b" />
+			<Shaft SocketPointA="Shaft2a" SocketPointB="Shaft2b" />
+			<Shaft SocketPointA="Shaft3a" SocketPointB="Shaft3b" />
+			<Shaft SocketPointA="Shaft4a" SocketPointB="Shaft4b" />
+			<Shaft SocketPointA="ShaftAxleFRb" SocketPointB="ShaftAxleFRa" />
+			<Shaft SocketPointA="ShaftAxleFLa" SocketPointB="ShaftAxleFLb" />
+		</Shafts>
+		<OcclusionMap HalfSizeZ="2.5" MinX="-5.5" MaxX="5.5" />
+		<LimitedFluid Center="(1.676, 1.394, 1.190)" SizeX="0.389" SizeY="0.631" SizeZ="0.978" Type="Box" ParentFrame="BoneCabin_cdt" />
+		<LimitedFluid Center="(1.676, 1.394, -1.190)" SizeX="0.389" SizeY="0.631" SizeZ="0.978" Type="Box" ParentFrame="BoneCabin_cdt" />
+		<Intake Dir="(1; 0; 0)" Origin="(4.878; 2.161; -0.000)" Size="1.3" ParentFrame="BoneCabin_cdt" />
+		<Intake Dir="(-1; 0; 0)" Origin="(-0.917; 3.426; 0.810)" Size="0.5" ParentFrame="BoneCabin_cdt" />
+		<Intake Dir="(-1; 0; 0)" Origin="(-0.917; 3.426; -0.810)" Size="0.5" ParentFrame="BoneCabin_cdt" />
+		<GearboxSocket Default="g_special_default" Type="gearboxes_special, gearboxes_special_sleiter_mfk816" />
+		<FuelTank DamageCapacity="100" />
+		<EngineSocket Default="us_truck_old_heavy_engine_0" Type="e_us_truck_old_heavy, e_us_truck_old_heavy_sleiter_mfk816" />
+		<Driver
+			AnimationSet="HeavyTruck"
+			Pos="(1.75; 2.539; 0.851)"
+			SteeringWheelPos="(2.112; 2.911; 0.85)"
+			LegsOffset="(-0.1; 0; 0)"
+			ParentFrame="BoneCabin_cdt"
+		/>
+		<CompatibleWheels Scale="0.85" OffsetZ="0.035" Type="wheels_superheavy_single" />
+		<CompatibleWheels Scale="0.85" OffsetZ="0.035" Type="wheels_superheavy_mudtires" />
+		<CompatibleWheels Scale="0.85" OffsetZ="0.035" Type="wheels_superheavy_single_sleiter_mfk816" />
+		<Damage>
+			<DamageArea Type="Engine" Min="(3.043; 1.505; -0.544)" Max="(4.730; 2.447; 0.544)" ParentFrame="BoneCabin_cdt" />
+			<DamageArea Type="FuelTank" Min="(1.472; 0.986; 0.584)" Max="(2.130; 1.642; 1.672)" ParentFrame="BoneCabin_cdt" />
+			<DamageArea Type="FuelTank" Min="(1.472; 0.986; -1.671)" Max="(2.130; 1.642; -0.583)" ParentFrame="BoneCabin_cdt" />
+		</Damage>
+		<Dashboard>
+			<Gauge Dir="(-0.743; 0.670; -0.000)" InputRange="(0;120)" InputType="speed" Mesh="trucks/arrows/sleiter_mfk816_arrow_01" Org="(2.417; 2.853; 1.012)" OutputAngles="(-130;100)" />
+			<Gauge Damping="0.9" Dir="(-0.743; 0.670; -0.000)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/sleiter_mfk816_arrow_02" Org="(2.416; 2.854; 0.989)" OutputAngles="(-100;10)" />
+			<Gauge Damping="0.9" Dir="(-0.743; 0.670; -0.000)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/sleiter_mfk816_arrow_03" Org="(2.439; 2.880; 0.919)" OutputAngles="(-65;40)" />
+			<Gauge Damping="0.9" Dir="(-0.743; 0.670; -0.000)" InputRange="(0;1)" InputType="rpm" Mesh="trucks/arrows/sleiter_mfk816_arrow_04" Org="(2.433; 2.874; 0.851)" OutputAngles="(-115;115)" />
+			<Gauge Damping="0.9" Dir="(-0.743; 0.670; -0.000)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/sleiter_mfk816_arrow_03" Org="(2.439; 2.880; 0.783)" OutputAngles="(-70;20)" />
+			<Gauge Damping="0.9" Dir="(-0.743; 0.670; -0.000)" InputRange="(0;1)" InputType="fuel" Mesh="trucks/arrows/sleiter_mfk816_arrow_04" Org="(2.434; 2.874; 0.706)" OutputAngles="(-40;40)" />
+			<Gauge Damping="0.9" Dir="(-0.743; 0.670; -0.000)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/sleiter_mfk816_arrow_04" Org="(2.434; 2.874; 0.623)" OutputAngles="(-50;40)" />
+			<Gauge Damping="0.9" Dir="(-0.743; 0.670; -0.000)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/sleiter_mfk816_arrow_04" Org="(2.387; 2.822; 0.706)" OutputAngles="(-50;20)" />
+			<Gauge Damping="0.9" Dir="(-0.743; 0.670; -0.000)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/sleiter_mfk816_arrow_04" Org="(2.387; 2.822; 0.623)" OutputAngles="(-50;0)" /> 
+		</Dashboard>
+		<Camera
+			Center="(-1.5; 0.2; 0.000)"
+			RadiusMultiplier="1"
+			ParentFrame="BoneCabin_cdt"
+		>
+			<Cockpit
+				_template="Default"
+				LimitsVer="(-0.4; 0.2)"
+				LimitsHor="(-2.6; 1.5)"
+				WindshieldDiffuseTexture="trucks/sleiter_mfk816_glass__d_a.tga" 
+				WindshieldShadingTexture="trucks/sleiter_mfk816_glass__sh_d.tga"
+				ViewPos="(1.6; 3.307; 0.85)"
+			>
+				<Rear ViewPosOffset="(0.35; -0.1; 0.7)" />
+				<Mirror ClipDir="(-0.931; -0.000; -0.366)" ClipOffset="0.15" FOVScale="2" MeshFrame="mirror_left" ReflectionDir="(-0.931; -0.000; -0.366)" Size="(0.23; 0.48)" Pos="(2.647; 3.251; 1.831)" />
+				<Mirror ClipDir="(-0.819; 0.000; 0.574)" ClipOffset="0.15" FOVScale="2" MeshFrame="mirror_right" ReflectionDir="(-0.819; 0.000; 0.574)" Size="(0.19; 0.44)" Pos="(2.647; 3.251; -1.831)" />
+			</Cockpit>
+		</Camera>
+		<Axles>
+			<Axle Frame="BoneAxle1" />
+			<Axle Frame="BoneAxle2" />
+			<Axle Frame="BoneAxle3" />
+		</Axles>
+	</TruckData>
+	<Snorkel Origin="(4.496; 2.248; 0)" />
+	<Rotator Frame="BoneRotatorFanL" EngineTorqueFactor="0" RotationSpeed="6" RotationAxis="(0; 1; 0)" Name="FanL" />
+	<Rotator Frame="BoneRotatorFanR" EngineTorqueFactor="0" RotationSpeed="6" RotationAxis="(0; 1; 0)" Name="FanR" />
+	<PhysicsModel Mesh="trucks/sleiter_mfk816">
+		<Body
+			CenterOfMassOffset="(-3.5; 0; 0)"
+			ImpactType="Truck"
+			Mass="17000"
+			ModelFrame="BoneChassis_cdt"
+			NetSync="pv"
+		>
+			<Body
+				ImpactType="Truck"
+				Mass="100"
+				ModelFrame="BoneWings_cdt"
+				NetSync="pv"
+			>
+				<Constraint Type="Rigid" />
+			</Body>
+			<Body
+				CenterOfMassOffset="(0.7; -0.8; 0)"
+				ImpactType="Truck"
+				Mass="7000"
+				ModelFrame="BoneCabin_cdt"
+				NetSync="pv"
+			>
+				<Constraint
+					AxisLocal="(1; 0; 0)"
+					Type="Hinge"
+					MinLimit="-2.0"
+					MaxLimit="2.0"
+				>
+					<Motor Damping="30000" Spring="200000" Type="Spring" />
+				</Constraint>
+				<Body _template="Mirror" ModelFrame="BoneMirrorLeft_cdt" />
+				<Body _template="Mirror" ModelFrame="BoneMirrorRight_cdt" />
+				<Body ModelFrame="BoneHookL_cdt" Mass="1" NetSync="pv">
+					<Constraint
+						CenterOfMassOffset="(0; 0; 0)"
+						Type="Fixed"
+						LinearLimitsZ="(-0.03; 0.04)"
+					>
+						<Motor Damping="80" Spring="15" Type="Spring" />
+					</Constraint>
+				</Body>
+				<Body ModelFrame="BoneHookR_cdt" Mass="1" NetSync="pv">
+					<Constraint
+						CenterOfMassOffset="(0; 0; 0)"
+						Type="Fixed"
+						LinearLimitsZ="(-0.04; 0.03)"
+					>
+						<Motor Damping="80" Spring="15" Type="Spring" />
+					</Constraint>
+				</Body>
+				<Body _template="Sunshield" ModelFrame="BoneSunshieldLeft_cdt" />
+				<Body _template="Sunshield" ModelFrame="BoneSunshieldMiddle_cdt">
+					<Constraint>
+						<Motor Damping="5.7"/>
+					</Constraint>
+				</Body>
+				<Body _template="Sunshield" ModelFrame="BoneSunshieldRight_cdt">
+					<Constraint>
+						<Motor Damping="1.7"/>
+					</Constraint>
+				</Body>
+				<Body Mass="0.3" ModelFrame="BoneKeyFob_cdt">
+					<Constraint
+						Cone="20"
+						PlaneAxisLocal="(0; 0; 1)"
+						TwistAxisLocal="(0; 1; 0)"
+						Type="Ragdoll"
+						PlaneMin="-60"
+						TwistMin="-50"
+						PlaneMax="60"
+						TwistMax="50"
+					>
+						<TwistMotor Damping="0.002" Spring="0" Type="Spring" />
+						<PlaneMotor Damping="0.0005" Spring="0" Type="Spring" />
+						<ConeMotor Damping="0.0005" Spring="0" Type="Spring" />
+					</Constraint>
+				</Body>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<Ignition>
+			<Flare _template="IgnitionSignalOrange" ColorMultAtDay=".2" Color="g(255; 160; 2) x .5" Dir="(1; 0; 0)" Size="0.2" Pos="(3.063; 3.679; -0.365)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalOrange" ColorMultAtDay=".2" Color="g(255; 160; 2) x .5" Dir="(1; 0; 0)" Size="0.2" Pos="(3.063; 3.679; 0.365)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalOrange" ColorMultAtDay=".2" Color="g(255; 160; 2) x .5" Dir="(1; 0; 0)" Size="0.2" Pos="(3.063; 3.679; 0.000)" ParentFrame="BoneCabin_cdt" />
+
+			<Flare _template="IgnitionSignalOrange" ColorMultAtDay=".2" Color="g(255; 160; 2) x .5" Dir="(0; 0; 1)" Size="0.2" Pos="(2.825; 2.080; 1.891)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalOrange" ColorMultAtDay=".2" Color="g(255; 160; 2) x .5" Dir="(0; 0; -1)" Size="0.2" Pos="(2.825; 2.080; -1.891)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay=".2" Dir="(0; 0; 1)" Size="0.2" Pos="(2.825; 1.986; 1.891)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay=".2" Dir="(0; 0; -1)" Size="0.2" Pos="(2.825; 1.986; -1.891)" ParentFrame="BoneCabin_cdt" />
+
+			<Flare _template="IgnitionSignalOrange" ColorMultAtDay=".2" Color="g(255; 160; 2) x .5" Dir="(0; 0; 1)" Size="0.2" Pos="(-0.749; 1.812; 1.891)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalOrange" ColorMultAtDay=".2" Color="g(255; 160; 2) x .5" Dir="(0; 0; -1)" Size="0.2" Pos="(-0.749; 1.812; -1.891)" ParentFrame="BoneCabin_cdt" />
+		</Ignition>
+	</ModelAttachments>
+	<HeadLight _template="Default" Pos="(4.258; 1.240; 0)" ParentFrame="BoneCabin_cdt" />
+	<Landmark Mesh="landmarks/sleiter_mfk816_lmk" MinScale="1.5" MaxScale="2.5" />
+	<GameData
+		Country="US,NE,CE"
+		Price="160400"
+		UnlockByExploration="true"
+		UnlockByRank="1"
+		ExcludeAddons="frame_addon_flatbed_2"
+	>
+		<WinchSocket Pos="(1.889; 2.105; 1.842)" ParentFrame="BoneCabin_cdt" />
+		<WinchSocket Pos="(1.889; 2.105; -1.842)" ParentFrame="BoneCabin_cdt" />
+		<CraneSocket Pos="(1.889; 2.105; 1.842)" ParentFrame="BoneCabin_cdt" />
+		<CraneSocket Pos="(1.889; 2.105; -1.842)" ParentFrame="BoneCabin_cdt" />
+		<UiDesc
+			UiDesc="UI_VEHICLE_SLEITER_MFK816_DESC"
+			UiIcon30x30="heavyVehicleImg30"
+			UiIcon328x458="shopImgSleiterMfk816Elephant"
+			UiIcon40x40="heavyVehicleImg"
+			UiIconLogo="SleiterLogo80"
+			UiName="UI_VEHICLE_SLEITER_MFK816_NAME"
+		/>
+		<CustomizationCameras>
+			<!-- MAIN CAMERAS -->
+			<CameraPos FOV="32.0" Name="side_r" InterestPosition="(2.606; 3.076; 0.2)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-0.682; 4.808; -4.570)" />
+			<CameraPos FOV="32.0" Name="side_l" InterestPosition="(6.27; 2.278; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(11.866; 5.284; -4.55)" />
+			<CameraPos FOV="32.0" Name="default" InterestPosition="(5.716; 1.735; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(14.576; 2.402; -3.863)" />
+			<CameraPos FOV="32.0" Name="wheels" InterestPosition="(5.1; 0.8; -0.89)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(6.0; 1.8; -6.9)" />
+			<CameraPos FOV="32.0" Name="rear" InterestPosition="(3.8; 1.9; 0.634)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(0.5; 4.0; 7)" />
+			<CameraPos FOV="32.0" Name="roof" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(11; 4.4; -2.8)" InterestPosition="(4.0; 3.1; 0)" />
+			<CameraPos FOV="32.0" Name="hoods_default" InterestPosition="(5.716; 1.735; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(13.576; 1.402; -3.863)" />
+			<!-- ADDONS -->
+			<CameraPos FOV="32.0" Name="fenders" InterestPosition="(0; 1.268; -0.66)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-10.851; 4.14; 4.993)" />
+			<CameraPos FOV="32.0" Name="addon_1" InterestPosition="(0.2; 1.780; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-9; 4; 8.2)" />
+			<CameraPos FOV="32.0" Name="addon_2" InterestPosition="(5.835; 1.807; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-0.131; 3.944; 2.185)" />
+			<CameraPos FOV="32.0" Name="snorkels" InterestPosition="(6.2; 2.150; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(8.5; 4.6; 6.5)" />
+			<CameraPos FOV="32.0" Name="exhaust" InterestPosition="(3.8; 3.0; 0.0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(0.5; 5.0; 7)" />
+			<!-- STICKERS -->
+			<CameraPos FOV="32.0" Interior="true" Name="glass_sticker" InterestPosition="(4.85; 3.208; -0.334)" Position="(9.502; 3.4; -2.052)" />
+			<CameraPos FOV="32.0" Interior="true" Name="capote_sticker" InterestPosition="(6.382; 2.888; -0.693)" Position="(9.275; 5.649; -1.511)" />
+			<CameraPos FOV="32.0" Interior="true" Name="door_r_sticker" InterestPosition="(6.014; 2.691; 1.038)" Position="(3.53; 2.852; 3.718)" />
+			<CameraPos FOV="32.0" Interior="true" Name="door_l_sticker" InterestPosition="(3.553; 2.691; -1.038)" Position="(2.919; 2.852; -3.718)" />
+			<CameraPos FOV="32.0" Interior="true" Name="roof_sticker" InterestPosition="(5.315; 3.066; 0.733)" Position="(2.0; 6.118; -1.921)" />
+			<CameraPos FOV="32.0" Interior="true" Name="sticker" InterestPosition="(4.573; 2.4; 0.992)" Position="(4.431; 2.944; -0.176)" />
+			<CameraPos FOV="32.0" Interior="true" Name="sticker_01" InterestPosition="(6.2; 2.1; 0.1)" Position="(4.0; 3.4; -1.0)" />
+			<CameraPos FOV="32.0" Interior="true" Name="sticker_02" InterestPosition="(6.2; 2.66; 1.5)" Position="(4.0; 2.9; 1.0)" />
+			<CameraPos FOV="32.0" Interior="true" Name="sticker_03" InterestPosition="(6.2; 2.3; 1.0)" Position="(4.0; 3.2; 0.0)" />
+			<CameraPos FOV="32.0" Interior="true" Name="sticker_04" InterestPosition="(5.8; 3.5; -0.8)" Position="(4.6; 3.4; -0.5)" />
+			<!-- STUFF -->
+			<CameraPos FOV="32.0" Interior="true" Name="hood_figure" InterestPosition="(6.3; 2.3; -0.337)" Position="(8.5; 3.0; -1.981)" />
+			<CameraPos FOV="32.0" Interior="true" Name="curtain" InterestPosition="(4.665; 3.443; 0.975)" Position="(3.263; 3.306; -0.834)" />
+			<CameraPos FOV="32.0" Interior="true" Name="bubble_head" InterestPosition="(4.777; 2.616; 0.86)" Position="(4.026; 3.29; 0.599)" />
+			<CameraPos FOV="32.0" Interior="true" Name="mirror_mount" InterestPosition="(4.665; 3.443; 0.400)" Position="(3.8; 3.306; -0.834)" />
+		</CustomizationCameras>			
+		<AddonSockets DefaultAddon="sleiter_mfk816_bumper_default">
+			<Socket Names="SleiterMFK816Bumper" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets DefaultAddon="sleiter_mfk816_spare_wheels">
+			<Socket Names="SleiterMFK816SpareWheels" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets DefaultAddon="sleiter_mfk816_wings_default" RequiredAddonIfNoConflicts="sleiter_mfk816_wings_default">
+			<Socket Names="SleiterMFK816WingsDefault" NamesBlock="CraneSleiterMFK816"/>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="CraneSleiterMFK816" NamesBlock="LargeSemitrailerOiltank"/>
+		</AddonSockets>
+		<AddonSockets DefaultAddon="sleiter_mfk816_exhaust_default">
+			<Socket Names="SleiterMFK816Exhaust" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets DefaultAddon="sleiter_mfk816_snorkel_default">
+			<Socket Names="SleiterMFK816Snorkel" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="SleiterMFK816Beacon" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="SleiterMFK816Horn1" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="SleiterMFK816Horn2" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="SleiterMFK816Horn3" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="SleiterMFK816Roofrack" ParentFrame="BoneCabin_cdt" NamesBlock="SleiterMFK816Spotlight, SleiterMFK816Horn2" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="SleiterMFK816Spotlight" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="SleiterMFK816High" Offset="(-3.09; 1.84; 0)" NamesBlock="BunkLog, LogLift" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="StuffHoodSleiterMFK816" ParentFrame="BoneCabin_cdt" InCockpit="true" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="GlassTopSleiterMFK816" ParentFrame="BoneCabin_cdt" InCockpit="true" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="SleiterMFK816Sticker_Roof" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="SleiterMFK816Sticker_Capote" ParentFrame="BoneCabin_cdt" InCockpit="true" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="SleiterMFK816Sticker_Door_L" ParentFrame="BoneCabin_cdt" InCockpit="true" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="SleiterMFK816Sticker_Door_R" ParentFrame="BoneCabin_cdt" InCockpit="true" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="SleiterMFK816Sticker_1x1_01" ParentFrame="BoneCabin_cdt" InCockpit="true" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="SleiterMFK816Sticker_1x1_02" ParentFrame="BoneCabin_cdt" InCockpit="true" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="SleiterMFK816Sticker_1x1_03" ParentFrame="BoneCabin_cdt" InCockpit="true" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="SleiterMFK816Sticker_1x1_04" ParentFrame="BoneCabin_cdt" InCockpit="true" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="SleiterMFK816Sticker_1x2_01" ParentFrame="BoneCabin_cdt" InCockpit="true" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="SleiterMFK816Sticker_1x2_02" ParentFrame="BoneCabin_cdt" InCockpit="true" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="SleiterMFK816Sticker_1x4_01" ParentFrame="BoneCabin_cdt" InCockpit="true" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="SleiterMFK816Sticker_1x4_02" ParentFrame="BoneCabin_cdt" InCockpit="true" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="SleiterMFK816Sticker_1x4_03" ParentFrame="BoneCabin_cdt" InCockpit="true" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket
+				InCockpit="true"
+				Names="StuffAirfreshener"
+				Offset="(2.760; 3.608; 0.330)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</AddonSockets>
+
+		<AddonSockets>
+			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-3.1; 2.3; 0)" />
+			<Socket Names="HeavySemitrailer" Offset="(-3.3; 1.85; 0)" />
+			<Socket Names="Trailer" Offset="(-5.33; 1.44; -0.000)">
+				<AddonsShift Offset="(0; 0; 0)" TrailerNamesBlock="Trailer" Types="MinicraneUS, FrameAddon" />
+				<AddonsShift Offset="(0; 0; 0)" TrailerNamesBlock="Trailer" Types="Cat680CabinProtector, FrameAddon" />
+			</Socket>
+		</AddonSockets>
+	</GameData>
+	<AutomaticIK>
+	<!-- AXLE 1 SHOCKS -->
+		<IKBone ModelFrame="IK_BoneShockAxle1Right_B" ParentFrame="BoneCabin_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle1"
+				ModelFrame="IK_BoneShockAxle1Right_A"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="IK_BoneShockAxle1Left_B" ParentFrame="BoneCabin_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle1"
+				ModelFrame="IK_BoneShockAxle1Left_A"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+	<!-- AXLE 2 SHOCKS -->
+		<IKBone ModelFrame="IK_BoneShockAxle2Right_B" ParentFrame="BoneCabin_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle2"
+				ModelFrame="IK_BoneShockAxle2Right_A"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="IK_BoneShockAxle2Left_B" ParentFrame="BoneCabin_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle2"
+				ModelFrame="IK_BoneShockAxle2Left_A"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+	<!-- AXLE 3 SHOCKS -->
+		<IKBone ModelFrame="IK_BoneShockAxle3Right_B" ParentFrame="BoneCabin_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle3"
+				ModelFrame="IK_BoneShockAxle3Right_A"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="IK_BoneShockAxle3Left_B" ParentFrame="BoneCabin_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle3"
+				ModelFrame="IK_BoneShockAxle3Left_A"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+	<!-- POWER STEERING -->
+		<IKBone ModelFrame="IK_PowerSteetingLeft_A" ParentFrame="BoneAxle1">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneRackLeft"
+				ModelFrame="IK_PowerSteetingLeft_B"
+			>
+				<IKJoint AxisLocal="(0; 0; 1)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="IK_PowerSteetingRight_A" ParentFrame="BoneAxle1">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneRackRight"
+				ModelFrame="IK_PowerSteetingRight_B"
+			>
+				<IKJoint AxisLocal="(0; 0; 1)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+	<!-- AXLE 1 SUPPORT -->
+		<IKBone ModelFrame="IK_BoneAxle1SupportRight_B" ParentFrame="BoneCabin_cdt">
+			<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle1"
+				ModelFrame="IK_BoneAxle1SupportRight_A"
+			>
+				<IKJoint AxisLocal="(-1; 0; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="IK_BoneAxle1SupportLeft_B" ParentFrame="BoneCabin_cdt">
+			<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle1"
+				ModelFrame="IK_BoneAxle1SupportLeft_A"
+			>
+				<IKJoint AxisLocal="(-1; 0; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="IK_BoneAxle1Support_B" ParentFrame="BoneCabin_cdt">
+			<IKJoint AxisLocal="(1; 0; 0)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle1"
+				ModelFrame="IK_BoneAxle1Support_A"
+			>
+				<IKJoint AxisLocal="(0; 0; 1)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+	<!-- AXLE 2 SUPPORT -->
+		<IKBone ModelFrame="IK_BoneAxle2SupportRight_B" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle2"
+				ModelFrame="IK_BoneAxle2SupportRight_A"
+			>
+				<IKJoint AxisLocal="(-1; 0; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="IK_BoneAxle2SupportLeft_B" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle2"
+				ModelFrame="IK_BoneAxle2SupportLeft_A"
+			>
+				<IKJoint AxisLocal="(-1; 0; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="IK_BoneAxle2TopSupportRight_B" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle2"
+				ModelFrame="IK_BoneAxle2TopSupportRight_A"
+			>
+				<IKJoint AxisLocal="(-1; 0; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="IK_BoneAxle2TopSupportLeft_B" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle2"
+				ModelFrame="IK_BoneAxle2TopSupportLeft_A"
+			>
+				<IKJoint AxisLocal="(-1; 0; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+	<!-- AXLE 3 SUPPORT -->
+		<IKBone ModelFrame="IK_BoneAxle3SupportRight_B" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle3"
+				ModelFrame="IK_BoneAxle3SupportRight_A"
+			>
+				<IKJoint AxisLocal="(-1; 0; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="IK_BoneAxle3SupportLeft_B" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle3"
+				ModelFrame="IK_BoneAxle3SupportLeft_A"
+			>
+				<IKJoint AxisLocal="(-1; 0; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="IK_BoneAxle3TopSupportRight_B" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle3"
+				ModelFrame="IK_BoneAxle3TopSupportRight_A"
+			>
+				<IKJoint AxisLocal="(-1; 0; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="IK_BoneAxle3TopSupportLeft_B" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle3"
+				ModelFrame="IK_BoneAxle3TopSupportLeft_A"
+			>
+				<IKJoint AxisLocal="(-1; 0; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="IK_BoneAxle3Support_B" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(1; 0; 0)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle3"
+				ModelFrame="IK_BoneAxle3Support_A"
+			>
+				<IKJoint AxisLocal="(0; 0; 1)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+	</AutomaticIK>
+</Truck>

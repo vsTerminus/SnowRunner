@@ -1,0 +1,16 @@
+<ModelBrand
+	NightLightingShadowsAllowCap="true"
+	CastDayLightmapShadow="false"
+	CastNightLightmapShadow="false"
+>
+	<PhysicsModel>
+		<Body
+			Collisions="Dynamic"
+		/>
+	</PhysicsModel>
+	<Occlusion
+		Size="(14.0; 13.0)" 
+		Texture="occlusion_meteo_station_us_01.tga"
+	/>
+	<Landmark Mesh="landmarks/meteo_station_us_01_a_us12_lmk"/>
+</ModelBrand>

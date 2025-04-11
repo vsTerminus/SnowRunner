@@ -1,0 +1,6 @@
+<ModelBrand NightLightingShadowsAllowCap="true">
+	<PhysicsModel>
+		<Body Collisions="Dynamic" />
+	</PhysicsModel>
+	<Landmark Mesh="landmarks/pumping_station_01_ru13_lmk" />
+</ModelBrand>

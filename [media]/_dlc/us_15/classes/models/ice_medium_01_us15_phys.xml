@@ -1,0 +1,39 @@
+<ModelBrand 
+	DeactivationPhantomExt="2"
+	DistSkipPercentage="0.02"
+	NightLightingShadowsAllowCap="true"
+	DynamicModel="true"
+>
+	<PhysicsModel>
+		<Body   
+			Collisions="None"  
+			Mass="40.0"
+			ModelFrame="BoneRoot">
+			<Constraint Type="Fixed" LinearLimitsX="(-10.01; 10.01)" LinearLimitsY="(-10.01; 10.01)">
+				<Motor Type="Spring" Spring="200.01" Damping="10.1" />		
+			</Constraint>
+			<Body   
+				LinearDamping="20.0"
+				Collisions="None" 
+				Mass="40.0" 
+				ModelFrame="Bone.001">
+				<Constraint Type="Ragdoll" PlaneAxisLocal="(0; 1; 0)" Cone="30.0" PlaneMin="-2.0" PlaneMax="2.0">
+					<AllMotor Type="Spring" Spring="5000.0" Damping="5000.0" />
+				</Constraint>
+			
+				<Body 
+					AllowedPenetrationDepth="1.0"
+					LinearDamping="14.05"
+					Collisions="Dynamic"
+					NoSoftContacts="True"
+					Friction="0.05" 
+					Mass="200.0" 
+					ModelFrame="Bone.002">
+					<Constraint Type="Prismatic" MinLimit="-2.0" MaxLimit="0.0" AxisLocal="(0; 0; 1)">
+						<Motor Type="Spring" Spring="10000.0" Damping="10.0" />
+					</Constraint>
+				</Body>
+			</Body>
+		</Body>
+	</PhysicsModel>
+</ModelBrand>

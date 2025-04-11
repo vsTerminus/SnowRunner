@@ -1,0 +1,34 @@
+<_templates Include="trucks">
+	<TruckTire>
+		<Offroad _template="Heavy">
+			<WheelTracks _template="Offroad" />
+			<WheelSoftness _template="Average" />
+		</Offroad>
+	</TruckTire>
+</_templates>
+<TruckWheels DamageCapacity="70" Radius="1" Width="0.706">
+	<TruckTires>
+		<TruckTire _template="Offroad" Mesh="wheels/tire_mercer_k520" Name="tire_1">
+			<WheelFriction 
+				_template="Offroad"
+				BodyFriction="3.1"
+				BodyFrictionAsphalt="0.8"
+				SubstanceFriction="1.8"
+			/>
+			<GameData
+				Price="5700"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_OFFROAD_DESC" UiName="UI_TIRE_MERCER_K520_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>
+		<TruckRim Mesh="wheels/rim_mercer_k520" Name="rim_1">
+			<GameData>
+				<UiDesc UiDesc="UI_RIM_MEDIUM_SINGLE_10_DESC" UiName="UI_RIM_MERCER_K520_NAME" />
+			</GameData>
+		</TruckRim>
+	</TruckRims>
+</TruckWheels>

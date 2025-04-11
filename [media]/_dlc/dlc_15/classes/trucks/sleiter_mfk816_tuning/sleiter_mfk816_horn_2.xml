@@ -1,0 +1,19 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/sleiter_mfk816_tuning/sleiter_mfk816_horn_2" />
+	<GameData
+		CameraPreset="roof"
+		Category="miscellenious"
+		Price="1200"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_HORNS_QUAD_TWOSIDE_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_HORNS_QUAD_TWOSIDE_NAME"
+		/>
+		<InstallSocket Type="SleiterMFK816Horn2" />
+	</GameData>
+</TruckAddon>

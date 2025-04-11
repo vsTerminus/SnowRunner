@@ -1,0 +1,21 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<Snorkel Origin="(3.066; 2.613; 1.229)" />
+	<Snorkel Origin="(3.066; 2.613; -1.229)" />
+	<PhysicsModel Mesh="trucks/sleiter_mfk816_tuning/sleiter_mfk816_snorkel_1" />
+	<GameData
+		CameraPreset="snorkels"
+		Category="snorkel"
+		Price="1600"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SNORKEL_FLATCAP_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SNORKEL_FLATCAP_NAME"
+		/>
+		<InstallSocket Type="SleiterMFK816Snorkel" />
+	</GameData>
+</TruckAddon>

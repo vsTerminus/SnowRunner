@@ -1,0 +1,54 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<WheelRepairsHide>
+		<Mesh Frame="wheel_left" HideThreshold="0.5" />
+		<Mesh Frame="wheel_right" HideThreshold="0.0" />
+	</WheelRepairsHide>
+	<TruckData WheelRepairsCapacity="2" />
+	<PhysicsModel Mesh="trucks/mercer_k520_tuning/mercer_k520_wheel_addon">
+		<Body ImpactType="Truck" Mass="50" ModelFrame="BoneChassis_cdt">
+			<Constraint Type="Rigid" />
+			<Body Mass="25" ModelFrame="BoneCabin_cdt">
+				<Constraint ExplicitParentFrame="0" Type="Fixed" />
+				
+				<Body Collisions="None" Mass="15" ModelFrame="BoneWheelRight_cdt">
+					<Constraint
+						AxisLocal="(1; 0; 0)"
+						Type="Hinge"
+						MinLimit="-0.3"
+						MaxLimit="0.3"
+					>
+						<Motor Damping="0" Spring="0" Type="Spring" />
+					</Constraint>
+				</Body>
+				
+				<Body Collisions="None" Mass="15" ModelFrame="BoneWheelLeft_cdt">
+					<Constraint
+						AxisLocal="(1; 0; 0)"
+						Type="Hinge"
+						MinLimit="-0.2"
+						MaxLimit="0.3"
+					>
+						<Motor Damping="0" Spring="0" Type="Spring" />
+					</Constraint>
+				</Body>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="spare_wheel"
+		Category="wheel_addon"
+		IsCustomizable="true"
+		Price="1900"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SPARE_WHEELS_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SPARE_WHEELS_NAME"
+		/>
+		<InstallSocket Offset="(0; 0; 0)" Type="MercerK520SpareWheel" />
+	</GameData>
+</TruckAddon>
