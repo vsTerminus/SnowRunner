@@ -79,7 +79,7 @@
 <Truck>
 	<TruckData
 		BackSteerSpeed="0.025"
-		DiffLockType="Always"
+		DiffLockType="Installed"
 		EngineIconMesh="env/engine_default"
 		EngineIconScale="1.5"
 		EngineStartDelay="0.8"
@@ -536,6 +536,9 @@
 		</AddonSockets>
 		<AddonSockets >
 			<Socket Names="KenworthT880Top" Offset="(0; 0; 0)" NamesBlock="KenworthT880Spotlight, KenworthT880Horn, KenworthT880Gabarite, KenworthT880Roofrack" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets DefaultAddon="kenworth_t880_diff_lock_default">
+			<Socket Names="MackPinnacleDiffLock" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<!-- FRAME/TRAILER SOCKETS -->
 		<AddonSockets>
