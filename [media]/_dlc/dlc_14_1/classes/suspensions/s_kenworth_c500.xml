@@ -37,4 +37,41 @@
 			/>
 		</GameData>
 	</SuspensionSet>
+	<SuspensionSet
+		_template="High"
+		BrokenWheelDamageMultiplier="2"
+		CriticalDamageThreshold="0.5"
+		DamageCapacity="280"
+		Name="kenworth_c500_suspension_high"
+	>
+		<Suspension
+			Damping="0.5"
+			Height="0.3"
+			Strength="0.30"
+			WheelType="front"
+			BrokenSuspensionMax="0.2"
+			SuspensionMin="-0.3"
+		/>
+		<Suspension
+			Damping="0.7"
+			Height="0.25"
+			Strength="1.5"
+			WheelType="rear"
+			BrokenSuspensionMax="0"
+			SuspensionMin="0"
+			SuspensionMax="0"
+		/>
+		<GameData
+			Price="6200"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_SUSPENSION_HIGH_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_SUSPENSION_HIGH_NAME"
+			/>
+		</GameData>
+	</SuspensionSet>
 </SuspensionSetVariants>
