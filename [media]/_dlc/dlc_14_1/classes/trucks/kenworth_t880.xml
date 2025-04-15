@@ -10,7 +10,7 @@
 			Location="front"
 			SteeringAngle="40"
 			SteeringCastor="6"
-			Torque="none"
+			Torque="full"
 			ParentFrame="BoneСabinTwist_cdt"
 		/>
 	</Wheel>
