@@ -84,12 +84,14 @@
 			DefaultTire="tire_1"
 			DefaultWheelType="wheels_kenworth_c500"
 		>
-			<Wheel _template="FrontWheel" SteeringJointOffset="0.196" Pos="(3.548; 0.5377; 1.1)" />
-			<Wheel _template="FrontWheel" SteeringJointOffset="0.196" RightSide="true" Pos="(3.548; 0.5377; 1.1)" />
-			<Wheel _template="RearWheel" Pos="(-2.294; 0.5377; 0.9339)" />
-			<Wheel _template="RearWheel" RightSide="true" Pos="(-2.294; 0.5377; 0.9339)" />
-			<Wheel _template="RearWheel" Pos="(-3.818; 0.5377; 0.9339)" />
-			<Wheel _template="RearWheel" RightSide="true" Pos="(-3.818; 0.5377; 0.9339)" />
+
+			<Wheel _template="FrontWheel" SteeringJointOffset="0.196" Pos="(3.548; 0.5877; 1.1)" />
+			<Wheel _template="FrontWheel" SteeringJointOffset="0.196" RightSide="true" Pos="(3.548; 0.5877; 1.1)" />
+			<Wheel _template="RearWheel" Pos="(-2.314; 0.5877; 0.9339)" />
+			<Wheel _template="RearWheel" RightSide="true" Pos="(-2.314; 0.5877; 0.9339)" />
+			<Wheel _template="RearWheel" Pos="(-3.778; 0.5877; 0.9339)" />
+			<Wheel _template="RearWheel" RightSide="true" Pos="(-3.778; 0.5877; 0.9339)" />
+
 		</Wheels>
 		<SuspensionSocket
 			Default="kenworth_c500_suspension_default"
