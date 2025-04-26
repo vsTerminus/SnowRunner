@@ -343,6 +343,9 @@
 		<AddonSockets DefaultAddon="khan_39_marshall_snorkel_default">
 			<Socket Names="KHAN39MarshallSnorkel" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
 		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="ScautTrailer" Offset="(-2.015; 1.070; 0)" />
+		</AddonSockets>
 		<AddonSockets DefaultAddon="khan_39_marshall_bumper_default">
 			<Socket Names="KHAN39MarshallBumper" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
 			<Socket Names="KHAN39MarshallBumperCable" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt">
