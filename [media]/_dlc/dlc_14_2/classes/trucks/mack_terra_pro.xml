@@ -63,7 +63,7 @@
 		EngineIconScale="1.000"
 		EngineStartDelay="1.2"
 		ExhaustStartTime="1.5"
-		FuelCapacity="280"
+		FuelCapacity="320"
 		Responsiveness="0.25"
 		SteerSpeed="0.02"
 		TruckImage="MackTerraPromchr"
