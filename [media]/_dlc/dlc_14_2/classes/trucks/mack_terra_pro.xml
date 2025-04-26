@@ -173,14 +173,14 @@
 		
 		<CompatibleWheels Scale="0.56" OffsetZ="-0.03" RearOffsetZ="0.0" Type="wheels_mack_pinnacle" />
 		
-		<CompatibleWheels Scale="0.60" OffsetZ="0.0" RearOffsetZ="0.0" Type="wheels_heavy_double1" />
-		<CompatibleWheels Scale="0.60" OffsetZ="0.0" RearOffsetZ="0.0" Type="wheels_heavy_double2" />
-		<CompatibleWheels Scale="0.60" OffsetZ="0.0" RearOffsetZ="0.0" Type="wheels_heavy_offroad_double" />
-		<CompatibleWheels Scale="0.60" OffsetZ="0.0" RearOffsetZ="0.0" Type="wheels_heavy_allterrain_double" />
-		<CompatibleWheels Scale="0.60" OffsetZ="0.0" RearOffsetZ="0.0" Type="wheels_heavy_highway_double" />
-		<CompatibleWheels Scale="0.60" OffsetZ="-0.03" RearOffsetZ="0"  Type="wheels_medium_mudtires_double" />
+		<CompatibleWheels Scale="0.62" OffsetZ="0.0" RearOffsetZ="0.0" Type="wheels_heavy_double1" />
+		<CompatibleWheels Scale="0.62" OffsetZ="0.0" RearOffsetZ="0.0" Type="wheels_heavy_double2" />
+		<CompatibleWheels Scale="0.62" OffsetZ="0.0" RearOffsetZ="0.0" Type="wheels_heavy_offroad_double" />
+		<CompatibleWheels Scale="0.62" OffsetZ="0.0" RearOffsetZ="0.0" Type="wheels_heavy_allterrain_double" />
+		<CompatibleWheels Scale="0.62" OffsetZ="0.0" RearOffsetZ="0.0" Type="wheels_heavy_highway_double" />
+		<CompatibleWheels Scale="0.62" OffsetZ="-0.03" RearOffsetZ="0"  Type="wheels_medium_mudtires_double" />
 		
-		<CompatibleWheels Scale="0.60" OffsetZ="-0.03" RearOffsetZ="0.0" Type="wheels_mack_pinnacle" />
+		<CompatibleWheels Scale="0.62" OffsetZ="-0.03" RearOffsetZ="0.0" Type="wheels_mack_pinnacle" />
 		
 		<Camera
 			Center="(-1.2; -0.2; 0)"
