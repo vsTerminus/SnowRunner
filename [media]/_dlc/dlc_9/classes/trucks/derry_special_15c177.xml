@@ -560,7 +560,7 @@
 			<Socket Names="DerrySpecial15c177Exhaust" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" >
 				<ExtraParent Offset="(0; 0; 0)" Frame="BoneChassis_cdt"/>
 			</Socket>
-			<Socket Names="FrameAddonDerryFirefighter" Offset="(0; 0.0; 0)" ParentFrame="BoneChassis_cdt" NamesBlock="SaddleMotorized, SaddleHigh1, FrameAddonSeismicVibrator, FrameAddonMaintainer, LargeSemitrailer, LargeSemitrailerOiltank, BunkLog, FrameAddonLogShort, FrameAddon, FrameAddon3" >
+			<Socket Names="FrameAddonDerryFirefighter" Offset="(0; 0.0; 0)" ParentFrame="BoneChassis_cdt" NamesBlock="SaddleMotorized, SaddleHigh1, SaddleLow, FrameAddonSeismicVibrator, FrameAddonMaintainer, LargeSemitrailer, LargeSemitrailerOiltank, BunkLog, FrameAddonLogShort, FrameAddon, FrameAddon3" >
 				<ExtraParent Offset="(0; 0; 0)" Frame="BoneCabin_cdt"/>
 			</Socket>
 		</AddonSockets>
@@ -599,6 +599,7 @@
 				<AddonsShift Offset="(0; 0; 0)" TrailerNamesBlock="Trailer" Types="MinicraneRU, FrameAddon" />
 			</Socket>
 			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" NamesBlock="SaddleLow" Offset="(-4.85; 1.755; 0)" />
+			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-4.85; 1.855; 0)" />
 			<Socket Names="SemitrailerFoldableLog" NamesBlock="SaddleHigh" Offset="(-5.247; 1.800; 0)" >
 				<AddonsShift Offset="(0.0; 0.05; 0)" Types="SaddleMotorized" />
 			</Socket>
@@ -630,6 +631,7 @@
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(1.400; 0.000; 0.000)" />
 			</Socket>
 			
+			<Socket Names="SaddleLow" Offset="(-4.84; 1.48; 0)" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="MinicraneUS" Offset="(-1.65; 1.48; 0)" NamesBlock="FrameAddonDerryFirefighter, BunkLog, FrameAddonTank, FrameAddonKung, BigCraneUs, BigCrane, BigCraneRu, FrameAddonMaintainerBig" >
