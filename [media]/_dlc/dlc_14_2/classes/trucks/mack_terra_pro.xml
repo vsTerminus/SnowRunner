@@ -8,7 +8,7 @@
 		<FrontWheel
 			ConnectedToHandbrake="true"
 			Location="front"
-			Torque="none"
+			Torque="default"
 			SteeringAngle="35"
 			SteeringCastor="8"
 			ParentFrame="BoneCabin_cdt"
