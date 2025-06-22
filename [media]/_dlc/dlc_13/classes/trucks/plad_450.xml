@@ -86,7 +86,7 @@
 		EngineMarkerOffset="(0; 0; 0)"
 		EngineStartDelay="0.6"
 		ExhaustStartTime="0.6"
-		FuelCapacity="300"
+		FuelCapacity="450"
 		Responsiveness="0.2"
 		SteerSpeed="0.017"
 		TruckImage="plad450mchr"
