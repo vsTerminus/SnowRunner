@@ -380,10 +380,8 @@
 			<Socket Names="KirovetsK7mDiffLock" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="TrailerFarm" Offset="(-4.5; 1.21; 0)" ParentFrame="BoneBack_cdt" />
-		</AddonSockets>
-		<AddonSockets>
 			<Socket Names="Trailer" Offset="(-3.945; 0.6; 0)" ParentFrame="BoneBack_cdt"/>
+			<Socket Names="TrailerFarm" Offset="(-4.5; 1.21; 0)" ParentFrame="BoneBack_cdt" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="LogTrailer" NamesBlock="Trailer, KirovetsK7MKung" Offset="(-4.5; 1.21; 0)" ParentFrame="BoneBack_cdt"/>

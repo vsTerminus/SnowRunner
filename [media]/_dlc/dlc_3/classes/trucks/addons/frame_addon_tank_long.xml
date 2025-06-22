@@ -42,7 +42,7 @@
 	<TruckData FuelCapacity="2800">
 		<LimitedFluid
 			Center="(0.055; 1.174; 0)"
-			LengthX="8.115"
+			LengthX="7.440"
 			RadiusY="0.934"
 			RadiusZ="1.167"
 			Type="Cylinder"

@@ -1,0 +1,35 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/freightliner_fld120_tuning/freightliner_fld120_spotlight_1" />
+	<ModelAttachments>
+		<Ignition>
+			<Flare _template="HeadLight" Color="g(255; 235; 215) x 0.35" DirAngle="135" Size="0.25" Pos="(2.484; 2.799; -0.349)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 215) x 0.35" DirAngle="135" Size="0.25" Pos="(2.484; 2.799; 0)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 215) x 0.35" DirAngle="135" Size="0.25" Pos="(2.484; 2.799; 0.349)" />
+		</Ignition>
+		<HeadLight>
+			<Model _template="HeadLightRay" Dir="(1; -0.1; 0)" Org="(2.484; 2.799; -0.349)" />
+			<Model _template="HeadLightRay" Dir="(1; -0.1; 0)" Org="(2.484; 2.799; 0)" />
+			<Model _template="HeadLightRay" Dir="(1; -0.1; 0)" Org="(2.484; 2.799; 0.349)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 215) x 0.35" DirAngle="135" Size="0.35" Pos="(2.484; 2.799; -0.349)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 215) x 0.35" DirAngle="135" Size="0.35" Pos="(2.484; 2.799; 0)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 215) x 0.35" DirAngle="135" Size="0.35" Pos="(2.484; 2.799; 0.349)" />
+		</HeadLight>
+	</ModelAttachments>
+	<MainHeadLight _template="Default" Color="g(255; 235; 215) x 0.1" />
+	<GameData
+		CameraPreset="roof"
+		Category="top"
+		Price="400"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_YAR_87_SPOTLIGHT_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_YAR_87_SPOTLIGHT_NAME"
+		/>
+		<InstallSocket Type="FreightlinerFLD120Spotlight" />
+	</GameData>
+</TruckAddon>

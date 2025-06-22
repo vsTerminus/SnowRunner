@@ -375,7 +375,7 @@
 	<HeadLight _template="Default" Pos="(3.65; 1.709; 0)" ParentFrame="BoneCabin_cdt" />
 	<GameData
 		Country="US,NE,CE"
-		ExcludeAddons="ford_clt9000_top_fender, semitrailer_m747"
+		ExcludeAddons="ford_clt9000_top_fender, semitrailer_m747, trailer_log_pole"
 		Price="116000"
 		UnlockByExploration="true"
 		UnlockByRank="1"
@@ -429,7 +429,7 @@
 			<Socket Names="PacificP16Exhaust" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="BunkLog" Offset="(-5.896; 1.804; 0)" />
+			<Socket Names="PacificP16BunkLog" Offset="(-5.896; 1.804; 0)" />
 			<Socket Names="SaddlePacific" Offset="(-2.379; 1.798; 0)" />
 		</AddonSockets>
 		<AddonSockets>

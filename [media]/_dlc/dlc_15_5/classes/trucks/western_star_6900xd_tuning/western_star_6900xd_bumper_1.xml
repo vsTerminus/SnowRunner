@@ -1,0 +1,90 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<TruckData>
+		<Damage>
+			<Multiplier Multiplier="0.75" Type="Engine" />
+		</Damage>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/western_star_6900xd_tuning/western_star_6900xd_bumper_1">
+		<Body ImpactType="Truck" Mass="80" ModelFrame="BoneCabin_cdt">
+			<Constraint Type="Rigid" />
+			<Body
+				AngularDamping="4"
+				Collisions="None"
+				Mass="10"
+				ModelFrame="BoneHook_cdt"
+			>
+				<Motor Damping="0.1" Spring="0.1" Type="Spring" />
+				<Constraint
+					AxisLocal="(0; 0; 1)"
+					Type="Hinge"
+					MinLimit="-10"
+					MaxLimit="45"
+				/>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<HeadLight>
+			<Model _template="HeadLightRay" Dir="(1; 0; 0)" Org="(5.604; 1.862; -0.324)" />
+			<Model _template="HeadLightRay" Dir="(1; 0; 0)" Org="(5.607; 1.863; 0.324)" />
+			<Flare _template="LED" ColorMultAtDay="0.3" Dir="(1; 0; 0)" Size="0.040" Pos="(5.604; 1.88; -0.405)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED" ColorMultAtDay="0.3" Dir="(1; 0; 0)" Size="0.040" Pos="(5.604; 1.846; -0.283)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED" ColorMultAtDay="0.3" Dir="(1; 0; 0)" Size="0.040" Pos="(5.604; 1.88; -0.323)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED" ColorMultAtDay="0.3" Dir="(1; 0; 0)" Size="0.040" Pos="(5.604; 1.88; -0.283)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED" ColorMultAtDay="0.3" Dir="(1; 0; 0)" Size="0.040" Pos="(5.604; 1.88; -0.242)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED" ColorMultAtDay="0.3" Dir="(1; 0; 0)" Size="0.040" Pos="(5.604; 1.846; -0.446)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED" ColorMultAtDay="0.3" Dir="(1; 0; 0)" Size="0.040" Pos="(5.604; 1.846; -0.201)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED" ColorMultAtDay="0.3" Dir="(1; 0; 0)" Size="0.040" Pos="(5.604; 1.846; -0.405)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED" ColorMultAtDay="0.3" Dir="(1; 0; 0)" Size="0.040" Pos="(5.604; 1.88; -0.364)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED" ColorMultAtDay="0.3" Dir="(1; 0; 0)" Size="0.040" Pos="(5.604; 1.846; -0.323)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED" ColorMultAtDay="0.3" Dir="(1; 0; 0)" Size="0.040" Pos="(5.604; 1.846; -0.364)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED" ColorMultAtDay="0.3" Dir="(1; 0; 0)" Size="0.040" Pos="(5.604; 1.846; -0.242)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED" ColorMultAtDay="0.3" Dir="(1; 0; 0)" Size="0.040" Pos="(5.604; 1.88; 0.201)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED" ColorMultAtDay="0.3" Dir="(1; 0; 0)" Size="0.040" Pos="(5.604; 1.88; 0.447)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED" ColorMultAtDay="0.3" Dir="(1; 0; 0)" Size="0.040" Pos="(5.604; 1.88; 0.242)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED" ColorMultAtDay="0.3" Dir="(1; 0; 0)" Size="0.040" Pos="(5.604; 1.846; 0.365)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED" ColorMultAtDay="0.3" Dir="(1; 0; 0)" Size="0.040" Pos="(5.604; 1.88; 0.324)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED" ColorMultAtDay="0.3" Dir="(1; 0; 0)" Size="0.040" Pos="(5.604; 1.88; 0.365)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED" ColorMultAtDay="0.3" Dir="(1; 0; 0)" Size="0.040" Pos="(5.604; 1.88; 0.406)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED" ColorMultAtDay="0.3" Dir="(1; 0; 0)" Size="0.040" Pos="(5.604; 1.846; 0.201)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED" ColorMultAtDay="0.3" Dir="(1; 0; 0)" Size="0.040" Pos="(5.604; 1.846; 0.447)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED" ColorMultAtDay="0.3" Dir="(1; 0; 0)" Size="0.040" Pos="(5.604; 1.846; 0.242)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED" ColorMultAtDay="0.3" Dir="(1; 0; 0)" Size="0.040" Pos="(5.604; 1.88; 0.283)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED" ColorMultAtDay="0.3" Dir="(1; 0; 0)" Size="0.040" Pos="(5.604; 1.846; 0.324)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED" ColorMultAtDay="0.3" Dir="(1; 0; 0)" Size="0.040" Pos="(5.604; 1.846; 0.283)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED" ColorMultAtDay="0.3" Dir="(1; 0; 0)" Size="0.040" Pos="(5.604; 1.846; 0.406)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED" ColorMultAtDay="0.3" Dir="(1; 0; 0)" Size="0.040" Pos="(5.604; 1.88; -0.446)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED" ColorMultAtDay="0.3" Dir="(1; 0; 0)" Size="0.040" Pos="(5.604; 1.88; -0.201)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhite" Color="g(255; 235; 215) x .4" ColorMultAtDay="0.3" ColorMultAtDay="0.3" Size="1.0" Pos="(5.367; 1.197; 1.242)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhite" Color="g(255; 235; 215) x .4" ColorMultAtDay="0.3" ColorMultAtDay="0.3" Size="1.0" Pos="(5.367; 1.197; -1.242)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED" ColorMultAtDay="0.3" Dir="(1; 0; 0)" Size="0.050" Pos="(5.353; 1.197; -1.242)" />
+			<Flare _template="LED" ColorMultAtDay="0.3" Dir="(1; 0; 0)" Size="0.050" Pos="(5.353; 1.197; 1.242)" />
+			<Flare _template="IgnitionSignalWhite" AcpectRatio="1.5" Color="g(255; 235; 215) x 0.2" ColorMultAtDay="0.3" ColorMultAtDay="0.3" Size="1.0" Pos="(5.604; 1.863; -0.323)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhite" AcpectRatio="1.5" Color="g(255; 235; 215) x 0.2" ColorMultAtDay="0.3" ColorMultAtDay="0.3" Size="1.0" Pos="(5.604; 1.863; 0.323)" ParentFrame="BoneCabin_cdt" />
+		</HeadLight>
+	</ModelAttachments>
+	<GameData
+		CameraPreset="default"
+		Category="bumper"
+		Price="1500"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<WinchSocket FixedToTruck="true" Pos="(5.336; 1.705; 1.345)" />
+		<WinchSocket FixedToTruck="true" Pos="(5.336; 1.705; -1.345)" />
+		<WinchSocket FixedToTruck="true" Pos="(5.768; 1.222; 0.165)" />
+		<WinchSocket FixedToTruck="true" Pos="(5.768; 1.222; -0.165)" />
+		<UiDesc
+			UiDesc="UI_TUNING_BUMPER_HEAVYDUTY_PIPE_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_BUMPER_HEAVYDUTY_PIPE_NAME"
+		/>
+		<InstallSocket Type="WesternStar6900XDBumper" />
+		<CraneSocket FixedToTruck="true" Pos="(5.768; 1.222; 0.165)" />
+		<CraneSocket FixedToTruck="true" Pos="(5.768; 1.222; -0.165)" />
+		<CraneSocket FixedToTruck="true" Pos="(5.768; 1.222; 0.165)" />
+		<CraneSocket FixedToTruck="true" Pos="(5.768; 1.222; -0.165)" />
+	</GameData>
+</TruckAddon>

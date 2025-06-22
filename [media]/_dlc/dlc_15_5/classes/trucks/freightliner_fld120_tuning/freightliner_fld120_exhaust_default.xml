@@ -1,0 +1,34 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<TruckData>
+		<Shakers>
+			<Shaker Frame="BoneShakerR" MinAngle="(0.1; 0.1; 0.1)" MaxAngle="(1; 0.3; 1)" MaxFrequency="4" MaxOffset="(0; 0; 0)" />
+			<Shaker Frame="BoneShakerL" MinAngle="(0.1; 0.1; 0.1)" MaxAngle="(1; 0.3; 1)" MaxFrequency="4" MaxOffset="(0; 0; 0)" />
+		</Shakers>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/freightliner_fld120_tuning/freightliner_fld120_exhaust_default">
+		<Body ImpactType="Truck" Mass="45" ModelFrame="BoneRoot_cdt">
+			<Constraint Type="Rigid" />
+			<Body Collisions="None" Mass="5" ModelFrame="BoneCabin_cdt">
+				<Constraint ExplicitParentFrame="0" Type="Fixed" />
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="exhaust"
+		Category="exhaust"
+		Price="900"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_EXHAUST_DEFAULT_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_EXHAUST_DEFAULT_NAME"
+		/>
+		<InstallSocket Type="FreightlinerFLD120Exhaust" />
+	</GameData>
+	<Exhaust Dir="(-1; 0; -0.4)" IsLight="false" Origin="(1.259; 3.53; -1.123)" Speed="3.82" />
+	<Exhaust Dir="(-1; 0; 0.4)" IsLight="false" Origin="(1.259; 3.53; 1.123)" Speed="3.82" />
+</TruckAddon>

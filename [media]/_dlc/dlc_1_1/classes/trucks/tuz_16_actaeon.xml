@@ -389,7 +389,7 @@
 		<CraneSocket Pos="(-1.138; 1.125; 0.445)" />
 		<CraneSocket Pos="(-1.138; 1.125; -0.445)" />
 		<AddonSockets>
-			<Socket Names="BunkLog" Offset="(-4.921; 1.145; 0)" />
+			<Socket Names="BunkLog" Offset="(-5.2; 1.145; 0)" />
 			<Socket Names="FrameAddonSideboard1" Offset="(-1.6; 1.141; 0)">
 				<AddonsShift Offset="(-0.5; 0; 0)" Types="MinicraneRU" />
 			</Socket>

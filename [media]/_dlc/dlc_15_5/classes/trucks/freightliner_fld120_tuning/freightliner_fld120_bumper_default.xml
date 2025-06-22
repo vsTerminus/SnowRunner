@@ -1,0 +1,47 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<TruckData>
+		<Damage>
+			<Multiplier Multiplier="0.9" Type="Engine" />
+		</Damage>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/freightliner_fld120_tuning/freightliner_fld120_bumper_default">
+		<Body ImpactType="Truck" Mass="40" ModelFrame="BoneRoot_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<Ignition>
+			<Flare _template="IgnitionSignalWhiteWarm" Dir="(1; 0; 0)" Size="0.3" Pos="(4.277; 0.56; 0.37)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="IgnitionSignalWhiteWarm" Dir="(1; 0; 0)" Size="0.3" Pos="(4.277; 0.56; -0.37)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="IgnitionSignalOrange" Color="g(255; 140; 0) x 0.15" Dir="(1; 0; 0)" Size="0.13" Pos="(4.292; 0.438; -0.502)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="IgnitionSignalOrange" Color="g(255; 140; 0) x 0.15" Dir="(1; 0; 0)" Size="0.13" Pos="(4.292; 0.438; -0.375)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="IgnitionSignalOrange" Color="g(255; 140; 0) x 0.15" Dir="(1; 0; 0)" Size="0.13" Pos="(4.292; 0.438; -0.248)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="IgnitionSignalOrange" Color="g(255; 140; 0) x 0.15" Dir="(1; 0; 0)" Size="0.13" Pos="(4.292; 0.438; -0.121)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="IgnitionSignalOrange" Color="g(255; 140; 0) x 0.15" Dir="(1; 0; 0)" Size="0.13" Pos="(4.292; 0.438; -0)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="IgnitionSignalOrange" Color="g(255; 140; 0) x 0.15" Dir="(1; 0; 0)" Size="0.13" Pos="(4.292; 0.438; 0.121)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="IgnitionSignalOrange" Color="g(255; 140; 0) x 0.15" Dir="(1; 0; 0)" Size="0.13" Pos="(4.292; 0.438; 0.248)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="IgnitionSignalOrange" Color="g(255; 140; 0) x 0.15" Dir="(1; 0; 0)" Size="0.13" Pos="(4.292; 0.438; 0.375)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="IgnitionSignalOrange" Color="g(255; 140; 0) x 0.15" Dir="(1; 0; 0)" Size="0.13" Pos="(4.292; 0.438; 0.502)" ParentFrame="BoneRoot_cdt" />
+		</Ignition>
+	</ModelAttachments>
+	<GameData
+		CameraPreset="default"
+		Category="bumper"
+		Price="1000"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<WinchSocket FixedToTruck="true" Pos="(3.996; 0.469; 0.839)" />
+		<WinchSocket FixedToTruck="true" Pos="(3.996; 0.469; -0.839)" />
+		<UiDesc
+			UiDesc="UI_TUNING_BUMPER_STOCK_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_BUMPER_STOCK_NAME"
+		/>
+		<InstallSocket Type="FreightlinerFLD120Bumper" />
+		<CraneSocket FixedToTruck="true" Pos="(3.996; 0.469; 0.839)" />
+		<CraneSocket FixedToTruck="true" Pos="(3.996; 0.469; -0.839)" />
+	</GameData>
+</TruckAddon>

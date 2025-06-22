@@ -1,0 +1,42 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<TruckData AllWheelDriveInstalled="true">
+		<Shafts>
+			<Shaft
+				PointAConnectedToAddon="true"
+				PointBConnectedToAddon="true"
+				SocketPointA="Shaft1a"
+				SocketPointB="Shaft1b"
+			/>
+		</Shafts>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/freightliner_fld120_tuning/freightliner_fld120_transferbox_allwheels">
+		<Body ImpactType="Truck" Mass="40" ModelFrame="BoneRoot_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="default"
+		Category="awd"
+		Price="5300"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_UPGRADE_TRANSFERBOX_AWDSWITCHABLE_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_UPGRADE_TRANSFERBOX_AWDSWITCHABLE_NAME"
+		/>
+		<InstallSocket Type="FreightlinerFLD120TransferBox" />
+	</GameData>
+	<ExplicitParents>
+		<ExplicitParent ExplicitParentFrame="0" Frame="BoneAxleFront" />
+		<ExplicitParent ExplicitParentFrame="1" Frame="BoneRackR" />
+		<ExplicitParent ExplicitParentFrame="2" Frame="BoneRackL" />
+		<ExplicitParent ExplicitParentFrame="3" Frame="BoneRackAWD" />
+		<ExplicitParent ExplicitParentFrame="4" Frame="BoneRackRWD" />
+		<ExplicitParent ExplicitParentFrame="5" Frame="BoneTieRodHinge" />
+		<ExplicitParent ExplicitParentFrame="6" Frame="BoneTieRodPrismatic" />
+	</ExplicitParents>
+</TruckAddon>

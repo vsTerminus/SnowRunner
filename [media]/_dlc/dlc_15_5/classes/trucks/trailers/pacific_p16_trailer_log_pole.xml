@@ -1,0 +1,114 @@
+<_templates Include="trucks">
+	<Wheel>
+		<TrailerWheel
+			ConnectedToHandbrake="true"
+			Location="rear"
+			SuspensionHeight="0.1"
+			SuspensionStrength="0.12"
+			Torque="default"
+			SuspensionMin="-0.22"
+			ParentFrame="BoneFrame_cdt"
+		/>
+	</Wheel>
+</_templates>
+<Truck Type="Trailer">
+	<TruckData>
+		<Wheels
+			DefaultRim="rim_p16"
+			DefaultTire="offroad_1"
+			DefaultWheelType="wheels_heavy_double_p16"
+		>
+			<Wheel _template="TrailerWheel" Pos="(-1.848; 0.548; 1.32)" />
+			<Wheel _template="TrailerWheel" RightSide="true" Pos="(-1.848; 0.548; 1.32)" />
+			<Wheel _template="TrailerWheel" Pos="(-3.541; 0.548; 1.32)" />
+			<Wheel _template="TrailerWheel" RightSide="true" Pos="(-3.541; 0.548; 1.32)" />
+		</Wheels>
+		<OcclusionMap
+			HalfSizeZ="2"
+			Texture="trucks/occlusion/chassis_trailer__s_d_a.tga"
+			MinX="-3.95"
+			MaxX="-1.089"
+		/>
+		<Constraint _template="TrailerRagdoll" ConeMin="-80" ConeMax="80" />
+		<CompatibleWheels OffsetZ="0.0" Scale="0.73" Type="wheels_heavy_double_p16" />
+		<Camera Center="(-0.5; 0; 0)" />
+		<Axles>
+			<Axle Frame="BoneAxle1" />
+			<Axle Frame="BoneAxle2" />
+		</Axles>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/trailers/pacific_p16_trailer_log_pole">
+		<Body ImpactType="Truck" Mass="200">
+			<Body ImpactType="Truck" Mass="800" ModelFrame="BoneFrame_cdt">
+				<Constraint
+					AxisLocal="(1; 0; 0)"
+					Type="Hinge"
+					MinLimit="-20"
+					MaxLimit="20"
+				>
+					<Motor Damping="1000" Spring="1000" Type="Spring" />
+				</Constraint>
+				<Body
+					_template="CartForkBase"
+					ModelFrame="BoneFork_cdt"
+					NetSyncUseGravity="True"
+					NoCameraCollision="True"
+				>
+					<Body
+						_template="CartFork"
+						ModelFrame="BoneForkLeft_cdt"
+						NoCameraCollision="True"
+					>
+						<Constraint AxisLocal="(-1; 0; 0)" />
+					</Body>
+					<Body _template="CartFork" ModelFrame="BoneForkRight_cdt" NoCameraCollision="True" />
+					<Body Collisions="None" Mass="4" ModelFrame="BoneHookLeft_cdt">
+						<Constraint
+							AxisLocal="(0; 1; 0)"
+							Type="Hinge"
+							MinLimit="0"
+							MaxLimit="10"
+						>
+							<Motor Damping="1" Spring="10" Type="Spring" />
+						</Constraint>
+					</Body>
+					<Body Collisions="None" Mass="4" ModelFrame="BoneHookRight_cdt">
+						<Constraint
+							AxisLocal="(0; 1; 0)"
+							Type="Hinge"
+							MinLimit="-10"
+							MaxLimit="0"
+						>
+							<Motor Damping="1" Spring="10" Type="Spring" />
+						</Constraint>
+					</Body>
+				</Body>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments/>
+	<Landmark Mesh="landmarks/p16_trailer_log_pole_lmk" MinScale="1.5" MaxScale="2.7	" />
+	<GameData FrameAlign="" Price="14100">
+		<WinchSocket Pos="(-3.086; 0.948; 0)" />
+		<WinchSocket WinchableWhenAttached="false" Pos="(1.922; 1.105; 0)" />
+		<UiDesc
+			UiDesc="UI_TRAILER_PACIFIC_P16_LOGPOLE_DESC"
+			UiIcon30x30="trailerLogPole30"
+			UiIcon40x40="trailerLogPole"
+			UiName="UI_TRAILER_PACIFIC_P16_LOGPOLE_NAME"
+		/>
+		<TractorCargoSlotsOverride InitialOffset="(0.0, 2.0, 0.0)" OffsetStep="(-5; 0; 0)" />
+		<RequiredAddon Types="pacific_p16_bunk_log_addon" />
+		<LongLogsAlignTarget TrailerFork="BoneFork_cdt" TruckAddonFork="BoneFork_cdt" Pos="(0.0, 1.0, 0.0)" />
+		<LoadArea
+			Subtype="PacificP16TrailerPoleLogLong"
+			TrailerLoad="true"
+			Type="CargoLogsLong"
+			Min="(-9.14; 1.423; -2.498)"
+			Max="(-2.524; 2.8; 2.4)"
+		/>
+		<InstallSocket Offset="(1.922; 1.105; 0)" Type="Trailer" />
+		<CraneSocket Pos="(1.922; 1.105; 0)" />
+		<CraneSocket Pos="(-3.086; 0.948; 0)" />
+	</GameData>
+</Truck>

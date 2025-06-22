@@ -1,0 +1,34 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<TruckData>
+		<Shakers>
+			<Shaker Frame="BoneExhaustLeft" MinAngle="(0.07; 0.07; 0.07)" MaxAngle="(0.25; 0.25; 0.25)" MaxFrequency="4" />
+			<Shaker Frame="BoneExhaustRight" MinAngle="(0.07; 0.07; 0.07)" MaxAngle="(0.25; 0.25; 0.25)" MaxFrequency="4" />
+		</Shakers>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/western_star_6900xd_tuning/western_star_6900xd_exhaust_2">
+		<Body ImpactType="Truck" Mass="39" Collisions="All">
+			<Constraint Type="Rigid" />
+				<Body Mass="39" ModelFrame="BoneCabinPrismatic_cdt">
+					<Constraint ExplicitParentFrame="0" Type="Fixed" />
+				</Body>
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="exhaust"
+		Category="exhaust"
+		Price="1600"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_EXHAUST_SLANTCUT_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_EXHAUST_SLANTCUT_NAME"
+		/>
+		<InstallSocket Type="WesternStar6900XDExhaust" />
+	</GameData>
+	<Exhaust Dir="(-0.705; -0.014; 0.71)" IsLight="true" Origin="(1.858; 3.839; 1.261)" Speed="3.92" ParentFrame="BoneExhaustLeft" />
+	<Exhaust Dir="(-0.705; -0.014; -0.71)" IsLight="true" Origin="(1.858; 3.839; -1.261)" Speed="3.9" ParentFrame="BoneExhaustRight" />
+</TruckAddon>

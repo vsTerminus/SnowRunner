@@ -1,0 +1,12 @@
+<_parent File="stuff_hood_bat_ford_f750" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/freightliner_fld120_stuff/stuff_hood_bat_freightliner_fld120"/>
+	<GameData
+		Price="1200"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+		CameraPreset="hood_figure"
+	>
+		<InstallSocket Type="StuffHoodFreightlinerFLD120" />
+	</GameData>
+</TruckAddon>

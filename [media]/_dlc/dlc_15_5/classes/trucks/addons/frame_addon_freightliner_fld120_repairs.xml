@@ -1,0 +1,89 @@
+<_templates Include="trucks">
+	<Body>
+		<Limits Collisions="None">
+			<Constraint Type="Fixed">
+				<Motor Damping="250" Spring="0.75" Type="Spring" />
+			</Constraint>
+		</Limits>
+	</Body>
+</_templates>
+<TruckAddon>
+	<WheelRepairsHide>
+		<Mesh Frame="spare_wheel" HideThreshold="0.0" />
+	</WheelRepairsHide>
+	<TruckData
+		FuelCapacity="300"
+		RepairsCapacity="360"
+		WheelRepairsCapacity="1"
+	>
+		<LimitedFluid
+			Center="(0.934, 1.555, -0.000)"
+			SizeX="0.250"
+			SizeY="0.720"
+			SizeZ="1.051"
+			Type="Box"
+			ParentFrame="BoneRoot_cdt"
+		/>
+	</TruckData>
+	<RepairsHide>
+		<Mesh Frame="repair01" HideThreshold="0.667" />
+		<Mesh Frame="repair02" HideThreshold="0.333" />
+		<Mesh Frame="repair03" HideThreshold="0.000" />
+	</RepairsHide>
+	<PhysicsModel Mesh="trucks/addons/frame_addon_freightliner_fld120_repairs">
+		<Body Mass="400">
+			<Constraint Type="Rigid" />
+			<Body _template="Limits" Mass="40" ModelFrame="BoneRepair01_cdt">
+				<Constraint
+					LinearLimitsX="(-0.003; 0.003)"
+					LinearLimitsY="(0; 0)"
+					LinearLimitsZ="(-0.003; 0.003)"
+				/>
+			</Body>
+			<Body _template="Limits" Mass="40" ModelFrame="BoneRepair02_cdt">
+				<Constraint
+					LinearLimitsX="(-0.003; 0.003)"
+					LinearLimitsY="(0; 0)"
+					LinearLimitsZ="(-0.003; 0.003)"
+				/>
+			</Body>
+			<Body _template="Limits" Mass="40" ModelFrame="BoneRepair03_cdt">
+				<Constraint
+					LinearLimitsX="(-0.003; 0.003)"
+					LinearLimitsY="(0; 0)"
+					LinearLimitsZ="(-0.003; 0.003)"
+				/>
+			</Body>
+			<Body _template="Limits" Mass="100" ModelFrame="BoneWheel_cdt">
+				<Constraint
+					LinearLimitsX="(0; 0)"
+					LinearLimitsY="(-0.003; 0.003)"
+					LinearLimitsZ="(-0.003; 0.003)"
+				/>
+			</Body>
+			<Body _template="Limits" Mass="25" ModelFrame="BoneShovel_cdt">
+				<Constraint
+					LinearLimitsX="(0; 0)"
+					LinearLimitsY="(-0.003; 0.003)"
+					LinearLimitsZ="(-0.003; 0.003)"
+				/>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="addon_3"
+		Category="frame_addons"
+		IsCustomizable="true"
+		Price="4200"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_ADDON_FRAME_FREIGHTLINER_FLD120_REPAIRS_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_ADDON_FRAME_FREIGHTLINER_FLD120_REPAIRS_NAME"
+		/>
+		<InstallSocket Type="FreightlinerFLD120Repairs" />
+	</GameData>
+</TruckAddon>

@@ -2,7 +2,7 @@
 <TruckAddon>
 	<PhysicsModel Mesh="trucks/mercer_k520_stuff/sticker_glass_bottom_mercer_k520" />
 	<GameData>
-		<UiDesc UiDesc="UI_STUFF_GLASS_STICKER_BOTTOM_DESC" UiName="UI_STUFF_GLASS_STICKER_BOTTOM_2x16_LOADWHEEL_NAME" />
+		<UiDesc UiDesc="UI_STUFF_GLASS_STICKER_BOTTOM_DESC" UiName="UI_STUFF_GLASS_STICKER_BOTTOM_CUT_DRAGONS_NAME" />
 		<InstallSocket Type="MercerK520Sticker_GlassBottom" />
 	</GameData>
 </TruckAddon>

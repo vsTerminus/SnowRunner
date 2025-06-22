@@ -258,8 +258,8 @@
 		<RequiredAddon _template="SaddleHigh" />
 		<InstallSocket Offset="(8.138; 2.085; 0)" Type="LargeSemitrailer" ParentFrame="BoneCargo_6_cdt" />
 		<AddonSlots
-			InitialOffset="(2.85; 1.9738; 0)"
-			OffsetStep="(-2.559; 0; 0)"
+			InitialOffset="(2.85; 2.010; 0)"
+			OffsetStep="(-2.559; -0.002; 0)"
 			ParentFrames="BoneCargo_6_cdt, BoneCargo_5_cdt, BoneCargo_4_cdt, BoneCargo_3_cdt, BoneCargo_2_cdt, BoneCargo_1_cdt"
 			Quantity="6"
 		/>

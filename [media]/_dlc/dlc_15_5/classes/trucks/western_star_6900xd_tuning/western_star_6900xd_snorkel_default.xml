@@ -1,0 +1,25 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<Snorkel Origin="(3.533; 2.573; 1.088)" />
+	<Snorkel Origin="(3.533; 2.573; -1.088)" />
+	<PhysicsModel Mesh="trucks/western_star_6900xd_tuning/western_star_6900xd_snorkel_default">
+		<Body ImpactType="Truck" Mass="40">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="snorkels"
+		Category="snorkel"
+		Price="1000"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SNORKEL_STOCK_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SNORKEL_STOCK_NAME"
+		/>
+		<InstallSocket Type="WesternStar6900XDSnorkel" />
+	</GameData>
+</TruckAddon>

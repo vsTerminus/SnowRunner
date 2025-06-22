@@ -360,6 +360,8 @@
 		Price="75500"
 		UnlockByExploration="true"
 		UnlockByRank="1"
+		ExcludeAddons="trailer_log_short,
+						trailer_log_medium"
 	>
 		<WinchSocket Pos="(4.792; 1.181; 0.382)" ParentFrame="BoneCabin_cdt" />
 		<WinchSocket Pos="(4.792; 1.181; -0.382)" ParentFrame="BoneCabin_cdt" />

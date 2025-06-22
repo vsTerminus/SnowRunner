@@ -1,0 +1,58 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<TruckData>
+		<Damage>
+			<Multiplier Multiplier="0.8" Type="Engine" />
+		</Damage>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/freightliner_fld120_tuning/freightliner_fld120_bumper_1">
+		<Body ImpactType="Truck" Mass="40" ModelFrame="BoneRoot_cdt">
+			<Constraint Type="Rigid" />
+			<Body
+				CenterOfMassOffseet="(0; -0.1; 0)"
+				Mass="10"
+				ModelFrame="BoneHook_cdt"
+			>
+				<Constraint
+					AxisLocal="(0; 0; 1)"
+					Type="Hinge"
+					MinLimit="-5"
+					MaxLimit="5"
+				>
+					<Motor Damping="1" Spring="1" Type="Spring" />
+				</Constraint>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<Ignition>
+			<Flare _template="IgnitionSignalWhiteWarm" Dir="(1; 0; 0)" Size="0.3" Pos="(4.543; 1.802; -0.35)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="IgnitionSignalWhiteWarm" Dir="(1; 0; 0)" Size="0.3" Pos="(4.543; 1.802; 0.35)" ParentFrame="BoneRoot_cdt" />
+		</Ignition>
+		<HeadLight>
+			<Model _template="HeadLightRay" Dir="(1; -0.1; 0)" Org="(4.543; 1.802; -0.35)" />
+			<Model _template="HeadLightRay" Dir="(1; -0.1; 0)" Org="(4.543; 1.802; 0.35)" />
+			<Flare _template="HeadLight" Color="g(141; 133; 117) x 0.6" Dir="(1; 0; 0)" Size="0.4" Pos="(4.543; 1.802; -0.35)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="HeadLight" Color="g(141; 133; 117) x 0.6" Dir="(1; 0; 0)" Size="0.4" Pos="(4.543; 1.802; 0.35)" ParentFrame="BoneRoot_cdt" />
+		</HeadLight>
+	</ModelAttachments>
+	<GameData
+		CameraPreset="default"
+		Category="bumper"
+		Price="1100"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<WinchSocket FixedToTruck="true" Pos="(4.694; 0.826; -0.496)" />
+		<WinchSocket FixedToTruck="true" Pos="(4.694; 0.826; 0.496)" />
+		<UiDesc
+			UiDesc="UI_TUNING_BUMPER_HEAVYDUTY_PIPE_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_BUMPER_HEAVYDUTY_PIPE_NAME"
+		/>
+		<InstallSocket Type="FreightlinerFLD120Bumper" />
+		<CraneSocket FixedToTruck="true" Pos="(4.694; 0.826; -0.496)" />
+		<CraneSocket FixedToTruck="true" Pos="(4.694; 0.826; 0.496)" />
+	</GameData>
+</TruckAddon>

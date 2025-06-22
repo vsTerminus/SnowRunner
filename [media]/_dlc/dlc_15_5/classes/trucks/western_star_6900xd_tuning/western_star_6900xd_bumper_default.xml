@@ -1,0 +1,36 @@
+<_templates Include="trucks"/>
+<TruckAddon>
+	<TruckData>
+		<Damage>
+			<Multiplier Multiplier="0.85" Type="Engine" />
+		</Damage>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/western_star_6900xd_tuning/western_star_6900xd_bumper_default">
+		<Body ImpactType="Truck" Mass="50" ModelFrame="BoneCabin_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<Ignition>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="0.3" Size="1.0" Color="g(255; 235; 215) x .4" Pos="(5.319; 1.255; 1.055)" ParentFrame="BoneCabin_cdt"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="0.3" Size="1.0" Color="g(255; 235; 215) x .4" Pos="(5.319; 1.255; -1.055)" ParentFrame="BoneCabin_cdt"/>
+		</Ignition>
+	</ModelAttachments>
+	<GameData
+		CameraPreset="default"
+		Category="bumper"
+		Price="600"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<WinchSocket Pos="(5.395; 1.263; -0.0)" FixedToTruck="true"/>
+		<CraneSocket Pos="(5.395; 1.263; -0.0)" FixedToTruck="true"/>
+		<UiDesc
+			UiDesc="UI_TUNING_BUMPER_STOCK_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_BUMPER_STOCK_NAME"
+		/>
+		<InstallSocket Type="WesternStar6900XDBumper" />
+	</GameData>
+</TruckAddon>

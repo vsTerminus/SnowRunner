@@ -1,0 +1,54 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<Rotator EngineTorqueFactor="0" Frame="BoneRotatorLeft" RotationSpeed="3.9" />
+	<Rotator EngineTorqueFactor="0" Frame="BoneRotatorRight" RotationSpeed="4" />
+	<PhysicsModel Mesh="trucks/western_star_6900xd_tuning/western_star_6900xd_beacon_default">
+		<Body ImpactType="Truck" Mass="4" ModelFrame="BoneCabin_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<Ignition _template="Flasher">
+			<Model
+				Color="g(255; 50; 5) x 0.55"
+				Dir="(1; 0.222; 0.563)"
+				Org="(2.368; 3.566; -0.796)"
+				Reflections="false"
+				Scale="(0.19; 0.19; 0.19)"
+				ParentFrame="BoneRotatorRight"
+			/>
+			<Light Dir="(-0.796; 0.222; 0.563)" Pos="(2.368; 3.566; -0.796)" ParentFrame="BoneRotatorRight" />
+			<Flare Color="g(255; 50; 5) x 0.45" Dir="(-0.796; 0.222; 0.563)" Size="1" Pos="(2.368; 3.566; -0.796)" ParentFrame="BoneRotatorRight" />
+			<Flare Color="g(255; 50; 5) x 0.7" Dir="(-0.796; 0.222; 0.563)" Size="0.7" Pos="(2.368; 3.566; -0.796)" ParentFrame="BoneRotatorRight" />
+			<Flare Color="g(255; 50; 5) x 0.55" Size="1" Pos="(2.368; 3.566; -0.796)" ParentFrame="BoneRotatorRight" />
+		</Ignition>
+		<Ignition _template="Flasher">
+			<Model
+				Color="g(255; 50; 5) x 0.55"
+				Dir="(1; 0.222; 0.563)"
+				Org="(2.368; 3.566; 0.796)"
+				Scale="(0.19; 0.19; 0.19)"
+				ParentFrame="BoneRotatorLeft"
+			/>
+			<Light Dir="(-0.796; 0.222; 0.563)" Pos="(2.368; 3.566; 0.796)" ParentFrame="BoneRotatorLeft" />
+			<Flare Color="g(255; 50; 5) x 0.45" Dir="(-0.796; 0.222; 0.563)" Size="1" Pos="(2.368; 3.566; 0.796)" ParentFrame="BoneRotatorLeft" />
+			<Flare Color="g(255; 50; 5) x 0.7" Dir="(-0.796; 0.222; 0.563)" Size="0.7" Pos="(2.368; 3.566; 0.796)" ParentFrame="BoneRotatorLeft" />
+			<Flare Color="g(255; 50; 5) x 0.55" Size="1" Pos="(2.368; 3.566; 0.796)" ParentFrame="BoneRotatorLeft" />
+		</Ignition>
+	</ModelAttachments>
+	<GameData
+		CameraPreset="roof"
+		Category="miscellenious"
+		Price="500"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_BEACONS_STOCK_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_BEACONS_STOCK_NAME"
+		/>
+		<InstallSocket Type="WesternStar6900XDBeacon" />
+	</GameData>
+</TruckAddon>

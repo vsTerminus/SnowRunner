@@ -38,5 +38,5 @@
 			UiName="UI_TUNING_EXHAUST_OUTROLLED_NAME"
 		/>
 	</GameData>
-	<Exhaust Dir="(-0.685; 0.223; -0.693)" Origin="(-0.385; 4.135; -1.038)" />
+	<Exhaust Dir="(-0.685; 0.223; -0.693)" Origin="(-0.366; 3.423; -1.018)" />
 </TruckAddon>

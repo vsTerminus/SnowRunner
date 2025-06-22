@@ -54,7 +54,6 @@
 			CenterOfMassOffset="(0; 0.0; 0)"
 			Mass="980"
 			ModelFrame="BoneRoot_cdt"
-			Collisions="None"
 		>
 			<Constraint Type="Fixed" />
 			<Body

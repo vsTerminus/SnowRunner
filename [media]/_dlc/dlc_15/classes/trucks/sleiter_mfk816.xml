@@ -185,9 +185,9 @@
 	<Rotator Frame="BoneRotatorFanR" EngineTorqueFactor="0" RotationSpeed="6" RotationAxis="(0; 1; 0)" Name="FanR" />
 	<PhysicsModel Mesh="trucks/sleiter_mfk816">
 		<Body
-			CenterOfMassOffset="(-3.5; 0; 0)"
+			CenterOfMassOffset="(-1; 0; 0)"
 			ImpactType="Truck"
-			Mass="17000"
+			Mass="16000"
 			ModelFrame="BoneChassis_cdt"
 			NetSync="pv"
 		>
@@ -202,7 +202,7 @@
 			<Body
 				CenterOfMassOffset="(0.7; -0.8; 0)"
 				ImpactType="Truck"
-				Mass="7000"
+				Mass="8000"
 				ModelFrame="BoneCabin_cdt"
 				NetSync="pv"
 			>
@@ -457,7 +457,7 @@
 			</IKBone>
 		</IKBone>
 	<!-- AXLE 2 SHOCKS -->
-		<IKBone ModelFrame="IK_BoneShockAxle2Right_B" ParentFrame="BoneCabin_cdt">
+		<IKBone ModelFrame="IK_BoneShockAxle2Right_B" ParentFrame="BoneChassis_cdt">
 			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
 			<IKBone
 				AttachOffset="(0; 0; 0)"
@@ -467,7 +467,7 @@
 				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
 			</IKBone>
 		</IKBone>
-		<IKBone ModelFrame="IK_BoneShockAxle2Left_B" ParentFrame="BoneCabin_cdt">
+		<IKBone ModelFrame="IK_BoneShockAxle2Left_B" ParentFrame="BoneChassis_cdt">
 			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
 			<IKBone
 				AttachOffset="(0; 0; 0)"
@@ -478,7 +478,7 @@
 			</IKBone>
 		</IKBone>
 	<!-- AXLE 3 SHOCKS -->
-		<IKBone ModelFrame="IK_BoneShockAxle3Right_B" ParentFrame="BoneCabin_cdt">
+		<IKBone ModelFrame="IK_BoneShockAxle3Right_B" ParentFrame="BoneChassis_cdt">
 			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
 			<IKBone
 				AttachOffset="(0; 0; 0)"
@@ -488,7 +488,7 @@
 				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
 			</IKBone>
 		</IKBone>
-		<IKBone ModelFrame="IK_BoneShockAxle3Left_B" ParentFrame="BoneCabin_cdt">
+		<IKBone ModelFrame="IK_BoneShockAxle3Left_B" ParentFrame="BoneChassis_cdt">
 			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
 			<IKBone
 				AttachOffset="(0; 0; 0)"

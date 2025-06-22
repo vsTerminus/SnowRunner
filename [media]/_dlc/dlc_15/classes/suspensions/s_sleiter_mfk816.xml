@@ -7,8 +7,8 @@
 		DamageCapacity="260"
 		Name="sleiter_mfk816_suspension_default"
 	>
-		<Suspension Damping=".4" Height="0.2" Strength="0.025" WheelType="front" BrokenSuspensionMax="0.2" SuspensionMin="-0.30" SuspensionMax="1.40" />
-		<Suspension Damping=".4" Height="0.12" Strength="0.05" WheelType="rear" BrokenSuspensionMax="0.2" SuspensionMin="-0.30" SuspensionMax="1.40" />
+		<Suspension Damping=".4" Height="0.2" Strength="0.032" WheelType="front" BrokenSuspensionMax="0.2" SuspensionMin="-0.30" SuspensionMax="1.40" />
+		<Suspension Damping=".4" Height="0.11" Strength="0.038" WheelType="rear" BrokenSuspensionMax="0.2" SuspensionMin="-0.30" SuspensionMax="1.40" />
 		<GameData
 			Price="6500"
 			UnlockByExploration="false"
@@ -32,8 +32,8 @@
 	>
 		<Suspension 
 			Damping=".4"
-			Height="0.2" 
-			Strength="0.025" 
+			Height="0.23" 
+			Strength="0.03" 
 			WheelType="front" 
 			SuspensionMin="-0.3" 
 			SuspensionMax="0.3" 
@@ -43,8 +43,8 @@
 		
 		<Suspension  
 			Damping=".4"
-			Height="0.12" 
-			Strength="0.05" 
+			Height="0.1" 
+			Strength="0.045" 
 			WheelType="rear" 
 			SuspensionMin="-0.3" 
 			SuspensionMax="0.3" 

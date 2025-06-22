@@ -1,0 +1,78 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<TruckData
+		RepairsCapacity="500"
+		WheelRepairsCapacity="4"
+	/>
+	<PhysicsModel Mesh="trucks/addons/frame_addon_freightliner_fld120_kung">
+		<Body Mass="300">
+			<Constraint Type="Rigid" />
+			<Body Mass="50" ModelFrame="BoneCable_cdt">
+				<Constraint
+					LinearLimitsX="(-0.05; 0.05)"
+					LinearLimitsY="(-0.05; 0.05)"
+					LinearLimitsZ="(-0.05; 0.05)"
+					Type="Fixed"
+				>
+					<Motor Damping="500" Spring="500" Type="Spring" />
+				</Constraint>
+			</Body>
+			<Body Mass="800" ModelFrame="BoneKung_cdt">
+				<Constraint
+					Cone="2"
+					PlaneAxisLocal="(1; 0; 0)"
+					TwistAxisLocal="(0; 1; 0)"
+					Type="Ragdoll"
+					PlaneMin="-1"
+					PlaneMax="0"
+				>
+					<PlaneMotor Damping="45500" Spring="300000" Type="Spring" />
+					<ConeMotor Damping="80000" Spring="850000" Type="Spring" />
+				</Constraint>
+			</Body>
+			<Body Mass="100" ModelFrame="BoneCabinTwist_cdt">
+				<Constraint ExplicitParentFrame="0" Type="Fixed" />
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<ReverseSignals>
+			<Light
+				_template="ReverseSignal"
+				Dir="(-1; 0; 0)"
+				Pos="(-0.497; 1.613; -0)"
+				ParentFrame="BoneKung_cdt"
+			/>
+			<Flare _template="IgnitionSignalWhiteWarm" Dir="(-1; 0; 0)" Size="0.2" Pos="(-0.497; 1.831; 0.51)" ParentFrame="BoneKung_cdt" />
+			<Flare _template="IgnitionSignalWhiteWarm" Dir="(-1; 0; 0)" Size="0.2" Pos="(-0.497; 1.396; 0.51)" ParentFrame="BoneKung_cdt" />
+			<Flare _template="IgnitionSignalWhiteWarm" Dir="(-1; 0; 0)" Size="0.2" Pos="(-0.497; 1.831; -0.51)" ParentFrame="BoneKung_cdt" />
+			<Flare _template="IgnitionSignalWhiteWarm" Dir="(-1; 0; 0)" Size="0.2" Pos="(-0.497; 1.396; -0.51)" ParentFrame="BoneKung_cdt" />
+		</ReverseSignals>
+		<Ignition>
+			<Light
+				_template="IgnitionSignalWhite"
+				Dir="(-1; 0; 0)"
+				Pos="(-0.497; 1.613; -0)"
+				ParentFrame="BoneKung_cdt"
+			/>
+			<Flare _template="IgnitionSignalOrange" Color="g(255; 140; 0) x 0.25" Dir="(0; 0; 1)" Size="0.13" Pos="(-0.73; 1.207; 1.263)" ParentFrame="BoneKung_cdt" />
+			<Flare _template="IgnitionSignalOrange" Color="g(255; 140; 0) x 0.25" Dir="(0; 0; -1)" Size="0.13" Pos="(-0.73; 1.207; -1.263)" ParentFrame="BoneKung_cdt" />
+		</Ignition>
+	</ModelAttachments>
+	<GameData
+		CameraPreset="addon_2"
+		Category="frame_addons"
+		IsCustomizable="true"
+		Price="5300"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_ADDON_FRAME_FREIGHTLINER_FLD120_KUNG_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_ADDON_FRAME_FREIGHTLINER_FLD120_KUNG_NAME"
+		/>
+		<InstallSocket Type="FreightlinerFLD120Kung" />
+	</GameData>
+</TruckAddon>

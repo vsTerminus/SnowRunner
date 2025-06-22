@@ -1,0 +1,35 @@
+<_templates Include="trucks">
+	<TruckTire>
+		<Allterrain _template="Heavy" RearMassScale="2">
+			<WheelTracks _template="Default" />
+			<WheelTracks _template="DefaultDouble" Rear="true" />
+			<WheelSoftness _template="Average" />
+		</Allterrain>
+	</TruckTire>
+</_templates>
+<TruckWheels DamageCapacity="50" Radius="1" Width="0.613" WidthRear="1.28">
+	<TruckTires>
+		<TruckTire _template="Allterrain" Mesh="wheels/tire_western_star_6900xd" Name="allterrain_ws">
+			<WheelFriction 
+				_template="Allterrain"
+				BodyFriction="1.4"
+				BodyFrictionAsphalt="1.2"
+				SubstanceFriction="1.6"
+			/>
+			<GameData
+				Price="6800"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_ALLTERRAIN_DESC" UiName="UI_TIRE_HEAVY_ALLTERRAIN_WS_6900XD_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>
+		<TruckRim Mesh="wheels/rim_western_star_6900xd" Name="rim_1">
+			<GameData>
+				<UiDesc UiDesc="UI_RIM_HEAVY_ALLTERRAIN_DOUBLE_1_DESC" UiName="UI_RIM_HEAVY_ALLTERRAIN_DOUBLE_WS_6900XD_NAME" />
+			</GameData>
+		</TruckRim>
+	</TruckRims>
+</TruckWheels>

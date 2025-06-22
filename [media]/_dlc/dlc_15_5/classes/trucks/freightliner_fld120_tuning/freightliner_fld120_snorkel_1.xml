@@ -1,0 +1,37 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<Snorkel Origin="(2.497; 2.434; -1.088)" />
+	<Snorkel Origin="(2.497; 2.434; 1.088)" />
+	<PhysicsModel Mesh="trucks/freightliner_fld120_tuning/freightliner_fld120_snorkel_1">
+		<Body Collisions="Default" Mass="25" ModelFrame="BoneRoot_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<Ignition>
+			<Flare _template="IgnitionSignalOrange" Color="g(255; 140; 0) x 0.2" Dir="(1; 0; 0)" Size="0.13" Pos="(2.871; 1.693; -1.082)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="IgnitionSignalOrange" Color="g(255; 140; 0) x 0.2" Dir="(1; 0; 0)" Size="0.13" Pos="(2.871; 1.569; -1.082)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="IgnitionSignalOrange" Color="g(255; 140; 0) x 0.2" Dir="(1; 0; 0)" Size="0.13" Pos="(2.871; 1.445; -1.082)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="IgnitionSignalOrange" Color="g(255; 140; 0) x 0.2" Dir="(1; 0; 0)" Size="0.13" Pos="(2.871; 1.321; -1.082)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="IgnitionSignalOrange" Color="g(255; 140; 0) x 0.2" Dir="(1; 0; 0)" Size="0.13" Pos="(2.871; 1.693; 1.082)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="IgnitionSignalOrange" Color="g(255; 140; 0) x 0.2" Dir="(1; 0; 0)" Size="0.13" Pos="(2.871; 1.569; 1.082)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="IgnitionSignalOrange" Color="g(255; 140; 0) x 0.2" Dir="(1; 0; 0)" Size="0.13" Pos="(2.871; 1.445; 1.082)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="IgnitionSignalOrange" Color="g(255; 140; 0) x 0.2" Dir="(1; 0; 0)" Size="0.13" Pos="(2.871; 1.321; 1.082)" ParentFrame="BoneRoot_cdt" />
+		</Ignition>
+	</ModelAttachments>
+	<GameData
+		CameraPreset="snorkels"
+		Category="snorkel"
+		Price="2300"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SNORKEL_MUSHROOM_TALL_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SNORKEL_MUSHROOM_TALL_NAME"
+		/>
+		<InstallSocket Type="FreightlinerFLD120Snorkel" />
+	</GameData>
+</TruckAddon>

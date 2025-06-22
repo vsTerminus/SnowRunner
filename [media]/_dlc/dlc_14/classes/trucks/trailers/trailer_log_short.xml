@@ -225,7 +225,7 @@
 		/>
 		<InstallSocket Offset="(3.61; 1.162; 0)" Type="LogTrailer" ParentFrame="BoneFrontCart_cdt" />
 		<LoadArea Subtype="ScautTrailerLogShort" Type="CargoLogsShort" Min="(-3.492; 1.1; -1.251)" Max="(-1.528; 2.407; 1.251)" ParentFrame="BoneBase_cdt" />
-		<LoadArea Subtype="ScautTrailerLogShort" Type="CargoLogsShort" Min="(0.256; 1.1; -1.251)" Max="(2.0; 2.407; 1.251)" ParentFrame="BoneBase_cdt" />
+		<LoadArea Subtype="ScautTrailerLogShort" Type="CargoLogsShort" Min="(-0.256; 1.1; -1.251)" Max="(1.5; 2.407; 1.251)" ParentFrame="BoneBase_cdt" />
 		<AddonSlots
 			InitialOffset="(0; 0; 0)"
 			ParentFrames="BoneBase_cdt"

@@ -1,0 +1,100 @@
+<_templates Include="trucks"/>
+<TruckAddon>
+	<TruckData
+		FuelCapacity="80"
+		RepairsCapacity="300"
+	>
+	<LimitedFluid Center="2.303; 3.612; 0.643" SizeX="0.375" SizeY="0.163" SizeZ="0.429" Type="Box" ParentFrame="BoneFuel1_cdt" />
+		<LimitedFluid Center="2.308; 3.612; -0.047" SizeX="0.375" SizeY="0.163" SizeZ="0.429" Type="Box" ParentFrame="BoneFuel2_cdt" />
+		<LimitedFluid Center="2.716; 3.612; -0.047" SizeX="0.375" SizeY="0.163" SizeZ="0.429" Type="Box" ParentFrame="BoneFuel2_cdt" />
+		<LimitedFluid Center="2.716; 3.612; 0.643" SizeX="0.375" SizeY="0.163" SizeZ="0.429" Type="Box" ParentFrame="BoneFuel1_cdt" />
+	</TruckData>
+	<RepairsHide>
+		<Mesh Frame="repair" HideThreshold="0.0" />
+	</RepairsHide>
+	<FuelHide>
+		<Mesh Frame="fuel2" HideThreshold="0.0" />
+		<Mesh Frame="fuel1" HideThreshold="0.5" />
+	</FuelHide>
+	<PhysicsModel Mesh="trucks/western_star_6900xd_tuning/western_star_6900xd_roofrack_1">
+		<Body Mass="48" ModelFrame="BoneCabin_cdt">
+			<Constraint Type="Rigid" />
+			<Body
+				Mass="50"
+				ModelFrame="BoneRepair_cdt"
+			>
+				<Constraint Type="Fixed" LinearLimitsX="(-0.01; 0.01)" LinearLimitsY="(0; 0)" LinearLimitsZ="(-0.007; 0.005)" >
+					<Motor Damping="210" Spring="0.70" Type="Spring" />
+				</Constraint>
+			</Body>
+			<Body
+				Mass="40"
+				ModelFrame="BoneFuel1_cdt"
+			>
+				<Constraint Type="Fixed" LinearLimitsX="(-0.003; 0.01)" LinearLimitsZ="(0; 0.006)" LinearLimitsY="(0; 0)" >
+					<Motor Damping="250" Spring="0.75" Type="Spring" />
+				</Constraint>
+			</Body>
+			<Body
+				Mass="40"
+				ModelFrame="BoneFuel2_cdt"
+			>
+				<Constraint Type="Fixed" LinearLimitsX="(-0.010; 0.015)" LinearLimitsZ="(0; 0.005)" LinearLimitsY="(0; 0)" >
+					<Motor Damping="230" Spring="0.73" Type="Spring" />
+				</Constraint>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<HeadLight>
+			<Model _template="HeadLightRay" Org="(3.141; 3.529; -0.429)" Dir="(1.000; 0.000; 0.000)" />
+			<Model _template="HeadLightRay" Org="(3.141; 3.529; 0.429)" Dir="(1.000; 0.000; 0.000)" />
+			
+			<Flare _template="LED" Pos="(3.141; 3.544; -0.526)" Dir="(1.000; 0.000; 0.000)" ParentFrame="BoneCabin_cdt" Size="0.040" />
+			<Flare _template="LED" Pos="(3.141; 3.514; -0.488)" Dir="(1.000; 0.000; 0.000)" ParentFrame="BoneCabin_cdt" Size="0.040" />
+			<Flare _template="LED" Pos="(3.141; 3.544; -0.488)" Dir="(1.000; 0.000; 0.000)" ParentFrame="BoneCabin_cdt" Size="0.040" />
+			<Flare _template="LED" Pos="(3.141; 3.514; -0.526)" Dir="(1.000; 0.000; 0.000)" ParentFrame="BoneCabin_cdt" Size="0.040" />
+			<Flare _template="LED" Pos="(3.141; 3.514; -0.448)" Dir="(1.000; 0.000; 0.000)" ParentFrame="BoneCabin_cdt" Size="0.040" />
+			<Flare _template="LED" Pos="(3.141; 3.544; -0.448)" Dir="(1.000; 0.000; 0.000)" ParentFrame="BoneCabin_cdt" Size="0.040" />
+			<Flare _template="LED" Pos="(3.141; 3.514; -0.409)" Dir="(1.000; 0.000; 0.000)" ParentFrame="BoneCabin_cdt" Size="0.040" />
+			<Flare _template="LED" Pos="(3.141; 3.544; -0.409)" Dir="(1.000; 0.000; 0.000)" ParentFrame="BoneCabin_cdt" Size="0.040" />
+			<Flare _template="LED" Pos="(3.141; 3.514; -0.370)" Dir="(1.000; 0.000; 0.000)" ParentFrame="BoneCabin_cdt" Size="0.040" />
+			<Flare _template="LED" Pos="(3.141; 3.544; -0.370)" Dir="(1.000; 0.000; 0.000)" ParentFrame="BoneCabin_cdt" Size="0.040" />
+			<Flare _template="LED" Pos="(3.141; 3.514; -0.331)" Dir="(1.000; 0.000; 0.000)" ParentFrame="BoneCabin_cdt" Size="0.040" />
+			<Flare _template="LED" Pos="(3.141; 3.544; -0.331)" Dir="(1.000; 0.000; 0.000)" ParentFrame="BoneCabin_cdt" Size="0.040" />
+			<Flare _template="LED" Pos="(3.141; 3.544; 0.526)" Dir="(1.000; 0.000; 0.000)" ParentFrame="BoneCabin_cdt" Size="0.040" />
+			<Flare _template="LED" Pos="(3.141; 3.514; 0.488)" Dir="(1.000; 0.000; 0.000)" ParentFrame="BoneCabin_cdt" Size="0.040" />
+			<Flare _template="LED" Pos="(3.141; 3.544; 0.488)" Dir="(1.000; 0.000; 0.000)" ParentFrame="BoneCabin_cdt" Size="0.040" />
+			<Flare _template="LED" Pos="(3.141; 3.514; 0.526)" Dir="(1.000; 0.000; 0.000)" ParentFrame="BoneCabin_cdt" Size="0.040" />
+			<Flare _template="LED" Pos="(3.141; 3.514; 0.448)" Dir="(1.000; 0.000; 0.000)" ParentFrame="BoneCabin_cdt" Size="0.040" />
+			<Flare _template="LED" Pos="(3.141; 3.544; 0.448)" Dir="(1.000; 0.000; 0.000)" ParentFrame="BoneCabin_cdt" Size="0.040" />
+			<Flare _template="LED" Pos="(3.141; 3.514; 0.409)" Dir="(1.000; 0.000; 0.000)" ParentFrame="BoneCabin_cdt" Size="0.040" />
+			<Flare _template="LED" Pos="(3.141; 3.544; 0.409)" Dir="(1.000; 0.000; 0.000)" ParentFrame="BoneCabin_cdt" Size="0.040" />
+			<Flare _template="LED" Pos="(3.141; 3.514; 0.370)" Dir="(1.000; 0.000; 0.000)" ParentFrame="BoneCabin_cdt" Size="0.040" />
+			<Flare _template="LED" Pos="(3.141; 3.544; 0.370)" Dir="(1.000; 0.000; 0.000)" ParentFrame="BoneCabin_cdt" Size="0.040" />
+			<Flare _template="LED" Pos="(3.141; 3.514; 0.331)" Dir="(1.000; 0.000; 0.000)" ParentFrame="BoneCabin_cdt" Size="0.040" />
+			<Flare _template="LED" Pos="(3.141; 3.544; 0.331)" Dir="(1.000; 0.000; 0.000)" ParentFrame="BoneCabin_cdt" Size="0.040" />
+			
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="0.3" Size="1.0" Color="g(255; 235; 215) x 0.2" AcpectRatio="1.5" Pos="(3.141; 3.529; -0.429)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="0.3" Size="1.0" Color="g(255; 235; 215) x 0.2" AcpectRatio="1.5" Pos="(3.141; 3.529; 0.429)" ParentFrame="BoneCabin_cdt" />
+		</HeadLight>
+		<Ignition>
+		</Ignition>
+	</ModelAttachments>
+	<GameData
+		CameraPreset="roof"
+		Category="frame_addons"
+		IsCustomizable="true"
+		Price="3800"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SCOUT_TRUNK_SUPPLIES_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SCOUT_TRUNK_SUPPLIES_NAME"
+		/>
+		<InstallSocket Type="WesternStar6900XDRoofrack" />
+	</GameData>
+</TruckAddon>

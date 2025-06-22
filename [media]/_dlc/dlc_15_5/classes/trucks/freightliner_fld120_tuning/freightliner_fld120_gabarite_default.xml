@@ -1,0 +1,28 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/freightliner_fld120_tuning/freightliner_fld120_gabarite_default" />
+	<ModelAttachments>
+		<Ignition>
+			<Flare _template="IgnitionSignalOrange" Dir="(0.989; 0.148; 0)" Size="0.13" Pos="(2.123; 2.773; -0.669)" />
+			<Flare _template="IgnitionSignalOrange" Dir="(0.989; 0.148; 0)" Size="0.13" Pos="(2.215; 2.773; -0.17)" />
+			<Flare _template="IgnitionSignalOrange" Dir="(0.989; 0.148; 0)" Size="0.13" Pos="(2.227; 2.773; 0)" />
+			<Flare _template="IgnitionSignalOrange" Dir="(0.989; 0.148; 0)" Size="0.13" Pos="(2.215; 2.773; 0.17)" />
+			<Flare _template="IgnitionSignalOrange" Dir="(0.989; 0.148; 0)" Size="0.13" Pos="(2.123; 2.773; 0.669)" />
+		</Ignition>
+	</ModelAttachments>
+	<GameData
+		CameraPreset="roof"
+		Category="top"
+		Price="400"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_PARKLIGHTS_FACTORY_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_PARKLIGHTS_FACTORY_NAME"
+		/>
+		<InstallSocket Type="FreightlinerFLD120Gabarite" />
+	</GameData>
+</TruckAddon>

@@ -1,0 +1,35 @@
+<_templates Include="trucks">
+	<TruckTire>
+		<Allterrain _template="Heavy" RearMassScale="2">
+			<WheelTracks _template="Default" />
+			<WheelTracks _template="DefaultDouble" Rear="true" />
+			<WheelSoftness _template="Average" />
+		</Allterrain>
+	</TruckTire>
+</_templates>
+<TruckWheels DamageCapacity="100" Radius="1" Width="0.574" WidthRear="1.184">
+	<TruckTires>
+		<TruckTire _template="Allterrain" Mesh="wheels/tire_freightliner_fld120" Name="allterrain">
+			<WheelFriction 
+				_template="Allterrain"
+				BodyFriction="1.4"
+				BodyFrictionAsphalt="0.9"
+				SubstanceFriction="1.7"
+			/>
+			<GameData
+				Price="6000"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_ALLTERRAIN_DESC" UiName="UI_TIRE_HEAVY_OFFROAD_DOUBLE_FREIGHTLINER_FLD120_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>
+		<TruckRim Mesh="wheels/rim_freightliner_fld120" Name="rim_1">
+			<GameData>
+				<UiDesc UiDesc="UI_RIM_HEAVY_OFFROAD_DOUBLE_1_DESC" UiName="UI_RIM_HEAVY_OFFROAD_DOUBLE_FREIGHTLINER_FLD120_NAME" />
+			</GameData>
+		</TruckRim>
+	</TruckRims>
+</TruckWheels>

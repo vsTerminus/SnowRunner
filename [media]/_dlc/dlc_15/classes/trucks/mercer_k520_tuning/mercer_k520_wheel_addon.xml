@@ -8,28 +8,28 @@
 	<PhysicsModel Mesh="trucks/mercer_k520_tuning/mercer_k520_wheel_addon">
 		<Body ImpactType="Truck" Mass="50" ModelFrame="BoneChassis_cdt">
 			<Constraint Type="Rigid" />
-			<Body Mass="25" ModelFrame="BoneCabin_cdt">
+			<Body Mass="250" ModelFrame="BoneCabin_cdt">
 				<Constraint ExplicitParentFrame="0" Type="Fixed" />
 				
-				<Body Collisions="None" Mass="15" ModelFrame="BoneWheelRight_cdt">
+				<Body Collisions="None" Mass="150" ModelFrame="BoneWheelRight_cdt">
 					<Constraint
 						AxisLocal="(1; 0; 0)"
 						Type="Hinge"
 						MinLimit="-0.3"
 						MaxLimit="0.3"
 					>
-						<Motor Damping="0" Spring="0" Type="Spring" />
+						<Motor Damping="0.1" Spring="0.1" Type="Spring" />
 					</Constraint>
 				</Body>
 				
-				<Body Collisions="None" Mass="15" ModelFrame="BoneWheelLeft_cdt">
+				<Body Collisions="None" Mass="150" ModelFrame="BoneWheelLeft_cdt">
 					<Constraint
 						AxisLocal="(1; 0; 0)"
 						Type="Hinge"
 						MinLimit="-0.2"
 						MaxLimit="0.3"
 					>
-						<Motor Damping="0" Spring="0" Type="Spring" />
+						<Motor Damping="0.1" Spring="0.1" Type="Spring" />
 					</Constraint>
 				</Body>
 			</Body>

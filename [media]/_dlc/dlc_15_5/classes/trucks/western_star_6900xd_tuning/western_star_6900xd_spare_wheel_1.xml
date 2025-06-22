@@ -1,0 +1,48 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<WheelRepairsHide>
+		<Mesh Frame="wheel_1" HideThreshold="0.0" />
+	</WheelRepairsHide>
+	<TruckData WheelRepairsCapacity="1" />
+	<PhysicsModel Mesh="trucks/western_star_6900xd_tuning/western_star_6900xd_spare_wheel_1">
+		<Body ImpactType="Truck" Mass="30" ModelFrame="BoneCabin_cdt">
+			<Constraint Type="Rigid" />
+			<Body Mass="30" ModelFrame="BoneSpareWheel_cdt">
+				<Constraint
+					LinearLimitsX="(-0.02; 0.02)"
+					LinearLimitsY="(-0.02; 0.02)"
+					LinearLimitsZ="(-0.02; 0.02)"
+					Type="Fixed"
+				>
+					<Motor Damping="210" Spring="0.70" Type="Spring" />
+				</Constraint>
+			</Body>
+			<Body Collisions="None" Mass="6" ModelFrame="BoneHand_cdt">
+				<Constraint
+					AxisLocal="(0; 1; 0)"
+					Type="Hinge"
+					MinLimit="-8"
+					MaxLimit="3"
+				>
+					<Motor Damping="30" Spring="1" Type="Spring" />
+				</Constraint>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="rear"
+		Category="wheel_addon"
+		IsCustomizable="true"
+		Price="3000"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SPARE_WHEEL_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SPARE_WHEEL_NAME"
+		/>
+		<InstallSocket Offset="(0; 0; 0)" Type="WesternStar6900XDSpareWheel" />
+	</GameData>
+</TruckAddon>
