@@ -1,0 +1,65 @@
+<ModelBrand
+	DynamicModel="true"
+	NightLightingShadowsAllowCap="true"
+>
+	<PhysicsModel>
+		<Body Collisions="Dynamic" ModelFrame="stage_01">
+			<Body Collisions="Dynamic" ModelFrame="stage_02" />
+			<Body Collisions="Dynamic" ModelFrame="stage_03" />
+		</Body>
+	</PhysicsModel>
+	
+	<Subset IsDefault="true" Name="build_stage_0">
+	</Subset>
+	
+    <Subset Name="build_stage_1">	
+		<OnSubsetActivateEvent>
+			<Sound Name="actors/actor_construction/actor_construct_container_03" Range="50" Volume="1" />
+			<SFX Dir="(0; 1; 0)" Name="us_log_cabin_01_objective" Pos="(-0.304; 1.108; 0.382)" />
+		</OnSubsetActivateEvent>	
+		<Mesh Name="stage_03" />
+		<Mesh Name="stage_03_lod1" />
+		<Mesh Name="stage_03_lod2" />
+		<CdtMesh Name="cdt_stage_03" />
+		<Mesh Name="stage_01" />
+		<Mesh Name="stage_01_lod1" />
+		<Mesh Name="stage_01_lod2" />
+		<CdtMesh Name="cdt_stage_01" />
+    </Subset>
+	
+	<Subset Name="build_stage_2">
+		<Mesh Name="stage_03" />
+		<Mesh Name="stage_03_lod1" />
+		<Mesh Name="stage_03_lod2" />
+		<CdtMesh Name="cdt_stage_03" />
+    	<Mesh Name="stage_02" />
+		<Mesh Name="stage_02_lod1" />
+		<Mesh Name="stage_02_lod2" />
+		<CdtMesh Name="cdt_stage_02" />
+		<AnimTrack Name="stage_1_anim" />
+		<AnimSubset Name="build_animation_0" />
+	</Subset>
+
+	<AnimSubset Name="build_animation_0">
+		<Mesh Name="stage_03" />
+		<CdtMesh Name="cdt_stage_03" />
+		<Mesh Name="stage_03_lod1" />
+		<Mesh Name="stage_03_lod2" />
+		<Mesh Name="animesh"/>	
+	</AnimSubset>
+	<TrackEvents TrackName="stage_1_anim">
+		<AnimEvent Key="0">
+           		<Fade Time="0.2" />
+       	</AnimEvent>
+		<AnimEvent Key="30">
+			<Sound Name="actors/actor_construction/actor_construct_metal_bridge_01" Range="50" Volume="1" />
+		</AnimEvent>
+		<AnimEvent Key="150">
+			<Sound Name="actors/actor_construction/actor_construct_metal_bridge_01" Range="50" Volume="1" />
+		</AnimEvent>
+		<AnimEvent Key="260">
+           		<Fade Time="1.2" />
+       	</AnimEvent>
+	</TrackEvents>
+	<Landmark Mesh="landmarks/big_crane_01_us16_objective_lmk" />
+</ModelBrand>

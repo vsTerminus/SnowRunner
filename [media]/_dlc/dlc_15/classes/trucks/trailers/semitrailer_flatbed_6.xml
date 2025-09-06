@@ -38,8 +38,8 @@
 			<Wheel _template="TrailerWheel" Pos="(-4.418; 0.699; 1.2)" ParentFrame="BoneCargo_3_cdt" RightSide="true" />
 			<Wheel _template="TrailerWheel" Pos="(-6.166; 0.699; 1.2)" ParentFrame="BoneCargo_2_cdt" />
 			<Wheel _template="TrailerWheel" Pos="(-6.166; 0.699; 1.2)" ParentFrame="BoneCargo_2_cdt" RightSide="true" />
-			<Wheel _template="TrailerWheel" Pos="(-7.844; 0.699; 1.2)" ParentFrame="BoneCargo_1_cdt" />
-			<Wheel _template="TrailerWheel" Pos="(-7.844; 0.699; 1.2)" ParentFrame="BoneCargo_1_cdt" RightSide="true" />
+			<Wheel _template="TrailerWheel" Pos="(-7.844; 0.699; 1.2)" ParentFrame="BoneCargo_2_cdt" />
+			<Wheel _template="TrailerWheel" Pos="(-7.844; 0.699; 1.2)" ParentFrame="BoneCargo_2_cdt" RightSide="true" />
 			<Wheel _template="TrailerWheel" Pos="(-9.591; 0.699; 1.2)" ParentFrame="BoneCargo_1_cdt" />
 			<Wheel _template="TrailerWheel" Pos="(-9.591; 0.699; 1.2)" ParentFrame="BoneCargo_1_cdt" RightSide="true" />
 		</Wheels>
@@ -89,13 +89,13 @@
 		<Body
 			CenterOfMassOffset="(0; 0; 0)"
 			ImpactType="Truck"
-			Mass="940"
+			Mass="750"
 			ModelFrame="BoneCargo_1_cdt"
 		>
 			<Body _template="MudguardSide" ModelFrame="BoneMudguardR_cdt" />
 			<Body _template="MudguardSide" ModelFrame="BoneMudguardL_cdt" />
 			<Body _template="MudguardRear" ModelFrame="BoneMudguardRear_cdt" />
-			<Body Mass="780" ModelFrame="BoneCargo_2_cdt">
+			<Body Mass="750" ModelFrame="BoneCargo_2_cdt">
 				<Constraint
 					AxisLocal="(1; 0; 0)"
 					Type="Hinge"
@@ -104,7 +104,7 @@
 				>
 					<Motor Damping="1000000" Spring="2200000" Type="Spring" />
 				</Constraint>
-				<Body Mass="780" ModelFrame="BoneCargo_3_cdt">
+				<Body Mass="750" ModelFrame="BoneCargo_3_cdt">
 					<Constraint
 						AxisLocal="(1; 0; 0)"
 						Type="Hinge"
@@ -113,7 +113,7 @@
 					>
 						<Motor Damping="1000000" Spring="2200000" Type="Spring" />
 					</Constraint>
-					<Body Mass="780" ModelFrame="BoneCargo_4_cdt">
+					<Body Mass="750" ModelFrame="BoneCargo_4_cdt">
 						<Constraint
 							AxisLocal="(1; 0; 0)"
 							Type="Hinge"
@@ -122,7 +122,7 @@
 						>
 							<Motor Damping="1000000" Spring="2200000" Type="Spring" />
 						</Constraint>
-						<Body Mass="780" ModelFrame="BoneCargo_5_cdt">
+						<Body Mass="750" ModelFrame="BoneCargo_5_cdt">
 							<Constraint
 								AxisLocal="(1; 0; 0)"
 								Type="Hinge"
@@ -131,7 +131,7 @@
 							>
 								<Motor Damping="1000000" Spring="2200000" Type="Spring" />
 							</Constraint>
-							<Body Mass="1040" ModelFrame="BoneCargo_6_cdt">
+							<Body CenterOfMassOffset="(0.3; 0.1; 0)" Mass="1900" ModelFrame="BoneCargo_6_cdt">
 								<Constraint
 									AxisLocal="(1; 0; 0)"
 									Type="Hinge"
@@ -141,9 +141,10 @@
 									<Motor Damping="1000000" Spring="2200000" Type="Spring" />
 								</Constraint>
 								<Body
-									Mass="100"
+									Mass="60"
 									ModelFrame="BoneLeftFoot_cdt"
 									NoFoliageCollisions="true"
+									Collisions="Default"
 								>
 									<Constraint
 										AxisLocal="(0; 1; 0)"
@@ -156,9 +157,10 @@
 									</Constraint>
 								</Body>
 								<Body
-									Mass="100"
+									Mass="60"
 									ModelFrame="BoneRightFoot_cdt"
 									NoFoliageCollisions="true"
+									Collisions="Default"
 								>
 									<Constraint
 										AxisLocal="(0; 1; 0)"
@@ -234,10 +236,10 @@
 		<WinchSocket Pos="(3.747; 1.966; -1.501)" ParentFrame="BoneCargo_6_cdt" />
 		<WinchSocket Pos="(-1.646; 1.966; 1.501)" ParentFrame="BoneCargo_4_cdt" />
 		<WinchSocket Pos="(-1.646; 1.966; -1.501)" ParentFrame="BoneCargo_4_cdt" />
-		<WinchSocket Pos="(-6.870; 1.966; 1.501)" ParentFrame="BoneCargo_4_cdt" />
-		<WinchSocket Pos="(-6.870; 1.966; -1.501)" ParentFrame="BoneCargo_4_cdt" />
-		<WinchSocket Pos="(-11.761; 1.949; 1.540)" ParentFrame="BoneCargo_4_cdt" />
-		<WinchSocket Pos="(-11.761; 1.949; -1.540)" ParentFrame="BoneCargo_4_cdt" />
+		<WinchSocket Pos="(-6.870; 1.966; 1.501)" ParentFrame="BoneCargo_2_cdt" />
+		<WinchSocket Pos="(-6.870; 1.966; -1.501)" ParentFrame="BoneCargo_2_cdt" />
+		<WinchSocket Pos="(-11.204; 1.966; 1.501)" ParentFrame="BoneCargo_1_cdt" />
+		<WinchSocket Pos="(-11.204; 1.966; -1.501)" ParentFrame="BoneCargo_1_cdt" />
 		
 		<UiDesc
 			UiDesc="UI_SEMITRAILER_FLATBED_6_DESC"
@@ -250,16 +252,16 @@
 		<CraneSocket Pos="(3.747; 1.966; -1.501)" ParentFrame="BoneCargo_6_cdt" />
 		<CraneSocket Pos="(-1.646; 1.966; 1.501)" ParentFrame="BoneCargo_4_cdt" />
 		<CraneSocket Pos="(-1.646; 1.966; -1.501)" ParentFrame="BoneCargo_4_cdt" />
-		<CraneSocket Pos="(-6.870; 1.966; 1.501)" ParentFrame="BoneCargo_4_cdt" />
-		<CraneSocket Pos="(-6.870; 1.966; -1.501)" ParentFrame="BoneCargo_4_cdt" />
-		<CraneSocket Pos="(-11.761; 1.949; 1.540)" ParentFrame="BoneCargo_4_cdt" />
-		<CraneSocket Pos="(-11.761; 1.949; -1.540)" ParentFrame="BoneCargo_4_cdt" />
+		<CraneSocket Pos="(-6.870; 1.966; 1.501)" ParentFrame="BoneCargo_2_cdt" />
+		<CraneSocket Pos="(-6.870; 1.966; -1.501)" ParentFrame="BoneCargo_2_cdt" />
+		<CraneSocket Pos="(-11.204; 1.966; 1.501)" ParentFrame="BoneCargo_1_cdt" />
+		<CraneSocket Pos="(-11.204; 1.966; -1.501)" ParentFrame="BoneCargo_1_cdt" />
 		
 		<RequiredAddon _template="SaddleHigh" />
 		<InstallSocket Offset="(8.138; 2.085; 0)" Type="LargeSemitrailer" ParentFrame="BoneCargo_6_cdt" />
 		<AddonSlots
-			InitialOffset="(2.85; 2.010; 0)"
-			OffsetStep="(-2.559; -0.002; 0)"
+			InitialOffset="(2.85; 2.005; 0)"
+			OffsetStep="(-2.559; -0.005; 0)"
 			ParentFrames="BoneCargo_6_cdt, BoneCargo_5_cdt, BoneCargo_4_cdt, BoneCargo_3_cdt, BoneCargo_2_cdt, BoneCargo_1_cdt"
 			Quantity="6"
 		/>

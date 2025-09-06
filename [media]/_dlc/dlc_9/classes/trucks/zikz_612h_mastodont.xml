@@ -601,7 +601,9 @@
 		<AddonSockets>
 			<Socket Names="Trailer, LogTrailer, MastodonLogPoleTrailer" NamesBlock="MastodonSideboard, MastodonWatertank, FrameAddonSeismicVibratorZikz" Offset="(-2.33; 0.93; 0)" />
 			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" NamesBlock="SaddleLow" Offset="(-0.4; 1.85; 0)" />
-			<Socket Names="Semitrailer, SemitrailerOiltank" NamesBlock="SaddleHigh" Offset="(-1; 1.65; 0)" />
+			<Socket Names="Semitrailer, SemitrailerOiltank, SemitrailerFoldableLog" NamesBlock="SaddleHigh" Offset="(-1; 1.65; 0)" >
+				<AddonsShift Offset="(0.323; 0; 0)" Types="SaddleMotorized" />
+			</Socket>
 		</AddonSockets>
 		<AddonSockets>
 			<Socket
@@ -631,6 +633,15 @@
 			<Socket Names="FrameAddonLogMediumMastodon" Offset="(1; 1.7; 0)" ParentFrame="BoneChassis_cdt" />
 			<Socket Names="MastodonBunkLog" Offset="(-4.5; 1.5; 0)" />
 			<Socket Names="MastodonFrameAddonTowPlatform" NamesBlock="MinicraneRU, ZikzLogLift" Offset="(1.5; 1.55; 0)" />
+			
+			<Socket Names="SaddleMotorized" NamesBlock="MinicraneRU, ZikzLogLift" Offset="(0.670; 0.029; 0.000)" ParentFrame="BoneChassis_cdt" >
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.000; 0.000; -0.110)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.000; 0.000; 0.110)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(1.400; 0.000; -0.110)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(1.400; 0.000; 0.110)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(1.400; 0.000; 0.000)" />
+			</Socket>
+			
 		</AddonSockets>
 		<AddonSockets>
 			<Socket
@@ -640,6 +651,7 @@
 				ParentFrame="BoneChassis_cdt"
 			>
 				<AddonsShift Offset="(-4; 0; 0)" Types="ZikzFrameAddon" />
+				<AddonsShift Offset="(1.4; 0; 0)" Types="SaddleMotorized" />
 			</Socket>
 			<Socket Names="ZikzLogLift" NamesBlock="MastodonSideboard, MastodonWatertank, MastodonBigCrane, MastodonLongBigCrane, FrameAddonSeismicVibratorZikz, FrameAddonTankZikz, FrameAddonLogShortMastodon, FrameAddonLogMediumMastodon, FrameAddonKungZikz, ZikzFrameAddon, SaddleHigh" Offset="(4.4; -0.05; 0)" ParentFrame="BoneChassis_cdt" />
 		</AddonSockets>

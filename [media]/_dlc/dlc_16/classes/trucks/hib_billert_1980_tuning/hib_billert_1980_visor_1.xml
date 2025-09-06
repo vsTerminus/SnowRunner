@@ -1,0 +1,19 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/hib_billert_1980_tuning/hib_billert_1980_visor_1" />
+	<GameData
+		CameraPreset="roof"
+		Category="miscellenious"
+		Price="1100"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SUNVISOR_STRAIGHTCAP_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SUNVISOR_STRAIGHTCAP_NAME"
+		/>
+		<InstallSocket Type="HIBBillert1980Visor" />
+	</GameData>
+</TruckAddon>

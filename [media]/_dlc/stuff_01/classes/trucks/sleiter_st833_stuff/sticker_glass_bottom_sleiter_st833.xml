@@ -1,0 +1,19 @@
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/sleiter_st833_stuff/sticker_glass_bottom_sleiter_st833" />
+	<GameData
+		CameraPreset="glass_sticker"
+		Category="sticker_windshield"
+		Price="1000"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+		IsCustomizable="false"
+	>
+		<UiDesc
+			UiDesc="UI_STUFF_GLASS_STICKER_BOTTOM_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_STUFF_GLASS_STICKER_BOTTOM_CUT_DRAGONS_NAME"
+		/>
+		<InstallSocket Type="SleiterST833Sticker_Glass_Bottom" />
+	</GameData>
+</TruckAddon>

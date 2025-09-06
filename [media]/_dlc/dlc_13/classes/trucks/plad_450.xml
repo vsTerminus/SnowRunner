@@ -566,6 +566,9 @@
 		<AddonSockets>
 			<Socket Names="Trailer, LogTrailer" Offset="(-5.885; 1.127; 0)" />
 			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-3.809; 1.951; 0)" />
+			<Socket Names="SemitrailerFoldableLog" NamesBlock="Plad450Saddle" Offset="(-3.82; 1.75; 0)" >
+				<AddonsShift Offset="(-0.627; 0.04; 0)" Types="SaddleMotorized" />
+			</Socket>
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="ZikzLogLift" NamesBlock="FrameAddonMaintainer, FrameAddonLogMediumMastodon, Plad450Sideboard, Plad450SpareWheel, Plad450RearFender, FrameAddon" Offset="(1.7; 0.05; 0)" >
@@ -592,6 +595,14 @@
 				<ExtraParent Frame="BoneCabin_cdt" Offset="(0; 0; 0)" />
 			</Socket>
 			<Socket Names="HeavyRepairSmall" NamesBlock="ZikzLogLift, Plad450Sideboard, Plad450Saddle, Plad450RearFender, PladMinicrane, Plad450SpareWheel" Offset="(-2.8; 1.6; 0)" ParentFrame="BoneChassis_cdt"/>
+			
+			<Socket Names="SaddleMotorized" NamesBlock="ZikzLogLift, Plad450Saddle, Plad450Sideboard, Plad450RearFender, PladMinicrane" Offset="(-3.100; 0.149; 0.000)" ParentFrame="BoneChassis_cdt" >
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.000; 0.000; -0.040)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.000; 0.000; 0.040)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.900; 0.000; -0.040)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.900; 0.000; 0.040)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.900; 0.000; 0.000)" />
+			</Socket>
 		</AddonSockets>
 		<AddonSockets>
 			<Socket

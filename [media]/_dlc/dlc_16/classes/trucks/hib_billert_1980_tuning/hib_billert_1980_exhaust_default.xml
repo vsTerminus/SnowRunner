@@ -1,0 +1,42 @@
+<TruckAddon>
+	<TruckData>
+		<Shakers>
+			<Shaker
+				Frame="BoneExhaust"
+				MinAngle="(0.1; 0.1; 0.1)"
+				MaxAngle="(0.3; 0.3; 0.3)"
+				MaxFrequency="4"
+				MaxOffset="(0; 0; 0)"
+			/>
+		</Shakers>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/hib_billert_1980_tuning/hib_billert_1980_exhaust_default">
+		<Body Collisions="Default" Mass="50" ModelFrame="BoneRoot_cdt">
+			<Constraint Type="Rigid" />
+			<Body Collisions="Default" Mass="50" ModelFrame="BoneCabin_cdt">
+				<Constraint ExplicitParentFrame="0" Type="Fixed" />
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="exhaust_default"
+		Category="exhaust"
+		Price="1000"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_EXHAUST_DEFAULT_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_EXHAUST_DEFAULT_NAME"
+		/>
+		<InstallSocket Type="HIBBillert1980ExhaustDefault" />
+	</GameData>
+	<Exhaust
+		Dir="(-0.3; 0.15; -1)"
+		IsLight="false"
+		Origin="(0.287; 0.538; -0.6)"
+		Speed="3.82"
+	/>
+</TruckAddon>

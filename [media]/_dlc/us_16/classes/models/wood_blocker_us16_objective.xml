@@ -1,0 +1,88 @@
+<_templates Include="environment">
+	<Body>
+		<wood_blocker_us16_branch
+			AllowedPenetrationDepth="5.0" 
+			Mass="10"
+			AngularDamping="0.8" 
+			ModelFrame="BoneBranch"
+			DamageMult="0.0"
+		>
+			<Constraint Cone="90" _template="BranchSoft">
+				<PlaneConeMotor  Damping="1500" Spring="10000" Type="Spring" />
+			</Constraint>
+		</wood_blocker_us16_branch>
+	</Body>
+</_templates>
+<ModelBrand
+	DayShadowOffsetMult="2.0"
+	AcceptZoneBorderDecals="true"
+	DynamicModel="true"
+	NightLightingShadowsAllowCap="true"
+	ClipCameraBridge="false"
+>
+	<Subset IsDefault="true" Name="stage_00"> <!-- stage_01 -->
+		<Mesh Name="branches1" />
+		<Mesh Name="state_00" />
+		<CdtMesh Name="cdt_state_00" />
+		<Mesh Name="state_01" />
+		<CdtMesh Name="cdt_state_01" />
+		<CdtMesh Name="cdt_BoneBranch1" />
+		<CdtMesh Name="cdt_BoneBranch3" />
+		<CdtMesh Name="cdt_BoneBranch4" />
+		<CdtMesh Name="cdt_BoneBranch5" />
+		<CdtMesh Name="cdt_BoneBranch6" />
+		<CdtMesh Name="cdt_BoneBranch7" />
+		<CdtMesh Name="cdt_BoneBranch8" />
+		<CdtMesh Name="cdt_BoneBranch9" />
+		<CdtMesh Name="cdt_BoneBranch10" />
+	</Subset>
+
+	<Subset Name="stage_01"> <!-- stage_02 -->
+		<Mesh Name="branches2" />
+		<Mesh Name="state_00" />
+		<CdtMesh Name="cdt_state_00" />
+		<Mesh Name="state_02" />
+		<CdtMesh Name="cdt_state_02" />
+		<CdtMesh Name="cdt_BoneBranch11" />
+		<CdtMesh Name="cdt_BoneBranch13" />
+		<CdtMesh Name="cdt_BoneBranch14" />
+		<CdtMesh Name="cdt_BoneBranch15" />
+		<CdtMesh Name="cdt_BoneBranch16" />
+		<CdtMesh Name="cdt_BoneBranch17" />
+		<CdtMesh Name="cdt_BoneBranch18" />
+		<CdtMesh Name="cdt_BoneBranch19" />
+		<CdtMesh Name="cdt_BoneBranch20" />		
+        <OnSubsetActivateEvent>
+            <Sound Name="actors/actor_construction/actor_deconstruct_wood" Range="200" Volume="1"/>
+            <SFX Name="constr_wood_01" Dir="(0; 1; 0)" Pos="(-11.173; 0.5; 0)"/>
+        </OnSubsetActivateEvent>
+	</Subset>
+
+	<PhysicsModel>
+		<Body Collisions="None" ModelFrame="BoneRoot">
+			<Body Collisions="Dynamic" NoSoftContacts="false" ModelFrame="state_01">
+				<Body _template="wood_blocker_us16_branch" ModelFrame="BoneBranch1" />
+				<Body _template="wood_blocker_us16_branch" ModelFrame="BoneBranch3" />
+				<Body _template="wood_blocker_us16_branch" ModelFrame="BoneBranch4" />
+				<Body _template="wood_blocker_us16_branch" ModelFrame="BoneBranch5" />
+				<Body _template="wood_blocker_us16_branch" ModelFrame="BoneBranch6" />
+				<Body _template="wood_blocker_us16_branch" ModelFrame="BoneBranch7" />
+				<Body _template="wood_blocker_us16_branch" ModelFrame="BoneBranch8" />
+				<Body _template="wood_blocker_us16_branch" ModelFrame="BoneBranch9" />
+				<Body _template="wood_blocker_us16_branch" ModelFrame="BoneBranch10" />
+			</Body>
+		<Body Collisions="Dynamic" NoSoftContacts="false" ModelFrame="state_02">
+				<Body _template="wood_blocker_us16_branch" ModelFrame="BoneBranch11" />
+				<Body _template="wood_blocker_us16_branch" ModelFrame="BoneBranch13" />
+				<Body _template="wood_blocker_us16_branch" ModelFrame="BoneBranch14" />
+				<Body _template="wood_blocker_us16_branch" ModelFrame="BoneBranch15" />
+				<Body _template="wood_blocker_us16_branch" ModelFrame="BoneBranch16" />
+				<Body _template="wood_blocker_us16_branch" ModelFrame="BoneBranch17" />
+				<Body _template="wood_blocker_us16_branch" ModelFrame="BoneBranch18" />
+				<Body _template="wood_blocker_us16_branch" ModelFrame="BoneBranch19" />
+				<Body _template="wood_blocker_us16_branch" ModelFrame="BoneBranch20" />
+			</Body>
+		</Body>	
+	</PhysicsModel>
+	<Landmark Mesh="landmarks/wood_blocker_us16_objective_lmk" />
+</ModelBrand>

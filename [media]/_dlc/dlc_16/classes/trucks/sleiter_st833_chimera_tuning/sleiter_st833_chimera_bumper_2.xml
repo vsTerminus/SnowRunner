@@ -1,0 +1,67 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<TruckData>
+		<Damage>
+			<Multiplier Multiplier="0.9" Type="Engine" />
+		</Damage>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/sleiter_st833_chimera_tuning/sleiter_st833_chimera_bumper_2">
+		<Body Collisions="None" Mass="50" ModelFrame="BoneRoot_cdt">
+			<Constraint Type="Rigid" />
+			<Body
+				CenterOfMassOffset="(0; 0; 0)"
+				Collisions="Default"
+				ImpactType="Truck"
+				Mass="275"
+				ModelFrame="BoneCabinTwist_cdt"
+			>
+				<Constraint ExplicitParentFrame="0" Type="Fixed" />
+				<Body
+					CenterOfMassOffset="(0; 0; 0)"
+					Collisions="Default"
+					Mass="30"
+					ModelFrame="BoneHook_cdt"
+					NoFoliageCollisions="true"
+				>
+					<Constraint
+						AxisLocal="(0; 0; 1)"
+						Type="Hinge"
+						MinLimit="-7.0"
+						MaxLimit="50.0"
+					>
+						<Motor Damping="0.1" Spring="0.1" Type="Spring" />
+					</Constraint>
+				</Body>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<Ignition>
+			<Flare _template="IgnitionSignalWhite" Color="g(165; 155; 155) x 1" Dir="(1; 0; 0)" Size="0.12" Pos="(4.651; 1.442; -1.075)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhite" Color="g(165; 155; 155) x 1" Dir="(1; 0; 0)" Size="0.12" Pos="(4.651; 1.442; -0.914)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhite" Color="g(165; 155; 155) x 1" Dir="(1; 0; 0)" Size="0.12" Pos="(4.651; 1.442; 1.075)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhite" Color="g(165; 155; 155) x 1" Dir="(1; 0; 0)" Size="0.12" Pos="(4.651; 1.442; 0.914)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalOrange" Dir="(0.707; 0; -0.707)" Size="0.1" Pos="(4.67; 1.443; -1.327)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalOrange" Dir="(0.707; 0; 0.707)" Size="0.1" Pos="(4.67; 1.443; 1.327)" ParentFrame="BoneCabin_cdt" />
+		</Ignition>
+	</ModelAttachments>
+	<GameData
+		CameraPreset="default"
+		Category="bumper"
+		Price="1700"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<WinchSocket FixedToTruck="true" Pos="(4.826; 1.4; -0.596)" />
+		<WinchSocket FixedToTruck="true" Pos="(4.826; 1.4; 0.596)" />
+		<UiDesc
+			UiDesc="UI_TUNING_BUMPER_DEFENDER_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_BUMPER_DEFENDER_NAME"
+		/>
+		<InstallSocket Type="SleiterST833ChimeraBumper" />
+		<CraneSocket FixedToTruck="true" Pos="(4.826; 1.4; -0.596)" />
+		<CraneSocket FixedToTruck="true" Pos="(4.826; 1.4; 0.596)" />
+	</GameData>
+</TruckAddon>

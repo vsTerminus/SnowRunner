@@ -343,7 +343,9 @@
 		<CraneSocket Pos="(-4.12; 1.019; -0.339)" />
 		<CraneSocket Pos="(-4.12; 1.019; 0.339)" />
 		<AddonSockets>
-			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-2.63; 1.5; 0)" />
+			<Socket Names="Semitrailer, SemitrailerOiltank, SemitrailerFoldableLog" Offset="(-2.63; 1.5; 0)" >
+				<AddonsShift Offset="(0.184; 0.07; 0)" Types="SaddleMotorized" />
+			</Socket>
 			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-1.5; 1.7; 0)" />
 			<Socket Names="Trailer, LogTrailer" Offset="(-4.21; 1; -0)" />
 		</AddonSockets>
@@ -371,6 +373,15 @@
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.033; -0.03)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.033; 0.03)" />
 			</Socket>
+			
+			<Socket Names="SaddleMotorized" Offset="(-1.100; -0.082; 0.000)" ParentFrame="BoneChassis_cdt" >
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.000; 0.000; 0.030)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.000; 0.000; -0.030)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(1.100; 0.000; 0.030)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(1.100; 0.000; -0.030)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(1.100; 0.000; 0.000)" />
+			</Socket>
+			
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="Dan96320WheelAddon" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt">

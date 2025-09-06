@@ -1,0 +1,73 @@
+<_templates Include="trucks">
+	<Body>
+		<Chain
+			CenterOfMassOffset="(0; -0; 0)"
+			Collisions="None"
+			Mass="50"
+		>
+			<Constraint
+				AxisLocal="(1; 0; 0)"
+				PivotOffset="(0; 0; 0)"
+				Type="Hinge"
+				MinLimit="-20.0"
+				MaxLimit="0.0"
+			>
+				<Motor Damping="0.1" Spring="1" Type="Spring" />
+			</Constraint>
+		</Chain>
+	</Body>
+</_templates>
+<TruckAddon IsChassisFullOcclusion="true">
+	<PhysicsModel Mesh="trucks/addons/sleiter_st833_chimera_frame_addon_sideboard_2">
+		<Body Mass="600">
+			<Constraint Type="Rigid" />
+			<Body _template="Chain" ModelFrame="BoneChain1_cdt">
+				<Constraint AxisLocal="(1; 0; 0)" MinLimit="0.0" MaxLimit="20.0" />
+			</Body>
+			<Body _template="Chain" ModelFrame="BoneChain2_cdt">
+				<Constraint AxisLocal="(1; 0; 0)" MinLimit="-20.0" MaxLimit="0.0" />
+			</Body>
+			<Body _template="Chain" ModelFrame="BoneChain3_cdt">
+				<Constraint AxisLocal="(0; 0; 1)" MinLimit="-20.0" MaxLimit="0.0" />
+			</Body>
+			<Body _template="Chain" ModelFrame="BoneChain4_cdt">
+				<Constraint AxisLocal="(0; 0; 1)" MinLimit="-20.0" MaxLimit="0.0" />
+			</Body>
+			<Body _template="Chain" Mass="3" ModelFrame="BoneBoltL_cdt">
+				<Constraint AxisLocal="(0; 0; 1)" MinLimit="-15.0" MaxLimit="15.0">
+					<Motor Damping="0.05" Spring="0.25" Type="Spring" />
+				</Constraint>
+			</Body>
+			<Body _template="Chain" Mass="3" ModelFrame="BoneBoltR_cdt">
+				<Constraint AxisLocal="(0; 0; 1)" MinLimit="-15.0" MaxLimit="20.0">
+					<Motor Damping="0.05" Spring="0.35" Type="Spring" />
+				</Constraint>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="addon_1"
+		Category="frame_addons"
+		IsCustomizable="true"
+		Price="4900"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<WinchSocket Pos="(-2.387; 2.232; -1.66)" />
+		<WinchSocket Pos="(-2.387; 2.232; 1.66)" />
+		<WinchSocket Pos="(-5.954; 2.198; -1.517)" />
+		<WinchSocket Pos="(-5.954; 2.198; 1.517)" />
+		<UiDesc
+			UiDesc="UI_ADDON_FRAME_SLEITER_ST833_SIDEBOARD_2_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_ADDON_FRAME_SLEITER_ST833_SIDEBOARD_2_NAME"
+		/>
+		<InstallSocket Type="SleiterST833ChimeraSideboard2" />
+		<CraneSocket Pos="(-2.387; 2.232; -1.66)" />
+		<CraneSocket Pos="(-2.387; 2.232; 1.66)" />
+		<CraneSocket Pos="(-5.954; 2.198; -1.517)" />
+		<CraneSocket Pos="(-5.954; 2.198; 1.517)" />
+		<AddonSlots InitialOffset="(-1.987; 2.04; 0)" OffsetStep="(-2.486; 0; 0)" Quantity="2" />
+	</GameData>
+</TruckAddon>

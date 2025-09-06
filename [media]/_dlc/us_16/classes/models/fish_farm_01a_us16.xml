@@ -1,0 +1,28 @@
+<ModelBrand
+	DeactivationPhantomExt="2"
+	DistSkipPercentage="0.02"
+	NightLightingShadowsAllowCap="true"
+	DynamicModel="true"
+>
+	<PhysicsModel>
+		<Body   
+			Collisions="None"  
+			Mass="40.0"
+			ModelFrame="BoneRoot">
+			<Constraint Type="Fixed" LinearLimitsX="(-0.5; 0.5)" LinearLimitsY="(-0.5; 0.5)">
+				<Motor Type="Spring" Spring="20000.01" Damping="10.1" />		
+			</Constraint>
+			<Body   
+				LinearDamping="20.0"
+				Collisions="Dynamic" 
+				NoSoftContacts="True"
+				Mass="300.0" 
+				ModelFrame="Bone.001">
+				<Constraint Type="Ragdoll" PlaneAxisLocal="(0; 1; 0)" Cone="3.0" PlaneMin="-2.0" PlaneMax="2.0">
+					<AllMotor Type="Spring" Spring="500000.0" Damping="5000.0" />
+				</Constraint>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<Landmark Mesh="landmarks/fish_farm_01a_us16_lmk" />
+</ModelBrand>

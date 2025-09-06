@@ -1,0 +1,58 @@
+<ModelBrand ClipCamera="false" DynamicModel="true">
+<PhysicsModel>
+	<NetSync Legacy="false" />
+		<Body Collisions="Dynamic" Friction="1.8" Mass="1000" NoSoftContacts="true" ModelFrame="BoneRoot_cdt" AngularDamping="0.001">
+			<Body
+				CenterOfMassOffset="(0; 0; 0)"
+				Collisions="None" 
+				Mass="2000"
+				ModelFrame="BoneCrane_cdt"
+			>
+				<Constraint
+					AxisLocal="(0; 1; 0)"
+					Type="Prismatic"
+					MinLimit="0"
+					MaxLimit="0.25"
+				>
+					<Motor Damping="1" Spring="0.0001" Type="Spring" />
+				</Constraint>
+			</Body>
+			<Body
+				CenterOfMassOffset="(0; 0; 0)"
+				Collisions="None" 
+				Mass="50"
+				ModelFrame="BoneLatchR_cdt"
+			>
+				<Constraint
+					PivotOffset="(0.000; 0.000; 0.000)"
+					Type="Hinge"
+					MinLimit="-6"
+					MaxLimit="182.5"
+					AxisLocal="(1; 0; 0)"
+				>
+					<Motor Damping="1" Spring="1" Type="Spring" />
+				</Constraint>
+			</Body>
+			<Body
+				CenterOfMassOffset="(0; 0; 0)"
+				Collisions="None" 
+				Mass="50"
+				ModelFrame="BoneLatchL_cdt"
+			>
+				<Constraint
+					PivotOffset="(0.000; 0.000; 0.000)"
+					Type="Hinge"
+					MinLimit="-182.5"
+					MaxLimit="6"
+					AxisLocal="(1; 0; 0)"
+				>
+					<Motor Damping="1" Spring="1" Type="Spring" />
+				</Constraint>
+			</Body>
+		</Body>
+</PhysicsModel>
+	<GameData PackSlotsNumber="2" LoadType="CargoMetalJunkOpen">
+		<CraneSocket Pos="(0.000; 1.781; 0.000)" ParentFrame="BoneCrane_cdt"/>
+    </GameData>
+	<Landmark Mesh="landmarks/cargo_unit_metal_junk_2_open_lmk" />
+</ModelBrand>

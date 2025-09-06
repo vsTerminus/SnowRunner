@@ -1,0 +1,88 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/sleiter_st833_chimera_tuning/sleiter_st833_chimera_foglight_1">
+		<Body ImpactType="Truck" Mass="70">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<MainHeadLight>
+			<Model _template="HeadLightRay" Color="g(255; 240; 240) x 0.1" Org="(4.314; 3.929; 0.343)" />
+			<Model _template="HeadLightRay" Color="g(255; 240; 240) x 0.1" Org="(4.314; 3.929; 0)" />
+			<Model _template="HeadLightRay" Color="g(255; 240; 240) x 0.1" Org="(4.314; 3.929; -0.343)" />
+			<!-- FIRST LAMP -->
+			<Flare _template="LED" DirAngle="85" Size="0.035" Pos="(4.302; 3.957; -0.428)" />
+			<Flare _template="LED" DirAngle="85" Size="0.035" Pos="(4.302; 3.957; -0.394)" />
+			<Flare _template="LED" DirAngle="85" Size="0.035" Pos="(4.302; 3.957; -0.359)" />
+			<Flare _template="LED" DirAngle="85" Size="0.035" Pos="(4.302; 3.957; -0.326)" />
+			<Flare _template="LED" DirAngle="85" Size="0.035" Pos="(4.302; 3.957; -0.292)" />
+			<Flare _template="LED" DirAngle="85" Size="0.035" Pos="(4.302; 3.957; -0.259)" />
+			<Flare _template="LED" DirAngle="85" Size="0.035" Pos="(4.302; 3.928; -0.428)" />
+			<Flare _template="LED" DirAngle="85" Size="0.035" Pos="(4.302; 3.928; -0.394)" />
+			<Flare _template="LED" DirAngle="85" Size="0.035" Pos="(4.302; 3.928; -0.359)" />
+			<Flare _template="LED" DirAngle="85" Size="0.035" Pos="(4.302; 3.928; -0.326)" />
+			<Flare _template="LED" DirAngle="85" Size="0.035" Pos="(4.302; 3.928; -0.292)" />
+			<Flare _template="LED" DirAngle="85" Size="0.035" Pos="(4.302; 3.928; -0.259)" />
+			<Flare _template="LED" DirAngle="85" Size="0.035" Pos="(4.302; 3.9; -0.428)" />
+			<Flare _template="LED" DirAngle="85" Size="0.035" Pos="(4.302; 3.9; -0.394)" />
+			<Flare _template="LED" DirAngle="85" Size="0.035" Pos="(4.302; 3.9; -0.359)" />
+			<Flare _template="LED" DirAngle="85" Size="0.035" Pos="(4.302; 3.9; -0.326)" />
+			<Flare _template="LED" DirAngle="85" Size="0.035" Pos="(4.302; 3.9; -0.292)" />
+			<Flare _template="LED" DirAngle="85" Size="0.035" Pos="(4.302; 3.9; -0.259)" />
+			<!-- SECOND LAMP -->
+			<Flare _template="LED" DirAngle="85" Size="0.035" Pos="(4.302; 3.957; -0.088)" />
+			<Flare _template="LED" DirAngle="85" Size="0.035" Pos="(4.302; 3.957; -0.055)" />
+			<Flare _template="LED" DirAngle="85" Size="0.035" Pos="(4.302; 3.957; -0.02)" />
+			<Flare _template="LED" DirAngle="85" Size="0.035" Pos="(4.302; 3.957; 0.013)" />
+			<Flare _template="LED" DirAngle="85" Size="0.035" Pos="(4.302; 3.957; 0.048)" />
+			<Flare _template="LED" DirAngle="85" Size="0.035" Pos="(4.302; 3.957; 0.081)" />
+			<Flare _template="LED" DirAngle="85" Size="0.035" Pos="(4.302; 3.928; -0.088)" />
+			<Flare _template="LED" DirAngle="85" Size="0.035" Pos="(4.302; 3.928; -0.055)" />
+			<!-- THIRD LAMP -->
+			<Flare _template="LED" DirAngle="85" Size="0.035" Pos="(4.302; 3.928; 0.013)" />
+			<Flare _template="LED" DirAngle="85" Size="0.035" Pos="(4.302; 3.928; 0.048)" />
+			<Flare _template="LED" DirAngle="85" Size="0.035" Pos="(4.302; 3.928; 0.081)" />
+			<Flare _template="LED" DirAngle="85" Size="0.035" Pos="(4.302; 3.9; -0.088)" />
+			<Flare _template="LED" DirAngle="85" Size="0.035" Pos="(4.302; 3.9; -0.055)" />
+			<Flare _template="LED" DirAngle="85" Size="0.035" Pos="(4.302; 3.9; -0.02)" />
+			<Flare _template="LED" DirAngle="85" Size="0.035" Pos="(4.302; 3.9; 0.013)" />
+			<Flare _template="LED" DirAngle="85" Size="0.035" Pos="(4.302; 3.9; 0.048)" />
+			<Flare _template="LED" DirAngle="85" Size="0.035" Pos="(4.302; 3.9; 0.081)" />
+			<Flare _template="LED" DirAngle="85" Size="0.035" Pos="(4.302; 3.928; -0.02)" />
+			<Flare _template="LED" DirAngle="85" Size="0.035" Pos="(4.302; 3.957; 0.259)" />
+			<Flare _template="LED" DirAngle="85" Size="0.035" Pos="(4.302; 3.957; 0.292)" />
+			<Flare _template="LED" DirAngle="85" Size="0.035" Pos="(4.302; 3.957; 0.327)" />
+			<Flare _template="LED" DirAngle="85" Size="0.035" Pos="(4.302; 3.957; 0.36)" />
+			<Flare _template="LED" DirAngle="85" Size="0.035" Pos="(4.302; 3.957; 0.395)" />
+			<Flare _template="LED" DirAngle="85" Size="0.035" Pos="(4.302; 3.957; 0.428)" />
+			<Flare _template="LED" DirAngle="85" Size="0.035" Pos="(4.302; 3.928; 0.259)" />
+			<Flare _template="LED" DirAngle="85" Size="0.035" Pos="(4.302; 3.928; 0.292)" />
+			<Flare _template="LED" DirAngle="85" Size="0.035" Pos="(4.302; 3.928; 0.327)" />
+			<Flare _template="LED" DirAngle="85" Size="0.035" Pos="(4.302; 3.928; 0.36)" />
+			<Flare _template="LED" DirAngle="85" Size="0.035" Pos="(4.302; 3.928; 0.395)" />
+			<Flare _template="LED" DirAngle="85" Size="0.035" Pos="(4.302; 3.928; 0.428)" />
+			<Flare _template="LED" DirAngle="85" Size="0.035" Pos="(4.302; 3.9; 0.259)" />
+			<Flare _template="LED" DirAngle="85" Size="0.035" Pos="(4.302; 3.9; 0.292)" />
+			<Flare _template="LED" DirAngle="85" Size="0.035" Pos="(4.302; 3.9; 0.327)" />
+			<Flare _template="LED" DirAngle="85" Size="0.035" Pos="(4.302; 3.9; 0.36)" />
+			<Flare _template="LED" DirAngle="85" Size="0.035" Pos="(4.302; 3.9; 0.395)" />
+			<Flare _template="LED" DirAngle="85" Size="0.035" Pos="(4.302; 3.9; 0.428)" />
+		</MainHeadLight>
+	</ModelAttachments>
+	<MainHeadLight _template="Default" Color="g(255; 235; 215) x 0.1" />
+	<GameData
+		CameraPreset="roof"
+		Category="top"
+		Price="700"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_ROOFBAR_FOGLIGHTS_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_ROOFBAR_FOGLIGHTS_NAME"
+		/>
+		<InstallSocket Type="SleiterST833ChimeraSpotlight" />
+	</GameData>
+</TruckAddon>

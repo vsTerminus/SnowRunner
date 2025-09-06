@@ -1,0 +1,20 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/plad_440_tuning/plad_440_horn_1">
+	</PhysicsModel>
+	<GameData
+		CameraPreset="roof"
+		Category="miscellenious"
+		Price="500"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_HORNS_SINGLE_TWOSIDE_ROOF_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_HORNS_SINGLE_TWOSIDE_ROOF_NAME"
+		/>
+		<InstallSocket Type="Plad440Horn" />
+	</GameData>
+</TruckAddon>

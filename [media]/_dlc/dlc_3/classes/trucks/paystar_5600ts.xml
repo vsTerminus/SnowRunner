@@ -602,6 +602,15 @@
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.08; 0)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.08; 0)" />
 			</Socket>
+			
+			<Socket Names="SaddleMotorized" NamesBlock="FrameAddonKung, LogLift" Offset="(-3.200; -0.131; 0.000)" ParentFrame="BoneChassis_cdt" >
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.000; 0.000; 0.068)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.000; 0.000; -0.068)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(1.400; 0.000; 0.068)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(1.400; 0.000; -0.068)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(1.400; 0.000; 0.000)" />
+			</Socket>
+			
 		</AddonSockets>
 		<AddonSockets>
 			<Socket
@@ -623,7 +632,9 @@
 			/>
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-3.98; 1.44; 0)" />
+			<Socket Names="Semitrailer, SemitrailerOiltank, SemitrailerFoldableLog" Offset="(-3.98; 1.44; 0)" >
+				<AddonsShift Offset="(-0.57; 0.045; 0)" Types="SaddleMotorized" />
+			</Socket>
 			<Socket Names="Trailer, LogTrailer" Offset="(-5.935; 0.98; 0)" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="paystar_5600ts_bumper_default">

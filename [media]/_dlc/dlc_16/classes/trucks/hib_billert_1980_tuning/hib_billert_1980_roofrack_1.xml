@@ -1,0 +1,185 @@
+<_templates Include="trucks">
+	<Body>
+		<Limits Collisions="None">
+			<Constraint Type="Fixed">
+				<Motor Damping="250" Spring="0.75" Type="Spring" />
+			</Constraint>
+		</Limits>
+	</Body>
+</_templates>
+<TruckAddon>
+	<TruckData FuelCapacity="120" RepairsCapacity="350">
+		<LimitedFluid Center="(1.545, 2.955, -0.696)" SizeX="0.346" SizeY="0.426" SizeZ="0.168" Type="Box" ParentFrame="BoneFuel1_cdt" />
+		<LimitedFluid Center="(1.545, 2.955, 0.696)" SizeX="0.346" SizeY="0.426" SizeZ="0.168" Type="Box" ParentFrame="BoneFuel2_cdt" />
+		<LimitedFluid Center="(2.038, 2.918, -0.696)" SizeX="0.426" SizeY="0.346" SizeZ="0.168" Type="Box" ParentFrame="BoneFuel3_cdt" />
+		<LimitedFluid Center="(2.038, 2.918, 0.696)" SizeX="0.426" SizeY="0.346" SizeZ="0.168" Type="Box" ParentFrame="BoneFuel4_cdt" />
+		<LimitedFluid Center="(2.616, 2.815, 0.545)" SizeX="0.346" SizeY="0.168" SizeZ="0.426" Type="Box" ParentFrame="BoneFuel5_cdt" />
+		<LimitedFluid Center="(2.195, 2.815, 0.318)" SizeX="0.346" SizeY="0.168" SizeZ="0.426" Type="Box" ParentFrame="BoneFuel6_cdt" />
+	</TruckData>
+	<Rotator EngineTorqueFactor="0" Frame="BoneRotatorL" RotationAxis="(0; 1; 0)" RotationSpeed="4.0" />
+	<Rotator EngineTorqueFactor="0" Frame="BoneRotatorR" RotationAxis="(0; 1; 0)" RotationSpeed="4.1" />
+	<RepairsHide>
+		<Mesh Frame="repair1" HideThreshold="0.0" />
+		<Mesh Frame="repair2" HideThreshold="0.6" />
+	</RepairsHide>
+	<PhysicsModel Mesh="trucks/hib_billert_1980_tuning/hib_billert_1980_roofrack_1">
+		<Body Mass="200" ModelFrame="BoneCabin_cdt">
+			<Constraint Type="Rigid" />
+			<Body
+				CenterOfMassOffset="(0; 0; 0)"
+				Mass="10"
+				ModelFrame="BoneHookR_cdt"
+			>
+				<Constraint
+					AxisLocal="(0; 0; 1)"
+					PivotOffset="(0; 0; 0)"
+					Type="Hinge"
+					MinLimit="-6.0"
+					MaxLimit="26.0"
+				>
+					<Motor Damping="1" Spring="1" Type="Spring" />
+				</Constraint>
+			</Body>
+			<Body
+				CenterOfMassOffset="(0; 0; 0)"
+				Mass="10"
+				ModelFrame="BoneHookL_cdt"
+			>
+				<Constraint
+					AxisLocal="(0; 0; 1)"
+					PivotOffset="(0; 0; 0)"
+					Type="Hinge"
+					MinLimit="-26.0"
+					MaxLimit="6.0"
+				>
+					<Motor Damping="1" Spring="1" Type="Spring" />
+				</Constraint>
+			</Body>
+			<Body Collisions="None" Mass="50" ModelFrame="BoneRopes_cdt">
+				<Constraint
+					LinearLimitsX="(-0.020; 0.020)"
+					LinearLimitsY="(-0.010; 0.100)"
+					LinearLimitsZ="(-0.002; 0.002)"
+					Type="Fixed"
+				>
+					<Motor Damping="500" Spring="150" Type="Spring" />
+				</Constraint>
+			</Body>
+			<Body _template="Limits" Mass="40" ModelFrame="BoneRepair1_cdt">
+				<Constraint
+					LinearLimitsX="(-0.008; 0.010)"
+					LinearLimitsY="(-0.010; 0.010)"
+					LinearLimitsZ="(0.000; 0.007)"
+				/>
+			</Body>
+			<Body _template="Limits" Mass="30" ModelFrame="BoneRepair2_cdt">
+				<Constraint
+					LinearLimitsX="(-0.010; 0.002)"
+					LinearLimitsY="(-0.008; 0.010)"
+					LinearLimitsZ="(0.000; 0.009)"
+				/>
+			</Body>
+			<Body _template="Limits" Mass="20" ModelFrame="BoneFuel1_cdt">
+				<Constraint
+					LinearLimitsX="(0.000; 0.005)"
+					LinearLimitsY="(0.000; 0.005)"
+					LinearLimitsZ="(-0.002; 0.010)"
+				/>
+			</Body>
+			<Body _template="Limits" Mass="20" ModelFrame="BoneFuel2_cdt">
+				<Constraint
+					LinearLimitsX="(0.000; 0.005)"
+					LinearLimitsY="(0.000; 0.005)"
+					LinearLimitsZ="(-0.010; 0.002)"
+				/>
+			</Body>
+			<Body _template="Limits" Mass="20" ModelFrame="BoneFuel3_cdt">
+				<Constraint
+					LinearLimitsX="(-0.010; 0.010)"
+					LinearLimitsY="(0.000; 0.008)"
+					LinearLimitsZ="(-0.002; 0.010)"
+				/>
+			</Body>
+			<Body _template="Limits" Mass="20" ModelFrame="BoneFuel4_cdt">
+				<Constraint
+					LinearLimitsX="(-0.010; 0.010)"
+					LinearLimitsY="(0.000; 0.008)"
+					LinearLimitsZ="(-0.010; 0.002)"
+				/>
+			</Body>
+			<Body _template="Limits" Mass="20" ModelFrame="BoneFuel5_cdt">
+				<Constraint
+					LinearLimitsX="(-0.010; 0.010)"
+					LinearLimitsY="(0.000; 0.003)"
+					LinearLimitsZ="(-0.010; 0.010)"
+				/>
+			</Body>
+			<Body _template="Limits" Mass="20" ModelFrame="BoneFuel6_cdt">
+				<Constraint
+					LinearLimitsX="(-0.006; 0.010)"
+					LinearLimitsY="(0.000; 0.003)"
+					LinearLimitsZ="(-0.010; 0.010)"
+				/>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<MainHeadLight>
+			<Model _template="HeadLightRay" Color="g(255; 235; 215) x 0.1" Org="(3.09; 2.858; -0.482)" />
+			<Model _template="HeadLightRay" Color="g(255; 235; 215) x 0.1" Org="(3.09; 2.858; 0.482)" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="0.25" Dir="(1; 0; 0)" Size="0.060" Pos="(3.071; 2.907; -0.482)" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="0.25" Dir="(1; 0; 0)" Size="0.060" Pos="(3.071; 2.859; -0.482)" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="0.25" Dir="(1; 0; 0)" Size="0.060" Pos="(3.071; 2.811; -0.482)" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="0.25" Dir="(1; 0; 0)" Size="0.060" Pos="(3.071; 2.882; -0.441)" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="0.25" Dir="(1; 0; 0)" Size="0.060" Pos="(3.071; 2.836; -0.441)" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="0.25" Dir="(1; 0; 0)" Size="0.060" Pos="(3.071; 2.882; -0.524)" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="0.25" Dir="(1; 0; 0)" Size="0.060" Pos="(3.071; 2.836; -0.524)" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="0.25" Dir="(1; 0; 0)" Size="0.060" Pos="(3.071; 2.907; 0.482)" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="0.25" Dir="(1; 0; 0)" Size="0.060" Pos="(3.071; 2.859; 0.482)" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="0.25" Dir="(1; 0; 0)" Size="0.060" Pos="(3.071; 2.811; 0.482)" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="0.25" Dir="(1; 0; 0)" Size="0.060" Pos="(3.071; 2.882; 0.441)" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="0.25" Dir="(1; 0; 0)" Size="0.060" Pos="(3.071; 2.836; 0.441)" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="0.25" Dir="(1; 0; 0)" Size="0.060" Pos="(3.071; 2.882; 0.524)" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="0.25" Dir="(1; 0; 0)" Size="0.060" Pos="(3.071; 2.836; 0.524)" />
+		</MainHeadLight>
+		<Ignition _template="Flasher">
+			<Model Dir="(0; 0; 1)" Org="(2.998; 2.854; 0.755)" ParentFrame="BoneRotatorL" />
+			<Light Dir="(0; 0; 1)" Pos="(2.998; 2.854; 0.755)" ParentFrame="BoneRotatorL" />
+			<Flare Dir="(0; 0; 1)" Pos="(2.998; 2.854; 0.755)" ParentFrame="BoneRotatorL" />
+			<Flare Dir="(0; 0; 1)" Pos="(2.998; 2.854; 0.755)" ParentFrame="BoneRotatorL" />
+			<Flare Pos="(2.998; 2.854; 0.697)" ParentFrame="BoneChassis_cdt" />
+		</Ignition>
+		<Ignition _template="Flasher">
+			<Model Dir="(0; 0; -1)" Org="(2.998; 2.854; -0.755)" ParentFrame="BoneRotatorR" />
+			<Light Dir="(0; 0; -1)" Pos="(2.998; 2.854; -0.755)" ParentFrame="BoneRotatorR" />
+			<Flare Dir="(0; 0; -1)" Pos="(2.998; 2.854; -0.755)" ParentFrame="BoneRotatorR" />
+			<Flare Dir="(0; 0; -1)" Pos="(2.998; 2.854; -0.755)" ParentFrame="BoneRotatorR" />
+			<Flare Pos="(2.998; 2.854; -0.697)" ParentFrame="BoneChassis_cdt" />
+		</Ignition>
+	</ModelAttachments>
+	<MainHeadLight _template="Default" Color="g(255; 235; 215) x 0.1" />
+	<GameData
+		CameraPreset="addon_2"
+		Category="frame_addons"
+		IsCustomizable="true"
+		Price="3300"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_ROOFRACK_REGULAR_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_ROOFRACK_REGULAR_NAME"
+		/>
+		<InstallSocket Type="HIBBillert1980Roofrack" />
+	</GameData>
+	<FuelHide>
+		<Mesh Frame="fuel1" HideThreshold="0.0" />
+		<Mesh Frame="fuel2" HideThreshold="0.17" />
+		<Mesh Frame="fuel3" HideThreshold="0.33" />
+		<Mesh Frame="fuel4" HideThreshold="0.5" />
+		<Mesh Frame="fuel5" HideThreshold="0.67" />
+		<Mesh Frame="fuel6" HideThreshold="0.83" />
+	</FuelHide>
+</TruckAddon>

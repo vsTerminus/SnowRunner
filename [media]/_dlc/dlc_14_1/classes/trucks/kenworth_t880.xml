@@ -299,14 +299,14 @@
 		<Body
 			CenterOfMassOffset="(0; 0; 0)"
 			ImpactType="Truck"
-			Mass="3500"
+			Mass="5700"
 			ModelFrame="BoneChassis_cdt"
 			NetSync="pv"
 		>
 			<Body
 				CenterOfMassOffset="(0.25; -0.1; 0)"
 				ImpactType="Truck"
-				Mass="3000"
+				Mass="2000"
 				ModelFrame="BoneСabinTwist_cdt"
 				NetSync="pv"
 			>
@@ -343,7 +343,7 @@
 				<Body
 					CenterOfMassOffset="(0; -0.1; 0)"
 					ImpactType="Truck"
-					Mass="3000"
+					Mass="1800"
 					ModelFrame="BoneCabin_cdt"
 					NetSync="pv"
 				>

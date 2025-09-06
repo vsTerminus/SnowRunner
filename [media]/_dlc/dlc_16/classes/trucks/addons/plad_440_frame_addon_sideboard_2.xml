@@ -1,0 +1,32 @@
+<TruckAddon IsChassisFullOcclusion="true">
+	<PhysicsModel Mesh="trucks/addons/plad_440_frame_addon_sideboard_2">
+		<Body ImpactType="Truck" Mass="600" ModelFrame="BoneChassis_cdt">
+			<Constraint Type="Rigid" />
+			<Body Collisions="None" Mass="5" ModelFrame="BoneCabinTwist_cdt">
+				<Constraint ExplicitParentFrame="0" Type="Fixed" />
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="addon_1"
+		Category="frame_addons"
+		IsCustomizable="true"
+		Price="5100"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_FRAME_ADDON_PLAD_440_SIDEBOARD_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_FRAME_ADDON_PLAD_440_SIDEBOARD_NAME"
+		/>
+		<InstallSocket Type="Plad440Sideboard2" />
+		<AddonSlots
+			InitialOffset="(-1.23; 1.374; 0)"
+			OffsetStep="(-2.488; 0; 0)"
+			ParentFrames="BoneChassis_cdt, BoneChassis_cdt"
+			Quantity="2"
+		/>
+	</GameData>
+</TruckAddon>

@@ -1,0 +1,42 @@
+<ModelBrand
+	DayShadowOffsetMult="2.0"
+	AcceptZoneBorderDecals="true"
+	DynamicModel="true"
+	NightLightingShadowsAllowCap="true"
+	ClipCameraBridge="true"
+>
+	<Subset IsDefault="true" Name="stage_00"> <!-- stage empty -->
+		<Mesh Name="state_00" />
+		<CdtMesh Name="cdt_state_00" />
+		<Mesh Name="state_00_lod1" />
+		<Mesh Name="state_00_lod2" />
+	</Subset>
+
+	<Subset Name="stage_01"> <!-- stage_build -->
+		<Mesh Name="state_01" />
+		<CdtMesh Name="cdt_state_01" />
+		<Mesh Name="state_01_lod1" />
+		<Mesh Name="state_01_lod2" />
+        <OnSubsetActivateEvent>
+            <Sound Name="actors/actor_construction/actor_deconstruct_wood" Range="200" Volume="1"/>
+            <SFX Name="constr_wood_01" Dir="(0; 1; 0)" Pos="(-0.107; 0.562; -0.11)"/>
+        </OnSubsetActivateEvent>
+	</Subset>
+	<Subset Name="stage_02"> <!-- stage_complete -->
+		<Mesh Name="state_02" />
+		<CdtMesh Name="cdt_state_02" />
+		<Mesh Name="state_02_lod1" />
+		<Mesh Name="state_02_lod2" />
+        <OnSubsetActivateEvent>
+            <Sound Name="actors/actor_construction/actor_deconstruct_wood" Range="200" Volume="1"/>
+            <SFX Name="constr_wood_01" Dir="(0; 1; 0)" Pos="(-0.107; 0.562; -0.11)"/>
+        </OnSubsetActivateEvent>
+	</Subset>
+	<PhysicsModel>
+		<Body Collisions="Dynamic" ModelFrame="state_00">
+				<Body Collisions="Dynamic" ModelFrame="state_01"/>
+				<Body Collisions="Dynamic" ModelFrame="state_02"/>
+			</Body>
+	</PhysicsModel>
+	<Landmark Mesh="landmarks/procamp_01_us16_objective_lmk" />
+</ModelBrand>

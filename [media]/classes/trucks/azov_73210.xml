@@ -379,6 +379,7 @@
 	<HeadLight _template="Default" Pos="(5.239; 1.202; 0)" ParentFrame="BoneCabin_cdt" />
 	<GameData
 		Country="RU,CAS"
+		ExcludeAddons="semitrailer_log_double_ls"
 		Price="66000"
 		UnlockByExploration="false"
 		UnlockByRank="20"
@@ -424,7 +425,9 @@
 		<CraneSocket Pos="(-5.593; 1.083; 0)" />
 		<AddonSockets>
 			<Socket Names="Trailer, LogTrailer" Offset="(-5.593; 1.083; 0)" />
-			<Socket Names="Semitrailer, SemitrailerOiltank" NamesBlock="SaddleHigh" Offset="(-3.244; 1.562; 0)" />
+			<Socket Names="Semitrailer, SemitrailerOiltank, SemitrailerFoldableLog" NamesBlock="SaddleHigh" Offset="(-3.244; 1.562; 0)" >
+				<AddonsShift Offset="(-0.704; 0.05; 0)" Types="SaddleMotorized" />
+			</Socket>
 			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" NamesBlock="SaddleLow" Offset="(-3.244; 1.755; 0)" />
 		</AddonSockets>
 		<AddonSockets>
@@ -471,6 +474,15 @@
 			</Socket>
 			<!-- <Socket Names="LogLift" Offset="(0.287; 1.271; 0)" /> -->
 			<Socket Names="FrameAddonMaintainerBig" NamesBlock="Azov73210RearFender, Azov73210SpareWheel, Trailer, LogTrailer" Offset="(1; 1.269; 0)" />
+			
+			<Socket Names="SaddleMotorized" NamesBlock="LogLift, MinicraneRU" Offset="(-2.600; 0.001; 0.000)" ParentFrame="BoneChassis_cdt" >
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.000; 0.000; 0.020)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.000; 0.000; -0.020)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(1.100; 0.000; 0.020)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(1.100; 0.000; -0.020)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(1.100; 0.000; 0.000)" />
+			</Socket>
+			
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="MinicraneRU" NamesBlock="BunkLog, FrameAddonTank, FrameAddonKung, BigCraneUs, BigCrane, BigCraneRu, FrameAddonMaintainerBig" Offset="(-0.3; 1.27; 0)">

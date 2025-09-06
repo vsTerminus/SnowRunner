@@ -1,0 +1,10 @@
+<GrassBrand
+	IgnoreNoGrass="true"
+	IsAboveSnow="true"
+	ParticlesType="fragments_leaves_road_autumn"
+	PlantingGroup="Grass"
+	PlantingMinSpacing="0.5"
+	FadeDistances="10, 20, 30"
+	FadeInterval="10"
+	DissolveInterval="1"
+/>

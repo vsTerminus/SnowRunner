@@ -364,7 +364,7 @@
 			</Socket>
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="HeavyRepairSmall" NamesBlock="LogLift, MetalDetector, PacificP12wSpareWheel, PacificP12WCabinProtector" Offset="(-2.95; 2; 0)">
+			<Socket Names="HeavyRepairSmall" NamesBlock="LogLift, MetalDetector, PacificP12wSpareWheel, PacificP12WCabinProtector" Offset="(-3.45; 2; 0)">
 				<AddonsShift Offset="(-0.15; 0; 0)" Types="PacificP12wExhaust" />
 			</Socket>
 			<Socket Names="BunkLog" Offset="(-8.094; 1.825; 0)" />

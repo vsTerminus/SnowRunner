@@ -1,0 +1,118 @@
+<_templates Include="trucks">
+	<Body>
+		<Limits Collisions="None">
+			<Constraint Type="Fixed">
+				<Motor Damping="250" Spring="0.75" Type="Spring" />
+			</Constraint>
+		</Limits>
+	</Body>
+</_templates>
+<TruckAddon>
+	<TruckData FuelCapacity="120">
+		<LimitedFluid Center="(3.527, 3.927, -0.819)" SizeX="0.293" SizeY="0.153" SizeZ="0.362" Type="Box" ParentFrame="BoneFuel1_cdt" />
+		<LimitedFluid Center="(3.527, 3.927, 0.819)" SizeX="0.293" SizeY="0.153" SizeZ="0.362" Type="Box" ParentFrame="BoneFuel2_cdt" />
+		<LimitedFluid Center="(3.143, 3.927, -0.816)" SizeX="0.293" SizeY="0.153" SizeZ="0.362" Type="Box" ParentFrame="BoneFuel3_cdt" />
+		<LimitedFluid Center="(3.143, 3.927, 0.816)" SizeX="0.293" SizeY="0.153" SizeZ="0.362" Type="Box" ParentFrame="BoneFuel4_cdt" />
+		<LimitedFluid Center="(2.766, 3.927, -0.896)" SizeX="0.293" SizeY="0.153" SizeZ="0.362" Type="Box" ParentFrame="BoneFuel5_cdt" />
+		<LimitedFluid Center="(2.766, 3.927, 0.896)" SizeX="0.293" SizeY="0.153" SizeZ="0.362" Type="Box" ParentFrame="BoneFuel6_cdt" />
+	</TruckData>
+	<PhysicsModel Mesh="trucks/sleiter_st833_chimera_tuning/sleiter_st833_chimera_roofrack_1">
+		<Body
+			Collisions="Default"
+			ImpactType="Truck"
+			Mass="200"
+			ModelFrame="BoneRoot_cdt"
+		>
+			<Constraint Type="Rigid" />
+			<Body _template="Limits" Mass="20" ModelFrame="BoneFuel1_cdt">
+				<Constraint
+					LinearLimitsX="(-0.007; 0.007)"
+					LinearLimitsY="(0.000; 0.005)"
+					LinearLimitsZ="(-0.001; 0.001)"
+				/>
+			</Body>
+			<Body _template="Limits" Mass="20" ModelFrame="BoneFuel2_cdt">
+				<Constraint
+					LinearLimitsX="(-0.007; 0.007)"
+					LinearLimitsY="(0.000; 0.005)"
+					LinearLimitsZ="(-0.001; 0.001)"
+				/>
+			</Body>
+			<Body _template="Limits" Mass="20" ModelFrame="BoneFuel3_cdt">
+				<Constraint
+					LinearLimitsX="(-0.007; 0.007)"
+					LinearLimitsY="(0.000; 0.005)"
+					LinearLimitsZ="(-0.001; 0.001)"
+				/>
+			</Body>
+			<Body _template="Limits" Mass="20" ModelFrame="BoneFuel4_cdt">
+				<Constraint
+					LinearLimitsX="(-0.007; 0.007)"
+					LinearLimitsY="(0.000; 0.005)"
+					LinearLimitsZ="(-0.001; 0.001)"
+				/>
+			</Body>
+			<Body _template="Limits" Mass="20" ModelFrame="BoneFuel5_cdt">
+				<Constraint
+					LinearLimitsX="(-0.003; 0.009)"
+					LinearLimitsY="(0.000; 0.005)"
+					LinearLimitsZ="(-0.001; 0.001)"
+				/>
+			</Body>
+			<Body _template="Limits" Mass="20" ModelFrame="BoneFuel6_cdt">
+				<Constraint
+					LinearLimitsX="(-0.003; 0.009)"
+					LinearLimitsY="(0.000; 0.005)"
+					LinearLimitsZ="(-0.001; 0.001)"
+				/>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<MainHeadLight>
+			<Model _template="HeadLightRay" Color="g(255; 235; 215) x 0.1" Org="(4.048; 3.941; -1.045)" />
+			<Model _template="HeadLightRay" Color="g(255; 235; 215) x 0.1" Org="(4.048; 3.941; 1.045)" />
+			<!-- FIRST LAMP -->
+			<Flare _template="LED" DirAngle="85" Size="0.05" Pos="(4.03; 3.989; -1.045)" />
+			<Flare _template="LED" DirAngle="85" Size="0.05" Pos="(4.03; 3.965; -1.086)" />
+			<Flare _template="LED" DirAngle="85" Size="0.05" Pos="(4.03; 3.965; -1.003)" />
+			<Flare _template="LED" DirAngle="85" Size="0.05" Pos="(4.03; 3.941; -1.045)" />
+			<Flare _template="LED" DirAngle="85" Size="0.05" Pos="(4.03; 3.916; -1.087)" />
+			<Flare _template="LED" DirAngle="85" Size="0.05" Pos="(4.03; 3.917; -1.003)" />
+			<Flare _template="LED" DirAngle="85" Size="0.05" Pos="(4.03; 3.893; -1.045)" />
+			<!-- FIRST LAMP -->
+			<Flare _template="LED" DirAngle="85" Size="0.05" Pos="(4.03; 3.989; 1.045)" />
+			<Flare _template="LED" DirAngle="85" Size="0.05" Pos="(4.03; 3.965; 1.086)" />
+			<Flare _template="LED" DirAngle="85" Size="0.05" Pos="(4.03; 3.965; 1.003)" />
+			<Flare _template="LED" DirAngle="85" Size="0.05" Pos="(4.03; 3.941; 1.045)" />
+			<Flare _template="LED" DirAngle="85" Size="0.05" Pos="(4.03; 3.916; 1.087)" />
+			<Flare _template="LED" DirAngle="85" Size="0.05" Pos="(4.03; 3.917; 1.003)" />
+			<Flare _template="LED" DirAngle="85" Size="0.05" Pos="(4.03; 3.893; 1.045)" />
+		</MainHeadLight>
+	</ModelAttachments>
+	<MainHeadLight _template="Default" Color="g(255; 235; 215) x 0.1" />
+	<GameData
+		CameraPreset="roof"
+		Category="frame_addons"
+		IsCustomizable="true"
+		Price="1800"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_ROOFRACK_REGULAR_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_ROOFRACK_REGULAR_NAME"
+		/>
+		<InstallSocket Type="SleiterST833ChimeraRoofrack" />
+	</GameData>
+	<FuelHide>
+		<Mesh Frame="fuel1_roofrack_1" HideThreshold="0.83" />
+		<Mesh Frame="fuel2_roofrack_1" HideThreshold="0.67" />
+		<Mesh Frame="fuel3_roofrack_1" HideThreshold="0.5" />
+		<Mesh Frame="fuel4_roofrack_1" HideThreshold="0.33" />
+		<Mesh Frame="fuel5_roofrack_1" HideThreshold="0.17" />
+		<Mesh Frame="fuel6_roofrack_1" HideThreshold="0.0" />
+	</FuelHide>
+</TruckAddon>

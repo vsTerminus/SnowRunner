@@ -1,0 +1,92 @@
+<_templates Include="trucks">
+	<Body>
+		<Step Mass="50">
+			<Constraint
+				Cone="5"
+				PivotOffset="(0; 0; 0)"
+				PlaneAxisLocal="(0; 1; 0)"
+				TwistAxisLocal="(1; 0; 0)"
+				Type="Ragdoll"
+				PlaneMin="-30"
+				TwistMin="-25"
+				PlaneMax="30"
+				TwistMax="25"
+			>
+				<TwistMotor Damping="1" Spring="0.5" Type="Spring" />
+				<PlaneMotor Damping="1" Spring="0.5" Type="Spring" />
+				<ConeMotor Damping="1" Spring="0.5" Type="Spring" />
+			</Constraint>
+		</Step>
+	</Body>
+</_templates>
+<TruckAddon>
+	<TruckData>
+		<Damage>
+			<Multiplier Multiplier="0.9" Type="Engine" />
+		</Damage>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/sleiter_st833_chimera_tuning/sleiter_st833_chimera_bumper_default">
+		<Body Collisions="None" Mass="50" ModelFrame="BoneRoot_cdt">
+			<Constraint Type="Rigid" />
+			<Body
+				CenterOfMassOffset="(0; 0; 0)"
+				Collisions="Default"
+				ImpactType="Truck"
+				Mass="150"
+				ModelFrame="BoneCabinTwist_cdt"
+			>
+				<Constraint ExplicitParentFrame="0" Type="Fixed" />
+			</Body>
+			<Body _template="Step" ModelFrame="BoneStepL_cdt" />
+			<Body _template="Step" ModelFrame="BoneStepR_cdt" />
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<Ignition>
+			<Light
+				_template="IgnitionSignalWhite"
+				Dir="(1; -0.3; 0)"
+				Pos="(4.595; 1.284; 0)"
+				ParentFrame="BoneRoot_cdt"
+			/>
+			<Flare _template="IgnitionSignalWhite" Color="g(165; 155; 155) x 1" Dir="(1; 0; 0)" Size="0.12" Pos="(4.685; 1.515; -1.170)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="IgnitionSignalWhite" Color="g(165; 155; 155) x 1" Dir="(1; 0; 0)" Size="0.12" Pos="(4.685; 1.515; -1.069)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="IgnitionSignalWhite" Color="g(165; 155; 155) x 1" Dir="(1; 0; 0)" Size="0.12" Pos="(4.685; 1.515; 1.170)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="IgnitionSignalWhite" Color="g(165; 155; 155) x 1" Dir="(1; 0; 0)" Size="0.12" Pos="(4.685; 1.515; 1.069)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="IgnitionSignalOrange" Dir="(0; 0; -1)" Size="0.12" Pos="(4.476; 1.797; -1.479)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="IgnitionSignalOrange" Dir="(0; 0; 1)" Size="0.12" Pos="(4.476; 1.797; 1.479)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="IgnitionSignalWhiteWarm" Dir="(1; 0; 0)" Size="0.15" Pos="(4.595; 1.284; -1.005)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="IgnitionSignalWhiteWarm" Dir="(1; 0; 0)" Size="0.15" Pos="(4.595; 1.284; 1.005)" ParentFrame="BoneRoot_cdt" />
+		</Ignition>
+		<HeadLight>
+			<Model _template="HeadLightRay" Dir="(1; -0.1; 0)" Org="(4.595; 1.284; -1.005)" />
+			<Model _template="HeadLightRay" Dir="(1; -0.1; 0)" Org="(4.595; 1.284; 1.005)" />
+			<Flare _template="IgnitionSignalWhiteWarm" Dir="(1; 0; 0)" Size="0.25" Pos="(4.595; 1.284; -1.005)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="IgnitionSignalWhiteWarm" Dir="(1; 0; 0)" Size="0.25" Pos="(4.595; 1.284; 1.005)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="BlueStreak" AspectRatio="2.0" Dir="(1; 0; 0)" Size="0.4" Pos="(4.595; 1.284; -1.005)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="BlueStreak" AspectRatio="2.0" Dir="(1; 0; 0)" Size="0.4" Pos="(4.595; 1.284; 1.005)" ParentFrame="BoneRoot_cdt" />
+		</HeadLight>
+	</ModelAttachments>
+	<HeadLight _template="Default" Pos="(4.542; 2.006; 0)" />
+	<GameData
+		CameraPreset="default"
+		Category="bumper"
+		Price="1000"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<WinchSocket FixedToTruck="true" Pos="(4.720; 1.571; 0)" />
+		<WinchSocket FixedToTruck="true" Pos="(4.787; 1.76; 0.587)" />
+		<WinchSocket FixedToTruck="true" Pos="(4.787; 1.76; -0.587)" />
+		<UiDesc
+			UiDesc="UI_TUNING_BUMPER_STOCK_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_BUMPER_STOCK_NAME"
+		/>
+		<InstallSocket Type="SleiterST833ChimeraBumper" />
+		<CraneSocket FixedToTruck="true" Pos="(4.720; 1.571; 0)" />
+		<CraneSocket FixedToTruck="true" Pos="(4.787; 1.76; 0.587)" />
+		<CraneSocket FixedToTruck="true" Pos="(4.787; 1.76; -0.587)" />
+	</GameData>
+</TruckAddon>

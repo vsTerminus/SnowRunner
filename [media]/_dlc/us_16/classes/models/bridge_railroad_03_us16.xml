@@ -1,0 +1,11 @@
+<ModelBrand 
+	NightLightingShadowsAllowCap="true"
+	ClipCameraBridge="true"
+	Instanced="false"
+	InstancedAsModel="false"
+>
+	<PhysicsModel>
+		<Body Collisions="Dynamic" />
+	</PhysicsModel>
+	<Landmark Mesh="landmarks/bridge_railroad_03_us16_lmk" />
+</ModelBrand>

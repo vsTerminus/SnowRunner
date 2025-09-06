@@ -384,7 +384,9 @@
 		<CraneSocket Pos="(0.012; 1.185; -0.425)" />
 		<AddonSockets>
 			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-2.878; 1.81; 0)" />
-			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-2.878; 1.642; 0)" />
+			<Socket Names="Semitrailer, SemitrailerOiltank, SemitrailerFoldableLog" Offset="(-2.878; 1.642; 0)" >
+				<AddonsShift Offset="(-0.17; 0.03; 0)" Types="SaddleMotorized" />
+			</Socket>
 			<Socket Names="Trailer, LogTrailer" Offset="(-4.813; 1.189; 0)">
 				<AddonsShift Offset="(0; 0; 0)" TrailerNamesBlock="Trailer, LogTrailer" Types="FrameAddonLogMedium, Pacific512CabinProtector" />
 			</Socket>
@@ -422,12 +424,22 @@
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.015)" />
 			</Socket>
 			<Socket Names="FrameAddonTowPlatform" NamesBlock="Pacific512CabinProtector, LogLift, MetalDetector, MinicraneUS, Pacific512SpareWheel, Trailer, LogTrailer" Offset="(-0.82; 1.324; 0)" />
+			<Socket Names="HeavyRepairSmall" NamesBlock="Pacific512SpareWheel, LogLift, MetalDetector, MinicraneUS" Offset="(-2.13; 1.51; 0)" />
 			<Socket Names="FrameAddon" NamesBlock="Pacific512SpareWheel" Offset="(-1.87; 1.324; 0)">
 				<AddonsShift Offset="(-0.48; 0; 0)" Types="MinicraneUS" />
 			</Socket>
 			<Socket Names="FrameAddonTank" NamesBlock="Pacific512SpareWheel, Pacific512CabinProtector" Offset="(-2.38; 1.324; 0)" />
 			<Socket Names="FrameAddonMaintainer" NamesBlock="Trailer, LogTrailer, MinicraneUS, MetalDetector, Pacific512SpareWheel, Pacific512CabinProtector" Offset="(-2; 0.298; 0)" />
 			<Socket Names="FrameAddonSeismicVibrator" NamesBlock="Trailer, LogTrailer, MinicraneUS, MetalDetector" Offset="(0.174; 1.324; 0)" />
+			
+			<Socket Names="SaddleMotorized" NamesBlock="MinicraneUS, MetalDetector, LogLift, Pacific512SpareWheel, Pacific512CabinProtector" Offset="(-1.700; 0.058; 0.000)" ParentFrame="BoneChassis_cdt" >
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.000; 0.000; 0.074)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.000; 0.000; -0.074)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(1.400; 0.000; 0.074)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(1.400; 0.000; -0.074)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(1.400; 0.000; 0.000)" />
+			</Socket>
+			
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="MinicraneUS" NamesBlock="BigCraneUs, LogLift, FrameAddonTank, Pacific512SpareWheel, Pacific512CabinProtector" Offset="(0.657; 1.327; 0)" ParentFrame="BoneCabin_cdt" />

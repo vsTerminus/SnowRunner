@@ -1,0 +1,13 @@
+<ModelBrand
+	Instanced="true"
+	InstancedAsModel="true"
+	NightLightingShadowsAllowCap="true"
+	ClipCamera="false"
+>
+	<PhysicsModel>
+		<Body
+			Collisions="Dynamic"
+		/>
+	</PhysicsModel>
+	<Landmark Mesh="landmarks/drawbridge_02_us16_lmk" />
+</ModelBrand>

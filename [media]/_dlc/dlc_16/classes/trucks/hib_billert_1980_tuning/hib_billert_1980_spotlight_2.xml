@@ -1,0 +1,42 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/hib_billert_1980_tuning/hib_billert_1980_spotlight_2">
+		<Body ImpactType="Truck" Mass="10">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<MainHeadLight>
+			<Model _template="HeadLightRay" Color="g(255; 235; 215) x 0.1" Org="(3.126; 2.736; -0.399)" />
+			<Model _template="HeadLightRay" Color="g(255; 235; 215) x 0.1" Org="(3.126; 2.736; 0.399)" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="0.25" Dir="(1; 0; 0)" Size="0.065" Pos="(3.108; 2.759; 0.446)" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="0.25" Dir="(1; 0; 0)" Size="0.065" Pos="(3.108; 2.759; 0.351)" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="0.25" Dir="(1; 0; 0)" Size="0.065" Pos="(3.108; 2.759; 0.399)" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="0.25" Dir="(1; 0; 0)" Size="0.065" Pos="(3.108; 2.715; 0.446)" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="0.25" Dir="(1; 0; 0)" Size="0.065" Pos="(3.108; 2.715; 0.351)" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="0.25" Dir="(1; 0; 0)" Size="0.065" Pos="(3.108; 2.715; 0.399)" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="0.25" Dir="(1; 0; 0)" Size="0.065" Pos="(3.108; 2.759; -0.446)" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="0.25" Dir="(1; 0; 0)" Size="0.065" Pos="(3.108; 2.759; -0.351)" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="0.25" Dir="(1; 0; 0)" Size="0.065" Pos="(3.108; 2.759; -0.399)" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="0.25" Dir="(1; 0; 0)" Size="0.065" Pos="(3.108; 2.715; -0.446)" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="0.25" Dir="(1; 0; 0)" Size="0.065" Pos="(3.108; 2.715; -0.351)" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="0.25" Dir="(1; 0; 0)" Size="0.065" Pos="(3.108; 2.715; -0.399)" />
+		</MainHeadLight>
+	</ModelAttachments>
+	<MainHeadLight _template="Default" Color="g(255; 235; 215) x 0.1" />
+	<GameData
+		CameraPreset="roof"
+		Category="top"
+		Price="800"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_ROOFBAR_FOGLIGHTS_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_ROOFBAR_FOGLIGHTS_NAME"
+		/>
+		<InstallSocket Type="HIBBillert1980Spotlight" />
+	</GameData>
+</TruckAddon>

@@ -1,0 +1,34 @@
+<_templates Include="trucks">
+	<TruckTire>
+		<Mudtires _template="Medium">
+			<WheelTracks _template="Offroad" />
+			<WheelSoftness _template="Average" />
+		</Mudtires>
+	</TruckTire>
+</_templates>
+<TruckWheels DamageCapacity="100" Radius="1" Width="0.657">
+	<TruckTires>
+		<TruckTire _template="Mudtires" Mesh="wheels/tire_hib_billert_1980" Name="tire_billert_1">
+			<WheelFriction
+				_template="Offroad"
+				BodyFriction="2.7"
+				BodyFrictionAsphalt="1.2"
+				SubstanceFriction="1.6"
+			/>
+			<GameData
+				Price="5700"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_OFFROAD_DESC" UiName="UI_TIRE_HEAVY_MUDTIRES_SINGLE_HIB_BILLERT_1980_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>
+		<TruckRim Mesh="wheels/rim_hib_billert_1980" Name="rim_1">
+			<GameData>
+				<UiDesc UiDesc="UI_RIM_HEAVY_MUDTIRES_SINGLE_1_DESC" UiName="UI_RIM_HEAVY_MUDTIRES_SINGLE_HIB_BILLERT_1980_NAME" />
+			</GameData>
+		</TruckRim>
+	</TruckRims>
+</TruckWheels>

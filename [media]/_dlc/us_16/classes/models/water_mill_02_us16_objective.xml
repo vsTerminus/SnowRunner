@@ -1,0 +1,25 @@
+<ModelBrand
+	NightLightingShadowsAllowCap="true"
+
+>
+	<PhysicsModel>
+		<Body Collisions="Dynamic" />
+	</PhysicsModel>
+
+	<Subset IsDefault="true" Name="state_start">
+		<Mesh Name="water_mill_02_us16_objective" />
+		<CdtMesh Name="cdt_water_mill_02_us16_objective" />
+    	</Subset>
+	<Subset Name="state_end">
+      	 	<Mesh Name="water_mill_02_us16_objective" />
+		<CdtMesh Name="cdt_water_mill_02_us16_objective" />
+		<AnimTrackSubset Name="anim_loop" />
+		<OnSubsetActivateEvent>
+			<Sound Name="actors/actor_water_stream_medium_rnd_set/actor_water_stream_medium_loop" FadeInTime="1.0" FadeOutTime="1.0" RangeMin="25" RangeMax="120" IsLoop="true"/>
+			<SFX Name="fog_water_mini" Dir="(0; 1; 0)" Pos="(0; -2.05; -1.93)"/>
+			<SFX Name="fog_water_mini" Dir="(0; 1; 0)" Pos="(0; -2.05; 1.93)"/>
+		</OnSubsetActivateEvent>
+	</Subset>
+	<Landmark Mesh="landmarks/water_mill_02_us16_objective_lmk" />
+</ModelBrand>
+

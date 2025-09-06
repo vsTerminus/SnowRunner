@@ -1,0 +1,74 @@
+<ModelBrand
+	NightLightingShadowsAllowCap="true"
+	DynamicModel="true"
+	DayShadowOffsetMult="13"
+>
+
+	<!-- stage_1 -->
+	<Subset Name="state_start">
+		<Mesh Name="state_start_01" />
+		<Mesh Name="state_start_01_lod1" />
+		<Mesh Name="state_start_01_lod2" />
+		<Mesh Name="state_start_02" />
+		<Mesh Name="state_start_02_lod1" />
+		<Mesh Name="state_start_03" />
+		<Mesh Name="state_start_03_lod1" />
+		<Mesh Name="state_start_03_lod2" />
+		<Mesh Name="static_01" />
+		<Mesh Name="static_01_lod1" />
+		<Mesh Name="static_01_lod2" />
+
+		<CdtMesh Name="cdt_start" />
+	</Subset>
+
+	<!-- stage_2 -->
+	<Subset IsDefault="true" Name="state_end">
+		<Mesh Name="state_end_01" />
+		<Mesh Name="state_end_01_lod1" />
+		<Mesh Name="state_end_01_lod2" />
+		<Mesh Name="state_end_01_lod3" />
+		<Mesh Name="state_end_02" />
+		<Mesh Name="state_end_02_lod1" />
+		<Mesh Name="state_end_02_lod2" />
+		<Mesh Name="static_01" />
+		<Mesh Name="static_01_lod1" />
+		<Mesh Name="static_01_lod2" />
+		<CdtMesh Name="cdt_end" />
+		<AnimSubset Name="build_animation_1"/>
+		<AnimTrack Name="anim_track_01" />
+	</Subset>
+
+	<AnimSubset Name="build_animation_1"> <!-- animation -->
+		<Mesh Name="anim_mesh_01" />
+		<Mesh Name="anim_mesh_02" />
+		<Mesh Name="anim_mesh_03" />
+		<Mesh Name="anim_mesh_04" />
+		<Mesh Name="anim_mesh_05" />
+		<Mesh Name="anim_mesh_06" />
+		<Mesh Name="state_start_01" />
+		<Mesh Name="state_start_01_lod1" />
+		<Mesh Name="state_start_01_lod2" />
+		<Mesh Name="state_start_02" />
+		<Mesh Name="state_start_02_lod1" />
+		<Mesh Name="static_01" />
+		<Mesh Name="static_01_lod1" />
+		<Mesh Name="static_01_lod2" />
+		<CdtMesh Name="cdt_start" />
+	</AnimSubset>
+
+<TrackEvents TrackName="anim_track_01">
+    <AnimEvent Key="20">
+			<Sound Name="actors/actor_construction/actor_construct_overpass_01_stage1" Range="240" Volume="1" />
+	</AnimEvent>
+</TrackEvents>
+
+
+	<PhysicsModel>
+			<Body Collisions="Dynamic" ModelFrame="state_start_01">
+				<Body Collisions="Dynamic" ModelFrame="state_end_01"/>
+			</Body>
+	</PhysicsModel>
+
+	<Landmark Mesh="landmarks/big_damb_building_02_us16_objective_lmk" />
+
+</ModelBrand>

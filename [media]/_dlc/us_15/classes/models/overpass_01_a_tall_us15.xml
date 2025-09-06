@@ -1,0 +1,10 @@
+<ModelBrand
+	NightLightingShadowsAllowCap="true"
+	ClipCameraBridge="true"
+	DayShadowOffsetMult="3.0"
+>
+	<PhysicsModel>
+		<Body Collisions="Dynamic" />
+	</PhysicsModel>
+	<Landmark Mesh="landmarks/overpass_01_a_tall_us15_lmk"/>
+</ModelBrand>

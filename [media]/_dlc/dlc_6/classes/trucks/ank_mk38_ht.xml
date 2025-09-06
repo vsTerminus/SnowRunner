@@ -340,7 +340,9 @@
 		<CraneSocket Pos="(-0.721; 1.09; 0.429)" />
 		<AddonSockets>
 			<Socket Names="Trailer, LogTrailer" Offset="(-5.209; 0.919; 0)" />
-			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-3.25; 1.61; 0)" />
+			<Socket Names="Semitrailer, SemitrailerOiltank, SemitrailerFoldableLog" Offset="(-3.25; 1.61; 0)" >
+				<AddonsShift Offset="(-0.6; 0.00; 0)" Types="SaddleMotorized" />
+			</Socket>
 			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-2.65; 1.77; 0)" />
 		</AddonSockets>
 		<AddonSockets>
@@ -357,6 +359,15 @@
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.078)" />
 			</Socket>
 			<Socket Names="FrameAddonTank" Offset="(-3.18; 1.24; 0)" />
+			
+			<Socket Names="SaddleMotorized" Offset="(-2.500; -0.025; 0.000)" ParentFrame="BoneChassis_cdt" >
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.000; 0.000; 0.080)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.000; 0.000; -0.080)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(1.400; 0.000; 0.080)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(1.400; 0.000; -0.080)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(1.400; 0.000; 0.000)" />
+			</Socket>
+			
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="AnkMk38WheelAddon" Offset="(0; 0; 0)" />

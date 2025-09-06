@@ -1422,4 +1422,51 @@
 	<Truck _template="GlassStickerTopCut" Name="sticker_glass_top_freightliner_fld120" />
 	<Truck _template="GlassStickerBottomCut" Name="sticker_glass_bottom_freightliner_fld120" />
 	<!--<- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -/>-->
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_01_hib_billert_1980" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_02_hib_billert_1980" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_03_hib_billert_1980" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_04_hib_billert_1980" />
+	<Truck _template="InsideSticker1x2" Name="sticker_inside_1x2_01_hib_billert_1980" />
+	<Truck _template="InsideSticker1x2" Name="sticker_inside_1x2_02_hib_billert_1980" />
+	<Truck _template="InsideSticker1x4" Name="sticker_inside_1x4_01_hib_billert_1980" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_door_l_1x1_hib_billert_1980" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_door_r_1x1_hib_billert_1980" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_roof_1x1_hib_billert_1980" />
+	<Truck _template="GlassStickerTop2x16" Name="sticker_glass_top_hib_billert_1980" />
+	<Truck _template="GlassStickerBottom2x16" Name="sticker_glass_bottom_hib_billert_1980" />
+	<Truck _template="Curtain" Name="stuff_curtain_hib_billert_1980" />
+	<!--<- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -/>-->
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_01_plad_440" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_02_plad_440" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_03_plad_440" />
+	<Truck _template="InsideSticker1x2" Name="sticker_inside_1x2_01_plad_440" />
+	<Truck _template="InsideSticker1x2" Name="sticker_inside_1x2_02_plad_440" />
+	<Truck _template="InsideSticker1x4" Name="sticker_inside_1x4_01_plad_440" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_capote_1x1_plad_440" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_door_l_1x1_plad_440" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_door_r_1x1_plad_440" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_side1_l_1x1_plad_440" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_side1_r_1x1_plad_440" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_side2_l_1x1_plad_440" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_side2_r_1x1_plad_440" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_roof_1x1_plad_440" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_back_1x1_plad_440" />
+	<Truck _template="GlassStickerTopCut" Name="sticker_glass_top_plad_440" />
+	<Truck _template="GlassStickerBottomCut" Name="sticker_glass_bottom_plad_440" />
+	<Truck _template="Curtain" Name="stuff_curtain_plad_440" />
+	<!--<- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -/>-->
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_01_sleiter_st833" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_02_sleiter_st833" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_03_sleiter_st833" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_04_sleiter_st833" />
+	<Truck _template="InsideSticker1x2" Name="sticker_inside_1x2_01_sleiter_st833" />
+	<Truck _template="InsideSticker1x4" Name="sticker_inside_1x4_01_sleiter_st833" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_door_l_1x1_sleiter_st833" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_door_r_1x1_sleiter_st833" />
+	<Truck _template="GlassStickerTopCut" Name="sticker_glass_top_sleiter_st833" />
+	<Truck Name="sticker_glass_bottom_sleiter_st833" >
+		<CustomizationPreset Id="0" MaterialOverrideName="skin_00" UiName="UI_STUFF_GLASS_STICKER_MUD_UP_OR_SHUT_UP_NAME" />
+		<CustomizationPreset Id="1" MaterialOverrideName="skin_01" UiName="UI_STUFF_GLASS_STICKER_BOLSHOY_GRYAZNY_NAME" />
+	</Truck>
+	<Truck _template="Curtain" Name="stuff_curtain_sleiter_st833" />
 </TruckSet>

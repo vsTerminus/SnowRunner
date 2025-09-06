@@ -1,0 +1,42 @@
+<TruckAddon>
+	<TruckData>
+		<Shakers>
+			<Shaker
+				Frame="BoneExhaust"
+				MinAngle="(0.1; 0.1; 0.1)"
+				MaxAngle="(0.3; 0.3; 0.3)"
+				MaxFrequency="4"
+				MaxOffset="(0; 0; 0)"
+			/>
+		</Shakers>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/sleiter_st833_chimera_tuning/sleiter_st833_chimera_exhaust_default">
+		<Body Collisions="Default" Mass="50" ModelFrame="BoneRoot_cdt">
+			<Constraint Type="Rigid" />
+			<Body Collisions="Default" Mass="130" ModelFrame="BoneCabin_cdt">
+				<Constraint ExplicitParentFrame="0" Type="Fixed" />
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="exhaust"
+		Category="exhaust"
+		Price="1000"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_EXHAUST_DEFAULT_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_EXHAUST_DEFAULT_NAME"
+		/>
+		<InstallSocket Type="SleiterST833ChimeraExhaust" />
+	</GameData>
+	<Exhaust
+		Dir="(-0.866; 0.5; -0)"
+		IsLight="false"
+		Origin="(1.95; 3.897; -0.831)"
+		Speed="3.82"
+	/>
+</TruckAddon>

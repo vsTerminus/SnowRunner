@@ -1,0 +1,55 @@
+<_templates>
+	<Body>
+		<Latch
+			CenterOfMassOffset="(0; 0; 0)"
+			Collisions="None" 
+			Mass="50"
+		>
+			<Constraint
+				PivotOffset="(0.000; 0.000; 0.000)"
+				Type="Hinge"
+				MinLimit="-182.5"
+				MaxLimit="3"
+				AxisLocal="(1; 0; 0)"
+			>
+				<Motor Damping="1" Spring="1" Type="Spring" />
+			</Constraint>
+		</Latch>
+	</Body>
+</_templates>
+<TruckAddon _noinherit="true">
+	<PhysicsModel Mesh="trucks/cargo/cargo_metal_junk_2_open">
+		<NetSync Legacy="false" />
+		<Body Mass="1500" ModelFrame="BoneRoot_cdt">
+			<Constraint ExplicitParentFrame="0" Type="Fixed" />
+			<Body Mass="1500" ModelFrame="BoneCargo_1_cdt">
+				<Constraint ExplicitParentFrame="1" Type="Fixed" />
+				<Body _template="Latch" ModelFrame="BoneLatchR2_cdt">
+					<Constraint MinLimit="-6" MaxLimit="182.5" />
+				</Body>
+				<Body _template="Latch" ModelFrame="BoneLatchL2_cdt">
+					<Constraint MinLimit="-182.5" MaxLimit="6" />
+				</Body>
+			</Body>
+			<Body _template="Latch" ModelFrame="BoneLatchR1_cdt">
+				<Constraint MinLimit="-6" MaxLimit="182.5" />
+			</Body>
+			<Body _template="Latch" ModelFrame="BoneLatchL1_cdt">
+				<Constraint MinLimit="-182.5" MaxLimit="6" />
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<GameData>
+		<Sounds
+			InstallSound="cargo_manual/cargo_manual_container_small"
+			TransportedSound="load/metal_small/metal_small_rnd"
+			ManualSound="cargo_manual/cargo_manual_container_small"
+		/>
+		<InstallSlot
+			CargoLength="2"
+			CargoType="CargoMetalJunkOpen"
+			CargoValue="1"
+			Offset="(1.275; 0; 0)"
+		/>
+	</GameData>
+</TruckAddon>

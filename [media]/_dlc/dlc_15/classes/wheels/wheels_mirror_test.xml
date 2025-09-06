@@ -1,0 +1,38 @@
+<_templates Include="trucks">
+	<TruckTire>
+		<Mudtires _template="Heavy">
+			<WheelTracks _template="Offroad" />
+			<WheelSoftness _template="Soft" />
+			<WheelFriction _template="HeavyMudtires" />
+		</Mudtires>
+	</TruckTire>
+</_templates>
+<TruckWheels DamageCapacity="100" Radius="1" Width="0.725">
+	<TruckTires>
+		<TruckTire _template="Mudtires" BodyFrictionAsphalt="0.8" Mesh="wheels/tire_mirror_test" Name="tire_1">
+			<GameData
+				Price="6500"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_MUDTIRES_DESC" UiName="UI_TIRE_SUPERHEAVY_OFFROAD_MIRROR_NAME" />
+			</GameData>
+		</TruckTire>
+		<TruckTire _template="Mudtires" BodyFrictionAsphalt="0.8" Mesh="wheels/tire_mirror_test" RightSideMesh="wheels/tire_mirror_test_r" Name="tire_2">
+			<GameData
+				Price="6500"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_MUDTIRES_DESC" UiName="UI_TIRE_SUPERHEAVY_OFFROAD_MIRROR_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>
+		<TruckRim Mesh="wheels/rim_mirror_test" Name="rim_1">
+			<GameData>
+				<UiDesc UiDesc="UI_RIM_SUPERHEAVY_MUDTIRES_1_DESC" UiName="UI_RIM_SUPERHEAVY_OFFROAD_MIRROR_NAME" />
+			</GameData>
+		</TruckRim>
+	</TruckRims>
+</TruckWheels>

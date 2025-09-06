@@ -314,6 +314,7 @@
 	<HeadLight _template="Default" Pos="(3.801; 1.124; 0)" />
 	<GameData
 		Country="US,NE,CE"
+		ExcludeAddons="semitrailer_log_double_ls"
 		Price="19500"
 		UnlockByExploration="false"
 		UnlockByRank="1"

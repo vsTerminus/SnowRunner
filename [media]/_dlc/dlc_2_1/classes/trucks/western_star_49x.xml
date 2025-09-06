@@ -412,20 +412,31 @@
 			<Socket Names="FrameAddonTank" Offset="(-2.7; 1.087; 0)" />
 			<Socket Names="FrameAddonSeismicVibrator" NamesBlock="Trailer, MinicraneUS, LogTrailer" Offset="(-0.2; 1.087; 0)" ParentFrame="BoneChassis_cdt" />
 			<Socket Names="FrameAddonMaintainer" NamesBlock="Trailer, MinicraneUS, LogTrailer" Offset="(-2.55; 0.055; 0)" ParentFrame="BoneChassis_cdt" />
+			
+			<Socket Names="SaddleMotorized" Offset="(-2.100; -0.177; 0.000)" ParentFrame="BoneChassis_cdt" >
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.000; 0.000; 0.065)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.000; 0.000; -0.065)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(1.400; 0.000; 0.065)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(1.400; 0.000; -0.065)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(1.400; 0.000; 0.000)" />
+			</Socket>
+			
 		</AddonSockets>
 		<AddonSockets>
 			<Socket
 				Names="MetalDetector"
-				NamesBlock="MinicraneUS, FrameAddonSeismicVibrator, FrameAddonKung, FrameAddonTank, FrameAddonMaintainer,"
+				NamesBlock="MinicraneUS, FrameAddonSeismicVibrator, FrameAddonKung, FrameAddonTank, FrameAddonMaintainer, SaddleMotorized"
 				Offset="(0.075; 0.038; 0)"
 				ParentFrame="BoneChassis_cdt"
 			/>
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="MinicraneUS" NamesBlock="FrameAddonTank, FrameAddonMaintainer, FrameAddonSeismicVibrator, FrameAddonKung" Offset="(-0.147; 1.09; 0)" />
+			<Socket Names="MinicraneUS" NamesBlock="FrameAddonTank, FrameAddonMaintainer, FrameAddonSeismicVibrator, FrameAddonKung, SaddleMotorized" Offset="(-0.147; 1.09; 0)" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-3.425; 1.39; 0)" />
+			<Socket Names="Semitrailer, SemitrailerOiltank, SemitrailerFoldableLog" Offset="(-3.425; 1.39; 0)" >
+				<AddonsShift Offset="(-0.022; 0.02; 0)" Types="SaddleMotorized" />
+			</Socket>
 			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-3.44; 1.6; 0)" />
 			<Socket Names="Trailer, LogTrailer" Offset="(-5.16; 0.786; 0)" />
 		</AddonSockets>

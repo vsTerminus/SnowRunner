@@ -1,0 +1,72 @@
+
+<ModelBrand
+	DayShadowOffsetMult="2.0"
+	AcceptZoneBorderDecals="true"
+	DynamicModel="true"
+	NightLightingShadowsAllowCap="true"
+	ClipCameraBridge="true"
+>
+	<PhysicsModel>
+	<Body Collisions="None" ModelFrame="BoneRoot">
+		<Body Collisions="Dynamic" NoSoftContacts="false" ModelFrame="state_00">
+		</Body>
+		<Body  DamageMult="0.3" Mass="5000" AllowedPenetrationDepth="0.0" NoSoftContacts="false" ModelFrame="state_01">
+			<Constraint
+				AxisLocal="(1; 0; 0)"
+				Type="Hinge"
+				MinLimit="0"
+				MaxLimit="0"
+			>
+				<Motor Damping="100500" Spring="100500" Type="Spring" />
+			</Constraint>
+			<Body DamageMult="0" Mass="0.5" NoSoftContacts="true" ModelFrame="jointB1" >
+				<Constraint
+						AxisLocal="(1; 0; 0)"
+						Type="Hinge"
+						MinLimit="-85"
+						MaxLimit="85"
+					>
+						<Motor Damping="0.1" Spring="13" Type="Spring" />
+				</Constraint>
+				<Body DamageMult="0" Mass="0.7" NoSoftContacts="true" ModelFrame="jointB2" >
+					<Constraint
+						AxisLocal="(1; 0; 0)"
+						Type="Hinge"
+						MinLimit="-60"
+						MaxLimit="60"
+					>
+						<Motor Damping="0.09" Spring="20" Type="Spring" />
+					</Constraint>
+				</Body>
+			</Body>
+		</Body>
+	</Body>
+	</PhysicsModel>
+
+	<Subset IsDefault="true" Name="stage_00"> <!-- stage_01 -->
+		<Mesh Name="state_00" />
+		<CdtMesh Name="cdt_state_00" />
+	</Subset>
+
+	<Subset Name="stage_01"> <!-- stage_02 -->
+		<Mesh Name="state_01" />
+		<CdtMesh Name="cdt_state_01" />
+		<CdtMesh Name="cdt_jointB1" />
+		<CdtMesh Name="cdt_jointB2" />
+		<AnimTrack Name="stage_1_anim" />
+		<AnimSubset Name="build_animation_0" />
+	</Subset>
+	
+	<AnimSubset Name="build_animation_0">
+		<Mesh Name="animesh" />	
+		<CdtMesh Name="cdt_state_00" />	
+	</AnimSubset>
+	
+	<TrackEvents TrackName="stage_1_anim">
+		<AnimEvent Key="5">
+			<Sound Name="actors/actor_construction/actor_construct_wooden_bridge" Range="200" Volume="1" />
+		</AnimEvent>
+	</TrackEvents>
+
+	<Landmark Mesh="landmarks/ranger_arch_01_us16_objective_lmk" />
+</ModelBrand>

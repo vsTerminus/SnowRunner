@@ -1,0 +1,23 @@
+<TruckAddon>
+	<Snorkel Origin="(1.142; 2.609; -0.813)" />
+	<PhysicsModel Mesh="trucks/hib_billert_1980_tuning/hib_billert_1980_snorkel_1">
+		<Body Collisions="Default" Mass="150" ModelFrame="BoneCabin_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="snorkels"
+		Category="snorkel"
+		Price="1600"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SNORKEL_MUSHROOM_TALL_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SNORKEL_MUSHROOM_TALL_NAME"
+		/>
+		<InstallSocket Type="HIBBillert1980Snorkel" />
+	</GameData>
+</TruckAddon>

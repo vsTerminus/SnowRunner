@@ -1,0 +1,27 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/plad_440_tuning/plad_440_fender_addon">
+		<Body ImpactType="Truck" Mass="5" ModelFrame="BoneChassis_cdt">
+			<Constraint Type="Rigid" />
+			<Body Collisions="None" Mass="5" ModelFrame="BoneCabinTwist_cdt">
+				<Constraint ExplicitParentFrame="0" Type="Fixed" />
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="addon_1"
+		Category="frame_addons"
+		Price="0"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_PLAD_440_FENDER_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_PLAD_440_FENDER_NAME"
+		/>
+		<RequiredAddonType Type="Plad440Fender" TypeUiName="UI_TUNING_PLAD_440_FENDER" />
+		<InstallSocket Type="Plad440Fender" />
+	</GameData>
+</TruckAddon>

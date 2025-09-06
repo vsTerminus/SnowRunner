@@ -1,0 +1,25 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<Snorkel Origin="(1.78; 2.162; 1.022)" />
+	<Snorkel Origin="(1.78; 2.162; -1.022)" />
+	<PhysicsModel Mesh="trucks/plad_440_tuning/plad_440_snorkel_2">
+		<Body ImpactType="Truck" Mass="40" ModelFrame="BoneCabin_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="snorkels"
+		Category="snorkel"
+		Price="1600"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SNORKEL_FRONTFACE_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SNORKEL_FRONTFACE_NAME"
+		/>
+		<InstallSocket Type="Plad440Snorkel" />
+	</GameData>
+</TruckAddon>

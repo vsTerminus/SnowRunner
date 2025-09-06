@@ -1,0 +1,11 @@
+<ModelBrand
+	NightLightingShadowsAllowCap="true"
+	ClipCameraBridge="true"
+>
+	<PhysicsModel>
+		<Body
+			Collisions="Dynamic"
+		/>
+	</PhysicsModel>
+	<Landmark Mesh="landmarks/bridge_viaduct_03a_us16_lmk" />	
+</ModelBrand>

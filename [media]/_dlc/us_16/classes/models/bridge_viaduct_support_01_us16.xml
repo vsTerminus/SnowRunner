@@ -1,0 +1,11 @@
+<ModelBrand
+	NightLightingShadowsAllowCap="true"
+	Instanced="true"
+	InstancedAsModel="true"
+	DayShadowOffsetMult="12"
+>
+	<PhysicsModel>
+		<Body Collisions="Dynamic" />
+	</PhysicsModel>
+	<Landmark Mesh="landmarks/bridge_viaduct_support_01_us16_lmk" />	
+</ModelBrand>

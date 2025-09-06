@@ -1,0 +1,29 @@
+<_templates Include="trucks">
+	<TruckTire>
+		<Offroad _template="Superheavy">
+			<WheelTracks _template="Offroad" />
+			<WheelSoftness _template="Average" />
+			<WheelFriction _template="Offroad" />
+		</Offroad>
+	</TruckTire>
+</_templates>
+<TruckWheels DamageCapacity="100" Radius="1" Width="0.794">
+	<TruckTires>
+		<TruckTire _template="Offroad" Mesh="wheels/tire_sleiter_st833_chimera" Name="tire_1">
+			<GameData
+				Price="7500"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_OFFROAD_DESC" UiName="UI_TIRE_HEAVY_OFFROAD_SINGLE_SLEITER_ST833_CHIMERA_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>
+		<TruckRim Mesh="wheels/rim_sleiter_st833_chimera" Name="rim_1">
+			<GameData>
+				<UiDesc UiDesc="UI_RIM_HEAVY_OFFROAD_SINGLE_1_DESC" UiName="UI_RIM_HEAVY_OFFROAD_SINGLE_SLEITER_ST833_CHIMERA_NAME" />
+			</GameData>
+		</TruckRim>
+	</TruckRims>
+</TruckWheels>

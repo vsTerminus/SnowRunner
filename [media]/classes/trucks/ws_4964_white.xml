@@ -378,7 +378,9 @@
 			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-1.8; 1.61; 0)">
 				<AddonsShift Offset="(0; 0; 0)" TrailerNamesBlock="LargeSemitrailerOiltank" Types="MinicraneUS, WS4964WhiteCabinProtector" />
 			</Socket>
-			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-2.76; 1.62; 0)" />
+			<Socket Names="Semitrailer, SemitrailerOiltank, SemitrailerFoldableLog" Offset="(-2.76; 1.62; 0)" >
+				<AddonsShift Offset="(0.113; -0.16; 0)" Types="SaddleMotorized" />
+			</Socket>
 			<Socket Names="Trailer, LogTrailer" Offset="(-4.329; 0.865; 0)">
 				<AddonsShift Offset="(0; 0; 0)" TrailerNamesBlock="Trailer, LogTrailer" Types="MinicraneUS, FrameAddon" />
 				<AddonsShift Offset="(0; 0; 0)" TrailerNamesBlock="Trailer, LogTrailer" Types="WS4964WhiteCabinProtector, FrameAddon" />
@@ -406,6 +408,15 @@
 			<Socket Names="FrameAddonTank" Offset="(-2.370; 1.09; 0)" ParentFrame="BoneChassis_cdt" />
 			<Socket Names="FrameAddonMaintainer" NamesBlock="MinicraneUS, WS4964WhiteCabinProtector, Trailer, LogTrailer" Offset="(-2.05; 0.061; 0)" ParentFrame="BoneChassis_cdt" />
 			<Socket Names="BigCraneUsWS4964" NamesBlock="MinicraneUS, WS4964WhiteCabinProtector" Offset="(-1.947; 1.097; 0)" />
+			
+			<Socket Names="SaddleMotorized" NamesBlock="MinicraneUS, WS4964WhiteCabinProtector" Offset="(-1.300; -0.178; 0.000)" ParentFrame="BoneChassis_cdt" >
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.000; 0.000; 0.000)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.000; 0.000; 0.000)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(1.100; 0.000; 0.000)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(1.100; 0.000; 0.000)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(1.100; 0.000; 0.000)" />
+			</Socket>
+			
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="MinicraneUS" NamesBlock="FrameAddonKung, FrameAddonTank" Offset="(0.5; 1.11; 0)">

@@ -1,0 +1,35 @@
+<ModelBrand
+	NightLightingShadowsAllowCap="true"
+	ClipCamera="false"
+	CastDayLightmapShadow="false"
+	CastNightLightmapShadow="false"
+>
+	<PhysicsModel>
+		<Body Collisions="None" />
+	</PhysicsModel>
+
+	<Subset Name="stage_00" IsDefault="true">
+	</Subset>
+	
+	<Subset Name="stage_01">
+		<AnimSubset Name="build_animation_1" />
+		<AnimTrack Name="anim_track_01" />
+	</Subset>
+
+	<Subset Name="stage_02">
+		<AnimSubset Name="build_animation_2" />
+		<AnimTrack Name="anim_track_02" />
+	</Subset>
+
+<!-- This subset made only for preview camera in editor -->
+	<Subset Name="camera_preview">
+		<Mesh Name="mesh" />
+		<CdtMesh Name="cdt" />
+	</Subset>
+<!-- This subset made only for preview camera in editor -->
+
+	<AnimSubset Name="build_animation_1">
+	</AnimSubset>
+	<AnimSubset Name="build_animation_2">
+	</AnimSubset>
+</ModelBrand>

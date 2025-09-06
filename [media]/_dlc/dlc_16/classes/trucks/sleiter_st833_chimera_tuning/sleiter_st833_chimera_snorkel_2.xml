@@ -1,0 +1,27 @@
+<TruckAddon>
+	<Snorkel Origin="(2.281; 3.621; -1.167)" />
+	<Snorkel Origin="(2.281; 3.621; 1.167)" />
+	<PhysicsModel Mesh="trucks/sleiter_st833_chimera_tuning/sleiter_st833_chimera_snorkel_2">
+		<Body Collisions="Default" Mass="50" ModelFrame="BoneRoot_cdt">
+			<Constraint Type="Rigid" />
+			<Body Collisions="Default" Mass="200" ModelFrame="BoneCabin_cdt">
+				<Constraint ExplicitParentFrame="0" Type="Fixed" />
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="snorkels"
+		Category="snorkel"
+		Price="3800"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SNORKEL_FLATCAP_TALL_TWIN_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SNORKEL_FLATCAP_TALL_TWIN_NAME"
+		/>
+		<InstallSocket Type="SleiterST833ChimeraSnorkel" />
+	</GameData>
+</TruckAddon>

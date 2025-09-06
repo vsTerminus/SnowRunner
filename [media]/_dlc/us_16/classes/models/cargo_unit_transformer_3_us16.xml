@@ -1,0 +1,26 @@
+<ModelBrand ClipCamera="false" DynamicModel="true">
+<PhysicsModel>
+	<NetSync Legacy="false" />
+		<Body Collisions="Dynamic" Friction="1.8" Mass="3000" NoSoftContacts="true" ModelFrame="BoneRoot_cdt" AngularDamping="0.001"  >
+			<Body
+					CenterOfMassOffset="(0; 0; 0)"
+					Collisions="None" 
+					Mass="2000"
+					ModelFrame="BoneCrane_cdt"
+				>
+					<Constraint
+							AxisLocal="(0; 1; 0)"
+							Type="Prismatic"
+							MinLimit="0"
+							MaxLimit="0.3"
+						>
+							<Motor Damping="1" Spring="0.0001" Type="Spring" />
+					</Constraint>
+			</Body>
+		</Body>
+</PhysicsModel>
+	<GameData PackSlotsNumber="3" LoadType="CargoTransformer">
+		<CraneSocket Pos="(0; 3.6; 0)" ParentFrame="BoneCrane_cdt"/>
+    </GameData>
+	<Landmark Mesh="landmarks/cargo_unit_transformer_3_us16_lmk" MinScale="1.8" MaxScale="3.8"/>
+</ModelBrand>

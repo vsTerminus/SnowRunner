@@ -1,0 +1,42 @@
+<TruckAddon>
+	<WheelRepairsHide>
+		<Mesh Frame="wheel" HideThreshold="0.0" />
+	</WheelRepairsHide>
+	<TruckData WheelRepairsCapacity="1" />
+	<PhysicsModel Mesh="trucks/hib_billert_1980_tuning/hib_billert_1980_wheel_addon_1">
+		<Body ImpactType="Truck" Mass="10">
+			<Constraint Type="Rigid" />
+		</Body>
+		<Body Collisions="Default" Mass="80" ModelFrame="BoneRoot_cdt">
+			<Constraint Type="Rigid" />
+			<Body Collisions="Default" Mass="20" ModelFrame="BoneCabin_cdt">
+				<Constraint ExplicitParentFrame="0" Type="Fixed" />
+			</Body>
+			<Body Collisions="Default" Mass="200" ModelFrame="BoneWheel_cdt">
+				<Constraint
+					AxisLocal="(0; 1; 0)"
+					Type="Hinge"
+					MinLimit="-5"
+					MaxLimit="5"
+				>
+					<Motor Damping="1.0" Spring="2.0" Type="Spring" />
+				</Constraint>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="side_r"
+		Category="wheel_addon"
+		Price="1800"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SPARE_WHEEL_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SPARE_WHEEL_NAME"
+		/>
+		<InstallSocket Type="HIBBillert1980SpareWheel" />
+	</GameData>
+</TruckAddon>

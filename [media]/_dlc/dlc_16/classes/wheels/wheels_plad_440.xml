@@ -1,0 +1,30 @@
+<_templates Include="trucks">
+	<TruckTire>
+		<Offroad _template="Medium" RearMassScale="2">
+			<WheelTracks _template="Offroad" />
+			<WheelSoftness _template="Stiff" />
+			<WheelFriction _template="Offroad" />
+		</Offroad>
+	</TruckTire>
+</_templates>
+<TruckWheels DamageCapacity="100" Radius="1" Width="0.622" WidthRear="1.27">
+	<TruckTires>
+		<TruckTire _template="Offroad" Mesh="wheels/tire_plad_440" Name="offroad_plad_440">
+			<WheelFriction _template="Offroad" BodyFrictionAsphalt="1" BodyFriction="3.1" SubstanceFriction="1.9"/>
+			<GameData
+				Price="5700"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_ALLTERRAIN_DESC" UiName="UI_TIRE_MEDIUM_OFFROAD_PLAD_440_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>
+		<TruckRim Mesh="wheels/rim_plad_440" Name="rim_1">
+			<GameData>
+				<UiDesc UiDesc="" UiName="UI_RIM_MEDIUM_OFFROAD_PLAD_440_NAME" />
+			</GameData>
+		</TruckRim>
+	</TruckRims>
+</TruckWheels>

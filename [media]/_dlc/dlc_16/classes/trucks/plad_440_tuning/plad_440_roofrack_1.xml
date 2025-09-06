@@ -1,0 +1,107 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<TruckData FuelCapacity="80" RepairsCapacity="150">
+		<LimitedFluid Center="(0.742; 2.923; -0.249)" SizeX="0.326" SizeY="0.160" SizeZ="0.416" Type="Box" ParentFrame="BoneFuel_cdt" />
+		<LimitedFluid Center="(1.077; 2.923; -0.249)" SizeX="0.326" SizeY="0.160" SizeZ="0.416" Type="Box" ParentFrame="BoneFuel_cdt" />
+		<LimitedFluid Center="(0.742; 2.923; -0.731)" SizeX="0.326" SizeY="0.160" SizeZ="0.416" Type="Box" ParentFrame="BoneFuel_cdt" />
+		<LimitedFluid Center="(1.077; 2.923; -0.731)" SizeX="0.326" SizeY="0.160" SizeZ="0.416" Type="Box" ParentFrame="BoneFuel_cdt" />
+	</TruckData>
+	<Rotator EngineTorqueFactor="0" Frame="BoneRotatorBeaconRight" RotationSpeed="4" />
+	<Rotator EngineTorqueFactor="0" Frame="BoneRotatorBeaconLeft" RotationSpeed="4" />
+	<RepairsHide>
+		<Mesh Frame="repair" HideThreshold="0.0" />
+	</RepairsHide>
+	<FuelHide>
+		<Mesh Frame="fuel" HideThreshold="0.0" />
+	</FuelHide>
+	<PhysicsModel Mesh="trucks/plad_440_tuning/plad_440_roofrack_1">
+		<Body ImpactType="Truck" Mass="50" ModelFrame="BoneCabin_cdt">
+			<Constraint Type="Rigid" />
+			<Body
+				CenterOfMassOffset="(0; 0; 0)"
+				Collisions="None"
+				Mass="120"
+				ModelFrame="BoneFuel_cdt"
+			>
+				<Constraint
+					AxisLocal="(1; 0; 0)"
+					Type="Prismatic"
+					MinLimit="-0.023"
+					MaxLimit="0.022"
+				>
+					<Motor Damping="2000" Spring="2500" Type="Spring" />
+				</Constraint>
+			</Body>
+			<Body Collisions="None" Mass="50" ModelFrame="BoneRepair_cdt">
+				<Constraint
+					AxisLocal="(0; 0; 1)"
+					Type="Prismatic"
+					MinLimit="-0.04"
+					MaxLimit="0.04"
+				>
+					<Motor Damping="2100" Spring="3000" Type="Spring" />
+				</Constraint>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<Ignition>
+			<Flare _template="IgnitionSignalWhite" Color="g(253; 220; 186) x 0.35" ColorMultAtDay=".03" DirAngle="90" Size="0.4" Pos="(1.685; 2.896; -0.565)" />
+			<Flare _template="IgnitionSignalWhite" Color="g(253; 220; 186) x 0.35" ColorMultAtDay=".03" DirAngle="90" Size="0.4" Pos="(1.685; 2.896; 0.565)" />
+		</Ignition>
+		<Ignition _template="Flasher">
+			<Model
+				Color="g(255; 111; 5) x 0.55"
+				Dir="(1; 0.222; 0.563)"
+				Org="(1.552; 2.956; 0.881)"
+				Reflections="false"
+				Scale="(0.19; 0.19; 0.19)"
+				ParentFrame="BoneRotatorBeaconLeft"
+			/>
+			<Light Dir="(-0.796; 0.222; 0.563)" Pos="(1.552; 2.956; 0.881)" ParentFrame="BoneRotatorBeaconLeft" />
+			<Flare Color="g(255; 111; 5) x 0.45" Dir="(-0.796; 0.222; 0.563)" Size="1" Pos="(1.552; 2.956; 0.881)" ParentFrame="BoneRotatorBeaconLeft" />
+			<Flare Color="g(255; 111; 5) x 0.7" Dir="(-0.796; 0.222; 0.563)" Size="0.7" Pos="(1.552; 2.956; 0.881)" ParentFrame="BoneRotatorBeaconLeft" />
+			<Flare Color="g(255; 111; 5) x 0.55" Size="1" Pos="(1.552; 2.956; 0.881)" ParentFrame="BoneRotatorBeaconLeft" />
+		</Ignition>
+		<Ignition _template="Flasher">
+			<Model
+				Color="g(255; 111; 5) x 0.55"
+				Dir="(1; 0.222; 0.563)"
+				Org="(1.552; 2.956; -0.881)"
+				Reflections="false"
+				Scale="(0.19; 0.19; 0.19)"
+				ParentFrame="BoneRotatorBeaconRight"
+			/>
+			<Light Dir="(-0.796; 0.222; 0.563)" Pos="(1.552; 2.956; -0.881)" ParentFrame="BoneRotatorBeaconRight" />
+			<Flare Color="g(255; 111; 5) x 0.45" Dir="(-0.796; 0.222; 0.563)" Size="1" Pos="(1.552; 2.956; -0.881)" ParentFrame="BoneRotatorBeaconRight" />
+			<Flare Color="g(255; 111; 5) x 0.7" Dir="(-0.796; 0.222; 0.563)" Size="0.7" Pos="(1.552; 2.956; -0.881)" ParentFrame="BoneRotatorBeaconRight" />
+			<Flare Color="g(255; 111; 5) x 0.55" Size="1" Pos="(1.552; 2.956; -0.881)" ParentFrame="BoneRotatorBeaconRight" />
+		</Ignition>
+		<HeadLight>
+			<Model _template="HeadLightRay" Org="(1.685; 2.896; -0.565)" />
+			<Model _template="HeadLightRay" Org="(1.685; 2.896; 0.565)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size=".4" Pos="(1.685; 2.896; -0.565)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size=".4" Pos="(1.685; 2.896; 0.565)" />
+		</HeadLight>
+	</ModelAttachments>
+	<MainHeadLight _template="Multiply2" />
+	<GameData
+		CameraPreset="roof"
+		Category="frame_addons"
+		IsCustomizable="true"
+		Price="1200"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SCOUT_TRUNK_SUPPLIES_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SCOUT_TRUNK_SUPPLIES_NAME"
+		/>
+		<InstallSocket Type="Plad440Roofrack" />
+	</GameData>
+	<FuelHide>
+		<Mesh Frame="fuel" HideThreshold="0.0" />
+	</FuelHide>
+</TruckAddon>

@@ -9,5 +9,6 @@
 	<DebrisType MinVelocity="1.0" Name="AshDust" />
 	<DebrisType MinVelocity="1.0" Name="DryTwigs" />	
 	<DebrisType MinVelocity="1.0" Name="Sparks" />
-	<DebrisType MinVelocity="1.0" Name="FoliageMapleAutumn" />	
+	<DebrisType MinVelocity="1.0" Name="FoliageMapleAutumn" />
+	<DebrisType MinVelocity="1.0" Name="FoliageRosehip" />
 </DebrisTypes>

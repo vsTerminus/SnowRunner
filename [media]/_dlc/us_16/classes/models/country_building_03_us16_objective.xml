@@ -1,0 +1,32 @@
+<ModelBrand
+	DynamicModel="true"
+	NightLightingShadowsAllowCap="true"
+>
+
+	<Subset IsDefault="true" Name="build_stage_0">
+		<Mesh Name="house" />
+		<Mesh Name="house_lod1" />
+		<Mesh Name="house_lod2" />
+		<CdtMesh Name="house" />
+	</Subset>
+
+	<Subset Name="build_stage_1">
+		<Mesh Name="wall" />
+		<Mesh Name="wall_lod1" />
+		<Mesh Name="wall_lod2" />
+		<CdtMesh Name="wall" />
+		<OnSubsetActivateEvent>
+			<Sound Name="actors/actor_construction/actor_construct_wooden_bridge" Range="200" Volume="1" />
+			<SFX Dir="(0; 1; 0)" Name="us_garage_06_us06_objective" Pos="(0; 0; 0)" />
+	</OnSubsetActivateEvent>
+	</Subset>
+
+	<PhysicsModel>
+		<Body Collisions="Dynamic" ModelFrame="wall">
+			<Body Collisions="Dynamic" ModelFrame="house" />
+		</Body>
+	</PhysicsModel>
+
+	<Occlusion Size="(19.0; 18.0)" Texture="occlusion_country_building_03.tga" />
+	<Landmark Mesh="landmarks/country_building_03_us12_objective_lmk" />
+</ModelBrand>

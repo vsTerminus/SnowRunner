@@ -1,0 +1,19 @@
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/sleiter_st833_stuff/sticker_glass_top_sleiter_st833" />
+	<GameData
+		CameraPreset="glass_sticker"
+		Category="sticker_windshield"
+		Price="1000"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+		IsCustomizable="false"
+	>
+		<UiDesc
+			UiDesc="UI_STUFF_GLASS_STICKER_TOP_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_STUFF_GLASS_STICKER_TOP_CUT_100_PERCENT_MAN_NAME"
+		/>
+		<InstallSocket Type="SleiterST833Sticker_Glass_Top" />
+	</GameData>
+</TruckAddon>

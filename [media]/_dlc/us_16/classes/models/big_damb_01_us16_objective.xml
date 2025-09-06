@@ -1,0 +1,481 @@
+<ModelBrand
+	NightLightingShadowsAllowCap="true"
+	DayShadowOffsetMult="13"
+	DynamicModel="true"
+>
+<Landmark Mesh="landmarks/big_damb_01_us16_objective_lmk" />
+	<Subset IsDefault="true" Name="state_start">
+		<Mesh Name="mesh_start" />
+		<Mesh Name="mesh_start_lod1" />
+		<Mesh Name="mesh_start_lod2" />
+		<Mesh Name="mesh_start_lod3" />
+		<Mesh Name="mesh_start_1" />
+		<Mesh Name="mesh_start_1_lod1" />
+		<Mesh Name="mesh_start_1_lod2" />
+		<Mesh Name="mesh_start_1_lod3" />
+		<Mesh Name="mesh_start_2" />
+		<Mesh Name="mesh_start_2_lod1" />
+		<Mesh Name="mesh_start_2_lod2" />
+		<Mesh Name="mesh_start_2_lod3" />
+		<Mesh Name="mesh_start_3" />
+		<Mesh Name="mesh_start_3_lod1" />
+		<Mesh Name="mesh_start_3_lod2" />
+		<Mesh Name="mesh_start_3_lod3" />
+		<Mesh Name="mesh_start_4" />
+		<Mesh Name="mesh_start_4_lod1" />
+		<Mesh Name="mesh_start_4_lod2" />
+		<Mesh Name="mesh_start_4_lod3" />
+		<Mesh Name="mesh_start_5" />
+		<Mesh Name="mesh_start_5_lod1" />
+		<Mesh Name="mesh_start_5_lod2" />
+		<Mesh Name="mesh_start_5_lod3" />
+		<Mesh Name="mesh_start_6" />
+		<Mesh Name="mesh_start_6_lod1" />
+		<Mesh Name="mesh_start_6_lod2" />
+		<Mesh Name="mesh_start_6_lod3" />
+		<Mesh Name="mesh_start_7" />
+		<Mesh Name="mesh_start_7_lod1" />
+		<Mesh Name="mesh_start_7_lod2" />
+		<Mesh Name="mesh_start_7_lod3" />
+		<Mesh Name="mesh_1" />
+		<Mesh Name="mesh_1_lod1" />
+		<Mesh Name="mesh_1_lod2" />
+		<Mesh Name="mesh_1_lod3" />
+		<Mesh Name="mesh_2" />
+		<Mesh Name="mesh_2_lod1" />
+		<Mesh Name="mesh_2_lod2" />
+		<Mesh Name="mesh_2_lod3" />
+		<CdtMesh Name="mesh_start" />
+		<Mesh Name="mesh_start_lod1" />
+		<Mesh Name="mesh_start_lod2" />
+		<Mesh Name="mesh_start_lod3" />
+	</Subset>
+	<Subset Name="state_end">
+		<Mesh Name="mesh_end" />
+		<Mesh Name="mesh_end_lod1" />
+		<Mesh Name="mesh_end_lod2" />
+		<Mesh Name="mesh_end_lod3" />
+		<Mesh Name="mesh_1" />
+		<Mesh Name="mesh_1_lod1" />
+		<Mesh Name="mesh_1_lod2" />
+		<Mesh Name="mesh_1_lod3" />
+		<Mesh Name="mesh_2" />
+		<Mesh Name="mesh_2_lod1" />
+		<Mesh Name="mesh_2_lod2" />
+		<Mesh Name="mesh_2_lod3" />
+		<CdtMesh Name="mesh_end" />
+		<AnimSubset Name="build_animation_1"/>
+		<AnimTrack Name="anim_track_01" />
+	</Subset>
+	<AnimSubset Name="build_animation_1"> <!-- animation -->
+		<Mesh Name="anim_mesh_1" />
+		<Mesh Name="anim_mesh_2" />
+		<Mesh Name="anim_mesh_3" />
+		<Mesh Name="anim_mesh_4" />
+		<Mesh Name="anim_mesh_5" />
+
+		<Mesh Name="mesh_1" />
+		<Mesh Name="mesh_1_lod1" />
+		<Mesh Name="mesh_1_lod2" />
+		<Mesh Name="mesh_1_lod3" />
+		<Mesh Name="mesh_2" />
+		<Mesh Name="mesh_2_lod1" />
+		<Mesh Name="mesh_2_lod2" />
+		<Mesh Name="mesh_2_lod3" />
+		<Mesh Name="mesh_start" />
+		<Mesh Name="mesh_start_lod1" />
+		<Mesh Name="mesh_start_lod2" />
+		<Mesh Name="mesh_start_lod3" />
+		<Mesh Name="mesh_start_1" />
+		<Mesh Name="mesh_start_1_lod1" />
+		<Mesh Name="mesh_start_1_lod2" />
+		<Mesh Name="mesh_start_1_lod3" />
+		<Mesh Name="mesh_start_2" />
+		<Mesh Name="mesh_start_2_lod1" />
+		<Mesh Name="mesh_start_2_lod2" />
+		<Mesh Name="mesh_start_2_lod3" />
+		<Mesh Name="mesh_start_3" />
+		<Mesh Name="mesh_start_3_lod1" />
+		<Mesh Name="mesh_start_3_lod2" />
+		<Mesh Name="mesh_start_3_lod3" />
+		<CdtMesh Name="mesh_start" />
+	</AnimSubset>
+	
+	<TrackEvents TrackName="anim_track_01">
+    <AnimEvent Key="20">
+			<Sound Name="actors/actor_construction/actor_construct_overpass_01_stage1" Range="240" Volume="1" />
+	</AnimEvent>
+</TrackEvents>
+
+	<StaticLights>
+		<StaticLight
+			AttenEnd="15"
+			Color="g(205; 241; 255) x 3.5"
+			CreateSuperLight="true"
+			Dir="(0; -1; -3)"
+			InnerCone="0"
+			OuterCone="45"
+			Pos="(-31.666;52.733;98.199)"
+			Shadows="true"
+		/>
+		<StaticLight
+			AttenEnd="15"
+			Color="g(205; 241; 255) x 3.5"
+			CreateSuperLight="true"
+			Dir="(0; -1; -3)"
+			InnerCone="0"
+			OuterCone="45"
+			Pos="(-19.802;52;28.916)"
+			Shadows="true"
+		/>
+		<StaticLight
+			AttenEnd="15"
+			Color="g(205; 241; 255) x 3.5"
+			CreateSuperLight="true"
+			Dir="(0; -1; -3)"
+			InnerCone="0"
+			OuterCone="45"
+			Pos="(-19.802;52;-28.916)"
+			Shadows="true"
+		/>
+		<StaticLight
+			AttenEnd="15"
+			Color="g(205; 241; 255) x 3.5"
+			CreateSuperLight="true"
+			Dir="(0; -1; -3)"
+			InnerCone="0"
+			OuterCone="45"
+			Pos="(-32.666;52;-98.199)"
+			Shadows="true"
+		/>
+	</StaticLights>
+	<PhysicsModel>
+		<Body Collisions="Dynamic" ModelFrame="mesh_start">
+		<Body Collisions="Dynamic" ModelFrame="mesh_start_1"/>
+		<Body Collisions="Dynamic" ModelFrame="mesh_start_2"/>
+		<Body Collisions="Dynamic" ModelFrame="mesh_start_3"/>
+			<Body Collisions="Dynamic" ModelFrame="mesh_end"/>
+		</Body>
+		
+		
+		<Flare
+			AttenEnd="300"
+			AttenStart="27"
+			ColorMultAtDay="0"
+			Color="g(255; 255; 255) x 0.15"
+			OcclusionOffset="-0.3"
+			Dir="(0; -1; 0)"
+			Pos="(-24.288;42.713;73.382)"
+			Size="0.7"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+		<Flare
+			AttenEnd="300"
+			AttenStart="27"
+			ColorMultAtDay="0"
+			Color="g(255; 255; 255) x 0.15"
+			OcclusionOffset="-0.3"
+			Dir="(0; -1; 0)"
+			Pos="(-21.918;42.713;61.285)"
+			Size="0.7"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+		<Flare
+			AttenEnd="300"
+			AttenStart="27"
+			ColorMultAtDay="0"
+			Color="g(255; 255; 255) x 0.15"
+			OcclusionOffset="-0.3"
+			Dir="(0; -1; 0)"
+			Pos="(-18.451;42.713;36.880)"
+			Size="0.7"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+		<Flare
+			AttenEnd="300"
+			AttenStart="27"
+			ColorMultAtDay="0"
+			Color="g(255; 255; 255) x 0.15"
+			OcclusionOffset="-0.3"
+			Dir="(0; -1; 0)"
+			Pos="(-17.356;42.713;24.602)"
+			Size="0.7"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+		<Flare
+			AttenEnd="300"
+			AttenStart="27"
+			ColorMultAtDay="0"
+			Color="g(255; 255; 255) x 0.15"
+			OcclusionOffset="-0.3"
+			Dir="(0; -1; 0)"
+			Pos="(-16.458;42.713;-0.033)"
+			Size="0.7"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+		<Flare
+			AttenEnd="300"
+			AttenStart="27"
+			ColorMultAtDay="0"
+			Color="g(255; 255; 255) x 0.15"
+			OcclusionOffset="-0.3"
+			Dir="(0; -1; 0)"
+			Pos="(-16.695;42.713;-12.359)"
+			Size="0.7"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+		<Flare
+			AttenEnd="300"
+			AttenStart="27"
+			ColorMultAtDay="0"
+			Color="g(255; 255; 255) x 0.15"
+			OcclusionOffset="-0.3"
+			Dir="(0; -1; 0)"
+			Pos="(-18.458;42.713;-36.946)"
+			Size="0.7"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+		<Flare
+			AttenEnd="300"
+			AttenStart="27"
+			ColorMultAtDay="0"
+			Color="g(255; 255; 255) x 0.15"
+			OcclusionOffset="-0.3"
+			Dir="(0; -1; 0)"
+			Pos="(-19.981;42.713;-49.179)"
+			Size="0.7"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+		<Flare
+			AttenEnd="300"
+			AttenStart="27"
+			ColorMultAtDay="0"
+			Color="g(255; 255; 255) x 0.15"
+			OcclusionOffset="-0.3"
+			Dir="(0; -1; 0)"
+			Pos="(-24.301;42.713;-73.447)"
+			Size="0.7"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+		<Flare
+			AttenEnd="300"
+			AttenStart="27"
+			ColorMultAtDay="0"
+			Color="g(255; 255; 255) x 0.15"
+			OcclusionOffset="-0.3"
+			Dir="(0; -1; 0)"
+			Pos="(-27.095;42.713;-85.454)"
+			Size="0.7"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+		<Flare
+			AttenEnd="300"
+			AttenStart="27"
+			ColorMultAtDay="0"
+			Color="g(255; 255; 255) x 0.15"
+			OcclusionOffset="-0.3"
+			Dir="(0; -1; 0)"
+			Pos="(-40.134;42.715;-82.325)"
+			Size="0.7"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+		<Flare
+			AttenEnd="300"
+			AttenStart="27"
+			ColorMultAtDay="0"
+			Color="g(255; 255; 255) x 0.15"
+			OcclusionOffset="-0.3"
+			Dir="(0; -1; 0)"
+			Pos="(-37.429;42.715;-70.708)"
+			Size="0.7"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+		<Flare
+			AttenEnd="300"
+			AttenStart="27"
+			ColorMultAtDay="0"
+			Color="g(255; 255; 255) x 0.15"
+			OcclusionOffset="-0.3"
+			Dir="(0; -1; 0)"
+			Pos="(-31.787;42.715;-35.477)"
+			Size="0.7"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+		<Flare
+			AttenEnd="300"
+			AttenStart="27"
+			ColorMultAtDay="0"
+			Color="g(255; 255; 255) x 0.15"
+			OcclusionOffset="-0.3"
+			Dir="(0; -1; 0)"
+			Pos="(-30.089;42.715;-11.720)"
+			Size="0.7"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+		<Flare
+			AttenEnd="300"
+			AttenStart="27"
+			ColorMultAtDay="0"
+			Color="g(255; 255; 255) x 0.15"
+			OcclusionOffset="-0.3"
+			Dir="(0; -1; 0)"
+			Pos="(-29.869;42.715;0.034)"
+			Size="0.7"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+		<Flare
+			AttenEnd="300"
+			AttenStart="27"
+			ColorMultAtDay="0"
+			Color="g(255; 255; 255) x 0.15"
+			OcclusionOffset="-0.3"
+			Dir="(0; -1; 0)"
+			Pos="(-30.725;42.715;23.549)"
+			Size="0.7"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+		<Flare
+			AttenEnd="300"
+			AttenStart="27"
+			ColorMultAtDay="0"
+			Color="g(255; 255; 255) x 0.15"
+			OcclusionOffset="-0.3"
+			Dir="(0; -1; 0)"
+			Pos="(-31.778;42.715;35.406)"
+			Size="0.7"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+		<Flare
+			AttenEnd="300"
+			AttenStart="27"
+			ColorMultAtDay="0"
+			Color="g(255; 255; 255) x 0.15"
+			OcclusionOffset="-0.3"
+			Dir="(0; -1; 0)"
+			Pos="(-35.131;42.715;58.998)"
+			Size="0.7"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+		<Flare
+			AttenEnd="300"
+			AttenStart="27"
+			ColorMultAtDay="0"
+			Color="g(255; 255; 255) x 0.15"
+			OcclusionOffset="-0.3"
+			Dir="(0; -1; 0)"
+			Pos="(-37.418;42.715;70.657)"
+			Size="0.7"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+		<Flare
+			AttenEnd="300"
+			AttenStart="27"
+			ColorMultAtDay="0"
+			Color="g(238; 169; 3) x 0.15"
+			OcclusionOffset="-0.3"
+			Dir="(0; -1; 0)"
+			Pos="(-40.118;42.715;82.263)"
+			Size="0.7"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+		<Flare
+			AttenEnd="300"
+			AttenStart="27"
+			ColorMultAtDay="0"
+			Color="g(238; 169; 3) x 0.15"
+			OcclusionOffset="-0.3"
+			Dir="(0; -1; 0)"
+			Pos="(-30.087;42.715;11.667)"
+			Size="0.7"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+		<Flare
+			AttenEnd="300"
+			AttenStart="27"
+			ColorMultAtDay="0"
+			Color="g(238; 169; 3) x 0.15"
+			OcclusionOffset="-0.3"
+			Dir="(0; -1; 0)"
+			Pos="(-30.730;42.715;-23.614)"
+			Size="0.7"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+		<Flare
+			AttenEnd="300"
+			AttenStart="27"
+			ColorMultAtDay="0"
+			Color="g(238; 169; 3) x 0.15"
+			OcclusionOffset="-0.3"
+			Dir="(0; -1; 0)"
+			Pos="(-35.140;42.715;-59.047)"
+			Size="0.7"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+		<Flare
+			AttenEnd="300"
+			AttenStart="27"
+			ColorMultAtDay="0"
+			Color="g(238; 169; 3) x 0.15"
+			OcclusionOffset="-0.3"
+			Dir="(0; -1; 0)"
+			Pos="(-30.306;42.713;-97.355)"
+			Size="0.7"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+		<Flare
+			AttenEnd="300"
+			AttenStart="27"
+			ColorMultAtDay="0"
+			Color="g(238; 169; 3) x 0.15"
+			OcclusionOffset="-0.3"
+			Dir="(0; -1; 0)"
+			Pos="(-21.930;42.713;-61.350)"
+			Size="0.7"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+		<Flare
+			AttenEnd="300"
+			AttenStart="27"
+			ColorMultAtDay="0"
+			Color="g(238; 169; 3) x 0.15"
+			OcclusionOffset="-0.3"
+			Dir="(0; -1; 0)"
+			Pos="(-17.362;42.713;-24.668)"
+			Size="0.7"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+		<Flare
+			AttenEnd="300"
+			AttenStart="27"
+			ColorMultAtDay="0"
+			Color="g(238; 169; 3) x 0.15"
+			OcclusionOffset="-0.3"
+			Dir="(0; -1; 0)"
+			Pos="(-16.692;42.713;12.292)"
+			Size="0.7"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+		<Flare
+			AttenEnd="300"
+			AttenStart="27"
+			ColorMultAtDay="0"
+			Color="g(238; 169; 3) x 0.15"
+			OcclusionOffset="-0.3"
+			Dir="(0; -1; 0)"
+			Pos="(-19.971;42.713;49.113)"
+			Size="0.7"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+		<Flare
+			AttenEnd="300"
+			AttenStart="27"
+			ColorMultAtDay="0"
+			Color="g(238; 169; 3) x 0.15"
+			OcclusionOffset="-0.3"
+			Dir="(0; -1; 0)"
+			Pos="(-27.079;42.713;85.389)"
+			Size="0.7"
+			Texture="sfx/flare_lamp_01__s_d.tga"
+		/>
+	</PhysicsModel>
+</ModelBrand>

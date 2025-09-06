@@ -1,0 +1,19 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/sleiter_st833_chimera_tuning/sleiter_st833_chimera_horn_2" />
+	<GameData
+		CameraPreset="roof"
+		Category="miscellenious"
+		Price="400"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_HORNS_TWIN_TWOSIDE_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_HORNS_TWIN_TWOSIDE_NAME"
+		/>
+		<InstallSocket Type="SleiterST833ChimeraHorn" />
+	</GameData>
+</TruckAddon>

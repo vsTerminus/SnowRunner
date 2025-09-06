@@ -1,0 +1,648 @@
+<_templates Include="trucks">
+	<Wheel>
+		<RearWheel
+			ConnectedToHandbrake="true"
+			Location="rear"
+			Torque="Default"
+			ParentFrame="BoneSuspenssion_cdt"
+		/>
+		<FrontWheel
+			ConnectedToHandbrake="true"
+			Location="front"
+			SteeringAngle="38"
+			SteeringCastor="4"
+			SteeringJointOffset="0.18"
+			Torque="Full"
+			ParentFrame="BoneCabinTwist_cdt"
+		/>
+	</Wheel>
+	<Body>
+		<Sunshield Collisions="None" Mass="3">
+			<Constraint
+				AxisLocal="(0; 0; 1)"
+				Type="Hinge"
+				MinLimit="-5"
+				MaxLimit="18"
+			>
+				<Motor Damping=".1" Spring="10" Type="Spring" />
+			</Constraint>
+		</Sunshield>
+		<MudguardFront Collisions="None" Mass="10">
+			<Constraint
+				AxisLocal="(0; 0; 1)"
+				Type="Hinge"
+				MinLimit="-44"
+				MaxLimit="10"
+			>
+				<Motor Damping="1" Spring="1" Type="Spring" />
+			</Constraint>
+		</MudguardFront>
+		<Mirror Collisions="None" Mass="3">
+			<Constraint
+				AxisLocal="(0; 1; 0)"
+				Type="Hinge"
+				MinLimit="-1"
+				MaxLimit="1"
+			>
+				<Motor Damping="40" Spring="50" Type="Spring" />
+			</Constraint>
+		</Mirror>
+	</Body>
+</_templates>
+<Truck>
+	<TruckData
+		BackSteerSpeed="0.025"
+		DiffLockType="Uninstalled"
+		EngineIconMesh="env/engine_plad_440"
+		EngineIconScale="0.8"
+		EngineStartDelay="0.7"
+		ExhaustStartTime="1.5"
+		FuelCapacity="240"
+		Responsiveness="0.2"
+		SteerSpeed="0.03"
+		TruckImage="Plad440mchr"
+		TruckType="OFFROAD"
+	>
+		<WinchUpgradeSocket Default="w_medium_trucks_default" IsUpgradable="true" Type="winches_medium_trucks" />
+		<Wheels
+			DefaultRim="rim_1"
+			DefaultTire="offroad_plad_440"
+			DefaultWheelType="wheels_plad_440"
+		>
+			<Wheel _template="FrontWheel" Pos="(2.241; 0.566; 1.050)" />
+			<Wheel _template="FrontWheel" RightSide="true" Pos="(2.241; 0.566; 1.050)" />
+			<Wheel _template="RearWheel" Pos="(-2.02; 0.566; 0.93)" />
+			<Wheel _template="RearWheel" RightSide="true" Pos="(-2.02; 0.566; 0.93)" />
+			<Wheel _template="RearWheel" Pos="(-3.573; 0.566; 0.93)" />
+			<Wheel _template="RearWheel" RightSide="true" Pos="(-3.573; 0.566; 0.93)" />
+		</Wheels>
+		<SuspensionSocket
+			Default="plad_440_suspension_default"
+			Type="s_plad_440"
+			MaxWheelRadiusWithoutSuspension="0.23"
+		/>
+		<SteeringWheel Frame="BoneSteering" />
+		<SteeringRack
+			Frame="BoneRack"
+			FrameSteerLeft="BoneRackLeft"
+			FrameSteerRight="BoneRackRight"
+			RackHalfSizeZ="0.76"
+		/>
+		<Steam Origin="(2.405; 1.436; 0)" />
+		<SoundsWheels _template="Default" />
+		<SoundsDamage _template="Heavy" />
+		<Sounds
+			_template="Default"
+			DisableReversePitch="true"
+			MinDist="15.0"
+			Origin="(1.772; 1.233; 0)"
+		>
+			<Reverse		_inheritRemove="true" />
+			<EngineTrans	Sound="trucks/plad_440/plad_440_turbo" />
+			<Reverse		Sound="trucks/plad_440/plad_440_back_beeper" />
+			<BrakePull		Sound="trucks/plad_440/plad_440_brake_pull" />
+			<BrakeRelease	Sound="trucks/plad_440/plad_440_brake_release" />
+			<BrakesSqueal	Sound="trucks/plad_440/plad_440_brakes_squeal" />
+			<Handbrake		Sound="trucks/plad_440/plad_440_handbrake_on" />
+			<HandbrakeOff	Sound="trucks/plad_440/plad_440_handbrake_off" />
+			<Honk			Sound="trucks/plad_440/plad_440_honk" />
+			<EngineRev		Sound="trucks/plad_440/plad_440_rev" />
+			<EngineAccel	Sound="trucks/plad_440/plad_440_acc" />
+			<EngineStart	Sound="trucks/plad_440/plad_440_start" />
+			<EngineStop		Sound="trucks/plad_440/plad_440_stop" />
+			<EngineIdle		Sound="trucks/plad_440/plad_440_idle" />
+			<EngineIdle_2d	Sound="trucks/plad_440/plad_440_idle_2d"	IsSound2D="true" />
+			<EngineLow		Sound="trucks/plad_440/plad_440_low" />
+			<EngineLow_2d	Sound="trucks/plad_440/plad_440_low_2d"	IsSound2D="true" />
+			<EngineHigh		Sound="trucks/plad_440/plad_440_high" />
+			<EngineHigh_2d	Sound="trucks/plad_440/plad_440_high_2d"	IsSound2D="true" />
+			<EngineHeavy	Sound="trucks/plad_440/plad_440_heavy" />
+			<EngineHeavy_2d	Sound="trucks/plad_440/plad_440_heavy_2d"	IsSound2D="true" />
+			<ChassisStress	Sound="trucks/common/truck_stress_rnd_set/truck_stress_rnd" />
+			<AbruptStop		Sound="trucks/common/truck_swing_big_rnd_set/truck_swing_big_rnd" />
+		</Sounds>
+		<Shakers>
+			<Shaker
+				Frame="BoneGearstick"
+				MaxAngle="(3; 3; 3)"
+				MaxFrequency="0.1"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</Shakers>
+		<Shafts>
+			<Shaft SocketPointA="Shaft1a" SocketPointB="Shaft1b" />
+			<Shaft SocketPointA="Shaft2a" SocketPointB="Shaft2b" />
+			<Shaft SocketPointA="Shaft3a" SocketPointB="Shaft3b" />
+			<Shaft Mesh="env/shaft_axle_plad_440" SocketPointA="ShaftAxleFRa" SocketPointB="ShaftAxleFRb" />
+			<Shaft Mesh="env/shaft_axle_plad_440" SocketPointA="ShaftAxleFLa" SocketPointB="ShaftAxleFLb" />
+		</Shafts>
+		<OcclusionMap HalfSizeZ="1.89" MinX="-5.42" MaxX="4.12" />
+		<LimitedFluid Center="(0.802; 0.772; -0.638)" SizeX="1.379" SizeY="0.436" SizeZ="0.364" Type="Box" />
+		<LimitedFluid Center="(0.802; 0.772; 0.638)" SizeX="1.379" SizeY="0.436" SizeZ="0.364" Type="Box" />
+		<Intake Dir="(1; 0; 0)" Origin="(3.405; 1.47; 0.014)" Size="0.55" />
+		<GearboxSocket Default="g_truck_default" Type="gearboxes_trucks" />
+		<FuelTank DamageCapacity="80" />
+		<EngineSocket Default="us_truck_old_engine_0" Type="e_us_truck_old, e_us_truck_old_plad_440" />
+		<Driver AnimationSet="Truck" Pos="(0.84; 1.73; 0.485)" SteeringWheelPos="(1.22; 2.058; 0.479)" />
+		<Dashboard>
+			<Gauge Damping="0.99" Dir="(-0.779; 0.628; 0)" InputRange="(0;120)" InputType="speed" Mesh="trucks/arrows/plad_440_arrow_01" Org="(1.444; 2.03; 0.617)" OutputAngles="(-130; 130)" />
+			<Gauge Damping="0.99" Dir="(-0.779; 0.628; 0)" InputRange="(0;1)" InputType="rpm" Mesh="trucks/arrows/plad_440_arrow_01" Org="(1.444; 2.03; 0.206)" OutputAngles="(-116; 130)" />
+			<Gauge Damping="0.99" Dir="(-0.779; 0.628; 0)" InputRange="(0;1)" InputType="fuel" Mesh="trucks/arrows/plad_440_arrow_02" Org="(1.418; 1.994; 0.332)" OutputAngles="(-55; 55)" />
+			<Gauge Damping="0.99" Dir="(-0.777; 0.629; 0)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/plad_440_arrow_02" Org="(1.466; 2.052; 0.786)" OutputAngles="(-62; -17)" />
+			<Gauge Damping="0.99" Dir="(-0.777; 0.629; 0)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/plad_440_arrow_02" Org="(1.466; 2.052; 0.722)" OutputAngles="(62; -20)" />
+			<Gauge Damping="0.99" Dir="(-0.777; 0.629; 0)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/plad_440_arrow_02" Org="(1.419; 1.994; 0.722)" OutputAngles="(-60; -14)" />
+			<Gauge Damping="0.99" Dir="(-0.777; 0.629; 0)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/plad_440_arrow_02" Org="(1.419; 1.994; 0.787)" OutputAngles="(64; 5)" />
+			<Gauge Damping="0.99" Dir="(-0.777; 0.629; 0)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/plad_440_arrow_02" Org="(1.466; 2.052; 0.333)" OutputAngles="(-60; 45)" />
+		</Dashboard>
+		<Damage>
+			<DamageArea Type="Engine" Min="(1.838, 0.945, -0.569)" Max="(3.229, 1.820, 0.569)" />
+			<DamageArea Type="FuelTank" Min="(0.089, 0.531, -0.843)" Max="(1.515, 1.014, -0.433)" />
+			<DamageArea Type="FuelTank" Min="(0.089, 0.531, 0.433)" Max="(1.515, 1.014, 0.843)" />
+		</Damage>
+		<CompatibleWheels OffsetZ="-0.04" RearOffsetZ="-0.05" Scale="0.58" Type="wheels_plad_440" />
+		<CompatibleWheels OffsetZ="-0.02" RearOffsetZ="-0.05" Scale="0.58" Type="wheels_medium_double" />
+		<CompatibleWheels OffsetZ="-0.04" RearOffsetZ="-0.05" Scale="0.58" Type="wheels_medium_offroad_double" />
+		<CompatibleWheels OffsetZ="-0.04" RearOffsetZ="-0.05" Scale="0.58" Type="wheels_medium_highway_double" />
+		<CompatibleWheels OffsetZ="-0.02" RearOffsetZ="-0.05" Scale="0.58" Type="wheels_medium_allterrain_double" />
+		<CompatibleWheels OffsetZ="-0.04" RearOffsetZ="-0.05" Scale="0.58" Type="wheels_medium_mudtires_double" />
+		<CompatibleWheels OffsetZ="-0.04" RearOffsetZ="-0.05" Scale="0.60" Type="wheels_plad_440" />
+		<CompatibleWheels OffsetZ="-0.02" RearOffsetZ="-0.05" Scale="0.60" Type="wheels_medium_double" />
+		<CompatibleWheels OffsetZ="-0.04" RearOffsetZ="-0.05" Scale="0.60" Type="wheels_medium_offroad_double" />
+		<CompatibleWheels OffsetZ="-0.04" RearOffsetZ="-0.05" Scale="0.60" Type="wheels_medium_highway_double" />
+		<CompatibleWheels OffsetZ="-0.02" RearOffsetZ="-0.05" Scale="0.60" Type="wheels_medium_allterrain_double" />
+		<CompatibleWheels OffsetZ="-0.04" RearOffsetZ="-0.05" Scale="0.60" Type="wheels_medium_mudtires_double" />
+		<Camera Center="(-1.85; 0; 0)" ParentFrame="BoneChassis_cdt">
+			<Cockpit
+				_template="Default"
+				LimitsVer="(-0.4; 0.2)"
+				WindshieldDiffuseTexture="trucks/plad_440_glass__d_a.tga"
+				WindshieldShadingTexture="trucks/plad_440_glass__sh_d.tga"
+				ViewPos="(0.835; 2.41; 0.486)"
+			>
+				<Mirror ClipDir="(-0.915; -0.02; -0.391)" ClipOffset="0.1" FOVScale="2" MeshFrame="mirror_left" ReflectionDir="(-0.915; -0.02; -0.391)" Size="(0.190; 0.295)" Pos="(1.623; 2.289; 1.272)" />
+				<Mirror ClipDir="(-0.82; -0.02; 0.574)" ClipOffset="0.1" FOVScale="3.5" MeshFrame="mirror_right" ReflectionDir="(-0.82; -0.02; 0.574)" Size="(0.190; 0.295)" Pos="(1.466; 2.289; -1.207)" />
+			</Cockpit>
+		</Camera>
+		<Axles>
+			<Axle Frame="BoneAxle1" ParentFrame="BoneCabinTwist_cdt" />
+			<Axle Frame="BoneAxle2" ParentFrame="BoneSuspenssion_cdt" />
+			<Axle Frame="BoneAxle3" ParentFrame="BoneSuspenssion_cdt" />
+		</Axles>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/plad_440">
+		<NetSync Legacy="false" />
+		<Body
+			CenterOfMassOffset="(0; 0; 0)"
+			ImpactType="Truck"
+			Mass="4000"
+			ModelFrame="BoneChassis_cdt"
+			NetSync="pv"
+		>
+			<Body
+				CenterOfMassOffset="(0; 0; 0)"
+				ImpactType="Truck"
+				Mass="1000"
+				ModelFrame="BoneSuspenssion_cdt"
+			>
+				<Constraint
+					AxisLocal="(0; 0; 1)"
+					Type="Hinge"
+					MinLimit="-6"
+					MaxLimit="6"
+				>
+					<Motor Damping="1000" Spring="100000" Type="Spring" />
+				</Constraint>
+			</Body>
+			<Body
+				CenterOfMassOffset="(1; 0; 0)"
+				ImpactType="Truck"
+				Mass="4500"
+				ModelFrame="BoneCabinTwist_cdt"
+				NetSync="pv"
+			>
+				<Constraint
+					AxisLocal="(0.75; 0; 0)"
+					Type="Hinge"
+					MinLimit="-14"
+					MaxLimit="14"
+				>
+					<Motor Damping="200000" Spring="400000" Type="Spring" />
+				</Constraint>
+				<Body
+					CenterOfMassOffset="(0; 0; 0)"
+					ImpactType="Truck"
+					Mass="1000"
+					ModelFrame="BoneCabin_cdt"
+					NetSync="pv"
+				>
+					<Constraint
+						AxisLocal="(0; 1; 0)"
+						Type="Prismatic"
+						MinLimit="-0.02"
+						MaxLimit="0.02"
+					>
+						<Motor Damping="200000" Spring="1400000" Type="Spring" />
+					</Constraint>
+					<Body _template="Mirror" ModelFrame="BoneMirrorLeft_cdt" />
+					<Body _template="Mirror" ModelFrame="BoneMirrorRight_cdt" />
+					<Body _template="MudguardFront" ModelFrame="BoneMudguardRight_cdt" />
+					<Body _template="MudguardFront" ModelFrame="BoneMudguardLeft_cdt" />
+					<Body _template="Sunshield" ModelFrame="BoneSunshield_cdt" />
+					<Body Collisions="None" Mass="1" ModelFrame="BoneAxe_cdt">
+						<Constraint
+							AxisLocal="(0; 1; 0)"
+							Type="Prismatic"
+							MinLimit="-0.005"
+							MaxLimit="0.01"
+						>
+							<Motor Damping="1" Spring="0.02" Type="Spring" />
+						</Constraint>
+					</Body>
+				</Body>
+				<Body Collisions="None" Mass="1" ModelFrame="BoneTieRod_cdt">
+					<Constraint
+						AxisLocal="(0; 0; 1)"
+						Name="TieRodSteer"
+						Type="Hinge"
+						MinLimit="-30"
+						MaxLimit="16"
+					>
+						<Motor
+							Damping="1.0"
+							Force="6000"
+							Tau="1"
+							Type="Position"
+						/>
+					</Constraint>
+				</Body>
+				<Body Collisions="None" Mass="1" ModelFrame="BoneTieRodBaseA_cdt">
+					<Constraint
+						AxisLocal="(0; 1; 0)"
+						Name="TieRodBaseA"
+						Type="Hinge"
+						MinLimit="-90"
+						MaxLimit="90"
+					>
+						<Motor
+							Damping="1.0"
+							Force="6000"
+							Tau="1"
+							Type="Position"
+						/>
+					</Constraint>
+				</Body>
+				<Body Collisions="None" Mass="1" ModelFrame="BoneTieRodBaseB_cdt">
+					<Constraint
+						AxisLocal="(0; 1; 0)"
+						Name="TieRodBaseB"
+						Type="Hinge"
+						MinLimit="-90"
+						MaxLimit="90"
+					>
+						<Motor
+							Damping="1.0"
+							Force="6000"
+							Tau="1"
+							Type="Position"
+						/>
+					</Constraint>
+				</Body>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<StopSignals>
+			<Light _template="StopSignal" Pos="(-4.644; 0.959; -0.517)" />
+			<Light _template="StopSignal" Pos="(-4.644; 0.959; 0.517)" />
+			<Flare _template="StopSignal" Size="0.3" Pos="(-4.688; 0.974; -0.64)" />
+			<Flare _template="StopSignal" Size="0.3" Pos="(-4.688; 0.974; 0.64)" />
+		</StopSignals>
+		<ReverseSignals>
+			<Light _template="ReverseSignal" Pos="(-4.688; 0.959; -0.64)" />
+			<Light _template="ReverseSignal" Pos="(-4.688; 0.959; 0.64)" />
+			<Flare _template="ReverseSignal" Color="g(255; 235; 245) x 0.5" Size="0.4" Pos="(-4.688; 0.937; -0.638)" />
+			<Flare _template="ReverseSignal" Color="g(255; 235; 245) x 0.5" Size="0.4" Pos="(-4.688; 0.937; 0.638)" />
+		</ReverseSignals>
+		<Ignition>
+			<Light _template="IgnitionSignalWhite" Color="g(255; 235; 215) x 1.0" Pos="(3.4; 0.868; 0)" ParentFrame="BoneCabin_cdt" />
+			<Light _template="IgnitionSignalRed" Pos="(-4.6; 1.201; 0)" />
+			<Flare _template="IgnitionSignalWhite" Color="g(253; 220; 186) x 1" ColorMultAtDay=".05" DirAngle="90" Size="0.3" Pos="(3.238; 1.14; 0.741)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhite" Color="g(253; 220; 186) x 1" ColorMultAtDay=".05" DirAngle="90" Size="0.3" Pos="(3.238; 1.14; -0.741)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalOrange" Color="g(255; 160; 2) x .5" ColorMultAtDay=".2" Dir="(0; 0; 1)" Size="0.2" Pos="(3.141; 1.224; 0.919)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalOrange" Color="g(255; 160; 2) x .5" ColorMultAtDay=".2" Dir="(0; 0; -1)" Size="0.2" Pos="(3.141; 1.224; -0.919)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalOrange" Color="g(255; 160; 2) x .5" ColorMultAtDay=".2" Dir="(1; 0; 0)" Size="0.2" Pos="(1.477; 2.647; 0.842)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalOrange" Color="g(255; 160; 2) x .5" ColorMultAtDay=".2" Dir="(1; 0; 0)" Size="0.2" Pos="(1.477; 2.647; -0.842)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalRed" Size="0.3" Pos="(-4.688; 0.937; -0.638)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="IgnitionSignalRed" Size="0.3" Pos="(-4.688; 0.937; 0.638)" ParentFrame="BoneChassis_cdt" />
+		</Ignition>
+		<HeadLight>
+			<Model _template="HeadLightRay" Org="(3.238; 1.14; -0.741)" ParentFrame="BoneCabin_cdt" />
+			<Model _template="HeadLightRay" Org="(3.238; 1.14; 0.741)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="HeadLight" Color="g(255; 235; 215) x 0.8" Size="0.35" Pos="(3.238; 1.14; -0.741)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="HeadLight" Color="g(255; 235; 215) x 0.8" Size="0.35" Pos="(3.238; 1.14; 0.741)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="BlueStreak" Pos="(3.238; 1.14; -0.741)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="BlueStreak" Pos="(3.238; 1.14; 0.741)" ParentFrame="BoneCabin_cdt" />
+		</HeadLight>
+	</ModelAttachments>
+	<Landmark Mesh="landmarks/plad_440_lmk" MinScale="1.8" MaxScale="3.8" />
+	<HeadLight _template="Default" Pos="(3.837; 0.987; 0)" />
+	<GameData
+		Country="US,NE,CE"
+		ExcludeAddons="frame_addon_sideboard_2"
+		Price="86300"
+		UnlockByExploration="true"
+		UnlockByRank="1"
+	>
+		<WinchSocket Pos="(1.04; 0.552; 1.178)" />
+		<WinchSocket Pos="(1.04; 0.552; -1.178)" />
+		<WinchSocket Pos="(-4.868; 0.773; 0)" />
+		<WinchSocket Pos="(-1.018; 1.035; -0.432)" />
+		<WinchSocket Pos="(-1.018; 1.035; 0.432)" />
+		<WinchSocket Pos="(2.073; 1.499; 0.908)" />
+		<WinchSocket Pos="(2.073; 1.499; -0.908)" />
+		<WinchSocket Pos="(3.129; 1.499; 0.647)" />
+		<WinchSocket Pos="(3.129; 1.499; -0.647)" />
+		<UiDesc
+			UiDesc="UI_VEHICLE_PLAD_440_DESC"
+			UiIcon30x30="heavyVehicleImg30"
+			UiIcon328x458="shopImgPlad440"
+			UiIcon40x40="heavyVehicleImg"
+			UiIconLogo="PLADLogo80"
+			UiName="UI_VEHICLE_PLAD_440_NAME"
+		/>
+		<CustomizationCameras>
+			<!-- ADDONS -->
+			<CameraPos FOV="32.0" Name="default" InterestPosition="(5.5; 1.3; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(13.5; 1.65; -4.4)" />
+			<CameraPos FOV="32.0" Name="exhaust" InterestPosition="(5.3; 2; 0.5)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(0.4; 4; 3.92)" />
+			<CameraPos FOV="32.0" Name="side_r" InterestPosition="(6; 3; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(5; 3.6; -4)" />
+			<CameraPos FOV="32.0" Name="side_l" InterestPosition="(6; 3; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(5; 3.6; 4)" />
+			<CameraPos FOV="32.0" Name="wheels" InterestPosition="(5; 0.5; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(9.8; 0.8; -4.5)" />
+			<CameraPos FOV="32.0" Name="rear" InterestPosition="(-0.39; 1.12; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-6.51; 1.86; 2.370)" />
+			<CameraPos FOV="32.0" Name="roof" InterestPosition="(5; 1.9; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(10; 5.1; -2.5)" />
+			<CameraPos FOV="32.0" Name="snorkels" InterestPosition="(5.95; 1.8; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(9.75; 3.5; 4.85)" />
+			<CameraPos FOV="32.0" Name="hoods" InterestPosition="(5; 1.3; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(13.5; 1.25; -4.700)" />
+			<CameraPos FOV="32.0" Name="hoods_default" InterestPosition="(5; 1.3; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(13.5; 1.25; -4.700)" />
+			<CameraPos FOV="32.0" Name="addon_1" InterestPosition="(1; 1.675; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-7; 3.91; 9)" />
+			<CameraPos FOV="32.0" Name="addon_2" InterestPosition="(3.9; 1.95; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-1; 4.15; -6.64)" />
+			<CameraPos FOV="32.0" Name="addon_3" InterestPosition="(4.5; 2; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(0; 5.1; -5.5)" />
+			<CameraPos FOV="32.0" Name="spare_wheel" InterestPosition="(4.6; 1.6; 0.5)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(1.2; 2.814; 3.953)" />
+			<!-- <STUFF> -->
+			<CameraPos FOV="32.0" Interior="true" Name="bubble_head" InterestPosition="(4.700; 2; 0.7)" Position="(4.8; 2.3; -0.2)" />
+			<CameraPos FOV="32.0" Interior="true" Name="hood_figure" InterestPosition="(4.08; 1.33; 1.050)" Position="(8.78; 2.33; -0.95)" />
+			<CameraPos FOV="32.0" Interior="true" Name="curtain" InterestPosition="(6.4; 2.9; 0.8)" Position="(4.4; 2.100; -0.7)" />
+			<CameraPos FOV="32.0" Interior="true" Name="mirror_mount" InterestPosition="(5.29; 2.4; 0.8)" Position="(4.4; 2.2; -0.4)" />
+			<!-- <STICKERS> -->
+			<CameraPos FOV="32.0" Interior="true" Name="glass_sticker" InterestPosition="(4; 2.100; -1.2)" Position="(9; 2.6; 1.3)" />
+			<CameraPos FOV="32.0" Name="capote_sticker" InterestPosition="(6.1; 1.1; -0.7)" MaxXRotation="0" MaxYRotation="0" MaxZoom="0" Position="(9.5; 5; -0.7)" />
+			<CameraPos FOV="32.0" Name="door_l_sticker" InterestPosition="(4.700; 1.5; 0)" MaxXRotation="0" MaxYRotation="0" MaxZoom="0" Position="(4.200; 2; -3.5)" />
+			<CameraPos FOV="32.0" Name="door_r_sticker" InterestPosition="(6.5; 1.5; 0)" MaxXRotation="0" MaxYRotation="0" MaxZoom="0" Position="(4.3; 1.85; 3.5)" />
+			<CameraPos FOV="32.0" Interior="true" Name="sticker" InterestPosition="(5.2; 1.2; 1.3)" Position="(4.82; 2.56; -0.1)" />
+			<CameraPos FOV="32.0" Interior="true" Name="sticker_door" InterestPosition="(5.2; 0.1; 4)" Position="(4.82; 2.56; 0)" />
+			<CameraPos FOV="32.0" Interior="true" Name="sticker_1" InterestPosition="(5.29; 1.8; -0.1)" Position="(4.65; 2.2; -0.2)" />
+			<CameraPos FOV="32.0" Interior="true" Name="sticker_2" InterestPosition="(5.29; 2.7; -0.12)" Position="(4.6; 2.2; -0.4)" />
+		</CustomizationCameras>
+		<CraneSocket Pos="(1.04; 0.552; 1.178)" />
+		<CraneSocket Pos="(1.04; 0.552; -1.178)" />
+		<CraneSocket Pos="(-4.868; 0.773; 0)" />
+		<CraneSocket Pos="(-1.018; 1.035; -0.432)" />
+		<CraneSocket Pos="(-1.018; 1.035; 0.432)" />
+		<CraneSocket Pos="(2.073; 1.499; 0.908)" />
+		<CraneSocket Pos="(2.073; 1.499; -0.908)" />
+		<CraneSocket Pos="(3.129; 1.499; 0.647)" />
+		<CraneSocket Pos="(3.129; 1.499; -0.647)" />
+		<AddonSockets>
+			<Socket Names="Trailer" Offset="(-4.846; 0.76; 0)" />
+			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-3; 1.4; 0)" />
+			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-2.8; 1.6; 0)" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="SaddleHigh" Offset="(-2.8; 1.048; 0)">
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.006)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.006)" />
+			</Socket>
+			<Socket Names="SaddleLow" Offset="(-3; 1.048; 0)">
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.006)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.006)" />
+			</Socket>
+			<Socket
+				Names="FrameAddon"
+				NamesBlock="LogLift"
+				Offset="(-2.32; 1.048; 0)"
+				ParentFrame="BoneChassis_cdt"
+			>
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.11)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.11)" />
+				<AddonsShift Offset="(-0.4; 0; 0)" Types="Plad440SpareWheel" />
+			</Socket>
+			<Socket Names="FrameAddonTank" NamesBlock="Plad440Fender, Plad440SpareWheelDefault, Plad440SpareWheel, LogLift" Offset="(-3.1; 1.04; 0)">
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0)" />
+			</Socket>
+			<Socket Names="FrameAddonKung" NamesBlock="LogLift" Offset="(-2.8; 1.105; 0)" />
+			<Socket Names="BunkLog" Offset="(-6.4; 1.048; 0)" />
+			<Socket Names="FrameAddonTow" NamesBlock="Plad440Fender, LogLift" Offset="(-2.8; 1.045; 0)">
+				<AddonsShift Offset="(-0.44; 0; 0)" Types="Plad440SpareWheel" />
+				<AddonsShift Offset="(-0.18; 0; 0)" Types="Plad440SpareWheelDefault" />
+				<AddonsShift Offset="(-0.9; 0; 0)" Types="LogLift" />
+			</Socket>
+			<Socket Names="FrameAddonHeavyRepair" NamesBlock="Plad440Fender, Plad440SpareWheel, LogLift" Offset="(-2.9; 1.33; 0)" />
+			<Socket
+				Names="BigCraneUs"
+				NamesBlock="LogLift"
+				Offset="(-2.93; 1.141; 0)"
+				ParentFrame="BoneChassis_cdt"
+			>
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.1; 0.05)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.1; -0.05)" />
+				<AddonsShift Offset="(-0.35; 0; 0)" Types="Plad440SpareWheel" />
+				<AddonsShift Offset="(-0.1; 0; 0)" Types="Plad440SpareWheelDefault" />
+			</Socket>
+			<Socket Names="Plad440Sideboard2" NamesBlock="LogLift, Plad440SpareWheel" Offset="(0; 0; 0)">
+				<ExtraParent Frame="BoneCabinTwist_cdt" Offset="(0; 0; 0)" />
+				<AddonsShift Offset="(-0.08; 0; 0)" Types="Plad440SpareWheelDefault" />
+			</Socket>
+			<Socket Names="MetalDetector" NamesBlock="LogLift, MinicraneUS" Offset="(-0.6; -0.002; 0)" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="MinicraneUS" NamesBlock="Plad440Sideboard2, LogLift, BigCraneUs, FrameAddonKung, BunkLog, FrameAddonHeavyRepair, LargeSemitrailerOiltank, SemitrailerOiltank, FrameAddonTank, FrameAddonTow, FrameAddon" Offset="(-0.3; 1.052; 0)">
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0)" />
+				<AddonsShift Offset="(-0.4; 0; 0)" Types="Plad440SpareWheel" />
+				<AddonsShift Offset="(-0.1; 0; 0)" Types="Plad440SpareWheelDefault" />
+			</Socket>
+		</AddonSockets>
+		<AddonSockets
+			DefaultAddon="plad_440_fender_addon"
+			RequiredAddonIfNoConflicts="plad_440_fender_addon"
+		>
+			<Socket Names="Plad440Fender" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt">
+				<ExtraParent Frame="BoneCabinTwist_cdt" Offset="(0; 0; 0)" />
+			</Socket>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="Plad440Horn" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="Plad440Visor" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="Plad440Beacon" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket
+				Names="Plad440Roofrack"
+				NamesBlock="Plad440Beacon, Plad440Spotlight, Plad440Horn"
+				Offset="(0; 0; 0)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="Plad440Spotlight" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets DefaultAddon="plad_440_exhaust_default">
+			<Socket Names="Plad440ExhaustDefault" Offset="(0; 0; 0)" ParentFrame="BoneCabinTwist_cdt">
+				<ExtraParent Frame="BoneCabin_cdt" Offset="(0; 0; 0)" />
+			</Socket>
+			<Socket Names="Plad440Exhaust" Offset="(0; 0; 0)" ParentFrame="BoneCabinTwist_cdt" />
+		</AddonSockets>
+		<AddonSockets DefaultAddon="plad_440_bumper_default">
+			<Socket Names="Plad440Bumper" Offset="(0; 0; 0)" ParentFrame="BoneCabinTwist_cdt" />
+		</AddonSockets>
+		<AddonSockets DefaultAddon="plad_440_snorkel_default">
+			<Socket Names="Plad440Snorkel" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets DefaultAddon="plad_440_diff_lock_default">
+			<Socket Names="Plad440DiffLock" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>
+		<AddonSockets
+			DefaultAddon="plad_440_wheel_addon"
+			RequiredAddonIfNoConflicts="plad_440_wheel_addon"
+			ParentFrame="BoneChassis_cdt"
+		>
+			<Socket Names="LogLift" NamesBlock="SaddleHigh, SaddleLow" Offset="(0.37; 1.054; 0)" />
+			<Socket Names="Plad440SpareWheelDefault" NamesBlock="Plad440Exhaust" ParentFrame="BoneCabinTwist_cdt" />
+			<Socket Names="Plad440SpareWheel" ParentFrame="BoneCabinTwist_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket
+				InCockpit="true"
+				Names="StuffAirfreshener"
+				Offset="(1.402; 2.593; 0.147)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="StuffHoodPlad440" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="Plad440Sticker_Capote" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="Plad440Sticker_Door_L" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="Plad440Sticker_Door_R" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="Plad440Sticker_GlassTop" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="Plad440Sticker_GlassBottom" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="Plad440Sticker_1x1_01" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="Plad440Sticker_1x1_02" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="Plad440Sticker_1x1_03" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="Plad440Sticker_1x2_01" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="Plad440Sticker_1x2_02" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="Plad440Sticker_1x4_01" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+	</GameData>
+	<ControlledConstraints>
+		<Constraint Id="chassis_steer" IsLinkedSteering="true" Name="TieRodSteer" />
+		<Constraint Id="chassis_steer" IsLinkedSteering="true" Name="TieRodBaseA" />
+		<Constraint Id="chassis_steer" IsLinkedSteering="true" Name="TieRodBaseB" />
+	</ControlledConstraints>
+	<AutomaticIK>
+		<IKBone ModelFrame="BoneTieRodHinge2" ParentFrame="BoneTieRod_cdt">
+			<IKJoint AxisLocal="(1; 0; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneRackLeft"
+				ModelFrame="BoneTieRodPrismatic"
+			>
+				<IKJoint AxisLocal="(1; 0; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="BoneAxle2LeftIK_1_1" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle2"
+				ModelFrame="BoneAxle2LeftIK_1_2"
+			>
+				<IKJoint AxisLocal="(1; 0; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="BoneAxle2RightIK_1_1" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle2"
+				ModelFrame="BoneAxle2RightIK_1_2"
+			>
+				<IKJoint AxisLocal="(1; 0; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="BoneAxle3LeftIK_1_2" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle3"
+				ModelFrame="BoneAxle3LeftIK_1_1"
+			>
+				<IKJoint AxisLocal="(1; 0; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="BoneAxle3RightIK_1_2" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle3"
+				ModelFrame="BoneAxle3RightIK_1_1"
+			>
+				<IKJoint AxisLocal="(1; 0; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="BonePistonRightIK_1_1" ParentFrame="BoneCabinTwist_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle1"
+				ModelFrame="BonePistonRightIK_1_2"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="BonePistonLeftIK_1_1" ParentFrame="BoneCabinTwist_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle1"
+				ModelFrame="BonePistonLeftIK_1_2"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+	</AutomaticIK>
+</Truck>

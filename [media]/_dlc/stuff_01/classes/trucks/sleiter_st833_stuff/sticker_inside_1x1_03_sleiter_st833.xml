@@ -1,0 +1,19 @@
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/sleiter_st833_stuff/sticker_inside_1x1_03_sleiter_st833" />
+	<GameData
+		CameraPreset="sticker_2"
+		Category="sticker"
+		Price="100"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+		IsCustomizable="false"
+	>
+		<UiDesc
+			UiDesc="UI_STUFF_STICKER_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_STUFF_STICKER_INSIDE_1X1_NAME"
+		/>
+		<InstallSocket Type="SleiterST833Sticker_1x1_03" />
+	</GameData>
+</TruckAddon>

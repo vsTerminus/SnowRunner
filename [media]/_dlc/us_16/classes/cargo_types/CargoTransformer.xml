@@ -1,0 +1,9 @@
+<CargoType>
+	<UiDesc
+		UiName="UI_CARGO_TRANSFORMER_NAME"
+		UiDesc="UI_CARGO_TRANSFORMER_DESC"
+		UiIcon20x20="cargoTransformator20"
+		UiIcon40x40="cargoTransformator40"
+		UiIcon100x100="cargoTypeTransformator"
+	/>
+</CargoType>

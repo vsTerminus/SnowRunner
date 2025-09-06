@@ -1,0 +1,56 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<TruckData>
+		<Damage>
+			<Multiplier Multiplier="0.9" Type="Engine" />
+		</Damage>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/hib_billert_1980_tuning/hib_billert_1980_bumper_default">
+		<Body ImpactType="Truck" Mass="200" ModelFrame="BoneRoot_cdt">
+			<Constraint Type="Rigid" />
+			<Body Mass="50" ModelFrame="BoneLoopR_cdt">
+				<Constraint
+					AxisLocal="(0; 0; 1)"
+					PivotOffset="(0; 0; 0)"
+					Type="Hinge"
+					MinLimit="0.0"
+					MaxLimit="120.0"
+				>
+					<Motor Damping="1" Spring="1" Type="Spring" />
+				</Constraint>
+			</Body>
+			<Body Mass="50" ModelFrame="BoneLoopL_cdt">
+				<Constraint
+					AxisLocal="(0; 0; 1)"
+					PivotOffset="(0; 0; 0)"
+					Type="Hinge"
+					MinLimit="0.0"
+					MaxLimit="120.0"
+				>
+					<Motor Damping="1" Spring="1" Type="Spring" />
+				</Constraint>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="default"
+		Category="bumper"
+		Price="1100"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<WinchSocket FixedToTruck="true" Pos="(3.297; 0.859; 0)" />
+		<WinchSocket FixedToTruck="true" Pos="(3.482; 1.069; -0.405)" />
+		<WinchSocket FixedToTruck="true" Pos="(3.482; 1.069; 0.405)" />
+		<UiDesc
+			UiDesc="UI_TUNING_BUMPER_STOCK_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_BUMPER_STOCK_NAME"
+		/>
+		<InstallSocket Type="HIBBillert1980Bumper" />
+		<CraneSocket FixedToTruck="true" Pos="(3.297; 0.859; 0)" />
+		<CraneSocket FixedToTruck="true" Pos="(3.482; 1.069; -0.405)" />
+		<CraneSocket FixedToTruck="true" Pos="(3.482; 1.069; 0.405)" />
+	</GameData>
+</TruckAddon>

@@ -27,6 +27,7 @@
 			TransportedSound=""
 			ManualSound="cargo_manual/cargo_manual_logs_medium"
 		/>
+		<RequiredAddon Types="frame_addon_log_medium_aramatsu" />
 		<InstallSlot
 			CargoAddonSubtype="AramatsuMedium"
 			CargoLength="1"

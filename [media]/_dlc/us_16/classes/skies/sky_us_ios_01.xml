@@ -1,0 +1,79 @@
+<CombineSky Mesh="env/sky_02" OffsetY="-0.09" Scale="950">
+
+	<!-- sphere_sky -->
+	<Cloud AngularSpeed="0" DiffuseMap="env/cloud_04_ru_01__d_a.tga" DiffuseMultiplier="g(255; 255; 255; 255) x 5" Frame="sphere_sky" SkyColorFactor="1">
+		<DayTimeOverride DayTime="mainmenu_us_ios_01" DiffuseMap="env/cloud_04_ru_02_day_01__d_a.tga" DiffuseMultiplier="g(255; 255; 255; 200) x 2.5" AngularSpeed="0.4" />
+		<DayTimeOverride DayTime="mainmenu_us_ios_02" DiffuseMap="env/cloud_04_us_01__d_a.tga" DiffuseMultiplier="g(220; 240; 255; 220) x 5" SkyColorFactor="0.6"/>
+		<DayTimeOverride DayTime="mainmenu_us_ios_03" DiffuseMap="env/cloud_04_us_01__d_a.tga" DiffuseMultiplier="g(220; 240; 255; 220) x 5" SkyColorFactor="0.6"/>
+	</Cloud>
+
+	<!-- sphere_stars -->
+	<Cloud AngularSpeed="0.00" DiffuseMap="env/skysphere_stars__d_a.tga" DiffuseMultiplier="g(255; 255; 255; 255) x 5" Frame="sphere_stars" SkyColorFactor="1">
+		<DayTimeOverride DayTime="mainmenu_us_ios_01" DiffuseMap="" DiffuseMultiplier="g(255; 230; 200; 220) x 5" />
+        <DayTimeOverride DayTime="mainmenu_us_ios_02" DiffuseMap="" DiffuseMultiplier="g(255; 230; 200; 220) x 5" SkyColorFactor="0.6"/>
+		<DayTimeOverride DayTime="mainmenu_us_ios_03" DiffuseMap="env/sun_disc_01__d_a.tga" DiffuseMultiplier="g(255; 244; 210; 80) x 80" />
+
+	</Cloud>
+
+	<!-- sun_disc -->
+	<Cloud AngularSpeed="0" DiffuseMap="env/sun_disc_01__d_a.tga" Frame="sun_disc" SkyColorFactor="1" >
+		<DayTimeOverride DayTime="mainmenu_us_ios_01" DiffuseMap="env/sun_disc_01__d_a.tga" DiffuseMultiplier="g(255; 194; 210; 255) x 25" />
+		<DayTimeOverride DayTime="mainmenu_us_ios_02" DiffuseMap="env/sun_disc_01__d_a.tga" DiffuseMultiplier="g(255; 244; 210; 80) x 80" />
+		<DayTimeOverride DayTime="mainmenu_us_ios_03" DiffuseMap="env/sun_disc_01__d_a.tga" DiffuseMultiplier="g(255; 244; 210; 80) x 80" />
+	</Cloud>
+	
+	<!-- sun_halo -->
+	<Cloud AngularSpeed="0" DiffuseMap="env/sun_halo_01_ru_02__d_a.tga" DiffuseMultiplier="g(255; 218; 181; 210) x 120" Frame="sun_halo" SkyColorFactor="1" >
+		<DayTimeOverride DayTime="mainmenu_us_ios_01" DiffuseMap="env/sun_halo_01_ru_02__d_a.tga" DiffuseMultiplier="g(255; 128; 0; 120) x 12"/>
+		<DayTimeOverride DayTime="mainmenu_us_ios_02" DiffuseMap="env/sun_halo_01__d_a.tga" DiffuseMultiplier="g(255; 207; 138; 80) x 40" />
+		<DayTimeOverride DayTime="mainmenu_us_ios_03" DiffuseMap="env/sun_halo_01__d_a.tga" DiffuseMultiplier="g(255; 207; 138; 80) x 40" />
+	</Cloud>
+
+	<!-- moon_disc -->
+	<Cloud AngularSpeed="0" DiffuseMap="env/moon_disc_01__d_a.tga" DiffuseMultiplier="g(255; 218; 181; 210) x 120" Frame="moon_disc" SkyColorFactor="1" >
+		<DayTimeOverride DayTime="mainmenu_us_ios_01" DiffuseMap="env/moon_disc_01__d_a.tga" DiffuseMultiplier="g(255; 218; 181; 40) x 8" />
+		<DayTimeOverride DayTime="mainmenu_us_ios_02" DiffuseMap="env/moon_disc_02__d_a.tga" DiffuseMultiplier="g(255; 218; 181; 0) x 8" SkyColorFactor="1"/>
+		<DayTimeOverride DayTime="mainmenu_us_ios_03" DiffuseMap="env/moon_disc_02__d_a.tga" DiffuseMultiplier="g(255; 218; 181; 0) x 8" SkyColorFactor="1"/>
+	</Cloud>
+
+	<!-- moon_halo -->
+	<Cloud AngularSpeed="0" DiffuseMap="env/moon_halo_01__d_a.tga" DiffuseMultiplier="g(255; 218; 181; 210) x 120" Frame="moon_halo" SkyColorFactor="1" >
+		<DayTimeOverride DayTime="mainmenu_us_ios_01" DiffuseMap="" DiffuseMultiplier="g(255; 218; 181; 210) x 120" />
+		<DayTimeOverride DayTime="mainmenu_us_ios_02" DiffuseMap="" DiffuseMultiplier="g(255; 218; 181; 0) x 120" SkyColorFactor="0.5"/>
+		<DayTimeOverride DayTime="mainmenu_us_ios_03" DiffuseMap="" DiffuseMultiplier="g(255; 218; 181; 0) x 120" SkyColorFactor="0.5"/>
+	</Cloud>
+
+	<!-- clouds_rear -->
+	<Cloud AngularSpeed="0.5" DiffuseMap="env/cloud_01_us_01__s_d_a.tga" DiffuseMultiplier="g(255; 206; 80; 40) x 12" Frame="clouds_rear" SkyColorFactor="1">
+		<DayTimeOverride DayTime="mainmenu_us_ios_01" DiffuseMap="env/cloud_01_us_01__s_d_a.tga" DiffuseMultiplier="g(235; 235; 235; 0) x 1" AngularSpeed="0.5" />
+		<DayTimeOverride DayTime="mainmenu_us_ios_02" DiffuseMap="env/cloud_01_us_01__s_d_a.tga" DiffuseMultiplier="g(255; 225; 167; 60) x 5" />
+		<DayTimeOverride DayTime="mainmenu_us_ios_03" DiffuseMap="env/cloud_01_us_01__s_d_a.tga" DiffuseMultiplier="g(255; 225; 167; 60) x 5" />
+	</Cloud>
+
+	<!-- clouds_mid -->
+	<Cloud AngularSpeed="0.39" DiffuseMap="env/cloud_02_us_01__s_d_a.tga" DiffuseMultiplier="g(255; 197; 78; 50) x 18" Frame="clouds_mid" SkyColorFactor="1">
+		<DayTimeOverride DayTime="mainmenu_us_ios_01" DiffuseMap="env/cloud_02_us_01__s_d_a.tga" DiffuseMultiplier="g(255; 255; 255; 0) x 1" AngularSpeed="0.39"/>
+		<DayTimeOverride DayTime="mainmenu_us_ios_02" DiffuseMap="env/cloud_02_us_01__s_d_a.tga" DiffuseMultiplier="g(255; 234; 195; 50) x 4" />
+		<DayTimeOverride DayTime="mainmenu_us_ios_03" DiffuseMap="env/cloud_02_us_01__s_d_a.tga" DiffuseMultiplier="g(255; 234; 195; 50) x 4" />
+	</Cloud>
+
+	<!-- clouds_near -->
+	<Cloud AngularSpeed="0" DiffuseMap="env/cloud_03_us_01__s_d_a.tga" DiffuseMultiplier="g(42; 47; 249) x 2" Frame="clouds_near" SkyColorFactor="1">
+		<DayTimeOverride DayTime="mainmenu_us_ios_01" DiffuseMap="env/cloud_03_us_01__s_d_a.tga" DiffuseMultiplier="g(255; 255; 255; 0) x 2.0" />
+		<DayTimeOverride DayTime="mainmenu_us_ios_02" DiffuseMap="env/cloud_03_us_01__s_d_a.tga" DiffuseMultiplier="g(80; 175; 255; 60) x 0.9" SkyColorFactor="0.2"/>
+		<DayTimeOverride DayTime="mainmenu_us_ios_03" DiffuseMap="env/cloud_03_us_01__s_d_a.tga" DiffuseMultiplier="g(80; 175; 255; 60) x 0.9" SkyColorFactor="0.2"/>	
+	</Cloud>
+
+	<!-- sphere_ground -->
+	<!-- <Cloud AngularSpeed="0" DiffuseMap="env/cloud_01_horizon__d_a.tga" DiffuseMultiplier="g(255; 255; 255; 255) x 1" Frame="sphere_ground" SkyColorFactor="1">
+		<DayTimeOverride DayTime="mainmenu_us_12" DiffuseMap="env/cloud_01_horizon__d_a.tga" DiffuseMultiplier="g(255; 255; 255) x 14"/>
+		<DayTimeOverride DayTime="day__1_us_12" DiffuseMap="env/cloud_01_horizon__d_a.tga" DiffuseMultiplier="g(255; 255; 255) x 14"/>
+		<DayTimeOverride DayTime="mainmenu_us_ios_01" DiffuseMap="env/cloud_01_horizon__d_a.tga" DiffuseMultiplier="g(255; 255; 255) x 14"/>
+		<DayTimeOverride DayTime="day__3_us_12" DiffuseMap="env/cloud_01_horizon__d_a.tga" DiffuseMultiplier="g(255; 255; 255) x 14"/>
+		<DayTimeOverride DayTime="day_to_night_us_12" DiffuseMap="env/cloud_01_horizon__d_a.tga" DiffuseMultiplier="g(255; 255; 255; 210) x 12" />
+		<DayTimeOverride DayTime="night_to_day_us_12" DiffuseMap="env/cloud_01_horizon__d_a.tga" DiffuseMultiplier="g(255; 255; 255; 210) x 5" />
+		<DayTimeOverride DayTime="night_us_12" DiffuseMap="env/cloud_01_horizon__d_a.tga" DiffuseMultiplier="g(255; 255; 255; 255) x 10" SkyColorFactor="1" />
+	</Cloud> -->
+
+</CombineSky>
+

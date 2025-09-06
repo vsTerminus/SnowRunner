@@ -1,0 +1,69 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<TruckData>
+		<Damage>
+			<Multiplier Multiplier="0.85" Type="Engine" />
+		</Damage>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/sleiter_st833_chimera_tuning/sleiter_st833_chimera_bumper_3">
+		<Body Collisions="None" Mass="50" ModelFrame="BoneRoot_cdt">
+			<Constraint Type="Rigid" />
+			<Body
+				CenterOfMassOffset="(0; 0; 0)"
+				Collisions="Default"
+				ImpactType="Truck"
+				Mass="300"
+				ModelFrame="BoneCabinTwist_cdt"
+			>
+				<Constraint ExplicitParentFrame="0" Type="Fixed" />
+				<Body
+					CenterOfMassOffset="(0; 0; 0)"
+					Collisions="Default"
+					Mass="30"
+					ModelFrame="BoneHook_cdt"
+					NoFoliageCollisions="true"
+				>
+					<Constraint
+						AxisLocal="(0; 0; 1)"
+						Type="Hinge"
+						MinLimit="-50.0"
+						MaxLimit="50.0"
+					>
+						<Motor Damping="0.5" Spring="0.5" Type="Spring" />
+					</Constraint>
+				</Body>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<Ignition>
+			<Flare _template="IgnitionSignalWhite" Dir="(1; 0; 0)" Size="0.12" Pos="(4.616; 1.471; -1.045)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhite" Dir="(1; 0; 0)" Size="0.12" Pos="(4.616; 1.471; -0.943)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhite" Dir="(1; 0; 0)" Size="0.12" Pos="(4.616; 1.471; 1.045)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhite" Dir="(1; 0; 0)" Size="0.12" Pos="(4.616; 1.471; 0.943)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalOrange" Dir="(1; 0; 0)" Size="0.1" Pos="(4.654; 1.808; -1.329)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalOrange" Dir="(0; 0; -1)" Size="0.1" Pos="(4.483; 1.808; -1.498)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalOrange" Dir="(1; 0; 0)" Size="0.1" Pos="(4.654; 1.808; 1.329)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalOrange" Dir="(0; 0; 1)" Size="0.1" Pos="(4.483; 1.808; 1.498)" ParentFrame="BoneCabin_cdt" />
+		</Ignition>
+	</ModelAttachments>
+	<GameData
+		CameraPreset="default"
+		Category="bumper"
+		Price="2000"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<WinchSocket FixedToTruck="true" Pos="(4.826; 1.4; -0.596)" />
+		<WinchSocket FixedToTruck="true" Pos="(4.826; 1.4; 0.596)" />
+		<UiDesc
+			UiDesc="UI_TUNING_BUMPER_IMPREGNABLE_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_BUMPER_IMPREGNABLE_NAME"
+		/>
+		<InstallSocket Type="SleiterST833ChimeraBumper" />
+		<CraneSocket FixedToTruck="true" Pos="(4.826; 1.4; -0.596)" />
+		<CraneSocket FixedToTruck="true" Pos="(4.826; 1.4; 0.596)" />
+	</GameData>
+</TruckAddon>

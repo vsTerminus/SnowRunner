@@ -1,0 +1,134 @@
+<_templates Include="trucks">
+	<Body>
+		<Mudguard
+			CenterOfMassOffset="(0; 0; 0)"
+			Collisions="Default"
+			Mass="30"
+		>
+			<Constraint
+				AxisLocal="(0; 0; 1)"
+				PivotOffset="(0; 0; 0)"
+				Type="Hinge"
+				MinLimit="-20.0"
+				MaxLimit="10.0"
+			>
+				<Motor Damping="15" Spring="20" Type="Spring" />
+			</Constraint>
+		</Mudguard>
+		<Lock
+			CenterOfMassOffset="(0; 0; 0)"
+			Collisions="Default"
+			Mass="10"
+		>
+			<Constraint
+				Cone="10"
+				PivotOffset="(0; 0; 0)"
+				PlaneAxisLocal="(1; 0; 0)"
+				TwistAxisLocal="(0; 0; 1)"
+				Type="Ragdoll"
+				PlaneMin="-27"
+				TwistMin="-115"
+				PlaneMax="44"
+				TwistMax="38"
+			>
+				<TwistMotor Damping="0.1" Spring="0.1" Type="Spring" />
+				<PlaneMotor Damping="0.1" Spring="0.1" Type="Spring" />
+				<ConeMotor Damping="0.1" Spring="0.1" Type="Spring" />
+			</Constraint>
+		</Lock>
+	</Body>
+</_templates>
+<TruckAddon IsChassisFullOcclusion="true">
+	<WheelRepairsHide>
+		<Mesh Frame="kung_wheel" HideThreshold="0.0" />
+	</WheelRepairsHide>
+	<TruckData
+		FuelCapacity="300"
+		RepairsCapacity="600"
+		WheelRepairsCapacity="4"
+	/>
+	<Rotator EngineTorqueFactor="0" Frame="BoneFan1" RotationSpeed="7" />
+	<Rotator EngineTorqueFactor="0" Frame="BoneFan2" RotationSpeed="-7" />
+	<PhysicsModel Mesh="trucks/addons/hib_billert_1980_frame_addon_kung">
+		<Body CenterOfMassOffset="(0; -0.7; 0)" Mass="1500">
+			<Constraint Type="Rigid" />
+			<Body Collisions="None" Mass="500" ModelFrame="BoneCabin_cdt">
+				<Constraint ExplicitParentFrame="0" Type="Fixed" />
+			</Body>
+			<Body _template="Mudguard" ModelFrame="BoneMudguardR_cdt" />
+			<Body _template="Mudguard" ModelFrame="BoneMudguardL_cdt" />
+			<Body
+				CenterOfMassOffset="(0; 0; 0)"
+				Collisions="Default"
+				Mass="70"
+				ModelFrame="BoneStairs_cdt"
+			>
+				<Constraint
+					LinearLimitsX="(-0.003; 0.003)"
+					LinearLimitsY="(0.000; 0.001)"
+					LinearLimitsZ="(0.000; 0.001)"
+					Type="Fixed"
+				>
+					<Motor Damping="20" Spring="700" Type="Spring" />
+				</Constraint>
+				<Body _template="Lock" ModelFrame="BoneStairsLockR_cdt">
+					<Constraint
+						PlaneMin="-27"
+						TwistMin="-115"
+						PlaneMax="44"
+						TwistMax="38"
+					/>
+				</Body>
+				<Body _template="Lock" ModelFrame="BoneStairsLockL_cdt">
+					<Constraint
+						PlaneMin="-27"
+						TwistMin="-38"
+						PlaneMax="44"
+						TwistMax="115"
+					/>
+				</Body>
+			</Body>
+			<Body
+				CenterOfMassOffset="(0; 0; 0)"
+				Collisions="Default"
+				Mass="70"
+				ModelFrame="BoneWheel_cdt"
+			>
+				<Constraint
+					LinearLimitsX="(-0.005; 0.005)"
+					LinearLimitsY="(-0.090; -0.045)"
+					LinearLimitsZ="(-0.005; 0.005)"
+					Type="Fixed"
+				>
+					<Motor Damping="50" Spring="50" Type="Spring" />
+				</Constraint>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="addon_1"
+		Category="frame_addons"
+		IsCustomizable="true"
+		Price="4400"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<WinchSocket FixedToTruck="true" Pos="(-0.695; 3.4; -1.123)" />
+		<WinchSocket FixedToTruck="true" Pos="(-3.612; 3.417; -1.123)" />
+		<WinchSocket FixedToTruck="true" Pos="(-0.695; 3.4; 1.123)" />
+		<WinchSocket FixedToTruck="true" Pos="(-3.612; 3.417; 1.123)" />
+		<WinchSocket FixedToTruck="true" Pos="(-3.741; 0.869; 0)" />
+		<UiDesc
+			UiDesc="UI_ADDON_FRAME_HIB_BILLERT_KUNG_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_ADDON_FRAME_HIB_BILLERT_KUNG_NAME"
+		/>
+		<InstallSocket Type="HIBBillert1980Kung" />
+		<CraneSocket FixedToTruck="true" Pos="(-0.695; 3.4; -1.123)" />
+		<CraneSocket FixedToTruck="true" Pos="(-3.612; 3.417; -1.123)" />
+		<CraneSocket FixedToTruck="true" Pos="(-0.695; 3.4; 1.123)" />
+		<CraneSocket FixedToTruck="true" Pos="(-3.612; 3.417; 1.123)" />
+		<CraneSocket FixedToTruck="true" Pos="(-3.741; 0.869; 0)" />
+	</GameData>
+</TruckAddon>

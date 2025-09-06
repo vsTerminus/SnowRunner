@@ -1,0 +1,39 @@
+<_templates Include="trucks">
+	<TruckTire>
+		<Offroad _template="Heavy">
+			<WheelTracks _template="Offroad" />
+			<WheelSoftness _template="Average" />
+			<WheelFriction _template="Offroad" />
+		</Offroad>
+		<Mudtires _template="Heavy">
+			<WheelTracks _template="Offroad" />
+			<WheelSoftness _template="Average" />
+			<WheelFriction _template="HeavyMudtires" />
+		</Mudtires>
+		<Allterrain _template="Heavy">
+			<WheelTracks _template="Offroad" />
+			<WheelSoftness _template="Average" />
+			<WheelFriction _template="Allterrain" />
+		</Allterrain>
+	</TruckTire>
+</_templates>
+<TruckWheels DamageCapacity="100" Radius="1" Width="0.65">
+	<TruckTires>
+		<TruckTire _template="Mudtires" Mesh="wheels/invisible_tire" Name="invisible">
+			<GameData
+				Price="1300"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_HIGHWAY_DESC" UiName="UI_TIRE_SCOUT_HIGHWAY_3_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>
+		<TruckRim Mesh="wheels/invisible_rim" Name="invisible">
+			<GameData>
+				<UiDesc UiDesc="UI_RIM_SCOUT_HIGHWAY_2_DESC" UiName="UI_RIM_SCOUT_HIGHWAY_2_NAME" />
+			</GameData>
+		</TruckRim>
+	</TruckRims>
+</TruckWheels>

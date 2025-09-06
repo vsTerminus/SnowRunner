@@ -361,6 +361,9 @@
 		<AddonSockets>
 			<Socket Names="Trailer, LogTrailer" Offset="(-3.968; 1.028; 0)" />
 			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-2.173; 1.647; 0)" />
+			<Socket Names="SemitrailerFoldableLog" NamesBlock="SaddleHigh" Offset="(-2.735; 1.591; 0)" >
+				<AddonsShift Offset="(0.49; -0.06; 0)" Types="SaddleMotorized" />
+			</Socket>
 		</AddonSockets>
 		<AddonSockets>
 			<!--<Socket Names="BigCraneRu" Offset="(-2.52; 1.174; 0)" />-->
@@ -370,6 +373,16 @@
 			</Socket>
 			<Socket Names="TatraSideboard" />
 			<Socket Names="TatraFrameAddonTank" />
+			
+			
+			<Socket Names="SaddleMotorized" NamesBlock="TatraCrane" Offset="(-0.900; -0.084; 0.000)" ParentFrame="BoneChassis_cdt" >
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.000; 0.000; 0.042)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.000; 0.000; -0.042)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(1.400; 0.000; 0.042)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(1.400; 0.000; -0.042)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(1.400; 0.000; 0.000)" />
+			</Socket>
+			
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="TatraPhoenixSpareWheel" />

@@ -1,0 +1,32 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/hib_billert_1980_tuning/hib_billert_1980_farkop_default" >
+		<NetSync Legacy="true" />
+		<Body Mass="1">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>	
+	<GameData
+		CameraPreset="addon_1"
+		Category="frame_addons"
+		IsCustomizable="true"
+		Price="0"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<WinchSocket Pos="(-3.340; 0.872; 0.000)" FixedToTruck="true" />
+		<WinchSocket Pos="(-3.006; 1.113; -0.523)" FixedToTruck="true" />
+		<WinchSocket Pos="(-3.006; 1.113; 0.523)" FixedToTruck="true" />
+		
+		<CraneSocket Pos="(-3.340; 0.872; 0.000)" FixedToTruck="true" />
+		<CraneSocket Pos="(-3.006; 1.113; -0.523)" FixedToTruck="true" />
+		<CraneSocket Pos="(-3.006; 1.113; 0.523)" FixedToTruck="true" />
+		<UiDesc
+			UiDesc="UI_TUNING_FARKOP_TRAILER_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_FARKOP_TRAILER_NAME"
+		/>
+		<InstallSocket Type="HIBBillert1980Farkop" />
+	</GameData>
+</TruckAddon>

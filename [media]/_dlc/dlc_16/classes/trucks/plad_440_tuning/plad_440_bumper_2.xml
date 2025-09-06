@@ -1,0 +1,66 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<TruckData>
+		<Damage>
+			<Multiplier Multiplier="1.0" Type="Engine" />
+		</Damage>
+	</TruckData>
+	<PhysicsModel _noinherit="true" Mesh="trucks/plad_440_tuning/plad_440_bumper_2">
+		<Body ImpactType="Truck" Mass="20" ModelFrame="BoneCabin_cdt">
+			<Constraint Type="Rigid" />
+			<Body
+				AngularDamping="1"
+				Collisions="None"
+				Mass="10"
+				ModelFrame="BoneHinge2_cdt"
+			>
+				<Motor Damping="0.1" Spring="0.1" Type="Spring" />
+				<Constraint
+					AxisLocal="(0; 0; 1)"
+					Type="Hinge"
+					MinLimit="-20"
+					MaxLimit="10"
+				/>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<Ignition>
+			<Light _template="IgnitionSignalWhite" Color="g(253; 220; 186) x 1" Pos="(6; 1.85; 1)" />
+			<Light _template="IgnitionSignalWhite" Color="g(253; 220; 186) x 1" Pos="(6; 1.85; -1)" />
+			<Flare _template="IgnitionSignalWhite" Color="g(253; 220; 186) x 1" ColorMultAtDay=".05" DirAngle="90" Size="0.4" Pos="(3.552; 0.801; -0.672)" />
+			<Flare _template="IgnitionSignalWhite" Color="g(253; 220; 186) x 1" ColorMultAtDay=".05" DirAngle="90" Size="0.4" Pos="(3.552; 0.801; -0.598)" />
+			<Flare _template="IgnitionSignalWhite" Color="g(253; 220; 186) x 1" ColorMultAtDay=".05" DirAngle="90" Size="0.2" Pos="(3.552; 0.801; 0.672)" />
+			<Flare _template="IgnitionSignalWhite" Color="g(253; 220; 186) x 1" ColorMultAtDay=".05" DirAngle="90" Size="0.2" Pos="(3.552; 0.801; 0.598)" />
+			<Flare _template="IgnitionSignalWhite" Color="g(253; 220; 186) x 1" ColorMultAtDay=".05" DirAngle="90" Size="0.2" Pos="(3.27; 0.95; -0.907)" />
+			<Flare _template="IgnitionSignalWhite" Color="g(253; 220; 186) x 1" ColorMultAtDay=".05" DirAngle="90" Size="0.2" Pos="(3.27; 0.95; 0.907)" />
+		</Ignition>
+		<HeadLight>
+			<Model _template="HeadLightRay" Org="(3.656; 1.524; -0.573)" />
+			<Model _template="HeadLightRay" Org="(3.656; 1.524; 0.573)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 200) x 0.6" Size=".2" Pos="(3.656; 1.524; -0.573)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 200) x 0.6" Size=".2" Pos="(3.656; 1.524; 0.573)" />
+			<Flare _template="BlueStreak" Pos="(3.656; 1.524; -0.573)" />
+			<Flare _template="BlueStreak" Pos="(3.656; 1.524; 0.573)" />
+		</HeadLight>
+	</ModelAttachments>
+	<GameData
+		CameraPreset="default"
+		Category="bumper"
+		Price="1500"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<WinchSocket FixedToTruck="true" Pos="(3.703; 0.808; 0.437)" />
+		<WinchSocket FixedToTruck="true" Pos="(3.703; 0.808; -0.437)" />
+		<UiDesc
+			UiDesc="UI_TUNING_BUMPER_HEAVYDUTY_PIPE_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_BUMPER_HEAVYDUTY_PIPE_NAME"
+		/>
+		<InstallSocket Type="Plad440Bumper" />
+		<CraneSocket FixedToTruck="true" Pos="(3.703; 0.808; 0.437)" />
+		<CraneSocket FixedToTruck="true" Pos="(3.703; 0.808; -0.437)" />
+	</GameData>
+</TruckAddon>

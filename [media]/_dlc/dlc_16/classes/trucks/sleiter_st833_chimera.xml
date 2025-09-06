@@ -1,0 +1,771 @@
+<_templates Include="trucks">
+	<Wheel>
+		<RearWheel
+			ConnectedToHandbrake="true"
+			Location="rear"
+			Torque="Default"
+			ParentFrame="BoneRear_cdt"
+		/>
+		<FrontWheel
+			ConnectedToHandbrake="true"
+			Location="front"
+			SteeringAngle="30"
+			SteeringCastor="4"
+			SteeringJointOffset="0.3"
+			Torque="Full"
+			ParentFrame="BoneCabinTwist_cdt"
+		/>
+	</Wheel>
+	<Body>
+		<Wiper
+			CenterOfMassOffset="(0; 0; 0)"
+			Collisions="None"
+			Mass="10"
+		>
+			<Constraint
+				AxisLocal="(1; 0; 0)"
+				PivotOffset="(0; 0; 0)"
+				Type="Hinge"
+				MinLimit="-5.0"
+				MaxLimit="5.0"
+			>
+				<Motor Damping="500" Spring="3000" Type="Spring" />
+			</Constraint>
+		</Wiper>
+		<Sunshield
+			CenterOfMassOffset="(0; 0; 0)"
+			Collisions="None"
+			Mass="50"
+		>
+			<Constraint
+				AxisLocal="(0; 0; 1)"
+				PivotOffset="(0; 0; 0)"
+				Type="Hinge"
+				MinLimit="-1.0"
+				MaxLimit="1.0"
+			>
+				<Motor Damping="100" Spring="1500" Type="Spring" />
+			</Constraint>
+		</Sunshield>
+		<Seatbelt
+			CenterOfMassOffset="(0; 0; 0)"
+			Collisions="None"
+			Mass="10"
+		>
+			<Constraint
+				LinearLimitsX="(-0.020; 0.020)"
+				LinearLimitsY="(-0.001; 0.001)"
+				LinearLimitsZ="(-0.001; 0.001)"
+				Type="Fixed"
+			>
+				<Motor Damping="50" Spring="2500" Type="Spring" />
+			</Constraint>
+		</Seatbelt>
+		<Mirror
+			CenterOfMassOffset="(0; 0; 0)"
+			Collisions="Default"
+			ImpactType="Truck"
+			Mass="20"
+		>
+			<Constraint
+				AxisLocal="(0; 1; 0)"
+				PivotOffset="(0; 0; 0)"
+				Type="Hinge"
+				MinLimit="-2.0"
+				MaxLimit="2.0"
+			>
+				<Motor Damping="5" Spring="5" Type="Spring" />
+			</Constraint>
+		</Mirror>
+	</Body>
+</_templates>
+<Truck>
+	<TruckData
+		BackSteerSpeed="0.015"
+		DiffLockType="Always"
+		EngineIconMesh="env/engine_sleiter_st833_chimera"
+		EngineIconScale="1.0"
+		EngineStartDelay="0.7"
+		ExhaustStartTime="1.5"
+		FuelCapacity="360"
+		Responsiveness="0.2"
+		SteerSpeed="0.03"
+		TruckImage="SleiterChimeramchr"
+		TruckType="HEAVY"
+	>
+		<WinchUpgradeSocket Default="w_heavy_trucks_default" IsUpgradable="true" Type="winches_heavy_trucks" />
+		<Wheels
+			DefaultRim="rim_1"
+			DefaultTire="tire_1"
+			DefaultWheelType="wheels_offroad_single_sleiter_st833_chimera"
+		>
+			<Wheel _template="FrontWheel" Pos="(2.974; 0.879; 1.25)" />
+			<Wheel _template="FrontWheel" RightSide="true" Pos="(2.974; 0.879; 1.25)" />
+			<Wheel _template="RearWheel" Pos="(-1.725; 0.879; 1.25)" />
+			<Wheel _template="RearWheel" RightSide="true" Pos="(-1.725; 0.879; 1.25)" />
+			<Wheel _template="RearWheel" Pos="(-3.691; 0.879; 1.25)" />
+			<Wheel _template="RearWheel" RightSide="true" Pos="(-3.691; 0.879; 1.25)" />
+		</Wheels>
+		<SuspensionSocket
+			Default="sleiter_st833_chimera_suspension_default"
+			Type="s_sleiter_st833_chimera"
+			MaxWheelRadiusWithoutSuspension="0.77"
+		/>
+		<SteeringWheel Frame="BoneSteering" />
+		<SteeringRack
+			Frame="BoneRack"
+			FrameSteerLeft="BoneRackL"
+			FrameSteerRight="BoneRackR"
+			RackHalfSizeZ="0.887"
+		/>
+		<Steam Origin="(3.4; 1.6; 0)" />
+		<SoundsWheels _template="Default" />
+		<SoundsDamage _template="Heavy" />
+		<Sounds
+			_template="Default"
+			DisableReversePitch="true"
+			Origin="(2.752; 1.625; 0)"
+			MinDist="15.0"
+		>
+			<Honk			Sound="trucks/sleiter_st833_chimera/sleiter_st833_chimera_honk" />
+			<Handbrake		Sound="trucks/sleiter_st833_chimera/sleiter_st833_chimera_handbrake_on" />
+			<HandbrakeOff	Sound="trucks/sleiter_st833_chimera/sleiter_st833_chimera_handbrake_off" />
+			<Reverse		Sound="trucks/sleiter_st833_chimera/sleiter_st833_chimera_back_beeper" />
+			<BrakesSqueal	Sound="trucks/sleiter_st833_chimera/sleiter_st833_chimera_brakes_squeal" />
+			<BrakePull		Sound="trucks/sleiter_st833_chimera/sleiter_st833_chimera_brake_pull" />
+			<BrakeRelease	Sound="trucks/sleiter_st833_chimera/sleiter_st833_chimera_brake_release" />
+			<EngineRev		Sound="" />
+			<EngineAccel	Sound="trucks/sleiter_st833_chimera/sleiter_st833_chimera_acc" />
+			<EngineStart	Sound="trucks/sleiter_st833_chimera/sleiter_st833_chimera_start" />
+			<EngineStop		Sound="trucks/sleiter_st833_chimera/sleiter_st833_chimera_stop" />
+			<EngineIdle		Sound="trucks/sleiter_st833_chimera/sleiter_st833_chimera_idle" />
+			<EngineIdle_2d	Sound="trucks/sleiter_st833_chimera/sleiter_st833_chimera_idle_2d"	IsSound2D="true" />
+			<EngineLow		Sound="trucks/sleiter_st833_chimera/sleiter_st833_chimera_low" />
+			<EngineLow_2d	Sound="trucks/sleiter_st833_chimera/sleiter_st833_chimera_low_2d"	IsSound2D="true" />
+			<EngineHigh		Sound="trucks/sleiter_st833_chimera/sleiter_st833_chimera_high" />
+			<EngineHigh_2d	Sound="trucks/sleiter_st833_chimera/sleiter_st833_chimera_high_2d"	IsSound2D="true" />
+			<EngineHeavy	Sound="trucks/sleiter_st833_chimera/sleiter_st833_chimera_heavy" />
+			<EngineHeavy_2d	Sound="trucks/sleiter_st833_chimera/sleiter_st833_chimera_heavy_2d"	IsSound2D="true" />
+			<ChassisStress	Sound="trucks/common/truck_stress_rnd_set/truck_stress_rnd" />
+			<AbruptStop		Sound="trucks/common/truck_swing_big_rnd_set/truck_swing_big_rnd" />
+		</Sounds>
+		<Shafts>
+			<Shaft SocketPointA="Shaft1a" SocketPointB="Shaft1b" />
+			<Shaft SocketPointA="Shaft2a" SocketPointB="Shaft2b" />
+			<Shaft SocketPointA="Shaft3a" SocketPointB="Shaft3b" />
+			<Shaft SocketPointA="Shaft4a" SocketPointB="Shaft4b" />
+		</Shafts>
+		<OcclusionMap HalfSizeZ="1.8" MinX="-5.4" MaxX="5.0" />
+		<LimitedFluid Center="(-0.093, 1.239, -1.028)" SizeX="1.140" SizeY="0.835" SizeZ="0.725" Type="Box" ParentFrame="BoneChassis_cdt" />
+		<LimitedFluid Center="(-0.093, 1.239, 1.028)" SizeX="1.140" SizeY="0.835" SizeZ="0.725" Type="Box" ParentFrame="BoneChassis_cdt" />
+		<Intake Dir="(1; 0; 0)" Origin="(3.829; 3.767; -0)" Size="0.155" />
+		<Intake Dir="(0; 1; 0)" Origin="(3.083; 3.858; 0)" Size="0.155" />
+		<Intake Dir="(1; 0; 0)" Origin="(4.554; 2.16; 0)" Size="0.800" />
+		<GearboxSocket Default="g_special_default" Type="gearboxes_special" />
+		<FuelTank DamageCapacity="150" />
+		<EngineSocket Default="us_truck_old_heavy_engine_0" Type="e_us_truck_old_heavy" />
+		<Driver
+			AnimationSet="HeavyTruck"
+			LegsOffset="(-0.05; 0; 0)"
+			Pos="(3.62; 2.63; 0.733)"
+			SteeringWheelPos="(3.991; 2.938; 0.715)"
+			ParentFrame="BoneCabin_cdt"
+		/>
+		<Dashboard>
+			<Gauge Damping="0.99" Dir="(-0.707; 0.707; 0)" InputRange="(0;120)" InputType="speed" Mesh="trucks/arrows/sleiter_chimera_arrow_03" Org="(4.242; 2.929; 0.673)" OutputAngles="(-135; 130)" />
+			<Gauge Damping="0.99" Dir="(-0.707; 0.707; 0)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/sleiter_chimera_arrow_04" Org="(4.244; 2.928; 0.673)" OutputAngles="(-135; 40)" />
+			<Gauge Damping="0.99" Dir="(-0.707; 0.707; 0)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/sleiter_chimera_arrow_05" Org="(4.245; 2.927; 0.673)" OutputAngles="(-135; -40)" />
+			<Gauge Damping="0.99" Dir="(-0.707; 0.707; 0)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/sleiter_chimera_arrow_01" Org="(4.277; 2.958; 0.913)" OutputAngles="(-175; -35)" />
+			<Gauge Damping="0.99" Dir="(-0.707; 0.707; 0)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/sleiter_chimera_arrow_01" Org="(4.277; 2.958; 0.907)" OutputAngles="(175; 45)" />
+			<Gauge Damping="0.99" Dir="(-0.707; 0.707; 0)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/sleiter_chimera_arrow_01" Org="(4.277; 2.958; 0.834)" OutputAngles="(-175; -46)" />
+			<Gauge Damping="0.99" Dir="(-0.707; 0.707; 0)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/sleiter_chimera_arrow_01" Org="(4.277; 2.958; 0.828)" OutputAngles="(178; 40)" />
+			<Gauge Damping="0.99" Dir="(-0.707; 0.707; 0)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/sleiter_chimera_arrow_01" Org="(4.277; 2.958; 0.757)" OutputAngles="(-174; -45)" />
+			<Gauge Damping="0.99" Dir="(-0.707; 0.707; 0)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/sleiter_chimera_arrow_01" Org="(4.277; 2.958; 0.751)" OutputAngles="(176; 50)" />
+			<Gauge Damping="0.99" Dir="(-0.707; 0.707; 0)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/sleiter_chimera_arrow_02" Org="(4.248; 2.929; 0.869)" OutputAngles="(-58; -12)" />
+			<Gauge Damping="0.99" Dir="(-0.707; 0.707; 0)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/sleiter_chimera_arrow_02" Org="(4.248; 2.929; 0.793)" OutputAngles="(-50; 8)" />
+			<Gauge Damping="0.99" Dir="(-0.707; 0.707; 0)" InputRange="(0;1)" InputType="fuel" Mesh="trucks/arrows/sleiter_chimera_arrow_02" Org="(4.220; 2.902; 0.831)" OutputAngles="(-58; 58)" />
+			<Gauge Damping="0.99" Dir="(-0.707; 0.707; 0)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/sleiter_chimera_arrow_06" Org="(4.273; 2.953; 0.567)" OutputAngles="(-120; -65)" />
+			<Gauge Damping="0.99" Dir="(-0.707; 0.707; 0)" InputRange="(0;1)" InputType="rpm" Mesh="trucks/arrows/sleiter_chimera_arrow_07" Org="(4.228; 2.91; 0.530)" OutputAngles="(-135; 135)" />
+		</Dashboard>
+		<Damage>
+			<DamageArea Type="Engine" Min="(2.468; 1.376; -1.294)" Max="(4.614; 2.614; 1.294)" ParentFrame="BoneCabinTwist_cdt" />
+			<DamageArea Type="FuelTank" Min="(-0.695; 0.774; 0.62)" Max="(0.508; 1.704; 1.437)" ParentFrame="BoneChassis_cdt" />
+			<DamageArea Type="FuelTank" Min="(-0.695; 0.774; -1.437)" Max="(0.508; 1.704; -0.62)" ParentFrame="BoneChassis_cdt" />
+		</Damage>
+		<CompatibleWheels OffsetZ="0" Scale="0.87" Type="wheels_offroad_single_sleiter_st833_chimera" />
+		<CompatibleWheels OffsetZ="0.05" Scale="0.85" Type="wheels_superheavy_single" />
+		<CompatibleWheels OffsetZ="0.05" Scale="0.85" Type="wheels_superheavy_mudtires" />
+		<Camera
+			Center="(-1.9; 0; 0)"
+			RadiusMultiplier="1.1"
+			ParentFrame="BoneCabin_cdt"
+		>
+			<Cockpit
+				_template="Default"
+				LimitsHor="(-2.8; 1.5)"
+				LimitsVer="(-0.5; 0.3)"
+				ViewDir="(1; -0.1; 0)"
+				WindshieldDiffuseTexture="trucks/sleiter_st833_chimera_glass__d_a.tga"
+				WindshieldShadingTexture="trucks/sleiter_st833_chimera_glass__sh_d.tga"
+				ViewPos="(3.6; 3.3; 0.733)"
+			>
+				<Rear
+					HorTransitionEnd="-1.5"
+					HorTransitionStart="-0.8"
+					LimitsVer="(-0.8; 0.2)"
+					ViewDir="(1; -0.05; -0.1)"
+					ViewPosOffset="(0.30; 0; 0.60)"
+				/>
+				<Mirror ClipDir="(-0.966; 0; -0.259)" ClipOffset="0.1" FOVScale="1" MeshFrame="mirror_L" ReflectionDir="(-0.895; 0; -0.446)" Size="(0.18; 0.330)" Pos="(4.096; 3.204; 1.602)" />
+				<Mirror ClipDir="(-0.707; 0; 0.707)" ClipOffset="0.1" FOVScale="1" MeshFrame="mirror_R" ReflectionDir="(-0.799; 0; 0.602)" Size="(0.180; 0.330)" Pos="(4.105; 3.204; -1.587)" />
+			</Cockpit>
+		</Camera>
+		<Axles>
+			<Axle Frame="BoneAxle1" ParentFrame="BoneCabinTwist_cdt" />
+			<Axle Frame="BoneAxle2" ParentFrame="BoneRear_cdt" />
+			<Axle Frame="BoneAxle3" ParentFrame="BoneRear_cdt" />
+		</Axles>
+	</TruckData>
+	<Rotator EngineTorqueFactor="0" Frame="BoneFanL" RotationSpeed="-20" />
+	<Rotator EngineTorqueFactor="0" Frame="BoneFanR" RotationSpeed="20" />
+	<PhysicsModel Mesh="trucks/sleiter_st833_chimera">
+		<NetSync Legacy="false" />
+		<Body
+			CenterOfMassOffset="(0; 0; 0)"
+			Collisions="Default"
+			ImpactType="Truck"
+			Mass="9000"
+			ModelFrame="BoneChassis_cdt"
+			NetSync="pv"
+		>
+			<Body
+				CenterOfMassOffset="(0; 0; 0)"
+				Collisions="None"
+				Mass="2500"
+				ModelFrame="BoneRear_cdt"
+				NetSync="pv"
+			>
+				<Constraint
+					AxisLocal="(0; 0; 1)"
+					PivotOffset="(0; 0; 0)"
+					Type="Hinge"
+					MinLimit="-6.0"
+					MaxLimit="6.0"
+				>
+					<Motor Damping="1000" Spring="1000" Type="Spring" />
+				</Constraint>
+			</Body>
+			<Body
+				CenterOfMassOffset="(0; 0; 0)"
+				Collisions="Default"
+				ImpactType="Truck"
+				Mass="9700"
+				ModelFrame="BoneCabinTwist_cdt"
+				NetSync="pv"
+			>
+				<Constraint
+					AxisLocal="(1; 0; 0)"
+					PivotOffset="(0; 0; 0)"
+					Type="Hinge"
+					MinLimit="-8.0"
+					MaxLimit="8.0"
+				>
+					<Motor Damping="800000" Spring="800000" Type="Spring" />
+				</Constraint>
+				<Body
+					CenterOfMassOffset="(0; 0; 0)"
+					Collisions="Default"
+					ImpactType="Truck"
+					Mass="3000"
+					ModelFrame="BoneCabin_cdt"
+					NetSync="pv"
+				>
+					<Constraint
+						AxisLocal="(0; 1; 0)"
+						Type="Prismatic"
+						MinLimit="-0.01"
+						MaxLimit="0.1"
+					>
+						<Motor Damping="20000" Spring="800000" Type="Spring" />
+					</Constraint>
+					<Body _template="Wiper" ModelFrame="BoneWiper1_cdt" />
+					<Body _template="Wiper" ModelFrame="BoneWiper2_cdt" />
+					<Body _template="Wiper" ModelFrame="BoneWiper3_cdt" />
+					<Body _template="Wiper" ModelFrame="BoneWiper4_cdt" />
+					<Body _template="Sunshield" ModelFrame="BoneSunshieldFrameL_cdt">
+						<Constraint MinLimit="-4.0" MaxLimit="20.0" />
+						<Body _template="Sunshield" ModelFrame="BoneSunshieldL_cdt">
+							<Constraint MinLimit="-8.0" MaxLimit="8.0" />
+						</Body>
+					</Body>
+					<Body _template="Sunshield" ModelFrame="BoneSunshieldFrameR_cdt">
+						<Constraint MinLimit="-16.0" MaxLimit="20.0" />
+						<Body _template="Sunshield" ModelFrame="BoneSunshieldR_cdt">
+							<Constraint MinLimit="-12.0" MaxLimit="33.0" />
+						</Body>
+					</Body>
+					<Body _template="Seatbelt" ModelFrame="BoneSeatbeltL_cdt" />
+					<Body _template="Seatbelt" ModelFrame="BoneSeatbeltR_cdt" />
+					<Body _template="Seatbelt" ModelFrame="BoneSeatbeltBack1_cdt" />
+					<Body _template="Seatbelt" ModelFrame="BoneSeatbeltBack2_cdt">
+						<Constraint
+							LinearLimitsX="(0.000; 0.008)"
+							LinearLimitsY="(0.000; 0.010)"
+							LinearLimitsZ="(-0.016; 0.030)"
+						/>
+					</Body>
+					<Body _template="Seatbelt" ModelFrame="BoneSeatbeltBack3_cdt">
+						<Constraint
+							LinearLimitsX="(-0.010; 0.000)"
+							LinearLimitsY="(-0.000; 0.015)"
+							LinearLimitsZ="(-0.010; 0.000)"
+						/>
+					</Body>
+					<Body _template="Mirror" ModelFrame="BoneMirrorL_cdt" />
+					<Body _template="Mirror" ModelFrame="BoneMirrorR_cdt" />
+					<Body
+						CenterOfMassOffset="(0; 0; 0)"
+						Collisions="None"
+						Mass="30"
+						ModelFrame="BoneRadio_cdt"
+					>
+						<Constraint
+							AxisLocal="(0; 0; 1)"
+							PivotOffset="(0; 0; 0)"
+							Type="Hinge"
+							MinLimit="-30.0"
+							MaxLimit="30.0"
+						>
+							<Motor Damping="50" Spring="100" Type="Spring" />
+						</Constraint>
+						<Body
+							CenterOfMassOffset="(0; 0; 0)"
+							Collisions="None"
+							Mass="10"
+							ModelFrame="BoneRadioCable_cdt"
+						>
+							<Constraint
+								AxisLocal="(0; 1; 0)"
+								PivotOffset="(0; 0; 0)"
+								Type="Prismatic"
+								MinLimit="-0.04"
+								MaxLimit="0.04"
+							>
+								<Motor Damping="10" Spring="2" Type="Spring" />
+							</Constraint>
+						</Body>
+					</Body>
+					<Body
+						CenterOfMassOffset="(0; 0; 0)"
+						Collisions="None"
+						Mass="20"
+						ModelFrame="BoneCloth_cdt"
+					>
+						<Constraint
+							LinearLimitsX="(-0.000; 0.001)"
+							LinearLimitsY="(-0.000; 0.023)"
+							LinearLimitsZ="(-0.060; 0.133)"
+							Type="Fixed"
+						>
+							<Motor Damping="500" Spring="100" Type="Spring" />
+						</Constraint>
+					</Body>
+					<Body
+						CenterOfMassOffset="(0; 0; 0)"
+						Collisions="None"
+						Mass="10"
+						ModelFrame="BoneKey_cdt"
+					>
+						<Constraint
+							Cone="15"
+							PivotOffset="(0; 0; 0)"
+							PlaneAxisLocal="(1; 0; 0)"
+							TwistAxisLocal="(0; 0; 1)"
+							Type="Ragdoll"
+							PlaneMin="-60"
+							TwistMin="-50"
+							PlaneMax="50"
+							TwistMax="0"
+						>
+							<TwistMotor Damping="0.1" Spring="0.1" Type="Spring" />
+							<PlaneMotor Damping="0.1" Spring="0.1" Type="Spring" />
+							<ConeMotor Damping="0.1" Spring="0.1" Type="Spring" />
+						</Constraint>
+					</Body>
+					<Body
+						CenterOfMassOffset="(0; 0; 0)"
+						Collisions="None"
+						Mass="20"
+						ModelFrame="BoneExtinguisher_cdt"
+					>
+						<Constraint
+							Cone="5"
+							PivotOffset="(0; 0; 0)"
+							PlaneAxisLocal="(1; 0; 0)"
+							TwistAxisLocal="(0; 0; 1)"
+							Type="Ragdoll"
+							PlaneMin="-10"
+							TwistMin="0"
+							PlaneMax="10"
+							TwistMax="10"
+						>
+							<TwistMotor Damping="0.1" Spring="0.1" Type="Spring" />
+							<PlaneMotor Damping="0.1" Spring="0.1" Type="Spring" />
+							<ConeMotor Damping="0.1" Spring="0.1" Type="Spring" />
+						</Constraint>
+					</Body>
+					<Body
+						CenterOfMassOffset="(0; 0; 0)"
+						Collisions="None"
+						Mass="70"
+						ModelFrame="BoneCabinCables_cdt"
+					>
+						<Constraint
+							LinearLimitsX="(-0.001; 0.000)"
+							LinearLimitsY="(-0.010; 0.010)"
+							LinearLimitsZ="(-0.020; 0.020)"
+							Type="Fixed"
+						>
+							<Motor Damping="1" Spring="1000" Type="Spring" />
+						</Constraint>
+					</Body>
+					<Body
+						CenterOfMassOffset="(0; 0; 0)"
+						Collisions="None"
+						Mass="10"
+						ModelFrame="BoneBobblehead_cdt"
+					>
+						<Constraint
+							AxisLocal="(0; 1; 0)"
+							PivotOffset="(0; 0; 0)"
+							Type="Hinge"
+							MinLimit="50.000"
+							MaxLimit="50.001"
+						>
+							<Motor Damping="100" Spring="100" Type="Spring" />
+						</Constraint>
+					</Body>
+				</Body>
+				<Body
+					CenterOfMassOffset="(0; 0; 0)"
+					Collisions="None"
+					Mass="20"
+					ModelFrame="BoneTieRod_cdt"
+				>
+					<Constraint
+						AxisLocal="(0; 0; 1)"
+						Name="TieRodSteer"
+						Type="Hinge"
+						MinLimit="-30"
+						MaxLimit="15"
+					>
+						<Motor
+							Damping="1.0"
+							Force="10"
+							Tau="1"
+							Type="Position"
+						/>
+					</Constraint>
+				</Body>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<StopSignals>
+			<Light
+				_template="StopSignal"
+				Dir="(-1; -0.3; 0)"
+				Pos="(-5.014; 1.531; 0)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+			<Flare _template="StopSignal" Dir="(-1; 0; 0)" Size="0.2" Pos="(-5.015; 1.543; 1.272)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="StopSignal" Dir="(-1; 0; 0)" Size="0.2" Pos="(-5.015; 1.543; -1.272)" ParentFrame="BoneChassis_cdt" />
+		</StopSignals>
+		<ReverseSignals>
+			<Light
+				_template="ReverseSignal"
+				Dir="(-1; -0.3; 0)"
+				Pos="(-5.014; 1.558; -0)"
+				ParentFrame="BoneChassis_cdt"
+			/>
+			<Flare _template="ReverseSignal" Dir="(-1; 0; 0)" Size="0.2" Pos="(-5.015; 1.622; 1.3)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="ReverseSignal" Dir="(-1; 0; 0)" Size="0.2" Pos="(-5.015; 1.622; -1.3)" ParentFrame="BoneChassis_cdt" />
+		</ReverseSignals>
+		<Ignition>
+			<Light _template="StopSignal" Dir="(-1; -0.3; 0)" Pos="(-5.014; 1.531; 0)" ParentFrame="BoneChassis_cdt" />
+			<Light _template="IgnitionSignalWhite" Dir="(1; -0.3; 0)" Pos="(4.542; 2.006; 0)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="StopSignal" Dir="(-1; 0; 0)" Size="0.2" Pos="(-5.015; 1.543; 1.272)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="StopSignal" Dir="(-1; 0; 0)" Size="0.2" Pos="(-5.015; 1.543; -1.272)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="IgnitionSignalOrange" Dir="(-1; 0; 0)" Size="0.1" Pos="(-5.015; 1.56; 1.439)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="IgnitionSignalOrange" Dir="(-1; 0; 0)" Size="0.1" Pos="(-5.015; 1.56; -1.439)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="IgnitionSignalOrange" Dir="(0; 0; 1)" Size="0.1" Pos="(2.58; 1.97; 1.602)" ParentFrame="BoneCabinTwist_cdt" />
+			<Flare _template="IgnitionSignalOrange" Dir="(0; 0; -1)" Size="0.1" Pos="(2.58; 1.97; -1.602)" ParentFrame="BoneCabinTwist_cdt" />
+			<Flare _template="IgnitionSignalOrange" Dir="(0.13; 0.751; -0.648)" Size="0.1" Pos="(4.182; 3.659; -1.199)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalOrange" Dir="(0.19; 0.982; 0)" Size="0.1" Pos="(4.188; 3.695; -0.275)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalOrange" Dir="(0.19; 0.982; 0)" Size="0.1" Pos="(4.188; 3.695; 0)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalOrange" Dir="(0.19; 0.982; 0)" Size="0.1" Pos="(4.188; 3.695; 0.274)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalOrange" Dir="(0.13; 0.75; 0.648)" Size="0.1" Pos="(4.182; 3.659; 1.199)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhiteWarm" Dir="(1; 0; 0)" Size="0.15" Pos="(4.542; 2.006; -1.099)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhiteWarm" Dir="(1; 0; 0)" Size="0.15" Pos="(4.542; 2.006; -0.911)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhiteWarm" Dir="(1; 0; 0)" Size="0.15" Pos="(4.542; 2.006; 0.911)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhiteWarm" Dir="(1; 0; 0)" Size="0.15" Pos="(4.542; 2.006; 1.099)" ParentFrame="BoneCabin_cdt" />
+		</Ignition>
+		<HeadLight>
+			<Model _template="HeadLightRay" Dir="(1; -0.1; 0)" Org="(4.542; 2.006; 1.005)" />
+			<Model _template="HeadLightRay" Dir="(1; -0.1; 0)" Org="(4.542; 2.006; -1.005)" />
+			<Flare _template="HeadLight" Dir="(1; 0; 0)" Size="0.25" Pos="(4.542; 2.006; -1.099)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="HeadLight" Dir="(1; 0; 0)" Size="0.25" Pos="(4.542; 2.006; -0.911)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="HeadLight" Dir="(1; 0; 0)" Size="0.25" Pos="(4.542; 2.006; 0.911)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="HeadLight" Dir="(1; 0; 0)" Size="0.25" Pos="(4.542; 2.006; 1.099)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="BlueStreak" AspectRatio="3.0" Dir="(1; 0; 0)" Size="0.4" Pos="(4.542; 2.006; -1.099)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="BlueStreak" AspectRatio="3.0" Dir="(1; 0; 0)" Size="0.4" Pos="(4.542; 2.006; -0.911)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="BlueStreak" AspectRatio="3.0" Dir="(1; 0; 0)" Size="0.4" Pos="(4.542; 2.006; 0.911)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="BlueStreak" AspectRatio="3.0" Dir="(1; 0; 0)" Size="0.4" Pos="(4.542; 2.006; 1.099)" ParentFrame="BoneCabin_cdt" />
+		</HeadLight>
+	</ModelAttachments>
+	<Landmark Mesh="landmarks/sleiter_st833_chimera_lmk" MinScale="1.5" MaxScale="2.2" />
+	<HeadLight _template="Default" Pos="(4.542; 2.006; 0)" />
+	<GameData
+		Country="US,NE,CE"
+		Price="156600"
+		UnlockByExploration="true"
+		UnlockByRank="1"
+	>
+		<WinchSocket Pos="(-0.835; 1.327; 0.552)" />
+		<WinchSocket Pos="(-0.835; 1.327; -0.552)" />
+		<WinchSocket Pos="(0.758; 1.327; 0.552)" />
+		<WinchSocket Pos="(0.758; 1.327; -0.552)" />
+		<WinchSocket Pos="(-5.113; 1.059; -0)" />
+		<UiDesc
+			UiDesc="UI_VEHICLE_SLEITER_ST833_CHIMERA_DESC"
+			UiIcon30x30="heavyVehicleImg30"
+			UiIcon328x458="shopImgSleiterChimera"
+			UiIcon40x40="heavyVehicleImg"
+			UiIconLogo="SleiterLogo80"
+			UiName="UI_VEHICLE_SLEITER_ST833_CHIMERA_NAME"
+		/>
+		<CustomizationCameras>
+			<CameraPos FOV="32.0" Interior="true" Name="sticker_1" InterestPosition="(7.8; 4.200; 0.65)" Position="(6.1; 3.1; -0.8)" />
+			<CameraPos FOV="32.0" Interior="true" Name="sticker_2" InterestPosition="(7.5; 2.75; 1.7)" Position="(5.8; 3.1; 0.3)" />
+			<CameraPos FOV="32.0" Interior="true" Name="sticker_3" InterestPosition="(6.3; 1; 1.3)" Position="(6.2; 3.4; -0.7)" />
+			<CameraPos FOV="32.0" Name="door_r_sticker" InterestPosition="(7; 2.3; 0)" MaxXRotation="0" MaxYRotation="0" MaxZoom="0" Position="(8.900; 2.8; 5)" />
+			<CameraPos FOV="32.0" Name="door_l_sticker" InterestPosition="(5.3; 2.25; 0)" MaxXRotation="0" MaxYRotation="0" MaxZoom="0" Position="(9.1; 2.75; -5)" />
+			<CameraPos FOV="32.0" Name="default" InterestPosition="(6.5; 1.85; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(14.5; 1.8; -3.5)" />
+			<CameraPos FOV="32.0" Name="wheels" InterestPosition="(5; 0.6; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="0.7" Position="(9.5; 1.55; -7.5)" />
+			<CameraPos FOV="32.0" Name="roof" InterestPosition="(6; 3.3; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(11.5; 5.1; -3.5)" />
+			<CameraPos FOV="32.0" Name="snorkels" InterestPosition="(6.3; 2.3; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(2.5; 4.3; 4.85)" />
+			<CameraPos FOV="32.0" Name="exhaust" InterestPosition="(6; 2.4; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(0; 4.4; 4.5)" />
+			<CameraPos FOV="32.0" Name="hoods" InterestPosition="(6.5; 1.85; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(14.5; 1.8; -3.5)" />
+			<CameraPos FOV="32.0" Name="hoods_default" InterestPosition="(6.5; 1.85; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(14.5; 1.8; -3.5)" />
+			<CameraPos FOV="32.0" Name="addon_1" InterestPosition="(0.6; 2; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-8.400; 3.8; 8.5)" />
+			<CameraPos FOV="32.0" Name="addon_2" InterestPosition="(4; 2.4; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="1.5" Position="(-2; 4.3; 6)" />
+			<CameraPos FOV="32.0" Name="addon_3" InterestPosition="(4.5; 2; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(0; 5.1; -5.5)" />
+			<CameraPos FOV="32.0" Name="spare_wheel" InterestPosition="(2; 1.675; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-6; 3.5; 7.5)" />
+			<CameraPos FOV="32.0" Interior="true" Name="bubble_head" InterestPosition="(7.4; 1.95; 1.9)" Position="(6.07; 3.27; -0.9)" />
+			<CameraPos FOV="32.0" Interior="true" Name="hood_figure" InterestPosition="(4.200; 2.2; 1.050)" Position="(8.900; 3.2; -0.95)" />
+			<CameraPos FOV="32.0" Interior="true" Name="curtain" InterestPosition="(7.5; 3.7; 1.5)" Position="(5.8; 3.1; -1)" />
+			<CameraPos FOV="32.0" Interior="true" Name="mirror_mount" InterestPosition="(7.8; 3.9; 1)" Position="(6.1; 3.1; -0.5)" />
+			<CameraPos FOV="32.0" Interior="true" Name="glass_sticker" InterestPosition="(6; 3; -1.3)" Position="(10.5; 3.5; 1.7)" />
+		</CustomizationCameras>
+		<CraneSocket Pos="(-0.835; 1.327; 0.552)" />
+		<CraneSocket Pos="(-0.835; 1.327; -0.552)" />
+		<CraneSocket Pos="(0.758; 1.327; 0.552)" />
+		<CraneSocket Pos="(0.758; 1.327; -0.552)" />
+		<CraneSocket Pos="(-5.113; 1.059; -0)" />
+		<AddonSockets DefaultAddon="sleiter_st833_chimera_bumper_default">
+			<Socket Names="SleiterST833ChimeraBumper" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt">
+				<ExtraParent Frame="BoneCabinTwist_cdt" Offset="(0; 0; 0)" />
+			</Socket>
+		</AddonSockets>
+		<AddonSockets DefaultAddon="sleiter_st833_chimera_exhaust_default">
+			<Socket Names="SleiterST833ChimeraExhaust" Offset="(0; 0; 0)" ParentFrame="BoneCabinTwist_cdt">
+				<ExtraParent Frame="BoneCabin_cdt" Offset="(0; 0; 0)" />
+			</Socket>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="SleiterST833ChimeraSnorkel" Offset="(0; 0; 0)" ParentFrame="BoneCabinTwist_cdt">
+				<ExtraParent Frame="BoneCabin_cdt" Offset="(0; 0; 0)" />
+			</Socket>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="SleiterST833ChimeraRoofrack" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket
+				Names="SleiterST833ChimeraBeacon"
+				NamesBlock="SleiterST833ChimeraSpotlight"
+				Offset="(0; 0; 0)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="SleiterST833ChimeraCabinProtection" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="SleiterST833ChimeraSpotlight" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="SleiterST833ChimeraHorn" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="Trailer" NamesBlock="FrameAddonSeismicVibrator, FrameAddonTow, FrameAddonTowPlatform" Offset="(-5.116; 1.059; 0)" />
+			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" NamesBlock="LogLiftKenworth" Offset="(-2.703; 2.249; -0)" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="SaddleHigh" Offset="(-2.7; 1.784; 0)">
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.125)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.125)" />
+			</Socket>
+			<Socket
+				Names="SleiterST833ChimeraFlatbed2"
+				NamesBlock="SleiterST833ChimeraSpareWheel, LogLiftKenworth, SleiterST833ChimeraCrane"
+				Offset="(0; 0; 0)"
+				ParentFrame="BoneChassis_cdt"
+			>
+				<ExtraParent Frame="BoneCabinTwist_cdt" Offset="(0; 0; 0)" />
+			</Socket>
+			<Socket
+				Names="SleiterST833ChimeraFlatbed3"
+				NamesBlock="SleiterST833ChimeraSpareWheel, LogLiftKenworth ,SleiterST833ChimeraCrane, SleiterST833ChimeraSnorkel"
+				Offset="(0; 0; 0)"
+				ParentFrame="BoneChassis_cdt"
+			>
+				<ExtraParent Frame="BoneCabinTwist_cdt" Offset="(0; 0; 0)" />
+			</Socket>
+			<Socket Names="SleiterST833ChimeraSideboard2" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket
+				Names="SleiterST833ChimeraSideboard3"
+				NamesBlock="SleiterST833ChimeraSpareWheel, LogLiftKenworth ,SleiterST833ChimeraCrane"
+				Offset="(0; 0; 0)"
+				ParentFrame="BoneChassis_cdt"
+			>
+				<ExtraParent Frame="BoneCabinTwist_cdt" Offset="(0; 0; 0)" />
+			</Socket>
+			<Socket Names="FrameAddonTank" NamesBlock="LogLiftKenworth" Offset="(-2.7; 1.784; 0)">
+				<AddonsShift Offset="(-1.12; 0; 0)" Types="SleiterST833ChimeraSpareWheel" />
+			</Socket>
+			<Socket Names="FrameAddonTankLong" NamesBlock="LogLiftKenworth, SleiterST833ChimeraCrane, SleiterST833ChimeraSpareWheel" Offset="(-2.07; 1.784; 0)" />
+			<Socket Names="FrameAddonKung" NamesBlock="LogLiftKenworth" Offset="(-2.7; 1.87; 0)">
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.17)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.17)" />
+				<AddonsShift Offset="(-0.25; 0; 0)" Types="SleiterST833ChimeraSpareWheel" />
+			</Socket>
+			<Socket Names="FrameAddonTow" Offset="(-2.88; 1.774; 0)">
+				<AddonsShift Offset="(-0.62; 0; 0)" Types="SleiterST833ChimeraSpareWheel" />
+				<AddonsShift Offset="(-0.06; 0; 0)" Types="LogLiftKenworth" />
+			</Socket>
+			<Socket Names="FrameAddonTowPlatform" NamesBlock="SleiterST833ChimeraSpareWheel" Offset="(-1.33; 1.86; 0)">
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.084)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.084)" />
+				<AddonsShift Offset="(-0.56; 0; 0)" Types="LogLiftKenworth" />
+			</Socket>
+			<Socket Names="FrameAddonLogShortKenworthC500" NamesBlock="LogLiftKenworth" Offset="(-2.531; 0.576; 0)">
+				<AddonsShift Offset="(-1.1; 0; 0)" Types="SleiterST833ChimeraSpareWheel" />
+			</Socket>
+			<Socket Names="FrameAddonLogMediumHigh" NamesBlock="LogLiftKenworth, SleiterST833ChimeraSpareWheel" Offset="(-0.901; 1.784; 0)">
+				<AddonsShift Offset="(-0.45; 0; 0)" Types="SleiterST833ChimeraCrane" />
+			</Socket>
+			<Socket Names="FrameAddonSeismicVibrator" Offset="(-0.4; 1.784; 0)">
+				<AddonsShift Offset="(-0.15; 0; 0)" Types="SleiterST833ChimeraSpareWheel" />
+			</Socket>
+			<Socket Names="FrameAddonMaintainer" NamesBlock="SleiterST833ChimeraSpareWheel" Offset="(-2.83; 0.754; 0)">
+				<AddonsShift Offset="(-0.16; 0; 0)" Types="LogLiftKenworth" />
+			</Socket>
+			<Socket Names="HeavyRepairSmall" NamesBlock="LogLiftKenworth, SleiterST833ChimeraCrane, SleiterST833ChimeraSpareWheel" Offset="(-1.4; 1.973; 0)" />
+			<Socket Names="BunkLog" Offset="(-5.8; 1.784; 0)" />
+			<Socket Names="BigCrane" NamesBlock="LogLiftKenworth, SleiterST833ChimeraCrane, SleiterST833ChimeraSpareWheel" Offset="(-1.2; 1.892; 0)">
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0)" />
+			</Socket>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="SleiterST833ChimeraSpareWheel" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="LogLiftKenworth" Offset="(0.08; 1.980; 0)" ParentFrame="BoneChassis_cdt"/>
+			<Socket Names="SleiterST833ChimeraCrane" Offset="(0; 0.005; 0)" ParentFrame="BoneCabinTwist_cdt"/>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket
+				InCockpit="true"
+				Names="StuffAirfreshener"
+				Offset="(4.171; 3.503; 0.225)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket
+				InCockpit="true"
+				Names="StuffDashboard"
+				Offset="(3.938; 2.709; 0.081)"
+				ParentFrame="BoneBobblehead_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="SleiterST833StuffCurtain" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="SleiterST833Sticker_1x1_01" ParentFrame="BoneSunshieldL_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="SleiterST833Sticker_1x1_02" ParentFrame="BoneSunshieldL_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="SleiterST833Sticker_1x1_03" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="SleiterST833Sticker_1x1_04" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="SleiterST833Sticker_1x2_01" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="SleiterST833Sticker_1x4_01" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="SleiterST833Sticker_Glass_Top" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="SleiterST833Sticker_Glass_Bottom" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="SleiterST833Sticker_Door_L" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="SleiterST833Sticker_Door_R" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+	</GameData>
+	<ControlledConstraints>
+		<Constraint Id="chassis_steer" IsLinkedSteering="true" Name="TieRodSteer" />
+	</ControlledConstraints>
+	<AutomaticIK>
+		<IKBone ModelFrame="BoneTieRodHinge" ParentFrame="BoneTieRod_cdt">
+			<IKJoint AxisLocal="(1; 0; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneRackL"
+				ModelFrame="BoneTieRodPrismatic"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="BoneRackPistonRHead" ParentFrame="BoneAxle1">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneRackR"
+				ModelFrame="BoneRackPistonRTail"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="BoneRackPistonLHead" ParentFrame="BoneAxle1">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneRackL"
+				ModelFrame="BoneRackPistonLTail"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+	</AutomaticIK>
+</Truck>

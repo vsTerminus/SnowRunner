@@ -172,7 +172,7 @@
 		<InstallSocket Offset="(0; 0; 0)" Type="HeavyRepairSmall" />
 		<CraneSourceSocket Pos="(0.486; 1.699; 1.037)" ParentFrame="BoneArmExt2_cdt" />
 		<AddonType Name="Crane" />
-		<AddonSlots InitialOffset="(-1.964; 0.276; 0)" Quantity="1" />
+		<AddonSlots InitialOffset="(-1.6; 0.276; 0)" Quantity="1" />
 	</GameData>
 	<ControlledIK
 		CoeffEndMovementSpeedOY="1"

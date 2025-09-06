@@ -1,0 +1,39 @@
+<TruckAddon>
+	<TruckData>
+		<Shakers>
+			<Shaker
+				Frame="BoneExhaust"
+				MinAngle="(0.1; 0.1; 0.1)"
+				MaxAngle="(0.3; 0.3; 0.3)"
+				MaxFrequency="4"
+				MaxOffset="(0; 0; 0)"
+			/>
+		</Shakers>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/hib_billert_1980_tuning/hib_billert_1980_exhaust_1">
+		<Body Collisions="Default" Mass="100" ModelFrame="BoneCabin_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="exhaust"
+		Category="exhaust"
+		Price="1350"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_EXHAUST_SLANTCUT_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_EXHAUST_SLANTCUT_NAME"
+		/>
+		<InstallSocket Type="HIBBillert1980Exhaust" />
+	</GameData>
+	<Exhaust
+		Dir="(-0.81; 0.587; 0)"
+		IsLight="true"
+		Origin="(1.214; 3.371; -1.059)"
+		Speed="3.82"
+	/>
+</TruckAddon>

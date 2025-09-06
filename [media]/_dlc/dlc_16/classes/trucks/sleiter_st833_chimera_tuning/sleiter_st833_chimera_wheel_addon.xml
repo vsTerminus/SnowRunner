@@ -1,0 +1,140 @@
+<_templates Include="trucks">
+	<Body>
+		<Limits Collisions="None">
+			<Constraint Type="Fixed">
+				<Motor Damping="250" Spring="0.75" Type="Spring" />
+			</Constraint>
+		</Limits>
+	</Body>
+</_templates>
+<TruckAddon IsChassisFullOcclusion="true">
+	<WheelRepairsHide>
+		<Mesh Frame="wheel_L_spare_parts" HideThreshold="0.5" />
+		<Mesh Frame="wheel_R_spare_parts" HideThreshold="0.0" />
+	</WheelRepairsHide>
+	<TruckData
+		FuelCapacity="60"
+		RepairsCapacity="300"
+		WheelRepairsCapacity="2"
+	>
+		<LimitedFluid Center="(0.556, 3.432, 0.546)" SizeX="0.431" SizeY="0.354" SizeZ="0.165" Type="Box" ParentFrame="BoneFuel1_cdt" />
+		<LimitedFluid Center="(0.305, 3.324, -0.300)" SizeX="0.354" SizeY="0.165" SizeZ="0.431" Type="Box" ParentFrame="BoneFuel2_cdt" />
+		<LimitedFluid Center="(0.755, 3.324, -0.301)" SizeX="0.340" SizeY="0.165" SizeZ="0.409" Type="Box" ParentFrame="BoneFuel3_cdt" />
+	</TruckData>
+	<RepairsHide>
+		<Mesh Frame="repair1_spare_parts" HideThreshold="0.0" />
+		<Mesh Frame="repair2_spare_parts" HideThreshold="0.5" />
+	</RepairsHide>
+	<PhysicsModel Mesh="trucks/sleiter_st833_chimera_tuning/sleiter_st833_chimera_wheel_addon">
+		<Body Mass="600">
+			<Constraint Type="Rigid" />
+			<Body Mass="120" ModelFrame="BoneWheelFrameR_cdt">
+				<Constraint
+					AxisLocal="(0; 1; 0)"
+					PivotOffset="(0; 0; 0)"
+					Type="Hinge"
+					MinLimit="-2.0"
+					MaxLimit="2.0"
+				>
+					<Motor Damping="250" Spring="250" Type="Spring" />
+				</Constraint>
+			</Body>
+			<Body Mass="120" ModelFrame="BoneWheelFrameL_cdt">
+				<Constraint
+					AxisLocal="(0; 1; 0)"
+					PivotOffset="(0; 0; 0)"
+					Type="Hinge"
+					MinLimit="-2.0"
+					MaxLimit="2.0"
+				>
+					<Motor Damping="250" Spring="250" Type="Spring" />
+				</Constraint>
+			</Body>
+			<Body Mass="150" ModelFrame="BoneWheelR_cdt">
+				<Constraint
+					LinearLimitsX="(-0.020; 0.020)"
+					LinearLimitsY="(-0.000; 0.030)"
+					LinearLimitsZ="(-0.000; 0.030)"
+					Type="Fixed"
+				>
+					<Motor Damping="250" Spring="250" Type="Spring" />
+				</Constraint>
+			</Body>
+			<Body Mass="150" ModelFrame="BoneWheelL_cdt">
+				<Constraint
+					LinearLimitsX="(-0.020; 0.020)"
+					LinearLimitsY="(-0.000; 0.030)"
+					LinearLimitsZ="(-0.030; 0.000)"
+					Type="Fixed"
+				>
+					<Motor Damping="250" Spring="250" Type="Spring" />
+				</Constraint>
+			</Body>
+			<Body Mass="50" ModelFrame="BoneChain_cdt">
+				<Constraint
+					LinearLimitsX="(-0.001; 0.001)"
+					LinearLimitsY="(-0.030; 0.030)"
+					LinearLimitsZ="(-0.030; 0.030)"
+					Type="Fixed"
+				>
+					<Motor Damping="1" Spring="1" Type="Spring" />
+				</Constraint>
+			</Body>
+			<Body _template="Limits" Mass="30" ModelFrame="BoneRepair1_cdt">
+				<Constraint
+					LinearLimitsX="(-0.006; 0.017)"
+					LinearLimitsY="(0.000; 0.015)"
+					LinearLimitsZ="(-0.015; 0.015)"
+				/>
+			</Body>
+			<Body _template="Limits" Mass="30" ModelFrame="BoneRepair2_cdt">
+				<Constraint
+					LinearLimitsX="(-0.009; 0.020)"
+					LinearLimitsY="(0.000; 0.015)"
+					LinearLimitsZ="(-0.015; 0.015)"
+				/>
+			</Body>
+			<Body _template="Limits" Mass="20" ModelFrame="BoneFuel1_cdt">
+				<Constraint
+					LinearLimitsX="(-0.015; 0.015)"
+					LinearLimitsY="(0.006; 0.007)"
+					LinearLimitsZ="(-0.000; 0.015)"
+				/>
+			</Body>
+			<Body _template="Limits" Mass="20" ModelFrame="BoneFuel2_cdt">
+				<Constraint
+					LinearLimitsX="(-0.004; 0.008)"
+					LinearLimitsY="(0.000; 0.012)"
+					LinearLimitsZ="(-0.015; 0.015)"
+				/>
+			</Body>
+			<Body _template="Limits" Mass="20" ModelFrame="BoneFuel3_cdt">
+				<Constraint
+					LinearLimitsX="(-0.008; 0.013)"
+					LinearLimitsY="(0.000; 0.012)"
+					LinearLimitsZ="(-0.015; 0.015)"
+				/>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="addon_2"
+		Category="wheel_addon"
+		Price="7300"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SLEITER_ST833_SPAREPARTS_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SLEITER_ST833_SPAREPARTS_NAME"
+		/>
+		<InstallSocket Type="SleiterST833ChimeraSpareWheel" />
+	</GameData>
+	<FuelHide>
+		<Mesh Frame="fuel1_spare_parts" HideThreshold="0.0" />
+		<Mesh Frame="fuel2_spare_parts" HideThreshold="0.33" />
+		<Mesh Frame="fuel3_spare_parts" HideThreshold="0.66" />
+	</FuelHide>
+</TruckAddon>

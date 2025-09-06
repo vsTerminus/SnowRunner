@@ -1,0 +1,562 @@
+<_templates Include="trucks">
+	<Wheel>
+		<RearWheel
+			ConnectedToHandbrake="true"
+			Location="rear"
+			Torque="default"
+			ParentFrame="BoneChassis_cdt"
+		/>
+		<FrontWheel
+			ConnectedToHandbrake="true"
+			Location="front"
+			SteeringAngle="35"
+			SteeringCastor="4"
+			SteeringJointOffset="0.194"
+			Torque="default"
+			ParentFrame="BoneCabin_cdt"
+		/>
+	</Wheel>
+	<Body>
+		<Sunshield
+			CenterOfMassOffset="(0; 0; 0)"
+			Collisions="None"
+			Mass="50"
+		>
+			<Constraint
+				AxisLocal="(0; 0; 1)"
+				PivotOffset="(0; 0; 0)"
+				Type="Hinge"
+				MinLimit="-1.5"
+				MaxLimit="15.0"
+			>
+				<Motor Damping="100" Spring="100" Type="Spring" />
+			</Constraint>
+		</Sunshield>
+		<Seatbelt
+			CenterOfMassOffset="(0; 0; 0)"
+			Collisions="None"
+			Mass="1"
+		>
+			<Constraint
+				LinearLimitsX="(-0.020; 0.020)"
+				LinearLimitsY="(-0.001; 0.001)"
+				LinearLimitsZ="(-0.001; 0.001)"
+				Type="Fixed"
+			>
+				<Motor Damping="20" Spring="700" Type="Spring" />
+			</Constraint>
+		</Seatbelt>
+		<MirrorHolder
+			CenterOfMassOffset="(0; 0; 0)"
+			Collisions="Default"
+			ImpactType="Truck"
+			Mass="30"
+		>
+			<Constraint
+				AxisLocal="(0; 1; 0)"
+				PivotOffset="(0; 0; 0)"
+				Type="Hinge"
+				MinLimit="-2.0"
+				MaxLimit="2.0"
+			>
+				<Motor Damping="100" Spring="100" Type="Spring" />
+			</Constraint>
+		</MirrorHolder>
+		<Mirror
+			CenterOfMassOffset="(0; 0; 0)"
+			Collisions="Default"
+			ImpactType="Truck"
+			Mass="30"
+		>
+			<Constraint
+				AxisLocal="(0; 1; 0)"
+				PivotOffset="(0; 0; 0)"
+				Type="Hinge"
+				MinLimit="-2.0"
+				MaxLimit="2.0"
+			>
+				<Motor Damping="50" Spring="100" Type="Spring" />
+			</Constraint>
+		</Mirror>
+	</Body>
+</_templates>
+<Truck>
+	<TruckData
+		BackSteerSpeed="0.030"
+		DiffLockType="Uninstalled"
+		EngineIconMesh="env/engine_hib_billert_1980"
+		EngineIconScale="1.0"
+		EngineStartDelay="0.7"
+		ExhaustStartTime="1.1"
+		FuelCapacity="180"
+		Responsiveness="0.35"
+		SteerSpeed="0.035"
+		TruckImage="HibBillertmchr"
+		TruckType="OFFROAD"
+	>
+		<WinchUpgradeSocket Default="w_medium_trucks_default" IsUpgradable="true" Type="winches_medium_trucks, winches_actaeon" />
+		<Wheels
+			DefaultRim="rim_1"
+			DefaultTire="tire_billert_1"
+			DefaultWheelType="wheels_offroad_single_hib_billert_1980"
+		>
+			<Wheel _template="FrontWheel" Pos="(1.96; 0.545; 1.055)" ParentFrame="BoneCabin_cdt" />
+			<Wheel _template="FrontWheel" RightSide="true" Pos="(1.96; 0.545; 1.055)" ParentFrame="BoneCabin_cdt" />
+			<Wheel _template="RearWheel" Pos="(-1.995; 0.545; 1.049)" ParentFrame="BoneChassis_cdt" />
+			<Wheel _template="RearWheel" RightSide="true" Pos="(-1.995; 0.545; 1.049)" ParentFrame="BoneChassis_cdt" />
+		</Wheels>
+		<SuspensionSocket
+			Default="hib_billert_1980_suspension_default"
+			Type="s_hib_billert_1980"
+			MaxWheelRadiusWithoutSuspension="0.4"
+		/>
+		<SteeringWheel Frame="BoneSteeringWheel" />
+		<SteeringRack
+			Frame="BoneRack"
+			FrameSteerLeft="BoneRackL"
+			FrameSteerRight="BoneRackR"
+			RackHalfSizeZ="0.743"
+		/>
+		<Steam Origin="(1.5; 1; -0)" />
+		<SoundsWheels _template="Default" />
+		<SoundsDamage _template="Heavy" />
+		<Sounds
+			_template="Default"
+			DisableReversePitch="true"
+			Origin="(1.372; 0.949; 0.005)"
+			MinDist="15.0"
+		>
+			<Honk			Sound="trucks/hib_billert_1980/hib_billert_1980_honk" />
+			<Handbrake		Sound="trucks/hib_billert_1980/hib_billert_1980_handbrake_on" />
+			<HandbrakeOff	Sound="trucks/hib_billert_1980/hib_billert_1980_handbrake_off" />
+			<Reverse		Sound="trucks/hib_billert_1980/hib_billert_1980_back_beeper" />
+			<BrakesSqueal	Sound="trucks/hib_billert_1980/hib_billert_1980_brakes_squeal" />
+			<BrakePull		Sound="trucks/hib_billert_1980/hib_billert_1980_brake_pull" />
+			<BrakeRelease	Sound="trucks/hib_billert_1980/hib_billert_1980_brake_release" />
+			<EngineRev		Sound="" />
+			<EngineAccel	Sound="trucks/hib_billert_1980/hib_billert_1980_acc" />
+			<EngineStart	Sound="trucks/hib_billert_1980/hib_billert_1980_start" />
+			<EngineStop		Sound="trucks/hib_billert_1980/hib_billert_1980_stop" />
+			<EngineIdle		Sound="trucks/hib_billert_1980/hib_billert_1980_idle" />
+			<EngineIdle_2d	Sound="trucks/hib_billert_1980/hib_billert_1980_idle_2d"	IsSound2D="true" />
+			<EngineLow		Sound="trucks/hib_billert_1980/hib_billert_1980_low" />
+			<EngineLow_2d	Sound="trucks/hib_billert_1980/hib_billert_1980_low_2d"	IsSound2D="true" />
+			<EngineHigh		Sound="trucks/hib_billert_1980/hib_billert_1980_high" />
+			<EngineHigh_2d	Sound="trucks/hib_billert_1980/hib_billert_1980_high_2d"	IsSound2D="true" />
+			<EngineHeavy	Sound="" />
+			<EngineHeavy_2d	Sound=""	IsSound2D="true" />
+			<ChassisStress	Sound="trucks/common/truck_stress_rnd_set/truck_stress_rnd" />
+			<AbruptStop		Sound="trucks/common/truck_swing_big_rnd_set/truck_swing_big_rnd" />
+		</Sounds>
+		<Shakers>
+			<Shaker Frame="BoneGearbox" MinAngle="(0.1; 0.1; 0.1)" MaxAngle="(0.2; 0.2; 0.2)" MaxFrequency="0.4" MaxOffset="(0; 0; 0)" />
+			<Shaker Frame="BoneRodFront" MinAngle="(0.4; 0.4; 0.4)" MaxAngle="(0.6; 0.6; 0.6)" MaxFrequency="0.4" MaxOffset="(0; 0; 0)" />
+			<Shaker Frame="BoneBeltConnectorR" MinAngle="(0; 0; 0.35)" MaxAngle="(0; 0; 0.5)" MaxFrequency="0.7" MaxOffset="(0; 0; 0)" />
+			<Shaker Frame="BoneBeltConnectorL" MinAngle="(0; 0; 0.35)" MaxAngle="(0; 0; 0.5)" MaxFrequency="0.7" MaxOffset="(0; 0; 0)" />
+		</Shakers>
+		<Shafts>
+			<Shaft SocketPointA="Shaft1a" SocketPointB="Shaft1b" />
+			<Shaft SocketPointA="Shaft2a" SocketPointB="Shaft2b" />
+			<Shaft SocketPointA="Shaft3a" SocketPointB="Shaft3b" />
+		</Shafts>
+		<OcclusionMap HalfSizeZ="1.5" MinX="-3.5" MaxX="3.5" />
+		<LimitedFluid
+			Center="(-0.535, 0.816, 0.704)"
+			SizeX="0.745"
+			SizeY="0.320"
+			SizeZ="0.385"
+			Type="Box"
+			ParentFrame="BoneChassis_cdt"
+		/>
+		<Intake Dir="(1; 0; 0)" Origin="(3.323; 1.21; 0)" Size="0.2" />
+		<GearboxSocket Default="g_truck_default" Type="gearboxes_trucks" />
+		<FuelTank DamageCapacity="100" />
+		<EngineSocket Default="us_truck_old_engine_0" Type="e_us_truck_old, e_us_truck_old_hib_billert" />
+		<Driver
+			AnimationSet="Truck"
+			LegsOffset="(0; 0; 0.05)"
+			Pos="(2.25; 1.586; 0.5)"
+			SteeringWheelPos="(2.692; 1.92; 0.546)"
+			ParentFrame="BoneCabin_cdt"
+		/>
+		<Dashboard>
+			<Gauge Damping="0.9" Dir="(-0.71; 0.705; 0)" InputRange="(0;1)" InputType="rpm" Mesh="trucks/arrows/hib_billert_1980_arrow_02" Org="(3.005; 1.831; 0.695)" OutputAngles="(-105; 105)" />
+			<Gauge Damping="0.9" Dir="(-0.695; 0.719; 0)" InputRange="(0;85)" InputType="speed" Mesh="trucks/arrows/hib_billert_1980_arrow_01" Org="(3.002; 1.834; 0.547)" OutputAngles="(-135; 135)" />
+			<Gauge Damping="0.9" Dir="(-0.707; 0.707; 0)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/hib_billert_1980_arrow_03" Org="(3.004; 1.831; 0.424)" OutputAngles="(-35; 9)" />
+			<Gauge Damping="0.9" Dir="(-0.707; 0.707; 0)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/hib_billert_1980_arrow_03" Org="(3.004; 1.831; 0.376)" OutputAngles="(-35; 16)" />
+			<Gauge Damping="0.9" Dir="(-0.707; 0.707; 0)" InputRange="(0;1)" InputType="fuel" Mesh="trucks/arrows/hib_billert_1980_arrow_03" Org="(2.937; 1.765; 0.718)" OutputAngles="(-35; 35)" />
+			<Gauge Damping="0.9" Dir="(-0.707; 0.707; 0)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/hib_billert_1980_arrow_03" Org="(2.937; 1.765; 0.67)" OutputAngles="(-35; -8)" />
+			<Gauge Damping="0.9" Dir="(-0.707; 0.707; 0)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/hib_billert_1980_arrow_03" Org="(2.938; 1.765; 0.424)" OutputAngles="(-35; 12)" />
+			<Gauge Damping="0.9" Dir="(-0.707; 0.707; 0)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/hib_billert_1980_arrow_03" Org="(2.938; 1.765; 0.376)" OutputAngles="(-35; 25)" />
+		</Dashboard>
+		<Damage>
+			<DamageArea Type="Engine" Min="(1.314; 0.739; -0.542)" Max="(3.271; 1.632; 0.542)" ParentFrame="BoneCabin_cdt" />
+			<DamageArea Type="FuelTank" Min="(-0.943; 0.606; 0.453)" Max="(-0.127; 1.026; 0.954)" ParentFrame="BoneChassis_cdt" />
+		</Damage>
+		<CompatibleWheels OffsetZ="0" Scale="0.56" Type="wheels_offroad_single_hib_billert_1980" />
+		<CompatibleWheels OffsetZ="0" Scale="0.62" Type="wheels_offroad_single_hib_billert_1980" />
+		<CompatibleWheels OffsetZ="0" Scale="0.56" Type="wheels_medium_double" />
+		<CompatibleWheels OffsetZ="0" RearOffsetZ="0.05" Scale="0.56" Type="wheels_medium_offroad_double" />
+		<CompatibleWheels OffsetZ="0" RearOffsetZ="0.05" Scale="0.56" Type="wheels_medium_highway_double" />
+		<CompatibleWheels OffsetZ="0" RearOffsetZ="0.05" Scale="0.56" Type="wheels_medium_allterrain_double" />
+		<CompatibleWheels OffsetZ="0" Scale="0.56" Type="wheels_heavy_mudtires_single" />
+		<CompatibleWheels OffsetZ="0" Scale="0.56" Type="wheels_heavy_mudtires_single2" />
+		<CompatibleWheels OffsetZ="0" Scale="0.56" Type="wheels_heavy_single2" />
+		<CompatibleWheels OffsetZ="0" Scale="0.62" Type="wheels_medium_double" />
+		<CompatibleWheels OffsetZ="0" RearOffsetZ="0.05" Scale="0.62" Type="wheels_medium_offroad_double" />
+		<CompatibleWheels OffsetZ="0" RearOffsetZ="0.05" Scale="0.62" Type="wheels_medium_highway_double" />
+		<CompatibleWheels OffsetZ="0" RearOffsetZ="0.05" Scale="0.62" Type="wheels_medium_allterrain_double" />
+		<CompatibleWheels OffsetZ="0" Scale="0.62" Type="wheels_heavy_mudtires_single" />
+		<CompatibleWheels OffsetZ="0" Scale="0.62" Type="wheels_heavy_mudtires_single2" />
+		<CompatibleWheels OffsetZ="0" Scale="0.62" Type="wheels_heavy_single2" />
+		<Camera Center="(-0.5; 0; 0)" ParentFrame="BoneCabin_cdt">
+			<Cockpit
+				_template="Default"
+				LimitsHor="(-2.8; 1.8)"
+				LimitsVer="(-0.50; 0.35)"
+				ViewDir="(1; 0; 0)"
+				WindshieldDiffuseCleanAlpha="0"
+				WindshieldDiffuseTexture="trucks/hib_billert_1980_glass__d_a.tga"
+				WindshieldShadingTexture="trucks/hib_billert_1980_glass__sh_d.tga"
+				ViewPos="(2.22; 2.27; 0.530)"
+			>
+				<Rear ViewPosOffset="(0.1; 0; 0.5)" />
+				<Mirror ClipDir="(-0.966; -0; -0.259)" ClipOffset="0.1" FOVScale="1" MeshFrame="mirror_left" ReflectionDir="(-0.875; 0; -0.485)" Size="(0.24; 0.372)" Pos="(2.7; 2.148; 1.312)" />
+				<Mirror ClipDir="(-0.966; -0; 0.259)" ClipOffset="0.1" FOVScale="1" MeshFrame="mirror_right" ReflectionDir="(-0.777; 0; 0.629)" Size="(0.24; 0.372)" Pos="(2.7; 2.148; -1.312)" />
+			</Cockpit>
+		</Camera>
+		<Axles>
+			<Axle Frame="BoneAxleFront" />
+			<Axle Frame="BoneAxleRear" />
+		</Axles>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/hib_billert_1980">
+		<NetSync Legacy="false" />
+		<Body
+			CenterOfMassOffset="(0; -0.2; 0)"
+			Collisions="Default"
+			ImpactType="Truck"
+			Mass="3600"
+			ModelFrame="BoneChassis_cdt"
+			NetSync="pv"
+		>
+			<Body
+				CenterOfMassOffset="(-0; -0.5; 0)"
+				Collisions="Default"
+				ImpactType="Truck"
+				Mass="3100"
+				ModelFrame="BoneCabin_cdt"
+				NetSync="pv"
+			>
+				<Constraint
+					AxisLocal="(1; 0; 0)"
+					PivotOffset="(0; 0; 0)"
+					Type="Hinge"
+					MinLimit="-8.0"
+					MaxLimit="8.0"
+				>
+					<Motor Damping="110000" Spring="110000" Type="Spring" />
+				</Constraint>
+				<Body _template="Mirror" CenterOfMassOffset="(0; 0; 0)" ModelFrame="BoneMirrorR_cdt" />
+				<Body _template="Mirror" CenterOfMassOffset="(0; 0; 0)" ModelFrame="BoneMirrorL_cdt" />
+				<Body _template="Seatbelt" CenterOfMassOffset="(0; 0; 0)" ModelFrame="BoneSeatbeltR_cdt" />
+				<Body _template="Seatbelt" CenterOfMassOffset="(0; 0; 0)" ModelFrame="BoneSeatbeltL_cdt" />
+				<Body _template="Sunshield" CenterOfMassOffset="(-0.1; 0; 0)" ModelFrame="BoneSunshieldR_cdt" />
+				<Body _template="Sunshield" CenterOfMassOffset="(-0.1; 0; 0)" ModelFrame="BoneSunshieldL_cdt" />
+				<Body
+					CenterOfMassOffset="(0; 0; 0)"
+					Collisions="None"
+					Mass="30"
+					ModelFrame="BoneWiperR_cdt"
+				>
+					<Constraint
+						LinearLimitsX="(0.000; 0.001)"
+						LinearLimitsY="(0.000; 0.001)"
+						LinearLimitsZ="(0.000; 0.001)"
+						Type="Fixed"
+					>
+						<Motor Damping="200" Spring="500" Type="Spring" />
+					</Constraint>
+				</Body>
+				<Body
+					CenterOfMassOffset="(0; 0; 0)"
+					Collisions="None"
+					Mass="30"
+					ModelFrame="BoneWiperL_cdt"
+				>
+					<Constraint
+						LinearLimitsX="(0.000; 0.001)"
+						LinearLimitsY="(0.000; 0.001)"
+						LinearLimitsZ="(0.000; 0.001)"
+						Type="Fixed"
+					>
+						<Motor Damping="200" Spring="500" Type="Spring" />
+					</Constraint>
+				</Body>
+				<Body
+					CenterOfMassOffset="(0; 0; 0)"
+					Collisions="None"
+					Mass="10"
+					ModelFrame="BoneTieRod_cdt"
+				>
+					<Constraint
+						AxisLocal="(0; 0; 1)"
+						Name="TieRodSteer"
+						PivotOffset="(0; 0; 0)"
+						Type="Hinge"
+						MinLimit="-45"
+						MaxLimit="45"
+					>
+						<Motor
+							Damping="1.0"
+							Force="10"
+							Tau="1"
+							Type="Position"
+						/>
+					</Constraint>
+				</Body>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<StopSignals>
+			<Light _template="StopSignal" Pos="(-3.433; 0.973; 0)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="StopSignal" Dir="(-1; 0; 0)" Size="0.1" Pos="(-3.233; 0.933; -0.793)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="StopSignal" Dir="(-1; 0; 0)" Size="0.1" Pos="(-3.233; 0.933; 0.793)" ParentFrame="BoneChassis_cdt" />
+		</StopSignals>
+		<ReverseSignals>
+			<Light _template="ReverseSignal" Pos="(-3.433; 0.973; 0)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="ReverseSignal" Dir="(-1; 0; 0)" Size="0.100" Pos="(-3.233; 1.011; -0.791)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="ReverseSignal" Dir="(-1; 0; 0)" Size="0.100" Pos="(-3.233; 1.011; 0.791)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="BlueStreak" Dir="(-1; 0; 0)" Size="0.35" Pos="(-3.233; 1.011; -0.791)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="BlueStreak" Dir="(-1; 0; 0)" Size="0.35" Pos="(-3.233; 1.011; 0.791)" ParentFrame="BoneChassis_cdt" />
+		</ReverseSignals>
+		<Ignition>
+			<Light _template="StopSignal" Pos="(-3.433; 0.973; 0)" ParentFrame="BoneChassis_cdt" />
+			<Light _template="IgnitionSignalWhite" Dir="(0.995; -0.1; 0)" Pos="(3.366; 1.139; 0)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhiteWarm" AspectRatio="1" Dir="(1; 0; 0)" Size="0.250" Pos="(3.301; 1.139; -0.657)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhiteWarm" AspectRatio="1" Dir="(1; 0; 0)" Size="0.250" Pos="(3.301; 1.139; 0.657)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalRed" Dir="(-1; 0; 0)" Size="0.100" Pos="(-3.191; 0.973; 1.12)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="IgnitionSignalRed" Dir="(-1; 0; 0)" Size="0.100" Pos="(-3.191; 0.973; -1.12)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="IgnitionSignalOrange" Dir="(-1; 0; 0)" Size="0.15" Pos="(-3.233; 1.011; 0.905)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="IgnitionSignalOrange" Dir="(-1; 0; 0)" Size="0.15" Pos="(-3.233; 1.011; -0.905)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="IgnitionSignalRed" AspectRatio="0.5" Dir="(-1; 0; 0)" Size="0.25" Pos="(-3.233; 0.974; 0.679)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="IgnitionSignalRed" AspectRatio="0.5" Dir="(-1; 0; 0)" Size="0.25" Pos="(-3.233; 0.974; -0.679)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="IgnitionSignalOrange" Dir="(-1; 0; 0)" Size="0.100" Pos="(-3.233; 1.013; -0.908)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="IgnitionSignalOrange" Dir="(-1; 0; 0)" Size="0.100" Pos="(-3.233; 1.013; 0.908)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="IgnitionSignalOrange" AspectRatio="1.000" Dir="(1; 0; 0)" Size="0.150" Pos="(3.271; 1.202; -0.824)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalOrange" AspectRatio="1.000" Dir="(1; 0; 0)" Size="0.150" Pos="(3.271; 1.202; 0.824)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalOrange" Dir="(0; 0; 1)" Size="0.100" Pos="(2.836; 1.296; 0.984)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalOrange" Dir="(0; 0; 1)" Size="0.100" Pos="(1.482; 1.308; 1.225)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalOrange" Dir="(0; 0; -1)" Size="0.100" Pos="(2.836; 1.296; -0.984)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalOrange" Dir="(0; 0; -1)" Size="0.100" Pos="(1.482; 1.308; -1.225)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalOrange" Dir="(0.019; 0.972; -0.234)" Size="0.100" Pos="(2.696; 2.661; -0.745)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalOrange" Dir="(0.041; 0.999; -0.016)" Size="0.100" Pos="(2.742; 2.688; -0.233)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalOrange" Dir="(0.041; 0.999; 0.016)" Size="0.100" Pos="(2.742; 2.688; 0.233)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalOrange" Dir="(0.019; 0.972; 0.234)" Size="0.100" Pos="(2.696; 2.661; 0.745)" ParentFrame="BoneCabin_cdt" />
+		</Ignition>
+		<HeadLight>
+			<Model _template="HeadLightRay" Dir="(1; 0; 0)" Org="(3.301; 1.139; -0.657)" ParentFrame="BoneCabin_cdt" />
+			<Model _template="HeadLightRay" Dir="(1; 0; 0)" Org="(3.301; 1.139; 0.657)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="HeadLight" AspectRatio="1.000" Dir="(1; 0; 0)" Size="0.400" Pos="(3.301; 1.139; -0.657)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="HeadLight" AspectRatio="1.000" Dir="(1; 0; 0)" Size="0.400" Pos="(3.301; 1.139; 0.657)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="BlueStreak" Dir="(1; 0; 0)" Size="0.500" Pos="(3.301; 1.139; -0.657)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="BlueStreak" Dir="(1; 0; 0)" Size="0.500" Pos="(3.301; 1.139; 0.657)" ParentFrame="BoneCabin_cdt" />
+		</HeadLight>
+	</ModelAttachments>
+	<Landmark Mesh="landmarks/hib_billert_1980_lmk" MinScale="1.8" MaxScale="2.8" />
+	<HeadLight _template="Default" Pos="(3.366; 1.139; 0)" ParentFrame="BoneCabin_cdt" />
+	<GameData
+		Country="US,NE,CE"
+		ExcludeAddons="semitrailer_foldable_log,       stuff_bobblehead_joker,       stuff_bobblehead_penguin,       stuff_bobblehead_walrus,       stuff_dog,       stuff_masha,       stuff_hula_girl"
+		Price="51800"
+		UnlockByExploration="true"
+		UnlockByRank="1"
+	>
+		<WinchSocket Pos="(0.677; 0.825; 0.346)" />
+		<WinchSocket Pos="(0.677; 0.825; -0.346)" />
+		<UiDesc
+			UiDesc="UI_VEHICLE_HIB_BILLERT_1980_DESC"
+			UiIcon30x30="offroadVehicleImg30"
+			UiIcon328x458="shopImgHibBillert"
+			UiIcon40x40="offroadVehicleImg"
+			UiIconLogo="HIBBillertLogo80"
+			UiName="UI_VEHICLE_HIB_BILLERT_1980_NAME"
+		/>
+		<CustomizationCameras>
+			<CameraPos FOV="32.0" Interior="true" Name="sticker_1" InterestPosition="(7.7; 3.3; 0.5)" Position="(5.8; 1.9; -0.2)" />
+			<CameraPos FOV="32.0" Interior="true" Name="sticker_2" InterestPosition="(7.7; 3.45; 1.7)" Position="(5.8; 1.9; -0.2)" />
+			<CameraPos FOV="32.0" Interior="true" Name="sticker_3" InterestPosition="(7.55; 0.95; 1.8)" Position="(6.55; 2.25; 0.1)" />
+			<CameraPos FOV="32.0" Name="door_r_sticker" InterestPosition="(7.8; 1.4; 0)" MaxXRotation="0" MaxYRotation="0" MaxZoom="0" Position="(5.6; 1.75; 3.5)" />
+			<CameraPos FOV="32.0" Name="door_l_sticker" InterestPosition="(5.9; 1.4; 0)" MaxXRotation="0" MaxYRotation="0" MaxZoom="0" Position="(5.42; 1.9; -3.5)" />
+			<CameraPos FOV="32.0" Name="roof_sticker" InterestPosition="(4.5; 0.7; 0)" MaxXRotation="0" MaxYRotation="0" MaxZoom="0" Position="(8.5; 5; -1.2)" />
+			<CameraPos FOV="32.0" Name="default" InterestPosition="(5.5; 1.3; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(12.5; 1.65; -4.9)" />
+			<CameraPos FOV="32.0" Name="side_r" InterestPosition="(3.5; 0.4; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(7.5; 2.4; 3)" />
+			<CameraPos FOV="32.0" Name="side_l" InterestPosition="(6; 1; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(5; 1.6; -4)" />
+			<CameraPos FOV="32.0" Name="wheels" InterestPosition="(4.3; 0.5; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(10.1; 0.8; -5.5)" />
+			<CameraPos FOV="32.0" Name="rear" InterestPosition="(-0.39; 1.12; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-6.51; 1.86; 2.370)" />
+			<CameraPos FOV="32.0" Name="roof" InterestPosition="(6; 1.5; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(10; 5; -2.8)" />
+			<CameraPos FOV="32.0" Name="snorkels" InterestPosition="(5.95; 1.3; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(2.5; 3.3; 4.85)" />
+			<CameraPos FOV="32.0" Name="exhaust" InterestPosition="(5.95; 1.6; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(1.5; 3.6; 4.5)" />
+			<CameraPos FOV="32.0" Name="exhaust_default" InterestPosition="(5.95; 0.3; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(2; 1.3; 5)" />
+			<CameraPos FOV="32.0" Name="hoods" InterestPosition="(5; 1.3; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(13.5; 1.25; -4.700)" />
+			<CameraPos FOV="32.0" Name="hoods_default" InterestPosition="(5; 1.3; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(13.5; 1.25; -4.700)" />
+			<CameraPos FOV="32.0" Name="addon_1" InterestPosition="(2; 1.675; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-6; 3.5; 7.5)" />
+			<CameraPos FOV="32.0" Name="addon_2" InterestPosition="(6; 2; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(9.5; 5; -4)" />
+			<CameraPos FOV="32.0" Name="addon_3" InterestPosition="(4.5; 2; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(0; 5.1; -5.5)" />
+			<CameraPos FOV="32.0" Name="spare_wheel" InterestPosition="(4.044; 1.994; 0.55)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(0.74; 2.814; 3.953)" />
+			<CameraPos FOV="32.0" Interior="true" Name="bubble_head" InterestPosition="(7.55; 1.5; 1.45)" Position="(6.55; 2.100; -0.25)" />
+			<CameraPos FOV="32.0" Interior="true" Name="hood_figure" InterestPosition="(4.08; 1.33; 1.050)" Position="(8.78; 2.33; -0.95)" />
+			<CameraPos FOV="32.0" Interior="true" Name="curtain" InterestPosition="(7.5; 2.7; 1.32)" Position="(5.8; 2.100; -0.55)" />
+			<CameraPos FOV="32.0" Interior="true" Name="mirror_mount" InterestPosition="(7.5; 2.7; 0.95)" Position="(6; 2.2; -0.2)" />
+			<CameraPos FOV="32.0" Interior="true" Name="glass_sticker" InterestPosition="(6; 2; -1.3)" Position="(10.5; 2.100; 1.7)" />
+		</CustomizationCameras>
+		<CraneSocket Pos="(0.677; 0.825; 0.346)" />
+		<CraneSocket Pos="(0.677; 0.825; -0.346)" />
+		<AddonSockets>
+			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-1.593; 1.4; 0)" />
+			<Socket Names="Trailer" Offset="(-3.35; 0.869; 0)">
+				<AddonsShift Offset="(-0.37; 0.02; 0)" Types="HIBBillert1980Kung" />
+			</Socket>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="LogLift" NamesBlock="SemitrailerOiltank" Offset="(0.766; 1.082; 0)" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="MinicraneUS" Offset="(0.462; 1.082; 0)" ParentFrame="BoneCabin_cdt">
+				<ExtraParent Frame="BoneCabin_cdt" Offset="(0; 0; 0)" />
+				<ExtraParent Frame="BoneCabin_cdt" Offset="(0; 0; 0)" />
+			</Socket>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="SaddleLow" NamesBlock="HIBBillert1980Kung, LogLift" Offset="(-1.59; 1.08; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket
+				Names="FrameAddon"
+				NamesBlock="LogLift, MinicraneUS, HIBBillert1980Kung"
+				Offset="(-1.441; 1.09; 0)"
+				ParentFrame="BoneChassis_cdt"
+			>
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0)" />
+			</Socket>
+			<Socket Names="FrameAddonFlatbed1" NamesBlock="HIBBillert1980Kung, LogLift" Offset="(-1.57; 1.09; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket
+				Names="HIBBillert1980Kung"
+				NamesBlock="LogLift, MinicraneUS"
+				Offset="(0; 0; 0)"
+				ParentFrame="BoneChassis_cdt"
+			>
+				<ExtraParent Frame="BoneCabin_cdt" Offset="(0; 0; 0)" />
+			</Socket>
+		</AddonSockets>
+		
+		<AddonSockets DefaultAddon="hib_billert_1980_farkop_default" RequiredAddonIfNoConflicts="hib_billert_1980_farkop_default">
+			<Socket Names="HIBBillert1980Farkop" NamesBlock="HIBBillert1980Kung" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>
+		
+		<AddonSockets DefaultAddon="hib_billert_1980_diff_lock_default">
+			<Socket Names="HIBBillert1980DiffLock" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>
+		<AddonSockets DefaultAddon="hib_billert_1980_bumper_default">
+			<Socket Names="HIBBillert1980Bumper" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets DefaultAddon="hib_billert_1980_snorkel_default">
+			<Socket Names="HIBBillert1980Snorkel" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets DefaultAddon="hib_billert_1980_exhaust_default">
+			<Socket Names="HIBBillert1980ExhaustDefault" ParentFrame="BoneChassis_cdt">
+				<ExtraParent Frame="BoneCabin_cdt" Offset="(0; 0; 0)" />
+			</Socket>
+			<Socket Names="HIBBillert1980Exhaust" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets DefaultAddon="hib_billert_1980_visor_default">
+			<Socket Names="HIBBillert1980Visor" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets DefaultAddon="hib_billert_1980_wheel_addon_1">
+			<Socket Names="HIBBillert1980SpareWheel" ParentFrame="BoneChassis_cdt">
+				<ExtraParent Frame="BoneCabin_cdt" Offset="(0; 0; 0)" />
+			</Socket>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="HIBBillert1980Spotlight" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="HIBBillert1980Roofrack" NamesBlock="HIBBillert1980Spotlight, HIBBillert1980Beacon" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="HIBBillert1980Horn" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="HIBBillert1980HornSide" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="HIBBillert1980Beacon" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket
+				InCockpit="true"
+				Names="StuffAirfreshener"
+				Offset="(2.881; 2.542; 0.048)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket
+				InCockpit="true"
+				Names="StuffDashboard"
+				Offset="(3.211; 1.799; -0.193)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="HIBBillert1980StuffCurtain" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="HIBBillert1980Sticker_1x1_01" ParentFrame="BoneSunshieldL_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="HIBBillert1980Sticker_1x1_02" ParentFrame="BoneSunshieldL_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="HIBBillert1980Sticker_1x1_03" ParentFrame="BoneSunshieldR_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="HIBBillert1980Sticker_1x1_04" ParentFrame="BoneSunshieldR_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="HIBBillert1980Sticker_1x2_01" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="HIBBillert1980Sticker_1x2_02" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="HIBBillert1980Sticker_1x4_01" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="HIBBillert1980Sticker_Glass_Top" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="HIBBillert1980Sticker_Glass_Bottom" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="HIBBillert1980Sticker_Door_L" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="HIBBillert1980Sticker_Door_R" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="HIBBillert1980Sticker_Roof" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+	</GameData>
+	<ControlledConstraints>
+		<Constraint Id="chassis_steer" IsLinkedSteering="true" Name="TieRodSteer" />
+	</ControlledConstraints>
+	<AutomaticIK>
+		<IKBone ModelFrame="BoneTieRodHinge" ParentFrame="BoneTieRod_cdt">
+			<IKJoint AxisLocal="(1; 0; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneRackL"
+				ModelFrame="BoneTieRodPrismatic"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+	</AutomaticIK>
+</Truck>

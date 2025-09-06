@@ -1,0 +1,35 @@
+<ModelBrand
+	NightLightingShadowsAllowCap="true"
+	DayShadowOffsetMult="13"
+>
+	<PhysicsModel>
+		<Body
+			Collisions="Dynamic"
+		/>
+	</PhysicsModel>
+	<Landmark Mesh="landmarks/carriage_01_us16_reverse_objective_lmk" />
+	<Subset IsDefault="true" Name="stage_visible">
+	</Subset>
+
+	<Subset Name="stage_hidden">
+		<AnimSubset Name="build_animation_0"/>
+		<AnimTrack Name="anim_track_01" />
+		<Mesh Name="train_02" />
+		<Mesh Name="train_02_lod1" />
+		<Mesh Name="train_02_lod2" />
+		<Mesh Name="train_02_lod3" />
+		<CdtMesh Name="cdt_train_02" />
+	</Subset>
+
+	<AnimSubset Name="build_animation_0">
+		<Mesh Name="train_02_anim" />
+		<CdtMesh Name="cdt_train_02" />
+	</AnimSubset>
+	<TrackEvents TrackName="anim_track_01">
+		<AnimEvent Key="1">
+		<Sound Name="cargo/cargo_metal_planks" Range="240" Volume="0.25" />
+			<SFX Name="cargo_unload_01" Dir="(0; 1; 0)" Pos="(3.5; 0.5; 0)"/>
+			<SFX Name="cargo_unload_01" Dir="(0; 1; 0)" Pos="(-3.5; 0.5; 0)"/>
+		</AnimEvent>
+	</TrackEvents>
+</ModelBrand>

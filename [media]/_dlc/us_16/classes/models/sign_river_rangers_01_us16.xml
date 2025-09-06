@@ -1,0 +1,31 @@
+<ModelBrand
+	DayShadowOffsetMult="2.0"
+	AcceptZoneBorderDecals="true"
+	NightLightingShadowsAllowCap="true"
+	ClipCameraBridge="true"
+>
+	<PhysicsModel>
+		<Body Collisions="None" ModelFrame="BoneRoot">
+			<Body DamageMult="0" Mass="0.5" NoSoftContacts="true" ModelFrame="joint1" >
+				<Constraint
+						AxisLocal="(1; 0; 0)"
+						Type="Hinge"
+						MinLimit="-85"
+						MaxLimit="85"
+					>
+						<Motor Damping="0.1" Spring="13" Type="Spring" />
+				</Constraint>
+				<Body DamageMult="0" Mass="0.7" NoSoftContacts="true" ModelFrame="joint2" >
+					<Constraint
+						AxisLocal="(1; 0; 0)"
+						Type="Hinge"
+						MinLimit="-60"
+						MaxLimit="60"
+					>
+						<Motor Damping="0.09" Spring="20" Type="Spring" />
+					</Constraint>
+				</Body>
+			</Body>
+		</Body>
+	</PhysicsModel>
+</ModelBrand>

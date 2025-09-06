@@ -1,0 +1,47 @@
+<TruckAddon>
+	<WheelRepairsHide>
+		<Mesh Frame="plad_440_spare_wheel_left" HideThreshold="0.0" />
+		<Mesh Frame="plad_440_spare_wheel_right" HideThreshold="0.5" />
+	</WheelRepairsHide>
+	<TruckData WheelRepairsCapacity="2" />
+	<PhysicsModel Mesh="trucks/plad_440_tuning/plad_440_wheel_addon_2">
+		<Body ImpactType="Truck" Mass="5" ModelFrame="BoneCabinTwist_cdt">
+			<Constraint Type="Rigid" />
+			<Body Collisions="None" Mass="15" ModelFrame="BoneWheelLeft_cdt">
+				<Constraint
+					AxisLocal="(1; 0; 0)"
+					Type="Hinge"
+					MinLimit="-0.3"
+					MaxLimit="0.3"
+				>
+					<Motor Damping="0" Spring="0" Type="Spring" />
+				</Constraint>
+			</Body>
+			<Body Collisions="None" Mass="15" ModelFrame="BoneWheelRight_cdt">
+				<Constraint
+					AxisLocal="(1; 0; 0)"
+					Type="Hinge"
+					MinLimit="-0.3"
+					MaxLimit="0.3"
+				>
+					<Motor Damping="0" Spring="0" Type="Spring" />
+				</Constraint>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="spare_wheel"
+		Category="wheel_addon"
+		Price="4000"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SPARE_WHEELS_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SPARE_WHEELS_NAME"
+		/>
+		<InstallSocket Type="Plad440SpareWheel" />
+	</GameData>
+</TruckAddon>

@@ -1,0 +1,91 @@
+<_templates Include="trucks">
+	<Body>
+		<Chain
+			CenterOfMassOffset="(0; -0; 0)"
+			Collisions="None"
+			Mass="50"
+		>
+			<Constraint
+				AxisLocal="(1; 0; 0)"
+				PivotOffset="(0; 0; 0)"
+				Type="Hinge"
+				MinLimit="-20.0"
+				MaxLimit="0.0"
+			>
+				<Motor Damping="0.1" Spring="1" Type="Spring" />
+			</Constraint>
+		</Chain>
+	</Body>
+</_templates>
+<TruckAddon IsChassisFullOcclusion="true">
+	<TruckData>
+		<Damage>
+			<Multiplier Multiplier="0.9" Type="FuelTank" />
+		</Damage>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/addons/sleiter_st833_chimera_frame_addon_sideboard_3">
+		<Body Mass="900">
+			<Constraint Type="Rigid" />
+			<Body Collisions="None" Mass="50" ModelFrame="BoneCabinTwist_cdt">
+				<Constraint ExplicitParentFrame="0" Type="Fixed" />
+			</Body>
+			<Body _template="Chain" ModelFrame="BoneChain1_cdt">
+				<Constraint AxisLocal="(1; 0; 0)" MinLimit="0.0" MaxLimit="20.0" />
+			</Body>
+			<Body _template="Chain" ModelFrame="BoneChain2_cdt">
+				<Constraint AxisLocal="(1; 0; 0)" MinLimit="-20.0" MaxLimit="0.0" />
+			</Body>
+			<Body _template="Chain" ModelFrame="BoneChain3_cdt">
+				<Constraint AxisLocal="(1; 0; 0)" MinLimit="0.0" MaxLimit="20.0" />
+			</Body>
+			<Body _template="Chain" ModelFrame="BoneChain4_cdt">
+				<Constraint AxisLocal="(1; 0; 0)" MinLimit="-20.0" MaxLimit="0.0" />
+			</Body>
+			<Body _template="Chain" ModelFrame="BoneChain5_cdt">
+				<Constraint AxisLocal="(0; 0; 1)" MinLimit="-20.0" MaxLimit="0.0" />
+			</Body>
+			<Body _template="Chain" ModelFrame="BoneChain6_cdt">
+				<Constraint AxisLocal="(0; 0; 1)" MinLimit="-20.0" MaxLimit="0.0" />
+			</Body>
+			<Body _template="Chain" Mass="3" ModelFrame="BoneBoltL_cdt">
+				<Constraint AxisLocal="(0; 0; 1)" MinLimit="-15" MaxLimit="15">
+					<Motor Damping="0.05" Spring="0.25" Type="Spring" />
+				</Constraint>
+			</Body>
+			<Body _template="Chain" Mass="3" ModelFrame="BoneBoltR_cdt">
+				<Constraint AxisLocal="(0; 0; 1)" MinLimit="-15" MaxLimit="15">
+					<Motor Damping="0.05" Spring="0.35" Type="Spring" />
+				</Constraint>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="addon_1"
+		Category="frame_addons"
+		IsCustomizable="true"
+		Price="5700"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<WinchSocket Pos="(0.475; 1.248; -1.503)" />
+		<WinchSocket Pos="(0.475; 1.248; 1.503)" />
+		<WinchSocket Pos="(-2.416; 2.232; -1.66)" />
+		<WinchSocket Pos="(-2.416; 2.232; 1.66)" />
+		<WinchSocket Pos="(-5.954; 2.198; -1.517)" />
+		<WinchSocket Pos="(-5.954; 2.198; 1.517)" />
+		<UiDesc
+			UiDesc="UI_ADDON_FRAME_SLEITER_ST833_SIDEBOARD_3_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_ADDON_FRAME_SLEITER_ST833_SIDEBOARD_3_NAME"
+		/>
+		<InstallSocket Type="SleiterST833ChimeraSideboard3" />
+		<CraneSocket Pos="(0.475; 1.248; -1.503)" />
+		<CraneSocket Pos="(0.475; 1.248; 1.503)" />
+		<CraneSocket Pos="(-2.416; 2.232; -1.66)" />
+		<CraneSocket Pos="(-2.416; 2.232; 1.66)" />
+		<CraneSocket Pos="(-5.954; 2.198; -1.517)" />
+		<CraneSocket Pos="(-5.954; 2.198; 1.517)" />
+		<AddonSlots InitialOffset="(0.595; 2.06; 0)" OffsetStep="(-2.486; 0; 0)" Quantity="3" />
+	</GameData>
+</TruckAddon>

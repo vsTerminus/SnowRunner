@@ -1,0 +1,30 @@
+<_templates>
+	<Engine>
+		<USTruckOldEngine
+			BrakesDelay="0.5"
+			EngineResponsiveness="0.043"
+			MaxDeltaAngVel="0.015"
+		/>
+	</Engine>
+</_templates>
+<EngineVariants>
+	<Engine
+		_template="USTruckOldEngine"
+		CriticalDamageThreshold="0.4"
+		DamageCapacity="210"
+		DamagedConsumptionModifier="1.7"
+		FuelConsumption="5.0"
+		Name="us_truck_old_engine_plad_440"
+		Torque="165000"
+		DamagedMinTorqueMultiplier="1.0"
+		DamagedMaxTorqueMultiplier="0.7"
+	>
+		<GameData
+			Price="15000"
+			UnlockByExploration="true"
+			UnlockByRank="1"
+		>
+			<UiDesc UiDesc="UI_ENGINE_US_TRUCK_OLD_PLAD_440_DESC" UiName="UI_ENGINE_US_TRUCK_OLD_PLAD_440_NAME" />
+		</GameData>
+	</Engine>
+</EngineVariants>

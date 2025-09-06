@@ -351,7 +351,9 @@
 			</Socket>
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-2.55; 1.46; 0)" />
+			<Socket Names="Semitrailer, SemitrailerOiltank, SemitrailerFoldableLog" Offset="(-2.55; 1.46; 0)" >
+				<AddonsShift Offset="(0.103; 0.075; 0)" Types="SaddleMotorized" />
+			</Socket>
 			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-1.55; 1.66; 0)" />
 			<Socket Names="Trailer, LogTrailer" NamesBlock="FrameAddonSeismicVibrator" Offset="(-4.268; 0.968; 0)" />
 		</AddonSockets>
@@ -387,6 +389,15 @@
 			<!-- <ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.03; 0)" /> -->
 			<!-- </Socket> -->
 			<Socket Names="FrameAddonMaintainer" NamesBlock="Trailer, MinicraneUS, LogTrailer" Offset="(-2.05; 0.115; 0)" ParentFrame="BoneChassis_cdt" />
+			
+			<Socket Names="SaddleMotorized" NamesBlock="MetalDetector, MinicraneUS" Offset="(-1.100; -0.122; 0.000)" ParentFrame="BoneChassis_cdt" >
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.000; 0.000; 0.045)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.000; 0.000; -0.045)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(1.200; 0.000; 0.045)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(1.200; 0.000; -0.045)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(1.200; 0.000; 0.000)" />
+			</Socket>
+			
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="MetalDetector" NamesBlock="SemitrailerOiltank, FrameAddonSeismicVibrator, FrameAddonKung, FrameAddonTank, FrameAddonMaintainer, FrameAddon, BigCraneUs, BigCraneRu, SaddleHigh" Offset="(-0.632; 0.092; 0)" ParentFrame="BoneChassis_cdt" />

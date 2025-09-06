@@ -1,0 +1,19 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/hib_billert_1980_tuning/hib_billert_1980_horn_3" />
+	<GameData
+		CameraPreset="roof"
+		Category="miscellenious"
+		Price="1200"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_HORNS_SINGLE_ONESIDE_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_HORNS_SINGLE_ONESIDE_NAME"
+		/>
+		<InstallSocket Type="HIBBillert1980HornSide" />
+	</GameData>
+</TruckAddon>

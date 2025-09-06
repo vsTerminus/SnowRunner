@@ -1,0 +1,39 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/plad_440_tuning/plad_440_spot_light_1">
+		<Body ImpactType="Truck" Mass="20" ModelFrame="BoneCabin_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<Ignition>
+			<Flare _template="IgnitionSignalWhite" Color="g(253; 220; 186) x 0.35" ColorMultAtDay=".03" DirAngle="90" Size="0.4" Pos="(1.356; 3.022; -0.599)" />
+			<Flare _template="IgnitionSignalWhite" Color="g(253; 220; 186) x 0.35" ColorMultAtDay=".03" DirAngle="90" Size="0.4" Pos="(1.356; 3.022; 0)" />
+			<Flare _template="IgnitionSignalWhite" Color="g(253; 220; 186) x 0.35" ColorMultAtDay=".03" DirAngle="90" Size="0.4" Pos="(1.356; 3.022; 0.599)" />
+		</Ignition>
+		<HeadLight>
+			<Model _template="HeadLightRay" Org="(1.356; 3.022; -0.599)" />
+			<Model _template="HeadLightRay" Org="(1.356; 3.022; 0.599)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size=".4" Pos="(1.356; 3.022; -0.599)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size=".4" Pos="(1.356; 3.022; 0)" />
+			<Flare _template="HeadLight" Color="g(245; 235; 215) x 0.5" DirAngle="100" Size="0.25" Pos="(1.356; 3.022; 0.599)" />
+		</HeadLight>
+	</ModelAttachments>
+	<MainHeadLight _template="Multiply1" />
+	<GameData
+		CameraPreset="roof"
+		Category="top"
+		IsCustomizable="true"
+		Price="650"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_ROOFBAR_FOGLIGHTS_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_ROOFBAR_FOGLIGHTS_NAME"
+		/>
+		<InstallSocket Type="Plad440Spotlight" />
+	</GameData>
+</TruckAddon>
