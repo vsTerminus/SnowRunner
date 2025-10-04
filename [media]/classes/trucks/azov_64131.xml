@@ -232,13 +232,13 @@
 		<Body
 			CenterOfMassOffset="(0; 0; 0)"
 			ImpactType="Truck"
-			Mass="11850"
+			Mass="8850"
 			NetSync="pv"
 		>
 			<Body
 				CenterOfMassOffset="(-0.1; 0.45; 0)"
 				ImpactType="Truck"
-				Mass="4300"
+				Mass="3500"
 				ModelFrame="BoneCabin_cdt"
 				NetSync="pv"
 			>
