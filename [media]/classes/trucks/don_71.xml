@@ -35,7 +35,7 @@
 		EngineIconScale="0.9"
 		EngineStartDelay="1.7"
 		ExhaustStartTime="1.6"
-		FuelCapacity="42"
+		FuelCapacity="75"
 		Responsiveness="0.6"
 		SteerSpeed="0.03"
 		TruckImage="don71mchr"
