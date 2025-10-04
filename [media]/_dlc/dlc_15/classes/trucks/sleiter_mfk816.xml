@@ -370,6 +370,7 @@
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="SleiterMFK816High" Offset="(-3.09; 1.84; 0)" NamesBlock="BunkLog, LogLift" />
+			<Socket Names="SaddleLow1" Offset="(-3.49; 1.77; 0)" NamesBlock="BunkLog, LogLift" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="StuffHoodSleiterMFK816" ParentFrame="BoneCabin_cdt" InCockpit="true" />
@@ -426,6 +427,7 @@
 		</AddonSockets>
 
 		<AddonSockets>
+			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-3.5; 2.3; 0)" />
 			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-3.1; 2.3; 0)" />
 			<Socket Names="HeavySemitrailer" Offset="(-3.3; 1.85; 0)" />
 			<Socket Names="Trailer" Offset="(-5.33; 1.44; -0.000)">
