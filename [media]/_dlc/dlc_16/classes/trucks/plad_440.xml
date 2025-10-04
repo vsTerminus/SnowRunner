@@ -57,7 +57,7 @@
 		EngineIconScale="0.8"
 		EngineStartDelay="0.7"
 		ExhaustStartTime="1.5"
-		FuelCapacity="240"
+		FuelCapacity="340"
 		Responsiveness="0.2"
 		SteerSpeed="0.03"
 		TruckImage="Plad440mchr"
