@@ -8,7 +8,7 @@
 		Name="mack_terra_pro_suspension_default"
 	>
 		<Suspension Damping="0.6" Height="0.18" Strength="0.13" WheelType="front" BrokenSuspensionMax="0.2" SuspensionMax="1" SuspensionMin="-0.3" />
-		<Suspension Damping="0.2" Height="0.15" Strength="0.022" WheelType="rear" BrokenSuspensionMax="0.2" SuspensionMax="1" SuspensionMin="-0.3" />
+		<Suspension Damping="0.2" Height="0.18" Strength="0.032" WheelType="rear" BrokenSuspensionMax="0.2" SuspensionMax="1" SuspensionMin="-0.3" />
 		<GameData
 			Price="6200"
 			UnlockByExploration="false"
@@ -29,8 +29,8 @@
 		DamageCapacity="280"
 		Name="mack_terra_pro_suspension_high"
 	>
-		<Suspension Damping="0.5" Height="0.30" Strength="0.1" WheelType="front" BrokenSuspensionMax="0.2" SuspensionMin="-0.35" />
-		<Suspension Damping="0.25" Height="0.30" Strength="0.015" WheelType="rear" BrokenSuspensionMax="0.2" SuspensionMin="-0.3" />
+		<Suspension Damping="0.5" Height="0.30" Strength="0.11" WheelType="front" BrokenSuspensionMax="0.2" SuspensionMin="-0.35" />
+		<Suspension Damping="0.25" Height="0.33" Strength="0.025" WheelType="rear" BrokenSuspensionMax="0.2" SuspensionMin="-0.3" />
 		<GameData
 			Price="7800"
 			UnlockByExploration="false"
