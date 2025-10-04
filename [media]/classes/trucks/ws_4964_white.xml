@@ -44,7 +44,7 @@
 		EngineIconScale="1.3"
 		EngineStartDelay="0.8"
 		ExhaustStartTime="0.9"
-		FuelCapacity="529"
+		FuelCapacity="329"
 		Responsiveness="0.15"
 		SteerSpeed="0.025"
 		TruckImage="ws4964mchr"

@@ -50,7 +50,7 @@
 		EngineIconScale="1.3"
 		EngineStartDelay="0.8"
 		ExhaustStartTime="0.9"
-		FuelCapacity="817"
+		FuelCapacity="317"
 		Responsiveness="0.15"
 		SteerSpeed="0.025"
 		TruckImage="royalbm17mchr"

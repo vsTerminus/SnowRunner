@@ -17,7 +17,7 @@
 		EngineIconScale="1.6"
 		EngineStartDelay="1.9"
 		ExhaustStartTime="1.9"
-		FuelCapacity="1200"
+		FuelCapacity="600"
 		Responsiveness="0.3"
 		SteerSpeed="0.025"
 		TruckImage="femm37atmchr"
