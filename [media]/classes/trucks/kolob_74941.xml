@@ -188,7 +188,7 @@
 		<Body
 			CenterOfMassOffset="(-1; -1.3; 0)"
 			ImpactType="Truck"
-			Mass="26500"
+			Mass="19500"
 			ModelFrame="BoneChassis_cdt"
 			NetSync="pv"
 		>
