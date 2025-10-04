@@ -87,7 +87,7 @@
 		EngineIconScale="1.0"
 		EngineStartDelay="0.7"
 		ExhaustStartTime="1.5"
-		FuelCapacity="360"
+		FuelCapacity="560"
 		Responsiveness="0.2"
 		SteerSpeed="0.03"
 		TruckImage="SleiterChimeramchr"

@@ -86,7 +86,7 @@
 		EngineIconScale="0.8"
 		EngineStartDelay="3.2"
 		ExhaustStartTime="2.8"
-		FuelCapacity="1550"
+		FuelCapacity="750"
 		Responsiveness="0.2"
 		SteerSpeed="0.016"
 		TruckImage="KOLOB74760mchr"
