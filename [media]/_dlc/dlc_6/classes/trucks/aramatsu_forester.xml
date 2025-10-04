@@ -52,7 +52,7 @@
 		EngineIconScale="1.5"
 		EngineStartDelay="0.6"
 		ExhaustStartTime="0.6"
-		FuelCapacity="167"
+		FuelCapacity="217"
 		Responsiveness="0.05"
 		SteerSpeed="0.017"
 		TruckImage="aramatsuforestermchr"

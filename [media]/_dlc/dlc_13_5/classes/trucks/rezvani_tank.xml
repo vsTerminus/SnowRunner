@@ -67,7 +67,7 @@
 		SuspensionMarkerOffset="(-4; 0; 0;)"
 		EngineStartDelay="1.8"
 		ExhaustStartTime="1.6"
-		FuelCapacity="80"
+		FuelCapacity="120"
 		Responsiveness="0.6"
 		SteerSpeed="0.03"
 		TruckImage="rezvanitankmchr"
