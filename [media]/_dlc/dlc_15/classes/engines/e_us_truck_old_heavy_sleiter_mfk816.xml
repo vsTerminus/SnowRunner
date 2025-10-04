@@ -7,9 +7,9 @@
 		DamageCapacity="250"
 		DamagedConsumptionModifier="1.5"
 		EngineResponsiveness="0.21"
-		FuelConsumption="10.8"
+		FuelConsumption="6.8"
 		Name="us_truck_old_heavy_sleiter_mfk816_1"
-		Torque="245000"
+		Torque="285000"
 		DamagedMinTorqueMultiplier="1.0"
 		DamagedMaxTorqueMultiplier="0.35"
 	>
