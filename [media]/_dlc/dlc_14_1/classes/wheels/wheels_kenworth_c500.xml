@@ -10,12 +10,7 @@
 <TruckWheels DamageCapacity="50" Radius="1" Width="0.717" WidthRear="1.05">
 	<TruckTires>
 		<TruckTire _template="Allterrain" Mesh="wheels/tire_kenworth_c500" Name="tire_1">
-			<WheelFriction 
-				_template="Allterrain"
-				BodyFriction="1.6"
-				BodyFrictionAsphalt="1.8"
-				SubstanceFriction="1.3"
-			/>
+			<WheelFriction _template="Allterrain"/>
 			<GameData
 				Price="7000"
 				UnlockByExploration="false"

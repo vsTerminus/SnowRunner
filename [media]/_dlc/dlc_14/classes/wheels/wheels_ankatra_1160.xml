@@ -9,7 +9,7 @@
 <TruckWheels DamageCapacity="50" Radius="1" Width="0.67" >
 	<TruckTires>
 		<TruckTire _template="Offroad" Mesh="wheels/tire_ankatra_1160" Name="tire">
-			<WheelFriction _template="Mudtires" BodyFriction="2.2"/>
+			<WheelFriction _template="Mudtires"/>
 			<GameData
 				Price="5500"
 				UnlockByExploration="false"

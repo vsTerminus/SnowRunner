@@ -16,7 +16,7 @@
 >
 	<TruckTires>
 		<TruckTire _template="Mudtires" Mesh="wheels/tire_padera_std4" Name="offroad_1">
-			<WheelFriction _template="Mudtires" SubstanceFriction="2.18"/>
+			<WheelFriction _template="Mudtires"/>
 			<GameData
 				Price="7500"
 				UnlockByExploration="false"

@@ -9,7 +9,7 @@
 </_templates>
 <TruckWheels DamageCapacity="100" Radius="1" Width="0.973">
 	<TruckTires>
-		<TruckTire _template="Mudtires" BodyFrictionAsphalt="0.8" Mesh="wheels/tire_sleiter_mfk816" Name="sleiter_tire_1">
+		<TruckTire _template="Mudtires" Mesh="wheels/tire_sleiter_mfk816" Name="sleiter_tire_1">
 			<GameData
 				Price="6500"
 				UnlockByExploration="false"

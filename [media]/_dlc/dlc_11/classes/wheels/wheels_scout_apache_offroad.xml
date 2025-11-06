@@ -57,7 +57,7 @@
 		
 		
 		<TruckTire _template="ScoutAllterrain" Mesh="wheels/tire_scout_allterrain_10" Name="Ultima AT I">
-			<WheelFriction _template="ScoutAllterrain" SubstanceFriction="1.4" BodyFrictionAsphalt="1" BodyFriction="1.1"/>
+			<WheelFriction _template="ScoutAllterrain"/>
 			<GameData
 				Price="4200"
 				UnlockByExploration="false"
@@ -67,7 +67,7 @@
 			</GameData>
 		</TruckTire>
         <TruckTire _template="ScoutAllterrain" Mesh="wheels/tire_scout_allterrain_11" Name="Ultima AT II">
-			<WheelFriction _template="ScoutAllterrain" SubstanceFriction="1.3" BodyFrictionAsphalt="1.1" BodyFriction="1.1"/>
+			<WheelFriction _template="ScoutAllterrain"/>
 			<GameData
 				Price="4600"
 				UnlockByExploration="false"
@@ -77,7 +77,7 @@
 			</GameData>
 		</TruckTire>
         <TruckTire _template="ScoutAllterrain" Mesh="wheels/tire_scout_allterrain_13" Name="Ultima AT III">
-			<WheelFriction _template="ScoutAllterrain" SubstanceFriction="1.2" BodyFrictionAsphalt="1.1" BodyFriction="1.1"/>
+			<WheelFriction _template="ScoutAllterrain"/>
 			<GameData
 				Price="5000"
 				UnlockByExploration="false"
@@ -87,7 +87,7 @@
 			</GameData>
 		</TruckTire>
 		<TruckTire _template="ScoutAllterrain" Mesh="wheels/tire_scout_allterrain_14" Name="Ultima AT IV">
-			<WheelFriction _template="ScoutAllterrain" SubstanceFriction="1.1" BodyFrictionAsphalt="1" BodyFriction="1.3"/>
+			<WheelFriction _template="ScoutAllterrain"/>
 			<GameData
 				Price="5000"
 				UnlockByExploration="false"

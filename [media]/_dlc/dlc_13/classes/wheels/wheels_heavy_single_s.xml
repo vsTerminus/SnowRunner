@@ -9,7 +9,7 @@
 <TruckWheels DamageCapacity="100" Radius="1" Width="0.65">
 	<TruckTires>
 		<TruckTire _template="Offroad" Mesh="wheels/tire_heavy_offroad_single_1" Name="allterrain_1">
-			<WheelFriction _template="Allterrain" SubstanceFriction="1.2"/>
+			<WheelFriction _template="Allterrain"/>
 			<GameData
 				Price="4900"
 				UnlockByExploration="false"
@@ -19,7 +19,7 @@
 			</GameData>
 		</TruckTire>
 		<TruckTire _template="Offroad" Mesh="wheels/tire_heavy_offroad_single_2" Name="offroad_1">
-			<WheelFriction _template="Offroad" BodyFrictionAsphalt="1.0"/>
+			<WheelFriction _template="Offroad"/>
 			<GameData
 				Price="5900"
 				UnlockByExploration="false"
@@ -29,7 +29,7 @@
 			</GameData>
 		</TruckTire>
 		<TruckTire _template="Offroad" Mesh="wheels/tire_heavy_offroad_single_4" Name="offroad_2">
-			<WheelFriction _template="Offroad" SubstanceFriction="1.8"/>
+			<WheelFriction _template="Offroad"/>
 			<GameData
 				Price="6200"
 				UnlockByExploration="false"
