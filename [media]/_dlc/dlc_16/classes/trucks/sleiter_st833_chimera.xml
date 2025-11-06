@@ -670,8 +670,14 @@
 			<Socket Names="FrameAddonLogShortKenworthC500" NamesBlock="LogLiftKenworth" Offset="(-2.531; 0.576; 0)">
 				<AddonsShift Offset="(-1.1; 0; 0)" Types="SleiterST833ChimeraSpareWheel" />
 			</Socket>
+			<Socket Names="FrameAddonLogShort" NamesBlock="LogLiftKenworth" Offset="(-1.68; 1.72; 0)">
+				<AddonsShift Offset="(-1.1; 0; 0)" Types="SleiterST833ChimeraSpareWheel" />
+			</Socket>
 			<Socket Names="FrameAddonLogMediumHigh" NamesBlock="LogLiftKenworth, SleiterST833ChimeraSpareWheel" Offset="(-0.901; 1.784; 0)">
 				<AddonsShift Offset="(-0.45; 0; 0)" Types="SleiterST833ChimeraCrane" />
+			</Socket>
+			<Socket Names="Cat745CLogBunk" NamesBlock="SleiterST833ChimeraSpareWheel" Offset="(0.149; 0.151; 0)">
+
 			</Socket>
 			<Socket Names="FrameAddonSeismicVibrator" Offset="(-0.4; 1.784; 0)">
 				<AddonsShift Offset="(-0.15; 0; 0)" Types="SleiterST833ChimeraSpareWheel" />
@@ -688,7 +694,9 @@
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="SleiterST833ChimeraSpareWheel" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
-			<Socket Names="LogLiftKenworth" Offset="(0.08; 1.980; 0)" ParentFrame="BoneChassis_cdt"/>
+			<Socket Names="LogLiftKenworth" Offset="(0.08; 1.980; 0)" ParentFrame="BoneChassis_cdt">
+				<AddonsShift Offset="(0.3; 0; 0)" Types="Cat745CLogBunk" />
+			</Socket>
 			<Socket Names="SleiterST833ChimeraCrane" Offset="(0; 0.005; 0)" ParentFrame="BoneCabinTwist_cdt"/>
 		</AddonSockets>
 		<AddonSockets>
