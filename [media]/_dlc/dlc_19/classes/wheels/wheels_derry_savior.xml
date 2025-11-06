@@ -9,11 +9,7 @@
 <TruckWheels DamageCapacity="50" Radius="1" Width="0.657">
 	<TruckTires>
 		<TruckTire _template="Offroad" Mesh="wheels/tire_derry_savior" Name="tire_offroad_derry_savior">
-			<WheelFriction _template="HeavyMudtires"
-				BodyFriction="1.5"
-				BodyFrictionAsphalt="0.5"
-				SubstanceFriction="3.25"
-			/>
+			<WheelFriction _template="HeavyMudtires"/>
 			<GameData
 				Price="7200"
 				UnlockByExploration="false"

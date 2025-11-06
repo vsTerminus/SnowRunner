@@ -3,7 +3,7 @@
 		<Mudtires Mass="400" RearMassScale="2">
 			<WheelTracks _template="Offroad" />
 			<WheelSoftness _template="Average" />
-			<WheelFriction _template="HeavyMudtires" BodyFrictionAsphalt="1.0" SubstanceFriction="3.05" />
+			<WheelFriction _template="HeavyMudtires" />
 		</Mudtires>
 	</TruckTire>
 </_templates>

@@ -12,9 +12,6 @@
 		<TruckTire _template="Allterrain" Mesh="wheels/tire_western_star_6900xd" Name="alltearrain_1_hib_billert_m816">
 			<WheelFriction 
 				_template="Allterrain"
-				BodyFriction="1.5"
-				BodyFrictionAsphalt="2.92"
-				SubstanceFriction="1.0"
 			/>
 			<GameData
 				Price="3600"

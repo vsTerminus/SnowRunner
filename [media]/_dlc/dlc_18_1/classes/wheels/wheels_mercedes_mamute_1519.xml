@@ -5,9 +5,6 @@
 			<WheelSoftness _template="Average" />
 			<WheelFriction
 				_template="Offroad"
-				BodyFriction="2.55"
-				BodyFrictionAsphalt="1.1"
-				SubstanceFriction="2.18"
 			/>
 		</Offroad>
 	</TruckTire>

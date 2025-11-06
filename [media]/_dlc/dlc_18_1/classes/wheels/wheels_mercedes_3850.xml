@@ -12,9 +12,6 @@
 		<TruckTire _template="Offroad" Mesh="wheels/tire_mercedes_3850" Name="tire_offroad_mercedes_3850">
 			<WheelFriction
 				_template="Offroad"
-				BodyFriction="2.9"
-				BodyFrictionAsphalt="1.0"
-				SubstanceFriction="1.75"
 			/>
 			<GameData
 				Price="3600"

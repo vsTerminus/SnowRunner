@@ -9,7 +9,7 @@
 <TruckWheels DamageCapacity="100" Radius="1" Width="0.718" WidthRear="1.51">
 	<TruckTires>
 		<TruckTire _template="Mudtires" Mesh="wheels/tire_avenhorn_a15" Name="offroad">
-			<WheelFriction _template="HeavyMudtires" SubstanceFriction="3.1" />
+			<WheelFriction _template="HeavyMudtires" />
 			<GameData
 				Price="7500"
 				UnlockByExploration="false"

@@ -9,7 +9,7 @@
 </_templates>
 <TruckWheels DamageCapacity="100" Radius="1" Width="0.725">
 	<TruckTires>
-		<TruckTire _template="Mudtires" BodyFrictionAsphalt="0.8" Mesh="wheels/tire_mirror_test" Name="tire_1">
+		<TruckTire _template="Mudtires" Mesh="wheels/tire_mirror_test" Name="tire_1">
 			<GameData
 				Price="6500"
 				UnlockByExploration="false"
@@ -18,7 +18,7 @@
 				<UiDesc UiDesc="UI_TIRE_MUDTIRES_DESC" UiName="UI_TIRE_SUPERHEAVY_OFFROAD_MIRROR_NAME" />
 			</GameData>
 		</TruckTire>
-		<TruckTire _template="Mudtires" BodyFrictionAsphalt="0.8" Mesh="wheels/tire_mirror_test" RightSideMesh="wheels/tire_mirror_test_r" Name="tire_2">
+		<TruckTire _template="Mudtires" Mesh="wheels/tire_mirror_test" RightSideMesh="wheels/tire_mirror_test_r" Name="tire_2">
 			<GameData
 				Price="6500"
 				UnlockByExploration="false"
