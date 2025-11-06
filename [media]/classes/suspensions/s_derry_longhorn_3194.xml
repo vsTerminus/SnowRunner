@@ -10,7 +10,7 @@
 	>
 		<Suspension 
 			Damping="0.2"
-			Height="0.13" 
+			Height="0.20"
 			Strength="0.06" 
 			WheelType="front" 
 			BrokenSuspensionMax="0.2" 
@@ -19,7 +19,7 @@
 		/>
 		<Suspension 
 			Damping="0.2"
-			Height="0.17" 
+			Height="0.22"
 			Strength="0.015" 
 			WheelType="rear" 
 			BrokenSuspensionMax="0.15" 
@@ -33,7 +33,7 @@
 			WheelType="middle" 
 			BrokenSuspensionMax="0.15" 
 			SuspensionMin="-0.3"
-			DeviationMax="0.4"			
+			DeviationMax="0.48"	
 		/>		
 		<GameData
 			Price="7500"
@@ -45,6 +45,54 @@
 				UiIcon30x30=""
 				UiIcon40x40=""
 				UiName="UI_SUSPENSION_DEFAULT_NAME"
+			/>
+		</GameData>
+	</SuspensionSet>
+	<SuspensionSet
+		_template="Active"
+		BrokenWheelDamageMultiplier="2"
+		CriticalDamageThreshold="0.5"
+		DamageCapacity="240"
+		Name="derry_longhorn_3194_suspension_active"
+		DeviationDelta=".008"		
+	>
+		<Suspension 
+			Damping="0.2"
+			Height="0.20" 
+			Strength="0.06" 
+			WheelType="front" 
+			BrokenSuspensionMax="0.2" 
+			SuspensionMin="-0.25" 
+			DeviationMax="0.18"
+		/>
+		<Suspension 
+			Damping="0.2"
+			Height="0.22" 
+			Strength="0.015" 
+			WheelType="rear" 
+			BrokenSuspensionMax="0.15" 
+			SuspensionMin="-.4" 
+			DeviationMax="0.14"			
+		/>
+		<Suspension 
+			Damping="0.2"
+			Height="-0.35" 
+			Strength="0.1" 
+			WheelType="middle" 
+			BrokenSuspensionMax="0.15" 
+			SuspensionMin="-0.3"
+			DeviationMax="0.0"
+		/>		
+		<GameData
+			Price="7500"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_SUSPENSION_ACTIVE_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_SUSPENSION_ACTIVE_NAME"
 			/>
 		</GameData>
 	</SuspensionSet>
