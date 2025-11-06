@@ -9,12 +9,7 @@
 <TruckWheels DamageCapacity="70" Radius="1" Width="0.706">
 	<TruckTires>
 		<TruckTire _template="Offroad" Mesh="wheels/tire_mercer_k520" Name="tire_1">
-			<WheelFriction 
-				_template="Offroad"
-				BodyFriction="3.1"
-				BodyFrictionAsphalt="0.8"
-				SubstanceFriction="1.8"
-			/>
+			<WheelFriction _template="Offroad"/>
 			<GameData
 				Price="5700"
 				UnlockByExploration="false"

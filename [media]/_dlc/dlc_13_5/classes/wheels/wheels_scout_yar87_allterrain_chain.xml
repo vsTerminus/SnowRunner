@@ -10,7 +10,7 @@
 <TruckWheels DamageCapacity="50" Radius="1" Width="0.93" Mass="50">
 	<TruckTires>	
 		<TruckTire _template="ScoutAllterrain" Mesh="wheels/tire_scout_allterrain_12" Name="Ultima CS I">
-			<WheelFriction _template="ScoutChains" SubstanceFriction="1.2" BodyFrictionAsphalt="0.9" BodyFriction="1.3" IsIgnoreIce="true"/>
+			<WheelFriction _template="ScoutChains"/>
 			<GameData
 				Price="5200"
 				UnlockByExploration="false"

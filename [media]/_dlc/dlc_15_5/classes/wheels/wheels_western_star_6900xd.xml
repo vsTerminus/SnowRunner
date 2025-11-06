@@ -10,12 +10,7 @@
 <TruckWheels DamageCapacity="50" Radius="1" Width="0.613" WidthRear="1.28">
 	<TruckTires>
 		<TruckTire _template="Allterrain" Mesh="wheels/tire_western_star_6900xd" Name="allterrain_ws">
-			<WheelFriction 
-				_template="Allterrain"
-				BodyFriction="1.4"
-				BodyFrictionAsphalt="1.2"
-				SubstanceFriction="1.6"
-			/>
+			<WheelFriction _template="Allterrain"/>
 			<GameData
 				Price="6800"
 				UnlockByExploration="false"

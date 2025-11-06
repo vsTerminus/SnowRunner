@@ -12,9 +12,6 @@
 		<TruckTire _template="Offroad" Mesh="wheels/tire_mercer_6x6r_230" Name="offroad_1_mercer_6x6r_230">
 			<WheelFriction 
 				_template="Offroad"
-				BodyFriction="2.75"
-				BodyFrictionAsphalt="1.05"
-				SubstanceFriction="1.7"
 			/>
 			<GameData
 				Price="6600"

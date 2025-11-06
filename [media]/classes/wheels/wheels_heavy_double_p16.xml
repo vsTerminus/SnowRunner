@@ -16,7 +16,7 @@
 >
 	<TruckTires>
 		<TruckTire _template="Offroad" Mesh="wheels/tire_heavy_offroad_double_1" Name="offroad_1">
-			<WheelFriction _template="Offroad" SubstanceFriction="3.5" />
+			<WheelFriction _template="Offroad"/>
 			<GameData
 				Price="5900"
 				UnlockByExploration="false"
