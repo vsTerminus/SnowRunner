@@ -10,12 +10,7 @@
 <TruckWheels DamageCapacity="100" Radius="1" Width="0.61" WidthRear="1.254">
 	<TruckTires>
 		<TruckTire _template="Allterrain" Mesh="wheels/tire_mack_pinnacle" Name="tire_mack">
-			<WheelFriction 
-				_template="Allterrain"
-				BodyFriction="1.5"
-				BodyFrictionAsphalt="1.1"
-				SubstanceFriction="2"
-			/>
+			<WheelFriction _template="Allterrain"/>
 			<GameData
 				Price="6600"
 				UnlockByExploration="false"
