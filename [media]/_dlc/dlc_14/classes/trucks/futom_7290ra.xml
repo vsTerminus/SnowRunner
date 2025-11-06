@@ -521,16 +521,16 @@
 			<Socket Names="Futom7290RaSticker_Side_R"/>
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="Futom7290RaSticker_Wing_L" ParentFrame="BoneRackLeft" />
+			<Socket Names="Futom7290RaSticker_Wing_L" ParentFrame="BoneRackLeft" InCockpit="true" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="Futom7290RaSticker_Wing_R" ParentFrame="BoneRackRight" />
+			<Socket Names="Futom7290RaSticker_Wing_R" ParentFrame="BoneRackRight" InCockpit="true" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="Futom7290RaSticker_GlassTop" ParentFrame="BoneCabinRagdoll_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="Futom7290RaSticker_Capote"/>
+			<Socket Names="Futom7290RaSticker_Capote" InCockpit="true" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket InCockpit="true" Names="Futom7290RaSticker_1x1_01" ParentFrame="BoneCabinRagdoll_cdt" />

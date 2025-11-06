@@ -459,7 +459,7 @@
 			<Socket Names="pacificP12WSticker_Roof" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="pacificP12WSticker_Capote" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="pacificP12WSticker_Capote" ParentFrame="BoneCabin_cdt" InCockpit="true" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket

@@ -2,6 +2,12 @@
 <TruckAddon>
 	<PhysicsModel Mesh="trucks/derry_special_15c177_stuff/sticker_roof_1x8_derry_special_15c177" />
 	<GameData CameraPreset="roof_sticker_2">
-			<InstallSocket Type="DerrySpecial15C177Sticker_Roof8" />
+		<UiDesc
+			UiDesc="UI_STUFF_DOOR_L_STICKER_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_STUFF_DOOR_L_STICKER_1x1_NAME"
+		/>
+		<InstallSocket Type="DerrySpecial15C177Sticker_Roof8" />
 	</GameData>
 </TruckAddon>

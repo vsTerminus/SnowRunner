@@ -38,7 +38,7 @@
 	</Flare>
 </_templates>
 <Truck AttachType="Drawbar" Type="Trailer">
-	<TruckData FuelCapacity="220" RepairsCapacity="320" WheelRepairsCapacity="3">
+	<TruckData FuelCapacity="300" RepairsCapacity="400" WheelRepairsCapacity="3">
 		<Wheels>
 			<Wheel _template="TrailerWheelFront" Pos="(3.366; 0.109; 0)" />
 			<Wheel _template="TrailerWheelRear" RightSide="true" Pos="(-0.193; 0.41; 0.8)" />

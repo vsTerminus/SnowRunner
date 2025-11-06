@@ -476,7 +476,7 @@
 			<Socket _template="Cabin2Chassis" Names="freightliner114SdSticker_Roof" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket _template="Cabin2Chassis" Names="freightliner114SdSticker_Capote" />
+			<Socket _template="Cabin2Chassis" Names="freightliner114SdSticker_Capote" InCockpit="true" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket

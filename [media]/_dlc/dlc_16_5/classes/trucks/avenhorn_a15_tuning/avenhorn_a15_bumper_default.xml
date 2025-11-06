@@ -1,0 +1,103 @@
+<_templates Include="trucks">
+	<Body>
+		<Chain Mass="60" Collisions="None">
+			<Constraint
+				PivotOffset="(0.000; 0.000; 0.000)"
+				Type="Ragdoll"
+				TwistAxisLocal="(1; 0; 0)"
+				PlaneAxisLocal="(0; 1; 0)"
+				TwistMin="-26"
+				TwistMax="26"
+				PlaneMin="-32"
+				PlaneMax="32"
+				Cone="6"
+			>
+				<TwistMotor Damping="1" Spring="0.5" Type="Spring" />
+				<PlaneMotor Damping="1" Spring="0.5" Type="Spring" />
+				<ConeMotor Damping="1" Spring="0.5" Type="Spring" />
+			</Constraint>
+		</Chain>
+		<FireEx1 Collisions="None" Mass="2">
+			<Constraint
+				AxisLocal="(0; 1; 0)"
+				Type="Hinge"
+				MinLimit="-12"
+				MaxLimit="0.04"
+			>
+				<Motor Damping="0.2" Spring="3" Type="Spring" />
+			</Constraint>
+		</FireEx1>
+		<FireEx2 Collisions="None" Mass="2">
+			<Constraint
+				AxisLocal="(0; 1; 0)"
+				Type="Hinge"
+				MinLimit="-0.04"
+				MaxLimit="15"
+			>
+				<Motor Damping="0.2" Spring="3" Type="Spring" />
+			</Constraint>
+		</FireEx2>
+	</Body>
+</_templates>
+<TruckAddon>
+	<TruckData>
+		<Damage>
+			<Multiplier Multiplier="1.0" Type="Engine" />
+		</Damage>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/avenhorn_a15_tuning/avenhorn_a15_bumper_default">
+		<Body ImpactType="Truck" Mass="400" ModelFrame="BoneCabinTwist_cdt">
+			<Constraint Type="Rigid" />
+				<Body _template="Chain" ModelFrame="BoneBumperChainLeft_cdt" />
+				<Body _template="Chain" ModelFrame="BoneBumperChainRight_cdt" />
+				<Body _template="FireEx1" ModelFrame="BoneFireEx1_cdt" />
+				<Body _template="FireEx2" ModelFrame="BoneFireEx2_cdt" />
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<Ignition>
+			<Light _template="IgnitionSignalWhite" Color="g(255; 235; 215) x 1.0" Pos="(5.032; 1.340; 1.147)" ParentFrame="BoneCabinTwist_cdt"/>
+			<Light _template="IgnitionSignalWhite" Color="g(255; 235; 215) x 1.0" Pos="(5.032; 1.340; -1.147)" ParentFrame="BoneCabinTwist_cdt"/>
+			
+			<Flare _template="IgnitionSignalWhite" Color="g(255; 235; 215) x 0.5" Dir="(1; 0; 0)" Pos="(5.032; 1.340; 1.147)" ParentFrame="BoneCabinTwist_cdt" />
+			<Flare _template="IgnitionSignalWhite" Color="g(255; 235; 215) x 0.5" Dir="(1; 0; 0)" Pos="(5.032; 1.340; -1.147)" ParentFrame="BoneCabinTwist_cdt" />
+			<Flare _template="IgnitionSignalWhite" Color="g(255; 235; 215) x 0.5" Dir="(1; 0; 0)" Pos="(4.933; 1.340; 1.331)" ParentFrame="BoneCabinTwist_cdt" />
+			<Flare _template="IgnitionSignalWhite" Color="g(255; 235; 215) x 0.5" Dir="(1; 0; 0)" Pos="(4.933; 1.340; -1.331)" ParentFrame="BoneCabinTwist_cdt" />
+			
+			<Flare _template="IgnitionSignalOrange" Color="g(255; 160; 2) x .5" ColorMultAtDay=".2" Dir="(0; 0; 1)" Size="0.2" Pos="(4.003; 1.607; 1.567)" ParentFrame="BoneCabinTwist_cdt" />
+			<Flare _template="IgnitionSignalOrange" Color="g(255; 160; 2) x .5" ColorMultAtDay=".2" Dir="(0; 0; -1)" Size="0.2" Pos="(4.003; 1.607; -1.567)" ParentFrame="BoneCabinTwist_cdt" />
+			
+			<Flare _template="IgnitionSignalOrange" Color="g(255; 160; 2) x .5" ColorMultAtDay=".2" Dir="(1; 0; 0)" Size="0.2" Pos="(4.849; 2.619; 1.364)" ParentFrame="BoneCabinTwist_cdt" />
+			<Flare _template="IgnitionSignalOrange" Color="g(255; 160; 2) x .5" ColorMultAtDay=".2" Dir="(1; 0; 0)" Size="0.2" Pos="(4.849; 2.619; -1.364)" ParentFrame="BoneCabinTwist_cdt" />
+		</Ignition>
+		<HeadLight>
+			<Model _template="HeadLightRay" Org="(4.933; 1.340; -1.331)" ParentFrame="BoneCabinTwist_cdt" />
+			<Model _template="HeadLightRay" Org="(4.933; 1.340; 1.331)" ParentFrame="BoneCabinTwist_cdt" />
+			
+			<Flare _template="HeadLight" Color="g(255; 235; 215) x 0.8" Size="0.35" Pos="(5.032; 1.340; -1.147)" ParentFrame="BoneCabinTwist_cdt" />
+			<Flare _template="HeadLight" Color="g(255; 235; 215) x 0.8" Size="0.35" Pos="(5.032; 1.340; 1.147)" ParentFrame="BoneCabinTwist_cdt" />
+			<Flare _template="HeadLight" Color="g(255; 235; 215) x 0.8" Size="0.35" Pos="(4.933; 1.340; -1.331)" ParentFrame="BoneCabinTwist_cdt" />
+			<Flare _template="HeadLight" Color="g(255; 235; 215) x 0.8" Size="0.35" Pos="(4.933; 1.340; 1.331)" ParentFrame="BoneCabinTwist_cdt" />
+			<Flare _template="BlueStreak" Pos="(5.032; 1.340; -1.147)" ParentFrame="BoneCabinTwist_cdt" />
+			<Flare _template="BlueStreak" Pos="(5.032; 1.340; 1.147)" ParentFrame="BoneCabinTwist_cdt" />
+			<Flare _template="BlueStreak" Pos="(4.933; 1.340; -1.331)" ParentFrame="BoneCabinTwist_cdt" />
+			<Flare _template="BlueStreak" Pos="(4.933; 1.340; 1.331)" ParentFrame="BoneCabinTwist_cdt" />
+		</HeadLight>
+	</ModelAttachments>
+	<MainHeadLight _template="Multiply2"/>
+	<GameData
+		CameraPreset="hoods_default"
+		Category="bumper"
+		Price="1200"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_BUMPER_STOCK_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_BUMPER_STOCK_NAME"
+		/>
+		<InstallSocket Type="AvenhornA15Bumper" />
+	</GameData>
+</TruckAddon>

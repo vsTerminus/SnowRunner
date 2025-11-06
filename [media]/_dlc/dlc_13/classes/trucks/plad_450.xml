@@ -648,7 +648,7 @@
 			<Socket Names="Plad450Sticker_Roof" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="Plad450Sticker_Capote" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="Plad450Sticker_Capote" ParentFrame="BoneCabin_cdt" InCockpit="true" />
 		</AddonSockets>
 		
 		<AddonSockets>

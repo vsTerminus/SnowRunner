@@ -33,6 +33,7 @@
 		SteerSpeed="0.017"
 		TruckImage="cat745Cv2mchr"
 		TruckType="HEAVY"
+		InstallTrailerAddonRequired="cat_745c_farkop, cat_745c_flatbed_2"
 	>
 		<WinchUpgradeSocket Default="w_heavy_trucks_default" IsUpgradable="true" Type="winches_heavy_trucks" />
 		<Wheels
@@ -302,8 +303,10 @@
 	>
 		<WinchSocket Pos="(5.523; 1.54; 0.634)" />
 		<WinchSocket Pos="(5.523; 1.54; -0.634)" />
+		
 		<WinchSocket Pos="(-5.01; 1.301; -0.415)" ParentFrame="BoneBackRot_cdt" />
 		<WinchSocket Pos="(-5.01; 1.301; 0.415)" ParentFrame="BoneBackRot_cdt" />
+		
 		<WinchSocket Pos="(0.131; 1.597; -0.577)" ParentFrame="BoneBackRot_cdt" />
 		<WinchSocket Pos="(0.131; 1.597; 0.577)" ParentFrame="BoneBackRot_cdt" />
 		<UiDesc
@@ -337,8 +340,10 @@
 		</CustomizationCameras>
 		<CraneSocket Pos="(5.523; 1.54; 0.634)" />
 		<CraneSocket Pos="(5.523; 1.54; -0.634)" />
+		
 		<CraneSocket Pos="(-5.01; 1.301; -0.415)" ParentFrame="BoneBackRot_cdt" />
 		<CraneSocket Pos="(-5.01; 1.301; 0.415)" ParentFrame="BoneBackRot_cdt" />
+		
 		<CraneSocket Pos="(0.131; 1.597; -0.577)" ParentFrame="BoneBackRot_cdt" />
 		<CraneSocket Pos="(0.131; 1.597; 0.577)" ParentFrame="BoneBackRot_cdt" />
 		<AddonSockets>
@@ -349,19 +354,41 @@
 		<AddonSockets DefaultAddon="cat_745c_diff_lock_default">
 			<Socket Names="Cat745CDiffLock" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
 		</AddonSockets>
+		
 		<AddonSockets DefaultAddon="cat_745c_wires" RequiredAddonIfNoConflicts="cat_745c_wires">
+			<!--
+			FOR DLC
+				<Socket Names="Cat745CWaterTank" Offset="(0; 0; 0)" ParentFrame="BoneBackRot_cdt" />
+			FOR DLC
+			-->
 			<Socket Names="Cat745CFuelTank" Offset="(0; 0; 0)" ParentFrame="BoneBackRot_cdt" />
-			<!--              FOR DLC                          <Socket Names="Cat745CWaterTank" Offset="(0; 0; 0)" ParentFrame="BoneBackRot_cdt" />                  FOR DLC                        -->
 			<Socket Names="Cat745CLogBunk" NamesBlock="Cat745CWires" Offset="(0; 0; 0)" ParentFrame="BoneBackRot_cdt" />
-			<Socket
-				Names="Cat745CContainerCarrier"
-				NamesBlock="Cat745CWires"
-				Offset="(0; 0; 0)"
-				ParentFrame="BoneBackRot_cdt"
-			>
+			<Socket Names="Cat745CContainerCarrier" NamesBlock="Cat745CWires" Offset="(0; 0; 0)" ParentFrame="BoneBackRot_cdt" >
 				<ExtraParent Frame="BoneFront_cdt" />
 			</Socket>
+			<Socket Names="SaddleHigh" Offset="(-3.630; 1.63; -0.000)" ParentFrame="BoneBackRot_cdt">
+				<ExtraParent Frame="BoneBackRot_cdt" Offset="0; 0; -0.07" />
+				<ExtraParent Frame="BoneBackRot_cdt" Offset="0; 0; 0.07" />
+			</Socket>
+			<Socket Names="Cat745CService" NamesBlock="Cat745CWires, Trailer, LogTrailer" ParentFrame="BoneBackRot_cdt" />
+			<Socket Names="Cat745CFlatbed" NamesBlock="Cat745CWires, Cat745CFarkop" ParentFrame="BoneBackRot_cdt" />
 		</AddonSockets>
+		
+		<AddonSockets DefaultAddon="cat_745c_farkop" RequiredAddonIfNoConflicts="cat_745c_farkop" >
+			<Socket Names="Cat745CFarkop" ParentFrame="BoneBackRot_cdt" />
+		</AddonSockets>
+		
+		<AddonSockets>
+			<Socket Names="Cat745CSnorkel" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="Trailer, LogTrailer" NamesBlock="Cat745CFuelTank" Offset="(-5.499; 0.955; 0.000)" ParentFrame="BoneBackRot_cdt" >
+				<AddonsShift Offset="(-0.669; 0.047; 0)" Types="Cat745CFlatbed" />
+				<AddonsShift Offset="(0; 0; 0)" Types="Cat745CFarkop" />
+			</Socket>
+			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-3.633; 2.095; 0)" ParentFrame="BoneBackRot_cdt" />
+		</AddonSockets>
+		
 		<AddonSockets>
 			<Socket
 				InCockpit="true"
@@ -418,7 +445,7 @@
 			<Socket Names="cat745CSticker_Roof" Offset="(0; 0; 0)" ParentFrame="BoneFront_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="cat745CSticker_Capote" Offset="(0; 0; 0)" ParentFrame="BoneFront_cdt" />
+			<Socket Names="cat745CSticker_Capote" Offset="(0; 0; 0)" ParentFrame="BoneFront_cdt" InCockpit="true"/>
 		</AddonSockets>
 		<AddonSockets>
 			<Socket
@@ -431,10 +458,6 @@
 		<AddonSockets>
 			<Socket Names="AddonHorns" Offset="(5.310; 2.690; 0)" ParentFrame="BoneChassis_cdt" />
 		</AddonSockets>
-<!--		<AddonSockets>
-			<Socket Names="Trailer" Offset="(-5.069; 1.236; 0.000)" ParentFrame="BoneBackRot_cdt" />
-		</AddonSockets>     -->   
-     
 	</GameData>
 	<ControlledConstraints>
 		<Constraint Id="chassis_steer" IsLinkedSteering="true" Name="ChassisSteer" />

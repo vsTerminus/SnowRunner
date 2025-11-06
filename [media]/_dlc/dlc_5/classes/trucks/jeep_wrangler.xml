@@ -498,7 +498,7 @@
 			<Socket Names="JeepWranglerSticker_Door_R" ParentFrame="BoneEngine_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="JeepWranglerSticker_Capote" ParentFrame="BoneEngine_cdt" />
+			<Socket Names="JeepWranglerSticker_Capote" ParentFrame="BoneEngine_cdt" InCockpit="true" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="StuffHoodJeepWrangler" ParentFrame="BoneEngine_cdt" />

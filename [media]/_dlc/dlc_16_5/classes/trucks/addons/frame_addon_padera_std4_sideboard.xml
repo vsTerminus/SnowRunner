@@ -1,0 +1,236 @@
+<_templates Include="trucks"/>
+<TruckAddon IsChassisFullOcclusion="true">
+	<TruckData
+		RepairsCapacity="120"
+		WheelRepairsCapacity="2"
+	/>
+	<WheelRepairsHide>
+		<Mesh Frame="wheel_sideboard" HideThreshold="0.0" />
+	</WheelRepairsHide>
+	<PhysicsModel Mesh="trucks/addons/frame_addon_padera_std4_sideboard">
+		<NetSync Legacy="true" />
+		<Body Mass="700">
+			<Constraint Type="Rigid" />
+			<Body
+				Collisions="None"
+				CenterOfMassOffset="(0; 0; 0)"
+				Mass="100"
+				ModelFrame="BoneCabinTwist_cdt"
+			>
+				<Constraint ExplicitParentFrame="0" Type="Fixed" />
+			</Body>
+			<Body
+				Collisions="None"
+				CenterOfMassOffset="(0; 0; 0)"
+				Mass="10"
+				ModelFrame="BoneNet_cdt"
+			>
+				<Constraint
+					LinearLimitsX="(-0.040; 0.040)"
+					LinearLimitsY="(-0.002; 0.002)"
+					LinearLimitsZ="(-0.040; 0.040)"
+					Type="Fixed"
+				>
+					<Motor Damping="100" Spring="100" Type="Spring" />
+				</Constraint>
+			</Body>
+			<Body
+				Collisions="None"
+				CenterOfMassOffset="(0.2; 0; 0)"
+				Mass="2"
+				ModelFrame="BoneLoopR_cdt"
+			>
+				<Constraint
+					AxisLocal="(0; 0; 1)"
+					Type="Hinge"
+					MinLimit="-10.0"
+					MaxLimit="10.0"
+				>
+					<Motor Damping="1" Spring="1" Type="Spring" />
+				</Constraint>
+			</Body>
+			<Body
+				Collisions="None"
+				CenterOfMassOffset="(0.2; 0; 0)"
+				Mass="2"
+				ModelFrame="BoneLoopL_cdt"
+			>
+				<Constraint
+					AxisLocal="(0; 0; 1)"
+					Type="Hinge"
+					MinLimit="0.0"
+					MaxLimit="233.0"
+				>
+					<Motor Damping="0.1" Spring="0.1" Type="Spring" />
+				</Constraint>
+			</Body>
+			<Body
+				CenterOfMassOffset="(0; 0; 0)"
+				Mass="200"
+				ModelFrame="BoneRamp1_cdt"
+			>
+				<Constraint
+					AxisLocal="(0; 0; 1)"
+					Name="ramp_1"
+					Type="Hinge"
+					MinLimit="0"
+					MaxLimit="113"
+				>
+					<Motor Force="300000" Tau="0.05" Type="Position" />
+				</Constraint>
+				<Body
+					CenterOfMassOffset="(0; 0; 0)"
+					Mass="200"
+					ModelFrame="BoneRamp2_cdt"
+					NoPackWheels="false"
+				>
+					<Constraint
+						AxisLocal="(0; 0; 1)"
+						Name="ramp_2"
+						Type="Hinge"
+						MinLimit="0"
+						MaxLimit="178"
+					>
+						<Motor Force="300000" Tau="0.05" Type="Position" />
+					</Constraint>
+				</Body>
+			</Body>
+			<Body
+				Collisions="None"
+				CenterOfMassOffset="(0; 0; 0)"
+				Mass="1"
+				ModelFrame="BoneCableR_cdt"
+			>
+				<Constraint
+					AxisLocal="(1; 0; 0)"
+					Type="Hinge"
+					MinLimit="-10.0"
+					MaxLimit="27.0"
+				>
+					<Motor Damping="1" Spring="1" Type="Spring" />
+				</Constraint>
+			</Body>
+			<Body
+				Collisions="None"
+				CenterOfMassOffset="(0; 0; 0)"
+				Mass="1"
+				ModelFrame="BoneCableL_cdt"
+			>
+				<Constraint
+					AxisLocal="(1; 0; 0)"
+					Type="Hinge"
+					MinLimit="-22.0"
+					MaxLimit="9.0"
+				>
+					<Motor Damping="1" Spring="1" Type="Spring" />
+				</Constraint>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	
+	<ModelAttachments>
+		<Ignition>
+			<Flare _template="IgnitionSignalOrange" Dir="(0; 0; 1)" Size="0.2" Pos="(1.641; 1.283; 1.347)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="IgnitionSignalOrange" Dir="(0; 0; 1)" Size="0.2" Pos="(-4.364; 1.283; 1.347)" ParentFrame="BoneChassis_cdt" />
+		
+			<Flare _template="IgnitionSignalOrange" Dir="(0; 0; -1)" Size="0.2" Pos="(1.641; 1.283; -1.347)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="IgnitionSignalOrange" Dir="(0; 0; -1)" Size="0.2" Pos="(-4.364; 1.283; -1.347)" ParentFrame="BoneChassis_cdt" />
+			
+			<Flare _template="LED" Dir="(-1; 0; 0)" AspectRatio="1" Size="0.12" Pos="(1.568; 3.523; 1.072)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="LED" Dir="(-1; 0; 0)" AspectRatio="1" Size="0.12" Pos="(1.568; 3.523; 1.019)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="LED" Dir="(-1; 0; 0)" AspectRatio="1" Size="0.12" Pos="(1.568; 3.523; 0.964)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="LED" Dir="(-1; 0; 0)" AspectRatio="1" Size="0.12" Pos="(1.568; 3.523; 0.911)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="LED" Dir="(-1; 0; 0)" AspectRatio="1" Size="0.12" Pos="(1.568; 3.468; 1.072)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="LED" Dir="(-1; 0; 0)" AspectRatio="1" Size="0.12" Pos="(1.568; 3.468; 1.019)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="LED" Dir="(-1; 0; 0)" AspectRatio="1" Size="0.12" Pos="(1.568; 3.468; 0.964)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="LED" Dir="(-1; 0; 0)" AspectRatio="1" Size="0.12" Pos="(1.568; 3.468; 0.911)" ParentFrame="BoneChassis_cdt" />
+			
+			<Flare _template="LED" Dir="(-1; 0; 0)" AspectRatio="1" Size="0.12" Pos="(1.568; 3.523; -1.072)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="LED" Dir="(-1; 0; 0)" AspectRatio="1" Size="0.12" Pos="(1.568; 3.523; -1.019)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="LED" Dir="(-1; 0; 0)" AspectRatio="1" Size="0.12" Pos="(1.568; 3.523; -0.964)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="LED" Dir="(-1; 0; 0)" AspectRatio="1" Size="0.12" Pos="(1.568; 3.523; -0.911)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="LED" Dir="(-1; 0; 0)" AspectRatio="1" Size="0.12" Pos="(1.568; 3.468; -1.072)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="LED" Dir="(-1; 0; 0)" AspectRatio="1" Size="0.12" Pos="(1.568; 3.468; -1.019)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="LED" Dir="(-1; 0; 0)" AspectRatio="1" Size="0.12" Pos="(1.568; 3.468; -0.964)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="LED" Dir="(-1; 0; 0)" AspectRatio="1" Size="0.12" Pos="(1.568; 3.468; -0.911)" ParentFrame="BoneChassis_cdt" />
+			
+			<Light _template="IgnitionSignalWhite" Dir="(-1; -0.1; 0)" Pos="(1.563; 3.495; 0.990)" Color="g(255; 245; 215) x 1.0" ParentFrame="BoneCabin_cdt" />
+			<Light _template="IgnitionSignalWhite" Dir="(-1; -0.1; 0)" Pos="(1.563; 3.495; -0.990)" Color="g(255; 245; 215) x 1.0" ParentFrame="BoneCabin_cdt" />
+		</Ignition>
+	</ModelAttachments>
+	
+	<GameData
+		CameraPreset="addon_1"
+		Category="frame_addons"
+		IsCustomizable="true"
+		Price="4800"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+		SoundForEachConstraint="true"
+	>
+        <AddonType Name="TowingPlatform" />
+		<UiDesc
+			UiDesc="UI_ADDON_FRAME_TOW_PLATFORM_PADERA_STD4_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_ADDON_FRAME_TOW_PLATFORM_PADERA_STD4_NAME"
+		/>
+		<InstallSocket Offset="(0; 0; 0)" Type="PaderaSTD4Sideboard" />
+		<WinchSocket Pos="(1.131; 1.778; -0.104)" ParentFrame="BoneChassis_cdt" />
+		<ConstraintSounds>
+			<SoundIKStop ConstraintName="ramp_1" Name="addons/addon_tow_platform/addon_tow_platform_ramp_lower_stop" Range="20" Volume="1" />
+			<SoundIKStart ConstraintName="ramp_1" Name="addons/addon_tow_platform/addon_tow_platform_ramp_lower_start" Range="20" Volume="1" />
+			<SoundIKLoop ConstraintName="ramp_1" Name="addons/addon_tow_platform/addon_tow_platform_ramp_lower_loop" Range="20" Volume="1" />
+			<SoundIKStop ConstraintName="ramp_2" Name="addons/addon_tow_platform/addon_tow_platform_ramp_lower_stop" Range="20" Volume="1" />
+			<SoundIKStart ConstraintName="ramp_2" Name="addons/addon_tow_platform/addon_tow_platform_ramp_lower_start" Range="20" Volume="1" />
+			<SoundIKLoop ConstraintName="ramp_2" Name="addons/addon_tow_platform/addon_tow_platform_ramp_lower_loop" Range="20" Volume="1" />
+		</ConstraintSounds>
+	</GameData>
+	<ControlledConstraints>
+		<Constraint Action="9" BelongToCategorie="tow_control" Id="ramp_1" LocaleUid="UI_RAMP_CONTROL" Name="ramp_1" SpeedMult="2" />
+		<Constraint Action="9" BelongToCategorie="tow_control" Id="ramp_2" LocaleUid="UI_RAMP_CONTROL" Name="ramp_2" SpeedMult="2" IgnoreUiButtons="true" />
+	</ControlledConstraints>
+	
+	<AutomaticIK>
+		<IKBone ModelFrame="BonePiston1Base" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneRamp1_cdt"
+				ModelFrame="BonePiston1Head"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		
+		<IKBone ModelFrame="BonePlate1" ParentFrame="BoneRamp1_cdt">
+			<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneRamp2_cdt"
+				ModelFrame="BonePlate2"
+			>
+				<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="BonePiston2Base" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BonePlate1"
+				ModelFrame="BonePiston2Head"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+	</AutomaticIK>
+	<ActionCategories>
+		<ActionCategory
+			Action="1"
+			AvailableForFastMode="true"
+			Id="tow_control"
+			LocaleUid="UI_TOW_CONTROL"
+			RemoveChildActionsFromCustomPanelShowCounter="true"
+		/>
+	</ActionCategories>
+</TruckAddon>

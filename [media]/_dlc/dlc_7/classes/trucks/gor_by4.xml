@@ -254,14 +254,14 @@
 			UiName="UI_VEHICLE_GOR_BY4_NAME"
 		/>
 		<CustomizationCameras>
-			<CameraPos FOV="32.0" Interior="true" Name="roof_sticker" InterestPosition="(4.9; 0.652; -0.658)" Position="(7.637; 4.708; -0.542)" />
+			<CameraPos FOV="32.0" Interior="true" Name="roof_sticker" InterestPosition="(5.2; 0.652; -0.658)" Position="(7.900; 4.708; -0.542)" />
 			<CameraPos FOV="32.0" Name="addon_1" InterestPosition="(1.036; 1.692; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-6.923; 2.071; 10.147)" />
 			<CameraPos FOV="32.0" Name="addon_2" InterestPosition="(4.991; 1.77; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(10.328; 3.173; 3.632)" />
 			<CameraPos FOV="32.0" Interior="true" Name="mirror_mount" InterestPosition="(7.7; 1.1; 1.1)" Position="(5.2; 1; 0)" />
 			<CameraPos FOV="32.0" Interior="true" Name="bubble_head" InterestPosition="(7.7; 1.1; 1.1)" Position="(5.2; 1; 0)" />
-			<CameraPos FOV="32.0" Interior="true" Name="sticker" InterestPosition="(7.7; 1.1; 1.1)" Position="(5.2; 1; 0)" />
+			<CameraPos FOV="32.0" Interior="true" Name="sticker" InterestPosition="(7.7; 0.85; 0.85)" Position="(5.78; 0.95; 0.20)" />
 			<CameraPos FOV="32.0" Name="side_r" InterestPosition="(4.679; 0.759; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(9.22; 3.041; -2.085)" />
-			<CameraPos FOV="32.0" Interior="true" Name="glass_sticker" InterestPosition="(5.6; 0.75; -0.95)" Position="(8.400; 2.25; 0.48)" />
+			<CameraPos FOV="32.0" Interior="true" Name="glass_sticker" InterestPosition="(5.6; 0.60; -0.95)" Position="(8.400; 2.1; 0.48)" />
 			<CameraPos FOV="32.0" Interior="true" Name="door_r_sticker" InterestPosition="(7.122; 0.455; 0.563)" Position="(4.281; 1.252; 2.56)" />
 			<CameraPos FOV="32.0" Name="roof" InterestPosition="(5.798; 0.713; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(10.212; 2.243; -3.182)" />
 			<CameraPos FOV="32.0" Interior="true" Name="capote_sticker" InterestPosition="(7.229; 0.689; -0.829)" Position="(9.359; 3.23; -0.138)" />
@@ -341,7 +341,7 @@
 			<Socket Names="GorBy4Sticker_Door_R" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="GorBy4Sticker_Capote" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="GorBy4Sticker_Capote" ParentFrame="BoneCabin_cdt" InCockpit="true" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="GorBy4Sticker_Roof" ParentFrame="BoneCabin_cdt" />

@@ -1469,4 +1469,37 @@
 		<CustomizationPreset Id="1" MaterialOverrideName="skin_01" UiName="UI_STUFF_GLASS_STICKER_BOLSHOY_GRYAZNY_NAME" />
 	</Truck>
 	<Truck _template="Curtain" Name="stuff_curtain_sleiter_st833" />
+	<!--<- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -/>-->
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_01_avenhorn_a15" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_02_avenhorn_a15" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_03_avenhorn_a15" />
+	<Truck _template="InsideSticker1x2" Name="sticker_inside_1x2_01_avenhorn_a15" />
+	<Truck _template="InsideSticker1x2" Name="sticker_inside_1x2_02_avenhorn_a15" />
+	<Truck _template="InsideSticker1x4" Name="sticker_inside_1x4_01_avenhorn_a15" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_capote_1x1_avenhorn_a15" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_capote_l_1x1_avenhorn_a15" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_capote_r_1x1_avenhorn_a15" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_door_l_1x1_avenhorn_a15" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_door_r_1x1_avenhorn_a15" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_side1_l_1x1_avenhorn_a15" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_side1_r_1x1_avenhorn_a15" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_side2_l_1x1_avenhorn_a15" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_side2_r_1x1_avenhorn_a15" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_roof_1x1_avenhorn_a15" />
+	<Truck _template="GlassStickerTopCut" Name="sticker_glass_top_avenhorn_a15" />
+	<Truck _template="GlassStickerBottomCut" Name="sticker_glass_bottom_avenhorn_a15" />
+	<Truck _template="Curtain" Name="stuff_curtain_avenhorn_a15" />
+	<!--<- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -/>-->
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_01_padera_std4" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_02_padera_std4" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_03_padera_std4" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_04_padera_std4" />
+	<Truck _template="InsideSticker1x2" Name="sticker_inside_1x2_01_padera_std4" />
+	<Truck _template="InsideSticker1x4" Name="sticker_inside_1x4_01_padera_std4" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_door_l_1x1_padera_std4" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_door_r_1x1_padera_std4" />
+	<Truck _template="GlassStickerTop2x16" Name="sticker_glass_top_padera_std4" />
+	<Truck _template="GlassStickerBottom2x16" Name="sticker_glass_bottom_padera_std4" />
+	<Truck _template="Curtain" Name="stuff_curtain_padera_std4" />
+	<!--<- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -/>-->
 </TruckSet>

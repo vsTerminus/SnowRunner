@@ -611,10 +611,10 @@
 			<Socket Names="Kenworth990Sticker_Door_R" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="Kenworth990Sticker_Hood_R" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="Kenworth990Sticker_Hood_R" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" InCockpit="true" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="Kenworth990Sticker_Hood_L" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="Kenworth990Sticker_Hood_L" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" InCockpit="true" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="Kenworth990Sticker_1x1_01" InCockpit="true"  ParentFrame="BoneCabin_cdt"/>

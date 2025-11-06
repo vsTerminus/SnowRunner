@@ -1,0 +1,20 @@
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/padera_std4_stuff/sticker_glass_bottom_padera_std4" />
+	<GameData
+		CameraPreset="glass_sticker"
+		Category="sticker_windshield"
+		Price="1000"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+		IsCustomizable="false"
+	>
+		<UiDesc
+			UiDesc="UI_STUFF_GLASS_STICKER_BOTTOM_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_STUFF_GLASS_STICKER_BOTTOM_2x16_LOADWHEEL_NAME"
+		/>
+		<InstallSocket Type="PaderaSTD4Sticker_Glass_Bottom" />
+	</GameData>
+</TruckAddon>
+

@@ -484,7 +484,7 @@
 			<Socket Names="pacificP16Sticker_Door_L" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="pacificP16Sticker_Capote" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="pacificP16Sticker_Capote" ParentFrame="BoneCabin_cdt" InCockpit="true" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket

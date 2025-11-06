@@ -1,0 +1,54 @@
+<_templates Include="trucks"/>
+<TruckAddon IsChassisFullOcclusion="true">
+	<WheelRepairsHide>
+		<Mesh Frame="wheel" HideThreshold="0.0" />
+	</WheelRepairsHide>
+	<TruckData
+		WheelRepairsCapacity="2"
+	>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/avenhorn_a15_tuning/avenhorn_a15_wheel_addon">
+		<Body Mass="200">
+			<Constraint Type="Rigid" />
+			<Body Mass="150" ModelFrame="BoneWheel_cdt">
+				<Constraint
+					AxisLocal="(1; 0; 0)"
+					Type="Hinge"
+					MinLimit="-2.5"
+					MaxLimit="2.5"
+				>
+					<Motor Damping="150" Spring="2000" Type="Spring" />
+				</Constraint>
+			</Body>
+			<Body
+				Collisions="None"
+				Mass="1"
+				ModelFrame="BoneHook_cdt"
+			>
+				<Constraint
+					AxisLocal="(1; 0; 0)"
+					Type="Prismatic"
+					MinLimit="-0.02"
+					MaxLimit="0.01"
+				>
+					<Motor Damping="0.5" Spring="1" Type="Spring" />
+				</Constraint>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="rear_addon"
+		Category="wheel_addon"
+		Price="2400"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SPARE_WHEEL_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SPARE_WHEEL_NAME"
+		/>
+		<InstallSocket Type="AvenhornA15SpareWheel" />
+	</GameData>
+</TruckAddon>

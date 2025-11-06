@@ -1,0 +1,33 @@
+<TruckAddon>
+	<TruckData>
+		<Shakers>
+			<Shaker Frame="BoneShakerExhaust" MinAngle="(0.07; 0.07; 0.07)" MaxAngle="(0.25; 0.25; 0.25)" MaxFrequency="4" />
+		</Shakers>
+	</TruckData>
+	<Exhaust
+			Dir="(-0.153; -0.111; -0.982)"
+			IsLight="true"
+			Origin="(2.101; 3.457; -0.907)"
+			Speed="3.82"
+	/>
+	<PhysicsModel Mesh="trucks/padera_std4_tuning/padera_std4_exhaust_2">
+		<Body Collisions="Default" Mass="60" ModelFrame="BoneCabinTwist_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="exhaust"
+		Category="exhaust"
+		Price="1500"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_EXHAUST_SNUB_HEATSHIELD_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_EXHAUST_SNUB_HEATSHIELD_NAME"
+		/>
+		<InstallSocket Type="PaderaSTD4Exhaust" />
+	</GameData>
+</TruckAddon>

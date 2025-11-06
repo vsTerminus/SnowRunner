@@ -1,0 +1,29 @@
+<_templates Include="trucks">
+	<TruckTire>
+		<Mudtires Mass="400" RearMassScale="2">
+			<WheelTracks _template="Offroad" />
+			<WheelSoftness _template="Average" />
+		</Mudtires>
+	</TruckTire>
+</_templates>
+<TruckWheels DamageCapacity="100" Radius="1" Width="0.718" WidthRear="1.51">
+	<TruckTires>
+		<TruckTire _template="Mudtires" Mesh="wheels/tire_avenhorn_a15" Name="offroad">
+			<WheelFriction _template="HeavyMudtires" SubstanceFriction="3.1" />
+			<GameData
+				Price="7500"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_ALLTERRAIN_DESC" UiName="UI_TIRE_HEAVY_OFFROAD_AVENHORN_A15_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>
+		<TruckRim Mesh="wheels/rim_avenhorn_a15" Name="rim_1">
+			<GameData>
+				<UiDesc UiDesc="" UiName="UI_RIM_HEAVY_OFFROAD_AVENHORN_A15_NAME" />
+			</GameData>
+		</TruckRim>
+	</TruckRims>
+</TruckWheels>

@@ -65,7 +65,7 @@
 		EngineIconScale="1"
 		EngineStartDelay="1.7"
 		ExhaustStartTime="1.6"
-		FuelCapacity="40"
+		FuelCapacity="70"
 		FueltankMarkerOffset="(1; 0.4; 0)"
 		Responsiveness="0.6"
 		SteerSpeed="0.03"
@@ -163,8 +163,8 @@
 			<DamageArea Type="Engine" Min="(0.6; 1; -0.68)" Max="(1.9; 1.544; 0.68)" ParentFrame="BoneChassis_cdt" />
 			<DamageArea Type="FuelTank" Min="(-1; 0.7; -0.85)" Max="(1; 1; 0.85)" ParentFrame="BoneChassis_cdt" />
 		</Damage>
-		<CompatibleWheels OffsetZ=".1" Scale="0.56" Type="wheels_scout_yar_871" />
-		<CompatibleWheels OffsetZ=".1" Scale="0.56" Type="wheels_scout_yar87_mudtires" />
+		<CompatibleWheels OffsetZ=".125" Scale="0.57" Type="wheels_scout_yar_871" />
+		<CompatibleWheels OffsetZ=".125" Scale="0.57" Type="wheels_scout_yar87_mudtires" />
 		<Camera Center="(-1.2; 0; 0)" RadiusMultiplier="0.8">
 			<Cockpit
 				_template="Default"
@@ -186,12 +186,15 @@
 	<PhysicsModel Mesh="trucks/khan_39_marshall">
 		<NetSync Legacy="false" />
 		<Body
-			CenterOfMassOffset="(-0.3; -0.3; 0)"
+			CenterOfMassOffset="(0.0; -0.25; 0)"
 			ImpactType="Truck"
-			Mass="1500"
+			Mass="800"
 			ModelFrame="BoneChassis_cdt"
 			NetSync="pv"
 		>
+			<Body Mass="700" CenterOfMassOffset="(0.0; -0.35; 0)" ModelFrame="BoneWeighter_cdt">
+				<Constraint	Type="Fixed" />
+			</Body>
 			<Body _template="TieRod" ModelFrame="BoneTieRod_cdt">
 				<Constraint Name="TieRodSteer" />
 			</Body>
@@ -290,13 +293,13 @@
 	<HeadLight _template="Default" Pos="(2.178; 1.377; 0)" />
 	<GameData
 		Country="RU,CAS"
-		ExcludeAddons="scout_trailer_flatbed_1, scout_trailer_flatbed_2, scout_trailer_oiltank"
+		ExcludeAddons="scout_trailer_flatbed_1, scout_trailer_flatbed_2"
 		Price="2700"
 		Recallable="true"
 		UnlockByExploration="false"
 		UnlockByRank="1"
 	>
-		<WinchSocket Pos="(-2.062; 1.043; 0)" />
+		<WinchSocket Pos="(-2.054; 0.857; 0)" />
 		<WinchSocket Pos="(-0.163; 0.845; 0.862)" />
 		<WinchSocket Pos="(-0.163; 0.845; -0.862)" />
 		<WinchSocket Pos="(2.120; 0.958; 0.315)" />
@@ -331,7 +334,7 @@
 			<CameraPos FOV="32.0" Interior="true" Name="bubble_head" InterestPosition="(7.736; 1.681; 1.811)" Position="(5.095; 1.925; -0.461)" />
 			<CameraPos FOV="32.0" Interior="true" Name="door_l_sticker" InterestPosition="(4.929; 1.208; -0.761)" Position="(4.94; 1.829; -2.884)" />
 		</CustomizationCameras>
-		<CraneSocket Pos="(-2.062; 1.043; 0)" />
+		<CraneSocket Pos="(-2.054; 0.857; 0)" />
 		<CraneSocket Pos="(-0.163; 0.845; 0.862)" />
 		<CraneSocket Pos="(-0.163; 0.845; -0.862)" />
 		<CraneSocket Pos="(-0.2; 2.3; 0)" />
@@ -412,6 +415,9 @@
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="StuffHoodKhan39Marshall" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="ScautTrailer" Offset="(-2.06; 0.89; 0)" />
 		</AddonSockets>
 	</GameData>
 	<ControlledConstraints>

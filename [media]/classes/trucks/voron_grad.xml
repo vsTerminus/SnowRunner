@@ -652,7 +652,7 @@
 			<Socket Names="voronGradSticker_Roof" Offset="(0; 0; 0)" ParentFrame="BoneCabinDamper_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="voronGradSticker_Capote" Offset="(0; 0; 0)" ParentFrame="BoneCabinDamper_cdt" />
+			<Socket Names="voronGradSticker_Capote" Offset="(0; 0; 0)" ParentFrame="BoneCabinDamper_cdt" InCockpit="true" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="StuffHoodVoronGrad" Offset="(0; 0; 0)" ParentFrame="BoneCabinDamper_cdt" />

@@ -540,7 +540,7 @@
 			</Socket>
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="tayga6436Sticker_Capote" ParentFrame="BoneCabinDamper_cdt">
+			<Socket Names="tayga6436Sticker_Capote" ParentFrame="BoneCabinDamper_cdt" InCockpit="true" >
 				<ExtraParent Frame="BoneChassis_cdt" />
 			</Socket>
 		</AddonSockets>

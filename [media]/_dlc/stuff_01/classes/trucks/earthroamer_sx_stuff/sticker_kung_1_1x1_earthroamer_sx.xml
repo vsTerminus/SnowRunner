@@ -2,6 +2,12 @@
 <TruckAddon>
 	<PhysicsModel Mesh="trucks/earthroamer_sx_stuff/sticker_kung_1_1x1_earthroamer_sx" />
 	<GameData CameraPreset="side_1_sticker">
+		<UiDesc
+			UiDesc="UI_STUFF_DOOR_L_STICKER_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_STUFF_DOOR_L_STICKER_1x1_NAME"
+		/>
 		<InstallSocket Type="EarthroamerSxSticker_Kung1" />
 	</GameData>
 </TruckAddon>

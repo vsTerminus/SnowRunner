@@ -543,7 +543,7 @@
 			<Socket Names="kolob74941Sticker_Door_L" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="kolob74941Sticker_Capote" />
+			<Socket Names="kolob74941Sticker_Capote" InCockpit="true" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="kolob74941Sticker_Roof" />

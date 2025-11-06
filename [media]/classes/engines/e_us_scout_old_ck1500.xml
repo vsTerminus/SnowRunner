@@ -11,11 +11,11 @@
 		DamagedConsumptionModifier="1.8"
 		FuelConsumption="3.3"
 		Name="us_scout_old_engine_ck1500"
-		Torque="60000"
+		Torque="62000"
 		DamagedMinTorqueMultiplier="1.0"
 		DamagedMaxTorqueMultiplier="0.6"
-		MaxDeltaAngVel="0.01"
-		EngineResponsiveness="0.25"
+		MaxDeltaAngVel="10"
+		EngineResponsiveness="0.4"
 	>
 		<GameData
 			Price="7500"

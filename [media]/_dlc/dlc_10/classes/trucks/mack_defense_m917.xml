@@ -479,10 +479,10 @@
 			<Socket Names="Trailer, LogTrailer" Offset="(-4.148; 0.954; 0)">
 				<AddonsShift Offset="(0; 0; 0)" TrailerNamesBlock="Trailer, LogTrailer" Types="MinicraneRU, FrameAddon" />
 			</Socket>
-			<Socket Names="Semitrailer, SemitrailerOiltank, SemitrailerFoldableLog" Offset="(-1.970; 1.598; 0)" >
+			<Socket Names="Semitrailer, SemitrailerOiltank, SemitrailerFoldableLog" NamesBlock="LogLift" Offset="(-1.970; 1.598; 0)" >
 				<AddonsShift Offset="(-0.578; 0.06; 0)" Types="SaddleMotorized" />
 			</Socket>
-			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" NamesBlock="SaddleLow" Offset="(-1.970; 1.769; 0)" />
+			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" NamesBlock="SaddleLow, LogLift" Offset="(-1.970; 1.769; 0)" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="BunkLog" Offset="(-6.0; 1.302; 0)" />
@@ -639,7 +639,7 @@
 			<Socket Names="MackDefenseM917Sticker_GlassTop" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="MackDefenseM917Sticker_Capote" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="MackDefenseM917Sticker_Capote" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" InCockpit="true" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket InCockpit="true" Names="StuffCurtainMackDefenseM917" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />

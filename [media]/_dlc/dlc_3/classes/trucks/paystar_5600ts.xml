@@ -708,7 +708,7 @@
 			<Socket Names="paystar5600TsSticker_Door_L" ParentFrame="BoneCabinSusp_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="paystar5600TsSticker_Capote" ParentFrame="BoneCabinSusp_cdt" />
+			<Socket Names="paystar5600TsSticker_Capote" ParentFrame="BoneCabinSusp_cdt" InCockpit="true" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="paystar5600TsSticker_Roof" ParentFrame="BoneCabinSusp_cdt" />

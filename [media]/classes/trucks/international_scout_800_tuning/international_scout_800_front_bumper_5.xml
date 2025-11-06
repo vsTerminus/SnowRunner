@@ -3,10 +3,14 @@
 <TruckAddon>
 	<TruckData>
 		<Damage>
-			<Multiplier Multiplier="1.0" Type="Engine" />
+			<Multiplier Multiplier="0.85" Type="Engine" />
 		</Damage>
 	</TruckData>
-	<PhysicsModel Mesh="trucks/international_scout_800_tuning/international_scout_800_front_bumper_5" />
+	<PhysicsModel Mesh="trucks/international_scout_800_tuning/international_scout_800_front_bumper_5" >
+		<Body ImpactType="Truck" Mass="18">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
 	<ModelAttachments>
 		<MainHeadLight>
 			<Model _template="HeadLightRay" Org="(1.848; 0.687; -0.11)" />

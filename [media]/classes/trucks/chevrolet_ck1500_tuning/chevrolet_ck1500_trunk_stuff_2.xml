@@ -1,0 +1,86 @@
+<TruckAddon>
+	<WheelRepairsHide>
+		<Mesh Frame="wheels3" HideThreshold="0.6" />
+		<Mesh Frame="wheels2" HideThreshold="0.3" />
+		<Mesh Frame="wheels" HideThreshold="0.0" />
+	</WheelRepairsHide>
+	<RepairsHide>
+		<Mesh Frame="repair" HideThreshold="0.0" />
+	</RepairsHide>
+	<FuelHide>
+		<Mesh Frame="fuel2" HideThreshold="0.5" />
+		<Mesh Frame="fuel" HideThreshold="0.0" />
+	</FuelHide>
+	<TruckData WheelRepairsCapacity="6" RepairsCapacity="300" FuelCapacity="120"/>
+	
+	
+	<PhysicsModel Mesh="trucks/chevrolet_ck1500_tuning/chevrolet_ck1500_trunk_stuff_2">
+		<Body Mass="150" ModelFrame="BoneAddon_cdt">
+			<Constraint Type="Rigid" />
+			<Body ModelFrame="BoneRepairs_cdt" Mass="10" Collisions="None">
+				<Constraint 
+					Type="Fixed" 
+					LinearLimitsX="(-.05; 0.0)"
+					>
+					<Motor Damping="250" Spring="5" Type="Spring" />
+				</Constraint>
+			</Body>
+			<Body ModelFrame="BoneCanisters_cdt" Mass="10" Collisions="None">
+				<Constraint 
+					Type="Fixed" 
+					LinearLimitsX="(-.3; 0.0)"
+					>
+					<Motor Damping="10" Spring="100" Type="Spring" />
+				</Constraint>
+			</Body>
+			<Body ModelFrame="BoneWheel01_cdt" Mass="10" Collisions="None">
+				<Constraint 
+					Type="Hinge" 
+					AxisLocal="(0; 0; 1)"
+					MinLimit="-4"
+					MaxLimit="7"
+					>
+					<Motor Damping="30" Spring="110" Type="Spring" />
+				</Constraint>
+			</Body>
+			<Body ModelFrame="BoneWheel02_cdt" Mass="10" Collisions="None">
+				<Constraint 
+					Type="Hinge" 
+					AxisLocal="(0; 0; 1)"
+					MinLimit="-3"
+					MaxLimit="4"
+					>
+					<Motor Damping="40" Spring="100" Type="Spring" />
+				</Constraint>
+			</Body>	
+			<Body ModelFrame="BoneWheel03_cdt" Mass="10" Collisions="None">
+				<Constraint 
+					Type="Hinge" 
+					AxisLocal="(0; 0; 1)"
+					MinLimit="-6"
+					MaxLimit="5"
+					>
+					<Motor Damping="20" Spring="120" Type="Spring" />
+				</Constraint>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	
+	
+	<GameData
+		CameraPreset="addon_1"
+		Category="frame_addons"
+		IsCustomizable="true"
+		Price="3800"
+		UnlockByExploration="false"
+		UnlockByRank="3"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SCOUT_TRUNK_SUPPLIES_BIG_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SCOUT_TRUNK_SUPPLIES_BIG_NAME"
+		/>
+		<InstallSocket Type="ChevroletCk1500TrunkStuff" />
+	</GameData>
+</TruckAddon>

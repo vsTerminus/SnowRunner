@@ -35,6 +35,7 @@
 		SteerSpeed="0.017"
 		TruckImage="cat770gmchr"
 		TruckType="HEAVY"
+		InstallTrailerAddonRequired="cat_770g_farkop"
 	>
 		<WinchUpgradeSocket Default="w_heavy_trucks_default" IsUpgradable="true" Type="winches_heavy_trucks" />
 		<Wheels
@@ -395,7 +396,8 @@
 		<WinchSocket Pos="(3.66; 0.869; 0.908)" />
 		<WinchSocket Pos="(0.173; 1.63; -0.532)" />
 		<WinchSocket Pos="(0.173; 1.63; 0.532)" />
-		<WinchSocket Pos="(-2.594; 1.57; 0)" />
+		<WinchSocket Pos="(-2.774; 1.925; -0.506)" />
+		<WinchSocket Pos="(-2.774; 1.925; 0.506)" />
 		<UiDesc
 			UiDesc="UI_VEHICLE_CAT_770G_DESC"
 			UiIcon30x30="heavyVehicleImg30"
@@ -428,10 +430,21 @@
 		<CraneSocket Pos="(3.66; 0.869; 0.908)" />
 		<CraneSocket Pos="(0.173; 1.63; -0.532)" />
 		<CraneSocket Pos="(0.173; 1.63; 0.532)" />
-		<CraneSocket Pos="(-2.594; 1.57; 0)" />
+		<CraneSocket Pos="(-2.774; 1.925; -0.506)" />
+		<CraneSocket Pos="(-2.774; 1.925; 0.506)" />
+		<AddonSockets DefaultAddon="cat_770g_farkop" RequiredAddonIfNoConflicts="cat_770g_farkop">
+			<Socket Names="Cat770GFarkop" ParentFrame="BoneChassis_cdt"/>
+		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="Cat770gSaddle" Offset="(0; 0; 0)" />
-			<Socket Names="Cat770gTank" NamesBlock="SemitrailerCat770g" Offset="(0; 0; 0)" />
+			<Socket Names="Cat770gSaddle" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="Cat770gSaddleHigh" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="Cat770gTank" NamesBlock="Cat770GFarkop" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="Cat770GService" NamesBlock="Cat770GFarkop" ParentFrame="BoneChassis_cdt"/>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="Trailer, LogTrailer" Offset="(-3.294; 1.414; -0.000)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" NamesBlock="Cat770gSaddle" Offset="(-1.5; 2.4; -0.000)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="SemitrailerCat770g" Offset="(-1.493; 2.04; 0)" ParentFrame="BoneChassis_cdt" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="SemitrailerCat770g" Offset="(-1.493; 2.04; 0)" ParentFrame="BoneChassis_cdt" />
@@ -475,7 +488,7 @@
 			<Socket Names="cat770GSticker_Roof" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="cat770GSticker_Capote" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="cat770GSticker_Capote" ParentFrame="BoneCabin_cdt" InCockpit="true" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket

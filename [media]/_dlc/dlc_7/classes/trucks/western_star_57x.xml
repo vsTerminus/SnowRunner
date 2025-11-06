@@ -445,7 +445,7 @@
 			<Socket Names="westernStar57XSticker_Door_L" ParentFrame="BoneCabinDamper_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="westernStar57XSticker_Capote" ParentFrame="BoneCabinDamper_cdt" />
+			<Socket Names="westernStar57XSticker_Capote" ParentFrame="BoneCabinDamper_cdt" InCockpit="true" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="westernStar57XSticker_Roof" ParentFrame="BoneCabinDamper_cdt" />

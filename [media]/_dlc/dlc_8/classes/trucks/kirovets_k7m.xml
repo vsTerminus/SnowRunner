@@ -387,7 +387,7 @@
 			<Socket Names="LogTrailer" NamesBlock="Trailer, KirovetsK7MKung" Offset="(-4.5; 1.21; 0)" ParentFrame="BoneBack_cdt"/>
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="KirovetsK7MSticker_Capote" ParentFrame="BoneFront_cdt" />
+			<Socket Names="KirovetsK7MSticker_Capote" ParentFrame="BoneFront_cdt" InCockpit="true" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="KirovetsK7MSticker_Roof" ParentFrame="BoneFront_cdt" />

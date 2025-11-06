@@ -3,10 +3,14 @@
 <TruckAddon>
 	<TruckData>
 		<Damage>
-			<Multiplier Multiplier="1.0" Type="Engine" />
+			<Multiplier Multiplier="0.9" Type="Engine" />
 		</Damage>
 	</TruckData>
-	<PhysicsModel Mesh="trucks/khan_39_marshall_tuning/khan_39_marshall_bumper_1" />
+	<PhysicsModel Mesh="trucks/khan_39_marshall_tuning/khan_39_marshall_bumper_1" >
+		<Body ImpactType="Truck" Mass="20">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
 	<GameData
 		Price="1400"
 		UnlockByExploration="false"

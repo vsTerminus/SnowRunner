@@ -422,7 +422,7 @@
 			<Socket Names="khan317SentinelSticker_Roof" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="khan317SentinelSticker_Capote" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="khan317SentinelSticker_Capote" ParentFrame="BoneCabin_cdt" InCockpit="true" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="khan317SentinelSticker_Door_L" ParentFrame="BoneCabin_cdt" />

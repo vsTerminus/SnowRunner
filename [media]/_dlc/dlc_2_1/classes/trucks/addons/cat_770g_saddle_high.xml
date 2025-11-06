@@ -1,0 +1,25 @@
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/addons/cat_770g_saddle_high">
+		<Body Mass="200">
+			<Constraint Type="Rigid" />			
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="addon_1"
+		Category="frame_addons"
+		IsCustomizable="true"
+		Price="0"
+		SaddleType="high"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_ADDON_SADDLE_HIGH_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_ADDON_SADDLE_HIGH_NAME"
+		/>
+		<RequiredAddonType Type="SaddleHigh" TypeUiName="UI_REQUIRED_ADDON_TYPE_SADDLE_HIGH" />
+		<InstallSocket Type="Cat770gSaddleHigh" />
+	</GameData>
+</TruckAddon>

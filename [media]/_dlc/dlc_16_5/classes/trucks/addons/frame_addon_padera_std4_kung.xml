@@ -1,0 +1,126 @@
+<_templates Include="trucks"/>
+<TruckAddon IsChassisFullOcclusion="true">
+	<TruckData
+		FuelCapacity="400"
+		RepairsCapacity="400"
+		WheelRepairsCapacity="4"
+	/>
+	<Rotator
+		Frame="BoneFanL"
+		EngineTorqueFactor="0" 
+		RotationSpeed="6"
+		RotationAxis="(0; 1; 0)"
+		Name="FanLeft" 
+	/>
+	<Rotator
+		Frame="BoneFanR"
+		EngineTorqueFactor="0" 
+		RotationSpeed="6"
+		RotationAxis="(0; -1; 0)"
+		Name="FanRight" 
+	/>
+	<PhysicsModel Mesh="trucks/addons/frame_addon_padera_std4_kung">
+		<NetSync Legacy="true" />
+		<Body Mass="1500">
+			<Constraint Type="Rigid" />
+			<Body
+				Collisions="None"
+				CenterOfMassOffset="(0; 0; 0)"
+				Mass="100"
+				ModelFrame="BoneCabinTwist_cdt"
+			>
+				<Constraint ExplicitParentFrame="0" Type="Fixed" />
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<Ignition>
+			<Flare _template="IgnitionSignalOrange" Dir="(0; 0; 1)" Size="0.2" Pos="(0.545; 1.677; 1.365)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="IgnitionSignalOrange" Dir="(0; 0; 1)" Size="0.2" Pos="(-1.784; 1.576; 1.307)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="IgnitionSignalOrange" Dir="(0; 0; 1)" Size="0.2" Pos="(-4.226; 1.576; 1.307)" ParentFrame="BoneChassis_cdt" />
+			
+			<Flare _template="IgnitionSignalOrange" Dir="(0; 0; -1)" Size="0.2" Pos="(0.545; 1.677; -1.365)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="IgnitionSignalOrange" Dir="(0; 0; -1)" Size="0.2" Pos="(-1.784; 1.576; -1.307)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="IgnitionSignalOrange" Dir="(0; 0; -1)" Size="0.2" Pos="(-4.226; 1.576; -1.307)" ParentFrame="BoneChassis_cdt" />
+		
+			<Flare _template="LED" Dir="(0; -0.390; 0.921)" AspectRatio="1" Size="0.12" Pos="(0.341; 3.223; 1.320)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="LED" Dir="(0; -0.390; 0.921)" AspectRatio="1" Size="0.12" Pos="(0.302; 3.223; 1.320)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="LED" Dir="(0; -0.390; 0.921)" AspectRatio="1" Size="0.12" Pos="(0.262; 3.223; 1.320)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="LED" Dir="(0; -0.390; 0.921)" AspectRatio="1" Size="0.12" Pos="(0.224; 3.223; 1.320)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="LED" Dir="(0; -0.390; 0.921)" AspectRatio="1" Size="0.12" Pos="(0.341; 3.185; 1.305)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="LED" Dir="(0; -0.390; 0.921)" AspectRatio="1" Size="0.12" Pos="(0.302; 3.185; 1.305)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="LED" Dir="(0; -0.390; 0.921)" AspectRatio="1" Size="0.12" Pos="(0.262; 3.185; 1.305)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="LED" Dir="(0; -0.390; 0.921)" AspectRatio="1" Size="0.12" Pos="(0.224; 3.185; 1.305)" ParentFrame="BoneChassis_cdt" />
+			
+			<Flare _template="LED" Dir="(0; -0.390; 0.921)" AspectRatio="1" Size="0.12" Pos="(-1.094; 3.223; 1.320)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="LED" Dir="(0; -0.390; 0.921)" AspectRatio="1" Size="0.12" Pos="(-1.133; 3.223; 1.320)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="LED" Dir="(0; -0.390; 0.921)" AspectRatio="1" Size="0.12" Pos="(-1.173; 3.223; 1.320)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="LED" Dir="(0; -0.390; 0.921)" AspectRatio="1" Size="0.12" Pos="(-1.211; 3.223; 1.320)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="LED" Dir="(0; -0.390; 0.921)" AspectRatio="1" Size="0.12" Pos="(-1.094; 3.185; 1.305)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="LED" Dir="(0; -0.390; 0.921)" AspectRatio="1" Size="0.12" Pos="(-1.133; 3.185; 1.305)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="LED" Dir="(0; -0.390; 0.921)" AspectRatio="1" Size="0.12" Pos="(-1.173; 3.185; 1.305)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="LED" Dir="(0; -0.390; 0.921)" AspectRatio="1" Size="0.12" Pos="(-1.211; 3.185; 1.305)" ParentFrame="BoneChassis_cdt" />
+			
+			<Flare _template="LED" Dir="(0; -0.390; -0.921)" AspectRatio="1" Size="0.12" Pos="(0.341; 3.223; -1.320)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="LED" Dir="(0; -0.390; -0.921)" AspectRatio="1" Size="0.12" Pos="(0.302; 3.223; -1.320)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="LED" Dir="(0; -0.390; -0.921)" AspectRatio="1" Size="0.12" Pos="(0.262; 3.223; -1.320)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="LED" Dir="(0; -0.390; -0.921)" AspectRatio="1" Size="0.12" Pos="(0.224; 3.223; -1.320)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="LED" Dir="(0; -0.390; -0.921)" AspectRatio="1" Size="0.12" Pos="(0.341; 3.185; -1.305)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="LED" Dir="(0; -0.390; -0.921)" AspectRatio="1" Size="0.12" Pos="(0.302; 3.185; -1.305)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="LED" Dir="(0; -0.390; -0.921)" AspectRatio="1" Size="0.12" Pos="(0.262; 3.185; -1.305)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="LED" Dir="(0; -0.390; -0.921)" AspectRatio="1" Size="0.12" Pos="(0.224; 3.185; -1.305)" ParentFrame="BoneChassis_cdt" />
+			
+			<Flare _template="LED" Dir="(0; -0.390; -0.921)" AspectRatio="1" Size="0.12" Pos="(-1.094; 3.223; -1.320)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="LED" Dir="(0; -0.390; -0.921)" AspectRatio="1" Size="0.12" Pos="(-1.133; 3.223; -1.320)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="LED" Dir="(0; -0.390; -0.921)" AspectRatio="1" Size="0.12" Pos="(-1.173; 3.223; -1.320)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="LED" Dir="(0; -0.390; -0.921)" AspectRatio="1" Size="0.12" Pos="(-1.211; 3.223; -1.320)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="LED" Dir="(0; -0.390; -0.921)" AspectRatio="1" Size="0.12" Pos="(-1.094; 3.185; -1.305)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="LED" Dir="(0; -0.390; -0.921)" AspectRatio="1" Size="0.12" Pos="(-1.133; 3.185; -1.305)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="LED" Dir="(0; -0.390; -0.921)" AspectRatio="1" Size="0.12" Pos="(-1.173; 3.185; -1.305)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="LED" Dir="(0; -0.390; -0.921)" AspectRatio="1" Size="0.12" Pos="(-1.211; 3.185; -1.305)" ParentFrame="BoneChassis_cdt" />
+			
+			<Flare _template="LED" Dir="(-0.861; -0.509; 0)" AspectRatio="1" Size="0.12" Pos="(-1.603; 3.164; 0.917)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="LED" Dir="(-0.861; -0.509; 0)" AspectRatio="1" Size="0.12" Pos="(-1.603; 3.164; 0.878)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="LED" Dir="(-0.861; -0.509; 0)" AspectRatio="1" Size="0.12" Pos="(-1.603; 3.164; 0.838)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="LED" Dir="(-0.861; -0.509; 0)" AspectRatio="1" Size="0.12" Pos="(-1.603; 3.164; 0.800)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="LED" Dir="(-0.861; -0.509; 0)" AspectRatio="1" Size="0.12" Pos="(-1.583; 3.129; 0.917)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="LED" Dir="(-0.861; -0.509; 0)" AspectRatio="1" Size="0.12" Pos="(-1.583; 3.129; 0.878)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="LED" Dir="(-0.861; -0.509; 0)" AspectRatio="1" Size="0.12" Pos="(-1.583; 3.129; 0.838)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="LED" Dir="(-0.861; -0.509; 0)" AspectRatio="1" Size="0.12" Pos="(-1.583; 3.129; 0.800)" ParentFrame="BoneChassis_cdt" />
+			
+			<Light _template="IgnitionSignalWhite" Dir="(0; -0.25; 1)" Pos="(0.282; 3.203; 1.4)" Color="g(255; 245; 215) x 1.0" />
+			<Light _template="IgnitionSignalWhite" Dir="(0; -0.25; 1)" Pos="(-1.153; 3.203; 1.4)" Color="g(255; 245; 215) x 1.0" />
+			
+			<Light _template="IgnitionSignalWhite" Dir="(0; -0.25; -1)" Pos="(0.282; 3.203; -1.4)" Color="g(255; 245; 215) x 1.0" />
+			<Light _template="IgnitionSignalWhite" Dir="(0; -0.25; -1)" Pos="(-1.153; 3.203; -1.4)" Color="g(255; 245; 215) x 1.0" />
+			
+			<Light _template="IgnitionSignalWhite" Dir="(-1; -0.25; 0)" Pos="(-1.596; 3.143; 0.859)" Color="g(255; 245; 215) x 1.0" />
+		</Ignition>
+	</ModelAttachments>
+	<GameData
+		CameraPreset="addon_1"
+		Category="frame_addons"
+		IsCustomizable="true"
+		Price="6700"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<WinchSocket FixedToTruck="true" Pos="(-0.387; 3.393; 1.275)" />
+		<WinchSocket FixedToTruck="true" Pos="(-0.387; 3.393; -1.275)" />
+		<WinchSocket FixedToTruck="true" Pos="(0.750; 1.573; 1.338)" />
+		<WinchSocket FixedToTruck="true" Pos="(0.750; 1.573; -1.338)" />
+		
+		<CraneSocket FixedToTruck="true" Pos="(-0.387; 3.393; 1.275)" />
+		<CraneSocket FixedToTruck="true" Pos="(-0.387; 3.393; -1.275)" />
+		<CraneSocket FixedToTruck="true" Pos="(0.750; 1.573; 1.338)" />
+		<CraneSocket FixedToTruck="true" Pos="(0.750; 1.573; -1.338)" />
+		<UiDesc
+			UiDesc="UI_ADDON_FRAME_KUNG_PADERA_STD4_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_ADDON_FRAME_KUNG_PADERA_STD4_NAME"
+		/>
+		<InstallSocket Offset="(0; 0; 0)" Type="PaderaSTD4Kung" />
+		<AddonSlots InitialOffset="(-3.1; 1.635; -0.000)" OffsetStep="(0; 0; 0)" Quantity="1" />
+	</GameData>
+</TruckAddon>

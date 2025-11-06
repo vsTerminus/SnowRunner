@@ -512,7 +512,7 @@
 			<Socket Names="freightlinerM916A1Sticker_Door_R" ParentFrame="BoneCabinDamper_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="freightlinerM916A1Sticker_Capote" ParentFrame="BoneCabinDamper_cdt" />
+			<Socket Names="freightlinerM916A1Sticker_Capote" ParentFrame="BoneCabinDamper_cdt" InCockpit="true" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket

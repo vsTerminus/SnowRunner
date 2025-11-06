@@ -32,16 +32,16 @@
 				PlaneAxisLocal="(0; 0; 1)"
 				TwistAxisLocal="(1; 0; 0)"
 				Type="Ragdoll"
-				PlaneMin="-90"
-				TwistMin="-1"
-				PlaneMax="90"
-				TwistMax="1"
+				PlaneMin="-80"
+				TwistMin="0"
+				PlaneMax="80"
+				TwistMax="0"
 				ConeMin="-100"
 				ConeMax="100"
 			>
-				<TwistMotor Damping="80" Spring="320" Type="Spring" />
-				<PlaneMotor Damping="80" Spring="3000000" Type="Spring" />
-				<ConeMotor Damping="1" Spring="1" Type="Spring" />
+				<TwistMotor Damping="800" Spring="1" Type="Spring" />
+				<PlaneMotor Damping="800" Spring="10" Type="Spring" />
+				<ConeMotor Damping="1800" Spring="0.1" Type="Spring" />
 		</Constraint>
 		<Camera Center="(-0.0; 0; 0)" ParentFrame="BoneCameraIK"/>
 		<Axles>
@@ -58,7 +58,7 @@
 					Name="FrameHead"
 					AxisLocal="(0; 0; 1)"
 					Type="Hinge"
-					MinLimit="-150"
+					MinLimit="-148"
 					MaxLimit="30"
 				>
 					<Motor Force="100000" Type="Position" />
@@ -75,7 +75,7 @@
 						<Motor Force="100000" Type="Position" />
 					</Constraint>
 				</Body>
-				<Body CenterOfMassOffset="(0; -0.57; 0)" ImpactType="Truck" Mass="200" ModelFrame="BoneFork2_cdt" NetSync="pv">
+				<Body CenterOfMassOffset="(0; -0.57; 0)" ImpactType="Truck" Mass="1000" ModelFrame="BoneFork2_cdt" NetSync="pv">
 					<Constraint
 						Name="Fork2"
 						AxisLocal="(0; 0; 1)"
@@ -103,21 +103,6 @@
 					>
 						<Motor Force="60000" Type="Position" />
 					</Constraint>
-					<Body
-						ImpactType="Truck"
-						Mass="20"
-						ModelFrame="BoneFootR_cdt"
-						NoFoliageCollisions="true"
-					>
-						<Constraint
-							AxisLocal="(0; 0; 1)"
-							Type="Hinge"
-							MinLimit="-15"
-							MaxLimit="15"
-						>
-							<Motor Damping="0.1" Spring="1" Type="Spring" />
-						</Constraint>
-					</Body>
 				</Body>
 				
 				<Body
@@ -136,21 +121,6 @@
 					>
 						<Motor Force="60000" Type="Position" />
 					</Constraint>
-					<Body
-						ImpactType="Truck"
-						Mass="20"
-						ModelFrame="BoneFootL_cdt"
-						NoFoliageCollisions="true"
-					>
-						<Constraint
-							AxisLocal="(0; 0; 1)"
-							Type="Hinge"
-							MinLimit="-15"
-							MaxLimit="15"
-						>
-							<Motor Damping="0.1" Spring="1" Type="Spring" />
-						</Constraint>
-					</Body>
 				</Body>
 				
 				<Body ImpactType="Truck" Mass="1200" ModelFrame="BoneLogsTail_cdt" Collisions="Default" NetSync="pv">
@@ -161,7 +131,7 @@
 						MinLimit="0"
 						MaxLimit="170"
 					>
-						<Motor Force="100000" Type="Position" />
+						<Motor Force="150000" Type="Position" />
 					</Constraint>
 					<Body CenterOfMassOffset="(0; -0.57; 0)" ImpactType="Truck" Mass="200" ModelFrame="BoneFork3_cdt" NetSync="pv" >
 						<Constraint
@@ -221,7 +191,7 @@
 		LocaleUid="FOLD/UNFOLD TRAILER"
         TerminalDisableWinchSockets="true"
 		>
-			<Constraint InitialFix="true" Name="FrameHead" TerminalFix="true" Position="-150" SpeedMultUnfolding="0.8" SpeedMultFolding="0.65" />
+			<Constraint InitialFix="true" Name="FrameHead" TerminalFix="true" Position="-148" SpeedMultUnfolding="0.8" SpeedMultFolding="0.65" />
 			<Constraint InitialFix="true" Name="FrameTail" TerminalFix="true" Position="165" SpeedMultUnfolding="0.45" SpeedMultFolding="0.5" />
 			<Constraint InitialFix="true" Name="Fork1" TerminalFix="true" Position="98" SpeedMultUnfolding="0.8" SpeedMultFolding="0.2" />
 			<Constraint InitialFix="true" Name="Fork2" TerminalFix="true" Position="-82" SpeedMultUnfolding="0.2" SpeedMultFolding="0.8" />
@@ -280,8 +250,8 @@
 		<CraneSocket Pos="(3.962; 1.914; -0.528)" ParentFrame="BoneLogsHead_cdt" />
 		<CraneSocket Pos="(3.962; 1.914; 0.528)" ParentFrame="BoneLogsHead_cdt" />
 		
-		<LoadArea Subtype="SemitrailerLogLong" Type="CargoLogsLong" Min="(-6.100; 0.100; -2.200)" Max="(0.000; 6.000; 2.200)" ParentFrame="BoneChassis_cdt" />
-		<LoadArea Subtype="SemitrailerLogLong" Type="CargoLogsLong" Min="(0.000; 0.100; -2.200)" Max="(6.400; 6.000; 2.200)" ParentFrame="BoneChassis_cdt" />
+		<LoadArea Subtype="SemitrailerLogLong" Type="CargoLogsLong" Min="(-4.700; 1.400; -1.215)" Max="(0.000; 4.400; 1.215)" ParentFrame="BoneChassis_cdt" />
+		<LoadArea Subtype="SemitrailerLogLong" Type="CargoLogsLong" Min="(0.000; 1.400; -1.215)" Max="(4.600; 4.400; 1.215)" ParentFrame="BoneChassis_cdt" />
 		
 		<InstallSocket Offset="(4.09; 1.8; -0.000)" Type="SemitrailerFoldableLog" />
 		

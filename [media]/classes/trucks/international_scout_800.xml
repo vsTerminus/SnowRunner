@@ -15,7 +15,7 @@
 		/>
 	</Wheel>
 	<Body>
-		<TieRod Mass="1">
+		<TieRod Mass="1" Collisions="None">
 			<Constraint
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
@@ -74,6 +74,9 @@
 		EngineStartDelay="1.7"
 		ExhaustStartTime="1.6"
 		FuelCapacity="72"
+		SuspensionMarkerOffset="(-0.75; 0; 0)"
+		GearboxMarkerOffset="(0.8; 0; 0)"
+		FueltankMarkerOffset="(-0.05; 0; 0)"
 		Responsiveness="0.6"
 		SteerSpeed="0.03"
 		TruckImage="scout8001mchr"
@@ -93,7 +96,7 @@
 		<SuspensionSocket
 			Default="international_scout_800_suspension_default"
 			Type="s_international_scout_800"
-			MaxWheelRadiusWithoutSuspension=".2"
+			MaxWheelRadiusWithoutSuspension=".105"
 		/>
 		<SteeringWheel Frame="BoneSteering" />
 		<SteeringRack
@@ -164,27 +167,27 @@
 			<DamageArea Type="Engine" Min="(0.6; 0.575; -0.5)" Max="(1.7; 1.22; 0.5)" ParentFrame="BoneChassis_cdt" />
 			<DamageArea Type="FuelTank" Min="(-0.88; 0.2; -0.8)" Max="(0.8; 0.45; 0.8)" ParentFrame="BoneChassis_cdt" />
 		</Damage>
-		<CompatibleWheels Scale="0.4" Type="wheels_scout1" />
-		<CompatibleWheels Scale="0.4" Type="wheels_scout2" />
-		<CompatibleWheels Scale="0.45" Type="wheels_scout1" />
-		<CompatibleWheels Scale="0.45" Type="wheels_scout2" />
+		<CompatibleWheels Scale="0.425" Type="wheels_scout1" />
+		<CompatibleWheels Scale="0.425" Type="wheels_scout2" />
+		<CompatibleWheels Scale="0.47" Type="wheels_scout1" />
+		<CompatibleWheels Scale="0.47" Type="wheels_scout2" />
 		<CompatibleWheels Scale="0.5" Type="wheels_scout2" />
 		
-		<CompatibleWheels Scale="0.4" Type="wheels_scout_highway" />
-		<CompatibleWheels Scale="0.4" Type="wheels_scout_offroad" />
-		<CompatibleWheels OffsetZ="0.1" Scale="0.4" Type="wheels_scout_mudtires" />
+		<CompatibleWheels Scale="0.425" Type="wheels_scout_highway" />
+		<CompatibleWheels Scale="0.425" Type="wheels_scout_offroad" />
+		<CompatibleWheels OffsetZ="0.1" Scale="0.425" Type="wheels_scout_mudtires" />
 
-		<CompatibleWheels Scale="0.45" Type="wheels_scout_highway" />
-		<CompatibleWheels Scale="0.45" Type="wheels_scout_offroad" />
-		<CompatibleWheels OffsetZ="0.1" Scale="0.45" Type="wheels_scout_mudtires" />
+		<CompatibleWheels Scale="0.47" Type="wheels_scout_highway" />
+		<CompatibleWheels Scale="0.47" Type="wheels_scout_offroad" />
+		<CompatibleWheels OffsetZ="0.1" Scale="0.47" Type="wheels_scout_mudtires" />
 
 		<CompatibleWheels Scale="0.5" Type="wheels_scout_offroad" />
-		<CompatibleWheels OffsetZ="0.1" Scale="0.5" Type="wheels_scout_mudtires" />
+		<CompatibleWheels OffsetZ="0.1" Scale="0.51" Type="wheels_scout_mudtires" />
 		
-		<CompatibleWheels OffsetZ="0.04" Scale="0.4" Type="wheels_scout_allterrain" />
-		<CompatibleWheels OffsetZ="0.04" Scale="0.4" Type="wheels_scout_allterrain_chain" />
-		<CompatibleWheels OffsetZ="0.08" Scale="0.45" Type="wheels_scout_allterrain" />
-		<CompatibleWheels OffsetZ="0.08" Scale="0.45" Type="wheels_scout_allterrain_chain" />
+		<CompatibleWheels OffsetZ="0.04" Scale="0.425" Type="wheels_scout_allterrain" />
+		<CompatibleWheels OffsetZ="0.04" Scale="0.425" Type="wheels_scout_allterrain_chain" />
+		<CompatibleWheels OffsetZ="0.08" Scale="0.47" Type="wheels_scout_allterrain" />
+		<CompatibleWheels OffsetZ="0.08" Scale="0.47" Type="wheels_scout_allterrain_chain" />
 		<CompatibleWheels OffsetZ="0.02" Scale="0.5" Type="wheels_scout_allterrain" />
 		<CompatibleWheels OffsetZ="0.02" Scale="0.5" Type="wheels_scout_allterrain_chain" />
 		
@@ -209,15 +212,15 @@
 	<PhysicsModel Mesh="trucks/international_scout_800">
 		<NetSync Legacy="false" />
 		<Body
-			CenterOfMassOffset="(-1.1; 0; 0)"
+			CenterOfMassOffset="(-0.15; -0.1; 0)"
 			ImpactType="Truck"
-			Mass="1600"
+			Mass="1900"
 			NetSync="pv"
 		>
 			<Body
-				CenterOfMassOffset="(1.3; 0; 0)"
+				CenterOfMassOffset="(0.12; -0.2; 0)"
 				ImpactType="Truck"
-				Mass="1200"
+				Mass="900"
 				ModelFrame="BoneCabin_cdt"
 				NetSync="pv"
 			>
@@ -335,6 +338,7 @@
 		<CraneSocket Pos="(-0.4; 0.407; -0.748)" />
 		<AddonSockets>
 			<Socket InCockpit="true" Names="InternationalScout800SpareWheel" Offset="(-0.2; 0; 0)" />
+			<Socket InCockpit="true" Names="InternationalScout800TrunkStuff" Offset="(0.0; 0; 0)" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="international_scout_800_front_bumper_default">
 			<Socket Names="InternationalScout800FrontBumper" />
@@ -400,7 +404,7 @@
 			<Socket Names="internationalScout800Sticker_Roof" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="internationalScout800Sticker_Capote" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="internationalScout800Sticker_Capote" ParentFrame="BoneCabin_cdt" InCockpit="true" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket

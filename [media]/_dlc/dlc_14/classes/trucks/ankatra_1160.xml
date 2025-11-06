@@ -405,7 +405,7 @@
 			<Socket Names="Ankatra1160Sticker_GlassBottom" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="Ankatra1160Sticker_Capote" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="Ankatra1160Sticker_Capote" ParentFrame="BoneCabin_cdt" InCockpit="true" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="Ankatra1160Sticker_Roof" ParentFrame="BoneCabin_cdt" />
@@ -414,10 +414,10 @@
 			<Socket Names="Ankatra1160Sticker_Roof_2" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="Ankatra1160Sticker_Wing_L" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="Ankatra1160Sticker_Wing_L" ParentFrame="BoneCabin_cdt" InCockpit="true" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="Ankatra1160Sticker_Wing_R" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="Ankatra1160Sticker_Wing_R" ParentFrame="BoneCabin_cdt" InCockpit="true" />
 		</AddonSockets>
 		<!-- INTERIOR STICKERS -->
 		<AddonSockets>

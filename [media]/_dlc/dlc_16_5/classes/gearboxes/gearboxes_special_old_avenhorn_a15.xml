@@ -1,0 +1,123 @@
+<GearboxVariants>
+	<Gearbox
+		AWDConsumptionModifier="1.0"
+		CriticalDamageThreshold="0.7"
+		DamageCapacity="240"
+		DamagedConsumptionModifier="1.9"
+		FuelConsumption="1.0"
+		IdleFuelModifier="0.2"
+		Name="g_special_avenhorn_a15_default"
+		MinBreakFreq="0.0"
+		MaxBreakFreq="18.0"
+	>
+		<ReverseGear AngVel="0.6" FuelModifier="1.0" />
+		<HighGear AngVel="2.0" FuelModifier="1.45" />
+		<Gear AngVel="1.3" FuelModifier="1.88" />
+		<Gear AngVel="1.6" FuelModifier="1.73" />
+		<Gear AngVel="1.68" FuelModifier="1.67" />
+		<Gear AngVel="2.0" FuelModifier="1.45" />
+		<Gear AngVel="2.43" FuelModifier="1.18" />
+		<Gear AngVel="2.7" FuelModifier="1.0" />
+
+		<GameData
+			Price="2900"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_GEARBOX_SPECIAL_DEFAULT_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_GEARBOX_SPECIAL_DEFAULT_NAME"
+			/>
+			<GearboxParams
+				IsHighGearExists="false"
+				IsLowerGearExists="true"
+				IsLowerPlusGearExists="false"
+				IsManualLowGear="false"
+				IsLowerMinusGearExists="false"
+			/>
+		</GameData>
+	</Gearbox>
+	<Gearbox
+		AWDConsumptionModifier="1.0"
+		CriticalDamageThreshold="0.5"
+		DamageCapacity="260"
+		DamagedConsumptionModifier="1.5"
+		FuelConsumption="2.72"
+		IdleFuelModifier="0.3"
+		Name="g_special_avenhorn_a15_offroad"
+		MinBreakFreq="0.0"
+		MaxBreakFreq="15.0"
+	>
+		<ReverseGear AngVel="0.56" FuelModifier="0.9" />
+		<HighGear AngVel="4.92" FuelModifier="0.95" />
+		<Gear AngVel="1.05" FuelModifier="1.92" />
+		<Gear AngVel="1.21" FuelModifier="1.86" />
+		<Gear AngVel="1.55" FuelModifier="1.675" />
+		<Gear AngVel="2.2" FuelModifier="1.58" />
+		<Gear AngVel="2.95" FuelModifier="1.24" />
+		<Gear AngVel="3.8" FuelModifier="1.15" />
+		<Gear AngVel="4.92" FuelModifier="0.95" />
+		<GameData
+			Price="6000"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_GEARBOX_SPECIAL_OFFROAD_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_GEARBOX_SPECIAL_OFFROAD_NAME"
+			/>
+			<GearboxParams
+				IsHighGearExists="true"
+				IsLowerGearExists="true"
+				IsLowerPlusGearExists="true"
+				IsManualLowGear="false"
+				IsLowerMinusGearExists="true"
+			/>
+		</GameData>
+	</Gearbox>
+	<Gearbox
+		AWDConsumptionModifier="1.0"
+		CriticalDamageThreshold="0.52"
+		DamageCapacity="260"
+		DamagedConsumptionModifier="1.42"
+		FuelConsumption="2.61"
+		IdleFuelModifier="0.28"
+		Name="g_special_avenhorn_a15_highway"
+		MinBreakFreq="0.0"
+		MaxBreakFreq="8.0"
+	>
+		<ReverseGear AngVel="0.75" FuelModifier="0.9" />
+		<HighGear AngVel="5.97" FuelModifier="1.3" />
+		<Gear AngVel="1.5" FuelModifier="1.7" />
+		<Gear AngVel="1.92" FuelModifier="1.665" />
+		<Gear AngVel="2.48" FuelModifier="1.64" />
+		<Gear AngVel="3.0" FuelModifier="1.58" />
+		<Gear AngVel="3.72" FuelModifier="1.51" />
+		<Gear AngVel="4.66" FuelModifier="1.42" />
+		<Gear AngVel="5.97" FuelModifier="1.3" />
+		<Gear AngVel="6.81" FuelModifier="1.12" />
+		<GameData
+			Price="5100"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_GEARBOX_SPECIAL_HIGHWAY_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_GEARBOX_SPECIAL_HIGHWAY_NAME"
+			/>
+			<GearboxParams
+				IsHighGearExists="true"
+				IsLowerGearExists="true"
+				IsLowerPlusGearExists="false"
+				IsManualLowGear="false"
+				IsLowerMinusGearExists="false"
+			/>
+		</GameData>
+	</Gearbox>
+</GearboxVariants>

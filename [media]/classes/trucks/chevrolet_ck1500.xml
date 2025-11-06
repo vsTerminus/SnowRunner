@@ -24,7 +24,10 @@
 		EngineStartDelay="1.7"
 		ExhaustStartTime="1.6"
 		FuelCapacity="80"
-		Responsiveness="0.6"
+		SuspensionMarkerOffset="(1.0; 0; 0)"
+		GearboxMarkerOffset="(0.05; 0; 0.1)"
+		FueltankMarkerOffset="(-0.8; 0; 0.2)"
+		Responsiveness="0.7"
 		SteerSpeed="0.03"
 		TruckImage="chvr1500mchr"
 		TruckType="SCOUT"
@@ -43,7 +46,7 @@
 		<SuspensionSocket
 			Default="chevrolet_ck1500_suspension_default"
 			Type="s_chevrolet_ck1500"
-			MaxWheelRadiusWithoutSuspension="0.3"
+			MaxWheelRadiusWithoutSuspension="0.38"
 		/>
 		<SteeringWheel Frame="BoneSteering" />
 		<SteeringRack
@@ -119,26 +122,26 @@
 			<DamageArea Type="Engine" Min="(1.15; 0.55; -0.5)" Max="(2.3; 1.3; 0.5)" ParentFrame="BoneChassis_cdt" />
 			<DamageArea Type="FuelTank" Min="(-1; 0.35; -0.85)" Max="(1; 0.7; 0.85)" ParentFrame="BoneChassis_cdt" />
 		</Damage>
-		<CompatibleWheels Scale="0.40" Type="wheels_scout1" />
-		<CompatibleWheels Scale="0.40" Type="wheels_scout2" />
-		<CompatibleWheels Scale="0.45" Type="wheels_scout1" />
-		<CompatibleWheels Scale="0.45" Type="wheels_scout2" />
-		<CompatibleWheels Scale="0.48" Type="wheels_scout2" />
-		<CompatibleWheels Scale="0.40" Type="wheels_scout_highway"/>
-		<CompatibleWheels Scale="0.40" Type="wheels_scout_offroad"/>
-		<CompatibleWheels Scale="0.45" Type="wheels_scout_highway"/>
-		<CompatibleWheels Scale="0.45" Type="wheels_scout_offroad"/>
-		<CompatibleWheels Scale="0.48" Type="wheels_scout_offroad"/>
-		<CompatibleWheels OffsetZ="0.1" Scale="0.40" Type="wheels_scout_mudtires"/>
-		<CompatibleWheels OffsetZ="0.1" Scale="0.45" Type="wheels_scout_mudtires"/>
-		<CompatibleWheels OffsetZ="0.1" Scale="0.48" Type="wheels_scout_mudtires"/>
+		<CompatibleWheels Scale="0.42" Type="wheels_scout1" />
+		<CompatibleWheels Scale="0.42" Type="wheels_scout2" />
+		<CompatibleWheels Scale="0.46" Type="wheels_scout1" />
+		<CompatibleWheels Scale="0.46" Type="wheels_scout2" />
+		<CompatibleWheels Scale="0.515" OffsetZ="0.08" Type="wheels_scout2" />
+		<CompatibleWheels Scale="0.42" Type="wheels_scout_highway"/>
+		<CompatibleWheels Scale="0.42" Type="wheels_scout_offroad"/>
+		<CompatibleWheels Scale="0.46" Type="wheels_scout_highway"/>
+		<CompatibleWheels Scale="0.46" Type="wheels_scout_offroad"/>
+		<CompatibleWheels Scale="0.515" OffsetZ="0.08" Type="wheels_scout_offroad"/>
+		<CompatibleWheels OffsetZ="0.1" Scale="0.42" Type="wheels_scout_mudtires"/>
+		<CompatibleWheels OffsetZ="0.1" Scale="0.46" Type="wheels_scout_mudtires"/>
+		<CompatibleWheels OffsetZ="0.08" Scale="0.515" Type="wheels_scout_mudtires"/>
 		
-		<CompatibleWheels Scale="0.4" Type="wheels_scout_allterrain" />
-		<CompatibleWheels OffsetZ="0.02" Scale="0.4" Type="wheels_scout_allterrain_chain" />
-		<CompatibleWheels Scale="0.45" Type="wheels_scout_allterrain" />
-		<CompatibleWheels OffsetZ="0.02" Scale="0.45" Type="wheels_scout_allterrain_chain" />
-		<CompatibleWheels Scale="0.48" Type="wheels_scout_allterrain" />
-		<CompatibleWheels OffsetZ="0.02" Scale="0.48" Type="wheels_scout_allterrain_chain" />
+		<CompatibleWheels Scale="0.42" Type="wheels_scout_allterrain" />
+		<CompatibleWheels OffsetZ="0.02" Scale="0.42" Type="wheels_scout_allterrain_chain" />
+		<CompatibleWheels Scale="0.46" Type="wheels_scout_allterrain" />
+		<CompatibleWheels OffsetZ="0.02" Scale="0.46" Type="wheels_scout_allterrain_chain" />
+		<CompatibleWheels OffsetZ="0.08" Scale="0.515" Type="wheels_scout_allterrain" />
+		<CompatibleWheels OffsetZ="0.08" Scale="0.515" Type="wheels_scout_allterrain_chain" />
 		
 		<Camera Center="(-1; 0; 0)" RadiusMultiplier="0.8">
 			<Cockpit
@@ -167,15 +170,15 @@
 	<PhysicsModel Mesh="trucks/chevrolet_ck1500">
 		<NetSync Legacy="false" />
 		<Body
-			CenterOfMassOffset="(-0.1; 0; 0)"
+			CenterOfMassOffset="(-0.1; -0.15; 0)"
 			ImpactType="Truck"
-			Mass="1000"
+			Mass="1150"
 			NetSync="pv"
 		>
 			<Body
-				CenterOfMassOffset="(-0.2; -0.2; 0)"
+				CenterOfMassOffset="(0.0; -0.25; 0)"
 				ImpactType="Truck"
-				Mass="1000"
+				Mass="1050"
 				ModelFrame="BoneBack_cdt"
 				NetSync="pv"
 			>

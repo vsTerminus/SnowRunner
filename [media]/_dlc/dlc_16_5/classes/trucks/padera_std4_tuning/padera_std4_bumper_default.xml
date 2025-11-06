@@ -1,0 +1,50 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<TruckData>
+		<Damage>
+			<Multiplier Multiplier="1.0" Type="Engine" />
+		</Damage>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/padera_std4_tuning/padera_std4_bumper_default">
+		<Body ImpactType="Truck" Mass="30" ModelFrame="BoneCabinTwist_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<Ignition>
+			<Flare _template="IgnitionSignalOrange" ColorMultAtDay=".2" Dir="(0; 0; 1)" Size="0.2" Pos="(2.459; 1.377; 1.279)" ParentFrame="BoneCabinTwist_cdt" />
+			<Flare _template="IgnitionSignalOrange" ColorMultAtDay=".2" Dir="(0; 0; -1)" Size="0.2" Pos="(2.459; 1.377; -1.279)" ParentFrame="BoneCabinTwist_cdt" />
+			
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay=".2" Dir="(1; 0; 0)" Size="0.2" Pos="(3.967; 1.218; 0.924)" ParentFrame="BoneCabinTwist_cdt" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay=".2" Dir="(1; 0; 0)" Size="0.2" Pos="(3.967; 1.218; -0.924)" ParentFrame="BoneCabinTwist_cdt" />
+			<Flare _template="HeadLight" ColorMultAtDay=".2" Dir="(1; 0; 0)" Size="0.2" Pos="(4.000; 1.017; 0.983)" ParentFrame="BoneCabinTwist_cdt" />
+			<Flare _template="HeadLight" ColorMultAtDay=".2" Dir="(1; 0; 0)" Size="0.2" Pos="(4.000; 1.017; -0.983)" ParentFrame="BoneCabinTwist_cdt" />
+		</Ignition>
+		<HeadLight>
+			<Model _template="HeadLightRay" Dir="(1; -0.1; 0)" Org="(4.000; 1.017; 0.983)" ParentFrame="BoneCabinTwist_cdt" />
+			<Model _template="HeadLightRay" Dir="(1; -0.1; 0)" Org="(4.000; 1.017; -0.983)" ParentFrame="BoneCabinTwist_cdt" />
+			<Flare _template="HeadLight" ColorMultAtDay=".2" Dir="(1; 0; 0)" Size="0.3" Pos="(4.000; 1.017; 0.983)" ParentFrame="BoneCabinTwist_cdt" />
+			<Flare _template="HeadLight" ColorMultAtDay=".2" Dir="(1; 0; 0)" Size="0.3" Pos="(4.000; 1.017; -0.983)" ParentFrame="BoneCabinTwist_cdt" />
+		</HeadLight>
+	</ModelAttachments>
+	<HeadLight _template="Default" Pos="(4.150; 1.017; -0.000)" ParentFrame="BoneCabinTwist_cdt" />
+	<GameData
+		CameraPreset="default"
+		Category="bumper"
+		Price="1200"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<WinchSocket FixedToTruck="true" Pos="(3.978; 0.824; 0.618)" />
+		<WinchSocket FixedToTruck="true" Pos="(3.978; 0.824; -0.618)" />
+		<UiDesc
+			UiDesc="UI_TUNING_BUMPER_STOCK_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_BUMPER_STOCK_NAME"
+		/>
+		<InstallSocket Type="PaderaSTD4Bumper" />
+		<CraneSocket FixedToTruck="true" Pos="(3.978; 0.824; 0.618)" />
+		<CraneSocket FixedToTruck="true" Pos="(3.978; 0.824; -0.618)" />
+	</GameData>
+</TruckAddon>

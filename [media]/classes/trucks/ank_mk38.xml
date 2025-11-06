@@ -403,7 +403,7 @@
 			<Socket _template="Cabin2Chassis" Names="ankMk38Sticker_Roof" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket _template="Cabin2Chassis" Names="ankMk38Sticker_Capote" />
+			<Socket _template="Cabin2Chassis" Names="ankMk38Sticker_Capote" InCockpit="true"/>
 		</AddonSockets>
 		<AddonSockets>
 			<Socket

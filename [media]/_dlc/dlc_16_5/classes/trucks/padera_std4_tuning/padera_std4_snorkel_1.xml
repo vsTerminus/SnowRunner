@@ -1,0 +1,23 @@
+<TruckAddon>
+	<Snorkel Origin="(2.233; 2.508; 0.740)" />
+	<PhysicsModel Mesh="trucks/padera_std4_tuning/padera_std4_snorkel_1">
+		<Body Collisions="Default" Mass="10" ModelFrame="BoneCabinTwist_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="snorkels"
+		Category="snorkel"
+		Price="2700"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SNORKEL_SIDESWEPT_TALL_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SNORKEL_SIDESWEPT_TALL_NAME"
+		/>
+		<InstallSocket Type="PaderaSTD4Snorkel" />
+	</GameData>
+</TruckAddon>

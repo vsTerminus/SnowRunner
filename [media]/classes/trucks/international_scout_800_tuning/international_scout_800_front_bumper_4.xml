@@ -14,11 +14,11 @@
 <TruckAddon>
 	<TruckData>
 		<Damage>
-			<Multiplier Multiplier="1.0" Type="Engine" />
+			<Multiplier Multiplier="0.8" Type="Engine" />
 		</Damage>
 	</TruckData>
 	<PhysicsModel Mesh="trucks/international_scout_800_tuning/international_scout_800_front_bumper_4">
-		<Body ImpactType="Truck" Mass="10" ModelFrame="BoneCabin_cdt">
+		<Body ImpactType="Truck" Mass="24" ModelFrame="BoneCabin_cdt">
 			<Constraint Type="Rigid" />
 			<Body _template="Hitch" ModelFrame="BoneHitchLeft_cdt" />
 			<Body _template="Hitch" ModelFrame="BoneHitchRight_cdt" />

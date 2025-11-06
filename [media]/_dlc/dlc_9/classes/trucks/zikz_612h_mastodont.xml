@@ -692,7 +692,7 @@
 			<Socket Names="MastodonHorns" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="HeavyRepair" NamesBlock="MastodonSpareWheel, MastodonElectricbox, SaddleHigh, SaddleLow, FrameAddonKungZikz, MastodonBunkLog, ZikzLogLift, ZikzFrameAddon, MastodonFrameAddonTowPlatform, MastodonSideboard, MastodonWatertank, MinicraneRU, MastodonBigCrane, MastodonLongBigCrane, FrameAddonSeismicVibratorZikz, FrameAddonTankZikz, FrameAddonLogShortMastodon, FrameAddonLogMediumMastodon"
+			<Socket Names="HeavyRepair" NamesBlock="SaddleMotorized, MastodonSpareWheel, MastodonElectricbox, SaddleHigh, SaddleLow, FrameAddonKungZikz, MastodonBunkLog, ZikzLogLift, ZikzFrameAddon, MastodonFrameAddonTowPlatform, MastodonSideboard, MastodonWatertank, MinicraneRU, MastodonBigCrane, MastodonLongBigCrane, FrameAddonSeismicVibratorZikz, FrameAddonTankZikz, FrameAddonLogShortMastodon, FrameAddonLogMediumMastodon"
 			Offset="(1.35; 1.522; 0)" ParentFrame="BoneChassis_cdt" />
 		</AddonSockets>
 		<!-- stuff -->

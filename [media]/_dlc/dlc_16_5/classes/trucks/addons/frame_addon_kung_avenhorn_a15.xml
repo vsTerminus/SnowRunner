@@ -1,0 +1,31 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<TruckData
+		FuelCapacity="300"
+		RepairsCapacity="300"
+		WheelRepairsCapacity="2"
+	/>
+	<PhysicsModel Mesh="trucks/addons/frame_addon_kung_avenhorn_a15">
+		<Body Mass="400" ModelFrame="BoneChassis_cdt">
+			<Constraint Type="Rigid" />
+			<Body Mass="200" ModelFrame="BoneCabinTwist_cdt">
+				<Constraint ExplicitParentFrame="0" Type="Fixed" />
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="addon_1"
+		Category="frame_addons"
+		Price="9700"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_ADDON_FRAME_KUNG_AVENHORN_A15_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_ADDON_FRAME_KUNG_AVENHORN_A15_NAME"
+		/>
+		<InstallSocket Type="AvenhornA15Kung" />
+	</GameData>
+</TruckAddon>

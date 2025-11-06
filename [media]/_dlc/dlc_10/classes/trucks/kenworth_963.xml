@@ -501,13 +501,13 @@
 			<Socket Names="Kenworth963Sticker_Door_R" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="Kenworth963Sticker_Hood_L_T" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="Kenworth963Sticker_Hood_L_T" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" InCockpit="true" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="Kenworth963Sticker_Hood_L_B" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="Kenworth963Sticker_Hood_L_B" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" InCockpit="true" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="Kenworth963Sticker_Hood_R_T" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="Kenworth963Sticker_Hood_R_T" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" InCockpit="true" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket
@@ -721,7 +721,7 @@
 			</Socket>
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="Kenworth963Sticker_Hood_R_B" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="Kenworth963Sticker_Hood_R_B" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" InCockpit="true" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket

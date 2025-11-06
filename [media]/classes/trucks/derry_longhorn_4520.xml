@@ -404,27 +404,27 @@
 			UiName="UI_VEHICLE_DERRY_LONGHORN_4520_NAME"
 		/>
 		<CustomizationCameras>
-			<CameraPos FOV="32.0" Interior="true" Name="sticker_1" InterestPosition="(7.165; 4.537; 1.118)" Position="(5.018; 2.827; -0.935)" />
+			<CameraPos FOV="32.0" Name="default" InterestPosition="(5.187; 1.818; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(13.18; 1.275; -5.377)" />
 			<CameraPos FOV="32.0" Name="addon_1" InterestPosition="(0.561; 1.684; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-7.975; 4.814; 6.571)" />
 			<CameraPos FOV="32.0" Name="addon_2" InterestPosition="(5.759; 2.49; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(10.793; 4.409; -3.424)" />
-			<CameraPos FOV="32.0" Interior="true" Name="mirror_mount" InterestPosition="(6.764; 2.94; -0.145)" Position="(4.241; 3.049; -0.565)" />
-			<CameraPos FOV="32.0" Name="side_r" InterestPosition="(4.494; 2.616; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-0.753; 4.897; 5.666)" />
-			<CameraPos FOV="32.0" Interior="true" Name="sticker" InterestPosition="(6.458; 0.793; 2.347)" Position="(5.286; 3.015; -0.65)" />
-			<CameraPos FOV="32.0" Interior="true" Name="glass_sticker" InterestPosition="(6.227; 2.898; -0.7)" Position="(8.169; 3.949; 1.028)" />
-			<CameraPos FOV="32.0" Interior="true" Name="door_r_sticker" InterestPosition="(6.324; 1.796; 0)" Position="(2.401; 2.445; 3.166)" />
-			<CameraPos FOV="32.0" Name="roof" InterestPosition="(5.118; 3.503; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(11.064; 5.516; -4.015)" />
-			<CameraPos FOV="32.0" Interior="true" Name="capote_sticker" InterestPosition="(4.821; 0.365; -0.023)" Position="(9.708; 5.975; -0.966)" />
-			<CameraPos FOV="32.0" Name="hoods" InterestPosition="(5.187; 1.818; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(13.18; 1.275; -5.377)" />
-			<CameraPos FOV="32.0" Interior="true" Name="sticker_2" InterestPosition="(7.165; 4.566; 2.414)" Position="(4.936; 2.784; 0.295)" />
-			<CameraPos FOV="32.0" Name="side_l" InterestPosition="(5.074; 2.075; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(9.141; 4.511; 5.732)" />
-			<CameraPos FOV="32.0" Interior="true" Name="bubble_head" InterestPosition="(6.764; 2.229; 1.419)" Position="(4.816; 2.867; -0.443)" />
 			<CameraPos FOV="32.0" Name="wheels" InterestPosition="(5.548; 0.545; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(7.631; 1.733; -6.123)" />
-			<CameraPos FOV="32.0" Name="default" InterestPosition="(5.187; 1.818; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(13.18; 1.275; -5.377)" />
+			<CameraPos FOV="32.0" Name="side_l" InterestPosition="(5.074; 2.075; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(9.141; 4.511; 5.732)" />
+			<CameraPos FOV="32.0" Name="side_r" InterestPosition="(4.494; 2.616; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-0.753; 4.897; 5.666)" />
+			<CameraPos FOV="32.0" Name="roof" InterestPosition="(5.118; 3.503; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(11.064; 5.516; -4.015)" />
+			<CameraPos FOV="32.0" Name="hoods" InterestPosition="(5.187; 1.818; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(13.18; 1.275; -5.377)" />
 			<CameraPos FOV="32.0" Name="rear" InterestPosition="(-1.423; 1.831; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-10.631; 2.524; 6.535)" />
-			<CameraPos FOV="32.0" Interior="true" Name="door_l_sticker" InterestPosition="(4.170; 1.898; 0.086" Position="(2.566; 2.602; -3.115)" />
-			<CameraPos FOV="32.0" Interior="true" Name="hood_ornament" InterestPosition="(7.506; 2.247; -1.339)" Position="(8.557; 2.563; -1.339)" />
-			<CameraPos FOV="32.0" Interior="true" Name="curtain" InterestPosition="(6.764; 2.94; -0.145)" Position="(4.241; 3.049; -0.565)" />
 			<CameraPos FOV="32.0" Name="spare_wheel" InterestPosition="(4.494; 0.9; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-0.753; 4.897; 5.666)" />
+			<CameraPos FOV="32.0" Interior="true" Name="sticker" InterestPosition="(5.400; 1.200; 1.500)" Position="(5.100; 3.100; -0.700)" />
+			<CameraPos FOV="32.0" Interior="true" Name="sticker_1" InterestPosition="(7.000; 4.400; 0.000)" Position="(4.700; 2.700; -0.480)" />
+			<CameraPos FOV="32.0" Interior="true" Name="sticker_2" InterestPosition="(5.100; 3.800; 1.40)" Position="(4.700; 2.600; 0,00)" />
+			<CameraPos FOV="32.0" Interior="true" Name="bubble_head" InterestPosition="(6.764; 2.229; 1.500)" Position="(4.816; 2.867; -0.443)" />
+			<CameraPos FOV="32.0" Interior="true" Name="mirror_mount" InterestPosition="(6.764; 3.10; -0.350)" Position="(4.241; 2.900; -0.565)" />
+			<CameraPos FOV="32.0" Interior="true" Name="curtain" InterestPosition="(6.764; 3.30; 1.400)" Position="(4.241; 2.800; -0.565)" />
+			<CameraPos FOV="32.0" Interior="true" Name="hood_ornament" InterestPosition="(7.506; 2.247; -1.339)" Position="(8.557; 2.563; -1.339)" />
+			<CameraPos FOV="32.0" Interior="true" Name="door_l_sticker" InterestPosition="(4.170; 1.898; 0.086" Position="(2.566; 2.602; -3.115)" />
+			<CameraPos FOV="32.0" Interior="true" Name="door_r_sticker" InterestPosition="(6.324; 1.796; 0)" Position="(2.401; 2.445; 3.166)" />
+			<CameraPos FOV="32.0" Interior="true" Name="capote_sticker" InterestPosition="(4.821; 0.365; -0.023)" Position="(9.708; 5.975; -0.966)" />
+			<CameraPos FOV="32.0" Interior="true" Name="glass_sticker" InterestPosition="(6.227; 2.898; -0.7)" Position="(8.169; 3.949; 1.028)" />
 		</CustomizationCameras>
 		<CraneSocket Pos="(4.432; 0.723; -0.481)" ParentFrame="BoneCabin_cdt" />
 		<CraneSocket Pos="(4.432; 0.723; 0.481)" ParentFrame="BoneCabin_cdt" />
@@ -525,7 +525,7 @@
 			<Socket Names="derryLonghorn4520Sticker_Door_R" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="derryLonghorn4520Sticker_Capote" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="derryLonghorn4520Sticker_Capote" ParentFrame="BoneCabin_cdt" InCockpit="true" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="StuffHoodDerryLonghorn4520" ParentFrame="BoneCabin_cdt" />

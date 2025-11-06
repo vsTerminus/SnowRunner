@@ -573,7 +573,7 @@
 			</Socket>
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="westernStar49XSticker_Capote" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt">
+			<Socket Names="westernStar49XSticker_Capote" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" InCockpit="true" >
 				<ExtraParent Frame="BoneChassis_cdt" />
 			</Socket>
 		</AddonSockets>

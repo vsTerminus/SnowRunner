@@ -1,0 +1,49 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/addons/cat_770g_farkop" >
+		<NetSync Legacy="true" />
+		<Body Mass="50">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	
+	<ModelAttachments>
+		<StopSignals>
+			<Light _template="StopSignal" Pos="(-3.345; 1.522; 0.000)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="StopSignal" AspectRatio="1.7" Color="g(255; 0; 0) x 0.3" Size="0.3" Pos="(-3.345; 1.522; 0.485)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="StopSignal" AspectRatio="1.7" Color="g(255; 0; 0) x 0.3" Size="0.3" Pos="(-3.345; 1.522; -0.485)" ParentFrame="BoneRoot_cdt" />
+		</StopSignals>
+		<ReverseSignals>
+			<Light _template="ReverseSignal" Pos="(-3.345; 1.434; 0.000)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="ReverseSignal" Color="g(245; 235; 220) x 0.6" Dir="(-1; 0; 0)" Size="0.4" Pos="(-3.345; 1.434; 0.485)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="ReverseSignal" Color="g(245; 235; 220) x 0.6" Dir="(-1; 0; 0)" Size="0.4" Pos="(-3.345; 1.434; -0.485)" ParentFrame="BoneRoot_cdt" />
+			
+			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.05" Dir="(-1; 0; 0)" Size="0.4" Pos="(-3.345; 1.434; 0.485)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.05" Dir="(-1; 0; 0)" Size="0.4" Pos="(-3.345; 1.434; -0.485)" ParentFrame="BoneRoot_cdt" />
+		</ReverseSignals>
+		<Ignition>
+			<Light _template="StopSignal" Pos="(-3.345; 1.522; 0.000)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="StopSignal" AspectRatio="1.7" Color="g(255; 0; 0) x 0.3" Size="0.3" Pos="(-3.345; 1.522; 0.485)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="StopSignal" AspectRatio="1.7" Color="g(255; 0; 0) x 0.3" Size="0.3" Pos="(-3.345; 1.522; -0.485)" ParentFrame="BoneRoot_cdt" />
+		</Ignition>
+	</ModelAttachments>
+	
+	<GameData
+		CameraPreset="addon_1"
+		Category="frame_addons"
+		IsCustomizable="true"
+		Price="0"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<WinchSocket Pos="(-3.333; 1.435; -0.000)" FixedToTruck="true" />
+		<CraneSocket Pos="(-3.333; 1.435; -0.000)" FixedToTruck="true" />
+		<UiDesc
+			UiDesc="UI_TUNING_FARKOP_TRAILER_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_FARKOP_TRAILER_NAME"
+		/>
+		<InstallSocket Type="Cat770GFarkop" />
+	</GameData>
+</TruckAddon>

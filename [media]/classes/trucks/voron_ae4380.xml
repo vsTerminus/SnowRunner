@@ -642,7 +642,7 @@
 			<Socket Names="voronAe4380Sticker_Door_R" ParentFrame="BoneCabinDamper_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="voronAe4380Sticker_Capote" ParentFrame="BoneCabinDamper_cdt" />
+			<Socket Names="voronAe4380Sticker_Capote" ParentFrame="BoneCabinDamper_cdt" InCockpit="true" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="voronAe4380Sticker_Roof" ParentFrame="BoneCabinDamper_cdt" />

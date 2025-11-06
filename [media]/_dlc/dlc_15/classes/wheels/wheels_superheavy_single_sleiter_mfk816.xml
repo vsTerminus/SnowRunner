@@ -2,7 +2,7 @@
 	<TruckTire>
 		<Mudtires _template="Superheavy">
 			<WheelTracks _template="Offroad" />
-			<WheelSoftness _template="Soft" />
+			<WheelSoftness _template="Soft" RadiusOffset="0.025" />
 			<WheelFriction _template="HeavyMudtires" />
 		</Mudtires>
 	</TruckTire>

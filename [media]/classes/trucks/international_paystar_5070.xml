@@ -366,7 +366,7 @@
 			<Socket Names="Semitrailer, SemitrailerOiltank, SemitrailerFoldableLog" Offset="(-3.734; 1.53; 0)" >
 				<AddonsShift Offset="(0.027; 0.05; 0)" Types="SaddleMotorized" />
 			</Socket>
-			<Socket Names="Trailer, LogTrailer" Offset="(-5.55; 0.9; 0)" />
+			<Socket Names="Trailer, LogTrailer" Offset="(-5.325; 0.916; 0.000)" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="LogLift" NamesBlock="MetalDetector, MinicraneUS" Offset="(-0.433; 1.235; 0)">
@@ -484,7 +484,7 @@
 			<Socket Names="internationalPaystar5070Sticker_Roof" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="internationalPaystar5070Sticker_Capote" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="internationalPaystar5070Sticker_Capote" ParentFrame="BoneCabin_cdt" InCockpit="true" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket

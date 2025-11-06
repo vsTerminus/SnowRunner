@@ -1,0 +1,272 @@
+<_templates Include="trucks" >
+	<Body>
+		<Extinguisher
+			Collisions="None"
+			CenterOfMassOffset="(0; 0; 0)"
+			Mass="1"
+		>
+			<Constraint
+				AxisLocal="(0; 0; 1)"
+				Type="Hinge"
+				MinLimit="0"
+				MaxLimit="20"
+			>
+				<Motor Damping="0.2" Spring="0.2" Type="Spring" />
+			</Constraint>
+		</Extinguisher>
+		<Mudguard
+			Collisions="Default"
+			CenterOfMassOffset="(0; 0; 0)"
+			Mass="2"
+		>
+			<Constraint
+				AxisLocal="(0; 0; 1)"
+				Type="Hinge"
+				MinLimit="-15"
+				MaxLimit="15"
+			>
+				<Motor Damping="1" Spring="1" Type="Spring" />
+			</Constraint>
+		</Mudguard>
+		<Boot
+			Collisions="All"
+			CenterOfMassOffset="(0; -0.05; 0)"
+			Mass="5"
+		>
+			<Constraint
+				AxisLocal="(1; 0; 0)"
+				Type="Hinge"
+				MinLimit="-4"
+				MaxLimit="4"
+			>
+				<Motor Damping="3" Spring="3" Type="Spring" />
+			</Constraint>
+		</Boot>
+	</Body>
+</_templates>
+<TruckAddon>
+	<TruckData
+		FuelCapacity="900"
+		RepairsCapacity="500"
+		WheelRepairsCapacity="3"
+	/>
+	<Rotator
+		Frame="BoneRotatorF"
+		EngineTorqueFactor="0" 
+		RotationSpeed="4"
+		RotationAxis="(0; 1; 0)"
+	/>
+	<Rotator
+		Frame="BoneRotatorBR"
+		EngineTorqueFactor="0" 
+		RotationSpeed="4"
+		RotationAxis="(0; 1; 0)"
+	/>
+	<Rotator
+		Frame="BoneRotatorBL"
+		EngineTorqueFactor="0" 
+		RotationSpeed="4"
+		RotationAxis="(0; 1; 0)"
+	/>
+	<PhysicsModel Mesh="trucks/addons/cat_770g_service" >
+		<NetSync Legacy="true" />
+		<Body Mass="2200">
+			<Constraint Type="Rigid" />
+			<Body
+				Collisions="Default"
+				CenterOfMassOffset="(0; 0; 0)"
+				Mass="2"
+				ModelFrame="BoneHandle_cdt"
+			>
+				<Constraint
+					AxisLocal="(0; 0; 1)"
+					Type="Hinge"
+					MinLimit="-3"
+					MaxLimit="3"
+				>
+					<Motor Damping="1" Spring="1" Type="Spring" />
+				</Constraint>
+			</Body>
+			<Body
+				Collisions="Default"
+				CenterOfMassOffset="(0.05; 0; 0)"
+				Mass="2"
+				ModelFrame="BoneTube_cdt"
+			>
+				<Constraint
+					Cone="12"
+					PivotOffset="(0; 0; 0)"
+					PlaneAxisLocal="(0; 0; 1)"
+					TwistAxisLocal="(0; 1; 0)"
+					Type="Ragdoll"
+					PlaneMin="-15"
+					TwistMin="-5"
+					PlaneMax="10"
+					TwistMax="5"
+				>
+					<TwistMotor Damping="3" Spring="1" Type="Spring" />
+					<PlaneMotor Damping="3" Spring="1" Type="Spring" />
+					<ConeMotor Damping="3" Spring="1" Type="Spring" />
+				</Constraint>
+			</Body>
+			<Body _template="Extinguisher" ModelFrame="BoneExtinguisher1_cdt" />
+			<Body _template="Extinguisher" ModelFrame="BoneExtinguisher2_cdt" />
+			<Body _template="Mudguard" ModelFrame="BoneMudguardR_cdt" />
+			<Body _template="Mudguard" ModelFrame="BoneMudguardL_cdt" />
+			<Body _template="Boot" CenterOfMassOffset="(0; 0; -0.068)" ModelFrame="BoneBootL_cdt" />
+			<Body _template="Boot" CenterOfMassOffset="(0; 0; 0.068)" ModelFrame="BoneBootR_cdt" />
+		</Body>
+	</PhysicsModel>
+	
+	<ModelAttachments>
+		<StopSignals>
+			<Light _template="StopSignal" Pos="(-3.944; 4.038; 0.000)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.3" Size="0.3" Pos="(-3.944; 4.038; 1.052)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.3" Size="0.3" Pos="(-3.944; 4.038; -1.052)" ParentFrame="BoneRoot_cdt" />
+		</StopSignals>
+		<ReverseSignals>
+			<Light _template="ReverseSignal" Pos="(-3.944; 4.038; 0.000)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="ReverseSignal" Color="g(245; 235; 220) x 0.6" Dir="(-1; 0; 0)" Size="0.4" Pos="(-3.944; 4.038; 0.888)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="ReverseSignal" Color="g(245; 235; 220) x 0.6" Dir="(-1; 0; 0)" Size="0.4" Pos="(-3.944; 4.038; -0.888)" ParentFrame="BoneRoot_cdt" />
+			
+			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.05" Dir="(-1; 0; 0)" Size="0.4" Pos="(-3.944; 4.038; 0.888)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.05" Dir="(-1; 0; 0)" Size="0.4" Pos="(-3.944; 4.038; -0.888)" ParentFrame="BoneRoot_cdt" />
+		</ReverseSignals>
+		<Ignition>
+			<Light _template="StopSignal" Pos="(-3.944; 4.038; 0.000)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.3" Size="0.3" Pos="(-3.944; 4.038; 1.052)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.3" Size="0.3" Pos="(-3.944; 4.038; -1.052)" ParentFrame="BoneRoot_cdt" />
+			<!-- FRONT RIGHT -->
+			<Flare _template="LED" Dir="(1; 0; 0)" Size="0.03" Color="g(141; 133; 117) x 1.3" Pos="(0.789; 4.001; -1.636)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="LED" Dir="(1; 0; 0)" Size="0.03" Color="g(141; 133; 117) x 1.3" Pos="(0.789; 4.001; -1.618)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="LED" Dir="(1; 0; 0)" Size="0.03" Color="g(141; 133; 117) x 1.3" Pos="(0.789; 4.001; -1.599)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="LED" Dir="(1; 0; 0)" Size="0.15" Color="g(141; 133; 117) x 0.8" Pos="(0.789; 4.001; -1.618)" ParentFrame="BoneRoot_cdt" />
+
+			<Flare _template="LED" Dir="(1; 0; 0)" Size="0.03" Color="g(141; 133; 117) x 1.3" Pos="(0.789; 4.001; -1.537)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="LED" Dir="(1; 0; 0)" Size="0.03" Color="g(141; 133; 117) x 1.3" Pos="(0.789; 4.001; -1.518)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="LED" Dir="(1; 0; 0)" Size="0.03" Color="g(141; 133; 117) x 1.3" Pos="(0.789; 4.001; -1.499)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="LED" Dir="(1; 0; 0)" Size="0.15" Color="g(141; 133; 117) x 0.8" Pos="(0.789; 4.001; -1.518)" ParentFrame="BoneRoot_cdt" />
+			<!-- FRONT LEFT -->
+			<Flare _template="LED" Dir="(1; 0; 0)" Size="0.03" Color="g(141; 133; 117) x 1.3" Pos="(0.789; 4.001; 1.607)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="LED" Dir="(1; 0; 0)" Size="0.03" Color="g(141; 133; 117) x 1.3" Pos="(0.789; 4.001; 1.626)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="LED" Dir="(1; 0; 0)" Size="0.03" Color="g(141; 133; 117) x 1.3" Pos="(0.789; 4.001; 1.645)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="LED" Dir="(1; 0; 0)" Size="0.15" Color="g(141; 133; 117) x 0.8" Pos="(0.789; 4.001; 1.626)" ParentFrame="BoneRoot_cdt" />
+			<!-- MIDDLE RIGHT -->
+			<Flare _template="LED" Dir="(-1; 0; 0)" Size="0.03" Color="g(141; 133; 117) x 1.3" Pos="(-1.492; 4.139; 1.610)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="LED" Dir="(-1; 0; 0)" Size="0.03" Color="g(141; 133; 117) x 1.3" Pos="(-1.492; 4.139; 1.591)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="LED" Dir="(-1; 0; 0)" Size="0.03" Color="g(141; 133; 117) x 1.3" Pos="(-1.492; 4.139; 1.572)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="LED" Dir="(-1; 0; 0)" Size="0.15" Color="g(141; 133; 117) x 0.8" Pos="(-1.492; 4.139; 1.591)" ParentFrame="BoneRoot_cdt" />
+			<!-- MIDDLE LEFT -->
+			<Flare _template="LED" Dir="(-1; 0; 0)" Size="0.03" Color="g(141; 133; 117) x 1.3" Pos="(-1.492; 4.139; -1.610)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="LED" Dir="(-1; 0; 0)" Size="0.03" Color="g(141; 133; 117) x 1.3" Pos="(-1.492; 4.139; -1.591)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="LED" Dir="(-1; 0; 0)" Size="0.03" Color="g(141; 133; 117) x 1.3" Pos="(-1.492; 4.139; -1.572)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="LED" Dir="(-1; 0; 0)" Size="0.15" Color="g(141; 133; 117) x 0.8" Pos="(-1.492; 4.139; -1.591)" ParentFrame="BoneRoot_cdt" />
+			<!-- REAR RIGHT -->
+			<Flare _template="LED" Dir="(-1; 0; 0)" Size="0.03" Color="g(141; 133; 117) x 1.3" Pos="(-3.948; 4.204; 1.035)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="LED" Dir="(-1; 0; 0)" Size="0.03" Color="g(141; 133; 117) x 1.3" Pos="(-3.948; 4.204; 1.016)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="LED" Dir="(-1; 0; 0)" Size="0.03" Color="g(141; 133; 117) x 1.3" Pos="(-3.948; 4.204; 0.997)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="LED" Dir="(-1; 0; 0)" Size="0.15" Color="g(141; 133; 117) x 0.8" Pos="(-3.948; 4.204; 1.016)" ParentFrame="BoneRoot_cdt" />
+			
+			<Flare _template="LED" Dir="(-1; 0; 0)" Size="0.03" Color="g(141; 133; 117) x 1.3" Pos="(-3.948; 4.204; 0.936)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="LED" Dir="(-1; 0; 0)" Size="0.03" Color="g(141; 133; 117) x 1.3" Pos="(-3.948; 4.204; 0.917)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="LED" Dir="(-1; 0; 0)" Size="0.03" Color="g(141; 133; 117) x 1.3" Pos="(-3.948; 4.204; 0.898)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="LED" Dir="(-1; 0; 0)" Size="0.15" Color="g(141; 133; 117) x 0.8" Pos="(-3.948; 4.204; 0.917)" ParentFrame="BoneRoot_cdt" />
+			<!-- REAR LEFT -->	
+			<Flare _template="LED" Dir="(-1; 0; 0)" Size="0.03" Color="g(141; 133; 117) x 1.3" Pos="(-3.948; 4.204; -1.035)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="LED" Dir="(-1; 0; 0)" Size="0.03" Color="g(141; 133; 117) x 1.3" Pos="(-3.948; 4.204; -1.016)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="LED" Dir="(-1; 0; 0)" Size="0.03" Color="g(141; 133; 117) x 1.3" Pos="(-3.948; 4.204; -0.997)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="LED" Dir="(-1; 0; 0)" Size="0.15" Color="g(141; 133; 117) x 0.8" Pos="(-3.948; 4.204; -1.016)" ParentFrame="BoneRoot_cdt" />
+			
+			<Flare _template="LED" Dir="(-1; 0; 0)" Size="0.03" Color="g(141; 133; 117) x 1.3" Pos="(-3.948; 4.204; -0.936)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="LED" Dir="(-1; 0; 0)" Size="0.03" Color="g(141; 133; 117) x 1.3" Pos="(-3.948; 4.204; -0.917)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="LED" Dir="(-1; 0; 0)" Size="0.03" Color="g(141; 133; 117) x 1.3" Pos="(-3.948; 4.204; -0.898)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="LED" Dir="(-1; 0; 0)" Size="0.15" Color="g(141; 133; 117) x 0.8" Pos="(-3.948; 4.204; -0.917)" ParentFrame="BoneRoot_cdt" />
+		</Ignition>
+		
+		<Ignition _template="Flasher">
+			<Model
+				Color="g(255; 235; 205) x 0.55"
+				Dir="(1; 0; 0)"
+				Org="(0.836; 4.392; -0.005)"
+				Scale="(0.19; 0.19; 0.19)"
+				ParentFrame="BoneRotatorF"
+				Reflections="false"
+			/>
+			<Light Dir="(1; 0; 0)" Pos="(0.836; 4.392; -0.005)" ParentFrame="BoneRotatorF" />
+			<Flare Color="g(255; 235; 205) x 0.3" Size="0.28" Dir="(1; 0; 0)" Pos="(0.836; 4.392; -0.005)" ParentFrame="BoneRotatorF" />
+			<Flare Color="g(255; 205; 56) x 0.5" Size="0.28" Dir="(1; 0; 0)" Pos="(0.891; 4.392; -0.005)" ParentFrame="BoneRotatorF" />
+			<Flare Color="g(255; 205; 56) x 0.5" Size="0.28" Pos="(0.891; 4.392; -0.005)" ParentFrame="BoneRotatorF" />
+		</Ignition>
+		
+		<Ignition _template="Flasher">
+			<Model
+				Color="g(255; 235; 205) x 0.55"
+				Dir="(0; 0; -1)"
+				Org="(-3.989; 4.383; -0.962)"
+				Scale="(0.19; 0.19; 0.19)"
+				ParentFrame="BoneRotatorBR"
+				Reflections="false"
+			/>
+			<Light Dir="(0; 0; -1)" Pos="(-3.989; 4.383; -0.962)" ParentFrame="BoneRotatorBR" />
+			<Flare Color="g(255; 235; 205) x 0.3" Size="0.28" Dir="(0; 0; -1)" Pos="(-3.989; 4.383; -0.962)" ParentFrame="BoneRotatorBR" />
+			<Flare Color="g(255; 205; 56) x 0.5" Size="0.28" Dir="(0; 0; -1)" Pos="(-3.989; 4.383; -1.019)" ParentFrame="BoneRotatorBR" />
+			<Flare Color="g(255; 205; 56) x 0.5" Size="0.28" Pos="(-3.989; 4.383; -1.019)" ParentFrame="BoneRotatorBR" />
+		</Ignition>
+		
+		<Ignition _template="Flasher">
+			<Model
+				Color="g(255; 235; 205) x 0.55"
+				Dir="(0; 0; 1)"
+				Org="(-3.989; 4.383; 0.962)"
+				Scale="(0.19; 0.19; 0.19)"
+				ParentFrame="BoneRotatorBL"
+				Reflections="false"
+			/>
+			<Light Dir="(0; 0; 1)" Pos="(-3.989; 4.383; 0.962)" ParentFrame="BoneRotatorBL" />
+			<Flare Color="g(255; 235; 205) x 0.3" Size="0.28" Dir="(0; 0; 1)" Pos="(-3.989; 4.383; 0.962)" ParentFrame="BoneRotatorBL" />
+			<Flare Color="g(255; 205; 56) x 0.5" Size="0.28" Dir="(0; 0; 1)" Pos="(-3.989; 4.383; 1.019)" ParentFrame="BoneRotatorBL" />
+			<Flare Color="g(255; 205; 56) x 0.5" Size="0.28" Pos="(-3.989; 4.383; 1.019)" ParentFrame="BoneRotatorBL" />
+		</Ignition>
+		
+	</ModelAttachments>
+	
+	<GameData
+		CameraPreset="addon_1"
+		Category="frame_addons"
+		IsCustomizable="true"
+		Price="7500"
+		UnlockByExploration="false"
+		UnlockByRank="12"
+	>
+	
+		<WinchSocket FixedToTruck="true" Pos="(0.573; 4.295; 1.670)" />
+		<WinchSocket FixedToTruck="true" Pos="(0.573; 4.295; -1.670)" />
+		<WinchSocket FixedToTruck="true" Pos="(-1.281; 4.295; 1.670)" />
+		<WinchSocket FixedToTruck="true" Pos="(-1.281; 4.295; -1.670)" />
+		<WinchSocket FixedToTruck="true" Pos="(-2.863; 4.344; 1.070)" />
+		<WinchSocket FixedToTruck="true" Pos="(-2.863; 4.344; -1.070)" />
+		<WinchSocket FixedToTruck="true" Pos="(-3.766; 4.344; 1.070)" />
+		<WinchSocket FixedToTruck="true" Pos="(-3.766; 4.344; -1.070)" />
+		<WinchSocket FixedToTruck="true" Pos="(-4.164; 1.130; 2.010)" />
+		<WinchSocket FixedToTruck="true" Pos="(-4.164; 1.130; -2.010)" />
+		
+		<CraneSocket FixedToTruck="true" Pos="(0.573; 4.295; 1.670)" />
+		<CraneSocket FixedToTruck="true" Pos="(0.573; 4.295; -1.670)" />
+		<CraneSocket FixedToTruck="true" Pos="(-1.281; 4.295; 1.670)" />
+		<CraneSocket FixedToTruck="true" Pos="(-1.281; 4.295; -1.670)" />
+		<CraneSocket FixedToTruck="true" Pos="(-2.863; 4.344; 1.070)" />
+		<CraneSocket FixedToTruck="true" Pos="(-2.863; 4.344; -1.070)" />
+		<CraneSocket FixedToTruck="true" Pos="(-3.766; 4.344; 1.070)" />
+		<CraneSocket FixedToTruck="true" Pos="(-3.766; 4.344; -1.070)" />
+		<CraneSocket FixedToTruck="true" Pos="(-4.164; 1.130; 2.010)" />
+		<CraneSocket FixedToTruck="true" Pos="(-4.164; 1.130; -2.010)" />
+	
+		<UiDesc
+			UiDesc="UI_ADDON_FRAME_MAINTAINER_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_ADDON_FRAME_MAINTAINER_NAME"
+		/>
+		<InstallSocket Type="Cat770GService" />
+	</GameData>
+</TruckAddon>

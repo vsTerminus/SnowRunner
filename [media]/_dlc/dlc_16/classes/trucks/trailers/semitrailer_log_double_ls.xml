@@ -25,20 +25,20 @@
 <Truck Type="Trailer" AttachType="Saddle">
 	<TruckData>
 		<Wheels>
-			<Wheel _template="TrailerWheel" Pos="(3.593; 0.535; 1.0)" ParentFrame="BoneFrontAxle1" />
-			<Wheel _template="TrailerWheel" RightSide="true" Pos="(3.593; 0.535; 1.0)" ParentFrame="BoneFrontAxle1" />
+			<Wheel _template="TrailerWheel" Pos="(3.593; 0.635; 1.0)" ParentFrame="BoneFrontAxle1" />
+			<Wheel _template="TrailerWheel" RightSide="true" Pos="(3.593; 0.635; 1.0)" ParentFrame="BoneFrontAxle1" />
 			
-			<Wheel _template="TrailerWheel" Pos="(2.125; 0.535; 1.0)" ParentFrame="BoneFrontAxle2" />
-			<Wheel _template="TrailerWheel" RightSide="true" Pos="(2.125; 0.535; 1.0)" ParentFrame="BoneFrontAxle2" />
+			<Wheel _template="TrailerWheel" Pos="(2.125; 0.635; 1.0)" ParentFrame="BoneFrontAxle2" />
+			<Wheel _template="TrailerWheel" RightSide="true" Pos="(2.125; 0.635; 1.0)" ParentFrame="BoneFrontAxle2" />
 			
-			<Wheel _template="TrailerWheel" Pos="(-4.015; 0.535; 1.0)" />
-			<Wheel _template="TrailerWheel" RightSide="true" Pos="(-4.015; 0.535; 1.0)" />
+			<Wheel _template="TrailerWheel" Pos="(-4.015; 0.635; 1.0)" />
+			<Wheel _template="TrailerWheel" RightSide="true" Pos="(-4.015; 0.635; 1.0)" />
 			
-			<Wheel _template="TrailerWheel" Pos="(-5.487; 0.535; 1.0)" />
-			<Wheel _template="TrailerWheel" RightSide="true" Pos="(-5.487; 0.535; 1.0)" />
+			<Wheel _template="TrailerWheel" Pos="(-5.487; 0.635; 1.0)" />
+			<Wheel _template="TrailerWheel" RightSide="true" Pos="(-5.487; 0.635; 1.0)" />
 
-			<Wheel _template="TrailerWheel" Pos="(-6.957; 0.535; 1.0)" />
-			<Wheel _template="TrailerWheel" RightSide="true" Pos="(-6.957; 0.535; 1.0)" />
+			<Wheel _template="TrailerWheel" Pos="(-6.957; 0.635; 1.0)" />
+			<Wheel _template="TrailerWheel" RightSide="true" Pos="(-6.957; 0.635; 1.0)" />
 		</Wheels>
 		<OcclusionMap
 			HalfSizeZ="2"
@@ -65,6 +65,8 @@
 			<Axle Frame="BoneRearAxle2" />
 			<Axle Frame="BoneRearAxle3" />
 		</Axles>
+		<Foot Origin="(7.75; -0.17;  0.7)" ParentFrame="BoneFrontPart_cdt" />
+		<Foot Origin="(7.75; -0.17; -0.7)" ParentFrame="BoneFrontPart_cdt" />
 	</TruckData>
 	<PoweredConstraints>
 		<Group Id="_trailer_foot">
@@ -73,7 +75,7 @@
 				Name="Leg"
 				Tau="0.04"
 				TerminalFix="true"
-				Position="0.65"
+				Position="0.50"
 			/>
 		</Group>
 	</PoweredConstraints>
@@ -88,6 +90,7 @@
 			<Body _template="Mudguard" ModelFrame="BoneMudguardRearRight_cdt" />
 			<Body Mass="2000" ModelFrame="BoneFrontPart_cdt">
 				<Constraint
+					Name="SLDL_RagDoll"
 					Type="Ragdoll"
 					TwistAxisLocal="(1; 0; 0)" 
 					PlaneAxisLocal="(0; 0; 1)" 
@@ -118,7 +121,7 @@
 						Name="Leg"
 						Type="Prismatic"
 						MinLimit="0.0"
-						MaxLimit="0.82"
+						MaxLimit="0.50"
 					>
 						<Motor Force="70000" Type="Position" />
 					</Constraint>
@@ -128,6 +131,7 @@
 					NoFoliageCollisions="true"
 					>
 						<Constraint
+							Name="SLDL_Hinge"
 							AxisLocal="(0; 0; 1)"
 							Type="Hinge"
 							MinLimit="-20"
@@ -142,42 +146,42 @@
 	</PhysicsModel>
 	<ModelAttachments>
 		<StopSignals>
-			<Light _template="StopSignal" Pos="(-8.2; 1; 0)" ParentFrame="BoneBase_cdt" />
-			<Flare _template="StopSignal" Size="0.7" Pos="(-7.998; 0.997; 0.581)" ParentFrame="BoneBase_cdt" />
-			<Flare _template="StopSignal" Size="0.7" Pos="(-7.998; 0.997; -0.581)" ParentFrame="BoneBase_cdt" />
+			<Light _template="StopSignal" Pos="(-8.2; 1.1; 0)" ParentFrame="BoneBase_cdt" />
+			<Flare _template="StopSignal" Size="0.7" Pos="(-7.998; 1.097; 0.581)" ParentFrame="BoneBase_cdt" />
+			<Flare _template="StopSignal" Size="0.7" Pos="(-7.998; 1.097; -0.581)" ParentFrame="BoneBase_cdt" />
 		</StopSignals>
 		<ReverseSignals>
-			<Light _template="ReverseSignal" Pos="(-8.2; 0.5; 0)" ParentFrame="BoneBase_cdt" />
-			<Flare _template="ReverseSignal" Size="0.5" Pos="(-8.049; 1.000; 0.290)" ParentFrame="BoneBase_cdt" />
-			<Flare _template="ReverseSignal" Size="0.5" Pos="(-8.049; 1.000; -0.290)" ParentFrame="BoneBase_cdt" />
-			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.05" Dir="(-1; 0; 0)" Size="0.4" Pos="(-8.049; 1.000; 0.290)" ParentFrame="BoneBase_cdt" />
-			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.05" Dir="(-1; 0; 0)" Size="0.4" Pos="(-8.049; 1.000; -0.290)" ParentFrame="BoneBase_cdt" />
+			<Light _template="ReverseSignal" Pos="(-8.2; 0.6; 0)" ParentFrame="BoneBase_cdt" />
+			<Flare _template="ReverseSignal" Size="0.5" Pos="(-8.049; 1.100; 0.290)" ParentFrame="BoneBase_cdt" />
+			<Flare _template="ReverseSignal" Size="0.5" Pos="(-8.049; 1.100; -0.290)" ParentFrame="BoneBase_cdt" />
+			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.05" Dir="(-1; 0; 0)" Size="0.4" Pos="(-8.049; 1.100; 0.290)" ParentFrame="BoneBase_cdt" />
+			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.05" Dir="(-1; 0; 0)" Size="0.4" Pos="(-8.049; 1.100; -0.290)" ParentFrame="BoneBase_cdt" />
 		</ReverseSignals>
 		<Ignition>
-			<Flare _template="IgnitionSignalOrange" Size="0.5" Pos="(1.100; 0.997; 1.269)" ParentFrame="BoneFrontPart_cdt" />
-			<Flare _template="IgnitionSignalOrange" Size="0.5" Pos="(1.100; 0.997; 0.814)" ParentFrame="BoneFrontPart_cdt" />
-			<Flare _template="IgnitionSignalOrange" Size="0.5" Pos="(1.100; 0.997; -1.269)" ParentFrame="BoneFrontPart_cdt" />
-			<Flare _template="IgnitionSignalOrange" Size="0.5" Pos="(1.100; 0.997; -0.814)" ParentFrame="BoneFrontPart_cdt" />
-			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.7" Size="0.5" Pos="(1.100; 0.997; 1.044)" ParentFrame="BoneFrontPart_cdt" />
-			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.7" Size="0.5" Pos="(1.100; 0.997; 0.581)" ParentFrame="BoneFrontPart_cdt" />
-			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.7" Size="0.5" Pos="(1.100; 0.997; -1.044)" ParentFrame="BoneFrontPart_cdt" />
-			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.7" Size="0.5" Pos="(1.100; 0.997; -0.581)" ParentFrame="BoneFrontPart_cdt" />
+			<Flare _template="IgnitionSignalOrange" Size="0.5" Pos="(1.100; 1.097; 1.269)" ParentFrame="BoneFrontPart_cdt" />
+			<Flare _template="IgnitionSignalOrange" Size="0.5" Pos="(1.100; 1.097; 0.814)" ParentFrame="BoneFrontPart_cdt" />
+			<Flare _template="IgnitionSignalOrange" Size="0.5" Pos="(1.100; 1.097; -1.269)" ParentFrame="BoneFrontPart_cdt" />
+			<Flare _template="IgnitionSignalOrange" Size="0.5" Pos="(1.100; 1.097; -0.814)" ParentFrame="BoneFrontPart_cdt" />
+			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.7" Size="0.5" Pos="(1.100; 1.097; 1.044)" ParentFrame="BoneFrontPart_cdt" />
+			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.7" Size="0.5" Pos="(1.100; 1.097; 0.581)" ParentFrame="BoneFrontPart_cdt" />
+			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.7" Size="0.5" Pos="(1.100; 1.097; -1.044)" ParentFrame="BoneFrontPart_cdt" />
+			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.7" Size="0.5" Pos="(1.100; 1.097; -0.581)" ParentFrame="BoneFrontPart_cdt" />
 		
-			<Light _template="IgnitionSignalRed" Pos="(-4.852; 1.180; 0)" ParentFrame="BoneBase_cdt" />
-			<Flare _template="IgnitionSignalOrange" Size="0.5" Pos="(-7.989; 0.997; 1.269)" ParentFrame="BoneBase_cdt" />
-			<Flare _template="IgnitionSignalOrange" Size="0.5" Pos="(-7.997; 0.997; 0.814)" ParentFrame="BoneBase_cdt" />
-			<Flare _template="IgnitionSignalOrange" Size="0.5" Pos="(-7.989; 0.997; -1.269)" ParentFrame="BoneBase_cdt" />
-			<Flare _template="IgnitionSignalOrange" Size="0.5" Pos="(-7.997; 0.997; -0.814)" ParentFrame="BoneBase_cdt" />
-			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.7" Size="0.5" Pos="(-7.994; 0.997; 1.044)" ParentFrame="BoneBase_cdt" />
-			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.7" Size="0.5" Pos="(-7.998; 0.997; 0.581)" ParentFrame="BoneBase_cdt" />
-			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.7" Size="0.5" Pos="(-7.994; 0.997; -1.044)" ParentFrame="BoneBase_cdt" />
-			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.7" Size="0.5" Pos="(-7.998; 0.997; -0.581)" ParentFrame="BoneBase_cdt" />
+			<Light _template="IgnitionSignalRed" Pos="(-4.852; 1.280; 0)" ParentFrame="BoneBase_cdt" />
+			<Flare _template="IgnitionSignalOrange" Size="0.5" Pos="(-7.989; 1.097; 1.269)" ParentFrame="BoneBase_cdt" />
+			<Flare _template="IgnitionSignalOrange" Size="0.5" Pos="(-7.997; 1.097; 0.814)" ParentFrame="BoneBase_cdt" />
+			<Flare _template="IgnitionSignalOrange" Size="0.5" Pos="(-7.989; 1.097; -1.269)" ParentFrame="BoneBase_cdt" />
+			<Flare _template="IgnitionSignalOrange" Size="0.5" Pos="(-7.997; 1.097; -0.814)" ParentFrame="BoneBase_cdt" />
+			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.7" Size="0.5" Pos="(-7.994; 1.097; 1.044)" ParentFrame="BoneBase_cdt" />
+			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.7" Size="0.5" Pos="(-7.998; 1.097; 0.581)" ParentFrame="BoneBase_cdt" />
+			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.7" Size="0.5" Pos="(-7.994; 1.097; -1.044)" ParentFrame="BoneBase_cdt" />
+			<Flare _template="IgnitionSignalRed" Color="g(169; 0; 0) x 0.7" Size="0.5" Pos="(-7.998; 1.097; -0.581)" ParentFrame="BoneBase_cdt" />
 		</Ignition>
 	</ModelAttachments>
 	<Landmark Mesh="landmarks/semitrailer_log_double_ls_lmk" MinScale="1.2" MaxScale="2.2" />
 	<GameData
         Price="11700"
-        ResetTruckAfterGateway="true" 
+        ResetTruckAfterGateway="true"
         isDoubleTrailer="true"
 		IncludedCargoTypes="CargoLogsShort, CargoLogsLong"
     >
@@ -188,35 +192,35 @@
 			UiName="UI_SEMITRAILER_LONG_DOUBLE_LOG_NAME"
 		/>
 		
-		<WinchSocket Pos="(8.538; 1.597; 0.606)" ParentFrame="BoneFrontPart_cdt"/>
-		<WinchSocket Pos="(8.538; 1.597; -0.606)" ParentFrame="BoneFrontPart_cdt"/>
-		<WinchSocket Pos="(1.356; 1.597; 0.606)" />
-		<WinchSocket Pos="(1.356; 1.597; -0.606)" />
-		<WinchSocket Pos="(-7.756; 1.561; 0.495)" />
-		<WinchSocket Pos="(-7.756; 1.561; -0.495)" />
+		<WinchSocket Pos="(8.538; 1.697; 0.606)" ParentFrame="BoneFrontPart_cdt"/>
+		<WinchSocket Pos="(8.538; 1.697; -0.606)" ParentFrame="BoneFrontPart_cdt"/>
+		<WinchSocket Pos="(1.356; 1.697; 0.606)" />
+		<WinchSocket Pos="(1.356; 1.697; -0.606)" />
+		<WinchSocket Pos="(-7.756; 1.661; 0.495)" />
+		<WinchSocket Pos="(-7.756; 1.661; -0.495)" />
 		
-		<CraneSocket Pos="(8.538; 1.597; 0.606)" ParentFrame="BoneFrontPart_cdt"/>
-		<CraneSocket Pos="(8.538; 1.597; -0.606)" ParentFrame="BoneFrontPart_cdt"/>
-		<CraneSocket Pos="(1.356; 1.597; 0.606)" />
-		<CraneSocket Pos="(1.356; 1.597; -0.606)" />
-		<CraneSocket Pos="(-7.756; 1.561; 0.495)" />
-		<CraneSocket Pos="(-7.756; 1.561; -0.495)" />
-		<LoadArea Subtype="SemitrailerLogShortLs" TrailerLoad="true" Type="CargoLogsShort" Min="(5.202, 2.029, -1.179)" Max="(7.855, 4.437, 1.179)" ParentFrame="BoneFrontPart_cdt" />
-		<LoadArea Subtype="SemitrailerLogShortLs" TrailerLoad="true" Type="CargoLogsShort" Min="(7.6855, 2.029, -1.179)" Max="(10.507, 4.437, 1.179)" ParentFrame="BoneFrontPart_cdt" />
-		<LoadArea Subtype="SemitrailerLogLongLs" TrailerLoad="true" Type="CargoLogsLong" Min="(-8.696, 2.029, -1.179)" Max="(-3, 4.437, 1.179)" ParentFrame="BoneBase_cdt" />
-		<LoadArea Subtype="SemitrailerLogLongLs" TrailerLoad="true" Type="CargoLogsLong" Min="(-1, 2.029, -1.179)" Max="(3.979, 4.437, 1.179)" ParentFrame="BoneBase_cdt" />
+		<CraneSocket Pos="(8.538; 1.697; 0.606)" ParentFrame="BoneFrontPart_cdt"/>
+		<CraneSocket Pos="(8.538; 1.697; -0.606)" ParentFrame="BoneFrontPart_cdt"/>
+		<CraneSocket Pos="(1.356; 1.697; 0.606)" />
+		<CraneSocket Pos="(1.356; 1.697; -0.606)" />
+		<CraneSocket Pos="(-7.756; 1.661; 0.495)" />
+		<CraneSocket Pos="(-7.756; 1.661; -0.495)" />
+		<LoadArea Subtype="SemitrailerLogShortLs" TrailerLoad="true" Type="CargoLogsShort" Min="(5.202, 2.129, -1.179)" Max="(7.855, 4.537, 1.179)" ParentFrame="BoneFrontPart_cdt" />
+		<LoadArea Subtype="SemitrailerLogShortLs" TrailerLoad="true" Type="CargoLogsShort" Min="(7.6855, 2.129, -1.179)" Max="(10.507, 4.537, 1.179)" ParentFrame="BoneFrontPart_cdt" />
+		<LoadArea Subtype="SemitrailerLogLongLs" TrailerLoad="true" Type="CargoLogsLong" Min="(-8.696, 2.129, -1.179)" Max="(-3, 4.537, 1.179)" ParentFrame="BoneBase_cdt" />
+		<LoadArea Subtype="SemitrailerLogLongLs" TrailerLoad="true" Type="CargoLogsLong" Min="(-1, 2.129, -1.179)" Max="(3.979, 4.537, 1.179)" ParentFrame="BoneBase_cdt" />
 		
 		<RequiredAddon _template="SaddleLow" />
 		<InstallSocket Offset="(10.03; 1.385; 0)" Type="Semitrailer" ParentFrame="BoneFrontPart_cdt" />
 		<AddonSlots
-			InitialOffset="(7.9; 0.2; 0)"
+			InitialOffset="(7.9; 0.3; 0)"
 			OffsetStep="(5; 0; 0)"
 			ParentFrame="BoneFrontPart_cdt"
 			Quantity="1"
             AllowedCargo="CargoLogsShort"
 		/>
 		<AddonSlots
-			InitialOffset="(-2.5; 0.2; 0)"
+			InitialOffset="(-2.5; 0.3; 0)"
 			OffsetStep="(11; 0; 0)"
 			ParentFrame="BoneBase_cdt"
 			Quantity="1"

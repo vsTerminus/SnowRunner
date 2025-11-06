@@ -1,0 +1,7 @@
+<_parent File="sticker_capote_1x1_ford_f750" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/avenhorn_a15_stuff/sticker_capote_r_1x1_avenhorn_a15" />
+	<GameData>
+			<InstallSocket Type="AvenhornA15Sticker_Capote_R" />
+	</GameData>
+</TruckAddon>

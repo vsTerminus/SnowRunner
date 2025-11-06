@@ -1,0 +1,37 @@
+<TruckAddon>
+	<WheelRepairsHide>
+		<Mesh Frame="wheels" HideThreshold="0.0" />
+	</WheelRepairsHide>
+	<TruckData
+		FuelCapacity="120"
+		RepairsCapacity="450"
+		WheelRepairsCapacity="6"
+	/>
+	<RepairsHide>
+		<Mesh Frame="repairs" HideThreshold="0.0" />
+	</RepairsHide>
+	<PhysicsModel Mesh="trucks/international_scout_800_tuning/international_scout_800_trunk_stuff">
+		<Body Mass="180" ModelFrame="BoneAddon_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="addon_1"
+		Category="frame_addons"
+		Price="1700"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SCOUT_TRUNK_SUPPLIES_BIG_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SCOUT_TRUNK_SUPPLIES_BIG_NAME"
+		/>
+		<InstallSocket Type="InternationalScout800TrunkStuff" />
+	</GameData>
+	<FuelHide>
+		<Mesh Frame="fuel01" HideThreshold="0.5" />
+		<Mesh Frame="fuel02" HideThreshold="0.0" />
+	</FuelHide>
+</TruckAddon>

@@ -2,12 +2,12 @@
 	<Body>
 		<Limits Collisions="None">
 			<Constraint
-				LinearLimitsX="(-.01;0.03)"
-				LinearLimitsY="(0;0.04)"
-				LinearLimitsZ="(-.01;0.01)"
+				LinearLimitsX="(-.005;0.005)"
+				LinearLimitsY="(0;00)"
+				LinearLimitsZ="(-.005;0.005)"
 				Type="Fixed"
 			>
-				<Motor Damping="10" Spring="0.001" Type="Spring" />
+				<Motor Damping="150" Spring="12000" Type="Spring" />
 			</Constraint>
 		</Limits>
 	</Body>
@@ -29,7 +29,7 @@
 	<TruckData
 		FuelCapacity="80"
 		RepairsCapacity="150"
-		WheelRepairsCapacity="4"
+		WheelRepairsCapacity="2"
 	>
 		<LimitedFluid Center="(-1.627; 2.087; 0.294)" SizeX="0.363" SizeY="0.182" SizeZ="0.519" Type="Box" ParentFrame="BoneFuel1_cdt" />
 		<LimitedFluid Center="(-1.625; 2.087; -0.294)" SizeX="0.363" SizeY="0.182" SizeZ="0.519" Type="Box" ParentFrame="BoneFuel2_cdt" />
@@ -40,7 +40,7 @@
 		<Mesh Frame="repair" HideThreshold="0.0" />
 	</RepairsHide>
 	<PhysicsModel Mesh="trucks/chevrolet_ck1500_tuning/chevrolet_ck1500_rooftop_trunk">
-		<Body Mass="100">
+		<Body Mass="200">
 			<Constraint Type="Rigid" />
 			<Body _template="Limits" Mass="3" ModelFrame="BoneFuel1_cdt" />
 			<Body

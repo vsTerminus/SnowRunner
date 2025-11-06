@@ -535,7 +535,7 @@
 			<Socket Names="StuffHoodPlad440" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="Plad440Sticker_Capote" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="Plad440Sticker_Capote" ParentFrame="BoneCabin_cdt" InCockpit="true" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="Plad440Sticker_Door_L" ParentFrame="BoneCabin_cdt" />

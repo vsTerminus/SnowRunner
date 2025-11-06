@@ -1,0 +1,28 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/avenhorn_a15_tuning/avenhorn_a15_gabarite_1" />
+	<ModelAttachments>
+		<Ignition>
+			<Flare _template="MarkerBeacon" ColorMultAtDay="0.3" Dir="(1; 0; 0)" DirAngle="130" Size="0.4" Pos="(1.906; 3.546; 0.618)"/>
+			<Flare _template="MarkerBeacon" ColorMultAtDay="0.3" Dir="(1; 0; 0)" DirAngle="130" Size="0.4" Pos="(1.953; 3.563; 0.315)"/>
+			<Flare _template="MarkerBeacon" ColorMultAtDay="0.3" Dir="(1; 0; 0)" DirAngle="130" Size="0.4" Pos="(1.979; 3.567; 0)"/>
+			<Flare _template="MarkerBeacon" ColorMultAtDay="0.3" Dir="(1; 0; 0)" DirAngle="130" Size="0.4" Pos="(1.953; 3.563; -0.315)"/>
+			<Flare _template="MarkerBeacon" ColorMultAtDay="0.3" Dir="(1; 0; 0)" DirAngle="130" Size="0.4" Pos="(1.906; 3.546; -0.618)"/>
+		</Ignition>
+	</ModelAttachments>
+	<GameData
+		CameraPreset="roof"
+		Category="miscellenious"
+		Price="600"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_PARKINGLIGHTS_TRI_TWO_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_PARKINGLIGHTS_TRI_TWO_NAME"
+		/>
+		<InstallSocket Type="AvenhornA15Gabarite" />
+	</GameData>
+</TruckAddon>

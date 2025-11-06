@@ -384,7 +384,7 @@
 			<Socket Names="tuz166Sticker_Door_R" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="tuz166Sticker_Capote" />
+			<Socket Names="tuz166Sticker_Capote" InCockpit="true" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="StuffHoodTuz166" />

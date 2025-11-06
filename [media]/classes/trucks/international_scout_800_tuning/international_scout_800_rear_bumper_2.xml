@@ -1,6 +1,16 @@
 <_parent File="international_scout_800_rear_bumper_default" />
 <TruckAddon>
-	<PhysicsModel Mesh="trucks/international_scout_800_tuning/international_scout_800_rear_bumper_2" />
+	<TruckData>
+		<Damage>
+			<Multiplier Multiplier="0.85" Type="FuelTank" />
+			<Multiplier Multiplier="0.9" Type="Susspension" />
+		</Damage>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/international_scout_800_tuning/international_scout_800_rear_bumper_2" >
+		<Body ImpactType="Truck" Mass="15">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
 	<GameData
 		Price="1200"
 		UnlockByExploration="false"

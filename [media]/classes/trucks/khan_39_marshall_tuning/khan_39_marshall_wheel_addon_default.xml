@@ -3,7 +3,7 @@
 	<WheelRepairsHide>
 		<Mesh Frame="wheel" HideThreshold="0.0" />
 	</WheelRepairsHide>
-	<TruckData WheelRepairsCapacity="1" />
+	<TruckData WheelRepairsCapacity="2" />
 	<PhysicsModel Mesh="trucks/khan_39_marshall_tuning/khan_39_marshall_wheel_addon_default">
 		<Body ImpactType="Truck" Mass="15" ModelFrame="BoneCabin_cdt">
 			<Constraint Type="Fixed" />

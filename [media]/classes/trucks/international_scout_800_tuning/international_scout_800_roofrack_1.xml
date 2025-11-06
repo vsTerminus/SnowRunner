@@ -28,8 +28,8 @@
 	</WheelRepairsHide>
 	<TruckData
 		FuelCapacity="140"
-		RepairsCapacity="300"
-		WheelRepairsCapacity="4"
+		RepairsCapacity="150"
+		WheelRepairsCapacity="2"
 	>
 		<LimitedFluid Center="(-1.404; 1.986; 0.342)" SizeX="0.359" SizeY="0.169" SizeZ="0.470" Type="Box" />
 		<LimitedFluid Center="(-1.403; 1.986; -0.321)" SizeX="0.359" SizeY="0.169" SizeZ="0.470" Type="Box" />
@@ -43,7 +43,7 @@
 		<Mesh Frame="repair" HideThreshold="0.0" />
 	</RepairsHide>
 	<PhysicsModel Mesh="trucks/international_scout_800_tuning/international_scout_800_roofrack_1">
-		<Body Mass="200" ModelFrame="BoneCabin_cdt">
+		<Body Mass="60" ModelFrame="BoneCabin_cdt">
 			<Constraint Type="Rigid" />
 			<Body _template="TankHinge" ModelFrame="BoneTankHinge_cdt" />
 			<Body _template="TankPrismatic" ModelFrame="BonePrismatic1_cdt">

@@ -12,8 +12,13 @@
 </_templates>
 <_parent File="international_scout_800_rear_bumper_default" />
 <TruckAddon>
+	<TruckData>
+		<Damage>
+			<Multiplier Multiplier="0.9" Type="FuelTank" />
+		</Damage>
+	</TruckData>
 	<PhysicsModel Mesh="trucks/international_scout_800_tuning/international_scout_800_rear_bumper_1">
-		<Body ImpactType="Truck" Mass="10" ModelFrame="BoneChassis_cdt">
+		<Body ImpactType="Truck" Mass="14" ModelFrame="BoneChassis_cdt">
 			<Constraint Type="Rigid" />
 			<Body _template="Hitch" ModelFrame="BoneHitchLeft_cdt" />
 			<Body _template="Hitch" ModelFrame="BoneHitchRight_cdt" />

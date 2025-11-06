@@ -463,7 +463,7 @@
 			<Socket Names="Krs58BanditSticker_Roof" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="Krs58BanditSticker_Capote" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="Krs58BanditSticker_Capote" ParentFrame="BoneCabin_cdt" InCockpit="true" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="Krs58BanditSticker_Door_L" ParentFrame="BoneCabin_cdt" />

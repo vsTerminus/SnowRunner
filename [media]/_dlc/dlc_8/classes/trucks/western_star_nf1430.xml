@@ -522,7 +522,7 @@
 			<Socket Names="westernStarNf1430Sticker_Roof" ParentFrame="BoneCabinDamper_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="westernStarNf1430Sticker_Capote" ParentFrame="BoneCabinDamper_cdt" />
+			<Socket Names="westernStarNf1430Sticker_Capote" ParentFrame="BoneCabinDamper_cdt" InCockpit="true" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="westernStarNf1430Sticker_GlassBot" ParentFrame="BoneCabinDamper_cdt" />

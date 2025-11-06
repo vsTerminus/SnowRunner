@@ -638,7 +638,7 @@
 			</Socket>
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="catCt680Sticker_Capote" ParentFrame="BoneCabin_cdt">
+			<Socket Names="catCt680Sticker_Capote" ParentFrame="BoneCabin_cdt" InCockpit="true">
 				<ExtraParent Frame="BoneChassis_cdt" />
 			</Socket>
 		</AddonSockets>

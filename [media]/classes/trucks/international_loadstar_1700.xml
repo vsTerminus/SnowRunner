@@ -389,7 +389,7 @@
 			<Socket Names="internationalLoadstar1700Sticker_Roof" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="internationalLoadstar1700Sticker_Capote" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="internationalLoadstar1700Sticker_Capote" ParentFrame="BoneCabin_cdt" InCockpit="true" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket

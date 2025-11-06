@@ -1,0 +1,96 @@
+<_templates Include="trucks" />
+<EngineVariants>
+	<Engine
+		CriticalDamageThreshold="0.38"
+		DamageCapacity="180"
+		DamagedConsumptionModifier="1.223"
+		EngineResponsiveness="0.028"
+		FuelConsumption="6.88"
+		Torque="165200"
+		DamagedMinTorqueMultiplier="1.0"
+		DamagedMaxTorqueMultiplier="0.8"
+		MaxDeltaAngVel="2.8"
+
+		Name="us_truck_modern_engine_padera_std4_0"
+	>
+		<!--
+		CriticalDamageThreshold = 68
+		DamagedConsumptionModifier = 8.4
+		DamagedMaxTorqueMultiplier = 140160
+		-->
+		<GameData
+			Price="11300"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_ENGINE_US_SPECIAL_PADERA_STD4_0_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_ENGINE_US_SPECIAL_PADERA_STD4_0_NAME"
+			/>
+		</GameData>
+	</Engine>
+	<Engine
+		CriticalDamageThreshold="0.65"
+		DamageCapacity="150"
+		DamagedConsumptionModifier="1.16"
+		EngineResponsiveness="0.03"
+		FuelConsumption="8.12"
+		Torque="190900"
+		DamagedMinTorqueMultiplier="1.0"
+		DamagedMaxTorqueMultiplier="0.42"
+		MaxDeltaAngVel="3.15"
+		
+		Name="us_truck_modern_engine_padera_std4_1"
+	>
+		<!--
+		CriticalDamageThreshold = 97
+		DamagedConsumptionModifier = 9,4
+		DamagedMaxTorqueMultiplier = 79500
+		-->
+		<GameData
+			Price="13700"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_ENGINE_US_SPECIAL_PADERA_STD4_1_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_ENGINE_US_SPECIAL_PADERA_STD4_1_NAME"
+			/>
+		</GameData>
+	</Engine>
+	<Engine
+		CriticalDamageThreshold="0.34"
+		DamageCapacity="200"
+		DamagedConsumptionModifier="1.32"
+		EngineResponsiveness="0.032"
+		FuelConsumption="6.2"
+		Torque="202220"
+		DamagedMinTorqueMultiplier="1.0"
+		DamagedMaxTorqueMultiplier="0.76"
+		MaxDeltaAngVel="4.0"
+		
+		Name="us_truck_modern_engine_padera_std4_2"
+	>
+		<!--
+		CriticalDamageThreshold = 68
+		DamagedConsumptionModifier = 8.2
+		DamagedMaxTorqueMultiplier = 150000
+		-->
+		<GameData
+			Price="16200"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_ENGINE_US_SPECIAL_PADERA_STD4_2_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_ENGINE_US_SPECIAL_PADERA_STD4_2_NAME"
+			/>
+		</GameData>
+	</Engine>
+</EngineVariants>

@@ -1,0 +1,93 @@
+<_templates Include="trucks" />
+<EngineVariants>
+	<Engine
+		DamageCapacity="200"
+		
+		FuelConsumption="14.35"
+		
+		CriticalDamageThreshold="0.68"
+		DamagedMinTorqueMultiplier="1.0"
+		DamagedMaxTorqueMultiplier="0.91"
+		DamagedConsumptionModifier="1.14"
+		
+		Torque="218150"
+		MaxDeltaAngVel="0.016"
+		BrakesDelay="0.55" 
+		EngineResponsiveness="0.010"
+			
+		Name="us_truck_old_engine_avenhorn_a15_0"
+	>
+		<GameData
+			Price="15800"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_ENGINE_US_SPECIAL_AVENHORN_A15_0_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_ENGINE_US_SPECIAL_AVENHORN_A15_0_NAME"
+			/>
+		</GameData>
+	</Engine>
+	<Engine
+		DamageCapacity="240"
+		
+		FuelConsumption="14.8"
+		
+		CriticalDamageThreshold="0.45"
+		DamagedMinTorqueMultiplier="1.0"
+		DamagedMaxTorqueMultiplier="0.83"
+		DamagedConsumptionModifier="1.05"
+		
+		Torque="249500"
+		MaxDeltaAngVel="0.02"
+		BrakesDelay="0.45" 
+		EngineResponsiveness="0.012"
+		
+		Name="us_truck_old_engine_avenhorn_a15_1"
+	>
+		<GameData
+			Price="17500"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_ENGINE_US_SPECIAL_AVENHORN_A15_1_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_ENGINE_US_SPECIAL_AVENHORN_A15_1_NAME"
+			/>
+		</GameData>
+	</Engine>
+	<Engine
+		DamageCapacity="380"
+		
+		FuelConsumption="14.2"
+		
+		CriticalDamageThreshold="0.2"
+		DamagedMinTorqueMultiplier="1.0"
+		DamagedMaxTorqueMultiplier="0.75"
+		DamagedConsumptionModifier="1.25"
+		
+		Torque="270200"
+		MaxDeltaAngVel="0.025"
+		BrakesDelay="0.38" 
+		EngineResponsiveness="0.015"
+		
+		Name="us_truck_old_engine_avenhorn_a15_2"
+	>
+		<GameData
+			Price="18800"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_ENGINE_US_SPECIAL_AVENHORN_A15_2_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_ENGINE_US_SPECIAL_AVENHORN_A15_2_NAME"
+			/>
+		</GameData>
+	</Engine>
+</EngineVariants>

@@ -9,10 +9,10 @@
 		IsCustomizable="false"
 	>
 		<UiDesc
-			UiDesc="UI_STUFF_CAPOTE_STICKER_DESC"
+			UiDesc="UI_STUFF_ROOF_STICKER_DESC"
 			UiIcon30x30=""
 			UiIcon40x40=""
-			UiName="UI_STUFF_CAPOTE_STICKER_1x1_NAME"
+			UiName="UI_STUFF_ROOF_STICKER_1x1_NAME"
 		/>
 		<InstallSocket Type="Ankatra1160Sticker_Roof" />
 	</GameData>

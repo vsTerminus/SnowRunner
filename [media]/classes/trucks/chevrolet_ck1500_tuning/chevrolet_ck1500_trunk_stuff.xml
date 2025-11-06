@@ -5,9 +5,9 @@
 	<RepairsHide>
 		<Mesh Frame="repair" HideThreshold="0.0" />
 	</RepairsHide>
-	<TruckData WheelRepairsCapacity="1" RepairsCapacity="50"/>	
+	<TruckData WheelRepairsCapacity="2" RepairsCapacity="150"/>	
 	<PhysicsModel Mesh="trucks/chevrolet_ck1500_tuning/chevrolet_ck1500_trunk_stuff">
-		<Body Mass="20">
+		<Body Mass="60">
 			<Constraint Type="Rigid" />
 			<Body ModelFrame="BoneBox_cdt" Mass="20">
 				<Constraint 

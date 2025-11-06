@@ -1,0 +1,36 @@
+<_templates Include="trucks">
+	<TruckTire>
+		<Mudtires Mass="300" RearMassScale="1.5">
+			<WheelTracks _template="Default" />
+			<WheelSoftness _template="Stiff" />
+			<WheelFriction _template="Offroad" />
+		</Mudtires>
+	</TruckTire>
+</_templates>
+<TruckWheels
+	DamageCapacity="50"
+	Radius="1"
+	RadiusRear="1"
+	Width="0.726"
+	WidthRear="0.993"
+>
+	<TruckTires>
+		<TruckTire _template="Mudtires" Mesh="wheels/tire_padera_std4" Name="offroad_1">
+			<WheelFriction _template="Mudtires" SubstanceFriction="2.18"/>
+			<GameData
+				Price="7500"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_OFFROAD_DESC" UiName="UI_TIRE_PADERA_STD4_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>
+		<TruckRim Mesh="wheels/rim_padera_std4" Name="rim_1">
+			<GameData>
+				<UiDesc UiDesc="UI_RIM_HEAVY_OFFROAD_SINGLE_1_DESC" UiName="UI_RIM_PADERA_STD4_NAME" />
+			</GameData>
+		</TruckRim>
+	</TruckRims>
+</TruckWheels>

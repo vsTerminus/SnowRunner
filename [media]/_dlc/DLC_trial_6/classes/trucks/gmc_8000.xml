@@ -489,7 +489,7 @@
 			<Socket Names="gmc8000Sticker_Roof" ParentFrame="BoneCabinRagdoll_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="gmc8000Sticker_Capote" ParentFrame="BoneCabinRagdoll_cdt" />
+			<Socket Names="gmc8000Sticker_Capote" ParentFrame="BoneCabinRagdoll_cdt" InCockpit="true" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket

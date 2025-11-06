@@ -1,0 +1,646 @@
+<_templates Include="trucks">
+	<Wheel>
+		<FirstAxle
+			Location="front"
+			SteeringAngle="37"
+			SteeringJointOffset="0.23"
+			Torque="Default"
+			ConnectedToHandbrake="true"
+			ParentFrame="BoneCabinTwist_cdt"
+		/>
+		<SecondAxle
+			Location="front"
+			SteeringAngle="28.5"
+			SteeringJointOffset="0.22"
+			Torque="Default"
+			ParentFrame="BoneCabinTwist_cdt"
+			ConnectedToHandbrake="true"
+		/>
+		<RearAxle
+			Location="rear"
+			ConnectedToHandbrake="true"
+			Torque="Default"
+			ParentFrame="BoneChassis_cdt"
+		/>
+	</Wheel>
+	<Body>
+		<Sunshield Collisions="None" Mass="3">
+			<Constraint
+				AxisLocal="(0; 0; 1)"
+				Type="Hinge"
+				MinLimit="-5"
+				MaxLimit="18"
+			>
+				<Motor Damping=".1" Spring="10" Type="Spring" />
+			</Constraint>
+		</Sunshield>
+		<Chain Mass="60" >
+			<Constraint
+				PivotOffset="(0.000; 0.000; 0.000)"
+				Type="Ragdoll"
+				TwistAxisLocal="(1; 0; 0)"
+				PlaneAxisLocal="(0; 1; 0)"
+				TwistMin="-26"
+				TwistMax="26"
+				PlaneMin="-32"
+				PlaneMax="32"
+				Cone="6"
+			>
+				<TwistMotor Damping="1" Spring="0.5" Type="Spring" />
+				<PlaneMotor Damping="1" Spring="0.5" Type="Spring" />
+				<ConeMotor Damping="1" Spring="0.5" Type="Spring" />
+			</Constraint>
+		</Chain>
+		<FireEx1 Collisions="None" Mass="2">
+			<Constraint
+				AxisLocal="(0; 1; 0)"
+				Type="Hinge"
+				MinLimit="-12"
+				MaxLimit="0.04"
+			>
+				<Motor Damping="0.2" Spring="3" Type="Spring" />
+			</Constraint>
+		</FireEx1>
+		<FireEx2 Collisions="None" Mass="2">
+			<Constraint
+				AxisLocal="(0; 1; 0)"
+				Type="Hinge"
+				MinLimit="-0.04"
+				MaxLimit="15"
+			>
+				<Motor Damping="0.2" Spring="3" Type="Spring" />
+			</Constraint>
+		</FireEx2>
+	</Body>
+</_templates>
+<Truck>
+	<TruckData
+		BackSteerSpeed="0.02"
+		DiffLockType="Always"
+		EngineIconMesh="env/engine_avenhorn_a15"
+		EngineIconScale="1"
+		EngineMarkerOffset="(6.5; 0.8; 0.0)"
+		GearboxMarkerOffset="(3.5; 0.0; 0.0)"
+		EngineStartDelay="0.8"
+		ExhaustStartTime="0.9"
+		FuelCapacity="400"
+		Responsiveness="0.18"
+		SteerSpeed="0.017"
+		TruckImage="avenhorna15mchr"
+		TruckType="HEAVY"
+	>
+		<WinchUpgradeSocket Default="w_heavy_trucks_default" IsUpgradable="true" Type="winches_heavy_trucks" />
+		<Wheels
+			DefaultRim="rim_1"
+			DefaultTire="offroad"
+			DefaultWheelType="wheels_avenhorn_a15"
+		>
+			<Wheel _template="FirstAxle" Pos="(3.209; 0.765; 1.279)" />
+			<Wheel _template="FirstAxle" RightSide="true" Pos="(3.209; 0.765; 1.279)" />
+			<Wheel _template="SecondAxle" Pos="(1.628; 0.765; 1.279)" />
+			<Wheel _template="SecondAxle" RightSide="true" Pos="(1.628; 0.765; 1.279)" />
+			<Wheel _template="RearAxle" Pos="(-1.625; 0.765; 1.006)" />
+			<Wheel _template="RearAxle" RightSide="true" Pos="(-1.625; 0.765; 1.006)" />
+			<Wheel _template="RearAxle" Pos="(-3.387; 0.765; 1.002)" />
+			<Wheel _template="RearAxle" RightSide="true" Pos="(-3.387; 0.765; 1.002)" />
+		</Wheels>
+		<SuspensionSocket
+			Default="avenhorn_a15_suspension_default"
+			Type="s_avenhorn_a15"
+			MaxWheelRadiusWithoutSuspension="1"
+		/>
+		<SteeringWheel Frame="BoneSteering" />
+		<SteeringRack Frame="BoneRack1" FrameSteerLeft="BoneRackLeft1" FrameSteerRight="BoneRackRight1" RackHalfSizeZ="0.887" />
+		<SteeringRack Frame="BoneRack2" FrameSteerLeft="BoneRackLeft2" FrameSteerRight="BoneRackRight2" RackHalfSizeZ="0.887" />
+		<Steam Origin="(4.056; 1.932; 0)" />
+		<SoundsWheels _template="Default" />
+		<SoundsDamage _template="Heavy" />
+		<Sounds
+			_template="Default"
+			AirHissInterval="12.0"
+			DisableReversePitch="true"
+			Origin="(1.694; 1.707; 0)"
+			MinDist="15.0"
+			ParentFrame="BoneCabin_cdt"
+		>
+			<Honk			Sound="trucks/pacific_p16/pacific_p16_honk" />
+			<Handbrake		Sound="trucks/pacific_p16/pacific_p16_handbrake_on" />
+			<HandbrakeOff	Sound="trucks/pacific_p16/pacific_p16_handbrake_off" />
+			<BrakePull		Sound="trucks/pacific_p16/pacific_p16_brake_pull" />
+			<BrakeRelease	Sound="trucks/pacific_p16/pacific_p16_brake_release" />
+			<BrakesSqueal	Sound="trucks/pacific_p16/pacific_p16_brakes_squeal" />
+			<Reverse		Sound="trucks/pacific_p16/pacific_p16_back_beeper" />
+			<EngineAccel	Sound="trucks/pacific_p16/pacific_p16_acc" />
+			<EngineRev		Sound="trucks/pacific_p16/pacific_p16_rev" />
+			<EngineStart	Sound="trucks/pacific_p16/pacific_p16_start" />
+			<EngineStop		Sound="trucks/pacific_p16/pacific_p16_stop" />
+			<EngineIdle		Sound="trucks/pacific_p16/pacific_p16_idle" />
+			<EngineIdle_2d	Sound="trucks/pacific_p16/pacific_p16_idle_2d"	IsSound2D="true" />
+			<EngineLow		Sound="trucks/pacific_p16/pacific_p16_low" />
+			<EngineLow_2d	Sound="trucks/pacific_p16/pacific_p16_low_2d"	IsSound2D="true" />
+			<EngineHigh		Sound="trucks/pacific_p16/pacific_p16_high" />
+			<EngineHigh_2d	Sound="trucks/pacific_p16/pacific_p16_high_2d"	IsSound2D="true" />
+			<EngineHeavy	Sound="trucks/pacific_p16/pacific_p16_heavy" />
+			<EngineHeavy_2d	Sound="trucks/pacific_p16/pacific_p16_heavy_2d"	IsSound2D="true" />
+			<EngineTurbo	Sound="trucks/pacific_p16/pacific_p16_turbo" />
+			<AbruptStop		Sound="trucks/common/truck_swing_big_rnd_set/truck_swing_big_rnd" />
+		</Sounds>
+		<OcclusionMap HalfSizeZ="2.60" MinX="-5.09" MaxX="5.66" />
+		<GearboxSocket Default="g_special_avenhorn_a15_default" Type="gearboxes_special_old_avenhorn_a15" />
+		<FuelTank DamageCapacity="120" />
+		<EngineSocket Default="us_truck_old_engine_avenhorn_a15_0" Type="e_us_truck_old_heavy_avenhorn_a15" />
+		<Driver Pos="(1.58; 2.563; 0.392)" SteeringWheelPos="(1.891; 2.949; 0.380)" AnimationSet="Truck" ParentFrame="BoneCabin_cdt" />
+		<Damage>
+			<DamageArea Type="FuelTank" Min="(-0.814, 0.897, -1.244)" Max="(0.612, 1.463, -0.699)" ParentFrame="BoneChassis_cdt" />
+			<DamageArea Type="FuelTank" Min="(-0.814, 0.897, 0.699)" Max="(0.612, 1.463, 1.244)" ParentFrame="BoneChassis_cdt" />			
+			<DamageArea Type="Engine" Min="(2.692; 1.211; -1.830)" Max="(8.216; 2.053; 1.830)" ParentFrame="BoneCabin_cdt" />
+			<Multiplier Multiplier="2.0" Type="Engine" />
+		</Damage>
+		
+		<Dashboard>
+			<Gauge Dir="(-0.994; 0.106; 0)" InputRange="(0;80)" InputType="speed" Mesh="trucks/arrows/avenhorn_a15_arrow_02" Org="(2.152; 2.839; 0.091)" OutputAngles="(-120;30)" ParentFrame="BoneCabin_cdt" />
+			<Gauge Damping="0.99" Dir="(-0.994; 0.106; 0)" InputRange="(0;1)" InputType="rpm" Mesh="trucks/arrows/avenhorn_a15_arrow_04" Org="(2.152; 2.842; -0.095)" OutputAngles="(-120;120)" ParentFrame="BoneCabin_cdt" />
+			<Gauge Dir="(-0.994; 0.106; 0)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/avenhorn_a15_arrow_03" Org="(2.152; 2.837; 0)" OutputAngles="(-115; -75)" ParentFrame="BoneCabin_cdt" />
+			<Gauge Dir="(-0.994; 0.100; 0)" InputRange="(0;1)" InputType="fuel" Mesh="trucks/arrows/avenhorn_a15_arrow_01" Org="(2.160; 2.907; 0.097)" OutputAngles="(-42; 30)" ParentFrame="BoneCabin_cdt" />
+			<Gauge Dir="(-0.994; 0.100; 0)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/avenhorn_a15_arrow_01" Org="(2.160; 2.907; 0.030)" OutputAngles="(-42; 18)" ParentFrame="BoneCabin_cdt" />
+			<Gauge Dir="(-0.994; 0.100; 0)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/avenhorn_a15_arrow_01" Org="(2.160; 2.907; -0.030)" OutputAngles="(-42; 22)" ParentFrame="BoneCabin_cdt" />
+			<Gauge Dir="(-0.994; 0.100; 0)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/avenhorn_a15_arrow_01" Org="(2.160; 2.907; -0.097)" OutputAngles="(-42; 35)" ParentFrame="BoneCabin_cdt" />
+		</Dashboard>
+		
+		<Shakers>
+			<Shaker
+				Frame="BoneGearstick"
+				MaxAngle="(6; 6; 6)"
+				MaxFrequency="0.1"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</Shakers>
+		
+		<Shafts>
+			<Shaft SocketPointA="Shaft1a" SocketPointB="Shaft1b" />
+			<Shaft SocketPointA="Shaft2a" SocketPointB="Shaft2b" />
+			<Shaft SocketPointA="Shaft3a" SocketPointB="Shaft3b" />
+			<Shaft SocketPointA="Shaft4a" SocketPointB="Shaft4b" />
+			<Shaft Mesh="env/shaft_axle_avenhorn_a15" SocketPointA="ShaftAxle2FRa" SocketPointB="ShaftAxle2FRb" />
+			<Shaft Mesh="env/shaft_axle_avenhorn_a15" SocketPointA="ShaftAxle2FLa" SocketPointB="ShaftAxle2FLb" />
+		</Shafts>
+		
+		<LimitedFluid Center="(-0.101; 1.180; 0.972)" SizeX="1.315" SizeY="0.472" SizeZ="0.455" Type="Box" ParentFrame="BoneChassis_cdt"/>
+		<LimitedFluid Center="(-0.101; 1.180; -0.972)" SizeX="1.315" SizeY="0.472" SizeZ="0.455" Type="Box" ParentFrame="BoneChassis_cdt"/>
+		
+		<Intake Dir="(1; 0; 0)" Origin="(4.934; 2.113; 0.006)" Size="1.219" />
+
+		<CompatibleWheels RearOffsetZ="0.245" OffsetZ="0.06" Scale="0.73" Type="wheels_avenhorn_a15" />
+		<CompatibleWheels RearOffsetZ="0.15" OffsetZ="0.06" Scale="0.73" Type="wheels_heavy_double1_avenhorn_a15" />
+		<CompatibleWheels RearOffsetZ="0.15" OffsetZ="0.06" Scale="0.73" Type="wheels_heavy_double2_avenhorn_a15" />
+		<CompatibleWheels RearOffsetZ="0.15" OffsetZ="0.06" Scale="0.73" Type="wheels_heavy_offroad_double_avenhorn_a15" />
+		<CompatibleWheels RearOffsetZ="0.15" OffsetZ="0.06" Scale="0.73" Type="wheels_heavy_allterrain_double_avenhorn_a15" />
+		<CompatibleWheels RearOffsetZ="0.145" OffsetZ="0.06" Scale="0.73" Type="wheels_heavy_highway_double_avenhorn_a15" />
+		<!--  ViewPos="(1.8; 2.95; 0.0)" -->
+		<Camera Center="(-0.7; 0; 0)" RadiusMultiplier="1.2" ParentFrame="BoneCabin_cdt">
+			<Cockpit
+				_template="Default"
+				WindshieldDiffuseTexture="trucks/avenhorn_a15_glass__d_a.tga"
+				WindshieldShadingTexture="trucks/avenhorn_a15_glass__sh_d.tga"
+				ViewPos="(1.480; 3.22; 0.392)"
+				LimitsVer="(-0.3; 0.37)"
+				ParentFrame="BoneCabin_cdt"
+			>
+				<Rear ViewPosOffset="(0.05; -0.1; 0.65)" />
+				
+				<Mirror
+					ClipDir="(-0.862; 0; -0.465)"
+					ClipOffset=".2"
+					FOVScale="1.9"
+					MeshFrame="mirror_left"
+					ReflectionDir="(-0.862; 0; -0.465)"
+					Size="(0.220; 0.380)"
+					Pos="(1.877; 3.178; 1.202)"
+				>
+					<SecondaryView
+						ClipDir="(-0.707; 0; -0.707)"
+						ClipOffset="0.1"
+						CurveAngle="40"
+						FOVScale="1.2"
+						MeshFrame="mirror_2_left"
+						Size="(0.205; 0.150)"
+						Pos="(1.878; 2.970; 1.202)"
+					/>
+				</Mirror>
+				
+				<Mirror
+					ClipDir="(-0.766; 0; 0.643)"
+					ClipOffset=".25"
+					FOVScale="3"
+					MeshFrame="mirror_right"
+					ReflectionDir="(-0.766; 0; 0.643)"
+					Size="(0.220; 0.380)"
+					Pos="(1.877; 3.178; -1.202)"
+				>
+					<SecondaryView
+						ClipDir="(-0.707; 0; 0.707)"
+						ClipOffset="0.1"
+						CurveAngle="40"
+						FOVScale="2"
+						MeshFrame="mirror_2_right"
+						Size="(0.205; 0.150)"
+						Pos="(1.878; 2.970; -1.202)"
+					/>
+				</Mirror>
+			</Cockpit>
+		</Camera>
+		<Axles>
+			<Axle Frame="BoneAxle1" ParentFrame="BoneCabinTwist_cdt"/>
+			<Axle Frame="BoneAxle2" ParentFrame="BoneCabinTwist_cdt"/>
+			<Axle Frame="BoneAxle3" ParentFrame="BoneChassis_cdt"/>
+			<Axle Frame="BoneAxle4" ParentFrame="BoneChassis_cdt"/>
+		</Axles>
+	</TruckData>
+	<Rotator EngineTorqueFactor="0" Frame="BoneEngineFanFotator" RotationAxis="(0; 1; 0)" RotationSpeed="10" />
+	<Rotator EngineTorqueFactor="0" Frame="BoneInteriorFanRotator" RotationAxis="(0; 1; 0)" RotationSpeed="8" />
+	<PhysicsModel Mesh="trucks/avenhorn_a15">
+		<NetSync Legacy="false" />
+		<Body
+			CenterOfMassOffset="(-0.15; 0; 0)"
+			ImpactType="Truck"
+			Mass="2500"
+			NetSync="pv"
+		>
+			<Body Mass="7000" ModelFrame="BoneChassisWeighter_cdt" Collisions="None" CenterOfMassOffset="(-0.25; 0; 0)">
+				<Constraint Type="Fixed"/>
+			</Body>
+				<Body
+					CenterOfMassOffset="(-0.3; 0.0; 0)"
+					ImpactType="Truck"
+					Mass="2000"
+					ModelFrame="BoneCabinTwist_cdt"
+					NetSync="pv"
+				>
+					<Constraint
+						AxisLocal="(-1.0; 0; 0)"
+						MinLimit="-5"
+						MaxLimit="5"
+						Type="Hinge"
+					>
+						<Motor Type="Spring" Spring="250000" Damping="50000"/>
+					</Constraint>
+					<Body
+						CenterOfMassOffset="(-0.05; -0.3; 0)"
+						ImpactType="Truck"
+						Mass="8100"
+						ModelFrame="BoneCabin_cdt"
+						NetSync="pv"
+					>
+						<Constraint
+							AxisLocal="(1; 0; 0)"
+							MinLimit="-1"
+							MaxLimit="1"
+							Type="Hinge"
+						>
+							<Motor Type="Spring" Spring="800000" Damping="30000"/>
+						</Constraint>
+								
+						<Body Collisions="None" Mass="1" ModelFrame="BoneTools_cdt">
+							<Constraint
+								AxisLocal="(0; 1; 0)"
+								Type="Prismatic"
+								MinLimit="-0.003"
+								MaxLimit="0.1"
+							>
+								<Motor Damping="5" Spring="0.3" Type="Spring" />
+							</Constraint>
+						</Body>
+						
+						<Body Mass="0.25" ModelFrame="BoneKeyFob1_cdt" Collisions="None">
+							<Constraint
+								AxisLocal="(0; 0; 1)"
+								Type="Hinge"
+								MinLimit="-15"
+								MaxLimit="15"
+							>
+								<Motor Damping="0.001" Spring="0.003" Type="Spring" />
+							</Constraint>
+								<Body Mass="0.25" ModelFrame="BoneKeyFob2_cdt" Collisions="None">
+									<Constraint
+										AxisLocal="(0; 0; 1)"
+										Type="Hinge"
+										MinLimit="-22"
+										MaxLimit="22"
+									>
+										<Motor Damping="0.001" Spring="0.003" Type="Spring" />
+									</Constraint>
+								</Body>
+								<Body Mass="0.1" ModelFrame="BoneKeyFob3_cdt" Collisions="None">
+									<Constraint
+										AxisLocal="(0; 0; 1)"
+										Type="Hinge"
+										MinLimit="-15"
+										MaxLimit="15"
+									>
+										<Motor Damping="0.001" Spring="0.003" Type="Spring" />
+									</Constraint>
+								</Body>
+						</Body>
+						
+						<Body _template="Sunshield" ModelFrame="BoneSunshieldLeft_cdt" />
+						<Body _template="Sunshield" ModelFrame="BoneSunshieldRight_cdt" />
+					</Body>
+					<Body _template="TieRod" ModelFrame="BoneLeftTieRod1_1_cdt" Collisions="None">
+						<Constraint
+						AxisLocal="(0; 0; 1)"
+						Name="TieRod1Rocker"
+						MinLimit="-10"
+						MaxLimit="15"
+					/>
+					</Body>
+					<Body _template="TieRod" ModelFrame="BoneLeftTieRod1_4_cdt" Collisions="None">
+						<Constraint
+						AxisLocal="(0; 0; 1)"
+						Name="TieRod2Rocker"
+						MinLimit="-10"
+						MaxLimit="15"
+					/>
+					</Body>
+					<Body _template="TieRod" ModelFrame="BoneLeftTieRod1_5_cdt" Collisions="None">
+						<Constraint
+						AxisLocal="(0; 0; 1)"
+						Name="TieRod3Rocker"
+						MinLimit="-10"
+						MaxLimit="15"
+					/>
+				</Body>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<Ignition>
+			<Light _template="IgnitionSignalRed" Pos="(-4.68; 1.241; 0)" />
+		</Ignition>
+		<StopSignals>
+			<Light _template="StopSignal" Pos="(-4.206; 1.444; -0.993)" ParentFrame="BoneChassis_cdt" />
+			<Light _template="StopSignal" Pos="(-4.206; 1.444; 0.993)" ParentFrame="BoneChassis_cdt" />
+			
+			<Flare _template="StopSignal" Color="g(255; 0; 0) x 0.3" Size="0.3" Pos="(-4.206; 1.444; -0.993)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="StopSignal" Color="g(255; 0; 0) x 0.3" Size="0.3" Pos="(-4.206; 1.444; 0.993)" ParentFrame="BoneChassis_cdt" />
+		</StopSignals>
+		<ReverseSignals>
+			<Light _template="ReverseSignal" Pos="(-4.205; 1.444; 0.827)" />
+			<Light _template="ReverseSignal" Pos="(-4.205; 1.444; -0.827)" />
+			
+			<Flare _template="ReverseSignal" Color="g(245; 235; 220) x 0.6" Size="0.4" Pos="(-4.205; 1.444; 0.827)" />
+			<Flare _template="ReverseSignal" Color="g(245; 235; 220) x 0.6" Size="0.4" Pos="(-4.205; 1.444; -0.827)" />
+			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.05" Dir="(-1; 0; 0)" Size="0.4" Pos="(-4.205; 1.444; 0.827)" />
+			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.05" Dir="(-1; 0; 0)" Size="0.4" Pos="(-4.205; 1.444; -0.827)" />
+		</ReverseSignals>
+	</ModelAttachments>
+	<HeadLight _template="Default" Pos="(5.11; 1.374; 0)" ParentFrame="BoneCabinTwist_cdt" />
+	<Landmark Mesh="landmarks/avenhorn_a15_lmk" MinScale="1.5" MaxScale="2.5" />
+	<GameData
+		Country="US,NE,CAS,CE"
+		Price="140700"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<WinchSocket Pos="(5.155; 1.055; 0)" ParentFrame="BoneCabinTwist_cdt" />
+		<WinchSocket Pos="(3.526; 2.418; 0.764)" ParentFrame="BoneCabinTwist_cdt" />
+		<WinchSocket Pos="(3.526; 2.418; -0.764)" ParentFrame="BoneCabinTwist_cdt" />
+		<WinchSocket Pos="(-4.530; 1.095; 0)" ParentFrame="BoneChassis_cdt" />
+		<WinchSocket Pos="(-2.494; 1.573; 0.646)" ParentFrame="BoneChassis_cdt" />
+		<WinchSocket Pos="(-2.494; 1.573; -0.646)" ParentFrame="BoneChassis_cdt" />
+		<WinchSocket Pos="(1.523; 1.751; 1.518)" ParentFrame="BoneChassis_cdt" />
+		<WinchSocket Pos="(1.523; 1.751; -1.518)" ParentFrame="BoneChassis_cdt" />
+		<WinchSocket Pos="(4.429; 1.301; 1.511)" ParentFrame="BoneChassis_cdt" />
+		<WinchSocket Pos="(4.429; 1.301; -1.511)" ParentFrame="BoneChassis_cdt" />
+		
+		<CraneSocket Pos="(5.155; 1.055; 0)" ParentFrame="BoneCabinTwist_cdt" />
+		<CraneSocket Pos="(3.526; 2.418; 0.764)" ParentFrame="BoneCabinTwist_cdt" />
+		<CraneSocket Pos="(3.526; 2.418; -0.764)" ParentFrame="BoneCabinTwist_cdt" />
+		<CraneSocket Pos="(-4.530; 1.095; 0)" ParentFrame="BoneChassis_cdt" />
+		<CraneSocket Pos="(-2.494; 1.573; 0.646)" ParentFrame="BoneChassis_cdt" />
+		<CraneSocket Pos="(-2.494; 1.573; -0.646)" ParentFrame="BoneChassis_cdt" />
+		<CraneSocket Pos="(1.523; 1.751; 1.518)" ParentFrame="BoneChassis_cdt" />
+		<CraneSocket Pos="(1.523; 1.751; -1.518)" ParentFrame="BoneChassis_cdt" />
+		<CraneSocket Pos="(4.429; 1.301; 1.511)" ParentFrame="BoneChassis_cdt" />
+		<CraneSocket Pos="(4.429; 1.301; -1.511)" ParentFrame="BoneChassis_cdt" />
+		
+		<UiDesc
+			UiDesc="UI_VEHICLE_AVENHORN_A15_DESC"
+			UiIcon30x30="heavyVehicleImg30"
+			UiIcon328x458="shopImgAvenhornA15"
+			UiIcon40x40="heavyVehicleImg"
+			UiIconLogo="AvenhornLogo80"
+			UiName="UI_VEHICLE_AVENHORN_A15_NAME"
+		/>
+		<!-- GARAGE ADDON CAMERAS -->
+		<CustomizationCameras>
+			<!-- MAIN CAMERAS -->
+			<CameraPos FOV="32.0" Name="side_r" InterestPosition="(2.606; 3.076; 0.2)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-0.682; 4.808; -4.570)" />
+			<CameraPos FOV="32.0" Name="side_l" InterestPosition="(6.27; 2.278; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(11.866; 5.284; -4.55)" />
+			<CameraPos FOV="32.0" Name="default" InterestPosition="(5.716; 1.735; -0.4)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(13.576; 1.402; -3.863)" />
+			<CameraPos FOV="32.0" Name="wheels" InterestPosition="(1.85; 0.636; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(9.3; 2; -5.654)" />
+			<CameraPos FOV="32.0" Name="rear" InterestPosition="(1.91; 2.45; 0.634)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-2.114; 4.5; 4)" />
+			<CameraPos FOV="32.0" Name="roof" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(11; 5.8; -2.8)" InterestPosition="(3.5; 3.3; 0)" />
+			<CameraPos FOV="32.0" Name="hoods_default" InterestPosition="(5.716; 1.735; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(13.576; 1.402; -3.863)" />
+			<CameraPos FOV="32.0" Name="exhaust" InterestPosition="(3.5; 2.4; 0.5)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-0.7; 4.6; -4.5)" />
+			<!-- ADDONS -->
+			<CameraPos FOV="32.0" Name="fenders" InterestPosition="(0; 1.268; -0.66)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-10.851; 4.14; 4.993)" />
+			<CameraPos FOV="32.0" Name="addon_1" InterestPosition="(-0.4; 1.640; -1.7)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-12; 3.950; 7)" />
+			<CameraPos FOV="32.0" Name="addon_2" InterestPosition="(5.835; 1.807; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-0.131; 3.944; 2.185)" />
+			<CameraPos FOV="32.0" Name="snorkel_default" InterestPosition="(4.5; 1.5; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(9.5; 4; -6)" />
+			<CameraPos FOV="32.0" Name="snorkel_1" InterestPosition="(6; 1.5; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(9.5; 4; -6)" />
+			<CameraPos FOV="32.0" Name="rear_addon" InterestPosition="(1.4; 2.380; 0.634)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-2.114; 4.5; 4)" />
+			<!-- STICKERS -->
+			<CameraPos FOV="32.0" Interior="true" Name="glass_sticker" InterestPosition="(4.85; 3.208; -1.134)" Position="(7.902; 3.992; -2.052)" />
+			<CameraPos FOV="32.0" Interior="true" Name="capote_sticker" InterestPosition="(5.882; 2.888; -0.693)" Position="(8.775; 5.649; -1.511)" />
+			<CameraPos FOV="32.0" Interior="true" Name="door_r_sticker" InterestPosition="(5.014; 2.691; 1.038)" Position="(5.53; 2.852; 3.718)" />
+			<CameraPos FOV="32.0" Interior="true" Name="door_l_sticker" InterestPosition="(2.553; 2.691; -1.038)" Position="(1.919; 2.852; -3.718)" />
+			<CameraPos FOV="32.0" Interior="true" Name="roof_sticker" InterestPosition="(4.015; 4.266; -1.733)" Position="(5.083; 6.118; -1.921)" />
+			<CameraPos FOV="32.0" Interior="true" Name="glass_sticker1" InterestPosition="(6.374; 2.385; -0.957)" Position="(10.247; 3.421; 0.971)" />
+			<CameraPos FOV="32.0" Interior="true" Name="sticker" InterestPosition="(4.535; 2.528; 1.401)" Position="(3.512; 3.306; -0.115)" />
+			
+			<CameraPos FOV="32.0" Interior="true" Name="sticker_1" InterestPosition="(5.677; 2.343; -1.088)" Position="(3.7; 3.166; -0.128)" />
+			<CameraPos FOV="32.0" Interior="true" Name="sticker_2" InterestPosition="(3.33; 2.611; 1.226)" Position="(3.691; 3.25; -0.371)" />
+			<CameraPos FOV="32.0" Interior="true" Name="sticker_3" InterestPosition="(4.596; 2.56; 1.2)" Position="(3.6; 3.389; 0.6)" />
+			<CameraPos FOV="32.0" Interior="true" Name="sticker_4" InterestPosition="(5.677; 1.4; 5.1)" Position="(3.7; 3.166; -0.128)" />
+			<!-- STUFF -->
+			<CameraPos FOV="32.0" Interior="true" Name="hood_figure" InterestPosition="(6.05; 3; -0.337)" Position="(8.5; 3.1; -1.2)" />
+			<CameraPos FOV="32.0" Interior="true" Name="curtain" InterestPosition="(4.665; 3.443; 0.975)" Position="(3.263; 3.306; -0.834)" />
+			<CameraPos FOV="32.0" Interior="true" Name="bubble_head" InterestPosition="(4.613; 3.029; 0.697)" Position="(3.734; 3.371; 0.658)" />
+			<CameraPos FOV="32.0" Interior="true" Name="mirror_mount" InterestPosition="(4.665; 3.443; 1.200)" Position="(3.6; 3.1; -0.834)" />
+		</CustomizationCameras>
+
+		<!-- BUMPER SNORKEL ROOFRACK -->
+		<AddonSockets DefaultAddon="avenhorn_a15_bumper_default">
+			<Socket Names="AvenhornA15Bumper" Offset="(0; 0; 0)" ParentFrame="BoneCabinTwist_cdt" >
+				<ExtraParent Frame="BoneCabin_cdt" Offset="(0; 0; 0.0)" />
+			</Socket>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="AvenhornA15Roofrack" NamesBlock="AvenhornA15Horn" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets DefaultAddon="avenhorn_a15_snorkel_default" RequiredAddonIfNoConflicts="avenhorn_a15_snorkel_defaultы">
+			<Socket Names="AvenhornA15Snorkel" Offset="(0; 0; 0)" ParentFrame="BoneCabinTwist_cdt" />
+		</AddonSockets>
+		<!-- STUFF -->
+		<AddonSockets DefaultAddon="avenhorn_a15_exhaust_default">
+			<Socket Names="AvenhornA15Exhaust" Offset="(0; 0; 0)" ParentFrame="BoneCabinTwist_cdt" />
+		</AddonSockets>
+		<AddonSockets DefaultAddon="avenhorn_a15_horn_default">
+			<Socket Names="AvenhornA15Horn" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="AvenhornA15HornRoofrack" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="AvenhornA15Visor" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="AvenhornA15Beacon" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="AvenhornA15Spotlight" NamesBlock="AvenhornA15Beacon, AvenhornA15Roofrack" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets DefaultAddon="avenhorn_a15_gabarite_default">
+			<Socket Names="AvenhornA15Gabarite" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<!-- FRAME ADDONS  -->
+		<AddonSockets>
+			<Socket Names="AvenhornA15Kung" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt">
+				<ExtraParent Frame="BoneCabinTwist_cdt" Offset="(0; 0; 0)" />
+			</Socket>
+			<Socket Names="AvenhornA15SpareWheel" Offset="(1.1; 0; 0)" ParentFrame="BoneChassis_cdt">
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0)" />
+				<ExtraParent Frame="BoneCabinTwist_cdt" Offset="(0; 0; 0)" />
+				<AddonsShift Offset="(-0.7; 0; 0)" Types="CraneAvenhornA15" />
+			</Socket>
+			<Socket Names="ZikzLogLift" NamesBlock="SaddleHigh, SaddleMotorized, CraneAvenhornA15" Offset="(1.8; 0.21; 0)">
+				<ExtraParent Frame="BoneCabinTwist_cdt" Offset="(0; 0; 0)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0)" />
+			</Socket>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket
+				Names="CraneAvenhornA15"
+				Offset="(0.2; 0.0; 0)"
+				ParentFrame="BoneChassis_cdt"
+			>
+				<AddonsShift Offset="(-1.18; 0; 0)" Types="AvenhornA15Kung" />
+			</Socket>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="SaddleHigh" Offset="(-2.494; 1.573; 0)">
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.21)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.21)" />
+				<AddonsShift Offset="(-0.45; 0; 0)" Types="AvenhornA15Kung" />
+			</Socket>
+			<Socket Names="BunkLog" Offset="(-6.5; 1.573; 0)">
+				<AddonsShift Offset="(-0.5; 0; 0)" Types="ZikzLogLift" />
+				<AddonsShift Offset="(-0.5; 0; 0)" Types="CraneAvenhornA15" />
+			</Socket>
+			<Socket Names="SaddleMotorized" NamesBlock="AvenhornA15Kung, AvenhornA15SpareWheel, CraneAvenhornA15" Offset="(-2.10; 0.265; 0.000)" ParentFrame="BoneChassis_cdt" >
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.000; 0.000; -0.14)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.000; 0.000; 0.14)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(1.100; 0.000; -0.14)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(1.100; 0.000; 0.14)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(1.100; 0.000; 0.000)" />
+			</Socket>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="FrameAddonLogShort" NamesBlock="AvenhornA15Kung, CraneAvenhornA15, ZikzLogLift, SaddleHigh, SaddleMotorized, BunkLog, AvenhornA15SpareWheel" Offset="(-1.7; 1.573; 0)" ParentFrame="BoneChassis_cdt"/>  
+			<Socket Names="FrameAddon" Offset="(-1.8; 1.573; 0)" NamesBlock="AvenhornA15Kung, CraneAvenhornA15, ZikzLogLift, SaddleHigh, SaddleMotorized, BunkLog, AvenhornA15SpareWheel" ParentFrame="BoneChassis_cdt">
+				<AddonsShift Offset="(-0.3; 0; 0)" Types="Plad450SpareWheel" />
+			</Socket>
+			<Socket Names="FrameAddonKung" NamesBlock="AvenhornA15Kung, CraneAvenhornA15, ZikzLogLift, SaddleHigh, SaddleMotorized, BunkLog, AvenhornA15SpareWheel" Offset="(-2.35; 1.66; 0)" ParentFrame="BoneChassis_cdt">
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(-0.25; 0; -0.3)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(-0.25; 0; 0.3)" />
+			</Socket>
+			<Socket Names="FrameAddonTank" NamesBlock="AvenhornA15Kung, CraneAvenhornA15, ZikzLogLift, SaddleHigh, SaddleMotorized, BunkLog, AvenhornA15SpareWheel" Offset="(-2.6; 1.573; 0)" ParentFrame="BoneChassis_cdt">
+				<AddonsShift Offset="(-0.35; 0; 0)" Types="Plad450SpareWheel" />
+			</Socket>
+			<Socket Names="FrameAddonMaintainer2" NamesBlock="AvenhornA15Kung, CraneAvenhornA15, ZikzLogLift, SaddleHigh, SaddleMotorized, BunkLog, Trailer, LogTrailer, AvenhornA15SpareWheel" Offset="(-2.4; 0.54; 0)" ParentFrame="BoneChassis_cdt"/>
+			<Socket Names="FrameAddonSeismicVibratorAvenhornA15" NamesBlock="AvenhornA15Kung, CraneAvenhornA15, ZikzLogLift, SaddleHigh, SaddleMotorized, BunkLog, Trailer, LogTrailer, AvenhornA15SpareWheel" Offset="(0.2; 1.57; 0)" ParentFrame="BoneChassis_cdt"/>
+			<Socket Names="BigCraneUsAvenhornA15" NamesBlock="AvenhornA15Kung, CraneAvenhornA15, ZikzLogLift, SaddleHigh, SaddleMotorized, BunkLog, AvenhornA15SpareWheel" Offset="(-2.35; 1.66; 0)" ParentFrame="BoneChassis_cdt">
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.1; -0.07)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.1; 0.07)" />
+			</Socket>
+			<Socket Names="FrameAddonTow" NamesBlock="AvenhornA15Kung, CraneAvenhornA15, ZikzLogLift, SaddleHigh, SaddleMotorized, BunkLog, AvenhornA15SpareWheel, Trailer, LogTrailer" Offset="(-2.5; 1.56; 0)" />
+		</AddonSockets>
+		<!-- TRAILERS -->
+		<AddonSockets>
+			<Socket Names="Trailer, LogTrailer" Offset="(-4.530; 1.095; 0)" />
+			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-2.494; 2.1; 0)" >
+				<AddonsShift Offset="(-0.45; 0; 0)" Types="AvenhornA15Kung" />
+			</Socket>
+			<Socket Names="SemitrailerFoldableLog" NamesBlock="" Offset="(-3.45; 1.85; 0)" />
+		</AddonSockets>
+		<!-- CUSTOMIZATION -->
+		<AddonSockets>
+			<Socket Names="StuffHoodAvenhornA15" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="AvenhornA15Sticker_Door_L" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="AvenhornA15Sticker_Door_R" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="AvenhornA15Sticker_Capote" ParentFrame="BoneCabin_cdt" InCockpit="true" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="AvenhornA15Sticker_Capote_L" ParentFrame="BoneCabin_cdt" InCockpit="true" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="AvenhornA15Sticker_Capote_R" ParentFrame="BoneCabin_cdt" InCockpit="true" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket
+				InCockpit="true"
+				Names="StuffAirfreshener"
+				Offset="(2.022; 3.42; 0.094)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="AvenhornA15Sticker_GlassTop" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="AvenhornA15Sticker_GlassBottom" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		
+		<AddonSockets>
+			<Socket InCockpit="true" Names="AvenhornA15Sticker_1x1_01" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="AvenhornA15Sticker_1x1_02" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="AvenhornA15Sticker_1x1_03" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="AvenhornA15Sticker_1x2_01" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="AvenhornA15Sticker_1x2_02" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="AvenhornA15Sticker_1x4_01" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+	</GameData>
+	
+	<ControlledConstraints>
+		<Constraint Id="chassis_steer" IsLinkedSteering="true" Name="TieRod1Rocker" />
+		<Constraint Id="chassis_steer" IsLinkedSteering="true" Name="TieRod2Rocker" />
+		<Constraint Id="chassis_steer" IsLinkedSteering="true" Name="TieRod3Rocker" />
+	</ControlledConstraints>
+
+	<AutomaticIK>
+		<IKBone ModelFrame="BoneLeftTieRod1_2" ParentFrame="BoneLeftTieRod1_1_cdt">
+			<IKJoint AxisLocal="(1; 0; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneLeftTieRod1_4_cdt"
+				ModelFrame="BoneLeftTieRod1_3"
+			>
+				<IKJoint AxisLocal="(1; 0; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+	</AutomaticIK>
+</Truck>

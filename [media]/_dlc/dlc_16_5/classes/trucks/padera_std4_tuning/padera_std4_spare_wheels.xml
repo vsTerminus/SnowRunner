@@ -1,0 +1,74 @@
+<_templates Include="trucks">
+	<Body>
+		<Wheel Mass="200" Collisions="None">
+			<Constraint
+				AxisLocal="(1; 0; 0)"
+				Type="Hinge"
+				MinLimit="-1.5"
+				MaxLimit="1.5"
+			>
+				<Motor Damping="1200" Spring="30000" Type="Spring" />
+			</Constraint>
+		</Wheel>
+	</Body>
+</_templates>
+<TruckAddon>
+	<WheelRepairsHide>
+		<Mesh Frame="wheel_left_sparewheels" HideThreshold="0.0" />
+		<Mesh Frame="wheel_right_sparewheels" HideThreshold="0.5" />
+	</WheelRepairsHide>
+	<TruckData WheelRepairsCapacity="4" />
+	<PhysicsModel Mesh="trucks/padera_std4_tuning/padera_std4_spare_wheels">
+		<Body ImpactType="Truck" Mass="100">
+			<Constraint Type="Rigid" />
+			<Body _template="Wheel" ModelFrame="BoneWheelFrameL_cdt" />
+			<Body _template="Wheel" ModelFrame="BoneWheelFrameR_cdt" />
+			<Body
+				CenterOfMassOffset="(0; -0.1; 0)"
+				Collisions="None"
+				Mass="1"
+				ModelFrame="BoneCableL_cdt"
+			>
+				<Constraint
+					AxisLocal="(0; 0; 1)"
+					Type="Hinge"
+					MinLimit="-20.0"
+					MaxLimit="20.0"
+				>
+					<Motor Damping="0.1" Spring="1" Type="Spring" />
+				</Constraint>
+			</Body>
+			<Body
+				CenterOfMassOffset="(0; -0.1; 0)"
+				Collisions="None"
+				Mass="1"
+				ModelFrame="BoneCableR_cdt"
+			>
+				<Constraint
+					AxisLocal="(0; 0; 1)"
+					Type="Hinge"
+					MinLimit="-20.0"
+					MaxLimit="20.0"
+				>
+					<Motor Damping="0.1" Spring="1" Type="Spring" />
+				</Constraint>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="spare_wheel"
+		Category="wheel_addon"
+		IsCustomizable="true"
+		Price="2400"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SPARE_WHEELS_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SPARE_WHEELS_NAME"
+		/>
+		<InstallSocket Offset="(0; 0; 0)" Type="PaderaSTD4SpareWheels" />
+	</GameData>
+</TruckAddon>

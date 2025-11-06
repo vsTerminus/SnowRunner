@@ -458,7 +458,7 @@
 			<Socket InCockpit="true" Names="zikz605RSticker_1x4_01" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="zikz605RSticker_Capote" />
+			<Socket Names="zikz605RSticker_Capote" InCockpit="true" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="zikz605RSticker_Roof" />

@@ -8,19 +8,19 @@
 	>
 		<Suspension
 			BrokenSuspensionMax="0.15"
-			Height="0.15"
-			Strength="0.025"
-			SuspensionMin="-0.28"
+			Height="0.22"
+			Strength="0.016"
+			SuspensionMin="-0.36"
 			WheelType="front"
-			Damping=".15"
+			Damping=".23"
 		/>
 		<Suspension
 			BrokenSuspensionMax="0.15"
-			Height="0.15"
-			Strength="0.02"
-			SuspensionMin="-0.28"
+			Height="0.2"
+			Strength="0.014"
+			SuspensionMin="-0.35"
 			WheelType="rear"
-			Damping=".15"
+			Damping=".22"
 		/>
 		<GameData
 			Price="1700"
@@ -32,6 +32,42 @@
 				UiIcon30x30=""
 				UiIcon40x40=""
 				UiName="UI_SUSPENSION_DEFAULT_NAME"
+			/>
+		</GameData>
+	</SuspensionSet>
+	
+	<SuspensionSet
+		_template="High"
+		CriticalDamageThreshold="0.3"
+		DamageCapacity="250"
+		Name="khan_39_marshall_suspension_crawler"
+	>
+		<Suspension
+			BrokenSuspensionMax="0.15"
+			Height="0.3"
+			Strength="0.012"
+			SuspensionMin="-0.48"
+			WheelType="front"
+			Damping=".24"
+		/>
+		<Suspension
+			BrokenSuspensionMax="0.15"
+			Height="0.3"
+			Strength="0.01"
+			SuspensionMin="-0.46"
+			WheelType="rear"
+			Damping=".26"
+		/>
+		<GameData
+			Price="3000"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_SUSPENSION_CRAWLER_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_SUSPENSION_CRAWLER_NAME"
 			/>
 		</GameData>
 	</SuspensionSet>

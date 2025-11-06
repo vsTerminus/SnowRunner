@@ -3,10 +3,15 @@
 <TruckAddon>
 	<TruckData>
 		<Damage>
-			<Multiplier Multiplier="1.0" Type="Engine" />
+			<Multiplier Multiplier="0.75" Type="Engine" />
+			<Multiplier Multiplier="0.85" Type="Gearbox" />
 		</Damage>
 	</TruckData>
-	<PhysicsModel Mesh="trucks/international_scout_800_tuning/international_scout_800_front_bumper_2" />
+	<PhysicsModel Mesh="trucks/international_scout_800_tuning/international_scout_800_front_bumper_2" >
+		<Body ImpactType="Truck" Mass="30">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
 	<ModelAttachments>
 		<MainHeadLight>
 			<Flare _template="IgnitionSignalWhite" Color="g(255; 255; 255) x 0.6" DirAngle="100" Size="0.18" Pos="(1.911; 0.840; -0.192)" />

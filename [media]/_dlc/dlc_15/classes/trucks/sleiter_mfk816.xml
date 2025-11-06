@@ -197,7 +197,7 @@
 				ModelFrame="BoneWings_cdt"
 				NetSync="pv"
 			>
-				<Constraint Type="Rigid" />
+				<Constraint Type="Fixed" />
 			</Body>
 			<Body
 				CenterOfMassOffset="(0.7; -0.8; 0)"

@@ -560,7 +560,7 @@
 			<Socket Names="DerrySpecial15c177Exhaust" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" >
 				<ExtraParent Offset="(0; 0; 0)" Frame="BoneChassis_cdt"/>
 			</Socket>
-			<Socket Names="FrameAddonDerryFirefighter" Offset="(0; 0.0; 0)" ParentFrame="BoneChassis_cdt" NamesBlock="SaddleHigh1, FrameAddonSeismicVibrator, FrameAddonMaintainer, LargeSemitrailer, LargeSemitrailerOiltank, BunkLog, FrameAddonLogShort, FrameAddon, FrameAddon3" >
+			<Socket Names="FrameAddonDerryFirefighter" Offset="(0; 0.0; 0)" ParentFrame="BoneChassis_cdt" NamesBlock="SaddleMotorized, SaddleHigh1, FrameAddonSeismicVibrator, FrameAddonMaintainer, LargeSemitrailer, LargeSemitrailerOiltank, BunkLog, FrameAddonLogShort, FrameAddon, FrameAddon3" >
 				<ExtraParent Offset="(0; 0; 0)" Frame="BoneCabin_cdt"/>
 			</Socket>
 		</AddonSockets>

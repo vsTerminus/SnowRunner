@@ -198,7 +198,7 @@
 		<SoundIKStart Name="trucks/krs_58_bandit/krs_58_bandit_crane_move_start" Range="20" Volume="1" />
 		<SoundIKLoop Name="trucks/krs_58_bandit/krs_58_bandit_crane_move_loop" Range="20" Volume="1" />
 		<InstallSocket Type="CraneSleiterMFK816" />
-		<CraneSourceSocket Pos="(-4.674; 4.282; -0.000)" ParentFrame="BoneArm4_cdt" />
+		<CraneSourceSocket Pos="(1.442; 4.282; -0.000)" ParentFrame="BoneArm4_cdt" />
 		<AddonType Name="Crane" />
 		<WinchSocket Pos="(-5.33; 1.44; -0.000)" FixedToTruck="true" />
 		<WinchSocket Pos="(-5.087; 1.001; 1.017)" FixedToTruck="true" />

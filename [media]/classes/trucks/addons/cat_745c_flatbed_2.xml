@@ -1,0 +1,115 @@
+<_templates Include="trucks" >
+	<Body>
+		<Loop
+			Collisions="Default"
+			CenterOfMassOffset="(0; -0.1; 0)"
+			Mass="1"
+		>
+			<Constraint
+				AxisLocal="(0; 0; 1)"
+				Type="Hinge"
+				MinLimit="-180"
+				MaxLimit="0"
+			>
+				<Motor Damping=".1" Spring=".1" Type="Spring" />
+			</Constraint>
+		</Loop>
+		<Mudguard
+			Collisions="Default"
+			CenterOfMassOffset="(0; 0; 0)"
+			Mass="2"
+		>
+			<Constraint
+				AxisLocal="(0; 0; 1)"
+				Type="Hinge"
+				MinLimit="-20"
+				MaxLimit="10"
+			>
+				<Motor Damping="0.1" Spring="1.0" Type="Spring" />
+			</Constraint>
+		</Mudguard>
+	</Body>
+</_templates>
+<TruckAddon>
+	<TruckData
+		RepairsCapacity="200"
+	/>
+	<PhysicsModel Mesh="trucks/addons/cat_745c_flatbed_2">
+		<NetSync Legacy="true" />
+		<Body Mass="700">
+			<Constraint Type="Rigid" />
+			<Body _template="Loop" ModelFrame="BoneLoopR_cdt" />
+			<Body _template="Loop" ModelFrame="BoneLoopL_cdt" />
+			<Body _template="Mudguard" ModelFrame="BoneMudguardR_cdt" />
+			<Body _template="Mudguard" ModelFrame="BoneMudguardL_cdt" />
+		</Body>
+	</PhysicsModel>
+	
+	<ModelAttachments>
+		<StopSignals>
+			<Light _template="StopSignal" Color="(102; 1; 1) x 0.5" Pos="(-6.021; 1.925; 0)" ParentFrame="BoneRoot_cdt" />
+			<Light _template="StopSignal" Color="(102; 1; 1) x 0.5" Pos="(-6.114; 1.544; 0)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.3" Size="0.2" Pos="(-6.114; 1.544; 0.913)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.3" Size="0.2" Pos="(-6.021; 1.925; 1.032)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.3" Size="0.2" Pos="(-6.114; 1.544; -0.913)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.3" Size="0.2" Pos="(-6.021; 1.925; -1.032)" ParentFrame="BoneRoot_cdt" />
+		</StopSignals>
+		<ReverseSignals>
+			<Light _template="ReverseSignal" Pos="(-6.021; 1.925; 0)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="ReverseSignal" Color="g(245; 235; 220) x 0.6" Dir="(-1; 0; 0)" Size="0.2" Pos="(-6.021; 1.925; 1.226)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="ReverseSignal" Color="g(245; 235; 220) x 0.6" Dir="(-1; 0; 0)" Size="0.2" Pos="(-6.021; 1.925; -1.226)" ParentFrame="BoneRoot_cdt" />
+			
+			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.05" Dir="(-1; 0; 0)" Size="0.4" Pos="(-6.021; 1.925; 1.226)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.05" Dir="(-1; 0; 0)" Size="0.4" Pos="(-6.021; 1.925; -1.226)" ParentFrame="BoneRoot_cdt" />
+		</ReverseSignals>
+		<Ignition>
+			<Flare _template="IgnitionSignalOrange" Color="g(255; 140; 0) x 0.3" Dir="(-1; 0; 0)" Size="0.2" Pos="(-6.020; 1.925; 1.420)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="IgnitionSignalOrange" Color="g(255; 140; 0) x 0.3" Dir="(-1; 0; 0)" Size="0.2" Pos="(-6.020; 1.925; -1.420)" ParentFrame="BoneRoot_cdt" />
+		
+			<Light _template="StopSignal" Color="(102; 1; 1) x 0.5" Pos="(-6.021; 1.925; 0)" ParentFrame="BoneRoot_cdt" />
+			<Light _template="StopSignal" Color="(102; 1; 1) x 0.5" Pos="(-6.114; 1.544; 0)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.3" Size="0.2" Pos="(-6.114; 1.544; 0.913)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.3" Size="0.2" Pos="(-6.021; 1.925; 1.032)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.3" Size="0.2" Pos="(-6.114; 1.544; -0.913)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.3" Size="0.2" Pos="(-6.021; 1.925; -1.032)" ParentFrame="BoneRoot_cdt" />
+			
+			<Flare _template="IgnitionSignalOrange" Color="g(255; 140; 0) x 0.3" Dir="(-1; 0; 0)" Size="0.1" Pos="(-6.021; 1.710; 1.603)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="IgnitionSignalOrange" Color="g(255; 140; 0) x 0.3" Dir="(-1; 0; 0)" Size="0.1" Pos="(-6.021; 1.710; -1.603)" ParentFrame="BoneRoot_cdt" />
+			
+			<Flare _template="IgnitionSignalOrange" Color="g(255; 140; 0) x 0.3" Dir="(0; 0; -1)" Size="0.2" Pos="(-0.165; 1.925; -1.677)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="IgnitionSignalOrange" Color="g(255; 140; 0) x 0.3" Dir="(0; 0; -1)" Size="0.2" Pos="(-1.538; 1.925; -1.677)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="IgnitionSignalOrange" Color="g(255; 140; 0) x 0.3" Dir="(0; 0; -1)" Size="0.2" Pos="(-3.508; 1.925; -1.677)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="IgnitionSignalOrange" Color="g(255; 140; 0) x 0.3" Dir="(0; 0; -1)" Size="0.2" Pos="(-5.477; 1.925; -1.677)" ParentFrame="BoneRoot_cdt" />
+			
+			<Flare _template="IgnitionSignalOrange" Color="g(255; 140; 0) x 0.3" Dir="(0; 0; 1)" Size="0.2" Pos="(-0.165; 1.925; 1.677)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="IgnitionSignalOrange" Color="g(255; 140; 0) x 0.3" Dir="(0; 0; 1)" Size="0.2" Pos="(-1.538; 1.925; 1.677)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="IgnitionSignalOrange" Color="g(255; 140; 0) x 0.3" Dir="(0; 0; 1)" Size="0.2" Pos="(-3.508; 1.925; 1.677)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="IgnitionSignalOrange" Color="g(255; 140; 0) x 0.3" Dir="(0; 0; 1)" Size="0.2" Pos="(-5.477; 1.925; 1.677)" ParentFrame="BoneRoot_cdt" />
+		</Ignition>
+	</ModelAttachments>
+	
+	<GameData
+		CameraPreset="addon_1"
+		Category="frame_addons"
+		IsCustomizable="true"
+		Price="5600"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<WinchSocket Pos="(-6.168; 1.002; 0.000)" />
+		<WinchSocket Pos="(-6.032; 1.313; 1.545)" />
+		<WinchSocket Pos="(-6.032; 1.313; -1.545)" />
+		
+		<CraneSocket Pos="(-6.168; 1.002; 0.000)" />
+		<CraneSocket Pos="(-6.032; 1.313; 1.545)" />
+		<CraneSocket Pos="(-6.032; 1.313; -1.545)" />
+		<UiDesc
+			UiDesc="UI_ADDON_FRAME_FLATBED_2_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_ADDON_FRAME_FLATBED_2_NAME"
+		/>
+		<InstallSocket Type="Cat745CFlatbed" />
+		<AddonSlots InitialOffset="(-1.420; 2.269; 0.000)" OffsetStep="(-3.022; 0; 0)" Quantity="2" />
+	</GameData>
+</TruckAddon>

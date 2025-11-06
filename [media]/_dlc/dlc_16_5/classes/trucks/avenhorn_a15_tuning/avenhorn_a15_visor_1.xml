@@ -1,0 +1,19 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/avenhorn_a15_tuning/avenhorn_a15_visor_1" />
+	<GameData
+		CameraPreset="roof"
+		Category="fender_front"
+		Price="1200"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SUNVISOR_NAVISTAR_DARKSLANT_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SUNVISOR_NAVISTAR_DARKSLANT_NAME"
+		/>
+		<InstallSocket Type="AvenhornA15Visor" />
+	</GameData>
+</TruckAddon>

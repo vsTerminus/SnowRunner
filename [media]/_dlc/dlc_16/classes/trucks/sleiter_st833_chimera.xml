@@ -581,6 +581,9 @@
 			<Socket Names="SleiterST833ChimeraExhaust" Offset="(0; 0; 0)" ParentFrame="BoneCabinTwist_cdt">
 				<ExtraParent Frame="BoneCabin_cdt" Offset="(0; 0; 0)" />
 			</Socket>
+			<Socket Names="SleiterST833ChimeraExhaust2" Offset="(0; 0; 0)" ParentFrame="BoneCabinTwist_cdt">
+				<ExtraParent Frame="BoneCabin_cdt" Offset="(0; 0; 0)" />
+			</Socket>
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="SleiterST833ChimeraSnorkel" Offset="(0; 0; 0)" ParentFrame="BoneCabinTwist_cdt">
@@ -626,7 +629,7 @@
 			</Socket>
 			<Socket
 				Names="SleiterST833ChimeraFlatbed3"
-				NamesBlock="SleiterST833ChimeraSpareWheel, LogLiftKenworth ,SleiterST833ChimeraCrane, SleiterST833ChimeraSnorkel"
+				NamesBlock="SleiterST833ChimeraSpareWheel, LogLiftKenworth ,SleiterST833ChimeraCrane, SleiterST833ChimeraSnorkel, SleiterST833ChimeraExhaust2"
 				Offset="(0; 0; 0)"
 				ParentFrame="BoneChassis_cdt"
 			>

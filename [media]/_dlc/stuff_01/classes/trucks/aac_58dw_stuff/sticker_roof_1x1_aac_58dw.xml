@@ -2,6 +2,12 @@
 <TruckAddon>
 	<PhysicsModel Mesh="trucks/aac_58dw_stuff/sticker_roof_1x1_aac_58dw" />
 	<GameData CameraPreset="sticker_roof">
+		<UiDesc
+			UiDesc="UI_STUFF_ROOF_STICKER_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_STUFF_ROOF_STICKER_1x1_NAME"
+		/>
 		<InstallSocket Type="Aac58dwSticker_Roof" />
 	</GameData>
 </TruckAddon>

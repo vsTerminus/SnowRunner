@@ -525,7 +525,7 @@
 			<Socket Names="internationalFleetstarF2070ASticker_Roof" ParentFrame="BoneCabinRagdoll_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="internationalFleetstarF2070ASticker_Capote" ParentFrame="BoneCabinRagdoll_cdt" />
+			<Socket Names="internationalFleetstarF2070ASticker_Capote" ParentFrame="BoneCabinRagdoll_cdt" InCockpit="true" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="StuffHoodInternationalFleetstarF2070A" ParentFrame="BoneCabinRagdoll_cdt" />

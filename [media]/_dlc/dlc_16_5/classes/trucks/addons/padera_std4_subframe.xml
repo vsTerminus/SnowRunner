@@ -1,0 +1,26 @@
+<_templates Include="trucks"/>
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/addons/padera_std4_subframe">
+		<Body Mass="50" ModelFrame="BoneAddon_cdt">
+			<Constraint Type="Rigid" ExplicitParentFrame="0"/>
+				<Body Mass="50" ModelFrame="BoneExplicit_cdt">
+					<Constraint	ExplicitParentFrame="0"	Type="Fixed" />
+				</Body>
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="addon_1"
+		Category="frame_addons"
+		Price="4000"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_ADDON_FRAME_SUBFRAME_PADERA_STD4_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_ADDON_FRAME_SUBFRAME_PADERA_STD4_NAME"
+		/>
+		<InstallSocket Type="PaderaSTD4Subframe" />
+	</GameData>
+</TruckAddon>

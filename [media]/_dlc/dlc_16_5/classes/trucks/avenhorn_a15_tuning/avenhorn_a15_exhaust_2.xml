@@ -1,0 +1,31 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<TruckData>
+		<Shakers>
+			<Shaker Frame="BoneExhaustLeft" MinAngle="(0.07; 0.07; 0.07)" MaxAngle="(0.25; 0.25; 0.25)" MaxFrequency="4" />
+			<Shaker Frame="BoneExhaustRight" MinAngle="(0.07; 0.07; 0.07)" MaxAngle="(0.25; 0.25; 0.25)" MaxFrequency="4" />
+		</Shakers>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/avenhorn_a15_tuning/avenhorn_a15_exhaust_2">
+		<Body ImpactType="Truck" Mass="40" ModelFrame="BoneCabinTwist_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="exhaust"
+		Category="exhaust"
+		Price="1600"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_EXHAUST_SLANTCUT_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_EXHAUST_SLANTCUT_NAME"
+		/>
+		<InstallSocket Type="AvenhornA15Exhaust" />
+	</GameData>
+	<Exhaust IsLight="true" Origin="(0.922; 3.588; 0.792)" Speed="3.92" ParentFrame="BoneExhaustLeft" />
+	<Exhaust IsLight="true" Origin="(0.922; 3.588; -0.792)" Speed="3.9" ParentFrame="BoneExhaustRight" />
+</TruckAddon>

@@ -338,6 +338,12 @@
 	<GameData ExcludedCargoTypes="CargoPlane, CargoWing1, CargoWing2" Price="5700">
 		<WinchSocket Pos="(2.635; 0.814; 1.24)" ParentFrame="BoneCargo_4_cdt" />
 		<WinchSocket Pos="(2.635; 0.814; -1.24)" ParentFrame="BoneCargo_4_cdt" />
+
+		<WinchSocket Pos="(-3.340; 0.817; 1.240)" ParentFrame="BoneCargo_1_cdt" />
+		<WinchSocket Pos="(-3.340; 0.817; -1.240)" ParentFrame="BoneCargo_1_cdt" />
+		<WinchSocket Pos="(-7.824; 0.435; 1.041)" ParentFrame="BoneCargo_1_cdt" />
+		<WinchSocket Pos="(-7.824; 0.435; -1.041)" ParentFrame="BoneCargo_1_cdt" />
+
 		<WinchSocket WinchableWhenAttached="false" Pos="(7.245; 1.335; 0)" ParentFrame="BoneCargo_4_cdt" />
 		<UiDesc
 			UiDesc="UI_SEMITRAILER_GOOSENECK_3_DESC"
@@ -353,6 +359,12 @@
 		<CraneSocket Pos="(2.635; 0.814; 1.24)" ParentFrame="BoneCargo_4_cdt" />
 		<CraneSocket Pos="(2.635; 0.814; -1.24)" ParentFrame="BoneCargo_4_cdt" />
 		<CraneSocket Pos="(7.245; 1.335; 0)" ParentFrame="BoneCargo_4_cdt" />
+
+		<CraneSocket Pos="(-3.340; 0.817; 1.240)" ParentFrame="BoneCargo_1_cdt" />
+		<CraneSocket Pos="(-3.340; 0.817; -1.240)" ParentFrame="BoneCargo_1_cdt" />
+		<CraneSocket Pos="(-7.824; 0.435; 1.041)" ParentFrame="BoneCargo_1_cdt" />
+		<CraneSocket Pos="(-7.824; 0.435; -1.041)" ParentFrame="BoneCargo_1_cdt" />
+		
 		<AddonSlots
 			InitialOffset="(2.572; 0.92; 0)"
 			OffsetStep="(-2.559; 0; 0)"

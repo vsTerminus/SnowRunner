@@ -359,7 +359,7 @@
 			<Socket InCockpit="true" Names="AramatsuForesterSticker_1x4_01" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="AramatsuForesterSticker_Capote" ParentFrame="BoneFront_cdt" />
+			<Socket Names="AramatsuForesterSticker_Capote" ParentFrame="BoneFront_cdt" InCockpit="true" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="AramatsuForesterSticker_Roof" ParentFrame="BoneCabin_cdt" />

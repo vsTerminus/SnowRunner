@@ -647,7 +647,7 @@
 			<Socket Names="WesternStar6900XDSticker_GlassBottom" Offset="(0; 0; 0)" ParentFrame="BoneCabinPrismatic_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="WesternStar6900XDSticker_Capote" ParentFrame="BoneCabinPrismatic_cdt" />
+			<Socket Names="WesternStar6900XDSticker_Capote" ParentFrame="BoneCabinPrismatic_cdt" InCockpit="true" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket InCockpit="true" Names="StuffCurtainWesternStar6900XD" ParentFrame="BoneCabinPrismatic_cdt" />

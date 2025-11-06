@@ -585,27 +585,27 @@
 			UiName="UI_VEHICLE_WS_6900XD_TWIN_NAME"
 		/>
 		<CustomizationCameras>
-			<CameraPos FOV="32.0" Interior="true" Name="roof_sticker" InterestPosition="(4.152; 2.538; -0.812)" Position="(6.963; 6.154; 0.013)" />
-			<CameraPos FOV="32.0" Interior="true" Name="sticker_1" InterestPosition="(6.888; 5.658; 2.147)" Position="(4.539; 2.753; -0.547)" />
+			<CameraPos FOV="32.0" Name="default" InterestPosition="(5.028; 1.818; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(14.108; 1.267; -4.602)" />
+			<CameraPos FOV="32.0" Name="wheels" InterestPosition="(4.388; 1; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(8.845; 1.705; -6.183)" />
 			<CameraPos FOV="32.0" Name="addon_1" InterestPosition="(4.314; 3.258; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(9.801; 5.301; -2.523)" />
 			<CameraPos FOV="32.0" Name="addon_2" InterestPosition="(4.591; 2.162; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(9.949; 3.893; -3.787)" />
-			<CameraPos FOV="32.0" Interior="true" Name="mirror_mount" InterestPosition="(6.006; 2.657; 1.394)" Position="(3.878; 3.246; -0.366)" />
+			<CameraPos FOV="32.0" Name="side_l" InterestPosition="(5.028; 1.818; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(14.108; 1.267; -4.602)" />
 			<CameraPos FOV="32.0" Name="side_r" InterestPosition="(5.601; 1.97; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(3.352; 1.747; -7.216)" />
-			<CameraPos FOV="32.0" Interior="true" Name="sticker" InterestPosition="(6.006; 1.516; 1.742)" Position="(4.431; 3.204; -0.187)" />
-			<CameraPos FOV="32.0" Interior="true" Name="glass_sticker" InterestPosition="(4.188; 2.739; -0.925)" Position="(8.755; 3.874; 0.771)" />
-			<CameraPos FOV="32.0" Interior="true" Name="door_r_sticker" InterestPosition="(5.985; 2.115; 0.826)" Position="(3.448; 2.703; 2.894)" />
 			<CameraPos FOV="32.0" Name="roof" InterestPosition="(4.44; 2.399; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-1.623; 5.6; -4.08)" />
-			<CameraPos FOV="32.0" Interior="true" Name="capote_sticker" InterestPosition="(5.211; 0.662; -0.518)" Position="(9.710; 5.634; -0.279)" />
 			<CameraPos FOV="32.0" Name="hoods" InterestPosition="(5.028; 1.818; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(14.108; 1.267; -4.602)" />
-			<CameraPos FOV="32.0" Interior="true" Name="sticker_2" InterestPosition="(3.255; 3.424; 3.219)" Position="(4.642; 3.001; -0.596)" />
-			<CameraPos FOV="32.0" Name="side_l" InterestPosition="(5.028; 1.818; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(14.108; 1.267; -4.602)" />InterestPosition="(5.426; 1.664; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-0.932; 2.13; -4.911)" />
-			<CameraPos FOV="32.0" Interior="true" Name="bubble_head" InterestPosition="(6.006; 2.143; 1.603)" Position="(4.48; 3.034; -0.203)" />
-			<CameraPos FOV="32.0" Name="wheels" InterestPosition="(4.388; 1; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(8.845; 1.705; -6.183)" />
-			<CameraPos FOV="32.0" Name="default" InterestPosition="(5.028; 1.818; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(14.108; 1.267; -4.602)" />
 			<CameraPos FOV="32.0" Name="rear" InterestPosition="(0.788; 1.117; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-0.701; 2.508; -4.833)" />
+			<CameraPos FOV="32.0" Interior="true" Name="sticker" InterestPosition="(6.000; 1.900; 2.100)" Position="(4.200; 2.700; -0.200)" />
+			<CameraPos FOV="32.0" Interior="true" Name="sticker_1" InterestPosition="(6.900; 5.600; -0.500)" Position="(4.200; 2.400; 0.300)" />
+			<CameraPos FOV="32.0" Interior="true" Name="sticker_2" InterestPosition="(3.000; 3.500; 1.200)" Position="(4.450; 3.000; -0.100)" />
 			<CameraPos FOV="32.0" Interior="true" Name="door_l_sticker" InterestPosition="(4.101; 2.223; -0.174)" Position="(3.521; 2.549; -3.022)" />
+			<CameraPos FOV="32.0" Interior="true" Name="door_r_sticker" InterestPosition="(5.985; 2.115; 0.826)" Position="(3.448; 2.703; 2.894)" />
+			<CameraPos FOV="32.0" Interior="true" Name="roof_sticker" InterestPosition="(4.152; 2.538; -0.812)" Position="(6.963; 6.154; 0.013)" />
+			<CameraPos FOV="32.0" Interior="true" Name="capote_sticker" InterestPosition="(5.211; 0.662; -0.518)" Position="(9.710; 5.634; -0.279)" />
+			<CameraPos FOV="32.0" Interior="true" Name="glass_sticker" InterestPosition="(4.188; 2.739; -0.925)" Position="(8.755; 3.874; 0.771)" />
+			<CameraPos FOV="32.0" Interior="true" Name="bubble_head" InterestPosition="(6.006; 2.130; 1.603)" Position="(4.48; 2.980; -0.203)" />
+			<CameraPos FOV="32.0" Interior="true" Name="mirror_mount" InterestPosition="(6.006; 2.800; 1.200)" Position="(3.878; 3.246; -0.366)" />
+			<CameraPos FOV="32.0" Interior="true" Name="curtain" InterestPosition="(6.006; 3.400; 1.200)" Position="(3.878; 3.000; -0.366)" />
 			<CameraPos FOV="32.0" Interior="true" Name="hood_ornament" InterestPosition="(7.974; 2.607; -1.643)" Position="(9.026; 2.923; -1.643)" />
-			<CameraPos FOV="32.0" Interior="true" Name="curtain" InterestPosition="(6.006; 2.657; 1.394)" Position="(3.878; 3.246; -0.366)" />
 		</CustomizationCameras>
 		<CraneSocket Pos="(7.981; 1.048; -0.053)" ParentFrame="BoneCabin" />
 		<CraneSocket Pos="(-7.786; 0.732; 0)" />
@@ -700,7 +700,7 @@
 			<Socket Names="ws6900XdTwinSticker_Roof" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="ws6900XdTwinSticker_Capote" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="ws6900XdTwinSticker_Capote" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" InCockpit="true" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="ws_6900xd_twin_transferbox_default">
 			<Socket Names="WS6900XDTwinTransferBox" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt">

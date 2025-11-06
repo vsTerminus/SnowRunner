@@ -26,7 +26,7 @@
 			UiIcon40x40=""
 			UiName="UI_TUNING_EXHAUST_SIDESPITTER_NAME"
 		/>
-		<InstallSocket Type="SleiterST833ChimeraExhaust" />
+		<InstallSocket Type="SleiterST833ChimeraExhaust2" />
 	</GameData>
 	<Exhaust Dir="(-0.583; 0.423; -0.694)" IsLight="true" Origin="(2.053; 4.11; -1.053)" Speed="3.82" />
 	<Exhaust Dir="(-0.583; 0.423; 0.694)" IsLight="true" Origin="(2.053; 4.11; 1.053)" Speed="3.82" />

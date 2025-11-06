@@ -1,0 +1,24 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<Snorkel Origin="(3.280; 2.304; 0.997)" />
+	<PhysicsModel Mesh="trucks/avenhorn_a15_tuning/avenhorn_a15_snorkel_default">
+		<Body ImpactType="Truck" Mass="20" ModelFrame="BoneCabinTwist_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="snorkel_default"
+		Category="snorkel"
+		Price="1300"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SNORKEL_STOCK_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SNORKEL_STOCK_NAME"
+		/>
+		<InstallSocket Type="AvenhornA15Snorkel" />
+	</GameData>
+</TruckAddon>

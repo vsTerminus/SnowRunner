@@ -402,7 +402,7 @@
 			<Socket Names="tuz420TatarinSticker_Door_R" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="tuz420TatarinSticker_Capote" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="tuz420TatarinSticker_Capote" ParentFrame="BoneCabin_cdt" InCockpit="true" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="tuz420TatarinSticker_Roof" ParentFrame="BoneCabin_cdt" />

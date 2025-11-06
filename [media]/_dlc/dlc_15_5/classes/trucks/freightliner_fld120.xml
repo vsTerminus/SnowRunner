@@ -592,7 +592,7 @@
 			<Socket Names="FreightlinerFLD120Beacon" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-2.841; 1.333; -0)" />
+			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-2.841; 1.400; -0)" />
 			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-2.527; 1.502; -0)" />
 			<Socket Names="Trailer, LogTrailer" Offset="(-4.23; 0.7; 0)" />
 		</AddonSockets>
@@ -714,7 +714,7 @@
 			<Socket Names="FreightlinerFLD120Sticker_Door_R" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="FreightlinerFLD120Sticker_Capote" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="FreightlinerFLD120Sticker_Capote" ParentFrame="BoneCabin_cdt" InCockpit="true" />
 		</AddonSockets>
 	</GameData>
 	<ControlledConstraints>

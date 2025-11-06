@@ -1,0 +1,77 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<TruckData FuelCapacity="120" RepairsCapacity="150">
+		<LimitedFluid Center="(3.144; 3.365; 0.205)" SizeX="0.519" SizeY="0.182" SizeZ="0.363" Type="Box" ParentFrame="BoneFuel1_cdt" />
+		<LimitedFluid Center="(3.141; 3.365; 0.655)" SizeX="0.519" SizeY="0.182" SizeZ="0.363" Type="Box" ParentFrame="BoneFuel1_cdt" />
+		<LimitedFluid Center="(2.560; 3.360; 0.207)" SizeX="0.519" SizeY="0.182" SizeZ="0.363" Type="Box" ParentFrame="BoneFuel2_cdt" />
+		<LimitedFluid Center="(2.668; 3.370; 0.671)" SizeX="0.519" SizeY="0.182" SizeZ="0.363" Type="Box" ParentFrame="BoneFuel2_cdt" />
+		<LimitedFluid Center="(3.252; 3.358; -0.355)" SizeX="0.363" SizeY="0.182" SizeZ="0.519" Type="Box" ParentFrame="BoneFuel3_cdt" />
+	</TruckData>
+	<RepairsHide>
+		<Mesh Frame="repair" HideThreshold="0.0" />
+	</RepairsHide>
+	<FuelHide>
+		<Mesh Frame="fuel" HideThreshold="0.0" />
+	</FuelHide>
+	<PhysicsModel Mesh="trucks/padera_std4_tuning/padera_std4_roofrack_1">
+		<Body ImpactType="Truck" Mass="40" ModelFrame="BoneCabin_cdt">
+			<Constraint Type="Rigid" />
+			<Body Collisions="None" Mass="40" ModelFrame="BoneFuel1_cdt">
+				<Constraint
+					AxisLocal="(0; 0; 1)"
+					Type="Prismatic"
+					MinLimit="-0.03"
+					MaxLimit="0.09"
+				>
+					<Motor Damping="1400" Spring="2200" Type="Spring" />
+				</Constraint>
+			</Body>
+			<Body Collisions="None" Mass="30" ModelFrame="BoneFuel2_cdt">
+				<Constraint
+					AxisLocal="(0; 0; 1)"
+					Type="Prismatic"
+					MinLimit="-0.03"
+					MaxLimit="0.03"
+				>
+					<Motor Damping="1600" Spring="2500" Type="Spring" />
+				</Constraint>
+			</Body>
+			<Body Collisions="None" Mass="30" ModelFrame="BoneFuel3_cdt">
+				<Constraint
+					AxisLocal="(1; 0; 0)"
+					Type="Prismatic"
+					MinLimit="-0.04"
+					MaxLimit="0.02"
+				>
+					<Motor Damping="1600" Spring="2500" Type="Spring" />
+				</Constraint>
+			</Body>
+			<Body Collisions="None" Mass="50" ModelFrame="BoneRepair_cdt">
+				<Constraint
+					AxisLocal="(0; 0; 1)"
+					Type="Prismatic"
+					MinLimit="-0.04"
+					MaxLimit="0.04"
+				>
+					<Motor Damping="2100" Spring="3000" Type="Spring" />
+				</Constraint>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="roof"
+		Category="frame_addons"
+		IsCustomizable="true"
+		Price="1200"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SCOUT_TRUNK_SUPPLIES_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SCOUT_TRUNK_SUPPLIES_NAME"
+		/>
+		<InstallSocket Type="PaderaSTD4Roofrack" />
+	</GameData>
+</TruckAddon>

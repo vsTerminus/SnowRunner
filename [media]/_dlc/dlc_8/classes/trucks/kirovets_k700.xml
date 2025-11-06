@@ -244,9 +244,10 @@
 	<ModelAttachments>
 		<!--<StopSignals/>-->
 		<ReverseSignals>
-			<Light _template="ReverseSignal" Pos="(-0.5; 0.7; 0)" ParentFrame="BoneBack_cdt" />
-			<Flare _template="ReverseSignal" Size="0.4" Pos="(-0.078; 3.03; -0.993)" ParentFrame="BoneFront_cdt" />
-			<Flare _template="ReverseSignal" Size="0.4" Pos="(-0.078; 3.03; 0.993)" ParentFrame="BoneFront_cdt" />
+			<Light _template="ReverseSignal" Pos="(-0.652; 2.59; -0.993)" ParentFrame="BoneBack_cdt" />
+			<Light _template="ReverseSignal" Pos="(-0.652; 2.59; 0.993)" ParentFrame="BoneBack_cdt" />
+			<Flare _template="ReverseSignal" Size="0.5" Pos="(-0.078; 3.03; -0.993)" ParentFrame="BoneFront_cdt" />
+			<Flare _template="ReverseSignal" Size="0.5" Pos="(-0.078; 3.03; 0.993)" ParentFrame="BoneFront_cdt" />
 		</ReverseSignals>
 		<Ignition>
 			<Flare _template="IgnitionSignalWhite" Pos="(3.38; 1.583; -0.69)" ParentFrame="BoneFront_cdt" />

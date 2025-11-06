@@ -246,7 +246,7 @@
 	</Shafts>
 	<RequiredAddon>
 		<SaddleLow Types="saddle_low, saddle_low_1, saddle_ank_mk38_low, saddle_low_royal_bm17, cat_770g_saddle" />
-		<SaddleHigh Types="saddle_high, saddle_high_1, saddle_derry_longhorn_4520, saddle_pacific, saddle_ank_mk38_high, saddle_high_royal_bm17, cat_770g_saddle, saddle_high_zikz_605r, saddle_high_femm_37at, sleiter_mfk816_saddle_high, thornycroft_antar_saddle_high" />
+		<SaddleHigh Types="saddle_high, saddle_high_1, saddle_derry_longhorn_4520, saddle_pacific, saddle_ank_mk38_high, saddle_high_royal_bm17, cat_770g_saddle, saddle_high_zikz_605r, saddle_high_femm_37at, sleiter_mfk816_saddle_high, thornycroft_antar_saddle_high, cat_770g_saddle_high" />
 	</RequiredAddon>
 	<PhysicsModel>
 		<Invisible Mesh="trucks/addons/invisible_mesh" />

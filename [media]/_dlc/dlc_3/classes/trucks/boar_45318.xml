@@ -426,7 +426,7 @@
 			<Socket Names="boar45318Sticker_Door_R" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="boar45318Sticker_Capote" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="boar45318Sticker_Capote" ParentFrame="BoneCabin_cdt" InCockpit="true" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="stuff_hood_default_boar_45318">
 			<Socket Names="StuffHoodBoar45318" ParentFrame="BoneCabin_cdt" />

@@ -359,7 +359,7 @@
 		<CraneSocket Pos="(-1.747; 3.375; 1.188)" ParentFrame="BoneCabin_cdt" />
 		<CraneSocket Pos="(-1.747; 3.375; -1.188)" ParentFrame="BoneCabin_cdt" />
 		<AddonSockets DefaultAddon="navistar_5000mv_window_mesh_default">
-			<Socket _template="Cabin2Chassis" Names="Navistar5000mvWindowMesh" />
+			<Socket _template="Cabin2Chassis" InCockpit="true" Names="Navistar5000mvWindowMesh" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="navistar_5000mv_snorkel_default">
 			<Socket _template="Cabin2Chassis" Names="Navistar5000mvSnorkel" />

@@ -1,7 +1,7 @@
 <TruckAddon>
 	<TruckData>
 		<Damage>
-			<Multiplier Multiplier="1.0" Type="Engine" />
+			<Multiplier Multiplier="1.0" Type="FuelTank" />
 		</Damage>
 	</TruckData>
 	<PhysicsModel Mesh="trucks/khan_39_marshall_tuning/khan_39_marshall_bumper_rear_default">

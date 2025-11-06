@@ -1,0 +1,20 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<Snorkel Origin="(3.598; 2.795; 1.205)" />
+	<PhysicsModel Mesh="trucks/addons/cat_745c_snorkel"/>
+	<GameData
+		CameraPreset="side_r"
+		Category="snorkel"
+		Price="1600"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SNORKEL_ROUNDCAP_SHORT_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SNORKEL_ROUNDCAP_SHORT_NAME"
+		/>
+		<InstallSocket Type="Cat745CSnorkel" />
+	</GameData>
+</TruckAddon>

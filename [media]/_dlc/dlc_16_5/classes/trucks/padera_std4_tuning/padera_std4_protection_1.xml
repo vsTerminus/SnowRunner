@@ -1,0 +1,128 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<TruckData>
+		<Damage>
+			<Multiplier Multiplier="0.87" Type="Engine" />
+		</Damage>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/padera_std4_tuning/padera_std4_protection_1">
+		<Body ImpactType="Truck" Mass="150" ModelFrame="BoneCabinTwist_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<Rotator EngineTorqueFactor="0" Frame="BoneRotatorLeft" RotationSpeed="3.8" />
+	<Rotator EngineTorqueFactor="0" Frame="BoneRotatorRight" RotationSpeed="3.8" />
+	<ModelAttachments>
+		<HeadLight>
+			<Model _template="HeadLightRay" Org="(4.214; 1.817; -0.361)" ColorMultAtDay="0.3"/>
+			<Model _template="HeadLightRay" Org="(4.214; 1.817; 0.361)" ColorMultAtDay="0.3"/>
+			<Model _template="HeadLightRay" Org="(4.214; 1.817; 0)" ColorMultAtDay="0.3"/>
+		</HeadLight>
+		<HeadLight>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.214; 1.831; -0.450)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.214; 1.831; -0.428)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.214; 1.831; -0.406)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.214; 1.831; -0.384)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.214; 1.831; -0.362)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.214; 1.831; -0.340)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.214; 1.831; -0.318)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.214; 1.831; -0.296)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.214; 1.831; -0.274)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.214; 1.804; -0.450)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.214; 1.804; -0.428)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.214; 1.804; -0.406)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.214; 1.804; -0.384)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.214; 1.804; -0.362)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.214; 1.804; -0.340)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.214; 1.804; -0.318)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.214; 1.804; -0.296)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.214; 1.804; -0.274)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.214; 1.804; -0.088)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.214; 1.804; -0.066)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.214; 1.804; -0.044)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.214; 1.804; -0.022)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.214; 1.804; 0)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.214; 1.804; 0.022)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.214; 1.804; 0.044)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.214; 1.804; 0.066)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.214; 1.804; 0.088)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.214; 1.831; -0.088)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.214; 1.831; -0.066)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.214; 1.831; -0.044)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.214; 1.831; -0.022)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.214; 1.831; 0)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.214; 1.831; 0.022)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.214; 1.831; 0.044)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.214; 1.831; 0.066)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.214; 1.831; 0.088)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.214; 1.831; 0.450)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.214; 1.831; 0.428)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.214; 1.831; 0.406)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.214; 1.831; 0.384)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.214; 1.831; 0.362)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.214; 1.831; 0.340)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.214; 1.831; 0.318)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.214; 1.831; 0.296)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.214; 1.831; 0.274)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.214; 1.804; 0.450)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.214; 1.804; 0.428)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.214; 1.804; 0.406)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.214; 1.804; 0.384)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.214; 1.804; 0.362)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.214; 1.804; 0.340)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.214; 1.804; 0.318)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.214; 1.804; 0.296)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.214; 1.804; 0.274)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+		</HeadLight>
+		
+		<Ignition _template="Flasher">
+			<Model
+				Color="g(255; 111; 5) x 0.55"
+				Dir="(1; 0.222; 0.563)"
+				Org="(3.411; 3.215; 1.159)"
+				Scale="(0.19; 0.19; 0.19)"
+				ParentFrame="BoneRotatorLeft"
+				Reflections="false"
+			/>
+			<Light Dir="(-0.796; 0.222; 0.563)" Pos="(3.411; 3.215; 1.159)" ParentFrame="BoneRotatorLeft" />
+			<Flare Color="g(255; 111; 5) x 0.45" Dir="(-0.796; 0.222; 0.563)" Size="1" Pos="(3.411; 3.215; 1.159)" ParentFrame="BoneRotatorLeft" />
+			<Flare Color="g(255; 111; 5) x 0.7" Dir="(-0.796; 0.222; 0.563)" Size="0.7" Pos="(3.411; 3.215; 1.159)" ParentFrame="BoneRotatorLeft" />
+			<Flare Color="g(255; 111; 5) x 0.55" Size="1" Pos="(3.411; 3.215; 1.159)" ParentFrame="BoneRotatorLeft" />
+		</Ignition>
+		<Ignition _template="Flasher">
+			<Model
+				Color="g(255; 111; 5) x 0.55"
+				Dir="(1; 0.222; 0.563)"
+				Org="(3.411; 3.215; -1.159)"
+				Scale="(0.19; 0.19; 0.19)"
+				ParentFrame="BoneRotatorRight"
+				Reflections="false"
+			/>
+			<Light Dir="(-0.796; 0.222; 0.563)" Pos="(3.411; 3.215; -1.159)" ParentFrame="BoneRotatorRight" />
+			<Flare Color="g(255; 111; 5) x 0.45" Dir="(-0.796; 0.222; 0.563)" Size="1" Pos="(3.411; 3.215; -1.159)" ParentFrame="BoneRotatorRight" />
+			<Flare Color="g(255; 111; 5) x 0.7" Dir="(-0.796; 0.222; 0.563)" Size="0.7" Pos="(3.411; 3.215; -1.159)" ParentFrame="BoneRotatorRight" />
+			<Flare Color="g(255; 111; 5) x 0.55" Size="1" Pos="(3.411; 3.215; -1.159)" ParentFrame="BoneRotatorRight" />
+		</Ignition>
+	</ModelAttachments>
+	<GameData
+		CameraPreset="default"
+		Category="top"
+		IsCustomizable="true"
+		Price="2700"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_BUMPER_SAVIOR_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_BUMPER_SAVIOR_NAME"
+		/>
+		<InstallSocket Type="PaderaSTD4Protection" />
+	</GameData>
+</TruckAddon>

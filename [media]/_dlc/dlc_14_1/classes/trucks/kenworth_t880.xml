@@ -556,6 +556,7 @@
 			<Socket Names="FrameAddonKung" NamesBlock="FlatbedKenworthT880, MinicraneUS, LogLift" Offset="(-2; 1.05; 0)" ParentFrame="BoneChassis_cdt"/>
 			<Socket Names="FrameAddon" NamesBlock="FlatbedKenworthT880, LogLift" Offset="(-1; 1.0; 0)" ParentFrame="BoneChassis_cdt">
 				<AddonsShift Offset="(-0.95; 0; 0)" Types="MinicraneUS" />
+				<AddonsShift Offset="(-0.3; 0; 0)" Types="KenworthT880SpareWheel" />
 			</Socket>
 			<Socket Names="FrameAddonTank" NamesBlock="FlatbedKenworthT880, MinicraneUS, LogLift" Offset="(-2; 1.018; 0)" ParentFrame="BoneChassis_cdt">
 				<AddonsShift Offset="(-0.3; 0; 0)" Types="KenworthT880SpareWheel" />
