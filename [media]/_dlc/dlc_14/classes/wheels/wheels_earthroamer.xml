@@ -10,11 +10,7 @@
 <TruckWheels DamageCapacity="50" Radius="1" Width="0.676">
 	<TruckTires>
 		<TruckTire _template="Offroad" Mesh="wheels/tire_earthrommer" Name="earthroamer_offroad">
-		<WheelFriction
-				SubstanceFriction="1.6"
-				BodyFriction="3.1"
-				BodyFrictionAsphalt="0.9"
-			/>
+		<WheelFriction _template="Mudtires"/>
 			<GameData
 				Price="4500"
 				UnlockByExploration="false"

@@ -9,12 +9,7 @@
 <TruckWheels DamageCapacity="100" Radius="1" Width="0.657">
 	<TruckTires>
 		<TruckTire _template="Mudtires" Mesh="wheels/tire_hib_billert_1980" Name="tire_billert_1">
-			<WheelFriction
-				_template="Offroad"
-				BodyFriction="2.7"
-				BodyFrictionAsphalt="1.2"
-				SubstanceFriction="1.6"
-			/>
+			<WheelFriction _template="Offroad"/>
 			<GameData
 				Price="5700"
 				UnlockByExploration="false"

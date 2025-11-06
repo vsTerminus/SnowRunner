@@ -10,7 +10,7 @@
 <TruckWheels DamageCapacity="100" Radius="1" Width="0.79" Mass="600">
 	<TruckTires>
 		<TruckTire _template="Mudtires" Mesh="wheels/tire_heavy_mudtires_13" Name="JAT MHS IV">
-			<WheelFriction _template="Mudtires" BodyFriction="1.8" BodyFrictionAsphalt="0.4" SubstanceFriction="2.6"/>
+			<WheelFriction _template="Mudtires"/>
 			<GameData
 				Price="5200"
 				UnlockByExploration="false"
@@ -20,7 +20,7 @@
 			</GameData>
 		</TruckTire>
         <TruckTire _template="Mudtires" Mesh="wheels/tire_heavy_mudtires_14" Name="JAT MHS V">
-			<WheelFriction _template="Mudtires" BodyFriction="2.4" BodyFrictionAsphalt="0.5" SubstanceFriction="2.1"/>
+			<WheelFriction _template="Mudtires"/>
 			<GameData
 				Price="5600"
 				UnlockByExploration="false"
@@ -30,7 +30,7 @@
 			</GameData>
 		</TruckTire>
         <TruckTire _template="Mudtires" Mesh="wheels/tire_heavy_mudtires_15" Name="JAT MHS VI">
-			<WheelFriction _template="Mudtires" BodyFriction="1.8" BodyFrictionAsphalt="0.6" SubstanceFriction="2.5"/>
+			<WheelFriction _template="Mudtires"/>
 			<GameData
 				Price="5900"
 				UnlockByExploration="false"
