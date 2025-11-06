@@ -634,7 +634,7 @@
 			<Socket Names="MastodonBunkLog" Offset="(-4.5; 1.5; 0)" />
 			<Socket Names="MastodonFrameAddonTowPlatform" NamesBlock="MinicraneRU, ZikzLogLift" Offset="(1.5; 1.55; 0)" />
 			
-			<Socket Names="SaddleMotorized" NamesBlock="MinicraneRU, ZikzLogLift" Offset="(0.670; 0.029; 0.000)" ParentFrame="BoneChassis_cdt" >
+			<Socket Names="SaddleMotorized" NamesBlock="MinicraneRU, ZikzLogLift, ZikzFrameAddon" Offset="(0.670; 0.029; 0.000)" ParentFrame="BoneChassis_cdt" >
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.000; 0.000; -0.110)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.000; 0.000; 0.110)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(1.400; 0.000; -0.110)" />
