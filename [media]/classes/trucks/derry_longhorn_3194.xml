@@ -154,11 +154,11 @@
 			<DamageArea Type="Engine" Min="(1.2; 0.9; -0.7)" Max="(3.1; 2.65; 0.7)" ParentFrame="BoneChassis_cdt" />
 			<DamageArea Type="FuelTank" Min="(-1.24; 0.5; -1.28)" Max="(0.85; 1.45; 1.28)" ParentFrame="BoneChassis_cdt" />
 		</Damage>
-		<CompatibleWheels OffsetZ="0.1" RearOffsetZ=".07" Scale="0.66" Type="wheels_heavy_double1" />
-		<CompatibleWheels OffsetZ="0.1" RearOffsetZ=".1" Scale="0.66" Type="wheels_heavy_double2" />
-		<CompatibleWheels OffsetZ="0.1" RearOffsetZ=".07" Scale="0.66" Type="wheels_heavy_highway_double" />
-		<CompatibleWheels RearOffsetZ=".07" Scale="0.66" Type="wheels_heavy_offroad_double" />
-		<CompatibleWheels OffsetZ="0.1" RearOffsetZ=".07" Scale="0.66" Type="wheels_heavy_allterrain_double" />
+		<CompatibleWheels OffsetZ="0.1" RearOffsetZ=".07" Scale="0.75" Type="wheels_heavy_double1" />
+		<CompatibleWheels OffsetZ="0.1" RearOffsetZ=".1" Scale="0.75" Type="wheels_heavy_double2" />
+		<CompatibleWheels OffsetZ="0.1" RearOffsetZ=".07" Scale="0.75" Type="wheels_heavy_highway_double" />
+		<CompatibleWheels RearOffsetZ=".07" Scale="0.75" Type="wheels_heavy_offroad_double" />
+		<CompatibleWheels OffsetZ="0.1" RearOffsetZ=".07" Scale="0.75" Type="wheels_heavy_allterrain_double" />
 
 		<Camera Center="(-3; 0; 0)" ParentFrame="BoneCabin_cdt">
 			<Cockpit
