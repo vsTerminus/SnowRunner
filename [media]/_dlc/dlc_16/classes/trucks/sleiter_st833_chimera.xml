@@ -613,9 +613,14 @@
 		<AddonSockets>
 			<Socket Names="Trailer" NamesBlock="FrameAddonSeismicVibrator, FrameAddonTow, FrameAddonTowPlatform" Offset="(-5.116; 1.059; 0)" />
 			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" NamesBlock="LogLiftKenworth" Offset="(-2.703; 2.249; -0)" />
+			<Socket Names="Semitrailer, SemitrailerOiltank" NamesBlock="LogLiftKenworth" Offset="(-3.903; 2.082; -0)" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="SaddleHigh" Offset="(-2.7; 1.784; 0)">
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.125)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.125)" />
+			</Socket>
+			<Socket Names="SaddleLow" Offset="(-3.9; 1.784; 0)">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.125)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.125)" />
 			</Socket>
