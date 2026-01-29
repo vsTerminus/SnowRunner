@@ -6,7 +6,7 @@
 			Torque="default"
 			ParentFrame="BoneSuspension_cdt"
 		/>
-		<FrontWheel Location="front" Torque="full" SteeringAngle="40" />
+		<FrontWheel Location="front" Torque="full" SteeringAngle="33" />
 	</Wheel>
 	<Flare>
 		<ReverseSignal
@@ -78,7 +78,7 @@
 		ExhaustStartTime="0.6"
 		FuelCapacity="700"
 		Responsiveness="0.4"
-		SteerSpeed="0.020"
+		SteerSpeed="0.017"
 		TruckImage="Azov4220Antarcticmchr"
 		TruckType="HEAVY"
 		HideDistance="250"
