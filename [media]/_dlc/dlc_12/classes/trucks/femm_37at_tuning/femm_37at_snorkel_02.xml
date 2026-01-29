@@ -9,10 +9,10 @@
 		UnlockByRank="14"
 	>
 		<UiDesc
-			UiDesc="UI_TUNING_SNORKEL_ROUNDCAP_SHORT_DESC"
+			UiDesc="UI_TUNING_SNORKEL_FRONTFACE_TALL_DESC"
 			UiIcon30x30=""
 			UiIcon40x40=""
-			UiName="UI_TUNING_SNORKEL_ROUNDCAP_SHORT_NAME"
+			UiName="UI_TUNING_SNORKEL_FRONTFACE_TALL_NAME"
 		/>
 		<InstallSocket Type="Femm37AtSnorkel" />
 	</GameData>

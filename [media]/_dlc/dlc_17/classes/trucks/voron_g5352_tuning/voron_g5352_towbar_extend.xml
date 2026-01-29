@@ -1,0 +1,62 @@
+<_templates Include="trucks" >
+	<Body>
+		<Mudguard Collisions="None" Mass="5">
+			<Constraint
+				AxisLocal="(0; 0; 1)"
+				Type="Hinge"
+				MinLimit="-45"
+				MaxLimit="10"
+			>
+				<Motor Damping="3" Spring="5" Type="Spring" />
+			</Constraint>	
+		</Mudguard>
+	</Body>
+</_templates>
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/voron_g5352_tuning/voron_g5352_towbar_extend">
+		<Body ImpactType="Truck" Mass="50" ModelFrame="BoneAddon_cdt">
+			<Constraint Type="Rigid" />
+			<Body _template="Mudguard" ModelFrame="BoneRearMudguardLeft_cdt" />
+			<Body _template="Mudguard" ModelFrame="BoneRearMudguardRight_cdt" />
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<ReverseSignals>
+			<Light _template="ReverseSignal" Pos="(-4.879; 1.068; 0.849)" ParentFrame="BoneAddon_cdt" />
+			<Light _template="ReverseSignal" Pos="(-4.879; 1.068; -0.849)" ParentFrame="BoneAddon_cdt" />
+			<Flare _template="ReverseSignal" Color="g(245; 235; 220) x 0.6" Size="0.4" Pos="(-4.879; 1.068; 0.849)" ParentFrame="BoneAddon_cdt" />
+			<Flare _template="ReverseSignal" Color="g(245; 235; 220) x 0.6" Size="0.4" Pos="(-4.879; 1.068; -0.849)" ParentFrame="BoneAddon_cdt" />
+			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.05" Dir="(-1; 0; 0)" Size="0.4" Pos="(-4.879; 1.068; 0.849)" ParentFrame="BoneAddon_cdt" />
+			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.05" Dir="(-1; 0; 0)" Size="0.4" Pos="(-4.879; 1.068; -0.849)" ParentFrame="BoneAddon_cdt" />
+	    </ReverseSignals>
+	    <StopSignals>
+			<Light _template="StopSignal" Pos="(-4.879; 1.070; 0)" Size="0.8" />
+	        <Flare _template="StopSignal" Pos="(-4.879; 1.070; -0.792)" Dir="(-1; 0; 0)" Size="0.200" ParentFrame="BoneAddon_cdt" />
+            <Flare _template="StopSignal" Pos="(-4.879; 1.070; 0.792)" Dir="(-1; 0; 0)" Size="0.200" ParentFrame="BoneAddon_cdt" />
+			<Flare _template="StopSignal" Pos="(-4.879; 1.069; -0.955)" Dir="(-1; 0; 0)" Size="0.200" ParentFrame="BoneAddon_cdt" />
+            <Flare _template="StopSignal" Pos="(-4.879; 1.069; 0.955)" Dir="(-1; 0; 0)" Size="0.200" ParentFrame="BoneAddon_cdt" />
+	    </StopSignals>
+		<Ignition>
+			<Light _template="IgnitionSignalRed" Pos="(-5.330; 0.864; -0.002)" ParentFrame="BoneAddon_cdt" />
+			<Flare _template="IgnitionSignalRed" Pos="(-4.879; 1.069; -0.955)" ParentFrame="BoneAddon_cdt" />
+			<Flare _template="IgnitionSignalRed" Pos="(-4.879; 1.069; 0.955)" ParentFrame="BoneAddon_cdt" />
+		</Ignition>
+	</ModelAttachments>
+	<GameData
+		CameraPreset="addon_1"
+		Category="frame_addons"
+		Price="2200"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<WinchSocket Pos="(-5.067; 1.046; 0.000)" />
+		<CraneSocket Pos="(-5.067; 1.046; 0.000)" />
+		<UiDesc
+			UiDesc="UI_TUNING_TOWBAR_EXTEND_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_TOWBAR_EXTEND_NAME"
+		/>
+		<InstallSocket Type="VoronG5352TowbarExtend" />
+	</GameData>
+</TruckAddon>

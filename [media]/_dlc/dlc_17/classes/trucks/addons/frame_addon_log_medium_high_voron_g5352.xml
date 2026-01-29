@@ -1,0 +1,47 @@
+<_templates Include="trucks" />
+<TruckAddon IsChassisFullOcclusion="true">
+	<PhysicsModel Mesh="trucks/addons/frame_addon_log_medium_high_02">
+		<Body ImpactType="Truck" Mass="500">
+			<Constraint Type="Rigid" />
+			<Body
+				ImpactType="Truck"
+				Mass="400"
+				ModelFrame="BoneFork_cdt"
+				NoCameraCollision="True"
+			>
+				<Constraint Type="Fixed" />
+			</Body>
+			
+			<Body Collisions="None" Mass="5" ModelFrame="BoneExplicitL_cdt">
+				<Constraint ExplicitParentFrame="0" Type="Fixed" />
+			</Body>
+			<Body Collisions="None" Mass="5" ModelFrame="BoneExplicitR_cdt">
+				<Constraint ExplicitParentFrame="1" Type="Fixed" />
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments/>
+	<GameData
+		CameraPreset="addon_1"
+		Category="frame_addons"
+		Price="6000"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_ADDON_FRAME_LOG_MEDIUM_ADDON_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_ADDON_FRAME_LOG_MEDIUM_ADDON_NAME"
+		/>
+		<LoadArea Subtype="CargoLogsMediumVoronG5352" TrailerLoad="true" Type="CargoLogsMedium" Min="(-6.655; 0.272; -1.111)" Max="(-3.612; 1.823; 1.236)" ParentFrame="BoneRoot_cdt" />
+		<LoadArea Subtype="CargoLogsMediumVoronG5352" TrailerLoad="true" Type="CargoLogsMedium" Min="(-3.612; 0.272; -1.111)" Max="(-0.17; 1.823; 1.236)" ParentFrame="BoneRoot_cdt" />
+		<InstallSocket Offset="(-2.351; 0; 0)" Type="FrameAddonLogMediumHigh02" ParentFrame="BoneRoot_cdt" />
+		<RequiredAddon Types="voron_g5352_towbar_extend" />
+		<AddonSlots
+			InitialOffset="(-0.05; 0.2; 0)"
+			ParentFrames="BoneRoot_cdt"
+			Quantity="1"
+		/>
+	</GameData>
+</TruckAddon>

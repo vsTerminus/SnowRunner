@@ -38,7 +38,7 @@
 	</Body>
 </_templates>
 <Truck Type="Trailer">
-	<TruckData>
+	<TruckData HideDistance="250" ShadowHideDistance="100">
 		<Wheels>
 			<Wheel _template="RearWheel" Pos="(-1.161; 0.550; 1.1)" ParentFrame="BoneChassisLeft_cdt"/>
 			<Wheel _template="RearWheel" RightSide="true" Pos="(-1.161; 0.550; 1.1)" ParentFrame="BoneChassisRight_cdt"/>

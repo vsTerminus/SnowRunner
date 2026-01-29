@@ -1,0 +1,11 @@
+<_parent File="stuff_curtain_azov_73210" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/voron_g5352_stuff/stuff_curtain_voron_g5352" />
+	<GameData
+		Price="1000"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<InstallSocket Type="StuffCurtainVoronG5352" />
+	</GameData>
+</TruckAddon>

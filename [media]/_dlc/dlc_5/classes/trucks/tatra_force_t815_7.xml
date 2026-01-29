@@ -82,6 +82,8 @@
 		TruckImage="tatraforcemchr"
 		TruckType="HEAVY"
 		SetHandbrakeOnWinchRelease="false"
+		HideDistance="250"
+		ShadowHideDistance="100"
 	>
 		<WinchUpgradeSocket Default="w_heavy_trucks_default" IsUpgradable="true" Type="winches_heavy_trucks" />
 		<Wheels
@@ -360,7 +362,7 @@
 	<Landmark Mesh="landmarks/tatra_force_t815_7_lmk" MinScale="1.8" MaxScale="2.8" />
 	<HeadLight _template="Default" Pos="(4.541; 1.196; 0)" />
 	<GameData
-		Country="RU,CAS,NE,CE"
+		Country="RU,CAS,WA,NE,CE"
 		ExcludeAddons="trailer_log_pole"
 		Price="182600"
 		UnlockByExploration="true"

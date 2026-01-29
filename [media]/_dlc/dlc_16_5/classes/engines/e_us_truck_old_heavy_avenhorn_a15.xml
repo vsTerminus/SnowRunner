@@ -5,7 +5,7 @@
 		
 		FuelConsumption="14.35"
 		
-		CriticalDamageThreshold="0.68"
+		CriticalDamageThreshold="0.35"
 		DamagedMinTorqueMultiplier="1.0"
 		DamagedMaxTorqueMultiplier="0.91"
 		DamagedConsumptionModifier="1.14"
@@ -35,7 +35,7 @@
 		
 		FuelConsumption="14.8"
 		
-		CriticalDamageThreshold="0.45"
+		CriticalDamageThreshold="0.55"
 		DamagedMinTorqueMultiplier="1.0"
 		DamagedMaxTorqueMultiplier="0.83"
 		DamagedConsumptionModifier="1.05"
@@ -65,7 +65,7 @@
 		
 		FuelConsumption="14.2"
 		
-		CriticalDamageThreshold="0.2"
+		CriticalDamageThreshold="0.8"
 		DamagedMinTorqueMultiplier="1.0"
 		DamagedMaxTorqueMultiplier="0.75"
 		DamagedConsumptionModifier="1.25"

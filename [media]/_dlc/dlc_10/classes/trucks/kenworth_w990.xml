@@ -77,6 +77,8 @@
 		SteerSpeed="0.025"
 		TruckImage="kenworth990mchr"
 		TruckType="HIGHWAY"
+		HideDistance="250"
+		ShadowHideDistance="100"
 	>
 		<WinchUpgradeSocket Default="w_heavy_trucks_default" IsUpgradable="true" Type="winches_heavy_trucks" />
 		<Wheels
@@ -560,7 +562,8 @@
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="Trailer, LogTrailer" Offset="(-4.37; 0.643; 0.000)" />
-			<Socket Names="Semitrailer, SemitrailerOiltank, SemitrailerFoldableLog" Offset="(-2.804; 1.376; 0)" >
+			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-2.804; 1.376; 0)" />
+			<Socket Names="SemitrailerFoldableLog" Offset="(-3.004; 1.376; 0)" >
 				<AddonsShift Offset="(0.057; 0.08; 0)" Types="SaddleMotorized" />
 			</Socket>
 			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" NamesBlock="SaddleLow" Offset="(-2.804; 1.6; 0)" />
@@ -591,7 +594,7 @@
 			</Socket>
 			<Socket Names="FrameAddonSeismicVibrator" Offset="(0.32; 1.098; 0)" NamesBlock="MinicraneUS, Trailer, LogTrailer"/>
 			
-			<Socket Names="SaddleMotorized" NamesBlock="MinicraneUS, LogLift" Offset="(-1.400; -0.169; 0.000)" ParentFrame="BoneChassis_cdt" >
+			<Socket Names="SaddleMotorized" NamesBlock="MinicraneUS, LogLift" Offset="(-1.600; -0.169; 0.000)" ParentFrame="BoneChassis_cdt" >
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.000; 0.000; 0.069)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.000; 0.000; -0.069)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(1.100; 0.000; 0.069)" />

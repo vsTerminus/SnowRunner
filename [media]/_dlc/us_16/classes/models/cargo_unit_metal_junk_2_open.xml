@@ -1,7 +1,7 @@
 <ModelBrand ClipCamera="false" DynamicModel="true">
 <PhysicsModel>
 	<NetSync Legacy="false" />
-		<Body Collisions="Dynamic" Friction="1.8" Mass="1000" NoSoftContacts="true" ModelFrame="BoneRoot_cdt" AngularDamping="0.001">
+		<Body Collisions="Dynamic" Friction="1.8" Mass="1000" NoSoftContacts="true" ModelFrame="BoneRoot_cdt" AngularDamping="0.001" HideDistance="250" ShadowHideDistance="100">
 			<Body
 				CenterOfMassOffset="(0; 0; 0)"
 				Collisions="None" 

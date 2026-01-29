@@ -57,6 +57,8 @@
 		SteerSpeed="0.02"
 		TruckImage="azovsprintermchr"
 		TruckType="OFFROAD"
+		HideDistance="250"
+		ShadowHideDistance="100"
 	>
 		<WinchUpgradeSocket Default="w_medium_trucks_default" IsUpgradable="true" Type="winches_medium_trucks" />
 		<Wheels
@@ -321,7 +323,7 @@
 	<Landmark Mesh="landmarks/azov_43_191_sprinter_lmk" MinScale="1.5" MaxScale="2.5" />
 	<HeadLight _template="Default" Pos="(4.239; 1.202; 0)" ParentFrame="BoneCabin_cdt" />
 	<GameData
-		Country="RU,CAS"
+		Country="RU,CAS,WA"
 		Price="58500"
 		UnlockByExploration="true"
 		UnlockByRank="1"

@@ -1,0 +1,14 @@
+<ModelBrand ClipCamera="false" DynamicModel="true">
+	<PhysicsModel>
+		<Body
+			Collisions="Dynamic"
+			Friction="1.8"
+			Mass="4000.0"
+			NoSoftContacts="true"
+		/>
+	</PhysicsModel>
+	<GameData LoadType="CargoChiller" PackSlotsNumber="6">
+		<CraneSocket Pos="(0.0; 3.15; 0.0)" />
+	</GameData>
+	<Landmark Mesh="landmarks/cargo_unit_chiller_6_lmk" MinScale="1.1" MaxScale="1.6" />
+</ModelBrand>

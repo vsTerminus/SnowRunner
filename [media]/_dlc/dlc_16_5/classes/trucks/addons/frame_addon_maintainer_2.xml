@@ -155,4 +155,7 @@
 		/>
 		<InstallSocket Offset="(0; 0; 0)" Type="FrameAddonMaintainer2" />
 	</GameData>
+	<FuelMass>
+		<Body Mass="3920" />
+	</FuelMass>
 </TruckAddon>

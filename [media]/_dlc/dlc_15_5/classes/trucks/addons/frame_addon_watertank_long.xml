@@ -40,7 +40,7 @@
 </_templates>
 <TruckAddon IsChassisFullOcclusion="true">
 	<WaterMass>
-		<Body Mass="18000" />
+		<Body Mass="9800" />
 	</WaterMass>
 	<TruckData WaterCapacity="2800">
 		<LimitedFluid

@@ -1,0 +1,9 @@
+<CargoType>
+	<UiDesc
+		UiName="UI_CARGO_CONSUMABLE_FUEL_NAME"
+		UiDesc="UI_CARGO_CONSUMABLE_FUEL_DESC"
+		UiIcon20x20="reFuelValueImg20"
+		UiIcon40x40="reFuelValueImg40"
+		UiIcon100x100="reFuelValueImg40"
+	/>
+</CargoType>

@@ -1,0 +1,27 @@
+<_templates Include="trucks"/>
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/padera_std4_tuning/padera_std4_wings_default">
+		<Body Mass="1" ModelFrame="BoneAddon_cdt">
+			<Constraint Type="Rigid" ExplicitParentFrame="0"/>
+				<Body Mass="5" ModelFrame="BoneExplicit_cdt" Collisions="None">
+					<Constraint	ExplicitParentFrame="0"	Type="Fixed" />
+				</Body>
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="addon_1"
+		Category="fender_rear"
+		Price="1500"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_REAR_FENDERS_STOCK_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_REAR_FENDERS_STOCK_NAME"
+		/>
+		<InstallSocket Type="PaderaSTD4Wings" />
+		<RequiredAddon Types="padera_std4_subframe" />
+	</GameData>
+</TruckAddon>

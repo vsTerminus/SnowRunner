@@ -111,6 +111,8 @@
 		SteerSpeed="0.024"
 		TruckImage="ws6900tweeensteermchr"
 		TruckType="HEAVY"
+		HideDistance="250"
+		ShadowHideDistance="100"
 	>
 		<WinchUpgradeSocket Default="w_heavy_trucks_default" IsUpgradable="true" Type="winches_heavy_trucks" />
 		<Wheels

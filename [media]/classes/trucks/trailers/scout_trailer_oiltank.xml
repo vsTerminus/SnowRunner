@@ -30,7 +30,7 @@
 	</Flare>
 </_templates>
 <Truck Type="Trailer">
-	<TruckData FuelCapacity="900">
+	<TruckData FuelCapacity="900" HideDistance="250" ShadowHideDistance="100">
 		<Wheels>
 			<Wheel _template="TrailerWheelFront" RightSide="true" Pos="(3.862; 0.105; 0)" />
 			<Wheel _template="TrailerWheelRear" Pos="(1.426; 0.416; 0.869)" />
@@ -141,6 +141,7 @@
 		<CraneSocket Pos="(-0.244; 0.74; 0)" />
 		<CraneSocket Pos="(1.452; 0.955; 1.074)" />
 		<CraneSocket Pos="(1.452; 0.955; -1.074)" />
+		<CraneSocket Pos="(1.572; 1.854; 0)" />
 	</GameData>
 	<FuelMass>
 		<Body Mass="900" />

@@ -63,7 +63,7 @@
 		<AnimEvent Key="0">
 			<Sound Name="actors/actor_rocket/actor_rocket_launch" Range="200" Volume="1"/>
 		</AnimEvent>
-		<AnimEvent Key="5" ForceDaytimePreset="true" />
+		<AnimEvent Key="15" ForceDaytimePreset="true" />
 		<AnimEvent Key="374">
 			<SFX Name="rocket_fly"  Pos="(0; 0; 0)"   Dir="(0.0; -1.0; 0.0)" Frame="joint_start" />
 		</AnimEvent>

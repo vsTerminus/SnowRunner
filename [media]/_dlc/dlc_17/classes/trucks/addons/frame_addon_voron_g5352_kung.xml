@@ -1,0 +1,108 @@
+<_templates Include="trucks">
+	<Body>
+		<ChainRight Mass="60" Collisions="None">
+			<Constraint
+				PivotOffset="(0.000; 0.000; 0.000)"
+				Type="Ragdoll"
+				TwistAxisLocal="(1; 0; 0)"
+				PlaneAxisLocal="(0; 1; 0)"
+				TwistMin="-3"
+				TwistMax="26"
+				PlaneMin="-32"
+				PlaneMax="32"
+				Cone="6"
+			>
+				<TwistMotor Damping="1" Spring="0.5" Type="Spring" />
+				<PlaneMotor Damping="1" Spring="0.5" Type="Spring" />
+				<ConeMotor Damping="1" Spring="0.5" Type="Spring" />
+			</Constraint>
+		</ChainRight>
+		<ChainLeft Mass="60" Collisions="None">
+			<Constraint
+				PivotOffset="(0.000; 0.000; 0.000)"
+				Type="Ragdoll"
+				TwistAxisLocal="(1; 0; 0)"
+				PlaneAxisLocal="(0; 1; 0)"
+				TwistMin="-26"
+				TwistMax="3"
+				PlaneMin="-32"
+				PlaneMax="32"
+				Cone="6"
+			>
+				<TwistMotor Damping="1" Spring="0.5" Type="Spring" />
+				<PlaneMotor Damping="1" Spring="0.5" Type="Spring" />
+				<ConeMotor Damping="1" Spring="0.5" Type="Spring" />
+			</Constraint>
+		</ChainLeft>
+		<Top Collisions="None" Mass="30">
+			<Constraint
+				AxisLocal="(0; 1; 0)"
+				Type="Prismatic"
+				MinLimit="-0.05"
+				MaxLimit="0.1"
+			>
+				<Motor Damping="2" Spring="3000" Type="Spring" />
+			</Constraint>
+		</Top>
+		<Side Collisions="None" Mass="30">
+			<Constraint
+				AxisLocal="(0; 0; 1)"
+				Type="Prismatic"
+				MinLimit="-.06"
+				MaxLimit=".06"
+			>
+				<Motor Damping="15" Spring="3000" Type="Spring" />
+			</Constraint>
+		</Side>
+		<Front Collisions="None" Mass="30">
+			<Constraint
+				AxisLocal="(1; 0; 0)"
+				Type="Prismatic"
+				MinLimit="-0.3"
+				MaxLimit="0.2"
+			>
+				<Motor Damping="10" Spring="3000" Type="Spring" />
+			</Constraint>
+		</Front>
+	</Body>
+</_templates>
+<TruckAddon IsChassisFullOcclusion="true">
+	<TruckData 
+		RepairsCapacity="900"
+		WheelRepairsCapacity="6"
+		FuelCapacity="300"
+	>
+	</TruckData>
+	
+	<PhysicsModel Mesh="trucks/addons/frame_addon_voron_g5352_kung">
+		<Body ImpactType="Truck" Mass="2280" ModelFrame="BoneChassis_cdt">
+			<Constraint Type="Rigid" />
+				
+			<Body _template="ChainLeft" ModelFrame="BoneChainLeft_cdt" />
+			<Body _template="ChainRight" ModelFrame="BoneChainRight_cdt" />
+			
+			<Body _template="Side" ModelFrame="BoneSidesCloth_cdt" />
+			<Body _template="Top" ModelFrame="BoneTopCloth_cdt" />
+			<Body _template="Front" ModelFrame="BoneFrontBackCloth_cdt" />
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="addon_1"
+		Category="frame_addons"
+		IsCustomizable="true"
+		Price="7000"
+		UnlockByExploration="false"
+		UnlockByRank="4"
+	>
+		<UiDesc
+			UiDesc="UI_ADDON_VORON_G5352_FRAME_KUNG_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_ADDON_VORON_G5352_FRAME_KUNG_NAME"
+		/>
+		<InstallSocket Offset="(0; 0; 0)" Type="VoronG5352Kung" />
+	</GameData>
+	<FuelMass>
+		<Body Mass="840" />
+	</FuelMass>
+</TruckAddon>

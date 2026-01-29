@@ -1,0 +1,144 @@
+<ModelBrand
+	NightLightingShadowsAllowCap="true" DayShadowOffsetMult="13"
+>
+	<PhysicsModel>
+		<Body Collisions="Dynamic" ModelFrame="static_start_01">
+			<Body Collisions="Dynamic" ModelFrame="static_start_02"/>
+			<Body Collisions="Dynamic" ModelFrame="static_end_01"/>
+		</Body>
+	</PhysicsModel>
+	<Landmark 
+		Mesh="landmarks/solar_panel_01_ru17_objective_lmk" 
+	/>
+
+	<Subset Name="state_00" IsDefault="true">
+		<Mesh Name="static_start_01" />
+		<Mesh Name="static_start_01_lod1" />
+		<Mesh Name="static_start_01_lod2" />
+		<Mesh Name="static_start_01_lod3" />
+		<CdtMesh Name="cdt_state_00" />
+	</Subset>
+
+	<Subset Name="state_01" >
+		<Mesh Name="static_start_01" />
+		<Mesh Name="static_start_01_lod1" />
+		<Mesh Name="static_start_01_lod2" />
+		<Mesh Name="static_start_01_lod3" />
+		<Mesh Name="static_start_02" />
+		<Mesh Name="static_start_02_lod1" />
+		<Mesh Name="static_start_02_lod2" />
+		<Mesh Name="static_start_02_lod3" />
+		<CdtMesh Name="cdt_state_01" />
+		<AnimSubset Name="build_animation_0" />
+		<AnimTrack Name="anim_track_01" />
+	</Subset>
+
+	<Subset Name="state_02" >
+		<Mesh Name="static_end_01" />
+		<Mesh Name="static_end_01_lod1" />
+		<Mesh Name="static_end_01_lod2" />
+		<Mesh Name="static_end_01_lod3" />
+		<Mesh Name="static_start_01" />
+		<Mesh Name="static_start_01_lod1" />
+		<Mesh Name="static_start_01_lod2" />
+		<Mesh Name="static_start_01_lod3" />
+		<Mesh Name="static_start_02" />
+		<Mesh Name="static_start_02_lod1" />
+		<Mesh Name="static_start_02_lod2" />
+		<Mesh Name="static_start_02_lod3" />
+		<CdtMesh Name="cdt_state_02" />
+		<AnimSubset Name="build_animation_1" />
+		<AnimTrack Name="anim_track_02" />
+	</Subset>
+
+	<AnimSubset Name="build_animation_0">
+		<Mesh Name="static_start_01" />
+		<Mesh Name="static_start_01_lod1" />
+		<Mesh Name="static_start_01_lod2" />
+		<Mesh Name="static_start_01_lod3" />
+		<Mesh Name="animesh_04"/>
+		<CdtMesh Name="cdt_state_00" />
+	</AnimSubset>
+
+	<AnimSubset Name="build_animation_1">
+		<Mesh Name="static_start_01" />
+		<Mesh Name="static_start_01_lod1" />
+		<Mesh Name="static_start_01_lod2" />
+		<Mesh Name="static_start_01_lod3" />
+		<Mesh Name="static_start_02" />
+		<Mesh Name="static_start_02_lod1" />
+		<Mesh Name="static_start_02_lod2" />
+		<Mesh Name="static_start_02_lod3" />
+		<Mesh Name="animesh_01"/>
+		<Mesh Name="animesh_02"/>
+		<Mesh Name="animesh_03"/>
+		<CdtMesh Name="cdt_state_01" />
+	</AnimSubset>
+
+
+
+
+ <TrackEvents TrackName="anim_track_01">
+ <AnimEvent Key="5">
+			<Sound Name="actors/actor_construction/actor_construct_rus_drilling_rig_03_02" Range="240" Volume="0.4" />
+		</AnimEvent>
+<AnimEvent Key="23">
+        <SFX Name="oil_derrek_sparks_02" Dir="(0; 1; 0)" Pos="(-1.551; 1.082; -16.928)" />
+    </AnimEvent>
+
+<AnimEvent Key="33">
+        <SFX Name="oil_derrek_sparks_02" Dir="(0; 1; 0)" Pos="(-1.551; 1.082; -11.328)" />
+    </AnimEvent>
+
+<AnimEvent Key="45">
+        <SFX Name="oil_derrek_sparks_02" Dir="(0; 1; 0)" Pos="(-1.551; 1.082; -5.663)" />
+    </AnimEvent>
+
+<AnimEvent Key="58">
+        <SFX Name="oil_derrek_sparks_02" Dir="(0; 1; 0)" Pos="(1.483; 0.508; -2.816)" />
+        <SFX Name="oil_derrek_sparks_02" Dir="(0; 1; 0)" Pos="(-1.551; 1.082; 0.003)" />
+    </AnimEvent>
+
+<AnimEvent Key="69">
+        <SFX Name="oil_derrek_sparks_02" Dir="(0; 1; 0)" Pos="(-1.551; 1.082; 5.642)" />
+    </AnimEvent>
+
+<AnimEvent Key="81">
+        <SFX Name="oil_derrek_sparks_02" Dir="(0; 1; 0)" Pos="(-1.551; 1.082; 11.333)" />
+    </AnimEvent>
+
+<AnimEvent Key="95">
+        <SFX Name="oil_derrek_sparks_02" Dir="(0; 1; 0)" Pos="(1.483; 0.508; 14.168)" />
+        <SFX Name="oil_derrek_sparks_02" Dir="(0; 1; 0)" Pos="(-1.551; 1.082; 17.009)" />
+    </AnimEvent>
+
+<AnimEvent Key="40">
+        <SFX Name="oil_derrek_sparks_02" Dir="(0; 1; 0)" Pos="(1.483; 0.508; -11.295)" />
+    </AnimEvent>
+
+<AnimEvent Key="64">
+        <SFX Name="oil_derrek_sparks_02" Dir="(0; 1; 0)" Pos="(1.483; 0.508; 0.003)" />
+    </AnimEvent>
+
+<AnimEvent Key="76">
+        <SFX Name="oil_derrek_sparks_02" Dir="(0; 1; 0)" Pos="(1.483; 0.508; 5.671)" />
+    </AnimEvent>
+
+<AnimEvent Key="88">
+        <SFX Name="oil_derrek_sparks_02" Dir="(0; 1; 0)" Pos="(1.483; 0.508; 11.328)" />
+    </AnimEvent>
+<AnimEvent Key="100">
+        <SFX Name="oil_derrek_sparks_02" Dir="(0; 1; 0)" Pos="(1.483; 0.508; 16.991)" />
+    </AnimEvent>
+</TrackEvents>
+
+ <TrackEvents TrackName="anim_track_02">
+ <AnimEvent Key="5">
+			<Sound Name="actors/actor_construction/actor_construct_oil_01" Range="240" Volume="0.4" />
+		</AnimEvent>
+	<AnimEvent Key="80">
+			<Sound Name="actors/actor_construction/actor_construct_metal_power_line" Range="240" Volume="0.4" />
+		</AnimEvent>
+</TrackEvents>
+
+</ModelBrand>

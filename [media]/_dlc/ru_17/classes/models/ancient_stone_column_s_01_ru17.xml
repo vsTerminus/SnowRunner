@@ -1,0 +1,9 @@
+<ModelBrand 
+	Instanced="true" 
+	InstancedAsModel="true" 
+	NightLightingShadowsAllowCap="true">
+	<PhysicsModel>
+		<Body Collisions="Dynamic" FrictionPreset="Stone"/>
+	</PhysicsModel>
+	<Landmark Mesh="landmarks/ancient_stone_column_s_01_ru17_lmk" />
+</ModelBrand>

@@ -98,7 +98,7 @@
 	</Body>
 </_templates>
 <Truck Type="Trailer" AttachType="Saddle">
-	<TruckData>
+	<TruckData HideDistance="250" ShadowHideDistance="100">
 		<Wheels
 			DefaultRim="rim_5"
 			DefaultTire="highway_1"

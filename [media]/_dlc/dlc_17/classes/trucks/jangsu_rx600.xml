@@ -1,0 +1,570 @@
+<_templates Include="trucks">
+	<Wheel>
+		<RearWheel
+			ConnectedToHandbrake="true"
+			Location="rear"
+			Torque="default"
+		/>
+		<FrontWheel
+			Location="front"
+			SteeringAngle="35"
+			SteeringCastor="0"
+			SteeringJointOffset="0.17"
+			Torque="full"
+			ParentFrame="BoneCabin_cdt"
+		/>
+	</Wheel>
+	<Body>
+		<Wire Collisions="None" Mass="0.1">
+			<Constraint
+				AxisLocal="(0; 1; 0)"
+				Type="Prismatic"
+				MinLimit="-0.05"
+				MaxLimit="0.05"
+			>
+				<Motor Damping="0.5" Spring="50" Type="Spring" />
+			</Constraint>
+		</Wire>
+		<Sunshield Collisions="None" Mass="3">
+			<Constraint
+				AxisLocal="(1; 0; 0)"
+				Type="Hinge"
+				MinLimit="-35"
+				MaxLimit="5"
+			>
+				<Motor Damping="0.1" Spring="9" Type="Spring" />
+			</Constraint>
+		</Sunshield>
+		<Mudguard Collisions="None" Mass="10">
+			<Constraint
+				AxisLocal="(0; 0; 1)"
+				Type="Hinge"
+				MinLimit="-32"
+				MaxLimit="10"
+			>
+				<Motor Damping="1" Spring="1" Type="Spring" />
+			</Constraint>
+		</Mudguard>
+	</Body>
+</_templates>
+<Truck>
+	<TruckData
+		BackSteerSpeed="0.03"
+		DiffLockType="Always"
+		EngineIconMesh="env/engine_jangsu_rx600"
+		EngineIconScale="1.3"
+		EngineStartDelay="0.8"
+		ExhaustStartTime="0.9"
+		FuelCapacity="160"
+		Responsiveness="0.22"
+		SteerSpeed="0.028"
+		TruckImage="jangsurx600mchr"
+		TruckType="OFFROAD"
+		HideDistance="250"
+		ShadowHideDistance="100"
+	>
+		<WinchUpgradeSocket Default="w_medium_trucks_default" IsUpgradable="true" Type="winches_medium_trucks" />
+		<Wheels
+			DefaultRim="rim_1"
+			DefaultTire="jangsu_offroad_1"
+			DefaultWheelType="wheels_jangsu_rx600"
+		>
+			<Wheel _template="FrontWheel" Pos="(1.901; 0.534; 0.859)" />
+			<Wheel _template="FrontWheel" RightSide="true" Pos="(1.901; 0.534; 0.859)" />
+			<Wheel _template="RearWheel" Pos="(-1.901; 0.534; 0.859)" />
+			<Wheel _template="RearWheel" RightSide="true" Pos="(-1.901; 0.534; 0.859)" />
+			<Wheel _template="RearWheel" Pos="(-3.163; 0.534; 0.859)" />
+			<Wheel _template="RearWheel" RightSide="true" Pos="(-3.163; 0.534; 0.859)" />
+		</Wheels>
+		<SuspensionSocket
+			Default="jangsu_rx600_suspension_default"
+			Type="s_jangsu_rx600"
+			MaxWheelRadiusWithoutSuspension="0.4"
+		/>
+		<SteeringWheel Frame="BoneSteering" />
+		<SteeringRack
+			Frame="BoneRack"
+			FrameSteerLeft="BoneRackL"
+			FrameSteerRight="BoneRackR"
+			RackHalfSizeZ="0.608"
+		/>
+		<Steam Origin="(0.5; 1; 0)" />
+		<SoundsWheels _template="Default" />
+		<SoundsDamage _template="Heavy" />
+		<Sounds
+			_template="Default"
+			AirHissInterval="12.0"
+			DisableReversePitch="true"
+			Origin="(1.818; 0.995; -0.026)"
+			MinDist="10.0"
+			ParentFrame="BoneCabin_cdt"
+		>
+			<GearFail		Sound="trucks/common/truck_gear_wrong/truck_gear_wrong_big_old" />
+			<Reverse		Sound="" />
+			<Honk			Sound="trucks/common/truck_honk_default" />
+			<Handbrake		Sound="trucks/ws_4964_white/ws_4964_white_handbrake_on" />
+			<HandbrakeOff	Sound="trucks/ws_4964_white/ws_4964_white_handbrake_off" />
+			<BrakesSqueal	Sound="trucks/ws_4964_white/ws_4964_white_brakes_squeal" />
+			<EngineRev		Sound="trucks/ws_4964_white/ws_4964_white_rev" />
+			<EngineAccel	Sound="trucks/ws_4964_white/ws_4964_white_acc" />
+			<EngineStart	Sound="trucks/ws_4964_white/ws_4964_white_start" />
+			<EngineStop		Sound="trucks/ws_4964_white/ws_4964_white_stop" />
+			<EngineIdle		Sound="trucks/ws_4964_white/ws_4964_white_idle" />
+			<EngineIdle_2d	Sound="trucks/ws_4964_white/ws_4964_white_idle_2d"	IsSound2D="true" />
+			<EngineLow		Sound="trucks/ws_4964_white/ws_4964_white_low" />
+			<EngineLow_2d	Sound="trucks/ws_4964_white/ws_4964_white_low_2d"	IsSound2D="true" />
+			<EngineHigh		Sound="trucks/ws_4964_white/ws_4964_white_high" />
+			<EngineHigh_2d	Sound="trucks/ws_4964_white/ws_4964_white_high_2d"	IsSound2D="true" />
+			<EngineHeavy	Sound="trucks/ws_4964_white/ws_4964_white_heavy" />
+			<EngineHeavy_2d	Sound="trucks/ws_4964_white/ws_4964_white_heavy_2d"	IsSound2D="true" />
+			<AbruptStop		Sound="trucks/common/truck_swing_big_old_rnd_set/truck_swing_big_old_rnd" />
+		</Sounds>
+		<Shakers>
+			<Shaker Frame="BoneGearstick" MaxAngle="(6; 6; 6)" MaxFrequency="0.1" ParentFrame="BoneCabin_cdt"/>
+			<Shaker Frame="BoneShaker2" MaxAngle="(3; 3; 3)" MaxFrequency="0.1" ParentFrame="BoneCabin_cdt"/>
+		</Shakers>
+		<Shafts>
+			<Shaft Mesh="env/minishaft" SocketPointA="Shaft1a" SocketPointB="Shaft1b" />
+			<Shaft Mesh="env/minishaft" SocketPointA="Shaft2a" SocketPointB="Shaft2b" />
+			<Shaft Mesh="env/minishaft" SocketPointA="Shaft3a" SocketPointB="Shaft3b" />
+			<Shaft Mesh="env/minishaft" SocketPointA="Shaft4a" SocketPointB="Shaft4b" />
+			<Shaft Mesh="env/minishaft" SocketPointA="Shaft5a" SocketPointB="Shaft5b" />
+		</Shafts>
+		<OcclusionMap HalfSizeZ="1.8" MinX="-4.5" MaxX="3.2" />
+		<LimitedFluid Center="(-0.539; 0.845; 0.809)" SizeX="0.952" SizeY="0.409" SizeZ="0.514" Type="Box" ParentFrame="BoneCabin_cdt"/>
+		<Steam Origin="(1.882; 1.069; -0.030)" />
+		<Intake Dir="(1; 0; 0)" Origin="(3.2; 1.407; 0)" Size="1.0" />
+		<GearboxSocket Default="g_truck_jangsu_rx_600_default" Type="gearboxes_jangsu_rx_600" />
+		<FuelTank DamageCapacity="50" />
+		<EngineSocket Default="truck_old_engine_jangsu_rx600_0" Type="e_truck_old_jangsu_rx600" />
+		<Driver
+			AnimationSet="Truck"
+			LegsOffset="(0; 0.02; 0)"
+			Pos="(0.616; 1.597; 0.484)"
+			SteeringWheelPos="(0.997; 1.923; 0.474)"
+			ParentFrame="BoneCabinWeighter_cdt"
+		/>
+		<Damage>
+			<DamageArea Type="Engine" Min="(1.279; 0.824; -0.706)" Max="(2.888; 1.908; 0.706)" ParentFrame="BoneCabin_cdt" />
+			<DamageArea Type="FuelTank" Min="(-1.036, 0.591, 0.486)" Max="(-0.041, 1.100, 1.137)" ParentFrame="BoneChassis_cdt" />
+			<DamageArea Type="Gearbox" Min="(-0.171; 0.598; -0.390)" Max="(1.487; 1.123; 0.390)" ParentFrame="BoneChassis_cdt" />
+			<Multiplier Multiplier="2.5" Type="Engine" />
+		</Damage>
+		
+		<Dashboard>
+			<Gauge Damping="0.9" Dir="(-0.944; 0.330; 0.000)" InputRange="(0;120)" InputType="speed" Mesh="trucks/arrows/jangsu_rx600_arrow_03" Org="(1.208; 1.954; 0.410)" OutputAngles="(-130;105)" />
+			<Gauge Damping="0.9" Dir="(-0.944; 0.331; 0.001)" InputRange="(0;1)" InputType="rpm" Mesh="trucks/arrows/jangsu_rx600_arrow_02" Org="(1.208; 1.954; 0.539)" OutputAngles="(-135;135)" />
+			<Gauge Damping="0.9" Dir="(-0.944; 0.330; 0.000)" InputRange="(0;1)" InputType="fuel" Mesh="trucks/arrows/jangsu_rx600_arrow_01" Org="(1.193; 1.949; 0.639)" OutputAngles="(-41;41)" />
+			
+			<Gauge Damping="0.9" Dir="(-0.944; 0.330; 0.000)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/jangsu_rx600_arrow_01" Org="(1.193; 1.949; 0.707)" OutputAngles="(-42;16)" />
+			<Gauge Damping="0.9" Dir="(-0.944; 0.330; 0.000)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/jangsu_rx600_arrow_01" Org="(1.193; 1.949; 0.242)" OutputAngles="(-44;20)" />
+			
+			<Gauge Damping="0.9" Dir="(-0.944; 0.330; 0.000)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/jangsu_rx600_arrow_01" Org="(1.193; 1.949; 0.310)" OutputAngles="(-44;-5)" />
+		</Dashboard>
+		
+		<CompatibleWheels OffsetZ="0.05" Scale="0.525" Type="wheels_jangsu_rx600" />		
+		<CompatibleWheels OffsetZ="0.05" Scale="0.525" Type="wheels_heavy_single" />
+		<CompatibleWheels OffsetZ="0.11" Scale="0.525" Type="wheels_heavy_single2" />
+		<CompatibleWheels OffsetZ="0.13" Scale="0.525" Type="wheels_heavy_mudtires_tayga" />
+		
+		<CompatibleWheels OffsetZ="0.06" Scale="0.565" Type="wheels_jangsu_rx600" />
+		<CompatibleWheels OffsetZ="0.06" Scale="0.565" Type="wheels_heavy_single" />
+		<CompatibleWheels OffsetZ="0.11" Scale="0.565" Type="wheels_heavy_single2" />
+		<CompatibleWheels OffsetZ="0.135" Scale="0.565" Type="wheels_heavy_mudtires_tayga" />
+		
+		<!-- JAT -->
+		<CompatibleWheels OffsetZ="0.1" Scale="0.525" Type="wheels_heavy_mudtires_single" />
+		<CompatibleWheels OffsetZ="0.05" Scale="0.525" Type="wheels_heavy_mudtires_single2" />
+		<CompatibleWheels OffsetZ="0.05" Scale="0.525" Type="wheels_heavy_offroad_single" />
+		
+		<CompatibleWheels OffsetZ="0.11" Scale="0.565" Type="wheels_heavy_mudtires_single" />
+		<CompatibleWheels OffsetZ="0.08" Scale="0.565" Type="wheels_heavy_mudtires_single2" />
+		<CompatibleWheels OffsetZ="0.06" Scale="0.565" Type="wheels_heavy_offroad_single" />
+		
+		<Camera Center="(-2.0; 0; 0)" ParentFrame="BoneCabin_cdt">
+			<Cockpit
+				_template="Default"
+				LimitsHor="(-2.8; 2.4)"
+				LimitsVer="(-0.65; 0.2)"
+				WindshieldDiffuseTexture="trucks/jangsu_rx600_glass__d_a.tga"
+				WindshieldShadingTexture="trucks/jangsu_rx600_glass__sh_d.tga"
+				ViewPos="(0.5; 2.32; 0.484)"
+			>
+				<Mirror ClipDir="(-0.872; 0.000; -0.490)" ClipOffset="0.1" FOVScale="2" MeshFrame="mirror_left" ReflectionDir="(-0.872; 0.000; -0.490)" Size="(0.200; 0.320)" Pos="(1.116; 2.163; 1.428)" />
+				<Mirror ClipDir="(-0.798; 0.000; 0.602)" ClipOffset="0.1" FOVScale="3.5" MeshFrame="mirror_right" ReflectionDir="(-0.798; 0.000; 0.602)" Size="(0.200; 0.320)" Pos="(1.116; 2.163; -1.428)" />
+			</Cockpit>
+		</Camera>
+		<Axles>
+			<Axle Frame="BoneAxle1" />
+			<Axle Frame="BoneAxle2" />
+			<Axle Frame="BoneAxle3" />
+		</Axles>
+	</TruckData>
+	<Rotator EngineTorqueFactor="0" Frame="BoneEngineFan" RotationAxis="(0; 1; 0)" RotationSpeed="10" />
+	<PhysicsModel Mesh="trucks/jangsu_rx600">
+		<NetSync Legacy="false" />
+		<Body
+			CenterOfMassOffset="(0.05; 0; 0)"
+			ImpactType="Truck"
+			Mass="700"
+			ModelFrame="BoneChassis_cdt"
+			NetSync="pv"
+		>
+			<Body
+				CenterOfMassOffset="(0.0; 0.0; 0)"
+				Collisions="None"
+				Mass="3750"
+				ModelFrame="BoneChassisWeighter_cdt"
+				NetSync="pv"
+			>
+				<Constraint	Type="Fixed" />
+			</Body>
+			
+			<Body
+				CenterOfMassOffset="(0.0; -0.15; 0)"
+				ImpactType="Truck"
+				Mass="800"
+				ModelFrame="BoneCabin_cdt"
+				NetSync="pv"
+			>
+				<Constraint
+					AxisLocal="(1; 0; 0)"
+					Type="Hinge"
+					MinLimit="-5"
+					MaxLimit="5"
+				>
+					<Motor Damping="15000" Spring="300000" Type="Spring" />
+				</Constraint>
+				<Body
+					CenterOfMassOffset="(0.1; -0.02; 0)"
+					Collisions="None"
+					Mass="2950"
+					ModelFrame="BoneCabinWeighter_cdt"
+					NetSync="pv"
+				>
+					<Constraint	Type="Fixed" />
+				</Body>
+				
+				<Body _template="Sunshield" ModelFrame="BoneSunshieldL_cdt" />
+				<Body _template="Sunshield" ModelFrame="BoneSunshieldR_cdt" />
+				<Body _template="Mudguard" ModelFrame="BoneMudguardR_cdt" />
+				<Body _template="Mudguard" ModelFrame="BoneMudguardL_cdt" />
+				
+				<Body 
+					Collisions="None"
+					Mass="3"
+					ModelFrame="BoneKey_cdt"
+				>
+					<Constraint
+						Type="Hinge"
+						MinLimit="-60"
+						MaxLimit="65"
+						AxisLocal="(1; 0; 0)"
+					>
+						<Motor Damping="0.1" Spring="1" Type="Spring" />
+					</Constraint>
+				</Body>
+				
+				<Body _template="TieRod" ModelFrame="BoneTieRod_cdt">
+					<Constraint
+						AxisLocal="(0; 0; 1)"
+						Name="TieRodSteer"
+						MinLimit="-25"
+						MaxLimit="25"
+					/>
+				</Body>
+				<Body Collisions="None" Mass="1" ModelFrame="BoneTieRodBaseA_cdt">
+					<Constraint
+						AxisLocal="(1; 0; 0)"
+						Name="TieRodBaseA"
+						Type="Hinge"
+						MinLimit="-90"
+						MaxLimit="90"
+					>
+						<Motor
+							Damping="1.0"
+							Force="6000"
+							Tau="1"
+							Type="Position"
+						/>
+					</Constraint>
+				</Body>
+				<Body Collisions="None" Mass="1" ModelFrame="BoneTieRodBaseB_cdt">
+					<Constraint
+						AxisLocal="(1; 0; 0)"
+						Name="TieRodBaseB"
+						Type="Hinge"
+						MinLimit="-90"
+						MaxLimit="90"
+					>
+						<Motor
+							Damping="1.0"
+							Force="6000"
+							Tau="1"
+							Type="Position"
+						/>
+					</Constraint>
+				</Body>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<StopSignals>
+			<Light _template="StopSignal" Size="0.2" Pos="(-4.710; 0.655; 0)" />
+			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 1" Size="0.15" Pos="(-4.335; 0.980; -0.769)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 1" Size="0.15" Pos="(-4.335; 0.980; 0.769)" ParentFrame="BoneChassis_cdt" />
+		</StopSignals>
+		<ReverseSignals>
+			<Light _template="ReverseSignal" Pos="(-4.335; 0.982; -0.669)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="ReverseSignal" Size="0.15" Pos="(-4.335; 0.982; -0.669)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.1" Dir="(-1; 0; 0)" Size="0.3" Pos="(-4.335; 0.982; -0.669)" ParentFrame="BoneChassis_cdt" />
+		</ReverseSignals>
+		<Ignition>
+			<Light _template="IgnitionSignalRed" Pos="(-4.680; 1; 0)" />
+			<Light _template="IgnitionSignalWhite" Color="g(240; 200; 165) x 1.0" Pos="(2.893; 0.8; 0)" ParentFrame="BoneCabin_cdt" />
+
+			<Flare _template="IgnitionSignalRed" Size="0.1" Pos="(-4.335; 0.982; 0.669)" />
+			<Flare _template="IgnitionSignalRed" Size="0.1" Pos="(-4.335; 0.980; 0.769)" />
+			<Flare _template="IgnitionSignalRed" Size="0.1" Pos="(-4.335; 0.980; -0.769)" />
+			
+			<Flare _template="IgnitionSignalWhite" Color="g(255; 235; 215) x 0.5" Size="0.25" Pos="(2.782; 1.405; -0.848)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhite" Color="g(255; 235; 215) x 0.5" Size="0.25" Pos="(2.782; 1.405; 0.848)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhite" Color="g(255; 235; 215) x 0.5" Size="0.25" Pos="(2.813; 1.405; -0.607)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhite" Color="g(255; 235; 215) x 0.5" Size="0.25" Pos="(2.813; 1.405; 0.607)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalOrange" AspectRatio="1" Color="g(255; 140; 0) x 0.5" Dir="(0; 0; -1)" Size="0.3" Pos="(1.077; 2.604; -0.696)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalOrange" AspectRatio="1" Color="g(255; 140; 0) x 0.5" Dir="(0.5; 0; 1)" Size="0.3" Pos="(1.077; 2.604; 0.696)" ParentFrame="BoneCabin_cdt" />
+		</Ignition>
+		<HeadLight>
+			<Model _template="HeadLightRay" Org="(2.782; 1.405; -0.848)" ParentFrame="BoneCabin_cdt" />
+			<Model _template="HeadLightRay" Org="(2.782; 1.405; 0.848)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="HeadLight" AspectRatio="1" Color="g(255; 235; 215) x 0.5" Size="0.4" Pos="(2.782; 1.405; -0.848)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="HeadLight" AspectRatio="1" Color="g(255; 235; 215) x 0.5" Size="0.4" Pos="(2.782; 1.405; 0.848)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="HeadLight" AspectRatio="1" Color="g(255; 235; 215) x 0.5" Size="0.4" Pos="(2.813; 1.405; -0.607)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="HeadLight" AspectRatio="1" Color="g(255; 235; 215) x 0.5" Size="0.4" Pos="(2.813; 1.405; 0.607)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="BlueStreak" Dir="(1; 0; 0)" Size="0.5" Pos="(2.782; 1.405; -0.848)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="BlueStreak" Dir="(1; 0; 0)" Size="0.5" Pos="(2.782; 1.405; 0.848)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="BlueStreak" Dir="(1; 0; 0)" Size="0.5" Pos="(2.813; 1.405; -0.607)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="BlueStreak" Dir="(1; 0; 0)" Size="0.5" Pos="(2.813; 1.405; 0.607)" ParentFrame="BoneCabin_cdt" />
+		</HeadLight>
+	</ModelAttachments>
+	<HeadLight _template="Default" Pos="(2.893; 0; 0)" />
+	<Landmark Mesh="landmarks/jangsu_rx600_lmk" MinScale="1.8" MaxScale="3.8" />
+	<GameData
+		Country="RU,CAS,WA"
+		ExcludeAddons="pacific_p16_trailer_log_pole"
+		Price="63800"
+		UnlockByExploration="true"
+		UnlockByRank="1"
+	>
+		<WinchSocket Pos="(-0.686; 0.956; 0.455)" />
+		<WinchSocket Pos="(-0.686; 0.956; -0.455)" />
+		<WinchSocket Pos="(-4.547; 0.944; 0.000)" />
+		
+		<CraneSocket Pos="(-0.686; 0.956; 0.455)" />
+		<CraneSocket Pos="(-0.686; 0.956; -0.455)" />
+		<CraneSocket Pos="(-4.547; 0.944; 0.000)" />
+
+		<UiDesc
+			UiDesc="UI_VEHICLE_JANGSU_RX600_DESC"
+			UiIcon30x30="offroadVehicleImg30"
+			UiIcon328x458="shopImgJangsuRx600"
+			UiIcon40x40="offroadVehicleImg"
+			UiIconLogo="JangsuLogo80"
+			UiName="UI_VEHICLE_JANGSU_RX600_NAME"
+		/>
+		<CustomizationCameras>
+			<!-- MAIN CAMERAS -->
+			<CameraPos FOV="32.0" Name="wheels" InterestPosition="(5.983; 0.419; -1.3)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(6.772; 0.755; -4.200)" />
+			<CameraPos FOV="32.0" Name="default" InterestPosition="(5.576; 1.244; 0.337)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(13.728; 2.721; -3.576)" />
+			<CameraPos FOV="32.0" Name="rear" InterestPosition="(5.528; 0.354; -0.64)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(2.705; 1.837; 3.744)" />
+			<CameraPos FOV="32.0" Name="roof" InterestPosition="(5.553; 1.907; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(8.521; 4.38; -3.817)" />
+			<CameraPos FOV="32.0" Name="side_r" InterestPosition="(6.883; 1.7; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(9.8; 2.1; 5)" />
+			<!-- ADDONS -->
+			<CameraPos FOV="32.0" Name="addon_1" InterestPosition="(2.628; 1.213; 0.579)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-4.577; 2.942; 7.579)" />
+			<!-- <CameraPos FOV="32.0" Name="addon_2" InterestPosition="(4.066; 0.523; -0.192)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(8.434; 2.902; 5.717)" /> -->
+			<!-- <CameraPos FOV="32.0" Interior="true" Name="mirror_mount" InterestPosition="(8.187; 1.9; 1.2)" Position="(4.637; 2.4; -0.2)" /> -->
+			<CameraPos FOV="32.0" Interior="true" Name="hood_ornament" InterestPosition="(3.5; 1.2; 1.2)" Position="(9.5; 2.2; -1.3)" />
+			<!-- STICKERS -->
+			<CameraPos FOV="32.0" Interior="true" Name="glass_sticker" InterestPosition="(5.602; 1.51; -0.767)" Position="(9.826; 2.823; 0.846)" />
+			<CameraPos FOV="32.0" Interior="true" Name="door_r_sticker" InterestPosition="(6.4; 1.1; 0.614)" Position="(4.5; 1.5; 3.895)" />
+			<CameraPos FOV="32.0" Interior="true" Name="door_l_sticker" InterestPosition="(4.988; 1.1; -0.206)" Position="(4.9; 1.6; -3.775)" />
+			<CameraPos FOV="32.0" Interior="true" Name="capote_sticker" InterestPosition="(5.823; 1; -0.407)" Position="(9.5; 3.9; -1.296)" />
+			<CameraPos FOV="32.0" Interior="true" Name="sticker" InterestPosition="(8.316; 1.53; 1.7)" Position="(4.668; 2.024; 0.2)" />
+			<CameraPos FOV="32.0" Interior="true" Name="sticker_1" InterestPosition="(8.316; 0.4; 6.3)" Position="(5; 2.1; 0)" />
+			<CameraPos FOV="32.0" Interior="true" Name="sticker_2" InterestPosition="(7.085; 3.22; -0.376)" Position="(5.288; 2.103; 0.4)" />
+			<!-- STUFF -->
+			<CameraPos FOV="32.0" Interior="true" Name="curtain" InterestPosition="(5.165; 2.443; 0.475)" Position="(4.763; 2.306; -0.834)" />
+			<CameraPos FOV="32.0" Name="hoods" InterestPosition="(5.0; 1.395; -0.954)" MaxXRotation="0" MaxYRotation="0" MaxZoom="2" Position="(8.571; 2.377; -2.369)" />
+			<CameraPos FOV="32.0" Interior="true" Name="bubble_head" InterestPosition="(5.165; 2.243; 0.475)" Position="(4.763; 2.306; -0.834)" />
+			<CameraPos FOV="32.0" Interior="true" Name="mirror_mount" InterestPosition="(5.165; 2.443; 0.475)" Position="(4.763; 2.306; -0.834)" />
+		</CustomizationCameras>
+		<!-- TRUCK ADDONS -->
+		<AddonSockets DefaultAddon="jangsu_rx600_bumper_default">
+			<Socket Names="JangsuRX600Bumper" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="JangsuRX600Roofrack" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="JangsuRX600Snorkel" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="JangsuRX600Visor" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="JangsuRX600Horn" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets DefaultAddon="jangsu_rx600_exhaust_default">
+			<Socket Names="JangsuRX600Exhaust" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="JangsuRX600Protector" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<!-- FRAME ADDONS -->
+		<AddonSockets>
+			<Socket Names="JangsuRX600Sideboard" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="FrameAddonKung" NamesBlock="" Offset="(-2.4; 1.14; 0)">
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.11)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.11)" />
+			</Socket>
+			
+			<Socket Names="FrameAddonTow" NamesBlock="Trailer, LogTrailer" Offset="(-2.85; 1.055; 0)" />
+			<Socket Names="FrameAddonSeismicVibratorJangsuRX600" NamesBlock="" Offset="(0.2; 1.075; 0)" />
+			<Socket Names="SaddleLow" Offset="(-2.55; 1.075; 0)">
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.025)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.025)" />
+				<AddonsShift Offset="(-0.25; 0; 0)" Types="MinicraneUS" TrailerNamesBlock="" />
+			</Socket>
+			<Socket Names="FrameAddonTankSmall02" NamesBlock="" Offset="(-2.38; 1.065; 0)" >
+				<AddonsShift Offset="(-0.1; 0; 0)" Types="LogLift"  />
+			</Socket>			
+			<Socket Names="BunkLog" Offset="(-6.05; 1.075; -0)" >
+				<AddonsShift Offset="(-0.65; 0; 0)" Types="LogLift"  />
+			</Socket>
+		</AddonSockets>
+		<AddonSockets DefaultAddon="frame_addon_jangsu_rx600_sparewheel">
+			<Socket Names="JangsuRX600Sparewheel" NamesBlock="FrameAddonKung, FrameAddonTow, FrameAddonSeismicVibratorJangsuRX600" Offset="(0; 0; 0)" />
+		</AddonSockets>
+		<!-- TRAILERS -->
+		<AddonSockets>
+			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-2.56; 1.45; 0)" >
+				<AddonsShift Offset="(-0.25; 0; 0)" Types="MinicraneUS" TrailerNamesBlock="" />
+			</Socket>
+			<Socket Names="Trailer, LogTrailer" Offset="(-4.549; 0.948; 0.000)" >
+				<AddonsShift Offset="(-0.63; -0.032; 0)" Types="JangsuRX600Sideboard" />
+			</Socket>
+		</AddonSockets>
+		<!-- CRANES -->
+		<AddonSockets>
+			<Socket Names="LogLift" NamesBlock="JangsuRX600Sparewheel, JangsuRX600Sideboard, FrameAddonKung, FrameAddonTow, FrameAddonSeismicVibratorJangsuRX600, FrameAddonTankSmall" Offset="(0.22; 1.2; 0)" />			
+			<Socket	Names="MinicraneUS" NamesBlock="JangsuRX600Sideboard, FrameAddonKung, FrameAddonTow, FrameAddonSeismicVibratorJangsuRX600, JangsuRX600Sparewheel" Offset="(-0.45; 1.07; 0)"	ParentFrame="BoneCabin_cdt" >
+				<ExtraParent Frame="BoneCabin_cdt" Offset="(0; 0; -0.025)" />
+				<ExtraParent Frame="BoneCabin_cdt" Offset="(0; 0; 0.025)" />
+			</Socket>
+		</AddonSockets>
+		<!-- CUSTOMIZATION -->
+		<AddonSockets>
+			<Socket Names="JangsuRX600StuffCurtain" InCockpit="true" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="StuffHoodJangsuRX600" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="JangsuRX600Sticker_Door_L" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="JangsuRX600Sticker_Door_R" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="JangsuRX600Sticker_Capote" ParentFrame="BoneCabin_cdt" InCockpit="true" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="StuffAirfreshener" Offset="(1.187; 2.514; -0.205)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="JangsuRX600Sticker_GlassTop" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="JangsuRX600Sticker_GlassBottom" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="JangsuRX600Sticker_1x1_01" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="JangsuRX600Sticker_1x1_02" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="JangsuRX600Sticker_1x1_03" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="JangsuRX600Sticker_1x1_04" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="JangsuRX600Sticker_1x2_01" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="JangsuRX600Sticker_1x2_02" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="JangsuRX600Sticker_1x4_01" ParentFrame="BoneSunshieldL_cdt" />
+		</AddonSockets>
+	</GameData>
+	<ControlledConstraints>
+		<Constraint Id="chassis_steer" IsLinkedSteering="true" Name="TieRodSteer" />
+		<Constraint Id="chassis_steer" IsLinkedSteering="true" Name="TieRodBaseA" />
+		<Constraint Id="chassis_steer" IsLinkedSteering="true" Name="TieRodBaseB" />
+	</ControlledConstraints>
+	<AutomaticIK>
+		<IKBone ModelFrame="BoneTieRodHinge2" ParentFrame="BoneTieRod_cdt">
+			<IKJoint AxisLocal="(1; 0; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneRackL"
+				ModelFrame="BoneTieRodPrismatic"
+			>
+				<IKJoint AxisLocal="(1; 0; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<!-- Rear IK -->
+		<IKBone ModelFrame="BoneRightRearIK1_1" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle2"
+				ModelFrame="BoneRightRearIK1_2"
+			>
+				<IKJoint AxisLocal="(1; 0; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="BoneLeftRearIK1_1" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle2"
+				ModelFrame="BoneLeftRearIK1_2"
+			>
+				<IKJoint AxisLocal="(1; 0; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="BoneRightRearIK2_1" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle3"
+				ModelFrame="BoneRightRearIK2_2"
+			>
+				<IKJoint AxisLocal="(1; 0; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="BoneLeftRearIK2_1" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle3"
+				ModelFrame="BoneLeftRearIK2_2"
+			>
+				<IKJoint AxisLocal="(1; 0; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+	</AutomaticIK>
+</Truck>

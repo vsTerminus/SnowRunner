@@ -50,6 +50,8 @@
 		SteerSpeed="0.03"
 		TruckImage="interloadstarmchr"
 		TruckType="SCOUT"
+		HideDistance="250"
+		ShadowHideDistance="100"
 	>
 		<WinchUpgradeSocket Default="w_scout_default" IsUpgradable="true" Type="winches_scouts" />
 		<Wheels

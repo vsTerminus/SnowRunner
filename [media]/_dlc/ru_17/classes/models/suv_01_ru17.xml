@@ -1,0 +1,26 @@
+<_templates Include="models" />
+<ModelBrand
+	NightLightingShadowsAllowCap="true"
+	Instanced="true"
+>
+	<PhysicsModel>
+		<Body _template="Cars" LinearDamping="3" ModelFrame="BoneRoot" >
+			<Constraint _template="Cars" />
+			<Body Collisions="None" Mass="600" ModelFrame="Bone.003" >
+				<Constraint Type="Ragdoll" Cone="2" >
+					<AllMotor Damping="10000" Spring="500000" Type="Spring" />
+				</Constraint>
+					<Body Collisions="Dynamic" NoSoftContacts="true" Mass="1200" Friction="2" ModelFrame="Bone.001" >
+						<Constraint Type="UnlimitedHinge" AxisLocal="(1; 0; 0)" />
+					</Body>
+					<Body Collisions="Dynamic" NoSoftContacts="true" Mass="1200" Friction="1.5" ModelFrame="Bone.002" >
+						<Constraint Type="UnlimitedHinge" AxisLocal="(1; 0; 0)" />
+					</Body>
+					
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<Landmark 
+		Mesh="landmarks/suv_01_lmk" 
+	/>
+</ModelBrand>

@@ -43,6 +43,8 @@
 		FuelCapacity="2000"
 		RepairsCapacity="350"
 		WheelRepairsCapacity="6"
+		HideDistance="250"
+		ShadowHideDistance="100"
 	>
 		<Wheels>
 			<Wheel _template="TrailerWheelFront" Pos="(2.27; 0.594; 0.917)" />

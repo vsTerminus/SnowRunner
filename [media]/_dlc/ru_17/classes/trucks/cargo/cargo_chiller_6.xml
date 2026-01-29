@@ -1,0 +1,49 @@
+<TruckAddon _noinherit="true">
+	<PhysicsModel Mesh="trucks/cargo/cargo_chiller_6">
+		<NetSync Legacy="false" />
+
+
+		<Body Mass="800" ModelFrame="Bone">
+			<Constraint ExplicitParentFrame="0" Type="Fixed" />
+
+
+			<Body Mass="100" ModelFrame="Bone_Frame_1">
+				<Constraint  Type="Fixed" />
+			</Body>
+
+
+				<Body Mass="800" ModelFrame="Bone_1">
+					<Constraint ExplicitParentFrame="1" Type="Fixed" />
+						<Body Mass="800" ModelFrame="Bone_2">
+							<Constraint ExplicitParentFrame="2" Type="Fixed" />
+								<Body Mass="800" ModelFrame="Bone_3">
+									<Constraint ExplicitParentFrame="3" Type="Fixed" />
+										<Body Mass="800" ModelFrame="Bone_4">
+											<Constraint ExplicitParentFrame="4" Type="Fixed" />
+												<Body Mass="800" ModelFrame="Bone_5">
+													<Constraint ExplicitParentFrame="5" Type="Fixed" />
+														<Body Mass="100" ModelFrame="Bone_Frame_2">
+														<Constraint  Type="Fixed" />
+														</Body>
+												</Body>
+										</Body>
+								</Body>
+						</Body>
+				</Body>
+		</Body>
+
+	</PhysicsModel>
+	<GameData>
+		<Sounds
+			InstallSound="cargo_manual/cargo_manual_container_small"
+			TransportedSound="load/metal_small/metal_small_rnd"
+			ManualSound="cargo_manual/cargo_manual_container_small"
+		/>
+		<InstallSlot
+			CargoLength="6"
+			CargoType="CargoChiller"
+			CargoValue="1"
+			Offset="(6.25; 0.025; 0.000)"
+		/>
+	</GameData>
+</TruckAddon>

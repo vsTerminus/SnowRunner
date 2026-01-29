@@ -1,0 +1,71 @@
+<_templates Include="trucks" >
+    <Body>
+        <Limits Collisions="None">
+            <Constraint Type="Fixed">
+                <Motor Damping="250" Spring="0.75" Type="Spring" />
+            </Constraint>
+        </Limits>
+    </Body>
+</_templates>
+<TruckAddon>
+    <TruckData
+        FuelCapacity="120"
+        RepairsCapacity="150"
+    >
+        <LimitedFluid Center="(1.098, 2.903, -0.171)" SizeX="0.428" SizeY="0.343" SizeZ="0.176" Type="Box" ParentFrame="BoneFuel1_cdt" />
+        <LimitedFluid Center="(1.098, 2.903, -0.406)" SizeX="0.428" SizeY="0.343" SizeZ="0.176" Type="Box" ParentFrame="BoneFuel1_cdt" />
+        <LimitedFluid Center="(1.098, 2.903, -0.641)" SizeX="0.428" SizeY="0.343" SizeZ="0.176" Type="Box" ParentFrame="BoneFuel1_cdt" />
+        <LimitedFluid Center="(0.546, 2.903, -0.191)" SizeX="0.428" SizeY="0.343" SizeZ="0.176" Type="Box" ParentFrame="BoneFuel2_cdt" />
+        <LimitedFluid Center="(0.546, 2.903, -0.411)" SizeX="0.428" SizeY="0.343" SizeZ="0.176" Type="Box" ParentFrame="BoneFuel2_cdt" />
+        <LimitedFluid Center="(0.546, 2.903, -0.647)" SizeX="0.428" SizeY="0.343" SizeZ="0.176" Type="Box" ParentFrame="BoneFuel2_cdt" />
+    </TruckData>
+    <RepairsHide>
+        <Mesh Frame="repair" HideThreshold="0.0" />
+    </RepairsHide>
+    <FuelHide>
+        <Mesh Frame="fuel1" HideThreshold="0.6" />
+        <Mesh Frame="fuel2" HideThreshold="0.0" />
+    </FuelHide>
+    <PhysicsModel Mesh="trucks/jangsu_rx600_tuning/jangsu_rx600_roofrack">
+        <Body Mass="20">
+            <Constraint Type="Rigid" />
+            <Body
+                _template="Limits"
+                Mass="60"
+                ModelFrame="BoneRepair_cdt"
+            >
+                <Constraint LinearLimitsX="(-0.086;0.008)" LinearLimitsY="(-0.0055;0.035)" LinearLimitsZ="(0;0)"/>
+            </Body>
+            <Body
+                _template="Limits"
+                Mass="40"
+                ModelFrame="BoneFuel1_cdt"
+            >
+                <Constraint LinearLimitsX="(-0.005;0.03)" LinearLimitsZ="(0;0.006)" LinearLimitsY="(0;0)"/>
+            </Body>
+            <Body
+                _template="Limits"
+                Mass="40"
+                ModelFrame="BoneFuel2_cdt"
+            >
+                <Constraint LinearLimitsX="(-0.005;0.03)" LinearLimitsZ="(0;0.006)" LinearLimitsY="(0;0)"/>
+            </Body>
+        </Body>
+    </PhysicsModel>
+    <GameData
+        CameraPreset="roof"
+        Category="top"
+        IsCustomizable="true"
+        Price="1900"
+        UnlockByExploration="false"
+        UnlockByRank="1"
+    >
+        <UiDesc
+            UiDesc="UI_TUNING_SCOUT_TRUNK_SUPPLIES_DESC"
+            UiIcon30x30=""
+            UiIcon40x40=""
+            UiName="UI_TUNING_SCOUT_TRUNK_SUPPLIES_NAME"
+        />
+        <InstallSocket Type="JangsuRX600Roofrack" />
+    </GameData>
+</TruckAddon>

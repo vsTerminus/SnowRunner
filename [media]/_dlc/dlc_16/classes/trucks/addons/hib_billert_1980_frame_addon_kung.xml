@@ -131,4 +131,7 @@
 		<CraneSocket FixedToTruck="true" Pos="(-3.612; 3.417; 1.123)" />
 		<CraneSocket FixedToTruck="true" Pos="(-3.741; 0.869; 0)" />
 	</GameData>
+	<FuelMass>
+		<Body Mass="840" />
+	</FuelMass>
 </TruckAddon>

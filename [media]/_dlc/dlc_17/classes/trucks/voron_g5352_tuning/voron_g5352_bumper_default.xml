@@ -1,0 +1,32 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<TruckData>
+		<Damage>
+			<Multiplier Multiplier="1.0" Type="Engine" />
+		</Damage>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/voron_g5352_tuning/voron_g5352_bumper_default">
+		<Body ImpactType="Truck" Mass="20" ModelFrame="BoneCabinTwist_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="default"
+		Category="bumper"
+		Price="1200"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<WinchSocket FixedToTruck="true" Pos="(4.215; 0.901; -0.819)" />
+		<WinchSocket FixedToTruck="true" Pos="(4.195; 1.167; 0.003)" />
+		<UiDesc
+			UiDesc="UI_TUNING_BUMPER_STOCK_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_BUMPER_STOCK_NAME"
+		/>
+		<InstallSocket Type="VoronG5352Bumper" />
+		<CraneSocket FixedToTruck="true" Pos="(4.215; 0.901; -0.819)" />
+		<CraneSocket FixedToTruck="true" Pos="(4.195; 1.167; 0.003)" />
+	</GameData>
+</TruckAddon>

@@ -45,7 +45,7 @@
 			UiIcon40x40=""
 			UiName="UI_ADDON_TRACTOR_COUPLER_NAME"
 		/>
-		<!-- <RequiredAddonType Type="Ankatra1160Coupler" TypeUiName="UI_REQUIRED_ADDON_TYPE_ANKATRA_1160_COUPLER" /> -->
+		<RequiredAddonType Type="Ankatra1160Coupler" TypeUiName="UI_ADDON_TRACTOR_COUPLER_NAME" />
 		<InstallSocket Type="Ankatra1160Coupler" />
 	</GameData>
 	<AutomaticIK>

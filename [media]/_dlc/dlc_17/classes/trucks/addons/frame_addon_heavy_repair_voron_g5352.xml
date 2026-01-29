@@ -1,0 +1,51 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<TruckData
+		FuelCapacity="200"
+		RepairsCapacity="300"
+		WheelRepairsCapacity="2"
+	/>
+	<Rotator EngineTorqueFactor="0.2" Frame="BoneRotatorFan1" RotationAxis="(0; 1; 0)" RotationSpeed="2" />
+	<Rotator EngineTorqueFactor="0.2" Frame="BoneRotatorFan2" RotationAxis="(0; 1; 0)" RotationSpeed="2" />
+	<PhysicsModel Mesh="trucks/addons/frame_addon_heavy_repair_voron_g5352">
+		<NetSync Legacy="true" />
+		<Body ImpactType="Truck" Mass="3800" ModelFrame="BoneChassis_cdt">
+			<Constraint Type="Rigid" />
+			<Body 
+				Collisions="None"
+				CenterOfMassOffset="(0; 0; 0)"
+				Mass="10"
+				ModelFrame="BoneRope_cdt"
+			>
+				<Constraint
+					AxisLocal="(1; 0; 0)"
+					Type="Prismatic"
+					MinLimit="-0.02"
+					MaxLimit="0.03"
+				>
+					<Motor Damping="0.2" Spring="20" Type="Spring" />
+				</Constraint>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="addon_1"
+		Category="frame_addons"
+		IsCustomizable="true"
+		Price="8100"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_ADDON_FRAME_HEAVY_REPAIR_02_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_ADDON_FRAME_HEAVY_REPAIR_NAME"
+		/>
+		<InstallSocket Type="VoronG5352HeavyRepair" />
+		<AddonSlots InitialOffset="(-3.122; 1.526; 0)" Quantity="1" />
+	</GameData>
+	<FuelMass>
+		<Body Mass="560" />
+	</FuelMass>
+</TruckAddon>

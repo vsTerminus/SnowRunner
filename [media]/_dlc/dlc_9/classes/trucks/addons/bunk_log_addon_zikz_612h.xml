@@ -104,12 +104,12 @@
 			UiName="UI_ADDON_BUNK_LOG_ADDON_NAME"
 		/>
 		<LoadArea
-			Subtype="MastodonLong"
+			Subtype="TrailerPoleLogLong"
 			Type="CargoLogsLong"
 			Min="(-7.058; -0.007; -2.475)"
 			Max="(0.801; 1.763; 2.475)"
 		/>
-		<InstallSocket Offset="(-3.5; 0; 0)" Type="MastodonBunkLog" />
+		<InstallSocket Offset="(-3.5; 0; 0)" Type="BunkLogMastadont" />
 		<AddonSlots
 			InitialOffset="(0; 0; 0)"
 			OffsetStep="(-4.0; 0; 0)"

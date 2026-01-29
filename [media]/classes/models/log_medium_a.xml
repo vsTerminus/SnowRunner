@@ -5,7 +5,7 @@
 	Instanced="true"
 >
 	<PhysicsModel>
-		<Body _template="MediumWeight" ModelFrame="BoneRoot">
+		<Body _template="MediumWeight" ModelFrame="BoneRoot" HideDistance="250" ShadowHideDistance="100">
 			<Constraint _template="MediumWeight" />
 		</Body>
 	</PhysicsModel>

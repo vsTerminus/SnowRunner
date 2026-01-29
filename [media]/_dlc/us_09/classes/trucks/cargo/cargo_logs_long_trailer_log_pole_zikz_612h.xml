@@ -68,7 +68,7 @@
 			TransportedSound=""
 			ManualSound="cargo_manual/cargo_manual_logs_long"
 		/>
-		<RequiredAddon Types="trailer_log_pole_zikz_612h" />
+		<RequiredAddon Types="trailer_log_pole" />
 		<InstallSlot
 			CargoAddonSubtype="MastodonLong"
 			CargoLength="1"

@@ -56,11 +56,12 @@
 		EngineStartDelay="0.6"
 		ExhaustStartTime="0.6"
 		FuelCapacity="180"
-		InstallTrailerAddonRequired="ankatra_1160_farkop_trailer, ankatra_1160_coupler"
 		Responsiveness="0.8"
 		SteerSpeed="0.02"
 		TruckImage="ankatramchr"
 		TruckType="OFFROAD"
+		HideDistance="250"
+		ShadowHideDistance="100"
 	>
 		<WinchUpgradeSocket Default="w_medium_trucks_default" IsUpgradable="true" Type="winches_medium_trucks" />
 		<Wheels
@@ -362,8 +363,8 @@
 			<CameraPos FOV="32.0" Interior="true" Name="hood_figure" InterestPosition="(6.326; 1.193; -0.229)" Position="(8.578; 1.902; -0.852)" />
 		</CustomizationCameras>
 		<AddonSockets >
-			<Socket Names="TrailerFarm" Offset="(-3.350; 0.990; 0)" ParentFrame="BoneChassis_cdt" />
-			<Socket Names="Trailer, LogTrailer" Offset="(-2.120; 1.090; 0)" ParentFrame="BoneChassis_cdt">
+			<Socket Names="TrailerFarm" Offset="(-3.350; 0.990; 0)" ParentFrame="BoneChassis_cdt" RequiredHitches="ankatra_1160_coupler"/>
+			<Socket Names="Trailer, LogTrailer" Offset="(-2.120; 1.090; 0)" ParentFrame="BoneChassis_cdt" RequiredHitches="ankatra_1160_farkop_trailer, ankatra_1160_coupler">
 				<AddonsShift Offset="(-1.252; -0.1; 0)" Types="Ankatra1160Coupler" />
 			</Socket>
 		</AddonSockets>

@@ -1,7 +1,7 @@
 <_templates Include="trucks" />
 <EngineVariants>
 	<Engine
-		CriticalDamageThreshold="0.38"
+		CriticalDamageThreshold="0.62"
 		DamageCapacity="180"
 		DamagedConsumptionModifier="1.223"
 		EngineResponsiveness="0.028"
@@ -32,7 +32,7 @@
 		</GameData>
 	</Engine>
 	<Engine
-		CriticalDamageThreshold="0.65"
+		CriticalDamageThreshold="0.35"
 		DamageCapacity="150"
 		DamagedConsumptionModifier="1.16"
 		EngineResponsiveness="0.03"
@@ -63,7 +63,7 @@
 		</GameData>
 	</Engine>
 	<Engine
-		CriticalDamageThreshold="0.34"
+		CriticalDamageThreshold="0.66"
 		DamageCapacity="200"
 		DamagedConsumptionModifier="1.32"
 		EngineResponsiveness="0.032"

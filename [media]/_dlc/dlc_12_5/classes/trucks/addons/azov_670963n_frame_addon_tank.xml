@@ -128,6 +128,6 @@
 		<InstallSocket Type="Azov670963nTank" />
 	</GameData>
 	<FuelMass>
-		<Body Mass="10000" />
+		<Body Mass="7000" />
 	</FuelMass>
 </TruckAddon>

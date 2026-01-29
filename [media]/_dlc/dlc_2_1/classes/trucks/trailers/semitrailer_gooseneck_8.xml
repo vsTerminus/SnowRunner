@@ -31,7 +31,7 @@
 	</Flare>
 </_templates>
 <Truck Type="Trailer" AttachType="Saddle">
-	<TruckData>
+	<TruckData HideDistance="250" ShadowHideDistance="100">
 		<Wheels
 			DefaultRim="rim_1"
 			DefaultTire="highway_2"

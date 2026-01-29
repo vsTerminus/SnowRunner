@@ -86,4 +86,7 @@
 		/>
 		<InstallSocket Type="FreightlinerFLD120Repairs" />
 	</GameData>
+	<FuelMass>
+		<Body Mass="840" />
+	</FuelMass>
 </TruckAddon>

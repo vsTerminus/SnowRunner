@@ -5,6 +5,8 @@
 			Friction="1.8"
 			Mass="2100.0"
 			NoSoftContacts="true"
+			HideDistance="250"
+			ShadowHideDistance="100"
 		/>
 	</PhysicsModel>
 <!--	<Landmark Mesh="" MinScale="1.8" MaxScale="3.8" />-->

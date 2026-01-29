@@ -12,13 +12,7 @@
 </_templates>
 <TruckAddon>
 	<TruckData FuelCapacity="1600">
-		<!-- <LimitedFluid -->
-			<!-- Center="(0.626; 1.174; 0)" -->
-			<!-- LengthX="5.222" -->
-			<!-- RadiusY="0.934" -->
-			<!-- RadiusZ="1.167" -->
-			<!-- Type="Cylinder" -->
-		<!-- /> -->
+		<LimitedFluid Center="(-3.498, 2.702, -0.000)" LengthX="4.180" RadiusY="0.792" RadiusZ="1.553" Type="Cylinder" />
 	</TruckData>
 	<Rotator EngineTorqueFactor="0" Frame="BoneRotatorL" RotationSpeed="3.5" />
 	<Rotator EngineTorqueFactor="0" Frame="BoneRotatorR" RotationSpeed="3.5" />
@@ -84,4 +78,7 @@
 		/>
 		<InstallSocket Type="Cat745CFuelTank" />
 	</GameData>
+	<FuelMass>
+		<Body Mass="4480" />
+	</FuelMass>
 </TruckAddon>

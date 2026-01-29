@@ -6,4 +6,11 @@
 	FlatTexture="tiles/mud_flat_pbr_2__d_a.tga" 
 	FlatNormal="tiles/mud_flat_pbr_relief_2__d_a.tga"
 	FlatUvTiling="1"
-/>
+	>
+	<DecalsBaseColors
+		ColorMud="g(16; 16; 16; 3.2)"
+		ColorWet="g(6.4; 6.4; 6.4; 0.3)"
+		ColorOilDry="g(0.1; 0.1; 0.1; 0.8)"
+		ColorOilWet="g(0.14; 0.14; 0.14; 0.1)"
+	/>
+</MudType>

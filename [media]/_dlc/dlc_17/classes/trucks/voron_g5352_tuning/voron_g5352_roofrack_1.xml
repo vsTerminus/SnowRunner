@@ -1,0 +1,67 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<TruckData FuelCapacity="100" RepairsCapacity="150">
+		<LimitedFluid Center="(3.277; 3.266; 0.686)" SizeX="0.416" SizeY="0.160" SizeZ="0.326" Type="Box" ParentFrame="BoneFuel1_cdt" />
+		<LimitedFluid Center="(3.270; 3.266; 0.278)" SizeX="0.416" SizeY="0.160" SizeZ="0.326" Type="Box" ParentFrame="BoneFuel1_cdt" />
+		<LimitedFluid Center="(2.826; 3.266; 0.554)" SizeX="0.326" SizeY="0.160" SizeZ="0.416" Type="Box" ParentFrame="BoneFuel1_cdt" />
+		<LimitedFluid Center="(2.750; 3.365; -0.027)" SizeY="0.326" SizeX="0.160" SizeZ="0.416" Type="Box" ParentFrame="BoneFuel2_cdt" />
+		<LimitedFluid Center="(2.750; 3.365; -0.629)" SizeY="0.326" SizeX="0.160" SizeZ="0.416" Type="Box" ParentFrame="BoneFuel2_cdt" />
+	</TruckData>
+	<RepairsHide>
+		<Mesh Frame="repair" HideThreshold="0.0" />
+	</RepairsHide>
+	<FuelHide>
+		<Mesh Frame="fuel" HideThreshold="0.0" />
+	</FuelHide>
+	<PhysicsModel Mesh="trucks/voron_g5352_tuning/voron_g5352_roofrack_1">
+		<Body ImpactType="Truck" Mass="14" ModelFrame="BoneCabin_cdt">
+			<Constraint Type="Rigid" />
+			<Body Collisions="None" Mass="40" ModelFrame="BoneFuel1_cdt">
+				<Constraint
+					AxisLocal="(1; 0; 0)"
+					Type="Prismatic"
+					MinLimit="-0.02"
+					MaxLimit="0.01"
+				>
+					<Motor Damping="1200" Spring="2200" Type="Spring" />
+				</Constraint>
+			</Body>
+			<Body Collisions="None" Mass="30" ModelFrame="BoneFuel2_cdt">
+				<Constraint
+					AxisLocal="(0; 0; 1)"
+					Type="Prismatic"
+					MinLimit="-0.02"
+					MaxLimit="0.02"
+				>
+					<Motor Damping="1200" Spring="2200" Type="Spring" />
+				</Constraint>
+			</Body>
+			<Body Collisions="None" Mass="50" ModelFrame="BoneRepair_cdt">
+				<Constraint
+					AxisLocal="(1; 0; 0)"
+					Type="Prismatic"
+					MinLimit="-0.02"
+					MaxLimit="0.01"
+				>
+					<Motor Damping="2100" Spring="3000" Type="Spring" />
+				</Constraint>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="roof"
+		Category="top"
+		IsCustomizable="true"
+		Price="2300"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SCOUT_TRUNK_SUPPLIES_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SCOUT_TRUNK_SUPPLIES_NAME"
+		/>
+		<InstallSocket Type="VoronG5352Roofrack" />
+	</GameData>
+</TruckAddon>

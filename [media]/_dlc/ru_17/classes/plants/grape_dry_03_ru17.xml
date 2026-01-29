@@ -1,0 +1,12 @@
+<_templates Include="environment" />
+<PlantBrand _template="SmallTree" PlantingMinSpacing="0.4">
+	<PhysicsModel>
+		<Body _template="SmallTreeRoot" ModelFrame="BoneRoot">
+			<Constraint _template="SmallTreeRoot" />
+		</Body>
+	</PhysicsModel>
+
+	<Landmark Mesh="landmarks/grape_dry_ru17_lmk"/>	
+
+	<Occlusion Intensity="0.15" Size="(8.0; 8.0)" />
+</PlantBrand>

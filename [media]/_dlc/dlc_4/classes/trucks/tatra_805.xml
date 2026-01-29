@@ -12,6 +12,7 @@
 			CamberAnglePhysics="0"
 			CamberAngleRender="5"
 			CamberSuspensionMultiplier="1.8"
+			ConnectedToHandbrake="true"
 			Location="front"
 			SteeringAngle="30"
 			SteeringCastor="8"
@@ -54,9 +55,11 @@
 		Responsiveness="0.15"
 		SteerSpeed="0.025"
 		TruckImage="tatra805mchr"
-		TruckType="OFFROAD"
+		TruckType="SCOUT"
+		HideDistance="250"
+		ShadowHideDistance="100"
 	>
-		<WinchUpgradeSocket Default="w_medium_trucks_default" IsUpgradable="true" Type="winches_medium_trucks, winches_actaeon" />
+		<WinchUpgradeSocket Default="w_scout_default" IsUpgradable="true" Type="winches_scouts" />
 		<Wheels
 			DefaultRim="rim_1"
 			DefaultTire="highway_1"
@@ -252,7 +255,7 @@
 	<Landmark Mesh="landmarks/tatra_805_lmk" MinScale="1.8" MaxScale="3.8" />
 	<HeadLight _template="Default" Pos="(2.577; 0.917; 0)" ParentFrame="BoneCabin_cdt" />
 	<GameData
-		Country="RU,CAS,NE,CE"
+		Country="RU,CAS,WA,NE,CE"
 		ExcludeAddons="trailer_log_pole"
 		Price="22500"
 		UnlockByExploration="false"
@@ -264,12 +267,11 @@
 		<WinchSocket Pos="(-0.28; 0.96; 0.423)" ParentFrame="BoneCabin_cdt" />
 		<WinchSocket Pos="(-1.733; 0.637; -0.304)" />
 		<WinchSocket Pos="(-1.733; 0.637; 0.304)" />
-		<WinchSocket Pos="(-2.532; 0.659; 0)" />
 		<UiDesc
 			UiDesc="UI_VEHICLE_TATRA_805_DESC"
-			UiIcon30x30="offroadVehicleImg30"
+			UiIcon30x30="scoutVehicleImg30"
 			UiIcon328x458="shopImgTatra805"
-			UiIcon40x40="offroadVehicleImg"
+			UiIcon40x40="scoutVehicleImg"
 			UiIconLogo="TatraLogo80"
 			UiName="UI_VEHICLE_TATRA_805_NAME"
 		/>
@@ -287,6 +289,7 @@
 			<CameraPos FOV="32.0" Name="default" InterestPosition="(4.92; 0.841; 0.263)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(13.365; 1.844; -4.044)" />
 			<CameraPos FOV="32.0" Name="rear" InterestPosition="(8.088; 0.686; 2.01)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(1.879; 2.876; -3.868)" />
 			<CameraPos FOV="32.0" Name="addon_1" InterestPosition="(4.729; 0.499; -0.674)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-4.754; 3.556; 5.477)" />
+			<CameraPos FOV="32.0" Name="farkop" InterestPosition="(4.088; 0.686; 0)" MaxXRotation="0" MaxYRotation="0" MaxZoom="2" Position="(-1.2; 1.2; 3.868)" />
 		</CustomizationCameras>
 		<CraneSocket Pos="(2.262; 0.758; -0.415)" ParentFrame="BoneCabin_cdt" />
 		<CraneSocket Pos="(2.262; 0.758; 0.415)" ParentFrame="BoneCabin_cdt" />
@@ -294,9 +297,13 @@
 		<CraneSocket Pos="(-0.28; 0.96; 0.423)" ParentFrame="BoneCabin_cdt" />
 		<CraneSocket Pos="(-1.733; 0.637; -0.304)" />
 		<CraneSocket Pos="(-1.733; 0.637; 0.304)" />
-		<CraneSocket Pos="(-2.532; 0.659; 0)" />
+		<AddonSockets DefaultAddon="tatra_805_farkop_trailer">
+			<Socket Names="Tatra805Farkop" />
+			<Socket Names="Tatra805FarkopScout" />
+		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="Trailer" Offset="(-2.532; 0.659; 0)" />
+			<Socket Names="Trailer, LogTrailer" Offset="(-2.532; 0.659; 0)" NamesBlock="Tatra805FarkopScout" RequiredHitches="tatra_805_farkop_trailer" />
+			<Socket Names="ScautTrailer" Offset="(-2.532; 0.72; 0)" NamesBlock="Tatra805Farkop" RequiredHitches="tatra_805_farkop_scout_trailer" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="FrameAddonSideboard1" Offset="(-0.89; 1.015; 0)" />

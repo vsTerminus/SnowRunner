@@ -82,12 +82,13 @@
 		EngineIconScale="1"
 		EngineStartDelay="1.8"
 		ExhaustStartTime="0"
-		InstallTrailerAddonRequired="earthroamer_sx_farkop_trailer, earthroamer_sx_farkop_scout_trailer"
 		FuelCapacity="280"
 		Responsiveness="0.4"
 		SteerSpeed="0.04"
 		TruckImage="EarthroamerSXmchr"
 		TruckType="SCOUT"
+		HideDistance="250"
+		ShadowHideDistance="100"
 	>
 		<WinchUpgradeSocket Default="w_scout_default" IsUpgradable="true" Type="winches_scouts" />
 		<Wheels
@@ -505,9 +506,9 @@
 			<Socket Names="EarthroamerSxBumper" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="Trailer" Offset="(-5.847; 0.740; 0)" />
-			<Socket Names="ScautTrailer" Offset="(-5.722; 0.740; 0)" />
-			<Socket Names="LogTrailer" Offset="(-5.847; 0.740; 0)" />
+			<Socket Names="Trailer" Offset="(-5.847; 0.740; 0)" RequiredHitches="earthroamer_sx_farkop_trailer" />
+			<Socket Names="ScautTrailer" Offset="(-5.722; 0.740; 0)" RequiredHitches="earthroamer_sx_farkop_scout_trailer" />
+			<Socket Names="LogTrailer" Offset="(-5.847; 0.740; 0)" RequiredHitches="earthroamer_sx_farkop_trailer" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="earthroamer_sx_farkop_scout_trailer">
 			<Socket Names="EarthroamerSxFarkop" NamesBlock="ScautTrailer" />

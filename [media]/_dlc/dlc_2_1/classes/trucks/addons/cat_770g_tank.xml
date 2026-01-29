@@ -56,4 +56,7 @@
 		/>
 		<InstallSocket Type="Cat770gTank" />
 	</GameData>
+	<FuelMass>
+		<Body Mass="5600" />
+	</FuelMass>
 </TruckAddon>

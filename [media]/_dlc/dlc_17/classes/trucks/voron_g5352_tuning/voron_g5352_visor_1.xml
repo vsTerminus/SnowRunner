@@ -1,0 +1,25 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/voron_g5352_tuning/voron_g5352_visor_1" />
+	<ModelAttachments>
+		<Ignition>
+			<Flare _template="IgnitionSignalOrange" AspectRatio="1" Dir="(1; 0; 0)" Size="0.22" Pos="(3.899; 2.978; 0.895)" />
+			<Flare _template="IgnitionSignalOrange" AspectRatio="1" Dir="(1; 0; 0)" Size="0.22" Pos="(3.899; 2.978; -0.895)" />
+		</Ignition>
+	</ModelAttachments>
+	<GameData
+		CameraPreset="roof"
+		Category="fender_front"
+		Price="900"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SUNVISOR_ANGLED_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SUNVISOR_ANGLED_NAME"
+		/>
+		<InstallSocket Type="VoronG5352Visor" />
+	</GameData>
+</TruckAddon>

@@ -57,6 +57,8 @@
 	<TruckData
 		RepairsCapacity="1500"
 		WheelRepairsCapacity="8"
+		HideDistance="250"
+		ShadowHideDistance="100"
 	>
 		<Wheels>
 			<Wheel _template="TrailerWheelFront" Pos="(2.251; 0.594; 1.017)" />

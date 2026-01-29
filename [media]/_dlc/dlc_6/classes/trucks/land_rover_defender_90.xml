@@ -58,6 +58,8 @@
 		SteerSpeed="0.032"
 		TruckImage="landroverdefender90mchr"
 		TruckType="SCOUT"
+		HideDistance="250"
+		ShadowHideDistance="100"
 	>
 		<WinchUpgradeSocket Default="w_scout_default" IsUpgradable="true" Type="winches_scouts" />
 		<Wheels

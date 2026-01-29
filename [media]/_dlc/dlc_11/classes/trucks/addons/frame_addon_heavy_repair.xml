@@ -264,4 +264,7 @@
 		FirstPersonPos="(0.75; 3.76; 0.8)"
 		ParentFrame="BoneRotationBase_cdt"
 	/>
+	<FuelMass>
+		<Body Mass="700" />
+	</FuelMass>
 </TruckAddon>

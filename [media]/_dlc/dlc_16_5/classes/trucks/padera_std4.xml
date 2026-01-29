@@ -81,6 +81,8 @@
 		SteerSpeed="0.025"
 		TruckImage="paderastd4mchr"
 		TruckType="HEAVY_DUTY"
+		HideDistance="250"
+		ShadowHideDistance="100"
 	>
 		<WinchUpgradeSocket Default="w_medium_trucks_default" IsUpgradable="true" Type="winches_medium_trucks" />
 		<Wheels
@@ -256,13 +258,13 @@
 			Mass="1000"
 			ModelFrame="BoneChassis_cdt"
 			NetSync="pv"
-			CenterOfMassOffset="(-0.2; 0; 0)"
+			CenterOfMassOffset="(-0.2; -0.1; 0)"
 		>
 			<Body
 				Collisions="None"
 				Mass="5500"
 				ModelFrame="BoneChassisWeighter_cdt"
-				CenterOfMassOffset="(0.0; 0.0; 0)"
+				CenterOfMassOffset="(0.0; -0.2; 0)"
 			>
 				<Constraint	Type="Fixed" />
 			</Body>
@@ -272,7 +274,7 @@
 				Mass="2000"
 				ModelFrame="BoneCabinTwist_cdt"
 				NetSync="pv"
-				CenterOfMassOffset="(-0.3; 0; 0)"
+				CenterOfMassOffset="(-0.3; -0.15; 0)"
 			>
 				<Constraint
 					AxisLocal="(1; 0; 0)"
@@ -288,7 +290,7 @@
 					Mass="5770"
 					ModelFrame="BoneCabin_cdt"
 					NetSync="pv"
-					CenterOfMassOffset="(-0.1; -0.35; 0)"
+					CenterOfMassOffset="(-0.1; -0.38; 0)"
 				>
 					<Constraint	Type="Fixed" />
 					<Body
@@ -443,7 +445,7 @@
 		Price="113200"
 		UnlockByExploration="false"
 		UnlockByRank="1"
-		ExcludeAddons="frame_addon_sideboard_2" 
+		ExcludeAddons="trailer_log_pole_zikz_612h" 
 	>
 		<WinchSocket Pos="(1.568; 0.874; 0.372)" />
 		<WinchSocket Pos="(1.568; 0.874; -0.372)" />
@@ -505,16 +507,17 @@
 		<AddonSockets>
 			<Socket
 				Names="CraneAvenhornA15"
-				Offset="(1.35; -0.22; 0)"
+				Offset="(0.6; -0.355; 0)"
 				ParentFrame="BoneCabinTwist_cdt"
 				NamesBlock="FrameAddonTank"
 			>
 				<AddonsShift Offset="(-1.5; 0; 0)" Types="SaddleHigh"/>
-				<AddonsShift Offset="(-1.5; 0; 0)" Types="SaddleLow"/>
+				<AddonsShift Offset="(-0.55; 0; 0)" Types="SaddleLow"/>
+				<AddonsShift Offset="(0.75; 0.146; 0)" Types="PaderaSTD4Subframe"/>
 			</Socket>
 			<Socket
 				Names="MinicraneRearPaderaSTD4"
-				Offset="(-4.1; 1.36; 0)"
+				Offset="(-4.145; 1.36; 0)"
 				ParentFrame="BoneChassis_cdt"
 				NamesBlock="FrameAddonTank"
 			/>
@@ -532,10 +535,15 @@
 				<AddonsShift Offset="(1.0; 0; 0)" Types="MinicraneRearPaderaSTD4" />
 			</Socket>
 			
-			<Socket Names="SaddleHigh, SaddleLow" Offset="(-2.430; 1.214; 0.000)" ParentFrame="BoneChassis_cdt" NamesBlock="PaderaSTD4Sideboard, MinicraneRearPaderaSTD4" >
+			<Socket Names="SaddleHigh" Offset="(-2.430; 1.36; 0.000)" ParentFrame="BoneChassis_cdt" NamesBlock="PaderaSTD4Sideboard, MinicraneRearPaderaSTD4" >
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.045)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.045)" />
 			</Socket>
+			<Socket Names="SaddleLow" Offset="(-2.430; 1.214; 0.000)" ParentFrame="BoneChassis_cdt" NamesBlock="PaderaSTD4Sideboard, MinicraneRearPaderaSTD4, PaderaSTD4Subframe, LogLiftPaderaSTD4" >
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.045)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.045)" />
+			</Socket>
+			
 			<Socket Names="SaddleMotorized" Offset="(-1.8; 0.05; 0.000)" NamesBlock="MinicraneRearPaderaSTD4, PaderaSTD4Sideboard, LogLiftPaderaSTD4" ParentFrame="BoneChassis_cdt" >
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.000; 0.000; 0.08)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.000; 0.000; -0.08)" />
@@ -552,7 +560,7 @@
 				<AddonsShift Offset="(-0.39; 0; 0)" Types="LogLiftPaderaSTD4" />
 				<AddonsShift Offset="(-0.15; 0; 0)" Types="CraneAvenhornA15" />
 				<AddonsShift Offset="(-0.09; 0; 0)" Types="PaderaSTD4SpareWheels" />
-				<AddonsShift Offset="(0.7; 0; 0)" Types="MinicraneRearPaderaSTD4" />
+				<AddonsShift Offset="(0.75; 0; 0)" Types="MinicraneRearPaderaSTD4" />
 			</Socket>
 			
 			<Socket Names="FrameAddonTank" Offset="(-1.85; 1.36; 0.000)" ParentFrame="BoneChassis_cdt" NamesBlock="PaderaSTD4Sideboard, CraneAvenhornA15, MinicraneRearPaderaSTD4, LogLiftPaderaSTD4, PaderaSTD4SpareWheels" >
@@ -562,6 +570,8 @@
 			
 			<Socket Names="FrameAddonLogShortPaderaSTD4" Offset="(-1.739; 1.36; 0.0)" ParentFrame="BoneChassis_cdt" NamesBlock="PaderaSTD4Sideboard, MinicraneRearPaderaSTD4"/>
 			
+			<Socket Names="FrameAddonLogMediumPaderaSTD4" Offset="(-0.625; 1.36; 0.0)" ParentFrame="BoneChassis_cdt" NamesBlock="PaderaSTD4Sideboard, MinicraneRearPaderaSTD4, LogLiftPaderaSTD4, CraneAvenhornA15, PaderaSTD4SpareWheels"/>
+			
 			<Socket Names="FrameAddonSeismicVibratorPaderaSTD4" Offset="(0.600; 1.36; -0.000)" ParentFrame="BoneChassis_cdt" NamesBlock="PaderaSTD4Sideboard, MinicraneRearPaderaSTD4, CraneAvenhornA15, LogLiftPaderaSTD4" />
 			<!--	<AddonsShift Offset="(1.05; 0; 0)" Types="MinicraneRearPaderaSTD4" />
 			</Socket> -->
@@ -569,6 +579,11 @@
 			<Socket Names="BigCraneUsPaderaSTD4" Offset="(-1.95; 1.36; 0.000)" NamesBlock="PaderaSTD4Sideboard, CraneAvenhornA15, MinicraneRearPaderaSTD4, LogLiftPaderaSTD4">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.05)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.05)" />
+			</Socket>
+			
+			<Socket Names="BigCranePaderaSTD4" Offset="(-1.405; 1.465; 0)" ParentFrame="BoneChassis_cdt"  NamesBlock="PaderaSTD4Sideboard, CraneAvenhornA15, MinicraneRearPaderaSTD4, LogLiftPaderaSTD4, PaderaSTD4SpareWheels">
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0.0; 0)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0.0; 0)" />
 			</Socket>
 		
 			<Socket Names="FrameAddonKung" Offset="(-2.0; 1.44; 0)" ParentFrame="BoneChassis_cdt" NamesBlock="PaderaSTD4Sideboard, LogLiftPaderaSTD4">
@@ -585,10 +600,12 @@
 		<AddonSockets>
 			<Socket Names="Trailer, LogTrailer" Offset="(-4.067; 1.007; -0.000)" >
 				<AddonsShift Offset="(-0.61; 0; 0)" Types="FrameAddonLogShortPaderaSTD4" />
+				<AddonsShift Offset="(-0.77; 0; 0)" Types="FrameAddonLogMediumPaderaSTD4" />
+				<AddonsShift Offset="(-0.87; 0; 0)" Types="BigCranePaderaSTD4" />
 			</Socket>
 			<Socket Names="SemitrailerFoldableLog" NamesBlock="" Offset="(-3.3; 1.65; 0)" />
-			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-2.433; 1.680; 0.000)" />
-			<Socket Names="Semitrailer" Offset="(-2.433; 1.511; 0.000)" />
+			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-2.433; 1.9; 0.000)" />
+			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-2.433; 1.604; 0.000)" />
 		</AddonSockets>
 		<!-- TUNING -->
 		<AddonSockets DefaultAddon="padera_std4_bumper_default">
@@ -614,6 +631,12 @@
 		</AddonSockets>
 		<AddonSockets >
 			<Socket Names="PaderaSTD4Spotlight" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<!-- WINGS -->
+		<AddonSockets DefaultAddon="padera_std4_wings_default" >
+			<Socket Names="PaderaSTD4Wings" Offset="(0; 0; 0)" ParentFrame="BoneСhassis_cdt" >
+				<ExtraParent Frame="BoneCabin_cdt" Offset="(0; 0; 0)" />
+			</Socket>
 		</AddonSockets>
 		<!-- DIFF LOCK -->
 		<AddonSockets DefaultAddon="padera_std4_diff_lock_default">

@@ -28,4 +28,7 @@
 		/>
 		<InstallSocket Type="AvenhornA15Kung" />
 	</GameData>
+	<FuelMass>
+		<Body Mass="840" />
+	</FuelMass>
 </TruckAddon>

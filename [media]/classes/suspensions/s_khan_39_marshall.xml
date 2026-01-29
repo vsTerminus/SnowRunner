@@ -37,7 +37,7 @@
 	</SuspensionSet>
 	
 	<SuspensionSet
-		_template="High"
+		UiName="UI_SUSPENSION_CRAWLER_NAME"
 		CriticalDamageThreshold="0.3"
 		DamageCapacity="250"
 		Name="khan_39_marshall_suspension_crawler"

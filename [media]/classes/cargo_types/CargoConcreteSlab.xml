@@ -4,6 +4,6 @@
 		UiDesc="UI_CARGO_CONCRETE_SLAB_DESC"
 		UiIcon20x20="cargoTypeSlabBig20"
 		UiIcon40x40="cargoTypeSlabBig40"
-		UiIcon100x100="cargoTypeConcreteSlab"
+		UiIcon100x100="cargoTypeLargeConcreteSlab"
 	/>
 </CargoType>

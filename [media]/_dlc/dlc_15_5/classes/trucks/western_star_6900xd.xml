@@ -37,6 +37,8 @@
 		SuspensionMarkerOffset="(-1.5; 0; 0)" 
 		GearboxMarkerOffset="(0.5; 0; 0)" 
 		TruckType="HEAVY"
+		HideDistance="250"
+		ShadowHideDistance="100"
 	>
 		<WinchUpgradeSocket Default="w_heavy_trucks_default" IsUpgradable="true" Type="winches_heavy_trucks" />
 		<Wheels

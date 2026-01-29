@@ -1,0 +1,14 @@
+<ModelBrand
+	Instanced="true"
+	InstancedAsModel="true"
+	NightLightingShadowsAllowCap="true"
+>
+<Landmark 
+		Mesh="landmarks/solar_panel_01_ru17_lmk" 
+	/>
+	<PhysicsModel>
+		<Body
+			Collisions="Dynamic"
+		/>
+	</PhysicsModel>
+</ModelBrand>

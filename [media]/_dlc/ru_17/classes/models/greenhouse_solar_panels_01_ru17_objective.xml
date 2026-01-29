@@ -1,0 +1,38 @@
+<ModelBrand
+	DynamicModel="true"
+>
+	<PhysicsModel>
+		<Body Collisions="Dynamic">
+		</Body>
+	</PhysicsModel>
+	<Subset Name="stage_00">
+	</Subset>
+	<Subset IsDefault="true" Name="stage_01"> 
+		<Mesh Name="mesh_01" />
+		<CdtMesh Name="cdt_mesh_01" />
+		<AnimSubset Name="build_animation_1"/>
+		<AnimTrack Name="anim_track_01" />
+	</Subset>
+	<AnimSubset Name="build_animation_1"> 
+		<Mesh Name="mesh_01_animation" />
+		<CdtMesh Name="cdt_mesh_01" />
+	</AnimSubset>
+	<TrackEvents TrackName="anim_track_01">
+		<AnimEvent Key="1">
+			<Sound Name="actors/actor_construction/actor_deconstruct_metal" Range="200" Volume="1"/>
+			<SFX Dir="(0; -1; 0)" Name="rail_blocker_smoke_01" Pos="(1.159; 0.466; 2.327)" />
+		</AnimEvent>
+		<AnimEvent Key="6">
+			<SFX Dir="(0; -1; 0)" Name="rail_blocker_smoke_01" Pos="(1.159; 0.466; 6.983)" />
+		</AnimEvent>
+		<AnimEvent Key="12">
+			<SFX Dir="(0; -1; 0)" Name="rail_blocker_smoke_01" Pos="(1.159; 0.466; 11.639)" />
+		</AnimEvent>
+		<AnimEvent Key="18">
+			<SFX Dir="(0; -1; 0)" Name="rail_blocker_smoke_01" Pos="(1.159; 0.466; 16.295)" />
+		</AnimEvent>
+		<AnimEvent Key="24">
+			<SFX Dir="(0; -1; 0)" Name="rail_blocker_smoke_01" Pos="(1.159; 0.466; 20.951)" />
+		</AnimEvent>
+	</TrackEvents>
+</ModelBrand>

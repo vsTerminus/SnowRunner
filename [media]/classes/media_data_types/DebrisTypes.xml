@@ -11,4 +11,5 @@
 	<DebrisType MinVelocity="1.0" Name="Sparks" />
 	<DebrisType MinVelocity="1.0" Name="FoliageMapleAutumn" />
 	<DebrisType MinVelocity="1.0" Name="FoliageRosehip" />
+	<DebrisType MinVelocity="1.0" Name="FoliageBushCastor" />
 </DebrisTypes>

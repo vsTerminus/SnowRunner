@@ -72,6 +72,8 @@
 		SteerSpeed="0.017"
 		TruckImage="Azov73210mchr"
 		TruckType="HEAVY"
+		HideDistance="250"
+		ShadowHideDistance="100"
 	>
 		<WinchUpgradeSocket Default="w_heavy_trucks_default" IsUpgradable="true" Type="winches_heavy_trucks" />
 		<Wheels
@@ -378,7 +380,7 @@
 	<Landmark Mesh="landmarks/azov_73210_lmk" MinScale="1.5" MaxScale="2.5" />
 	<HeadLight _template="Default" Pos="(5.239; 1.202; 0)" ParentFrame="BoneCabin_cdt" />
 	<GameData
-		Country="RU,CAS"
+		Country="RU,CAS,WA"
 		ExcludeAddons="semitrailer_log_double_ls"
 		Price="66000"
 		UnlockByExploration="false"

@@ -16,7 +16,7 @@
 		</Body>
 	</PhysicsModel>
 	<GameData
-		CameraPreset="exhaust"
+		CameraPreset="spare_wheel"
 		Category="exhaust"
 		Price="1800"
 		UnlockByExploration="false"

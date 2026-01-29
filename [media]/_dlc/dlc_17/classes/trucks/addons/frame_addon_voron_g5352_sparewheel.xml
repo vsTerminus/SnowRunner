@@ -1,0 +1,36 @@
+<TruckAddon>
+	<WheelRepairsHide>
+		<Mesh Frame="spare_wheel" HideThreshold="0.0" />
+	</WheelRepairsHide>
+	<TruckData WheelRepairsCapacity="2" />
+	<PhysicsModel Mesh="trucks/addons/frame_addon_voron_g5352_sparewheel">
+		<Body ImpactType="Truck" Mass="10">
+			<Constraint Type="Rigid"/>
+			<Body Collisions="None" Mass="40" ModelFrame="BoneWheel_cdt">
+				<Constraint
+					AxisLocal="(1; 0; 0)"
+					Type="Hinge"
+					MinLimit="-0.4"
+					MaxLimit="0.32"
+				>
+					<Motor Damping="0" Spring="0" Type="Spring" />
+				</Constraint>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="spare_wheel"
+		Category="wheel_addon"
+		Price="1400"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SPARE_WHEEL_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SPARE_WHEEL_NAME"
+		/>
+		<InstallSocket Type="VoronG5352Sparewheel" />
+	</GameData>
+</TruckAddon>

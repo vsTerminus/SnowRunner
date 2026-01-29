@@ -11,7 +11,7 @@
 		<TruckTire _template="Offroad" Mesh="wheels/tire_azov_670963n" Name="tire">
 			<WheelFriction _template="Offroad" BodyFrictionAsphalt="1" SubstanceFriction="1.8" BodyFriction="3"/>
 			<GameData
-				Price="750"
+				Price="7500"
 				UnlockByExploration="false"
 				UnlockByRank="1"
 			>

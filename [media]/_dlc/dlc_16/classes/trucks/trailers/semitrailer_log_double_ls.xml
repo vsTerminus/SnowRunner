@@ -23,7 +23,7 @@
 	</Body>
 </_templates>
 <Truck Type="Trailer" AttachType="Saddle">
-	<TruckData>
+	<TruckData HideDistance="250" ShadowHideDistance="100">
 		<Wheels>
 			<Wheel _template="TrailerWheel" Pos="(3.593; 0.635; 1.0)" ParentFrame="BoneFrontAxle1" />
 			<Wheel _template="TrailerWheel" RightSide="true" Pos="(3.593; 0.635; 1.0)" ParentFrame="BoneFrontAxle1" />

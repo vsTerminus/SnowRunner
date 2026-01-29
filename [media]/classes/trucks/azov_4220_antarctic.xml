@@ -81,6 +81,8 @@
 		SteerSpeed="0.03"
 		TruckImage="Azov4220Antarcticmchr"
 		TruckType="HEAVY"
+		HideDistance="250"
+		ShadowHideDistance="100"
 	>
 		<WinchUpgradeSocket Default="w_heavy_trucks_default" IsUpgradable="true" Type="winches_heavy_trucks" />
 		<Wheels
@@ -439,7 +441,7 @@
 		Pos="(5.738; 1.265; 0)"
 	/>
 	<GameData
-		Country="RU,CAS"
+		Country="RU,CAS,WA"
 		Price="111600"
 		UnlockByExploration="false"
 		UnlockByRank="26"

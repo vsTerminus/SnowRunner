@@ -1,0 +1,27 @@
+<_templates Include="trucks"/>
+<TruckAddon IsChassisFullOcclusion="true">
+	<PhysicsModel Mesh="trucks/addons/frame_addon_jangsu_rx600_sideboard">
+		<Body Mass="800" ModelFrame="BoneAddon_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="addon_1"
+		Category="frame_addons"
+		IsCustomizable="true"
+		Price="4900"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<WinchSocket Pos="(-5.179; 0.916; 0.000)" FixedToTruck="true"/>
+		<CraneSocket Pos="(-5.179; 0.916; 0.000)" FixedToTruck="true"/>
+		<UiDesc
+			UiDesc="UI_ADDON_JANGSU_RX600_FRAME_SIDEBOARD_2_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_ADDON_JANGSU_RX600_FRAME_SIDEBOARD_2_NAME"
+		/>
+		<InstallSocket Type="JangsuRX600Sideboard" />
+		<AddonSlots InitialOffset="(-1.42; 1.475; 0)" OffsetStep="(-2.53; 0; 0)" Quantity="2" />
+	</GameData>
+</TruckAddon>

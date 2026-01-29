@@ -58,6 +58,8 @@
 		SteerSpeed="0.015"
 		TruckImage="tatraphoenixmchr"
 		TruckType="OFFROAD"
+		HideDistance="250"
+		ShadowHideDistance="100"
 	>
 		<WinchUpgradeSocket Default="w_medium_trucks_default" IsUpgradable="true" Type="winches_medium_trucks" />
 		<Wheels
@@ -307,7 +309,7 @@
 	<Landmark Mesh="landmarks/tatra_phoenix_lmk" MinScale="1.8" MaxScale="2.8" />
 	<HeadLight _template="Default" Pos="(4.8; 1.2; 0)" />
 	<GameData
-		Country="RU,CAS,NE,CE"
+		Country="RU,CAS,WA,NE,CE"
 		ExcludeAddons="trailer_log_pole"
 		Price="72800"
 		UnlockByExploration="true"

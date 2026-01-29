@@ -22,6 +22,8 @@
 		SteerSpeed="0.035"
 		TruckImage="femm37atmchr"
 		TruckType="HEAVY"
+		HideDistance="250"
+		ShadowHideDistance="100"
 	>
 		<WinchUpgradeSocket Default="w_heavy_trucks_default" IsUpgradable="true" Type="winches_heavy_trucks" />
 		<Wheels
@@ -359,7 +361,7 @@
 	</ModelAttachments>
 	<Landmark Mesh="landmarks/femm_37at_lmk" MinScale="1.6" MaxScale="2.8" />
 	<GameData
-		Country="RU,CAS"
+		Country="RU,CAS,WA"
 		ExcludeAddons="trailer_log_pole, trailer_log"
 		Price="181300"
 		UnlockByExploration="true"

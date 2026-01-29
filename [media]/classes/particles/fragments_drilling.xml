@@ -1,0 +1,36 @@
+<CombineParticles 
+	AirResistance="0.0"
+	AspectRatio="1.4"
+	SoftDepth="0.1"
+	Gravity="(0; -4.0; 0)"
+	WindDivergence = "80.0"
+	Wind="(0.0; 3.0; 0.0)"
+	OverdrawDegradation="true"
+	SortingPriority="2"
+>
+	<Texture
+	Diffuse="sfx/particles/rolling_dust__d_a.tga"
+		Distort="sfx/substance/distort__n_d.tga"
+		DistortMult="0.8"
+		DistortScale="0.2"
+		DistortSpeed="0.05"
+		RollEnd="0.6"
+		RollStart="0.0"
+		RollingMask="sfx/particles/rolling_smoke_mask_small__s_d.tga"
+	/>
+	<Size Function="(0.0; 0.01; 0.0)" Median="0.1" />
+	<Scale Random="0.8" Value="1.5" />
+	<LifeTime Value="3.0" />
+	<Color Value="g(51; 49; 44; 255) x 0.6">
+		<Key Alpha="190" At="0.0" />
+		<Key Alpha="190" At="0.3" />
+		<Key Alpha="190" At="0.8" />
+		<Key Alpha="0" At="1.0" />
+	</Color>
+	<Collisions
+		Enable="true"
+		Friction="0.6"
+		Radius="0.005"
+		Restitution="0.2"
+	/>
+</CombineParticles>

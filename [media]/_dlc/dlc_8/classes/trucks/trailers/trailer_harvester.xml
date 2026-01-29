@@ -25,7 +25,7 @@
 	</Wheel>
 </_templates>
 <Truck Type="Trailer" FarmingTrailerType="Harvester">
-	<TruckData>
+	<TruckData HideDistance="250" ShadowHideDistance="100">
 		<Wheels>
 			<Wheel _template="WheelRoot" Pos="(3.009; 0.358; 0.951)" ParentFrame="BoneTrailer_cdt" />
 			<Wheel _template="WheelRoot" RightSide="true" Pos="(3.009; 0.358; 0.951)" ParentFrame="BoneTrailer_cdt" />

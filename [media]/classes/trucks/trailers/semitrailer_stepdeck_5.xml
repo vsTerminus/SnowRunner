@@ -37,7 +37,7 @@
 	</Flare>
 </_templates>
 <Truck Type="Trailer" AttachType="Saddle">
-	<TruckData>
+	<TruckData HideDistance="250" ShadowHideDistance="100">
 		<Wheels>
 			<Wheel _template="TrailerWheel" Pos="(-4.101; 0.568; 1.213)" />
 			<Wheel _template="TrailerWheel" RightSide="true" Pos="(-4.101; 0.568; 1.213)" />

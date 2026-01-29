@@ -30,6 +30,6 @@
 		<InstallSocket Type="TatraFrameAddonTank" />
 	</GameData>
 	<FuelMass>
-		<Body Mass="12000" />
+		<Body Mass="5600" />
 	</FuelMass>
 </TruckAddon>

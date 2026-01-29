@@ -45,7 +45,7 @@
 		</GameData>
 	</SuspensionSet>
 	<SuspensionSet
-		_template="High"
+		UiName="UI_SUSPENSION_CRAWLER_NAME"
 		BrokenWheelDamageMultiplier="2"
 		CriticalDamageThreshold="0.5"
 		DamageCapacity="120"

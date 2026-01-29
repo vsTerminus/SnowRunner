@@ -55,7 +55,7 @@
 	</Body>
 </_templates>
 <Truck Type="Trailer" AttachType="Saddle">
-	<TruckData FuelCapacity="5000">
+	<TruckData FuelCapacity="5000" HideDistance="250" ShadowHideDistance="100">
 		<Wheels>
 			<Wheel _template="TrailerWheel" Pos="(-2.098; 0.503; 0.881)" />
 			<Wheel _template="TrailerWheel" Pos="(-2.098; 0.503; 0.881)" RightSide="true" />

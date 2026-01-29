@@ -34,7 +34,7 @@
 	</Constraint>
 </_templates>
 <Truck Type="Trailer" AttachType="Saddle">
-	<TruckData FuelCapacity="3700">
+	<TruckData FuelCapacity="3700" HideDistance="250" ShadowHideDistance="100">
 		<Wheels>
 			<Wheel _template="TrailerWheel" Pos="(-2.275; 0.601; 0.857)" />
 			<Wheel _template="TrailerWheel" RightSide="true" Pos="(-2.275; 0.601; 0.857)" />

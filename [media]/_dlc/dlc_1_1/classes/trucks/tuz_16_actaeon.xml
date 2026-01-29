@@ -60,6 +60,8 @@
 		SteerSpeed="0.03"
 		TruckImage="tuz16mchr"
 		TruckType="OFFROAD"
+		HideDistance="250"
+		ShadowHideDistance="100"
 	>
 		<WinchUpgradeSocket Default="w_medium_trucks_default" IsUpgradable="true" Type="winches_medium_trucks, winches_actaeon" />
 		<Wheels
@@ -344,7 +346,7 @@
 	<Landmark Mesh="landmarks/tuz_16_actaeon_lmk" MinScale="1.5" MaxScale="2.5" />
 	<HeadLight _template="Default" Pos="(2.865; 1.326; 0)" ParentFrame="BoneCabin_cdt" />
 	<GameData
-		Country="RU,CAS"
+		Country="RU,CAS,WA"
 		Price="54400"
 		UnlockByExploration="true"
 		UnlockByRank="1"

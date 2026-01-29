@@ -40,6 +40,8 @@
 		SteerSpeed="0.03"
 		TruckImage="gorbymchr"
 		TruckType="SCOUT"
+		HideDistance="250"
+		ShadowHideDistance="100"
 	>
 		<WinchUpgradeSocket Default="w_scout_default" IsUpgradable="true" Type="winches_scouts" />
 		<Wheels
@@ -233,7 +235,7 @@
 	<Landmark Mesh="landmarks/gor_by4_lmk" MinScale="1.8" MaxScale="3.8" />
 	<HeadLight _template="Default" Pos="(1.7; 0.7; 0)" />
 	<GameData
-		Country="RU,CAS"
+		Country="RU,CAS,WA"
 		ExcludeAddons="stuff_hula_girl, stuff_masha"
 		Price="3600"
 		Recallable="true"

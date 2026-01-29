@@ -1,0 +1,65 @@
+<_templates Include="trucks">
+	<Body>
+		<ChainRight Mass="60" Collisions="None">
+			<Constraint
+				PivotOffset="(0.000; 0.000; 0.000)"
+				Type="Ragdoll"
+				TwistAxisLocal="(1; 0; 0)"
+				PlaneAxisLocal="(0; 1; 0)"
+				TwistMin="-3"
+				TwistMax="26"
+				PlaneMin="-32"
+				PlaneMax="32"
+				Cone="6"
+			>
+				<TwistMotor Damping="1" Spring="0.5" Type="Spring" />
+				<PlaneMotor Damping="1" Spring="0.5" Type="Spring" />
+				<ConeMotor Damping="1" Spring="0.5" Type="Spring" />
+			</Constraint>
+		</ChainRight>
+		<ChainLeft Mass="60" Collisions="None">
+			<Constraint
+				PivotOffset="(0.000; 0.000; 0.000)"
+				Type="Ragdoll"
+				TwistAxisLocal="(1; 0; 0)"
+				PlaneAxisLocal="(0; 1; 0)"
+				TwistMin="-26"
+				TwistMax="3"
+				PlaneMin="-32"
+				PlaneMax="32"
+				Cone="6"
+			>
+				<TwistMotor Damping="1" Spring="0.5" Type="Spring" />
+				<PlaneMotor Damping="1" Spring="0.5" Type="Spring" />
+				<ConeMotor Damping="1" Spring="0.5" Type="Spring" />
+			</Constraint>
+		</ChainLeft>
+	</Body>
+</_templates>
+<TruckAddon IsChassisFullOcclusion="true">
+	<PhysicsModel Mesh="trucks/addons/frame_addon_voron_g5352_sideboard">
+		<Body ImpactType="Truck" Mass="930" ModelFrame="BoneChassis_cdt">
+			<Constraint Type="Rigid" />
+			
+			<Body _template="ChainLeft" ModelFrame="BoneChainLeft_cdt" />
+			<Body _template="ChainRight" ModelFrame="BoneChainRight_cdt" />
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="addon_1"
+		Category="frame_addons"
+		IsCustomizable="true"
+		Price="5700"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_ADDON_VORON_G5352_FRAME_SIDEBOARD_2_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_ADDON_VORON_G5352_FRAME_SIDEBOARD_2_NAME"
+		/>
+		<InstallSocket Type="VoronG5352Sideboard" />
+		<AddonSlots InitialOffset="(0; 1.503; 0)" OffsetStep="(-2.56; 0; 0)" Quantity="2" />
+	</GameData>
+</TruckAddon>

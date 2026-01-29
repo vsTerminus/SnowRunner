@@ -1,0 +1,29 @@
+<_templates Include="trucks"/>
+<TruckAddon>
+    <TruckData>
+        <Damage>
+            <Multiplier Multiplier="0.85" Type="Engine" />
+			<Multiplier Multiplier="0.85" Type="Gearbox" />
+        </Damage>
+    </TruckData>
+    <PhysicsModel Mesh="trucks/jangsu_rx600_tuning/jangsu_rx600_cabin_protector">
+        <Body ImpactType="Truck" Mass="70">
+            <Constraint Type="Rigid" />
+        </Body>
+    </PhysicsModel>
+    <GameData
+        CameraPreset="default"
+        Category="top"
+        Price="1700"
+        UnlockByExploration="false"
+        UnlockByRank="1"
+    >
+        <UiDesc
+            UiDesc="UI_TUNING_SAFETY_CAGE_DESC"
+            UiIcon30x30=""
+            UiIcon40x40=""
+            UiName="UI_TUNING_SAFETY_CAGE_NAME"
+        />
+        <InstallSocket Type="JangsuRX600Protector" />
+    </GameData>
+</TruckAddon>

@@ -52,6 +52,8 @@
 		SteerSpeed="0.016"
 		TruckImage="zikz605rmchr"
 		TruckType="HEAVY"
+		HideDistance="250"
+		ShadowHideDistance="100"
 	>
 		<WinchUpgradeSocket Default="w_heavy_trucks_default" IsUpgradable="true" Type="winches_heavy_trucks" />
 		<Wheels
@@ -341,7 +343,7 @@
 	<Landmark Mesh="landmarks/zikz_605r_lmk" MinScale="1.8" MaxScale="2.8" />
 	<HeadLight _template="Default" Pos="(5.052; 1.103; 0)" />
 	<GameData
-		Country="RU,CAS"
+		Country="RU,CAS,WA"
 		ExcludeAddons="trailer_log_pole"
 		Price="165300"
 		UnlockByExploration="true"

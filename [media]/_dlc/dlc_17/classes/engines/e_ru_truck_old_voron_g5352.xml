@@ -1,0 +1,85 @@
+<EngineVariants>
+	<Engine
+		CriticalDamageThreshold="0.5"
+		DamageCapacity="200"
+		DamagedConsumptionModifier="1.25"
+		EngineResponsiveness="0.026"
+		FuelConsumption="7.5"
+		Torque="144870"
+		DamagedMinTorqueMultiplier="1.0"
+		DamagedMaxTorqueMultiplier="0.89"
+		MaxDeltaAngVel="2.3"
+		BrakesDelay="0.4"
+
+		Name="ru_truck_old_engine_voron_g5352_0"
+	>
+		<GameData
+			Price="12800"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_ENGINE_RU_TRUCK_OLD_VORON_G5352_0_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_ENGINE_RU_TRUCK_OLD_VORON_G5352_0_NAME"
+			/>
+		</GameData>
+	</Engine>
+	
+	<Engine
+		CriticalDamageThreshold="0.33"
+		DamageCapacity="180"
+		DamagedConsumptionModifier="1.15"
+		EngineResponsiveness="0.032"
+		FuelConsumption="8.3"
+		Torque="164100"
+		DamagedMinTorqueMultiplier="1.0"
+		DamagedMaxTorqueMultiplier="0.78"
+		MaxDeltaAngVel="2.5"
+		BrakesDelay="0.45"
+
+		Name="ru_truck_old_engine_voron_g5352_1"
+	>
+		<GameData
+			Price="13500"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_ENGINE_RU_TRUCK_OLD_VORON_G5352_1_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_ENGINE_RU_TRUCK_OLD_VORON_G5352_1_NAME"
+			/>
+		</GameData>
+	</Engine>
+	
+	<Engine
+		CriticalDamageThreshold="0.64"
+		DamageCapacity="220"
+		DamagedConsumptionModifier="1.19"
+		EngineResponsiveness="0.036"
+		FuelConsumption="8.0"
+		Torque="188220"
+		DamagedMinTorqueMultiplier="1.0"
+		DamagedMaxTorqueMultiplier="0.9"
+		MaxDeltaAngVel="3.1"
+		BrakesDelay="0.36"
+
+		Name="ru_truck_old_engine_voron_g5352_2"
+	>
+		<GameData
+			Price="15400"
+			UnlockByExploration="true"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_ENGINE_RU_TRUCK_OLD_VORON_G5352_2_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_ENGINE_RU_TRUCK_OLD_VORON_G5352_2_NAME"
+			/>
+		</GameData>
+	</Engine>
+</EngineVariants>

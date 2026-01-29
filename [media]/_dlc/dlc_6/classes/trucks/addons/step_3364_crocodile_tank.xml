@@ -30,6 +30,6 @@
 		<InstallSocket Type="Step3364CrocodileTank" />
 	</GameData>
 	<FuelMass>
-		<Body Mass="4000" />
+		<Body Mass="2520" />
 	</FuelMass>
 </TruckAddon>

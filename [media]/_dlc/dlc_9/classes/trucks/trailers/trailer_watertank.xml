@@ -21,7 +21,7 @@
 	</Wheel>
 </_templates>
 <Truck Type="Trailer">
-	<TruckData WaterCapacity="2000">
+	<TruckData WaterCapacity="2000" HideDistance="250" ShadowHideDistance="100">
 		<Wheels>
 			<Wheel _template="TrailerWheelFront" Pos="(2.739; 0.581; 1.050)" />
 			<Wheel _template="TrailerWheelFront" RightSide="true" Pos="(2.739; 0.581; 1.050)" />

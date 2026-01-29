@@ -1,0 +1,7 @@
+<_parent File="sticker_capote_1x1_ford_f750" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/jangsu_rx600_stuff/sticker_capote_1x1_jangsu_rx600"/>
+	<GameData CameraPreset="capote_sticker">
+		<InstallSocket Type="JangsuRX600Sticker_Capote" />
+	</GameData>
+</TruckAddon>

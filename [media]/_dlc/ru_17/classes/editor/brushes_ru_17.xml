@@ -1,0 +1,167 @@
+<DistributionBrushes>
+	<Plants>
+
+		
+		<WillowBigAU PlantsPerBlock="25">
+			<PlantType
+				Brand="willow_big_01_ru17"
+				Divergence="0.04"
+				MinMapScale="0.6"
+				MinSize="0.9"
+				MaxSize="1.4"
+			/>			
+			
+		</WillowBigAU>
+		
+		<WillowAU PlantsPerBlock="55">
+		
+			<PlantType
+				Brand="willow_bush_01_ru17"
+				Divergence="0.1"
+				MinSize="0.3"
+				MaxSize="0.5"
+				Perpendicularity="0.1"
+			/>
+			<PlantType
+				Brand="willow_middle_01_ru17"
+				Divergence="0.1"
+				MinSize="0.8"
+				MaxSize="1.0"
+				Perpendicularity="0.1"
+			/>
+			<PlantType
+				Brand="willow_middle_02_ru17"
+				Divergence="0.1"
+				MinSize="1.5"
+				MaxSize="1.7"
+				Perpendicularity="0.1"
+			/>
+
+
+		</WillowAU>
+	
+		<Grape PlantsPerBlock="500">
+			<PlantType
+				Brand="grape_01_ru17"
+				Divergence="0.01"
+				MinSize="0.9"
+				MaxSize="1.2"
+				Perpendicularity="0.01"
+			/>
+			<PlantType
+				Brand="grape_02_ru17"
+				Divergence="0.01"
+				MinSize="0.9"
+				MaxSize="1.2"
+				Perpendicularity="0.01"
+			/>
+			<PlantType
+				Brand="grape_03_ru17"
+				Divergence="0.01"
+				MinSize="0.9"
+				MaxSize="1.2"
+				Perpendicularity="0.01"
+			/>
+		</Grape>
+		<GrapeDry PlantsPerBlock="500">
+			<PlantType
+				Brand="grape_dry_01_ru17"
+				Divergence="0.01"
+				MinSize="0.9"
+				MaxSize="1.2"
+				Perpendicularity="0.01"
+			/>
+			<PlantType
+				Brand="grape_dry_02_ru17"
+				Divergence="0.01"
+				MinSize="0.9"
+				MaxSize="1.2"
+				Perpendicularity="0.01"
+			/>
+			<PlantType
+				Brand="grape_dry_03_ru17"
+				Divergence="0.01"
+				MinSize="0.9"
+				MaxSize="1.2"
+				Perpendicularity="0.01"
+			/>
+		</GrapeDry>
+
+		<GrapeSmall PlantsPerBlock="500">
+		
+			<PlantType
+				Brand="grape_01_small_ru17"
+				Divergence="0.01"
+				MinSize="0.9"
+				MaxSize="1.2"
+				Perpendicularity="0.01"
+			/>
+			<PlantType
+				Brand="grape_02_small_ru17"
+				Divergence="0.01"
+				MinSize="0.9"
+				MaxSize="1.2"
+				Perpendicularity="0.01"
+			/>
+
+
+
+		</GrapeSmall>
+		
+		<WillowBig PlantsPerBlock="25">
+			<PlantType
+				Brand="willow_big_01_green_ru17"
+				Divergence="0.04"
+				MinMapScale="0.6"
+				MinSize="0.9"
+				MaxSize="1.4"
+			/>			
+		</WillowBig>
+		<Willow PlantsPerBlock="120">
+			<PlantType
+				Brand="willow_middle_01_green_ru17"
+				Divergence="0.1"
+				MinSize="0.8"
+				MaxSize="1.4"
+				Perpendicularity="0.1"
+			/>
+			<PlantType
+				Brand="willow_middle_02_green_ru17"
+				Divergence="0.1"
+				MinSize="1.1"
+				MaxSize="1.7"
+				Perpendicularity="0.1"
+			/>
+		</Willow>
+		<WillowBush PlantsPerBlock="185">
+			<PlantType
+				Brand="willow_bush_01_green_ru17"
+				Divergence="0.1"
+				MinSize="0.6"
+				MaxSize="0.9"
+				Perpendicularity="0.1"
+			/>
+		</WillowBush>
+		
+		<FirsSmallNoShadow PlantsPerBlock="128">
+			<PlantType
+				Brand="spruce_04_ru17"
+				Divergence="0.06"
+				MinSize="0.6"
+				MaxMapScale="0.35"
+				MaxSize="1.9"
+				Perpendicularity="0.1"
+			/>
+		</FirsSmallNoShadow>
+		
+	</Plants>
+
+	<Grass>
+
+		<LavenderBigO PlantsPerBlock="1390">
+			<PlantType Brand="grass_lavender_big_o" />
+		</LavenderBigO>
+
+	</Grass>	
+	
+</DistributionBrushes>

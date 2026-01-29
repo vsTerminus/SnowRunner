@@ -1,0 +1,29 @@
+<_templates Include="trucks" />
+<TruckAddon>
+    <TruckData>
+        <Shakers>
+            <Shaker Frame="BoneExhaust" MinAngle="(0.07; 0.07; 0.07)" MaxAngle="(0.25; 0.25; 0.25)" MaxFrequency="4" />
+        </Shakers>
+    </TruckData>
+    <PhysicsModel Mesh="trucks/jangsu_rx600_tuning/jangsu_rx600_exhaust_default">
+        <Body ImpactType="Truck" Mass="5">
+            <Constraint Type="Rigid" />
+        </Body>
+    </PhysicsModel>
+    <GameData
+        CameraPreset="rear"
+        Category="exhaust"
+        Price="1000"
+        UnlockByExploration="false"
+        UnlockByRank="1"
+    >
+        <UiDesc
+            UiDesc="UI_TUNING_EXHAUST_DEFAULT_DESC"
+            UiIcon30x30=""
+            UiIcon40x40=""
+            UiName="UI_TUNING_EXHAUST_DEFAULT_NAME"
+        />
+        <InstallSocket Type="JangsuRX600Exhaust" />
+    </GameData>
+    <Exhaust Dir="(-0.096; 0; -0.995)" IsLight="true" Origin="(-1.040; 0.654; -0.604)" Speed="3.82" ParentFrame="BoneExhaust" />
+</TruckAddon>

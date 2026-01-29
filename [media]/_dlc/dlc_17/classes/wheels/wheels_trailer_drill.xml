@@ -1,0 +1,11 @@
+<_templates Include="trucks"/>
+<TruckWheel
+	_template="Heavy"
+	Mesh="wheels/wheels_trailer_drill"
+	Radius="0.65"
+	Width = "0.394"
+>
+	<WheelTracks _template="Default" />
+	<WheelSoftness _template="Stiff" />
+	<WheelFriction _template="Allterrain" />	
+</TruckWheel>

@@ -81,11 +81,12 @@
 		EngineStartDelay="2.2"
 		ExhaustStartTime="1.8"
 		FuelCapacity="280"
-		InstallTrailerAddonRequired="burlak_6x6_farkop_trailer, burlak_6x6_farkop_scout_trailer"
 		Responsiveness="0.5"
 		SteerSpeed="0.03"
 		TruckImage="Burlak6x6mchr"
 		TruckType="SCOUT"
+		HideDistance="250"
+		ShadowHideDistance="100"
 	>
 		<WinchUpgradeSocket Default="w_scout_default" IsUpgradable="true" Type="winches_scouts" />
 		<Wheels
@@ -334,7 +335,7 @@
 	<Landmark Mesh="landmarks/burlak_6x6_lmk" MinScale="1.8" MaxScale="3.8" />
 	<HeadLight _template="Default" Pos="(3.8; 1.131; 0)" />
 	<GameData
-		Country="RU,CAS,NE,CE"
+		Country="RU,CAS,WA,NE,CE"
 		ExcludeAddons="trailer_log_pole,trailer_flatbed_ramps_4,trailer_log"
 		Price="97500"
 		UnlockByExploration="true"
@@ -518,8 +519,8 @@
 			<Socket Names="BurlakDiffLock" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="Trailer, LogTrailer" Offset="(-4.385; 1.14; 0)" />
-			<Socket Names="ScautTrailer" Offset="(-4.238; 0.913; 0)" />
+			<Socket Names="Trailer, LogTrailer" Offset="(-4.385; 1.14; 0)" NamesBlock="BurlakFarkopScout" RequiredHitches="burlak_6x6_farkop_trailer" />
+			<Socket Names="ScautTrailer" Offset="(-4.238; 0.913; 0)" NamesBlock="BurlakFarkop" RequiredHitches="burlak_6x6_farkop_scout_trailer" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="burlak_6x6_farkop_trailer">
 			<Socket Names="BurlakFarkop" NamesBlock="ScautTrailer" />

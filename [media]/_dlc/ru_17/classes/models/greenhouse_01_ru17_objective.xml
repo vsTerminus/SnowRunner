@@ -1,0 +1,30 @@
+<ModelBrand
+	DynamicModel="true"
+>
+	<PhysicsModel>
+		<Body Collisions="Dynamic">
+		</Body>
+	</PhysicsModel>
+	<Subset IsDefault="true" Name="stage_00">
+		<Mesh Name="state_00" />
+		<Mesh Name="state_00_lod1" />
+		<Mesh Name="state_00_lod2" />
+		<Mesh Name="state_00_lod3" />
+		<CdtMesh Name="cdt_state_00" />
+	</Subset>
+	<Subset Name="stage_01"> 
+		<Mesh Name="state_01" />
+		<Mesh Name="state_01_lod1" />
+		<Mesh Name="state_01_lod2" />
+		<Mesh Name="state_01_lod3" />
+		<CdtMesh Name="cdt_state_01" />
+		<OnSubsetActivateEvent>
+			<Sound Name="actors/actor_construction/actor_deconstruct_metal" Range="200" Volume="1"/>
+			<SFX Name="rail_blocker_smoke_01" Dir="(0; 1; 0)" Pos="(1.5; 0.0; -6.0)"/>
+			<SFX Name="rail_blocker_smoke_01" Dir="(0; 1; 0)" Pos="(-1.5; 0.0; -6.0)"/>
+			<SFX Name="rail_blocker_smoke_01" Dir="(0; 1; 0)" Pos="(1.5; 0.0; 6.0)"/>
+			<SFX Name="rail_blocker_smoke_01" Dir="(0; 1; 0)" Pos="(-1.5; 0.0; 6.0)"/>
+		</OnSubsetActivateEvent>
+	</Subset>
+	<Landmark Mesh="landmarks/greenhouse_01_ru17_lmk" />
+</ModelBrand>

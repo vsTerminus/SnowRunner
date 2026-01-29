@@ -11,14 +11,29 @@
 	</Flare>
 </_templates>
 <TruckAddon>
+	<TruckData WaterCapacity="2000">
+		<LimitedFluid Color="(86; 186; 255; 255)" Center="(-3.498, 2.702, -0.000)" LengthX="4.880" RadiusY="0.792" RadiusZ="1.553" Type="Cylinder" />
+	</TruckData>
+	<Rotator EngineTorqueFactor="0" Frame="BoneRotator" RotationSpeed="3.5" />
 	<PhysicsModel Mesh="trucks/addons/cat_745c_water_tank">
 		<Body Mass="1000">
 			<Constraint Type="Rigid" />
 		</Body>
 	</PhysicsModel>
 	<ModelAttachments>
+		<StopSignals>
+			<Light _template="StopSignal" Pos="(-7.059; 3.426; 0)" />
+			<Flare _template="StopSignal" DirAngle="135" Pos="(-6.232; 3.460; -0.881)" Size="0.5" />
+			<Flare _template="StopSignal" DirAngle="135" Pos="(-6.232; 3.460; 0.881)" Size="0.5" />
+		</StopSignals>
+		<Ignition _template="Flasher">
+			<Model Dir="(-0.699; 0.184; 0.691)" Org="(-6.204; 3.705; -0.34)" ParentFrame="BoneRotator" />
+			<Light Dir="(-0.699; 0.184; 0.691)" Pos="(-6.204; 3.705; -0.34)" ParentFrame="BoneRotator" />
+			<Flare Dir="(-0.699; 0.184; 0.691)" Pos="(-6.204; 3.705; -0.34)" ParentFrame="BoneRotator" />
+			<Flare Dir="(-0.699; 0.184; 0.691)" Pos="(-6.204; 3.705; -0.34)" ParentFrame="BoneRotator" />
+			<Flare Pos="(-6.204; 3.705; -0.394)" />
+		</Ignition>
 		<Ignition>
-			<!--<Flare _template="Beacon" Pos="(-6.204; 3.705; -0.394)" Size="1.4" />-->
 			<Flare _template="IgnitionSignalRedSmall" Pos="(-6.232; 3.461; -0.979)" Size="0.2" />
 			<Flare _template="IgnitionSignalRedSmall" Pos="(-6.232; 3.461; 0.979)" Size="0.2" />
 			<Flare _template="IgnitionSignalRedSmall" Pos="(-6.232; 3.461; -0.78)" Size="0.2" />
@@ -29,7 +44,7 @@
 		CameraPreset="addon_1"
 		Category="frame_addons"
 		IsCustomizable="true"
-		Price="5700"
+		Price="6000"
 		UnlockByExploration="false"
 		UnlockByRank="1"
 	>
@@ -41,4 +56,7 @@
 		/>
 		<InstallSocket Type="Cat745CWaterTank" />
 	</GameData>
+	<WaterMass>
+		<Body Mass="7700" />
+	</WaterMass>
 </TruckAddon>

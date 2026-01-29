@@ -49,6 +49,8 @@
 		SteerSpeed="0.02"
 		TruckImage="gmc9500mchr"
 		TruckType="HIGHWAY"
+		HideDistance="250"
+		ShadowHideDistance="100"
 	>
 		<WinchUpgradeSocket Default="w_medium_trucks_default" IsUpgradable="true" Type="winches_medium_trucks" />
 		<Wheels

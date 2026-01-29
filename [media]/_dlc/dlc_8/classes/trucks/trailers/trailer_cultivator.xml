@@ -33,7 +33,7 @@
 	</Wheel>
 </_templates>
 <Truck Type="Trailer" FarmingTrailerType="Cultivator">
-	<TruckData>
+	<TruckData HideDistance="250" ShadowHideDistance="100">
 		<Wheels>
 			<Wheel _template="RearWheel" Pos="(-3.542; 0.471; 1.275)" />
 			<Wheel _template="RearWheel" RightSide="true" Pos="(-3.542; 0.471; 1.275)" />

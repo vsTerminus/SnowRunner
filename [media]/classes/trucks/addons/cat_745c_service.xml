@@ -237,4 +237,7 @@
 		/>
 		<InstallSocket Offset="(0; 0; 0)" Type="Cat745CService" />
 	</GameData>
+	<FuelMass>
+		<Body Mass="3080" />
+	</FuelMass>
 </TruckAddon>

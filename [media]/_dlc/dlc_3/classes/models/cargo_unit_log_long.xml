@@ -4,7 +4,7 @@
 	DynamicModel="true"
 >
 	<PhysicsModel>
-		<Body _template="HeavyWeight" ModelFrame="BoneRoot_cdt"/>
+		<Body _template="HeavyWeight" ModelFrame="BoneRoot_cdt" HideDistance="250" ShadowHideDistance="100"/>
 	</PhysicsModel>
 	<GameData PackSlotsNumber="1" LoadType="CargoLogsLong" ManualLoadSpawnOffsetY="2">
 		<LoadPoint Pos="(-3.8;0;0)" />

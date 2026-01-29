@@ -11,7 +11,7 @@
 	</Wheel>
 </_templates>
 <Truck Type="Trailer" AttachType="Drawbar">
-	<TruckData>
+	<TruckData HideDistance="250" ShadowHideDistance="100">
 		<Wheels>
 			<Wheel _template="TrailerWheel" Pos="(-1.696; 0.413; 1.2)" ParentFrame="BoneChassis_cdt"/>
 			<Wheel _template="TrailerWheel" Pos="(-2.611; 0.413; 1.2)" ParentFrame="BoneChassis_cdt"/>

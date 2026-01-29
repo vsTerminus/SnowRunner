@@ -1,0 +1,14 @@
+<_parent File="train_wheel" />
+<TruckWheel
+	Mass="500"
+	Mesh="wheels/train_wheel_dlc17"
+	Radius="0.47"
+	Width="0.42"
+>
+	<WheelSoftness RadiusOffset="0" SoftForceScale="1" />
+	<WheelFriction
+		BodyFriction="0.1"
+		BodyFrictionAsphalt="0.1"
+		SubstanceFriction="0.6"
+	/>
+</TruckWheel>

@@ -584,4 +584,7 @@
 			</IKBone>
 		</IKBone>
 	</AutomaticIK>
+	<FuelMass>
+		<Body Mass="504" />
+	</FuelMass>
 </TruckAddon>

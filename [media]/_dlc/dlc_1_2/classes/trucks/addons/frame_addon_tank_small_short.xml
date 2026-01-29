@@ -30,6 +30,6 @@
 		<InstallSocket Type="FrameAddonTankSmallShort" />
 	</GameData>
 	<FuelMass>
-		<Body Mass="3000" />
+		<Body Mass="1680" />
 	</FuelMass>
 </TruckAddon>

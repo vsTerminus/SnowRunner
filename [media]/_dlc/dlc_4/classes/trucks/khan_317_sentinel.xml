@@ -79,6 +79,8 @@
 		SteerSpeed="0.032"
 		TruckImage="khansentinelmchr"
 		TruckType="SCOUT"
+		HideDistance="250"
+		ShadowHideDistance="100"
 	>
 		<WinchUpgradeSocket Default="w_scout_default" IsUpgradable="true" Type="winches_scouts" />
 		<Wheels
@@ -315,7 +317,7 @@
 	<Landmark Mesh="landmarks/khan_317_sentinel_lmk" MinScale="1.8" MaxScale="3.8" />
 	<HeadLight _template="Default" Pos="(4.142; 0.963; 0)" />
 	<GameData
-		Country="RU,CAS"
+		Country="RU,CAS,WA"
 		Price="28200"
 		Recallable="true"
 		UnlockByExploration="false"

@@ -32,7 +32,7 @@
 	</Body>
 </_templates>
 <Truck AttachType="Saddle" Type="Trailer">
-	<TruckData FuelCapacity="240" RepairsCapacity="550" >
+	<TruckData FuelCapacity="240" RepairsCapacity="550" HideDistance="250" ShadowHideDistance="100">
 		<Wheels>
 			<Wheel _template="TrailerWheel" Pos="(-4.418; 0.699; 1.2)" ParentFrame="BoneCargo_3_cdt" />
 			<Wheel _template="TrailerWheel" Pos="(-4.418; 0.699; 1.2)" ParentFrame="BoneCargo_3_cdt" RightSide="true" />

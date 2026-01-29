@@ -1,0 +1,56 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<TruckData>
+		<Damage>
+			<Multiplier Multiplier="0.85" Type="Engine" />
+		</Damage>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/voron_g5352_tuning/voron_g5352_bumper_2">
+		<Body ImpactType="Truck" Mass="70" ModelFrame="BoneCabinTwist_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<Ignition>
+			<Light _template="IgnitionSignalWhite" Color="g(255; 235; 215) x 1.0" Pos="(4.528; 1.891; 0.389)" ParentFrame="BoneCabinTwist_cdt"/>
+			<Light _template="IgnitionSignalWhite" Color="g(255; 235; 215) x 1.0" Pos="(4.528; 1.891; -0.389)" ParentFrame="BoneCabinTwist_cdt"/>
+			<Flare _template="IgnitionSignalWhite" Color="g(255; 235; 215) x 0.5" Dir="(1; 0; 0)" Pos="(4.528; 1.891; 0.389)" ParentFrame="BoneCabinTwist_cdt" />
+			<Flare _template="IgnitionSignalWhite" Color="g(255; 235; 215) x 0.5" Dir="(1; 0; 0)" Pos="(4.528; 1.891; -0.389)" ParentFrame="BoneCabinTwist_cdt" />
+			<Flare _template="IgnitionSignalWhite" Color="g(255; 235; 215) x 0.5" Dir="(1; 0; 0)" Pos="(4.528; 1.891; 0)" ParentFrame="BoneCabinTwist_cdt" />
+		</Ignition>
+		<HeadLight>
+			<Model _template="HeadLightRay" Org="(4.528; 1.891; 0.389)" ParentFrame="BoneCabinTwist_cdt" />
+			<Model _template="HeadLightRay" Org="(4.528; 1.891; -0.389)" ParentFrame="BoneCabinTwist_cdt" />
+			<Model _template="HeadLightRay" Org="(4.528; 1.891; 0)" ParentFrame="BoneCabinTwist_cdt" />
+			<Flare _template="HeadLight" Color="g(255; 235; 215) x 0.8" Size=".2" Pos="(4.528; 1.891; 0.389)" ParentFrame="BoneCabinTwist_cdt" />
+			<Flare _template="HeadLight" Color="g(255; 235; 215) x 0.8" Size=".2" Pos="(4.528; 1.891; -0.389)" ParentFrame="BoneCabinTwist_cdt" />
+			<Flare _template="HeadLight" Color="g(255; 235; 215) x 0.8" Size=".2" Pos="(4.528; 1.891; 0)" ParentFrame="BoneCabinTwist_cdt" />
+			<Flare _template="BlueStreak" Pos="(4.528; 1.891; 0.389)" ParentFrame="BoneCabinTwist_cdt" />
+			<Flare _template="BlueStreak" Pos="(4.528; 1.891; -0.389)" ParentFrame="BoneCabinTwist_cdt" />
+			<Flare _template="BlueStreak" Pos="(4.528; 1.891; 0)" ParentFrame="BoneCabinTwist_cdt" />
+		</HeadLight>
+	</ModelAttachments>
+	<MainHeadLight _template="Multiply2"/>
+	<GameData
+		CameraPreset="default"
+		Category="bumper"
+		Price="2700"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<WinchSocket Pos="(4.440; 1.104; 0.611)" FixedToTruck="true"/>
+		<WinchSocket Pos="(4.440; 1.104; -0.611)" FixedToTruck="true"/>
+		<WinchSocket Pos="(4.558; 1.219; 0.000)" FixedToTruck="true"/>
+		
+		<CraneSocket Pos="(4.440; 1.104; 0.611)"  FixedToTruck="true"/>
+		<CraneSocket Pos="(4.440; 1.104; -0.611)" FixedToTruck="true"/>
+		
+		<UiDesc
+			UiDesc="UI_TUNING_BUMPER_HEAVYDUTY_PIPE_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_BUMPER_HEAVYDUTY_PIPE_NAME"
+		/>
+		<InstallSocket Type="VoronG5352Bumper" />
+	</GameData>
+</TruckAddon>

@@ -1,0 +1,61 @@
+<ModelBrand
+	DynamicModel="true"
+	NightLightingShadowsAllowCap="true"
+>
+	<Subset IsDefault="true" Name="build_stage_0"> <!-- break bridge -->
+		<Mesh Name="state_00" />
+		<Mesh Name="state_00_lod1" />
+		<Mesh Name="state_00_lod2" />
+		<CdtMesh Name="cdt_state_00" />
+		<Mesh Name="state_01" />
+		<Mesh Name="state_01_lod1" />
+		<Mesh Name="state_01_lod2" />
+		<CdtMesh Name="cdt_state_01" />
+	</Subset>
+
+	<Subset Name="build_stage_1"> <!-- complete bridge -->
+		<Mesh Name="state_00" />
+		<Mesh Name="state_00_lod1" />
+		<Mesh Name="state_00_lod2" />
+		<CdtMesh Name="cdt_state_00" />
+		<Mesh Name="state_02" />
+		<Mesh Name="state_02_lod1" />
+		<Mesh Name="state_02_lod2" />
+		<CdtMesh Name="cdt_state_02" />
+		<AnimTrack Name="stage_1_anim" />
+		<AnimSubset Name="build_animation_0" />
+	</Subset>
+
+	<AnimSubset Name="build_animation_0">
+		<Mesh Name="state_00" />
+		<Mesh Name="state_00_lod1" />
+		<CdtMesh Name="cdt_state_00" />
+		<Mesh Name="animesh_01"/>
+		<Mesh Name="animesh_02"/>
+	</AnimSubset>
+
+	<TrackEvents TrackName="stage_1_anim">
+		<AnimEvent Key="0">
+           		<Fade Time="0.2" />
+       	</AnimEvent>
+		<AnimEvent Key="10">
+			<Sound Name="actors/actor_construction/actor_construct_wooden_bridge" Range="50" Volume="1" />
+			<SFX Dir="(0; 1; 0)" Name="us_log_dispenser_01_objective" Pos="(0.733; 1.108; -0.152)" />		
+		</AnimEvent>
+		<AnimEvent Key="35">
+			<SFX Dir="(0; 1; 0)" Name="us_log_dispenser_01_objective" Pos="(0.733; 1.108; -0.152)" />		
+		</AnimEvent>
+		<AnimEvent Key="200">
+           		<Fade Time="1.2" />
+       	</AnimEvent>
+	</TrackEvents>
+
+	<PhysicsModel>
+		<Body Collisions="Dynamic" ModelFrame="state_00">
+			<Body Collisions="Dynamic" ModelFrame="state_01" />
+			<Body Collisions="Dynamic" ModelFrame="state_02" />
+		</Body>
+	</PhysicsModel>
+<Landmark Mesh="landmarks/bridge_road_02_ru17_objective_lmk" />
+</ModelBrand>
+

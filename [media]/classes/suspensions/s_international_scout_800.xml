@@ -76,7 +76,7 @@
 	</SuspensionSet>
 	
 	<SuspensionSet
-		_template="High"
+		UiName="UI_SUSPENSION_CRAWLER_NAME"
 		CriticalDamageThreshold="0.7"
 		DamageCapacity="120"
 		Name="international_scout_800_suspension_crawler"

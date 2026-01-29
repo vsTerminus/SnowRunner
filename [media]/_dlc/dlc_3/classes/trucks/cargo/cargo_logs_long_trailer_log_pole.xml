@@ -68,8 +68,8 @@
 			TransportedSound=""
 			ManualSound="cargo_manual/cargo_manual_logs_long"
 		/>
-		<RequiredAddon Types="trailer_log_pole" />
-		<RequiredAddon Types="bunk_log_addon" />
+		<RequiredAddon Types="trailer_log_pole, trailer_log_pole_zikz_612h" />
+		<RequiredAddon Types="bunk_log_addon, bunk_log_addon_zikz_612h" />
 		<InstallSlot
 			CargoAddonSubtype="TrailerPoleLogLong"
 			CargoLength="1"

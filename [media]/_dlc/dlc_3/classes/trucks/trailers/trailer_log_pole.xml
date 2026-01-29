@@ -12,7 +12,7 @@
 	</Wheel>
 </_templates>
 <Truck Type="Trailer">
-	<TruckData>
+	<TruckData HideDistance="250" ShadowHideDistance="100">
 		<Wheels
 			DefaultRim="rim_1"
 			DefaultTire="highway_1"
@@ -92,7 +92,7 @@
 			UiIcon40x40="trailerLogPole"
 			UiName="UI_TRAILER_LOGPOLE_NAME"
 		/>
-		<RequiredAddon Types="bunk_log_addon" />
+		<RequiredAddon Types="bunk_log_addon_zikz_612h, bunk_log_addon" />
 		<LoadArea
 			Subtype="TrailerPoleLogLong"
 			TrailerLoad="true"

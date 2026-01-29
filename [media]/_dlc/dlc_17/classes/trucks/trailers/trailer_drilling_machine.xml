@@ -1,0 +1,182 @@
+<_templates Include="trucks">
+	<Wheel>
+		<TrailerWheel
+			SuspensionHeight="0.07"
+			SuspensionStrength="0.1"
+			Torque="default"
+			Type="wheels_trailer_drill"
+			SuspensionMin="-0.2"
+		/>
+	</Wheel>
+	<Body>
+		<Leg
+			Mass="200"
+			NoFoliageCollisions="true"
+		>
+			<Constraint
+				AxisLocal="(0; 1; 0)"
+				Name="Leg"
+				Type="Prismatic"
+				MinLimit="0"
+				MaxLimit="0.6"
+			>
+				<Motor Force="18000" Type="Position" />
+			</Constraint>
+		</Leg>
+	</Body>
+</_templates>
+<Truck Type="Trailer">
+	<TruckData HideDistance="250" ShadowHideDistance="100">
+		<Wheels>
+			<Wheel _template="TrailerWheel" Pos="(2.199; 0.541; 0.98)" ParentFrame="BoneFrontRotate_cdt" />
+			<Wheel _template="TrailerWheel" Pos="(2.199; 0.541; 0.98)" ParentFrame="BoneFrontRotate_cdt" RightSide="true" />
+			<Wheel _template="TrailerWheel" Pos="(-2.199; 0.541; 0.98)" ParentFrame="BoneRoot_cdt" />
+			<Wheel _template="TrailerWheel" Pos="(-2.199; 0.541; 0.98)" ParentFrame="BoneRoot_cdt" RightSide="true" />
+		</Wheels>
+		<OcclusionMap
+			HalfSizeZ="1.94"
+			Texture="trucks/occlusion/chassis_trailer__s_d_a.tga"
+			MinX="-3.5"
+			MaxX="3.7"
+		/>
+		<Constraint _template="TrailerRagdoll">
+			<TwistMotor _inheritRemove="true" />
+		</Constraint>
+		<Camera Center="(0; 0; 0)" />
+		<Axles>
+			<Axle Frame="BoneAxleFront" />
+			<Axle Frame="BoneAxleRear" />
+		</Axles>
+	</TruckData>
+	<PoweredConstraints>
+		<Group Id="_trailer_foot">
+			<Constraint
+				InitialFix="true"
+				Name="Leg"
+				TerminalFix="true"
+				Position="0.6"
+				SpeedMultUnfolding="0.35"
+				SpeedMultFolding="0.35"
+			/>
+		</Group>
+	</PoweredConstraints>
+	<PhysicsModel Mesh="trucks/trailers/trailer_drilling_machine">
+		<Body
+			CenterOfMassOffset="(0.700; -0.200; -0.066)"
+			ImpactType="Truck"
+			Mass="1400"
+			ModelFrame="BoneRoot_cdt"
+		>
+			<Body Mass="800" ModelFrame="BoneFrontRotate_cdt">
+				<Constraint
+					AxisLocal="(0; 1; 0)"
+					Type="Hinge"
+					MinLimit="-35"
+					MaxLimit="35"
+				>
+					<Motor Damping="8000" Spring="40000" Type="Spring" />
+				</Constraint>
+				<Body ForceBodyParams="true" Mass="400" ModelFrame="BoneHandle_cdt">
+					<Constraint
+						AxisLocal="(0; 0; 1)"
+						Type="Hinge"
+						MinLimit="-60"
+						MaxLimit="60"
+					/>
+				</Body>
+			</Body>
+			<Body _template="Leg" ModelFrame="BoneLegRB_cdt"/>
+			<Body _template="Leg" ModelFrame="BoneLegRF_cdt"/>
+			<Body _template="Leg" ModelFrame="BoneLegLB_cdt"/>
+			<Body _template="Leg" ModelFrame="BoneLegLF_cdt"/>
+			<Body Mass="300" ModelFrame="BoneRods_cdt">
+				<Constraint
+					Type="Fixed"
+					LinearLimitsX="(-0.001; 0.001)"
+					LinearLimitsY="(-0.001; 0.001)"
+					LinearLimitsZ="(-0.050; 0.000)"
+				>
+					<Motor Damping="1" Spring="1" Type="Spring" />
+				</Constraint>
+			</Body>
+			<Body Mass="100" ModelFrame="BoneCable1_cdt">
+				<Constraint
+					AxisLocal="(1; 0; 0)"
+					Type="Hinge"
+					MinLimit="-14.0"
+					MaxLimit="1.8"
+				>
+					<Motor Damping="1" Spring="1" Type="Spring" />
+				</Constraint>
+			</Body>
+			<Body Mass="100" ModelFrame="BoneCable2_cdt">
+				<Constraint
+					AxisLocal="(1; 0; 0)"
+					Type="Hinge"
+					MinLimit="-34.0"
+					MaxLimit="1.0"
+				>
+					<Motor Damping="1" Spring="1" Type="Spring" />
+				</Constraint>
+			</Body>
+			<Body Mass="100" ModelFrame="BoneHook_cdt">
+				<Constraint
+					AxisLocal="(0; 0; 1)"
+					Type="Hinge"
+					MinLimit="-30.0"
+					MaxLimit="30.0"
+				>
+					<Motor Damping="1" Spring="1" Type="Spring" />
+				</Constraint>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+ 
+		<StopSignals>
+			<Flare _template="StopSignal" Dir="(-1; 0; 0)" Size="0.3" ParentFrames="BoneRoot_cdt" Pos="(-3.507; 0.853; 0.752)" />
+			<Flare _template="StopSignal" Dir="(-1; 0; 0)" Size="0.3" ParentFrames="BoneRoot_cdt" Pos="(-3.507; 0.853; -0.752)" />
+			<Light _template="StopSignal" ParentFrames="BoneRoot_cdt" Pos="(-4.0; 0.2; 0.000)" />
+		</StopSignals>
+
+		<Ignition>
+			<Flare _template="IgnitionSignalOrange" Dir="(0; 0; 1)" Size="0.23" ParentFrames="BoneRoot_cdt" Pos="(0.610; 0.792; 1.228)" />
+			<Flare _template="IgnitionSignalOrange" Dir="(0; 0; 1)" Size="0.23" ParentFrames="BoneRoot_cdt" Pos="(-1.447; 0.792; 1.228)" />
+			<Flare _template="IgnitionSignalOrange" Dir="(0; 0; 1)" Size="0.23" ParentFrames="BoneRoot_cdt" Pos="(-3.081; 0.792; 1.228)" />
+			<Flare _template="IgnitionSignalOrange" Dir="(0; 0; -1)" Size="0.23" ParentFrames="BoneRoot_cdt" Pos="(0.610; 0.792; -1.228)" />
+			<Flare _template="IgnitionSignalOrange" Dir="(0; 0; -1)" Size="0.23" ParentFrames="BoneRoot_cdt" Pos="(-1.447; 0.792; -1.228)" />
+			<Flare _template="IgnitionSignalOrange" Dir="(0; 0; -1)" Size="0.23" ParentFrames="BoneRoot_cdt" Pos="(-3.081; 0.792; -1.228)" />
+			
+			<Flare _template="StopSignal" Dir="(-1; 0; 0)" Size="0.3" ParentFrames="BoneRoot_cdt" Pos="(-3.507; 0.853; 0.752)" />
+			<Flare _template="StopSignal" Dir="(-1; 0; 0)" Size="0.3" ParentFrames="BoneRoot_cdt" Pos="(-3.507; 0.853; -0.752)" />
+			<Light _template="StopSignal" ParentFrames="BoneRoot_cdt" Pos="(-4.0; 0.2; 0.000)" />
+		</Ignition>
+		
+		<ReverseSignals>
+			<Light _template="ReverseSignal" Color="g(220; 220; 255) x 0.8" Pos="(-4.0; 0.2; 0.000)" />
+			<Flare _template="ReverseSignal" Color="g(255; 255; 255) x .6" Size="0.3" Pos="(-3.507; 0.847; 0.646)" />
+			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.3" Dir="(-1; 0; 0)" Size="0.3" Pos="(-3.507; 0.847; 0.646)" />
+			
+			<Flare _template="ReverseSignal" Color="g(255; 255; 255) x .6" Size="0.3" Pos="(-3.507; 0.847; -0.646)" />
+			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.3" Dir="(-1; 0; 0)" Size="0.3" Pos="(-3.507; 0.847; -0.646)" />
+		</ReverseSignals>
+	</ModelAttachments>
+	<Landmark Mesh="landmarks/drilling_machine_ru17_lmk" MinScale="1.2" MaxScale="2.2" />
+	<GameData IsQuest="true" Price="3800">
+		<WinchSocket ParentFrames="BoneRoot_cdt" Pos="(-0.453; 0.851; 1.231)" />
+		<WinchSocket ParentFrames="BoneRoot_cdt" Pos="(-0.453; 0.851; -1.231)" />
+		<WinchSocket ParentFrames="BoneRoot_cdt" Pos="(-3.933; 0.953; 0)" />
+		<WinchSocket Pos="(4.274; 0.051; 0)" ParentFrame="BoneHandle_cdt" WinchableWhenAttached="false"/>
+		<UiDesc
+			UiDesc="UI_TRAILER_DRILL_DESC"
+			UiIcon30x30="trailerDrillingRig30"
+			UiIcon40x40="trailerDrillingRig40"
+			UiName="UI_TRAILER_DRILL_NAME"
+		/>
+		<InstallSocket Offset="(4.274; 0.051; 0)" Type="Trailer" ParentFrame="BoneHandle_cdt" />
+		<CraneSocket ParentFrames="BoneRoot_cdt" Pos="(-0.453; 0.851; 1.231)" />
+		<CraneSocket ParentFrames="BoneRoot_cdt" Pos="(-0.453; 0.851; -1.231)" />
+		<CraneSocket ParentFrames="BoneRoot_cdt" Pos="(-3.933; 0.953; 0)" />
+		<CraneSocket ParentFrames="BoneHandle_cdt" Pos="(4.274; 0.051; 0)" />
+	</GameData>
+</Truck>

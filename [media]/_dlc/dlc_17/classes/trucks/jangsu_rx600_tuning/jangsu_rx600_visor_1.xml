@@ -1,0 +1,25 @@
+<_templates Include="trucks" />
+<TruckAddon>
+    <PhysicsModel Mesh="trucks/jangsu_rx600_tuning/jangsu_rx600_visor_1" />
+	<ModelAttachments>
+		<Ignition>
+			<Flare _template="IgnitionSignalOrange" Dir="(1; 0; 0)" Pos="(1.383; 2.552; 0.689)" />
+			<Flare _template="IgnitionSignalOrange" Dir="(1; 0; 0)" Pos="(1.383; 2.552; -0.689)" />
+		</Ignition>
+	</ModelAttachments>
+    <GameData
+        CameraPreset="roof"
+        Category="fender_front"
+        Price="900"
+        UnlockByExploration="false"
+        UnlockByRank="1"
+    >
+        <UiDesc
+            UiDesc="UI_TUNING_SUNVISOR_ANGLED_DESC"
+            UiIcon30x30=""
+            UiIcon40x40=""
+            UiName="UI_TUNING_SUNVISOR_ANGLED_NAME"
+        />
+        <InstallSocket Type="JangsuRX600Visor" />
+    </GameData>
+</TruckAddon>

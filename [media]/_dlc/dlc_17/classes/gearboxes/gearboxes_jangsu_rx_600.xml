@@ -1,0 +1,155 @@
+<GearboxVariants>
+	<Gearbox
+		AWDConsumptionModifier="1.12"
+		CriticalDamageThreshold="0.55"
+		DamageCapacity="200"
+		DamagedConsumptionModifier="1.48"
+		FuelConsumption="2.1"
+		IdleFuelModifier="0.28"
+		Name="g_truck_jangsu_rx_600_default"
+		MinBreakFreq="0.0"
+		MaxBreakFreq="25.0"
+	>
+		<ReverseGear AngVel="1.5" FuelModifier="1.68" />
+		<HighGear AngVel="10.2" FuelModifier="1.62" />
+		<Gear AngVel="1.5" FuelModifier="1.68" />
+		<Gear AngVel="2.5" FuelModifier="1.42" />
+		<Gear AngVel="4.3" FuelModifier="1.25" />
+		<Gear AngVel="7.5" FuelModifier="1.18" />
+		<Gear AngVel="11.5" FuelModifier="1.0" />
+		<GameData
+			Price="2900"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_GEARBOX_DEFAULT_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_GEARBOX_DEFAULT_NAME"
+			/>
+			<GearboxParams
+				IsHighGearExists="true"
+				IsLowerGearExists="true"
+				IsLowerPlusGearExists="false"
+				IsLowerMinusGearExists="false"
+			/>
+		</GameData>
+	</Gearbox>
+	<Gearbox
+		AWDConsumptionModifier="1.1"
+		CriticalDamageThreshold="0.5"
+		DamageCapacity="220"
+		DamagedConsumptionModifier="1.42"
+		FuelConsumption="2.0"
+		IdleFuelModifier="0.3"
+		Name="g_truck_jangsu_rx_600_offroad"
+		MinBreakFreq="0.0"
+		MaxBreakFreq="20.0"
+	>
+		<ReverseGear AngVel="1.85" FuelModifier="1.6" />
+		<HighGear AngVel="11.0" FuelModifier="1.715" />
+		<Gear AngVel="1.85" FuelModifier="1.6" />
+		<Gear AngVel="2.6" FuelModifier="1.52" />
+		<Gear AngVel="4.3" FuelModifier="1.32" />
+		<Gear AngVel="6.36" FuelModifier="1.15" />
+		<Gear AngVel="10.2" FuelModifier="1" />
+		<Gear AngVel="14.0" FuelModifier="0.8" />
+		<GameData
+			Price="3600"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_GEARBOX_OFFROAD_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_GEARBOX_OFFROAD_NAME"
+			/>
+			<GearboxParams
+				IsHighGearExists="true"
+				IsLowerGearExists="true"
+				IsLowerPlusGearExists="true"
+				IsLowerMinusGearExists="true"
+			/>
+		</GameData>
+	</Gearbox>
+	<Gearbox
+		AWDConsumptionModifier="1.12"
+		CriticalDamageThreshold="0.41"
+		DamageCapacity="220"
+		DamagedConsumptionModifier="1.42"
+		FuelConsumption="2.1"
+		IdleFuelModifier="0.25"
+		Name="g_truck_jangsu_rx_600_finetune"
+		MinBreakFreq="0.0"
+		MaxBreakFreq="20.0"
+	>
+		<ReverseGear AngVel="1.85" FuelModifier="1.65" />
+		<HighGear AngVel="12.85" FuelModifier="1.74" />
+		<Gear AngVel="1.85" FuelModifier="1.65" />
+		<Gear AngVel="2.6" FuelModifier="1.57" />
+		<Gear AngVel="4.3" FuelModifier="1.37" />
+		<Gear AngVel="6.36" FuelModifier="1.18" />
+		<Gear AngVel="10.2" FuelModifier="1.3" />
+		<Gear AngVel="14.0" FuelModifier="0.8" />
+		<GameData
+			Price="3800"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_GEARBOX_TRUCK_FINETUNE_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_GEARBOX_TRUCK_FINETUNE_NAME"
+			/>
+			<GearboxParams
+				IsHighGearExists="true"
+				IsLowerGearExists="true"
+				IsLowerPlusGearExists="true"
+				IsManualLowGear="true"
+				IsLowerMinusGearExists="true"
+			/>
+		</GameData>
+	</Gearbox>
+	<Gearbox
+		AWDConsumptionModifier="1.07"
+		CriticalDamageThreshold="0.45"
+		DamageCapacity="190"
+		DamagedConsumptionModifier="1.45"
+		FuelConsumption="1.9"
+		IdleFuelModifier="0.25"
+		Name="g_truck_jangsu_rx_600_highrange"
+		MinBreakFreq="0.0"
+		MaxBreakFreq="22.0"
+	>
+		<ReverseGear AngVel="1.8" FuelModifier="1.65" />
+		<HighGear AngVel="14.5" FuelModifier="1.695" />
+		<Gear AngVel="2.0" FuelModifier="1.65" />
+		<Gear AngVel="2.72" FuelModifier="1.57" />
+		<Gear AngVel="4.40" FuelModifier="1.46" />
+		<Gear AngVel="6.55" FuelModifier="1.32" />
+		<Gear AngVel="9.5" FuelModifier="1.19" />
+		<Gear AngVel="13.0" FuelModifier="1.05" />
+		<Gear AngVel="16.0" FuelModifier="1.0" />
+		<GameData
+			Price="3200"
+			UnlockByExploration="true"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_GEARBOX_HIGHRANGE_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_GEARBOX_HIGHRANGE_NAME"
+			/>
+			<GearboxParams
+				IsHighGearExists="true"
+				IsLowerGearExists="true"
+				IsLowerPlusGearExists="false"
+				IsLowerMinusGearExists="false"
+			/>
+		</GameData>
+	</Gearbox>
+</GearboxVariants>

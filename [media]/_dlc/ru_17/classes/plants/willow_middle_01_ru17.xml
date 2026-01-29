@@ -1,0 +1,52 @@
+<_templates Include="environment" />
+
+<PlantBrand _template="SmallTree" PlantingMinSpacing="5.4" >
+
+	<PhysicsModel>
+		<Body _template="MediumTreeRoot" ModelFrame="BoneRoot">
+			<Constraint _template="MediumTreeRoot" />
+			<Body _template="TrunkHead" ModelFrame="BoneTrunk" IsCapsuleCDT="false">
+				<Constraint _template="TrunkHead" />
+				<Body _template="BranchWithLeaves" ModelFrame="BoneBranch3" IsCapsuleCDT="false">
+					<Constraint _template="BranchWithLeaves" />
+				</Body>
+				<Body _template="BranchWithLeaves" ModelFrame="BoneBranch1" IsCapsuleCDT="false">
+					<Constraint _template="BranchWithLeaves" />
+					<Body _template="BranchWithLeaves" ModelFrame="BoneBranch11" IsCapsuleCDT="false">
+						<Constraint _template="BranchWithLeaves" />
+					</Body>
+				</Body>
+				<Body _template="BranchWithLeaves" ModelFrame="BoneBranch5" IsCapsuleCDT="false">
+					<Constraint _template="BranchWithLeaves" />
+				</Body>
+			</Body>
+			<Body _template="TrunkHead" ModelFrame="BoneTrunk1" IsCapsuleCDT="false">
+				<Constraint _template="TrunkHead" />
+				<Body _template="BranchWithLeaves" ModelFrame="BoneBranch7" IsCapsuleCDT="false">
+					<Constraint _template="BranchWithLeaves" />
+				</Body>
+				<Body _template="BranchWithLeaves" ModelFrame="BoneBranch6" IsCapsuleCDT="false">
+					<Constraint _template="BranchWithLeaves" />
+					<Body _template="BranchWithLeaves" ModelFrame="BoneBranch66" IsCapsuleCDT="false">
+						<Constraint _template="BranchWithLeaves" />
+					</Body>
+				</Body>
+				<Body _template="BranchWithLeaves" ModelFrame="BoneBranch2" IsCapsuleCDT="false">
+					<Constraint _template="BranchWithLeaves" />
+					<Body _template="BranchWithLeaves" ModelFrame="BoneBranch4" IsCapsuleCDT="false">
+						<Constraint _template="BranchWithLeaves" />
+					</Body>
+				</Body>
+			</Body>
+		</Body>
+	</PhysicsModel>
+
+	<Landmark Mesh="landmarks/willow_middle_01_ru17_lmk"/>	
+
+	<Occlusion Intensity="0.32" Size="(10.0; 10.0)" />
+
+	<GameData>
+		<WinchSocket Pos="(-0.022; 0.382; -0.055)" ParentFrame="BoneRoot" />
+	</GameData>
+
+</PlantBrand>

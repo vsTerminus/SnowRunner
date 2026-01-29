@@ -9,7 +9,7 @@
 	</PhysicsModel>
 	<GameData
 		CameraPreset="addon_1"
-		Category="frame_addons"
+		Category="miscellenious"
 		IsCustomizable="true"
 		Price="200"
 		UnlockByExploration="false"

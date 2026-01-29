@@ -1,0 +1,24 @@
+<_templates Include="trucks" />
+<TruckAddon>
+    <Snorkel Origin="(1.267; 2.464; -0.974)" />
+    <PhysicsModel Mesh="trucks/jangsu_rx600_tuning/jangsu_rx600_snorkel_2">
+        <Body ImpactType="Truck" Mass="7">
+            <Constraint Type="Rigid" />
+        </Body>
+    </PhysicsModel>
+    <GameData
+        CameraPreset="side_r"
+        Category="snorkel"
+        Price="1700"
+        UnlockByExploration="false"
+        UnlockByRank="1"
+    >
+        <UiDesc
+            UiDesc="UI_TUNING_SNORKEL_FRONTFACE_TALL_DESC"
+            UiIcon30x30=""
+            UiIcon40x40=""
+            UiName="UI_TUNING_SNORKEL_FRONTFACE_TALL_NAME"
+        />
+        <InstallSocket Type="JangsuRX600Snorkel" />
+    </GameData>
+</TruckAddon>

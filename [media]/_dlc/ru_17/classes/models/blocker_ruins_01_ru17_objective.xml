@@ -1,0 +1,31 @@
+<ModelBrand NightLightingShadowsAllowCap="true" DynamicModel="true" AcceptZoneBorderDecals="true">
+
+	<Subset IsDefault="true" Name="stage_00">
+		<Mesh Name="blocker_ruins_01_ru17_objective" />
+		<Mesh Name="blocker_ruins_01_ru17_objective_lod1" />
+		<Mesh Name="blocker_ruins_01_ru17_objective_lod2" />
+		<Mesh Name="blocker_ruins_01_ru17_objective_lod3" />
+
+		<CdtMesh Name="cdt_blocker_ruins_01_ru17_objective" />
+	</Subset>
+
+	<Subset Name="stage_01">
+		<OnSubsetActivateEvent>
+			<Sound Name="actors/actor_construction/actor_construct_rocks_roadblock" Pos="(0; 0; 0)" Volume="1" Range="20"/>
+			<SFX Name="stone_smoke_01" Dir="(0; 1; 0)" Pos="(-0.527; 0.821; -0.11)"/>
+			<SFX Name="stone_smoke_01" Dir="(0; 1; 0)" Pos="(10.291; 2.616; -3.689)" />
+        <SFX Name="stone_smoke_01" Dir="(0; 1; 0)" Pos="(4.281; 3.911; -2.737)" />
+        <SFX Name="stone_smoke_01" Dir="(0; 1; 0)" Pos="(6.601; 0.989; -5.911)" />
+        <SFX Name="stone_smoke_01" Dir="(0; 1; 0)" Pos="(1.902; 0.622; -7.682)" />
+        <SFX Name="stone_smoke_01" Dir="(0; 1; 0)" Pos="(0.777; 0.540; -3.276)" />
+        <SFX Name="stone_smoke_01" Dir="(0; 1; 0)" Pos="(0.179; 0.901; 3.341)" />
+        <SFX Name="stone_smoke_01" Dir="(0; 1; 0)" Pos="(5.225; 0.424; 4.992)" />
+		</OnSubsetActivateEvent>
+	</Subset>
+
+	<PhysicsModel>
+		<Body Collisions="Dynamic" />
+	</PhysicsModel>
+
+	<Landmark Mesh="landmarks/blocker_ruins_01_ru17_objective_lmk"/>
+</ModelBrand>

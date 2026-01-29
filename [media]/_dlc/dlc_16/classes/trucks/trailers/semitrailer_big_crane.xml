@@ -92,7 +92,7 @@
 	</Body>
 </_templates>
 <Truck AttachType="Saddle" Type="Trailer">
-	<TruckData>
+	<TruckData HideDistance="250" ShadowHideDistance="100">
 		<Wheels>
 			<Wheel _template="TrailerWheel" Pos="(-4.405; 0.699; 1.131)" PaentFrame="" />
 			<Wheel _template="TrailerWheel" Pos="(-4.405; 0.699; 1.131)" PaentFrame="" RightSide="true" />

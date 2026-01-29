@@ -120,6 +120,6 @@
 		<InstallSocket Type="FrameAddonTank" />
 	</GameData>
 	<WaterMass>
-		<Body Mass="1800" />
+		<Body Mass="6300" />
 	</WaterMass>
 </TruckAddon>

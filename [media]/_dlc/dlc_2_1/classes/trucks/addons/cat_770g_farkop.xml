@@ -45,5 +45,6 @@
 			UiName="UI_TUNING_FARKOP_TRAILER_NAME"
 		/>
 		<InstallSocket Type="Cat770GFarkop" />
+		<RequiredAddonType Type="Cat770GFarkop" TypeUiName="UI_TUNING_FARKOP_TRAILER_NAME" />
 	</GameData>
 </TruckAddon>

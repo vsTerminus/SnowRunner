@@ -1,0 +1,41 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<TruckData>
+		<Shakers>
+			<Shaker Frame="BoneExhaustLeft" MinAngle="(0.07; 0.07; 0.07)" MaxAngle="(0.25; 0.25; 0.25)" MaxFrequency="4" />
+			<Shaker Frame="BoneExhaustRight" MinAngle="(0.05; 0.05; 0.05)" MaxAngle="(0.23; 0.23; 0.23)" MaxFrequency="4" />
+		</Shakers>
+	</TruckData>
+	<Exhaust
+			Dir="(-0.4; 0.65; 1.0)"
+			IsLight="false"
+			Origin="(2.291; 3.467; 1.068)"
+			Speed="2.5"
+	/>
+	<Exhaust
+			Dir="(-0.4; 0.65; -1.0)"
+			IsLight="false"
+			Origin="(2.291; 3.467; -1.068)"
+			Speed="2.5"
+	/>
+	<PhysicsModel Mesh="trucks/voron_g5352_tuning/voron_g5352_exhaust_1">
+		<Body Collisions="Default" Mass="8" ModelFrame="BoneCabinTwist_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="exhaust"
+		Category="exhaust"
+		Price="1700"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_EXHAUST_SIDESPITTER_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_EXHAUST_SIDESPITTER_NAME"
+		/>
+		<InstallSocket Type="VoronG5352Exhaust" />
+	</GameData>
+</TruckAddon>

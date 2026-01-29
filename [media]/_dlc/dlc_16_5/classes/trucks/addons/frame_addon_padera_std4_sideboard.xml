@@ -74,7 +74,7 @@
 					Name="ramp_1"
 					Type="Hinge"
 					MinLimit="0"
-					MaxLimit="113"
+					MaxLimit="118"
 				>
 					<Motor Force="300000" Tau="0.05" Type="Position" />
 				</Constraint>

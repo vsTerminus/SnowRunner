@@ -11,7 +11,7 @@
 	</Wheel>
 </_templates>
 <Truck Type="Trailer" AttachType="Saddle">
-	<TruckData>
+	<TruckData HideDistance="250" ShadowHideDistance="100">
 		<Wheels>
 			<Wheel _template="TrailerWheel" Pos="(-3.785; 0.706; 0.933)" ParentFrame="BoneLogsTail_cdt" />
 			<Wheel _template="TrailerWheel" Pos="(-2.535; 0.706; 0.933)" ParentFrame="BoneLogsTail_cdt" />

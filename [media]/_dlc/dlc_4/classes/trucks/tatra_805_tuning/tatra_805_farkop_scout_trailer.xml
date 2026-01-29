@@ -1,0 +1,24 @@
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/tatra_805_tuning/tatra_805_farkop_scout_trailer">
+		<Body ImpactType="Truck" Mass="2" ModelFrame="BoneFarkop_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="farkop"
+		Category="frame_addons"
+		Price="0"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<WinchSocket Pos="(-2.532; 0.704; 0.000)" FixedToTruck="true" />
+		<CraneSocket Pos="(-2.532; 0.704; 0.000)" FixedToTruck="true" />
+		<UiDesc
+			UiDesc="UI_TUNING_FARKOP_SCOUT_TRAILER_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_FARKOP_SCOUT_TRAILER_NAME"
+		/>
+		<InstallSocket Type="Tatra805FarkopScout" />
+	</GameData>
+</TruckAddon>

@@ -92,6 +92,8 @@
 		SteerSpeed="0.03"
 		TruckImage="SleiterChimeramchr"
 		TruckType="HEAVY"
+		HideDistance="250"
+		ShadowHideDistance="100"
 	>
 		<WinchUpgradeSocket Default="w_heavy_trucks_default" IsUpgradable="true" Type="winches_heavy_trucks" />
 		<Wheels
@@ -163,7 +165,7 @@
 		<Intake Dir="(1; 0; 0)" Origin="(4.554; 2.16; 0)" Size="0.800" />
 		<GearboxSocket Default="g_special_default" Type="gearboxes_special" />
 		<FuelTank DamageCapacity="150" />
-		<EngineSocket Default="us_truck_old_heavy_engine_0" Type="e_us_truck_old_heavy" />
+		<EngineSocket Default="us_truck_old_heavy_engine_0" Type="e_us_truck_old_heavy, e_us_truck_old_heavy_sleiter_mfk816" />
 		<Driver
 			AnimationSet="HeavyTruck"
 			LegsOffset="(-0.05; 0; 0)"

@@ -5,6 +5,8 @@
 			Friction="1.8"
 			Mass="1000.0"
 			NoSoftContacts="true"
+			HideDistance="250"
+			ShadowHideDistance="100"
 		/>
 	</PhysicsModel>
 	<GameData LoadType="CargoConcreteSlab" PackSlotsNumber="2">

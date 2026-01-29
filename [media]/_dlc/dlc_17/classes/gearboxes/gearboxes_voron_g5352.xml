@@ -1,0 +1,119 @@
+<GearboxVariants>
+	<Gearbox
+		AWDConsumptionModifier="1.0"
+		CriticalDamageThreshold="0.4"
+		DamageCapacity="210"
+		DamagedConsumptionModifier="1.43"
+		FuelConsumption="3.0"
+		IdleFuelModifier="0.44"
+		Name="g_truck_voron_g5352_default"
+		MinBreakFreq="0.0"
+		MaxBreakFreq="15.0"
+	>
+		<ReverseGear AngVel="1.22" FuelModifier="2.35" />
+		<HighGear AngVel="6.49" FuelModifier="1.35" />
+		<Gear AngVel="1.22" FuelModifier="2.35" />
+		<Gear AngVel="1.6" FuelModifier="2.17" />
+		<Gear AngVel="2.7" FuelModifier="1.87" />
+		<Gear AngVel="4.78" FuelModifier="1.45" />
+		<Gear AngVel="8.2" FuelModifier="0.91" />
+		<GameData
+			Price="2900"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_GEARBOX_DEFAULT_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_GEARBOX_DEFAULT_NAME"
+			/>
+			<GearboxParams
+				IsHighGearExists="false"
+				IsLowerGearExists="true"
+				IsLowerPlusGearExists="false"
+				IsManualLowGear="false"
+				IsLowerMinusGearExists="false"
+			/>
+		</GameData>
+	</Gearbox>
+	<Gearbox
+		AWDConsumptionModifier="1.0"
+		CriticalDamageThreshold="0.57"
+		DamageCapacity="230"
+		DamagedConsumptionModifier="1.55"
+		FuelConsumption="3.15"
+		IdleFuelModifier="0.45"
+		Name="g_truck_voron_g5352_offroad"
+		MinBreakFreq="0.0"
+		MaxBreakFreq="10.0"
+	>
+		<ReverseGear AngVel="1.5" FuelModifier="2.4" />
+		<HighGear AngVel="7.97" FuelModifier="1.42" />
+		<Gear AngVel="1.5" FuelModifier="2.4" />
+		<Gear AngVel="1.78" FuelModifier="2.31" />
+		<Gear AngVel="2.5" FuelModifier="2.11" />
+		<Gear AngVel="3.9" FuelModifier="1.82" />
+		<Gear AngVel="6.23" FuelModifier="1.45" />
+		<Gear AngVel="9.7" FuelModifier="1.0" />
+		<GameData
+			Price="6000"
+			UnlockByExploration="true"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_GEARBOX_OFFROAD_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_GEARBOX_OFFROAD_NAME"
+			/>
+			<GearboxParams
+				IsHighGearExists="true"
+				IsLowerGearExists="true"
+				IsLowerPlusGearExists="true"
+				IsManualLowGear="false"
+				IsLowerMinusGearExists="true"
+			/>
+		</GameData>
+	</Gearbox>	
+	<Gearbox
+		AWDConsumptionModifier="1.0"
+		CriticalDamageThreshold="0.45"
+		DamageCapacity="200"
+		DamagedConsumptionModifier="1.49"
+		FuelConsumption="3.4"
+		IdleFuelModifier="0.4"
+		Name="g_truck_voron_g5352_highrange"
+		MinBreakFreq="0.0"
+		MaxBreakFreq="8.0"
+	>
+		<ReverseGear AngVel="1.63" FuelModifier="2.27" />
+		<HighGear AngVel="13.1" FuelModifier="1.22" />
+		<Gear AngVel="1.63" FuelModifier="2.27" />
+		<Gear AngVel="2.45" FuelModifier="2.18" />
+		<Gear AngVel="3.83" FuelModifier="2.02" />
+		<Gear AngVel="5.75" FuelModifier="1.81" />
+		<Gear AngVel="8.23" FuelModifier="1.54" />
+		<Gear AngVel="11.25" FuelModifier="1.21" />
+		<Gear AngVel="14.8" FuelModifier="0.82" />
+		<GameData
+			Price="5200"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_GEARBOX_HIGHRANGE_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_GEARBOX_HIGHRANGE_NAME"
+			/>
+			<GearboxParams
+				IsHighGearExists="true"
+				IsLowerGearExists="true"
+				IsLowerPlusGearExists="false"
+				IsManualLowGear="false"
+				IsLowerMinusGearExists="false"
+			/>
+		</GameData>
+	</Gearbox>
+</GearboxVariants>

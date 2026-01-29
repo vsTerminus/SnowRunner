@@ -1,0 +1,55 @@
+<_templates Include="trucks" />
+<TruckAddon>
+    <TruckData>
+        <Damage>
+            <Multiplier Multiplier="0.85" Type="Engine" />
+        </Damage>
+    </TruckData>
+    <PhysicsModel Mesh="trucks/jangsu_rx600_tuning/jangsu_rx600_bumper_2">
+        <Body ImpactType="Truck" Mass="48" ModelFrame="BoneCabin_cdt">
+            <Constraint Type="Rigid" />
+			<Body
+				Collisions="None"
+				Mass="10"
+				ModelFrame="BoneHook_cdt"
+			>
+				<Motor Damping="3" Spring="0.1" Type="Spring" />
+				<Constraint
+					AxisLocal="(0; 0; 1)"
+					Type="Hinge"
+					MinLimit="-3"
+					MaxLimit="2"
+				/>
+			</Body>
+        </Body>
+    </PhysicsModel>
+    <ModelAttachments _noinherit="true">
+        <MainHeadLight>
+            <Model _template="HeadLightRay" Org="(3.160; 1.368; 0.377)" />
+            <Model _template="HeadLightRay" Org="(3.120; 1.368; -0.377)" />
+            <Flare _template="HeadLight" Color="g(255; 235; 215) x 0.5" Size=".4" Pos="(3.160; 1.368; 0.377)" />
+            <Flare _template="HeadLight" Color="g(255; 235; 215) x 0.5" Size=".4" Pos="(3.120; 1.368; -0.377)" />
+        </MainHeadLight>
+    </ModelAttachments>
+    <GameData
+        CameraPreset="default"
+        Category="bumper"
+        Price="1400"
+        UnlockByExploration="false"
+        UnlockByRank="1"
+    >
+        <WinchSocket FixedToTruck="true" Pos="(3.278; 1.114; 0.474)" />
+        <WinchSocket FixedToTruck="true" Pos="(3.278; 1.114; -0.474)" />
+        <WinchSocket FixedToTruck="true" Pos="(3.186; 1.188; 0)" />
+        <UiDesc
+            UiDesc="UI_TUNING_BUMPER_REBAR_DESC"
+            UiIcon30x30=""
+            UiIcon40x40=""
+            UiName="UI_TUNING_BUMPER_REBAR_NAME"
+        />
+        <InstallSocket Type="JangsuRX600Bumper" />
+        <CraneSocket FixedToTruck="true" Pos="(3.278; 1.114; 0.474)" />
+        <CraneSocket FixedToTruck="true" Pos="(3.278; 1.114; -0.474)" />
+        <CraneSocket FixedToTruck="true" Pos="(3.186; 1.188; 0)" />
+    </GameData>
+</TruckAddon>

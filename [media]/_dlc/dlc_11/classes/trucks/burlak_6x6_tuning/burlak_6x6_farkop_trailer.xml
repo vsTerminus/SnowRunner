@@ -7,7 +7,7 @@
 	<GameData
 		CameraPreset="farkop"
 		Category="frame_addons"
-		Price="100"
+		Price="0"
 		UnlockByExploration="false"
 		UnlockByRank="1"
 	>
@@ -20,5 +20,6 @@
 			UiName="UI_TUNING_FARKOP_TRAILER_NAME"
 		/>
 		<InstallSocket Type="BurlakFarkop" />
+		<RequiredAddonType Type="BurlakFarkop" TypeUiName="UI_TUNING_FARKOP_TRAILER_NAME" />
 	</GameData>
 </TruckAddon>

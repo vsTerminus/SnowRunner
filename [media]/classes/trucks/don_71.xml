@@ -40,6 +40,8 @@
 		SteerSpeed="0.03"
 		TruckImage="don71mchr"
 		TruckType="SCOUT"
+		HideDistance="250"
+		ShadowHideDistance="100"
 	>
 		<WinchUpgradeSocket Default="w_scout_default" IsUpgradable="true" Type="winches_scouts" />
 		<Wheels
@@ -270,7 +272,7 @@
 	<Landmark Mesh="landmarks/don_71_lmk" MinScale="1.8" MaxScale="3.8" />
 	<HeadLight _template="Default" Pos="(1.858; 0.74; 0)" />
 	<GameData
-		Country="RU,CAS"
+		Country="RU,CAS,WA"
 		Price="3600"
 		Recallable="true"
 		UnlockByExploration="false"

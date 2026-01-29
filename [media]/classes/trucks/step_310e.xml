@@ -64,6 +64,8 @@
 		SteerSpeed="0.025"
 		TruckImage="step310Emchr"
 		TruckType="OFFROAD"
+		HideDistance="250"
+		ShadowHideDistance="100"
 	>
 		<WinchUpgradeSocket Default="w_medium_trucks_default" IsUpgradable="true" Type="winches_medium_trucks" />
 		<SuspensionSocket
@@ -356,7 +358,7 @@
 	<Landmark Mesh="landmarks/step_310e_01_lmk" MinScale="1.8" MaxScale="3.8" />
 	<HeadLight _template="Default" Pos="(4.299; 1.241; 0)" ParentFrame="BoneCabin_cdt" />
 	<GameData
-		Country="RU,CAS"
+		Country="RU,CAS,WA"
 		Price="75500"
 		UnlockByExploration="true"
 		UnlockByRank="1"

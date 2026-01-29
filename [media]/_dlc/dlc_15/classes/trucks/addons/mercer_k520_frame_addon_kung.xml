@@ -190,4 +190,7 @@
 		/>
 		<InstallSocket Type="MercerK520Kung" />
 	</GameData>
+	<FuelMass>
+		<Body Mass="616" />
+	</FuelMass>
 </TruckAddon>

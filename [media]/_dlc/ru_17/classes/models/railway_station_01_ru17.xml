@@ -1,0 +1,12 @@
+<ModelBrand
+	NightLightingShadowsAllowCap="true"
+>
+	<PhysicsModel>
+		<Body
+			Collisions="Dynamic"
+		/>
+	</PhysicsModel>
+	<Landmark 
+		Mesh="landmarks/railway_station_01_ru17_lmk" 
+	/>
+</ModelBrand>

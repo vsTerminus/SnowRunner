@@ -21,5 +21,6 @@
 			UiName="UI_TUNING_FARKOP_TRAILER_NAME"
 		/>
 		<InstallSocket Type="Cat745CFarkop" />
+		<RequiredAddonType Type="Cat745CFarkop" TypeUiName="UI_TUNING_FARKOP_TRAILER_NAME" />
 	</GameData>
 </TruckAddon>

@@ -62,7 +62,7 @@
 
 <Truck Type="Trailer" AttachType="Drawbar">
 
-	<TruckData FuelCapacity="150" RepairsCapacity="250" WheelRepairsCapacity="2">
+	<TruckData FuelCapacity="150" RepairsCapacity="250" WheelRepairsCapacity="2" HideDistance="250" ShadowHideDistance="100">
 		<Wheels>
 			<Wheel _template="TrailerWheelFront" RightSide="true" Pos="(1.508; 0.108; 0.011)" />
 			<Wheel _template="TrailerWheelRear" Pos="(-0.720; 0.301; 0.677)" />

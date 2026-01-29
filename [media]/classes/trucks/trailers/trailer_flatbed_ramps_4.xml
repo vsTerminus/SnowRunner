@@ -21,7 +21,7 @@
 	</Wheel>
 </_templates>
 <Truck Type="Trailer">
-	<TruckData>
+	<TruckData HideDistance="250" ShadowHideDistance="100">
 		<Wheels>
 			<Wheel _template="TrailerWheelFront" Pos="(4.793; 0.517; 0.98)" />
 			<Wheel _template="TrailerWheelFront" RightSide="true" Pos="(4.793; 0.517; 0.98)" />

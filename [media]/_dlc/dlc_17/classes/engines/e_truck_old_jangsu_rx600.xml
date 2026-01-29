@@ -1,0 +1,89 @@
+<EngineVariants>
+	<Engine
+		DamageCapacity="160"
+		CriticalDamageThreshold="0.63"
+		DamagedMinTorqueMultiplier="1.0"
+		DamagedMaxTorqueMultiplier="0.7"
+		DamagedConsumptionModifier="2.1"
+		
+		FuelConsumption="4.35"
+		
+		Torque="115200"
+		MaxDeltaAngVel="2.62"
+		EngineResponsiveness="0.028"
+		BrakesDelay="0.45"
+		
+		Name="truck_old_engine_jangsu_rx600_0"
+	>
+		<GameData
+			Price="10900"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_ENGINE_TRUCK_OLD_JANGSU_RX600_0_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_ENGINE_TRUCK_OLD_JANGSU_RX600_0_NAME"
+			/>
+		</GameData>
+	</Engine>
+	<Engine
+		DamageCapacity="180"
+		CriticalDamageThreshold="0.67"
+		DamagedMinTorqueMultiplier="1.0"
+		DamagedMaxTorqueMultiplier="0.75"
+		DamagedConsumptionModifier="1.9"
+		
+		FuelConsumption="5.05"
+		
+		Torque="131600"
+		MaxDeltaAngVel="3.18"
+		EngineResponsiveness="0.035"
+		BrakesDelay="0.42"
+		
+		Name="truck_old_engine_jangsu_rx600_1"
+	>
+		<GameData
+			Price="11300"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_ENGINE_TRUCK_OLD_JANGSU_RX600_1_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_ENGINE_TRUCK_OLD_JANGSU_RX600_1_NAME"
+			/>
+		</GameData>
+	</Engine>
+	<Engine
+		DamageCapacity="190"
+		CriticalDamageThreshold="0.63"
+		DamagedMinTorqueMultiplier="1.0"
+		DamagedMaxTorqueMultiplier="0.71"
+		DamagedConsumptionModifier="1.93"
+		
+		FuelConsumption="5.35"
+		
+		Torque="147150"
+		MaxDeltaAngVel="3.57"
+		EngineResponsiveness="0.04"
+		BrakesDelay="0.4"
+		
+		Name="truck_old_engine_jangsu_rx600_2"
+	>
+		<GameData
+			Price="11700"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_ENGINE_TRUCK_OLD_JANGSU_RX600_2_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_ENGINE_TRUCK_OLD_JANGSU_RX600_2_NAME"
+			/>
+		</GameData>
+	</Engine>
+</EngineVariants>

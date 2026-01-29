@@ -1,0 +1,16 @@
+<ModelBrand
+	NightLightingShadowsAllowCap="true"
+	Instanced="true"
+	InstancedAsModel="true"
+>
+	<PhysicsModel>
+		<Body
+			Collisions="Dynamic"
+		/>
+	</PhysicsModel>
+	<Occlusion
+		Size="(7.0; 18.0)" 
+		Texture="occlusion_gas_stations_rus_04.tga"
+	/>
+	<Landmark Mesh="landmarks/gas_stations_rus_04_lmk" />
+</ModelBrand>

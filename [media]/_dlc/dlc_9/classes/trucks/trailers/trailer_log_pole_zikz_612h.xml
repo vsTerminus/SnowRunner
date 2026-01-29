@@ -11,8 +11,8 @@
 		/>	
 	</Wheel>
 </_templates>
-<Truck Type="Trailer">
-	<TruckData>
+<Truck Type="Trailer" isDeprecated="true">
+	<TruckData HideDistance="250" ShadowHideDistance="100">
 		<Wheels
 			DefaultRim="rim_1"
 			DefaultTire="highway_1"
@@ -84,23 +84,25 @@
 		<TractorCargoSlotsOverride InitialOffset="(0.0, 2.0, 0.0)" OffsetStep="(-5.0; 0; 0)" />
 		<WinchSocket Pos="(-3.086; 0.948; 0)" />
 		<WinchSocket WinchableWhenAttached="false" Pos="(1.922; 1.105; 0)" />
+		<CraneSocket Pos="(1.922; 1.105; 0)" />
+		<CraneSocket Pos="(-3.086; 0.948; 0)" />
 		<UiDesc
 			UiDesc="UI_TRAILER_LOGPOLE_DESC"
 			UiIcon30x30="trailerLogPole30"
 			UiIcon40x40="trailerLogPole"
 			UiName="UI_TRAILER_LOGPOLE_NAME"
 		/>
-		<RequiredAddon Types="bunk_log_addon_zikz_612h" />
+		<RequiredAddon Types="bunk_log_addon, bunk_log_addon_zikz_612h" />
 		<LoadArea
-			Subtype="MastodonLong"
+			Subtype="TrailerPoleLogLong"
 			TrailerLoad="true"
 			Type="CargoLogsLong"
 			Min="(-9.14; 1.423; -2.498)"
 			Max="(-2.524; 2.8; 2.4)"
 		/>
-		<InstallSocket Offset="(1.922; 1.105; 0)" Type="MastodonLogPoleTrailer" />
+		<InstallSocket Offset="(1.922; 1.105; 0)" Type="Trailer" />
 		<LongLogsAlignTarget 
-			Pos="(0.0, 1.0, 0.0)" 
+			Pos="(0.0, 0.65, 0.0)" 
 			TruckAddonFork="BoneFork_cdt"
 			TrailerFork="BoneFork_cdt"
 		/>

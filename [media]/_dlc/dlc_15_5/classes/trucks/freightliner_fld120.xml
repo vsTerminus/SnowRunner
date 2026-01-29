@@ -86,6 +86,8 @@
 		SuspensionMarkerOffset="(0; 0; 0)"
 		TruckImage="freightlinerFLD120mchr"
 		TruckType="HEAVY_DUTY"
+		HideDistance="250"
+		ShadowHideDistance="100"
 	>
 		<WinchUpgradeSocket Default="w_medium_trucks_default" IsUpgradable="true" Type="winches_medium_trucks" />
 		<Wheels

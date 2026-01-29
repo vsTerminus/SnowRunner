@@ -1,0 +1,26 @@
+<TruckAddon>
+	<WheelRepairsHide>
+		<Mesh Frame="wheel" HideThreshold="0.0" />
+	</WheelRepairsHide>
+	<TruckData WheelRepairsCapacity="2" />
+	<PhysicsModel Mesh="trucks/addons/frame_addon_jangsu_rx600_sparewheel">
+		<Body ImpactType="Truck" Mass="20">
+			<Constraint Type="Rigid"/>
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="rear"
+		Category="wheel_addon"
+		Price="1900"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SPARE_WHEEL_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SPARE_WHEEL_NAME"
+		/>
+		<InstallSocket Type="JangsuRX600Sparewheel" />
+	</GameData>
+</TruckAddon>

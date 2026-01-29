@@ -1,5 +1,21 @@
 <DistributionBrushes>
 	<Plants>
+		<MudChunksmud_desert LinkedGrassBrush="DebrisChunksmud_desert" PlantsPerBlock="900">
+			<PlantType
+				Brand="mud_chunk_a_mud_desert"
+				MinSize="0.8"
+				MaxSize="1.4"
+				Perpendicularity="1.0"
+				PlaceOnlyOutsideSnow="true"
+			/>
+			<PlantType
+				Brand="mud_chunk_b_mud_desert"
+				MinSize="0.8"
+				MaxSize="1.4"
+				Perpendicularity="1.0"
+				PlaceOnlyOutsideSnow="true"
+			/>			
+		</MudChunksmud_desert>
 		<PineStumps LinkedGrassBrush="LeavesFirs" PlantsPerBlock="32">
 			<PlantType
 				Brand="pine_stump_01_rus"
@@ -2712,6 +2728,18 @@
 				AttachPivot="true"
 			/>
 		</ConveyorBase>
+		<WaterPipeRU17Landmark>
+			<ModelType
+				AlignToTangent="1.0"
+				Brands="overlay_water_pipe_ru17_landmark"
+				DirOffset="0"
+				Divergence="0.0"
+				Interval="8.0"
+				Perpendicularity="1.0"
+				TangentOffset="0"
+				AttachPivot="true"
+			/>
+		</WaterPipeRU17Landmark>
 	</OverlaysPlants>
 	<Grass>
 	<GrassRoad PlantsPerBlock="1000">
@@ -2925,5 +2953,9 @@
 			<PlantType Brand="grass_dandelion_b" />
 			<PlantType Brand="grass_dandelion_a" />
 		</TestGrassBrush>
+		<DebrisChunksmud_desert PlantsPerBlock="1200">
+			<PlantType Brand="debris_chunks_mud_desert" PlaceOnlyOutsideSnow="true" />
+			<PlantType Brand="debris_snow" PlaceOnlyInSnow="true" />
+		</DebrisChunksmud_desert>
 	</Grass>
 </DistributionBrushes>

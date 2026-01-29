@@ -123,4 +123,7 @@
 		<InstallSocket Offset="(0; 0; 0)" Type="PaderaSTD4Kung" />
 		<AddonSlots InitialOffset="(-3.1; 1.635; -0.000)" OffsetStep="(0; 0; 0)" Quantity="1" />
 	</GameData>
+	<FuelMass>
+		<Body Mass="1120" />
+	</FuelMass>
 </TruckAddon>
