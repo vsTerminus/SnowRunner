@@ -3,7 +3,7 @@
 	<Engine
 		DamageCapacity="200"
 		
-		FuelConsumption="14.35"
+		FuelConsumption="10.35"
 		
 		CriticalDamageThreshold="0.35"
 		DamagedMinTorqueMultiplier="1.0"
@@ -33,7 +33,7 @@
 	<Engine
 		DamageCapacity="240"
 		
-		FuelConsumption="14.8"
+		FuelConsumption="10.8"
 		
 		CriticalDamageThreshold="0.55"
 		DamagedMinTorqueMultiplier="1.0"
@@ -63,7 +63,7 @@
 	<Engine
 		DamageCapacity="380"
 		
-		FuelConsumption="14.2"
+		FuelConsumption="10.2"
 		
 		CriticalDamageThreshold="0.8"
 		DamagedMinTorqueMultiplier="1.0"
