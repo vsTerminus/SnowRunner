@@ -125,25 +125,23 @@
 			MinDist="15.0"
 			ParentFrame="BoneCabin_cdt"
 		>
+			<Handbrake		Sound="trucks/kolob_74760/kolob_74760_handbrake_on" />
+			<HandbrakeOff	Sound="trucks/kolob_74760/kolob_74760_handbrake_off" />
+			<BrakesSqueal	Sound="trucks/kolob_74760/kolob_74760_brakes_squeal" />
+			<BrakeRelease	Sound="trucks/kolob_74760/kolob_74760_brake_release" />
 			<Honk			Sound="trucks/pacific_p16/pacific_p16_honk" />
-			<Handbrake		Sound="trucks/pacific_p16/pacific_p16_handbrake_on" />
-			<HandbrakeOff	Sound="trucks/pacific_p16/pacific_p16_handbrake_off" />
-			<BrakePull		Sound="trucks/pacific_p16/pacific_p16_brake_pull" />
-			<BrakeRelease	Sound="trucks/pacific_p16/pacific_p16_brake_release" />
-			<BrakesSqueal	Sound="trucks/pacific_p16/pacific_p16_brakes_squeal" />
-			<Reverse		Sound="trucks/pacific_p16/pacific_p16_back_beeper" />
-			<EngineAccel	Sound="trucks/pacific_p16/pacific_p16_acc" />
-			<EngineRev		Sound="trucks/pacific_p16/pacific_p16_rev" />
-			<EngineStart	Sound="trucks/pacific_p16/pacific_p16_start" />
-			<EngineStop		Sound="trucks/pacific_p16/pacific_p16_stop" />
-			<EngineIdle		Sound="trucks/pacific_p16/pacific_p16_idle" />
-			<EngineIdle_2d	Sound="trucks/pacific_p16/pacific_p16_idle_2d"	IsSound2D="true" />
-			<EngineLow		Sound="trucks/pacific_p16/pacific_p16_low" />
-			<EngineLow_2d	Sound="trucks/pacific_p16/pacific_p16_low_2d"	IsSound2D="true" />
-			<EngineHigh		Sound="trucks/pacific_p16/pacific_p16_high" />
-			<EngineHigh_2d	Sound="trucks/pacific_p16/pacific_p16_high_2d"	IsSound2D="true" />
-			<EngineHeavy	Sound="trucks/pacific_p16/pacific_p16_heavy" />
-			<EngineHeavy_2d	Sound="trucks/pacific_p16/pacific_p16_heavy_2d"	IsSound2D="true" />
+			<EngineRev		Sound="trucks/kolob_74760/kolob_74760_rev" />
+			<EngineAccel	Sound="trucks/kolob_74760/kolob_74760_acc" />
+			<EngineStart	Sound="trucks/kolob_74760/kolob_74760_start" />
+			<EngineStop		Sound="trucks/kolob_74760/kolob_74760_stop" />
+			<EngineIdle		Sound="trucks/kolob_74760/kolob_74760_idle" />
+			<EngineIdle_2d	Sound="trucks/kolob_74760/kolob_74760_idle_2d"	IsSound2D="true" />
+			<EngineLow		Sound="trucks/kolob_74760/kolob_74760_low" />
+			<EngineLow_2d	Sound="trucks/kolob_74760/kolob_74760_low_2d"	IsSound2D="true" />
+			<EngineHigh		Sound="trucks/kolob_74760/kolob_74760_high" />
+			<EngineHigh_2d	Sound="trucks/kolob_74760/kolob_74760_high_2d"	IsSound2D="true" />
+			<EngineHeavy	Sound="trucks/kolob_74760/kolob_74760_heavy" />
+			<EngineHeavy_2d	Sound="trucks/kolob_74760/kolob_74760_heavy_2d"	IsSound2D="true" />
 			<EngineTurbo	Sound="trucks/pacific_p16/pacific_p16_turbo" />
 			<AbruptStop		Sound="trucks/common/truck_swing_big_rnd_set/truck_swing_big_rnd" />
 		</Sounds>
