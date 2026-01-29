@@ -127,7 +127,6 @@
 			Origin="(0.95; 1.3; 0)"
 			MinDist="15.0"
 		>
-			<Reverse		Sound="trucks/kolob_74760/kolob_74760_back_beeper" />
 			<Handbrake		Sound="trucks/kolob_74760/kolob_74760_handbrake_on" />
 			<HandbrakeOff	Sound="trucks/kolob_74760/kolob_74760_handbrake_off" />
 			<BrakesSqueal	Sound="trucks/kolob_74760/kolob_74760_brakes_squeal" />
