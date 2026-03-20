@@ -1,0 +1,37 @@
+<TruckAddon>
+	<TruckData>
+		<Shakers>
+			<Shaker Frame="BoneExhaust" MinAngle="(0.07; 0.07; 0.07)" MaxAngle="(0.25; 0.25; 0.25)" MaxFrequency="4" />
+			<Shaker Frame="BoneExhaustCap"  LimitDirectionZ="Negative" MinAngle="(0; 0; 15)" MaxAngle="(0; 0; 160)" MaxFrequency="0.13" ParentFrame="BoneExhaust" />
+		</Shakers>
+	</TruckData>
+	<Exhaust
+			Dir="(0; 1; 0)"
+			IsLight="true"
+			Origin="(1.672; 3.782; 0.916)"
+			Speed="3.82"
+	/>
+	<PhysicsModel Mesh="trucks/mercedes_benz_actros_6x6_tuning/mercedes_benz_actros_6x6_exhaust_2">
+		<Body Collisions="None" Mass="10" ModelFrame="BoneChassis_cdt">
+			<Constraint Type="Rigid" />
+			<Body Collisions="None" Mass="10" ModelFrame="BoneCabinTwist_cdt">
+				<Constraint ExplicitParentFrame="0" Type="Fixed" />
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="exhaust"
+		Category="exhaust"
+		Price="1900"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_EXHAUST_SNUB_HEATSHIELD_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_EXHAUST_SNUB_HEATSHIELD_NAME"
+		/>
+		<InstallSocket Type="MercedesBenzActrosExhaust" />
+	</GameData>
+</TruckAddon>

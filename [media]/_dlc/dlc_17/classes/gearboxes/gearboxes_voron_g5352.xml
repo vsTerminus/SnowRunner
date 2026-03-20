@@ -4,14 +4,14 @@
 		CriticalDamageThreshold="0.4"
 		DamageCapacity="210"
 		DamagedConsumptionModifier="1.43"
-		FuelConsumption="3.0"
+		FuelConsumption="3.15"
 		IdleFuelModifier="0.44"
 		Name="g_truck_voron_g5352_default"
 		MinBreakFreq="0.0"
 		MaxBreakFreq="15.0"
 	>
 		<ReverseGear AngVel="1.22" FuelModifier="2.35" />
-		<HighGear AngVel="6.49" FuelModifier="1.35" />
+		<HighGear AngVel="6.49" FuelModifier="2.3" />
 		<Gear AngVel="1.22" FuelModifier="2.35" />
 		<Gear AngVel="1.6" FuelModifier="2.17" />
 		<Gear AngVel="2.7" FuelModifier="1.87" />
@@ -42,14 +42,14 @@
 		CriticalDamageThreshold="0.57"
 		DamageCapacity="230"
 		DamagedConsumptionModifier="1.55"
-		FuelConsumption="3.15"
+		FuelConsumption="3.35"
 		IdleFuelModifier="0.45"
 		Name="g_truck_voron_g5352_offroad"
 		MinBreakFreq="0.0"
 		MaxBreakFreq="10.0"
 	>
 		<ReverseGear AngVel="1.5" FuelModifier="2.4" />
-		<HighGear AngVel="7.97" FuelModifier="1.42" />
+		<HighGear AngVel="7.97" FuelModifier="2.42" />
 		<Gear AngVel="1.5" FuelModifier="2.4" />
 		<Gear AngVel="1.78" FuelModifier="2.31" />
 		<Gear AngVel="2.5" FuelModifier="2.11" />
@@ -81,14 +81,14 @@
 		CriticalDamageThreshold="0.45"
 		DamageCapacity="200"
 		DamagedConsumptionModifier="1.49"
-		FuelConsumption="3.4"
+		FuelConsumption="3.05"
 		IdleFuelModifier="0.4"
 		Name="g_truck_voron_g5352_highrange"
 		MinBreakFreq="0.0"
 		MaxBreakFreq="8.0"
 	>
 		<ReverseGear AngVel="1.63" FuelModifier="2.27" />
-		<HighGear AngVel="13.1" FuelModifier="1.22" />
+		<HighGear AngVel="13.1" FuelModifier="2.22" />
 		<Gear AngVel="1.63" FuelModifier="2.27" />
 		<Gear AngVel="2.45" FuelModifier="2.18" />
 		<Gear AngVel="3.83" FuelModifier="2.02" />

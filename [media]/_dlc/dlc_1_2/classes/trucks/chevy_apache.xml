@@ -311,7 +311,6 @@
 		UnlockByExploration="false"
 		UnlockByRank="1"
 	>
-		<WinchSocket Pos="(-2.448; 1.14; 0)" />
 		<WinchSocket Pos="(-0.125; 1; -0.458)" />
 		<WinchSocket Pos="(-0.125; 1; 0.458)" />
 		<WinchSocket Pos="(2.649; 0.96; -0.455)" />
@@ -346,7 +345,6 @@
 			<CameraPos FOV="32.0" Interior="true" Name="door_l_sticker" InterestPosition="(4.651; 1.275; -0.592)" Position="(3.764; 2.034; -3.573)" />
 			<CameraPos FOV="32.0" Interior="true" Name="hood_ornament" InterestPosition="(7.506; 1.929; -1.188)" Position="(8.758; 2.306; -1.114)" />
 		</CustomizationCameras>
-		<CraneSocket Pos="(-2.448; 1.14; 0)" />
 		<CraneSocket Pos="(-0.125; 1; -0.458)" />
 		<CraneSocket Pos="(-0.125; 1; 0.458)" />
 		<CraneSocket Pos="(0.5; 2.5; 0)" />
@@ -360,6 +358,14 @@
 		</AddonSockets>
 		<AddonSockets DefaultAddon="chevy_apache_bumper_rear_default">
 			<Socket Names="ChevyApacheRearBumper" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="ChevyApacheRearBumper2" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>
+		<AddonSockets DefaultAddon="chevy_apache_farkop_default" RequiredAddonIfNoConflicts="chevy_apache_farkop_default">
+			<Socket Names="ChevyApacheFarkopScout" Offset="(0; 0; 0)" NamesBlock="ChevyApacheRearBumper2" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="ChevyApacheFarkopDefault" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="ScautTrailer" Offset="(-2.761; 0.86; 0.000)" NamesBlock="" RequiredHitches="chevy_apache_farkop_scout_trailer" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="ChevyApacheSpotLight" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
@@ -387,9 +393,7 @@
 			</Socket>
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="ChevyApacheTrunk" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt">
-				<ExtraParent Frame="BoneChassis_cdt" />
-			</Socket>
+			<Socket Names="ChevyApacheTrunk" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket

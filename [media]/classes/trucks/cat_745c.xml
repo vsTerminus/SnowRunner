@@ -371,7 +371,7 @@
 			<Socket Names="Cat745CFlatbed" NamesBlock="Cat745CWires, Cat745CFarkop" ParentFrame="BoneBackRot_cdt" />
 		</AddonSockets>
 		
-		<AddonSockets DefaultAddon="cat_745c_farkop" RequiredAddonIfNoConflicts="cat_745c_farkop" >
+		<AddonSockets DefaultAddon="cat_745c_farkop" >
 			<Socket Names="Cat745CFarkop" ParentFrame="BoneBackRot_cdt" />
 		</AddonSockets>
 		

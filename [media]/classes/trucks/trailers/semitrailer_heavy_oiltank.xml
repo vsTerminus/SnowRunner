@@ -168,7 +168,7 @@
 		<!-- </ReverseSignals>   -->
 	</ModelAttachments>
 	<Landmark Mesh="landmarks/semitrailer_heavy_oiltank_01_lmk" MinScale="0.7" MaxScale="1.7" />
-	<GameData IsQuest="True" Price="7200">
+	<GameData Price="7200">
 		<WinchSocket Pos="(-8.903; 1.349; 0.823)" />
 		<WinchSocket Pos="(-8.903; 1.349; -0.823)" />
 		<WinchSocket Pos="(8.678; 2.271; 0)" />

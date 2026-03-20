@@ -1,0 +1,29 @@
+<_templates Include="trucks">
+	<TruckTire>
+		<Offroad Mass="220">
+			<WheelTracks _template="Offroad" />
+			<WheelSoftness _template="Average" />
+		</Offroad>
+	</TruckTire>
+</_templates>
+<TruckWheels DamageCapacity="50" Radius="1" Width="0.65">
+	<TruckTires>     
+		<TruckTire _template="Offroad" Mesh="wheels/tire_mercedes_benz_zetros_6x6" Name="mb_zetros_mudtires_1">
+			<WheelFriction _template="Mudtires"/>
+			<GameData
+				Price="7200"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_OFFROAD_DESC" UiName="UI_TIRE_MERCEDES_BENZ_ZETROS_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>
+		<TruckRim Mesh="wheels/rim_mercedes_benz_zetros_6x6" Name="mb_zetros_rim_1">
+			<GameData>
+				<UiDesc UiDesc="UI_RIM_HEAVY_OFFROAD_DOUBLE_1_DESC" UiName="UI_RIM_MERCEDES_BENZ_ZETROS_NAME" />
+			</GameData>
+		</TruckRim>
+	</TruckRims>
+</TruckWheels>

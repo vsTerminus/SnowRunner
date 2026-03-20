@@ -1,0 +1,35 @@
+<_templates Include="trucks">
+	<TruckTire>
+		<Offroad Mass="220" RearMassScale="2.0">
+			<WheelTracks _template="Default" />
+			<WheelSoftness _template="Average" />
+		</Offroad>
+	</TruckTire>
+</_templates>
+<TruckWheels
+	DamageCapacity="50"
+	Radius="1"
+	RadiusRear="1"
+	Width="0.615"
+	WidthRear="1.260"
+>
+	<TruckTires>
+		<TruckTire _template="Offroad" Mesh="wheels/tire_mercedes_benz_actros_6x6" Name="mb_actros_offroad_1">
+			<WheelFriction _template="Offroad" SubstanceFriction="1.7"/>
+			<GameData
+				Price="7200"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_OFFROAD_DESC" UiName="UI_TIRE_MERCEDES_BENZ_ACTROS_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>
+		<TruckRim Mesh="wheels/rim_mercedes_benz_actros_6x6" Name="mb_actros_rim_1">
+			<GameData>
+				<UiDesc UiDesc="" UiName="UI_RIM_MERCEDES_BENZ_ACTROS_NAME" />
+			</GameData>
+		</TruckRim>
+	</TruckRims>
+</TruckWheels>

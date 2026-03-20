@@ -5,6 +5,14 @@
 				<Motor Damping="250" Spring="0.25" Type="Spring" />
 			</Constraint>
 		</Limits>
+		<Wheels Mass="20" Collisions="None">
+			<Constraint 
+				Type="Hinge" 
+				AxisLocal="(0; 0; 1)"
+			>
+				<Motor Damping="30" Spring="110" Type="Spring" />
+			</Constraint>
+		</Wheels>
 	</Body>
 </_templates>
 <TruckAddon>
@@ -12,13 +20,16 @@
 		<Mesh Frame="wheel" HideThreshold="0.0" />
 	</WheelRepairsHide>
 	<TruckData
-		FuelCapacity="60"
-		RepairsCapacity="200"
-		WheelRepairsCapacity="2"
+		FuelCapacity="120"
+		RepairsCapacity="600"
+		WheelRepairsCapacity="6"
 	>
 		<LimitedFluid Center="(-0.874; 1.271; 0.449)" SizeX="0.206" SizeY="0.506" SizeZ="0.407" Type="Box" />
 		<LimitedFluid Center="(-0.875; 1.264; 0.004)" SizeX="0.203" SizeY="0.506" SizeZ="0.407" Type="Box" />
 		<LimitedFluid Center="(-0.874; 1.271; -0.454)" SizeX="0.206" SizeY="0.506" SizeZ="0.407" Type="Box" />
+		<LimitedFluid Center="(-1.081, 1.262, 0.413)" SizeX="0.159" SizeY="0.427" SizeZ="0.331" Type="Box" />
+		<LimitedFluid Center="(-1.081, 1.262, 0.000)" SizeX="0.159" SizeY="0.427" SizeZ="0.331" Type="Box" />
+		<LimitedFluid Center="(-1.081, 1.262, -0.403)" SizeX="0.159" SizeY="0.427" SizeZ="0.331" Type="Box" />
 	</TruckData>
 	<RepairsHide>
 		<Mesh Frame="repair1" HideThreshold="0.5" />
@@ -27,15 +38,22 @@
 	<PhysicsModel Mesh="trucks/addons/ford_f750_pickup">
 		<Body ImpactType="Truck" Mass="200">
 			<Constraint Type="Rigid" />
-			<Body
-				_template="Limits"
-				Mass="30"
-				ModelFrame="BoneWheel_cdt"
-			>
-				<Constraint
-					LinearLimitsX="(-0.03;0.03)"
-					LinearLimitsY="(0;0.1)"
-					LinearLimitsZ="(-0.03;0.03)"
+			<Body _template="Wheels" ModelFrame="BoneWheel01_cdt">
+				<Constraint 
+					MinLimit="-2.5"
+					MaxLimit="2"
+				/>
+			</Body>
+			<Body _template="Wheels" ModelFrame="BoneWheel02_cdt">
+				<Constraint 
+					MinLimit="-2.5"
+					MaxLimit="1.5"
+				/>
+			</Body>
+			<Body _template="Wheels" ModelFrame="BoneWheel03_cdt">
+				<Constraint 
+					MinLimit="-3"
+					MaxLimit="3"
 				/>
 			</Body>
 			<Body

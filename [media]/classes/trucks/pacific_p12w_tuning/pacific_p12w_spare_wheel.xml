@@ -3,7 +3,7 @@
 		<Mesh Frame="wheel1" HideThreshold="0.5" />
 		<Mesh Frame="wheel2" HideThreshold="0.0" />
 	</WheelRepairsHide>
-	<TruckData WheelRepairsCapacity="2" />
+	<TruckData WheelRepairsCapacity="4" />
 	<PhysicsModel Mesh="trucks/pacific_p12w_tuning/pacific_p12w_spare_wheel">
 		<Body ImpactType="Truck" Mass="100">
 			<Constraint Type="Rigid" />

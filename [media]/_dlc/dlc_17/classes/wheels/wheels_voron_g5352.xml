@@ -1,12 +1,12 @@
 <_templates Include="trucks">
 	<TruckTire>
-		<Offroad Mass="320">
+		<Offroad Mass="250">
 			<WheelTracks _template="Offroad" />
 			<WheelSoftness _template="Average" />
 		</Offroad>
 	</TruckTire>
 </_templates>
-<TruckWheels DamageCapacity="50" Radius="1" Width="0.414">
+<TruckWheels DamageCapacity="50" Radius="1" Width="0.66">
 	<TruckTires>
 		<TruckTire _template="Offroad" Mesh="wheels/tire_voron_g5352" Name="tire">
 			<WheelFriction _template="Offroad" BodyFrictionAsphalt="1" SubstanceFriction="1.8" BodyFriction="3"/>

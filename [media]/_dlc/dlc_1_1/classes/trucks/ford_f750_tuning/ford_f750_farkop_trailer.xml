@@ -1,0 +1,21 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/ford_f750_tuning/ford_f750_farkop_trailer" />
+	<GameData
+		CameraPreset="addon_1"
+		Category="frame_addons"
+		Price="0"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<WinchSocket Pos="(-3.828; 0.774; 0.0)" FixedToTruck="true" />
+		<CraneSocket Pos="(-3.828; 0.774; 0.0)" FixedToTruck="true" />
+		<UiDesc
+			UiDesc="UI_TUNING_FARKOP_TRAILER_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_FARKOP_TRAILER_NAME"
+		/>
+		<InstallSocket Type="FordF750Farkop" />
+	</GameData>
+</TruckAddon>

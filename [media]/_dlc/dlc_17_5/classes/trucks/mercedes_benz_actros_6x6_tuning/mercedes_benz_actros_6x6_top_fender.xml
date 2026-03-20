@@ -1,0 +1,117 @@
+<_templates Include="trucks">
+	<Flare>
+		<MarkerBeacon Color="g(125; 81; 18) x 0.7" Size="0.2" />
+	</Flare>
+</_templates>
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/mercedes_benz_actros_6x6_tuning/mercedes_benz_actros_6x6_top_fender">
+		<Body ImpactType="Truck" Mass="30" ModelFrame="BoneCabin_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<Ignition>
+			<!-- FRONT -->
+			<Flare _template="MarkerBeacon" Color="g(255; 140; 0) x 0.3" Size="0.2" Pos="(2.085; 3.948; -0.972)" Dir="(1; 0; 0)" DirAngle="120" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="MarkerBeacon" Color="g(255; 140; 0) x 0.3" Size="0.2" Pos="(2.085; 3.979; -0.349)" Dir="(1; 0; 0)" DirAngle="120" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="MarkerBeacon" Color="g(255; 140; 0) x 0.3" Size="0.2" Pos="(2.085; 3.979; 0.349)" Dir="(1; 0; 0)" DirAngle="120" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="MarkerBeacon" Color="g(255; 140; 0) x 0.3" Size="0.2" Pos="(2.085; 3.948; 0.972)" Dir="(1; 0; 0)" DirAngle="120" ParentFrame="BoneCabin_cdt" />
+			<!-- RIGHT -->
+			<Flare _template="MarkerBeacon" Color="g(255; 140; 0) x 0.3" Size="0.2" Pos="(2.210; 3.330; -1.159)" Dir="(0; 0; -1)" DirAngle="110" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="MarkerBeacon" Color="g(255; 140; 0) x 0.3" Size="0.2" Pos="(2.810; 3.331; -1.150)" Dir="(0; 0; -1)" DirAngle="110" ParentFrame="BoneCabin_cdt" />
+			<!-- LEFT -->
+			<Flare _template="MarkerBeacon" Color="g(255; 140; 0) x 0.3" Size="0.2" Pos="(2.210; 3.330; 1.159)" Dir="(0; 0; 1)" DirAngle="110" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="MarkerBeacon" Color="g(255; 140; 0) x 0.3" Size="0.2" Pos="(2.810; 3.331; 1.150)" Dir="(0; 0; 1)" DirAngle="110" ParentFrame="BoneCabin_cdt" />
+		</Ignition>
+		<HeadLight>
+			<Model _template="HeadLightRay" Org="(3.236; 3.590; -0.540)" />
+			<Model _template="HeadLightRay" Org="(3.236; 3.590; 0.540)" />
+			
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.611; -0.650)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.570; -0.650)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.611; -0.628)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.570; -0.628)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.611; -0.606)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.570; -0.606)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.611; -0.584)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.570; -0.584)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.611; -0.562)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.570; -0.562)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.611; -0.540)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.570; -0.540)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.611; -0.430)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.570; -0.430)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.611; -0.452)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.570; -0.452)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.611; -0.474)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.570; -0.474)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.611; -0.496)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.570; -0.496)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.611; -0.518)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.570; -0.518)" />
+			
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.615; -0.110)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.574; -0.110)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.615; -0.088)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.574; -0.088)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.615; -0.066)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.574; -0.066)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.615; -0.044)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.574; -0.044)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.615; -0.022)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.574; -0.022)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.615; 0)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.574; 0)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.615; 0.110)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.574; 0.110)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.615; 0.088)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.574; 0.088)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.615; 0.066)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.574; 0.066)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.615; 0.044)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.574; 0.044)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.615; 0.022)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.574; 0.022)" />
+			
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.611; 0.650)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.570; 0.650)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.611; 0.628)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.570; 0.628)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.611; 0.606)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.570; 0.606)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.611; 0.584)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.570; 0.584)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.611; 0.562)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.570; 0.562)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.611; 0.540)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.570; 0.540)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.611; 0.430)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.570; 0.430)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.611; 0.452)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.570; 0.452)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.611; 0.474)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.570; 0.474)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.611; 0.496)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.570; 0.496)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.611; 0.518)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 205) x 0.45" DirAngle="135" Size="0.08" Pos="(3.214; 3.570; 0.518)" />
+		</HeadLight>
+	</ModelAttachments>
+	<MainHeadLight _template="Multiply1" />
+	<GameData
+		CameraPreset="roof"
+		Category="top"
+		IsCustomizable="true"
+		Price="700"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_FORD_CLT9000_CLT_TOP_FENDER_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_FORD_CLT9000_CLT_TOP_FENDER_NAME"
+		/>
+		<InstallSocket CameraPreset="roof" Type="MercedesBenzActrosTop" />
+	</GameData>
+</TruckAddon>

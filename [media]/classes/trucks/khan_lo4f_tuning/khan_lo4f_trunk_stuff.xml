@@ -1,0 +1,40 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<WheelRepairsHide>
+		<Mesh Frame="wheels_00" HideThreshold="0.0" />
+	</WheelRepairsHide>
+	<TruckData
+		FuelCapacity="240"
+		RepairsCapacity="450"
+		WheelRepairsCapacity="8"
+	/>
+	<RepairsHide>
+		<Mesh Frame="repair_00" HideThreshold="0.5" />
+		<Mesh Frame="repair_01" HideThreshold="0.0" />
+	</RepairsHide>
+	<PhysicsModel Mesh="trucks/khan_lo4f_tuning/khan_lo4f_trunk_stuff">
+		<Body Mass="520">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="addon_1"
+		Category="frame_addons"
+		IsCustomizable="true"
+		Price="3900"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SCOUT_TRUNK_SUPPLIES_BIG_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SCOUT_TRUNK_SUPPLIES_BIG_NAME"
+		/>
+		<InstallSocket Type="Khanlo4fTrunk" />
+	</GameData>
+	<FuelHide>
+		<Mesh Frame="fuel_00" HideThreshold="0.66" />
+		<Mesh Frame="fuel_01" HideThreshold="0.0" />
+	</FuelHide>
+</TruckAddon>

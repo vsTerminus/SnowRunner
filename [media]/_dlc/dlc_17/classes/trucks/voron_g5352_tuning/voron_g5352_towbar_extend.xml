@@ -49,8 +49,8 @@
 		UnlockByExploration="false"
 		UnlockByRank="1"
 	>
-		<WinchSocket Pos="(-5.067; 1.046; 0.000)" />
-		<CraneSocket Pos="(-5.067; 1.046; 0.000)" />
+		<WinchSocket FixedToTruck="true" Pos="(-5.067; 1.046; 0.000)" />
+		<CraneSocket FixedToTruck="true" Pos="(-5.067; 1.046; 0.000)" />
 		<UiDesc
 			UiDesc="UI_TUNING_TOWBAR_EXTEND_DESC"
 			UiIcon30x30=""

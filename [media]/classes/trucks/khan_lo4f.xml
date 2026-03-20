@@ -9,7 +9,7 @@
 			ConnectedToHandbrake="true"
 			Location="front"
 			SteeringAngle="40"
-			SteeringCastor="8"
+			SteeringCastor="2"
 			Torque="default"
 			ParentFrame="BoneCabin_cdt"
 		/>
@@ -57,7 +57,7 @@
 		<SuspensionSocket
 			Default="khan_lo4f_suspension_default"
 			Type="s_khan_lo4f"
-			MaxWheelRadiusWithoutSuspension="0.22"
+			MaxWheelRadiusWithoutSuspension="0.3"
 		/>
 		<SteeringWheel Frame="BoneSteering" />
 		<SteeringRack
@@ -131,23 +131,26 @@
 			<DamageArea Type="Engine" Min="(1.5; 0.6; -0.5)" Max="(2.2; 1.3; 0.5)" ParentFrame="BoneChassis_cdt" />
 			<DamageArea Type="FuelTank" Min="(-0.6; 0.35; -0.9)" Max="(0.8; 0.6; 0.9)" ParentFrame="BoneChassis_cdt" />
 		</Damage>
+		<!-- VANILLA WHEELS -->
 		<CompatibleWheels Scale="0.38" Type="wheels_scout1" />
 		<CompatibleWheels Scale="0.38" Type="wheels_scout2" />
-		<CompatibleWheels Scale="0.42" Type="wheels_scout1" />
-		<CompatibleWheels Scale="0.42" Type="wheels_scout2" />
-
+		
+		<CompatibleWheels Scale="0.45" Type="wheels_scout1" />
+		<CompatibleWheels Scale="0.45" Type="wheels_scout2" />
+		
+		<!-- JAT WHEELS -->
 		<CompatibleWheels Scale="0.38" Type="wheels_scout_highway" />
 		<CompatibleWheels Scale="0.38" Type="wheels_scout_offroad" />
-		<CompatibleWheels OffsetZ="0.05" Scale="0.38" Type="wheels_scout_mudtires" />
-		<CompatibleWheels Scale="0.42" Type="wheels_scout_highway" />
-		<CompatibleWheels Scale="0.42" Type="wheels_scout_offroad" />
-		<CompatibleWheels OffsetZ="0.05" Scale="0.42" Type="wheels_scout_mudtires" />
-		
+		<CompatibleWheels Scale="0.38" Type="wheels_scout_mudtires" />
 		<CompatibleWheels Scale="0.38" Type="wheels_scout_allterrain" />
 		<CompatibleWheels Scale="0.38" Type="wheels_scout_allterrain_chain" />
-		<CompatibleWheels Scale="0.42" Type="wheels_scout_allterrain" />
-		<CompatibleWheels Scale="0.42" Type="wheels_scout_allterrain_chain" />
-		<Camera Center="(-1.3; 0; 0)" RadiusMultiplier="0.8">
+		
+		<CompatibleWheels Scale="0.45" Type="wheels_scout_highway" />
+		<CompatibleWheels Scale="0.45" Type="wheels_scout_offroad" />
+		<CompatibleWheels Scale="0.45" Type="wheels_scout_mudtires" />
+		<CompatibleWheels Scale="0.45" Type="wheels_scout_allterrain" />
+		<CompatibleWheels Scale="0.45" Type="wheels_scout_allterrain_chain" />	
+		<Camera Center="(-1.3; -0.3; 0)" RadiusMultiplier="0.8">
 			<Cockpit
 				_template="Default"
 				WindshieldDiffuseTexture="trucks/khanlo4f_glass__d_a.tga"
@@ -173,15 +176,15 @@
 	<PhysicsModel Mesh="trucks/khan_lo4f">
 		<NetSync Legacy="false" />
 		<Body
-			CenterOfMassOffset="(0; -0.6; 0)"
+			CenterOfMassOffset="(-0.05; 0.0; 0)"
 			ImpactType="Truck"
-			Mass="1800"
+			Mass="750"
 			NetSync="pv"
 		>
 			<Body
-				CenterOfMassOffset="(0; -0.4; 0)"
+				CenterOfMassOffset="(0.1; -0.35; 0)"
 				ImpactType="Truck"
-				Mass="1500"
+				Mass="1100"
 				ModelFrame="BoneCabin_cdt"
 				NetSync="pv"
 			>
@@ -256,7 +259,7 @@
 		/>
 		<CustomizationCameras>
 			<CameraPos FOV="32.0" Name="roof_sticker" InterestPosition="(4.382; 0.363; -0.304)" Position="(7.768; 5.509; -1.155)" />
-			<CameraPos FOV="32.0" Name="addon_1" InterestPosition="(1.036; 1.692; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-6.923; 2.071; 10.147)" />
+			<CameraPos FOV="32.0" Name="addon_1" InterestPosition="(3.3; 1.25; 0.5)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-2.3; 1.8; 2.147)" />
 			<CameraPos FOV="32.0" Name="addon_2" InterestPosition="(4.867; 1.185; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(10.328; 3.44; -2.861)" />
 			<CameraPos FOV="32.0" Interior="true" Name="mirror_mount" InterestPosition="(8.323; 1.692; 1.299)" Position="(5.956; 1.621; -0.274)" />
 			<CameraPos FOV="32.0" Name="side_r" InterestPosition="(5.339; 1.222; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(9.396; 2.878; -2.281)" />
@@ -288,6 +291,9 @@
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="Khanlo4fRoofrack" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="Khanlo4fTrunk" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="Khanlo4fRoofrack2" />

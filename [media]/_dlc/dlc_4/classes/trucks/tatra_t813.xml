@@ -144,7 +144,8 @@
 		</Dashboard>
 		<Damage>
 			<DamageArea Type="Engine" Min="(2.049; 0.631; -0.5)" Max="(3.705; 1.631; 0.5)" />
-			<DamageArea Type="FuelTank" Min="(-1; 0.65; -1.3)" Max="(0.3; 1.358; 1.3)" />
+			<DamageArea Type="FuelTank" Min="(-0.646; 0.683; -1.229)" Max="(0.018; 1.300; -0.590)" />
+			<DamageArea Type="FuelTank" Min="(-0.646; 0.683; 0.590)" Max="(0.018; 1.300; 1.229)" />
 		</Damage>
 		<CompatibleWheels RearOffsetZ="0.04" Scale="0.64" Type="wheels_tatra_t813" />
 		<CompatibleWheels RearOffsetZ="0.04" Scale="0.64" Type="wheels_heavy_single" />
@@ -324,7 +325,7 @@
 			<Socket Names="Trailer" Offset="(-4.309; 0.929; 0)" />
 			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-2.136; 1.649; 0)" />
 			<Socket Names="SemitrailerFoldableLog" NamesBlock="SaddleHigh" Offset="(-3.147; 1.500; 0)" >
-				<AddonsShift Offset="(0.2; 0.05; 0)" Types="SaddleMotorized" />
+				<AddonsShift Offset="(0.12; 0.05; 0)" Types="SaddleMotorized" />
 			</Socket>
 		</AddonSockets>
 		<AddonSockets>
@@ -332,7 +333,7 @@
 			<!-- <Socket Names="FrameAddonTowPlatform" NamesBlock="Trailer" Offset="(-1.15; 1.25; 0)" ParentFrame="BoneChassis_cdt" /> -->
 			<Socket Names="FrameAddonTowTatraT813" NamesBlock="Trailer, SaddleHigh" Offset="(-2.3; 1.21; 0)" ParentFrame="BoneChassis_cdt" />
 			
-			<Socket Names="SaddleMotorized" Offset="(-1.600; -0.082; 0.000)" ParentFrame="BoneChassis_cdt" >
+			<Socket Names="SaddleMotorized" Offset="(-1.680; -0.082; 0.000)" ParentFrame="BoneChassis_cdt" >
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.000; 0.000; -0.003)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.000; 0.000; 0.003)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(1.20; 0.000; -0.003)" />

@@ -1,0 +1,101 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<TruckData FuelCapacity="260" RepairsCapacity="150">
+		<LimitedFluid Center="(2.903; 3.556; 0.371)" SizeX="0.519" SizeY="0.182" SizeZ="0.363" Type="Box" ParentFrame="BoneFuel_cdt" />
+		<LimitedFluid Center="(2.903; 3.556; 0.786)" SizeX="0.519" SizeY="0.182" SizeZ="0.363" Type="Box" ParentFrame="BoneFuel_cdt" />
+		<LimitedFluid Center="(2.963, 3.758, 0.764)" SizeX="0.445" SizeY="0.146" SizeZ="0.325" Type="Box" ParentFrame="BoneFuel_cdt" />
+		<LimitedFluid Center="(2.929, 3.758, 0.335)" SizeX="0.445" SizeY="0.146" SizeZ="0.325" Type="Box" ParentFrame="BoneFuel_cdt" />
+		
+		<LimitedFluid Center="(2.957, 3.758, -0.124)" SizeX="0.445" SizeY="0.146" SizeZ="0.325" Type="Box" ParentFrame="BoneFuel_cdt" />
+		<LimitedFluid Center="(2.910, 3.758, -0.544)" SizeX="0.445" SizeY="0.146" SizeZ="0.325" Type="Box" ParentFrame="BoneFuel_cdt" />
+		<LimitedFluid Center="(2.907, 3.554, -0.592)" SizeX="0.445" SizeY="0.146" SizeZ="0.325" Type="Box" ParentFrame="BoneFuel_cdt" />
+		<LimitedFluid Center="(2.941, 3.554, -0.096)" SizeX="0.445" SizeY="0.146" SizeZ="0.325" Type="Box" ParentFrame="BoneFuel_cdt" />
+		
+		<LimitedFluid Center="(2.267, 3.554, -0.118)" SizeX="0.445" SizeY="0.146" SizeZ="0.325" Type="Box" ParentFrame="BoneFuel_cdt" />
+		<LimitedFluid Center="(2.257, 3.554, -0.552)" SizeX="0.445" SizeY="0.146" SizeZ="0.325" Type="Box" ParentFrame="BoneFuel_cdt" />
+		<LimitedFluid Center="(2.261, 3.755, -0.545)" SizeX="0.445" SizeY="0.146" SizeZ="0.325" Type="Box" ParentFrame="BoneFuel_cdt" />
+		<LimitedFluid Center="(2.274, 3.755, -0.102)" SizeX="0.445" SizeY="0.146" SizeZ="0.325" Type="Box" ParentFrame="BoneFuel_cdt" />
+	</TruckData>
+	<RepairsHide>
+		<Mesh Frame="repair" HideThreshold="0.0" />
+	</RepairsHide>
+	<FuelHide>
+		<Mesh Frame="fuel" HideThreshold="0.0" />
+		<Mesh Frame="fuel_01" HideThreshold="0.33" />
+		<Mesh Frame="fuel_02" HideThreshold="0.63" />
+		<Mesh Frame="fuel_03" HideThreshold="0.93" />
+	</FuelHide>
+	<Rotator EngineTorqueFactor="0" Frame="BoneRotatorRight" RotationSpeed="4" />
+	<Rotator EngineTorqueFactor="0" Frame="BoneRotatorLeft" RotationSpeed="4" />
+	<PhysicsModel Mesh="trucks/mercedes_benz_actros_6x6_tuning/mercedes_benz_actros_6x6_roofrack_1">
+		<Body ImpactType="Truck" Mass="30" ModelFrame="BoneCabin_cdt">
+			<Constraint Type="Rigid" />
+			<Body Collisions="None" Mass="120" ModelFrame="BoneFuel_cdt">
+				<Constraint
+					AxisLocal="(1; 0; 1)"
+					Type="Prismatic"
+					MinLimit="-0.01"
+					MaxLimit="0.01"
+				>
+					<Motor Damping="1400" Spring="15000" Type="Spring" />
+				</Constraint>
+			</Body>
+			<Body Collisions="None" Mass="50" ModelFrame="BoneRepair_cdt">
+				<Constraint
+					AxisLocal="(0; 0; 1)"
+					Type="Prismatic"
+					MinLimit="-0.012"
+					MaxLimit="0.012"
+				>
+					<Motor Damping="2000" Spring="3000" Type="Spring" />
+				</Constraint>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<Ignition _template="Flasher">
+			<Model
+				Color="g(255; 111; 5) x 0.55"
+				Dir="(1; 0.222; 0.563)"
+				Org="(3.211; 3.776; 1.025)"
+				Reflections="false"
+				Scale="(0.19; 0.19; 0.19)"
+				ParentFrame="BoneRotatorLeft"
+			/>
+			<Light Dir="(-0.796; 0.222; 0.563)" Pos="(3.211; 3.776; 1.025)" ParentFrame="BoneRotatorLeft" />
+			<Flare Color="g(255; 111; 5) x 0.45" Dir="(-0.796; 0.222; 0.563)" Size="1" Pos="(3.211; 3.776; 1.025)" ParentFrame="BoneRotatorLeft" />
+			<Flare Color="g(255; 111; 5) x 0.7" Dir="(-0.796; 0.222; 0.563)" Size="0.7" Pos="(3.211; 3.776; 1.025)" ParentFrame="BoneRotatorLeft" />
+			<Flare Color="g(255; 111; 5) x 0.55" Size="1" Pos="(3.211; 3.776; 1.025)" ParentFrame="BoneRotatorLeft" />
+		</Ignition>
+		<Ignition _template="Flasher">
+			<Model
+				Color="g(255; 111; 5) x 0.55"
+				Dir="(1; 0.222; 0.563)"
+				Org="(3.211; 3.776; -1.025)"
+				Reflections="false"
+				Scale="(0.19; 0.19; 0.19)"
+				ParentFrame="BoneRotatorRight"
+			/>
+			<Light Dir="(-0.796; 0.222; 0.563)" Pos="(3.211; 3.776; -1.025)" ParentFrame="BoneRotatorRight" />
+			<Flare Color="g(255; 111; 5) x 0.45" Dir="(-0.796; 0.222; 0.563)" Size="1" Pos="(3.211; 3.776; -1.025)" ParentFrame="BoneRotatorRight" />
+			<Flare Color="g(255; 111; 5) x 0.7" Dir="(-0.796; 0.222; 0.563)" Size="0.7" Pos="(3.211; 3.776; -1.025)" ParentFrame="BoneRotatorRight" />
+			<Flare Color="g(255; 111; 5) x 0.55" Size="1" Pos="(3.211; 3.776; -1.025)" ParentFrame="BoneRotatorRight" />
+		</Ignition>
+	</ModelAttachments>
+	<MainHeadLight _template="Multiply2" />
+	<GameData
+		CameraPreset="roof"
+		Category="top"
+		Price="3800"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SCOUT_TRUNK_SUPPLIES_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SCOUT_TRUNK_SUPPLIES_NAME"
+		/>
+		<InstallSocket Type="MercedesBenzActrosRoofrack" />
+	</GameData>
+</TruckAddon>

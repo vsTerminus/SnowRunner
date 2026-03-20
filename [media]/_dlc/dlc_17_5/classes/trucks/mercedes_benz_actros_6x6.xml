@@ -1,0 +1,660 @@
+<_templates Include="trucks">
+	<Wheel>
+		<FirstAxle
+			ConnectedToHandbrake="false"
+			Location="front"
+			SteeringAngle="40"
+			SteeringCastor="0"
+			SteeringJointOffset="0.32"
+			Torque="full"
+			ParentFrame="BoneCabinTwist_cdt"
+		/>
+		<RearAxle
+			ConnectedToHandbrake="true"
+			Location="rear"
+			Torque="default"
+		/>
+	</Wheel>
+	<Body>
+		<TieRod Collisions="None" Mass="10" >
+			<Constraint
+				AxisLocal="(0; 0; 1)"
+				Type="Hinge"
+				MinLimit="-30"
+				MaxLimit="30"
+			>
+				<Motor Damping="1.0" Force="10" Tau="1" Type="Position"/>
+			</Constraint>
+		</TieRod>
+		<Sunshield Collisions="None" Mass="3">
+			<Constraint
+				AxisLocal="(0; 0; 1)"
+				Type="Hinge"
+				MinLimit="-1"
+				MaxLimit="20"
+			>
+				<Motor Damping=".1" Spring="10" Type="Spring" />
+			</Constraint>
+		</Sunshield>
+		<Stuff Collisions="None" Mass="8">
+			<Constraint
+				AxisLocal="(1; 0; 0)"
+				Type="Hinge"
+				MinLimit="-6"
+				MaxLimit="8"
+			>
+				<Motor Damping="0.2" Spring="3" Type="Spring" />
+			</Constraint>
+		</Stuff>
+		<Bottle Collisions="None" Mass="5">
+			<Constraint
+				AxisLocal="(1; 0; 0)"
+				Type="Prismatic"
+				MinLimit="-0.002"
+				MaxLimit="0.02"
+			>
+				<Motor Damping="0.2" Spring="3" Type="Spring" />
+			</Constraint>
+		</Bottle>
+	</Body>
+</_templates>
+<Truck>
+	<TruckData
+		BackSteerSpeed="0.025"
+		DiffLockType="Switchable"
+		EngineIconMesh="env/engine_mercedes_benz_actros_6x6"
+		EngineIconScale="1.0"
+		EngineMarkerOffset="(0; 0; 0)"
+		EngineStartDelay="0.7"
+		ExhaustStartTime="0.6"
+		FuelCapacity="180"
+		Responsiveness="0.32"
+		SteerSpeed="0.026"
+		TruckImage="mercedesBenzActrosmchr"
+		TruckType="OFFROAD"
+	>
+		<WinchUpgradeSocket Default="w_medium_trucks_default" IsUpgradable="true" Type="winches_medium_trucks" />
+		<Wheels
+			DefaultRim="mb_actros_rim_1"
+			DefaultTire="mb_actros_offroad_1"
+			DefaultWheelType="wheels_heavy_mercedes_benz_actros_6x6"
+		>
+			<Wheel _template="FirstAxle" Pos="(2.100; 0.614; 1.129)" />
+			<Wheel _template="FirstAxle" Pos="(2.100; 0.614; 1.129)" RightSide="true" />
+			<Wheel _template="RearAxle" Pos="(-1.671; 0.613; 1)" />
+			<Wheel _template="RearAxle" Pos="(-1.671; 0.613; 1)" RightSide="true" />
+			<Wheel _template="RearAxle" Pos="(-3.013; 0.613; 1)" />
+			<Wheel _template="RearAxle" Pos="(-3.013; 0.613; 1)" RightSide="true" />
+		</Wheels>
+		<SuspensionSocket
+			Default="mercedes_benz_actros_suspension_default"
+			Type="s_mercedes_benz_actros_6x6"
+			MaxWheelRadiusWithoutSuspension="0.58"
+		/>
+		<SteeringWheel Frame="BoneSteering" />
+		<SteeringRack Frame="BoneRack" FrameSteerLeft="BoneRackLeft" FrameSteerRight="BoneRackRight" RackHalfSizeZ="0.842" />
+		<Steam Origin="(2.543; 1.303; 0)" />
+		<SoundsWheels _template="Default" />
+		<SoundsDamage _template="Heavy" />
+		<Sounds
+			_template="Default"
+			DisableReversePitch="true"
+			MinDist="15.0"
+			Origin="(0.753; 1.030; 0)"
+		>
+			<Reverse		_inheritRemove="true" />
+			<EngineTrans	Sound="trucks/mercedes_benz_actros_6x6/mercedes_benz_actros_6x6_turbo" />
+			<Reverse		Sound="trucks/mercedes_benz_actros_6x6/mercedes_benz_actros_6x6_back_beeper" />
+			<BrakeRelease	Sound="trucks/common/truck_brake_release_alt2_rnd_set/truck_brake_release_alt2_rnd" />
+			<BrakesSqueal	Sound="trucks/mercedes_benz_actros_6x6/mercedes_benz_actros_6x6_brakes_squeal" />
+			<Handbrake		Sound="trucks/mercedes_benz_actros_6x6/mercedes_benz_actros_6x6_handbrake_on" />
+			<HandbrakeOff	Sound="trucks/mercedes_benz_actros_6x6/mercedes_benz_actros_6x6_handbrake_off" />
+			<Honk			Sound="trucks/mercedes_benz_actros_6x6/mercedes_benz_actros_6x6_honk" />
+			<EngineRev		Sound="" />
+			<EngineAccel	Sound="trucks/mercedes_benz_actros_6x6/mercedes_benz_actros_6x6_acc" />
+			<EngineStart	Sound="trucks/mercedes_benz_actros_6x6/mercedes_benz_actros_6x6_start" />
+			<EngineStop		Sound="trucks/mercedes_benz_actros_6x6/mercedes_benz_actros_6x6_stop" />
+			<EngineIdle		Sound="trucks/mercedes_benz_actros_6x6/mercedes_benz_actros_6x6_idle" />
+			<EngineIdle_2d	Sound="trucks/mercedes_benz_actros_6x6/mercedes_benz_actros_6x6_idle_2d"	IsSound2D="true" />
+			<EngineLow		Sound="trucks/mercedes_benz_actros_6x6/mercedes_benz_actros_6x6_low" />
+			<EngineLow_2d	Sound="trucks/mercedes_benz_actros_6x6/mercedes_benz_actros_6x6_low_2d"	IsSound2D="true" />
+			<EngineHigh		Sound="trucks/mercedes_benz_actros_6x6/mercedes_benz_actros_6x6_high" />
+			<EngineHigh_2d	Sound="trucks/mercedes_benz_actros_6x6/mercedes_benz_actros_6x6_high_2d"	IsSound2D="true" />
+			<EngineHeavy	Sound="" />
+			<EngineHeavy_2d	Sound=""	IsSound2D="true" />
+			<ChassisStress	Sound="trucks/common/truck_stress_rnd_set/truck_stress_rnd" />
+			<AbruptStop		Sound="trucks/common/truck_swing_big_rnd_set/truck_swing_big_rnd" />
+		</Sounds>
+		
+		<OcclusionMap HalfSizeZ="2.1" MinX="-4.2" MaxX="3.9" />
+		
+		<GearboxSocket Default="g_mercedes_benz_actros_default" Type="gearboxes_mercedes_benz_actros_6x6" />
+		
+		<FuelTank DamageCapacity="110" />
+		
+		<EngineSocket Default="us_truck_modern_engine_mercedes_actros_0" Type="e_us_truck_modern_mercedes_benz_actros_6x6" />
+		
+		<Driver Pos="(2.521; 2.049; 0.754)" SteeringWheelPos="(2.854; 2.398; 0.755)" AnimationSet="Truck" ParentFrame="BoneCabin_cdt" />
+		
+		<LimitedFluid Center="(0.232; 0.938; -0.778)" SizeX="1.004" SizeY="0.431" SizeZ="0.429" Type="Box" ParentFrame="BoneCabinTwist_cdt"/>
+		<Intake Dir="(1; 0; 0)" Origin="(3.600; 1.559; 0)" Size="0.5" />
+		
+		<Damage>
+			<DamageArea Type="Engine" Min="(1.893, 0.832, -0.379)" Max="(3.448, 1.742, 0.379)" ParentFrame="BoneCabinTwist_cdt" />
+			<DamageArea Type="FuelTank" Min="(-0.302, 0.687, -1.029)" Max="(0.769, 1.193, -0.527)" ParentFrame="BoneChassis_cdt" />
+			
+			<DamageArea Type="Gearbox" Min="(1.017; 0.836; -0.281)" Max="(2.045; 1.397; 0.281)" ParentFrame="BoneCabinTwist_cdt" />
+			<DamageArea Type="Gearbox" Min="(-0.341; 0.545; -0.336)" Max="(0.167; 1.286; 0.336)" ParentFrame="BoneCabinTwist_cdt" />
+		</Damage>
+		
+		<Dashboard>
+			<Gauge Damping="0.9" Dir="(-0.931; 0.364; 0)" InputRange="(0;125)" InputType="speed" Mesh="trucks/arrows/mercedes_benz_actros_6x6_arrow_1" Org="(3.290; 2.328; 0.869)" OutputAngles="(-125; 138)" />
+			<Gauge Damping="0.9" Dir="(-0.931; 0.364; 0)" InputRange="(0;1)" InputType="rpm" Mesh="trucks/arrows/mercedes_benz_actros_6x6_arrow_2" Org="(3.290; 2.328; 0.640)" OutputAngles="(-120; 120)" />
+			<Gauge Damping="0.9" Dir="(-0.931; 0.364; 0)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/mercedes_benz_actros_6x6_arrow_3" Org="(3.261; 2.253; 0.640)" OutputAngles="(-78; 42)" />
+			<Gauge Damping="0.9" Dir="(-0.931; 0.364; 0)" InputRange="(0;1)" InputType="fuel" Mesh="trucks/arrows/mercedes_benz_actros_6x6_arrow_4" Org="(3.261; 2.253; 0.870)" OutputAngles="(-78; 85)" />
+		</Dashboard>
+		
+		<Intake Dir="(1; 0; 0)" Origin="(3.629; 1.568; 0)" Size="0.5" />
+		
+		<Shafts>
+			<Shaft SocketPointA="Shaft1a" SocketPointB="Shaft1b" />
+			<Shaft SocketPointA="Shaft2a" SocketPointB="Shaft2b" />
+			<Shaft SocketPointA="Shaft3a" SocketPointB="Shaft3b" />
+			<Shaft SocketPointA="Shaft4a" SocketPointB="Shaft4b" />
+		</Shafts>
+		
+		<!-- VANILLA -->
+		<CompatibleWheels Type="wheels_heavy_mercedes_benz_actros_6x6" 			Scale="0.59" OffsetZ="-0.045" RearOffsetZ="-0.04" />
+		<CompatibleWheels Type="wheels_heavy_double1_mercedes_actros" 			Scale="0.59" OffsetZ="-0.045" RearOffsetZ="-0.045" />
+		<CompatibleWheels Type="wheels_heavy_double2_mercedes_actros" 			Scale="0.59" OffsetZ="-0.035" RearOffsetZ="-0.035" />
+		<!-- JAT -->
+		<CompatibleWheels Type="wheels_heavy_highway_double_mercedes_actros" 	Scale="0.59" OffsetZ="-0.045" RearOffsetZ="-0.04" />
+		<CompatibleWheels Type="wheels_heavy_allterrain_double_mercedes_actros" Scale="0.59" OffsetZ="-0.045" RearOffsetZ="-0.04" />
+		<CompatibleWheels Type="wheels_heavy_offroad_double_mercedes_actros" 	Scale="0.59" OffsetZ="-0.035" RearOffsetZ="-0.035" />
+		
+		<!-- VANILLA -->
+		<CompatibleWheels Type="wheels_heavy_mercedes_benz_actros_6x6" 			Scale="0.635" OffsetZ="-0.05" RearOffsetZ="-0.025" />
+		<CompatibleWheels Type="wheels_heavy_double1_mercedes_actros" 			Scale="0.635" OffsetZ="-0.035" RearOffsetZ="-0.035" />
+		<CompatibleWheels Type="wheels_heavy_double2_mercedes_actros" 			Scale="0.635" OffsetZ="-0.025" RearOffsetZ="-0.015" />
+		<!-- JAT -->
+		<CompatibleWheels Type="wheels_heavy_highway_double_mercedes_actros" 	Scale="0.635" OffsetZ="-0.05" RearOffsetZ="-0.025" />
+		<CompatibleWheels Type="wheels_heavy_allterrain_double_mercedes_actros" Scale="0.635" OffsetZ="-0.05" RearOffsetZ="-0.025" />
+		<CompatibleWheels Type="wheels_heavy_offroad_double_mercedes_actros" 	Scale="0.635" OffsetZ="-0.025" RearOffsetZ="-0.015" />
+		
+		<Camera Center="(-1.1; -0.25; 0)" RadiusMultiplier="1.2" ParentFrame="BoneCabin_cdt">
+			<Cockpit
+				_template="Default"
+				WindshieldDiffuseTexture="trucks/mercedes_benz_actros_6x6_glass__d_a.tga"
+				WindshieldShadingTexture="trucks/mercedes_benz_actros_6x6_glass__sh_d.tga"
+				
+				WindshieldDiffuseCleanAlpha="0.1"
+				
+				ViewPos="(2.406; 2.697; 0.755)"
+				LimitsVer="(-0.47; 0.3)"
+				LimitsHor="(-2.8; 1.5)"
+			>
+				<Rear ViewPosOffset="(0.10; 0.0; 0.60)" />
+				<Mirror
+					ClipDir="(-0.917; 0; -0.399)"
+					ClipOffset="0.1"
+					FOVScale="1"
+					MeshFrame="mirror_left_1"
+					ReflectionDir="(-0.917; 0.000; -0.399)"
+					Size="(0.230; 0.420)"
+					Pos="(2.997; 2.535; 1.406)"
+					
+				>
+					<SecondaryView
+						ClipDir="(-0.960; -0.237; -0.148)"
+						ClipOffset="0.1"
+						CurveAngle="40"
+						FOVScale="1"
+						MeshFrame="mirror_left_2"
+						Size="(0.180; 0.180)"
+						Pos="(2.984; 2.831; 1.386)"
+					/>
+				</Mirror>
+				<Mirror
+					ClipDir="(-0.772; 0.000; 0.636)"
+					ClipOffset="0.1"
+					FOVScale="1"
+					MeshFrame="mirror_right_1"
+					ReflectionDir="(-0.772; 0.000; 0.636)"
+					Size="(0.230; 0.420)"
+					Pos="(2.997; 2.535; -1.406)"
+				>
+					<SecondaryView
+						ClipDir="(-0.960; -0.237; -0.148)"
+						ClipOffset="0.1"
+						CurveAngle="40"
+						FOVScale="1"
+						MeshFrame="mirror_right_2"
+						Size="(0.180; 0.180)"
+						Pos="(2.984; 2.831; -1.386)"
+					/>
+				</Mirror>
+				<Mirror
+					ClipDir="(0; -0.853; 0.522)"
+					ReflectionDir="(0; -0.853; 0.522)"
+					ClipOffset="0.1"
+					CurveAngle="20"
+					FOVScale="2.5"
+					MeshFrame="mirror_top"
+					Size="(0.32; 0.22)"
+					Pos="(2.631; 2.936; -1.283)"
+				/>
+			</Cockpit>
+		</Camera>
+		<Axles>
+			<Axle Frame="BoneAxle1" ParentFrame="BoneCabinTwist_cdt"/>
+			<Axle Frame="BoneAxle2" ParentFrame="BoneChassis_cdt"/>
+			<Axle Frame="BoneAxle3" ParentFrame="BoneChassis_cdt"/>
+		</Axles>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/mercedes_benz_actros_6x6">
+		<NetSync Legacy="false" />
+		<Body
+			Collisions="Default"
+			ImpactType="Truck"
+			Mass="2700"
+			ModelFrame="BoneChassis_cdt"
+			NetSync="pv"
+			CenterOfMassOffset="(-0.35; -0.1; 0)"
+		>
+			<Body
+				Collisions="Default"
+				ImpactType="Truck"
+				Mass="1500"
+				ModelFrame="BoneChassisWeighter_cdt"
+				NetSync="pv"
+				CenterOfMassOffset="(-0.15; -0.2; 0)"
+			>
+				<Constraint	Type="Fixed" />
+			</Body>
+			<Body
+				Collisions="Default"
+				ImpactType="Truck"
+				Mass="1450"
+				ModelFrame="BoneCabinTwist_cdt"
+				NetSync="pv"
+				CenterOfMassOffset="(-0.2; -0.1; 0)"
+			>
+				<Constraint
+					AxisLocal="(1; 0; 0)"
+					Type="Hinge"
+					MinLimit="-6.5"
+					MaxLimit="6.5"
+				>
+					<Motor Damping="150000" Spring="540000" Type="Spring" />
+				</Constraint>
+				<Body
+					Collisions="Default"
+					ImpactType="Truck"
+					Mass="4950"
+					ModelFrame="BoneCabin_cdt"
+					NetSync="pv"
+					CenterOfMassOffset="(0.0; -0.15; 0)"
+				>
+					<Constraint	Type="Fixed" />
+					
+					<Body _template="Sunshield" ModelFrame="BoneSunshield1_cdt" />
+					<Body _template="Stuff" ModelFrame="BoneStuff_cdt" />
+					<Body _template="Bottle" ModelFrame="BoneBottle_cdt" />
+					
+					<Body
+						CenterOfMassOffset="(0; 0; 0)"
+						Collisions="None"
+						Mass="10"
+						ModelFrame="BoneAirFreshener_cdt"
+					>
+						<Constraint
+							Cone="15"
+							PivotOffset="(0; 0; 0)"
+							PlaneAxisLocal="(1; 0; 0)"
+							TwistAxisLocal="(0; 0; 1)"
+							Type="Ragdoll"
+							PlaneMin="-60"
+							TwistMin="-50"
+							PlaneMax="50"
+							TwistMax="0"
+						>
+							<TwistMotor Damping="0.1" Spring="0.1" Type="Spring" />
+							<PlaneMotor Damping="0.1" Spring="0.1" Type="Spring" />
+							<ConeMotor Damping="0.1" Spring="0.1" Type="Spring" />
+						</Constraint>
+					</Body>
+				</Body>
+				<Body ModelFrame="BoneTieRod1_1_cdt" Collisions="None" Mass="1">
+					<Constraint
+						Name="TieRod1Rocker"
+						Type="Hinge"
+						AxisLocal="(0; 0; 1)"
+						MinLimit="-25"
+						MaxLimit="16"
+					>
+						<Motor
+							Type="Position"
+							Damping="1.0"
+							Force="6000"
+							Tau="1"
+						/>
+					</Constraint>
+				</Body>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<StopSignals>
+			<Light _template="StopSignal" Pos="(-4.002; 0.892; 0)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="StopSignal" AspectRatio="3" Color="g(255; 0; 0) x 0.3" Size="0.3" Pos="(-3.960; 0.910; 0.990)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="StopSignal" AspectRatio="3" Color="g(255; 0; 0) x 0.3" Size="0.3" Pos="(-3.960; 0.910; -0.990)" ParentFrame="BoneChassis_cdt" />
+		</StopSignals>
+		<ReverseSignals>
+			<Light _template="ReverseSignal" Pos="(-4.002; 0.892; 0)" />
+			<Flare _template="ReverseSignal" Color="g(245; 235; 220) x 0.6" Size="0.4" Pos="(-3.960; 0.911; 0.819)" />
+			<Flare _template="ReverseSignal" Color="g(245; 235; 220) x 0.6" Size="0.4" Pos="(-3.960; 0.911; -0.819)" />
+			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.05" Dir="(-1; 0; 0)" Size="0.4" Pos="(-3.960; 0.911; 0.819)" />
+			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.05" Dir="(-1; 0; 0)" Size="0.4" Pos="(-3.960; 0.911; -0.819)" />
+		</ReverseSignals>
+		<Ignition>
+			<Light _template="IgnitionSignalRed" Pos="(-4.541; 0.439; 0)" />
+			
+			<Flare _template="IgnitionSignalRed" Size="0.3" Pos="(-3.960; 0.910; 0.990)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="IgnitionSignalRed" Size="0.3" Pos="(-3.960; 0.910; -0.990)" ParentFrame="BoneChassis_cdt" />
+		</Ignition>
+	</ModelAttachments>
+	<Landmark Mesh="landmarks/mercedes_benz_actros_6x6_lmk" MinScale="1.8" MaxScale="3.2" />
+	<GameData
+		Country="US,NE,CAS,CE,WA"
+		Price="121000"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+		ExcludeAddons="pacific_p16_trailer_log_pole, trailer_log_pole_zikz_612h"
+	>
+		<WinchSocket Pos="(-0.810; 1.152; 0.395)" />
+		<WinchSocket Pos="(-0.810; 1.152; -0.395)" />
+		<WinchSocket Pos="(-3.955; 1.121; 0)" />
+		<WinchSocket Pos="(-4.042; 0.524; 1.054)" />
+		<WinchSocket Pos="(-4.042; 0.524; -1.054)" />
+		
+		<CraneSocket Pos="(-0.810; 1.152; 0.395)" />
+		<CraneSocket Pos="(-0.810; 1.152; -0.395)" />
+		<CraneSocket Pos="(-3.955; 1.121; 0)" />
+		<CraneSocket Pos="(-4.042; 0.524; 1.054)" />
+		<CraneSocket Pos="(-4.042; 0.524; -1.054)" />
+		
+		<UiDesc
+			UiDesc="UI_VEHICLE_MERCEDES_ACTROS_DESC"
+			UiIcon30x30="offroadVehicleImg30"
+			UiIcon328x458="shopImgMercedesBenzActros"
+			UiIcon40x40="offroadVehicleImg"
+			UiIconLogo="MercedesLogo80"
+			UiName="UI_VEHICLE_MERCEDES_ACTROS_NAME"
+		/>
+		<!-- GARAGE ADDON CAMERAS -->
+		<CustomizationCameras>
+			<!-- MAIN CAMERAS -->
+			<CameraPos FOV="32.0" Name="default" InterestPosition="(5; 1.6; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(12.800; 1.4; -3.860)" />
+			<CameraPos FOV="32.0" Name="wheels" InterestPosition="(4; 0.64; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(9.900; 1; -5.650)" />
+			<CameraPos FOV="32.0" Name="side_r" InterestPosition="(2.600; 3.08; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-0.680; 4.810; -4.570)" />
+			<CameraPos FOV="32.0" Name="side_l" InterestPosition="(6.270; 2.28; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(11.870; 5.280; -4.550)" />
+			<CameraPos FOV="32.0" Name="rear" 	InterestPosition="(5.000; 2; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="1" Position="(-2; 2.5; 4)" />
+			<CameraPos FOV="32.0" Name="roof" 	InterestPosition="(6.5; 3; -0.5)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(11; 5.8; -2.8)" />
+			<CameraPos FOV="32.0" Name="hoods_default" InterestPosition="(5.720; 1.730; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(13.580; 1.4; -3.860)" />
+			<!-- ADDONS -->
+			<CameraPos FOV="32.0" Name="fenders" InterestPosition="(0.000; 1.270; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-10.85; 4.140; 5)" />
+			<CameraPos FOV="32.0" Name="addon_1" InterestPosition="(2.100; 1.690; -0.300)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-7.800; 4.27; 7)" />
+			<CameraPos FOV="32.0" Name="addon_2" InterestPosition="(3.920; 2.340; -1.150)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(9.630; 4.330; 1.440)" />
+			<CameraPos FOV="32.0" Name="snorkels" InterestPosition="(5.600; 2.000; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(0.000; 2.500; -4.00)" />
+			<CameraPos FOV="32.0" Name="snorkel" InterestPosition="(7; 2.200; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(1; 3.5; 5)" />
+			<CameraPos FOV="32.0" Name="exhaust" InterestPosition="(5.6; 2.3; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(4.5; 3.700; -5.5)" />
+			<!-- STICKERS -->
+			<CameraPos FOV="32.0" Interior="true" Name="glass_sticker" 	InterestPosition="(5.930; 2.200; -1.060)" Position="(10.340; 3.200; 1.300)" />
+			<CameraPos FOV="32.0" Interior="true" Name="door_r_sticker" InterestPosition="(7.800; 1.850; 0.500)" Position="(5.00; 1.950; 3.700)" />
+			<CameraPos FOV="32.0" Interior="true" Name="door_l_sticker" InterestPosition="(5.600; 1.870; -0.500)" Position="(5.40; 1.970; -3.800)" />
+			<CameraPos FOV="32.0" Interior="true" Name="sticker_1" 		InterestPosition="(7.77; 0.665; 1.516)" Position="(6.308; 2.828; -0.691)" />
+			<CameraPos FOV="32.0" Interior="true" Name="sticker_2" 		InterestPosition="(7.619; 0.375; 1.798)" Position="(6.446; 3.146; 0.187)" />
+			<CameraPos FOV="32.0" Interior="true" Name="sticker_3" 		InterestPosition="(7.125; 2.093; 2.633)" Position="(6.572; 2.727; 0.192)" />
+			<CameraPos FOV="32.0" Interior="true" Name="sticker_4" 		InterestPosition="(8.348; 2.338; -1.392)" Position="(6.572; 2.727; 0.192)" />
+			<!-- STUFF -->
+			<CameraPos FOV="32.0" Interior="true" Name="bubble_head" 	InterestPosition="(8.130; 1.700; 1.400)" Position="(5.900; 2.700; -0.500)" />
+			<CameraPos FOV="32.0" Interior="true" Name="curtain" 		InterestPosition="(8.130; 3.000; 1.400)" Position="(5.800; 2.400; -0.700)" />
+			<CameraPos FOV="32.0" Interior="true" Name="mirror_mount" 	InterestPosition="(7.237; 3.078; 0.826)" Position="(6.053; 2.464; 0.274)" />
+		</CustomizationCameras>
+		
+		<!-- VISUAL ADDONS -->
+		<AddonSockets DefaultAddon="mercedes_benz_actros_6x6_bumper_default">
+			<Socket Names="MercedesBenzActrosBumper" Offset="(0; 0; 0)" ParentFrame="BoneCabinTwist_cdt" />
+		</AddonSockets>
+		<AddonSockets DefaultAddon="mercedes_benz_actros_6x6_exhaust_default">
+			<Socket Names="MercedesBenzActrosExhaust" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt">
+				<ExtraParent Frame="BoneCabinTwist_cdt" Offset="(0; 0; 0)" />
+			</Socket>
+		</AddonSockets>
+		<AddonSockets DefaultAddon="mercedes_benz_actros_6x6_snorkel_default" >
+			<Socket Names="MercedesBenzActrosSnorkel" Offset="(0; 0; 0)" ParentFrame="BoneCabinTwist_cdt" />
+		</AddonSockets>
+		<AddonSockets >
+			<Socket Names="MercedesBenzActrosProtection" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets >
+			<Socket Names="MercedesBenzActrosRoofrack" Offset="(0; 0; 0)" NamesBlock="MercedesBenzActrosHorn1" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="MercedesBenzActrosBeacon" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets >
+			<Socket Names="MercedesBenzActrosHorn" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="MercedesBenzActrosHorn1" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets >
+			<Socket Names="MercedesBenzActrosVisor" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets >
+			<Socket Names="MercedesBenzActrosTop" Offset="(0; 0; 0)" NamesBlock="MercedesBenzActrosSpotlight, MercedesBenzActrosVisor, MercedesBenzActrosBeacon, MercedesBenzActrosRoofrack, MercedesBenzActrosHorn1" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets >
+			<Socket Names="MercedesBenzActrosSpotlight" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		
+		<!-- DIFF LOCK -->
+		<AddonSockets DefaultAddon="mercedes_benz_actros_6x6_diff_lock_default">
+			<Socket Names="MercedesActrosDiffLock" Offset="(0; 0; 0)" />
+		</AddonSockets>
+		
+		<!-- CRANES -->
+		<AddonSockets>
+			<Socket
+				Names="LogLiftPaderaSTD4"
+				Offset="(-0.6; -0.08; 0)"
+				ParentFrame="BoneCabinTwist_cdt"
+				NamesBlock="FrameAddonTank, FrameAddonLogShort, BigCraneUs, FrameAddon, FrameAddonSeismicVibratorPaderaSTD4, FrameAddonKung, SaddleMotorized"
+			>
+				<ExtraParent Frame="BoneCabinTwist_cdt" Offset="(0; -0.15; -0.04)" />
+				<ExtraParent Frame="BoneCabinTwist_cdt" Offset="(0; -0.15; 0.04)" />
+			</Socket>
+			<Socket
+				Names="MinicraneUS"
+				Offset="(0.55; 1.28; 0)"
+				ParentFrame="BoneCabinTwist_cdt"
+				NamesBlock="FrameAddonTank, FrameAddonLogShort, BigCraneUs, FrameAddon, FrameAddonSeismicVibratorPaderaSTD4, FrameAddonKung, SaddleMotorized"
+			/>
+		</AddonSockets>
+		
+		<!-- FRAME ADDONS -->
+		<AddonSockets>
+			<Socket Names="FrameAddon" Offset="(-1.4; 1.280; 0)" NamesBlock="" ParentFrame="BoneChassis_cdt">
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.1)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.1)" />
+				<AddonsShift Offset="(-0.7; 0; 0)" Types="LogLiftPaderaSTD4" />
+			</Socket>
+			<Socket Names="FrameAddonTank" NamesBlock="" Offset="(-2.250; 1.280; 0)" ParentFrame="BoneChassis_cdt">
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.05)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.05)" />
+			</Socket>
+			<Socket Names="FrameAddonKung" NamesBlock="" Offset="(-1.9; 1.36; 0)" ParentFrame="BoneChassis_cdt">
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(-0.15; 0; -0.05)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(-0.15; 0; 0.05)" />
+			</Socket>
+			<Socket Names="FrameAddonSeismicVibratorPaderaSTD4" NamesBlock="" Offset="(0.8; 1.280; -0.000)" ParentFrame="BoneChassis_cdt"/>
+			<Socket Names="SaddleLow" Offset="(-2.342; 1.280; 0)" ParentFrame="BoneChassis_cdt" >
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.045)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.045)" />
+			</Socket>
+			<Socket Names="FrameAddonLogShort" NamesBlock="" Offset="(-1.276; 1.280; 0)" ParentFrame="BoneChassis_cdt"/>
+			<Socket Names="BunkLog" Offset="(-5.8; 1.280; 0)" NamesBlock="" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="BigCraneUs" NamesBlock="MercedesBenzActrosTop, MercedesBenzActrosRoofrack, MercedesBenzActrosBeacon" Offset="(-1.900; 1.280; 0)">
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.05)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.05)" />
+			</Socket>
+			<Socket Names="SaddleMotorized" Offset="(-1.75; -0.03; 0.000)" NamesBlock="" ParentFrame="BoneChassis_cdt" >
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.000; 0.000; 0.08)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.000; 0.000; -0.08)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(1.100; 0.000; 0.07)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(1.100; 0.000; -0.07)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(1.100; 0.000; 0.000)" />
+			</Socket>
+		</AddonSockets>
+		
+		<!-- TRAILERS -->
+		<AddonSockets>
+			<Socket Names="Trailer, LogTrailer" Offset="(-3.955; 1.121; 0)" />
+			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-2.352; 1.619; 0)" />
+			<Socket Names="SemitrailerFoldableLog" Offset="(-3.1; 1.65; 0)" />
+		</AddonSockets>
+		
+		<!-- CUSTMIZATION -->
+		<AddonSockets>
+			<Socket
+				InCockpit="true"
+				Names="StuffDashboard"
+				Offset="(3.208; 2.370; 0)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket
+				InCockpit="true"
+				Names="StuffAirfreshener"
+				Offset="(3.273; 3.068; 0)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="MercedesBenzActrosStuffCurtain" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="MercedesBenzActrosSticker_Door_L" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="MercedesBenzActrosSticker_Door_R" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="MercedesBenzActrosSticker_Glass_Top" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="MercedesBenzActrosSticker_Glass_Bottom" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="MercedesBenzActrosSticker_1x1_01" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="MercedesBenzActrosSticker_1x1_02" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="MercedesBenzActrosSticker_1x1_03" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="MercedesBenzActrosSticker_1x1_04" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="MercedesBenzActrosSticker_1x2_01" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="MercedesBenzActrosSticker_1x4_01" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+	</GameData>
+	
+	<ControlledConstraints>
+		<Constraint Id="chassis_steer" IsLinkedSteering="true" Name="TieRod1Rocker" />
+	</ControlledConstraints>
+	
+	<AutomaticIK>
+		<IKBone ModelFrame="BoneTieRod1_2" ParentFrame="BoneTieRod1_1_cdt">
+			<IKJoint AxisLocal="(1; 0; 0)" Type="Hinge2" />
+			<IKBone ModelFrame="BoneTieRod1_3" AttachToFrame="BoneRackLeft" AttachOffset="(0; 0; 0)" >
+				<IKJoint AxisLocal="(-1; 0; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<!-- Suspension -->		
+		<IKBone ModelFrame="BoneFrontSuspension1_1" ParentFrame="BoneCabinTwist_cdt">
+			<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
+
+			<IKBone ModelFrame="BoneFrontSuspension1_2" ParentFrame="BoneFrontSuspension1_1">
+				<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
+
+				<IKBone
+					ModelFrame="BoneFrontSuspension1_3"
+					AttachToFrame="BoneAxle1"
+					AttachOffset="(0; 0; 0)"
+				>
+					<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
+				</IKBone>
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="BoneRearSuspension1_1" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
+
+			<IKBone ModelFrame="BoneRearSuspension1_2" ParentFrame="BoneRearSuspension1_1">
+				<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
+
+				<IKBone
+					ModelFrame="BoneRearSuspension1_3"
+					AttachToFrame="BoneAxle3"
+					AttachOffset="(0; 0; 0)"
+				>
+					<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
+				</IKBone>
+			</IKBone>
+		</IKBone>
+		<!-- Rear IK -->
+		<IKBone ModelFrame="BoneRightRearIK1_1" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle2"
+				ModelFrame="BoneRightRearIK1_2"
+			>
+				<IKJoint AxisLocal="(1; 0; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="BoneLeftRearIK1_1" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle2"
+				ModelFrame="BoneLeftRearIK1_2"
+			>
+				<IKJoint AxisLocal="(1; 0; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="BoneRightRearIK2_1" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle3"
+				ModelFrame="BoneRightRearIK2_2"
+			>
+				<IKJoint AxisLocal="(1; 0; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="BoneLeftRearIK2_1" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle3"
+				ModelFrame="BoneLeftRearIK2_2"
+			>
+				<IKJoint AxisLocal="(1; 0; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+	</AutomaticIK>
+</Truck>

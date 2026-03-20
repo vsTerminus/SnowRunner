@@ -1,0 +1,87 @@
+<_templates>
+	<Engine>
+		<USTruckModernEngine BrakesDelay="0.5" MaxDeltaAngVel="0.01" />
+	</Engine>
+</_templates>
+<EngineVariants>
+	<Engine
+		CriticalDamageThreshold="0.5"
+		DamageCapacity="200"
+		DamagedConsumptionModifier="1.48"
+		EngineResponsiveness="0.063"
+		FuelConsumption="6.1"
+		Name="us_truck_modern_engine_mercedes_zetros_0"
+		Torque="211690"
+		DamagedMinTorqueMultiplier="1.0"
+		DamagedMaxTorqueMultiplier="0.9"
+		BrakesDelay="0.35"
+		MaxDeltaAngVel="3.2"
+	>
+		<GameData
+			Price="15200"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_ENGINE_US_MERCEDES_ZETROS_0_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_ENGINE_US_MERCEDES_ZETROS_0_NAME"
+			/>
+		</GameData>
+	</Engine>
+	
+	<Engine
+		CriticalDamageThreshold="0.57"
+		DamageCapacity="210"
+		DamagedConsumptionModifier="1.35"
+		EngineResponsiveness="0.058"
+		FuelConsumption="6.8"
+		Name="us_truck_modern_engine_mercedes_zetros_1"
+		Torque="222780"
+		DamagedMinTorqueMultiplier="1.0"
+		DamagedMaxTorqueMultiplier="0.86"
+		BrakesDelay="0.42"
+		MaxDeltaAngVel="3.5"
+	>
+		<GameData
+			Price="17800"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_ENGINE_US_MERCEDES_ZETROS_1_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_ENGINE_US_MERCEDES_ZETROS_1_NAME"
+			/>
+		</GameData>
+	</Engine>
+	
+	<Engine
+		CriticalDamageThreshold="0.61"
+		DamageCapacity="230"
+		DamagedConsumptionModifier="1.24"
+		EngineResponsiveness="0.07"
+		FuelConsumption="7.4"
+		Name="us_truck_modern_engine_mercedes_zetros_2"
+		Torque="245500"
+		DamagedMinTorqueMultiplier="1.0"
+		DamagedMaxTorqueMultiplier="0.78"
+		BrakesDelay="0.4"
+		MaxDeltaAngVel="3.95"
+	>
+		<GameData
+			Price="19500"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_ENGINE_US_MERCEDES_ZETROS_2_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_ENGINE_US_MERCEDES_ZETROS_2_NAME"
+			/>
+		</GameData>
+	</Engine>
+</EngineVariants>

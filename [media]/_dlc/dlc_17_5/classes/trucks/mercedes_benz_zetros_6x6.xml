@@ -1,0 +1,751 @@
+<_templates Include="trucks">
+	<Wheel>
+		<FirstAxle
+			Location="front"
+			SteeringAngle="40"
+			SteeringCastor="0.0"
+			SteeringJointOffset="0.27"
+			Torque="full"
+			ParentFrame="BoneCabinTwist_cdt"
+		/>
+		<RearAxle
+			ConnectedToHandbrake="true"
+			Location="rear"
+			Torque="default"
+		/>
+	</Wheel>
+	<Body>
+		<Stuff Collisions="None" Mass="8">
+			<Constraint
+				AxisLocal="(1; 0; 0)"
+				Type="Hinge"
+				MinLimit="-6"
+				MaxLimit="8"
+			>
+				<Motor Damping="0.2" Spring="3" Type="Spring" />
+			</Constraint>
+		</Stuff>
+		<Sunshield Collisions="None" Mass="3">
+			<Constraint
+				AxisLocal="(0; 0; 1)"
+				Type="Hinge"
+				MinLimit="-20"
+				MaxLimit="1"
+			>
+				<Motor Damping=".1" Spring="10" Type="Spring" />
+			</Constraint>
+		</Sunshield>
+		<Mudguard Collisions="None" Mass="5">
+			<Constraint
+				AxisLocal="(0; 0; 1)"
+				Type="Hinge"
+				MinLimit="-4"
+				MaxLimit="18"
+			>
+				<Motor Damping="3" Spring="5" Type="Spring" />
+			</Constraint>	
+		</Mudguard>
+		<MudguardRear Collisions="None" Mass="5">
+			<Constraint
+				AxisLocal="(0; 0; 1)"
+				Type="Hinge"
+				MinLimit="-30"
+				MaxLimit="10"
+			>
+				<Motor Damping="3" Spring="5" Type="Spring" />
+			</Constraint>	
+		</MudguardRear>
+		<TieRod Collisions="None" Mass="10" >
+			<Constraint
+				AxisLocal="(0; 0; 1)"
+				Type="Hinge"
+				MinLimit="-30"
+				MaxLimit="30"
+			>
+				<Motor Damping="1.0" Force="10" Tau="1" Type="Position"/>
+			</Constraint>
+		</TieRod>
+	</Body>
+</_templates>
+<Truck>
+	<TruckData
+		BackSteerSpeed="0.023"
+		DiffLockType="Connected"
+		EngineIconMesh="env/engine_mercedes_benz_zetros_6x6"
+		EngineIconScale="1.0"
+		EngineMarkerOffset="(0; 0; 0)"
+		EngineStartDelay="0.7"
+		ExhaustStartTime="0.6"
+		FuelCapacity="360"
+		Responsiveness="0.2"
+		SteerSpeed="0.0245"
+		TruckImage="mercedesBenzZetrosmchr"
+		TruckType="OFFROAD"
+	>
+		<WinchUpgradeSocket Default="w_medium_trucks_default" IsUpgradable="true" Type="winches_medium_trucks" />
+		<Wheels
+			DefaultRim="mb_zetros_rim_1"
+			DefaultTire="mb_zetros_mudtires_1"
+			DefaultWheelType="wheels_heavy_mercedes_benz_zetros_6x6"
+		>
+			<Wheel _template="FirstAxle" Pos="(3.060; 0.648; 0.997)" />
+			<Wheel _template="FirstAxle" Pos="(3.060; 0.648; 0.997)" RightSide="true" />
+			<Wheel _template="RearAxle" Pos="(-1.727; 0.650; 0.997)" />
+			<Wheel _template="RearAxle" Pos="(-1.727; 0.650; 0.997)" RightSide="true" />
+			<Wheel _template="RearAxle" Pos="(-3.185; 0.650; 0.997)" />
+			<Wheel _template="RearAxle" Pos="(-3.185; 0.650; 0.997)" RightSide="true" />
+		</Wheels>
+		<SuspensionSocket
+			Default="mercedes_benz_zetros_suspension_default"
+			Type="s_mercedes_benz_zetros_6x6"
+			MaxWheelRadiusWithoutSuspension="0.6"
+		/>
+		<SteeringWheel Frame="BoneSteering" />
+		<SteeringRack Frame="BoneRack" FrameSteerLeft="BoneRackLeft" FrameSteerRight="BoneRackRight" RackHalfSizeZ="0.818" />
+		<Steam Origin="(3.400; 1.150; 0.052)" />
+		<SoundsWheels _template="Default" />
+		<SoundsDamage _template="Heavy" />
+		<Sounds
+			_template="Default"
+			DisableReversePitch="true"
+			MinDist="15.0"
+			Origin="(3.101; 1.240; 0.019)"
+		>
+			<Reverse		_inheritRemove="true" />
+			<EngineTrans	Sound="trucks/mercedes_benz_zetros_6x6/mercedes_benz_zetros_6x6_turbo" />
+			<Reverse		Sound="trucks/mercedes_benz_zetros_6x6/mercedes_benz_zetros_6x6_back_beeper" />
+			<BrakeRelease	Sound="trucks/common/truck_brake_release_alt2_rnd_set/truck_brake_release_alt2_rnd" />
+			<BrakesSqueal	Sound="trucks/mercedes_benz_zetros_6x6/mercedes_benz_zetros_6x6_brakes_squeal" />
+			<Handbrake		Sound="trucks/mercedes_benz_zetros_6x6/mercedes_benz_zetros_6x6_handbrake_on" />
+			<HandbrakeOff	Sound="trucks/mercedes_benz_zetros_6x6/mercedes_benz_zetros_6x6_handbrake_off" />
+			<Honk			Sound="trucks/mercedes_benz_zetros_6x6/mercedes_benz_zetros_6x6_honk" />
+			<EngineRev		Sound="trucks/mercedes_benz_zetros_6x6/mercedes_benz_zetros_6x6_rev" />
+			<EngineAccel	Sound="trucks/mercedes_benz_zetros_6x6/mercedes_benz_zetros_6x6_acc" />
+			<EngineStart	Sound="trucks/mercedes_benz_zetros_6x6/mercedes_benz_zetros_6x6_start" />
+			<EngineStop		Sound="trucks/mercedes_benz_zetros_6x6/mercedes_benz_zetros_6x6_stop" />
+			<EngineIdle		Sound="trucks/mercedes_benz_zetros_6x6/mercedes_benz_zetros_6x6_idle" />
+			<EngineIdle_2d	Sound="trucks/mercedes_benz_zetros_6x6/mercedes_benz_zetros_6x6_idle_2d"	IsSound2D="true" />
+			<EngineLow		Sound="trucks/mercedes_benz_zetros_6x6/mercedes_benz_zetros_6x6_low" />
+			<EngineLow_2d	Sound="trucks/mercedes_benz_zetros_6x6/mercedes_benz_zetros_6x6_low_2d"	IsSound2D="true" />
+			<EngineHigh		Sound="trucks/mercedes_benz_zetros_6x6/mercedes_benz_zetros_6x6_high" />
+			<EngineHigh_2d	Sound="trucks/mercedes_benz_zetros_6x6/mercedes_benz_zetros_6x6_high_2d"	IsSound2D="true" />
+			<EngineHeavy	Sound="trucks/mercedes_benz_zetros_6x6/mercedes_benz_zetros_6x6_heavy" />
+			<EngineHeavy_2d	Sound="trucks/mercedes_benz_zetros_6x6/mercedes_benz_zetros_6x6_heavy_2d"	IsSound2D="true" />
+			<ChassisStress	Sound="trucks/common/truck_stress_rnd_set/truck_stress_rnd" />
+			<AbruptStop		Sound="trucks/common/truck_swing_big_rnd_set/truck_swing_big_rnd" />
+		</Sounds>
+		
+		<OcclusionMap HalfSizeZ="2" MinX="-4.5" MaxX="5" />
+		
+		<GearboxSocket Default="g_mercedes_zetros_default" Type="gearboxes_mercedes_benz_zetros_6x6" />
+		
+		<FuelTank DamageCapacity="110" />
+		
+		<EngineSocket Default="us_truck_modern_engine_mercedes_zetros_0" Type="e_us_truck_modern_mercedes_benz_zetros_6x6" />
+		
+		<Driver Pos="(1.768; 1.946; 0.631)" SteeringWheelPos="(2.095; 2.275; 0.625)" AnimationSet="Truck" ParentFrame="BoneCabin_cdt" />
+		
+		<LimitedFluid Center="(-0.087; 0.994; 0.853)" SizeX="1.101" SizeY="0.461" SizeZ="0.549" Type="Box" ParentFrame="BoneCabinTwist_cdt"/>
+		<LimitedFluid Center="(0.285; 0.997; -0.852)" SizeX="1.101" SizeY="0.461" SizeZ="0.549" Type="Box" ParentFrame="BoneCabinTwist_cdt"/>
+		
+		<Damage>
+			<DamageArea Type="Engine" Min="(2.780, 0.931, -0.369)" Max="(4.283, 1.897, 0.369)" ParentFrame="BoneCabinTwist_cdt" />
+			<DamageArea Type="FuelTank" Min="(-0.339, 0.697, -1.188)" Max="(0.904, 1.283, -0.499)" ParentFrame="BoneCabinTwist_cdt" />
+			<DamageArea Type="FuelTank" Min="(-0.705, 0.697, 0.502)" Max="(0.538, 1.283, 1.191)" ParentFrame="BoneCabinTwist_cdt" />
+			<DamageArea Type="Gearbox" Min="(1.551; 0.736; -0.300)" Max="(2.322; 1.323; 0.300)" ParentFrame="BoneCabinTwist_cdt" />
+			<DamageArea Type="Gearbox" Min="(0.151; 0.543; -0.278)" Max="(0.922; 1.316; 0.278)" ParentFrame="BoneCabinTwist_cdt" />
+		</Damage>
+		
+		<Dashboard>
+			<Gauge Damping="0.9" Dir="(-0.926; 0.376; 0)" InputRange="(0;140)" InputType="speed" Mesh="trucks/arrows/mercedes_benz_zetros_6x6_arrow_1" Org="(2.570; 2.194; 0.733)" OutputAngles="(-110; 113)" />
+			<Gauge Damping="0.9" Dir="(-0.926; 0.376; 0)" InputRange="(0;1)" InputType="rpm" Mesh="trucks/arrows/mercedes_benz_zetros_6x6_arrow_1" Org="(2.570; 2.194; 0.515)" OutputAngles="(-110; 113)" />
+			<Gauge Damping="0.9" Dir="(-0.926; 0.376; 0)" InputRange="(0;1)" InputType="fuel" Mesh="trucks/arrows/mercedes_benz_zetros_6x6_arrow_2" Org="(2.552; 2.151; 0.751)" OutputAngles="(-110; 102)" />
+			<Gauge Damping="0.9" Dir="(-0.926; 0.376; 0)" InputRange="(0;1)" InputType="fuel" Mesh="trucks/arrows/mercedes_benz_zetros_6x6_arrow_2" Org="(2.552; 2.151; 0.497)" OutputAngles="(-110; 102)" />
+		</Dashboard>
+		
+		<Intake Dir="(1; 0; 0)" Origin="(4.338; 1.603; 0)" Size="0.5" />
+		
+		<Shafts>
+			<Shaft SocketPointA="Shaft1a" SocketPointB="Shaft1b" />
+			<Shaft SocketPointA="Shaft2a" SocketPointB="Shaft2b" />
+			<Shaft SocketPointA="Shaft3a" SocketPointB="Shaft3b" />
+			<Shaft SocketPointA="Shaft4a" SocketPointB="Shaft4b" />
+		</Shafts>
+		
+		<!-- VANILLA -->
+		<CompatibleWheels Type="wheels_heavy_mercedes_benz_zetros_6x6" Scale="0.59" OffsetZ="0.04" RearOffsetZ="-0.04" />
+		<CompatibleWheels Type="wheels_heavy_single_mercedes_zetros" Scale="0.59" OffsetZ="0.03" />
+		<CompatibleWheels Type="wheels_heavy_single2_mercedes_zetros" Scale="0.59" OffsetZ="0.1" />
+		<CompatibleWheels Type="wheels_heavy_mudtires_tayga_mercedes_zetros" Scale="0.59" OffsetZ="0.17" /> 
+		
+		<CompatibleWheels Type="wheels_heavy_mercedes_benz_zetros_6x6" Scale="0.615" OffsetZ="0.03" RearOffsetZ="-0.05" />
+		<CompatibleWheels Type="wheels_heavy_single_mercedes_zetros" Scale="0.615" OffsetZ="0.04" />
+		<CompatibleWheels Type="wheels_heavy_single2_mercedes_zetros" Scale="0.615" OffsetZ="0.11" />
+		
+		<!-- JAT -->
+		<CompatibleWheels Type="wheels_heavy_mudtires_single_mercedes_zetros" Scale="0.59" OffsetZ="0.1" />
+		<CompatibleWheels Type="wheels_heavy_mudtires_single2_mercedes_zetros" Scale="0.59" OffsetZ="0.08" />
+		<CompatibleWheels Type="wheels_heavy_offroad_single_mercedes_zetros" Scale="0.59" OffsetZ="0.03" />
+		
+		<CompatibleWheels Type="wheels_heavy_mudtires_single_mercedes_zetros" Scale="0.615" OffsetZ="0.11" />
+		<CompatibleWheels Type="wheels_heavy_mudtires_single2_mercedes_zetros" Scale="0.615" OffsetZ="0.09" />
+		<CompatibleWheels Type="wheels_heavy_offroad_single_mercedes_zetros" Scale="0.615" OffsetZ="0.04" />
+		
+		<Camera Center="(-2.1; 0; 0)" RadiusMultiplier="1.2" ParentFrame="BoneCabin_cdt">
+			<Cockpit
+				_template="Default"
+				WindshieldDiffuseTexture="trucks/mercedes_benz_zetros_6x6_glass__d_a.tga"
+				WindshieldShadingTexture="trucks/mercedes_benz_zetros_6x6_glass__sh_d.tga"
+				
+				WindshieldDiffuseCleanAlpha="0.1"
+				
+				ViewPos="(1.760; 2.586; 0.631)"
+				LimitsVer="(-0.6; 0.35)"
+				LimitsHor="(-2.8; 1.5)"
+			>
+				<Rear ViewPosOffset="(0.10; 0.0; 0.60)" />
+				<Mirror
+					ClipDir="(-0.840; 0; -0.399)"
+					ClipOffset="0.1"
+					FOVScale="2"
+					MeshFrame="mirror_left_1"
+					ReflectionDir="(-0.840; 0.000; -0.399)"
+					Size="(0.230; 0.420)"
+					Pos="(2.171; 2.559; 1.266)"
+					
+				>
+					<SecondaryView
+						ClipDir="(-0.960; -0.237; -0.148)"
+						ClipOffset="0.1"
+						CurveAngle="60"
+						FOVScale="1"
+						MeshFrame="mirror_left_2"
+						Size="(0.180; 0.180)"
+						Pos="(2.221; 2.232; 1.301)"
+					/>
+				</Mirror>
+				<Mirror
+					ClipDir="(-0.485; 0; 0.388)"
+					ClipOffset="0.1"
+					FOVScale="2"
+					MeshFrame="mirror_right_1"
+					ReflectionDir="(-0.485; 0; 0.388)"
+					Size="(0.230; 0.420)"
+					Pos="(2.171; 2.559; -1.266)"
+				>
+					<SecondaryView
+						ClipDir="(-0.960; -0.237; -0.148)"
+						ClipOffset="0.1"
+						CurveAngle="60"
+						FOVScale="1"
+						MeshFrame="mirror_right_2"
+						Size="(0.180; 0.180)"
+						Pos="(2.225; 2.237; -1.305)"
+					/>
+				</Mirror> 
+				<Mirror
+					ClipDir="(0; -0.751; 0.661)"
+					ReflectionDir="(0; -0.751; 0.661)"
+					ClipOffset="0.15"
+					CurveAngle="20"
+					FOVScale="2.5"
+					MeshFrame="mirror_top"
+					Size="(0.35; 0.18)"
+					Pos="(1.816; 2.667; -1.158)"
+				/>
+			</Cockpit>
+		</Camera>
+		<Axles>
+			<Axle Frame="BoneAxle1" ParentFrame="BoneCabinTwist_cdt"/>
+			<Axle Frame="BoneAxle2" ParentFrame="BoneChassis_cdt"/>
+			<Axle Frame="BoneAxle3" ParentFrame="BoneChassis_cdt"/>
+		</Axles>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/mercedes_benz_zetros_6x6">
+		<NetSync Legacy="false" />
+		<Body
+			Collisions="Default"
+			ImpactType="Truck"
+			Mass="2500"
+			ModelFrame="BoneChassis_cdt"
+			NetSync="pv"
+		>
+			<Body _template="MudguardRear" ModelFrame="BoneRearMudguardLeft_cdt" />
+			<Body _template="MudguardRear" ModelFrame="BoneRearMudguardRight_cdt" />
+		
+			<Body
+				CenterOfMassOffset="(0.0; -0.15; 0)"
+				Collisions="Default"
+				ImpactType="Truck"
+				Mass="4500"
+				ModelFrame="BoneChassisWeighter_cdt"
+				NetSync="pv"
+			>
+				<Constraint Type="Fixed" />
+			</Body>
+			<Body
+				CenterOfMassOffset="(0.0; -0.1; 0)"
+				Collisions="Default"
+				ImpactType="Truck"
+				Mass="7600"
+				ModelFrame="BoneCabinTwist_cdt"
+				NetSync="pv"
+			>
+				<Constraint
+					AxisLocal="(1; 0; 0)"
+					Type="Hinge"
+					MinLimit="-4.5"
+					MaxLimit="4.5"
+				>
+					<Motor Damping="120000" Spring="450000" Type="Spring" />
+				</Constraint>
+				
+				<Body
+					CenterOfMassOffset="(-0.15; -0.4; 0)"
+					Collisions="Default"
+					ImpactType="Truck"
+					Mass="5200"
+					ModelFrame="BoneCabin_cdt"
+					NetSync="pv"
+				>
+					<Constraint Type="Fixed" />
+					
+					<Body _template="Sunshield" ModelFrame="BoneSunshieldLeft_cdt" />
+					<Body _template="Sunshield" ModelFrame="BoneSunshieldRight_cdt" />
+					<Body _template="Sunshield" ModelFrame="BoneSunshieldM_cdt" />
+					
+					<Body _template="Mudguard" ModelFrame="BoneMudguardRight_cdt" />
+					<Body _template="Mudguard" ModelFrame="BoneMudguardLeft_cdt" />
+					
+					<Body Mass="0.2" ModelFrame="BoneKey_cdt">
+						<Constraint
+							AxisLocal="(1; 0; 0)"
+							PivotOffset="(0; 0; 0)"
+							Type="Hinge"
+							MinLimit="-35"
+							MaxLimit="35"
+						>
+							<Motor Damping="0.001" Spring="0.001" Type="Spring" />
+						</Constraint>
+					</Body>
+				</Body>
+				
+				<Body _template="TieRod" ModelFrame="BoneTieRod_cdt">
+					<Constraint
+						AxisLocal="(0; 0; 1)"
+						Name="TieRodSteer"
+						MinLimit="-25"
+						MaxLimit="25"
+					/>
+				</Body>
+				<Body Collisions="None" Mass="1" ModelFrame="BoneTieRodBase_A_cdt">
+					<Constraint
+						AxisLocal="(1; 0; 0)"
+						Name="TieRodBaseA"
+						Type="Hinge"
+						MinLimit="-90"
+						MaxLimit="90"
+					>
+						<Motor
+							Damping="1.0"
+							Force="6000"
+							Tau="1"
+							Type="Position"
+						/>
+					</Constraint>
+				</Body>
+				<Body Collisions="None" Mass="1" ModelFrame="BoneTieRodBase_B_cdt">
+					<Constraint
+						AxisLocal="(1; 0; 0)"
+						Name="TieRodBaseB"
+						Type="Hinge"
+						MinLimit="-90"
+						MaxLimit="90"
+					>
+						<Motor
+							Damping="1.0"
+							Force="6000"
+							Tau="1"
+							Type="Position"
+						/>
+					</Constraint>
+				</Body>	
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<StopSignals>
+			<Light _template="StopSignal" Pos="(-4.331; 0.439; 0)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="StopSignal" AspectRatio="3" Color="g(255; 0; 0) x 0.3" Size="0.3" Pos="(-3.986; 0.961; 0.850)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="StopSignal" AspectRatio="3" Color="g(255; 0; 0) x 0.3" Size="0.3" Pos="(-3.986; 0.961; -0.850)" ParentFrame="BoneChassis_cdt" />
+		</StopSignals>
+		<ReverseSignals>
+			<Light _template="ReverseSignal" Pos="(-4.331; 0.439; 0)" />
+			<Flare _template="ReverseSignal" Color="g(245; 235; 220) x 0.6" Size="0.4" Pos="(-3.986; 0.931; 1.040)" />
+			<Flare _template="ReverseSignal" Color="g(245; 235; 220) x 0.6" Size="0.4" Pos="(-3.986; 0.931; -1.040)" />
+			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.05" Dir="(-1; 0; 0)" Size="0.4" Pos="(-3.986; 0.931; 1.040)" />
+			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.05" Dir="(-1; 0; 0)" Size="0.4" Pos="(-3.986; 0.931; -1.040)" />
+		</ReverseSignals>
+		<Ignition>
+			<Light _template="IgnitionSignalRed" Pos="(-4.047; 0.790; 0)" />
+			<Flare _template="IgnitionSignalRed" Size="0.3" Pos="(-3.986; 0.961; 0.850)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="IgnitionSignalRed" Size="0.3" Pos="(-3.986; 0.961; -0.850)" ParentFrame="BoneChassis_cdt" />
+			
+			<Flare _template="IgnitionSignalOrange" Size="0.45" Pos="(4.126; 1.416; 1.047)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalOrange" Size="0.45" Pos="(4.126; 1.416; -1.047)" ParentFrame="BoneCabin_cdt" />
+			
+			<Flare _template="IgnitionSignalOrange" Size="0.15" Pos="(3.764; 1.397; 1.256)" Dir="(0; 0; 1)" ParentFrame="BoneCabinTwist_cdt" />
+			<Flare _template="IgnitionSignalOrange" Size="0.15" Pos="(3.764; 1.397; -1.256)" Dir="(0; 0; -1)" ParentFrame="BoneCabinTwist_cdt" />
+			<Flare _template="IgnitionSignalOrange" Size="0.15" Pos="(1.617; 1.004; 1.205)" Dir="(0; 0; 1)" ParentFrame="BoneCabinTwist_cdt" />
+			<Flare _template="IgnitionSignalOrange" Size="0.25" AspectRatio="0.5" Pos="(-0.998; 1.068; 1.218)" Dir="(0; 0; 1)" ParentFrame="BoneCabinTwist_cdt" />
+			<Flare _template="IgnitionSignalOrange" Size="0.25" AspectRatio="0.5" Pos="(-0.998; 1.068; -1.218)" Dir="(0; 0; -1)" ParentFrame="BoneCabinTwist_cdt" />
+		</Ignition>
+	</ModelAttachments>
+	<HeadLight _template="Default" Pos="(3.690; 0.795; 0)" ParentFrame="BoneCabinTwist_cdt" />
+	<Landmark Mesh="landmarks/mercedes_benz_zetros_6x6_lmk" MinScale="1.8" MaxScale="3.2" />
+	<GameData
+		Country="US,NE,CAS,CE,WA"
+		Price="122000"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+		ExcludeAddons=""
+	>
+		<WinchSocket Pos="(-0.810; 1.152; 0.395)" />
+		<WinchSocket Pos="(-0.810; 1.152; -0.395)" />
+		<CraneSocket Pos="(-0.810; 1.152; 0.395)" />
+		<CraneSocket Pos="(-0.810; 1.152; -0.395)" />
+		
+		<UiDesc
+			UiDesc="UI_VEHICLE_MERCEDES_BENZ_ZETROS_DESC"
+			UiIcon30x30="offroadVehicleImg30"
+			UiIcon328x458="shopImgMercedesBenzZetros"
+			UiIcon40x40="offroadVehicleImg"
+			UiIconLogo="MercedesLogo80"
+			UiName="UI_VEHICLE_MERCEDES_BENZ_ZETROS_NAME"
+		/>
+		<!-- GARAGE ADDON CAMERAS -->
+		<CustomizationCameras>
+			<!-- MAIN CAMERAS -->
+			<CameraPos FOV="32.0" Name="default" InterestPosition="(5; 1.6; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(12.800; 1.4; -3.860)" />
+			<CameraPos FOV="32.0" Name="wheels" InterestPosition="(4; 0.64; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(9.900; 1; -5.650)" />
+			<CameraPos FOV="32.0" Name="side_r" InterestPosition="(2.600; 3.08; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-0.680; 4.810; -4.570)" />
+			<CameraPos FOV="32.0" Name="side_l" InterestPosition="(6.270; 2.28; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(11.870; 5.280; -4.550)" />
+			<CameraPos FOV="32.0" Name="rear" 	InterestPosition="(5.000; 2; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="1" Position="(-2; 2.5; 4)" />
+			<CameraPos FOV="32.0" Name="roof" 	InterestPosition="(6.5; 3; -0.5)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(11; 5.8; -2.8)" />
+			<CameraPos FOV="32.0" Name="hoods_default" InterestPosition="(5.720; 1.730; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(13.580; 1.4; -3.860)" />
+			<!-- ADDONS -->
+			<CameraPos FOV="32.0" Name="fenders" InterestPosition="(0.000; 1.270; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-10.85; 4.140; 5)" />
+			<CameraPos FOV="32.0" Name="addon_1" InterestPosition="(2.100; 1.690; -0.300)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-7.800; 4.27; 7)" />
+			<CameraPos FOV="32.0" Name="addon_2" InterestPosition="(3.920; 2.340; -1.150)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(9.630; 4.330; 1.440)" />
+			<CameraPos FOV="32.0" Name="snorkels" InterestPosition="(5.600; 2.000; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(0.000; 2.500; -4.00)" />
+			<CameraPos FOV="32.0" Name="snorkel" InterestPosition="(7; 2.200; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(1; 3.5; 5)" />
+			<CameraPos FOV="32.0" Name="exhaust" InterestPosition="(5.800; 2.200; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-0.000; 3.700; 5.000)" />
+			<!-- STICKERS -->
+			<CameraPos FOV="32.0" Interior="true" Name="capote_sticker" InterestPosition="(5.637; 0.335; -0.48)" Position="(8.629; 4.945; -0.557)" />
+			<CameraPos FOV="32.0" Interior="true" Name="glass_sticker" InterestPosition="(4.737; 2.53; -0.951)" Position="(8.594; 3; 0.88)" />
+			<CameraPos FOV="32.0" Interior="true" Name="door_r_sticker" InterestPosition="(7; 1.378; -0.294)" Position="(3.5; 2.298; 3.5)" />
+			<CameraPos FOV="32.0" Interior="true" Name="door_l_sticker" InterestPosition="(4.847; 1.378; 0.294)" Position="(4.1; 2.298; -3.5)" />
+			<CameraPos FOV="32.0" Interior="true" Name="side_l_sticker" InterestPosition="(3.165; 2.241; -0.905)" Position="(5.262; 2.793; -3.537)" />
+			<CameraPos FOV="32.0" Interior="true" Name="side_r_sticker" InterestPosition="(5.235; 2.241; 0.905)" Position="(3.138; 2.793; 3.537)" />
+			
+			<CameraPos FOV="32.0" Interior="true" Name="sticker_1" InterestPosition="(5.476; 1.367; 1.35)" Position="(4.679; 2.674; 0.147)" />
+			<CameraPos FOV="32.0" Interior="true" Name="sticker_2" InterestPosition="(4.946; 0.817; 2.361)" Position="(4.542; 2.643; 0.163)" />
+			<CameraPos FOV="32.0" Interior="true" Name="sticker_3" InterestPosition="(6.532; 3.271; -0.337)" Position="(4.759; 2.294; 0.137)" />
+			<!-- STUFF -->
+			<CameraPos FOV="32.0" Interior="true" Name="bubble_head" InterestPosition="(5.53; 1.95; 0.759)" Position="(4.46; 2.751; -0.338)" />
+			<CameraPos FOV="32.0" Interior="true" Name="curtain" InterestPosition="(8.130; 3.000; 1.400)" Position="(5.800; 2.400; -0.700)" />
+			<CameraPos FOV="32.0" Interior="true" Name="mirror_mount" InterestPosition="(5.53; 2.872; 0.92)" Position="(4.433; 2.34; -0.387)" />
+			<CameraPos FOV="32.0" Interior="true" Name="hood_figure" InterestPosition="(4.08; 1.33; 1.050)" Position="(8.78; 2.33; -0.95)" />
+		</CustomizationCameras>
+		
+		<!-- DIFF LOCK -->
+		<AddonSockets DefaultAddon="mercedes_benz_zetros_6x6_diff_lock_default">
+			<Socket Names="MercedesZetrosDiffLock" Offset="(0; 0; 0)" />
+		</AddonSockets>
+		
+		<AddonSockets DefaultAddon="mercedes_benz_zetros_6x6_bumper_default">
+			<Socket Names="MercedesBenzZetrosBumper" Offset="(0; 0; 0)" ParentFrame="BoneCabinTwist_cdt" />
+		</AddonSockets>
+		<AddonSockets DefaultAddon="mercedes_benz_zetros_6x6_exhaust_default">
+			<Socket Names="MercedesBenzZetrosExhaust" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt">
+				<ExtraParent Frame="BoneCabinTwist_cdt" Offset="(0; 0; 0)" />
+			</Socket>
+		</AddonSockets>
+		<AddonSockets DefaultAddon="mercedes_benz_zetros_6x6_snorkel_default" >
+			<Socket Names="MercedesBenzZetrosSnorkel" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets >
+			<Socket Names="MercedesBenzZetrosProtection" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets >
+			<Socket Names="MercedesBenzZetrosRoofrack" Offset="(0; 0; 0)" NamesBlock="MercedesBenzZetrosAntenna" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets >
+			<Socket Names="MercedesBenzZetrosHorn" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="MercedesBenzZetrosBeacon" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets >
+			<Socket Names="MercedesBenzZetrosVisor" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets >
+			<Socket Names="MercedesBenzZetrosTop" Offset="(0; 0; 0)" NamesBlock="MercedesBenzActrosSpotlight, MercedesBenzActrosVisor, MercedesBenzActrosBeacon, MercedesBenzActrosRoofrack, MercedesBenzActrosHorn1" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets >
+			<Socket Names="MercedesBenzZetrosSpotlight" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		
+		<!-- SUBFRAME -->
+		<AddonSockets DefaultAddon="mercedes_benz_zetros_6x6_subframe_default" RequiredAddonIfNoConflicts="mercedes_benz_zetros_6x6_subframe_default" >
+			<Socket Names="MercedesBenzZetrosSubframeDefault" NamesBlock="SaddleHighMercedesZetros" Offset="(0; 0; 0)" />
+			<Socket Names="MercedesBenzZetrosSubframe" NamesBlock="SaddleLow, SaddleHighMercedesZetros, FrameAddonKung" Offset="(0; 0; 0)" >
+				<ExtraParent Frame="BoneCabinTwist_cdt" Offset="(0; 0; 0.0)" />
+			</Socket>
+		</AddonSockets>
+		
+		<!-- FRAME ADDONS -->
+		<AddonSockets>
+			<Socket Names="FrameAddonMercedesZetros" NamesBlock="" Offset="(-1.9; 1.445; 0)" ParentFrame="BoneChassis_cdt">
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(-0.1; 0; 0.15)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(-0.1; 0; -0.15)" />
+			</Socket>
+			<Socket Names="FrameAddonTankMercedesZetros" NamesBlock="" Offset="(-2.75; 1.445; 0)" ParentFrame="BoneChassis_cdt">
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.1)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.1)" />
+			</Socket>
+			<Socket Names="FrameAddonKung" NamesBlock="" Offset="(-2.050; 1.38; 0)" ParentFrame="BoneChassis_cdt">
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.1)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.1)" />
+			</Socket>
+			<Socket Names="FrameAddonSeismicVibratorMercedesZetros" NamesBlock="" Offset="(0.35; 1.44; 0.0)" ParentFrame="BoneChassis_cdt"/>
+			<Socket Names="FrameAddonLogShortMercedesZetros" NamesBlock="" Offset="(-1.75; 1.44; 0)" ParentFrame="BoneChassis_cdt"/>
+			<Socket Names="BunkLogMercedesZetros" Offset="(-6.0; 1.44; 0)" NamesBlock="" ParentFrame="BoneChassis_cdt" />			
+			
+			<Socket Names="SaddleLow" Offset="(-2.075; 1.335; 0)" NamesBlock="" ParentFrame="BoneChassis_cdt" >
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.045)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.045)" />
+			</Socket>
+			<Socket Names="SaddleHighMercedesZetros" NamesBlock="" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" >
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.07)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.07)" />
+				<ExtraParent Frame="BoneCabinTwist_cdt" Offset="(0; 0; 0.0)" />
+			</Socket>
+		</AddonSockets>
+		
+		<!-- TRAILERS -->
+		<AddonSockets>
+			<Socket Names="Trailer, LogTrailer" Offset="(-3.967; 0.999; 0)" >
+				<AddonsShift Offset="(-0.5; 0; 0)" Types="MercedesBenzZetrosSubframe" />
+				<AddonsShift Offset="(-0.5; 0; 0)" Types="SaddleHighMercedesZetros" />
+			</Socket>
+			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-2.35; 2.0; 0)" />
+			<Socket Names="Semitrailer" Offset="(-2.075; 1.725; 0)" />
+		</AddonSockets>
+		
+		<!-- CRANES -->
+		<AddonSockets>
+			<Socket
+				Names="LogLiftMercedesZetros"
+				Offset="(-1.3; 0.08; 0)"
+				ParentFrame="BoneCabinTwist_cdt"
+				NamesBlock="FrameAddonMercedesZetros, FrameAddonTankMercedesZetros, FrameAddonKung, FrameAddonSeismicVibratorMercedesZetros, FrameAddonLogShortMercedesZetros, SaddleMotorizedMercedesZetros"
+			/>
+			<Socket
+				Names="MinicraneUS"
+				Offset="(-0.05; 1.295; 0)"
+				ParentFrame="BoneCabinTwist_cdt"
+				NamesBlock="FrameAddonMercedesZetros, FrameAddonTankMercedesZetros, FrameAddonKung, FrameAddonSeismicVibratorMercedesZetros, FrameAddonLogShortMercedesZetros, SaddleMotorizedMercedesZetros"
+			>
+				<ExtraParent Frame="BoneCabinTwist_cdt" Offset="(0; 0.0; 0.04)" />
+				<ExtraParent Frame="BoneCabinTwist_cdt" Offset="(0; 0.0; -0.04)" />
+				<AddonsShift Offset="(0; 0.15; 0)" Types="MercedesBenzZetrosSubframe" />
+			</Socket>
+			
+			
+			<Socket Names="BigCraneUsMercedesZetros" NamesBlock="FrameAddonMercedesZetros, FrameAddonTankMercedesZetros, FrameAddonKung, FrameAddonSeismicVibratorMercedesZetros, FrameAddonLogShortMercedesZetros, SaddleMotorizedMercedesZetros, BunkLogMercedesZetros, SaddleHighMercedesZetros" Offset="(-2.45; 1.445; 0)">
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.05)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.05)" />
+			</Socket>
+		</AddonSockets>
+
+		<AddonSockets>
+			<Socket
+				InCockpit="true"
+				Names="StuffDashboard"
+				Offset="(2.612; 2.272; 0.154)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket
+				InCockpit="true"
+				Names="StuffAirfreshener"
+				Offset="(2.430; 2.854; -0.081)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="MercedesBenzZetrosStuffCurtain" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="MercedesBenzZetrosSticker_Door_L" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="MercedesBenzZetrosSticker_Door_R" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="MercedesBenzZetrosSticker_Side_R" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="MercedesBenzZetrosSticker_Side_L" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		
+		<AddonSockets>
+			<Socket Names="MercedesBenzZetrosSticker_Capote" ParentFrame="BoneCabin_cdt" InCockpit="true" />
+		</AddonSockets>
+		
+		<AddonSockets>
+			<Socket Names="StuffHoodMercedesBenzZetros" ParentFrame="BoneCabin_cdt"/>
+		</AddonSockets>
+		
+		<AddonSockets>
+			<Socket InCockpit="true" Names="MercedesBenzZetrosSticker_Glass_Top" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="MercedesBenzZetrosSticker_Glass_Bottom" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		
+		<AddonSockets>
+			<Socket InCockpit="true" Names="MercedesBenzZetrosSticker_1x1_01" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="MercedesBenzZetrosSticker_1x1_02" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="MercedesBenzZetrosSticker_1x1_03" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="MercedesBenzZetrosSticker_1x1_04" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="MercedesBenzZetrosSticker_1x2_01" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="MercedesBenzZetrosSticker_1x4_01" ParentFrame="BoneSunshieldLeft_cdt" />
+		</AddonSockets>
+	</GameData>
+	<ControlledConstraints>
+		<Constraint Id="chassis_steer" IsLinkedSteering="true" Name="TieRodSteer" />
+		<Constraint Id="chassis_steer" IsLinkedSteering="true" Name="TieRodBaseA" />
+		<Constraint Id="chassis_steer" IsLinkedSteering="true" Name="TieRodBaseB" />
+	</ControlledConstraints>
+	
+	<AutomaticIK>
+		<IKBone ModelFrame="BoneTieRodHinge2" ParentFrame="BoneTieRod_cdt">
+			<IKJoint AxisLocal="(1; 0; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneRackLeft"
+				ModelFrame="BoneTieRodPrismatic"
+			>
+				<IKJoint AxisLocal="(1; 0; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		
+		<!-- Suspension -->
+		<IKBone ModelFrame="BoneAxleFrontBalancerBase" ParentFrame="BoneCabinTwist_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0.237; 0; 0.03)"
+				AttachToFrame="BoneAxle1"
+				ModelFrame="BoneAxleFrontBalancer"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge" />
+			</IKBone>
+		</IKBone>
+		
+		<IKBone ModelFrame="BoneLeftPistonIK1_1" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle2"
+				ModelFrame="BoneLeftPistonIK1_2"
+			>
+				<IKJoint AxisLocal="(1; 0; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="BoneRightPistonIK1_1" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle2"
+				ModelFrame="BoneRightPistonIK1_2"
+			>
+				<IKJoint AxisLocal="(1; 0; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		
+		<IKBone ModelFrame="BoneLeftPiston2IK1_1" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle3"
+				ModelFrame="BoneLeftPiston2IK1_2"
+			>
+				<IKJoint AxisLocal="(1; 0; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="BoneRightPiston2IK1_1" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle3"
+				ModelFrame="BoneRightPiston2IK1_2"
+			>
+				<IKJoint AxisLocal="(1; 0; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<!-- Rear IK -->
+		<IKBone ModelFrame="BoneRightRearIK1_1" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle2"
+				ModelFrame="BoneRightRearIK1_2"
+			>
+				<IKJoint AxisLocal="(1; 0; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="BoneLeftRearIK1_1" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle2"
+				ModelFrame="BoneLeftRearIK1_2"
+			>
+				<IKJoint AxisLocal="(1; 0; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="BoneRightRearIK2_1" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle3"
+				ModelFrame="BoneRightRearIK2_2"
+			>
+				<IKJoint AxisLocal="(1; 0; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="BoneLeftRearIK2_1" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle3"
+				ModelFrame="BoneLeftRearIK2_2"
+			>
+				<IKJoint AxisLocal="(1; 0; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+	</AutomaticIK>
+</Truck>

@@ -248,14 +248,14 @@
 		<WinchSocket Pos="(-3.179; 1.256; -0.446)" ParentFrame="BoneCargo_1_cdt" />
 		<WinchSocket Pos="(1.586; 1.355; 1.289)" ParentFrame="BoneCargo_2_cdt" />
 		<WinchSocket Pos="(1.586; 1.355; -1.289)" ParentFrame="BoneCargo_2_cdt" />
-		<WinchSocket WinchableWhenAttached="false" Pos="(5.376; 0.45; 0)" ParentFrame="BoneHandle_cdt" />
+		<WinchSocket WinchableWhenAttached="false" Pos="(5.374; 0.455; 0)" ParentFrame="BoneHandle_cdt" />
 		<UiDesc
 			UiDesc="UI_TRAILER_MAINTAINER_DESC"
 			UiIcon30x30="trailerTech30"
 			UiIcon40x40="trailerTech"
 			UiName="UI_TRAILER_MAINTAINER_NAME"
 		/>
-		<InstallSocket Offset="(5.398; 0.448; 0)" Type="Trailer" ParentFrame="BoneHandle_cdt" />
+		<InstallSocket Offset="(5.374; 0.455; 0)" Type="Trailer" ParentFrame="BoneHandle_cdt" />
 		<CraneSocket Pos="(-3.179; 1.256; 0.446)" ParentFrame="BoneCargo_1_cdt" />
 		<CraneSocket Pos="(-3.179; 1.256; -0.446)" ParentFrame="BoneCargo_1_cdt" />
 		<CraneSocket Pos="(1.586; 1.355; 1.289)" ParentFrame="BoneCargo_2_cdt" />

@@ -1,0 +1,102 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<TruckData>
+		<Damage>
+			<Multiplier Multiplier="0.95" Type="Engine" />
+		</Damage>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/mercedes_benz_zetros_6x6_tuning/mercedes_benz_zetros_6x6_protection_1">
+		<Body ImpactType="Truck" Mass="40" ModelFrame="BoneCabin_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<Rotator EngineTorqueFactor="0" Frame="BoneRotatorLeft" RotationSpeed="3.8" />
+	<Rotator EngineTorqueFactor="0" Frame="BoneRotatorRight" RotationSpeed="3.8" />
+	<Rotator EngineTorqueFactor="0" Frame="BoneRotatorRearLeft" RotationSpeed="3.8" />
+	<Rotator EngineTorqueFactor="0" Frame="BoneRotatorRearRight" RotationSpeed="3.8" />
+	<ModelAttachments>
+		<HeadLight>
+			<Model _template="HeadLightRay" Org="(2.907; 2.649; -1.012)" ColorMultAtDay="0.3"/>
+			<Model _template="HeadLightRay" Org="(2.907; 2.649; 1.042)" ColorMultAtDay="0.3"/>
+		</HeadLight>
+		<HeadLight>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(2.907; 2.649; -1.012)" Dir="(1; 0; 0)" Size="0.3" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(2.907; 2.649; 1.042)" Dir="(1; 0; 0)" Size="0.3" ColorMultAtDay="0.25"/>
+		</HeadLight>
+		<Ignition _template="Flasher">
+			<Model
+				Color="g(255; 111; 5) x 0.55"
+				Dir="(1; 0.222; 0.563)"
+				Org="(2.730; 2.846; 1.282)"
+				Scale="(0.19; 0.19; 0.19)"
+				ParentFrame="BoneRotatorLeft"
+				Reflections="false"
+			/>
+			<Light Dir="(-0.796; 0.222; 0.563)" Pos="(2.730; 2.846; 1.282)" ParentFrame="BoneRotatorLeft" />
+			<Flare Color="g(255; 111; 5) x 0.45" Dir="(-0.796; 0.222; 0.563)" Size="1" Pos="(2.730; 2.846; 1.282)" ParentFrame="BoneRotatorLeft" />
+			<Flare Color="g(255; 111; 5) x 0.7" Dir="(-0.796; 0.222; 0.563)" Size="0.7" Pos="(2.730; 2.846; 1.282)" ParentFrame="BoneRotatorLeft" />
+			<Flare Color="g(255; 111; 5) x 0.55" Size="1" Pos="(2.730; 2.846; 1.282)" ParentFrame="BoneRotatorLeft" />
+		</Ignition>
+		<Ignition _template="Flasher">
+			<Model
+				Color="g(255; 111; 5) x 0.55"
+				Dir="(1; 0.222; 0.563)"
+				Org="(2.730; 2.846; -1.282)"
+				Scale="(0.19; 0.19; 0.19)"
+				ParentFrame="BoneRotatorRight"
+				Reflections="false"
+			/>
+			<Light Dir="(-0.796; 0.222; 0.563)" Pos="(2.730; 2.846; -1.282)" ParentFrame="BoneRotatorRight" />
+			<Flare Color="g(255; 111; 5) x 0.45" Dir="(-0.796; 0.222; 0.563)" Size="1" Pos="(2.730; 2.846; -1.282)" ParentFrame="BoneRotatorRight" />
+			<Flare Color="g(255; 111; 5) x 0.7" Dir="(-0.796; 0.222; 0.563)" Size="0.7" Pos="(2.730; 2.846; -1.282)" ParentFrame="BoneRotatorRight" />
+			<Flare Color="g(255; 111; 5) x 0.55" Size="1" Pos="(2.730; 2.846; -1.282)" ParentFrame="BoneRotatorRight" />
+		</Ignition>
+		
+		<Ignition _template="Flasher">
+			<Model
+				Color="g(255; 111; 5) x 0.55"
+				Dir="(1; 0.222; 0.563)"
+				Org="(1.002; 3.190; 1.164)"
+				Scale="(0.19; 0.19; 0.19)"
+				ParentFrame="BoneRotatorRearLeft"
+				Reflections="false"
+			/>
+			<Light Dir="(-0.796; 0.222; 0.563)" Pos="(1.002; 3.190; 1.164)" ParentFrame="BoneRotatorRearLeft" />
+			<Flare Color="g(255; 111; 5) x 0.45" Dir="(-0.796; 0.222; 0.563)" Size="1" Pos="(1.002; 3.190; 1.164)" ParentFrame="BoneRotatorRearLeft" />
+			<Flare Color="g(255; 111; 5) x 0.7" Dir="(-0.796; 0.222; 0.563)" Size="0.7" Pos="(1.002; 3.190; 1.164)" ParentFrame="BoneRotatorRearLeft" />
+			<Flare Color="g(255; 111; 5) x 0.55" Size="1" Pos="(1.002; 3.190; 1.164)" ParentFrame="BoneRotatorRearLeft" />
+		</Ignition>
+		
+		<Ignition _template="Flasher">
+			<Model
+				Color="g(255; 111; 5) x 0.55"
+				Dir="(1; 0.222; 0.563)"
+				Org="(1.002; 3.190; -1.135)"
+				Scale="(0.19; 0.19; 0.19)"
+				ParentFrame="BoneRotatorRearRight"
+				Reflections="false"
+			/>
+			<Light Dir="(-0.796; 0.222; 0.563)" Pos="(1.002; 3.190; -1.135)" ParentFrame="BoneRotatorRearRight" />
+			<Flare Color="g(255; 111; 5) x 0.45" Dir="(-0.796; 0.222; 0.563)" Size="1" Pos="(1.002; 3.190; -1.135)" ParentFrame="BoneRotatorRearRight" />
+			<Flare Color="g(255; 111; 5) x 0.7" Dir="(-0.796; 0.222; 0.563)" Size="0.7" Pos="(1.002; 3.190; -1.135)" ParentFrame="BoneRotatorRearRight" />
+			<Flare Color="g(255; 111; 5) x 0.55" Size="1" Pos="(1.002; 3.190; -1.135)" ParentFrame="BoneRotatorRearRight" />
+		</Ignition>
+	</ModelAttachments>
+	 
+	<GameData
+		CameraPreset="default"
+		Category="top"
+		IsCustomizable="true"
+		Price="1900"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_BUMPER_SAVIOR_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_BUMPER_SAVIOR_NAME"
+		/>
+		<InstallSocket Type="MercedesBenzZetrosProtection" />
+	</GameData>
+</TruckAddon>

@@ -38,7 +38,7 @@
 				MinLimit="0"
 				MaxLimit="90"
 			>
-				<Motor Force="15000" Type="Position" />
+				<Motor Force="30000" Type="Position" />
 			</Constraint>
 		</AnchorRotate>
 		<AnchorExt Mass="100" NoFoliageCollisions="true">
@@ -49,7 +49,7 @@
 				MinLimit="0"
 				MaxLimit="0.2"
 			>
-				<Motor Force="10000" Type="Position" />
+				<Motor Force="20000" Type="Position" />
 			</Constraint>
 		</AnchorExt>
 	</Body>
@@ -68,10 +68,10 @@
 			MinX="-5"
 			MaxX="4.5"
 		/>
-		<Foot Origin="(1.502; -0.18; -1.226)" />
-		<Foot Origin="(1.502; -0.18; 1.226)" />
-		<Foot Origin="(-4.098; -0.18; -1.226)" />
-		<Foot Origin="(-4.098; -0.18; 1.226)" />
+		<Foot Origin="(1.487; -0.180; 1.226)" />
+		<Foot Origin="(1.487; -0.180; -1.226)" />
+		<Foot Origin="(-4.083; -0.180; 1.226)" />
+		<Foot Origin="(-4.083; -0.180; -1.226)" />
 		<Constraint _template="TrailerRagdoll">
 			<TwistMotor _inheritRemove="true" />
 		</Constraint>
@@ -84,7 +84,6 @@
 	<PoweredConstraints>
 		<Group Id="_trailer_foot">
 			<Constraint InitialFix="true" Name="LegRotate" TerminalFix="true" Position="90" />
-			<Constraint InitialFix="true" Name="LegExt" TerminalFix="true" Position="0.2" />
 		</Group>
 	</PoweredConstraints>
 	<PhysicsModel Mesh="trucks/trailers/scout_trailer_offroad_cargo">
@@ -93,18 +92,10 @@
 			ImpactType="Truck"
 			Mass="800"
 		>
-			<Body _template="AnchorRotate" ModelFrame="BoneAnchorFront_L_Rotate_cdt">
-				<Body _template="AnchorExt" ModelFrame="BoneAnchorFront_L_Ext_cdt" />
-			</Body>
-			<Body _template="AnchorRotate" ModelFrame="BoneAnchorFront_R_Rotate_cdt">
-				<Body _template="AnchorExt" ModelFrame="BoneAnchorFront_R_Ext_cdt" />
-			</Body>
-			<Body _template="AnchorRotate" ModelFrame="BoneAnchorBack_L_Rotate_cdt">
-				<Body _template="AnchorExt" ModelFrame="BoneAnchorBack_L_Ext_cdt" />
-			</Body>
-			<Body _template="AnchorRotate" ModelFrame="BoneAnchorBack_R_Rotate_cdt">
-				<Body _template="AnchorExt" ModelFrame="BoneAnchorBack_R_Ext_cdt" />
-			</Body>
+			<Body _template="AnchorRotate" ModelFrame="BoneAnchorFront_L_Rotate_cdt"/>
+			<Body _template="AnchorRotate" ModelFrame="BoneAnchorFront_R_Rotate_cdt"/>
+			<Body _template="AnchorRotate" ModelFrame="BoneAnchorBack_L_Rotate_cdt"/>
+			<Body _template="AnchorRotate" ModelFrame="BoneAnchorBack_R_Rotate_cdt"/>
 			<Body _template="Mudguard" ModelFrame="BoneMudguard_L_cdt">
 				<Constraint AxisLocal="(0; 0; 1)" MinLimit="0" MaxLimit="30" />
 			</Body>

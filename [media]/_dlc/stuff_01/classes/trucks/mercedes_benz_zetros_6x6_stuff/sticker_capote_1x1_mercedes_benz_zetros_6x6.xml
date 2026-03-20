@@ -1,0 +1,7 @@
+<_parent File="sticker_capote_1x1_ford_f750" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/mercedes_benz_zetros_6x6_stuff/sticker_capote_1x1_mercedes_benz_zetros_6x6" />
+	<GameData>
+		<InstallSocket Type="MercedesBenzZetrosSticker_Capote" />
+	</GameData>
+</TruckAddon>

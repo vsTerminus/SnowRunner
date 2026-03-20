@@ -25,11 +25,8 @@
 		<Mesh Frame="repair" HideThreshold="0.0" />
 	</RepairsHide>
 	<PhysicsModel Mesh="trucks/chevy_apache_tuning/chevy_apache_trunk_1">
-		<Body Collisions="None" Mass="1">
+		<Body Mass="10">
 			<Constraint Type="Rigid" />
-			<Body Collisions="None" Mass="5" ModelFrame="BoneChassis_cdt">
-				<Constraint ExplicitParentFrame="0" Type="Fixed" />
-			</Body>
 			<Body
 				_template="LimitsZ"
 				Mass="60"
@@ -44,7 +41,7 @@
 			>
 				<Constraint LinearLimitsZ="(-0.032;0.032)" />
 			</Body>
-			<Body Mass="40" ModelFrame="BoneFuel1_cdt">
+			<Body Mass="40" ModelFrame="BoneFuel1_cdt" Collisions="None">
 				<Constraint
 					AxisLocal="(1; 0; 0)"
 					Type="Hinge"

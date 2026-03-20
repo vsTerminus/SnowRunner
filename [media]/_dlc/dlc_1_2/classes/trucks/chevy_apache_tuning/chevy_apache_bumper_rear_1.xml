@@ -54,5 +54,6 @@
 			UiIcon40x40=""
 			UiName="UI_TUNING_REAR_BUMPER_MUDFLAPS_NAME"
 		/>
+		<InstallSocket Type="ChevyApacheRearBumper2" />
 	</GameData>
 </TruckAddon>

@@ -92,7 +92,7 @@
 			UiIcon40x40="trailerLogPole"
 			UiName="UI_TRAILER_LOGPOLE_NAME"
 		/>
-		<RequiredAddon Types="bunk_log_addon_zikz_612h, bunk_log_addon" />
+		<RequiredAddon Types="bunk_log_addon_zikz_612h, bunk_log_addon, bunk_log_addon_mercedes_zetros_6x6" />
 		<LoadArea
 			Subtype="TrailerPoleLogLong"
 			TrailerLoad="true"

@@ -1,0 +1,47 @@
+<TruckAddon>
+	<TruckData>
+		<Shakers>
+			<Shaker Frame="BoneShakerExhaustLeft" MinAngle="(0.1; 0.1; 0.1)" MaxAngle="(0.25; 0.25; 0.25)" MaxFrequency="4" ParentFrame="BoneCabinTwist_cdt" />
+			<Shaker Frame="BoneShakerExhaustRight" MinAngle="(0.1; 0.1; 0.1)" MaxAngle="(0.25; 0.25; 0.25)" MaxFrequency="4.1" ParentFrame="BoneCabinTwist_cdt" />
+			<Shaker Frame="BoneExhaustCapRight" LimitDirectionY="Positive" MaxAngle="(0; 20; 0)" MinAngle="(0; 150; 0)" MaxFrequency="0.14" ParentFrame="BoneExhaustRight" />
+			<Shaker Frame="BoneExhaustCapLeft" LimitDirectionY="Negative" MaxAngle="(0; 25; 0)" MinAngle="(0; 150; 0)" MaxFrequency="0.13" ParentFrame="BoneExhaustLeft" />
+		</Shakers>
+	</TruckData>
+	<Exhaust
+			Dir="(0; 1; -0.5)"
+			IsLight="false"
+			Origin="(0.749; 3.197; -0.929)"
+			Speed="2.5"
+			ParentFrame="BoneShakerExhaustRight"
+	/>
+	<Exhaust
+			Dir="(0; 1; 0.5)"
+			IsLight="false"
+			Origin="(0.749; 3.197; 0.929)"
+			Speed="2.5"
+			ParentFrame="BoneShakerExhaustLeft"
+	/>
+	<PhysicsModel Mesh="trucks/mercedes_benz_zetros_6x6_tuning/mercedes_benz_zetros_6x6_exhaust_2">
+		<Body Collisions="None" Mass="15" ModelFrame="BoneChassis_cdt">
+			<Constraint Type="Rigid" />
+			<Body Collisions="None" Mass="15" ModelFrame="BoneCabinTwist_cdt">
+				<Constraint ExplicitParentFrame="0" Type="Fixed" />
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="exhaust"
+		Category="exhaust"
+		Price="1800"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_EXHAUST_FLAPCAP_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_EXHAUST_FLAPCAP_NAME"
+		/>
+		<InstallSocket Type="MercedesBenzZetrosExhaust" />
+	</GameData>
+</TruckAddon>

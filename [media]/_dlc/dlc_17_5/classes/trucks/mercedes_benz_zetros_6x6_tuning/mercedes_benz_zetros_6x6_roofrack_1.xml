@@ -1,0 +1,83 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<TruckData FuelCapacity="140" RepairsCapacity="150">
+
+		<LimitedFluid Center="(2.180; 3.306; -0.448)" SizeX="0.146" SizeY="0.325" SizeZ="0.445" Type="Box" ParentFrame="BoneFuel2_cdt"/>
+		<LimitedFluid Center="(1.926; 3.306; -0.448)" SizeX="0.146" SizeY="0.325" SizeZ="0.445" Type="Box" ParentFrame="BoneFuel2_cdt" />
+		<LimitedFluid Center="(1.671; 3.306; -0.448)" SizeX="0.146" SizeY="0.325" SizeZ="0.445" Type="Box" ParentFrame="BoneFuel2_cdt" />
+		<LimitedFluid Center="(1.421; 3.306; -0.448)" SizeX="0.146" SizeY="0.325" SizeZ="0.445" Type="Box" ParentFrame="BoneFuel2_cdt" />
+		<LimitedFluid Center="(1.173; 3.306; -0.448)" SizeX="0.146" SizeY="0.325" SizeZ="0.445" Type="Box" ParentFrame="BoneFuel2_cdt" />
+		
+		<LimitedFluid Center="(2.072; 3.199; 0.014)" SizeX="0.445" SizeY="0.146" SizeZ="0.325" Type="Box" ParentFrame="BoneFuel1_cdt"/>
+		<LimitedFluid Center="(2.042; 3.199; 0.563)" SizeX="0.325" SizeY="0.146" SizeZ="0.445" Type="Box" ParentFrame="BoneFuel1_cdt"/>
+	</TruckData>
+	
+	<RepairsHide>
+		<Mesh Frame="repair" HideThreshold="0.0" />
+	</RepairsHide>
+	<FuelHide>
+		<Mesh Frame="fuel" HideThreshold="0.0" />
+	</FuelHide>
+	<PhysicsModel Mesh="trucks/mercedes_benz_zetros_6x6_tuning/mercedes_benz_zetros_6x6_roofrack_1">
+		<Body ImpactType="Truck" Mass="15" ModelFrame="BoneCabin_cdt">
+			<Constraint Type="Rigid" />
+			<Body Collisions="None" Mass="40" ModelFrame="BoneFuel1_cdt">
+				<Constraint
+					AxisLocal="(1; 0; 0)"
+					Type="Prismatic"
+					MinLimit="-0.02"
+					MaxLimit="0.01"
+				>
+					<Motor Damping="1200" Spring="2200" Type="Spring" />
+				</Constraint>
+			</Body>
+			<Body Collisions="None" Mass="30" ModelFrame="BoneFuel2_cdt">
+				<Constraint
+					AxisLocal="(0; 0; 1)"
+					Type="Prismatic"
+					MinLimit="-0.02"
+					MaxLimit="0.02"
+				>
+					<Motor Damping="1200" Spring="2200" Type="Spring" />
+				</Constraint>
+			</Body>
+			<Body Collisions="None" Mass="50" ModelFrame="BoneRepair_cdt">
+				<Constraint
+					AxisLocal="(1; 0; 0)"
+					Type="Prismatic"
+					MinLimit="-0.02"
+					MaxLimit="0.01"
+				>
+					<Motor Damping="2100" Spring="3000" Type="Spring" />
+				</Constraint>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<HeadLight>
+			<Model _template="HeadLightRay" Org="(2.698; 3.235; -0.264)" ColorMultAtDay="0.3"/>
+			<Model _template="HeadLightRay" Org="(2.698; 3.235; 0.264)" ColorMultAtDay="0.3"/>
+		</HeadLight>
+		<HeadLight>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(2.698; 3.235; -0.264)" Dir="(1; 0; 0)" Size="0.3" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(2.698; 3.235; 0)" Dir="(1; 0; 0)" Size="0.3" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(2.698; 3.235; 0.264)" Dir="(1; 0; 0)" Size="0.3" ColorMultAtDay="0.25"/>
+		</HeadLight>
+	</ModelAttachments>
+	<GameData
+		CameraPreset="roof"
+		Category="top"
+		IsCustomizable="true"
+		Price="3200"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SCOUT_TRUNK_SUPPLIES_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SCOUT_TRUNK_SUPPLIES_NAME"
+		/>
+		<InstallSocket Type="MercedesBenzZetrosRoofrack" />
+	</GameData>
+</TruckAddon>

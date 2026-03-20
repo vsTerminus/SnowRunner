@@ -1,0 +1,158 @@
+<GearboxVariants>	
+	<Gearbox
+		AWDConsumptionModifier="1.2"
+		CriticalDamageThreshold="0.72"
+		DamageCapacity="210"
+		DamagedConsumptionModifier="1.25"
+		FuelConsumption="2.38"
+		IdleFuelModifier="0.38"
+		Name="g_mercedes_zetros_default"
+		MinBreakFreq="0.0"
+		MaxBreakFreq="10.0"
+	>
+		<ReverseGear AngVel="1.68" FuelModifier="2.83" />
+		<HighGear AngVel="8.0" FuelModifier="2.5" />
+		<Gear AngVel="1.68" FuelModifier="2.83" />
+		<Gear AngVel="3.14" FuelModifier="2.6" />
+		<Gear AngVel="5.57" FuelModifier="2.22" />
+		<Gear AngVel="8.96" FuelModifier="1.68" />
+		<Gear AngVel="13.33" FuelModifier="1.0" />
+		<GameData
+			Price="2500"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_GEARBOX_DEFAULT_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_GEARBOX_DEFAULT_NAME"
+			/>
+			<GearboxParams
+				IsHighGearExists="false"
+				IsLowerGearExists="true"
+				IsLowerPlusGearExists="false"
+				IsManualLowGear="false"
+				IsLowerMinusGearExists="false"
+			/>
+		</GameData>
+	</Gearbox>
+	<Gearbox
+		AWDConsumptionModifier="1.15"
+		CriticalDamageThreshold="0.66"
+		DamageCapacity="230"
+		DamagedConsumptionModifier="1.42"
+		FuelConsumption="2.5"
+		IdleFuelModifier="0.42"
+		Name="g_mercedes_zetros_offroad"
+		MinBreakFreq="0.0"
+		MaxBreakFreq="14.0"
+	>
+		<ReverseGear AngVel="1.99" FuelModifier="2.9" />
+		<HighGear AngVel="11.05" FuelModifier="2.64" />
+		<Gear AngVel="1.99" FuelModifier="2.9" />
+		<Gear AngVel="2.41" FuelModifier="2.75" />
+		<Gear AngVel="3.5" FuelModifier="2.47" />
+		<Gear AngVel="5.75" FuelModifier="2.1" />
+		<Gear AngVel="9.4" FuelModifier="1.57" />
+		<Gear AngVel="14.8" FuelModifier="0.95" />
+		<GameData
+			Price="5700"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_GEARBOX_OFFROAD_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_GEARBOX_OFFROAD_NAME"
+			/>
+			<GearboxParams
+				IsHighGearExists="true"
+				IsLowerGearExists="true"
+				IsLowerPlusGearExists="true"
+				IsManualLowGear="false"
+				IsLowerMinusGearExists="true"
+			/>
+		</GameData>
+	</Gearbox>
+	<Gearbox
+		AWDConsumptionModifier="1.12"
+		CriticalDamageThreshold="0.75"
+		DamageCapacity="200"
+		DamagedConsumptionModifier="1.29"
+		FuelConsumption="2.3"
+		IdleFuelModifier="0.36"
+		Name="g_mercedes_zetros_highrange"
+		MinBreakFreq="0.0"
+		MaxBreakFreq="6.0"
+	>
+		<ReverseGear AngVel="2.27" FuelModifier="2.75" />
+		<HighGear AngVel="14.2" FuelModifier="2.4" />
+		<Gear AngVel="2.27" FuelModifier="2.75" />
+		<Gear AngVel="3.14" FuelModifier="2.64" />
+		<Gear AngVel="4.59" FuelModifier="2.44" />
+		<Gear AngVel="6.62" FuelModifier="2.18" />
+		<Gear AngVel="9.23" FuelModifier="1.84" />
+		<Gear AngVel="12.42" FuelModifier="1.41" />
+		<Gear AngVel="16.2" FuelModifier="0.92" />
+		<GameData
+			Price="4200"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_GEARBOX_HIGHRANGE_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_GEARBOX_HIGHRANGE_NAME"
+			/>
+			<GearboxParams
+				IsHighGearExists="true"
+				IsLowerGearExists="true"
+				IsLowerPlusGearExists="false"
+				IsManualLowGear="false"
+				IsLowerMinusGearExists="false"
+			/>
+		</GameData>
+	</Gearbox>
+	<Gearbox
+		AWDConsumptionModifier="1.18"
+		CriticalDamageThreshold="0.6"
+		DamageCapacity="230"
+		DamagedConsumptionModifier="1.45"
+		FuelConsumption="2.56"
+		IdleFuelModifier="0.44"
+		Name="g_mercedes_zetros_finetune"
+		MinBreakFreq="0.0"
+		MaxBreakFreq="14.0"
+	>
+		<ReverseGear AngVel="1.99" FuelModifier="3.045" />
+		<HighGear AngVel="11.05" FuelModifier="2.7" />
+		<Gear AngVel="1.99" FuelModifier="3.045" />
+		<Gear AngVel="2.41" FuelModifier="2.88" />
+		<Gear AngVel="3.5" FuelModifier="2.59" />
+		<Gear AngVel="5.75" FuelModifier="2.21" />
+		<Gear AngVel="9.4" FuelModifier="1.65" />
+		<Gear AngVel="14.8" FuelModifier="0.99" />
+		<GameData
+			Price="5100"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_GEARBOX_TRUCK_FINETUNE_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_GEARBOX_TRUCK_FINETUNE_NAME"
+			/>
+			<GearboxParams
+				IsHighGearExists="true"
+				IsLowerGearExists="true"
+				IsLowerPlusGearExists="true"
+				IsManualLowGear="true"
+				IsLowerMinusGearExists="true"
+			/>
+		</GameData>
+	</Gearbox>
+</GearboxVariants>

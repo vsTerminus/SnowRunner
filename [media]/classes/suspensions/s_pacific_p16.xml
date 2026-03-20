@@ -8,8 +8,8 @@
 		Name="pacific_p16_suspension_default"
 	>
 		
-		<Suspension Damping="0.2" Height="0.3" Strength="0.08" WheelType="front" BrokenSuspensionMax="0.2" SuspensionMin="-0.3" />
-		<Suspension Damping="0.2" Height="0.09" Strength="0.08" WheelType="rear" BrokenSuspensionMax="0.3" SuspensionMin="-0.3" />
+		<Suspension Damping="0.38" Height="0.24" Strength="0.075" WheelType="front" BrokenSuspensionMax="0.2" SuspensionMin="-0.3" />
+		<Suspension Damping="0.235" Height="0.085" Strength="0.062" WheelType="rear" BrokenSuspensionMax="0.3" SuspensionMin="-0.3" />
 		<GameData
 			Price="6600"
 			UnlockByExploration="false"

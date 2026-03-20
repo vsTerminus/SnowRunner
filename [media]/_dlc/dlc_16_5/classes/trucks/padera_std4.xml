@@ -523,10 +523,11 @@
 			/>
 			<Socket
 				Names="LogLiftPaderaSTD4"
-				Offset="(0.0; 0.0; 0)"
+				Offset="(0.0; -0.145; 0)"
 				ParentFrame="BoneCabinTwist_cdt"
 			>
 				<AddonsShift Offset="(-0.6; 0; 0)" Types="BunkLog"/>
+				<AddonsShift Offset="(0.0; 0.15; 0)" Types="PaderaSTD4Subframe"/>
 			</Socket>
 			<Socket Names="PaderaSTD4SpareWheels" Offset="(0.04; 0.14; 0)" ParentFrame="BoneCabinTwist_cdt" />
 		</AddonSockets>
@@ -539,7 +540,7 @@
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.045)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.045)" />
 			</Socket>
-			<Socket Names="SaddleLow" Offset="(-2.430; 1.214; 0.000)" ParentFrame="BoneChassis_cdt" NamesBlock="PaderaSTD4Sideboard, MinicraneRearPaderaSTD4, PaderaSTD4Subframe, LogLiftPaderaSTD4" >
+			<Socket Names="SaddleLow" Offset="(-2.430; 1.214; 0.000)" ParentFrame="BoneChassis_cdt" NamesBlock="PaderaSTD4Sideboard, MinicraneRearPaderaSTD4, PaderaSTD4Subframe" >
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.045)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.045)" />
 			</Socket>

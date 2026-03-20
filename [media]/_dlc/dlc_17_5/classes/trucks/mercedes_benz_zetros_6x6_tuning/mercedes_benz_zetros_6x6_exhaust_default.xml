@@ -1,0 +1,31 @@
+<TruckAddon>
+	<Exhaust
+			Dir="(-0.004; 0.008; -1.000)"
+			IsLight="true"
+			Origin="(0.748; 3.104; -0.623)"
+			Speed="3.82"
+	/>
+	<PhysicsModel Mesh="trucks/mercedes_benz_zetros_6x6_tuning/mercedes_benz_zetros_6x6_exhaust_default">
+		<Body Collisions="None" Mass="10" ModelFrame="BoneChassis_cdt">
+			<Constraint Type="Rigid" />
+			<Body Collisions="None" Mass="50" ModelFrame="BoneCabinTwist_cdt">
+				<Constraint ExplicitParentFrame="0" Type="Fixed" />
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="exhaust"
+		Category="exhaust"
+		Price="900"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_EXHAUST_DEFAULT_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_EXHAUST_DEFAULT_NAME"
+		/>
+		<InstallSocket Type="MercedesBenzZetrosExhaust" />
+	</GameData>
+</TruckAddon>

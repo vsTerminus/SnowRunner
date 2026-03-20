@@ -1,0 +1,50 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<TruckData>
+		<Damage>
+			<Multiplier Multiplier="1.0" Type="Engine" />
+		</Damage>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/mercedes_benz_actros_6x6_tuning/mercedes_benz_actros_6x6_bumper_default">
+		<Body ImpactType="Truck" Mass="15" ModelFrame="BoneCabinTwist_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<Ignition>
+			<Light _template="IgnitionSignalWhite" Color="g(253; 220; 186) x 1" Pos="(3.773; 0.944; 1.006)" ParentFrame="BoneCabinTwist_cdt" />
+			<Light _template="IgnitionSignalWhite" Color="g(253; 220; 186) x 1" Pos="(3.773; 0.944; -1.006)" ParentFrame="BoneCabinTwist_cdt" />
+			
+			<Flare _template="HeadLight" ColorMultAtDay=".2" Dir="(1; 0; 0)" Size="0.2" Pos="(3.449; 1.063; 0.983)" ParentFrame="BoneCabinTwist_cdt" />
+			<Flare _template="HeadLight" ColorMultAtDay=".2" Dir="(1; 0; 0)" Size="0.2" Pos="(3.449; 1.063; -0.983)" ParentFrame="BoneCabinTwist_cdt" />
+			<Flare _template="HeadLight" ColorMultAtDay=".2" Dir="(1; 0; 0)" Size="0.2" Pos="(3.511; 1.062; 0.797)" ParentFrame="BoneCabinTwist_cdt" />
+			<Flare _template="HeadLight" ColorMultAtDay=".2" Dir="(1; 0; 0)" Size="0.2" Pos="(3.511; 1.062; -0.797)" ParentFrame="BoneCabinTwist_cdt" />
+		</Ignition>
+		<HeadLight>
+			<Model _template="HeadLightRay" Dir="(1; 0; 0)" Org="(3.449; 1.063; 0.983)" ParentFrame="BoneCabinTwist_cdt" />
+			<Model _template="HeadLightRay" Dir="(1; 0; 0)" Org="(3.449; 1.063; -0.983)" ParentFrame="BoneCabinTwist_cdt" />
+			<Flare _template="HeadLight" ColorMultAtDay=".2" Dir="(1; 0; 0)" Size="0.3" Pos="(3.511; 1.062; 0.797)" ParentFrame="BoneCabinTwist_cdt" />
+			<Flare _template="HeadLight" ColorMultAtDay=".2" Dir="(1; 0; 0)" Size="0.3" Pos="(3.511; 1.062; -0.797)" ParentFrame="BoneCabinTwist_cdt" />
+			<Flare _template="HeadLight" ColorMultAtDay=".2" Dir="(1; 0; 0)" Size="0.3" Pos="(3.449; 1.063; 0.983)" ParentFrame="BoneCabinTwist_cdt" />
+			<Flare _template="HeadLight" ColorMultAtDay=".2" Dir="(1; 0; 0)" Size="0.3" Pos="(3.449; 1.063; -0.983)" ParentFrame="BoneCabinTwist_cdt" />
+		</HeadLight>
+	</ModelAttachments>
+	<HeadLight _template="Default" Pos="(3.690; 0.795; 0)" ParentFrame="BoneCabinTwist_cdt" />
+	<GameData
+		CameraPreset="default"
+		Category="bumper"
+		Price="1000"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<WinchSocket FixedToTruck="true" Pos="(3.5; 0.916; 0.000)" />
+		<CraneSocket Pos="(3.5; 0.916; 0.000)" />
+		<UiDesc
+			UiDesc="UI_TUNING_BUMPER_STOCK_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_BUMPER_STOCK_NAME"
+		/>
+		<InstallSocket Type="MercedesBenzActrosBumper" />
+	</GameData>
+</TruckAddon>

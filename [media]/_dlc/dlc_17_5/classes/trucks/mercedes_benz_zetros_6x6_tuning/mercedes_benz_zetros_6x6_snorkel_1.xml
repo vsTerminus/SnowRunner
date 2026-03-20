@@ -1,0 +1,24 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<Snorkel Origin="(3.068; 2.078; -1.116)" />
+	<PhysicsModel Mesh="trucks/mercedes_benz_zetros_6x6_tuning/mercedes_benz_zetros_6x6_snorkel_1">
+		<Body Collisions="Default" Mass="3" ModelFrame="BoneCabin_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="snorkel"
+		Category="snorkel"
+		Price="600"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SNORKEL_EXT_AIRFILTER_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SNORKEL_EXT_AIRFILTER_NAME"
+		/>
+		<InstallSocket Type="MercedesBenzZetrosSnorkel" />
+	</GameData>
+</TruckAddon>

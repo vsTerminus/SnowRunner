@@ -13,7 +13,7 @@
 		<AnimTrack Name="stage_1_anim" />
 	</Subset>
 	<AnimSubset Name="build_animation_0">
-	    <Mesh Name="anim_mesh"/>
+	    <Mesh Name="anim_mesh_1"/>
 		<CdtMesh Name="cdt_stage_2"/>
 	</AnimSubset>
 	<PhysicsModel>

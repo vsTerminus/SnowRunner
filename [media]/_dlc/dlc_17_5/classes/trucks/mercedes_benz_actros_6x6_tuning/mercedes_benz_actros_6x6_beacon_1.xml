@@ -1,0 +1,111 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<Rotator EngineTorqueFactor="0" Frame="BoneRotatorRight" RotationSpeed="4" />
+	<Rotator EngineTorqueFactor="0" Frame="BoneRotatorRight1" RotationSpeed="4" />
+	<Rotator EngineTorqueFactor="0" Frame="BoneRotatorRight2" RotationSpeed="4" />
+	<Rotator EngineTorqueFactor="0" Frame="BoneRotatorRight3" RotationSpeed="4" />
+	<Rotator EngineTorqueFactor="0" Frame="BoneRotatorRight4" RotationSpeed="4" />
+	<Rotator EngineTorqueFactor="0" Frame="BoneRotatorLeft" RotationSpeed="4" />
+	<Rotator EngineTorqueFactor="0" Frame="BoneRotatorLeft1" RotationSpeed="4" />
+	<Rotator EngineTorqueFactor="0" Frame="BoneRotatorLeft2" RotationSpeed="4" />
+	<Rotator EngineTorqueFactor="0" Frame="BoneRotatorLeft3" RotationSpeed="4" />
+	<Rotator EngineTorqueFactor="0" Frame="BoneRotatorLeft4" RotationSpeed="4" />
+	<PhysicsModel Mesh="trucks/mercedes_benz_actros_6x6_tuning/mercedes_benz_actros_6x6_beacon_1">
+		<Body ImpactType="Truck" Mass="10" ModelFrame="BoneCabin_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<Ignition _template="Flasher">
+			<Model _inheritRemove="true" />
+			<Light _inheritRemove="true" />
+			<Flare Color="g(255; 235; 205) x 0.3" Dir="(-0.4; 0.222; 0.563)" Size="0.28" Pos="(2.336; 3.558; -0.761)" ParentFrame="BoneRotatorRight" />
+			<Flare Color="g(255; 205; 56) x 0.5" Dir="(-0.4; 0.222; 0.563)" Size="0.28" Pos="(2.336; 3.558; -0.761)" ParentFrame="BoneRotatorRight" />
+			<Flare Color="g(255; 205; 56) x 0.5" Size="0.28" Pos="(2.336; 3.558; -0.761)" ParentFrame="BoneRotatorRight" />
+			<Flare Color="g(255; 235; 205) x 0.3" Dir="(-0.4; 0.222; 0.563)" Size="0.28" Pos="(2.266; 3.558; -0.761)" ParentFrame="BoneRotatorRight" />
+			<Flare Color="g(255; 205; 56) x 0.5" Dir="(-0.4; 0.222; 0.563)" Size="0.28" Pos="(2.266; 3.558; -0.761)" ParentFrame="BoneRotatorRight" />
+			<Flare Color="g(255; 205; 56) x 0.5" Size="0.28" Pos="(2.266; 3.558; -0.761)" ParentFrame="BoneRotatorRight" />
+		</Ignition>
+		<Ignition _template="Flasher">
+			<Model _inheritRemove="true" />
+			<Light _inheritRemove="true" />
+			<Flare Color="g(255; 235; 205) x 0.3" Dir="(1; 0; 0)" Size="0.28" Pos="(2.389; 3.559; -0.513)" ParentFrame="BoneRotatorRight1" />
+			<Flare Color="g(255; 205; 56) x 0.5" Dir="(1; 0; 0)" Size="0.28" Pos="(2.389; 3.559; -0.513)" ParentFrame="BoneRotatorRight1" />
+			<Flare Color="g(255; 205; 56) x 0.5" Size="0.28" Pos="(2.389; 3.559; -0.513)" ParentFrame="BoneRotatorRight1" />
+		</Ignition>
+		<Ignition _template="Flasher">
+			<Model _inheritRemove="true" />
+			<Light _inheritRemove="true" />
+			<Flare Color="g(255; 235; 205) x 0.3" Dir="(1; 0; 0)" Size="0.28" Pos="(2.389; 3.559; -0.340)" ParentFrame="BoneRotatorRight2" />
+			<Flare Color="g(255; 205; 56) x 0.5" Dir="(1; 0; 0)" Size="0.28" Pos="(2.389; 3.559; -0.340)" ParentFrame="BoneRotatorRight2" />
+			<Flare Color="g(255; 205; 56) x 0.5" Size="0.28" Pos="(2.389; 3.559; -0.340)" ParentFrame="BoneRotatorRight2" />
+		</Ignition>
+		<Ignition _template="Flasher">
+			<Model _inheritRemove="true" />
+			<Light _inheritRemove="true" />
+			<Flare Color="g(255; 235; 205) x 0.3" Dir="(-1; 0; 0)" Size="0.28" Pos="(2.212; 3.559; -0.340)" ParentFrame="BoneRotatorRight3" />
+			<Flare Color="g(255; 205; 56) x 0.5" Dir="(-1; 0; 0)" Size="0.28" Pos="(2.212; 3.559; -0.340)" ParentFrame="BoneRotatorRight3" />
+			<Flare Color="g(255; 205; 56) x 0.5" Size="0.28" Pos="(2.212; 3.559; -0.340)" ParentFrame="BoneRotatorRight3" />
+		</Ignition>
+		<Ignition _template="Flasher">
+			<Model _inheritRemove="true" />
+			<Light _inheritRemove="true" />
+			<Flare Color="g(255; 235; 205) x 0.3" Dir="(-1; 0; 0)" Size="0.28" Pos="(2.212; 3.559; -0.513)" ParentFrame="BoneRotatorRight4" />
+			<Flare Color="g(255; 205; 56) x 0.5" Dir="(-1; 0; 0)" Size="0.28" Pos="(2.212; 3.559; -0.513)" ParentFrame="BoneRotatorRight4" />
+			<Flare Color="g(255; 205; 56) x 0.5" Size="0.28" Pos="(2.212; 3.559; -0.513)" ParentFrame="BoneRotatorRight4" />
+		</Ignition>
+		<Ignition _template="Flasher">
+			<Model _inheritRemove="true" />
+			<Light _inheritRemove="true" />
+			<Flare Color="g(255; 235; 205) x 0.3" Dir="(-0.4; 0.222; 0.563)" Size="0.28" Pos="(2.266; 3.558; 0.761)" ParentFrame="BoneRotatorLeft" />
+			<Flare Color="g(255; 205; 56) x 0.5" Dir="(-0.4; 0.222; 0.563)" Size="0.28" Pos="(2.266; 3.558; 0.761)" ParentFrame="BoneRotatorLeft" />
+			<Flare Color="g(255; 205; 56) x 0.5" Size="0.28" Pos="(2.266; 3.558; 0.761)" ParentFrame="BoneRotatorLeft" />
+			<Flare Color="g(255; 235; 205) x 0.3" Dir="(-0.4; 0.222; 0.563)" Size="0.28" Pos="(2.336; 3.558; 0.761)" ParentFrame="BoneRotatorLeft" />
+			<Flare Color="g(255; 205; 56) x 0.5" Dir="(-0.4; 0.222; 0.563)" Size="0.28" Pos="(2.336; 3.558; 0.761)" ParentFrame="BoneRotatorLeft" />
+			<Flare Color="g(255; 205; 56) x 0.5" Size="0.28" Pos="(2.336; 3.558; 0.761)" ParentFrame="BoneRotatorLeft" />
+		</Ignition>
+		<Ignition _template="Flasher">
+			<Model _inheritRemove="true" />
+			<Light _inheritRemove="true" />
+			<Flare Color="g(255; 235; 205) x 0.3" Dir="(1; 0; 0)" Size="0.28" Pos="(2.389; 3.559; 0.513)" ParentFrame="BoneRotatorLeft1" />
+			<Flare Color="g(255; 205; 56) x 0.5" Dir="(1; 0; 0)" Size="0.28" Pos="(2.389; 3.559; 0.513)" ParentFrame="BoneRotatorLeft1" />
+			<Flare Color="g(255; 205; 56) x 0.5" Size="0.28" Pos="(2.389; 3.559; 0.513)" ParentFrame="BoneRotatorLeft1" />
+		</Ignition>
+		<Ignition _template="Flasher">
+			<Model _inheritRemove="true" />
+			<Light _inheritRemove="true" />
+			<Flare Color="g(255; 235; 205) x 0.3" Dir="(1; 0; 0)" Size="0.28" Pos="(2.389; 3.559; 0.340)" ParentFrame="BoneRotatorLeft2" />
+			<Flare Color="g(255; 205; 56) x 0.5" Dir="(1; 0; 0)" Size="0.28" Pos="(2.389; 3.559; 0.340)" ParentFrame="BoneRotatorLeft2" />
+			<Flare Color="g(255; 205; 56) x 0.5" Size="0.28" Pos="(2.389; 3.559; 0.340)" ParentFrame="BoneRotatorLeft2" />
+		</Ignition>
+		<Ignition _template="Flasher">
+			<Model _inheritRemove="true" />
+			<Light _inheritRemove="true" />
+			<Flare Color="g(255; 235; 205) x 0.3" Dir="(-1; 0; 0)" Pos="(2.212; 3.559; 0.340)" ParentFrame="BoneRotatorLeft3" />
+			<Flare Color="g(255; 205; 56) x 0.5" Dir="(-1; 0; 0)" Pos="(2.212; 3.559; 0.340)" ParentFrame="BoneRotatorLeft3" />
+			<Flare Color="g(255; 205; 56) x 0.5" Pos="(2.212; 3.559; 0.340)" ParentFrame="BoneRotatorLeft3" />
+		</Ignition>
+		<Ignition _template="Flasher">
+			<Model _inheritRemove="true" />
+			<Light _inheritRemove="true" />
+			<Flare Color="g(255; 235; 205) x 0.3" Dir="(-1; 0; 0)" Size="0.28" Pos="(2.212; 3.559; 0.513)" ParentFrame="BoneRotatorLeft4" />
+			<Flare Color="g(255; 205; 56) x 0.5" Dir="(-1; 0; 0)" Size="0.28" Pos="(2.212; 3.559; 0.513)" ParentFrame="BoneRotatorLeft4" />
+			<Flare Color="g(255; 205; 56) x 0.5" Size="0.28" Pos="(2.212; 3.559; 0.513)" ParentFrame="BoneRotatorLeft4" />
+		</Ignition>
+	</ModelAttachments>
+	<GameData
+		CameraPreset="roof"
+		Category="top"
+		Price="800"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_FLASHER_BAR_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_FLASHER_BAR_NAME"
+		/>
+		<InstallSocket Type="MercedesBenzActrosBeacon" />
+	</GameData>
+</TruckAddon>

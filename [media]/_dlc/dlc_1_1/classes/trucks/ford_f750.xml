@@ -298,13 +298,12 @@
 		Recallable="true"
 		UnlockByExploration="true"
 		UnlockByRank="1"
-		ExcludeAddons="trailer_log_pole"
+		ExcludeAddons="trailer_log_pole, trailer_log_medium, trailer_log_short"
 	>
 		<WinchSocket Pos="(3.865; 0.781; -0.454)" />
 		<WinchSocket Pos="(3.865; 0.781; 0.454)" />
 		<WinchSocket Pos="(-0.104; 0.795; -0.46)" />
 		<WinchSocket Pos="(-0.104; 0.795; 0.46)" />
-		<WinchSocket Pos="(-3.879; 0.761; 0)" />
 		<UiDesc>
 			<region:default
 			UiDesc="UI_VEHICLE_FORD_F750_DESC"
@@ -351,9 +350,13 @@
 		<CraneSocket Pos="(1; 2.25; 0)" />
 		<CraneSocket Pos="(-0.104; 0.795; -0.46)" />
 		<CraneSocket Pos="(-0.104; 0.795; 0.46)" />
-		<CraneSocket Pos="(-3.879; 0.761; 0)" />
+		<AddonSockets DefaultAddon="ford_f750_farkop_trailer" RequiredAddonIfNoConflicts="" >
+			<Socket Names="FordF750Farkop" Offset="(0; 0; 0)" />
+			<Socket Names="FordF750FarkopScout" Offset="(0; 0; 0)" />
+		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="Trailer, LogTrailer" Offset="(-3.89; 0.776; 0)" />
+			<Socket Names="Trailer, LogTrailer" Offset="(-3.89; 0.776; 0)" NamesBlock="FordF750FarkopScout" RequiredHitches="ford_f750_farkop_trailer" />
+			<Socket Names="ScautTrailer" Offset="(-4.095; 0.805; -0.000)" NamesBlock="FordF750Farkop" RequiredHitches="ford_f750_farkop_scout_trailer" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="ford_f750_bumper_default">
 			<Socket Names="FordF750Bumper" ParentFrame="BoneCabin_cdt" />

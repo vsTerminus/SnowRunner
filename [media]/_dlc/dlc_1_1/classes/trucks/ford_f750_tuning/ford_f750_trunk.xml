@@ -4,9 +4,9 @@
 		<Mesh Frame="wheel" HideThreshold="0.0" />
 	</WheelRepairsHide>
 	<TruckData
-		FuelCapacity="50"
-		RepairsCapacity="100"
-		WheelRepairsCapacity="2"
+		FuelCapacity="20"
+		RepairsCapacity="50"
+		WheelRepairsCapacity="4"
 	/>
 	<PhysicsModel Mesh="trucks/ford_f750_tuning/ford_f750_trunk">
 		<Body ImpactType="Truck" Mass="50">

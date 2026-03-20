@@ -10,9 +10,7 @@
 <TruckWheels
 	DamageCapacity="50"
 	Radius="1"
-	RadiusRear="1"
-	Width="0.563"
-	WidthRear="0.563"
+	Width="0.56"
 >
 	<TruckTires>
 		<TruckTire _template="Offroad" Mesh="wheels/tire_jangsu_rx600" Name="jangsu_offroad_1">

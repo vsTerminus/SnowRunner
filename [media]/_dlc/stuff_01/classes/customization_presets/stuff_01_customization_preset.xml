@@ -1540,4 +1540,19 @@
 	<Truck _template="GlassStickerBottom2x16" Name="sticker_glass_bottom_jangsu_rx600" />
 	<Truck _template="Curtain" Name="stuff_curtain_jangsu_rx600" />
 	<!--<- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -/>-->
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_01_mercedes_benz_zetros_6x6" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_02_mercedes_benz_zetros_6x6" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_03_mercedes_benz_zetros_6x6" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_04_mercedes_benz_zetros_6x6" />
+	<Truck _template="InsideSticker1x2" Name="sticker_inside_1x2_01_mercedes_benz_zetros_6x6" />
+	<Truck _template="InsideSticker1x4" Name="sticker_inside_1x4_01_mercedes_benz_zetros_6x6" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_door_l_1x1_mercedes_benz_zetros_6x6" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_door_r_1x1_mercedes_benz_zetros_6x6" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_side_l_1x1_mercedes_benz_zetros_6x6" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_side_r_1x1_mercedes_benz_zetros_6x6" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_capote_1x1_mercedes_benz_zetros_6x6" />
+	<Truck _template="GlassStickerTop2x16" Name="sticker_glass_top_mercedes_benz_zetros_6x6" />
+	<Truck _template="GlassStickerBottom2x16" Name="sticker_glass_bottom_mercedes_benz_zetros_6x6" />
+	<Truck _template="Curtain" Name="stuff_curtain_mercedes_benz_zetros_6x6" />
+	<!--<- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -/>-->
 </TruckSet>

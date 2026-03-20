@@ -1,6 +1,6 @@
 <_templates Include="trucks">
 	<TruckTire>
-		<Offroad Mass="320">
+		<Offroad Mass="250">
 			<WheelTracks _template="Offroad" />
 			<WheelSoftness _template="Average" />
 		</Offroad>

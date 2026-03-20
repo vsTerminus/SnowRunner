@@ -1,0 +1,31 @@
+<TruckAddon>
+	<Exhaust
+			Dir="(-0.707; 0.000; 0.707)"
+			IsLight="true"
+			Origin="(1.557; 3.433; 0.998)"
+			Speed="3.82"
+	/>
+	<PhysicsModel Mesh="trucks/mercedes_benz_actros_6x6_tuning/mercedes_benz_actros_6x6_exhaust_default">
+		<Body Collisions="None" Mass="20" ModelFrame="BoneChassis_cdt">
+			<Constraint Type="Rigid" />
+			<Body Collisions="None" Mass="20" ModelFrame="BoneCabinTwist_cdt">
+				<Constraint ExplicitParentFrame="0" Type="Fixed" />
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="exhaust"
+		Category="exhaust"
+		Price="1500"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_EXHAUST_DEFAULT_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_EXHAUST_DEFAULT_NAME"
+		/>
+		<InstallSocket Type="MercedesBenzActrosExhaust" />
+	</GameData>
+</TruckAddon>

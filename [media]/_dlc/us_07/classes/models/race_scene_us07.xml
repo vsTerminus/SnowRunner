@@ -3,6 +3,7 @@
 	ClipCamera="false"
 	AcceptZoneBorderDecals="true"
 	DynamicModel="true"
+	SkipExtraBlocks="true"
 >
 	<StaticLights>
 

@@ -1,0 +1,158 @@
+<GearboxVariants>
+	<Gearbox
+		AWDConsumptionModifier="1.15"
+		CriticalDamageThreshold="0.5"
+		DamageCapacity="220"
+		DamagedConsumptionModifier="1.31"
+		FuelConsumption="1.55"
+		IdleFuelModifier="0.34"
+		Name="g_mercedes_benz_actros_default"
+		MinBreakFreq="0.0"
+		MaxBreakFreq="10.0"
+	>
+		<ReverseGear AngVel="1.4" FuelModifier="1.712" />
+		<HighGear AngVel="10.01" FuelModifier="1.12" />
+		<Gear AngVel="1.4" FuelModifier="1.712" />
+		<Gear AngVel="3.05" FuelModifier="1.6" />
+		<Gear AngVel="5.8" FuelModifier="1.41" />
+		<Gear AngVel="9.65" FuelModifier="1.14" />
+		<Gear AngVel="14.6" FuelModifier="0.8" />
+		<GameData
+			Price="1900"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_GEARBOX_DEFAULT_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_GEARBOX_DEFAULT_NAME"
+			/>
+			<GearboxParams
+				IsHighGearExists="false"
+				IsLowerGearExists="true"
+				IsLowerPlusGearExists="false"
+				IsManualLowGear="false"
+				IsLowerMinusGearExists="false"
+			/>
+		</GameData>
+	</Gearbox>
+	<Gearbox
+		AWDConsumptionModifier="1.12"
+		CriticalDamageThreshold="0.61"
+		DamageCapacity="230"
+		DamagedConsumptionModifier="1.37"
+		FuelConsumption="1.61"
+		IdleFuelModifier="0.36"
+		Name="g_mercedes_benz_actros_offroad"
+		MinBreakFreq="0.0"
+		MaxBreakFreq="14.0"
+	>
+		<ReverseGear AngVel="1.82" FuelModifier="1.85" />
+		<HighGear AngVel="12.84" FuelModifier="1.18" />
+		<Gear AngVel="1.82" FuelModifier="1.85" />
+		<Gear AngVel="2.27" FuelModifier="1.76" />
+		<Gear AngVel="3.51" FuelModifier="1.62" />
+		<Gear AngVel="5.91" FuelModifier="1.41" />
+		<Gear AngVel="9.88" FuelModifier="1.15" />
+		<Gear AngVel="15.8" FuelModifier="0.83" />
+		<GameData
+			Price="5700"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_GEARBOX_OFFROAD_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_GEARBOX_OFFROAD_NAME"
+			/>
+			<GearboxParams
+				IsHighGearExists="true"
+				IsLowerGearExists="true"
+				IsLowerPlusGearExists="true"
+				IsManualLowGear="false"
+				IsLowerMinusGearExists="true"
+			/>
+		</GameData>
+	</Gearbox>
+	<Gearbox
+		AWDConsumptionModifier="1.08"
+		CriticalDamageThreshold="0.55"
+		DamageCapacity="200"
+		DamagedConsumptionModifier="1.24"
+		FuelConsumption="1.4"
+		IdleFuelModifier="0.32"
+		Name="g_mercedes_benz_actros_highrange"
+		MinBreakFreq="0.0"
+		MaxBreakFreq="6.0"
+	>
+		<ReverseGear AngVel="2.01" FuelModifier="1.68" />
+		<HighGear AngVel="14.96" FuelModifier="1.09" />
+		<Gear AngVel="2.01" FuelModifier="1.68" />
+		<Gear AngVel="2.95" FuelModifier="1.63" />
+		<Gear AngVel="4.51" FuelModifier="1.53" />
+		<Gear AngVel="6.67" FuelModifier="1.4" />
+		<Gear AngVel="9.5" FuelModifier="1.23" />
+		<Gear AngVel="12.93" FuelModifier="1.03" />
+		<Gear AngVel="17.0" FuelModifier="0.78" />
+		<GameData
+			Price="3800"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_GEARBOX_HIGHRANGE_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_GEARBOX_HIGHRANGE_NAME"
+			/>
+			<GearboxParams
+				IsHighGearExists="true"
+				IsLowerGearExists="true"
+				IsLowerPlusGearExists="false"
+				IsManualLowGear="false"
+				IsLowerMinusGearExists="false"
+			/>
+		</GameData>
+	</Gearbox>
+	<Gearbox
+		AWDConsumptionModifier="1.12"
+		CriticalDamageThreshold="0.61"
+		DamageCapacity="230"
+		DamagedConsumptionModifier="1.39"
+		FuelConsumption="1.63"
+		IdleFuelModifier="0.385"
+		Name="g_mercedes_benz_actros_finetune"
+		MinBreakFreq="0.0"
+		MaxBreakFreq="14.0"
+	>
+		<ReverseGear AngVel="1.82" FuelModifier="1.94" />
+		<HighGear AngVel="12.84" FuelModifier="1.24" />
+		<Gear AngVel="1.82" FuelModifier="1.94" />
+		<Gear AngVel="2.27" FuelModifier="1.85" />
+		<Gear AngVel="3.51" FuelModifier="1.7" />
+		<Gear AngVel="5.91" FuelModifier="1.48" />
+		<Gear AngVel="9.88" FuelModifier="1.21" />
+		<Gear AngVel="15.8" FuelModifier="0.87" />
+		<GameData
+			Price="5300"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_GEARBOX_TRUCK_FINETUNE_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_GEARBOX_TRUCK_FINETUNE_NAME"
+			/>
+			<GearboxParams
+				IsHighGearExists="true"
+				IsLowerGearExists="true"
+				IsLowerPlusGearExists="true"
+				IsManualLowGear="true"
+				IsLowerMinusGearExists="true"
+			/>
+		</GameData>
+	</Gearbox>
+</GearboxVariants>

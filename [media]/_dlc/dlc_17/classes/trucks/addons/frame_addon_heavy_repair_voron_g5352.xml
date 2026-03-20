@@ -9,7 +9,7 @@
 	<Rotator EngineTorqueFactor="0.2" Frame="BoneRotatorFan2" RotationAxis="(0; 1; 0)" RotationSpeed="2" />
 	<PhysicsModel Mesh="trucks/addons/frame_addon_heavy_repair_voron_g5352">
 		<NetSync Legacy="true" />
-		<Body ImpactType="Truck" Mass="3800" ModelFrame="BoneChassis_cdt">
+		<Body ImpactType="Truck" Mass="4100" ModelFrame="BoneChassis_cdt">
 			<Constraint Type="Rigid" />
 			<Body 
 				Collisions="None"

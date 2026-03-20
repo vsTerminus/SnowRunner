@@ -1,0 +1,50 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<TruckData>
+		<Damage>
+			<Multiplier Multiplier="1.0" Type="Engine" />
+		</Damage>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/mercedes_benz_zetros_6x6_tuning/mercedes_benz_zetros_6x6_bumper_default">
+		<Body ImpactType="Truck" Mass="20" ModelFrame="BoneCabinTwist_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	
+	<ModelAttachments>
+		<Ignition>
+			<Light _template="IgnitionSignalWhite" Color="g(253; 220; 186) x 1" Pos="(4.423; 1.111; 1.018)" ParentFrame="BoneCabinTwist_cdt" />
+			<Light _template="IgnitionSignalWhite" Color="g(253; 220; 186) x 1" Pos="(4.423; 1.111; -1.018)" ParentFrame="BoneCabinTwist_cdt" />
+			
+			<Flare _template="HeadLight" ColorMultAtDay=".2" Dir="(1; 0; 0)" Size="0.2" Pos="(4.423; 1.111; 1.018)" ParentFrame="BoneCabinTwist_cdt" />
+			<Flare _template="HeadLight" ColorMultAtDay=".2" Dir="(1; 0; 0)" Size="0.2" Pos="(4.423; 1.111; -1.018)" ParentFrame="BoneCabinTwist_cdt" />
+			<Flare _template="HeadLight" ColorMultAtDay=".2" Dir="(1; 0; 0)" Size="0.2" Pos="(4.458; 1.111; 0.858)" ParentFrame="BoneCabinTwist_cdt" />
+			<Flare _template="HeadLight" ColorMultAtDay=".2" Dir="(1; 0; 0)" Size="0.2" Pos="(4.458; 1.111; -0.858)" ParentFrame="BoneCabinTwist_cdt" />
+		</Ignition>
+		<HeadLight>
+			<Model _template="HeadLightRay" Dir="(1; 0; 0)" Org="(4.423; 1.111; 1.018)" ParentFrame="BoneCabinTwist_cdt" />
+			<Model _template="HeadLightRay" Dir="(1; 0; 0)" Org="(4.423; 1.111; -1.018)" ParentFrame="BoneCabinTwist_cdt" />
+			<Flare _template="HeadLight" ColorMultAtDay=".2" Dir="(1; 0; 0)" Size="0.3" Pos="(4.423; 1.111; 1.018)" ParentFrame="BoneCabinTwist_cdt" />
+			<Flare _template="HeadLight" ColorMultAtDay=".2" Dir="(1; 0; 0)" Size="0.3" Pos="(4.423; 1.111; -1.018)" ParentFrame="BoneCabinTwist_cdt" />
+			<Flare _template="HeadLight" ColorMultAtDay=".2" Dir="(1; 0; 0)" Size="0.3" Pos="(4.458; 1.111; 0.858)" ParentFrame="BoneCabinTwist_cdt" />
+			<Flare _template="HeadLight" ColorMultAtDay=".2" Dir="(1; 0; 0)" Size="0.3" Pos="(4.458; 1.111; -0.858)" ParentFrame="BoneCabinTwist_cdt" />
+		</HeadLight>
+	</ModelAttachments>
+	<GameData
+		CameraPreset="default"
+		Category="bumper"
+		Price="1600"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<WinchSocket FixedToTruck="true" Pos="(4.467; 1.029; -0.002)" />
+		<CraneSocket FixedToTruck="true" Pos="(4.467; 1.029; -0.002)" />
+		<UiDesc
+			UiDesc="UI_TUNING_BUMPER_STOCK_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_BUMPER_STOCK_NAME"
+		/>
+		<InstallSocket Type="MercedesBenzZetrosBumper" />
+	</GameData>
+</TruckAddon>

@@ -1,0 +1,25 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/chevy_apache_tuning/chevy_apache_farkop_scout_trailer" >
+		<Body ImpactType="Truck" Mass="5">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="addon_1"
+		Category="frame_addons"
+		Price="0"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<WinchSocket Pos="(-2.761; 0.828; -0.000)" FixedToTruck="true" />
+		<CraneSocket Pos="(-2.761; 0.828; -0.000)" FixedToTruck="true" />
+		<UiDesc
+			UiDesc="UI_TUNING_FARKOP_SCOUT_TRAILER_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_FARKOP_SCOUT_TRAILER_NAME"
+		/>
+		<InstallSocket Type="ChevyApacheFarkopScout" />
+	</GameData>
+</TruckAddon>

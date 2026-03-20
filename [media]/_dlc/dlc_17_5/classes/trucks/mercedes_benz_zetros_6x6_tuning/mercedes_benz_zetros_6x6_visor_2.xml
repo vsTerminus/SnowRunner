@@ -1,0 +1,19 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/mercedes_benz_zetros_6x6_tuning/mercedes_benz_zetros_6x6_visor_2" />
+	<GameData
+		CameraPreset="roof"
+		Category="fender_front"
+		Price="800"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SUNVISOR_NAVISTAR_DARKSLANT_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SUNVISOR_NAVISTAR_DARKSLANT_NAME"
+		/>
+		<InstallSocket Type="MercedesBenzZetrosVisor" />
+	</GameData>
+</TruckAddon>
