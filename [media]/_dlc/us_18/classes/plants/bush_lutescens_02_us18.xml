@@ -1,0 +1,39 @@
+<_templates Include="environment" />
+<PlantBrand
+	_template="Bush"
+	LocalYOcclusionOffset="0.2"
+	PlantingGroups="Bush,SmallTree"
+	PlantingMinSpacing="1.4"
+>
+	<PhysicsModel>
+		<Body _template="BushRoot" ModelFrame="BoneRoot" DebrisType="FoliageSummer">
+			<Constraint
+				Cone="75"
+            	TwistAxisLocal="(0; 1; 0)"
+            	Type="Ragdoll"	
+				>
+				<PlaneConeMotor Damping="250" Spring="170" Type="Spring" />
+				</Constraint>
+			<Body _template="BushBranch" ModelFrame="BoneBranch1">
+				<Constraint _template="BushBranch" />
+			</Body>
+			<Body _template="BushBranch" ModelFrame="BoneBranch2">
+				<Constraint _template="BushBranch" />
+			</Body>
+			<Body _template="BushBranch" ModelFrame="BoneBranch3">
+				<Constraint _template="BushBranch" />
+			</Body>
+			<Body _template="BushBranch" ModelFrame="BoneBranch4">
+				<Constraint _template="BushBranch" />
+			</Body>
+			<Body _template="BushBranch" ModelFrame="BoneBranch5">
+				<Constraint _template="BushBranch" />
+			</Body>
+			<Body _template="BushBranch" ModelFrame="BoneBranch6">
+				<Constraint _template="BushBranch" />
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<Occlusion Intensity="0.5" Size="(8.0; 8.0)" />
+	<Landmark Mesh="landmarks/bush_lutescens_02_us18_lmk" />
+</PlantBrand>

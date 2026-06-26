@@ -1,0 +1,30 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<TruckData>
+		<Damage>
+			<Multiplier Multiplier="0.95" Type="Engine" />
+			<Multiplier Multiplier="0.9" Type="GearBox" />
+		</Damage>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/mercer_6x6r_230_tuning/mercer_6x6r_230_protection_1">
+		<Body ImpactType="Truck" Mass="60" ModelFrame="BoneCabin_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="default"
+		Category="top"
+		IsCustomizable="true"
+		Price="2700"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_BUMPER_SAVIOR_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_BUMPER_SAVIOR_NAME"
+		/>
+		<InstallSocket Type="Mercer6X6R230Protection" />
+	</GameData>
+</TruckAddon>

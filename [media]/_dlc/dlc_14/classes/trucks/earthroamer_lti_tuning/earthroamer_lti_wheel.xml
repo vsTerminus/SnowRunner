@@ -5,7 +5,7 @@
 	<WheelRepairsHide>
 		<Mesh Frame="earthroamer_lti_wheel" HideThreshold="0.0" />
 	</WheelRepairsHide>
-	<TruckData WheelRepairsCapacity="1" />
+	<TruckData WheelRepairsCapacity="2" />
 	<PhysicsModel Mesh="trucks/earthroamer_lti_tuning/earthroamer_lti_wheel">
 		<Body Mass="15" ModelFrame="BoneChassis_cdt" ImpactType="Truck">
 			<Constraint Type="Rigid" />

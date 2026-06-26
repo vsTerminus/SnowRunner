@@ -1,4 +1,5 @@
 <ModelBrand
+	AcceptZoneBorderDecals="true"
 	NightLightingShadowsAllowCap="true"
  	Instanced="true"
  	InstancedAsModel="true"

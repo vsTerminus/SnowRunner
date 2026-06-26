@@ -1,0 +1,16 @@
+<_templates Include="models" />
+<ModelBrand
+	BreakType="SmallTree"
+	NightLightingShadowsAllowCap="true"
+	Instanced="true"
+>
+	<PhysicsModel>
+		<Body _template="MediumWeight" ModelFrame="BoneRoot" DamageMult="0">
+			<Constraint _template="MediumWeight" />
+			<Body _template="MediumWeight" ModelFrame="BonePart" DamageMult="0">
+				<Constraint _template="MediumWeight" />
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<Landmark Mesh="landmarks/beach_umbrella_01_us18_lmk" />
+</ModelBrand>

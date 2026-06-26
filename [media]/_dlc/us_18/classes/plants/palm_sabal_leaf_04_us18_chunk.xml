@@ -1,0 +1,29 @@
+<_templates Include="environment" />
+<PlantBrand 
+	DisableShadows="true"
+	DistSkipPercentage="2.0"
+>
+	<PhysicsModel>
+		<Body _template="FallingTreeRoot" ModelFrame="BoneRoot" DamageMult="0.0" Collision="None">
+			<Constraint _template="TreeChunk"/>
+				<Body _template="LyingBranch" ModelFrame="BoneBranch1" DamageMult="0.0">
+					<Constraint _template="TreeChunk" BreakOffThreshold="1"/>
+				</Body>
+				<Body _template="LyingBranch" ModelFrame="BoneBranch2" DamageMult="0.0">
+					<Constraint _template="TreeChunk" BreakOffThreshold="1"/>
+				</Body>
+				<Body _template="LyingBranch" ModelFrame="BoneBranch3" DamageMult="0.0">
+					<Constraint _template="TreeChunk" BreakOffThreshold="1"/>
+				</Body>
+				<Body _template="LyingBranch" ModelFrame="BoneBranch4" DamageMult="0.0">
+					<Constraint _template="TreeChunk" BreakOffThreshold="1"/>
+				</Body>
+				<Body _template="LyingBranch" ModelFrame="BoneBranch5" DamageMult="0.0">
+					<Constraint _template="TreeChunk" BreakOffThreshold="1"/>
+				</Body>	
+				<Body _template="LyingBranch" ModelFrame="BoneBranch6" DamageMult="0.0">
+					<Constraint _template="TreeChunk" BreakOffThreshold="1"/>
+				</Body>	
+		</Body>
+	</PhysicsModel>
+</PlantBrand>

@@ -59,7 +59,7 @@
 			DefaultTire="highway_1"
 			DefaultWheelType="wheels_medium_double"
 		>
-			<Wheel _template="FrontWheel" Pos="(5.844; 0.577; 1.005)" />
+			<Wheel _template="FrontWheel" Pos="(5.844; 0.577; 0.994)" />
 			<Wheel _template="FrontWheel" RightSide="true" Pos="(5.844; 0.577; 0.994)" />
 			<Wheel _template="RearWheel" Pos="(1.115; 0.596; 0.852)" />
 			<Wheel _template="RearWheel" RightSide="true" Pos="(1.115; 0.596; 0.852)" />
@@ -76,7 +76,7 @@
 			Frame="BoneRack"
 			FrameSteerLeft="BoneRackL"
 			FrameSteerRight="BoneRackR"
-			RackHalfSizeZ="0.875"
+			RackHalfSizeZ="0.8"
 		/>
 		<Steam Origin="(5.014; 1.085; 0)" ParentFrame="BoneCabin_cdt" />
 		<SoundsWheels _template="Default" />
@@ -110,10 +110,7 @@
 			<AbruptStop		Sound="trucks/common/truck_swing_big_rnd_set/truck_swing_big_rnd" />
 		</Sounds>
 		<Shafts>
-			<Shaft SocketPointA="Shaft1a" SocketPointB="Shaft1b" />
-			<Shaft SocketPointA="Shaft2a" SocketPointB="Shaft2b" />
-			<Shaft SocketPointA="Shaft3a" SocketPointB="Shaft3b" />
-			<Shaft SocketPointA="Shaft4a" SocketPointB="Shaft4b" />
+			<Shaft SocketPointA="ShaftAxle2R" SocketPointB="ShaftAxle3F" />
 		</Shafts>
 		<OcclusionMap
 			HalfSizeZ="2"
@@ -442,7 +439,13 @@
 			<Socket Names="nf1424Roofrack" ParentFrame="BoneCabinDamper_cdt" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="western_star_nf1424_transferbox_default">
-			<Socket Names="WSnf1424TransferBox" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt"/>
+			<Socket Names="WSnf1424TransferBox" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt">
+				<ExtraParent Frame="BoneAxle1" />
+				<ExtraParent Frame="BoneRackL" />
+				<ExtraParent Frame="BoneRackR" />
+				<ExtraParent Frame="BoneRack" />
+				<ExtraParent Frame="BoneChassis_cdt" />
+			</Socket>
 		</AddonSockets>
 		<AddonSockets>
 			<Socket InCockpit="true" Names="westernStarNf1424Sticker_1x1_01" ParentFrame="BoneCabinDamper_cdt" />

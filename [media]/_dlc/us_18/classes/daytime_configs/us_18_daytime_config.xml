@@ -1,0 +1,177 @@
+<DayTimeConfig>
+    <DayTimeNode Time="5.0">
+        <DayTime Name="night_us_18">
+            <FollowingDayTime Name="night_to_day_us_18" Weight="1"/>
+        </DayTime>
+    </DayTimeNode>
+    <DayTimeNode Time="7.0">
+        <DayTime Name="night_to_day_us_18">
+            <FollowingDayTime Name="day__1_us_18" Weight="4"/>
+            <FollowingDayTime Name="day__1a_us_18" Weight="1"/>
+            <FollowingDayTime Name="day__1b_us_18" Weight="1"/>
+            <FollowingDayTime Name="day__1c_us_18" Weight="1"/>
+            <FollowingDayTime Name="day__1d_us_18" Weight="1"/>
+        </DayTime>
+    </DayTimeNode>
+    <DayTimeNode Time="10.0">
+        <DayTime Name="day__1_us_18">
+            <FollowingDayTime Name="day__2_us_18" Weight="4"/>
+            <FollowingDayTime Name="day__2a_us_18" Weight="1"/>
+            <FollowingDayTime Name="day__2b_us_18" Weight="1"/>
+            <FollowingDayTime Name="day__2c_us_18" Weight="2"/>
+        </DayTime>
+        <DayTime Name="day__1b_us_18">
+            <FollowingDayTime Name="day__2d_us_18" Weight="1"/>
+        </DayTime>
+        <DayTime Name="day__1a_us_18">
+            <FollowingDayTime Name="day__2_us_18" Weight="4"/>
+            <FollowingDayTime Name="day__2a_us_18" Weight="2"/>
+            <FollowingDayTime Name="day__2c_us_18" Weight="2"/>
+        </DayTime>
+        <DayTime Name="day__1c_us_18">
+            <FollowingDayTime Name="day__2c_us_18" Weight="2"/>
+            <FollowingDayTime Name="day__2_us_18" Weight="2"/>
+            <FollowingDayTime Name="day__2b_us_18" Weight="1"/>
+            <FollowingDayTime Name="day__2a_us_18" Weight="1"/>
+        </DayTime>
+        <DayTime Name="day__1d_us_18">
+            <FollowingDayTime Name="day__2_us_18" Weight="1"/>
+            <FollowingDayTime Name="day__2c_us_18" Weight="1"/>
+        </DayTime>
+    </DayTimeNode>
+    <DayTimeNode Time="11.5">
+        <DayTime Name="day__2_us_18">
+            <FollowingDayTime Name="day__3_us_18" Weight="4"/>
+            <FollowingDayTime Name="day__3a_us_18" Weight="1"/>
+            <FollowingDayTime Name="day__3c_us_18" Weight="2"/>
+            <FollowingDayTime Name="day__3b_us_18" Weight="1"/>
+        </DayTime>
+        <DayTime Name="day__2a_us_18">
+            <FollowingDayTime Name="day__3_us_18" Weight="4"/>
+            <FollowingDayTime Name="day__3a_us_18" Weight="2"/>
+            <FollowingDayTime Name="day__3c_us_18" Weight="2"/>
+        </DayTime>
+        <DayTime Name="day__2b_us_18">
+            <FollowingDayTime Name="day__3d_us_18" Weight="1"/>
+        </DayTime>
+        <DayTime Name="day__2d_us_18">
+            <FollowingDayTime Name="day__3_us_18" Weight="1"/>
+            <FollowingDayTime Name="day__3c_us_18" Weight="1"/>
+        </DayTime>
+        <DayTime Name="day__2c_us_18">
+            <FollowingDayTime Name="day__3a_us_18" Weight="1"/>
+            <FollowingDayTime Name="day__3b_us_18" Weight="1"/>
+            <FollowingDayTime Name="day__3_us_18" Weight="2"/>
+            <FollowingDayTime Name="day__3c_us_18" Weight="2"/>
+        </DayTime>
+    </DayTimeNode>
+    <DayTimeNode Time="13.0">
+        <DayTime Name="day__3_us_18">
+            <FollowingDayTime Name="day__4_us_18" Weight="4"/>
+            <FollowingDayTime Name="day__4a_us_18" Weight="1"/>
+            <FollowingDayTime Name="day__4b_us_18" Weight="1"/>
+            <FollowingDayTime Name="day__4c_us_18" Weight="2"/>
+        </DayTime>
+        <DayTime Name="day__3a_us_18">
+            <FollowingDayTime Name="day__4_us_18" Weight="4"/>
+            <FollowingDayTime Name="day__4a_us_18" Weight="2"/>
+            <FollowingDayTime Name="day__4c_us_18" Weight="2"/>
+        </DayTime>
+        <DayTime Name="day__3b_us_18">
+            <FollowingDayTime Name="day__4d_us_18" Weight="1"/>
+        </DayTime>
+        <DayTime Name="day__3d_us_18">
+            <FollowingDayTime Name="day__4c_us_18" Weight="1"/>
+        </DayTime>
+        <DayTime Name="day__3c_us_18">
+            <FollowingDayTime Name="day__4b_us_18" Weight="1"/>
+            <FollowingDayTime Name="day__4c_us_18" Weight="2"/>
+        </DayTime>
+    </DayTimeNode>
+    <DayTimeNode Time="14.5">
+        <DayTime Name="day__4_us_18">
+            <FollowingDayTime Name="day__5_us_18" Weight="4"/>
+            <FollowingDayTime Name="day__5a_us_18" Weight="1"/>
+            <FollowingDayTime Name="day__5b_us_18" Weight="1"/>
+            <FollowingDayTime Name="day__5c_us_18" Weight="2"/>
+        </DayTime>
+        <DayTime Name="day__4a_us_18">
+            <FollowingDayTime Name="day__5_us_18" Weight="4"/>
+            <FollowingDayTime Name="day__5a_us_18" Weight="2"/>
+            <FollowingDayTime Name="day__5c_us_18" Weight="2"/>
+        </DayTime>
+        <DayTime Name="day__4b_us_18"/>
+        <DayTime Name="day__4c_us_18">
+            <FollowingDayTime Name="day__5c_us_18" Weight="2"/>
+            <FollowingDayTime Name="day__5b_us_18" Weight="1"/>
+            <FollowingDayTime Name="day__5a_us_18" Weight="1"/>
+            <FollowingDayTime Name="day__5_us_18" Weight="2"/>
+        </DayTime>
+        <DayTime Name="day__4d_us_18">
+            <FollowingDayTime Name="day__5d_us_18" Weight="1"/>
+            <FollowingDayTime Name="day__5_us_18" Weight="1"/>
+            <FollowingDayTime Name="day__5c_us_18" Weight="1"/>
+        </DayTime>
+    </DayTimeNode>
+    <DayTimeNode Time="16.0">
+        <DayTime Name="day__5_us_18">
+            <FollowingDayTime Name="day_to_night_us_18" Weight="1"/>
+        </DayTime>
+        <DayTime Name="day__5a_us_18">
+            <FollowingDayTime Name="day_to_night_us_18" Weight="1"/>
+        </DayTime>
+        <DayTime Name="day__5b_us_18">
+            <FollowingDayTime Name="day_to_night_us_18" Weight="1"/>
+        </DayTime>
+        <DayTime Name="day__5c_us_18">
+            <FollowingDayTime Name="day_to_night_us_18" Weight="1"/>
+        </DayTime>
+        <DayTime Name="day__5d_us_18">
+            <FollowingDayTime Name="day_to_night_us_18" Weight="1"/>
+        </DayTime>
+    </DayTimeNode>
+    <DayTimeNode Time="19.0">
+        <DayTime Name="day_to_night_us_18">
+            <FollowingDayTime Name="night_us_18" Weight="1"/>
+        </DayTime>
+    </DayTimeNode>
+    <DayTimeNode Time="22.0">
+        <DayTime Name="night_us_18">
+            <FollowingDayTime Name="night_us_18" Weight="2"/>
+        </DayTime>
+    </DayTimeNode>
+
+
+    <DayTimeNodeAlwaysDay Length="1.5">
+        <DayTime Name="day__3_us_18">
+            <FollowingDayTime Name="day__3_us_18" Weight="4"/>
+            <FollowingDayTime Name="day__3a_us_18" Weight="1"/>
+            <FollowingDayTime Name="day__3b_us_18" Weight="1"/>
+            <FollowingDayTime Name="day__3c_us_18" Weight="2"/>
+        </DayTime>
+        <DayTime Name="day__3b_us_18">
+            <FollowingDayTime Name="day__3d_us_18" Weight="1"/>
+        </DayTime>
+        <DayTime Name="day__3a_us_18">
+            <FollowingDayTime Name="day__3_us_18" Weight="4"/>
+            <FollowingDayTime Name="day__3a_us_18" Weight="2"/>
+            <FollowingDayTime Name="day__3c_us_18" Weight="2"/>
+        </DayTime>
+        <DayTime Name="day__3c_us_18">
+            <FollowingDayTime Name="day__3c_us_18" Weight="2"/>
+            <FollowingDayTime Name="day__3b_us_18" Weight="1"/>
+            <FollowingDayTime Name="day__3a_us_18" Weight="1"/>
+            <FollowingDayTime Name="day__3_us_18" Weight="2"/>
+        </DayTime>
+        <DayTime Name="day__3d_us_18">
+            <FollowingDayTime Name="day__3_us_18" Weight="1"/>
+            <FollowingDayTime Name="day__3c_us_18" Weight="1"/>
+        </DayTime>
+    </DayTimeNodeAlwaysDay>
+
+
+    <DayTimeNodeAlwaysNight Length="7">
+        <DayTime Name="night_us_18">
+        </DayTime>
+    </DayTimeNodeAlwaysNight>
+</DayTimeConfig>

@@ -11,8 +11,8 @@
 		/>
 		<SecondAxle
 			Location="front"
-			SteeringAngle="32"
-			SteeringCastor="5"
+			SteeringAngle="21"
+			SteeringCastor="0"
 			SteeringJointOffset="0.234"	
 			Torque="full"
 			ParentFrame="BoneCabinTwist_cdt"
@@ -87,7 +87,7 @@
 		<WinchUpgradeSocket Default="w_medium_trucks_default" IsUpgradable="true" Type="winches_medium_trucks" />
 		<Wheels
 			DefaultRim="rim_1"
-			DefaultTire="offroad_1"
+			DefaultTire="mudtire_padera_std4"
 			DefaultWheelType="wheels_heavy_padera_std4"
 		>
 			<Wheel _template="FirstAxle" Pos="(2.522; 0.530; 1.030)" />
@@ -595,7 +595,7 @@
 			
 			<Socket Names="FrameAddonMaintainer" Offset="(-1.8; 0.33; 0)" NamesBlock="PaderaSTD4Sideboard, CraneAvenhornA15, MinicraneRearPaderaSTD4, LogLiftPaderaSTD4, PaderaSTD4SpareWheels, Trailer, LogTrailer"/>
 			
-			<Socket Names="FrameAddonTow" Offset="(-2.4; 1.36; 0)" NamesBlock="PaderaSTD4Sideboard, Trailer, LogTrailer, MinicraneRearPaderaSTD4"/>
+			<Socket Names="FrameAddonTow" Offset="(-2.4; 1.36; 0)" NamesBlock="PaderaSTD4Sideboard, Trailer, LogTrailer, MinicraneRearPaderaSTD4, LogLiftPaderaSTD4"/>
 		</AddonSockets>
 		<!-- TRAILERS -->
 		<AddonSockets>

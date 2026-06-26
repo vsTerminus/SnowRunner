@@ -15,8 +15,8 @@
 		UnlockByExploration="false"
 		UnlockByRank="1"
 	>
-		<WinchSocket Pos="(-4.463; 0.999; 0.000)" FixedToTruck="true"/>
-		<CraneSocket Pos="(-4.463; 0.999; 0.000)" FixedToTruck="true"/>
+		<WinchSocket Pos="(-4.944; 1.000; 0.000)" FixedToTruck="true"/>
+		<CraneSocket Pos="(-4.944; 1.000; 0.000)" FixedToTruck="true"/>
 		
 		<UiDesc
 			UiDesc="UI_TUNING_FRAME_EXTENDED_DESC"

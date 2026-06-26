@@ -381,7 +381,7 @@
 	<HeadLight _template="Default" Pos="(3.709; 1.056; 0)" ParentFrame="BoneCabin_cdt" />
 	<GameData
 		Country="US,NE,CE"
-		ExcludeAddons="semitrailer_log_double_ls"
+		ExcludeAddons="semitrailer_log_double_ls, semitrailer_gooseneck_3"
 		Price="104500"
 		UnlockByExploration="true"
 		UnlockByRank="1"

@@ -1,0 +1,56 @@
+<_templates Include="trucks" >
+	<Body>
+		<Limits Collisions="None">
+			<Constraint Type="Fixed">
+				<Motor Damping="250" Spring="0.75" Type="Spring" />
+			</Constraint>
+		</Limits>
+	</Body>
+</_templates>
+<TruckAddon IsChassisFullOcclusion="true">
+	<WheelRepairsHide>
+		<Mesh Frame="wheel_l_spare_wheel" HideThreshold="0.5" />
+		<Mesh Frame="wheel_r_spare_wheel" HideThreshold="0.0" />
+	</WheelRepairsHide>
+	<TruckData WheelRepairsCapacity="4" />
+	<PhysicsModel Mesh="trucks/mercer_6x6r_230_tuning/mercer_6x6r_230_wheel_addon">
+		<Body Mass="40">
+			<Constraint Type="Rigid" />
+			<Body Collisions="Default" Mass="20" ModelFrame="BoneWheelR_cdt">
+				<Constraint
+					AxisLocal="(0; 0; 1)"
+					Type="Hinge"
+					MinLimit="-1"
+					MaxLimit="3"
+				>
+					<Motor Damping="1.0" Spring="2.0" Type="Spring" />
+				</Constraint>
+			</Body>
+			<Body Collisions="Default" Mass="20" ModelFrame="BoneWheelL_cdt">
+				<Constraint
+					AxisLocal="(0; 0; 1)"
+					Type="Hinge"
+					MinLimit="-2"
+					MaxLimit="1"
+				>
+					<Motor Damping="1.0" Spring="2.0" Type="Spring" />
+				</Constraint>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="addon_2"
+		Category="wheel_addon"
+		Price="5300"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SPARE_WHEELS_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SPARE_WHEELS_NAME"
+		/>
+		<InstallSocket Type="Mercer6X6R230SpareWheel" />
+	</GameData>
+</TruckAddon>

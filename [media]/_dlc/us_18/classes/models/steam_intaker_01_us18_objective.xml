@@ -1,0 +1,28 @@
+<ModelBrand
+	DynamicModel="true"
+>
+	<PhysicsModel>
+		<Body Collisions="Dynamic" ModelFrame="state_00">
+			<Body Collisions="Dynamic" ModelFrame="state_01" />
+		</Body>
+	</PhysicsModel>
+	<Subset IsDefault="true" Name="stage_00">
+		<Mesh Name="state_00" />
+		<CdtMesh Name="cdt_state_00" />
+	</Subset>
+	<Subset Name="stage_01"> 
+		<Mesh Name="state_01" />
+		<CdtMesh Name="cdt_state_01" />
+		<OnSubsetActivateEvent>
+			<Sound Name="actors/actor_construction/actor_deconstruct_metal" Range="200" Volume="1"/>
+			<SFX Name="rail_blocker_smoke_01" Dir="(0; 1; 0)" Pos="(0.4; 0.0; 0.4)"/>
+		</OnSubsetActivateEvent>
+	</Subset>
+	<GameData>
+		<WinchSocket Pos="(3.76; -0.06; -3.88)" />
+		<WinchSocket Pos="(3.76; -0.06; 3.88)" />
+		<WinchSocket Pos="(-3.76; -0.06; -3.88)" />
+		<WinchSocket Pos="(3.76; -0.06; -3.88)" />
+	</GameData>
+	<Landmark Mesh="landmarks/steam_intaker_01_us18_objective_lmk" />
+</ModelBrand>

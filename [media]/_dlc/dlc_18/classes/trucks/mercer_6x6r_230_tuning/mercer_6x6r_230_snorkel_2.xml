@@ -1,0 +1,23 @@
+<TruckAddon>
+	<Snorkel Origin="(3.374; 1.866; -1.014)" />
+	<PhysicsModel Mesh="trucks/mercer_6x6r_230_tuning/mercer_6x6r_230_snorkel_2">
+		<Body Collisions="Default" Mass="8">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="side_l"
+		Category="snorkel"
+		Price="2400"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SNORKEL_FLATCAP_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SNORKEL_FLATCAP_NAME"
+		/>
+		<InstallSocket Type="Mercer6X6R230Snorkel" />
+	</GameData>
+</TruckAddon>

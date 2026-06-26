@@ -633,7 +633,7 @@
 			<Socket Names="FrameAddonLogShortMastodon" Offset="(1; 1.7; 0)" ParentFrame="BoneChassis_cdt" />
 			<Socket Names="FrameAddonLogMediumMastodon" Offset="(1; 1.7; 0)" ParentFrame="BoneChassis_cdt" />
 			<Socket Names="BunkLogMastadont" Offset="(-4.5; 1.5; 0)" />
-			<Socket Names="MastodonFrameAddonTowPlatform" NamesBlock="MinicraneRU, ZikzLogLift" Offset="(1.5; 1.55; 0)" />
+			<Socket Names="MastodonFrameAddonTowPlatform" NamesBlock="MinicraneRU, ZikzLogLift, Trailer, LogTrailer" Offset="(1.5; 1.55; 0)" />
 			
 			<Socket Names="SaddleMotorized" NamesBlock="MinicraneRU, ZikzLogLift" Offset="(0.670; 0.029; 0.000)" ParentFrame="BoneChassis_cdt" >
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.000; 0.000; -0.110)" />
@@ -666,13 +666,13 @@
 			<Socket Names="MastodonSpareWheel2" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="MastodonBeacon" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" NamesBlock="zikz_612h_mastodont_roofrack"/>
+			<Socket Names="MastodonBeacon" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" NamesBlock="MastodonRoofrack, MastodonOuterframe"/>
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="MastodonOuterframe" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="MastodonRoofrack"  ParentFrame="BoneCabin_cdt" Offset="(0.1; 0; 0)"/>
+			<Socket Names="MastodonRoofrack"  ParentFrame="BoneCabin_cdt" Offset="(-0.02; 0; 0)"/>
 		</AddonSockets>
 		<AddonSockets DefaultAddon="zikz_612h_mastodont_exhaust_default">
 			<Socket Names="MastodonExhaust" Offset="(0; -0.02; 0)" ParentFrame="BoneCabin_cdt" />

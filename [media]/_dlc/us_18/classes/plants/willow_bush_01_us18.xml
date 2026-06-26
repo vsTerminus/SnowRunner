@@ -1,0 +1,27 @@
+<_templates Include="environment" />
+<PlantBrand _template="SmallTree" PlantingMinSpacing="0.8">
+	<PhysicsModel>
+		<Body _template="SmallTreeRoot" ModelFrame="BoneRoot" >
+			<Constraint _template="SmallTreeRoot" BreakOffThreshold="1000"/>
+			<Body _template="BranchWithLeaves" ModelFrame="BoneBranch" IsCapsuleCDT="false">
+				<Constraint _template="BranchWithLeaves" />
+			</Body>
+			<Body _template="BranchWithLeaves" ModelFrame="BoneBranch1" IsCapsuleCDT="false">
+				<Constraint _template="BranchWithLeaves" />
+			</Body>
+			<Body _template="BranchWithLeaves" ModelFrame="BoneBranch2" IsCapsuleCDT="false">
+				<Constraint _template="BranchWithLeaves" />
+			</Body>
+			<Body _template="BranchWithLeaves" ModelFrame="BoneBranch3" IsCapsuleCDT="false">
+				<Constraint _template="BranchWithLeaves" />
+			</Body>
+		</Body>
+	</PhysicsModel>
+
+	<Landmark Mesh="landmarks/willow_bush_01_us18_lmk"/>	
+
+	<Occlusion Intensity="0.02" Size="(10.0; 10.0)" />
+	<GameData>
+		<WinchSocket Pos="(-0.022; 0.382; -0.055)" ParentFrame="BoneRoot" />
+	</GameData>
+</PlantBrand>

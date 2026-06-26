@@ -379,7 +379,7 @@
 	<HeadLight _template="Default" Pos="(4.563; 1.247; 0)" ParentFrame="BoneCabin_cdt" />
 	<Landmark Mesh="landmarks/voron_g5352_lmk" MinScale="1.5" MaxScale="2.5" />
 	<GameData
-		Country="US,NE,CAS,CE"
+		Country="RU,CAS,WA"
 		Price="121000"
 		UnlockByExploration="true"
 		UnlockByRank="1"
@@ -568,7 +568,7 @@
 		</AddonSockets>
 		<!-- TRAILERS -->
 		<AddonSockets>
-			<Socket Names="Trailer, LogTrailer" NamesBlock="FrameAddonMaintainer" Offset="(-4.06; 1.04; 0)" >
+			<Socket Names="Trailer, LogTrailer" NamesBlock="FrameAddonMaintainer, FrameAddonTow" Offset="(-4.06; 1.04; 0)" >
 				<AddonsShift Offset="(-1.02; 0; 0)" Types="VoronG5352TowbarExtend" />
 			</Socket>
 			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-2.13; 1.75; 0)" />

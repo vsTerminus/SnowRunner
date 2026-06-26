@@ -1,0 +1,132 @@
+<_templates Include="trucks" >
+	<Body>
+		<Limits Collisions="Default" Mass="20">
+			<Constraint
+				AxisLocal="(1; 0; 0)"
+				Type="Prismatic"
+				MinLimit="-0.010"
+				MaxLimit="0.010"
+			>
+				<Motor Damping="250" Spring="0.75" Type="Spring" />
+			</Constraint>
+		</Limits>
+	</Body>
+</_templates>
+<TruckAddon IsChassisFullOcclusion="true">
+	<WheelRepairsHide>
+		<Mesh Frame="wheel_l_roofrack" HideThreshold="0.5" />
+		<Mesh Frame="wheel_r_roofrack" HideThreshold="0.0" />
+	</WheelRepairsHide>
+	<TruckData
+		WheelRepairsCapacity="4"
+		FuelCapacity="140"
+		RepairsCapacity="450"
+	>
+		<LimitedFluid Center="(0.171, 2.872, -0.300)" SizeX="0.362" SizeY="0.439" SizeZ="0.167" Type="Box" ParentFrame="BoneFuel2_cdt" />
+		<LimitedFluid Center="(0.059, 2.872, -0.618)" SizeX="0.167" SizeY="0.439" SizeZ="0.362" Type="Box" ParentFrame="BoneFuel2_cdt" />
+		<LimitedFluid Center="(0.294, 2.872, -0.618)" SizeX="0.167" SizeY="0.439" SizeZ="0.362" Type="Box" ParentFrame="BoneFuel2_cdt" />
+
+		<LimitedFluid Center="(1.451, 3.157, -0.634)" SizeX="0.439" SizeY="0.167" SizeZ="0.362" Type="Box" ParentFrame="BoneFuel1_cdt" />
+		<LimitedFluid Center="(1.451, 3.157, -0.215)" SizeX="0.439" SizeY="0.167" SizeZ="0.362" Type="Box" ParentFrame="BoneFuel1_cdt" />
+		<LimitedFluid Center="(1.451, 3.157, 0.207)" SizeX="0.439" SizeY="0.167" SizeZ="0.362" Type="Box" ParentFrame="BoneFuel1_cdt" />
+		<LimitedFluid Center="(1.451, 3.157, 0.629)" SizeX="0.439" SizeY="0.167" SizeZ="0.362" Type="Box" ParentFrame="BoneFuel1_cdt" />
+		
+		<Damage>
+			<Multiplier Multiplier="0.9" Type="FuelTank" />
+			<Multiplier Multiplier="0.9" Type="GearBox" />
+		</Damage>
+	</TruckData>
+	<RepairsHide>
+		<Mesh Frame="repair1_roofrack" HideThreshold="0.0" />
+		<Mesh Frame="repair2_roofrack" HideThreshold="0.5" />
+		<Mesh Frame="repair3_roofrack" HideThreshold="0.5" />
+	</RepairsHide>
+	<FuelHide>
+		<Mesh Frame="fuel1_roofrack" HideThreshold="0.0" />
+		<Mesh Frame="fuel2_roofrack" HideThreshold="0.5" />
+	</FuelHide>
+	<PhysicsModel Mesh="trucks/mercer_6x6r_230_tuning/mercer_6x6r_230_roofrack">
+		<Body Mass="200">
+			<Constraint Type="Rigid" />
+			
+			<Body Mass="175" ModelFrame="BoneCabin_cdt" Collisions="None" >
+				<Constraint ExplicitParentFrame="0" Type="Fixed" />
+				<Body Collisions="Default" Mass="75" ModelFrame="BoneWheelR_cdt">
+					<Constraint
+						AxisLocal="(1; 0; 0)"
+						Type="Hinge"
+						MinLimit="-0.5"
+						MaxLimit="0.3"
+					>
+						<Motor Damping="1.0" Spring="2.0" Type="Spring" />
+					</Constraint>
+				</Body>
+				<Body Collisions="Default" Mass="75" ModelFrame="BoneWheelL_cdt">
+					<Constraint
+						AxisLocal="(1; 0; 0)"
+						Type="Hinge"
+						MinLimit="-0.3"
+						MaxLimit="0.2"
+					>
+						<Motor Damping="1.0" Spring="2.0" Type="Spring" />
+					</Constraint>
+				</Body>
+				
+				<Body Mass="10" ModelFrame="BoneHook_cdt">
+					<Constraint
+						PivotOffset="(0.000; 0.000; 0.000)"
+						Type="Hinge"
+						MinLimit="-10.0"
+						MaxLimit="10.0"
+						AxisLocal="(1; 0; 0)"
+					>
+						<Motor Type="Spring" Spring="1" Damping="1" />
+					</Constraint>
+				</Body>
+				
+				<Body _template="Limits" Mass="30" ModelFrame="BoneRepair1_cdt" />
+				<Body _template="Limits" Mass="30" ModelFrame="BoneRepair2_cdt" />
+				<Body _template="Limits" Mass="30" ModelFrame="BoneRepair3_cdt" />
+
+				<Body _template="Limits" ModelFrame="BoneFuel1_cdt" />
+				<Body _template="Limits" ModelFrame="BoneFuel2_cdt" />
+				
+				<Body _template="Limits" Mass="40" ModelFrame="BoneExtinguisher_cdt" />
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<Ignition>
+			<Light _template="IgnitionSignalWhite" Color="g(240; 200; 165) x 1.0" Pos="(-0.401; 2.95; 0)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhite" Dir="(-1; 0; 0)" Size="0.5" Color="g(255; 235; 215) x 0.5" Pos="(-0.192; 3.114; -0.72)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhite" Dir="(-1; 0; 0)" Size="0.5" Color="g(255; 235; 215) x 0.5" Pos="(-0.192; 3.114; 0.72)" ParentFrame="BoneCabin_cdt" />
+		</Ignition>
+		<ReverseSignals>
+			<Light _template="ReverseSignal" Pos="(-0.192; 3.114; -0.72)" ParentFrame="BoneCabin_cdt" />
+			<Light _template="ReverseSignal" Pos="(-0.192; 3.114; 0.72)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="ReverseSignal" Dir="(-1; 0; 0)" Size="0.2" Pos="(-0.192; 3.114; -0.72)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="ReverseSignal" Dir="(-1; 0; 0)" Size="0.2" Pos="(-0.192; 3.114; 0.72)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhite" Dir="(-1; 0; 0)" Size="0.6" Pos="(-0.192; 3.114; -0.72)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhite" Dir="(-1; 0; 0)" Size="0.6" Pos="(-0.192; 3.114; 0.72)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.05" Dir="(-1; 0; 0)" Size="0.4" Pos="(-0.192; 3.114; -0.72)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.05" Dir="(-1; 0; 0)" Size="0.4" Pos="(-0.192; 3.114; 0.72)" ParentFrame="BoneCabin_cdt" />
+		</ReverseSignals>
+	</ModelAttachments>
+	<GameData
+		CameraPreset="addon_1"
+		Category="frame_addons"
+		Price="3200"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<WinchSocket Pos="(-0.15; 1.75; 0)" FixedToTruck="true"/>
+		<WinchSocket Pos="(-0.33; 2.83; 0)" FixedToTruck="true"/>
+		<UiDesc
+			UiDesc="UI_ADDON_FRAME_FREIGHTLINER_FLD120_REPAIRS_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_ADDON_FRAME_FREIGHTLINER_FLD120_REPAIRS_NAME"
+		/>
+		<InstallSocket Type="Mercer6X6R230Roofrack" />
+	</GameData>
+</TruckAddon>

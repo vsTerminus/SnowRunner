@@ -1,0 +1,493 @@
+<DistributionBrushes>
+	<Plants>
+		<SamanMiddle PlantsPerBlock="30">
+			<PlantType
+				Brand="saman_middle_01_us18"
+				Divergence="0.08"
+				MinSize="0.9"
+				MaxMapScale="0.9"
+				MinMapScale="0.2"
+				MaxSize="1.4"
+				Perpendicularity="0.1"
+			/>
+			<PlantType
+				Brand="saman_middle_02_us18"
+				Divergence="0.06"
+				MaxMapScale="0.9"
+				MinMapScale="0.2"
+				MaxSize="1.3"
+				MinSize="0.7"
+				Perpendicularity="0.1"
+			/>
+		</SamanMiddle>
+
+		<SamanFarm PlantsPerBlock="30">
+			<PlantType
+				Brand="saman_middle_01_farm_us18"
+				Divergence="0.08"
+				MinSize="0.9"
+				MaxMapScale="0.9"
+				MinMapScale="0.2"
+				MaxSize="1.4"
+				Perpendicularity="0.1"
+			/>
+			<PlantType
+				Brand="saman_middle_02_farm_us18"
+				Divergence="0.06"
+				MaxMapScale="0.9"
+				MinMapScale="0.2"
+				MaxSize="1.3"
+				MinSize="0.7"
+				Perpendicularity="0.1"
+			/>
+		</SamanFarm>
+
+		<BushMX PlantsPerBlock="52">
+			<PlantType
+				Brand="bush_1_us12"
+				Divergence="0.1"
+				MinSize="0.8"
+				MaxSize="1.3"
+				Perpendicularity="0.35"
+			/>
+			<PlantType
+				Brand="bush_2_us12"
+				Divergence="0.1"
+				MinSize="0.8"
+				MaxSize="1.3"
+				Perpendicularity="0.35"
+			/>
+			<PlantType
+				Brand="bush_3_us12"
+				Divergence="0.1"
+				MinSize="0.8"
+				MaxSize="1.3"
+				Perpendicularity="0.35"
+			/>
+		</BushMX>
+
+		
+		<CactusSaguaro PlantsPerBlock="76">
+			<PlantType
+				Brand="cactus_saguaro_01_us18"
+				Divergence="0.1"
+				MinSize="0.8"
+				MaxSize="1.3"
+				Perpendicularity="0.05"
+			/>
+			<PlantType
+				Brand="cactus_saguaro_02_us18"
+				Divergence="0.1"
+				MinSize="0.8"
+				MaxSize="1.3"
+				Perpendicularity="0.05"
+			/>
+			<PlantType
+				Brand="cactus_saguaro_03_us18"
+				Divergence="0.1"
+				MinSize="0.8"
+				MaxSize="1.3"
+				Perpendicularity="0.05"
+			/>
+			<PlantType
+				Brand="cactus_saguaro_04_us18"
+				Divergence="0.1"
+				MinSize="0.8"
+				MaxSize="1.3"
+				Perpendicularity="0.05"
+			/>
+			<PlantType
+				Brand="cactus_saguaro_05_us18"
+				Divergence="0.1"
+				MinSize="0.8"
+				MaxSize="1.3"
+				Perpendicularity="0.05"
+			/>
+		</CactusSaguaro>
+
+		<AshThreeMX PlantsPerBlock="95">
+			<PlantType
+				Brand="ash_tree_1_us12"
+				Divergence="0.04"
+				MinMapScale="0.6"
+				MinSize="0.6"
+				MaxSize="1.3"
+				Perpendicularity="0.35"
+			/>			
+			<PlantType
+				Brand="ash_tree_2_us12"
+				Divergence="0.04"
+				MinMapScale="0.6"
+				MinSize="0.6"
+				MaxSize="1.3"
+				Perpendicularity="0.35"
+			/>		
+			<PlantType
+				Brand="ash_tree_3_us12"
+				Divergence="0.04"
+				MinMapScale="0.6"
+				MinSize="0.6"
+				MaxSize="1.3"
+				Perpendicularity="0.35"
+			/>				
+		</AshThreeMX>
+
+		<WillowBushMX PlantsPerBlock="42">
+			<PlantType
+				Brand="willow_middle_01_us18"
+				Divergence="0.1"
+				MinSize="0.6"
+				MaxSize="1.2"
+				Perpendicularity="0.35"
+			/>
+			<PlantType
+				Brand="willow_middle_02_us18"
+				Divergence="0.1"
+				MinSize="0.6"
+				MaxSize="1.2"
+				Perpendicularity="0.35"
+			/>
+		</WillowBushMX>
+
+		<WillowBigMX PlantsPerBlock="196">
+			<PlantType
+				Brand="willow_big_01_green_ru17"
+				Divergence="0.04"
+				MinMapScale="0.6"
+				MinSize="0.7"
+				MaxSize="1.1"
+				Perpendicularity="0.15"
+			/>			
+		</WillowBigMX>
+
+
+
+		<SamanBig PlantsPerBlock="10">
+			<PlantType
+				Brand="saman_middle_01_us18"
+				Divergence="0.08"
+				MinSize="1.5"
+				MaxSize="1.8"
+				Perpendicularity="0.35"
+			/>
+		</SamanBig>	
+
+		<BushCastor PlantsPerBlock="125">
+			<PlantType
+				Brand="bush_castor_01_us18"
+				Divergence="0.04"
+				MinMapScale="0.6"
+				MinSize="0.9"
+				MaxSize="1.4"
+			/>			
+			<PlantType
+				Brand="bush_castor_02_us18"
+				Divergence="0.04"
+				MinMapScale="0.6"
+				MinSize="0.9"
+				MaxSize="1.4"
+			/>		
+			<PlantType
+				Brand="bush_castor_03_us18"
+				Divergence="0.04"
+				MinMapScale="0.6"
+				MinSize="0.9"
+				MaxSize="1.4"
+			/>				
+		</BushCastor>
+
+		<BushCastorSlope PlantsPerBlock="256">
+			<PlantType
+				Brand="bush_castor_02_us18"
+				Divergence="0.08"
+				MinMapScale="0.6"
+				MinSize="0.9"
+				MaxSize="1.5"
+				Perpendicularity="0.7"
+			/>		
+			<PlantType
+				Brand="bush_castor_03_us18"
+				Divergence="0.08"
+				MinMapScale="0.6"
+				MinSize="0.9"
+				MaxSize="1.4"
+				Perpendicularity="0.7"
+			/>				
+			<PlantType
+				Brand="bush_castor_02_us18"
+				Divergence="0.08"
+				MinMapScale="0.6"
+				MinSize="1.2"
+				MaxSize="1.5"
+				Perpendicularity="0.7"
+			/>		
+		</BushCastorSlope>
+
+		
+
+		
+		<BushMiscanthus PlantsPerBlock="55">
+			<PlantType
+				Brand="grass_miscanthus_us18"
+				Divergence="0.04"
+				MinMapScale="0.6"
+				MinSize="0.9"
+				MaxSize="1.4"
+				Perpendicularity="0.7"
+			/>			
+		</BushMiscanthus>
+		
+		<Banana PlantsPerBlock="55">
+			<PlantType
+				Brand="palm_banana_01_us18"
+				Divergence="0.04"
+				MinMapScale="0.6"
+				MinSize="0.9"
+				MaxSize="1.4"
+				Perpendicularity="0.25"
+			/>			
+			
+		</Banana>
+		
+		<Banana02 PlantsPerBlock="55">
+			<PlantType
+				Brand="palm_banana_01_us18"
+				Divergence="0.04"
+				MinMapScale="0.05"
+				MinSize="0.9"
+				MaxSize="1.4"
+				Perpendicularity="0.25"
+			/>			
+			
+		</Banana02>
+
+		<PalmCocos PlantsPerBlock="55">
+			<PlantType
+				Brand="palm_cocos_01_us18"
+				Divergence="0.1"
+				MinMapScale="0.6"
+				MinSize="0.8"
+				MaxSize="1.6"
+				Perpendicularity="0.1"
+			/>			
+			<PlantType
+				Brand="palm_cocos_03_us18"
+				Divergence="0.1"
+				MinMapScale="0.8"
+				MinSize="0.8"
+				MaxSize="1.6"
+				Perpendicularity="0.1"
+			/>		
+		</PalmCocos>
+		
+		<PalmSabalBig PlantsPerBlock="55">
+			<PlantType
+				Brand="palm_sabal_01_us18"
+				Divergence="0.1"
+				MinMapScale="0.6"
+				MinSize="0.9"
+				MaxSize="1.4"
+				Perpendicularity="0.05"
+			/>			
+
+		</PalmSabalBig>
+		
+		<BushSabal PlantsPerBlock="70">
+			<PlantType
+				Brand="bush_sabal_01_us18"
+				Divergence="0.07"
+				MinMapScale="0.6"
+				MinSize="0.8"
+				MaxSize="1.4"
+				Perpendicularity="0.25"
+			/>			
+			<PlantType
+				Brand="bush_sabal_02_us18"
+				Divergence="0.07"
+				MinMapScale="0.6"
+				MinSize="0.7"
+				MaxSize="1.2"
+				Perpendicularity="0.25"
+			/>			
+		</BushSabal>
+
+		<BushLutescens PlantsPerBlock="75">
+			<PlantType
+				Brand="bush_lutescens_01_us18"
+				Divergence="0.04"
+				MinMapScale="0.6"
+				MinSize="0.9"
+				MaxSize="1.4"
+				Perpendicularity="0.25"
+			/>				
+		<PlantType
+				Brand="bush_lutescens_02_us18"
+				Divergence="0.04"
+				MinMapScale="0.6"
+				MinSize="0.9"
+				MaxSize="1.4"
+				Perpendicularity="0.25"
+			/>				
+		</BushLutescens>
+
+		<PalmCocosLeaf PlantsPerBlock="125">
+			<PlantType
+				Brand="palm_cocos_leaf_01_us18"
+				MinMapScale="0.6"
+				MinSize="0.8"
+				MaxSize="1.2"
+				Perpendicularity="1"
+			/>			
+			<PlantType
+				Brand="palm_cocos_leaf_02_us18"
+				MinMapScale="0.6"
+				MinSize="0.8"
+				MaxSize="1.2"
+				Perpendicularity="1"
+			/>			
+			<PlantType
+				Brand="palm_cocos_leaf_03_us18"
+				MinMapScale="0.6"
+				MinSize="0.8"
+				MaxSize="1.2"
+				Perpendicularity="1"
+			/>			
+			<PlantType
+				Brand="palm_cocos_leaf_04_us18"
+				MinMapScale="0.6"
+				MinSize="0.8"
+				MaxSize="1.2"
+				Perpendicularity="1"
+			/>			
+		</PalmCocosLeaf>
+
+		<PalmSabalLeaf PlantsPerBlock="125">
+			<PlantType
+				Brand="palm_sabal_leaf_01_us18"
+				MinMapScale="0.6"
+				MinSize="0.8"
+				MaxSize="1.2"
+				Perpendicularity="1"
+			/>			
+			<PlantType
+				Brand="palm_sabal_leaf_02_us18"
+				MinMapScale="0.6"
+				MinSize="0.8"
+				MaxSize="1.2"
+				Perpendicularity="1"
+			/>			
+			<PlantType
+				Brand="palm_sabal_leaf_03_us18"
+				MinMapScale="0.6"
+				MinSize="0.8"
+				MaxSize="1.2"
+				Perpendicularity="1"
+			/>			
+			<PlantType
+				Brand="palm_sabal_leaf_04_us18"
+				MinMapScale="0.6"
+				MinSize="0.8"
+				MaxSize="1.2"
+				Perpendicularity="1"
+			/>			
+		</PalmSabalLeaf>
+
+
+
+		<PalmSabal PlantsPerBlock="55">
+			<PlantType
+				Brand="palm_sabal_02_us18"
+				Divergence="0.1"
+				MinMapScale="0.6"
+				MinSize="0.9"
+				MaxSize="1.4"
+				Perpendicularity="0.05"
+			/>			
+			<PlantType
+				Brand="palm_sabal_03_us18"
+				Divergence="0.1"
+				MinMapScale="0.6"
+				MinSize="0.9"
+				MaxSize="1.4"
+				Perpendicularity="0.05"
+			/>			
+		</PalmSabal>
+		
+		
+		<Mangrove PlantsPerBlock="100">
+			<PlantType
+				Brand="mangrove_01_us18"
+				Divergence="0.1"
+				MinMapScale="0.6"
+				MinSize="0.8"
+				MaxSize="1.4"
+				Perpendicularity="0.05"
+			/>			
+		</Mangrove>
+
+		<MangroveBig PlantsPerBlock="80">
+			<PlantType
+				Brand="mangrove_01_us18"
+				Divergence="0.1"
+				MinMapScale="0.6"
+				MinSize="1.4"
+				MaxSize="1.8"
+				Perpendicularity="0.05"
+			/>			
+		</MangroveBig>
+
+		<MangroveRoot PlantsPerBlock="48">
+			<PlantType
+				Brand="mangrove_roots_01_us18"
+				Divergence="0.1"
+				MinMapScale="0.6"
+				MinSize="0.9"
+				MaxSize="1.5"
+				Perpendicularity="0.05"
+			/>			
+		</MangroveRoot>
+
+		<PinesMX LinkedGrassBrush="LeavesFirs" PlantsPerBlock="15">
+			<PlantType
+				Brand="pine_01_us18"
+				Divergence="0.01"
+				MinSize="0.8"
+				MaxSize="1.6"
+			/>
+			<PlantType
+				Brand="pine_02_us18"
+				Divergence="0.01"
+				MinSize="1"
+				MaxSize="1.6"
+			/>
+			<PlantType
+				Brand="pine_03_us18"
+				Divergence="0.01"
+				MinSize="0.8"
+				MaxSize="1.6"
+			/>
+			<PlantType
+				Brand="pine_04_us18"
+				Divergence="0.01"
+				MinSize="0.8"
+				MaxSize="1.6"
+			/>			
+		</PinesMX>
+
+	</Plants>
+			<Grass>
+	    <GrassTallMexico PlantsPerBlock="1200">
+		<PlantType Brand="grass_tall_mexico" />
+		</GrassTallMexico>
+
+	    <GrassTallMexico2 PlantsPerBlock="1200">
+		<PlantType Brand="grass_miscanthus" />
+		</GrassTallMexico2>
+	    
+		<GrassTallMexico3 PlantsPerBlock="1200">
+		<PlantType Brand="grass_miscanthus_small" />
+		</GrassTallMexico3>
+
+	</Grass>
+	
+</DistributionBrushes>

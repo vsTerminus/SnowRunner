@@ -1,0 +1,69 @@
+<ModelBrand
+	NightLightingShadowsAllowCap="true"
+	DynamicModel="true"
+	ClipCameraBridge="false"
+	DayShadowOffsetMult="13"
+>
+	<PhysicsModel>
+		<Body Collisions="Dynamic" ModelFrame="mesh_start">
+			<Body Collisions="Dynamic" ModelFrame="mesh_end"/>
+			<Body Collisions="Dynamic" ModelFrame="static" />
+		</Body>
+	</PhysicsModel>
+	
+	<Subset Name="state_start" IsDefault="true">
+		<Mesh Name="mesh_start" />
+		<Mesh Name="mesh_start_lod1" />
+		<Mesh Name="mesh_start_lod2" />
+		<Mesh Name="mesh_start_lod3" />
+		<Mesh Name="static" />
+		<Mesh Name="static_lod1" />
+		<Mesh Name="static_lod2" />
+		<Mesh Name="static_lod3" />
+		<CdtMesh Name="static" />
+		<CdtMesh Name="mesh_start" />
+	</Subset>
+
+	<Subset Name="state_end" >
+		<Mesh Name="static" />
+		<Mesh Name="static_lod1" />
+		<Mesh Name="static_lod2" />
+		<Mesh Name="static_lod3" />
+		<Mesh Name="mesh_end" />
+		<Mesh Name="mesh_end_lod1" />
+		<Mesh Name="mesh_end_lod2" />
+		<Mesh Name="mesh_end_lod3" />
+		<CdtMesh Name="static" />
+		<CdtMesh Name="mesh_end" />
+		<AnimSubset Name="build_animation_0" />
+		<AnimTrack Name="anim_track_01" />
+		<OnSubsetActivateEvent>
+            <Sound Name="actors/actor_electric_06_loop"  FadeInTime="1.0" FadeOutTime="1.0" RangeMin="8" RangeMax="110" IsLoop="true"/>
+        </OnSubsetActivateEvent>
+	</Subset>
+
+	<AnimSubset Name="build_animation_0">
+		<Mesh Name="animesh_01"/>
+		<Mesh Name="animesh_02"/>
+		<Mesh Name="static" />
+		<Mesh Name="static_lod1" />
+		<Mesh Name="static_lod2" />
+		<Mesh Name="static_lod3" />
+		<CdtMesh Name="static" />
+		<CdtMesh Name="mesh_start"/>
+	</AnimSubset>
+
+	<TrackEvents TrackName="anim_track_01">
+		<AnimEvent Key="33">
+			<Sound Name="actors/actor_construction/actor_construct_water_tower" Range="200" Volume="0.2"/>
+			<SFX Dir="(0; -1; 0)" Name="bridge_sparks_01" Pos="(0.360; 6.396; -1.265)" />
+		</AnimEvent>
+		<AnimEvent Key="40">
+			<SFX Dir="(0; -1; 0)" Name="bridge_sparks_01" Pos="(0.360; 13.396; -1.265)" />
+		</AnimEvent>
+		<AnimEvent Key="45">
+			<SFX Dir="(0; -1; 0)" Name="bridge_sparks_01" Pos="(0.360; 18.396; -1.265)" />
+		</AnimEvent>
+	</TrackEvents>
+	<Landmark Mesh="landmarks/antenna_tower_01_us18_objective_lmk" />
+</ModelBrand>

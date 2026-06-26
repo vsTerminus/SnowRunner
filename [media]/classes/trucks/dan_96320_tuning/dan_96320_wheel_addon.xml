@@ -2,7 +2,7 @@
 	<WheelRepairsHide>
 		<Mesh Frame="wheel" HideThreshold="0.0" />
 	</WheelRepairsHide>
-	<TruckData WheelRepairsCapacity="1" />
+	<TruckData WheelRepairsCapacity="2" />
 	<PhysicsModel Mesh="trucks/dan_96320_tuning/dan_96320_wheel_addon">
 		<Body ImpactType="Truck" Mass="10" ModelFrame="BoneCabin_cdt">
 			<Constraint Type="Rigid" />

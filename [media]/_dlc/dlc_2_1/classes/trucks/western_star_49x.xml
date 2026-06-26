@@ -102,7 +102,7 @@
 			Frame="BoneRack"
 			FrameSteerLeft="BoneRackLeft"
 			FrameSteerRight="BoneRackRight"
-			RackHalfSizeZ="1.009"
+			RackHalfSizeZ="0.904"
 		/>
 		<Steam Origin="(0.899; 1.081; 0)" />
 		<Steam Origin="(3.029; 0.847; 0)" Scale="0.7" ParentFrame="BoneCabin_cdt" />
@@ -175,11 +175,11 @@
 			<DamageArea Type="Engine" Min="(2.47; 0.8; -0.6)" Max="(3.767; 1.855; 0.728)" ParentFrame="BoneCabin_cdt" />
 			<DamageArea Type="FuelTank" Min="(0.783; 0.404; -1.217)" Max="(2.316; 1.132; 1.212)" ParentFrame="BoneCabin_cdt" />
 		</Damage>
-		<CompatibleWheels RearOffsetZ="0.07" Scale="0.60" Type="wheels_medium_double" />
+		<CompatibleWheels OffsetZ="0.062" RearOffsetZ="0.07" Scale="0.60" Type="wheels_medium_double" />
 
-		<CompatibleWheels RearOffsetZ="0.07" Scale="0.60" Type="wheels_medium_offroad_double" />
-		<CompatibleWheels RearOffsetZ="0.07" Scale="0.60" Type="wheels_medium_highway_double" />
-		<CompatibleWheels RearOffsetZ="0.07" Scale="0.60" Type="wheels_medium_allterrain_double" />
+		<CompatibleWheels OffsetZ="0.062" RearOffsetZ="0.07" Scale="0.60" Type="wheels_medium_offroad_double" />
+		<CompatibleWheels OffsetZ="0.062" RearOffsetZ="0.07" Scale="0.60" Type="wheels_medium_highway_double" />
+		<CompatibleWheels OffsetZ="0.062" RearOffsetZ="0.07" Scale="0.60" Type="wheels_medium_allterrain_double" />
 
 		<Camera Center="(-1.5; 0; 0)" ParentFrame="BoneCabin_cdt">
 			<Cockpit
@@ -493,6 +493,7 @@
 				<ExtraParent Frame="BoneAxleFront" />
 				<ExtraParent Frame="BoneRackLeft" />
 				<ExtraParent Frame="BoneRackRight" />
+				<ExtraParent Frame="BoneRack" />
 			</Socket>
 		</AddonSockets>
 		<AddonSockets>

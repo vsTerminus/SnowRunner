@@ -1,0 +1,11 @@
+<ModelBrand
+	NightLightingShadowsAllowCap="true"
+	Instanced="true"
+	DayShadowOffsetMult="10"
+	InstancedAsModel="true"
+>
+<Landmark Mesh="landmarks/house_11a_us18_lmk" />
+	<PhysicsModel>
+		<Body Collisions="Dynamic" />
+	</PhysicsModel>
+</ModelBrand>

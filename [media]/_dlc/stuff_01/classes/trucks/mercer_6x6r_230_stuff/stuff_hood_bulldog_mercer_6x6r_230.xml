@@ -1,0 +1,12 @@
+<_parent File="stuff_hood_bulldog_ford_f750" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/mercer_6x6r_230_stuff/stuff_hood_bulldog_mercer_6x6r_230"/>
+	<GameData
+		Price="1200"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+		CameraPreset="hood_figure"
+	>
+		<InstallSocket Type="StuffHoodMercer6X6R230" />
+	</GameData>
+</TruckAddon>

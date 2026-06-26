@@ -2,7 +2,7 @@
 	<WheelRepairsHide>
 		<Mesh Frame="wheel" HideThreshold="0.0" />
 	</WheelRepairsHide>
-	<TruckData WheelRepairsCapacity="1" />
+	<TruckData WheelRepairsCapacity="2" />
 	<PhysicsModel Mesh="trucks/azov_64131_tuning/azov_64131_wheel_addon_default">
 		<Body ImpactType="Truck" Mass="300" ModelFrame="BoneCabin_cdt">
 			<Constraint

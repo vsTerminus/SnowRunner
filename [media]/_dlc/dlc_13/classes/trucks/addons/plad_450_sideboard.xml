@@ -3,7 +3,7 @@
 	<WheelRepairsHide>
 		<Mesh Frame="plad_450_spare_wheel" HideThreshold="0.0" />
 	</WheelRepairsHide>
-	<TruckData WheelRepairsCapacity="1" />
+	<TruckData WheelRepairsCapacity="2" />
 	<PhysicsModel Mesh="trucks/addons/plad_450_sideboard">
 		<Body Mass="600" ModelFrame="BoneAddon1_cdt">
 			<Constraint Type="Rigid" ExplicitParentFrame="0"/>

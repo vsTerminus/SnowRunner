@@ -29,13 +29,13 @@
 			<Light _template="IgnitionSignalWhite" Color="g(255; 235; 215) x 1.0" Pos="(3.734; 1.550; 0.531)" ParentFrame="BoneCabinTwist_cdt"/>
 			<Light _template="IgnitionSignalWhite" Color="g(255; 235; 215) x 1.0" Pos="(3.734; 1.550; -0.531)" ParentFrame="BoneCabinTwist_cdt"/>
 			
-			<Flare _template="HeadLight" ColorMultAtDay=".2" Dir="(1; 0; 0)" Size="0.25" Pos="(3.734; 1.550; -0.531)" ParentFrame="BoneCabinTwist_cdt" />
-			<Flare _template="HeadLight" ColorMultAtDay=".2" Dir="(1; 0; 0)" Size="0.25" Pos="(3.734; 1.550; 0.531)" ParentFrame="BoneCabinTwist_cdt" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay=".2" Dir="(1; 0; 0)" Size="0.25" Pos="(3.734; 1.550; -0.531)" ParentFrame="BoneCabinTwist_cdt" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay=".2" Dir="(1; 0; 0)" Size="0.25" Pos="(3.734; 1.550; 0.531)" ParentFrame="BoneCabinTwist_cdt" />
 			
-			<Flare _template="HeadLight" ColorMultAtDay=".2" Dir="(1; 0; 0)" Size="0.25" Pos="(3.467; 1.075; 1.007)" ParentFrame="BoneCabinTwist_cdt" />
-			<Flare _template="HeadLight" ColorMultAtDay=".2" Dir="(1; 0; 0)" Size="0.25" Pos="(3.467; 1.075; -1.007)" ParentFrame="BoneCabinTwist_cdt" />
-			<Flare _template="HeadLight" ColorMultAtDay=".2" Dir="(1; 0; 0)" Size="0.25" Pos="(3.555; 1.073; 0.822)" ParentFrame="BoneCabinTwist_cdt" />
-			<Flare _template="HeadLight" ColorMultAtDay=".2" Dir="(1; 0; 0)" Size="0.25" Pos="(3.555; 1.073; -0.822)" ParentFrame="BoneCabinTwist_cdt" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay=".2" Dir="(1; 0; 0)" Size="0.25" Pos="(3.467; 1.075; 1.007)" ParentFrame="BoneCabinTwist_cdt" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay=".2" Dir="(1; 0; 0)" Size="0.25" Pos="(3.467; 1.075; -1.007)" ParentFrame="BoneCabinTwist_cdt" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay=".2" Dir="(1; 0; 0)" Size="0.25" Pos="(3.555; 1.073; 0.822)" ParentFrame="BoneCabinTwist_cdt" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay=".2" Dir="(1; 0; 0)" Size="0.25" Pos="(3.555; 1.073; -0.822)" ParentFrame="BoneCabinTwist_cdt" />
 		</Ignition>
 		<HeadLight>
 			<Model _template="HeadLightRay" Org="(3.734; 1.550; -0.531)" ParentFrame="BoneCabinTwist_cdt" />

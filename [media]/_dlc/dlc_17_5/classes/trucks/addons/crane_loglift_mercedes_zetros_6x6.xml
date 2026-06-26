@@ -226,7 +226,7 @@
 		/>
 		<InstallSocket Offset="(0; 0; 0)" Type="LogLiftMercedesZetros" />
 		<AddonType Name="LogCrane" />
-		<RequiredAddon Types="mercedes_benz_zetros_6x6_subframe" />
+		<!-- <RequiredAddon Types="mercedes_benz_zetros_6x6_subframe" /> -->
 
 		<SoundPoweredGroupStart Name="" Range="10" Volume="1"/>
 		<SoundPoweredGroupLoop Name="addons/crane_loglift/crane_loglift_legs_loop" Range="10" Volume="1"/>

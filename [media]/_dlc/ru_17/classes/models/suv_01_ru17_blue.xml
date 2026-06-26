@@ -21,6 +21,6 @@
 		</Body>
 	</PhysicsModel>
 	<Landmark 
-		Mesh="landmarks/suv_01_black_lmk" 
+		Mesh="landmarks/suv_01_ru17_blue_lmk" 
 	/>
 </ModelBrand>

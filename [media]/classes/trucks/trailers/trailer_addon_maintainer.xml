@@ -2,7 +2,7 @@
 	<Wheel>
 		<TrailerWheelRear
 			ConnectedToHandbrake="true"
-			SuspensionHeight="0"
+			SuspensionHeight="0.15"
 			SuspensionStrength="0.15"
 			Torque="default"
 			Type="trailer_sideboard_2"
@@ -11,7 +11,7 @@
 		/>
 		<TrailerWheelFront
 			ConnectedToHandbrake="true"
-			SuspensionHeight="0.075"
+			SuspensionHeight="0.15"
 			SuspensionStrength="0.15"
 			Torque="default"
 			Type="trailer_sideboard_2"

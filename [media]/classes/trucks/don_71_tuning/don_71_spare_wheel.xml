@@ -2,7 +2,7 @@
 	<WheelRepairsHide>
 		<Mesh Frame="wheel" HideThreshold="0.0" />
 	</WheelRepairsHide>
-	<TruckData WheelRepairsCapacity="1" />
+	<TruckData WheelRepairsCapacity="2" />
 	<PhysicsModel Mesh="trucks/don_71_tuning/don_71_spare_wheel">
 		<Body Collisions="None" Mass="50">
 			<Constraint Type="Rigid" />

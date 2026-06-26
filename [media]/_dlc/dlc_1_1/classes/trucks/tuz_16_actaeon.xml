@@ -144,6 +144,7 @@
 		<EngineSocket Default="ru_truck_old_engine_0" Type="e_ru_truck_old" />
 		<Driver
 			AnimationSet="Truck"
+			LegsOffset="(0; 0.08; 0)"
 			Pos="(1.2; 1.696; 0.677)"
 			SteeringWheelPos="(1.587; 2.062; 0.678)"
 			ParentFrame="BoneCabin_cdt"

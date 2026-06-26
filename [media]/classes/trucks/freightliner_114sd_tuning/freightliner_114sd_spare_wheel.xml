@@ -2,7 +2,7 @@
 	<WheelRepairsHide>
 		<Mesh Frame="wheel" HideThreshold="0.0" />
 	</WheelRepairsHide>
-	<TruckData WheelRepairsCapacity="1" />
+	<TruckData WheelRepairsCapacity="2" />
 	<PhysicsModel Mesh="trucks/freightliner_114sd_tuning/freightliner_114sd_spare_wheel">
 		<Body
 			Collisions="None"

@@ -1,0 +1,58 @@
+<_templates Include="environment" />
+<PlantBrand
+	_template="SmallTree"
+	DistSkipPercentage="0.1"
+	PlantingOffsetY="0.02"
+	PlantingMinSpacing="0.45"
+	CheckNoGrass="false"
+>
+
+	<PhysicsModel>
+		
+		<Body ModelFrame="Bone_base_1" Mass="110" DamageMult="0.1" NoSoftContacts="True">
+			<Constraint Type="Fixed" BreakOffThreshold="1000000"/>
+			
+			<Body ModelFrame="Bone_base_2" Mass="110" DamageMult="0.1" NoSoftContacts="True">
+				<Constraint Type="Fixed" BreakOffThreshold="800"/>
+			
+				<Body ModelFrame="Bone_sprout_1" Mass="70" DamageMult="0" NoSoftContacts="True">
+					<Constraint Type="Fixed" BreakOffThreshold="150"/>
+
+					<Body ModelFrame="Bone_sprout_1_2" Mass="70" DamageMult="0" NoSoftContacts="True">
+						<Constraint Type="Fixed" BreakOffThreshold="110"/>
+					</Body>
+				</Body>
+				
+				<Body ModelFrame="Bone_sprout_2" Mass="70" DamageMult="0" NoSoftContacts="True">
+					<Constraint Type="Fixed" BreakOffThreshold="150"/>
+				
+					<Body ModelFrame="Bone_sprout_2_2" Mass="70" DamageMult="0" NoSoftContacts="True">
+						<Constraint Type="Fixed" BreakOffThreshold="110"/>
+					</Body>
+				</Body>
+				
+				<Body ModelFrame="Bone_sprout_3" Mass="70" DamageMult="0" NoSoftContacts="True">
+					<Constraint Type="Fixed" BreakOffThreshold="150"/>
+				
+					<Body ModelFrame="Bone_sprout_3_2" Mass="70" DamageMult="0" NoSoftContacts="True">
+						<Constraint Type="Fixed" BreakOffThreshold="110"/>
+					</Body>						
+				</Body>
+				
+				<Body ModelFrame="Bone_sprout_4" Mass="70" DamageMult="0" NoSoftContacts="True">
+					<Constraint Type="Fixed" BreakOffThreshold="150"/>
+				
+					<Body ModelFrame="Bone_sprout_4_2" Mass="70" DamageMult="0" NoSoftContacts="True">
+						<Constraint Type="Fixed" BreakOffThreshold="110"/>
+					</Body>	
+					
+				</Body>	
+				
+			</Body>	
+			
+		</Body>		
+
+	</PhysicsModel>
+	<Landmark Mesh="landmarks/cactus_saguaro_02_us18_lmk"/>	
+		
+</PlantBrand>

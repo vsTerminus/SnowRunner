@@ -12,9 +12,9 @@
 		<Mesh Frame="spare_wheel" HideThreshold="0.0" />
 	</WheelRepairsHide>
 	<TruckData
-		FuelCapacity="300"
-		RepairsCapacity="360"
-		WheelRepairsCapacity="1"
+		RepairsCapacity="450"
+		FuelCapacity="200"
+		WheelRepairsCapacity="2"
 	>
 		<LimitedFluid
 			Center="(0.934, 1.555, -0.000)"

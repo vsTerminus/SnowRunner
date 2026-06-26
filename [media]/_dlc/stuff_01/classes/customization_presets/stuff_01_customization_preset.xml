@@ -1555,4 +1555,32 @@
 	<Truck _template="GlassStickerBottom2x16" Name="sticker_glass_bottom_mercedes_benz_zetros_6x6" />
 	<Truck _template="Curtain" Name="stuff_curtain_mercedes_benz_zetros_6x6" />
 	<!--<- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -/>-->
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_01_hib_billert_m816" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_02_hib_billert_m816" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_03_hib_billert_m816" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_04_hib_billert_m816" />
+	<Truck _template="InsideSticker1x2" Name="sticker_inside_1x2_01_hib_billert_m816" />
+	<Truck _template="InsideSticker1x2" Name="sticker_inside_1x2_02_hib_billert_m816" />
+	<Truck _template="InsideSticker1x4" Name="sticker_inside_1x4_01_hib_billert_m816" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_door_l_1x1_hib_billert_m816" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_door_r_1x1_hib_billert_m816" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_roof_1x1_hib_billert_m816" />
+	<Truck _template="GlassStickerTop2x16" Name="sticker_glass_top_hib_billert_m816" />
+	<Truck _template="GlassStickerBottom2x16" Name="sticker_glass_bottom_hib_billert_m816" />
+	<Truck _template="Curtain" Name="stuff_curtain_hib_billert_m816" />
+	<!--<- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -/>-->
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_01_mercer_6x6r_230" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_02_mercer_6x6r_230" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_03_mercer_6x6r_230" />
+	<Truck _template="InsideSticker1x1" Name="sticker_inside_1x1_04_mercer_6x6r_230" />
+	<Truck _template="InsideSticker1x2" Name="sticker_inside_1x2_01_mercer_6x6r_230" />
+	<Truck _template="InsideSticker1x2" Name="sticker_inside_1x2_02_mercer_6x6r_230" />
+	<Truck _template="InsideSticker1x2" Name="sticker_inside_1x4_01_mercer_6x6r_230" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_door_l_1x1_mercer_6x6r_230" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_door_r_1x1_mercer_6x6r_230" />
+	<Truck _template="OutsideSticker1x1" Name="sticker_capote_1x1_mercer_6x6r_230" />
+	<Truck _template="GlassStickerTopCut" Name="sticker_glass_top_mercer_6x6r_230" />
+	<Truck _template="GlassStickerBottomCut" Name="sticker_glass_bottom_mercer_6x6r_230" />
+	<Truck _template="Curtain" Name="stuff_curtain_mercer_6x6r_230" />
+	<!--<- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -/>-->
 </TruckSet>

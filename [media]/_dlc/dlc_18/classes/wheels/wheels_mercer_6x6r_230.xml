@@ -1,0 +1,35 @@
+<_templates Include="trucks">
+	<TruckTire>
+		<Offroad Mass="220" RearMassScale="2.0">
+			<WheelTracks _template="Offroad" />
+			<WheelTracks _template="DefaultDouble" Rear="true" />
+			<WheelSoftness _template="Average" />
+		</Offroad>
+	</TruckTire>
+</_templates>
+<TruckWheels DamageCapacity="100" Radius="1" Width="0.518" WidthRear="1.09">
+	<TruckTires>
+		<TruckTire _template="Offroad" Mesh="wheels/tire_mercer_6x6r_230" Name="offroad_1_mercer_6x6r_230">
+			<WheelFriction 
+				_template="Offroad"
+				BodyFriction="2.75"
+				BodyFrictionAsphalt="1.05"
+				SubstanceFriction="1.7"
+			/>
+			<GameData
+				Price="6600"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_ALLTERRAIN_DESC" UiName="UI_TIRE_MERCER_6x6R_230_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>
+		<TruckRim Mesh="wheels/rim_mercer_6x6r_230" Name="rim_1_mercer_6x6r_230">
+			<GameData>
+				<UiDesc UiDesc="" UiName="UI_RIM_MERCER_6x6R_230_NAME" />
+			</GameData>
+		</TruckRim>
+	</TruckRims>
+</TruckWheels>

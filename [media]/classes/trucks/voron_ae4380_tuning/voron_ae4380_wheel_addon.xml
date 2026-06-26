@@ -2,7 +2,7 @@
 	<WheelRepairsHide>
 		<Mesh Frame="wheel" HideThreshold="0.0" />
 	</WheelRepairsHide>
-	<TruckData WheelRepairsCapacity="1" />
+	<TruckData WheelRepairsCapacity="2" />
 	<PhysicsModel Mesh="trucks/voron_ae4380_tuning/voron_ae4380_wheel_addon">
 		<Body ImpactType="Truck" Mass="100" ModelFrame="BoneCabin_cdt">
 			<Constraint Type="Rigid" />

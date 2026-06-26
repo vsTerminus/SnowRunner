@@ -1,0 +1,12 @@
+<_templates Include="models" />
+<ModelBrand
+	BreakType="SmallTree"
+	NightLightingShadowsAllowCap="true"
+	Instanced="true"
+>
+	<PhysicsModel>
+		<Body _template="LightWeight" ModelFrame="BoneRoot" Mass="200">
+			<Constraint _template="LightWeight" />
+		</Body>
+	</PhysicsModel>
+</ModelBrand>

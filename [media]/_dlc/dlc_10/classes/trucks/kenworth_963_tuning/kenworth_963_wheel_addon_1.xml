@@ -5,7 +5,7 @@
 	<WheelRepairsHide>
 		<Mesh Frame="spare_wheel" HideThreshold="0.0" />
 	</WheelRepairsHide>
-	<TruckData WheelRepairsCapacity="1" />
+	<TruckData WheelRepairsCapacity="2" />
 	<PhysicsModel Mesh="trucks/kenworth_963_tuning/kenworth_963_wheel_addon_1">
 		<Body Mass="15" ModelFrame="BoneWheelAddon1_cdt" ImpactType="Truck">
 			<Constraint Type="Rigid" />

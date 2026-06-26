@@ -1,0 +1,50 @@
+<_templates Include="models" />
+<ModelBrand
+	NightLightingShadowsAllowCap="true"
+	Instanced="true"
+>
+	<PhysicsModel>
+		<Body Collisions="None" ModelFrame="BoneRoot">
+			<Body _template="LightWeight" ModelFrame="Bone1">
+				<Constraint _template="LightWeight" />
+			</Body>
+			<Body _template="LightWeight" ModelFrame="Bone2">
+				<Constraint _template="LightWeight" />
+			</Body>
+			<Body _template="LightWeight" ModelFrame="Bone3">
+				<Constraint _template="LightWeight" />
+					<Body Collisions="Dynamic" ModelFrame="Bone.004" Mass="100" NoSoftContacts="true">
+					<Constraint
+						Cone="15"
+						TwistAxisLocal="(0; 1; 0)"
+						Type="Ragdoll"
+						BreakOffThreshold="300"
+					/>
+						<Body Collisions="Dynamic" ModelFrame="Bone.003" Mass="100" NoSoftContacts="true">
+							<Constraint Type="Fixed" BreakOffThreshold="400"/>
+						</Body>
+						<Body ModelFrame="Bone.005" Mass="100" NoSoftContacts="true">
+							<Constraint Type="Fixed" BreakOffThreshold="100"/>
+								<Body ModelFrame="Bone.001" Mass="100" NoSoftContacts="true">
+									<Constraint Type="Fixed" BreakOffThreshold="500"/>
+								</Body>
+						</Body>
+					</Body>
+			</Body>
+			<Body _template="LightWeight" ModelFrame="Bone4">
+				<Constraint _template="LightWeight" />
+			</Body>
+			<Body _template="LightWeight" ModelFrame="Bone5">
+				<Constraint _template="LightWeight" />
+			</Body>
+			<Body _template="LightWeight" ModelFrame="Bone6">
+				<Constraint _template="LightWeight" />
+			</Body>
+			<Body _template="LightWeight" ModelFrame="Bone7">
+				<Constraint _template="LightWeight" />
+			</Body>
+
+		</Body>
+	</PhysicsModel>
+	<Landmark Mesh="landmarks/tourist_table_lmk" />
+</ModelBrand>

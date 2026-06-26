@@ -487,7 +487,7 @@
 			<CameraPos FOV="32.0" Name="default" InterestPosition="(5.716; 1.735; -0.4)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(13.576; 1.402; -3.863)" />
 			<CameraPos FOV="32.0" Name="wheels" InterestPosition="(4.693; 0.636; -0.89)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(7.874; 2.342; -5.654)" />
 			<CameraPos FOV="32.0" Name="rear" InterestPosition="(1.91; 2.45; 0.634)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-2.114; 4.5; 4)" />
-			<CameraPos FOV="32.0" Name="roof" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(11; 5.8; -2.8)" InterestPosition="(3.5; 3.3; 0)" />
+			<CameraPos FOV="32.0" Name="roof" MaxXRotation="360" MaxYRotation="5" MaxZoom="2" Position="(11; 5.2; -2.8)" InterestPosition="(3.5; 3.3; 0)" />
 			<CameraPos FOV="32.0" Name="hoods_default" InterestPosition="(5.716; 1.735; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(13.576; 1.402; -3.863)" />
 			<!-- ADDONS -->
 			<CameraPos FOV="32.0" Name="fenders" InterestPosition="(0; 1.268; -0.66)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-10.851; 4.14; 4.993)" />

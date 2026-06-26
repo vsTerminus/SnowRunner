@@ -3,7 +3,7 @@
 	<WheelRepairsHide>
 		<Mesh Frame="tire_front" HideThreshold="0.0" />
 	</WheelRepairsHide>
-	<TruckData WheelRepairsCapacity="1" />
+	<TruckData WheelRepairsCapacity="2" />
 	<PhysicsModel Mesh="trucks/kenworth_w990_tuning/kenworth_w990_spare_wheel">
 		<Body Mass="10" ModelFrame="BoneCabin_cdt" ImpactType="Truck">
 			<Constraint Type="Rigid" />

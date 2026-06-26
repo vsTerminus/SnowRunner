@@ -95,27 +95,26 @@
 	<ModelAttachments>
 		<StopSignals>
 			<Light _template="StopSignal" Pos="(-6.636; 1.291; 0)" ParentFrame="BoneRoot_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.3" Size="0.2" Pos="(-6.636; 1.291; 1.107)" ParentFrame="BoneRoot_cdt" />
 			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.3" Size="0.2" Pos="(-6.636; 1.291; 1.252)" ParentFrame="BoneRoot_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.3" Size="0.2" Pos="(-6.636; 1.291; -1.107)" ParentFrame="BoneRoot_cdt" />
 			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.3" Size="0.2" Pos="(-6.636; 1.291; -1.252)" ParentFrame="BoneRoot_cdt" />
 		</StopSignals>
 		<ReverseSignals>
 			<Light _template="ReverseSignal" Pos="(-6.636; 1.291; 0)" ParentFrame="BoneRoot_cdt" />
-			<Flare _template="ReverseSignal" Color="g(245; 235; 220) x 0.6" Dir="(-1; 0; 0)" Size="0.2" Pos="(-6.636; 1.291; 1.398)" ParentFrame="BoneRoot_cdt" />
-			<Flare _template="ReverseSignal" Color="g(245; 235; 220) x 0.6" Dir="(-1; 0; 0)" Size="0.2" Pos="(-6.636; 1.291; -1.398)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="ReverseSignal" Color="g(245; 235; 220) x 0.6" Dir="(-1; 0; 0)" Size="0.2" Pos="(-6.636; 1.291; 1.107)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="ReverseSignal" Color="g(245; 235; 220) x 0.6" Dir="(-1; 0; 0)" Size="0.2" Pos="(-6.636; 1.291; -1.107)" ParentFrame="BoneRoot_cdt" />
 			
-			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.05" Dir="(-1; 0; 0)" Size="0.4" Pos="(-6.636; 1.291; 1.398)" ParentFrame="BoneRoot_cdt" />
-			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.05" Dir="(-1; 0; 0)" Size="0.4" Pos="(-6.636; 1.291; -1.398)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.05" Dir="(-1; 0; 0)" Size="0.4" Pos="(-6.636; 1.291; 1.107)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.05" Dir="(-1; 0; 0)" Size="0.4" Pos="(-6.636; 1.291; -1.107)" ParentFrame="BoneRoot_cdt" />
 		</ReverseSignals>
 		<Ignition>
 			<Flare _template="IgnitionSignalOrange" Color="g(255; 140; 0) x 0.3" Dir="(-1; 0; 0)" Size="0.2" Pos="(-6.636; 1.291; 1.543)" ParentFrame="BoneRoot_cdt" />
 			<Flare _template="IgnitionSignalOrange" Color="g(255; 140; 0) x 0.3" Dir="(-1; 0; 0)" Size="0.2" Pos="(-6.636; 1.291; -1.543)" ParentFrame="BoneRoot_cdt" />
+			
+			<Flare _template="IgnitionSignalOrange" Color="g(255; 140; 0) x 0.3" Dir="(-1; 0; 0)" Size="0.2" Pos="(-6.636; 1.291; -1.39)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="IgnitionSignalOrange" Color="g(255; 140; 0) x 0.3" Dir="(-1; 0; 0)" Size="0.2" Pos="(-6.636; 1.291; 1.39)" ParentFrame="BoneRoot_cdt" />
 		
 			<Light _template="StopSignal" Pos="(-3.944; 4.038; 0.000)" ParentFrame="BoneRoot_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.3" Size="0.2" Pos="(-6.636; 1.291; 1.107)" ParentFrame="BoneRoot_cdt" />
 			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.3" Size="0.2" Pos="(-6.636; 1.291; 1.252)" ParentFrame="BoneRoot_cdt" />
-			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.3" Size="0.2" Pos="(-6.636; 1.291; -1.107)" ParentFrame="BoneRoot_cdt" />
 			<Flare _template="StopSignal" AspectRatio="1" Color="g(255; 0; 0) x 0.3" Size="0.2" Pos="(-6.636; 1.291; -1.252)" ParentFrame="BoneRoot_cdt" />
 			<!-- FRONT RIGHT -->
 			<Flare _template="LED" Dir="(1; 0; 0)" Size="0.03" Color="g(141; 133; 117) x 1.3" Pos="(0.265; 4.120; -0.921)" ParentFrame="BoneRoot_cdt" />

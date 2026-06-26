@@ -1,0 +1,35 @@
+<_templates Include="trucks">
+	<TruckTire>
+		<Allterrain Mass="220" RearMassScale="2.0">
+			<WheelTracks _template="Default" />
+			<WheelTracks _template="DefaultDouble" Rear="true" />
+			<WheelSoftness _template="Average" />
+		</Allterrain>
+	</TruckTire>
+</_templates>
+<TruckWheels DamageCapacity="50" Radius="1" Width="0.613" WidthRear="1.28">
+	<TruckTires>
+		<TruckTire _template="Allterrain" Mesh="wheels/tire_western_star_6900xd" Name="alltearrain_1_hib_billert_m816">
+			<WheelFriction 
+				_template="Allterrain"
+				BodyFriction="1.5"
+				BodyFrictionAsphalt="2.92"
+				SubstanceFriction="1.0"
+			/>
+			<GameData
+				Price="3600"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_ALLTERRAIN_DESC" UiName="UI_TIRE_HEAVY_ALLTERRAIN_HIB_BILLERT_M816" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>
+		<TruckRim Mesh="wheels/rim_western_star_6900xd" Name="rim_1_hib_billert_m816">
+			<GameData>
+				<UiDesc UiDesc="UI_RIM_HEAVY_ALLTERRAIN_DOUBLE_1_DESC" UiName="UI_RIM_HEAVY_ALLTERRAIN_HIB_BILLERT_M816" />
+			</GameData>
+		</TruckRim>
+	</TruckRims>
+</TruckWheels>

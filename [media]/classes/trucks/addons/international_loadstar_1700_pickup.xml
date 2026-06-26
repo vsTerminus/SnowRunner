@@ -12,9 +12,9 @@
 		<Mesh Frame="fuel" HideThreshold="0.0" />
 	</FuelHide>
 	<TruckData
-		FuelCapacity="100"
+		FuelCapacity="60"
 		RepairsCapacity="150"
-		WheelRepairsCapacity="3"
+		WheelRepairsCapacity="6"
 	>
 		<LimitedFluid Center="(-0.815; 1.074; 0.573)" SizeX = "0.164" SizeY = "0.446" SizeZ = "0.372" Type="Box"/>
 		<LimitedFluid Center="(-0.815; 1.074; 0.164)" SizeX = "0.164" SizeY = "0.446" SizeZ = "0.372" Type="Box"/>

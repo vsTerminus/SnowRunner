@@ -1,0 +1,62 @@
+<_templates Include="environment" />
+<ModelBrand
+	DayShadowOffsetMult="2.0"
+	AcceptZoneBorderDecals="true"
+	DynamicModel="true"
+	NightLightingShadowsAllowCap="true"
+	ClipCamera="false"
+>
+
+
+<Subset IsDefault="true" Name="stage_00"> 										 <!-- stage_02 -->
+	<Mesh Name="plant" />
+	<CdtMesh Name="cdt_BoneRoot" />
+	<CdtMesh Name="cdt_Bone_1" />
+	<CdtMesh Name="cdt_Bone_2" />
+	<CdtMesh Name="cdt_Bone_3" />
+	<CdtMesh Name="cdt_Bone_4" />
+	<CdtMesh Name="cdt_Bone_5" />
+	<AnimTrackSubset Name="anim_loop" />
+</Subset> 																		 <!-- stage_02 -->
+
+<Subset	Name="stage_01">                                                         <!-- stage_02 -->
+	<OnSubsetActivateEvent>
+		<SFX Name="bridge_wooden_02_smoke_02" Dir="(0; 1; 0)" Pos="(0.0; 0.0; 0.0)"/>
+	</OnSubsetActivateEvent>
+</Subset>     																	 <!-- stage_02 -->
+	
+	<PhysicsModel>
+		<Body _template="BigTreeRoot" ModelFrame="BoneRoot" IsCapsuleCDT="false">
+			<Constraint _template="BigTreeRoot"/>
+			<Body Mass="500" ModelFrame="Bone_1" NoSoftContacts="true">
+				<Constraint Cone="1" TwistAxisLocal="(0;1;0)" Type="Ragdoll">
+					<PlaneConeMotor Damping="200" Spring="400" Type="Spring" />
+				</Constraint>
+			</Body>
+			<Body Mass="500" ModelFrame="Bone_2" NoSoftContacts="true">
+				<Constraint Cone="1" TwistAxisLocal="(0;1;0)" Type="Ragdoll">
+					<PlaneConeMotor Damping="200" Spring="400" Type="Spring" />
+				</Constraint>
+			</Body>
+			<Body Mass="500" ModelFrame="Bone_3" NoSoftContacts="true">
+				<Constraint Cone="1" TwistAxisLocal="(0;1;0)" Type="Ragdoll">
+					<PlaneConeMotor Damping="200" Spring="400" Type="Spring" />
+				</Constraint>
+			</Body>
+			<Body Mass="500" ModelFrame="Bone_4" NoSoftContacts="true">
+				<Constraint Cone="1" TwistAxisLocal="(0;1;0)" Type="Ragdoll">
+					<PlaneConeMotor Damping="200" Spring="400" Type="Spring" />
+				</Constraint>
+			</Body>
+			<Body Mass="500" ModelFrame="Bone_5" NoSoftContacts="true">
+				<Constraint Cone="1" TwistAxisLocal="(0;1;0)" Type="Ragdoll">
+					<PlaneConeMotor Damping="200" Spring="400" Type="Spring" />
+				</Constraint>
+			</Body>
+	</Body>
+	</PhysicsModel>
+
+	<Landmark Mesh="landmarks/saman_middle_02_us18_objective_lmk"/>	
+
+
+</ModelBrand>

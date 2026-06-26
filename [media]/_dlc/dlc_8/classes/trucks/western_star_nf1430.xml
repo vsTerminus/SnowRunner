@@ -77,7 +77,7 @@
 			Frame="BoneRack"
 			FrameSteerLeft="BoneRackLeft"
 			FrameSteerRight="BoneRackRight"
-			RackHalfSizeZ="0.875"
+			RackHalfSizeZ="0.865"
 		/>
 		<Steam Origin="(4.534; 1.048; 0)" ParentFrame="BoneCabin_cdt" />
 		<Steam Origin="(6.075; 0.958; 0)" Scale="0.7" ParentFrame="BoneCabin_cdt" />
@@ -112,10 +112,9 @@
 			<AbruptStop		Sound="trucks/common/truck_swing_big_rnd_set/truck_swing_big_rnd" />
 		</Sounds>
 		<Shafts>
-			<Shaft SocketPointA="Shaft1a" SocketPointB="Shaft1b" />
-			<Shaft SocketPointA="Shaft2a" SocketPointB="Shaft2b" />
-			<Shaft SocketPointA="Shaft3a" SocketPointB="Shaft3b" />
-			<Shaft SocketPointA="Shaft4a" SocketPointB="Shaft4b" />
+			<Shaft SocketPointA="ShaftAxle2R" SocketPointB="ShaftAxle3F" />
+			<Shaft SocketPointA="ShaftBeam2R" SocketPointB="ShaftAxle2F" />
+			<Shaft SocketPointA="ShaftBeam1R" SocketPointB="ShaftBeam2F" />
 		</Shafts>
 		<OcclusionMap HalfSizeZ="1.8" MinX="-2.9" MaxX="8.1" />
 		<LimitedFluid
@@ -159,11 +158,11 @@
 			<DamageArea Type="FuelTank" Min="(3.799; 0.388; 0.492)" Max="(5.026; 1.029; 1.13)" ParentFrame="BoneCabin_cdt" />
 		</Damage>
 		<CompatibleWheels RearOffsetZ="0.07" Scale="0.56" Type="wheels_heavy_double1" />
-		<CompatibleWheels RearOffsetZ="0.07" Scale="0.56" Type="wheels_heavy_double2" />
+		<CompatibleWheels RearOffsetZ="0.07" OffsetZ="-0.03" Scale="0.56" Type="wheels_heavy_double2" />
 
-		<CompatibleWheels RearOffsetZ="0.07" Scale="0.56" Type="wheels_heavy_highway_double" />
-		<CompatibleWheels RearOffsetZ="0.07" Scale="0.56" Type="wheels_heavy_offroad_double" />
-		<CompatibleWheels RearOffsetZ="0.07" Scale="0.56" Type="wheels_heavy_allterrain_double" />
+		<CompatibleWheels RearOffsetZ="0.07" OffsetZ="-0.03" Scale="0.56" Type="wheels_heavy_highway_double" />
+		<CompatibleWheels RearOffsetZ="0.07" OffsetZ="-0.03" Scale="0.56" Type="wheels_heavy_offroad_double" />
+		<CompatibleWheels RearOffsetZ="0.07" OffsetZ="-0.03" Scale="0.56" Type="wheels_heavy_allterrain_double" /> 
 
 		<Camera Center="(1.050; 0; 0)" ParentFrame="BoneCabin_cdt">
 			<Cockpit
@@ -429,7 +428,7 @@
 			<Socket Names="LogLift" NamesBlock="FrameAddonKung, BigCraneUs, BigCrane, MinicraneUS, FrameAddon, FrameAddonTank, FrameAddonMaintainer, FrameAddonSeismicVibrator, FrameAddonTowPlatform, FrameAddonLogMedium" Offset="(4.352; 1.093; 0)" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="MinicraneUS" NamesBlock="BigCraneUs, BigCrane, FrameAddonTank, FrameAddonMaintainer, FrameAddonTowPlatform, FrameAddonLogShort, FrameAddonLogMedium" Offset="(3.557; 1.08; 0)" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="MinicraneUS" NamesBlock="BigCraneUs, BigCrane, FrameAddonTank, FrameAddonMaintainer, FrameAddonTowPlatform, FrameAddonLogShort, FrameAddonLogMedium, FrameAddonSeismicVibrator" Offset="(3.557; 1.08; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="Semitrailer, SemitrailerOiltank, SemitrailerFoldableLog" Offset="(-0.419; 1.457; 0)" >
@@ -472,7 +471,12 @@
 			<Socket Names="nf1430Visor" ParentFrame="BoneCabinDamper_cdt" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="western_star_nf1430_transferbox_default">
-			<Socket Names="WSnf1430TransferBox" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt"/>
+			<Socket Names="WSnf1430TransferBox" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt">
+				<ExtraParent Frame="BoneAxleFront" />
+				<ExtraParent Frame="BoneRackLeft" />
+				<ExtraParent Frame="BoneRackRight" />
+				<ExtraParent Frame="BoneRack" />
+			</Socket>
 		</AddonSockets>
 		<AddonSockets>
 			<Socket

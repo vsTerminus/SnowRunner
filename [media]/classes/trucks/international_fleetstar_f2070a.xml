@@ -336,7 +336,7 @@
 	<HeadLight _template="Default" Pos="(4.200; 1.283; 0.949)" />
 	<GameData
 		Country="US,NE,CE"
-		ExcludeAddons="semitrailer_stepdeck_5, semitrailer_gooseneck_4, semitrailer_log_double_ls"
+		ExcludeAddons="semitrailer_stepdeck_5, semitrailer_gooseneck_4, semitrailer_gooseneck_3,semitrailer_log_double_ls"
 		Price="13800"
 		UnlockByExploration="false"
 		UnlockByRank="1"

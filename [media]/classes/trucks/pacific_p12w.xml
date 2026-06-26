@@ -9,6 +9,7 @@
 			Location="front"
 			SteeringAngle="40"
 			SteeringCastor="8"
+			SteeringJointOffset="0.3"
 			Torque="full"
 			ParentFrame="BoneCabin_cdt"
 		/>
@@ -139,7 +140,7 @@
 			<DamageArea Type="Engine" Min="(2; 1.5; -0.9)" Max="(3.9; 2.9; 0.9)" ParentFrame="BoneCabin_cdt" />
 			<DamageArea Type="FuelTank" Min="(-1.2; 0.8; -1.4)" Max="(1.4; 1.6; 1.4)" ParentFrame="BoneCabin_cdt" />
 		</Damage>
-		<CompatibleWheels OffsetZ="0" Scale="0.73" RearOffsetZ="-0.1" Type="wheels_heavy_offroad_p12" />
+		<CompatibleWheels OffsetZ="0.05" Scale="0.73" RearOffsetZ="-0.1" Type="wheels_heavy_offroad_p12" />
 		<CompatibleWheels OffsetZ=".0" Scale="0.73" RearOffsetZ="0.05" Type="wheels_heavy_double2_p12" />
 		<CompatibleWheels OffsetZ="-0.1" Scale="0.73" RearOffsetZ="-0.1" Type="wheels_heavy_single_p12" />
 		

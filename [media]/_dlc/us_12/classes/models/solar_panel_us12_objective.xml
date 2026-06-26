@@ -20,7 +20,7 @@
 	</PhysicsModel>
 	<TrackEvents TrackName="stage_1_anim">
 		<AnimEvent Key="41">
-			<Sound Name="actors/actor_construction/actor_construct_us06_garage_07" Range="200" Volume="1" />
+			<Sound Name="actors/actor_construction/actor_construct_us06_garage_07" Range="50" Volume="0.4" />
 			<SFX Dir="(0; 1; 0)" Name="rus_base_01_full" Pos="(0; 0; 0)" />
 
 		</AnimEvent>

@@ -2,7 +2,7 @@
 	<WheelRepairsHide>
 		<Mesh Frame="wheel" HideThreshold="0.0" />
 	</WheelRepairsHide>
-	<TruckData WheelRepairsCapacity="1" />
+	<TruckData WheelRepairsCapacity="2" />
 	<PhysicsModel Mesh="trucks/tayga_6455b_tuning/tayga_6455b_wheel_addon">
 		<Body ImpactType="Truck" Mass="100" ModelFrame="BoneChassis_cdt">
 			<Constraint Type="Rigid" />

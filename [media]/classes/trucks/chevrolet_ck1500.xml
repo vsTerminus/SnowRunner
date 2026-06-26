@@ -411,14 +411,17 @@
 		</AddonSockets>
 	</GameData>
 	<AutomaticIK>
-		<IKBone ModelFrame="BoneRackSlider" ParentFrame="BoneRackRight">
+		<IKBone ModelFrame="BoneRackRightIK" ParentFrame="BoneRackRight">
 			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge" />
-			<IKBone
-				AttachOffset="(0; 0; 0)"
-				AttachToFrame="BoneRackLeft"
-				ModelFrame="BoneRackHinge"
-			>
-				<IKJoint AxisLocal="(0; 0; 1)" Type="Slider" />
+			<IKBone ModelFrame="BoneRackSlider" ParentFrame="BoneRackRight">
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge" />
+				<IKBone
+					AttachOffset="(0; 0; 0)"
+					AttachToFrame="BoneRackLeft"
+					ModelFrame="BoneRackHinge"
+				>
+					<IKJoint AxisLocal="(0; 0; 1)" Type="Slider" />
+				</IKBone>
 			</IKBone>
 		</IKBone>
 	</AutomaticIK>

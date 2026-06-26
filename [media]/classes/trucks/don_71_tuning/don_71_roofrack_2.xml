@@ -18,8 +18,8 @@
 	</WheelRepairsHide>
 	<TruckData
 		FuelCapacity="40"
-		RepairsCapacity="300"
-		WheelRepairsCapacity="4"
+		RepairsCapacity="150"
+		WheelRepairsCapacity="2"
 	>
 		<LimitedFluid Center="(-0.103; 2.058; 0.39)" SizeX="0.496" SizeY="0.180" SizeZ="0.389" Type="Box" ParentFrame="BoneFuel1_cdt" />
 		<LimitedFluid Center="(-0.103; 1.853; 0.39)" SizeX="0.496" SizeY="0.180" SizeZ="0.389" Type="Box" ParentFrame="BoneFuel2_cdt" />

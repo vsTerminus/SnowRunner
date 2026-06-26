@@ -50,7 +50,7 @@
 	</PhysicsModel>
 	<GameData
 		CameraPreset="roofrack"
-		Category="top"
+		Category="frame_addons"
 		Price="2700"
 		UnlockByExploration="false"
 		UnlockByRank="1"

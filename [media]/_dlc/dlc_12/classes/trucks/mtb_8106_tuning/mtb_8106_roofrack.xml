@@ -23,9 +23,9 @@
 		<Mesh Frame="fuel" HideThreshold="0.0" />
 	</FuelHide>
 	<TruckData
-		FuelCapacity="130"
+		FuelCapacity="160"
 		RepairsCapacity="150"
-		WheelRepairsCapacity="1"
+		WheelRepairsCapacity="2"
 	>
 		<LimitedFluid Center="(-1.661; 2.166; 0.532)" SizeX="0.416" SizeY="0.160" SizeZ="0.326" Type="Box" ParentFrame="BoneFuel3_cdt"/>
 		<LimitedFluid Center="(-1.654; 2.166; 0.178)" SizeX="0.416" SizeY="0.160" SizeZ="0.326" Type="Box" ParentFrame="BoneFuel3_cdt"/>

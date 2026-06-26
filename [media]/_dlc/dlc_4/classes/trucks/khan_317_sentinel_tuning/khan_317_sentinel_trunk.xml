@@ -5,7 +5,7 @@
 	</WheelRepairsHide>
 	<TruckData
 		FuelCapacity="40"
-		RepairsCapacity="300"
+		RepairsCapacity="150"
 		WheelRepairsCapacity="2"
 	>
 		<LimitedFluid Center="(-0.795; 1.03; 0.677)" SizeX="0.333" SizeY="0.425" SizeZ="0.182" Type="Box" ParentFrame="BoneFuelLeft_cdt" />

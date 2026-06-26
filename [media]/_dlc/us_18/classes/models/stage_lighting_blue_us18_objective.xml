@@ -1,0 +1,23 @@
+<ModelBrand
+	DynamicModel="true"
+	NightLightingShadowsAllowCap="true"
+>
+<PhysicsModel>
+        <Body Collisions="Dynamic" />
+    </PhysicsModel>
+
+	<Subset IsDefault="true" Name="state_start">
+		<Mesh Name="lighters_off" />
+		<Mesh Name="lighters_off_lod1" />
+		<Mesh Name="lighters_off_lod2" />
+		<Mesh Name="lighters_off_lod3" />
+	</Subset>
+
+	<Subset Name="state_end">
+		<Mesh Name="lighters_on" />
+		<Mesh Name="lighters_on_lod1" />
+		<Mesh Name="lighters_on_lod2" />
+		<Mesh Name="lighters_on_lod3" />
+		<AnimTrackSubset Name="anim_loop" />
+    </Subset>
+</ModelBrand>

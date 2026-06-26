@@ -1,0 +1,12 @@
+<ModelBrand
+	NightLightingShadowsAllowCap="true"
+	Instanced="true"
+	InstancedAsModel="true"
+	ClipCameraBridge="true"
+	DayShadowOffsetMult="30"
+>
+	<PhysicsModel>
+		<Body Collisions="Dynamic" />
+	</PhysicsModel>
+	<Landmark Mesh="landmarks/ship_01_us18_lmk" />
+</ModelBrand>

@@ -2,7 +2,7 @@
 	<WheelRepairsHide>
 		<Mesh Frame="wheel" HideThreshold="0.0" />
 	</WheelRepairsHide>
-	<TruckData WheelRepairsCapacity="1" />
+	<TruckData WheelRepairsCapacity="2" />
 	<PhysicsModel Mesh="trucks/neo_falcon_2000_tuning/neo_falcon_2000_spare_wheel_default">
 		<Body ImpactType="Truck" Mass="20" ModelFrame="BoneWheel_cdt">
 			<Constraint

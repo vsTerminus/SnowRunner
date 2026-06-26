@@ -256,7 +256,7 @@
 	<HeadLight _template="Default" Pos="(2.577; 0.917; 0)" ParentFrame="BoneCabin_cdt" />
 	<GameData
 		Country="RU,CAS,WA,NE,CE"
-		ExcludeAddons="trailer_log_pole"
+		ExcludeAddons="trailer_log_pole, trailer_log_medium, trailer_log_short"
 		Price="22500"
 		UnlockByExploration="false"
 		UnlockByRank="1"

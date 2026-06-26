@@ -4,7 +4,6 @@
 			ConnectedToHandbrake="true"
 			Location="rear"
 			Torque="default"
-			ConnectedToHandbrake="true"
 		/>
 		<FrontWheel
 			Location="front"

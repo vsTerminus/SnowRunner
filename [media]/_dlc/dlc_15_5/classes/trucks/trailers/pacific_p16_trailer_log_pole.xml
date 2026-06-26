@@ -53,6 +53,7 @@
 					ModelFrame="BoneFork_cdt"
 					NetSyncUseGravity="True"
 					NoCameraCollision="True"
+					Mass="350"
 				>
 					<Body
 						_template="CartFork"

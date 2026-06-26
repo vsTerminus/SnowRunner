@@ -21,6 +21,9 @@
 		UnlockByExploration="false"
 		UnlockByRank="1"
 	>
+		<WinchSocket Pos="(-3.955; 1.121; 0)" FixedToTruck="true"/>
+		<CraneSocket Pos="(-3.955; 1.121; 0)" FixedToTruck="true"/>
+		
 		<UiDesc
 			UiDesc="UI_ADDON_SADDLE_HIGH_DESC"
 			UiIcon30x30=""

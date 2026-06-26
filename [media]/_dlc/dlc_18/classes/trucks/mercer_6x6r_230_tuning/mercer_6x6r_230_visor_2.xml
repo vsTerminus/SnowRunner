@@ -1,0 +1,19 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/mercer_6x6r_230_tuning/mercer_6x6r_230_visor_2" />
+	<GameData
+		CameraPreset="roof"
+		Category="miscellenious"
+		Price="900"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SUNVISOR_NAVISTAR_DARKSLANT_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SUNVISOR_NAVISTAR_DARKSLANT_NAME"
+		/>
+		<InstallSocket Type="Mercer6X6R230Visor" />
+	</GameData>
+</TruckAddon>

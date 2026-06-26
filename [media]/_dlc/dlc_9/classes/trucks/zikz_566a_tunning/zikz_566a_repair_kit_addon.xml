@@ -3,7 +3,7 @@
 	<WheelRepairsHide>
 		<Mesh Frame="zikz_repair_kit_wheel" HideThreshold="0.0" />
 	</WheelRepairsHide>
-	<TruckData WheelRepairsCapacity="1" />
+	<TruckData WheelRepairsCapacity="2" RepairsCapacity="50" />
 	<PhysicsModel Mesh="trucks/zikz_566a_tunning/zikz_566a_repair_kit_addon">
 		<Body Mass="1" ModelFrame="BoneAddon_cdt">
 			<Constraint Type="Rigid" />

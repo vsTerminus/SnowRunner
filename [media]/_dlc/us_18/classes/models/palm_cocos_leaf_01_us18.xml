@@ -1,0 +1,20 @@
+<_templates Include="models" />
+<ModelBrand
+	Instanced="True"
+	NightLightingShadowsAllowCap="True"
+>
+	<PhysicsModel>
+		<Body _template="LightWeight" ModelFrame="BoneRoot">
+			<Constraint _template="LightWeight" />
+			<Body _template="LightWeight" ModelFrame="BoneBranch1">
+				<Constraint
+				Cone="25"
+            	TwistAxisLocal="(0; 1; 0)"
+            	Type="Ragdoll"	
+				>
+				<PlaneConeMotor Damping="850" Spring="2000" Type="Spring" />
+				</Constraint>
+			</Body>
+		</Body>
+	</PhysicsModel>
+</ModelBrand>

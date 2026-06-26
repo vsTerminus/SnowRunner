@@ -1,0 +1,72 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<TruckData>
+		<Damage>
+			<Multiplier Multiplier="0.9" Type="Engine" />
+		</Damage>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/hib_billert_m816_tuning/hib_billert_m816_bumper_1">
+		<Body ImpactType="Truck" Mass="40" ModelFrame="BoneCabin_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<HeadLight>
+			<Flare _template="LED" Dir="(1; 0; 0)" AspectRatio="1" Size="0.05" Pos="(3.605; 1.005; 0.332)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED" Dir="(1; 0; 0)" AspectRatio="1" Size="0.05" Pos="(3.605; 1.005; 0.290)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED" Dir="(1; 0; 0)" AspectRatio="1" Size="0.05" Pos="(3.605; 1.005; 0.249)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED" Dir="(1; 0; 0)" AspectRatio="1" Size="0.05" Pos="(3.605; 1.005; 0.207)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED" Dir="(1; 0; 0)" AspectRatio="1" Size="0.05" Pos="(3.605; 1.005; 0.166)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED" Dir="(1; 0; 0)" AspectRatio="1" Size="0.05" Pos="(3.605; 1.005; 0.124)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED" Dir="(1; 0; 0)" AspectRatio="1" Size="0.05" Pos="(3.605; 1.005; 0.083)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED" Dir="(1; 0; 0)" AspectRatio="1" Size="0.05" Pos="(3.605; 1.005; 0.041)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED" Dir="(1; 0; 0)" AspectRatio="1" Size="0.05" Pos="(3.605; 1.005; 0.000)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED" Dir="(1; 0; 0)" AspectRatio="1" Size="0.05" Pos="(3.605; 1.005; -0.041)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED" Dir="(1; 0; 0)" AspectRatio="1" Size="0.05" Pos="(3.605; 1.005; -0.083)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED" Dir="(1; 0; 0)" AspectRatio="1" Size="0.05" Pos="(3.605; 1.005; -0.124)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED" Dir="(1; 0; 0)" AspectRatio="1" Size="0.05" Pos="(3.605; 1.005; -0.166)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED" Dir="(1; 0; 0)" AspectRatio="1" Size="0.05" Pos="(3.605; 1.005; -0.207)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED" Dir="(1; 0; 0)" AspectRatio="1" Size="0.05" Pos="(3.605; 1.005; -0.249)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED" Dir="(1; 0; 0)" AspectRatio="1" Size="0.05" Pos="(3.605; 1.005; -0.290)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED" Dir="(1; 0; 0)" AspectRatio="1" Size="0.05" Pos="(3.605; 1.005; -0.332)" ParentFrame="BoneCabin_cdt" />
+
+			<Flare _template="LED" Dir="(1; 0; 0)" AspectRatio="1" Size="0.05" Pos="(3.605; 0.963; 0.332)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED" Dir="(1; 0; 0)" AspectRatio="1" Size="0.05" Pos="(3.605; 0.963; 0.290)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED" Dir="(1; 0; 0)" AspectRatio="1" Size="0.05" Pos="(3.605; 0.963; 0.249)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED" Dir="(1; 0; 0)" AspectRatio="1" Size="0.05" Pos="(3.605; 0.963; 0.207)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED" Dir="(1; 0; 0)" AspectRatio="1" Size="0.05" Pos="(3.605; 0.963; 0.166)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED" Dir="(1; 0; 0)" AspectRatio="1" Size="0.05" Pos="(3.605; 0.963; 0.124)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED" Dir="(1; 0; 0)" AspectRatio="1" Size="0.05" Pos="(3.605; 0.963; 0.083)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED" Dir="(1; 0; 0)" AspectRatio="1" Size="0.05" Pos="(3.605; 0.963; 0.041)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED" Dir="(1; 0; 0)" AspectRatio="1" Size="0.05" Pos="(3.605; 0.963; 0.000)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED" Dir="(1; 0; 0)" AspectRatio="1" Size="0.05" Pos="(3.605; 0.963; -0.041)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED" Dir="(1; 0; 0)" AspectRatio="1" Size="0.05" Pos="(3.605; 0.963; -0.083)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED" Dir="(1; 0; 0)" AspectRatio="1" Size="0.05" Pos="(3.605; 0.963; -0.124)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED" Dir="(1; 0; 0)" AspectRatio="1" Size="0.05" Pos="(3.605; 0.963; -0.166)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED" Dir="(1; 0; 0)" AspectRatio="1" Size="0.05" Pos="(3.605; 0.963; -0.207)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED" Dir="(1; 0; 0)" AspectRatio="1" Size="0.05" Pos="(3.605; 0.963; -0.249)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED" Dir="(1; 0; 0)" AspectRatio="1" Size="0.05" Pos="(3.605; 0.963; -0.290)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="LED" Dir="(1; 0; 0)" AspectRatio="1" Size="0.05" Pos="(3.605; 0.963; -0.332)" ParentFrame="BoneCabin_cdt" />
+		</HeadLight>
+	</ModelAttachments>
+	<GameData
+		CameraPreset="default"
+		Category="bumper"
+		Price="800"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<WinchSocket FixedToTruck="true" Pos="(3.608; 0.701; -0.388)" />
+		<WinchSocket FixedToTruck="true" Pos="(3.608; 0.701; 0.388)" />
+		<CraneSocket FixedToTruck="true" Pos="(3.608; 0.701; 0.388)" />
+		<CraneSocket FixedToTruck="true" Pos="(3.608; 0.701; -0.388)" />
+		
+		<UiDesc
+			UiDesc="UI_TUNING_BUMPER_TOWLOOPS_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_BUMPER_TOWLOOPS_NAME"
+		/>
+		<InstallSocket Type="HIBBillertM816Bumper" />
+	</GameData>
+</TruckAddon>

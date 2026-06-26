@@ -2,7 +2,7 @@
 	<WheelRepairsHide>
 		<Mesh Frame="wheel" HideThreshold="0.0" />
 	</WheelRepairsHide>
-	<TruckData WheelRepairsCapacity="1" />
+	<TruckData WheelRepairsCapacity="2" />
 	<PhysicsModel Mesh="trucks/derry_special_15c177_tunning/derry_special_15c177_spare_wheel_01">
 		<Body ImpactType="Truck" Mass="100">
 			<Constraint Type="Rigid" />

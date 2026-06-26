@@ -141,6 +141,7 @@
 		<EngineSocket Default="ru_truck_modern_engine_0" Type="e_ru_truck_modern" />
 		<Driver
 			AnimationSet="HeavyTruck"
+			LegsOffset="(0; 0.08; 0)"
 			Pos="(0.681; 1.631; 0.369)"
 			SteeringWheelPos="(1.031; 1.987; 0.363)"
 			ParentFrame="BoneCabin_cdt"
@@ -329,7 +330,7 @@
 		Price="19900"
 		UnlockByExploration="true"
 		UnlockByRank="1"
-		ExcludeAddons="trailer_log_pole, semitrailer_log_double_hinge"
+		ExcludeAddons="trailer_log_pole, semitrailer_log_double_hinge, semitrailer_gooseneck_3"
 	>
 		<WinchSocket Pos="(2.979; 1.043; -0.394)" ParentFrame="BoneCabin_cdt" />
 		<WinchSocket Pos="(2.979; 1.043; 0.394)" ParentFrame="BoneCabin_cdt" />

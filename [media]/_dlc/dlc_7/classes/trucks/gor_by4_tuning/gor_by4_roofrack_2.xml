@@ -17,27 +17,16 @@
 		<Mesh Frame="wheel" HideThreshold="0.0" />
 	</WheelRepairsHide>
 	<TruckData
-		FuelCapacity="40"
-		RepairsCapacity="100"
-		WheelRepairsCapacity="1"
+		FuelCapacity="60"
+		WheelRepairsCapacity="2"
 	>
-		<LimitedFluid Center="(-0.063; 1.73; -0.424)" SizeX="0.285" SizeY="0.356" SizeZ="0.125" Type="Box" />
-		<LimitedFluid Center="(0.039; 1.73; 0.419)" SizeX="0.285" SizeY="0.356" SizeZ="0.125" Type="Box" />
+		<LimitedFluid Center="(-0.064, 1.808, -0.068)" SizeX="0.318" SizeY="0.149" SizeZ="0.371" Type="Box" />
+		<LimitedFluid Center="(-0.102, 1.625, 0.181)" SizeX="0.371" SizeY="0.149" SizeZ="0.318" Type="Box" />
+		<LimitedFluid Center="(-0.100, 1.625, -0.194)" SizeX="0.371" SizeY="0.149" SizeZ="0.318" Type="Box" />
 	</TruckData>
-	<RepairsHide>
-		<Mesh Frame="repair" HideThreshold="0.0" />
-	</RepairsHide>
 	<PhysicsModel Mesh="trucks/gor_by4_tuning/gor_by4_roofrack_2">
-		<Body ImpactType="Truck" Mass="100">
+		<Body ImpactType="Truck" Mass="150">
 			<Constraint Type="Rigid" />
-			<Body _template="Limits" Mass="40" ModelFrame="BoneFuel_cdt" />
-			<Body
-				_template="Limits"
-				Mass="50"
-				ModelFrame="BoneRepair_cdt"
-			>
-				<Constraint LinearLimitsX="(0; 0)" />
-			</Body>
 			<Body
 				_template="Limits"
 				Mass="50"

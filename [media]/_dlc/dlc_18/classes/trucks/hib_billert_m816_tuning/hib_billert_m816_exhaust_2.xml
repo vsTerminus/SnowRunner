@@ -1,0 +1,37 @@
+<TruckAddon>
+	<TruckData>
+		<Shakers>
+			<Shaker Frame="BoneExhaust" MinAngle="(0.1; 0.1; 0.1)" MaxAngle="(0.25; 0.25; 0.25)" MaxFrequency="4" ParentFrame="BoneCabinTwist_cdt" />
+		</Shakers>
+	</TruckData>
+	<Exhaust
+			Dir="(-0.914; 0.406; 0)"
+			IsLight="false"
+			Origin="(1.148; 3.159; 0.316)"
+			Speed="2.5"
+			ParentFrame="BoneExhaust"
+	/>
+	<PhysicsModel Mesh="trucks/hib_billert_m816_tuning/hib_billert_m816_exhaust_2">
+		<Body Collisions="None" Mass="8.5" ModelFrame="BoneChassis_cdt">
+			<Constraint Type="Rigid" />
+			<Body Collisions="None" Mass="8.5" ModelFrame="BoneCabin_cdt">
+				<Constraint ExplicitParentFrame="0" Type="Fixed" />
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="exhaust_addon"
+		Category="exhaust"
+		Price="1700"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_EXHAUST_HEATSHIELD_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_EXHAUST_HEATSHIELD_NAME"
+		/>
+		<InstallSocket Type="HIBBillertM816Exhaust2" />
+	</GameData>
+</TruckAddon>

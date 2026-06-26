@@ -10,9 +10,9 @@
 	>
 		<Suspension 
 			WheelType="front" 
-			Damping="0.15" 
+			Damping="0.45" 
 			Height="0.2" 
-			Strength="0.15" 
+			Strength="0.09" 
 			BrokenSuspensionMax="0.2" 
 			DeviationMax="0.01" 
 			SuspensionMin="-0.25" 
@@ -21,7 +21,7 @@
 			WheelType="rear" 
 			Damping="0.2" 
 			Height="0.15" 
-			Strength="0.09" 
+			Strength="0.06" 
 			BrokenSuspensionMax="0.15" 
 			DeviationMax="0.01" 
 			SuspensionMin="-0.17" 

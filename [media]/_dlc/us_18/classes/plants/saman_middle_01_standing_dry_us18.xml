@@ -1,0 +1,29 @@
+<_templates Include="environment" />
+<PlantBrand _template="BigTree">
+	<PhysicsModel>
+		<Body _template="BigTreeRoot" ModelFrame="BoneRoot">
+			<Constraint _template="BigTreeRoot" />
+			<Body ModelFrame="Bone_1" Mass="700">
+				<Constraint _template="BranchHard"/>
+			</Body>
+			<Body ModelFrame="Bone_2" Mass="1000">
+				<Constraint _template="BranchHard"/>
+			</Body>
+			<Body ModelFrame="Bone_3" Mass="1000">
+				<Constraint _template="BranchHard"/>
+			</Body>
+			<Body ModelFrame="Bone_4" Mass="1000">
+				<Constraint _template="BranchHard"/>
+			</Body>
+			<Body ModelFrame="Bone_5" Mass="500">
+				<Constraint _template="BranchHard"/>
+			</Body>
+			<Body ModelFrame="Bone_6" Mass="200">
+				<Constraint _template="BranchHard"/>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<GameData>
+		<WinchSocket Pos="(0.1; 0.0; 0.0)" ParentFrame="BoneRoot" />
+	</GameData>
+</PlantBrand>

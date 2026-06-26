@@ -96,7 +96,7 @@
 	<MainHeadLight _template="Multiply1" />
 	<GameData
 		CameraPreset="roof"
-		Category="top"
+		Category="frame_addons"
 		Price="2100"
 		UnlockByExploration="false"
 		UnlockByRank="12"

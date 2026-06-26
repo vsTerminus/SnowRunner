@@ -1,0 +1,53 @@
+<TruckAddon>
+	<Exhaust
+			Dir="(-0.481; 0; -0.877)"
+			IsLight="false"
+			Origin="(0.620; 0.742; -1.260)"
+			Speed="3.82"
+	/>
+	<Exhaust
+			Dir="(-0.481; 0; 0.877)"
+			IsLight="false"
+			Origin="(0.620; 0.742; 1.260)"
+			Speed="3.82"
+	/>
+	<Shakers>
+		<Shaker 
+			Frame="BoneExhaustLeft"
+			MinAngle="(0.7; 0.7; 0.7)"
+			MaxAngle="(2; 2; 2)"
+			MaxFrequency="0.1"
+			ParentFrame="BoneCabin_cdt"
+		/>
+		<Shaker 
+			Frame="BoneExhaustRight"
+			MinAngle="(0.7; 0.7; 0.7)"
+			MaxAngle="(2; 2; 2)"
+			MaxFrequency="0.1"
+			ParentFrame="BoneCabin_cdt"
+		/>
+	</Shakers>
+	<PhysicsModel Mesh="trucks/mercer_6x6r_230_tuning/mercer_6x6r_230_exhaust_2">
+		<Body Collisions="None" Mass="14" ModelFrame="BoneChassis_cdt">
+			<Constraint Type="Rigid" />
+			<Body Collisions="None" Mass="20" ModelFrame="BoneCabin_cdt">
+				<Constraint ExplicitParentFrame="0" Type="Fixed" />
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="exhaust"
+		Category="exhaust"
+		Price="1300"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_EXHAUST_SNUB_HEATSHIELD_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_EXHAUST_SNUB_HEATSHIELD_NAME"
+		/>
+		<InstallSocket Type="Mercer6X6R230Exhaust" />
+	</GameData>
+</TruckAddon>

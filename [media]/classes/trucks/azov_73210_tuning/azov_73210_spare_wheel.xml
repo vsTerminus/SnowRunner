@@ -3,7 +3,7 @@
 		<Mesh Frame="wheel1" HideThreshold="0.5" />
 		<Mesh Frame="wheel2" HideThreshold="0.0" />
 	</WheelRepairsHide>
-	<TruckData WheelRepairsCapacity="2" />
+	<TruckData WheelRepairsCapacity="4" />
 	<PhysicsModel Mesh="trucks/azov_73210_tuning/azov_73210_spare_wheel">
 		<Body ImpactType="Truck" Mass="200">
 			<Constraint Type="Rigid" />
@@ -22,6 +22,7 @@
 			UiIcon40x40=""
 			UiName="UI_TUNING_SPARE_WHEELS_NAME"
 		/>
+		<WinchSocket Pos="(1.0; 2.0; 0)" />
 		<InstallSocket Type="Azov73210SpareWheel" />
 	</GameData>
 </TruckAddon>

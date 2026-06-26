@@ -3,7 +3,7 @@
 	<WheelRepairsHide>
 		<Mesh Frame="wheel" HideThreshold="0.0" />
 	</WheelRepairsHide>
-	<TruckData WheelRepairsCapacity="1" />
+	<TruckData WheelRepairsCapacity="2" />
 	<PhysicsModel Mesh="trucks/tuz_16_actaeon_tuning/tuz_16_actaeon_wheel_addon_1">
 		<Body ImpactType="Truck" Mass="100" ModelFrame="BoneCabin_cdt">
 			<Constraint Type="Fixed" />

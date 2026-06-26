@@ -442,7 +442,7 @@
 			</Socket>
 			<Socket Names="FrameAddonKung" NamesBlock="LogLift" Offset="(-2.8; 1.105; 0)" />
 			<Socket Names="BunkLog" Offset="(-6.4; 1.048; 0)" />
-			<Socket Names="FrameAddonTow" NamesBlock="Plad440Fender, LogLift" Offset="(-2.8; 1.045; 0)">
+			<Socket Names="FrameAddonTow" NamesBlock="Plad440Fender, LogLift, Trailer, LogTrailer" Offset="(-2.8; 1.045; 0)">
 				<AddonsShift Offset="(-0.44; 0; 0)" Types="Plad440SpareWheel" />
 				<AddonsShift Offset="(-0.18; 0; 0)" Types="Plad440SpareWheelDefault" />
 				<AddonsShift Offset="(-0.9; 0; 0)" Types="LogLift" />

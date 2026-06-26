@@ -29,10 +29,10 @@
 			<Light _template="IgnitionSignalWhite" Color="g(253; 220; 186) x 1" Pos="(4.423; 1.111; 1.018)" ParentFrame="BoneCabin_cdt" />
 			<Light _template="IgnitionSignalWhite" Color="g(253; 220; 186) x 1" Pos="(4.423; 1.111; -1.018)" ParentFrame="BoneCabin_cdt" />
 			
-			<Flare _template="HeadLight" ColorMultAtDay=".2" Dir="(1; 0; 0)" Size="0.2" Pos="(4.621; 1.136; 0.928)" ParentFrame="BoneCabin_cdt" />
-			<Flare _template="HeadLight" ColorMultAtDay=".2" Dir="(1; 0; 0)" Size="0.2" Pos="(4.621; 1.136; -0.928)" ParentFrame="BoneCabin_cdt" />
-			<Flare _template="HeadLight" ColorMultAtDay=".2" Dir="(1; 0; 0)" Size="0.2" Pos="(4.621; 1.136; 0.794)" ParentFrame="BoneCabin_cdt" />
-			<Flare _template="HeadLight" ColorMultAtDay=".2" Dir="(1; 0; 0)" Size="0.2" Pos="(4.621; 1.136; -0.794)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay=".2" Dir="(1; 0; 0)" Size="0.2" Pos="(4.621; 1.136; 0.928)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay=".2" Dir="(1; 0; 0)" Size="0.2" Pos="(4.621; 1.136; -0.928)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay=".2" Dir="(1; 0; 0)" Size="0.2" Pos="(4.621; 1.136; 0.794)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay=".2" Dir="(1; 0; 0)" Size="0.2" Pos="(4.621; 1.136; -0.794)" ParentFrame="BoneCabin_cdt" />
 		</Ignition>
 		<HeadLight>
 			<Model _template="HeadLightRay" Dir="(1; 0; 0)" Org="(4.621; 1.136; 0.928)" ParentFrame="BoneCabin_cdt" />

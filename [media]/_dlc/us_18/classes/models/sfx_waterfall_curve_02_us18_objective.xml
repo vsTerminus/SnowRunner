@@ -1,0 +1,28 @@
+<ModelBrand
+	CastDayLightmapShadow="false"
+	CastNightLightmapShadow="false"
+	ClipCamera="false"
+>
+
+	<PhysicsModel>
+		<Body Collisions="None" ModelFrame="cube" />
+	</PhysicsModel>
+
+	<Subset IsDefault="true" Name="build_stage_0">
+	
+		<OnSubsetActivateEvent>
+			<SFX Name="waterfall_drop_curve_02" Dir="(0; 1; 0)" Pos="(0; 0; 0)"/>
+		</OnSubsetActivateEvent>
+
+		<Mesh Name="cube" />
+		<CdtMesh Name="cube" />
+	</Subset>
+	
+	
+	
+		
+
+
+	<!-- <OnSubsetActivateEvent> </OnSubsetActivateEvent> -->
+
+</ModelBrand>

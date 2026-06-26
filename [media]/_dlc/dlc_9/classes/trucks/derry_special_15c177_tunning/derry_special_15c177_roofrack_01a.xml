@@ -45,7 +45,7 @@
 	</PhysicsModel>
 	<GameData
 		CameraPreset="roof_sticker"
-		Category="top"
+		Category="frame_addons"
 		Price="1300"
 		UnlockByExploration="false"
 		UnlockByRank="1"

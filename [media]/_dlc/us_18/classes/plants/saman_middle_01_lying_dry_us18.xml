@@ -1,0 +1,52 @@
+<_templates Include="environment" />
+<PlantBrand _template="LyingTree">
+	<PhysicsModel>
+		<Body _template="FallingTreeRoot" ModelFrame="BoneRoot" Mass="1000">
+			<Constraint _template="FallingTreeRoot" 
+						AllowedPenetrationDepth="0.5" 
+						PlaneAxisLocal="(0; 0; -1)"
+						PlaneMin="0" 
+						ConeMax="15" 
+						TwistMin="0"
+			/>
+			<Body _template="LyingBranch" ModelFrame="Bone_1" DamageMult="0.0">
+				<Constraint _template="BranchHard"/>
+			</Body>
+			<Body _template="LyingBranch" ModelFrame="Bone_2" DamageMult="0.0">
+				<Constraint _template="BranchHard"/>
+			</Body>
+			<Body _template="LyingBranch" ModelFrame="Bone_3" DamageMult="0.0">
+				<Constraint _template="BranchHard"/>
+			</Body>
+			<Body _template="LyingBranch" ModelFrame="Bone_4" DamageMult="0.0">
+				<Constraint _template="BranchHard"/>
+			</Body>
+			<Body _template="LyingBranch" ModelFrame="Bone_5" DamageMult="0.0">
+				<Constraint _template="BranchHard"/>
+			</Body>
+			<Body _template="LyingBranch" ModelFrame="Bone_6" DamageMult="0.0">
+				<Constraint _template="BranchHard"/>
+			</Body>
+			<Body _template="LyingBranch" ModelFrame="Bone_7" DamageMult="0.0">
+				<Constraint _template="BranchHard"/>
+			</Body>
+			<Body _template="LyingBranch" ModelFrame="Bone_8" DamageMult="0.0">
+				<Constraint _template="BranchHard"/>
+			</Body>
+			<Body _template="LyingBranch" ModelFrame="Bone_9" DamageMult="0.0">
+				<Constraint _template="BranchHard"/>
+			</Body>
+			<Body _template="LyingBranch" ModelFrame="Bone_10" DamageMult="0.0">
+				<Constraint _template="BranchHard"/>
+			</Body>
+			<Body _template="LyingBranch" ModelFrame="Bone_11" DamageMult="0.0">
+				<Constraint _template="BranchHard"/>
+			</Body>												
+		</Body>
+	</PhysicsModel>
+	<Occlusion Intensity="0.5" Size="(4.0; 10.0)" Texture="occlusion_vertical.tga" />
+	<GameData>
+		<WinchSocket Pos="(0.0; 0.2; 0.0)" ParentFrame="BoneRoot" />
+	</GameData>
+	<ChunksBreak Brands="saman_middle_01_lying_dry_us18_chunks" Threshold="300" />
+</PlantBrand>

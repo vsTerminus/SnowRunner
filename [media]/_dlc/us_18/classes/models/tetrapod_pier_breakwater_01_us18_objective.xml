@@ -1,0 +1,374 @@
+<ModelBrand
+    DynamicModel="true"
+    NightLightingShadowsAllowCap="true"
+    DayShadowOffsetMult="17"
+>
+	<PhysicsModel>
+		<Body Collisions="Dynamic" />
+	</PhysicsModel>
+	<Subset IsDefault="true" Name="stage_00">
+		<Mesh Name="state_00" />
+		<Mesh Name="state_00_lod1" />
+		<Mesh Name="state_00_lod2" />
+        <Mesh Name="state_00_lod3" />
+		<Mesh Name="state_01" />
+		<Mesh Name="state_01_lod1" />
+		<Mesh Name="state_01_lod2" />
+        <Mesh Name="state_01_lod3" />
+		<CdtMesh Name="cdt_state_00" />
+	</Subset>
+	<Subset Name="stage_01">
+		<Mesh Name="state_00" />
+		<Mesh Name="state_00_lod1" />
+		<Mesh Name="state_00_lod2" />
+        <Mesh Name="state_00_lod3" />
+		<Mesh Name="state_01" />
+		<Mesh Name="state_01_lod1" />
+		<Mesh Name="state_01_lod2" />
+        <Mesh Name="state_01_lod3" />
+		<Mesh Name="tetrapod_01_us18" />
+		<Mesh Name="tetrapod_01_us18_lod1" />
+		<Mesh Name="tetrapod_01_us18_lod2" />
+        <Mesh Name="tetrapod_01_us18_lod3" />
+		<Mesh Name="tetrapod_02_us18" />
+		<Mesh Name="tetrapod_02_us18_lod1" />
+		<Mesh Name="tetrapod_02_us18_lod2" />
+        <Mesh Name="tetrapod_02_us18_lod3" />
+		<Mesh Name="tetrapod_03_us18" />
+		<Mesh Name="tetrapod_03_us18_lod1" />
+		<Mesh Name="tetrapod_03_us18_lod2" />
+        <Mesh Name="tetrapod_03_us18_lod3" />
+
+		<CdtMesh Name="cdt_state_00" />
+		<AnimTrack Name="stage_1_anim" />
+		<AnimSubset Name="build_animation_0" />
+	</Subset>
+	<AnimSubset Name="build_animation_0">
+		<Mesh Name="state_00" />
+		<Mesh Name="state_00_lod1" />
+		<Mesh Name="state_00_lod2" />
+        <Mesh Name="state_00_lod3" />
+		<Mesh Name="state_01" />
+		<Mesh Name="state_01_lod1" />
+		<Mesh Name="state_01_lod2" />
+        <Mesh Name="state_01_lod3" />
+		<Mesh Name="animesh_01" />
+		<Mesh Name="animesh_02" />
+		<Mesh Name="animesh_03" />
+	</AnimSubset>
+	<TrackEvents TrackName="stage_1_anim">
+
+<AnimEvent Key="0">
+	<Fade Time="0.2" />
+ 	<SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-2.924066; 0; -11.731758)" />
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-5.535314; 0; -11.917828)" />
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(4.683796; 0; -12.414722)" />
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(2.170176; 0; -12.417870)" />
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-4.574121; 0; -12.997307)" />
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-3.701549; 0; -13.177434)" />
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(5.335274; 0; -14.104120)" />
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(2.855522; 0; -14.587222)" />
+</AnimEvent>
+
+<AnimEvent Key="1">
+	<Sound	Name="actors/actor_construction/bridge_wooden_02_objective"	Range="50"	Volume="1" />
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(2.456647; 0; -9.756087)" />
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-5.494043; 0; -14.939835)" />
+</AnimEvent>
+
+<AnimEvent Key="2">
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-5.537614; 0; -8.998657)" />
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-3.743417; 0; -15.023989)" />
+</AnimEvent>
+
+<AnimEvent Key="3">
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-4.635180; 0; -8.523064)" />
+</AnimEvent>
+
+<AnimEvent Key="5">
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-2.328901; 0; -10.024762)" />
+</AnimEvent>
+
+<AnimEvent Key="7">
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-2.714313; 0; -6.996444)" />
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-2.684860; 0; -8.674961)" />
+</AnimEvent>
+
+<AnimEvent Key="10">
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-4.396529; 0; -6.610912)" />
+</AnimEvent>
+
+<AnimEvent Key="11">
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-2.568713; 0; -13.945507)" />
+</AnimEvent>
+
+<AnimEvent Key="13">
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(5.956671; 0; -6.279018)" />
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(4.584768; 0; -10.688909)" />
+</AnimEvent>
+
+<AnimEvent Key="15">
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-2.521560; 0; -3.636993)" />
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(2.410629; 0; -7.443170)" />
+</AnimEvent>
+
+<AnimEvent Key="16">
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-4.085114; 0; -4.603680)" />
+</AnimEvent>
+
+<AnimEvent Key="17">
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(3.608192; 0; -3.549887)" />
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-3.064512; 0; -4.936262)" />
+</AnimEvent>
+
+<AnimEvent Key="18">
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-4.509743; 0; -10.758527)" />
+</AnimEvent>
+
+<AnimEvent Key="19">
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-6.685166; 0; -1.385834)" />
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-5.705460; 0; -7.353857)" />
+</AnimEvent>
+
+<AnimEvent Key="20">
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(4.883294; 0; -8.444212)" />
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(3.630014; 0; -8.776329)" />
+</AnimEvent>
+
+<AnimEvent Key="21">
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-5.162372; 0; -1.769563)" />
+</AnimEvent>
+
+<AnimEvent Key="22">
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-5.867299; 0; -4.814490)" />
+</AnimEvent>
+
+<AnimEvent Key="23">
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(4.689477; 0; -0.320803)" />
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-2.983999; 0; -2.187055)" />
+</AnimEvent>
+
+<AnimEvent Key="24">
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(2.627628; 0; -5.181131)" />
+</AnimEvent>
+
+<AnimEvent Key="25">
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(4.841228; 0; -2.009523)" />
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(3.700398; 0; -6.318195)" />
+</AnimEvent>
+
+<AnimEvent Key="26">
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-5.665390; 0; 3.012602)" />
+</AnimEvent>
+
+<AnimEvent Key="27">
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(6.456764; 0; -1.201305)" />
+</AnimEvent>
+
+<AnimEvent Key="29">
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-6.431988; 0; 0.844284)" />
+</AnimEvent>
+
+<AnimEvent Key="30">
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(5.253764; 0; -4.885984)" />
+</AnimEvent>
+
+<AnimEvent Key="31">
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(3.008776; 0; 1.830033)" />
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-2.656655; 0; 1.055419)" />
+</AnimEvent>
+
+<AnimEvent Key="32">
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(5.690167; 0; -3.369624)" />
+</AnimEvent>
+
+<AnimEvent Key="33">
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-3.675621; 0; 5.961173)" />
+</AnimEvent>
+
+<AnimEvent Key="35">
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-2.602851; 0; 4.824110)" />
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(2.681432; 0; -1.412441)" />
+</AnimEvent>
+
+<AnimEvent Key="36">
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(3.089289; 0; 4.579240)" />
+</AnimEvent>
+
+<AnimEvent Key="37">
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(4.421306; 0; 6.253891)" />
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(2.546337; 0; 3.279971)" />
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-3.583415; 0; 3.192866)" />
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(6.520886; 0; 2.046240)" />
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(5.187149; 0; 1.412541)" />
+</AnimEvent>
+
+<AnimEvent Key="38">
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(5.730237; 0; 6.996836)" />
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-5.931894; 0; 5.921996)" />
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-5.228987; 0; 4.528962)" />
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(5.892076; 0; 4.457468)" />
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-4.816451; 0; 1.652501)" />
+</AnimEvent>
+
+<AnimEvent Key="40">
+
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-4.664700; 0; -0.036218)" />
+</AnimEvent>
+
+<AnimEvent Key="41">
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(4.109891; 0; 4.246658)" />
+</AnimEvent>
+
+<AnimEvent Key="43">
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-6.373650; 0; 9.750316)" />
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(6.953938; 0; 5.557564)" />
+</AnimEvent>
+
+<AnimEvent Key="44">
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-4.559991; 0; 10.331888)" />
+</AnimEvent>
+
+<AnimEvent Key="46">
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-2.431870; 0; 9.399066)" />
+</AnimEvent>
+
+<AnimEvent Key="47">
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-6.121736; 0; 8.476133)" />
+</AnimEvent>
+
+<AnimEvent Key="48">
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(2.353678; 0; 9.667740)" />
+</AnimEvent>
+
+<AnimEvent Key="49">
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-4.659019; 0; 12.057701)" />
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-3.605237; 0; 8.419308)" />
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(2.739090; 0; 6.639423)" />
+</AnimEvent>
+
+<AnimEvent Key="50">
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(4.534520; 0; 10.401505)" />
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(2.709637; 0; 8.317940)" />
+</AnimEvent>
+
+<AnimEvent Key="51">
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(2.593490; 0; 13.588486)" />
+</AnimEvent>
+
+<AnimEvent Key="52">
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(3.726326; 0; 12.820413)" />
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(4.598898; 0; 12.640286)" />
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(2.948843; 0; 11.374736)" />
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(5.562391; 0; 8.641635)" />
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-4.858517; 0; 8.087190)" />
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-2.385852; 0; 7.086148)" />
+</AnimEvent>
+
+<AnimEvent Key="54">
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(3.768194; 0; 14.666968)" />
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-5.310497; 0; 13.747098)" />
+</AnimEvent>
+
+<AnimEvent Key="56">
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(5.560091; 0; 11.560806)" />
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(4.659957; 0; 8.166043)" />
+</AnimEvent>
+
+<AnimEvent Key="57">
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-4.167726; 0; 15.681784)" />
+</AnimEvent>
+
+<AnimEvent Key="58">
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-4.448244; 0; 16.692306)" />
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-2.259175; 0; 15.456986)" />
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-5.984360; 0; 14.882637)" />
+</AnimEvent>
+
+<AnimEvent Key="59">
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(2.125089; 0; 16.535216)" />
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-2.830745; 0; 14.230200)" />
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-2.145399; 0; 12.060848)" />
+</AnimEvent>
+
+<AnimEvent Key="60">
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-6.991824; 0; 11.504939)" />
+</AnimEvent>
+
+<AnimEvent Key="62">
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-6.212595; 0; 16.870078)" />
+</AnimEvent>
+
+<AnimEvent Key="64">
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(1.819307; 0; 18.324909)" />
+</AnimEvent>
+
+<AnimEvent Key="65">
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-0.401374; 0; 17.721960)" />
+</AnimEvent>
+
+<AnimEvent Key="66">
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(3.482179; 0; 18.433136)" />
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(0.506357; 0; 16.895696)" />
+</AnimEvent>
+
+<AnimEvent Key="67">
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(5.027888; 0; 16.913552)" />
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(3.405307; 0; 16.125106)" />
+</AnimEvent>
+
+<AnimEvent Key="68">
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-6.874512; 0; 13.223539)" />
+</AnimEvent>
+
+<AnimEvent Key="71">
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(5.518820; 0; 14.582813)" />
+</AnimEvent>
+
+<AnimEvent Key="72">
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-3.641826; 0; 20.001130)" />
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-2.154218; 0; 17.076684)" />
+</AnimEvent>
+
+<AnimEvent Key="73">
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(4.916831; 0; 21.202475)" />
+</AnimEvent>
+
+<AnimEvent Key="74">
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-0.194995; 0; 18.917274)" />
+</AnimEvent>
+
+<AnimEvent Key="75">
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-4.890894; 0; 18.591391)" />
+</AnimEvent>
+
+<AnimEvent Key="76">
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(2.700138; 0; 21.527749)" />
+</AnimEvent>
+
+<AnimEvent Key="77">
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(5.590415; 0; 18.665987)" />
+</AnimEvent>
+
+<AnimEvent Key="78">
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-2.641141; 0; 19.134524)" />
+</AnimEvent>
+
+<AnimEvent Key="79">
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(6.157764; 0; 17.069818)" />
+</AnimEvent>
+
+<AnimEvent Key="80">
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(1.296968; 0; 20.275331)" />
+</AnimEvent>
+
+<AnimEvent Key="83">
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(0.601408; 0; 21.415968)" />
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(-1.015039; 0; 20.953097)" />
+    <SFX Name="water_splash_01_1" Dir="(0; 1; 0)" Pos="(4.116771; 0; 19.567882)" />
+</AnimEvent>
+
+
+	</TrackEvents>
+	<Landmark Mesh="landmarks/tetrapod_pier_breakwater_01_us18_objective_lmk" />
+</ModelBrand>

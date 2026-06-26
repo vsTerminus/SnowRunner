@@ -2,7 +2,10 @@
 	Texture="tiles/mud_desert_pbr_2__d_a.tga" 
 	Normal="tiles/mud_desert_relief__d_a.tga"
 	UvTiling="2"
-
+	DecreaseMaxVelocity="4.0"
+	SnowDecreaseCoef="0.015"
+	MudDecreaseCoef="0.006"
+	WetDecreaseCoef="0.05"
 	FlatTexture="tiles/mud_desert_flat_pbr_2__d_a.tga" 
 	FlatNormal="tiles/mud_desert_relief__d_a.tga"
 	FlatUvTiling="1"

@@ -60,7 +60,7 @@
 	</PhysicsModel>
 	<GameData
 		CameraPreset="roof"
-        Category="top"
+        Category="frame_addons"
 		IsCustomizable="true"
 		Price="1200"
 		UnlockByExploration="false"

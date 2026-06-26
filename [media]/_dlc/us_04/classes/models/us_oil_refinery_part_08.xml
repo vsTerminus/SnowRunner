@@ -10,4 +10,5 @@
 		Size="(35.0; 42.0)" 
 		Texture="occlusion_us_oil_refinery_part_08.tga"
 	/>
+	<Landmark Mesh="landmarks/us_oil_refinery_part_08_lmk" />
 </ModelBrand>

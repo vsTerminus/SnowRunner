@@ -1,0 +1,33 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<TruckData AllWheelDriveInstalled="false">
+		<Shafts>
+			<Shaft SocketPointA="ShaftEngine" SocketPointB="ShaftSecondAxleF" />
+		</Shafts>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/hib_billert_m816_tuning/hib_billert_m816_transferbox_default">
+		<Body ImpactType="Truck" Mass="40" ModelFrame="BoneCabin_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="hoods"
+		Category="awd"
+		Price="1500"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_UPGRADE_TRANSFERBOX_NOAWD_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_UPGRADE_TRANSFERBOX_NOAWD_NAME"
+		/>
+		<InstallSocket Type="TransferBoxRWDHIBBillertM816" />
+	</GameData>
+	<ExplicitParents>
+		<ExplicitParent ExplicitParentFrame="0" Frame="BoneAxle1" />
+		<ExplicitParent ExplicitParentFrame="1" Frame="BoneRackLeft" />
+		<ExplicitParent ExplicitParentFrame="2" Frame="BoneRackRight" />
+	</ExplicitParents>
+</TruckAddon>

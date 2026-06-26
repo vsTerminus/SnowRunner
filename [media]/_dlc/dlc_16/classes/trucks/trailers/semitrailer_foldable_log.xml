@@ -228,7 +228,7 @@
 			UiIcon40x40="trailerFoldableLog40"
 			UiName="UI_TRAILER_FOLDABLE_LOGS_NAME"
 		/>
-		<RequiredAddon Types="saddle_motorized" />
+		<RequiredAddon Types="saddle_motorized, saddle_motorized_hib_billert_m816" />
 		
 		<WinchSocket Pos="(4.256; 1.593; 0.000)" ParentFrame="BoneChassis_cdt" WinchableWhenAttached="false"/>
 		<WinchSocket Pos="(-2.906; 1.343; 0.532)" ParentFrame="BoneLogsTail_cdt" />

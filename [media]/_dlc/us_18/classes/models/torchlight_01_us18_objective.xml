@@ -1,0 +1,37 @@
+<ModelBrand  
+	NightLightingShadowsAllowCap="true"
+	ApplyNormalInReference="false"
+	CastDayLightmapShadow="false"
+	CastNightLightmapShadow="false"
+	ClipCamera="false"
+>
+	<StaticLights>
+		<StaticLight
+			AttenEnd="15"
+			Color="g(247; 174; 46) x 1.5"
+			CreateSuperLight="true"
+			Dir="(0; -1; 0)"
+			InnerCone="5"
+			OuterCone="80"
+			Pos="(0; 1; 0.0)"
+			Shadows="true"
+		/>
+	</StaticLights>
+	<PhysicsModel>
+		<Body Collisions="Dynamic" />
+	</PhysicsModel>
+	<Subset Name="build_stage_0" IsDefault="true">
+		<Mesh Name="castle_fire_01a_us14_plane" />
+		<Mesh Name="mesh" />
+		<CdtMesh Name="cdt" />
+		<AnimTrackSubset Name="anim_loop" />
+		<OnSubsetActivateEvent>
+            			<SFX Name="torchfire" Dir="(0; 1; 0)" Pos="(0; 1.68; 0)"/>
+				<Sound Name="actors/actor_landfire_loop" FadeInTime="0.5" FadeOutTime="0.5" RangeMin="3" RangeMax="35" IsLoop="true"/>
+        	</OnSubsetActivateEvent>
+	</Subset>
+	<Subset Name="build_stage_1">
+		<Mesh Name="mesh" />
+		<CdtMesh Name="cdt" />
+	</Subset>
+</ModelBrand>ki

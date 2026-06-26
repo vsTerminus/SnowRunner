@@ -225,12 +225,12 @@
 			<DamageArea Type="Engine" Min="(1.632; 1.254; -0.468)" Max="(0.129; 2.431; 0.349)" ParentFrame="BoneChassis_cdt" />
 		</Damage>
 		<CompatibleWheels Scale="0.7" Type="wheels_derry_special_15c177" />
-		<CompatibleWheels Scale="0.7" Type="wheels_heavy_single" />
-		<CompatibleWheels Scale="0.7" Type="wheels_heavy_single2" />
+		<CompatibleWheels Scale="0.7" Type="wheels_heavy_single_derry_special_15c177" />
+		<CompatibleWheels Scale="0.7" Type="wheels_heavy_single2_derry_special_15c177" />
 
-		<CompatibleWheels Scale="0.7" Type="wheels_heavy_offroad_single" />
-		<CompatibleWheels Scale="0.7" Type="wheels_heavy_mudtires_single" />
-		<CompatibleWheels Scale="0.7" Type="wheels_heavy_mudtires_single2" />
+		<CompatibleWheels Scale="0.7" Type="wheels_heavy_offroad_single_derry_special_15c177" />
+		<CompatibleWheels Scale="0.7" Type="wheels_heavy_mudtires_single_derry_special_15c177" />
+		<CompatibleWheels Scale="0.7" Type="wheels_heavy_mudtires_single2_derry_special_15c177" />
 		
 		<Camera Center="(-3.5; 0; 0)" ParentFrame="BoneCabin_cdt">
 			<Cockpit
@@ -634,7 +634,7 @@
 			
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="MinicraneUS" Offset="(-1.65; 1.48; 0)" NamesBlock="FrameAddonDerryFirefighter, BunkLog, FrameAddonTank, FrameAddonKung, BigCraneUs, BigCrane, BigCraneRu, FrameAddonMaintainerBig" >
+			<Socket Names="MinicraneUS" Offset="(-1.65; 1.48; 0)" NamesBlock="FrameAddonDerryFirefighter, BunkLog, FrameAddonTank, FrameAddonKung, BigCraneUs, BigCrane, BigCraneRu, FrameAddonMaintainerBig, FrameAddonSeismicVibrator" >
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.02)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.02)" />
 			</Socket>

@@ -3,7 +3,7 @@
 		<Mesh Frame="wheel1" HideThreshold="0.5" />
 		<Mesh Frame="wheel2" HideThreshold="0.0" />
 	</WheelRepairsHide>
-	<TruckData WheelRepairsCapacity="2" />
+	<TruckData WheelRepairsCapacity="4" />
 	<PhysicsModel Mesh="trucks/derry_longhorn_3194_tuning/derry_longhorn_3194_spare_wheel">
 		<Body ImpactType="Truck" Mass="100">
 			<Constraint Type="Rigid" />

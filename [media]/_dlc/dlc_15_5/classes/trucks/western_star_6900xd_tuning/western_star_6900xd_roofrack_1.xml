@@ -2,7 +2,7 @@
 <TruckAddon>
 	<TruckData
 		FuelCapacity="80"
-		RepairsCapacity="300"
+		RepairsCapacity="150"
 	>
 	<LimitedFluid Center="2.303; 3.612; 0.643" SizeX="0.375" SizeY="0.163" SizeZ="0.429" Type="Box" ParentFrame="BoneFuel1_cdt" />
 		<LimitedFluid Center="2.308; 3.612; -0.047" SizeX="0.375" SizeY="0.163" SizeZ="0.429" Type="Box" ParentFrame="BoneFuel2_cdt" />

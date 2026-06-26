@@ -186,7 +186,7 @@
 			UiName="UI_SEMITRAILER_HEAVY_OILTANK_NAME"
 		/>
 		<RequiredAddon _template="SaddleHigh" />
-		<InstallSocket Offset="(7.377; 1.746; -0)" Type="LargeSemitrailerOiltank" />
+		<InstallSocket Offset="(7.377; 1.946; -0)" Type="LargeSemitrailerOiltank" />
 		<CraneSocket Pos="(-8.903; 1.349; 0.823)" />
 		<CraneSocket Pos="(-8.903; 1.349; -0.823)" />
 		<CraneSocket Pos="(8.678; 2.271; 0)" />

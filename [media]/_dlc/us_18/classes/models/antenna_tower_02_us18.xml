@@ -1,0 +1,12 @@
+<ModelBrand
+	NightLightingShadowsAllowCap="true"
+	DayShadowOffsetMult="13"
+	ClipCameraBridge="false"
+	Instanced="true"
+	InstancedAsModel="true"
+>
+	<Landmark Mesh="landmarks/antenna_tower_01_us18_lmk" />
+	<PhysicsModel>
+		<Body Collisions="Dynamic" />
+	</PhysicsModel>
+</ModelBrand>

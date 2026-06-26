@@ -9,8 +9,8 @@
 </_templates>
 <TruckAddon>
 	<TruckData
-		FuelCapacity="140"
-		RepairsCapacity="220"
+		FuelCapacity="160"
+		RepairsCapacity="150"
 	>
 		<LimitedFluid Center="(1.85; 3.843; -0.36)" SizeX="0.296" SizeY="0.135" SizeZ="0.358" Type="Box" ParentFrame="BoneFuel_cdt" />
 		<LimitedFluid Center="(1.51; 3.843; -0.65)" SizeX="0.296" SizeY="0.135" SizeZ="0.358" Type="Box" />
@@ -66,7 +66,7 @@
 	</ModelAttachments>
 	<GameData
 		CameraPreset="roof"
-		Category="top"
+		Category="frame_addons"
 		IsCustomizable="true"
 		Price="4400"
 		UnlockByExploration="false"

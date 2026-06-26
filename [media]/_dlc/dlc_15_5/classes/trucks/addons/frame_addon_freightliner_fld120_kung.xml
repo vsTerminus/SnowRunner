@@ -1,8 +1,9 @@
 <_templates Include="trucks" />
 <TruckAddon>
 	<TruckData
-		RepairsCapacity="500"
-		WheelRepairsCapacity="4"
+		FuelCapacity="450"
+		RepairsCapacity="100"
+		WheelRepairsCapacity="2"
 	/>
 	<PhysicsModel Mesh="trucks/addons/frame_addon_freightliner_fld120_kung">
 		<Body Mass="300">

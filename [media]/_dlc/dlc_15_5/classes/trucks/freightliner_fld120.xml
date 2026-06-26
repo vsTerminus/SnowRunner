@@ -639,7 +639,7 @@
 			<Socket Names="FrameAddonLogMedium" NamesBlock="MinicraneUS, LogLift, FreightlinerFLD120Repairs, FreightlinerFLD120Kung, Trailer, LogTrailer" Offset="(-1.411; 1.050; 0)" ParentFrame="BoneChassis_cdt" />
 			<Socket
 				Names="FrameAddonTow"
-				NamesBlock="LogLift, FreightlinerFLD120Repairs, FreightlinerFLD120Kung"
+				NamesBlock="LogLift, FreightlinerFLD120Repairs, FreightlinerFLD120Kung, Trailer, LogTrailer"
 				Offset="(-2; 1.027; 0)"
 				ParentFrame="BoneChassis_cdt"
 			>

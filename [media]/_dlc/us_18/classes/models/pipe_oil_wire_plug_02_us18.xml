@@ -1,0 +1,13 @@
+<ModelBrand
+	Instanced="true"
+	InstancedAsModel="true"
+	NightLightingShadowsAllowCap="true"
+>
+	<PhysicsModel>
+		<Body Collisions="Dynamic" />
+	</PhysicsModel>
+	<GameData>
+		<WinchSocket Pos="(2.5; -1.8; 0)" />
+		<WinchSocket Pos="(-2.5; -1.8; 0)" />
+	</GameData>
+</ModelBrand>

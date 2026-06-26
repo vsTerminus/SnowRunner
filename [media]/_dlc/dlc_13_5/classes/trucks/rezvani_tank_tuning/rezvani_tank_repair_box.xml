@@ -1,7 +1,7 @@
 <_templates Include="trucks"/>
 <TruckAddon>
 	<TruckData
-		RepairsCapacity="250"
+		RepairsCapacity="150"
 	>
 	</TruckData>
 	<RepairsHide>

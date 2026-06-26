@@ -322,7 +322,7 @@
 	<HeadLight _template="Default" Pos="(3.479; 1.222; 0)" />
 	<GameData
 		Country="US,NE,CE"
-		ExcludeAddons="stuff_bobblehead_joker, trailer_log_pole"
+		ExcludeAddons="stuff_bobblehead_joker, trailer_log_pole, semitrailer_gooseneck_3"
 		Price="110700"
 		UnlockByExploration="true"
 		UnlockByRank="1"

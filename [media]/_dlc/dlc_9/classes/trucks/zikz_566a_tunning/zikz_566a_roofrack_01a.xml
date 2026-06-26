@@ -31,7 +31,7 @@
 	</PhysicsModel>
 	<GameData
 		CameraPreset="roof"
-		Category="top"
+		Category="frame_addons"
 		Price="2400"
 		UnlockByExploration="false"
 		UnlockByRank="13"

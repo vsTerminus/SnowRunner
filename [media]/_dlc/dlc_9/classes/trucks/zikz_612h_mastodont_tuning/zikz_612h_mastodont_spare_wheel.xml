@@ -5,7 +5,7 @@
 	<WheelRepairsHide>
 		<Mesh Frame="wheel" HideThreshold="0.0" />
 	</WheelRepairsHide>
-	<TruckData WheelRepairsCapacity="1"	/>
+	<TruckData WheelRepairsCapacity="2"	/>
 	<PhysicsModel Mesh="trucks/zikz_612h_mastodont_tuning/zikz_612h_mastodont_spare_wheel">
 		<Body Mass="80" ModelFrame="BoneAddon_cdt" ImpactType="Truck">
 			<Constraint Type="Rigid" />

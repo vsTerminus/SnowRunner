@@ -2,7 +2,7 @@
 	<WheelRepairsHide>
 		<Mesh Frame="plad_440_spare_wheel" HideThreshold="0.0" />
 	</WheelRepairsHide>
-	<TruckData WheelRepairsCapacity="1" />
+	<TruckData WheelRepairsCapacity="2" />
 	<PhysicsModel Mesh="trucks/plad_440_tuning/plad_440_wheel_addon">
 		<Body ImpactType="Truck" Mass="5" ModelFrame="BoneCabinTwist_cdt">
 			<Constraint Type="Rigid" />

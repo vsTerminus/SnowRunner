@@ -102,6 +102,12 @@
 			FadeOutTime="10"
 			Volume="1"
 		/>
+		<Mexico
+			SoundName="music/mexico/garage_mexico"
+			FadeInTime="30"
+			FadeOutTime="10"
+			Volume="1"
+		/>
 	</GarageMusic>
 </_templates>
 <MusicPresets>
@@ -159,6 +165,9 @@
 	</LevelMusic>
 	<LevelMusic LevelName="level_main_menu_ru17">
 		<Sound Name="music/belozersk/belozersk_menu" StartTime="0" EndTime="24" FadeInTime="20" FadeOutTime="5" Volume="2" />
+	</LevelMusic>
+	<LevelMusic LevelName="level_main_menu_us18">
+		<Sound Name="music/mexico/mexico_menu" StartTime="0" EndTime="24" FadeInTime="0" FadeOutTime="5" Volume="2" />
 	</LevelMusic>
 	<!-- ALASKA -->
 	<LevelMusic LevelName="level_us_02_01">
@@ -557,5 +566,20 @@
 		<Sound Name="music/belozersk/belozersk_evening" StartTime="20.5" EndTime="24" FadeInTime="30" FadeOutTime="10" />
 		<GarageMusic _template="Belozersk" />
 	</LevelMusic>
-
+	
+	<!-- US_18 -->
+	<LevelMusic LevelName="level_us_18_01">
+		<Sound Name="music/mexico/mexico_night" StartTime="24" EndTime="6" FadeInTime="30" FadeOutTime="10"  />
+		<Sound Name="music/mexico/mexico_morning" StartTime="6" EndTime="13" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/mexico/mexico_day" StartTime="13" EndTime="20.5" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/mexico/mexico_evening" StartTime="20.5" EndTime="24" FadeInTime="30" FadeOutTime="10" />
+		<GarageMusic _template="Mexico" />
+	</LevelMusic>
+	<LevelMusic LevelName="level_us_18_02">
+		<Sound Name="music/mexico/mexico_night" StartTime="24" EndTime="6" FadeInTime="30" FadeOutTime="10"  />
+		<Sound Name="music/mexico/mexico_morning" StartTime="6" EndTime="13" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/mexico/mexico_day" StartTime="13" EndTime="20.5" FadeInTime="30" FadeOutTime="10" />
+		<Sound Name="music/mexico/mexico_evening" StartTime="20.5" EndTime="24" FadeInTime="30" FadeOutTime="10" />
+		<GarageMusic _template="Mexico" />
+	</LevelMusic>
 </MusicPresets>

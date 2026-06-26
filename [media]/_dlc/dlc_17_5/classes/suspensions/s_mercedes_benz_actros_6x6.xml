@@ -9,21 +9,21 @@
 	>
 		<Suspension
 			WheelType="front"
-			Damping=".415"
-			Height="0.16"
-			Strength="0.055" 
-			BrokenSuspensionMax="0.2" 
-			SuspensionMin="-0.28"
-			SuspensionMax="0.2"
+			Damping=".722"
+			Height="0.12"
+			Strength="0.088" 
+			BrokenSuspensionMax="0.005" 
+			SuspensionMin="-0.215"
+			SuspensionMax="0.005"
 		/>
 		<Suspension 
 			WheelType="rear"
-			Damping=".118"
-			Height="0.08"
-			Strength="0.0128"
-			BrokenSuspensionMax="0.2"
-			SuspensionMin="-0.27"
-			SuspensionMax="0.2"
+			Damping=".52"
+			Height="0.03"
+			Strength="0.068"
+			BrokenSuspensionMax="0.005"
+			SuspensionMin="-0.2"
+			SuspensionMax="0.005"
 		/>
 		<GameData
 			Price="6200"
@@ -47,21 +47,21 @@
 	>
 		<Suspension
 			WheelType="front"
-			Damping=".8"
-			Height="0.37"
-			Strength="0.032" 
+			Damping=".67"
+			Height="0.3"
+			Strength="0.085" 
 			BrokenSuspensionMax="-0.15" 
-			SuspensionMin="-0.45"
+			SuspensionMin="-0.3"
 			SuspensionMax="-0.15"
 		/>
 		<Suspension 
 			WheelType="rear"
-			Damping=".115"
-			Height="0.18"
-			Strength="0.0155"
-			BrokenSuspensionMax="0.0"
-			SuspensionMin="-0.25"
-			SuspensionMax="0.0"
+			Damping=".5"
+			Height="0.2"
+			Strength="0.065"
+			BrokenSuspensionMax="-0.05"
+			SuspensionMin="-0.24"
+			SuspensionMax="-0.05"
 		/>
 		<GameData
 			Price="6600"
@@ -86,21 +86,21 @@
 	>
 		<Suspension
 			WheelType="front"
-			Damping=".535"
-			Height="0.8"
-			Strength="0.0122" 
-			BrokenSuspensionMax="-0.42" 
-			SuspensionMin="-0.95"
-			SuspensionMax="-0.5"
+			Damping=".72"
+			Height="0.33"
+			Strength="0.05" 
+			BrokenSuspensionMax="-0.1" 
+			SuspensionMin="-0.45"
+			SuspensionMax="-0.1"
 		/>
 		<Suspension 
 			WheelType="rear"
-			Damping=".132"
-			Height="0.23"
-			Strength="0.009"
-			BrokenSuspensionMax="0.035"
-			SuspensionMin="-0.4"
-			SuspensionMax="0.035"
+			Damping=".35"
+			Height="0.2"
+			Strength="0.025"
+			BrokenSuspensionMax="0.0"
+			SuspensionMin="-0.32"
+			SuspensionMax="0.0"
 		/>
 		<GameData
 			Price="7000"

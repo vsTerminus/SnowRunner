@@ -1,0 +1,21 @@
+<_templates Include="models" />
+<ModelBrand
+	CastDayLightmapShadow="false"
+	CastNightLightmapShadow="false"
+	NightLightingShadowsAllowCap="false"
+	Instanced="true"
+>
+	<PhysicsModel>
+		<Body Collisions="Dynamic" ModelFrame="joint1">
+			<Body Collisions="Dynamic" Mass="200" NoSoftContacts="true" ModelFrame="joint2">
+				<Constraint BreakOffThreshold="1500" Type="Hinge" AxisLocal="(0; 0; 1)" MinLimit="-15" MaxLimit="15" />
+				<Body Collisions="Dynamic" Mass="20" NoSoftContacts="true" ModelFrame="joint4">
+					<Constraint BreakOffThreshold="100" Type="Fixed" />
+				</Body>
+			</Body>
+			<Body Collisions="Dynamic" Mass="200" NoSoftContacts="true" ModelFrame="joint3">
+				<Constraint BreakOffThreshold="1500" Type="Hinge" AxisLocal="(0; 0; 1)" MinLimit="-15" MaxLimit="15" />
+			</Body>
+		</Body>	
+	</PhysicsModel>
+</ModelBrand>

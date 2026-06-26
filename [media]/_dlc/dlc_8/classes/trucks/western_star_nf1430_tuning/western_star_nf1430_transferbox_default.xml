@@ -1,9 +1,17 @@
 <_templates Include="trucks" />
 <TruckAddon>
 	<TruckData AllWheelDriveInstalled="false">
-		<Shafts _template="DefaultTransferbox" />
+		<Shafts>
+			<Shaft PointAConnectedToAddon="true" PointBConnectedToAddon="false" SocketPointA="ShaftEngine" SocketPointB="ShaftBeam1F" />
+		</Shafts>
 	</TruckData>
-	<PhysicsModel _template="Invisible" />
+	
+	<PhysicsModel Mesh="trucks/western_star_nf1430_tuning/western_star_nf1430_transferbox_default">
+		<Body ImpactType="Truck" Mass="40" ModelFrame="BoneAddon_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	
 	<GameData
 		CameraPreset="hoods"
 		Category="awd"
@@ -19,4 +27,10 @@
 		/>
 		<InstallSocket Type="WSnf1430TransferBox" />
 	</GameData>
+	<ExplicitParents>
+		<ExplicitParent ExplicitParentFrame="0" Frame="BoneAxle1" />
+		<ExplicitParent ExplicitParentFrame="1" Frame="BoneRackL" />
+		<ExplicitParent ExplicitParentFrame="2" Frame="BoneRackR" />
+		<ExplicitParent ExplicitParentFrame="3" Frame="BoneRack" />
+	</ExplicitParents>
 </TruckAddon>

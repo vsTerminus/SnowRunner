@@ -1,0 +1,63 @@
+<_templates Include="environment" />
+<PlantBrand _template="BigTree" PlantingMinSpacing="5.4">
+	<PhysicsModel>
+		<Body _template="BigTreeRoot" ModelFrame="BoneRoot" IsCapsuleCDT="false">
+			<Constraint _template="BigTreeRoot"/>
+			<Body _template="TrunkHead" ModelFrame="BoneBranch4" IsCapsuleCDT="false">
+				<Constraint _template="TrunkHead" Cone="15"/>
+				<Body _template="BranchWithLeaves" ModelFrame="BoneBranch41" IsCapsuleCDT="false">
+					<Constraint _template="BranchWithLeaves"/>
+				</Body>
+				<Body _template="BranchWithLeaves" ModelFrame="BoneBranch43" IsCapsuleCDT="false">
+					<Constraint _template="BranchWithLeaves"/>
+				</Body>
+			</Body>
+			<Body _template="TrunkHead" ModelFrame="BoneBranch5" IsCapsuleCDT="false">
+				<Constraint _template="TrunkHead"  Cone="15"/>
+			</Body>
+			<Body _template="TrunkHead" ModelFrame="BoneBranch8" IsCapsuleCDT="false">
+				<Constraint _template="TrunkHead"/>
+			</Body>
+			<Body _template="BranchWithLeaves" ModelFrame="BoneBranch81" IsCapsuleCDT="false">
+				<Constraint _template="BranchWithLeaves"/>
+			</Body>
+			<Body _template="TrunkHead" ModelFrame="BoneBranch9" IsCapsuleCDT="false">
+				<Constraint _template="TrunkHead"/>
+				<Body _template="BranchWithLeaves" ModelFrame="BoneBranch91" IsCapsuleCDT="false">
+					<Constraint _template="BranchWithLeaves"/>
+				</Body>
+				<Body _template="BranchWithLeaves" ModelFrame="BoneBranch92" IsCapsuleCDT="false">
+					<Constraint _template="BranchWithLeaves"/>
+				</Body>
+			</Body>
+			<Body _template="TrunkHead" ModelFrame="BoneBranch10" IsCapsuleCDT="false">
+				<Constraint _template="TrunkHead"/>
+				<Body _template="BranchWithLeaves" ModelFrame="BoneBranch11" IsCapsuleCDT="false">
+					<Constraint _template="BranchWithLeaves"/>
+				</Body>
+			</Body>
+			<Body _template="BranchWithLeaves" ModelFrame="BoneBranch13" IsCapsuleCDT="false">
+				<Constraint _template="BranchWithLeaves"/>
+			</Body>
+			<Body _template="BranchWithLeaves" ModelFrame="BoneBranch7" IsCapsuleCDT="false">
+				<Constraint _template="BranchWithLeaves"/>
+			</Body>
+			<Body _template="TrunkHead" ModelFrame="BoneBranch6" IsCapsuleCDT="false">
+				<Constraint _template="TrunkHead"/>
+				<Body _template="BranchWithLeaves" ModelFrame="BoneBranch61" IsCapsuleCDT="false">
+					<Constraint _template="BranchWithLeaves"/>
+				</Body>
+				<Body _template="BranchWithLeaves" ModelFrame="BoneBranch62" IsCapsuleCDT="false">
+					<Constraint _template="BranchWithLeaves"/>
+				</Body>
+			</Body>
+		</Body>
+	</PhysicsModel>
+
+	<Landmark Mesh="landmarks/saman_middle_01_dry_us18_lmk"/>	
+
+	<Occlusion Intensity="0.32" Size="(10.0; 10.0)" />
+	<GameData>
+		<WinchSocket Pos="(-0.022; 0.382; -0.055)" ParentFrame="BoneRoot" />
+	</GameData>
+</PlantBrand>

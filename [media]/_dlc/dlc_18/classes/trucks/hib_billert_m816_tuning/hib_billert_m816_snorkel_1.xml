@@ -1,0 +1,24 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<Snorkel Origin="(1.345; 2.644; -0.933)" />
+	<PhysicsModel Mesh="trucks/hib_billert_m816_tuning/hib_billert_m816_snorkel_1">
+		<Body Collisions="Default" Mass="8" ModelFrame="BoneCabin_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="snorkel"
+		Category="snorkel"
+		Price="4700"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SNORKEL_FRONTFACE_TALL_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SNORKEL_FRONTFACE_TALL_NAME"
+		/>
+		<InstallSocket Type="HIBBillertM816Snorkel" />
+	</GameData>
+</TruckAddon>

@@ -1,0 +1,71 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<TruckData>
+		<Damage>
+			<Multiplier Multiplier="0.95" Type="Engine" />
+		</Damage>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/hib_billert_m816_tuning/hib_billert_m816_protection_1">
+		<Body ImpactType="Truck" Mass="100" ModelFrame="BoneCabin_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<Rotator EngineTorqueFactor="0" Frame="BoneRotatorLeft" RotationSpeed="3.8" />
+	<Rotator EngineTorqueFactor="0" Frame="BoneRotatorRight" RotationSpeed="3.8" />
+	<ModelAttachments>
+		<HeadLight>
+			<Model _template="HeadLightRay" Org="(3.644; 3.018; -0.278)" ColorMultAtDay="0.3"/>
+			<Model _template="HeadLightRay" Org="(3.644; 3.018; 0.278)" ColorMultAtDay="0.3"/>
+			<Model _template="HeadLightRay" Org="(3.644; 3.018; 0.001)" ColorMultAtDay="0.3"/>
+		</HeadLight>
+		<HeadLight>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.644; 3.018; -0.278)" Dir="(1; 0; 0)" Size=".36" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.644; 3.018; 0.278)" Dir="(1; 0; 0)" Size=".36" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.644; 3.018; 0.001)" Dir="(1; 0; 0)" Size=".36" ColorMultAtDay="0.25"/>
+		</HeadLight>
+		<Ignition _template="Flasher">
+			<Model
+				Color="g(255; 111; 5) x 0.55"
+				Dir="(1; 0.222; 0.563)"
+				Org="(3.044; 3.091; 1.221)"
+				Scale="(0.19; 0.19; 0.19)"
+				ParentFrame="BoneRotatorLeft"
+				Reflections="false"
+			/>
+			<Light Dir="(-0.796; 0.222; 0.563)" Pos="(3.044; 3.091; 1.221)" ParentFrame="BoneRotatorLeft" />
+			<Flare Color="g(255; 111; 5) x 0.45" Dir="(-0.796; 0.222; 0.563)" Size="1" Pos="(3.044; 3.091; 1.221)" ParentFrame="BoneRotatorLeft" />
+			<Flare Color="g(255; 111; 5) x 0.7" Dir="(-0.796; 0.222; 0.563)" Size="0.7" Pos="(3.044; 3.091; 1.221)" ParentFrame="BoneRotatorLeft" />
+			<Flare Color="g(255; 111; 5) x 0.55" Size="1" Pos="(3.044; 3.091; 1.221)" ParentFrame="BoneRotatorLeft" />
+		</Ignition>
+		<Ignition _template="Flasher">
+			<Model
+				Color="g(255; 111; 5) x 0.55"
+				Dir="(1; 0.222; 0.563)"
+				Org="(3.044; 3.091; -1.221)"
+				Scale="(0.19; 0.19; 0.19)"
+				ParentFrame="BoneRotatorRight"
+				Reflections="false"
+			/>
+			<Light Dir="(-0.796; 0.222; 0.563)" Pos="(3.044; 3.091; -1.221)" ParentFrame="BoneRotatorRight" />
+			<Flare Color="g(255; 111; 5) x 0.45" Dir="(-0.796; 0.222; 0.563)" Size="1" Pos="(3.044; 3.091; -1.221)" ParentFrame="BoneRotatorRight" />
+			<Flare Color="g(255; 111; 5) x 0.7" Dir="(-0.796; 0.222; 0.563)" Size="0.7" Pos="(3.044; 3.091; -1.221)" ParentFrame="BoneRotatorRight" />
+			<Flare Color="g(255; 111; 5) x 0.55" Size="1" Pos="(3.044; 3.091; -1.221)" ParentFrame="BoneRotatorRight" />
+		</Ignition>
+	</ModelAttachments>
+	<GameData
+		CameraPreset="default"
+		Category="top"
+		IsCustomizable="true"
+		Price="1700"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_BUMPER_SAVIOR_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_BUMPER_SAVIOR_NAME"
+		/>
+		<InstallSocket Type="HIBBillertM816Protection" />
+	</GameData>
+</TruckAddon>

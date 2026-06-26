@@ -3,7 +3,7 @@
 	<WheelRepairsHide>
 		<Mesh Frame="wheel" HideThreshold="0.0" />
 	</WheelRepairsHide>
-	<TruckData WheelRepairsCapacity="1" />
+	<TruckData WheelRepairsCapacity="2" />
 	<PhysicsModel Mesh="trucks/navistar_5000mv_tuning/navistar_5000mv_spare_wheel">
 		<Body Mass="150">
 			<Constraint Type="Rigid" />

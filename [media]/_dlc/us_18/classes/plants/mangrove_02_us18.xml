@@ -1,0 +1,114 @@
+<_templates Include="environment">
+	<Body>
+		<LowerBranch
+			AllowedPenetrationDepth="2.0"
+			DamageMult="0.01"
+			ImpactType="Foliage"
+			IsCapsuleCDT="true"
+			LinearDamping="0.1"
+			Mass="25"
+		>
+			<Constraint
+				Cone="35"
+				TwistAxisLocal="(0; 1; 0)"
+				Type="Ragdoll"	
+			>
+				<PlaneConeMotor Damping="850" Spring="10200" Type="Spring" />
+			</Constraint>
+		</LowerBranch>
+		<MiddleBranch
+			AllowedPenetrationDepth="2.0"
+			DamageMult="0.01"
+			ImpactType="Foliage"
+			IsCapsuleCDT="true"
+			LinearDamping="0.1"
+			Mass="25"
+		>
+			<Constraint
+				Cone="35"
+				TwistAxisLocal="(0; 1; 0)"
+				Type="Ragdoll"	
+			>
+				<PlaneConeMotor Damping="850" Spring="10200" Type="Spring" />
+			</Constraint>
+		</MiddleBranch>
+	</Body>
+</_templates>
+<PlantBrand _template="BigTree" CheckNoGrass="true">
+	<PhysicsModel>
+		<Body _template="BigTreeRoot" ModelFrame="BoneRoot">
+			<Constraint _template="BigTreeRoot" />
+			<Body _template="TrunkHead" ModelFrame="BoneTrunk">
+				<Constraint _template="TrunkHead" />
+				<Body _template="MiddleBranch" ModelFrame="BoneBranch1">
+				</Body>
+				<Body _template="MiddleBranch" ModelFrame="BoneBranch2">
+					<Body _template="MiddleBranch" ModelFrame="BoneBranch17">
+					</Body>
+					<Body _template="MiddleBranch" ModelFrame="BoneBranch18">
+					</Body>
+					<Body _template="MiddleBranch" ModelFrame="BoneBranch19">
+					</Body>
+				</Body>
+				<Body _template="MiddleBranch" ModelFrame="BoneBranch3">
+				</Body>
+				<Body _template="MiddleBranch" ModelFrame="BoneBranch4">
+				</Body>
+				<Body _template="MiddleBranch" ModelFrame="BoneBranch26">
+				</Body>
+			</Body>
+			<Body _template="TrunkHead" ModelFrame="BoneTrunk1">
+				<Constraint _template="TrunkHead" />
+				<Body _template="MiddleBranch" ModelFrame="BoneBranch5">
+				</Body>
+			</Body>
+			<Body _template="TrunkHead" ModelFrame="BoneTrunk2">
+				<Constraint _template="TrunkHead" />
+				<Body _template="MiddleBranch" ModelFrame="BoneBranch6">
+					<Body _template="MiddleBranch" ModelFrame="BoneBranch23">
+					</Body>
+				</Body>
+				<Body _template="MiddleBranch" ModelFrame="BoneBranch24">
+				</Body>
+			</Body>
+			<Body _template="TrunkHead" ModelFrame="BoneTrunk3">
+				<Constraint _template="TrunkHead" />
+				<Body _template="MiddleBranch" ModelFrame="BoneBranch7">
+				</Body>
+				<Body _template="MiddleBranch" ModelFrame="BoneBranch21">
+				</Body>
+			</Body>
+			<Body _template="MiddleBranch" ModelFrame="BoneBranch8">
+			</Body>
+			<Body _template="MiddleBranch" ModelFrame="BoneBranch9">
+				<Body _template="MiddleBranch" ModelFrame="BoneBranch20">
+				</Body>
+			</Body>
+			<Body _template="MiddleBranch" ModelFrame="BoneBranch10">
+			</Body>
+			<Body _template="MiddleBranch" ModelFrame="BoneBranch22">
+			</Body>
+			<Body _template="MiddleBranch" ModelFrame="BoneBranch25">
+			</Body>
+			<Body _template="MiddleBranch" ModelFrame="BoneBranch27">
+			</Body>
+			<Body _template="LowerBranch" ModelFrame="BoneBranch11">
+			</Body>
+			<Body _template="LowerBranch" ModelFrame="BoneBranch12">
+			</Body>
+			<Body _template="LowerBranch" ModelFrame="BoneBranch13">
+			</Body>
+			<Body _template="LowerBranch" ModelFrame="BoneBranch14">
+			</Body>
+			<Body _template="LowerBranch" ModelFrame="BoneBranch15">
+			</Body>
+			<Body _template="LowerBranch" ModelFrame="BoneBranch16">
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<Occlusion Intensity="0.45" Size="(8.0; 8.0)" />
+	<Landmark Mesh="landmarks/mangrove_02_us18_lmk" />
+	<GameData>
+		<WinchSocket Pos="(0.081; 0.492; 0.025)" ParentFrame="BoneRoot" />
+	</GameData>
+</PlantBrand>

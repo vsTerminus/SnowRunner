@@ -13,8 +13,8 @@
 	</WheelRepairsHide>
 	<TruckData
 		FuelCapacity="120"
-		RepairsCapacity="300"
-		WheelRepairsCapacity="4"
+		RepairsCapacity="150"
+		WheelRepairsCapacity="2"
 	>
 		<LimitedFluid Center="(-0.299; 2.869; 0.312)" SizeX="0.460" SizeY="0.182" SizeZ="0.358" Type="Box" />
 		<LimitedFluid Center="(-0.912; 2.871; 0.318)" SizeX="0.460" SizeY="0.182" SizeZ="0.358" Type="Box" />

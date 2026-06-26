@@ -2,7 +2,7 @@
 	<WheelRepairsHide>
 		<Mesh Frame="spare_wheel" HideThreshold="0.0" />
 	</WheelRepairsHide>
-	<TruckData WheelRepairsCapacity="1" />
+	<TruckData WheelRepairsCapacity="2" />
 	<PhysicsModel Mesh="trucks/addons/frame_addon_mack_terra_pro_sideboard_2">
 		<Body Mass="600" ModelFrame="BoneAddon_cdt" >
 			<Constraint Type="Rigid" />	

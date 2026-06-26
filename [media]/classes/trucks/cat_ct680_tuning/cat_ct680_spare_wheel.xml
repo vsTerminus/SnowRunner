@@ -2,7 +2,7 @@
 	<WheelRepairsHide>
 		<Mesh Frame="wheel" HideThreshold="0.0" />
 	</WheelRepairsHide>
-	<TruckData WheelRepairsCapacity="1" />
+	<TruckData WheelRepairsCapacity="2" />
 	<PhysicsModel Mesh="trucks/cat_ct680_tuning/cat_ct680_spare_wheel">
 		<Body ImpactType="Truck" Mass="100" ModelFrame="BoneChassis_cdt">
 			<Constraint Type="Fixed" />

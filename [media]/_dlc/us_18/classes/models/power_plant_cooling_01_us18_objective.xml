@@ -1,0 +1,62 @@
+<ModelBrand
+    DynamicModel="true"
+    NightLightingShadowsAllowCap="true"
+    DayShadowOffsetMult="20"
+>
+	<PhysicsModel>
+		<Body Collisions="Dynamic" />
+	</PhysicsModel>
+	<Subset IsDefault="true" Name="stage_00">
+		<Mesh Name="state_00_01" />
+		<Mesh Name="state_00_01_lod1" />
+		<Mesh Name="state_00_01_lod2" />
+		<Mesh Name="state_00_01_lod3" />
+		<Mesh Name="state_00_02" />
+		<Mesh Name="state_00_02_lod1" />
+		<Mesh Name="state_00_02_lod2" />
+		<Mesh Name="state_00_03" />
+		<Mesh Name="state_00_03_lod1" />
+		<Mesh Name="state_00_03_lod2" />
+		<Mesh Name="staff" />
+		<Mesh Name="staff_lod1" />
+		<Mesh Name="staff_lod2" />
+		<CdtMesh Name="cdt_state_00" />
+	</Subset>
+	<Subset Name="stage_01">
+		<Mesh Name="state_01" />
+		<Mesh Name="state_01_lod1" />
+		<Mesh Name="state_01_lod2" />
+		<Mesh Name="state_01_lod3" />
+		<CdtMesh Name="cdt_state_00" />
+		<AnimTrack Name="stage_1_anim" />
+		<AnimSubset Name="build_animation_0" />
+	</Subset>
+	<AnimSubset Name="build_animation_0">
+		<Mesh Name="state_00_01" />
+		<Mesh Name="state_00_01_lod1" />
+		<Mesh Name="state_00_01_lod2" />
+		<Mesh Name="state_00_01_lod3" />
+		<Mesh Name="state_00_02" />
+		<Mesh Name="state_00_02_lod1" />
+		<Mesh Name="state_00_02_lod2" />
+		<Mesh Name="state_00_03" />
+		<Mesh Name="state_00_03_lod1" />
+		<Mesh Name="state_00_03_lod2" />
+		<Mesh Name="animesh_01" />
+		<Mesh Name="animesh_02" />
+	</AnimSubset>
+	<TrackEvents TrackName="stage_1_anim">
+		<AnimEvent Key="0">
+           		<Fade Time="0.2" />
+				<Sound
+                Name="actors/actor_construction/actor_construct_oil_01"
+                Range="50"
+                Volume="1"
+            />
+       	</AnimEvent>
+		<AnimEvent Key="95">
+           		<Fade Time="1.2" />
+       	</AnimEvent>
+	</TrackEvents>
+	<Landmark Mesh="landmarks/power_plant_cooling_01_us18_objective_lmk" />
+</ModelBrand>

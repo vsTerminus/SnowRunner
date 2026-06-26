@@ -1,0 +1,16 @@
+<ModelBrand
+	NightLightingShadowsAllowCap="true"
+	Instanced="true"
+	InstancedAsModel="true"
+>
+	<PhysicsModel>
+		<Body Collisions="Dynamic" />
+	</PhysicsModel>
+	<GameData>
+		<WinchSocket Pos="(3.76; -0.06; -3.88)" />
+		<WinchSocket Pos="(3.76; -0.06; 3.88)" />
+		<WinchSocket Pos="(-3.76; -0.06; -3.88)" />
+		<WinchSocket Pos="(3.76; -0.06; -3.88)" />
+	</GameData>
+	<Landmark Mesh="landmarks/steam_intaker_01_us18_lmk" />
+</ModelBrand>

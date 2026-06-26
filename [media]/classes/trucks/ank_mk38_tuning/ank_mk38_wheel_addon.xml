@@ -3,7 +3,7 @@
 	<WheelRepairsHide>
 		<Mesh Frame="wheel" HideThreshold="0.0" />
 	</WheelRepairsHide>
-	<TruckData WheelRepairsCapacity="1" />
+	<TruckData WheelRepairsCapacity="2" />
 	<PhysicsModel Mesh="trucks/ank_mk38_tuning/ank_mk38_wheel_addon">
 		<Body Mass="300">
 			<Constraint Type="Rigid" />

@@ -1,0 +1,25 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/mercer_6x6r_230_tuning/mercer_6x6r_230_frame_default">
+		<Body ImpactType="Truck" Mass="30" ModelFrame="BoneAddon_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="addon_1"
+		Category="frame_addons"
+		Price="4700"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<WinchSocket Pos="(-4.115; 1.039; 0)" FixedToTruck="true" />
+		<CraneSocket Pos="(-4.115; 1.039; 0)" FixedToTruck="true" />
+		<UiDesc
+			UiDesc="UI_TUNING_FRAME_DEFAULT_NAME"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_FRAME_DEFAULT_DESC"
+		/>
+		<InstallSocket Type="MercerR6X6230FrameDefault" />
+	</GameData>
+</TruckAddon>

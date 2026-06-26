@@ -25,20 +25,20 @@
 <Truck Type="Trailer" AttachType="Saddle">
 	<TruckData HideDistance="250" ShadowHideDistance="100">
 		<Wheels>
-			<Wheel _template="TrailerWheel" Pos="(3.593; 0.635; 1.0)" ParentFrame="BoneFrontAxle1" />
-			<Wheel _template="TrailerWheel" RightSide="true" Pos="(3.593; 0.635; 1.0)" ParentFrame="BoneFrontAxle1" />
-			
-			<Wheel _template="TrailerWheel" Pos="(2.125; 0.635; 1.0)" ParentFrame="BoneFrontAxle2" />
-			<Wheel _template="TrailerWheel" RightSide="true" Pos="(2.125; 0.635; 1.0)" ParentFrame="BoneFrontAxle2" />
-			
-			<Wheel _template="TrailerWheel" Pos="(-4.015; 0.635; 1.0)" />
-			<Wheel _template="TrailerWheel" RightSide="true" Pos="(-4.015; 0.635; 1.0)" />
-			
-			<Wheel _template="TrailerWheel" Pos="(-5.487; 0.635; 1.0)" />
-			<Wheel _template="TrailerWheel" RightSide="true" Pos="(-5.487; 0.635; 1.0)" />
+			<Wheel _template="TrailerWheel" Pos="(3.593; 0.635; 1.0)" ParentFrame="BoneFrontPart_cdt" />
+			<Wheel _template="TrailerWheel" Pos="(3.593; 0.635; 1.0)" ParentFrame="BoneFrontPart_cdt" RightSide="true" />
 
-			<Wheel _template="TrailerWheel" Pos="(-6.957; 0.635; 1.0)" />
-			<Wheel _template="TrailerWheel" RightSide="true" Pos="(-6.957; 0.635; 1.0)" />
+			<Wheel _template="TrailerWheel" Pos="(2.125; 0.635; 1.0)" ParentFrame="BoneFrontPart_cdt" />
+			<Wheel _template="TrailerWheel" Pos="(2.125; 0.635; 1.0)" ParentFrame="BoneFrontPart_cdt" RightSide="true" />
+
+			<Wheel _template="TrailerWheel" Pos="(-4.015; 0.635; 1.0)" ParentFrame="BoneBase_cdt" />
+			<Wheel _template="TrailerWheel" Pos="(-4.015; 0.635; 1.0)" ParentFrame="BoneBase_cdt" RightSide="true" />
+
+			<Wheel _template="TrailerWheel" Pos="(-5.487; 0.635; 1.0)" ParentFrame="BoneBase_cdt" />
+			<Wheel _template="TrailerWheel" Pos="(-5.487; 0.635; 1.0)" ParentFrame="BoneBase_cdt" RightSide="true" />
+
+			<Wheel _template="TrailerWheel" Pos="(-6.957; 0.635; 1.0)" ParentFrame="BoneBase_cdt" />
+			<Wheel _template="TrailerWheel" Pos="(-6.957; 0.635; 1.0)" ParentFrame="BoneBase_cdt" RightSide="true" />
 		</Wheels>
 		<OcclusionMap
 			HalfSizeZ="2"
@@ -47,15 +47,14 @@
 			MaxX="9.72"
 		/>
 		<Constraint
-			PlaneAxisLocal="(0; 1; 0)"
-			TwistAxisLocal="(0; 0; 1)"
 			Type="Ragdoll"
-			ConeMin="-160"
-			ConeMax="160"
-			PlaneMin="-3"
+			TwistAxisLocal="(0; 1; 0)"
+			PlaneAxisLocal="(0; 0; 1)"
 			TwistMin="-150"
-			PlaneMax="3"
 			TwistMax="150"
+			PlaneMin="-30"
+			PlaneMax="30"
+			Cone="30"
 		/>
 		<Camera Center="(-0.8; 0; 0)" />
 		<Axles>
@@ -65,8 +64,8 @@
 			<Axle Frame="BoneRearAxle2" />
 			<Axle Frame="BoneRearAxle3" />
 		</Axles>
-		<Foot Origin="(7.75; -0.17;  0.7)" ParentFrame="BoneFrontPart_cdt" />
-		<Foot Origin="(7.75; -0.17; -0.7)" ParentFrame="BoneFrontPart_cdt" />
+		<Foot Origin="(7.754; 0.102;  0.715)" ParentFrame="BoneFrontPart_cdt" />
+		<Foot Origin="(7.754; 0.102; -0.715)" ParentFrame="BoneFrontPart_cdt" />
 	</TruckData>
 	<PoweredConstraints>
 		<Group Id="_trailer_foot">
@@ -92,16 +91,15 @@
 				<Constraint
 					Name="SLDL_RagDoll"
 					Type="Ragdoll"
-					TwistAxisLocal="(1; 0; 0)" 
+					TwistAxisLocal="(0; 1; 0)" 
 					PlaneAxisLocal="(0; 0; 1)" 
-					TwistMin="-7"
-					TwistMax="7" 
-					PlaneMin="-85"
-					PlaneMax="85"
-					ConeMin="-100" 
-					ConeMax="100" 
+					TwistMin="-100"
+					TwistMax="100" 
+					PlaneMin="-12"
+					PlaneMax="12"
+					Cone="14"
 				>
-					<Motor Damping="8000" Spring="4000000" Type="Spring" />
+					<AllMotor Damping="1000" Spring="1000" Type="Spring" />
 				</Constraint>
 				
 				<Body _template="Mudguard" ModelFrame="BoneHandle_cdt">

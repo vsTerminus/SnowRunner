@@ -127,7 +127,7 @@
 			</Group>
 		</Chain>
 	</PoweredConstraints>
-	<PhysicsModel Mesh="trucks/addons/frame_addon_seismic_vibrator_padera_std4">
+	<PhysicsModel Mesh="trucks/addons/frame_addon_seismic_mercedes_zetros_6x6">
 		<Body Mass="2000">
 			<Constraint Type="Rigid" />
 			<Body _template="Leg" ModelFrame="BoneArmHinge1_FR_cdt">
@@ -192,12 +192,14 @@
 			UiIcon40x40=""
 			UiName="UI_ADDON_FRAME_SEISMIC_VIBRATOR_NAME"
 		/>
+		<WinchSocket Pos="(-3.955; 1.121; 0)" FixedToTruck="true"/>
+		<CraneSocket Pos="(-3.955; 1.121; 0)" FixedToTruck="true"/>
 		<SoundPoweredGroupStop Name="actors/actor_vibro_sensor/actor_vibro_sensor_powergrub_stop" Range="20" Volume="1" />
 		<SoundPoweredGroupStart Name="actors/actor_vibro_sensor/actor_vibro_sensor_powergrub_start" Range="20" Volume="1" />
 		<SoundPoweredGroupLoop Name="actors/actor_vibro_sensor/actor_vibro_sensor_powergrub_loop" Range="20" Volume="1" />
 		<InstallSocket Offset="(0; 0; 0)" Type="FrameAddonSeismicVibratorMercedesZetros" />
-		<RequiredAddon Types="mercedes_benz_zetros_6x6_subframe" />
-		<AddonType Name="SeismicVibratorMercedesZetros" />
+		<RequiredAddon Types="" />
+		<AddonType Name="SeismicVibrator" />
 	</GameData>
 	<AutomaticIK>
 		<IKBone ModelFrame="BonePistonBase1_FR" ParentFrame="BoneArmHinge1_FR_cdt">

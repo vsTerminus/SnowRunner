@@ -3,7 +3,7 @@
 		<RearWheel
 			ConnectedToHandbrake="true"
 			Location="rear"
-			Torque="full"
+			Torque="default"
 		/>
 		<FrontWheel Location="front" Torque="default" />
 	</Wheel>
@@ -383,7 +383,7 @@
 				<AddonsShift Offset="(-0.669; 0.047; 0)" Types="Cat745CFlatbed" />
 				<AddonsShift Offset="(0; 0; 0)" Types="Cat745CFarkop" />
 			</Socket>
-			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-3.633; 2.095; 0)" ParentFrame="BoneBackRot_cdt" />
+			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-3.633; 2.15; 0)" ParentFrame="BoneBackRot_cdt" />
 		</AddonSockets>
 		
 		<AddonSockets>

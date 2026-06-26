@@ -1,0 +1,27 @@
+<_templates Include="models" />
+<ModelBrand
+	NightLightingShadowsAllowCap="true"
+	Instanced="true"
+>
+	<PhysicsModel>
+		<Body _template="MediumWeight" ModelFrame="BoneRoot">
+			<Constraint _template="MediumWeight" />
+			<Body _template="MediumWeight" ModelFrame="BonePart1">
+				<Constraint _template="MediumWeight" />
+			</Body>
+			<Body _template="MediumWeight" ModelFrame="BonePart2">
+				<Constraint _template="MediumWeight" />
+			</Body>
+			<Body _template="LightWeight" ModelFrame="BonePart3">
+				<Constraint
+						Cone="15"
+						TwistAxisLocal="(0; 1; 0)"
+						Type="Ragdoll"
+				/>
+					<Body _template="MediumWeight" ModelFrame="BonePart4" Mass="100" NoSoftContacts="true">
+						<Constraint _template="LightWeight" />
+					</Body>
+			</Body>
+		</Body>
+	</PhysicsModel>
+</ModelBrand>

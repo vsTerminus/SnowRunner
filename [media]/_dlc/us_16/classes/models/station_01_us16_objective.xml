@@ -39,13 +39,13 @@
 	<TrackEvents TrackName="stage_1_anim">
 
 	<AnimEvent Key="28">
-			<Sound Name="actors/actor_construction/actor_construct_us06_garage_03" Range="200" Volume="1" />
+			<Sound Name="actors/actor_construction/actor_construct_us06_garage_03" Range="100" Volume="0.2" />
 			<SFX Dir="(0; 1; 0)" Name="us_garage_06_us06_objective" Pos="(-0.457; 1.108; -0.928)" />
 
 		</AnimEvent>
 
 		<AnimEvent Key="50">
-			<Sound Name="actors/actor_construction/actor_construct_us06_garage_07" Range="200" Volume="1" />
+			<Sound Name="actors/actor_construction/actor_construct_us06_garage_07" Range="100" Volume="0.2" />
 			<SFX Dir="(0; 1; 0)" Name="us_garage_06_us06_objective" Pos="(-0.457; 1.108; -0.928)" />
 
 		</AnimEvent>

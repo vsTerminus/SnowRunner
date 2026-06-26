@@ -8,7 +8,7 @@
 		<FrontWheel
 			ConnectedToHandbrake="true"
 			Location="front"
-			SteeringAngle="40"
+			SteeringAngle="36"
 			SteeringCastor="2"
 			Torque="default"
 			ParentFrame="BoneCabin_cdt"
@@ -132,24 +132,24 @@
 			<DamageArea Type="FuelTank" Min="(-0.6; 0.35; -0.9)" Max="(0.8; 0.6; 0.9)" ParentFrame="BoneChassis_cdt" />
 		</Damage>
 		<!-- VANILLA WHEELS -->
-		<CompatibleWheels Scale="0.38" Type="wheels_scout1" />
-		<CompatibleWheels Scale="0.38" Type="wheels_scout2" />
+		<CompatibleWheels Scale="0.38" OffsetZ="0.01" Type="wheels_scout1" />
+		<CompatibleWheels Scale="0.38" OffsetZ="0.025" Type="wheels_scout2" />
 		
-		<CompatibleWheels Scale="0.45" Type="wheels_scout1" />
-		<CompatibleWheels Scale="0.45" Type="wheels_scout2" />
+		<CompatibleWheels Scale="0.43" OffsetZ="0.025" Type="wheels_scout1" />
+		<CompatibleWheels Scale="0.43" OffsetZ="0.05" Type="wheels_scout2" />
 		
 		<!-- JAT WHEELS -->
-		<CompatibleWheels Scale="0.38" Type="wheels_scout_highway" />
-		<CompatibleWheels Scale="0.38" Type="wheels_scout_offroad" />
-		<CompatibleWheels Scale="0.38" Type="wheels_scout_mudtires" />
-		<CompatibleWheels Scale="0.38" Type="wheels_scout_allterrain" />
-		<CompatibleWheels Scale="0.38" Type="wheels_scout_allterrain_chain" />
+		<CompatibleWheels Scale="0.38" OffsetZ="0.01" Type="wheels_scout_highway" />
+		<CompatibleWheels Scale="0.38" OffsetZ="0.04" Type="wheels_scout_offroad" />
+		<CompatibleWheels Scale="0.38" OffsetZ="0.055" Type="wheels_scout_mudtires" />
+		<CompatibleWheels Scale="0.38" OffsetZ="0.035" Type="wheels_scout_allterrain" />
+		<CompatibleWheels Scale="0.38" OffsetZ="0.025" Type="wheels_scout_allterrain_chain" />
 		
-		<CompatibleWheels Scale="0.45" Type="wheels_scout_highway" />
-		<CompatibleWheels Scale="0.45" Type="wheels_scout_offroad" />
-		<CompatibleWheels Scale="0.45" Type="wheels_scout_mudtires" />
-		<CompatibleWheels Scale="0.45" Type="wheels_scout_allterrain" />
-		<CompatibleWheels Scale="0.45" Type="wheels_scout_allterrain_chain" />	
+		<CompatibleWheels Scale="0.45" OffsetZ="0.025" Type="wheels_scout_highway" />
+		<CompatibleWheels Scale="0.45" OffsetZ="0.065" Type="wheels_scout_offroad" />
+		<CompatibleWheels Scale="0.45" OffsetZ="0.08" Type="wheels_scout_mudtires" />
+		<CompatibleWheels Scale="0.45" OffsetZ="0.055" Type="wheels_scout_allterrain" />
+		<CompatibleWheels Scale="0.45" OffsetZ="0.06" Type="wheels_scout_allterrain_chain" />	
 		<Camera Center="(-1.3; -0.3; 0)" RadiusMultiplier="0.8">
 			<Cockpit
 				_template="Default"

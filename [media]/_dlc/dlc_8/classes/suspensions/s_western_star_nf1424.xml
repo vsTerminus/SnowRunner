@@ -11,15 +11,15 @@
 			WheelType="front" 
 			Height="0.16" 
 			Strength="0.12" 
-			Damping="0.12" 
+			Damping="0.33" 
 			BrokenSuspensionMax="0.2" 
-			SuspensionMin="-0.12" 
+			SuspensionMin="-0.15" 
 		/>
 		<Suspension 
 			WheelType="rear"
 			Height="0.07"
 			Strength="0.1"
-			Damping="0.2"
+			Damping="0.38"
 			BrokenSuspensionMax="0.15" 
 			SuspensionMin="-0.15" 
 		/>
@@ -50,7 +50,7 @@
 			WheelType="front" 
 			BrokenSuspensionMax=".25" 
 			SuspensionMin="-0.3" 
-			Damping="0.3"
+			Damping="0.44"
 		/>
 		<Suspension 
 			Height="0.23" 
@@ -58,7 +58,7 @@
 			WheelType="rear" 
 			BrokenSuspensionMax=".25" 
 			SuspensionMin="-0.25" 
-			Damping="0.3"
+			Damping="0.5"
 		/>
 		<GameData
 			Price="7500"

@@ -1,0 +1,31 @@
+<ModelBrand 
+	NightLightingShadowsAllowCap="true" 
+	DynamicModel="true"
+>
+	<PhysicsModel>
+		<Body Collisions="Dynamic" ModelFrame="mesh_01">
+			<Body Collisions="Dynamic" ModelFrame="mesh_02" />
+		</Body>
+	</PhysicsModel>
+	<Subset Name="state_start" IsDefault="true">
+		<Mesh Name="mesh_01" />
+		<CdtMesh Name="cdt_mesh_01" />
+	</Subset>
+	<Subset Name="state_end" >
+		<Mesh Name="mesh_01" />
+		<Mesh Name="mesh_02" />
+		<CdtMesh Name="cdt_mesh_01" />
+		<CdtMesh Name="cdt_mesh_02" />
+		<AnimSubset Name="build_animation_0" />
+		<AnimTrack Name="stage_1_anim" Speed="1.0" />
+	</Subset>
+	<AnimSubset Name="build_animation_0">
+		<Mesh Name="mesh_01" />
+		<Mesh Name="animesh" />
+		<CdtMesh Name="cdt_mesh_01" />
+		<CdtMesh Name="cdt_mesh_02" />
+	</AnimSubset>
+	<TrackEvents TrackName="stage_1_anim">
+		<AnimEvent Key="5" ForceDaytimePreset="true" />
+	</TrackEvents>
+</ModelBrand>

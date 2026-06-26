@@ -6,7 +6,7 @@
 		<Mesh Frame="plad_450_wheel_r" HideThreshold="0.0" />
 		<Mesh Frame="plad_450_wheel_l" HideThreshold="0.5" />
 	</WheelRepairsHide>
-	<TruckData WheelRepairsCapacity="2" />
+	<TruckData WheelRepairsCapacity="4" />
 	<Rotator
 		EngineTorqueFactor="0"
 		RotationAxis="(0; 1; 0)"

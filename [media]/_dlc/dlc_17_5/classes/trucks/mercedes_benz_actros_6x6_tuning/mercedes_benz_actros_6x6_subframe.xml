@@ -1,0 +1,26 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/mercedes_benz_actros_6x6_tuning/mercedes_benz_actros_6x6_subframe">
+		<Body ImpactType="Truck" Mass="350" ModelFrame="BoneAddon_cdt" CenterOfMassOffset="(-0.6; -0.3; 0)">
+			<Constraint Type="Rigid" />
+			<Body Collisions="None" Mass="5" ModelFrame="BoneExplicit_cdt">
+				<Constraint ExplicitParentFrame="0" Type="Fixed" />
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="addon_1"
+		Category="frame_addons"
+		Price="0"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_FRAME_EXTENDED_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_FRAME_EXTENDED_NAME"
+		/>
+		<InstallSocket Type="MercedesBenzActrosSubframe" />
+	</GameData>
+</TruckAddon>

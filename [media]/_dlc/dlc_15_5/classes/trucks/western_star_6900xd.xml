@@ -454,6 +454,7 @@
 		Price="137900"
 		UnlockByExploration="false"
 		UnlockByRank="1"
+		ExcludeAddons="semitrailer_gooseneck_3"
 	>
 		<WinchSocket Pos="(-1.374; 1.333; 0.433)" ParentFrame="BoneChassis_cdt" />
 		<WinchSocket Pos="(-1.374; 1.333; -0.433)" ParentFrame="BoneChassis_cdt" />

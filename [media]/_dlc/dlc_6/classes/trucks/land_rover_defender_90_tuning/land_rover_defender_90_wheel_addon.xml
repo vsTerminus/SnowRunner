@@ -3,7 +3,7 @@
 	<WheelRepairsHide>
 		<Mesh Frame="wheel" HideThreshold="0.0" />
 	</WheelRepairsHide>
-	<TruckData WheelRepairsCapacity="1" />
+	<TruckData WheelRepairsCapacity="2" />
 	<PhysicsModel Mesh="trucks/land_rover_defender_90_tuning/land_rover_defender_90_wheel_addon">
 		<Body Mass="50">
 			<Constraint Type="Rigid" />

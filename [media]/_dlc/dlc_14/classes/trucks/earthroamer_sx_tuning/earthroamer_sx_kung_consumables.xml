@@ -3,7 +3,7 @@
 	<TruckData
 		FuelCapacity="160"
 		RepairsCapacity="500"
-		WheelRepairsCapacity="3"
+		WheelRepairsCapacity="4"
 	>
 		<LimitedFluid Center="(-4.497; 1.331; -0.863)" SizeX="1.22" SizeY="0.594" SizeZ="0.555" Type="Box" ParentFrame="BoneStuff_cdt"/>
 		<LimitedFluid Center="(-4.497; 1.331; 0.863)" SizeX="1.22" SizeY="0.594" SizeZ="0.555" Type="Box" ParentFrame="BoneStuff_cdt"/>

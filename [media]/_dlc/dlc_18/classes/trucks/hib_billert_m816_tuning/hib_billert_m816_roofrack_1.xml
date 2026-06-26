@@ -1,0 +1,81 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<TruckData FuelCapacity="200" RepairsCapacity="150">
+		<LimitedFluid Center="(1.936; 3.197; 0.249)" SizeX="0.445" SizeY="0.146" SizeZ="0.325" Type="Box" ParentFrame="BoneFuel2_cdt"/>
+		<LimitedFluid Center="(1.952; 3.197; 0.679)" SizeX="0.445" SizeY="0.146" SizeZ="0.325" Type="Box" ParentFrame="BoneFuel2_cdt"/>
+
+		<LimitedFluid Center="(2.068; 3.208; -0.629)" SizeX="0.445" SizeY="0.146" SizeZ="0.325" Type="Box" ParentFrame="BoneFuel1_cdt"/>
+		<LimitedFluid Center="(2.075; 3.408; -0.630)" SizeX="0.445" SizeY="0.146" SizeZ="0.325" Type="Box" ParentFrame="BoneFuel1_cdt"/>
+
+		<LimitedFluid Center="(2.157; 3.208; -0.184)" SizeX="0.445" SizeY="0.146" SizeZ="0.325" Type="Box" ParentFrame="BoneFuel1_cdt"/>
+		<LimitedFluid Center="(2.081; 3.408; -0.191)" SizeX="0.445" SizeY="0.146" SizeZ="0.325" Type="Box" ParentFrame="BoneFuel1_cdt"/>
+
+		<LimitedFluid Center="(2.788; 3.208; -0.655)" SizeX="0.445" SizeY="0.146" SizeZ="0.325" Type="Box" ParentFrame="BoneFuel1_cdt"/>
+		<LimitedFluid Center="(2.797; 3.408; -0.626)" SizeX="0.445" SizeY="0.146" SizeZ="0.325" Type="Box" ParentFrame="BoneFuel1_cdt"/>
+
+		<LimitedFluid Center="(2.853; 3.208; -0.171)" SizeX="0.445" SizeY="0.146" SizeZ="0.325" Type="Box" ParentFrame="BoneFuel1_cdt"/>
+		<LimitedFluid Center="(2.877; 3.408; -0.198)" SizeX="0.445" SizeY="0.146" SizeZ="0.325" Type="Box" ParentFrame="BoneFuel1_cdt"/>
+	</TruckData>
+	
+	<RepairsHide>
+		<Mesh Frame="repair" HideThreshold="0.0" />
+	</RepairsHide>
+	<FuelHide>
+		<Mesh Frame="fuel_01" HideThreshold="0.75" />
+		<Mesh Frame="fuel_02" HideThreshold="0.5" />
+		<Mesh Frame="fuel_03" HideThreshold="0.0" />
+	</FuelHide>
+
+	<PhysicsModel Mesh="trucks/hib_billert_m816_tuning/hib_billert_m816_roofrack_1">
+		<Body ImpactType="Truck" Mass="30" ModelFrame="BoneCabin_cdt">
+			<Constraint Type="Rigid" />
+			<Body Collisions="None" Mass="40" ModelFrame="BoneFuel1_cdt">
+				<Constraint
+					AxisLocal="(1; 0; 0)"
+					Type="Prismatic"
+					MinLimit="-0.03"
+					MaxLimit="0.02"
+				>
+					<Motor Damping="1200" Spring="2200" Type="Spring" />
+				</Constraint>
+			</Body>
+			
+			<Body Collisions="None" Mass="30" ModelFrame="BoneFuel2_cdt">
+				<Constraint
+					AxisLocal="(0; 0; 1)"
+					Type="Prismatic"
+					MinLimit="-0.04"
+					MaxLimit="0.02"
+				>
+					<Motor Damping="1200" Spring="2200" Type="Spring" />
+				</Constraint>
+			</Body>
+			<Body Collisions="None" Mass="50" ModelFrame="BoneRepair_cdt">
+				<Constraint
+					AxisLocal="(1; 0; 0)"
+					Type="Prismatic"
+					MinLimit="-0.02"
+					MaxLimit="0.01"
+				>
+					<Motor Damping="2100" Spring="3000" Type="Spring" />
+				</Constraint>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="roof"
+		Category="frame_addons"
+		IsCustomizable="true"
+		Price="3200"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SCOUT_TRUNK_SUPPLIES_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SCOUT_TRUNK_SUPPLIES_NAME"
+		/>
+		<InstallSocket Type="HIBBillertM816Roofrack" />
+	</GameData>
+</TruckAddon>

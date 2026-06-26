@@ -1,0 +1,27 @@
+<_templates Include="models" />
+<ModelBrand
+	BreakType="SmallTree"
+	NightLightingShadowsAllowCap="true"
+	Instanced="true"
+>
+	<PhysicsModel>
+		<Body _template="MediumWeight" ModelFrame="BoneRoot" DamageMult="0">
+			<Constraint _template="MediumWeight" />
+			<Body _template="MediumWeight" ModelFrame="BonePart1" DamageMult="0">
+				<Constraint _template="MediumWeight" />
+			</Body>
+			<Body _template="MediumWeight" ModelFrame="BonePart2" DamageMult="0">
+				<Constraint _template="MediumWeight" />
+			</Body>
+			<Body _template="MediumWeight" ModelFrame="BonePart3" DamageMult="0">
+				<Constraint _template="MediumWeight" />
+			</Body>
+			<Body _template="MediumWeight" ModelFrame="BonePart4" DamageMult="0">
+				<Constraint _template="MediumWeight" />
+			</Body>
+			<Body _template="MediumWeight" ModelFrame="BonePart5" DamageMult="0">
+				<Constraint _template="MediumWeight" />
+			</Body>
+		</Body>
+	</PhysicsModel>
+</ModelBrand>

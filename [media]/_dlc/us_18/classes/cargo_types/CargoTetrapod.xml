@@ -1,0 +1,9 @@
+<CargoType>
+	<UiDesc
+		UiName="UI_CARGO_TETRAPOD_NAME"
+		UiDesc="UI_CARGO_TETRAPOD_DESC"
+		UiIcon20x20="cargoTypeTripod20"
+		UiIcon40x40="cargoTypeTripod40"
+		UiIcon100x100="cargoTypeTripod"
+	/>
+</CargoType>

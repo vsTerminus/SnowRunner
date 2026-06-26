@@ -1,6 +1,13 @@
-<ModelBrand Instanced="false">
-
-	<PhysicsModel>
-		<Body Collisions="Dynamic" />
-	</PhysicsModel>
+<ModelBrand 
+    DynamicModel="false"
+    Instanced="false"
+>
+    <PhysicsModel>
+        <Body 
+            Collisions="Dynamic" 
+            Friction="2.0"
+            IsGameAsphalt="true"
+            AngularDamping="100"
+        />
+    </PhysicsModel>
 </ModelBrand>

@@ -379,6 +379,7 @@
 	<Landmark Mesh="landmarks/mack_pinnacle_lmk" MinScale="1.5" MaxScale="2.5" />
 	<GameData
 		Country="US,NE,CE"
+		ExcludeAddons="semitrailer_gooseneck_3"
 		Price="108000"
 		UnlockByExploration="false"
 		UnlockByRank="1"

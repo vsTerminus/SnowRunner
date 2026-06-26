@@ -3,7 +3,7 @@
 	<WheelRepairsHide>
 		<Mesh Frame="wheel_1" HideThreshold="0.0" />
 	</WheelRepairsHide>
-	<TruckData WheelRepairsCapacity="1" />
+	<TruckData WheelRepairsCapacity="2" />
 	<PhysicsModel Mesh="trucks/western_star_6900xd_tuning/western_star_6900xd_spare_wheel_1">
 		<Body ImpactType="Truck" Mass="30" ModelFrame="BoneCabin_cdt">
 			<Constraint Type="Rigid" />

@@ -57,7 +57,7 @@
 		<Suspension
 			Damping="0.48"
 			BrokenSuspensionMax="0.0"
-			Height="0.30"
+			Height="0.32"
 			Strength="0.035"
 			SuspensionMin="-0.265"
 			SuspensionMax="0.0"
@@ -84,21 +84,21 @@
 		Name="khan_lo4f_suspension_crawler"
 	>
 		<Suspension
-			Damping="0.46"
-			BrokenSuspensionMax="0.1"
-			Height="0.33"
-			Strength="0.017"
-			SuspensionMin="-0.31"
-			SuspensionMax="0.12"
+			Damping="0.58"
+			BrokenSuspensionMax="-0.1"
+			Height="0.41"
+			Strength="0.013"
+			SuspensionMin="-0.36"
+			SuspensionMax="0.06"
 			WheelType="front"
 		/>
 		<Suspension
-			Damping="0.46"
-			BrokenSuspensionMax="0.1"
-			Height="0.365"
-			Strength="0.017"
-			SuspensionMin="-0.335"
-			SuspensionMax="0.12"
+			Damping="0.54"
+			BrokenSuspensionMax="-0.1"
+			Height="0.425"
+			Strength="0.015"
+			SuspensionMin="-0.35"
+			SuspensionMax="0.06"
 			WheelType="rear"
 		/>
 		<GameData

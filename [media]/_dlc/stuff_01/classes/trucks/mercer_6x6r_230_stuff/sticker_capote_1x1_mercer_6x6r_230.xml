@@ -1,0 +1,7 @@
+<_parent File="sticker_capote_1x1_ford_f750" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/mercer_6x6r_230_stuff/sticker_capote_1x1_mercer_6x6r_230"/>
+	<GameData CameraPreset="capote_sticker">
+		<InstallSocket Type="Mercer6X6R230Sticker_Capote" />
+	</GameData>
+</TruckAddon>

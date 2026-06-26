@@ -1,0 +1,265 @@
+<_templates Include="environment" />
+<PlantBrand _template="BigTree" PlantingMinSpacing="3.8">
+	<PhysicsModel>
+		<Body _template="BigTreeRoot" ModelFrame="BoneRoot" IsCapsuleCDT="false">
+			<Constraint _template="BigTreeRoot"/>
+			<Body _template="TrunkHead" ModelFrame="BoneTrunk1" IsCapsuleCDT="false">
+				<Constraint _template="TrunkHead"/>
+				<Body _template="BranchWithLeaves" ModelFrame="BoneBranch2" IsCapsuleCDT="false">
+					<Constraint Cone="1" TwistAxisLocal="(0;1;0)" Type="Ragdoll">
+						<PlaneConeMotor Damping="200" Spring="400" Type="Spring" />
+					</Constraint>
+					<Body _template="BranchWithLeaves" ModelFrame="BoneBranch23" IsCapsuleCDT="false">
+						<Constraint _template="BranchWithLeaves"/>
+						<Body _template="BranchWithLeaves" ModelFrame="BoneBranch22" IsCapsuleCDT="false">
+							<Constraint _template="BranchWithLeaves"/>
+						</Body>
+					</Body>
+					<Body _template="BranchWithLeaves" ModelFrame="BoneBranch25" IsCapsuleCDT="false">
+						<Constraint _template="BranchWithLeaves"/>
+					</Body>
+					<Body _template="BranchWithLeaves" ModelFrame="BoneBranch26" IsCapsuleCDT="false">
+						<Constraint _template="BranchWithLeaves"/>
+					</Body>
+				</Body>
+				<Body _template="BranchWithLeaves" ModelFrame="BoneBranch7" IsCapsuleCDT="false">
+					<Constraint _template="BranchWithLeaves"/>
+				</Body>
+			</Body>
+			<Body _template="BranchWithLeaves" ModelFrame="BoneBranch1" IsCapsuleCDT="false">
+				<Constraint Cone="1" TwistAxisLocal="(0;1;0)" Type="Ragdoll">
+					<PlaneConeMotor Damping="200" Spring="400" Type="Spring" />
+				</Constraint>
+				<Body _template="BranchWithLeaves" ModelFrame="BoneBranch11" IsCapsuleCDT="false">
+					<Constraint _template="BranchWithLeaves"/>
+				</Body>
+				<Body _template="BranchWithLeaves" ModelFrame="BoneBranch12" IsCapsuleCDT="false">
+					<Constraint _template="BranchWithLeaves"/>
+				</Body>
+				<Body _template="BranchWithLeaves" ModelFrame="BoneBranch14" IsCapsuleCDT="false">
+					<Constraint _template="BranchWithLeaves"/>
+					<Body _template="BranchWithLeaves" ModelFrame="BoneBranch13" IsCapsuleCDT="false">
+						<Constraint _template="BranchWithLeaves"/>
+					</Body>
+				</Body>
+				<Body _template="BranchWithLeaves" ModelFrame="BoneBranch15" IsCapsuleCDT="false">
+					<Constraint _template="BranchWithLeaves"/>
+				</Body>
+			</Body>
+			<Body _template="BranchWithLeaves" ModelFrame="BoneBranch4" IsCapsuleCDT="false">
+				<Constraint _template="BranchWithLeaves"/>
+			</Body>
+			<Body _template="BranchWithLeaves" ModelFrame="BoneBranch3" IsCapsuleCDT="false">
+				<Constraint _template="BranchWithLeaves"/>
+			</Body>
+			<Body _template="BushBranch" ModelFrame="BoneBranch5" IsCapsuleCDT="false">
+				<Constraint _template="BushBranch"/>
+			</Body>
+			<Body _template="BushBranch" ModelFrame="BoneBranch6" IsCapsuleCDT="false">
+				<Constraint _template="BushBranch"/>
+			</Body>
+			<Body _template="TrunkHead" ModelFrame="BoneTrunk2" IsCapsuleCDT="false">
+				<Constraint _template="TrunkHead"/>
+				<Body _template="BranchWithLeaves" ModelFrame="BoneBranch203" IsCapsuleCDT="false">
+					<Constraint Cone="1" TwistAxisLocal="(0;1;0)" Type="Ragdoll">
+						<PlaneConeMotor Damping="200" Spring="400" Type="Spring" />
+					</Constraint>
+					<Body _template="BranchWithLeaves" ModelFrame="BoneBranch231" IsCapsuleCDT="false">
+						<Constraint _template="BranchWithLeaves"/>
+					</Body>
+					<Body _template="BranchWithLeaves" ModelFrame="BoneBranch232" IsCapsuleCDT="false">
+						<Constraint _template="BranchWithLeaves"/>
+					</Body>
+					<Body _template="BranchWithLeaves" ModelFrame="BoneBranch234" IsCapsuleCDT="false">
+						<Constraint _template="BranchWithLeaves"/>
+					</Body>
+				</Body>
+				<Body _template="BranchWithLeaves" ModelFrame="BoneBranch206" IsCapsuleCDT="false">
+					<Constraint _template="BranchWithLeaves"/>
+				</Body>
+				<Body _template="BranchWithLeaves" ModelFrame="BoneBranch204" IsCapsuleCDT="false">
+					<Constraint Cone="1" TwistAxisLocal="(0;1;0)" Type="Ragdoll">
+						<PlaneConeMotor Damping="200" Spring="400" Type="Spring" />
+					</Constraint>
+					<Body _template="BranchWithLeaves" ModelFrame="BoneBranch242" IsCapsuleCDT="false">
+						<Constraint _template="BranchWithLeaves"/>
+						<Body _template="BranchWithLeaves" ModelFrame="BoneBranch241" IsCapsuleCDT="false">
+							<Constraint _template="BranchWithLeaves"/>
+						</Body>
+						<Body _template="BranchWithLeaves" ModelFrame="BoneBranch243" IsCapsuleCDT="false">
+							<Constraint _template="BranchWithLeaves"/>
+						</Body>
+					</Body>
+					<Body _template="BranchWithLeaves" ModelFrame="BoneBranch245" IsCapsuleCDT="false">
+						<Constraint _template="BranchWithLeaves"/>
+					</Body>
+					<Body _template="BranchWithLeaves" ModelFrame="BoneBranch246" IsCapsuleCDT="false">
+						<Constraint _template="BranchWithLeaves"/>
+					</Body>
+				</Body>
+			</Body>
+			<Body _template="BranchWithLeaves" ModelFrame="BoneBranch202" IsCapsuleCDT="false">
+				<Constraint Cone="1" TwistAxisLocal="(0;1;0)" Type="Ragdoll">
+					<PlaneConeMotor Damping="200" Spring="400" Type="Spring" />
+				</Constraint>
+			</Body>
+			<Body _template="BranchWithLeaves" ModelFrame="BoneBranch201" IsCapsuleCDT="false">
+				<Constraint Cone="1" TwistAxisLocal="(0;1;0)" Type="Ragdoll">
+					<PlaneConeMotor Damping="200" Spring="400" Type="Spring" />
+				</Constraint>
+				<Body _template="BranchWithLeaves" ModelFrame="BoneBranch211" IsCapsuleCDT="false">
+					<Constraint _template="BranchWithLeaves"/>
+				</Body>
+				<Body _template="BranchWithLeaves" ModelFrame="BoneBranch212" IsCapsuleCDT="false">
+					<Constraint _template="BranchWithLeaves"/>
+				</Body>
+				<Body _template="BranchWithLeaves" ModelFrame="BoneBranch213" IsCapsuleCDT="false">
+					<Constraint _template="BranchWithLeaves"/>
+				</Body>
+			</Body>
+			<Body _template="BushBranch" ModelFrame="BoneBranch205" IsCapsuleCDT="false">
+				<Constraint _template="BushBranch"/>
+			</Body>
+			<Body _template="TrunkHead" ModelFrame="BoneTrunk3" IsCapsuleCDT="false">
+				<Constraint _template="TrunkHead"/>
+				<Body _template="BranchWithLeaves" ModelFrame="BoneBranch308" IsCapsuleCDT="false">
+					<Constraint _template="BranchWithLeaves"/>
+					<Body _template="BranchWithLeaves" ModelFrame="BoneBranch381" IsCapsuleCDT="false">
+						<Constraint _template="BranchWithLeaves"/>
+					</Body>
+					<Body _template="BranchWithLeaves" ModelFrame="BoneBranch385" IsCapsuleCDT="false">
+						<Constraint _template="BranchWithLeaves"/>
+					</Body>
+					<Body _template="BranchWithLeaves" ModelFrame="BoneBranch382" IsCapsuleCDT="false">
+						<Constraint _template="BranchWithLeaves"/>
+					</Body>
+				</Body>
+			</Body>
+			<Body _template="BranchWithLeaves" ModelFrame="BoneBranch301" IsCapsuleCDT="false">
+				<Constraint _template="BranchWithLeaves"/>
+			</Body>
+			<Body _template="BranchWithLeaves" ModelFrame="BoneBranch302" IsCapsuleCDT="false">
+				<Constraint _template="BranchWithLeaves"/>
+			</Body>
+			<Body _template="BranchWithLeaves" ModelFrame="BoneBranch304" IsCapsuleCDT="false">
+				<Constraint Cone="1" TwistAxisLocal="(0;1;0)" Type="Ragdoll">
+					<PlaneConeMotor Damping="200" Spring="400" Type="Spring" />
+				</Constraint>
+				<Body _template="BranchWithLeaves" ModelFrame="BoneBranch303" IsCapsuleCDT="false">
+					<Constraint Cone="1" TwistAxisLocal="(0;1;0)" Type="Ragdoll">
+						<PlaneConeMotor Damping="200" Spring="400" Type="Spring" />
+					</Constraint>
+					<Body _template="BranchWithLeaves" ModelFrame="BoneBranch335" IsCapsuleCDT="false">
+						<Constraint _template="BranchWithLeaves"/>
+						<Body _template="BranchWithLeaves" ModelFrame="BoneBranch333" IsCapsuleCDT="false">
+							<Constraint _template="BranchWithLeaves"/>
+						</Body>
+					</Body>
+					<Body _template="BranchWithLeaves" ModelFrame="BoneBranch336" IsCapsuleCDT="false">
+						<Constraint _template="BranchWithLeaves"/>
+					</Body>
+				</Body>
+				<Body _template="BranchWithLeaves" ModelFrame="BoneBranch343" IsCapsuleCDT="false">
+					<Constraint _template="BranchWithLeaves"/>
+					<Body _template="BranchWithLeaves" ModelFrame="BoneBranch341" IsCapsuleCDT="false">
+						<Constraint _template="BranchWithLeaves"/>
+					</Body>
+				</Body>
+				<Body _template="BranchWithLeaves" ModelFrame="BoneBranch344" IsCapsuleCDT="false">
+					<Constraint _template="BranchWithLeaves"/>
+				</Body>
+				<Body _template="BranchWithLeaves" ModelFrame="BoneBranch345" IsCapsuleCDT="false">
+					<Constraint _template="BranchWithLeaves"/>
+				</Body>
+				<Body _template="BranchWithLeaves" ModelFrame="BoneBranch346" IsCapsuleCDT="false">
+					<Constraint _template="BranchWithLeaves"/>
+				</Body>
+			</Body>
+			<Body _template="BranchWithLeaves" ModelFrame="BoneBranch305" IsCapsuleCDT="false">
+				<Constraint _template="BranchWithLeaves"/>
+			</Body>
+			<Body _template="BranchWithLeaves" ModelFrame="BoneBranch306" IsCapsuleCDT="false">
+				<Constraint Cone="1" TwistAxisLocal="(0;1;0)" Type="Ragdoll">
+					<PlaneConeMotor Damping="200" Spring="400" Type="Spring" />
+				</Constraint>
+				<Body _template="BranchWithLeaves" ModelFrame="BoneBranch365" IsCapsuleCDT="false">
+					<Constraint _template="BranchWithLeaves"/>
+				</Body>
+				<Body _template="BranchWithLeaves" ModelFrame="BoneBranch367" IsCapsuleCDT="false">
+					<Constraint _template="BranchWithLeaves"/>
+					<Body _template="BranchWithLeaves" ModelFrame="BoneBranch362" IsCapsuleCDT="false">
+						<Constraint _template="BranchWithLeaves"/>
+					</Body>
+				</Body>
+			</Body>
+			<Body _template="BranchWithLeaves" ModelFrame="BoneBranch307" IsCapsuleCDT="false">
+				<Constraint Cone="1" TwistAxisLocal="(0;1;0)" Type="Ragdoll">
+					<PlaneConeMotor Damping="200" Spring="400" Type="Spring" />
+				</Constraint>
+				<Body _template="BranchWithLeaves" ModelFrame="BoneBranch371" IsCapsuleCDT="false">
+					<Constraint _template="BranchWithLeaves"/>
+				</Body>
+				<Body _template="BranchWithLeaves" ModelFrame="BoneBranch373" IsCapsuleCDT="false">
+					<Constraint _template="BranchWithLeaves"/>
+				</Body>
+				<Body _template="BranchWithLeaves" ModelFrame="BoneBranch374" IsCapsuleCDT="false">
+					<Constraint _template="BranchWithLeaves"/>
+				</Body>
+				<Body _template="BranchWithLeaves" ModelFrame="BoneBranch375" IsCapsuleCDT="false">
+					<Constraint _template="BranchWithLeaves"/>
+				</Body>
+			</Body>
+			<Body _template="BushBranch" ModelFrame="BoneBranch309" IsCapsuleCDT="false">
+				<Constraint _template="BushBranch"/>
+			</Body>
+			<Body _template="TrunkHead" ModelFrame="BoneTrunk4" IsCapsuleCDT="false">
+				<Constraint _template="TrunkHead"/>
+				<Body _template="BranchWithLeaves" ModelFrame="BoneBranch404" IsCapsuleCDT="false">
+					<Constraint _template="BranchWithLeaves"/>
+				</Body>
+				<Body _template="BranchWithLeaves" ModelFrame="BoneBranch405" IsCapsuleCDT="false">
+					<Constraint _template="BranchWithLeaves"/>
+				</Body>
+				<Body _template="BranchWithLeaves" ModelFrame="BoneBranch406" IsCapsuleCDT="false">
+					<Constraint _template="BranchWithLeaves"/>
+				</Body>
+				<Body _template="BranchWithLeaves" ModelFrame="BoneBranch407" IsCapsuleCDT="false">
+					<Constraint _template="BranchWithLeaves"/>
+				</Body>
+				<Body _template="BranchWithLeaves" ModelFrame="BoneBranch408" IsCapsuleCDT="false">
+					<Constraint _template="BranchWithLeaves"/>
+				</Body>
+			</Body>
+			<Body _template="BranchWithLeaves" ModelFrame="BoneBranch402" IsCapsuleCDT="false">
+				<Constraint _template="BranchWithLeaves"/>
+			</Body>
+			<Body _template="BranchWithLeaves" ModelFrame="BoneBranch403" IsCapsuleCDT="false">
+				<Constraint Cone="1" TwistAxisLocal="(0;1;0)" Type="Ragdoll">
+					<PlaneConeMotor Damping="200" Spring="400" Type="Spring" />
+				</Constraint>
+				<Body _template="BranchWithLeaves" ModelFrame="BoneBranch435" IsCapsuleCDT="false">
+					<Constraint _template="BranchWithLeaves"/>
+				</Body>
+				<Body _template="BranchWithLeaves" ModelFrame="BoneBranch436" IsCapsuleCDT="false">
+					<Constraint _template="BranchWithLeaves"/>
+				</Body>
+				<Body _template="BranchWithLeaves" ModelFrame="BoneBranch434" IsCapsuleCDT="false">
+					<Constraint _template="BranchWithLeaves"/>
+					<Body _template="BranchWithLeaves" ModelFrame="BoneBranch433" IsCapsuleCDT="false">
+						<Constraint _template="BranchWithLeaves"/>
+					</Body>
+				</Body>
+			</Body>
+			<Body _template="BranchWithLeaves" ModelFrame="BoneBranch401" IsCapsuleCDT="false">
+				<Constraint _template="BranchWithLeaves"/>
+			</Body>
+		</Body>
+	</PhysicsModel>
+
+	<Landmark Mesh="landmarks/saman_middle_02_dry_us18_lmk"/>	
+
+	<Occlusion Intensity="0.32" Size="(10.0; 10.0)" />
+	<GameData>
+		<WinchSocket Pos="(-0.022; 0.382; -0.055)" ParentFrame="BoneRoot" />
+	</GameData>
+</PlantBrand>

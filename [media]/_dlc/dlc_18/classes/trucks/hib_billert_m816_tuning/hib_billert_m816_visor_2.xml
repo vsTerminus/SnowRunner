@@ -1,0 +1,30 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/hib_billert_m816_tuning/hib_billert_m816_visor_2" />
+	<ModelAttachments>
+		<Ignition>
+			<Flare _template="IgnitionSignalWhite" AspectRatio="1" Dir="(1; 0; 0)" Size="0.22" Pos="(3.450; 2.919; -0.921)" />
+			<Flare _template="IgnitionSignalWhite" AspectRatio="1" Dir="(1; 0; 0)" Size="0.22" Pos="(3.450; 2.919; -0.900)" />
+			<Flare _template="IgnitionSignalWhite" AspectRatio="1" Dir="(1; 0; 0)" Size="0.22" Pos="(3.450; 2.919; -0.879)" />
+
+			<Flare _template="IgnitionSignalWhite" AspectRatio="1" Dir="(1; 0; 0)" Size="0.22" Pos="(3.450; 2.919; 0.921)" />
+			<Flare _template="IgnitionSignalWhite" AspectRatio="1" Dir="(1; 0; 0)" Size="0.22" Pos="(3.450; 2.919; 0.900)" />
+			<Flare _template="IgnitionSignalWhite" AspectRatio="1" Dir="(1; 0; 0)" Size="0.22" Pos="(3.450; 2.919; 0.879)" />
+		</Ignition>
+	</ModelAttachments>
+	<GameData
+		CameraPreset="roof"
+		Category="fender_front"
+		Price="1400"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SUNVISOR_NAVISTAR_DARKSLANT_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SUNVISOR_NAVISTAR_DARKSLANT_NAME"
+		/>
+		<InstallSocket Type="HIBBillertM816Visor" />
+	</GameData>
+</TruckAddon>

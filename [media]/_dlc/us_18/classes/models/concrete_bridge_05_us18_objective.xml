@@ -1,0 +1,76 @@
+<ModelBrand 
+	NightLightingShadowsAllowCap="true"
+	DynamicModel="true"
+	>
+	<Landmark Mesh="landmarks/concrete_bridge_05_us18_objective_lmk" />
+
+	<Subset Name="state_start" IsDefault="true">
+		<Mesh Name="mesh5_start" />
+		<Mesh Name="mesh5_start_lod1" />
+		<Mesh Name="mesh5_start_lod2" />
+		<Mesh Name="mesh5_start_lod3" />
+		<CdtMesh Name="cdt_mesh5_start" />
+	</Subset>
+
+	<Subset Name="state_end" >
+		<Mesh Name="mesh5_end" />
+		<Mesh Name="mesh5_end_lod1" />
+		<Mesh Name="mesh5_end_lod2" />
+		<Mesh Name="mesh5_end_lod3" />
+		<CdtMesh Name="cdt_mesh5_end" />
+		<AnimSubset Name="build_animation_0" /> 
+		<AnimTrack Name="anim_state" />
+	</Subset>
+	
+	<AnimSubset Name="build_animation_0">
+		<Mesh Name="animesh_1"/>
+		<CdtMesh Name="mesh5_end" />
+	</AnimSubset>
+	
+	<PhysicsModel>
+		<Body Collisions="Dynamic" ModelFrame="mesh5_start">
+			<Body Collisions="Dynamic" ModelFrame="mesh5_end"/>
+		</Body>
+	</PhysicsModel>
+	
+<TrackEvents TrackName="anim_state">
+	<AnimEvent Key="4">
+		<SFX
+			Name="bridge_smoke_03"
+			Dir="(0; 1; 0)"
+			Pos="(1.647; 3.47; 2.764)"
+		/>
+		<SFX
+			Name="bridge_smoke_03"
+			Dir="(0; 1; 0)"
+			Pos="(-3.821; 3.019; -0.155)"
+		/>
+		<SFX
+			Name="bridge_smoke_03"
+			Dir="(0; 1; 0)"
+			Pos="(3.669; 3.019; -0.095)"
+		/>
+		<SFX
+			Name="pipe_smoke_02"
+			Dir="(0; 1; 0)"
+			Pos="(-1.234; 3.283; -3.329)"
+		/>
+		<SFX
+			Name="pipe_smoke_02"
+			Dir="(0; 1; 0)"
+			Pos="(-1.731; 3.393; -1.227)"
+		/>
+		<SFX
+			Name="bridge_smoke_03"
+			Dir="(0; 1; 0)"
+			Pos="(1.867; 3.328; 0.796)"
+		/>
+		<SFX
+			Name="bridge_smoke_03"
+			Dir="(0; 1; 0)"
+			Pos="(-1.806; 3.328; 1.174)"
+		/>
+	</AnimEvent>
+</TrackEvents>
+
+</ModelBrand>

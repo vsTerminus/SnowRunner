@@ -2,7 +2,7 @@
 	<WheelRepairsHide>
 		<Mesh Frame="wheel" HideThreshold="0.0" />
 	</WheelRepairsHide>
-	<TruckData WheelRepairsCapacity="1" />
+	<TruckData WheelRepairsCapacity="2" />
 	<PhysicsModel Mesh="trucks/tatra_phoenix_tuning/tatra_phoenix_wheel_addon">
 		<Body ImpactType="Truck" Mass="10">
 			<Constraint Type="Rigid" />

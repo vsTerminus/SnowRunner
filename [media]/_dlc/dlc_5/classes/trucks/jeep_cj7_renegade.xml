@@ -144,7 +144,7 @@
 			Origin="(-1.745; 0.376; 0.644)"
 			Speed="2.0"
 		/>
-		<EngineSocket Default="us_scout_old_engine_0" Type="e_us_scout_old" />
+		<EngineSocket Default="engine_jeep_cj7_renegade_00" Type="e_scout_engine_jeep_cj7_renegade" />
 		<Driver AnimationSet="Scout" Pos="(-0.38; 0.737; 0.31)" SteeringWheelPos="(-0.074; 1.124; 0.369)" />
 		<Dashboard>
 			<Gauge Damping="0.99" Dir="(-1; 0; 0)" InputRange="(0;120)" InputType="speed" Mesh="trucks/arrows/jeep_cj7_renegade_arrow_01" Org="(0.216; 0.972; 0.038)" OutputAngles="(-95; 95)" />

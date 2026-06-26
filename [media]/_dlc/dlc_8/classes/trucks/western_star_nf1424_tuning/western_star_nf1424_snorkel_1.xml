@@ -6,6 +6,17 @@
 			<Constraint Type="Fixed" />
 		</Body>
 	</PhysicsModel>
+	<ModelAttachments>
+		<Ignition>
+			<Flare _template="MarkerBeacon" Color="g(255; 140; 0) x 0.3" Size="0.3" Pos="(5.839; 1.868; -1.264)" ParentFrame="BoneCabinDamper_cdt" />
+			<Flare _template="MarkerBeacon" Color="g(255; 140; 0) x 0.3" Size="0.3" Pos="(5.839; 1.767; -1.264)" ParentFrame="BoneCabinDamper_cdt" />
+			<Flare _template="MarkerBeacon" Color="g(255; 140; 0) x 0.3" Size="0.3" Pos="(5.839; 1.665; -1.264)" ParentFrame="BoneCabinDamper_cdt" />
+			
+			<Flare _template="MarkerBeacon" Color="g(255; 140; 0) x 0.3" Size="0.3" Pos="(5.839; 1.868; 1.264)" ParentFrame="BoneCabinDamper_cdt" />
+			<Flare _template="MarkerBeacon" Color="g(255; 140; 0) x 0.3" Size="0.3" Pos="(5.839; 1.767; 1.264)" ParentFrame="BoneCabinDamper_cdt" />
+			<Flare _template="MarkerBeacon" Color="g(255; 140; 0) x 0.3" Size="0.3" Pos="(5.839; 1.665; 1.264)" ParentFrame="BoneCabinDamper_cdt" />
+		</Ignition>
+	</ModelAttachments>
 	<GameData
 		CameraPreset="side_l"
 		Category="snorkel"

@@ -1,0 +1,133 @@
+<GearboxVariants>
+	<Gearbox
+		AWDConsumptionModifier="1.1"
+		CriticalDamageThreshold="0.3"
+		DamageCapacity="150"
+		DamagedConsumptionModifier="1.58"
+		FuelConsumption="2.5"
+		IdleFuelModifier="0.2"
+		Name="g_special_hib_billert_m816_default"
+		MinBreakFreq="0.0"
+		MaxBreakFreq="10.0"
+	>
+		<ReverseGear AngVel="1.6" FuelModifier="2.0" />
+		<HighGear AngVel="14.5" FuelModifier="1.32" />
+		<Gear AngVel="1.6" FuelModifier="2.0" />
+		<Gear AngVel="1.79" FuelModifier="1.89" />
+		<Gear AngVel="2.28" FuelModifier="1.77" />
+		<Gear AngVel="3.27" FuelModifier="1.65" />
+		<Gear AngVel="4.83" FuelModifier="1.51" />
+		<Gear AngVel="7.2" FuelModifier="1.36" />
+		<Gear AngVel="10.5" FuelModifier="1.2" />
+		<Gear AngVel="14.86" FuelModifier="1.0" />
+		<GameData
+			Price="2100"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_GEARBOX_SPECIAL_DEFAULT_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_GEARBOX_SPECIAL_DEFAULT_NAME"
+			/>
+			<GearboxParams
+				IsHighGearExists="true"
+				IsLowerGearExists="true"
+				IsLowerPlusGearExists="false"
+				IsManualLowGear="false"
+				IsLowerMinusGearExists="false"
+			/>
+		</GameData>
+	</Gearbox>
+
+	<Gearbox
+		AWDConsumptionModifier="1.08"
+		CriticalDamageThreshold="0.85"
+		DamageCapacity="100"
+		DamagedConsumptionModifier="1.11"
+		FuelConsumption="2.0"
+		IdleFuelModifier="0.18"
+		Name="g_special_hib_billert_m816_highway"
+		MinBreakFreq="0.0"
+		MaxBreakFreq="5.0"
+	>
+		<ReverseGear AngVel="1.35" FuelModifier="2.0" />
+		<HighGear AngVel="18.5" FuelModifier="1.3" />
+		<Gear AngVel="1.35" FuelModifier="2.0" />
+		<Gear AngVel="1.91" FuelModifier="1.91" />
+		<Gear AngVel="2.82" FuelModifier="1.81" />
+		<Gear AngVel="4.1" FuelModifier="1.71" />
+		<Gear AngVel="5.75" FuelModifier="1.61" />
+		<Gear AngVel="7.76" FuelModifier="1.49" />
+		<Gear AngVel="10.14" FuelModifier="1.38" />
+		<Gear AngVel="12.89" FuelModifier="1.25" />
+		<Gear AngVel="16.03" FuelModifier="1.1" />
+		<Gear AngVel="19.5" FuelModifier="0.92" />
+		<GameData
+			Price="2300"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_GEARBOX_SPECIAL_HIGHWAY_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_GEARBOX_SPECIAL_HIGHWAY_NAME"
+			/>
+			<GearboxParams
+				IsHighGearExists="true"
+				IsLowerGearExists="true"
+				IsLowerPlusGearExists="true"
+				IsManualLowGear="false"
+				IsLowerMinusGearExists="false"
+			/>
+		</GameData>
+	</Gearbox>
+	
+	<Gearbox
+		AWDConsumptionModifier="1.05"
+		CriticalDamageThreshold="0.5"
+		DamageCapacity="100"
+		DamagedConsumptionModifier="1.3"
+		FuelConsumption="2.25"
+		IdleFuelModifier="0.15"
+		Name="g_special_hib_billert_m816_highrange"
+		MinBreakFreq="0.0"
+		MaxBreakFreq="8.0"
+	>
+		<ReverseGear AngVel="2.1" FuelModifier="1.8" />
+		<HighGear AngVel="17.0" FuelModifier="1.25" />
+		<Gear AngVel="2.1" FuelModifier="1.8" />
+		<Gear AngVel="2.5" FuelModifier="1.73" />
+		<Gear AngVel="3.2" FuelModifier="1.65" />
+		<Gear AngVel="4.2" FuelModifier="1.58" />
+		<Gear AngVel="5.4" FuelModifier="1.51" />
+		<Gear AngVel="7.0" FuelModifier="1.43" />
+		<Gear AngVel="8.89" FuelModifier="1.35" />
+		<Gear AngVel="10.98" FuelModifier="1.27" />
+		<Gear AngVel="13.38" FuelModifier="1.18" />
+		<Gear AngVel="16.06" FuelModifier="1.1" />
+		<Gear AngVel="19.02" FuelModifier="0.96" />
+		<Gear AngVel="22.26" FuelModifier="0.83" />
+		<GameData
+			Price="2500"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_GEARBOX_HIGHRANGE_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_GEARBOX_HIGHRANGE_NAME"
+			/>
+			<GearboxParams
+				IsHighGearExists="true"
+				IsLowerGearExists="true"
+				IsLowerPlusGearExists="false"
+				IsManualLowGear="false"
+				IsLowerMinusGearExists="true"
+			/>
+		</GameData>
+	</Gearbox>
+</GearboxVariants>

@@ -2,7 +2,7 @@
 	<WheelRepairsHide>
 		<Mesh Frame="wheel" HideThreshold="0.0" />
 	</WheelRepairsHide>
-	<TruckData WheelRepairsCapacity="1" />
+	<TruckData WheelRepairsCapacity="2" />
 	<PhysicsModel Mesh="trucks/hummer_h2_tuning/hummer_h2_spare_wheel">
 		<Body Collisions="None" ImpactType="Truck" Mass="30">
 			<Constraint Type="Rigid" />

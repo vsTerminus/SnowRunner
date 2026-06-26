@@ -2,7 +2,7 @@
 	<WheelRepairsHide>
 		<Mesh Frame="wheel" HideThreshold="0.0" />
 	</WheelRepairsHide>
-	<TruckData WheelRepairsCapacity="1" />
+	<TruckData WheelRepairsCapacity="2" />
 	<PhysicsModel Mesh="trucks/kolob_74760_tuning/kolob_74760_wheel_addon">
 		<Body ImpactType="Truck" Mass="100">
 			<Constraint Type="Rigid" />

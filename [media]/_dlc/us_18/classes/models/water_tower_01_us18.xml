@@ -1,0 +1,11 @@
+<ModelBrand
+    NightLightingShadowsAllowCap="true"
+    DayShadowOffsetMult="17"
+    Instanced="true"
+    InstancedAsModel="true"
+>
+    <Landmark Mesh="landmarks/water_tower_01_us18_lmk" />
+	<PhysicsModel>
+		<Body Collisions="Dynamic" />
+	</PhysicsModel>
+</ModelBrand>

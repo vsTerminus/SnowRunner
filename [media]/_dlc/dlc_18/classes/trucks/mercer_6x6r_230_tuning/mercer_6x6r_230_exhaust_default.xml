@@ -1,0 +1,40 @@
+<TruckAddon>
+	<Exhaust
+			Dir="(-0.500; -0.612; -0.612)"
+			IsLight="false"
+			Origin="(-0.910; 0.599; -0.538)"
+			Speed="3.82"
+	/>
+	<Shakers>
+		<Shaker 
+			Frame="BoneExhaust"
+			MinAngle="(0.7; 0.7; 0.7)"
+			MaxAngle="(2; 2; 2)"
+			MaxFrequency="0.1"
+			ParentFrame="BoneExhaust"
+		/>
+	</Shakers>
+	<PhysicsModel Mesh="trucks/mercer_6x6r_230_tuning/mercer_6x6r_230_exhaust_default">
+		<Body Collisions="None" Mass="10" ModelFrame="BoneChassis_cdt">
+			<Constraint Type="Rigid" />
+			<Body Collisions="None" Mass="10" ModelFrame="BoneCabin_cdt">
+				<Constraint ExplicitParentFrame="0" Type="Fixed" />
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="exhaust"
+		Category="exhaust"
+		Price="1000"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_EXHAUST_DEFAULT_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_EXHAUST_DEFAULT_NAME"
+		/>
+		<InstallSocket Type="Mercer6X6R230Exhaust" />
+	</GameData>
+</TruckAddon>

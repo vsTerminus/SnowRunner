@@ -1,0 +1,26 @@
+<ModelBrand
+	DynamicModel="true"
+	NightLightingShadowsAllowCap="true"
+>
+	<PhysicsModel>
+        <Body Collisions="Dynamic" />
+    </PhysicsModel>
+
+	<Subset IsDefault="true" Name="state_start">
+		<Mesh Name="lighters_off2" />
+		<Mesh Name="lighters_off2_lod1" />
+		<Mesh Name="lighters_off2_lod2" />
+		<Mesh Name="lighters_off2_lod3" />
+	</Subset>
+
+	<Subset Name="state_end">
+		<Mesh Name="lighters_on2" />
+		<Mesh Name="lighters_on2_lod1" />
+		<Mesh Name="lighters_on2_lod2" />
+		<Mesh Name="lighters_on2_lod3" />
+		<OnSubsetActivateEvent>
+			<Sound Name="actors/actor_mexico_techno_music/actor_mexico_techno_music" RangeMin="40" RangeMax="70" Volume="1.5" IsLoop="true"/>
+		</OnSubsetActivateEvent>
+		<AnimTrackSubset Name="anim_loop" />
+    </Subset>
+</ModelBrand>

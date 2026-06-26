@@ -1,13 +1,19 @@
 <_templates Include="trucks" />
-<_parent File="western_star_nf1430_transferbox_default" />
 <TruckAddon>
-	<TruckData
-		_noinherit="true"
-		AllWheelDriveInstalled="true"
-	>
-		<Shafts _template="AllWheelsTransferbox" />
+	<TruckData AllWheelDriveInstalled="true">
+		<Shafts>
+			<Shaft PointAConnectedToAddon="true" PointBConnectedToAddon="true" SocketPointA="ShaftEngine" SocketPointB="ShaftEngineBox" />
+			<Shaft PointAConnectedToAddon="true" PointBConnectedToAddon="true" SocketPointA="ShaftBoxAxle1" SocketPointB="ShaftAxle1" />
+			<Shaft PointAConnectedToAddon="true" PointBConnectedToAddon="false" SocketPointA="ShaftBoxBeam1F" SocketPointB="ShaftBeam1F" />
+		</Shafts>
 	</TruckData>
-	<PhysicsModel _template="Invisible" />
+	
+	<PhysicsModel Mesh="trucks/western_star_nf1430_tuning/western_star_nf1430_transferbox_allwheels">
+		<Body ImpactType="Truck" Mass="40" ModelFrame="BoneAddon_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	
 	<GameData
 		CameraPreset="hoods"
 		Category="awd"
@@ -16,11 +22,17 @@
 		UnlockByRank="1"
 	>
 		<UiDesc
-			_noinherit="true"
 			UiDesc="UI_UPGRADE_TRANSFERBOX_AWDSWITCHABLE_DESC"
 			UiIcon30x30=""
 			UiIcon40x40=""
 			UiName="UI_UPGRADE_TRANSFERBOX_AWDSWITCHABLE_NAME"
 		/>
+		<InstallSocket Type="WSnf1430TransferBox" />
 	</GameData>
+	<ExplicitParents>
+		<ExplicitParent ExplicitParentFrame="0" Frame="BoneAxle1" />
+		<ExplicitParent ExplicitParentFrame="1" Frame="BoneRackL" />
+		<ExplicitParent ExplicitParentFrame="2" Frame="BoneRackR" />
+		<ExplicitParent ExplicitParentFrame="3" Frame="BoneRack" />
+	</ExplicitParents>
 </TruckAddon>

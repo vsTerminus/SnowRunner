@@ -20,7 +20,7 @@
 	<TruckData>
 		<Damage>
 			<Multiplier Multiplier="0.65" Type="Engine" />
-			<Multiplier Multiplier="0.75" Type="Gearox" />
+			<Multiplier Multiplier="0.75" Type="Gearbox" />
 			<Multiplier Multiplier="0.85" Type="Suspension" />
 		</Damage>
 	</TruckData>

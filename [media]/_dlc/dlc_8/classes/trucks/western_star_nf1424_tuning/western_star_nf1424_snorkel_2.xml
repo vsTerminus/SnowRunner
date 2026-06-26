@@ -7,6 +7,18 @@
 			<Constraint Type="Fixed" />
 		</Body>
 	</PhysicsModel>
+	<ModelAttachments>
+		<Ignition>
+			<Flare _template="MarkerBeacon" Color="g(255; 140; 0) x 0.3" Size="0.2" Pos="(5.893; 1.885; -1.273)" ParentFrame="BoneCabinDamper_cdt" />
+			<Flare _template="MarkerBeacon" Color="g(255; 140; 0) x 0.3" Size="0.2" Pos="(5.893; 1.823; -1.273)" ParentFrame="BoneCabinDamper_cdt" />
+			<Flare _template="MarkerBeacon" Color="g(255; 140; 0) x 0.3" Size="0.2" Pos="(5.893; 1.761; -1.273)" ParentFrame="BoneCabinDamper_cdt" />
+			<Flare _template="MarkerBeacon" Color="g(255; 140; 0) x 0.3" Size="0.2" Pos="(5.893; 1.699; -1.273)" ParentFrame="BoneCabinDamper_cdt" />
+			<Flare _template="MarkerBeacon" Color="g(255; 140; 0) x 0.3" Size="0.2" Pos="(5.893; 1.885; 1.273)" ParentFrame="BoneCabinDamper_cdt" />
+			<Flare _template="MarkerBeacon" Color="g(255; 140; 0) x 0.3" Size="0.2" Pos="(5.893; 1.823; 1.273)" ParentFrame="BoneCabinDamper_cdt" />
+			<Flare _template="MarkerBeacon" Color="g(255; 140; 0) x 0.3" Size="0.2" Pos="(5.893; 1.761; 1.273)" ParentFrame="BoneCabinDamper_cdt" />
+			<Flare _template="MarkerBeacon" Color="g(255; 140; 0) x 0.3" Size="0.2" Pos="(5.893; 1.699; 1.273)" ParentFrame="BoneCabinDamper_cdt" />
+		</Ignition>
+	</ModelAttachments>
 	<GameData
 		Price="4200"
 		UnlockByExploration="false"

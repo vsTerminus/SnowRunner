@@ -3,7 +3,7 @@
 	<WheelRepairsHide>
 		<Mesh Frame="spare_wheel" HideThreshold="0.0" />
 	</WheelRepairsHide>
-	<TruckData WheelRepairsCapacity="1" />
+	<TruckData WheelRepairsCapacity="2" />
 	<PhysicsModel Mesh="trucks/kenworth_c500_tuning/kenworth_c500_spare_wheel_01">
 		<Body Mass="15" ModelFrame="BoneWheel1_cdt" ImpactType="Truck">
 			<Constraint Type="Rigid" />

@@ -1,0 +1,27 @@
+<ModelBrand
+	NightLightingShadowsAllowCap="true"
+	Instanced="true"
+>
+	<PhysicsModel>
+		<Body Collisions="Dynamic" ModelFrame="BoneRoot" Mass="100" NoSoftContacts="true">
+			<Constraint Type="Fixed" BreakOffThreshold="100"/>
+			<Body Collisions="Dynamic" ModelFrame="Bone.004" Mass="100" NoSoftContacts="true">
+				<Constraint
+					Cone="15"
+					TwistAxisLocal="(0; 1; 0)"
+					Type="Ragdoll"
+					BreakOffThreshold="300"
+				/>
+					<Body Collisions="Dynamic" ModelFrame="Bone.003" Mass="100" NoSoftContacts="true">
+						<Constraint Type="Fixed" BreakOffThreshold="400"/>
+					</Body>
+					<Body ModelFrame="Bone.005" Mass="100" NoSoftContacts="true">
+						<Constraint Type="Fixed" BreakOffThreshold="100"/>
+							<Body ModelFrame="Bone.001" Mass="100" NoSoftContacts="true">
+								<Constraint Type="Fixed" BreakOffThreshold="500"/>
+							</Body>
+					</Body>
+			</Body>
+		</Body>
+	</PhysicsModel>
+</ModelBrand>

@@ -1,12 +1,10 @@
 <_templates Include="trucks" />
 <TruckAddon>
-	<TruckData FuelCapacity="40" RepairsCapacity="100">
-		<LimitedFluid Center="(-0.55; 1.609; 0.24)" SizeX="0.308" SizeY="0.121" SizeZ="0.352" Type="Box" />
-		<LimitedFluid Center="(-0.55; 1.609; -0.158)" SizeX="0.308" SizeY="0.121" SizeZ="0.352" Type="Box" />
+	<TruckData FuelCapacity="60">
+		<LimitedFluid Center="(-0.365, 1.618, 0.293)" SizeX="0.368" SizeY="0.129" SizeZ="0.308" Type="Box" ParentFrame="BoneFuel_cdt" />
+		<LimitedFluid Center="(-0.102, 1.618, -0.137)" SizeX="0.308" SizeY="0.129" SizeZ="0.368" Type="Box" ParentFrame="BoneFuel_cdt" />
+		<LimitedFluid Center="(-0.487, 1.618, -0.169)" SizeX="0.308" SizeY="0.129" SizeZ="0.368" Type="Box" ParentFrame="BoneFuel_cdt" />
 	</TruckData>
-	<RepairsHide>
-		<Mesh Frame="repair" HideThreshold="0.0" />
-	</RepairsHide>
 	<PhysicsModel Mesh="trucks/gor_by4_tuning/gor_by4_roofrack">
 		<Body ImpactType="Truck" Mass="100">
 			<Constraint Type="Rigid" />
@@ -16,26 +14,12 @@
 				ModelFrame="BoneFuel_cdt"
 			>
 				<Constraint
-					LinearLimitsX="(0; 0)"
-					LinearLimitsY="(0; 0.03)"
-					LinearLimitsZ="(0; 0)"
+					LinearLimitsX="(-0.01; 0.01)"
+					LinearLimitsY="(0; 0)"
+					LinearLimitsZ="(-0.01; 0.01)"
 					Type="Fixed"
 				>
-					<Motor Damping="250" Spring="0.25" Type="Spring" />
-				</Constraint>
-			</Body>
-			<Body
-				Collisions="None"
-				Mass="50"
-				ModelFrame="BoneRepair_cdt"
-			>
-				<Constraint
-					LinearLimitsX="(0; 0)"
-					LinearLimitsY="(0; 0.03)"
-					LinearLimitsZ="(0; 0.01)"
-					Type="Fixed"
-				>
-					<Motor Damping="250" Spring="0.25" Type="Spring" />
+					<Motor Damping="1000" Spring="1700" Type="Spring" />
 				</Constraint>
 			</Body>
 		</Body>

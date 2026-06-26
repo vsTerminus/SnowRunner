@@ -3,7 +3,7 @@
 	<WheelRepairsHide>
 		<Mesh Frame="wheel" HideThreshold="0.0" />
 	</WheelRepairsHide>
-	<TruckData WheelRepairsCapacity="1" />
+	<TruckData WheelRepairsCapacity="2" />
 	<Rotator EngineTorqueFactor="0" Frame="BoneRotatorL" RotationSpeed="4" />
 	<Rotator EngineTorqueFactor="0" Frame="BoneRotatorR" RotationSpeed="4.1" />
 	<PhysicsModel Mesh="trucks/tayga_6455b_tuning/tayga_6455b_roofrack">

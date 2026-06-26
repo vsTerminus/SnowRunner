@@ -9,20 +9,20 @@
 	>
 		<Suspension
 			WheelType="front"
-			Damping=".75"
+			Damping=".95"
 			Height="0.145"
-			Strength="0.095" 
+			Strength="0.085" 
 			BrokenSuspensionMax="0.0" 
-			SuspensionMin="-0.3"
+			SuspensionMin="-0.25"
 			SuspensionMax="0.0"
 		/>
 		<Suspension 
 			WheelType="rear"
-			Damping=".238"
-			Height="0.22"
-			Strength="0.024"
+			Damping=".4"
+			Height="0.055"
+			Strength="0.09"
 			BrokenSuspensionMax="0.0"
-			SuspensionMin="-0.3"
+			SuspensionMin="-0.18"
 			SuspensionMax="0.0"
 		/>
 		<GameData
@@ -38,6 +38,7 @@
 			/>
 		</GameData>
 	</SuspensionSet>
+	
 	<SuspensionSet
 		_template="High"
 		BrokenWheelDamageMultiplier="2"
@@ -47,20 +48,20 @@
 	>
 		<Suspension
 			WheelType="front"
-			Damping=".78"
-			Height="0.22"
-			Strength="0.115" 
+			Damping=".95"
+			Height="0.26"
+			Strength="0.1" 
 			BrokenSuspensionMax="0.0" 
-			SuspensionMin="-0.38"
+			SuspensionMin="-0.31"
 			SuspensionMax="0.0"
 		/>
 		<Suspension 
 			WheelType="rear"
-			Damping=".198"
-			Height="0.225"
-			Strength="0.045"
+			Damping=".55"
+			Height="0.165"
+			Strength="0.135"
 			BrokenSuspensionMax="0.0"
-			SuspensionMin="-0.3"
+			SuspensionMin="-0.21"
 			SuspensionMax="0.0"
 		/>
 		<GameData
@@ -76,6 +77,7 @@
 			/>
 		</GameData>
 	</SuspensionSet>
+	
 	<SuspensionSet
 		UiName="UI_SUSPENSION_CRAWLER_NAME"
 		BrokenWheelDamageMultiplier="2"
@@ -85,21 +87,21 @@
 	>
 		<Suspension
 			WheelType="front"
-			Damping=".7"
-			Height="0.38"
-			Strength="0.040" 
-			BrokenSuspensionMax="0.08" 
-			SuspensionMin="-0.55"
-			SuspensionMax="0.08"
+			Damping=".8"
+			Height="0.35"
+			Strength="0.056" 
+			BrokenSuspensionMax="0.1" 
+			SuspensionMin="-0.45"
+			SuspensionMax="0.1"
 		/>
 		<Suspension 
 			WheelType="rear"
-			Damping=".2"
-			Height="0.35"
-			Strength="0.018"
-			BrokenSuspensionMax="0.08"
-			SuspensionMin="-0.39"
-			SuspensionMax="0.08"
+			Damping=".48"
+			Height="0.215"
+			Strength="0.05"
+			BrokenSuspensionMax="0.15"
+			SuspensionMin="-0.3"
+			SuspensionMax="0.15"
 		/>
 		<GameData
 			Price="7000"

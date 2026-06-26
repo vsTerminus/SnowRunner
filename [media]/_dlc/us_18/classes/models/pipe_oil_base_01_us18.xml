@@ -1,0 +1,14 @@
+<ModelBrand
+	Instanced="true"
+	InstancedAsModel="true"
+	NightLightingShadowsAllowCap="true"
+>
+	<PhysicsModel>
+		<Body Collisions="Dynamic" />
+	</PhysicsModel>
+	<Landmark Mesh="landmarks/pipe_oil_base_01_us18_lmk" />
+	<GameData>
+		<WinchSocket Pos="(2.5; -1.8; 0)" />
+		<WinchSocket Pos="(-2.5; -1.8; 0)" />
+	</GameData>
+</ModelBrand>
