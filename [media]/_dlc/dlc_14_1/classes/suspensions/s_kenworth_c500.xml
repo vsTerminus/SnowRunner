@@ -8,17 +8,17 @@
 		Name="kenworth_c500_suspension_default"
 	>
 		<Suspension
-			Damping="0.5" 
+			Damping="0.15" 
 			Height="0.1" 
-			Strength="0.15" 
+			Strength="0.12" 
 			WheelType="front" 
 			BrokenSuspensionMax="3.5" 
 			SuspensionMin="-0.25"
 		/>
 		<Suspension
-			Damping="0.7"
+			Damping="0.6"
 			Height="0.0"
-			Strength="1.0"
+			Strength="0.015"
 			WheelType="rear"
 			BrokenSuspensionMax="0"
 			SuspensionMin="0"
@@ -45,19 +45,19 @@
 		Name="kenworth_c500_suspension_high"
 	>
 		<Suspension
-			Damping="0.5"
+			Damping="0.15"
 			Height="0.3"
-			Strength="0.15"
+			Strength="0.12"
 			WheelType="front"
 			BrokenSuspensionMax="0.2"
 			SuspensionMin="-0.3"
 		/>
 		<Suspension
-			Damping="0.7"
+			Damping="0.6"
 			Height="0.25"
-			Strength="0.9"
+			Strength="0.015"
 			WheelType="rear"
-			BrokenSuspensionMax="0"
+			BrokenSuspensionMax="0.15"
 			SuspensionMin="0"
 			SuspensionMax="0"
 		/>
