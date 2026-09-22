@@ -573,7 +573,7 @@
 			</Socket>
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="ZikzLogLift" NamesBlock="FrameAddonMaintainer, FrameAddonLogMediumMastodon, Plad450Sideboard, Plad450SpareWheel, Plad450RearFender, FrameAddon" Offset="(1.7; 0.05; 0)" >
+			<Socket Names="ZikzLogLift" NamesBlock="FrameAddonMaintainer, FrameAddonLogMediumMastodon, Plad450Sideboard, Plad450SpareWheel, Plad450RearFender, FrameAddon, FrameAddon3, FrameAddonSideboard3" Offset="(1.7; 0.05; 0)" >
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0)" />
 				<ExtraParent Frame="BoneCabin_cdt" Offset="(0; 0; 0)" />
 			</Socket>
@@ -585,6 +585,14 @@
 			</Socket>
 			<Socket Names="FrameAddonLogMediumMastodon" NamesBlock="Plad450Saddle, Plad450Sideboard, Plad450SpareWheel, Plad450RearFender" Offset="(-2; 1.82; 0)" ParentFrame="BoneChassis_cdt" />
 			<Socket Names="FrameAddon" Offset="(-3; 1.42; 0)" NamesBlock="Plad450Sideboard, Plad450Saddle, Plad450RearFender" ParentFrame="BoneChassis_cdt">
+				<AddonsShift Offset="(-0.3; 0; 0)" Types="Plad450SpareWheel" />
+				<AddonsShift Offset="(-0.1; 0; 0)" Types="PladMinicrane" />
+			</Socket>
+			<Socket Names="FrameAddon3" Offset="(-3.456; 1.42; 0)" NamesBlock="Plad450Sideboard, Plad450SpareWheel, Plad450Saddle, Plad450RearFender" ParentFrame="BoneChassis_cdt">
+				<AddonsShift Offset="(-0.3; 0; 0)" Types="Plad450SpareWheel" />
+				<AddonsShift Offset="(-0.1; 0; 0)" Types="PladMinicrane" />
+			</Socket>
+			<Socket Names="FrameAddonSideboard3" Offset="(-3.706; 1.42; 0)" NamesBlock="Plad450Sideboard, Plad450SpareWheel, Plad450Saddle, Plad450RearFender" NamesBlock="Plad450Sideboard, Plad450Saddle, Plad450RearFender" ParentFrame="BoneChassis_cdt">
 				<AddonsShift Offset="(-0.3; 0; 0)" Types="Plad450SpareWheel" />
 				<AddonsShift Offset="(-0.1; 0; 0)" Types="PladMinicrane" />
 			</Socket>
