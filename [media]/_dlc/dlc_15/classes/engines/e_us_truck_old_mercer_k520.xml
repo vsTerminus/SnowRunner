@@ -7,7 +7,7 @@
 		DamageCapacity="180"
 		DamagedConsumptionModifier="1.8"
 		EngineResponsiveness="0.035"
-		FuelConsumption="6.0"
+		FuelConsumption="4.0"
 		Name="us_truck_old_mercer_k520"
 		Torque="150000"
 		DamagedMinTorqueMultiplier="1.0"
