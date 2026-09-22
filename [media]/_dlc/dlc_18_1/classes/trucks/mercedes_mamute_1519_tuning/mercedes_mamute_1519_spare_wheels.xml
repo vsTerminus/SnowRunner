@@ -1,0 +1,83 @@
+<_templates Include="trucks">
+	<Body>
+		<Wheel
+			CenterOfMassOffset="(0; 0; 0)"
+			Collisions="None"
+			Mass="50"
+		>
+			<Constraint
+				AxisLocal="(1; 0; 0)"
+				Type="Hinge"
+				MinLimit="-1.5"
+				MaxLimit="1.5"
+			>
+				<Motor Damping="25" Spring="500" Type="Spring" />
+			</Constraint>
+		</Wheel>
+		<Fuel
+			CenterOfMassOffset="(0; 0; 0)"
+			Collisions="None"
+			Mass="72"
+		>
+			<Constraint
+				AxisLocal="(0; 0; 1)"
+				Type="Hinge"
+				MinLimit="-1.5"
+				MaxLimit="1.5"
+			>
+				<Motor Damping="35" Spring="150" Type="Spring" />
+			</Constraint>
+		</Fuel>
+	</Body>
+</_templates>
+
+<TruckAddon>
+	<TruckData WheelRepairsCapacity="4" FuelCapacity="160">
+		<LimitedFluid Center="(1.272; 3.279; -0.944)" SizeX="0.146" SizeY="0.325" SizeZ="0.445" Type="Box" ParentFrame="BoneFuelRow2_cdt"/>
+		<LimitedFluid Center="(1.054; 3.279; -0.942)" SizeX="0.146" SizeY="0.325" SizeZ="0.445" Type="Box" ParentFrame="BoneFuelRow1_cdt"/>
+		
+		<LimitedFluid Center="(1.269; 3.279; -0.253)" SizeX="0.146" SizeY="0.325" SizeZ="0.445" Type="Box" ParentFrame="BoneFuelRow2_cdt"/>
+		<LimitedFluid Center="(1.055; 3.279; -0.254)" SizeX="0.146" SizeY="0.325" SizeZ="0.445" Type="Box" ParentFrame="BoneFuelRow1_cdt"/>
+
+		<LimitedFluid Center="(1.269; 3.279; 0.335)" SizeX="0.146" SizeY="0.325" SizeZ="0.445" Type="Box" ParentFrame="BoneFuelRow2_cdt"/>
+		<LimitedFluid Center="(1.054; 3.279; 0.216)" SizeX="0.146" SizeY="0.325" SizeZ="0.445" Type="Box" ParentFrame="BoneFuelRow1_cdt"/>
+
+		<LimitedFluid Center="(1.272; 3.279; 0.813)" SizeX="0.146" SizeY="0.325" SizeZ="0.445" Type="Box" ParentFrame="BoneFuelRow2_cdt"/>
+		<LimitedFluid Center="(1.058; 3.279; 0.929)" SizeX="0.146" SizeY="0.325" SizeZ="0.445" Type="Box" ParentFrame="BoneFuelRow1_cdt"/>
+	</TruckData>
+	<WheelRepairsHide>
+		<Mesh Frame="spare_wheel_1" HideThreshold="0.0" />
+		<Mesh Frame="spare_wheel_2" HideThreshold="0.5" />
+	</WheelRepairsHide>
+	<FuelHide>
+		<Mesh Frame="fuel_1" HideThreshold="0.25" />
+		<Mesh Frame="fuel_2" HideThreshold="0.0" />
+		<Mesh Frame="fuel_3" HideThreshold="0.75" />
+		<Mesh Frame="fuel_4" HideThreshold="0.5" />
+	</FuelHide>
+	<PhysicsModel Mesh="trucks/mercedes_mamute_1519_tuning/mercedes_mamute_1519_spare_wheels">
+		<Body ImpactType="Truck" Mass="20" ModelFrame="BoneCabinTwist_cdt">
+			<Constraint Type="Rigid" />
+			<Body _template="Wheel" ModelFrame="BoneWheelL_cdt" />
+			<Body _template="Wheel" ModelFrame="BoneWheelR_cdt" />
+			
+			<Body _template="Fuel" ModelFrame="BoneFuelRow1_cdt" />
+			<Body _template="Fuel" ModelFrame="BoneFuelRow2_cdt" />
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="spare_wheel"
+		Category="wheel_addon"
+		Price="3000"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SPARE_WHEELS_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SPARE_WHEELS_NAME"
+		/>
+		<InstallSocket Type="MercedesMamute1519Sparewheel02" />
+	</GameData>
+</TruckAddon>

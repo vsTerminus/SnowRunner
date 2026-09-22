@@ -1,0 +1,12 @@
+<_parent File="stuff_hood_dragon_ford_f750" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/mercedes_mamute_1519_stuff/stuff_hood_dragon_mercedes_mamute_1519"/>
+	<GameData
+		Price="1200"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+		CameraPreset="hood_figure"
+	>
+		<InstallSocket Type="StuffHoodMercedesMamute1519" />
+	</GameData>
+</TruckAddon>

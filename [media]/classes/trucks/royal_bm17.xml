@@ -402,6 +402,7 @@
 		<CustomizationCameras>
 			<CameraPos FOV="32.0" Interior="true" Name="roof_sticker" InterestPosition="(3.589; 0.674; -0.706)" Position="(6.453; 5.829; -0.285)" />
 			<CameraPos FOV="32.0" Interior="true" Name="sticker_1" InterestPosition="(6.609; 1.277; 1.412)" Position="(4.474; 2.728; -0.212)" />
+			<CameraPos FOV="32.0" Name="loglift_front" InterestPosition="(3.492; 2.226; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-5.259; 3.914; 6.213)" />
 			<CameraPos FOV="32.0" Name="addon_1" InterestPosition="(-0.508; 2.026; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-9.259; 3.714; 6.213)" />
 			<CameraPos FOV="32.0" Name="addon_2" InterestPosition="(3.496; 0.486; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-0.029; 4.180; 4.334)" />
 			<CameraPos FOV="32.0" Interior="true" Name="mirror_mount" InterestPosition="(6.438; 2.587; 1.715)" Position="(4.104; 2.885; -0.632)" />
@@ -428,55 +429,55 @@
 		<CraneSocket Pos="(3.792; 1.184; 0.641)" ParentFrame="BoneCabin_cdt" />
 		<CraneSocket Pos="(3.792; 1.184; -0.641)" ParentFrame="BoneCabin_cdt" />
 		<AddonSockets>
-			<Socket Names="RoyalBm17SpareWheel" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt">
+			<Socket Names="RoyalBm17SpareWheel" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt">
 				<ExtraParent Frame="BoneCabin_cdt" />
 			</Socket>
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="LargeSemitrailer" Offset="(-1.76; 1.84; 0)" />
-			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-1.76; 1.84; 0)" />
-			<Socket Names="Semitrailer, SemitrailerOiltank, SemitrailerFoldableLog" Offset="(-2.46; 1.67; 0)" >
+			<Socket Names="LargeSemitrailer" NamesBlock="LogLift" Offset="(-1.76; 1.84; 0)" />
+			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" NamesBlock="LogLift" Offset="(-1.76; 1.84; 0)" />
+			<Socket Names="Semitrailer, SemitrailerOiltank, SemitrailerFoldableLog" NamesBlock="LogLift" Offset="(-2.46; 1.67; 0)" >
 				<AddonsShift Offset="(-0.787; 0.03; 0)" Types="SaddleMotorized" />
 			</Socket>
 			<Socket Names="Trailer, LogTrailer" Offset="(-4.638; 0.932; 0)">
 				<AddonsShift Offset="(0; 0; 0)" TrailerNamesBlock="Trailer, LogTrailer" Types="MinicraneUS, FrameAddon" />
 			</Socket>
 		</AddonSockets>
+		
 		<AddonSockets>
-			<Socket Names="LogLift" Offset="(-0.693; 1.345; 0)" NamesBlock="MetalDetector, MinicraneUS" />
-			<Socket Names="BunkLog" Offset="(-6.611; 1.344; 0)" NamesBlock="MinicraneUS, MetalDetector" />
-			<Socket Names="FrameAddonLogShort" NamesBlock="MinicraneUS, MetalDetector, RoyalBM17CabinProtector" Offset="(-2.18; 1.34; 0)" />
-			<Socket Names="FrameAddonLogMedium" NamesBlock="MinicraneUS, MetalDetector, RoyalBM17CabinProtector, Trailer, LogTrailer" Offset="(-2.18; 1.34; 0)" />
-			<Socket Names="SaddleLowRoyalBm17" Offset="(-3.095; 1.34; 0)">
+			<Socket Names="BunkLog" Offset="(-6.611; 1.344; 0)" NamesBlock="LogLift, MinicraneUS, MetalDetector" />
+			<Socket Names="FrameAddonLogShort" NamesBlock="LogLift, MinicraneUS, MetalDetector, RoyalBM17CabinProtector" Offset="(-2.18; 1.34; 0)" />
+			<Socket Names="FrameAddonLogMedium" NamesBlock="LogLift, MinicraneUS, MetalDetector, RoyalBM17CabinProtector, Trailer, LogTrailer" Offset="(-2.18; 1.34; 0)" />
+			<Socket Names="SaddleLowRoyalBm17" NamesBlock="LogLift" Offset="(-3.095; 1.34; 0)">
 				<ExtraParent Frame="BoneCabin_cdt" />
 			</Socket>
-			<Socket Names="SaddleHighRoyalBm17" Offset="(-2.365; 1.34; 0)">
+			<Socket Names="SaddleHighRoyalBm17" NamesBlock="LogLift" Offset="(-2.365; 1.34; 0)">
 				<ExtraParent Frame="BoneCabin_cdt" />
 				<AddonsShift Offset="(0; 0; 0)" TrailerNamesBlock="SaddleHighRoyalBm17" Types="MinicraneUS, RoyalBM17CabinProtector" />
 			</Socket>
-			<Socket Names="FrameAddonTow" Offset="(-2.9; 1.339; 0)" ParentFrame="BoneChassis_cdt"  NamesBlock="MinicraneUS, MetalDetector, Trailer, LogTrailer" >
+			<Socket Names="FrameAddonTow" Offset="(-2.9; 1.339; 0)" ParentFrame="BoneChassis_cdt"  NamesBlock="LogLift, MinicraneUS, MetalDetector, Trailer, LogTrailer" >
 				<AddonsShift Offset="(-0.5; 0; 0)" Types="RoyalBM17CabinProtector" />
 			</Socket>						
-			<Socket Names="FrameAddon" Offset="(-2.218; 1.339; 0)" ParentFrame="BoneChassis_cdt">
+			<Socket Names="FrameAddon" NamesBlock="LogLift" Offset="(-2.218; 1.339; 0)" ParentFrame="BoneChassis_cdt">
 				<AddonsShift Offset="(-1.21; 0; 0)" Types="MinicraneUS" />
 				<AddonsShift Offset="(-0.545; 0; 0)" Types="RoyalBM17CabinProtector" />
 				<AddonsShift Offset="(0; 0; 0)" TrailerNamesBlock="FrameAddon" Types="MinicraneUS, RoyalBM17CabinProtector" />
 			</Socket>
-			<Socket Names="FrameAddonKung" Offset="(-2.84; 1.413; 0)" ParentFrame="BoneChassis_cdt">
+			<Socket Names="FrameAddonKung" NamesBlock="LogLift" Offset="(-2.84; 1.413; 0)" ParentFrame="BoneChassis_cdt">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.08)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.08)" />
 			</Socket>
-			<Socket Names="FrameAddonTank" Offset="(-3.165; 1.339; 0)" ParentFrame="BoneChassis_cdt">
+			<Socket Names="FrameAddonTank" NamesBlock="LogLift" Offset="(-3.165; 1.339; 0)" ParentFrame="BoneChassis_cdt">
 				<AddonsShift Offset="(-0.588; 0; 0)" Types="RoyalBM17CabinProtector" />
 			</Socket>
-			<Socket Names="FrameAddonMaintainer" NamesBlock="MetalDetector, Trailer, LogTrailer, RoyalBM17CabinProtector" Offset="(-2.85; 0.307; 0)" ParentFrame="BoneChassis_cdt" />
-			<Socket Names="FrameAddonSeismicVibrator" NamesBlock="MinicraneUS, Trailer, LogTrailer, RoyalBM17CabinProtector" Offset="(-0.08; 1.341; 0)" ParentFrame="BoneChassis_cdt" />
-			<Socket Names="BigCraneUs" NamesBlock="MetalDetector, MinicraneUS, Semitrailer, RoyalBM17CabinProtector" Offset="(-2.891; 1.442; 0)">
+			<Socket Names="FrameAddonMaintainer" NamesBlock="LogLift, MetalDetector, Trailer, LogTrailer, RoyalBM17CabinProtector" Offset="(-2.85; 0.307; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="FrameAddonSeismicVibrator" NamesBlock="LogLift, MinicraneUS, Trailer, LogTrailer, RoyalBM17CabinProtector" Offset="(-0.08; 1.341; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="BigCraneUs" NamesBlock="LogLift, MetalDetector, MinicraneUS, Semitrailer, RoyalBM17CabinProtector" Offset="(-2.891; 1.442; 0)">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.1; 0)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.1; 0)" />
 			</Socket>
 			
-			<Socket Names="SaddleMotorized" NamesBlock="MetalDetector, LogLift, MinicraneUS, RoyalBM17CabinProtector" Offset="(-1.900; 0.074; 0.000)" ParentFrame="BoneChassis_cdt" >
+			<Socket Names="SaddleMotorized" NamesBlock="LogLiftKenworth, MetalDetector, LogLift, MinicraneUS, RoyalBM17CabinProtector" Offset="(-1.900; 0.074; 0.000)" ParentFrame="BoneChassis_cdt" >
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.000; 0.000; 0.070)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.000; 0.000; -0.070)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.900; 0.000; 0.070)" />
@@ -486,105 +487,128 @@
 			
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="MetalDetector" NamesBlock="SaddleLowRoyalBm17, FrameAddonKung, FrameAddonTank, FrameAddonSeismicVibrator, FrameAddon, SaddleHighRoyalBm17, RoyalBm17SpareWheel" Offset="(-1.256; 0.287; 0)" ParentFrame="BoneChassis_cdt" />
-			<Socket Names="MinicraneUS" NamesBlock="SemitrailerOiltank, LargeSemitrailerOiltank, FrameAddonKung, FrameAddonTank, FrameAddonMaintainer" Offset="(-0.48; 1.343; 0)">
+			<Socket Names="MetalDetector" NamesBlock="LogLift, SaddleLowRoyalBm17, FrameAddonKung, FrameAddonTank, FrameAddonSeismicVibrator, FrameAddon, SaddleHighRoyalBm17, RoyalBm17SpareWheel" Offset="(-1.256; 0.287; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="MinicraneUS" NamesBlock="LogLift, SemitrailerOiltank, LargeSemitrailerOiltank, FrameAddonKung, FrameAddonTank, FrameAddonMaintainer" Offset="(-0.48; 1.343; 0)">
 				<AddonsShift Offset="(-0.588; 0; 0)" Types="RoyalBM17CabinProtector" />
+			</Socket>
+			<Socket
+				Names="LogLiftKenworth"
+				NamesBlock="FrameAddonLogShort,
+							FrameAddonLogMedium,
+							SaddleLowRoyalBm17,
+							SaddleHighRoyalBm17,
+							FrameAddon,
+							FrameAddonTow,
+							FrameAddonKung,
+							FrameAddonTank,
+							BigCraneUs,
+							LogLift,
+							FrameAddonMaintainer,
+							FrameAddonSeismicVibrator,
+							SaddleMotorized,
+							RoyalBM17CabinProtector"
+				Offset="(-1.04; 1.528; 0)"
+			>
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.07)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.07)" />
 			</Socket>
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="RoyalBM17Bumper" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="RoyalBM17Bumper" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="RoyalBM17Horn" NamesBlock="RoyalBM17Horn2, RoyalBM17SpotLight2" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="RoyalBM17Horn" NamesBlock="LogLift, RoyalBM17Horn2, RoyalBM17SpotLight2" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="RoyalBM17Horn2" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="RoyalBM17Horn2" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="royal_bm17_visor_default">
-			<Socket Names="RoyalBM17Visor" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="RoyalBM17Visor" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="RoyalBM17Beacon" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="RoyalBM17Beacon" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="RoyalBM17SpotLight2" NamesBlock="RoyalBM17Beacon" ParentFrame="BoneCabin_cdt" />
-			<Socket Names="RoyalBM17SpotLight" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="RoyalBM17SpotLight2" NamesBlock="LogLift, RoyalBM17Beacon" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="RoyalBM17SpotLight" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="RoyalBM17Gabarite" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="RoyalBM17Gabarite" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="royal_bm17_air_conditioner_default">
-			<Socket Names="RoyalBM17Conditioner" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="RoyalBM17Conditioner" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="RoyalBM17CabinProtector" Offset="(-0.05; 0; 0)" ParentFrame="BoneCabin_cdt">
+			<Socket Names="RoyalBM17CabinProtector" NamesBlock="LogLift" Offset="(-0.05; 0; 0)" ParentFrame="BoneCabin_cdt">
 				<ExtraParent Frame="BoneChassis_cdt" />
 			</Socket>
 		</AddonSockets>
 		<AddonSockets DefaultAddon="royal_bm17_snorkel_default">
-			<Socket Names="RoyalBM17Snorkel" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="RoyalBM17Snorkel" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="royal_bm17_exhaust_default">
-			<Socket Names="RoyalBM17Exhaust" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="RoyalBM17Exhaust" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket
 				InCockpit="true"
 				Names="StuffDashboard"
+				NamesBlock="LogLift"
 				Offset="(1.907; 2.428; 0.016)"
 				ParentFrame="BoneCabin_cdt"
 			/>
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="royalBm17Sticker_1x1_01" ParentFrame="BoneCabin_cdt" />
+			<Socket InCockpit="true" Names="royalBm17Sticker_1x1_01" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="royalBm17Sticker_1x1_02" ParentFrame="BoneCabin_cdt" />
+			<Socket InCockpit="true" Names="royalBm17Sticker_1x1_02" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="royalBm17Sticker_1x1_03" ParentFrame="BoneCabin_cdt" />
+			<Socket InCockpit="true" Names="royalBm17Sticker_1x1_03" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="royalBm17Sticker_1x1_04" ParentFrame="BoneCabin_cdt" />
+			<Socket InCockpit="true" Names="royalBm17Sticker_1x1_04" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="royalBm17Sticker_1x2_01" ParentFrame="BoneCabin_cdt" />
+			<Socket InCockpit="true" Names="royalBm17Sticker_1x2_01" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="royalBm17Sticker_1x4_01" ParentFrame="BoneCabin_cdt" />
+			<Socket InCockpit="true" Names="royalBm17Sticker_1x4_01" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="royalBm17Sticker_GlassTop" ParentFrame="BoneCabin_cdt" />
+			<Socket InCockpit="true" Names="royalBm17Sticker_GlassTop" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="royalBm17Sticker_GlassBottom" ParentFrame="BoneCabin_cdt" />
+			<Socket InCockpit="true" Names="royalBm17Sticker_GlassBottom" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="royalBm17Sticker_Door_L" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="royalBm17Sticker_Door_L" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="royalBm17Sticker_Door_R" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="royalBm17Sticker_Door_R" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="royalBm17Sticker_Capote" ParentFrame="BoneCabin_cdt" InCockpit="true" />
+			<Socket Names="royalBm17Sticker_Capote" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" InCockpit="true" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="royalBm17Sticker_Roof" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="royalBm17Sticker_Roof" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket
 				InCockpit="true"
 				Names="StuffAirfreshener"
+				NamesBlock="LogLift"
 				Offset="(1.758; 3.008; 0.044)"
 				ParentFrame="BoneCabin_cdt"
 			/>
-			<Socket InCockpit="true" Names="StuffCurtainRoyalBm17" ParentFrame="BoneCabin_cdt" />
+			<Socket InCockpit="true" Names="StuffCurtainRoyalBm17" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="StuffHoodRoyalBm17" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="StuffHoodRoyalBm17" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="AddonHornsSmall" NamesBlock="StuffHoodRoyalBm17" Offset="(3.311; 2.270; 0)" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="AddonHornsSmall" NamesBlock="LogLift, StuffHoodRoyalBm17" Offset="(3.311; 2.270; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 	</GameData>
 	<ControlledConstraints>

@@ -1,0 +1,61 @@
+<_templates Include="trucks"/>
+<TruckAddon>
+	<TruckData>
+		<Damage>
+			<Multiplier Multiplier="0.9" Type="Engine" />
+		</Damage>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/mercedes_3850_tuning/mercedes_3850_bumper_1">
+		<Body ImpactType="Truck" Mass="60" ModelFrame="BoneCabin_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<Ignition>
+			<Light _template="IgnitionSignalWhite" Color="g(253; 220; 186) x 1" Pos="(3.111; 0.778; 0.938)" ParentFrame="BoneCabin_cdt" />
+			<Light _template="IgnitionSignalWhite" Color="g(253; 220; 186) x 1" Pos="(3.111; 0.778; -0.938)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhite" DirAngle="120" Dir="(1; 0; 0)" Size="0.25" Pos="(3.111; 0.778; 0.938)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhite" DirAngle="120" Dir="(1; 0; 0)" Size="0.25" Pos="(3.111; 0.778; -0.938)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhite" DirAngle="120" Dir="(1; 0; 0)" Size="0.25" Pos="(3.157; 0.778; 0.775)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhite" DirAngle="120" Dir="(1; 0; 0)" Size="0.25" Pos="(3.157; 0.778; -0.775)" ParentFrame="BoneCabin_cdt" />
+			
+			<Light _template="IgnitionSignalWhite" Color="g(253; 220; 186) x 1" Pos="(3.309; 1.118; -0.331)" ParentFrame="BoneCabin_cdt" />
+			<Light _template="IgnitionSignalWhite" Color="g(253; 220; 186) x 1" Pos="(3.309; 1.118; 0.331)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="0.2" Dir="(1; 0; 0)" Size="0.2" Pos="(3.309; 1.117; -0.378)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="0.2" Dir="(1; 0; 0)" Size="0.2" Pos="(3.309; 1.117; 0.378)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="0.2" Dir="(1; 0; 0)" Size="0.2" Pos="(3.309; 1.117; -0.329)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="0.2" Dir="(1; 0; 0)" Size="0.2" Pos="(3.309; 1.117; 0.329)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="0.2" Dir="(1; 0; 0)" Size="0.2" Pos="(3.309; 1.117; -0.282)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="0.2" Dir="(1; 0; 0)" Size="0.2" Pos="(3.309; 1.117; 0.282)" ParentFrame="BoneCabin_cdt" />
+		</Ignition>
+		<HeadLight>
+			<Model _template="HeadLightRay" Org="(3.111; 0.778; -0.938)" ColorMultAtDay="0.3"/>
+			<Model _template="HeadLightRay" Org="(3.111; 0.778; 0.938)" ColorMultAtDay="0.3"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.111; 0.778; -0.938)" Dir="(1; 0; 0)" Size=".36" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.111; 0.778; 0.938)" Dir="(1; 0; 0)" Size=".36" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.157; 0.778; -0.775)" Dir="(1; 0; 0)" Size=".36" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.157; 0.778; 0.775)" Dir="(1; 0; 0)" Size=".36" ColorMultAtDay="0.25"/>
+		</HeadLight>
+	</ModelAttachments>
+	<HeadLight _template="Default" Pos="(3.282; 0.184; 0)" ParentFrame="BoneCabin_cdt" />
+	<GameData
+		CameraPreset="default"
+		Category="bumper"
+		Price="900"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<WinchSocket FixedToTruck="true" Pos="(3.315; 0.665; 0.491)" />
+		<WinchSocket FixedToTruck="true" Pos="(3.315; 0.665; -0.491)" />
+		<CraneSocket FixedToTruck="true" Pos="(3.315; 0.665; 0.491)" />
+		<CraneSocket FixedToTruck="true" Pos="(3.315; 0.665; -0.491)" />
+		
+		<UiDesc
+			UiDesc="UI_TUNING_BUMPER_TOWLOOPS_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_BUMPER_TOWLOOPS_NAME"
+		/>
+		<InstallSocket Type="Mercedes3850Bumper" />
+	</GameData>
+</TruckAddon>

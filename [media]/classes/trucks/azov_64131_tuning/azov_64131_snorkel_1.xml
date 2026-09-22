@@ -2,7 +2,11 @@
 <_parent File="azov_64131_snorkel_default" />
 <TruckAddon>
 	<Snorkel Origin="(1.494; 3.478; 0)" />
-	<PhysicsModel Mesh="trucks/azov_64131_tuning/azov_64131_snorkel_1" />
+	<PhysicsModel Mesh="trucks/azov_64131_tuning/azov_64131_snorkel_1">
+		<Body Collisions="Default" Mass="25" ModelFrame="BoneCabin_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
 	<GameData
 		Price="2200"
 		UnlockByExploration="false"

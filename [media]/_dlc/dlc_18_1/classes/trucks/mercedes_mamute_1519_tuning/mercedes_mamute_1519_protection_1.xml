@@ -1,0 +1,102 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<TruckData FuelCapacity="80" RepairsCapacity="150">
+		<LimitedFluid Center="(1.920; 3.675; -0.407)" SizeZ="0.445" SizeY="0.146" SizeX="0.325" Type="Box" ParentFrame="BoneFuel1_cdt"/>
+		<LimitedFluid Center="(1.887; 3.478; -0.332)" SizeZ="0.445" SizeY="0.146" SizeX="0.325" Type="Box" ParentFrame="BoneFuel1_cdt"/>
+		<LimitedFluid Center="(2.329; 3.421; -0.420)" SizeZ="0.445" SizeY="0.146" SizeX="0.325" Type="Box" ParentFrame="BoneFuel1_cdt"/>
+		<LimitedFluid Center="(2.355; 3.619; -0.413)" SizeZ="0.445" SizeY="0.146" SizeX="0.325" Type="Box" ParentFrame="BoneFuel1_cdt"/>
+		<Damage>
+			<Multiplier Multiplier="0.95" Type="Engine" />
+			<Multiplier Multiplier="0.9" Type="GearBox" />
+		</Damage>
+	</TruckData>
+	<RepairsHide>
+		<Mesh Frame="repair" HideThreshold="0.0" />
+	</RepairsHide>
+	<FuelHide>
+		<Mesh Frame="fuel" HideThreshold="0.0" />
+	</FuelHide>
+	<PhysicsModel Mesh="trucks/mercedes_mamute_1519_tuning/mercedes_mamute_1519_protection_1">
+		<Body ImpactType="Truck" Mass="80" ModelFrame="BoneCabin_cdt">
+			<Constraint Type="Rigid" />
+			<Body Collisions="None" Mass="72" ModelFrame="BoneFuel1_cdt">
+				<Constraint
+					AxisLocal="(1; 0; 0)"
+					Type="Fixed"
+					LinearLimitsX="(-0.02; 0.008)"
+					LinearLimitsZ="(-0.01; 0.01)"
+				>
+					<Motor Damping="2000" Spring="3500" Type="Spring" />
+				</Constraint>
+			</Body>
+			<Body Collisions="None" Mass="50" ModelFrame="BoneRepair_cdt">
+				<Constraint
+					AxisLocal="(1; 0; 0)"
+					Type="Prismatic"
+					MinLimit="-0.02"
+					MaxLimit="0.01"
+				>
+					<Motor Damping="2100" Spring="3000" Type="Spring" />
+				</Constraint>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<Rotator EngineTorqueFactor="0" Frame="BoneRotatorLeft" RotationSpeed="3.8" />
+	<Rotator EngineTorqueFactor="0" Frame="BoneRotatorRight" RotationSpeed="3.8" />
+	<ModelAttachments>
+		<HeadLight>
+			<Model _template="HeadLightRay" Org="(2.778; 3.473; -0.604)" ColorMultAtDay="0.3"/>
+			<Model _template="HeadLightRay" Org="(2.778; 3.473; 0.002)" ColorMultAtDay="0.3"/>
+			<Model _template="HeadLightRay" Org="(2.778; 3.473; 0.604)" ColorMultAtDay="0.3"/>
+		</HeadLight>
+		<HeadLight>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(2.778; 3.473; -0.604)" Dir="(1; 0; 0)" Size=".36" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(2.778; 3.473; 0.002)" Dir="(1; 0; 0)" Size=".36" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(2.778; 3.473; 0.604)" Dir="(1; 0; 0)" Size=".36" ColorMultAtDay="0.25"/>
+		</HeadLight>
+		<Ignition _template="Flasher">
+			<Model
+				Color="g(255; 111; 5) x 0.55"
+				Dir="(1; 0.222; 0.563)"
+				Org="(1.552; 3.613; 0.962)"
+				Scale="(0.19; 0.19; 0.19)"
+				ParentFrame="BoneRotatorLeft"
+				Reflections="false"
+			/>
+			<Light Dir="(-0.796; 0.222; 0.563)" Pos="(1.552; 3.613; 0.962)" ParentFrame="BoneRotatorLeft" />
+			<Flare Color="g(255; 111; 5) x 0.45" Dir="(-0.796; 0.222; 0.563)" Size="1" Pos="(1.552; 3.613; 0.962)" ParentFrame="BoneRotatorLeft" />
+			<Flare Color="g(255; 111; 5) x 0.7" Dir="(-0.796; 0.222; 0.563)" Size="0.7" Pos="(1.552; 3.613; 0.962)" ParentFrame="BoneRotatorLeft" />
+			<Flare Color="g(255; 111; 5) x 0.55" Size="1" Pos="(1.552; 3.613; 0.962)" ParentFrame="BoneRotatorLeft" />
+		</Ignition>
+		<Ignition _template="Flasher">
+			<Model
+				Color="g(255; 111; 5) x 0.55"
+				Dir="(1; 0.222; 0.563)"
+				Org="(1.552; 3.613; -0.962)"
+				Scale="(0.19; 0.19; 0.19)"
+				ParentFrame="BoneRotatorRight"
+				Reflections="false"
+			/>
+			<Light Dir="(-0.796; 0.222; 0.563)" Pos="(1.552; 3.613; -0.962)" ParentFrame="BoneRotatorRight" />
+			<Flare Color="g(255; 111; 5) x 0.45" Dir="(-0.796; 0.222; 0.563)" Size="1" Pos="(1.552; 3.613; -0.962)" ParentFrame="BoneRotatorRight" />
+			<Flare Color="g(255; 111; 5) x 0.7" Dir="(-0.796; 0.222; 0.563)" Size="0.7" Pos="(1.552; 3.613; -0.962)" ParentFrame="BoneRotatorRight" />
+			<Flare Color="g(255; 111; 5) x 0.55" Size="1" Pos="(1.552; 3.613; -0.962)" ParentFrame="BoneRotatorRight" />
+		</Ignition>
+	</ModelAttachments>
+	<GameData
+		CameraPreset="roof"
+		Category="frame_addons"
+		IsCustomizable="true"
+		Price="3800"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SCOUT_TRUNK_SUPPLIES_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SCOUT_TRUNK_SUPPLIES_NAME"
+		/>
+		<InstallSocket Type="MercedesMamute1519Protection" />
+	</GameData>
+</TruckAddon>

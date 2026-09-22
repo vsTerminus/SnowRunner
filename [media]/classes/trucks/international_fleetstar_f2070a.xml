@@ -357,6 +357,7 @@
 		<CustomizationCameras>
 			<CameraPos FOV="32.0" Interior="true" Name="roof_sticker" InterestPosition="(3.893; 0.209; 0.091)" Position="(6.51; 3.927; -0.632)" />
 			<CameraPos FOV="32.0" Interior="true" Name="sticker_1" InterestPosition="(6.729; 3.04; 1.651)" Position="(5.273; 2.205; -0.496)" />
+			<CameraPos FOV="32.0" Name="loglift_front" InterestPosition="(4.576; 1.567; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-3.817; 2.946; 3.742)" />
 			<CameraPos FOV="32.0" Name="addon_1" InterestPosition="(0.576; 1.567; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-6.817; 2.946; 3.742)" />
 			<CameraPos FOV="32.0" Name="addon_2" InterestPosition="(5.211; 0.421; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(3.547; 1.82; -4.118)" />
 			<CameraPos FOV="32.0" Interior="true" Name="mirror_mount" InterestPosition="(6.729; 2.245; 1.407)" Position="(5.156; 2.203; -0.533)" />
@@ -384,93 +385,110 @@
 		<CraneSocket Pos="(1.181; 0.887; 0.445)" />
 		<CraneSocket Pos="(0.895; 0.887; -0.445)" />
 		<AddonSockets>
-			<Socket Names="InternationalFleetstarF2070aSpareWheel" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt">
+			<Socket Names="InternationalFleetstarF2070aSpareWheel" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt">
 				<ExtraParent Frame="BoneCabin_cdt" />
 			</Socket>
 		</AddonSockets>
 		<AddonSockets DefaultAddon="international_fleetstar_f2070a_bumper_default">
-			<Socket Names="InternationalFleetstarF2070aBumper" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="InternationalFleetstarF2070aBumper" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="InternationalFleetstarF2070aSnorkel" Offset="(0; 0; 0)" ParentFrame="BoneCabinRagdoll_cdt" />
+			<Socket Names="InternationalFleetstarF2070aSnorkel" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabinRagdoll_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="InternationalFleetstarF2070aCabinProtector" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="InternationalFleetstarF2070aCabinProtector" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="InternationalFleetstarF2070aHorn" Offset="(0; 0; 0)" ParentFrame="BoneCabinRagdoll_cdt" />
+			<Socket Names="InternationalFleetstarF2070aHorn" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabinRagdoll_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="InternationalFleetstarF2070aVisor" Offset="(0; 0; 0)" ParentFrame="BoneCabinRagdoll_cdt" />
+			<Socket Names="InternationalFleetstarF2070aVisor" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabinRagdoll_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="InternationalFleetstarF2070aBeacon" Offset="(0; 0; 0)" ParentFrame="BoneCabinRagdoll_cdt" />
+			<Socket Names="InternationalFleetstarF2070aBeacon" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabinRagdoll_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="InternationalFleetstarF2070aThreshold" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="InternationalFleetstarF2070aThreshold" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="international_fleetstar_f2070a_exhaust_default">
-			<Socket Names="InternationalFleetstarF2070aExhaust" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt">
+			<Socket Names="InternationalFleetstarF2070aExhaust" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt">
 				<ExtraParent Frame="BoneChassis_cdt" />
 			</Socket>
 		</AddonSockets>
 		<AddonSockets DefaultAddon="international_fleetstar_f2070a_fender_default">
-			<Socket Names="InternationalFleetstarF2070aFender" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt">
+			<Socket Names="InternationalFleetstarF2070aFender" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt">
 				<ExtraParent Frame="BoneCabin_cdt" />
 			</Socket>
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="MetalDetector" NamesBlock="InternationalFleetstarF2070aSpareWheel, LargeSemitrailerOiltank, FrameAddonKung, FrameAddonTank, FrameAddonMaintainer, FrameAddon, BigCraneUs, BigCraneRu" Offset="(0.622; -0.043; 0)" ParentFrame="BoneChassis_cdt" />
-			<Socket Names="MinicraneUS" NamesBlock="FrameAddonKung, FrameAddonTank" Offset="(1.050; 1.01; 0)">
+			<Socket Names="MetalDetector" NamesBlock="LogLift, InternationalFleetstarF2070aSpareWheel, LargeSemitrailerOiltank, FrameAddonKung, FrameAddonTank, FrameAddonMaintainer, FrameAddon, BigCraneUs, BigCraneRu" Offset="(0.622; -0.043; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="MinicraneUS" NamesBlock="LogLift, FrameAddonKung, FrameAddonTank" Offset="(1.050; 1.01; 0)">
 				<AddonsShift Offset="(-0.25; 0; 0)" Types="InternationalFleetstarF2070aCabinProtector" />
 			</Socket>
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="LargeSemitrailer" Offset="(-1.2; 1.5; 0)" />
-			<Socket Names="LargeSemitrailerOiltank" Offset="(-1.2; 1.5; 0)">
+			<Socket Names="LargeSemitrailer" NamesBlock="LogLift" Offset="(-1.3; 1.5; 0)" />
+			<Socket Names="LargeSemitrailerOiltank" NamesBlock="LogLift" Offset="(-1.3; 1.5; 0)">
 				<AddonsShift Offset="(0; 0; 0)" TrailerNamesBlock="LargeSemitrailerOiltank" Types="MinicraneUS, InternationalFleetstarF2070aCabinProtector" />
 			</Socket>
-			<Socket Names="Semitrailer, SemitrailerOiltank, SemitrailerFoldableLog" Offset="(-1.7; 1.5; 0)" >
+			<Socket Names="Semitrailer, SemitrailerOiltank, SemitrailerFoldableLog" NamesBlock="LogLift" Offset="(-1.7; 1.5; 0)" >
 				<AddonsShift Offset="(-0.548; -0.12; 0)" Types="SaddleMotorized" />
 			</Socket>
 			<Socket Names="Trailer, LogTrailer" Offset="(-4.205; 0.841; 0)" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="BunkLog" Offset="(-5.060; 1.015; 0)" NamesBlock="MinicraneUS, MetalDetector" />
-			<Socket Names="FrameAddonLogShort" NamesBlock="MinicraneUS, MetalDetector, InternationalFleetstarF2070aFender, InternationalFleetstarF2070aCabinProtector" Offset="(-0.86; 1.01; 0)" />
-			<Socket Names="SaddleLow1" Offset="(-1.7; 1.01; 0)" />
-			<Socket Names="SaddleHigh" Offset="(-1.2; 1.01; 0)" />
-			<Socket Names="FrameAddon" Offset="(-0.95; 1.008; 0)" ParentFrame="BoneChassis_cdt">
+			<Socket Names="BunkLog" Offset="(-5.060; 1.015; 0)" NamesBlock="LogLift, MinicraneUS, MetalDetector" />
+			<Socket Names="FrameAddonLogShort" NamesBlock="LogLift, MinicraneUS, MetalDetector, InternationalFleetstarF2070aFender, InternationalFleetstarF2070aCabinProtector" Offset="(-0.86; 1.01; 0)" />
+			<Socket Names="SaddleLow1" NamesBlock="LogLift" Offset="(-1.7; 1.01; 0)" />
+			<Socket Names="SaddleHigh" NamesBlock="LogLift" Offset="(-1.3; 1.01; 0)" />
+			<Socket Names="FrameAddon" NamesBlock="LogLift" Offset="(-0.95; 1.008; 0)" ParentFrame="BoneChassis_cdt">
 				<AddonsShift Offset="(-1; 0; 0)" Types="MinicraneUS" />
 				<AddonsShift Offset="(-0.26; 0; 0)" Types="InternationalFleetstarF2070aCabinProtector" />
 			</Socket>
-			<Socket Names="FrameAddonTow" Offset="(-1.45; 1.008; 0)" NamesBlock="MinicraneUS, MetalDetector, Trailer, LogTrailer" ParentFrame="BoneChassis_cdt"  >				
+			<Socket Names="FrameAddonTow" Offset="(-1.45; 1.008; 0)" NamesBlock="LogLift, MinicraneUS, MetalDetector, Trailer, LogTrailer" ParentFrame="BoneChassis_cdt"  >				
 				<AddonsShift Offset="(-.15; 0; 0)" Types="InternationalFleetstarF2070aCabinProtector" />				
 			</Socket>				
-			<Socket Names="FrameAddonKung" Offset="(-1.1; 1.08; 0)" ParentFrame="BoneChassis_cdt">
+			<Socket Names="FrameAddonKung" NamesBlock="LogLift" Offset="(-1.1; 1.08; 0)" ParentFrame="BoneChassis_cdt">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.1)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.1)" />
 			</Socket>
-			<Socket Names="FrameAddonTank" Offset="(-1.91; 1.02; 0)" ParentFrame="BoneChassis_cdt" />
-			<Socket Names="BigCraneUs" NamesBlock="MinicraneUS" Offset="(-1.754; 1.015; 0)" />
-			<Socket Names="LogLift" Offset="(0.998; 1.011; 0)" NamesBlock="MetalDetector, MinicraneUS"/>
+			<Socket Names="FrameAddonTank" NamesBlock="LogLift" Offset="(-1.91; 1.02; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="BigCraneUs" NamesBlock="LogLift, MinicraneUS" Offset="(-1.754; 1.015; 0)" />
 			<!-- <Socket Names="BigCraneRu" NamesBlock="Minicrane, Semitrailer" Offset="(-2; 1.01; 0)" /> -->
-			<Socket Names="FrameAddonMaintainer" NamesBlock="Trailer, MinicraneUS, LogTrailer" Offset="(-1.95; -0.022; 0)" ParentFrame="BoneChassis_cdt" />
-			
-			<Socket Names="SaddleMotorized" NamesBlock="InternationalFleetstarF2070aCabinProtector, MinicraneUS, MetalDetector" Offset="(-0.900; -0.257; 0.000)" ParentFrame="BoneChassis_cdt" >
+			<Socket Names="FrameAddonMaintainer" NamesBlock="LogLift, Trailer, MinicraneUS, LogTrailer" Offset="(-1.95; -0.022; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="SaddleMotorized" NamesBlock="LogLift, InternationalFleetstarF2070aCabinProtector, MinicraneUS, MetalDetector" Offset="(-0.900; -0.257; 0.000)" ParentFrame="BoneChassis_cdt" >
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.000; 0.000; 0.064)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.000; 0.000; -0.064)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(1.300; 0.000; 0.064)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(1.300; 0.000; -0.064)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(1.300; 0.000; 0.000)" />
 			</Socket>
-			
 		</AddonSockets>
+		
+		<AddonSockets>
+			<Socket Names="LogLiftKenworth"
+					Offset="(0.23; 1.197; 0)"
+					NamesBlock="LogLift,
+								FrameAddonLogShort,
+								FrameAddon,
+								FrameAddonTow,
+								FrameAddonKung,
+								FrameAddonTank,
+								BigCraneUs,
+								FrameAddonMaintainer,
+								SaddleMotorized,
+								MetalDetector,
+								MinicraneUS">
+				<ExtraParent Frame="BoneCabin_cdt" Offset="(0; 0; -0.065)" />
+				<ExtraParent Frame="BoneCabin_cdt" Offset="(0; 0; 0.065)" />
+			</Socket>
+		</AddonSockets>
+		
 		<AddonSockets DefaultAddon="international_fleetstar_f2070a_diff_lock_default">
-			<Socket Names="FleetstarF2070ADiffLock" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="FleetstarF2070ADiffLock" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="international_fleetstar_f2070a_transferbox_default">
-			<Socket Names="FleetstarF2070aTransferBox" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt">
+			<Socket Names="FleetstarF2070aTransferBox" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt">
 				<ExtraParent Frame="BoneCabin_cdt" />
 				<ExtraParent Frame="BoneAxle1" />
 				<ExtraParent Frame="BoneRack" />
@@ -480,60 +498,62 @@
 			<Socket
 				InCockpit="true"
 				Names="StuffDashboard"
+				NamesBlock="LogLift"
 				Offset="(2.933; 2.047; 0.166)"
 				ParentFrame="BoneCabinRagdoll_cdt"
 			/>
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="internationalFleetstarF2070aSticker_1x1_01" ParentFrame="BoneCabinRagdoll_cdt" />
+			<Socket InCockpit="true" Names="internationalFleetstarF2070aSticker_1x1_01" NamesBlock="LogLift" ParentFrame="BoneCabinRagdoll_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="internationalFleetstarF2070aSticker_1x1_02" ParentFrame="BoneCabinRagdoll_cdt" />
+			<Socket InCockpit="true" Names="internationalFleetstarF2070aSticker_1x1_02" NamesBlock="LogLift" ParentFrame="BoneCabinRagdoll_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="internationalFleetstarF2070aSticker_1x1_03" ParentFrame="BoneCabinRagdoll_cdt" />
+			<Socket InCockpit="true" Names="internationalFleetstarF2070aSticker_1x1_03" NamesBlock="LogLift" ParentFrame="BoneCabinRagdoll_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="internationalFleetstarF2070aSticker_1x1_04" ParentFrame="BoneCabinRagdoll_cdt" />
+			<Socket InCockpit="true" Names="internationalFleetstarF2070aSticker_1x1_04" NamesBlock="LogLift" ParentFrame="BoneCabinRagdoll_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="internationalFleetstarF2070aSticker_1x2_01" ParentFrame="BoneSunshieldL_cdt" />
+			<Socket InCockpit="true" Names="internationalFleetstarF2070aSticker_1x2_01" NamesBlock="LogLift" ParentFrame="BoneSunshieldL_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="internationalFleetstarF2070aSticker_1x2_02" ParentFrame="BoneSunshieldR_cdt" />
+			<Socket InCockpit="true" Names="internationalFleetstarF2070aSticker_1x2_02" NamesBlock="LogLift" ParentFrame="BoneSunshieldR_cdt" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket
 				InCockpit="true"
 				Names="StuffAirfreshener"
+				NamesBlock="LogLift"
 				Offset="(2.794; 2.447; 0.098)"
 				ParentFrame="BoneCabinRagdoll_cdt"
 			/>
-			<Socket InCockpit="true" Names="StuffCurtainInternationalFleetstarF2070a" ParentFrame="BoneCabinRagdoll_cdt" />
+			<Socket InCockpit="true" Names="StuffCurtainInternationalFleetstarF2070a" NamesBlock="LogLift" ParentFrame="BoneCabinRagdoll_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="internationalFleetstarF2070ASticker_GlassTop" ParentFrame="BoneCabinRagdoll_cdt" />
+			<Socket InCockpit="true" Names="internationalFleetstarF2070ASticker_GlassTop" NamesBlock="LogLift" ParentFrame="BoneCabinRagdoll_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="internationalFleetstarF2070ASticker_GlassBottom" ParentFrame="BoneCabinRagdoll_cdt" />
+			<Socket InCockpit="true" Names="internationalFleetstarF2070ASticker_GlassBottom" NamesBlock="LogLift" ParentFrame="BoneCabinRagdoll_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="internationalFleetstarF2070ASticker_Door_R" ParentFrame="BoneCabinRagdoll_cdt" />
+			<Socket Names="internationalFleetstarF2070ASticker_Door_R" NamesBlock="LogLift" ParentFrame="BoneCabinRagdoll_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="internationalFleetstarF2070ASticker_Door_L" ParentFrame="BoneCabinRagdoll_cdt" />
+			<Socket Names="internationalFleetstarF2070ASticker_Door_L" NamesBlock="LogLift" ParentFrame="BoneCabinRagdoll_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="internationalFleetstarF2070ASticker_Roof" ParentFrame="BoneCabinRagdoll_cdt" />
+			<Socket Names="internationalFleetstarF2070ASticker_Roof" NamesBlock="LogLift" ParentFrame="BoneCabinRagdoll_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="internationalFleetstarF2070ASticker_Capote" ParentFrame="BoneCabinRagdoll_cdt" InCockpit="true" />
+			<Socket Names="internationalFleetstarF2070ASticker_Capote" NamesBlock="LogLift" ParentFrame="BoneCabinRagdoll_cdt" InCockpit="true" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="StuffHoodInternationalFleetstarF2070A" ParentFrame="BoneCabinRagdoll_cdt" />
+			<Socket Names="StuffHoodInternationalFleetstarF2070A" NamesBlock="LogLift" ParentFrame="BoneCabinRagdoll_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="AddonHornsSmall" NamesBlock="StuffHoodInternationalFleetstarF2070A" Offset="(4.091; 1.880; 0)" ParentFrame="BoneCabinRagdoll_cdt" />
+			<Socket Names="AddonHornsSmall" NamesBlock="LogLift, StuffHoodInternationalFleetstarF2070A" Offset="(4.091; 1.880; 0)" ParentFrame="BoneCabinRagdoll_cdt" />
 		</AddonSockets>
 	</GameData>
 	<ControlledConstraints>

@@ -1,0 +1,713 @@
+﻿<_templates Include="trucks">
+	<Wheel>
+		<RearWheel
+			ConnectedToHandbrake="true"
+			Location="rear"
+			Torque="default"
+		/>
+		<FrontWheel
+			Location="front"
+			SteeringAngle="30"
+			SteeringCastor="0"
+			SteeringJointOffset="0.265"
+			Torque="full"
+			ParentFrame="BoneCabin_cdt"
+		/>
+	</Wheel>
+	<Motor>
+		<Curtain Damping="5" Spring="35" Type="Spring" />
+	</Motor>
+	<Body>
+		<Sunshield Collisions="None" Mass="3">
+			<Constraint
+				AxisLocal="(0; 0; -1)"
+				Type="Hinge"
+				MinLimit="-10"
+				MaxLimit="40"
+			>
+				<Motor Damping="0.2" Spring="20" Type="Spring" />
+			</Constraint>
+		</Sunshield>
+	</Body>
+</_templates>
+<Truck>
+	<TruckData
+		BackSteerSpeed="0.018"
+		DiffLockType="Installed"
+		EngineIconMesh="env/engine_mercedes_3850"
+		EngineIconScale="1.0"
+		EngineStartDelay="3.2"
+		ExhaustStartTime="2.8"
+		FuelCapacity="380"
+		Responsiveness="0.18"
+		SteerSpeed="0.022"
+		TruckImage="mercedesBenz3850mchr"
+		TruckType="HEAVY_DUTY"
+	>
+		<WinchUpgradeSocket Default="w_medium_trucks_default" IsUpgradable="true" Type="winches_medium_trucks" />
+		<Wheels
+			DefaultRim="rim_mercedes_3850"
+			DefaultTire="tire_offroad_mercedes_3850"
+			DefaultWheelType="wheels_mercedes_3850"
+		>
+			<Wheel _template="FrontWheel" Pos="(1.627; 0.3; 0.972)" />
+			<Wheel _template="FrontWheel" RightSide="true" Pos="(1.627; 0.3; 0.972)" />
+			<Wheel _template="RearWheel" Pos="(-2.19; 0.3; 0.802)" />
+			<Wheel _template="RearWheel" RightSide="true" Pos="(-2.19; 0.3; 0.802)" />
+			<Wheel _template="RearWheel" Pos="(-3.698; 0.3; 0.802)" />
+			<Wheel _template="RearWheel" RightSide="true" Pos="(-3.698; 0.3; 0.802)" />
+		</Wheels>
+		<SuspensionSocket
+			Default="mercedes_3850_suspension_default"
+			Type="s_mercedes_3850"
+			MaxWheelRadiusWithoutSuspension="1.5"
+		/>
+		<SteeringWheel Frame="BoneSteering" />
+		<SteeringRack
+			Frame="BoneRack"
+			FrameSteerLeft="BoneRackLeft"
+			FrameSteerRight="BoneRackRight"
+			RackHalfSizeZ="0.748"
+		/>
+		<Steam Origin="(1.757; 0.634; 0)" />
+		<SoundsWheels _template="Default" />
+		<SoundsDamage _template="Heavy" />
+		<Sounds
+			_template="Default"
+			DisableReversePitch="true"
+			Origin="(0.63; 0.74; -0.047)"
+			MinDist="15.0"
+		>
+			<Honk			Sound="trucks/tatra_force/tatra_force_honk" />
+			<Handbrake		Sound="trucks/tatra_force/tatra_force_handbrake_on" />
+			<HandbrakeOff	Sound="trucks/tatra_force/tatra_force_handbrake_off" />
+			<Reverse		Sound="trucks/tatra_force/tatra_force_back_beeper" />
+			<BrakesSqueal	Sound="trucks/tatra_force/tatra_force_brakes_squeal" />
+			<BrakeRelease	Sound="trucks/common/truck_brake_release_alt2_rnd_set/truck_brake_release_alt2_rnd" />
+			<EngineRev		Sound="trucks/tatra_force/tatra_force_rev" />
+			<EngineAccel	Sound="trucks/tatra_force/tatra_force_acc" />
+			<EngineStart	Sound="trucks/tatra_force/tatra_force_start" />
+			<EngineStop		Sound="trucks/tatra_force/tatra_force_stop" />
+			<EngineIdle		Sound="trucks/tatra_force/tatra_force_idle" />
+			<EngineIdle_2d	Sound="trucks/tatra_force/tatra_force_idle_2d"	IsSound2D="true" />
+			<EngineLow		Sound="trucks/tatra_force/tatra_force_low" />
+			<EngineLow_2d	Sound="trucks/tatra_force/tatra_force_low_2d"	IsSound2D="true" />
+			<EngineHigh		Sound="trucks/tatra_force/tatra_force_high" />
+			<EngineHigh_2d	Sound="trucks/tatra_force/tatra_force_high_2d"	IsSound2D="true" />
+			<EngineHeavy	Sound="trucks/tatra_force/tatra_force_heavy" />
+			<EngineHeavy_2d	Sound="trucks/tatra_force/tatra_force_heavy_2d"	IsSound2D="true" />
+			<ChassisStress	Sound="trucks/common/truck_stress_rnd_set/truck_stress_rnd" />
+			<AbruptStop		Sound="trucks/common/truck_swing_big_rnd_set/truck_swing_big_rnd" />
+		</Sounds>
+		<Shakers>
+			<Shaker
+				Frame="BoneGearstick"
+				MinAngle="(-1; 0; -1)"
+				MaxAngle="(1; 0; 1)"
+				MaxFrequency="0.35"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</Shakers>
+		<Shafts>
+			<Shaft Mesh="env/minishaft" SocketPointA="Shaft1a" SocketPointB="Shaft1b" />
+			<Shaft Mesh="env/minishaft" SocketPointA="Shaft2a" SocketPointB="Shaft2b" />
+			<Shaft Mesh="env/minishaft" SocketPointA="Shaft3a" SocketPointB="Shaft3b" />
+			<Shaft Mesh="env/minishaft" SocketPointA="Shaft4a" SocketPointB="Shaft4b" />
+			<Shaft Mesh="env/minishaft" SocketPointA="Shaft5a" SocketPointB="Shaft5b" />
+		</Shafts>
+		<OcclusionMap HalfSizeZ="1.81" MinX="-4.92" MaxX="3.28" />
+		<LimitedFluid
+			Center="(-0.73; 0.704; -0.865)"
+			SizeX="1.449"
+			SizeY="0.537"
+			SizeZ="0.608"
+			Type="Box"
+			ParentFrame="BoneCabin_cdt"
+		/>
+		<Intake Dir="(1; 0; 0)" Origin="(2.93; 1.329; 0)" Size="0.35" />
+		<GearboxSocket Default="g_mercedes_3850_default" Type="gearboxes_mercedes_3850" />
+		<FuelTank DamageCapacity="200" />
+		<EngineSocket Default="engine_truck_mercedes_3850_0" Type="e_truck_engine_mercedes_3850" />
+		<Driver
+			AnimationSet="HeavyTruck"
+			LegsOffset="(0; 0.07; 0)"
+			Pos="(1.908; 1.65; 0.639)"
+			SteeringWheelPos="(2.279; 2.032; 0.649)"
+			ParentFrame="BoneCabin_cdt"
+		/>
+		<Dashboard>
+			<Gauge Damping="0.9" Dir="(-0.799; 0.601; 0)" InputRange="(0;75)" InputType="speed" Mesh="trucks/arrows/mercedes_3850_arrow_1" Org="(2.581; 1.882; 0.799)" OutputAngles="(-122; 112)" />
+			<Gauge Damping="0.998" Dir="(-0.799; 0.601; 0)" InputRange="(0;1)" InputType="fuel" Mesh="trucks/arrows/mercedes_3850_arrow_3" Org="(2.574; 1.832; 0.507)" OutputAngles="(-120; -240)" Scale="0.9" />
+			<Gauge Damping="0.99" Dir="(-0.799; 0.601; 0)" InputRange="(0;1)" InputType="rpm" Mesh="trucks/arrows/mercedes_3850_arrow_2" Org="(2.609; 1.898; 0.653)" OutputAngles="(-118; 122)" />
+			
+			<Gauge Damping="0.9" Dir="(-0.799; 0.601; 0)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/mercedes_3850_arrow_3" Org="(2.613; 1.885; 0.545)" OutputAngles="(-105; -30)" Scale="0.9" />
+			<Gauge Damping="0.9" Dir="(-0.799; 0.601; 0)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/mercedes_3850_arrow_3" Org="(2.613; 1.885; 0.468)" OutputAngles="(105; 55)" Scale="0.9" />
+			<Gauge Damping="0.9" Dir="(-0.799; 0.601; 0)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/mercedes_3850_arrow_3" Org="(2.598; 1.87; 0.507)" OutputAngles="(-134; 90)" Scale="1.1" />
+		</Dashboard>
+		<Damage>
+			<DamageArea Type="Gearbox" Min="(-1.107, 0.140, -0.309)" Max="(-0.678, 0.850, 0.309)" ParentFrame="BoneChassis_cdt" />
+			<DamageArea Type="Gearbox" Min="(0.152, 0.578, -0.273)" Max="(1.430, 1.015, 0.170)" ParentFrame="BoneChassis_cdt" />
+			<DamageArea Type="Engine" Min="(1.036, 0.439, -0.451)" Max="(2.682, 1.336, 0.451)" ParentFrame="BoneChassis_cdt" />
+			<DamageArea Type="FuelTank" Min="(-1.494, 0.329, -1.199)" Max="(0.035, 1.007, -0.531)" ParentFrame="BoneChassis_cdt" />
+		</Damage>
+		
+		<!-- UNIQUE -->
+		<CompatibleWheels OffsetZ="0.03" RearOffsetZ="0.175" Scale="0.59" Type="wheels_mercedes_3850" />
+		<CompatibleWheels OffsetZ="0.03" RearOffsetZ="0.185" Scale="0.62" Type="wheels_mercedes_3850" />
+		<!-- VANILLA -->
+		<CompatibleWheels OffsetZ="0.03" RearOffsetZ="0.175" Scale="0.59" Type="wheels_heavy_double1_mercedes_3850" /> 
+		<CompatibleWheels OffsetZ="0.03" RearOffsetZ="0.185" Scale="0.62" Type="wheels_heavy_double1_mercedes_3850" />
+		<CompatibleWheels OffsetZ="0.03" RearOffsetZ="0.175" Scale="0.59" Type="wheels_heavy_double2_mercedes_3850" /> 
+		<CompatibleWheels OffsetZ="0.03" RearOffsetZ="0.205" Scale="0.62" Type="wheels_heavy_double2_mercedes_3850" />
+		<!-- JAT -->
+		<CompatibleWheels OffsetZ="0.03" RearOffsetZ="0.175" Scale="0.59" Type="wheels_heavy_offroad_double_mercedes_3850" /> 
+		<CompatibleWheels OffsetZ="0.03" RearOffsetZ="0.205" Scale="0.62" Type="wheels_heavy_offroad_double_mercedes_3850" />
+		<CompatibleWheels OffsetZ="0.03" RearOffsetZ="0.185" Scale="0.59" Type="wheels_heavy_highway_double_mercedes_3850" /> 
+		<CompatibleWheels OffsetZ="0.03" RearOffsetZ="0.205" Scale="0.62" Type="wheels_heavy_highway_double_mercedes_3850" />
+		<CompatibleWheels OffsetZ="0.03" RearOffsetZ="0.185" Scale="0.59" Type="wheels_heavy_allterrain_double_mercedes_3850" />
+		<CompatibleWheels OffsetZ="0.03" RearOffsetZ="0.205" Scale="0.62" Type="wheels_heavy_allterrain_double_mercedes_3850" /> 
+		
+		<Camera Center="(-2.2; 0; 0)" ParentFrame="BoneChassis_cdt">
+			<Cockpit
+				_template="Default"
+				LimitsHor="(-2.7; 1.5)"
+				LimitsVer="(-0.5; 0.5)"
+				ViewDir="(1; -0.05; 0)"
+				WindshieldDiffuseTexture="trucks/mercedes_3850_glass__d_a.tga"
+				WindshieldShadingTexture="trucks/mercedes_3850_glass__sh_d.tga"
+				ViewPos="(1.834; 2.388; 0.649)"
+				ParentFrame="BoneCabin_cdt"
+			>
+				<Rear
+					HorTransitionEnd="-2.7"
+					HorTransitionStart="-0.8"
+					LimitsVer="(-0.5; 0.5)"
+					ViewDir="(1; -0.05; -0.1)"
+					ViewPosOffset="(0.1; -0.1; 0.67)"
+				/>
+				<Mirror
+					ClipDir="(-0.936; 0; -0.4)"
+					ClipOffset="0.05"
+					FOVScale="2"
+					MeshFrame="mirror_left_1"
+					ReflectionDir="(-0.936; 0; -0.4)"
+					Size="(0.25; 0.4)"
+					Pos="(2.416; 2.104; 1.534)"
+				>
+					<SecondaryView
+						ClipDir="(-0.767; -0.445; -0.462)"
+						ClipOffset="0.1"
+						CurveAngle="40"
+						FOVScale="1"
+						MeshFrame="mirror_left_2"
+						Size="(0.2; 0.2)"
+						Pos="(2.399; 2.376; 1.480)"
+					/>
+				</Mirror>
+				<Mirror ClipDir="(-0.794; 0; 0.5)" ClipOffset="0.15" FOVScale="2" MeshFrame="mirror_right" ReflectionDir="(-0.794; 0; 0.5)" Size="(0.25; 0.4)" Pos="(2.547; 2.093; -1.359)" />
+				<Mirror ClipDir="(0; -1; -0.85)" ReflectionDir="(0; -1; -0.85)" LookAtOffset="(0; -0.2; 0.2)" ClipOffset="0.02" CurveAngle="15" FOVScale="1.5" MeshFrame="mirror_top"  Size="(0.32; 0.22)" Pos="(2.074; 2.467; 1.203)" />
+			</Cockpit>
+		</Camera>
+		<Axles>
+			<Axle Frame="BoneAxle1" />
+			<Axle Frame="BoneAxle2" />
+			<Axle Frame="BoneAxle3" />
+		</Axles>
+	</TruckData>
+	<Rotator
+		EngineTorqueFactor="0"
+		Frame="BoneEngineFan"
+		RotationAxis="(0; 1; 0)"
+		RotationSpeed="10"
+	/>
+	<PhysicsModel Mesh="trucks/mercedes_3850">
+		<NetSync Legacy="false" />
+		<Body
+			CenterOfMassOffset="(0; 0; 0)"
+			Collisions="Default"
+			ImpactType="Truck"
+			Mass="1450"
+			ModelFrame="BoneChassis_cdt"
+			NetSync="pv"
+		>
+			<Body
+				CenterOfMassOffset="(0; -0.1; 0)"
+				Collisions="None"
+				Mass="2950"
+				ModelFrame="BoneChassisWeighter_cdt"
+			>
+				<Constraint Type="Fixed" />
+			</Body>
+			<Body
+				CenterOfMassOffset="(0; -0.55; 0)"
+				Collisions="Default"
+				ImpactType="Truck"
+				Mass="2850"
+				ModelFrame="BoneCabin_cdt"
+				NetSync="pv"
+			>
+				<Constraint
+					AxisLocal="(1; 0; 0)"
+					PivotOffset="(0; 0; 0)"
+					Type="Hinge"
+					MinLimit="-4"
+					MaxLimit="4"
+				>
+					<Motor Damping="150000" Spring="300000" Type="Spring" />
+				</Constraint>
+				<Body
+					CenterOfMassOffset="(-0.8; -0.2; 0)"
+					Collisions="None"
+					Mass="3850"
+					ModelFrame="BoneCabinWeighter_cdt"
+				>
+					<Constraint Type="Fixed" />
+				</Body>
+				<Body Mass="0.5" ModelFrame="BoneKey_cdt">
+					<Constraint
+						AxisLocal="(0; 0; 1)"
+						Type="Hinge"
+						MinLimit="-40"
+						MaxLimit="25"
+					>
+						<Motor Damping="0.002" Spring="0.004" Type="Spring" />
+					</Constraint>
+				</Body>
+				<Body _template="Sunshield" ModelFrame="BoneSunshield1_cdt" />
+				<Body _template="Sunshield" ModelFrame="BoneSunshield2_cdt" />
+				<Body _template="Sunshield" ModelFrame="BoneSunshield3_cdt">
+					<Constraint AxisLocal="(-1; 0; 0)" />
+				</Body>
+				<Body Collisions="None" Mass="1" ModelFrame="BoneBelt_cdt">
+					<Constraint
+						AxisLocal="(1; 0; 0)"
+						PivotOffset="(0; 0; 0)"
+						Type="Hinge"
+						MinLimit="-15"
+						MaxLimit="-2"
+					>
+						<Motor Damping="1" Spring="1" Type="Spring" />
+					</Constraint>
+				</Body>
+				<Body Mass="1" ModelFrame="BoneCurtain_cdt">
+					<Constraint LinearLimitsX="(-0.08; 0.08)" Type="Fixed">
+						<Motor _template="Curtain" />
+					</Constraint>
+				</Body>
+			</Body>
+			<Body
+				CenterOfMassOffset="(0; 0; 0)"
+				Collisions="None"
+				Mass="5"
+				ModelFrame="BoneTieRod_cdt"
+			>
+				<Constraint
+					AxisLocal="(0; 0; 1)"
+					Name="TieRod"
+					PivotOffset="(0; 0; 0)"
+					Type="Hinge"
+					MinLimit="-30"
+					MaxLimit="30"
+				>
+					<Motor Force="100" Tau="1" Type="Position" />
+				</Constraint>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<Landmark Mesh="landmarks/mercedes_3850_lmk" MinScale="1.5" MaxScale="2.2" />
+	<GameData
+		Country="US,NE,CE"
+		ExcludeAddons="pacific_p16_trailer_log_pole, trailer_log_pole_zikz_612h"
+		Price="94100"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<WinchSocket Pos="(-1.726; 0.874; 0.446)" ParentFrame="BoneChassis_cdt" />
+		<WinchSocket Pos="(-1.726; 0.874; -0.446)" ParentFrame="BoneChassis_cdt" />
+		<UiDesc
+			UiDesc="UI_VEHICLE_MERCEDES_3850_DESC"
+			UiIcon30x30="heavyVehicleImg30"
+			UiIcon328x458="shopImgMercedesBenz3850"
+			UiIcon40x40="heavyVehicleImg"
+			UiIconLogo="MercedesLogo80"
+			UiName="UI_VEHICLE_MERCEDES_3850_NAME"
+		/>
+		<CustomizationCameras>
+			<CameraPos FOV="32.0" Name="default" InterestPosition="(5.8; 1.3; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(13.8; 1.5; -4.3)" />
+			<CameraPos FOV="32.0" Name="side_r" InterestPosition="(2.6; 3.08; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-0.68; 4.81; -4.57)" />
+			<CameraPos FOV="32.0" Name="side_l" InterestPosition="(6.27; 2.28; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(11.87; 5.28; -4.55)" />
+			<CameraPos FOV="32.0" Name="rear" InterestPosition="(5; 2; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="1" Position="(-2; 2.5; 4)" />
+			<CameraPos FOV="32.0" Name="roof" InterestPosition="(6.5; 3; -0.5)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(11; 5.8; -2.8)" />
+			<CameraPos FOV="32.0" Name="wheels" InterestPosition="(4.5; 0.5; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(9.900; 1.3; -6.13)" />
+			<CameraPos FOV="32.0" Name="addon_1" InterestPosition="(1.1; 1.8; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-7.9; 4.9; 6.38)" />
+			<CameraPos FOV="32.0" Name="exhaust" InterestPosition="(1.3; 0.75; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="0" Position="(5.5; -0.15; -2.0)" />
+			<CameraPos FOV="32.0" Name="exhaust_1" InterestPosition="(5.735; 2.091; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(0.191; 4.643; 4.422)" />
+			<CameraPos FOV="32.0" Name="spare_wheel" InterestPosition="(4.6; 2.2; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="1.2" Position="(1.6; 3.2; -4.5)" />
+			<CameraPos FOV="32.0" Name="snorkel" InterestPosition="(7; 2.200; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(1; 3.5; 5)" />
+			<CameraPos FOV="32.0" Interior="true" Name="bubble_head" InterestPosition="(8.13; 1.7; 1.2)" Position="(5.9; 2.4; -0.5)" />
+			<CameraPos FOV="32.0" Interior="true" Name="mirror_mount" InterestPosition="(8.061; 2.3; 2.4)" Position="(6.015; 2.4; -0.661)" />
+			<CameraPos FOV="32.0" Interior="true" Name="curtain" InterestPosition="(9.134; 2.791; 2.414)" Position="(6.015; 2.3; -0.793)" />
+			<CameraPos FOV="32.0" Interior="true" Name="sticker_1" InterestPosition="(8.13; 1.3; 3.1)" Position="(5.9; 2.2; -0.5)" />
+			<CameraPos FOV="32.0" Interior="true" Name="sticker_2" InterestPosition="(7.29; 3.23; 0.31)" Position="(6.2; 1.853; 0.306)" />
+			<CameraPos FOV="32.0" Name="hoods_default" InterestPosition="(5.716; 1.735; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(13.576; 1.402; -3.863)" />
+			<CameraPos FOV="32.0" Interior="true" Name="door_l_sticker" InterestPosition="(7.161; 1.596; 0.841)" Position="(5.167; 2; -3.279)" />
+			<CameraPos FOV="32.0" Interior="true" Name="door_r_sticker" InterestPosition="(8.598; 1.658; 0)" Position="(4.916; 2; 3.172)" />
+			<CameraPos FOV="32.0" Interior="true" Name="glass_sticker" InterestPosition="(6.455; 2.666; -0.909)" Position="(10.325; 2.2; 0.998)" />
+		</CustomizationCameras>
+		<!-- VISUAL ADDONS -->
+		<AddonSockets DefaultAddon="mercedes_3850_bumper_default">
+			<Socket Names="Mercedes3850Bumper" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets DefaultAddon="mercedes_3850_exhaust_default">
+			<Socket Names="Mercedes3850Exhaust" ParentFrame="BoneCabin_cdt" >
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0)" />
+			</Socket>
+			<Socket Names="Mercedes3850ExhaustAftermarket" ParentFrame="BoneCabin_cdt" >
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0)" />
+			</Socket>
+		</AddonSockets>
+		<AddonSockets DefaultAddon="mercedes_3850_visor_default">
+			<Socket Names="Mercedes3850VisorDefault" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="Mercedes3850Visor" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets DefaultAddon="mercedes_3850_horn_default">
+			<Socket Names="Mercedes3850Horn" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets DefaultAddon="mercedes_3850_wings_default">
+			<Socket Names="Mercedes3850Wings" ParentFrame="BoneChassis_cdt">
+				<ExtraParent Frame="BoneCabin_cdt" Offset="(0; 0; 0)" />
+			</Socket>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="Mercedes3850Protection" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="Mercedes3850Roofrack" NamesBlock="Mercedes3850Horn" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets >
+			<Socket Names="Mercedes3850Snorkel" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<!-- DIFF LOCK -->
+		<AddonSockets DefaultAddon="mercedes_3850_diff_lock_default">
+			<Socket Names="Mercedes3850DiffLock" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<!-- FRAME -->
+		<AddonSockets
+			DefaultAddon="mercedes_3850_frame_default"
+			RequiredAddonIfNoConflicts="mercedes_3850_frame_default"
+		>
+			<Socket Names="Mercedes3850FrameDefault" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="Mercedes3850FrameExtended" ParentFrame="BoneChassis_cdt">
+				<ExtraParent Frame="BoneCabin_cdt" Offset="(0; 0; 0)" />
+			</Socket>
+		</AddonSockets>
+		<!-- FRAME ADDONS -->
+		<AddonSockets>
+			<Socket Names="FrameAddonFlatbed2Mercedes3850" ParentFrame="BoneChassis_cdt" NamesBlock="" Offset="(-2.75; 0.9; 0)">
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.11)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.11)" />
+				
+				<AddonsShift Offset="(0; 0.15; 0)" Types="Mercedes3850FrameExtended" />
+				<AddonsShift Offset="(0; 0.065; 0)" Types="Mercedes3850Wings" />
+				<AddonsShift Offset="(0; -0.065; 0)" Types="Mercedes3850Wings, Mercedes3850FrameExtended" />
+				<AddonsShift Offset="(0.865; 0; 0)" Types="MinicraneUSMercedes3850" TrailerNamesBlock="Mercedes3850Sparewheel" />
+				<AddonsShift Offset="(-0.4; 0; 0)" Types="LogLiftMercedes3850" />
+				<AddonsShift Offset="(-0.15; 0; 0)" Types="LogLiftMercedes3850, Mercedes3850Roofrack" />
+			</Socket>
+			<Socket Names="FrameAddonSideboard2Mercedes3850" ParentFrame="BoneChassis_cdt" NamesBlock="" Offset="(-2.75; 0.9; 0)">
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.11)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.11)" />
+				
+				<AddonsShift Offset="(0; 0.15; 0)" Types="Mercedes3850FrameExtended" />
+				<AddonsShift Offset="(0; 0.135; 0)" Types="Mercedes3850Wings" />
+				<AddonsShift Offset="(0; -0.135; 0)" Types="Mercedes3850Wings, Mercedes3850FrameExtended" />
+				<AddonsShift Offset="(0.865; 0; 0)" Types="MinicraneUSMercedes3850" />
+				<AddonsShift Offset="(-0.1; 0; 0)" Types="CraneMercedes3850, Mercedes3850Roofrack" />
+				<AddonsShift Offset="(-0.45; 0; 0)" Types="LogLiftMercedes3850" TrailerNamesBlock="Trailer" />
+				<AddonsShift Offset="(-0.15; 0; 0)" Types="LogLiftMercedes3850, Mercedes3850Roofrack" />
+			</Socket>
+			<Socket Names="FrameAddonKung" ParentFrame="BoneChassis_cdt" NamesBlock="Mercedes3850Wings" Offset="(-2.6; 0.99; 0)">
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.1)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.1)" />
+				<AddonsShift Offset="(-0.65; 0.15; 0)" Types="Mercedes3850FrameExtended" />
+			</Socket>
+			<Socket Names="FrameAddonTankMercedes3850" ParentFrame="BoneChassis_cdt" NamesBlock="Mercedes3850Wings" Offset="(-3.27; 0.9; 0)">
+				<AddonsShift Offset="(0; 0.152; 0)" Types="Mercedes3850FrameExtended" />
+				<AddonsShift Offset="(-0.25; 0; 0)" Types="Mercedes3850Sparewheel" />
+				<AddonsShift Offset="(-0.25; 0; 0)" Types="CraneMercedes3850" />
+				<AddonsShift Offset="(-0.15; 0; 0)" Types="CraneMercedes3850, Mercedes3850Roofrack" />
+			</Socket>
+			<Socket Names="Mercedes3850Service" ParentFrame="BoneChassis_cdt" NamesBlock="Mercedes3850Wings, Mercedes3850Sparewheel, Mercedes3850FrameDefault, Mercedes3850FrameExtended, Mercedes3850Snorkel, Trailer, Mercedes3850ExhaustAftermarket" Offset="(0; 0; 0)">
+				<ExtraParent Frame="BoneCabin_cdt" Offset="(0; 0; 0)" />
+			</Socket>
+			<Socket Names="FrameAddonTowPlatformMercedes3850" ParentFrame="BoneChassis_cdt" NamesBlock="Mercedes3850Wings" Offset="(-1.7; 1.13; 0)">
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.07)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.07)" />
+			</Socket>
+			<Socket Names="FrameAddonSeismicVibratorPaderaSTD4" ParentFrame="BoneChassis_cdt" NamesBlock="Mercedes3850FrameExtended" Offset="(0.15; 0.905; 0)">
+				<AddonsShift Offset="(-0.15; 0; 0)" Types="Mercedes3850Sparewheel" />
+			</Socket>
+			<Socket Names="FrameAddonLogShortMercedes3850" ParentFrame="BoneChassis_cdt" NamesBlock="Mercedes3850Wings" Offset="(-2.35; 1.035; 0)">
+				<AddonsShift Offset="(0; 0.12; 0)" Types="Mercedes3850Wings" />
+				
+				<AddonsShift Offset="(-0.15; 0; 0)" Types="Mercedes3850Sparewheel" />
+				<AddonsShift Offset="(-0.75; 0; 0)" Types="LogLiftMercedes3850" TrailerNamesBlock="Trailer" />
+				<AddonsShift Offset="(-0.15; 0; 0)" Types="LogLiftMercedes3850, Mercedes3850Roofrack" TrailerNamesBlock="Trailer" />
+				<AddonsShift Offset="(-0.1; 0; 0)" Types="CraneMercedes3850, Mercedes3850Roofrack" TrailerNamesBlock="" />
+				<AddonsShift Offset="(-0.3; 0; 0)" Types="CraneMercedes3850" />
+			</Socket>
+			<Socket Names="FrameAddonLogMediumMercedes3850" ParentFrame="BoneChassis_cdt" NamesBlock="Mercedes3850Wings" Offset="(-1.85; 1.035; 0)">
+				<AddonsShift Offset="(0; 0.12; 0)" Types="Mercedes3850Wings" />
+			</Socket>
+			<Socket Names="BunkLogMercedes3850" ParentFrame="BoneChassis_cdt" NamesBlock="Mercedes3850Wings, MinicraneUSMercedes3850" Offset="(-6.5; 0.9; 0)">
+				<AddonsShift Offset="(0; 0.15; 0)" Types="Mercedes3850FrameExtended" />
+				<AddonsShift Offset="(-0.3; 0; 0)" Types="LogLiftMercedes3850, Mercedes3850Roofrack" />
+			</Socket>
+			
+			<Socket Names="SaddleHighMercedes3850" ParentFrame="BoneChassis_cdt" NamesBlock="Mercedes3850Wings, Mercedes3850FrameExtended" Offset="(0; 0; 0)" >
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0)" />
+				<ExtraParent Frame="BoneCabin_cdt" Offset="(0; 0; 0)" />
+			</Socket>
+			<Socket Names="SaddleLow2Mercedes3850" ParentFrame="BoneChassis_cdt" NamesBlock="Mercedes3850Wings, Mercedes3850FrameExtended" Offset="(0; 0; 0)" >
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0)" />
+				<ExtraParent Frame="BoneCabin_cdt" Offset="(0; 0; 0)" />
+			</Socket>
+		</AddonSockets>
+		<!-- SPARE WHEEL -->
+		<AddonSockets DefaultAddon="mercedes_3850_sparewheel">
+			<Socket
+				Names="Mercedes3850Sparewheel"
+				NamesBlock="CraneMercedes3850, MinicraneUSMercedes3850, LogLiftMercedes3850, FrameAddonLogMediumMercedes3850, FrameAddonTowPlatformMercedes3850"
+				Offset="(0; 0; 0)"
+				ParentFrame="BoneCabin_cdt"
+			>
+				<AddonsShift Offset="(0; 0.15; 0)" Types="Mercedes3850FrameExtended" />
+			</Socket>
+		</AddonSockets>
+		<!-- CRANES -->
+		<AddonSockets>
+			<Socket 
+				Names="MinicraneUSMercedes3850"
+				NamesBlock="SaddleLow2Mercedes3850, SaddleHighMercedes3850, FrameAddonKung, FrameAddonTankMercedes3850, FrameAddonLogMediumMercedes3850, Mercedes3850Service, FrameAddonTowPlatformMercedes3850, FrameAddonSeismicVibratorPaderaSTD4, FrameAddonLogShortMercedes3850, FrameAddonSideboard2Mercedes3850"
+				Offset="(0.2; 0.92; 0)"
+				ParentFrame="BoneChassis_cdt"
+			>
+				<AddonsShift Offset="(-5.32; 0.13; 0)" Types="Mercedes3850FrameExtended" />
+			</Socket>
+			<Socket
+				Names="CraneMercedes3850"
+				NamesBlock="FrameAddonLogMediumMercedes3850, Mercedes3850Service, FrameAddonTowPlatformMercedes3850"
+				Offset="(0.18; -0.56; 0)"
+				ParentFrame="BoneCabin_cdt"
+			>
+				<AddonsShift Offset="(0; 0.15; 0)" Types="Mercedes3850FrameExtended" />
+				<AddonsShift Offset="(0; 0.15; 0)" Types="SaddleLow2Mercedes3850" />
+				<AddonsShift Offset="(0; 0.15; 0)" Types="SaddleHighMercedes3850" />
+				<AddonsShift Offset="(-0.2; 0; 0)" Types="Mercedes3850Roofrack" />
+			</Socket>
+			<Socket
+				Names="LogLiftMercedes3850"
+				NamesBlock="FrameAddonKung, FrameAddonTankMercedes3850, FrameAddonLogMediumMercedes3850, Mercedes3850Service, FrameAddonTowPlatformMercedes3850, FrameAddonSeismicVibratorPaderaSTD4"
+				Offset="(-1.6; -0.46; 0)"
+				ParentFrame="BoneCabin_cdt"
+			>
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.05)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.05)" />
+				<AddonsShift Offset="(0.2; 0.15; 0)" Types="Mercedes3850FrameExtended" />
+				<AddonsShift Offset="(-0.15; 0; 0)" Types="Mercedes3850FrameExtended, Mercedes3850Roofrack" />
+				<AddonsShift Offset="(0.2; 0.15; 0)" Types="SaddleHighMercedes3850" />
+				<AddonsShift Offset="(-0.15; 0; 0)" Types="SaddleHighMercedes3850, Mercedes3850Roofrack" />
+				<AddonsShift Offset="(0.2; 0.15; 0)" Types="SaddleLow2Mercedes3850" />
+				<AddonsShift Offset="(-0.15; 0; 0)" Types="SaddleLow2Mercedes3850, Mercedes3850Roofrack" />
+			</Socket>
+			
+			<Socket Names="BigCraneUsMercedes3850" NamesBlock="SaddleLow2Mercedes3850, SaddleHighMercedes3850, FrameAddonKung, FrameAddonTankMercedes3850, FrameAddonLogMediumMercedes3850, Mercedes3850Service, FrameAddonTowPlatformMercedes3850, FrameAddonSeismicVibratorPaderaSTD4, FrameAddonLogShortMercedes3850, BunkLogMercedes3850, FrameAddonFlatbed2Mercedes3850, FrameAddonSideboard2Mercedes3850, Mercedes3850Roofrack" Offset="(-3.15; 1.05; 0)">
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.05)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.05)" />
+			</Socket>
+		</AddonSockets>
+		<!-- TRAILERS -->
+		<AddonSockets>
+			<Socket Names="Trailer" NamesBlock="FrameAddonTowPlatformMercedes3850, FrameAddonMaintainer" Offset="(-4.618; 0.676; 0)">
+				<AddonsShift Offset="(-0.99; 0; 0)" Types="Mercedes3850FrameExtended" />
+			</Socket>
+			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-2.944; 1.15; 0)" />
+			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-2.944; 1.38; 0)" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket
+				InCockpit="true"
+				Names="Mercedes3850StuffCurtain"
+				Offset="(0; 0; 0)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</AddonSockets>
+		<!-- CUSTOMIZATION -->
+		<AddonSockets>
+			<Socket
+				InCockpit="true"
+				Names="StuffAirfreshener"
+				Offset="(2.458; 2.65; -0.336)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket
+				InCockpit="true"
+				Names="StuffDashboard"
+				Offset="(2.799; 1.894; -0.002)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="Mercedes3850Sticker_1x1_01" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="Mercedes3850Sticker_1x1_02" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="Mercedes3850Sticker_1x1_03" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="Mercedes3850Sticker_1x1_04" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="Mercedes3850Sticker_1x1_05" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="Mercedes3850Sticker_1x1_06" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="Mercedes3850Sticker_1x2_01" ParentFrame="BoneSunshield1_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="Mercedes3850Sticker_1x4_01" ParentFrame="BoneSunshield1_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="Mercedes3850Sticker_Glass_Top" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="Mercedes3850Sticker_Glass_Bottom" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="Mercedes3850Sticker_Door_L" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="Mercedes3850Sticker_Door_R" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+	</GameData>
+	<ControlledConstraints>
+		<Constraint Id="chassis_steer" IsLinkedSteering="true" Name="TieRod" />
+	</ControlledConstraints>
+	<AutomaticIK>
+		<IKBone ModelFrame="BoneTieRodHinge2" ParentFrame="BoneTieRod_cdt">
+			<IKJoint AxisLocal="(1; 0; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneRackLeft"
+				ModelFrame="BoneTieRodPrismatic"
+			>
+				<IKJoint AxisLocal="(1; 0; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<!-- Rear IK -->
+		<IKBone ModelFrame="BoneMidRearPiston2_1" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle3"
+				ModelFrame="BoneMidRearPiston2_2"
+			>
+				<IKJoint AxisLocal="(1; 0; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="BoneMidRearPiston1_1" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle2"
+				ModelFrame="BoneMidRearPiston1_2"
+			>
+				<IKJoint AxisLocal="(1; 0; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="BoneRightRearIK1_1" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle2"
+				ModelFrame="BoneRightRearIK1_2"
+			>
+				<IKJoint AxisLocal="(1; 0; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="BoneLeftRearIK1_1" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle2"
+				ModelFrame="BoneLeftRearIK1_2"
+			>
+				<IKJoint AxisLocal="(1; 0; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="BoneRightRearIK2_1" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle3"
+				ModelFrame="BoneRightRearIK2_2"
+			>
+				<IKJoint AxisLocal="(1; 0; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="BoneLeftRearIK2_1" ParentFrame="BoneChassis_cdt">
+			<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle3"
+				ModelFrame="BoneLeftRearIK2_2"
+			>
+				<IKJoint AxisLocal="(1; 0; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<!-- Suspension -->		
+		<IKBone ModelFrame="BoneFrontSuspension1_1" ParentFrame="BoneCabin_cdt">
+			<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
+
+			<IKBone ModelFrame="BoneFrontSuspension1_2" ParentFrame="BoneFrontSuspension1_1">
+				<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
+
+				<IKBone
+					ModelFrame="BoneFrontSuspension1_3"
+					AttachToFrame="BoneAxle1"
+					AttachOffset="(0; 0; 0)"
+				>
+					<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
+				</IKBone>
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="BoneRightFrontPistonIK1_1" ParentFrame="BoneCabin_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle1"
+				ModelFrame="BoneRightFrontPistonIK1_2"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+		<IKBone ModelFrame="BoneLeftFrontPistonIK1_1" ParentFrame="BoneCabin_cdt">
+			<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneAxle1"
+				ModelFrame="BoneLeftFrontPistonIK1_2"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+	</AutomaticIK>
+</Truck>

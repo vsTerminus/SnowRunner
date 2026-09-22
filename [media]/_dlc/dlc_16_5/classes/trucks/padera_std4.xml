@@ -529,7 +529,9 @@
 				<AddonsShift Offset="(-0.6; 0; 0)" Types="BunkLog"/>
 				<AddonsShift Offset="(0.0; 0.15; 0)" Types="PaderaSTD4Subframe"/>
 			</Socket>
-			<Socket Names="PaderaSTD4SpareWheels" Offset="(0.04; 0.14; 0)" ParentFrame="BoneCabinTwist_cdt" />
+			<Socket Names="PaderaSTD4SpareWheels" Offset="(0.04; 0.14; 0)" ParentFrame="BoneCabinTwist_cdt" >
+				<AddonsShift Offset="(0.0; -0.15; 0)" Types="SaddleLow"/>
+			</Socket>
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="PaderaSTD4Kung" Offset="(0; 0.002; 0)" ParentFrame="BoneChassis_cdt" NamesBlock="LogLiftPaderaSTD4, PaderaSTD4Sideboard" >

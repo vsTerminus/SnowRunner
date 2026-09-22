@@ -183,7 +183,7 @@
 			<DamageArea Type="FuelTank" Min="(1.353; 0.609; -1.082)" Max="(2.853; 1.37; 1.082)" />
 		</Damage>
 		<CompatibleWheels Scale="0.646" Type="wheels_heavy_offroad_p512" />
-		<CompatibleWheels Scale="0.646" Type="wheels_heavy_offroad_double" />
+		<CompatibleWheels Scale="0.646" OffsetZ="0.03" Type="wheels_heavy_offroad_double_p512" />
 		<Camera Center="(-1.2; 0; 0)" ParentFrame="BoneCabin_cdt">
 			<Cockpit
 				_template="Default"
@@ -362,6 +362,7 @@
 		<CustomizationCameras>
 			<CameraPos FOV="32.0" Interior="true" Name="roof_sticker" InterestPosition="(4.262; 2.356; -0.794)" Position="(7.238; 6.111; -0.596)" />
 			<CameraPos FOV="32.0" Interior="true" Name="sticker_1" InterestPosition="(5.056; 1.675; 1.297)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(4.223; 2.817; -0.416)" />
+			<CameraPos FOV="32.0" Name="loglift_front" InterestPosition="(3.303; 2.256; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-2.9; 5.579; 9.919)" />
 			<CameraPos FOV="32.0" Name="addon_1" InterestPosition="(-0.697; 2.256; 1.55)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-9.257; 5.579; 9.919)" />
 			<CameraPos FOV="32.0" Name="addon_2" InterestPosition="(3.194; 1.807; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-8.093; 2.337; -6.718)" />
 			<CameraPos FOV="32.0" Interior="true" Name="mirror_mount" InterestPosition="(6.067; 2.924; 1.03)" Position="(4.113; 2.917; -0.358)" />
@@ -385,8 +386,8 @@
 		<CraneSocket Pos="(0.012; 1.185; 0.425)" />
 		<CraneSocket Pos="(0.012; 1.185; -0.425)" />
 		<AddonSockets>
-			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-2.878; 1.81; 0)" />
-			<Socket Names="Semitrailer, SemitrailerOiltank, SemitrailerFoldableLog" Offset="(-2.878; 1.642; 0)" >
+			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" NamesBlock="LogLift" Offset="(-2.878; 1.81; 0)" />
+			<Socket Names="Semitrailer, SemitrailerOiltank, SemitrailerFoldableLog" NamesBlock="LogLift" Offset="(-2.978; 1.642; 0)" >
 				<AddonsShift Offset="(-0.17; 0.03; 0)" Types="SaddleMotorized" />
 			</Socket>
 			<Socket Names="Trailer, LogTrailer" Offset="(-4.813; 1.189; 0)">
@@ -394,46 +395,67 @@
 			</Socket>
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="LogLift" NamesBlock="FrameAddonKung, BigCraneUs, MinicraneUS, SaddleLow, SaddleHigh, FrameAddon, FrameAddonTank, FrameAddonMaintainer, FrameAddonSeismicVibrator, Pacific512SpareWheel" Offset="(0.6; 1.324; 0)" />
+			<Socket Names="LogLiftKenworth"
+					NamesBlock="LogLift,
+								FrameAddonKung,
+								FrameAddonLogShort,
+								FrameAddonLogMedium,
+								BigCraneUs,
+								FrameAddonTowPlatform,
+								HeavyRepairSmall,
+								FrameAddonTank,
+								FrameAddonMaintainer,
+								FrameAddonSeismicVibrator,
+								SaddleMotorized,
+								MinicraneUS,
+								MetalDetector,
+								Pacific512CabinProtector"
+					Offset="(-0.1; 1.512; 0)" >
+				<AddonsShift Offset="(-1.05; 0; 0)" Types="Pacific512SpareWheel" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.09)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.09)" />
+			</Socket>
 		</AddonSockets>
 		<AddonSockets>
 			<Socket
 				Names="FrameAddonKung"
-				NamesBlock="MetalDetector, MinicraneUS"
+				NamesBlock="LogLift, MetalDetector, MinicraneUS"
 				Offset="(-2.4; 1.41; 0)"
 				ParentFrame="BoneChassis_cdt"
 			>
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.07)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.07)" />
 			</Socket>
-			<Socket Names="BunkLog" Offset="(-6.5; 1.33; 0)" />
+			<Socket Names="BunkLog" NamesBlock="LogLift" Offset="(-6.5; 1.33; 0)" />
 			<Socket Names="FrameAddonLogShort" NamesBlock="MinicraneUS, MetalDetector, LogLift, Pacific512SpareWheel" Offset="(-1.455; 1.324; 0)">
 				<AddonsShift Offset="(-0.25; 0; 0)" Types="Pacific512CabinProtector" />
 			</Socket>
 			<Socket Names="FrameAddonLogMedium" NamesBlock="MinicraneUS, MetalDetector, LogLift, Pacific512SpareWheel" Offset="(-1.455; 1.324; 0)">
 				<AddonsShift Offset="(-0.25; 0; 0)" Types="Pacific512CabinProtector" />
 			</Socket>
-			<Socket Names="BigCraneUs" Offset="(-3.07; 1.324; 0)">
+			<Socket Names="BigCraneUs" NamesBlock="LogLift" Offset="(-3.07; 1.324; 0)">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.03)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.03)" />
 			</Socket>
-			<Socket Names="SaddleLow" Offset="(-2.875; 1.324; 0)">
+			<Socket Names="SaddleLow" NamesBlock="LogLift" Offset="(-2.975; 1.324; 0)">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.03)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.03)" />
 			</Socket>
-			<Socket Names="SaddleHigh" Offset="(-2.875; 1.324; 0)">
+			<Socket Names="SaddleHigh" NamesBlock="LogLift" Offset="(-2.875; 1.324; 0)">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.015)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.015)" />
 			</Socket>
 			<Socket Names="FrameAddonTowPlatform" NamesBlock="Pacific512CabinProtector, LogLift, MetalDetector, MinicraneUS, Pacific512SpareWheel, Trailer, LogTrailer" Offset="(-0.82; 1.324; 0)" />
 			<Socket Names="HeavyRepairSmall" NamesBlock="Pacific512SpareWheel, LogLift, MetalDetector, MinicraneUS" Offset="(-2.13; 1.51; 0)" />
-			<Socket Names="FrameAddon" NamesBlock="Pacific512SpareWheel" Offset="(-1.87; 1.324; 0)">
+			<Socket Names="FrameAddon" NamesBlock="LogLift, Pacific512SpareWheel" Offset="(-1.87; 1.324; 0)">
 				<AddonsShift Offset="(-0.48; 0; 0)" Types="MinicraneUS" />
+				<AddonsShift Offset="(-0.65; 0; 0)" Types="LogLiftKenworth" />
 			</Socket>
-			<Socket Names="FrameAddonTank" NamesBlock="Pacific512SpareWheel, Pacific512CabinProtector" Offset="(-2.38; 1.324; 0)" />
-			<Socket Names="FrameAddonMaintainer" NamesBlock="Trailer, LogTrailer, MinicraneUS, MetalDetector, Pacific512SpareWheel, Pacific512CabinProtector" Offset="(-2; 0.298; 0)" />
-			<Socket Names="FrameAddonSeismicVibrator" NamesBlock="Trailer, LogTrailer, MinicraneUS, MetalDetector" Offset="(0.174; 1.324; 0)" />
-			
+			<Socket Names="FrameAddonTank" NamesBlock="LogLift, Pacific512SpareWheel, Pacific512CabinProtector" Offset="(-2.38; 1.324; 0)" />
+			<Socket Names="FrameAddonMaintainer" NamesBlock="LogLift, Trailer, LogTrailer, MinicraneUS, MetalDetector, Pacific512SpareWheel, Pacific512CabinProtector" Offset="(-2; 0.298; 0)" />
+			<Socket Names="FrameAddonSeismicVibrator" NamesBlock="LogLift, Trailer, LogTrailer, MinicraneUS, MetalDetector" Offset="(0.174; 1.324; 0)" >
+				<AddonsShift Offset="(-0.15; 0; 0)" Types="LogLiftKenworth" />
+			</Socket>
 			<Socket Names="SaddleMotorized" NamesBlock="MinicraneUS, MetalDetector, LogLift, Pacific512SpareWheel, Pacific512CabinProtector" Offset="(-1.700; 0.058; 0.000)" ParentFrame="BoneChassis_cdt" >
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.000; 0.000; 0.074)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.000; 0.000; -0.074)" />
@@ -441,84 +463,84 @@
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(1.400; 0.000; -0.074)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(1.400; 0.000; 0.000)" />
 			</Socket>
-			
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="MinicraneUS" NamesBlock="BigCraneUs, LogLift, FrameAddonTank, Pacific512SpareWheel, Pacific512CabinProtector" Offset="(0.657; 1.327; 0)" ParentFrame="BoneCabin_cdt" />
 			<Socket Names="MetalDetector" NamesBlock="BigCraneUs, LogLift, FrameAddonTank, FrameAddon" Offset="(-0.52; 0.272; 0)" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="pacific512_bumper_default">
-			<Socket Names="Pacific512Bumper" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="Pacific512Bumper" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="pacific512_visor_default">
-			<Socket Names="Pacific512Visor" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="Pacific512Visor" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="pacific512_horn_default">
-			<Socket Names="Pacific512Horns" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="Pacific512Horns" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="pacific512_snorkel_default">
-			<Socket Names="Pacific512Snorkel" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="Pacific512Snorkel" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="pacific512_exhaust_default">
-			<Socket Names="Pacific512Exhaust" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="Pacific512Exhaust" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="pacific512_air_conditioner_default">
-			<Socket Names="Pacific512AirConditioner" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="Pacific512AirConditioner" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="Pacific512SpotLight" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="Pacific512SpotLight" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="Pacific512Beacon" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="Pacific512Beacon" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="Pacific512CabinProtector" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt">
+			<Socket Names="Pacific512CabinProtector" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0)" />
 			</Socket>
-			<Socket Names="Pacific512SpareWheel" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt">
+			<Socket Names="Pacific512SpareWheel" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0)" />
 			</Socket>
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="pacificP512Sticker_1x1_01" ParentFrame="BoneCabin_cdt" />
+			<Socket InCockpit="true" Names="pacificP512Sticker_1x1_01" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="pacificP512Sticker_1x1_02" ParentFrame="BoneCabin_cdt" />
+			<Socket InCockpit="true" Names="pacificP512Sticker_1x1_02" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="pacificP512Sticker_1x1_03" ParentFrame="BoneCabin_cdt" />
+			<Socket InCockpit="true" Names="pacificP512Sticker_1x1_03" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="pacificP512Sticker_1x2_01" ParentFrame="BoneCabin_cdt" />
+			<Socket InCockpit="true" Names="pacificP512Sticker_1x2_01" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="pacificP512Sticker_1x2_02" ParentFrame="BoneCabin_cdt" />
+			<Socket InCockpit="true" Names="pacificP512Sticker_1x2_02" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="pacificP512Sticker_1x4_01" ParentFrame="BoneCabin_cdt" />
+			<Socket InCockpit="true" Names="pacificP512Sticker_1x4_01" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="pacificP512Sticker_GlassTop" ParentFrame="BoneCabin_cdt" />
+			<Socket InCockpit="true" Names="pacificP512Sticker_GlassTop" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="pacificP512Sticker_GlassBottom" ParentFrame="BoneCabin_cdt" />
+			<Socket InCockpit="true" Names="pacificP512Sticker_GlassBottom" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="pacificP512Sticker_Door_R" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="pacificP512Sticker_Door_R" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="pacificP512Sticker_Door_L" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="pacificP512Sticker_Door_L" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="pacificP512Sticker_Roof" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="pacificP512Sticker_Roof" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="pacificP512Sticker_Capote" ParentFrame="BoneCabin_cdt" InCockpit="true" />
+			<Socket Names="pacificP512Sticker_Capote" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" InCockpit="true" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket
 				InCockpit="true"
 				Names="StuffAirfreshener"
+				NamesBlock="LogLift"
 				Offset="(2.423; 3.097; 0.153)"
 				ParentFrame="BoneCabin_cdt"
 			/>
@@ -527,16 +549,17 @@
 			<Socket
 				InCockpit="true"
 				Names="StuffDashboard"
+				NamesBlock="LogLift"
 				Offset="(2.656; 2.455; -0.057)"
 				UpDir="(-0.061; 0.998; 0)"
 				ParentFrame="BoneCabin_cdt"
 			/>
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="StuffHoodPacificP512" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="StuffHoodPacificP512" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="pacific512_diff_lock_default">
-			<Socket Names="PacificP512DiffLock" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="PacificP512DiffLock" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
 		</AddonSockets>
 	</GameData>
 	<ControlledConstraints>

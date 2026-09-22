@@ -1,0 +1,39 @@
+<TruckAddon>
+	<Exhaust
+			Dir="(-0.553; 0.624; 0.553)"
+			IsLight="false"
+			Origin="(0.576; 3.460; 0.894)"
+			Speed="3.82"
+	/>
+	<TruckData>
+		<Shakers>
+			<Shaker
+				Frame="BoneShakerExhaust"
+				MinAngle="(0.3; 0.000; 0.3)"
+				MaxAngle="(2; 0.001; 2)"
+				MaxFrequency="3.9"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</Shakers>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/mercedes_3850_tuning/mercedes_3850_exhaust_1">
+		<Body Collisions="None" Mass="20" ModelFrame="BoneCabin_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="exhaust_1"
+		Category="exhaust"
+		Price="1300"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_EXHAUST_SNUB_HEATSHIELD_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_EXHAUST_SNUB_HEATSHIELD_NAME"
+		/>
+		<InstallSocket Type="Mercedes3850ExhaustAftermarket" />
+	</GameData>
+</TruckAddon>

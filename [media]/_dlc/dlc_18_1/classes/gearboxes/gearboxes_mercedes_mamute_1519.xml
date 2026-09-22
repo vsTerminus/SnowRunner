@@ -1,0 +1,117 @@
+<GearboxVariants>
+	<Gearbox
+		AWDConsumptionModifier="1.2"
+		CriticalDamageThreshold="0.8"
+		DamageCapacity="180"
+		DamagedConsumptionModifier="1.224"
+		FuelConsumption="1.8"
+		IdleFuelModifier="0.21"
+		Name="g_mercedes_mamute_1519_default"
+		MinBreakFreq="0.0"
+		MaxBreakFreq="8.0"
+	>
+		<ReverseGear AngVel="1.64" FuelModifier="1.8" />
+		<HighGear AngVel="1.0" FuelModifier="1.1" />
+		<Gear AngVel="1.64" FuelModifier="1.8" />
+		<Gear AngVel="2.2" FuelModifier="1.69" />
+		<Gear AngVel="3.72" FuelModifier="1.54" />
+		<Gear AngVel="6.68" FuelModifier="1.38" />
+		<Gear AngVel="11.56" FuelModifier="1.2" />
+		<GameData
+			Price="2100"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_GEARBOX_DEFAULT_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_GEARBOX_DEFAULT_NAME"
+			/>
+			<GearboxParams
+				IsHighGearExists="false"
+				IsLowerGearExists="true"
+				IsLowerPlusGearExists="false"
+				IsLowerMinusGearExists="false"
+			/>
+		</GameData>
+	</Gearbox>
+	<Gearbox
+		AWDConsumptionModifier="1.12"
+		CriticalDamageThreshold="0.6"
+		DamageCapacity="250"
+		DamagedConsumptionModifier="1.57"
+		FuelConsumption="2.2"
+		IdleFuelModifier="0.25"
+		Name="g_mercedes_mamute_1519_offroad"
+		MinBreakFreq="0.0"
+		MaxBreakFreq="15.0"
+	>
+		<ReverseGear AngVel="1.95" FuelModifier="2.2" />
+		<HighGear AngVel="10.5" FuelModifier="1.9" />
+		<Gear AngVel="1.95" FuelModifier="2.2" />
+		<Gear AngVel="2.32" FuelModifier="2.04" />
+		<Gear AngVel="3.317" FuelModifier="1.84" />
+		<Gear AngVel="5.26" FuelModifier="1.62" />
+		<Gear AngVel="8.462" FuelModifier="1.36" />
+		<Gear AngVel="13.24" FuelModifier="1.05" />
+		<GameData
+			Price="2300"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_GEARBOX_OFFROAD_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_GEARBOX_OFFROAD_NAME"
+			/>
+			<GearboxParams
+				IsHighGearExists="true"
+				IsLowerGearExists="true"
+				IsLowerPlusGearExists="true"
+				IsManualLowGear="false"
+				IsLowerMinusGearExists="true"
+			/>
+		</GameData>
+	</Gearbox>
+	<Gearbox
+		AWDConsumptionModifier="1.15"
+		CriticalDamageThreshold="0.625"
+		DamageCapacity="160"
+		DamagedConsumptionModifier="1.192"
+		FuelConsumption="1.65"
+		IdleFuelModifier="0.155"
+		Name="g_mercedes_mamute_1519_highrange"
+		MinBreakFreq="0.0"
+		MaxBreakFreq="5.0"
+	>
+		<ReverseGear AngVel="1.7" FuelModifier="1.8" />
+		<HighGear AngVel="12.8" FuelModifier="1.7" />
+		<Gear AngVel="1.7" FuelModifier="1.8" />
+		<Gear AngVel="2.524" FuelModifier="1.677" />
+		<Gear AngVel="3.904" FuelModifier="1.55" />
+		<Gear AngVel="5.836" FuelModifier="1.4" />
+		<Gear AngVel="8.32" FuelModifier="1.25" />
+		<Gear AngVel="11.356" FuelModifier="1.07" />
+		<Gear AngVel="15" FuelModifier="0.85" />
+		<GameData
+			Price="2500"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_GEARBOX_HIGHRANGE_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_GEARBOX_HIGHRANGE_NAME"
+			/>
+			<GearboxParams
+				IsHighGearExists="true"
+				IsLowerGearExists="true"
+				IsLowerPlusGearExists="false"
+				IsLowerMinusGearExists="false"
+			/>
+		</GameData>
+	</Gearbox>
+</GearboxVariants>

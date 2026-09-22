@@ -1,6 +1,10 @@
 <_templates Include="trucks" />
 <TruckAddon>
-	<PhysicsModel _noinherit="true" Mesh="trucks/voron_d53233_tuning/voron_d53233_spot_light_1" />
+	<PhysicsModel _noinherit="true" Mesh="trucks/voron_d53233_tuning/voron_d53233_spot_light_1" >
+		<Body ImpactType="Truck" Mass="10" ModelFrame="BoneRoot_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
 	<ModelAttachments >
 		<MainHeadLight>
 			<Model _template="HeadLightRay" Org="(1.265; 3.222; -0.617)" />

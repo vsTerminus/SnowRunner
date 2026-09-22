@@ -1,0 +1,39 @@
+<TruckAddon>
+	<Exhaust
+			Dir="(-0.881; -0.252; 0.401)"
+			IsLight="false"
+			Origin="(0.959; 1.118; 1.276)"
+			Speed="3.82"
+	/>
+	<TruckData>
+		<Shakers>
+			<Shaker
+				Frame="BoneExhaust"
+				MinAngle="(0.3; 0.000; 0.3)"
+				MaxAngle="(2; 0.001; 2)"
+				MaxFrequency="3.9"
+				ParentFrame="BoneRoot_cdt"
+			/>
+		</Shakers>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/mercedes_mamute_1519_tuning/mercedes_mamute_1519_exhaust_1">
+		<Body Collisions="None" Mass="10" ModelFrame="BoneRoot_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="exhaust"
+		Category="exhaust"
+		Price="1000"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_EXHAUST_SNUB_HEATSHIELD_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_EXHAUST_SNUB_HEATSHIELD_NAME"
+		/>
+		<InstallSocket Type="MercedesMamute1519Exhaust" />
+	</GameData>
+</TruckAddon>

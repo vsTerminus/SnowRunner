@@ -191,6 +191,7 @@
 		RotationSpeed="4"
 	/>
 	<!--- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	<Snorkel Origin="(3.7; 2.35; 0)" />
 	<PhysicsModel Mesh="trucks/cat_745c">
 		<NetSync Legacy="false" />
 		<Body

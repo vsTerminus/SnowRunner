@@ -79,7 +79,7 @@
 						AxisLocal="(0; 0; -1)"
 						Type="Hinge"
 						MinLimit="-70"
-						MaxLimit="3"
+						MaxLimit="0"
 					>
 						<Motor Force="410000" Tau="0.9" Type="Position" />
 					</Constraint>
@@ -162,7 +162,7 @@
 		<SoundIKLoop Name="trucks/krs_58_bandit/krs_58_bandit_crane_move_loop" Range="20" Volume="1" />
 		<InstallSocket Type="CraneMercedesActros" />
 		<CraneSourceSocket Pos="(3.123; 3.960; 0.000)" ParentFrame="BoneArm4_cdt" />
-		<RequiredAddon Types="mercedes_benz_actros_6x6_subframe, saddle_high_mercedes_actros_6x6" />
+		<RequiredAddon Types="mercedes_benz_actros_6x6_subframe, saddle_high_mercedes_actros_6x6, alt_saddle_low_mercedes_actros_6x6" />
 		<AddonType Name="Crane" />
 	</GameData>
 	<ControlledIK

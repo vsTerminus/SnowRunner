@@ -217,7 +217,7 @@
 		</Body>
 	</PhysicsModel>
 	<GameData
-		CameraPreset="addon_1"
+		CameraPreset="loglift_front"
 		Category="frame_addons"
 		IsCustomizable="true"
 		Price="7900"

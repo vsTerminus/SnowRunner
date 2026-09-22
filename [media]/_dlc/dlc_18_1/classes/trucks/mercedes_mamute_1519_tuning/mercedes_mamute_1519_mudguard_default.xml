@@ -1,0 +1,31 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<TruckData FuelCapacity="40" />
+	<FuelHide>
+		<Mesh Frame="mudguard_rear_can_left" HideThreshold="0.0" />
+		<Mesh Frame="mudguard_rear_can_right" HideThreshold="0.5" />
+	</FuelHide>
+	<PhysicsModel Mesh="trucks/mercedes_mamute_1519_tuning/mercedes_mamute_1519_mudguard_default">
+		<Body ImpactType="Truck" Mass="5" ModelFrame="BoneRoot_cdt">
+			<Constraint Type="Rigid" />
+			<Body ImpactType="Truck" Mass="5" ModelFrame="BoneCabinTwist_cdt">
+				<Constraint ExplicitParentFrame="0" Type="Fixed" />
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="addon_1"	
+		Category="fender_rear"
+		Price="400"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_REAR_FENDERS_STOCK_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_REAR_FENDERS_STOCK_NAME"
+		/>
+		<InstallSocket Type="MercedesMamute1519Mudguard" />
+	</GameData>
+</TruckAddon>

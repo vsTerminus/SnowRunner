@@ -13,7 +13,11 @@
 <_parent File="royal_bm17_horn_1" />
 <TruckAddon>
 	<Snorkel Origin="(3.320; 2.538; -1.060)" />
-	<PhysicsModel Mesh="trucks/royal_bm17_tuning/royal_bm17_snorkel_1" />
+	<PhysicsModel Mesh="trucks/royal_bm17_tuning/royal_bm17_snorkel_1" >
+		<Body Collisions="Default" Mass="25" ModelFrame="BoneCabin_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
 	<ModelAttachments>
 		<Ignition>
 			<Flare _template="IgnitionSignalOrange" Pos="(3.363; 1.559; -1.06)" />

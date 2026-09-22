@@ -1,0 +1,19 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/mercedes_mamute_1519_tuning/mercedes_mamute_1519_horn_1" />
+	<GameData
+		CameraPreset="hoods_default"
+		Category="miscellenious"
+		Price="300"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+        <UiDesc
+            UiDesc="UI_TUNING_HORNS_SINGLE_ONESIDE_DESC"
+            UiIcon30x30=""
+            UiIcon40x40=""
+            UiName="UI_TUNING_HORNS_SINGLE_ONESIDE_NAME"
+        />
+		<InstallSocket Type="MercedesMamute1519Horn" />
+	</GameData>
+</TruckAddon>

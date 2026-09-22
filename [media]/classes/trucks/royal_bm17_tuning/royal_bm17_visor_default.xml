@@ -1,7 +1,11 @@
 <_templates Include="trucks" />
 <_parent File="royal_bm17_horn_1" />
 <TruckAddon>
-	<PhysicsModel Mesh="trucks/royal_bm17_tuning/royal_bm17_visor_default" />
+	<PhysicsModel Mesh="trucks/royal_bm17_tuning/royal_bm17_visor_default" >
+		<Body ImpactType="Truck" Mass="6" ModelFrame="BoneCabin_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
 	<GameData
 		_noinherit="true"
 		CameraPreset="roof"

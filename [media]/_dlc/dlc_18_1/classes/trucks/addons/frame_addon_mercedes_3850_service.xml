@@ -1,0 +1,148 @@
+<_templates Include="trucks" >
+	<Body>
+		<Extinguisher
+			Collisions="None"
+			CenterOfMassOffset="(0; 0; 0)"
+			Mass="1"
+		>
+			<Constraint
+				AxisLocal="(0; 0; 1)"
+				Type="Hinge"
+				MinLimit="0"
+				MaxLimit="15"
+			>
+				<Motor Damping="1" Spring="1" Type="Spring" />
+			</Constraint>
+		</Extinguisher>
+		<Lock
+			Collisions="None"
+			CenterOfMassOffset="(0; 0; 0)"
+			Mass="2"
+		>
+			<Constraint
+				AxisLocal="(0; 0; 1)"
+				Type="Hinge"
+				MinLimit="-0.2"
+				MinLimit="0.3"
+			>
+				<Motor Damping="0.1" Spring="0.05" Type="Spring" />
+			</Constraint>
+		</Lock>
+		<Hose Mass="4" Collisions="None">
+			<Constraint
+				PivotOffset="(0.000; 0.000; 0.000)"
+				Type="Ragdoll"
+				TwistAxisLocal="(1; 0; 0)"
+				PlaneAxisLocal="(0; 1; 0)"
+				TwistMin="-24"
+				TwistMax="24"
+				PlaneMin="-32"
+				PlaneMax="32"
+				Cone="8"
+			>
+				<TwistMotor Damping="1" Spring="0.5" Type="Spring" />
+				<PlaneMotor Damping="1" Spring="0.5" Type="Spring" />
+				<ConeMotor Damping="1" Spring="0.5" Type="Spring" />
+			</Constraint>
+		</Hose>
+	</Body>
+</_templates>
+<TruckAddon>
+	<TruckData
+		FuelCapacity="1350"
+		RepairsCapacity="400"
+		WheelRepairsCapacity="4"
+	/>
+	
+	<Rotator
+		Frame="BoneRotatorRight"
+		EngineTorqueFactor="0" 
+		RotationSpeed="3.92"
+		RotationAxis="(0; 1; 0)"
+	/>
+	<Rotator
+		Frame="BoneRotatorLeft"
+		EngineTorqueFactor="0" 
+		RotationSpeed="3.85"
+		RotationAxis="(0; 1; 0)"
+	/>
+	
+	<PhysicsModel Mesh="trucks/addons/frame_addon_mercedes_3850_service" >
+		<Body ImpactType="Truck" Mass="2750" ModelFrame="BoneChassis_cdt">
+			<Constraint Type="Rigid" />
+			<Body Collisions="None" Mass="1" ModelFrame="BoneTool_cdt">
+				<Constraint
+					AxisLocal="(1; 0; 0)"
+					Type="Prismatic"
+					MinLimit="-0.003"
+					MaxLimit="0.003"
+				>
+					<Motor Damping="5" Spring="0.3" Type="Spring" />
+				</Constraint>
+			</Body>
+			<Body _template="Lock" ModelFrame="BoneLock_cdt" />
+			<Body _template="Hose" ModelFrame="BoneHose_cdt" />
+		</Body>
+	</PhysicsModel>
+
+	<ModelAttachments>
+		<StopSignals>
+			<Light _template="StopSignal" Pos="(-5.463; 0.763; 0)" />
+			<Flare _template="StopSignal" Pos="(-4.471; 0.901; 0.962)" />
+			<Flare _template="StopSignal" Pos="(-4.471; 0.901; -0.962)" />
+		</StopSignals>
+		<ReverseSignals>
+			<Light _template="ReverseSignal" Pos="(-5.463; 0.763; 0)" />
+			<Flare _template="ReverseSignal" Pos="(-4.459; 0.899; 1.126)" />
+			<Flare _template="ReverseSignal" Pos="(-4.459; 0.899; -1.126)" />
+			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.05" Dir="(-1; 0; 0)" Size="0.4" Pos="(-4.459; 0.899; -1.126)" />
+			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.05" Dir="(-1; 0; 0)" Size="0.4" Pos="(-4.459; 0.899; 1.126)" />
+			
+			<Light _template="ReverseSignal" Pos="(-4.247; 2.732; -1.101)" ParentFrame="BoneChassis_cdt" />
+			<Light _template="ReverseSignal" Pos="(-4.247; 2.732; 1.101)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="IgnitionSignalWhite" Dir="(-1; 0; 0)" Size="0.6" Pos="(-4.247; 2.732; -1.101)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="IgnitionSignalWhite" Dir="(-1; 0; 0)" Size="0.6" Pos="(-4.247; 2.732; 1.101)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.05" Dir="(-1; 0; 0)" Size="0.4" Pos="(-4.247; 2.732; -1.101)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.05" Dir="(-1; 0; 0)" Size="0.4" Pos="(-4.247; 2.732; 1.101)" ParentFrame="BoneChassis_cdt" />
+		</ReverseSignals>
+		<Ignition _template="Flasher">
+			<Model Dir="(0.96; -0.1; 0.262)" Org="(0.854; 2.931; -1.093)" ParentFrame="BoneRotatorRight" />
+			<Light Dir="(0.96; -0.1; 0.262)" Pos="(0.854; 2.931; -1.093)" ParentFrame="BoneRotatorRight" />
+			<Flare Dir="(0.96; -0.1; 0.262)" Pos="(0.854; 2.931; -1.093)" ParentFrame="BoneRotatorRight" />
+			<Flare Dir="(0.96; -0.1; 0.262)" Pos="(0.854; 2.931; -1.093)" ParentFrame="BoneRotatorRight" />
+			<Flare Pos="(0.854; 2.931; -1.093)" />
+		</Ignition>
+		<Ignition _template="Flasher">
+			<Model Dir="(0.96; -0.1; 0.262)" Org="(0.854; 2.931; 1.093)" ParentFrame="BoneRotatorLeft" />
+			<Light Dir="(0.96; -0.1; 0.262)" Pos="(0.854; 2.931; 1.093)" ParentFrame="BoneRotatorLeft" />
+			<Flare Dir="(0.96; -0.1; 0.262)" Pos="(0.854; 2.931; 1.093)" ParentFrame="BoneRotatorLeft" />
+			<Flare Dir="(0.96; -0.1; 0.262)" Pos="(0.854; 2.931; 1.093)" ParentFrame="BoneRotatorLeft" />
+			<Flare Pos="(0.854; 2.931; 1.093)" />
+		</Ignition>
+		<Ignition>
+			<Flare _template="IgnitionSignalRed" AspectRatio="1" Dir="(-1; 0; 0)" Pos="(-4.471; 0.901; 0.962)" />
+			<Flare _template="IgnitionSignalRed" AspectRatio="1" Dir="(-1; 0; 0)" Pos="(-4.471; 0.901; -0.962)" />
+		</Ignition>
+	</ModelAttachments>
+	
+	<GameData
+		CameraPreset="addon_1"
+		Category="frame_addons"
+		IsCustomizable="true"
+		Price="7500"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_ADDON_FRAME_MAINTAINER_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_ADDON_FRAME_MAINTAINER_NAME"
+		/>
+		<RequiredAddon Types="mercedes_3850_exhaust_default" />
+		<InstallSocket Offset="(0; 0; 0)" Type="Mercedes3850Service" />
+	</GameData>
+	<FuelMass>
+		<Body Mass="3080" />
+	</FuelMass>
+</TruckAddon>

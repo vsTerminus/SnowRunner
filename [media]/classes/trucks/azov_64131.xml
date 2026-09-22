@@ -406,6 +406,7 @@
 		/>
 		<CustomizationCameras>
 			<CameraPos FOV="32.0" Interior="true" Name="sticker_1" InterestPosition="(8.061; 4.451; 1.421)" Position="(5.883; 2.373; -0.832)" />
+			<CameraPos FOV="32.0" Name="loglift_front" InterestPosition="(2.992; 2.226; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-5.759; 3.914; 6.213)" />
 			<CameraPos FOV="32.0" Name="addon_1" InterestPosition="(-0.508; 2.026; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-9.259; 3.714; 6.213)" />
 			<CameraPos FOV="32.0" Name="addon_2" InterestPosition="(4.294; 1.744; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(0.557; 4.1; 3.247)" />
 			<CameraPos FOV="32.0" Interior="true" Name="mirror_mount" InterestPosition="(8.061; 2.646; 0.991)" Position="(5.676; 3.006; -0.661)" />
@@ -434,39 +435,38 @@
 			<Socket Names="Trailer, LogTrailer" Offset="(-4.227; 1.083; 0)">
 				<AddonsShift Offset="(0; 0; 0)" TrailerNamesBlock="Trailer, LogTrailer" Types="MinicraneRU, FrameAddon" />
 			</Socket>
-			<Socket Names="Semitrailer, SemitrailerOiltank, SemitrailerFoldableLog" NamesBlock="SaddleHigh" Offset="(-2.735; 1.591; 0)" >
+			<Socket Names="Semitrailer, SemitrailerOiltank, SemitrailerFoldableLog" NamesBlock="LogLift, SaddleHigh" Offset="(-2.835; 1.591; 0)" >
 				<AddonsShift Offset="(-0.61; 0; 0)" Types="SaddleMotorized" />
 			</Socket>
-			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" NamesBlock="SaddleLow" Offset="(-1.864; 1.765; 0)" />
+			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" NamesBlock="LogLift, SaddleLow" Offset="(-1.864; 1.765; 0)" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="BunkLog" Offset="(-6; 1.266; 0)" />
-			<Socket Names="SaddleLow" Offset="(-2.709; 1.266; 0)">
+			<Socket Names="BunkLog" NamesBlock="LogLift" Offset="(-6.2; 1.266; 0)" />
+			<Socket Names="SaddleLow" NamesBlock="LogLift" Offset="(-2.809; 1.266; 0)">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.05)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.05)" />
 			</Socket>
-			<Socket Names="SaddleHigh" Offset="(-1.854; 1.267; 0)">
+			<Socket Names="SaddleHigh" NamesBlock="LogLift" Offset="(-1.854; 1.267; 0)">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.02)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.02)" />
 			</Socket>
-			<Socket Names="FrameAddon" Offset="(-2.165; 1.267; 0)">
+			<Socket Names="FrameAddon" NamesBlock="LogLift" Offset="(-2.165; 1.267; 0)">
 				<AddonsShift Offset="(-1.1; 0; 0)" Types="MinicraneRU" />
 			</Socket>
-			<Socket Names="FrameAddonTowPlatform" NamesBlock="MinicraneRU, MetalDetector, Trailer, LogTrailer" Offset="(-1.6; 1.267; 0)" />
-			<Socket Names="FrameAddonTank" Offset="(-3.2; 1.267; 0)" NamesBlock="LogTrailer"/>
-			<Socket Names="FrameAddonMaintainer" NamesBlock="Trailer, LogTrailer" Offset="(-2.861; 0.238; 0)" ParentFrame="BoneChassis_cdt" />
-			<Socket Names="FrameAddonSeismicVibrator" NamesBlock="Trailer, LogTrailer" Offset="(0.2; 1.267; 0)" />
-			<Socket Names="FrameAddonKung" Offset="(-2.22; 1.345; 0)" ParentFrame="BoneChassis_cdt">
+			<Socket Names="FrameAddonTowPlatform" NamesBlock="LogLift, MinicraneRU, MetalDetector, Trailer, LogTrailer" Offset="(-1.6; 1.267; 0)" />
+			<Socket Names="FrameAddonTank" Offset="(-3.2; 1.267; 0)" NamesBlock="LogLift, LogTrailer"/>
+			<Socket Names="FrameAddonMaintainer" NamesBlock="LogLift, Trailer, LogTrailer" Offset="(-2.861; 0.238; 0)" ParentiFrame="BoneChassis_cdt" />
+			<Socket Names="FrameAddonSeismicVibrator" NamesBlock="LogLift, Trailer, LogTrailer" Offset="(0.2; 1.267; 0)" />
+			<Socket Names="FrameAddonKung" NamesBlock="LogLift" Offset="(-2.22; 1.345; 0)" ParentFrame="BoneChassis_cdt">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.14)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.14)" />
 			</Socket>
 			<!-- <Socket Names="BigCraneUs" Offset="(-2.9; 1.278; 0)" /> -->
-			<Socket Names="BigCraneRu" Offset="(-2.95; 1.36; 0)">
+			<Socket Names="BigCraneRu" NamesBlock="LogLift" Offset="(-2.95; 1.36; 0)">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.082; 0)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.082; 0)" />
 			</Socket>
-			<Socket Names="LogLift" Offset="(0.035; 1.271; 0)" />
-			<Socket Names="SaddleMotorized" Offset="(-2.000; 0.000; 0.000)" ParentFrame="BoneChassis_cdt" >
+			<Socket Names="SaddleMotorized" NamesBlock="LogLift" Offset="(-2.000; 0.000; 0.000)" ParentFrame="BoneChassis_cdt" >
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.000; 0.000; 0.000)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.000; 0.000; 0.000)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(1.100; 0.000; 0.000)" />
@@ -479,6 +479,23 @@
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.07)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.07)" />
 			</Socket>
+			<Socket
+				Names="LogLiftKenworth"
+				NamesBlock="SaddleHigh,
+							FrameAddon,
+							FrameAddonTowPlatform,
+							FrameAddonTank,
+							FrameAddonMaintainer,
+							FrameAddonSeismicVibrator,
+							FrameAddonKung,
+							BigCraneRu,
+							LogLift,
+							SaddleMotorized"
+				Offset="(-0.93; 1.455; 0)"
+			>
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.02)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.02)" />
+			</Socket>
 		</AddonSockets>
 		<AddonSockets DefaultAddon="azov_64131_exhaust_default">
 			<Socket Names="Azov64131Exhaust" ParentFrame="BoneCabin_cdt" />
@@ -488,53 +505,54 @@
 			<Socket Names="Azov64131Snorkel2" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="azov_64131_beacon_default">
-			<Socket Names="Azov64131Beacon" NamesBlock="Azov64131Beacon2, Azov64131SpotLight" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="Azov64131Beacon" NamesBlock="LogLift, Azov64131Beacon2, Azov64131SpotLight" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="Azov64131Beacon2" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="Azov64131Beacon2" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="azov_64131_wheel_addon_default">
-			<Socket Names="azov64131WheelAddon" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="azov64131WheelAddon" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="azov_64131_fender_default">
-			<Socket Names="Azov64131Fender" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt">
+			<Socket Names="Azov64131Fender" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt">
 				<ExtraParent Frame="BoneCabin_cdt" />
 			</Socket>
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="Azov64131Visor" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="Azov64131Visor" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="Azov64131SpotLight" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="Azov64131SpotLight" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="Azov64131Bumper" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="Azov64131Bumper" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="Azov64131Horn" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="Azov64131Horn" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="Azov64131Gabarite" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="Azov64131Gabarite" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="Azov64131AirConditioner" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="Azov64131AirConditioner" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="azov64131Sticker_GlassTop" ParentFrame="BoneCabin_cdt" />
+			<Socket InCockpit="true" Names="azov64131Sticker_GlassTop" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="azov64131Sticker_GlassBottom" ParentFrame="BoneCabin_cdt" />
+			<Socket InCockpit="true" Names="azov64131Sticker_GlassBottom" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="azov64131Sticker_Door_L" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="azov64131Sticker_Door_L" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="azov64131Sticker_Door_R" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="azov64131Sticker_Door_R" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket
 				InCockpit="true"
 				Names="Azov64131Sticker_1x1_01"
+				NamesBlock="LogLift"
 				Offset="(0; 0; 0)"
 				ParentFrame="BoneCabin_cdt"
 			/>
@@ -543,6 +561,7 @@
 			<Socket
 				InCockpit="true"
 				Names="Azov64131Sticker_1x1_02"
+				NamesBlock="LogLift"
 				Offset="(0; 0; 0)"
 				ParentFrame="BoneCabin_cdt"
 			/>
@@ -551,6 +570,7 @@
 			<Socket
 				InCockpit="true"
 				Names="Azov64131Sticker_1x1_03"
+				NamesBlock="LogLift"
 				Offset="(0; 0; 0)"
 				ParentFrame="BoneSunShield1_cdt"
 			/>
@@ -559,6 +579,7 @@
 			<Socket
 				InCockpit="true"
 				Names="Azov64131Sticker_1x2_01"
+				NamesBlock="LogLift"
 				Offset="(0; 0; 0)"
 				ParentFrame="BoneSunShield1_cdt"
 			/>
@@ -567,6 +588,7 @@
 			<Socket
 				InCockpit="true"
 				Names="Azov64131Sticker_1x4_01"
+				NamesBlock="LogLift"
 				Offset="(0; 0; 0)"
 				ParentFrame="BoneCabin_cdt"
 			/>
@@ -575,6 +597,7 @@
 			<Socket
 				InCockpit="true"
 				Names="Azov64131Sticker_1x4_02"
+				NamesBlock="LogLift"
 				Offset="(0; 0; 0)"
 				ParentFrame="BoneSunShield2_cdt"
 			/>
@@ -583,6 +606,7 @@
 			<Socket
 				InCockpit="true"
 				Names="StuffAirfreshener"
+				NamesBlock="LogLift"
 				Offset="(3.459; 3.062; 0.405)"
 				ParentFrame="BoneCabin_cdt"
 			/>
@@ -591,15 +615,16 @@
 			<Socket
 				InCockpit="true"
 				Names="StuffDashboard"
+				NamesBlock="LogLift"
 				Offset="(3.867; 2.481; 0.046)"
 				ParentFrame="BoneCabin_cdt"
 			/>
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="StuffCurtainAzov64131" ParentFrame="BoneCabin_cdt" />
+			<Socket InCockpit="true" Names="StuffCurtainAzov64131" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="AddonHornsSmall" NamesBlock="Azov64131AirConditioner" Offset="(2.655; 3.270; 0)" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="AddonHornsSmall" NamesBlock="LogLift, Azov64131AirConditioner" Offset="(2.655; 3.270; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 	</GameData>
 	<ControlledConstraints>

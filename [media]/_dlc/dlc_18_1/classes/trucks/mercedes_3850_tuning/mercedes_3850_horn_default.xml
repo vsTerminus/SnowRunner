@@ -1,0 +1,21 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/mercedes_3850_tuning/mercedes_3850_horn_default">
+		<NetSync Legacy="false" />
+	</PhysicsModel>
+	<GameData
+		CameraPreset="roof"
+		Category="miscellenious"
+		Price="300"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_HORNS_STOCK_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_HORNS_STOCK_NAME"
+		/>
+		<InstallSocket Type="Mercedes3850Horn" />
+	</GameData>
+</TruckAddon>

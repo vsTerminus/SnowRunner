@@ -1,7 +1,11 @@
 <_templates Include="trucks" />
 <TruckAddon>
 	<Snorkel Origin="(1.667; 3.397; 0)" />
-	<PhysicsModel Mesh="trucks/azov_64131_tuning/azov_64131_snorkel_default"/>
+	<PhysicsModel Mesh="trucks/azov_64131_tuning/azov_64131_snorkel_default">
+		<Body Collisions="Default" Mass="25" ModelFrame="BoneCabin_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
 	<GameData
 		CameraPreset="roof"
 		Category="snorkel"

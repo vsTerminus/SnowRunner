@@ -8,6 +8,26 @@
 			</Body>
 		</Body>
 	</PhysicsModel>
+	<ModelAttachments>
+		<StopSignals>
+			<Light _template="StopSignal" Pos="(-4.472; 0.892; 0)" ParentFrame="BoneAddon_cdt" />
+			<Flare _template="StopSignal" AspectRatio="3" Color="g(255; 0; 0) x 0.3" Size="0.3" Pos="(-4.472; 0.910; 0.990)" ParentFrame="BoneAddon_cdt" />
+			<Flare _template="StopSignal" AspectRatio="3" Color="g(255; 0; 0) x 0.3" Size="0.3" Pos="(-4.472; 0.910; -0.990)" ParentFrame="BoneAddon_cdt" />
+		</StopSignals>
+		<ReverseSignals>
+			<Light _template="ReverseSignal" Pos="(-4.002; 0.892; 0)" />
+			<Flare _template="ReverseSignal" Color="g(245; 235; 220) x 0.6" Size="0.4" Pos="(-4.472; 0.911; 0.819)" />
+			<Flare _template="ReverseSignal" Color="g(245; 235; 220) x 0.6" Size="0.4" Pos="(-4.472; 0.911; -0.819)" />
+			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.05" Dir="(-1; 0; 0)" Size="0.4" Pos="(-4.472; 0.911; 0.819)" />
+			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.05" Dir="(-1; 0; 0)" Size="0.4" Pos="(-4.472; 0.911; -0.819)" />
+		</ReverseSignals>
+		<Ignition>
+			<Light _template="IgnitionSignalRed" Pos="(-4.472; 0.439; 0)" />
+			
+			<Flare _template="IgnitionSignalRed" Size="0.3" Pos="(-4.472; 0.910; 0.990)" ParentFrame="BoneAddon_cdt" />
+			<Flare _template="IgnitionSignalRed" Size="0.3" Pos="(-4.472; 0.910; -0.990)" ParentFrame="BoneAddon_cdt" />
+		</Ignition>
+	</ModelAttachments>
 	<GameData
 		CameraPreset="addon_1"
 		Category="frame_addons"
@@ -15,6 +35,13 @@
 		UnlockByExploration="false"
 		UnlockByRank="1"
 	>
+		<WinchSocket Pos="(-4.46; 1.121; 0)" />
+		<WinchSocket Pos="(-4.55; 0.524; 1.054)" />
+		<WinchSocket Pos="(-4.55; 0.524; -1.054)" />
+		
+		<CraneSocket Pos="(-4.46; 1.121; 0)" />
+		<CraneSocket Pos="(-4.55; 0.524; 1.054)" />
+		<CraneSocket Pos="(-4.55; 0.524; -1.054)" />
 		<UiDesc
 			UiDesc="UI_TUNING_FRAME_EXTENDED_DESC"
 			UiIcon30x30=""

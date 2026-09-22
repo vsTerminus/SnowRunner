@@ -548,6 +548,7 @@
 			<CameraPos FOV="32.0" Name="visor" InterestPosition="(4.758; 2.617; -0.0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(9.287; 4.69; -5)" />
 			<CameraPos FOV="32.0" Name="snorkels" InterestPosition="(5.95; 2; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(9.75; 3.7; 4.85)" />
 			<CameraPos FOV="32.0" Name="hoods" InterestPosition="(5.275; 1.623; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(12.823; 1.44; -4.73)" />
+			<CameraPos FOV="32.0" Name="loglift_front" InterestPosition="(2.8; 1.869; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-6.265; 3.31; 8.244)" />
 			<CameraPos FOV="32.0" Name="addon_1" InterestPosition="(0.8; 1.869; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-8.265; 3.31; 8.244)" />
 			<CameraPos FOV="32.0" Name="addon_2" InterestPosition="(3.194; 1.807; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-8.093; 2.337; -6.718)" />
 			<CameraPos FOV="32.0" Name="spare_wheel" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(0.74; 2.814; 3.953)" InterestPosition="(4.044; 1.994; 0.550)" />		

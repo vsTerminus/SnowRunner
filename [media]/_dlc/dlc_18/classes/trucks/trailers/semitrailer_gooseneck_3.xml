@@ -184,8 +184,8 @@
 							<Motor Force="60000" Tau="1.0" Type="Position" />
 						</Constraint>
 						<Body
-							CenterOfMassOffset="(0; -0.3; 0)"
-							Mass="5"
+							CenterOfMassOffset="(0; 0; 0)"
+							Mass="40"
 							ModelFrame="BoneFootL_cdt"
 							NoFoliageCollisions="true"
 						>
@@ -214,8 +214,8 @@
 							<Motor Force="60000" Tau="1.0" Type="Position" />
 						</Constraint>
 						<Body
-							CenterOfMassOffset="(0; -0.3; 0)"
-							Mass="5"
+							CenterOfMassOffset="(0; 0; 0)"
+							Mass="40"
 							ModelFrame="BoneFootR_cdt"
 							NoFoliageCollisions="true"
 						>
@@ -310,8 +310,8 @@
 		<RequiredAddon _template="SaddleLow" />
 		<InstallSocket Offset="(0; 0; 0)" Type="Semitrailer" ParentFrame="BoneCargo3_cdt" />
 
-		<CraneSocket Pos="(-11.152; -0.987; 0.720)" ParentFrame="BoneRampStop_cdt" />
-		<CraneSocket Pos="(-11.152; -0.987; -0.720)" ParentFrame="BoneRampStop_cdt" />
+		<CraneSocket Pos="(-11.152; -0.987; 0.720)" ParentFrame="BoneCargo1_cdt" />
+		<CraneSocket Pos="(-11.152; -0.987; -0.720)" ParentFrame="BoneCargo1_cdt" />
 		<CraneSocket Pos="(-8.072; -0.456; 1.295)" ParentFrame="BoneCargo1_cdt" />
 		<CraneSocket Pos="(-8.072; -0.456; -1.295)" ParentFrame="BoneCargo1_cdt" />
 		<CraneSocket Pos="(-4.207; -0.456; 1.295)" ParentFrame="BoneCargo3_cdt" />
@@ -323,8 +323,8 @@
 		<CraneSocket Pos="(-5.486; -0.456; 1.295)" ParentFrame="BoneCargo2_cdt" />
 		<CraneSocket Pos="(-5.486; -0.456; -1.295)" ParentFrame="BoneCargo2_cdt" />	
 
-		<WinchSocket Pos="(-11.152; -0.987; 0.720)" ParentFrame="BoneRampStop_cdt" />
-		<WinchSocket Pos="(-11.152; -0.987; -0.720)" ParentFrame="BoneRampStop_cdt" />
+		<WinchSocket Pos="(-11.152; -0.987; 0.720)" ParentFrame="BoneCargo1_cdt" />
+		<WinchSocket Pos="(-11.152; -0.987; -0.720)" ParentFrame="BoneCargo1_cdt" />
 		<WinchSocket Pos="(-8.069; -0.733; 1.478)" ParentFrame="BoneCargo1_cdt" />
 		<WinchSocket Pos="(-8.069; -0.733; -1.478)" ParentFrame="BoneCargo1_cdt" />
 		<WinchSocket Pos="(-4.205; -0.733; 1.478)" ParentFrame="BoneCargo3_cdt" />

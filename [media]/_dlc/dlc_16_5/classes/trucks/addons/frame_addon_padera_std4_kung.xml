@@ -115,10 +115,10 @@
 		<CraneSocket FixedToTruck="true" Pos="(0.750; 1.573; 1.338)" />
 		<CraneSocket FixedToTruck="true" Pos="(0.750; 1.573; -1.338)" />
 		<UiDesc
-			UiDesc="UI_ADDON_FRAME_KUNG_PADERA_STD4_DESC"
+			UiDesc="UI_ADDON_FRAME_HEAVY_REPAIR_02_DESC"
 			UiIcon30x30=""
 			UiIcon40x40=""
-			UiName="UI_ADDON_FRAME_KUNG_PADERA_STD4_NAME"
+			UiName="UI_ADDON_FRAME_HEAVY_REPAIR_NAME"
 		/>
 		<InstallSocket Offset="(0; 0; 0)" Type="PaderaSTD4Kung" />
 		<AddonSlots InitialOffset="(-3.1; 1.635; -0.000)" OffsetStep="(0; 0; 0)" Quantity="1" />

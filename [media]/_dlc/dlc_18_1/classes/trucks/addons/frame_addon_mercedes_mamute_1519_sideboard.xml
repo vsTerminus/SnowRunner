@@ -1,0 +1,96 @@
+<_templates Include="trucks">
+	<Body>
+		<Chain Mass="5" Collisions="None">
+			<Constraint
+				PivotOffset="(0; 0; 0)"
+				Type="Hinge"
+				AxisLocal="(0; 0; 1)"
+				MinLimit="-38.0"
+				MaxLimit="0.76"
+			>
+				<Motor Spring="1" Damping="0.1" Type="Spring" />
+			</Constraint>
+		</Chain>
+	</Body>
+</_templates>
+<TruckAddon IsChassisFullOcclusion="true">
+	<PhysicsModel Mesh="trucks/addons/frame_addon_mercedes_mamute_1519_sideboard">
+		<Body ImpactType="Truck" Mass="930" ModelFrame="BoneRoot_cdt">
+			<Constraint Type="Rigid" />
+			<Body _template="Chain" ModelFrame="BoneChainL_cdt" />
+			<Body _template="Chain" ModelFrame="BoneChainR_cdt" />
+			<Body
+				ModelFrame="BoneAxe_cdt"
+				Mass="10"
+				Collision="None"
+				CenterOfMassOffset="(0; 0; 0)"
+			>
+				<Constraint
+					Type="Prismatic"
+					AxisLocal="(0; 0; 1)"
+					MinLimit="0"
+					MaxLimit="0.009"
+				>
+					<Motor Type="Spring" Spring="1" Damping="0.1" />
+				</Constraint>
+			</Body>
+			<Body
+				ModelFrame="BoneShovel_cdt"
+				Mass="10"
+				Collision="None"
+				CenterOfMassOffset="(0; 0; 0)"
+			>
+				<Constraint
+					Type="Fixed"
+					LinearLimitsX="(-0.006; 0)"
+					LinearLimitsY="(0; 0.008)"
+					LinearLimitsZ="(-0.005; 0.005)"
+				>
+					<Motor Type="Spring" Spring="1" Damping="0.1" />
+				</Constraint>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<StopSignals>
+			<Light _template="StopSignal" Pos="(-4.509; 1.694; 0.0)" />
+			<Flare _template="StopSignal" Size="0.2" Pos="(-4.509; 1.694; 0.814)" />
+			<Flare _template="StopSignal" Size="0.2" Pos="(-4.509; 1.694; -0.814)" />
+		</StopSignals>
+
+		<Ignition>
+			<Light _template="StopSignal" Pos="(-4.509; 1.694; 0.0)" />
+			<Flare _template="StopSignal" Color="g(255; 0; 0) x 0.2" Size="0.2" Pos="(-4.509; 1.694; 0.814)" />
+			<Flare _template="StopSignal" Color="g(255; 0; 0) x 0.2" Size="0.2" Pos="(-4.509; 1.694; -0.814)" />
+
+			<Flare _template="LED" Color="g(255; 0; 0) x 0.5" Dir="(-1; 0; 0)" AspectRatio="1" Size="0.03" Pos="(-4.508; 1.694; -0.863)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="LED" Color="g(255; 0; 0) x 0.5" Dir="(-1; 0; 0)" AspectRatio="1" Size="0.03" Pos="(-4.508; 1.743; -0.814)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="LED" Color="g(255; 0; 0) x 0.5" Dir="(-1; 0; 0)" AspectRatio="1" Size="0.03" Pos="(-4.508; 1.694; -0.814)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="LED" Color="g(255; 0; 0) x 0.5" Dir="(-1; 0; 0)" AspectRatio="1" Size="0.03" Pos="(-4.508; 1.645; -0.814)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="LED" Color="g(255; 0; 0) x 0.5" Dir="(-1; 0; 0)" AspectRatio="1" Size="0.03" Pos="(-4.508; 1.694; -0.765)" ParentFrame="BoneRoot_cdt" />
+
+			<Flare _template="LED" Color="g(255; 0; 0) x 0.5" Dir="(-1; 0; 0)" AspectRatio="1" Size="0.03" Pos="(-4.508; 1.694; 0.863)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="LED" Color="g(255; 0; 0) x 0.5" Dir="(-1; 0; 0)" AspectRatio="1" Size="0.03" Pos="(-4.508; 1.743; 0.814)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="LED" Color="g(255; 0; 0) x 0.5" Dir="(-1; 0; 0)" AspectRatio="1" Size="0.03" Pos="(-4.508; 1.694; 0.814)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="LED" Color="g(255; 0; 0) x 0.5" Dir="(-1; 0; 0)" AspectRatio="1" Size="0.03" Pos="(-4.508; 1.645; 0.814)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="LED" Color="g(255; 0; 0) x 0.5" Dir="(-1; 0; 0)" AspectRatio="1" Size="0.03" Pos="(-4.508; 1.694; 0.765)" ParentFrame="BoneRoot_cdt" />
+		</Ignition>
+	</ModelAttachments>
+	<GameData
+		CameraPreset="addon_1"
+		Category="frame_addons"
+		IsCustomizable="true"
+		Price="1400"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_ADDON_FRAME_SIDEBOARD_2_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_ADDON_FRAME_SIDEBOARD_2_NAME"
+		/>
+		<InstallSocket Type="MercedesMamute1519Sideboard" />
+		<AddonSlots InitialOffset="(-0.578; 1.839; 0.000)" OffsetStep="(-2.6; 0; 0)" Quantity="2" />
+	</GameData>
+</TruckAddon>

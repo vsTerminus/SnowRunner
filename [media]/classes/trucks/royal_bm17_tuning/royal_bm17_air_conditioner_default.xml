@@ -1,7 +1,11 @@
 <_templates Include="trucks" />
 <_parent File="royal_bm17_air_conditioner_1" />
 <TruckAddon>
-	<PhysicsModel Mesh="trucks/royal_bm17_tuning/royal_bm17_air_conditioner_default" />
+	<PhysicsModel Mesh="trucks/royal_bm17_tuning/royal_bm17_air_conditioner_default" >
+		<Body ImpactType="Truck" Mass="8" ModelFrame="BoneCabin_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
 	<GameData
 		Price="600"
 		UnlockByExploration="false"

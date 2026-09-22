@@ -1,0 +1,164 @@
+<_templates Include="trucks"/>
+<GearboxVariants>
+	<Gearbox
+		AWDConsumptionModifier="1.13"
+		CriticalDamageThreshold="0.85"
+		DamageCapacity="200"
+		DamagedConsumptionModifier="1.667"
+		FuelConsumption="2.95"
+		IdleFuelModifier="0.38"
+		Name="g_mercedes_3850_default"
+		MinBreakFreq="0.0"
+		MaxBreakFreq="50.0"
+	>
+		<Gear AngVel="1.95" FuelModifier="2.12" />
+		<Gear AngVel="2.18" FuelModifier="1.92" />
+		<Gear AngVel="2.82" FuelModifier="1.73" />
+		<Gear AngVel="4.05" FuelModifier="1.52" />
+		<Gear AngVel="6.09" FuelModifier="1.27" />
+		<Gear AngVel="9.1" FuelModifier="0.92" />
+		<HighGear AngVel="1.0" FuelModifier="1.0" />
+		<ReverseGear AngVel="1.95" FuelModifier="2.12" />
+		<GameData
+			Price="2100"
+			UnlockByExploration="false"
+			AddonUnlockByObjective="false"
+			UnlockByRank="1"
+		>
+			<GearboxParams 
+				IsHighGearExists="false" 
+				IsLowerGearExists="true" 
+				IsLowerPlusGearExists="false" 
+				IsLowerMinusGearExists="false"
+			/>
+			<UiDesc
+				UiDesc="UI_GEARBOX_DEFAULT_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_GEARBOX_DEFAULT_NAME"
+			/>
+		</GameData>
+	</Gearbox>
+	<Gearbox
+		AWDConsumptionModifier="1.2"
+		CriticalDamageThreshold="0.591"
+		DamageCapacity="220"
+		DamagedConsumptionModifier="1.813"
+		FuelConsumption="3.18"
+		IdleFuelModifier="0.42"
+		Name="g_mercedes_3850_offroad"
+		MinBreakFreq="0.0"
+		MaxBreakFreq="20.0"
+	>
+		<Gear AngVel="2.1" FuelModifier="2.21" />
+		<Gear AngVel="2.29" FuelModifier="2.1" />
+		<Gear AngVel="2.8" FuelModifier="1.96" />
+		<Gear AngVel="3.82" FuelModifier="1.8" />
+		<Gear AngVel="5.49" FuelModifier="1.61" />
+		<Gear AngVel="7.98" FuelModifier="1.36" />
+		<Gear AngVel="11.5" FuelModifier="0.95" />
+		<HighGear AngVel="7.5" FuelModifier="2.18" />
+		<ReverseGear AngVel="2.1" FuelModifier="2.21" />
+		<GameData
+			Price="2300"
+			UnlockByExploration="false"
+			AddonUnlockByObjective="false"
+			UnlockByRank="1"
+		>
+			<GearboxParams 
+				IsHighGearExists="true" 
+				IsLowerGearExists="true" 
+				IsLowerPlusGearExists="true" 
+				IsLowerMinusGearExists="true"
+			/>
+			<UiDesc
+				UiDesc="UI_GEARBOX_OFFROAD_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_GEARBOX_OFFROAD_NAME"
+			/>
+		</GameData>
+	</Gearbox>
+	<Gearbox
+		AWDConsumptionModifier="1.1"
+		CriticalDamageThreshold="0.75"
+		DamageCapacity="160"
+		DamagedConsumptionModifier="1.302"
+		FuelConsumption="2.9"
+		IdleFuelModifier="0.35"
+		Name="g_mercedes_3850_highrange"
+		MinBreakFreq="0.0"
+		MaxBreakFreq="7.0"
+	>
+		<Gear AngVel="1.9" FuelModifier="2.15" />
+		<Gear AngVel="2.73" FuelModifier="2.0" />
+		<Gear AngVel="4.08" FuelModifier="1.83" />
+		<Gear AngVel="5.97" FuelModifier="1.64" />
+		<Gear AngVel="8.42" FuelModifier="1.43" />
+		<Gear AngVel="11.4" FuelModifier="1.18" />
+		<Gear AngVel="15.0" FuelModifier="0.85" />
+		<HighGear AngVel="13.0" FuelModifier="1.85" />
+		<ReverseGear AngVel="1.9" FuelModifier="2.15" />
+		<GameData
+			Price="2500"
+			UnlockByExploration="false"
+			AddonUnlockByObjective="false"
+			UnlockByRank="1"
+		>
+			<GearboxParams 
+				IsHighGearExists="true"
+				IsLowerGearExists="true"
+				IsLowerPlusGearExists="false"
+				IsLowerMinusGearExists="false"
+				IsManualLowGear="false"
+			/>
+			<UiDesc
+				UiDesc="UI_GEARBOX_HIGHRANGE_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_GEARBOX_HIGHRANGE_NAME"
+			/>
+		</GameData>
+	</Gearbox>
+	<Gearbox
+		AWDConsumptionModifier="1.225"
+		CriticalDamageThreshold="0.591"
+		DamageCapacity="220"
+		DamagedConsumptionModifier="1.813"
+		FuelConsumption="3.24"
+		IdleFuelModifier="0.4"
+		Name="g_mercedes_3850_finetune"
+		MinBreakFreq="0.0"
+		MaxBreakFreq="25.0"
+	>
+		<Gear AngVel="2.1" FuelModifier="2.21" />
+		<Gear AngVel="2.29" FuelModifier="2.1" />
+		<Gear AngVel="2.8" FuelModifier="1.96" />
+		<Gear AngVel="3.82" FuelModifier="1.8" />
+		<Gear AngVel="5.49" FuelModifier="1.61" />
+		<Gear AngVel="7.98" FuelModifier="1.36" />
+		<Gear AngVel="11.5" FuelModifier="0.95" />
+		<HighGear AngVel="7.5" FuelModifier="2.18" />
+		<ReverseGear AngVel="2.1" FuelModifier="2.21" />
+		<GameData
+			Price="2800"
+			UnlockByExploration="false"
+			AddonUnlockByObjective="false"
+			UnlockByRank="1"
+		>
+			<GearboxParams 
+				IsHighGearExists="true" 
+				IsLowerGearExists="true" 
+				IsLowerPlusGearExists="true" 
+				IsLowerMinusGearExists="true"
+				IsManualLowGear="true"
+			/>
+			<UiDesc
+				UiDesc="UI_GEARBOX_TRUCK_FINETUNE_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_GEARBOX_TRUCK_FINETUNE_NAME"
+			/>
+		</GameData>
+	</Gearbox>
+</GearboxVariants>

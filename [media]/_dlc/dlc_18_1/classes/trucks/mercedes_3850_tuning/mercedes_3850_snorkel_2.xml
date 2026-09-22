@@ -1,0 +1,24 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<Snorkel Origin="(0.712; 2.652; -1.048)" />
+	<PhysicsModel Mesh="trucks/mercedes_3850_tuning/mercedes_3850_snorkel_2">
+		<Body Collisions="Default" Mass="10" ModelFrame="BoneCabin_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="snorkel"
+		Category="snorkel"
+		Price="1700"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SNORKEL_TALL_EXT_AIRFILTER_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SNORKEL_TALL_EXT_AIRFILTER_NAME"
+		/>
+		<InstallSocket Type="Mercedes3850Snorkel" />
+	</GameData>
+</TruckAddon>

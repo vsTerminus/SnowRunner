@@ -2,7 +2,11 @@
 <_parent File="royal_bm17_snorkel_1" />
 <TruckAddon>
 	<Snorkel Origin="(3.453; 1.731; -1.067)" />
-	<PhysicsModel Mesh="trucks/royal_bm17_tuning/royal_bm17_snorkel_default" />
+	<PhysicsModel Mesh="trucks/royal_bm17_tuning/royal_bm17_snorkel_default" >
+		<Body Collisions="Default" Mass="25" ModelFrame="BoneCabin_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
 	<ModelAttachments _noinherit="true" />
 	<GameData
 		CameraPreset="side_l"

@@ -1,0 +1,50 @@
+<TruckAddon>
+	<Exhaust
+			Dir="(-0.402; 0; 0.916)"
+			IsLight="false"
+			Origin="(0.883; 1.146; 1.075)"
+			Speed="3.82"
+	/>
+	<Exhaust
+			Dir="(-0.402; 0; 0.916)"
+			IsLight="false"
+			Origin="(1.091; 1.146; 1.120)"
+			Speed="3.82"
+	/>
+	<Shakers>
+		<Shaker 
+			Frame="BoneExhaust1"
+			MinAngle="(0.7; 0.7; 0.7)"
+			MaxAngle="(2; 2; 2)"
+			MaxFrequency="0.1"
+			ParentFrame="BoneRoot_cdt"
+		/>
+		<Shaker 
+			Frame="BoneExhaust2"
+			MinAngle="(0.7; 0.7; 0.7)"
+			MaxAngle="(2; 2; 2)"
+			MaxFrequency="0.1"
+			ParentFrame="BoneRoot_cdt"
+		/>
+	</Shakers>
+	<PhysicsModel Mesh="trucks/mercedes_mamute_1519_tuning/mercedes_mamute_1519_exhaust_2">
+		<Body Collisions="None" Mass="10" ModelFrame="BoneRoot_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="exhaust"
+		Category="exhaust"
+		Price="1300"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_EXHAUST_SIDESPITTER_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_EXHAUST_SIDESPITTER_NAME"
+		/>
+		<InstallSocket Type="MercedesMamute1519Exhaust" />
+	</GameData>
+</TruckAddon>

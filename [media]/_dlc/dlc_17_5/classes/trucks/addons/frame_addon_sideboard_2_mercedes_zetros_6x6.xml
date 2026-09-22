@@ -1,13 +1,7 @@
 <TruckAddon IsChassisFullOcclusion="true">
-	<PhysicsModel Mesh="trucks/addons/frame_addon_sideboard_2">
+	<PhysicsModel Mesh="trucks/addons/frame_addon_sideboard_2_mercedes_zetros_6x6">
 		<Body Mass="600">
 			<Constraint Type="Rigid" />
-			<Body Collisions="None" Mass="5" ModelFrame="BoneFrameR_cdt">
-				<Constraint ExplicitParentFrame="0" Type="Fixed" />
-			</Body>
-			<Body Collisions="None" Mass="5" ModelFrame="BoneFrameL_cdt">
-				<Constraint ExplicitParentFrame="1" Type="Fixed" />
-			</Body>
 		</Body>
 	</PhysicsModel>
 	<GameData

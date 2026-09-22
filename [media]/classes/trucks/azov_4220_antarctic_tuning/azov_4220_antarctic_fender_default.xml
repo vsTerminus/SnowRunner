@@ -20,7 +20,7 @@
 	</PhysicsModel>
 	<GameData
 		CameraPreset="rear"
-		Category="rear"
+		Category="frame_addons"
 		Price="400"
 		UnlockByExploration="false"
 		UnlockByRank="1"

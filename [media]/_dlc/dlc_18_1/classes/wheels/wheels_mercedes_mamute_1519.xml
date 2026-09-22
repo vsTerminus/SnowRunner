@@ -1,0 +1,34 @@
+<_templates Include="trucks">
+	<TruckTire>
+		<Offroad Mass="250" >
+			<WheelTracks _template="Offroad" />
+			<WheelSoftness _template="Average" />
+			<WheelFriction
+				_template="Offroad"
+				BodyFriction="2.85"
+				BodyFrictionAsphalt="1.2"
+				SubstanceFriction="1.78"
+			/>
+		</Offroad>
+	</TruckTire>
+</_templates>
+<TruckWheels DamageCapacity="100" Radius="1" Width="0.672">
+	<TruckTires>
+		<TruckTire _template="Offroad" Mesh="wheels/tire_mercedes_mamute_1519" Name="tire_offroad_mercedes_mamute">
+			<GameData
+				Price="3600"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_OFFROAD_DESC" UiName="UI_TIRE_HEAVY_OFFROAD_SINGLE_MERCEDES_MAMUTE_1519_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>
+		<TruckRim Mesh="wheels/rim_mercedes_mamute_1519" Name="rim_mercedes_mamute">
+			<GameData>
+				<UiDesc UiDesc="UI_RIM_HEAVY_OFFROAD_SINGLE_1_DESC" UiName="UI_RIM_HEAVY_OFFROAD_SINGLE_MERCEDES_MAMUTE_1519_NAME" />
+			</GameData>
+		</TruckRim>
+	</TruckRims>
+</TruckWheels>

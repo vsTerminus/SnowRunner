@@ -362,23 +362,7 @@
 		</Body>
 	</PhysicsModel>
 	<ModelAttachments>
-		<StopSignals>
-			<Light _template="StopSignal" Pos="(-4.331; 0.439; 0)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="3" Color="g(255; 0; 0) x 0.3" Size="0.3" Pos="(-3.986; 0.961; 0.850)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="StopSignal" AspectRatio="3" Color="g(255; 0; 0) x 0.3" Size="0.3" Pos="(-3.986; 0.961; -0.850)" ParentFrame="BoneChassis_cdt" />
-		</StopSignals>
-		<ReverseSignals>
-			<Light _template="ReverseSignal" Pos="(-4.331; 0.439; 0)" />
-			<Flare _template="ReverseSignal" Color="g(245; 235; 220) x 0.6" Size="0.4" Pos="(-3.986; 0.931; 1.040)" />
-			<Flare _template="ReverseSignal" Color="g(245; 235; 220) x 0.6" Size="0.4" Pos="(-3.986; 0.931; -1.040)" />
-			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.05" Dir="(-1; 0; 0)" Size="0.4" Pos="(-3.986; 0.931; 1.040)" />
-			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.05" Dir="(-1; 0; 0)" Size="0.4" Pos="(-3.986; 0.931; -1.040)" />
-		</ReverseSignals>
 		<Ignition>
-			<Light _template="IgnitionSignalRed" Pos="(-4.047; 0.790; 0)" />
-			<Flare _template="IgnitionSignalRed" Size="0.3" Pos="(-3.986; 0.961; 0.850)" ParentFrame="BoneChassis_cdt" />
-			<Flare _template="IgnitionSignalRed" Size="0.3" Pos="(-3.986; 0.961; -0.850)" ParentFrame="BoneChassis_cdt" />
-			
 			<Flare _template="IgnitionSignalOrange" Size="0.45" Pos="(4.126; 1.416; 1.047)" ParentFrame="BoneCabin_cdt" />
 			<Flare _template="IgnitionSignalOrange" Size="0.45" Pos="(4.126; 1.416; -1.047)" ParentFrame="BoneCabin_cdt" />
 			
@@ -396,7 +380,7 @@
 		Price="122000"
 		UnlockByExploration="false"
 		UnlockByRank="1"
-		ExcludeAddons="trailer_log_pole_zikz_612h"
+		ExcludeAddons="trailer_log_pole_zikz_612h, minicrane_us"
 	>
 		<WinchSocket Pos="(-0.810; 1.152; 0.395)" />
 		<WinchSocket Pos="(-0.810; 1.152; -0.395)" />
@@ -496,12 +480,8 @@
 		
 		<!-- FRAME ADDONS -->
 		<AddonSockets>
-			<Socket Names="FrameAddonMercedesZetros" NamesBlock="" Offset="(-2.1; 1.445; 0)" ParentFrame="BoneChassis_cdt">
-				<ExtraParent Frame="BoneChassis_cdt" Offset="(-0.05; 0; 0.15)" />
-				<ExtraParent Frame="BoneChassis_cdt" Offset="(-0.05; 0; -0.15)" />
-				
-				<AddonsShift Offset="(-0.35; 0.0; 0)" Types="CraneAvenhornA15" />
-			</Socket>
+			<Socket Names="FrameAddonMercedesZetrosKung" NamesBlock="" Offset="(-4.48; 1.86; 0)" ParentFrame="BoneChassis_cdt" />
+
 			<Socket Names="FrameAddonTankMercedesZetros" NamesBlock="" Offset="(-2.75; 1.445; 0)" ParentFrame="BoneChassis_cdt">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.1)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.1)" />
@@ -509,6 +489,12 @@
 			<Socket Names="FrameAddonKung" NamesBlock="" Offset="(-2.050; 1.38; 0)" ParentFrame="BoneChassis_cdt">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.1)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.1)" />
+			</Socket>
+			<Socket Names="FrameAddonMercedesZetros" NamesBlock="" Offset="(-2.1; 1.41; 0)" ParentFrame="BoneChassis_cdt">
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(-0.05; 0; 0.15)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(-0.05; 0; -0.15)" />
+				
+				<AddonsShift Offset="(-0.35; 0.0; 0)" Types="CraneAvenhornA15" />
 			</Socket>
 			<Socket Names="FrameAddonSeismicVibratorMercedesZetros" NamesBlock="" Offset="(0.35; 1.44; 0.0)" ParentFrame="BoneChassis_cdt"/>
 			<Socket Names="FrameAddonLogShortMercedesZetros" NamesBlock="" Offset="(-1.75; 1.44; 0)" ParentFrame="BoneChassis_cdt"/>
@@ -542,15 +528,16 @@
 				Names="LogLiftMercedesZetros"
 				Offset="(-1.3; -0.065; 0)"
 				ParentFrame="BoneCabinTwist_cdt"
-				NamesBlock="FrameAddonMercedesZetros, FrameAddonTankMercedesZetros, FrameAddonKung, FrameAddonSeismicVibratorMercedesZetros, FrameAddonLogShortMercedesZetros, SaddleMotorizedMercedesZetros"
+				NamesBlock="FrameAddonMercedesZetros, FrameAddonTankMercedesZetros, FrameAddonKung, FrameAddonSeismicVibratorMercedesZetros, FrameAddonLogShortMercedesZetros, SaddleMotorizedMercedesZetros, FrameAddonMercedesZetrosKung"
 			>
 				<AddonsShift Offset="(0; 0.15; 0)" Types="MercedesBenzZetrosSubframe" />
 			</Socket>
-			<Socket
+			
+			<!-- EXCLUDED --> <Socket 
 				Names="MinicraneUS"
 				Offset="(-0.05; 1.295; 0)"
 				ParentFrame="BoneCabinTwist_cdt"
-				NamesBlock="FrameAddonMercedesZetros, FrameAddonTankMercedesZetros, FrameAddonKung, FrameAddonSeismicVibratorMercedesZetros, FrameAddonLogShortMercedesZetros, SaddleMotorizedMercedesZetros"
+				NamesBlock="FrameAddonMercedesZetros, FrameAddonTankMercedesZetros, FrameAddonKung, FrameAddonSeismicVibratorMercedesZetros, FrameAddonLogShortMercedesZetros, SaddleMotorizedMercedesZetros, FrameAddonMercedesZetrosKung"
 			>
 				<ExtraParent Frame="BoneCabinTwist_cdt" Offset="(0; 0.0; 0.04)" />
 				<ExtraParent Frame="BoneCabinTwist_cdt" Offset="(0; 0.0; -0.04)" />
@@ -561,14 +548,14 @@
 				Names="CraneAvenhornA15"
 				Offset="(-0.05; -0.26; 0)"
 				ParentFrame="BoneCabinTwist_cdt"
-				NamesBlock="FrameAddonTankMercedesZetros, FrameAddonKung, FrameAddonSeismicVibratorMercedesZetros, FrameAddonLogShortMercedesZetros, SaddleMotorizedMercedesZetros"
+				NamesBlock="FrameAddonTankMercedesZetros, FrameAddonKung, FrameAddonSeismicVibratorMercedesZetros, FrameAddonLogShortMercedesZetros, SaddleMotorizedMercedesZetros, FrameAddonMercedesZetrosKung"
 			>
 				<ExtraParent Frame="BoneCabinTwist_cdt" Offset="(0; 0.0; 0.04)" />
 				<ExtraParent Frame="BoneCabinTwist_cdt" Offset="(0; 0.0; -0.04)" />
 				<AddonsShift Offset="(0.265; 0.135; 0)" Types="MercedesBenzZetrosSubframe" />
 			</Socket>
 			
-			<Socket Names="BigCraneUsMercedesZetros" NamesBlock="FrameAddonMercedesZetros, FrameAddonTankMercedesZetros, FrameAddonKung, FrameAddonSeismicVibratorMercedesZetros, FrameAddonLogShortMercedesZetros, SaddleMotorizedMercedesZetros, BunkLogMercedesZetros, SaddleHighMercedesZetros" Offset="(-2.6; 1.445; 0)">
+			<Socket Names="BigCraneUsMercedesZetros" NamesBlock="FrameAddonMercedesZetros, FrameAddonTankMercedesZetros, FrameAddonKung, FrameAddonSeismicVibratorMercedesZetros, FrameAddonLogShortMercedesZetros, SaddleMotorizedMercedesZetros, BunkLogMercedesZetros, SaddleHighMercedesZetros, FrameAddonMercedesZetrosKung" Offset="(-2.6; 1.445; 0)">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.05)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.05)" />
 			</Socket>

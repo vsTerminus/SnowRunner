@@ -1,6 +1,10 @@
 <_templates Include="trucks" />
 <TruckAddon>
-	<PhysicsModel Mesh="trucks/royal_bm17_tuning/royal_bm17_spot_light_1"/>
+	<PhysicsModel Mesh="trucks/royal_bm17_tuning/royal_bm17_spot_light_1">
+		<Body ImpactType="Truck" Mass="8" ModelFrame="BoneCabin_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
 	<ModelAttachments>
 		<MainHeadLight>
 			<Model _template="HeadLightRay" Org="(1.569; 3.522; -0.617)" Scale="(1; 1; 1.5)" />

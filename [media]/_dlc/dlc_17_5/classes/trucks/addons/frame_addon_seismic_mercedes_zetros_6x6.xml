@@ -184,6 +184,24 @@
 			<Flare Pos="(-2.409; 2.161; 0.011)" ParentFrame="BoneRotator" />
 			<Flare Pos="(-2.467; 2.186; 0.011)" />
 		</Lightbar>
+		
+		<StopSignals>
+			<Light _template="StopSignal" Pos="(-4.681; -1.001; 0)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="StopSignal" AspectRatio="3" Color="g(255; 0; 0) x 0.3" Size="0.3" Pos="(-4.336; -0.479; 0.850)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="StopSignal" AspectRatio="3" Color="g(255; 0; 0) x 0.3" Size="0.3" Pos="(-4.336; -0.479; -0.850)" ParentFrame="BoneChassis_cdt" />
+		</StopSignals>
+		<ReverseSignals>
+			<Light _template="ReverseSignal" Pos="(-4.681; -1.001; 0)" />
+			<Flare _template="ReverseSignal" Color="g(245; 235; 220) x 0.6" Size="0.4" Pos="(-4.336; -0.509; 1.040)" />
+			<Flare _template="ReverseSignal" Color="g(245; 235; 220) x 0.6" Size="0.4" Pos="(-4.336; -0.509; -1.040)" />
+			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.05" Dir="(-1; 0; 0)" Size="0.4" Pos="(-4.336; -0.509; 1.040)" />
+			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.05" Dir="(-1; 0; 0)" Size="0.4" Pos="(-4.336; -0.509; -1.040)" />
+		</ReverseSignals>
+		<Ignition>
+			<Light _template="IgnitionSignalRed" Pos="(-4.681; -1.001; 0)" />
+			<Flare _template="IgnitionSignalRed" Size="0.3" Pos="(-4.336; -0.509; 0.850)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="IgnitionSignalRed" Size="0.3" Pos="(-4.336; -0.509; -0.850)" ParentFrame="BoneChassis_cdt" />
+		</Ignition>
 	</ModelAttachments>
 	<GameData CameraPreset="addon_1" Category="frame_addons" Price="0">
 		<UiDesc

@@ -1,0 +1,41 @@
+<_templates Include="trucks" />
+<SuspensionSetVariants>
+	<SuspensionSet
+		_template="Normal"
+		CriticalDamageThreshold="0.35"
+		DamageCapacity="270"
+		BrokenWheelDamageMultiplier="0.75"
+		Name="mercedes_mamute_1519_suspension_default"
+	>
+		<Suspension
+			BrokenSuspensionMax="0.04"
+			Height="0.085"
+			Strength="0.07"
+			SuspensionMin="-0.22"
+			SuspensionMax="0.04"
+			WheelType="front"
+			Damping="0.62"
+		/>
+		<Suspension
+			BrokenSuspensionMax="0.00"
+			Height="0.0"
+			Strength="0.0"
+			SuspensionMin="0.0"
+			SuspensionMax="0.0"
+			WheelType="rear"
+			Damping="0.55"
+		/>
+		<GameData
+			Price="5700"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_SUSPENSION_BOOMERANG_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_SUSPENSION_BOOMERANG_NAME"
+			/>
+		</GameData>
+	</SuspensionSet>
+</SuspensionSetVariants>

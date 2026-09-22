@@ -1,0 +1,739 @@
+﻿<_templates Include="trucks">
+	<Wheel>
+		<RightSwing
+			CamberSuspensionMultiplier="0.30"
+			CamberAnglePhysics="1"
+			CamberAngleRender="1"
+			ConnectedToHandbrake="true"
+			Location="rear"
+			Torque="default"
+			ParentFrame="BoneSwingR_cdt"
+		/>
+		<LeftSwing
+			CamberSuspensionMultiplier="0.30"
+			CamberAnglePhysics="1"
+			CamberAngleRender="1"
+			ConnectedToHandbrake="true"
+			Location="rear"
+			Torque="default"
+			ParentFrame="BoneSwingL_cdt"
+		/>
+		<FirstAxle
+			Location="front"
+			SteeringAngle="35"
+			SteeringCastor="0"
+			SteeringJointOffset="0.17"
+			Torque="full"
+			ParentFrame="BoneCabinTwist_cdt"
+		/>
+	</Wheel>
+	<Body>
+		<Wiper
+			CenterOfMassOffset="(0; 0; 0)"
+			Collisions="None"
+			Mass="10"
+		>
+			<Constraint
+				AxisLocal="(1; 0; 0)"
+				PivotOffset="(0; 0; 0)"
+				Type="Hinge"
+				MinLimit="-5.0"
+				MaxLimit="5.0"
+			>
+				<Motor Damping="15" Spring="50" Type="Spring" />
+			</Constraint>
+		</Wiper>
+		<Swing
+			CenterOfMassOffset="(0; 0; 0)"
+			Collisions="Default"
+			ImpactType="Truck"
+			Mass="640"
+		>
+			<Constraint
+				AxisLocal="(0; 0; 1)"
+				PivotOffset="(0; 0; 0)"
+				Type="Hinge"
+				MinLimit="-37"
+				MaxLimit="37"
+			>
+				<Motor Damping="10000" Spring="20000" Type="Spring" />
+			</Constraint>
+		</Swing>
+		<Seatbelt
+			CenterOfMassOffset="(0; 0; 0)"
+			Collisions="None"
+			Mass="10"
+		>
+			<Constraint
+				AxisLocal="(1; 0; 0)"
+				PivotOffset="(0; 0; 0)"
+				Type="Hinge"
+				MinLimit="-60"
+				MaxLimit="25"
+			>
+				<Motor Damping="0.1" Spring="1" Type="Spring" />
+			</Constraint>
+		</Seatbelt>
+		<Mirror
+			CenterOfMassOffset="(0; 0; 0)"
+			Collisions="Default"
+			ImpactType="Truck"
+			Mass="15"
+		>
+			<Constraint
+				AxisLocal="(0; 1; 0)"
+				PivotOffset="(0; 0; 0)"
+				Type="Hinge"
+				MinLimit="-2.0"
+				MaxLimit="2.0"
+			>
+				<Motor Damping="25" Spring="60" Type="Spring" />
+			</Constraint>
+		</Mirror>
+		<Curtain
+			CenterOfMassOffset="(0; -0.1; 0)"
+			Collisions="Default"
+			Mass="50"
+		>
+			<Constraint
+				AxisLocal="(1; 0; 0)"
+				PivotOffset="(0; 0; 0)"
+				Type="Hinge"
+				MinLimit="-16"
+				MaxLimit="0"
+			>
+				<Motor Damping="0.01" Spring="0.01" Type="Spring" />
+			</Constraint>
+		</Curtain>
+		<CableRear
+			CenterOfMassOffset="(0; 0; 0)"
+			Collisions="None"
+			Mass="10"
+		>
+			<Constraint
+				AxisLocal="(0; 0; 1)"
+				PivotOffset="(0; 0; 0)"
+				Type="Hinge"
+				MinLimit="-27"
+				MaxLimit="10"
+			>
+				<Motor Damping="5" Spring="5" Type="Spring" />
+			</Constraint>
+		</CableRear>
+		<Antenna
+			CenterOfMassOffset="(0; 0; 0)"
+			Collisions="None"
+			Mass="5"
+		>
+			<Constraint
+				Cone="5"
+				PivotOffset="(0; 0; 0)"
+				PlaneAxisLocal="(1; 0; 0)"
+				TwistAxisLocal="(0; 1; 0)"
+				Type="Ragdoll"
+				PlaneMin="-5"
+				TwistMin="-5"
+				PlaneMax="5"
+				TwistMax="5"
+			>
+				<AllMotor Damping="1" Spring="50" Type="Spring" />
+			</Constraint>
+		</Antenna>
+	</Body>
+</_templates>
+<Truck>
+	<TruckData
+		BackSteerSpeed="0.015"
+		DiffLockType="Switchable"
+		EngineIconMesh="env/engine_mercedes_mamute_1519"
+		EngineIconScale="1.0"
+		EngineStartDelay="0.8"
+		ExhaustStartTime="0.5"
+		FuelCapacity="260"
+		Responsiveness="0.07"
+		SteerSpeed="0.0235"
+		TruckImage="mercedesBenzMamutemchr"
+		TruckType="OFFROAD"
+	>
+		<WinchUpgradeSocket Default="w_medium_trucks_default" IsUpgradable="true" Type="winches_medium_trucks" />
+		<Wheels
+			DefaultRim="rim_mercedes_mamute"
+			DefaultTire="tire_offroad_mercedes_mamute"
+			DefaultWheelType="wheels_mercedes_mamute_1519"
+		>
+			<Wheel _template="FirstAxle" Pos="(2.748; 0.763; 1.092)" />
+			<Wheel _template="FirstAxle" RightSide="true" Pos="(2.748; 0.763; 1.092)" />
+			<Wheel _template="LeftSwing" Pos="(-1.171; 0.679; 1.081)" />
+			<Wheel _template="LeftSwing" Pos="(-2.881; 0.643; 1.081)" />
+			<Wheel _template="RightSwing" RightSide="true" Pos="(-1.171; 0.679; 1.081)" />
+			<Wheel _template="RightSwing" RightSide="true" Pos="(-2.881; 0.643; 1.081)" />
+		</Wheels>
+		<SuspensionSocket
+			Default="mercedes_mamute_1519_suspension_default"
+			Type="s_mercedes_mamute_1519"
+			MaxWheelRadiusWithoutSuspension="1.5"
+		/>
+		<SteeringWheel Frame="BoneSteering" />
+		<SteeringRack
+			Frame="BoneRack"
+			FrameSteerLeft="BoneRackL"
+			FrameSteerRight="BoneRackR"
+			RackHalfSizeZ="0.893"
+		/>
+		<Steam Origin="(3.003; 1.902; 0)" />
+		<SoundsWheels _template="Default" />
+		<SoundsDamage _template="Heavy" />
+		<Sounds
+			_template="Default"
+			DisableReversePitch="false"
+			Origin="(2.6; 1.4; 0)"
+			MinDist="12.0"
+		>
+			<Honk			Sound="trucks/sleiter_st833_chimera/sleiter_st833_chimera_honk" />
+			<Handbrake		Sound="trucks/sleiter_st833_chimera/sleiter_st833_chimera_handbrake_on" />
+			<HandbrakeOff	Sound="trucks/sleiter_st833_chimera/sleiter_st833_chimera_handbrake_off" />
+			<Reverse		Sound="trucks/sleiter_st833_chimera/sleiter_st833_chimera_back_beeper" />
+			<BrakesSqueal	Sound="trucks/sleiter_st833_chimera/sleiter_st833_chimera_brakes_squeal" />
+			<BrakePull		Sound="trucks/sleiter_st833_chimera/sleiter_st833_chimera_brake_pull" />
+			<BrakeRelease	Sound="trucks/sleiter_st833_chimera/sleiter_st833_chimera_brake_release" />
+			<EngineRev		Sound="" />
+			<EngineAccel	Sound="trucks/sleiter_st833_chimera/sleiter_st833_chimera_acc" />
+			<EngineStart	Sound="trucks/sleiter_st833_chimera/sleiter_st833_chimera_start" />
+			<EngineStop		Sound="trucks/sleiter_st833_chimera/sleiter_st833_chimera_stop" />
+			<EngineIdle		Sound="trucks/sleiter_st833_chimera/sleiter_st833_chimera_idle" />
+			<EngineIdle_2d	Sound="trucks/sleiter_st833_chimera/sleiter_st833_chimera_idle_2d"	IsSound2D="true" />
+			<EngineLow		Sound="trucks/sleiter_st833_chimera/sleiter_st833_chimera_low" />
+			<EngineLow_2d	Sound="trucks/sleiter_st833_chimera/sleiter_st833_chimera_low_2d"	IsSound2D="true" />
+			<EngineHigh		Sound="trucks/sleiter_st833_chimera/sleiter_st833_chimera_high" />
+			<EngineHigh_2d	Sound="trucks/sleiter_st833_chimera/sleiter_st833_chimera_high_2d"	IsSound2D="true" />
+			<EngineHeavy	Sound="trucks/sleiter_st833_chimera/sleiter_st833_chimera_heavy" />
+			<EngineHeavy_2d	Sound="trucks/sleiter_st833_chimera/sleiter_st833_chimera_heavy_2d"	IsSound2D="true" />
+			<ChassisStress	Sound="trucks/common/truck_stress_rnd_set/truck_stress_rnd" />
+			<AbruptStop		Sound="trucks/common/truck_swing_big_rnd_set/truck_swing_big_rnd" />
+		</Sounds>
+		<Shakers>
+			<Shaker
+				Frame="BoneGearstick"
+				MinAngle="(-1; 0; -1)"
+				MaxAngle="(1; 0; 1)"
+				MaxFrequency="0.35"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</Shakers>
+		<Shafts>
+			<Shaft SocketPointA="Shaft1a" SocketPointB="Shaft1b" />
+			<Shaft SocketPointA="Shaft2a" SocketPointB="Shaft2b" />
+			<Shaft SocketPointA="Shaft3a" SocketPointB="Shaft3b" />
+		</Shafts>
+		<OcclusionMap HalfSizeZ="1.4" MinX="-4.1" MaxX="4.1" />
+		<LimitedFluid
+			Center="(0.361, 1.325, -0.843)"
+			SizeX="1.020"
+			SizeY="0.380"
+			SizeZ="0.600"
+			Type="Box"
+			ParentFrame="BoneCabinTwist_cdt"
+		/>
+		<Intake Dir="(1; 0; 0)" Origin="(3.775; 1.787; 0)" Size="0.35" />
+		<GearboxSocket Default="g_mercedes_mamute_1519_default" Type="gearboxes_mercedes_mamute_1519" />
+		<FuelTank DamageCapacity="125" />
+		<EngineSocket Default="engine_truck_mercedes_mamute_1519_0" Type="e_truck_engine_mercedes_mamute_1519" />
+		<Driver
+			AnimationSet="HeavyTruck"
+			LegsOffset="(0; 0; 0)"
+			Pos="(2.01; 2.27; 0.527)"
+			SteeringWheelPos="(2.43; 2.598; 0.529)"
+			ParentFrame="BoneCabin_cdt"
+		/>
+		<Dashboard>
+			<Gauge Damping="0.9" Dir="(-0.942; 0.336; 0)" InputRange="(0;110)" InputType="speed" Mesh="trucks/arrows/mercedes_mamute_1519_arrow_3" Org="(2.679; 2.502; 0.762)" OutputAngles="(-134; 109)" />
+			<Gauge Damping="0.9" Dir="(-0.942; 0.336; 0)" InputRange="(0;1)" InputType="fuel" Mesh="trucks/arrows/mercedes_mamute_1519_arrow_1" Org="(2.68; 2.501; 0.513)" OutputAngles="(-140; -33)" />
+			<Gauge Damping="0.9" Dir="(-0.942; 0.336; 0)" InputRange="(0;1)" InputType="rpm" Mesh="trucks/arrows/mercedes_mamute_1519_arrow_4" Org="(2.682; 2.532; 0.614)" OutputAngles="(-118; 122)" />
+			<Gauge Damping="0.9" Dir="(-0.942; 0.336; 0)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/mercedes_mamute_1519_arrow_1" Org="(2.664; 2.457; 0.465)" OutputAngles="(-125; -214)" />
+			<Gauge Damping="0.9" Dir="(-0.942; 0.336; 0)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/mercedes_mamute_1519_arrow_1" Org="(2.68; 2.502; 0.418)" OutputAngles="(145; 80)" />
+			<Gauge Damping="0.9" Dir="(-0.942; 0.336; 0)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/mercedes_mamute_1519_arrow_2" Org="(2.68; 2.502; 0.466)" OutputAngles="(-130; 24)" />
+		</Dashboard>
+		<Damage>
+			<DamageArea Type="Gearbox" Min="(-0.114; 0.981; -0.276)" Max="(0.387; 1.477; 0.276)" ParentFrame="BoneCabinTwist_cdt" />
+			<DamageArea Type="Gearbox" Min="(1.619; 1.167; -0.457)" Max="(2.356; 1.621; 0.457)" ParentFrame="BoneCabinTwist_cdt" />
+			<DamageArea Type="Engine" Min="(2.356; 1.194; -0.779)" Max="(3.583; 2.373; 0.779)" ParentFrame="BoneCabinTwist_cdt" />
+			<DamageArea Type="FuelTank" Min="(-0.195; 1.038; -1.188)" Max="(0.917; 1.514; -0.497)" ParentFrame="BoneCabinTwist_cdt" />
+		</Damage>
+		
+		<!-- UNQIUE -->
+		<CompatibleWheels Type="wheels_mercedes_mamute_1519" Scale="0.61"  />
+		<!-- VANILLA -->
+		<CompatibleWheels Type="wheels_heavy_single_mercedes_mamute_1519" Scale="0.61" OffsetZ="0.015" RearOffsetZ="0.028" /> 
+		<CompatibleWheels Type="wheels_heavy_single2_mercedes_mamute_1519" Scale="0.61" OffsetZ="0.085" />
+		<!-- JAT -->
+		<CompatibleWheels Type="wheels_heavy_mudtires_single_mercedes_mamute_1519" Scale="0.61" OffsetZ="0.085" />
+		<CompatibleWheels Type="wheels_heavy_mudtires_single2_mercedes_mamute_1519" Scale="0.61" OffsetZ="0.075" />
+		<CompatibleWheels Type="wheels_heavy_offroad_single_mercedes_mamute_1519" Scale="0.61" OffsetZ="0.025" />
+		
+		
+		<Camera Center="(-1.4; 0; 0)" ParentFrame="BoneChassis_cdt">
+			<Cockpit
+				_template="Default"
+				LimitsHor="(-2.7; 1.5)"
+				LimitsVer="(-0.5; 0.5)"
+				ViewDir="(1; -0.05; 0)"
+				WindshieldDiffuseTexture="trucks/mercedes_mamute_1519_curtain_glass__d_a.tga"
+				WindshieldShadingTexture="trucks/mercedes_mamute_1519_curtain_glass__sh_d.tga"
+				ViewPos="(2; 2.94; 0.534)"
+				ZoomViewPosOffset="(0.4; 0; 0)"
+			>
+				<Rear
+					HorTransitionEnd="-2.7"
+					HorTransitionStart="-0.8"
+					LimitsVer="(-0.8; 0.2)"
+					ViewDir="(1; -0.05; -0.1)"
+					ViewPosOffset="(0.3; -0.1; 0.67)"
+				/>
+				<Mirror ClipDir="(-0.906; 0; -0.423)" ClipOffset="0.15" FOVScale="1.5" MeshFrame="mirror_left" ReflectionDir="(-0.906; 0; -0.423)" Size="(0.25; 0.4)" Pos="(2.752; 2.794; 1.409)" />
+				<Mirror ClipDir="(-0.875; 0; 0.643)" ClipOffset="0.15" FOVScale="1.5" MeshFrame="mirror_right" ReflectionDir="(-0.875; 0; 0.643)" Size="(0.25; 0.4)" Pos="(2.534; 2.794; -1.203)" />
+			</Cockpit>
+		</Camera>
+		<Axles>
+			<Axle Frame="BoneAxle1" />
+			<Axle Frame="BoneAxle2L" IsIndependent="true" />
+			<Axle Frame="BoneAxle3L" IsIndependent="true" />
+			<Axle Frame="BoneAxle2R" IsIndependent="true" />
+			<Axle Frame="BoneAxle3R" IsIndependent="true" />
+		</Axles>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/mercedes_mamute_1519">
+		<NetSync Legacy="false" />
+		<Body
+			CenterOfMassOffset="(0; 0; 0)"
+			Collisions="Default"
+			ImpactType="Truck"
+			Mass="2000"
+			ModelFrame="BoneChassis_cdt"
+			NetSync="pv"
+		>
+			<Body
+				CenterOfMassOffset="(0; 0; 0)"
+				Collisions="None"
+				ImpactType="Truck"
+				Mass="1360"
+				ModelFrame="BoneSwingAxle_cdt"
+			>
+				<Constraint
+					AxisLocal="(0; -1; 0)"
+					PivotOffset="(0; 0; 0)"
+					Type="Prismatic"
+					MinLimit="-0.14"
+					MaxLimit="0.15"
+				>
+					<Motor Damping="40000" Spring="820000" Type="Spring" />
+				</Constraint>
+				<Body _template="Swing" ModelFrame="BoneSwingL_cdt" />
+				<Body _template="Swing" ModelFrame="BoneSwingR_cdt" />
+				<Body _template="CableRear" ModelFrame="BoneCablesRearL_cdt" />
+				<Body _template="CableRear" ModelFrame="BoneCablesRearR_cdt" />
+			</Body>
+			<Body
+				CenterOfMassOffset="(0.35; 0; 0)"
+				Collisions="Default"
+				ImpactType="Truck"
+				Mass="2000"
+				ModelFrame="BoneCabinTwist_cdt"
+				NetSync="pv"
+			>
+				<Constraint
+					AxisLocal="(1; 0; 0)"
+					PivotOffset="(0; 0; 0)"
+					Type="Hinge"
+					MinLimit="-5"
+					MaxLimit="5"
+				>
+					<Motor Damping="120000" Spring="400000" Type="Spring" />
+				</Constraint>
+				<Body
+					CenterOfMassOffset="(0; 0; 0)"
+					Collisions="Default"
+					ImpactType="Truck"
+					Mass="2900"
+					ModelFrame="BoneCabin_cdt"
+					NetSync="pv"
+				>
+					<Constraint
+						AxisLocal="(0; 1; 0)"
+						PivotOffset="(0; 0; 0)"
+						Type="Prismatic"
+						MinLimit="-0.05"
+						MaxLimit="0.02"
+					>
+						<Motor Damping="20000" Spring="300000" Type="Spring" />
+					</Constraint>
+					<Body _template="Wiper" ModelFrame="BoneWiperL_cdt" />
+					<Body _template="Wiper" ModelFrame="BoneWiperR_cdt" />
+					<Body _template="Mirror" ModelFrame="BoneMirrorL_cdt" />
+					<Body _template="Mirror" ModelFrame="BoneMirrorR_cdt" />
+					<Body _template="Seatbelt" ModelFrame="BoneSeatbeltL_cdt" />
+					<Body _template="Seatbelt" ModelFrame="BoneSeatbeltR_cdt" />
+					<Body _template="Curtain" ModelFrame="BoneCurtainL_cdt" />
+					<Body _template="Curtain" ModelFrame="BoneCurtainR_cdt" />
+					<Body _template="Antenna" ModelFrame="BoneAntennaL_cdt" />
+					<Body _template="Antenna" ModelFrame="BoneAntennaR_cdt" />
+					<Body
+						CenterOfMassOffset="(0; 0; 0)"
+						Collisions="None"
+						Mass="5"
+						ModelFrame="BoneKey1_cdt"
+					>
+						<Constraint
+							Cone="30"
+							PivotOffset="(0; 0; 0)"
+							PlaneAxisLocal="(0; 0; 1)"
+							TwistAxisLocal="(0; 1; 0)"
+							Type="Ragdoll"
+							PlaneMin="-50"
+							TwistMin="-25"
+							PlaneMax="20"
+							TwistMax="25"
+						>
+							<AllMotor Damping="0.1" Spring="0.1" Type="Spring" />
+						</Constraint>
+						<Body
+							CenterOfMassOffset="(0; 0; 0)"
+							Collisions="None"
+							Mass="10"
+							ModelFrame="BoneKey2_cdt"
+						>
+							<Constraint
+								Cone="17"
+								PivotOffset="(0; 0; 0)"
+								PlaneAxisLocal="(0; 0; 1)"
+								TwistAxisLocal="(0; 1; 0)"
+								Type="Ragdoll"
+								PlaneMin="-35"
+								TwistMin="-25"
+								PlaneMax="30"
+								TwistMax="25"
+							>
+								<AllMotor Damping="0.1" Spring="0.1" Type="Spring" />
+							</Constraint>
+						</Body>
+					</Body>
+					<Body
+						CenterOfMassOffset="(0; 0; 0)"
+						Collisions="None"
+						Mass="1.5"
+						ModelFrame="BoneCableCabin_cdt"
+					>
+						<Constraint
+							AxisLocal="(0; -1; 0)"
+							Type="Hinge"
+							MinLimit="-1.5"
+							MaxLimit="15"
+						>
+							<Motor Damping="0.01" Spring="0.35" Type="Spring" />
+						</Constraint>
+					</Body>
+					<Body
+						CenterOfMassOffset="(0; 0; 0)"
+						Collisions="None"
+						Mass="5"
+						ModelFrame="BoneSteeringRod_cdt"
+					>
+						<Constraint
+							AxisLocal="(0; 1; 0)"
+							Name="SteeringRod"
+							PivotOffset="(0; 0; 0)"
+							Type="Hinge"
+							MinLimit="-270"
+							MaxLimit="270"
+						>
+							<Motor Force="10" Tau="0.99" Type="Position" />
+						</Constraint>
+					</Body>
+				</Body>
+				<Body
+					CenterOfMassOffset="(0; 0; 0)"
+					Collisions="None"
+					Mass="5"
+					ModelFrame="BoneTieRod_cdt"
+				>
+					<Constraint
+						AxisLocal="(0; 0; 1)"
+						Name="TieRod"
+						PivotOffset="(0; 0; 0)"
+						Type="Hinge"
+						MinLimit="-30"
+						MaxLimit="30"
+					>
+						<Motor Force="100" Tau="1" Type="Position" />
+					</Constraint>
+				</Body>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<Ignition>
+			<Light _template="IgnitionSignalWhite" Color="g(253; 220; 186) x 1" Pos="(3.665; 1.753; 0.758)" ParentFrame="BoneCabin_cdt" />
+			<Light _template="IgnitionSignalWhite" Color="g(253; 220; 186) x 1" Pos="(3.665; 1.753; -0.758)" ParentFrame="BoneCabin_cdt" />
+			
+			<Flare _template="IgnitionSignalWhiteWarm" Dir="(1; 0; 0)" Size="0.4" Pos="(3.69; 1.753; 0.76)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhiteWarm" Dir="(1; 0; 0)" Size="0.4" Pos="(3.69; 1.753; -0.76)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalOrange" Dir="(1; 0; 0)" Size="0.1" Pos="(3.393; 1.947; 1.04)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalOrange" Dir="(1; 0; 0)" Size="0.1" Pos="(3.393; 1.947; -1.04)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalOrange" Dir="(0; 1; 0)" Size="0.2" Pos="(2.771; 1.962; 1.187)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalOrange" Dir="(0; 1; 0)" Size="0.2" Pos="(2.771; 1.962; -1.187)" ParentFrame="BoneCabin_cdt" />
+		</Ignition>
+		<HeadLight>
+			<Model _template="HeadLightRay" Org="(3.69; 1.753; 0.76)" ParentFrame="BoneCabin_cdt" />
+			<Model _template="HeadLightRay" Org="(3.69; 1.753; -0.76)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="HeadLight" Dir="(1; 0; 0)" Size="0.3" Pos="(3.69; 1.753; 0.76)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="HeadLight" Dir="(1; 0; 0)" Size="0.3" Pos="(3.69; 1.753; -0.76)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="BlueStreak" Dir="(1; 0; 0)" Size="0.15" Pos="(3.69; 1.753; 0.76)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="BlueStreak" Dir="(1; 0; 0)" Size="0.15" Pos="(3.69; 1.753; -0.76)" ParentFrame="BoneCabin_cdt" />
+		</HeadLight>
+	</ModelAttachments>
+	<Landmark Mesh="landmarks/mercedes_mamute_1519_lmk" MinScale="1.5" MaxScale="2.2" />
+	<HeadLight _template="Default" Pos="(3.69; 1.753; 0)" />
+	<GameData
+		Country="US,NE,CE,CA"
+		ExcludeAddons="frame_addon_sideboard_2, trailer_log_pole_zikz_612h, pacific_p16_trailer_log_pole"
+		Price="113300"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<WinchSocket Pos="(1.69; 1.224; 1.055)" ParentFrame="BoneCabin_cdt" />
+		<WinchSocket Pos="(1.69; 1.224; -1.055)" ParentFrame="BoneCabin_cdt" />
+		<CraneSocket Pos="(1.69; 1.224; 1.055)" ParentFrame="BoneCabin_cdt" />
+		<CraneSocket Pos="(1.69; 1.224; -1.055)" ParentFrame="BoneCabin_cdt" />
+		<UiDesc
+			UiDesc="UI_VEHICLE_MERCEDES_MAMUTE_1519_DESC"
+			UiIcon30x30="heavyVehicleImg30"
+			UiIcon328x458="shopImgMercedesBenzMamute"
+			UiIcon40x40="heavyVehicleImg"
+			UiIconLogo="MercedesLogo80"
+			UiName="UI_VEHICLE_MERCEDES_MAMUTE_1519_NAME"
+		/>
+		<CustomizationCameras>
+			<CameraPos FOV="32.0" Name="default" InterestPosition="(4.700; 1.4; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(12.5; 1.6; -5.02)" />
+			<CameraPos FOV="32.0" Name="roof" 	InterestPosition="(6.5; 3; -0.5)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(11; 5.8; -2.8)" />
+			<CameraPos FOV="32.0" Name="hoods_default" InterestPosition="(5.997; 1.735; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(13.213; 1.446; -3.663)" />
+			<CameraPos FOV="32.0" Name="snorkel" InterestPosition="(5.887; 2; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(9.085; 3.446; 4.298)" />
+			<CameraPos FOV="32.0" Name="wheels" InterestPosition="(4.5; 0.5; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(9.900; 1.3; -6.13)" />
+			<CameraPos FOV="32.0" Name="addon_1" InterestPosition="(1.1; 1.8; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-7.9; 4.9; 6.38)" />
+			<CameraPos FOV="32.0" Name="exhaust" InterestPosition="(3.3; 1; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="0" Position="(6.3; 0.5; -3.5)" />
+			<CameraPos FOV="32.0" Name="spare_wheel" InterestPosition="(4.6; 2.2; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="1.2" Position="(1.6; 3.2; -4.5)" />
+			<CameraPos FOV="32.0" Interior="true" Name="bubble_head" InterestPosition="(5.8; 2.8; 0.8)" Position="(5; 2.9; -0.6)" />
+			<CameraPos FOV="32.0" Interior="true" Name="mirror_mount" InterestPosition="(5.8; 3.1; 0.65)" Position="(5.2; 2.9; -0.55)" />
+			<CameraPos FOV="32.0" Interior="true" Name="hood_figure" InterestPosition="(4.1; 1.7; 0.6)" Position="(8.8; 2.7; -0.7)" />
+			<CameraPos FOV="32.0" Interior="true" Name="sticker_1" InterestPosition="(5.8; 2.3; 1.25)" Position="(5.2; 2.9; -0.15)" />
+			<CameraPos FOV="32.0" Interior="true" Name="sticker_2" InterestPosition="(5.8; 3.1; 0.2)" Position="(5.2; 2.9; -0.55)" />
+			<CameraPos FOV="32.0" Interior="true" Name="door_l_sticker" InterestPosition="(4.5; 2.100; 0.2)" Position="(7.2; 2.5; -3.8)" />
+			<CameraPos FOV="32.0" Interior="true" Name="door_r_sticker" InterestPosition="(6.5; 2.100; 0)" Position="(6.9; 2.7; 3.8)" />
+			<CameraPos FOV="32.0" Interior="true" Name="glass_sticker" InterestPosition="(3.6; 2.08; 0.6)" Position="(9.5; 3.65; -1.55)" />
+		</CustomizationCameras>
+		
+		<!-- VISUAL ADDONS -->
+		<AddonSockets DefaultAddon="mercedes_mamute_1519_exhaust_default">
+			<Socket Names="MercedesMamute1519Exhaust" ParentFrame="BoneCabinTwist_cdt" />
+		</AddonSockets>
+		<AddonSockets DefaultAddon="mercedes_mamute_1519_bumper_default">
+			<Socket Names="MercedesMamute1519Bumper" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets
+			DefaultAddon="mercedes_mamute_1519_mudguard_default"
+		>
+			<Socket Names="MercedesMamute1519Mudguard" NamesBlock="FrameAddonTank, FrameAddonMaintainer, BigCraneUs, MercedesMamute1519Sparewheel02, SaddleHigh, SaddleLow2" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>
+		<AddonSockets DefaultAddon="mercedes_mamute_1519_sparewheel" >
+			<Socket
+				Names="MercedesMamute1519Sparewheel"
+				NamesBlock=""
+				Offset="(0; 0; 0)"
+				ParentFrame="BoneCabinTwist_cdt"
+			/>
+			<Socket
+				Names="MercedesMamute1519Sparewheel02"
+				NamesBlock=""
+				Offset="(0; 0; 0)"
+				ParentFrame="BoneCabinTwist_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="MercedesMamute1519Visor" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets >
+			<Socket Names="MercedesMamute1519Horn" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets >
+			<Socket Names="MercedesMamute1519Snorkel" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets >
+			<Socket Names="MercedesMamute1519Protection" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		
+		<!-- DIFFLOCK -->
+		<AddonSockets DefaultAddon="mercedes_mamute_1519_diff_lock_default">
+			<Socket Names="MercedesMamute1519DiffLock" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>
+		
+		<!-- FRAME -->
+		<AddonSockets DefaultAddon="mercedes_mamute_1519_frame_default" RequiredAddonIfNoConflicts="mercedes_mamute_1519_frame_default" >
+			<Socket Names="MercedesMamute1519FrameDefault" ParentFrame="BoneChassis_cdt" />
+		</AddonSockets>
+		
+		<!-- FRAME ADDONS -->
+		<AddonSockets>
+			<Socket Names="FrameAddon" Offset="(-1.3; 1.539; 0)" >
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.1)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.1)" />
+				
+				<AddonsShift Offset="(-0.3; 0; 0)" Types="MercedesMamute1519Sparewheel" />
+				<AddonsShift Offset="(-0.3; 0; 0)" Types="MercedesMamute1519Sparewheel02" />
+				<AddonsShift Offset="(-0.65; 0; 0)" Types="MinicraneUSMercedesMamute" TrailerNamesBlock="Trailer" />
+			</Socket>
+			<Socket Names="MercedesMamute1519Sideboard" Offset="(0; 0; 0)">
+				<AddonsShift Offset="(-0.39; 0; 0)" Types="MinicraneUSMercedesMamute" />
+			</Socket>
+			<Socket Names="MercedesMamute1519Kung" Offset="(0; 0; 0)" />
+			
+			<Socket Names="FrameAddonTank" Offset="(-1.9; 1.539; 0)">
+				<AddonsShift Offset="(-0.6; 0; 0)" Types="MercedesMamute1519Sparewheel" TrailerNamesBlock="Trailer" />
+				<AddonsShift Offset="(-0.65; 0; 0)" Types="MercedesMamute1519Sparewheel02" TrailerNamesBlock="Trailer" />
+			</Socket>
+			<Socket Names="FrameAddonMaintainer" Offset="(-1.65; 0.508; 0)" NamesBlock="MercedesMamute1519Sparewheel, MercedesMamute1519Sparewheel02" />
+			<Socket Names="FrameAddonTow" Offset="(-2.02; 1.529; 0)">
+				<AddonsShift Offset="(-0.18; 0; 0)" Types="MercedesMamute1519Sparewheel" />
+				<AddonsShift Offset="(-0.22; 0; 0)" Types="MercedesMamute1519Sparewheel02" />
+			</Socket>
+			<Socket Names="FrameAddonSeismicVibratorPaderaSTD4" Offset="(0.82; 1.539; 0)">
+				<AddonsShift Offset="(-0.3; 0; 0)" Types="MercedesMamute1519Sparewheel" />
+				<AddonsShift Offset="(-0.3; 0; 0)" Types="MercedesMamute1519Sparewheel02" />
+			</Socket>
+
+			<Socket Names="SaddleHigh" Offset="(-2; 1.539; 0)" NamesBlock="" >
+				<AddonsShift Offset="(-0.3; 0; 0)" Types="LogLiftPaderaSTD4" />
+				
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.012)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.012)" />
+			</Socket>
+			<Socket Names="SaddleLow2" Offset="(-2.3; 1.539; 0)" NamesBlock="">
+				<AddonsShift Offset="(-0.2; 0; 0)" Types="LogLiftPaderaSTD4" />
+				
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.03)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.03)" />
+			</Socket>
+			
+			<Socket Names="BunkLog" Offset="(-5.55; 1.539; 0)" >
+				<AddonsShift Offset="(-0.4; 0; 0)" Types="LogLiftPaderaSTD4, MercedesMamute1519Sparewheel" />
+				<AddonsShift Offset="(-0.45; 0; 0)" Types="LogLiftPaderaSTD4, MercedesMamute1519Sparewheel02" />
+				<AddonsShift Offset="(-0.3; 0; 0)" Types="MinicraneUSMercedesMamute, MercedesMamute1519Sparewheel" />
+				<AddonsShift Offset="(-0.3; 0; 0)" Types="MinicraneUSMercedesMamute, MercedesMamute1519Sparewheel02" />
+			</Socket>
+			<Socket Names="FrameAddonLogShortMercedesMamute" Offset="(0.827; 1.68; 0)" NamesBlock="MercedesMamute1519FrameDefault" />
+		</AddonSockets>
+		
+		<!-- CRANES -->
+		<AddonSockets>
+			<Socket Names="BigCraneUs" Offset="(-1.6; 1.539; 0)" NamesBlock="FrameAddon, MercedesMamute1519Sideboard, MercedesMamute1519Kung, FrameAddonTank, FrameAddonTow, FrameAddonMaintainer, BigCraneUs, FrameAddonSeismicVibratorPaderaSTD4, BunkLog, SaddleHigh, SaddleLow2, FrameAddonLogShortMercedesMamute, MercedesMamute1519Protection">
+				<AddonsShift Offset="(-0.6; 0; 0)" Types="MercedesMamute1519Sparewheel" TrailerNamesBlock="Trailer" />
+				<AddonsShift Offset="(-0.6; 0; 0)" Types="MercedesMamute1519Sparewheel02" TrailerNamesBlock="Trailer" />
+			</Socket>
+		
+			<Socket Names="MinicraneUSMercedesMamute" NamesBlock="FrameAddonTank, FrameAddonTow, FrameAddonMaintainer, BigCraneUs, MercedesMamute1519Kung, FrameAddonSeismicVibratorPaderaSTD4, FrameAddonLogShortMercedesMamute" Offset="(0.8; 1.539; 0)" ParentFrame="BoneCabinTwist_cdt" >
+				<AddonsShift Offset="(-0.5; 0; 0)" Types="MercedesMamute1519Sparewheel" TrailerNamesBlock="FrameAddon, MercedesMamute1519Sideboard" />
+				<AddonsShift Offset="(-0.65; 0; 0)" Types="MercedesMamute1519Sparewheel02" TrailerNamesBlock="FrameAddon, MercedesMamute1519Sideboard" />
+			</Socket>
+			
+			<Socket Names="LogLiftPaderaSTD4" NamesBlock="FrameAddon, FrameAddonTank, FrameAddonTow, FrameAddonSeismicVibratorPaderaSTD4, FrameAddonMaintainer, BigCraneUs, MercedesMamute1519Sideboard, MercedesMamute1519Kung, FrameAddonLogShortMercedesMamute" Offset="(-0.6; 0.18; 0)" ParentFrame="BoneCabinTwist_cdt" >
+				<AddonsShift Offset="(-0.4; 0; 0)" Types="MercedesMamute1519Sparewheel" />
+				<AddonsShift Offset="(-0.45; 0; 0)" Types="MercedesMamute1519Sparewheel02" />
+				
+				<ExtraParent Frame="BoneCabinTwist_cdt" Offset="(0; 0; -0.05)" />
+				<ExtraParent Frame="BoneCabinTwist_cdt" Offset="(0; 0; 0.05)" />
+			</Socket>
+		</AddonSockets>
+		
+		<!-- TRAILERS -->
+		<AddonSockets>
+			<Socket Names="Trailer" NamesBlock="FrameAddonTow, FrameAddonSeismicVibratorPaderaSTD4, FrameAddonMaintainer" Offset="(-4.131; 1.439; 0)">
+				<AddonsShift Offset="(-0.44; -0.055; 0)" Types="MercedesMamute1519Sideboard" />
+				<AddonsShift Offset="(-0.39; 0.0; 0)" Types="MercedesMamute1519Sideboard, MinicraneUSMercedesMamute" />
+				<AddonsShift Offset="(-0.85; 0; 0)" Types="FrameAddonLogShortMercedesMamute" />
+			</Socket>
+			<Socket Names="Semitrailer, SemitrailerOiltank" Offset="(-2.303; 1.78; 0)" >
+				<AddonsShift Offset="(-0.2; 0; 0)" Types="LogLiftPaderaSTD4" />
+			</Socket>
+			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-2.003; 2.004; 0)" >
+				<AddonsShift Offset="(-0.3; 0; 0)" Types="LogLiftPaderaSTD4" />
+			</Socket>
+		</AddonSockets>
+		
+		<!-- CUSTOMIZATION -->
+		<AddonSockets>
+			<Socket
+				InCockpit="true"
+				Names="StuffAirfreshener"
+				Offset="(2.658; 3.19; 0)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket
+				InCockpit="true"
+				Names="StuffHoodMercedesMamute1519"
+				Offset="(0; 0; 0)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="MercedesMamute1519Sticker_1x1_01" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="MercedesMamute1519Sticker_1x1_02" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="MercedesMamute1519Sticker_1x1_03" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="MercedesMamute1519Sticker_1x1_04" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="MercedesMamute1519Sticker_1x1_05" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="MercedesMamute1519Sticker_1x1_06" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="MercedesMamute1519Sticker_1x2_01" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="MercedesMamute1519Sticker_1x4_01" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="MercedesMamute1519Sticker_Glass_Top" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="MercedesMamute1519Sticker_Glass_Bottom" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="MercedesMamute1519Sticker_Door_L" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="MercedesMamute1519Sticker_Door_R" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+	</GameData>
+	<ControlledConstraints>
+		<Constraint Id="chassis_steer" IsLinkedSteering="true" Name="TieRod" />
+		<Constraint Id="chassis_steer" IsLinkedSteering="true" Name="SteeringRod" />
+	</ControlledConstraints>
+	<AutomaticIK>
+		<IKBone ModelFrame="BoneTieRodHinge" ParentFrame="BoneTieRod_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneRackL"
+				ModelFrame="BoneTieRodPrsimatic"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+	</AutomaticIK>
+</Truck>

@@ -1,0 +1,45 @@
+<_templates Include="trucks"/>
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/mercedes_3850_tuning/mercedes_3850_frame_default">
+		<Body ImpactType="Truck" Mass="20">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<StopSignals>
+			<Light _template="StopSignal" Pos="(-4.709; 0.232; 0)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="StopSignal" AspectRatio="3" Color="g(255; 0; 0) x 0.3" Size="0.3" Pos="(-4.566; 0.748; 1.051)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="StopSignal" AspectRatio="3" Color="g(255; 0; 0) x 0.3" Size="0.3" Pos="(-4.566; 0.748; -1.051)" ParentFrame="BoneChassis_cdt" />
+		</StopSignals>
+		<ReverseSignals>
+			<Light _template="ReverseSignal" Pos="(-4.709; 0.232; 0)" />
+			<Flare _template="ReverseSignal" Color="g(245; 235; 220) x 0.6" Size="0.4" Pos="(-4.565; 0.748; 0.919)" />
+			<Flare _template="ReverseSignal" Color="g(245; 235; 220) x 0.6" Size="0.4" Pos="(-4.565; 0.748; -0.919)" />
+			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.05" Dir="(-1; 0; 0)" Size="0.4" Pos="(-4.565; 0.748; 0.919)" />
+			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.05" Dir="(-1; 0; 0)" Size="0.4" Pos="(-4.565; 0.748; -0.919)" />
+		</ReverseSignals>
+		<Ignition>
+			<Light _template="IgnitionSignalRed" Pos="(-4.699; 0.150; 0)" />
+			<Flare _template="IgnitionSignalRed" Size="0.3" Pos="(-4.566; 0.748; 1.051)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="IgnitionSignalRed" Size="0.3" Pos="(-4.566; 0.748; -1.051)" ParentFrame="BoneChassis_cdt" />
+		</Ignition>
+	</ModelAttachments>
+	<GameData
+		CameraPreset="addon_1"
+		Category="frame_addons"
+		IsCustomizable="true"
+		Price="3800"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<WinchSocket Pos="(-4.618; 0.676; 0)" FixedToTruck="true" />
+		<CraneSocket Pos="(-4.618; 0.676; 0)" FixedToTruck="true" />
+		<UiDesc
+			UiDesc="UI_TUNING_FRAME_DEFAULT_NAME"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_FRAME_DEFAULT_DESC"
+		/>
+		<InstallSocket Type="Mercedes3850FrameDefault" />
+	</GameData>
+</TruckAddon>

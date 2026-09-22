@@ -1,0 +1,69 @@
+<_templates Include="trucks">
+	<Body>
+		<Loop
+			Mass="5"
+			Collisions="Default"
+			ImpactType="Truck"
+			CenterOfMassOffset="(0; 0; 0)"
+		>
+			<Constraint
+				PivotOffset="(0; 0; 0)"
+				Type="Hinge"
+				AxisLocal="(0; 0; 1)"
+				MinLimit="0.36"
+				MaxLimit="207.8"
+			>
+				<Motor Spring="1" Damping="0.1" Type="Spring" />
+			</Constraint>
+		</Loop>
+	</Body>
+</_templates>
+<TruckAddon>
+	<TruckData>
+		<Damage>
+			<Multiplier Multiplier="0.75" Type="Engine" />
+		</Damage>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/mercedes_mamute_1519_tuning/mercedes_mamute_1519_bumper_1">
+		<Body ImpactType="Truck" Mass="60" ModelFrame="BoneRoot_cdt">
+			<Constraint Type="Rigid" />
+			<Body _template="Loop" ModelFrame="BoneLoopR_cdt" />
+			<Body _template="Loop" ModelFrame="BoneLoopL_cdt" />
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<Ignition>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.031; 2.029; -0.259)" Dir="(1; 0; 0)" Size=".2" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.031; 2.029; 0.259)" Dir="(1; 0; 0)" Size=".2" ColorMultAtDay="0.25"/>
+		</Ignition>
+		<HeadLight>
+			<Model _template="HeadLightRay" Org="(4.031; 2.029; -0.259)" ColorMultAtDay="0.3"/>
+			<Model _template="HeadLightRay" Org="(4.031; 2.029; 0.259)" ColorMultAtDay="0.3"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.031; 2.029; -0.259)" Dir="(1; 0; 0)" Size=".36" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.031; 2.029; 0.259)" Dir="(1; 0; 0)" Size=".36" ColorMultAtDay="0.25"/>
+		</HeadLight>
+	</ModelAttachments>
+	<GameData
+		CameraPreset="default"
+		Category="bumper"
+		Price="800"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<WinchSocket FixedToTruck="true" Pos="(4.179; 1.452; 0.379)" />
+		<WinchSocket FixedToTruck="true" Pos="(4.181; 1.371; 0)" />
+		<WinchSocket FixedToTruck="true" Pos="(3.945; 1.377; 0.000)" />
+
+		<CraneSocket FixedToTruck="true" Pos="(4.179; 1.452; 0.379)" />
+		<CraneSocket FixedToTruck="true" Pos="(4.179; 1.452; -0.379)" />
+		<CraneSocket FixedToTruck="true" Pos="(4.181; 1.371; 0)" />
+		
+		<UiDesc
+			UiDesc="UI_TUNING_BUMPER_TOWLOOPS_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_BUMPER_TOWLOOPS_NAME"
+		/>
+		<InstallSocket Type="MercedesMamute1519Bumper" />
+	</GameData>
+</TruckAddon>

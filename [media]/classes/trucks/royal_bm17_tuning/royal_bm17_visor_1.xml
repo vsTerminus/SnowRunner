@@ -1,7 +1,11 @@
 <_templates Include="trucks" />
 <_parent File="royal_bm17_horn_1" />
 <TruckAddon>
-	<PhysicsModel Mesh="trucks/royal_bm17_tuning/royal_bm17_visor_1" />
+	<PhysicsModel Mesh="trucks/royal_bm17_tuning/royal_bm17_visor_1" >
+		<Body ImpactType="Truck" Mass="6" ModelFrame="BoneCabin_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
 	<ModelAttachments>
 		<Ignition>
 			<Flare _template="MarkerBeacon" Pos="(1.821; 3.116; -0.781)" />

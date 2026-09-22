@@ -666,7 +666,11 @@
 			<Socket Names="MastodonSpareWheel2" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="MastodonBeacon" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" NamesBlock="MastodonRoofrack, MastodonOuterframe"/>
+			<Socket Names="MastodonBeacon" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" NamesBlock="">
+				<AddonsShift Offset="(0.35; 0; 0)" Types="MastodonOuterframe" />
+				<AddonsShift Offset="(0.35; 0; 0)" Types="MastodonRoofrack" />
+				<AddonsShift Offset="(-0.35; 0; 0)" Types="MastodonOuterframe, MastodonRoofrack" />
+			</Socket>
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="MastodonOuterframe" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />

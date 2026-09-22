@@ -370,6 +370,7 @@
 			<CameraPos FOV="32.0" Interior="true" Name="sticker" InterestPosition="(6.161; 2.836; 1.333)" Position="(4.671; 2.49; -0.421)" />
 			<CameraPos FOV="32.0" Interior="true" Name="sticker_1" InterestPosition="(6.154; 1.493; 1)" Position="(4.774; 2.658; -0.448)" />
 			<CameraPos FOV="32.0" Interior="true" Name="sticker_2" InterestPosition="(6.154; 3.193; 0.395)" Position="(4.781; 2.495; -0.674)" />
+			<CameraPos FOV="32.0" Name="loglift_front" InterestPosition="(3.561; 1.684; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-4.975; 4.814; 6.571)" />
 			<CameraPos FOV="32.0" Name="addon_1" InterestPosition="(0.561; 1.684; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-7.975; 4.814; 6.571)" />
 			<CameraPos FOV="32.0" Name="addon_2" InterestPosition="(5.759; 2.49; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(10.793; 4.409; -3.424)" />
 			<CameraPos FOV="32.0" Interior="true" Name="mirror_mount" InterestPosition="(6.161; 2.63; 1.333)" Position="(4.797; 2.528; -0.397)" />
@@ -394,52 +395,68 @@
 		<CraneSocket Pos="(-0.161; 1.032; -0.436)" />
 		<CraneSocket Pos="(-0.161; 1.032; 0.436)" />
 		<AddonSockets>
-			<Socket Names="FrameAddonTowPlatform" NamesBlock="MetalDetector, MinicraneUS,Trailer, LogTrailer" Offset="(-1.3; 1.093; 0)" />
-			<Socket Names="LogLift" NamesBlock="MetalDetector, MinicraneUS" Offset="(0.5; 1.093; 0)" />
-			<Socket Names="BunkLog" NamesBlock="MinicraneUS, MetalDetector" Offset="(-6.926; 1.094; 0)" />
-			<Socket Names="FrameAddonLogShort" NamesBlock="MinicraneUS, MetalDetector" Offset="(-2.2; 1.09; 0)" />
-			<Socket Names="FrameAddonLogMedium" NamesBlock="MinicraneUS, MetalDetector" Offset="(-1.9; 1.09; 0)" />
-			<Socket Names="SaddleLow" Offset="(-3.425; 1.087; 0)">
+			<Socket Names="FrameAddonTowPlatform" NamesBlock="LogLift, MetalDetector, MinicraneUS,Trailer, LogTrailer" Offset="(-1.3; 1.093; 0)" />
+			<Socket Names="BunkLog" NamesBlock="LogLift, MinicraneUS, MetalDetector" Offset="(-6.926; 1.094; 0)" />
+			<Socket Names="FrameAddonLogShort" NamesBlock="LogLift, MinicraneUS, MetalDetector" Offset="(-2.2; 1.09; 0)" />
+			<Socket Names="FrameAddonLogMedium" NamesBlock="LogLift, MinicraneUS, MetalDetector" Offset="(-1.9; 1.09; 0)" />
+			<Socket Names="SaddleLow" NamesBlock="LogLift" Offset="(-3.425; 1.087; 0)">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.02)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.02)" />
 			</Socket>
-			<Socket Names="SaddleHigh" Offset="(-3.425; 1.087; 0)">
+			<Socket Names="SaddleHigh" NamesBlock="LogLift" Offset="(-3.425; 1.087; 0)">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.02)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.02)" />
 			</Socket>
-			<Socket Names="FrameAddon" Offset="(-2.100; 1.087; 0)">
+			<Socket Names="FrameAddon" NamesBlock="LogLift" Offset="(-2.100; 1.087; 0)">
 				<AddonsShift Offset="(-1.037; 0; 0)" Types="MinicraneUS" />
 				<AddonsShift Offset="(-0.743; 0; 0)" Types="MetalDetector" />
 			</Socket>
-			<Socket Names="FrameAddonTank" Offset="(-2.7; 1.087; 0)" />
-			<Socket Names="FrameAddonSeismicVibrator" NamesBlock="Trailer, MinicraneUS, LogTrailer" Offset="(-0.2; 1.087; 0)" ParentFrame="BoneChassis_cdt" />
-			<Socket Names="FrameAddonMaintainer" NamesBlock="Trailer, MinicraneUS, LogTrailer" Offset="(-2.55; 0.055; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="FrameAddonTank" NamesBlock="LogLift" Offset="(-2.7; 1.087; 0)" />
+			<Socket Names="FrameAddonSeismicVibrator" NamesBlock="LogLift, Trailer, MinicraneUS, LogTrailer" Offset="(-0.2; 1.087; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="FrameAddonMaintainer" NamesBlock="LogLift, Trailer, MinicraneUS, LogTrailer" Offset="(-2.55; 0.055; 0)" ParentFrame="BoneChassis_cdt" />
 			
-			<Socket Names="SaddleMotorized" Offset="(-2.100; -0.177; 0.000)" ParentFrame="BoneChassis_cdt" >
+			<Socket Names="SaddleMotorized" NamesBlock="LogLift" Offset="(-2.100; -0.177; 0.000)" ParentFrame="BoneChassis_cdt" >
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.000; 0.000; 0.065)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.000; 0.000; -0.065)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(1.400; 0.000; 0.065)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(1.400; 0.000; -0.065)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(1.400; 0.000; 0.000)" />
 			</Socket>
-			
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="LogLiftKenworth"
+					NamesBlock="LogLift,
+								FrameAddonTowPlatform,
+								FrameAddonLogShort,
+								FrameAddonLogMedium,
+								FrameAddon,
+								FrameAddonTank,
+								FrameAddonSeismicVibrator,
+								FrameAddonMaintainer,
+								SaddleMotorized,
+								MetalDetector,
+								MinicraneUS"
+					Offset="(-1; 1.278; 0)" >
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.095)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.095)" />
+			</Socket>
 		</AddonSockets>
 		<AddonSockets>
 			<Socket
 				Names="MetalDetector"
-				NamesBlock="MinicraneUS, FrameAddonSeismicVibrator, FrameAddonKung, FrameAddonTank, FrameAddonMaintainer, SaddleMotorized"
+				NamesBlock="LogLift, MinicraneUS, FrameAddonSeismicVibrator, FrameAddonKung, FrameAddonTank, FrameAddonMaintainer, SaddleMotorized"
 				Offset="(0.075; 0.038; 0)"
 				ParentFrame="BoneChassis_cdt"
 			/>
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="MinicraneUS" NamesBlock="FrameAddonTank, FrameAddonMaintainer, FrameAddonSeismicVibrator, FrameAddonKung, SaddleMotorized" Offset="(-0.147; 1.09; 0)" />
+			<Socket Names="MinicraneUS" NamesBlock="LogLift, FrameAddonTank, FrameAddonMaintainer, FrameAddonSeismicVibrator, FrameAddonKung, SaddleMotorized" Offset="(-0.147; 1.09; 0)" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="Semitrailer, SemitrailerOiltank, SemitrailerFoldableLog" Offset="(-3.425; 1.39; 0)" >
+			<Socket Names="Semitrailer, SemitrailerOiltank, SemitrailerFoldableLog" NamesBlock="LogLift" Offset="(-3.425; 1.39; 0)" >
 				<AddonsShift Offset="(-0.022; 0.02; 0)" Types="SaddleMotorized" />
 			</Socket>
-			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-3.44; 1.6; 0)" />
+			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" NamesBlock="LogLift" Offset="(-3.44; 1.6; 0)" />
 			<Socket Names="Trailer, LogTrailer" Offset="(-5.16; 0.786; 0)" />
 		</AddonSockets>
 		<AddonSockets>
@@ -447,46 +464,47 @@
 				_template="Cabin2Chassis"
 				InCockpit="true"
 				Names="StuffDashboard"
+				NamesBlock="LogLift"
 				Offset="(2.061; 2.22; -0.131)"
 			/>
 		</AddonSockets>
 		<AddonSockets DefaultAddon="western_star_49x_bumper_default">
-			<Socket _template="Cabin2Chassis" Names="WS49XBumper" />
+			<Socket _template="Cabin2Chassis" Names="WS49XBumper" NamesBlock="LogLift" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="western_star_49x_exhaust_default">
-			<Socket _template="Cabin2Chassis" Names="WS49XExhaust" />
+			<Socket _template="Cabin2Chassis" Names="WS49XExhaust" NamesBlock="LogLift" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="western_star_49x_visor_default">
-			<Socket _template="Cabin2Chassis" Names="WS49XVisor" />
-			<Socket _template="Cabin2Chassis" Names="WS49XVisor1" NamesBlock="WS49XSpotlight" />
+			<Socket _template="Cabin2Chassis" Names="WS49XVisor" NamesBlock="LogLift" />
+			<Socket _template="Cabin2Chassis" Names="WS49XVisor1" NamesBlock="LogLift, WS49XSpotlight" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="western_star_49x_horn_default">
-			<Socket _template="Cabin2Chassis" Names="WS49XHorn" />
+			<Socket _template="Cabin2Chassis" Names="WS49XHorn" NamesBlock="LogLift" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket _template="Cabin2Chassis" Names="WS49XSnorkel" />
+			<Socket _template="Cabin2Chassis" Names="WS49XSnorkel" NamesBlock="LogLift" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket _template="Cabin2Chassis" Names="WS49XSpotlight" />
+			<Socket _template="Cabin2Chassis" Names="WS49XSpotlight" NamesBlock="LogLift" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket _template="Cabin2Chassis" Names="WS49XBeacon1" />
-			<Socket _template="Cabin2Chassis" Names="WS49XBeacon2" NamesBlock="WS49XConditioner" />
+			<Socket _template="Cabin2Chassis" Names="WS49XBeacon1" NamesBlock="LogLift" />
+			<Socket _template="Cabin2Chassis" Names="WS49XBeacon2" NamesBlock="LogLift, WS49XConditioner" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket _template="Cabin2Chassis" Names="WS49XGabarite1" NamesBlock="WS49XSpotlight" />
+			<Socket _template="Cabin2Chassis" Names="WS49XGabarite1" NamesBlock="LogLift, WS49XSpotlight" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket _template="Cabin2Chassis" Names="WS49XGabarite2" />
+			<Socket _template="Cabin2Chassis" Names="WS49XGabarite2" NamesBlock="LogLift" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket _template="Cabin2Chassis" Names="WS49XConditioner" />
+			<Socket _template="Cabin2Chassis" Names="WS49XConditioner" NamesBlock="LogLift" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="western_star_49x_diff_lock_default">
-			<Socket Names="WS49XDiffLock" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="WS49XDiffLock" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="western_star_49x_transferbox_default">
-			<Socket Names="WesternStar49XTransferBox" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt">
+			<Socket Names="WesternStar49XTransferBox" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt">
 				<ExtraParent Frame="BoneCabin_cdt" />
 				<ExtraParent Frame="BoneTieRodL_cdt" />
 				<ExtraParent Frame="BoneTieRodR_cdt" />
@@ -501,14 +519,16 @@
 				_template="Cabin2Chassis"
 				InCockpit="true"
 				Names="StuffAirfreshener"
+				NamesBlock="LogLift"
 				Offset="(1.818; 2.727; 0)"
 			/>
-			<Socket _template="Cabin2Chassis" InCockpit="true" Names="StuffCurtainWesternStar49X" />
+			<Socket _template="Cabin2Chassis" InCockpit="true" Names="StuffCurtainWesternStar49X" NamesBlock="LogLift" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket
 				InCockpit="true"
 				Names="WesternStar49xSticker_1x1_01"
+				NamesBlock="LogLift"
 				Offset="(0; 0; 0)"
 				ParentFrame="BoneCabin_cdt"
 			>
@@ -519,6 +539,7 @@
 			<Socket
 				InCockpit="true"
 				Names="WesternStar49xSticker_1x1_02"
+				NamesBlock="LogLift"
 				Offset="(0; 0; 0)"
 				ParentFrame="BoneCabin_cdt"
 			>
@@ -529,6 +550,7 @@
 			<Socket
 				InCockpit="true"
 				Names="WesternStar49xSticker_1x2_01"
+				NamesBlock="LogLift"
 				Offset="(0; 0; 0)"
 				ParentFrame="BoneCabin_cdt"
 			>
@@ -539,6 +561,7 @@
 			<Socket
 				InCockpit="true"
 				Names="WesternStar49xSticker_1x2_02"
+				NamesBlock="LogLift"
 				Offset="(0; 0; 0)"
 				ParentFrame="BoneCabin_cdt"
 			>
@@ -549,6 +572,7 @@
 			<Socket
 				InCockpit="true"
 				Names="WesternStar49xSticker_1x4_01"
+				NamesBlock="LogLift"
 				Offset="(0; 0; 0)"
 				ParentFrame="BoneCabin_cdt"
 			>
@@ -556,32 +580,32 @@
 			</Socket>
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="westernStar49XSticker_GlassTop" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt">
+			<Socket InCockpit="true" Names="westernStar49XSticker_GlassTop" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt">
 				<ExtraParent Frame="BoneChassis_cdt" />
 			</Socket>
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="westernStar49XSticker_GlassBottom" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt">
+			<Socket InCockpit="true" Names="westernStar49XSticker_GlassBottom" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt">
 				<ExtraParent Frame="BoneChassis_cdt" />
 			</Socket>
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="westernStar49XSticker_Door_L" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt">
+			<Socket Names="westernStar49XSticker_Door_L" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt">
 				<ExtraParent Frame="BoneChassis_cdt" />
 			</Socket>
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="westernStar49XSticker_Door_R" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt">
+			<Socket Names="westernStar49XSticker_Door_R" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt">
 				<ExtraParent Frame="BoneChassis_cdt" />
 			</Socket>
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="westernStar49XSticker_Capote" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" InCockpit="true" >
+			<Socket Names="westernStar49XSticker_Capote" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" InCockpit="true" >
 				<ExtraParent Frame="BoneChassis_cdt" />
 			</Socket>
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="westernStar49XSticker_Roof" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt">
+			<Socket Names="westernStar49XSticker_Roof" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt">
 				<ExtraParent Frame="BoneChassis_cdt" />
 			</Socket>
 		</AddonSockets>
@@ -589,6 +613,7 @@
 			<Socket
 				InCockpit="true"
 				Names="WesternStar49xSticker_1x4_02"
+				NamesBlock="LogLift"
 				Offset="(0; 0; 0)"
 				ParentFrame="BoneCabin_cdt"
 			>
@@ -596,7 +621,7 @@
 			</Socket>
 		</AddonSockets>
 		<AddonSockets>
-			<Socket _template="Cabin2Chassis" Names="StuffHoodWesternStar49X" />
+			<Socket _template="Cabin2Chassis" Names="StuffHoodWesternStar49X" NamesBlock="LogLift" />
 		</AddonSockets>
 	</GameData>
 	<ControlledConstraints>

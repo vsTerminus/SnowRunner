@@ -460,6 +460,7 @@
 		<CustomizationCameras>
 			<CameraPos FOV="32.0" Interior="true" Name="roof_sticker" InterestPosition="(3.638; 0.674; -0.623)" Position="(6.636; 4.978; -0.223)" />
 			<CameraPos FOV="32.0" Interior="true" Name="sticker_1" InterestPosition="(7.202; 3.678; 1.493)" Position="(4.682; 2.264; -0.31)" />
+			<CameraPos FOV="32.0" Name="loglift_front" InterestPosition="(3.697; 2.069; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-4.265; 3.51; 8.244)" />
 			<CameraPos FOV="32.0" Name="addon_1" InterestPosition="(0.697; 1.869; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-7.265; 3.31; 8.244)" />
 			<CameraPos FOV="32.0" Name="addon_2" InterestPosition="(3.194; 1.807; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-8.093; 2.337; -6.718)" />
 			<CameraPos FOV="32.0" Interior="true" Name="mirror_mount" InterestPosition="(6.976; 2.561; 1.274)" Position="(4.428; 2.51; -0.534)" />
@@ -488,17 +489,17 @@
 		<CraneSocket Pos="(-4.524; 1.111; -0.502)" />
 		<CraneSocket Pos="(-4.950; 0.817; 0)" />
 		<AddonSockets>
-			<Socket Names="Semitrailer, SemitrailerOiltank, SemitrailerFoldableLog" Offset="(-2.817; 1.485; -0.002)" >
+			<Socket Names="Semitrailer, SemitrailerOiltank, SemitrailerFoldableLog" NamesBlock="LogLift" Offset="(-2.817; 1.485; -0.002)" >
 				<AddonsShift Offset="(-0.528; 0.05; 0)" Types="SaddleMotorized" />
 			</Socket>
-			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-2.100; 1.65; -0.002)">
+			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" NamesBlock="LogLift" Offset="(-2.100; 1.65; -0.002)">
 				<AddonsShift Offset="(0; 0; 0)" TrailerNamesBlock="LargeSemitrailerOiltank" Types="MinicraneRU, VoronD53233WheelAddon" />
 			</Socket>
 			<Socket Names="Trailer, LogTrailer" Offset="(-5; 0.81; 0)" />
 		</AddonSockets>
 		<AddonSockets>
 			
-			<Socket Names="FrameAddonTow" Offset="(-2.4; 1.157; 0)" NamesBlock="Trailer, LogTrailer, MetalDetector" >
+			<Socket Names="FrameAddonTow" Offset="(-2.4; 1.157; 0)" NamesBlock="LogLift, Trailer, LogTrailer, MetalDetector" >
 				<AddonsShift Offset="(-0.35; 0; 0)" Types="VoronD53233WheelAddon" />
 				<AddonsShift Offset="(-1; 0; 0)" Types="MinicraneRU" />
 				<AddonsShift Offset="(0; 0; 0)" TrailerNamesBlock="FrameAddonTow" Types="MinicraneRU, VoronD53233WheelAddon" />
@@ -507,33 +508,32 @@
 			<!-- <Socket Names="FrameAddonTow" NamesBlock="MetalDetector, MinicraneRU, Trailer" Offset="(-2.4; 1.157; 0)"> -->
 				<!-- <AddonsShift Offset="(-0.37; 0; 0)" Types="VoronD53233WheelAddon" /> -->
 			<!-- </Socket> -->
-			<Socket Names="LogLift" NamesBlock="MetalDetector, MinicraneRU" Offset="(-0.24; 1.157; 0)" />
-			<Socket Names="BunkLog" NamesBlock="MinicraneRU, MetalDetector" Offset="(-6.339; 1.16; 0)" />
-			<Socket Names="FrameAddonLogShort" NamesBlock="MinicraneRU, MetalDetector" Offset="(-1.68; 1.157; 0)">
+			<Socket Names="BunkLog" NamesBlock="LogLift, MinicraneRU, MetalDetector" Offset="(-6.339; 1.16; 0)" />
+			<Socket Names="FrameAddonLogShort" NamesBlock="LogLift, MinicraneRU, MetalDetector" Offset="(-1.68; 1.157; 0)">
 				<AddonsShift Offset="(-0.44; 0; 0)" Types="VoronD53233WheelAddon" />
 			</Socket>
-			<Socket Names="FrameAddonLogMedium" NamesBlock="MinicraneRU, MetalDetector, VoronD53233WheelAddon" Offset="(-1.68; 1.157; 0)"/>
-			<Socket Names="SaddleLow" Offset="(-2.817; 1.16; -0.002)">
+			<Socket Names="FrameAddonLogMedium" NamesBlock="LogLift, MinicraneRU, MetalDetector, VoronD53233WheelAddon" Offset="(-1.68; 1.157; 0)"/>
+			<Socket Names="SaddleLow" NamesBlock="LogLift" Offset="(-2.817; 1.16; -0.002)">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.02)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.02)" />
 			</Socket>
-			<Socket Names="SaddleHigh" Offset="(-2.100; 1.16; -0.002)">
+			<Socket Names="SaddleHigh" NamesBlock="LogLift" Offset="(-2.100; 1.16; -0.002)">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.015)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.015)" />
 			</Socket>
-			<Socket Names="FrameAddon" Offset="(-2.090; 1.16; 0)" ParentFrame="BoneChassis_cdt">
+			<Socket Names="FrameAddon" NamesBlock="LogLift" Offset="(-2.090; 1.16; 0)" ParentFrame="BoneChassis_cdt">
 				<AddonsShift Offset="(-0.85; 0; 0)" Types="MinicraneRU" />
 				<AddonsShift Offset="(0; 0; 0)" TrailerNamesBlock="FrameAddon" Types="MinicraneRU, VoronD53233WheelAddon" />
 			</Socket>
-			<Socket Names="FrameAddonKung" Offset="(-2.33; 1.23; 0)" ParentFrame="BoneChassis_cdt">
+			<Socket Names="FrameAddonKung" NamesBlock="LogLift" Offset="(-2.33; 1.23; 0)" ParentFrame="BoneChassis_cdt">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.08)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.08)" />
 			</Socket>
-			<Socket Names="FrameAddonTank" Offset="(-3.05; 1.16; 0)" ParentFrame="BoneChassis_cdt" />
-			<Socket Names="FrameAddonMaintainer" NamesBlock="MinicraneRU, Trailer, LogTrailer" Offset="(-2.75; 0.125; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="FrameAddonTank" NamesBlock="LogLift" Offset="(-3.05; 1.16; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="FrameAddonMaintainer" NamesBlock="LogLift, MinicraneRU, Trailer, LogTrailer" Offset="(-2.75; 0.125; 0)" ParentFrame="BoneChassis_cdt" />
 			<Socket
 				Names="BigCraneRu"
-				NamesBlock="MetalDetector, MinicraneRU, VoronD53233WheelAddon"
+				NamesBlock="LogLift, MetalDetector, MinicraneRU, VoronD53233WheelAddon"
 				Offset="(-2.856; 1.257; 0)"
 				ParentFrame="BoneChassis_cdt"
 			>
@@ -541,7 +541,7 @@
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.1; 0)" />
 			</Socket>
 			
-			<Socket Names="SaddleMotorized" NamesBlock="MinicraneRU, MetalDetector" Offset="(-2.000; -0.110; 0.000)" ParentFrame="BoneChassis_cdt" >
+			<Socket Names="SaddleMotorized" NamesBlock="LogLift, MinicraneRU, MetalDetector" Offset="(-2.000; -0.110; 0.000)" ParentFrame="BoneChassis_cdt" >
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.000; 0.000; 0.070)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.000; 0.000; -0.070)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(1.100; 0.000; 0.070)" />
@@ -551,87 +551,106 @@
 			
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="MetalDetector" NamesBlock="FrameAddonMaintainer, FrameAddonKung, FrameAddonTank, FrameAddon, SaddleHigh" Offset="(-0.707; 0.104; 0)" ParentFrame="BoneChassis_cdt" />
-			<Socket Names="MinicraneRU" NamesBlock="FrameAddonKung, FrameAddonTank" Offset="(0.3; 1.156; 0)">
+			<Socket Names="MetalDetector" NamesBlock="LogLift, FrameAddonMaintainer, FrameAddonKung, FrameAddonTank, FrameAddon, SaddleHigh" Offset="(-0.707; 0.104; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="MinicraneRU" NamesBlock="LogLift, FrameAddonKung, FrameAddonTank" Offset="(0.3; 1.156; 0)">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.01)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.01)" />
 				<AddonsShift Offset="(-0.25; 0; 0)" Types="VoronD53233WheelAddon" />
 			</Socket>
+			<Socket
+				Names="LogLiftKenworth"
+				NamesBlock="FrameAddonLogShort,
+							FrameAddonLogMedium,
+							SaddleHigh,
+							FrameAddon,
+							FrameAddonTow,
+							FrameAddonKung,
+							FrameAddonTank,
+							BigCraneRu,
+							LogLift,
+							FrameAddonMaintainer,
+							SaddleMotorized"
+				Offset="(-0.89; 1.344; 0)"
+			>
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.05)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.05)" />
+			</Socket>
 		</AddonSockets>
 		<AddonSockets DefaultAddon="voron_d53233_bumper_default">
-			<Socket Names="VoronD53233Bumper" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="VoronD53233Bumper" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="VoronD53233Horn" Offset="(0; 0; 0)" ParentFrame="BoneCabinDamper_cdt" />
+			<Socket Names="VoronD53233Horn" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabinDamper_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="VoronD53233Beacon" Offset="(0; 0; 0)" ParentFrame="BoneCabinDamper_cdt" />
+			<Socket Names="VoronD53233Beacon" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabinDamper_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="VoronD53233SpotLight1" Offset="(0; 0; 0)" ParentFrame="BoneCabinDamper_cdt" />
-			<Socket Names="VoronD53233SpotLight2" NamesBlock="VoronD53233Beacon" Offset="(0; 0; 0)" ParentFrame="BoneCabinDamper_cdt" />
+			<Socket Names="VoronD53233SpotLight1" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabinDamper_cdt" />
+			<Socket Names="VoronD53233SpotLight2" NamesBlock="LogLift, VoronD53233Beacon" Offset="(0; 0; 0)" ParentFrame="BoneCabinDamper_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="VoronD53233Snorkel" Offset="(0; 0; 0)" ParentFrame="BoneCabinDamper_cdt" />
+			<Socket Names="VoronD53233Snorkel" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabinDamper_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="VoronD53233WheelAddon" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt">
+			<Socket Names="VoronD53233WheelAddon" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt">
 				<ExtraParent Frame="BoneCabin_cdt" />
 			</Socket>
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="voronD53233Sticker_1x1_01" ParentFrame="BoneCabinDamper_cdt" />
+			<Socket InCockpit="true" Names="voronD53233Sticker_1x1_01" NamesBlock="LogLift" ParentFrame="BoneCabinDamper_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="voronD53233Sticker_1x1_02" ParentFrame="BoneCabinDamper_cdt" />
+			<Socket InCockpit="true" Names="voronD53233Sticker_1x1_02" NamesBlock="LogLift" ParentFrame="BoneCabinDamper_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="voronD53233Sticker_1x1_03" ParentFrame="BoneCabinDamper_cdt" />
+			<Socket InCockpit="true" Names="voronD53233Sticker_1x1_03" NamesBlock="LogLift" ParentFrame="BoneCabinDamper_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="voronD53233Sticker_1x2_01" ParentFrame="BoneCabinDamper_cdt" />
+			<Socket InCockpit="true" Names="voronD53233Sticker_1x2_01" NamesBlock="LogLift" ParentFrame="BoneCabinDamper_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="voronD53233Sticker_1x2_02" ParentFrame="BoneCabinDamper_cdt" />
+			<Socket InCockpit="true" Names="voronD53233Sticker_1x2_02" NamesBlock="LogLift" ParentFrame="BoneCabinDamper_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="voronD53233Sticker_1x4_01" ParentFrame="BoneCabinDamper_cdt" />
+			<Socket InCockpit="true" Names="voronD53233Sticker_1x4_01" NamesBlock="LogLift" ParentFrame="BoneCabinDamper_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="voronD53233Sticker_GlassTop" ParentFrame="BoneCabinDamper_cdt" />
+			<Socket InCockpit="true" Names="voronD53233Sticker_GlassTop" NamesBlock="LogLift" ParentFrame="BoneCabinDamper_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="voronD53233Sticker_GlassBottom" ParentFrame="BoneCabinDamper_cdt" />
+			<Socket InCockpit="true" Names="voronD53233Sticker_GlassBottom" NamesBlock="LogLift" ParentFrame="BoneCabinDamper_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="voronD53233Sticker_Door_L" ParentFrame="BoneCabinDamper_cdt" />
+			<Socket Names="voronD53233Sticker_Door_L" NamesBlock="LogLift" ParentFrame="BoneCabinDamper_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="voronD53233Sticker_Door_R" ParentFrame="BoneCabinDamper_cdt" />
+			<Socket Names="voronD53233Sticker_Door_R" NamesBlock="LogLift" ParentFrame="BoneCabinDamper_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="voronD53233Sticker_Roof" ParentFrame="BoneCabinDamper_cdt" />
+			<Socket Names="voronD53233Sticker_Roof" NamesBlock="LogLift" ParentFrame="BoneCabinDamper_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="voronD53233Sticker_Capote" ParentFrame="BoneCabinDamper_cdt" InCockpit="true" />
+			<Socket Names="voronD53233Sticker_Capote" NamesBlock="LogLift" ParentFrame="BoneCabinDamper_cdt" InCockpit="true" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="StuffAirfreshener" Offset="(1.681; 2.767; 0.239)" ParentFrame="BoneCabinDamper_cdt" />
-			<Socket InCockpit="true" Names="StuffCurtainVoronD53233" ParentFrame="BoneCabinDamper_cdt" />
+			<Socket InCockpit="true" Names="StuffAirfreshener" NamesBlock="LogLift" Offset="(1.681; 2.767; 0.239)" ParentFrame="BoneCabinDamper_cdt" />
+			<Socket InCockpit="true" Names="StuffCurtainVoronD53233" NamesBlock="LogLift" ParentFrame="BoneCabinDamper_cdt" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket
 				InCockpit="true"
 				Names="StuffDashboard"
+				NamesBlock="LogLift"
 				Offset="(1.977; 2.195; 0.037)"
 				ParentFrame="BoneCabinDamper_cdt"
 			/>
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="StuffHoodVoronD53233" ParentFrame="BoneCabinDamper_cdt" />
+			<Socket Names="StuffHoodVoronD53233" NamesBlock="LogLift" ParentFrame="BoneCabinDamper_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="AddonHornsSmall" NamesBlock="StuffHoodVoronD53233" Offset="(3.281; 1.980; 0)" ParentFrame="BoneCabinDamper_cdt" />
+			<Socket Names="AddonHornsSmall" NamesBlock="LogLift, StuffHoodVoronD53233" Offset="(3.281; 1.980; 0)" ParentFrame="BoneCabinDamper_cdt" />
 		</AddonSockets>
 	</GameData>
 	<ControlledConstraints>

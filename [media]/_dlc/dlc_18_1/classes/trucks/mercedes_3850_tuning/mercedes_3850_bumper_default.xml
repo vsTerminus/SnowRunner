@@ -1,0 +1,54 @@
+<_templates Include="trucks"/>
+<TruckAddon>
+	<TruckData>
+		<Damage>
+			<Multiplier Multiplier="1.0" Type="Engine" />
+		</Damage>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/mercedes_3850_tuning/mercedes_3850_bumper_default">
+		<Body ImpactType="Truck" Mass="150" ModelFrame="BoneCabin_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<Ignition>
+			<Light _template="IgnitionSignalWhite" Color="g(253; 220; 186) x 1" Pos="(3.239; 0.744; 0.824)" ParentFrame="BoneCabin_cdt" />
+			<Light _template="IgnitionSignalWhite" Color="g(253; 220; 186) x 1" Pos="(3.239; 0.744; -0.824)" ParentFrame="BoneCabin_cdt" />
+			
+			<Flare _template="IgnitionSignalWhite" DirAngle="120" Dir="(1; 0; 0)" Size="0.25" Pos="(2.973; 0.744; 0.824)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhite" DirAngle="120" Dir="(1; 0; 0)" Size="0.25" Pos="(2.973; 0.744; -0.824)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhite" DirAngle="120" Dir="(1; 0; 0)" Size="0.25" Pos="(2.986; 0.491; 0.853)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhite" DirAngle="120" Dir="(1; 0; 0)" Size="0.25" Pos="(2.986; 0.491; -0.853)" ParentFrame="BoneCabin_cdt" />
+		</Ignition>
+		<HeadLight>
+			<Model _template="HeadLightRay" Org="(2.973; 0.744; 0.824)" />
+			<Model _template="HeadLightRay" Org="(2.973; 0.744; -0.824)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 195) x 1.5" Size="0.3" Pos="(2.973; 0.744; 0.824)" />
+			<Flare _template="HeadLight" Color="g(255; 235; 195) x 1.5" Size="0.3" Pos="(2.973; 0.744; -0.824)" />
+			<Flare _template="BlueStreak" Pos="(2.973; 0.744; 0.824)" />
+			<Flare _template="BlueStreak" Pos="(2.973; 0.744; -0.824)" />
+		</HeadLight>
+	</ModelAttachments>
+	<HeadLight _template="Default" Pos="(3.282; 0.184; 0)" ParentFrame="BoneCabin_cdt" />
+	<GameData
+		CameraPreset="default"
+		Category="bumper"
+		Price="700"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<WinchSocket FixedToTruck="true" Pos="(3.005; 0.308; 0.687)" />
+		<WinchSocket FixedToTruck="true" Pos="(3.005; 0.308; -0.687)" />
+
+		<CraneSocket FixedToTruck="true" Pos="(3.005; 0.308; 0.687)" />
+		<CraneSocket FixedToTruck="true" Pos="(3.005; 0.308; -0.687)" />
+		
+		<UiDesc
+			UiDesc="UI_TUNING_BUMPER_STOCK_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_BUMPER_STOCK_NAME"
+		/>
+		<InstallSocket Type="Mercedes3850Bumper" />
+	</GameData>
+</TruckAddon>

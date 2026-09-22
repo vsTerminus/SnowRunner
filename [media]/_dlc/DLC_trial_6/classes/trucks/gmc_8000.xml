@@ -330,6 +330,7 @@
 		/>
 		<CustomizationCameras>
 			<CameraPos FOV="32.0" Interior="true" Name="roof_sticker" InterestPosition="(3.6; 0.363; -0.642)" Position="(7.6; 4.352; -0.303)" />
+			<CameraPos FOV="32.0" Name="loglift_front" InterestPosition="(4.5; 1.563; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-4; 3.802; 4.913)" />
 			<CameraPos FOV="32.0" Name="addon_1" InterestPosition="(2; 1.563; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-7; 3.802; 4.913)" />
 			<CameraPos FOV="32.0" Name="addon_2" InterestPosition="(2.9; 0.525; -0.002)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(5.258; 2.509; 4.431)" />
 			<CameraPos FOV="32.0" Interior="true" Name="mirror_mount" InterestPosition="(6.942; 2.145; 1.677)" Position="(5; 2.2; -0.72)" />
@@ -357,53 +358,72 @@
 		<CraneSocket Pos="(-1.85; 0.767; 0.42)" />
 		<CraneSocket Pos="(-1.85; 0.767; -0.42)" />
 		<AddonSockets>
-			<Socket Names="Gmc8000SpareWheel" NamesBlock="MetalDetector" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt">
+			<Socket Names="Gmc8000SpareWheel" NamesBlock="LogLift, MetalDetector" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt">
 				<ExtraParent Frame="BoneCabin_cdt" />
 			</Socket>
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="Semitrailer, SemitrailerOiltank, SemitrailerFoldableLog" Offset="(-3.814; 1.47; 0)" >
+			<Socket Names="Semitrailer, SemitrailerOiltank, SemitrailerFoldableLog" NamesBlock="LogLift" Offset="(-3.814; 1.47; 0)" >
 				<AddonsShift Offset="(-0.193; -0.13; 0)" Types="SaddleMotorized" />
 			</Socket>
-			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-3.188; 1.47; 0)" />
+			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" NamesBlock="LogLift" Offset="(-3.188; 1.47; 0)" >
+				<AddonsShift Offset="(-0.15; 0; 0)" Types="LogLiftKenworth" />
+			</Socket>
 			<Socket Names="Trailer, LogTrailer" Offset="(-5.921; 0.828; 0)" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="LogLift" NamesBlock="SaddleLow1, SaddleHigh, BigCraneUs, MinicraneUS, MetalDetector, FrameAddonLogShort, FrameAddon, FrameAddonKung, FrameAddonTank, FrameAddonSeismicVibrator, FrameAddonMaintainer, FrameAddonTow" Offset="(-0.509; 0.992; 0)" />
+			<Socket Names="LogLiftKenworth"
+					NamesBlock="LogLift,
+								FrameAddonLogShort,
+								FrameAddon,
+								FrameAddonTow,
+								FrameAddonKung,
+								FrameAddonTank,
+								BigCraneUs,
+								FrameAddonSeismicVibrator,
+								FrameAddonMaintainer,
+								SaddleMotorized,
+								MetalDetector,
+								MinicraneUS"
+					Offset="(-1.7; 1.174; 0)" >
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.12)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.12)" />
+			</Socket>
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="BunkLog" NamesBlock="MinicraneUS, MetalDetector, Gmc8000FenderLarge, Gmc8000FenderSmall" Offset="(-7.317; 0.992; 0)" />
-			<Socket Names="FrameAddonLogShort" NamesBlock="MinicraneUS, MetalDetector, Gmc8000FenderLarge, Gmc8000FenderSmall" Offset="(-3.06; 0.987; 0)" />
-			<Socket Names="SaddleLow1" Offset="(-3.811; 0.987; 0)">
+			<Socket Names="BunkLog" NamesBlock="LogLift, MinicraneUS, MetalDetector, Gmc8000FenderLarge, Gmc8000FenderSmall" Offset="(-7.317; 0.992; 0)" />
+			<Socket Names="FrameAddonLogShort" NamesBlock="LogLift, MinicraneUS, MetalDetector, Gmc8000FenderLarge, Gmc8000FenderSmall" Offset="(-3.06; 0.987; 0)" />
+			<Socket Names="SaddleLow1" NamesBlock="LogLift" Offset="(-3.811; 0.987; 0)">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.03)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.03)" />
 			</Socket>
-			<Socket Names="SaddleHigh" Offset="(-3.185; 0.987; 0)">
+			<Socket Names="SaddleHigh" NamesBlock="LogLift" Offset="(-3.185; 0.987; 0)">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.03)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.03)" />
+				<AddonsShift Offset="(-0.15; 0; 0)" Types="LogLiftKenworth" />
 			</Socket>
-			<Socket Names="FrameAddon" Offset="(-3.05; 0.987; 0)">
+			<Socket Names="FrameAddon" NamesBlock="LogLift" Offset="(-3.05; 0.987; 0)">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.06)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.06)" />
 				<AddonsShift Offset="(-0.95; 0; 0)" Types="MinicraneUS" />
 				<AddonsShift Offset="(-0.9; 0; 0)" Types="MetalDetector" />
 			</Socket>
-			<Socket Names="FrameAddonTow" Offset="(-3.5; 0.987; 0)" NamesBlock="MinicraneUS, MetalDetector, Trailer, LogTrailer" >				
+			<Socket Names="FrameAddonTow" Offset="(-3.5; 0.987; 0)" NamesBlock="LogLift, MinicraneUS, MetalDetector, Trailer, LogTrailer" >				
 			</Socket>
-			<Socket Names="FrameAddonKung" Offset="(-3.35; 1.073; 0)" ParentFrame="BoneChassis_cdt">
+			<Socket Names="FrameAddonKung" NamesBlock="LogLift" Offset="(-3.35; 1.073; 0)" ParentFrame="BoneChassis_cdt">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.06)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.06)" />
 			</Socket>
-			<Socket Names="FrameAddonTank" NamesBlock="Gmc8000FenderLarge" Offset="(-3.74; 0.987; 0)">
+			<Socket Names="FrameAddonTank" NamesBlock="LogLift, Gmc8000FenderLarge" Offset="(-3.74; 0.987; 0)">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.11)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.11)" />
 			</Socket>
-			<Socket Names="BigCraneUs" NamesBlock="MetalDetector, MinicraneUS, Gmc8000FenderLarge, Gmc8000FenderSmall" Offset="(-3.4; 0.998; 0)">
+			<Socket Names="BigCraneUs" NamesBlock="LogLift, MetalDetector, MinicraneUS, Gmc8000FenderLarge, Gmc8000FenderSmall" Offset="(-3.4; 0.998; 0)">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.01; 0.057)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.01; -0.057)" />
 			</Socket>
-			<Socket Names="FrameAddonSeismicVibrator" NamesBlock="MetalDetector, MinicraneUS" Offset="(-0.887; 0.987; 0)" ParentFrame="BoneChassis_cdt" />
-			<Socket Names="FrameAddonMaintainer" NamesBlock="MetalDetector, MinicraneUS, Trailer, LogTrailer" Offset="(-3.55; -0.042; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="FrameAddonSeismicVibrator" NamesBlock="LogLift, MetalDetector, MinicraneUS" Offset="(-0.887; 0.987; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="FrameAddonMaintainer" NamesBlock="LogLift, MetalDetector, MinicraneUS, Trailer, LogTrailer" Offset="(-3.55; -0.042; 0)" ParentFrame="BoneChassis_cdt" />
 			
 			<Socket Names="SaddleMotorized" NamesBlock="MetalDetector, MinicraneUS, LogLift" Offset="(-2.660; -0.280; 0.000)" ParentFrame="BoneChassis_cdt" >
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.000; 0.000; 0.120)" />
@@ -415,98 +435,99 @@
 			
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="MetalDetector" NamesBlock="FrameAddonKung, FrameAddonTank" Offset="(-1.124; -0.06; 0)" ParentFrame="BoneChassis_cdt" />
-			<Socket Names="MinicraneUS" NamesBlock="FrameAddonKung, FrameAddonTank" Offset="(-1.1; 0.99; 0)">
+			<Socket Names="MetalDetector" NamesBlock="LogLift, FrameAddonKung, FrameAddonTank" Offset="(-1.124; -0.06; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="MinicraneUS" NamesBlock="LogLift, FrameAddonKung, FrameAddonTank" Offset="(-1.1; 0.99; 0)">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.045)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.045)" />
 			</Socket>
 		</AddonSockets>
 		<AddonSockets DefaultAddon="gmc_8000_transferbox_default">
-			<Socket Names="Gmc8000TransferBox" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt">
+			<Socket Names="Gmc8000TransferBox" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt">
 				<ExtraParent Frame="BoneChassis_cdt" />
 				<ExtraParent Frame="BoneAxle1" />
 			</Socket>
 		</AddonSockets>
 		<AddonSockets DefaultAddon="gmc_8000_exhaust_default">
-			<Socket Names="Gmc8000Exhaust" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="Gmc8000Exhaust" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="gmc_8000_bumper_default">
-			<Socket Names="Gmc8000Bumper" Offset="(0; 0; 0)" ParentFrame="BoneCabinRagdoll_cdt" />
+			<Socket Names="Gmc8000Bumper" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabinRagdoll_cdt" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="gmc_8000_diff_lock_default">
-			<Socket Names="GMC8000DiffLock" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="GMC8000DiffLock" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="gmc_8000_horn_default">
-			<Socket Names="Gmc8000Horn" Offset="(0; 0; 0)" ParentFrame="BoneCabinRagdoll_cdt" />
+			<Socket Names="Gmc8000Horn" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabinRagdoll_cdt" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="gmc_8000_gabarite_default">
-			<Socket Names="Gmc8000Gabarite" Offset="(0; 0; 0)" ParentFrame="BoneCabinRagdoll_cdt" />
+			<Socket Names="Gmc8000Gabarite" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabinRagdoll_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="Gmc8000Spotlight" Offset="(0; 0; 0)" ParentFrame="BoneCabinRagdoll_cdt" />
+			<Socket Names="Gmc8000Spotlight" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabinRagdoll_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="Gmc8000Visor" Offset="(0; 0; 0)" ParentFrame="BoneCabinRagdoll_cdt" />
+			<Socket Names="Gmc8000Visor" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabinRagdoll_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="Gmc8000Snorkel" Offset="(0; 0; 0)" ParentFrame="BoneCabinRagdoll_cdt" />
+			<Socket Names="Gmc8000Snorkel" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabinRagdoll_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="Gmc8000FenderLarge" NamesBlock="Gmc8000FenderSmall" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="Gmc8000FenderLarge" NamesBlock="LogLift, Gmc8000FenderSmall" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="Gmc8000FenderSmall" NamesBlock="Gmc8000FenderLarge" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="Gmc8000FenderSmall" NamesBlock="LogLift, Gmc8000FenderLarge" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="gmc8000Sticker_1x1_01" ParentFrame="BoneCabinRagdoll_cdt" />
+			<Socket InCockpit="true" Names="gmc8000Sticker_1x1_01" NamesBlock="LogLift" ParentFrame="BoneCabinRagdoll_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="gmc8000Sticker_1x1_02" ParentFrame="BoneCabinRagdoll_cdt" />
+			<Socket InCockpit="true" Names="gmc8000Sticker_1x1_02" NamesBlock="LogLift" ParentFrame="BoneCabinRagdoll_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="gmc8000Sticker_1x1_03" ParentFrame="BoneCabinRagdoll_cdt" />
+			<Socket InCockpit="true" Names="gmc8000Sticker_1x1_03" NamesBlock="LogLift" ParentFrame="BoneCabinRagdoll_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="gmc8000Sticker_1x2_01" ParentFrame="BoneSunshieldLeft_cdt" />
+			<Socket InCockpit="true" Names="gmc8000Sticker_1x2_01" NamesBlock="LogLift" ParentFrame="BoneSunshieldLeft_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="gmc8000Sticker_1x2_02" ParentFrame="BoneSunshieldRight_cdt" />
+			<Socket InCockpit="true" Names="gmc8000Sticker_1x2_02" NamesBlock="LogLift" ParentFrame="BoneSunshieldRight_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="gmc8000Sticker_1x4_01" ParentFrame="BoneCabinRagdoll_cdt" />
+			<Socket InCockpit="true" Names="gmc8000Sticker_1x4_01" NamesBlock="LogLift" ParentFrame="BoneCabinRagdoll_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="gmc8000Sticker_GlassTop" ParentFrame="BoneCabinRagdoll_cdt" />
+			<Socket InCockpit="true" Names="gmc8000Sticker_GlassTop" NamesBlock="LogLift" ParentFrame="BoneCabinRagdoll_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="gmc8000Sticker_GlassBottom" ParentFrame="BoneCabinRagdoll_cdt" />
+			<Socket InCockpit="true" Names="gmc8000Sticker_GlassBottom" NamesBlock="LogLift" ParentFrame="BoneCabinRagdoll_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="gmc8000Sticker_Door_L" ParentFrame="BoneCabinRagdoll_cdt" />
+			<Socket Names="gmc8000Sticker_Door_L" NamesBlock="LogLift" ParentFrame="BoneCabinRagdoll_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="gmc8000Sticker_Door_R" ParentFrame="BoneCabinRagdoll_cdt" />
+			<Socket Names="gmc8000Sticker_Door_R" NamesBlock="LogLift" ParentFrame="BoneCabinRagdoll_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="gmc8000Sticker_Roof" ParentFrame="BoneCabinRagdoll_cdt" />
+			<Socket Names="gmc8000Sticker_Roof" NamesBlock="LogLift" ParentFrame="BoneCabinRagdoll_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="gmc8000Sticker_Capote" ParentFrame="BoneCabinRagdoll_cdt" InCockpit="true" />
+			<Socket Names="gmc8000Sticker_Capote" NamesBlock="LogLift" ParentFrame="BoneCabinRagdoll_cdt" InCockpit="true" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket
 				InCockpit="true"
 				Names="StuffDashboard"
+				NamesBlock="LogLift"
 				Offset="(1.13; 1.903; -0.16)"
 				ParentFrame="BoneCabinRagdoll_cdt"
 			/>
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="StuffAirfreshener" Offset="(0.885; 2.411; 0.203)" ParentFrame="BoneCabinRagdoll_cdt" />
-			<Socket InCockpit="true" Names="StuffCurtainGmc8000" ParentFrame="BoneCabinRagdoll_cdt" />
+			<Socket InCockpit="true" Names="StuffAirfreshener" NamesBlock="LogLift" Offset="(0.885; 2.411; 0.203)" ParentFrame="BoneCabinRagdoll_cdt" />
+			<Socket InCockpit="true" Names="StuffCurtainGmc8000" NamesBlock="LogLift" ParentFrame="BoneCabinRagdoll_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="StuffHoodGmc8000" ParentFrame="BoneCabinRagdoll_cdt" />
+			<Socket Names="StuffHoodGmc8000" NamesBlock="LogLift" ParentFrame="BoneCabinRagdoll_cdt" />
 		</AddonSockets>
 	</GameData>
 	<ControlledConstraints>

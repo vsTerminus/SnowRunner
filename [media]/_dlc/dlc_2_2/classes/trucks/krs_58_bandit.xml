@@ -361,6 +361,7 @@
 		<CustomizationCameras>
 			<CameraPos FOV="32.0" Interior="true" Name="roof_sticker" InterestPosition="(5.355; 0.652; -0.597)" Position="(8.177; 6.416; -0.261)" />
 			<CameraPos FOV="32.0" Interior="true" Name="sticker_1" InterestPosition="(5.875; 0.563; 1.084)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(5.81; 3.212; -0.941)" />
+			<CameraPos FOV="32.0" Name="loglift_front" InterestPosition="(3.036; 1.992; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-2.923; 2.371; 10.147)" />
 			<CameraPos FOV="32.0" Name="addon_1" InterestPosition="(1.036; 1.692; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-6.923; 2.071; 10.147)" />
 			<CameraPos FOV="32.0" Name="addon_2" InterestPosition="(4.991; 1.77; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(10.328; 3.173; 3.632)" />
 			<CameraPos FOV="32.0" Name="glass_sticker" InterestPosition="(7.556; 2.541; -0.462)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(12.512; 3.395; 2.269)" />
@@ -383,50 +384,53 @@
 		<CraneSocket Pos="(0.42; 1.13; 0.448)" />
 		<CraneSocket Pos="(-3.662; 1.034; 0)" />
 		<AddonSockets DefaultAddon="krs_58_bandit_bumper_default">
-			<Socket Names="krs58banditBumper" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="krs58banditBumper" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="krs58banditHorn1" ParentFrame="BoneCabin_cdt" />
-			<Socket Names="krs58banditHorn2" ParentFrame="BoneCabin_cdt" />
-			<Socket Names="krs58banditRoofRack" NamesBlock="krs58banditBeacon" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="krs58banditHorn1" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="krs58banditHorn2" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="krs58banditRoofRack" NamesBlock="LogLift, krs58banditBeacon" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="krs_58_bandit_gabarite_default">
-			<Socket Names="krs58banditGabarite" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="krs58banditGabarite" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="krs58banditVisor" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="krs58banditVisor" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="krs58banditBeacon" NamesBlock="krs58banditHorn1" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="krs58banditBeacon" NamesBlock="LogLift, krs58banditHorn1" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="krs58banditSnorkel" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="krs58banditSnorkel" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="crane_krs_58_bandit">
-			<Socket Names="CraneKrs58Bandit" Offset="(0; 0; 0)" />
+			<Socket Names="CraneKrs58Bandit" NamesBlock="LogLift" Offset="(0; 0; 0)" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="frame_addon_sideboard_2">
-			<Socket Names="LogLift" NamesBlock="CraneKrs58Bandit" Offset="(1.127; 1.357; 0)" />
-			<Socket Names="BunkLog" NamesBlock="CraneKrs58Bandit" Offset="(-5.28; 1.36; 0)" />
-			<Socket Names="FrameAddonLogShort" NamesBlock="CraneKrs58Bandit" Offset="(-1.2; 1.357; 0)" />
-			<Socket Names="SaddleLow" Offset="(-1.995; 1.347; 0)" />
-			<Socket Names="SaddleHigh" Offset="(-1.995; 1.347; 0)" />
-			<Socket Names="FrameAddonTowPlatform" Offset="(-0.73; 1.358; 0)" NamesBlock="CraneKrs58Bandit, Trailer, LogTrailer" />
-			<Socket Names="FrameAddon" Offset="(-1.336; 1.358; 0)" ParentFrame="BoneChassis_cdt">
+			<Socket Names="BunkLog" NamesBlock="LogLift, CraneKrs58Bandit" Offset="(-5.28; 1.36; 0)" >
+				<AddonsShift Offset="(-0.2; 0; 0)" Types="LogLiftKenworth" />
+			</Socket>
+			<Socket Names="FrameAddonLogShort" NamesBlock="LogLift, CraneKrs58Bandit" Offset="(-1.2; 1.357; 0)" />
+			<Socket Names="SaddleLow" NamesBlock="LogLift" Offset="(-1.995; 1.347; 0)" >
+				<AddonsShift Offset="(-0.15; 0; 0)" Types="LogLiftKenworth" />
+			</Socket>
+			<Socket Names="SaddleHigh" NamesBlock="LogLift" Offset="(-1.995; 1.347; 0)" />
+			<Socket Names="FrameAddonTowPlatform" Offset="(-0.73; 1.358; 0)" NamesBlock="LogLift, CraneKrs58Bandit, Trailer, LogTrailer" />
+			<Socket Names="FrameAddon" NamesBlock="LogLift" Offset="(-1.336; 1.358; 0)" ParentFrame="BoneChassis_cdt">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0)" />
 				<AddonsShift Offset="(-0.65; 0; 0)" Types="CraneKrs58Bandit" />
 			</Socket>
-			<Socket Names="FrameAddonKung" Offset="(-1.8; 1.43; -0)" ParentFrame="BoneChassis_cdt">
+			<Socket Names="FrameAddonKung" NamesBlock="LogLift" Offset="(-1.8; 1.43; -0)" ParentFrame="BoneChassis_cdt">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.12)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.12)" />
 				<AddonsShift Offset="(-0.65; 0; 0)" Types="CraneKrs58Bandit" />
 			</Socket>
-			<Socket Names="FrameAddonMaintainer" NamesBlock="CraneKrs58Bandit, Trailer, LogTrailer" Offset="(-1.93; 0.33; 0)" ParentFrame="BoneChassis_cdt" />
-			<Socket Names="FrameAddonTank" NamesBlock="CraneKrs58Bandit" Offset="(-2.3; 1.358; 0)" ParentFrame="BoneChassis_cdt" />
-			<Socket Names="FrameAddonSeismicVibrator" NamesBlock="Trailer, LogTrailer, CraneKrs58Bandit" Offset="(0.716; 1.349; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="FrameAddonMaintainer" NamesBlock="LogLift, CraneKrs58Bandit, Trailer, LogTrailer" Offset="(-1.93; 0.33; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="FrameAddonTank" NamesBlock="LogLift, CraneKrs58Bandit" Offset="(-2.3; 1.358; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="FrameAddonSeismicVibrator" NamesBlock="LogLift, Trailer, LogTrailer, CraneKrs58Bandit" Offset="(0.716; 1.349; 0)" ParentFrame="BoneChassis_cdt" />
 			
-			<Socket Names="SaddleMotorized" NamesBlock="CraneKrs58Bandit" Offset="(-1.250; 0.090; 0.000)" ParentFrame="BoneChassis_cdt" >
+			<Socket Names="SaddleMotorized" NamesBlock="LogLift, CraneKrs58Bandit" Offset="(-1.250; 0.090; 0.000)" ParentFrame="BoneChassis_cdt" >
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.000; 0.000; 0.063)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.000; 0.000; -0.063)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(1.200; 0.000; 0.063)" />
@@ -435,46 +439,65 @@
 			</Socket>
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="Semitrailer, SemitrailerOiltank, SemitrailerFoldableLog" Offset="(-1.995; 1.66; 0)" >
-				<AddonsShift Offset="(-0.60; 0.06; 0)" Types="SaddleMotorized" />
+			<Socket Names="LogLiftKenworth"
+					NamesBlock="LogLift,
+								FrameAddonLogShort,
+								FrameAddonTowPlatform,
+								FrameAddon,
+								FrameAddonKung,
+								FrameAddonMaintainer,
+								FrameAddonTank,
+								FrameAddonSeismicVibrator,
+								SaddleMotorized,
+								CraneKrs58Bandit"
+					Offset="(-0.3; 1.544; 0)" >
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.068)" />
+				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.068)" />
 			</Socket>
-			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-1.995; 1.79; 0)" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="Semitrailer, SemitrailerOiltank, SemitrailerFoldableLog" NamesBlock="LogLift" Offset="(-1.995; 1.66; 0)" >
+				<AddonsShift Offset="(-0.60; 0.06; 0)" Types="SaddleMotorized" />
+				<AddonsShift Offset="(-0.15; 0; 0)" Types="LogLiftKenworth" />
+			</Socket>
+			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" NamesBlock="LogLift" Offset="(-1.995; 1.79; 0)" />
 			<Socket Names="Trailer, LogTrailer" Offset="(-3.662; 1.014; 0)" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="Krs58BanditSticker_1x1_01" ParentFrame="BoneCabin_cdt" />
+			<Socket InCockpit="true" Names="Krs58BanditSticker_1x1_01" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="Krs58BanditSticker_1x1_02" ParentFrame="BoneCabin_cdt" />
+			<Socket InCockpit="true" Names="Krs58BanditSticker_1x1_02" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="Krs58BanditSticker_1x2_01" ParentFrame="BoneCabin_cdt" />
+			<Socket InCockpit="true" Names="Krs58BanditSticker_1x2_01" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="Krs58BanditSticker_1x2_02" ParentFrame="BoneCabin_cdt" />
+			<Socket InCockpit="true" Names="Krs58BanditSticker_1x2_02" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="Krs58BanditSticker_1x4_01" ParentFrame="BoneCabin_cdt" />
+			<Socket InCockpit="true" Names="Krs58BanditSticker_1x4_01" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="Krs58BanditSticker_GlassTop" ParentFrame="BoneCabin_cdt" />
+			<Socket InCockpit="true" Names="Krs58BanditSticker_GlassTop" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="Krs58BanditSticker_GlassBottom" ParentFrame="BoneCabin_cdt" />
+			<Socket InCockpit="true" Names="Krs58BanditSticker_GlassBottom" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="Krs58BanditSticker_Roof" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="Krs58BanditSticker_Roof" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="Krs58BanditSticker_Capote" ParentFrame="BoneCabin_cdt" InCockpit="true" />
+			<Socket Names="Krs58BanditSticker_Capote" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" InCockpit="true" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="Krs58BanditSticker_Door_L" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="Krs58BanditSticker_Door_L" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket
 				InCockpit="true"
 				Names="StuffAirfreshener"
+				NamesBlock="LogLift"
 				Offset="(3.967; 2.886; 0.207)"
 				ParentFrame="BoneCabin_cdt"
 			/>
@@ -484,6 +507,7 @@
 				Dir="(0.832; 0; 0.555)"
 				InCockpit="true"
 				Names="StuffDashboard"
+				NamesBlock="LogLift"
 				Offset="(3.725; 2.064; -0.125)"
 				ParentFrame="BoneCabin_cdt"
 			/>

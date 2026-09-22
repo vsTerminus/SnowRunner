@@ -1,0 +1,179 @@
+<_templates Include="trucks">
+	<Body>
+		<Chain Mass="5" Collisions="None">
+			<Constraint
+				PivotOffset="(0; 0; 0)"
+				Type="Hinge"
+				AxisLocal="(0; 0; 1)"
+				MinLimit="-28.65"
+				MaxLimit="1.02"
+			>
+				<Motor Spring="1" Damping="0.1" Type="Spring" />
+			</Constraint>
+		</Chain>
+		<Top Collisions="None" Mass="30">
+			<Constraint
+				Type="Fixed"
+				LinearLimitsX="(-0.05; 0.05)"
+				LinearLimitsY="(-0.04; 0.08)"
+				LinearLimitsZ="(-0.01; 0.01)"
+			>
+				<Motor Damping="2" Spring="1" Type="Spring" />
+			</Constraint>
+		</Top>
+		<Side Collisions="None" Mass="30">
+			<Constraint
+				Type="Fixed"
+				LinearLimitsX="(-0.04; 0.04)"
+				LinearLimitsY="(-0.01; 0.01)"
+				LinearLimitsZ="(-0.04; 0.04)"
+			>
+				<Motor Damping="5" Spring="5" Type="Spring" />
+			</Constraint>
+		</Side>
+		<Rear Collisions="None" Mass="30">
+			<Constraint
+				Type="Prismatic"
+				AxisLocal="(1; 0; 0)"
+				MinLimit="-0.03"
+				MaxLimit="0.03"
+			>
+				<Motor Damping="10" Spring="50" Type="Spring" />
+			</Constraint>
+		</Rear>
+		<Repair
+			CenterOfMassOffset="(0; 0; 0)"
+			Collisions="None"
+			Mass="100"
+		>
+			<Constraint
+				AxisLocal="(1; 0; 0)"
+				Type="Hinge"
+				MinLimit="-1.5"
+				MaxLimit="2.5"
+			>
+				<Motor Damping="35" Spring="150" Type="Spring" />
+			</Constraint>
+		</Repair>
+		<Wheel
+			CenterOfMassOffset="(0; 0; 0)"
+			Collisions="None"
+			Mass="50"
+		>
+			<Constraint
+				AxisLocal="(0; 0; 1)"
+				Type="Hinge"
+				MinLimit="-1.5"
+				MaxLimit="1.5"
+			>
+				<Motor Damping="25" Spring="500" Type="Spring" />
+			</Constraint>
+		</Wheel>
+	</Body>
+</_templates>
+<TruckAddon IsChassisFullOcclusion="true">
+	<RepairsHide>
+		<Mesh Frame="repair_02" HideThreshold="0.5" />
+		<Mesh Frame="repair_02" HideThreshold="0.0" />
+	</RepairsHide>
+	<WheelRepairsHide>
+		<Mesh Frame="wheel_01" HideThreshold="0.0" />
+	</WheelRepairsHide>
+	<FuelHide>
+		<Mesh Frame="fuel_01" HideThreshold="0.5" />
+		<Mesh Frame="fuel_02" HideThreshold="0.0" />
+	</FuelHide>
+	<TruckData 
+		RepairsCapacity="900"
+		WheelRepairsCapacity="2"
+		FuelCapacity="240"
+	>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/addons/frame_addon_mercedes_mamute_1519_kung">
+		<Body ImpactType="Truck" Mass="2280" ModelFrame="BoneRoot_cdt">
+			<Constraint Type="Rigid" />
+			<Body _template="Chain" ModelFrame="BoneChainL_cdt" />
+			<Body _template="Chain" ModelFrame="BoneChainR_cdt" />
+			<Body _template="Repair" ModelFrame="BoneRepairL_cdt" />
+			<Body _template="Repair" ModelFrame="BoneRepairR_cdt" />
+			<Body _template="Wheel" ModelFrame="BoneWheel_cdt" />
+			<Body
+				ModelFrame="BoneAxe_cdt"
+				Mass="10"
+				Collision="None"
+				CenterOfMassOffset="(0; 0; 0)"
+			>
+				<Constraint
+					Type="Prismatic"
+					AxisLocal="(0; 0; 1)"
+					MinLimit="0"
+					MaxLimit="0.009"
+				>
+					<Motor Type="Spring" Spring="1" Damping="0.1" />
+				</Constraint>
+			</Body>
+			<Body
+				ModelFrame="BoneShovel_cdt"
+				Mass="10"
+				Collision="None"
+				CenterOfMassOffset="(0; 0; 0)"
+			>
+				<Constraint
+					Type="Fixed"
+					LinearLimitsX="(-0.006; 0)"
+					LinearLimitsY="(0; 0.008)"
+					LinearLimitsZ="(-0.005; 0.005)"
+				>
+					<Motor Type="Spring" Spring="1" Damping="0.1" />
+				</Constraint>
+			</Body>
+			<Body _template="Side" ModelFrame="BoneTentSides_cdt" />
+			<Body _template="Top" ModelFrame="BoneTentTop_cdt" />
+			<Body _template="Rear" ModelFrame="BoneTentRear_cdt" />
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<StopSignals>
+			<Light _template="StopSignal" Pos="(-3.893; 1.668; 0.0)" />
+			<Flare _template="StopSignal" Size="0.2" Pos="(-3.894; 1.668; 0.814)" />
+			<Flare _template="StopSignal" Size="0.2" Pos="(-3.894; 1.668; -0.814)" />
+		</StopSignals>
+
+		<Ignition>
+			<Light _template="StopSignal" Pos="(-3.893; 1.668; 0.0)" />
+			<Flare _template="StopSignal" Color="g(255; 0; 0) x 0.2" Size="0.2" Pos="(-3.894; 1.668; 0.814)" />
+			<Flare _template="StopSignal" Color="g(255; 0; 0) x 0.2" Size="0.2" Pos="(-3.894; 1.668; -0.814)" />
+
+			<Flare _template="LED" Color="g(255; 0; 0) x 0.5" Dir="(-1; 0; 0)" AspectRatio="1" Size="0.03" Pos="(-3.893; 1.668; -0.863)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="LED" Color="g(255; 0; 0) x 0.5" Dir="(-1; 0; 0)" AspectRatio="1" Size="0.03" Pos="(-3.893; 1.717; -0.814)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="LED" Color="g(255; 0; 0) x 0.5" Dir="(-1; 0; 0)" AspectRatio="1" Size="0.03" Pos="(-3.893; 1.668; -0.814)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="LED" Color="g(255; 0; 0) x 0.5" Dir="(-1; 0; 0)" AspectRatio="1" Size="0.03" Pos="(-3.893; 1.619; -0.814)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="LED" Color="g(255; 0; 0) x 0.5" Dir="(-1; 0; 0)" AspectRatio="1" Size="0.03" Pos="(-3.893; 1.668; -0.765)" ParentFrame="BoneRoot_cdt" />
+
+			<Flare _template="LED" Color="g(255; 0; 0) x 0.5" Dir="(-1; 0; 0)" AspectRatio="1" Size="0.03" Pos="(-3.893; 1.668; 0.863)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="LED" Color="g(255; 0; 0) x 0.5" Dir="(-1; 0; 0)" AspectRatio="1" Size="0.03" Pos="(-3.893; 1.717; 0.814)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="LED" Color="g(255; 0; 0) x 0.5" Dir="(-1; 0; 0)" AspectRatio="1" Size="0.03" Pos="(-3.893; 1.668; 0.814)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="LED" Color="g(255; 0; 0) x 0.5" Dir="(-1; 0; 0)" AspectRatio="1" Size="0.03" Pos="(-3.893; 1.619; 0.814)" ParentFrame="BoneRoot_cdt" />
+			<Flare _template="LED" Color="g(255; 0; 0) x 0.5" Dir="(-1; 0; 0)" AspectRatio="1" Size="0.03" Pos="(-3.893; 1.668; 0.765)" ParentFrame="BoneRoot_cdt" />
+		</Ignition>
+	</ModelAttachments>
+	<GameData
+		CameraPreset="addon_1"
+		Category="frame_addons"
+		IsCustomizable="true"
+		Price="5100"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_ADDON_CANVAS_COVERED_BODY_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_ADDON_CANVAS_COVERED_BODY_NAME"
+		/>
+		<InstallSocket Offset="(0; 0; 0)" Type="MercedesMamute1519Kung" />
+	</GameData>
+	<FuelMass>
+		<Body Mass="3120" />
+	</FuelMass>
+</TruckAddon>

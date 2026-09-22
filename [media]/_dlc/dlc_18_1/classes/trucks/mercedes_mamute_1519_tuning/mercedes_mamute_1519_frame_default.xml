@@ -1,0 +1,25 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/mercedes_mamute_1519_tuning/mercedes_mamute_1519_frame_default">
+		<Body ImpactType="Truck" Mass="20" ModelFrame="BoneAddon_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="addon_1"
+		Category="frame_addons"
+		Price="3800"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<WinchSocket Pos="(-4.131; 1.439; 0)" FixedToTruck="true" />
+		<CraneSocket Pos="(-4.131; 1.439; 0)" FixedToTruck="true" />
+		<UiDesc
+			UiDesc="UI_TUNING_FRAME_DEFAULT_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_FRAME_DEFAULT_NAME"
+		/>
+		<InstallSocket Type="MercedesMamute1519FrameDefault" />
+	</GameData>
+</TruckAddon>

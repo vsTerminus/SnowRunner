@@ -1,0 +1,137 @@
+<_templates Include="trucks">
+	<Body>
+		<Mudguard Collisions="None" Mass="5">
+			<Constraint
+				AxisLocal="(1; 0; 0)"
+				Type="Hinge"
+				MinLimit="-4"
+				MaxLimit="18"
+			>
+				<Motor Damping="3" Spring="5" Type="Spring" />
+			</Constraint>
+		</Mudguard>
+	</Body>
+	<Flare>
+		<IgnitionSignalRed
+			AspectRatio="1.4"
+			Color="g(169; 0; 0) x 0.8"
+			ColorMultAtDay="0.3"
+			Dir="(-1; 0; 0)"
+			DirAngle="90"
+			Size="0.2"
+		/>
+		<IgnitionSignalOrange
+			AspectRatio="1.4"
+			Color="g(255; 140; 0) x 0.3"
+			ColorMultAtDay="0.6"
+			Dir="(-1; 0; 0)"
+			DirAngle="135"
+			Size="0.12"
+		/>
+	</Flare>
+</_templates>
+<TruckAddon>
+	<TruckData
+		FuelCapacity="1400"
+		RepairsCapacity="400"
+		WheelRepairsCapacity="4"
+	>
+		<Damage>
+			<Multiplier Multiplier="0.75" Type="Gearbox" />
+		</Damage>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/addons/frame_addon_mantainer_mercedes_actros_6x6">
+		<Body Mass="3150">
+			<Constraint Type="Rigid" />
+			<Body _template="Mudguard" ModelFrame="BoneMudguardRight_cdt" />
+			<Body _template="Mudguard" ModelFrame="BoneMudguardLeft_cdt" />
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<StopSignals>
+			<Light _template="StopSignal" Pos="(-5.060; 0.911; 0)" />
+			<Flare _template="StopSignal" Dir="(-1; 0; 0)" Pos="(-4.776; 1.281; 0.927)" />
+			<Flare _template="StopSignal" Dir="(-1; 0; 0)" Pos="(-4.776; 1.281; -0.927)" />
+		</StopSignals>
+		<ReverseSignals>
+			<Light _template="ReverseSignal" Pos="(-5.060; 0.911; 0)" />
+			<Flare _template="ReverseSignal" Size="0.25" Pos="(-4.776; 1.282; 0.800)" />
+			<Flare _template="ReverseSignal" Size="0.25" Pos="(-4.776; 1.282; -0.800)" />
+			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.05" Dir="(-1; 0; 0)" Size="0.6" Pos="(-4.776; 1.282; -0.800)" />
+			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.05" Dir="(-1; 0; 0)" Size="0.6" Pos="(-4.776; 1.282; 0.800)" />
+		</ReverseSignals>
+		<Ignition>
+			<Flare _template="IgnitionSignalWhite" Dir="(0; 0; 1)" Size=".5" Pos="(-0.206; 3.428; 1.241)" />
+			<Flare _template="IgnitionSignalWhite" Dir="(0; 0; 1)" Size=".5" Pos="(-2.236; 3.428; 1.241)" />
+			<Flare _template="IgnitionSignalWhite" Dir="(0; 0; 1)" Size=".5" Pos="(-4.311; 3.282; 1.241)" />
+			<Flare _template="IgnitionSignalWhite" Dir="(0; 0; -1)" Size=".5" Pos="(-0.206; 3.428; -1.241)" />
+			<Flare _template="IgnitionSignalWhite" Dir="(0; 0; -1)" Size=".5" Pos="(-2.236; 3.428; -1.241)" />
+			<Flare _template="IgnitionSignalWhite" Dir="(0; 0; -1)" Size=".5" Pos="(-4.311; 3.282; -1.241)" />
+			
+			<Light _template="StopSignal" Pos="(-5.060; 0.911; 0)" />
+			<Flare _template="StopSignal" Dir="(-1; 0; 0)" Size="0.3" Pos="(-4.776; 1.281; 0.927)" />
+			<Flare _template="StopSignal" Dir="(-1; 0; 0)" Size="0.3" Pos="(-4.776; 1.281; -0.927)" />
+			<Flare _template="IgnitionSignalOrange" Dir="(-1; 0; 0)" Size="0.4" Pos="(-4.754; 1.283; 1.066)" />
+			<Flare _template="IgnitionSignalOrange" Dir="(-1; 0; 0)" Size="0.4" Pos="(-4.754; 1.283; -1.066)" />
+			<Flare _template="IgnitionSignalOrange" Dir="(0; 0; -1)" Size="0.3" Pos="(-3.343; 1.539; -1.349)" />
+			<Flare _template="IgnitionSignalOrange" Dir="(0; 0; 1)" Size="0.3" Pos="(-3.343; 1.539; 1.349)" />
+			<Flare _template="IgnitionSignalOrange" Dir="(0; 0; -1)" Size="0.3" Pos="(-1.343; 1.539; -1.349)" />
+			<Flare _template="IgnitionSignalOrange" Dir="(0; 0; -1)" Size="0.3" Pos="(-1.343; 1.539; 1.349)" />
+			<Flare _template="IgnitionSignalOrange" Dir="(0; 0; -1)" Size="0.3" Pos="(0.132; 1.386; -1.299)" />
+			<Flare _template="IgnitionSignalOrange" Dir="(0; 0; 1)" Size="0.3" Pos="(0.132; 1.386; 1.299)" />
+		</Ignition>
+		
+		<HeadLight>
+			<Flare _template="HeadLight" Pos="(-0.206; 3.428; 1.241)" Color="g(255; 255; 255) x 1" Dir="(0; -0.5; 1)" Size="0.1" />
+			<Flare _template="BlueStreak" Pos="(-0.206; 3.428; 1.241)" Dir="(0; -0.5; 1)" Size="0.7" />
+			<Model _template="HeadLightRay" Org="(-0.206; 3.428; 1.241)" Color="g(255; 255; 255) x 1" Dir="(0; -1; 1)" Size="0.7" />
+			
+			<Flare _template="HeadLight" Pos="(-2.236; 3.428; 1.241)" Color="g(255; 255; 255) x 1" Dir="(0; -0.5; 1)" Size="0.1" />
+			<Flare _template="BlueStreak" Pos="(-2.236; 3.428; 1.241)" Dir="(0; -0.5; 1)" Size="0.7" />
+			<Model _template="HeadLightRay" Org="(-2.236; 3.428; 1.241)" Color="g(255; 255; 255) x 1" Dir="(0; -1; 1)" Size="0.7" />
+			
+			<Flare _template="HeadLight" Pos="(-4.311; 3.282; 1.241)" Color="g(255; 255; 255) x 1" Dir="(0; -0.5; 1)" Size="0.1" />
+			<Flare _template="BlueStreak" Pos="(-4.311; 3.282; 1.241)" Dir="(0; -0.5; 1)" Size="0.7" />
+			<Model _template="HeadLightRay" Org="(-4.311; 3.282; 1.241)" Color="g(255; 255; 255) x 1" Dir="(0; -1; 1)" Size="0.7" />
+			
+			<Flare _template="HeadLight" Pos="(-0.206; 3.428; -1.241)" Color="g(255; 255; 255) x 1" Dir="(0; -0.5; -1)" Size="0.1" />
+			<Flare _template="BlueStreak" Pos="(-0.206; 3.428; -1.241)" Dir="(0; -0.5; -1)" Size="0.7" />
+			<Model _template="HeadLightRay" Org="(-0.206; 3.428; -1.241)" Color="g(255; 255; 255) x 1" Dir="(0; -1; -1)" Size="0.7" />
+			
+			<Flare _template="HeadLight" Pos="(-2.236; 3.428; -1.241)" Color="g(255; 255; 255) x 1" Dir="(0; -0.5; -1)" Size="0.1" />
+			<Flare _template="BlueStreak" Pos="(-2.236; 3.428; -1.241)" Dir="(0; -0.5; -1)" Size="0.7" />
+			<Model _template="HeadLightRay" Org="(-2.236; 3.428; -1.241)" Color="g(255; 255; 255) x 1" Dir="(0; -1; -1)" Size="0.7" />
+			
+			<Flare _template="HeadLight" Pos="(-4.311; 3.282; -1.241)" Color="g(255; 255; 255) x 1" Dir="(0; -0.5; -1)" Size="0.1" />
+			<Flare _template="BlueStreak" Pos="(-4.311; 3.282; -1.241)" Dir="(0; -0.5; -1)" Size="0.7" />
+			<Model _template="HeadLightRay" Org="(-4.311; 3.282; -1.241)" Color="g(255; 255; 255) x 1" Dir="(0; -1; -1)" Size="0.7" />
+		</HeadLight>
+	</ModelAttachments>
+	<GameData
+		CameraPreset="addon_1"
+		Category="frame_addons"
+		IsCustomizable="true"
+		Price="5300"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_ADDON_FRAME_MAINTAINER_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_ADDON_FRAME_MAINTAINER_NAME"
+		/>
+		<InstallSocket Offset="(0; 0; 0)" Type="FrameAddonMantainerMercedesActros" />
+		<CraneSocket Pos="(-4.578; 0.860; 0)" />
+		<CraneSocket Pos="(-4.656; 0.950; 1.175)" />
+		<CraneSocket Pos="(-4.656; 0.950; -1.175)" />
+		
+		<WinchSocket Pos="(-4.578; 0.860; 0)" />
+		<WinchSocket Pos="(-4.656; 0.950; 1.175)" />
+		<WinchSocket Pos="(-4.656; 0.950; -1.175)" />
+	
+	</GameData>
+	<FuelMass>
+		<Body Mass="3920" />
+	</FuelMass>
+</TruckAddon>

@@ -392,6 +392,7 @@
 		Price="143500"
 		UnlockByExploration="true"
 		UnlockByRank="1"
+		ExcludeAddons="semitrailer_fishing_boat, semitrailer_m747"
 	>
 		<WinchSocket Pos="(3.66; 0.869; -0.908)" />
 		<WinchSocket Pos="(3.66; 0.869; 0.908)" />
@@ -444,10 +445,7 @@
 		</AddonSockets>
 		<AddonSockets>
 			<Socket Names="Trailer, LogTrailer" Offset="(-3.294; 1.414; -0.000)" ParentFrame="BoneChassis_cdt" RequiredHitches="cat_770g_farkop"/>
-			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" NamesBlock="Cat770gSaddle" Offset="(-1.5; 2.4; -0.000)" ParentFrame="BoneChassis_cdt" />
-			<Socket Names="SemitrailerCat770g" Offset="(-1.493; 2.04; 0)" ParentFrame="BoneChassis_cdt" />
-		</AddonSockets>
-		<AddonSockets>
+			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" NamesBlock="Cat770gSaddle" Offset="(-2.1; 2.2; -0.000)" ParentFrame="BoneChassis_cdt" />
 			<Socket Names="SemitrailerCat770g" Offset="(-1.493; 2.04; 0)" ParentFrame="BoneChassis_cdt" />
 		</AddonSockets>
 		<AddonSockets>

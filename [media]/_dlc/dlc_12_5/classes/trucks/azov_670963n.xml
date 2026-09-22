@@ -406,6 +406,7 @@
 			<CameraPos FOV="32.0" Name="roof" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(10.643; 4.888; -3.581)" InterestPosition="(6.219; 3.212; -0.572)" />
 			<CameraPos FOV="32.0" Name="hoods_default" InterestPosition="(5.716; 1.735; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(13.576; 1.402; -3.863)" />
 			<!-- ADDONS -->
+			<CameraPos FOV="32.0" Name="loglift_front" InterestPosition="(1.874; 1.840; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-9; 4.150; 7)" />
 			<CameraPos FOV="32.0" Name="addon_1" InterestPosition="(-0.626; 1.640; -1.7)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-13; 3.950; 7)" />
 			<CameraPos FOV="32.0" Name="addon_2" InterestPosition="(5.835; 1.807; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-0.131; 3.944; 2.185)" />
 			<!-- STICKERS -->

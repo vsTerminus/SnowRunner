@@ -384,6 +384,7 @@
 		<CustomizationCameras>
 			<CameraPos FOV="32.0" Interior="true" Name="roof_sticker" InterestPosition="(3.371; -0.191; -0.371)" Position="(8.408; 5.903; -0.116)" />
 			<CameraPos FOV="32.0" Interior="true" Name="sticker_1" InterestPosition="(8.932; 4.601; 2.01)" Position="(5.997; 2.486; -1.060)" />
+			<CameraPos FOV="32.0" Name="loglift_front" InterestPosition="(4.507; 1.843; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-3.665; 3.779; 7.017)" />
 			<CameraPos FOV="32.0" Name="addon_1" InterestPosition="(1.007; 1.843; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-7.665; 3.779; 7.017)" />
 			<CameraPos FOV="32.0" Name="addon_2" InterestPosition="(2.092; 0.416; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(0.323; 3.025; -4.631)" />
 			<CameraPos FOV="32.0" Interior="true" Name="mirror_mount" InterestPosition="(11.10; 2.8; 2.620)" Position="(5.807; 2.8; -0.987)" />
@@ -409,102 +410,123 @@
 		<CraneSocket Pos="(0.462; 0.655; 0.431)" />
 		<CraneSocket Pos="(0.462; 0.655; -0.431)" />
 		<AddonSockets>
-			<Socket Names="FordClt9000SpareWheel" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt">
+			<Socket Names="FordClt9000SpareWheel" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt">
 				<ExtraParent Frame="BoneCabin_cdt" />
 			</Socket>
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-1.713; 1.479; 0)" />
-			<Socket Names="Semitrailer, SemitrailerOiltank, SemitrailerFoldableLog" Offset="(-2.713; 1.479; 0)" >
+			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" NamesBlock="LogLift" Offset="(-1.713; 1.479; 0)" />
+			<Socket Names="Semitrailer, SemitrailerOiltank, SemitrailerFoldableLog" NamesBlock="LogLift" Offset="(-2.713; 1.479; 0)" >
 				<AddonsShift Offset="(0.366; -0.12; 0)" Types="SaddleMotorized" />
 			</Socket>
 			<Socket Names="Trailer" Offset="(-4.23; 0.51; 0.009)" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="MetalDetector" NamesBlock="FrameAddonKung, FrameAddonTank, FrameAddonMaintainer, FrameAddon, BigCraneUs, BigCraneRu" Offset="(0.385; -0.081; 0)" ParentFrame="BoneChassis_cdt" />
-			<Socket Names="MinicraneUS" NamesBlock="FrameAddonKung, FrameAddonTank" Offset="(0.95; 0.97; 0)" />
+			<Socket Names="MetalDetector" NamesBlock="LogLift, FrameAddonKung, FrameAddonTank, FrameAddonMaintainer, FrameAddon, BigCraneUs, BigCraneRu" Offset="(0.385; -0.081; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="MinicraneUS" NamesBlock="LogLift, FrameAddonKung, FrameAddonTank" Offset="(0.95; 0.97; 0)" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="FrameAddonTowPlatform" Offset="(-0.45; 0.971; 0)" NamesBlock="MinicraneUS, MetalDetector, Trailer" />		
-			<Socket Names="LogLift" NamesBlock="MetalDetector, MinicraneUS" Offset="(0.836; 0.976; 0)" />
-			<Socket Names="BunkLog" NamesBlock="MinicraneUS, MetalDetector" Offset="(-4.229; 0.976; 0)" />
-			<Socket Names="FrameAddonLogShort" NamesBlock="MinicraneUS, MetalDetector" Offset="(-0.874; 0.972; 0)" />
-			<Socket Names="SaddleLow1" Offset="(-2.71; 0.972; 0)">
+			<Socket Names="FrameAddonTowPlatform" Offset="(-0.45; 0.971; 0)" NamesBlock="LogLift, MinicraneUS, MetalDetector, Trailer" />
+			<Socket Names="BunkLog" NamesBlock="LogLift, MinicraneUS, MetalDetector" Offset="(-4.229; 0.976; 0)" >
+				<AddonsShift Offset="(-1.15; 0; 0)" Types="LogLiftKenworth" />
+			</Socket>
+			<Socket Names="FrameAddonLogShort" NamesBlock="LogLift, MinicraneUS, MetalDetector" Offset="(-0.874; 0.972; 0)" />
+			<Socket Names="SaddleLow1" NamesBlock="LogLift" Offset="(-2.71; 0.972; 0)">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.02)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.02)" />
 			</Socket>
-			<Socket Names="SaddleHigh" Offset="(-1.71; 0.972; 0)">
+			<Socket Names="SaddleHigh" NamesBlock="LogLift" Offset="(-1.71; 0.972; 0)">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.02)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.02)" />
 			</Socket>
-			<Socket Names="FrameAddon" Offset="(-0.95; 0.971; 0)" ParentFrame="BoneChassis_cdt">
+			<Socket Names="FrameAddon" NamesBlock="LogLift" Offset="(-0.95; 0.971; 0)" ParentFrame="BoneChassis_cdt">
 				<AddonsShift Offset="(-1; 0; 0)" Types="MinicraneUS" />
 			</Socket>
-			<Socket Names="FrameAddonKung" Offset="(-2.15; 1.050; 0)" ParentFrame="BoneChassis_cdt">
+			<Socket Names="FrameAddonKung" NamesBlock="LogLift" Offset="(-2.15; 1.050; 0)" ParentFrame="BoneChassis_cdt">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.08)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.08)" />
 			</Socket>
-			<Socket Names="FrameAddonTank" Offset="(-2; 0.971; 0)" ParentFrame="BoneChassis_cdt" />
-			<Socket Names="FrameAddonMaintainer" NamesBlock="MinicraneUS, Trailer" Offset="(-1.81; -0.06; 0)" ParentFrame="BoneChassis_cdt" />
-			<Socket Names="BigCraneUs" NamesBlock="MinicraneUS, FordClt9000Top" Offset="(-2; 1.072; 0)">
+			<Socket Names="FrameAddonTank" NamesBlock="LogLift" Offset="(-2; 0.971; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="FrameAddonMaintainer" NamesBlock="LogLift, MinicraneUS, Trailer" Offset="(-1.81; -0.06; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="BigCraneUs" NamesBlock="LogLift, MinicraneUS, FordClt9000Top" Offset="(-2; 1.072; 0)">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.1; 0)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; -0.1; 0)" />
 			</Socket>
 			<!-- <Socket Names="BigCraneRu" NamesBlock="MinicraneUS, Semitrailer, FordClt9000Top" Offset="(-1.75; 0.98; 0)" /> -->
 			
-			<Socket Names="SaddleMotorized" NamesBlock="MetalDetector, MinicraneUS" Offset="(-1.000; -0.295; 0.000)" ParentFrame="BoneChassis_cdt" >
+			<Socket Names="SaddleMotorized" NamesBlock="LogLift, MetalDetector, MinicraneUS" Offset="(-1.000; -0.295; 0.000)" ParentFrame="BoneChassis_cdt" >
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.000; 0.000; 0.070)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.000; 0.000; -0.070)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(1.300; 0.000; 0.070)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(1.300; 0.000; -0.070)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(1.300; 0.000; 0.000)" />
 			</Socket>
-			
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="UsLoadLogsShort" Offset="(0.5; -0.23 0)" />
-			<Socket Names="UsLoadLogsShortLoaderA" Offset="(0.5; -0.23 0)" />
+			<Socket Names="LogLiftKenworth"
+					NamesBlock="LogLift,
+								FordClt9000Top,
+								FordClt9000FenderSide,
+								MetalDetector,
+								MinicraneUS,
+								FrameAddonTowPlatform,
+								FrameAddonLogShort,
+								FrameAddon,
+								FrameAddonKung,
+								FrameAddonTank,
+								FrameAddonMaintainer,
+								BigCraneUs,
+								SaddleMotorized"
+					Offset="(0.0; 1.16; 0)" >
+				<ExtraParent Frame="BoneBack_cdt" Offset="(0.000; 0.000; 0.09)" />
+				<ExtraParent Frame="BoneBack_cdt" Offset="(0.000; 0.000; -0.09)" />
+			</Socket>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="UsLoadLogsShort" NamesBlock="LogLift" Offset="(0.5; -0.23 0)" />
+			<Socket Names="UsLoadLogsShortLoaderA" NamesBlock="LogLift" Offset="(0.5; -0.23 0)" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="ford_clt9000_bumper_default">
-			<Socket Names="FordClt9000Bumper" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="FordClt9000Bumper" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="ford_clt9000_front_default">
-			<Socket Names="FordClt9000Front" Offset="(0; 0; 0)" ParentFrame="BoneCabinPrismatic_cdt" />
+			<Socket Names="FordClt9000Front" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabinPrismatic_cdt" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="ford_clt9000_fender_front_default">
-			<Socket Names="FordClt9000FenderFront" Offset="(0; 0; 0)" ParentFrame="BoneCabinPrismatic_cdt" />
+			<Socket Names="FordClt9000FenderFront" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabinPrismatic_cdt" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="ford_clt9000_exhaust_default">
-			<Socket Names="FordClt9000Exhaust" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="FordClt9000Exhaust" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="ford_clt9000_rear_default">
-			<Socket Names="FordClt9000Rear" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="FordClt9000Rear" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="FordClt9000Top" Offset="(0; 0; 0)" ParentFrame="BoneCabinPrismatic_cdt" />
+			<Socket Names="FordClt9000Top" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabinPrismatic_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="FordClt9000FenderSide" Offset="(0; 0; 0)" ParentFrame="BoneCabinPrismatic_cdt" />
+			<Socket Names="FordClt9000FenderSide" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabinPrismatic_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="FordClt9000Snorkel" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="FordClt9000Snorkel" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="fordClt9000Sticker_Door_L" Offset="(0; 0; 0)" ParentFrame="BoneCabinPrismatic_cdt" />
+			<Socket Names="fordClt9000Sticker_Door_L" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabinPrismatic_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="fordClt9000Sticker_Door_R" Offset="(0; 0; 0)" ParentFrame="BoneCabinPrismatic_cdt" />
+			<Socket Names="fordClt9000Sticker_Door_R" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabinPrismatic_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="fordClt9000Sticker_Roof" Offset="(0; 0; 0)" ParentFrame="BoneCabinPrismatic_cdt" />
+			<Socket Names="fordClt9000Sticker_Roof" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabinPrismatic_cdt" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="ford_clt9000_horn">
-			<Socket Names="Ford_Clt9000Horn" Offset="(0; 0; 0)" ParentFrame="BoneCabinPrismatic_cdt" />
+			<Socket Names="Ford_Clt9000Horn" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabinPrismatic_cdt" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket
 				InCockpit="true"
 				Names="StuffDashboard"
+				NamesBlock="LogLift"
 				Offset="(3.944; 2.349; -0.172)"
 				ParentFrame="BoneCabinPrismatic_cdt"
 			/>
@@ -513,6 +535,7 @@
 			<Socket
 				InCockpit="true"
 				Names="fordClt9000Sticker_1x1_01"
+				NamesBlock="LogLift"
 				Offset="(0; 0; 0)"
 				ParentFrame="BoneCabinPrismatic_cdt"
 			/>
@@ -521,6 +544,7 @@
 			<Socket
 				InCockpit="true"
 				Names="fordClt9000Sticker_1x1_02"
+				NamesBlock="LogLift"
 				Offset="(0; 0; 0)"
 				ParentFrame="BoneCabinPrismatic_cdt"
 			/>
@@ -529,6 +553,7 @@
 			<Socket
 				InCockpit="true"
 				Names="fordClt9000Sticker_1x1_03"
+				NamesBlock="LogLift"
 				Offset="(0; 0; 0)"
 				ParentFrame="BoneCabinPrismatic_cdt"
 			/>
@@ -537,6 +562,7 @@
 			<Socket
 				InCockpit="true"
 				Names="fordClt9000Sticker_1x2_01"
+				NamesBlock="LogLift"
 				Offset="(0; 0; 0)"
 				ParentFrame="BoneSunshieldLeft_cdt"
 			/>
@@ -545,6 +571,7 @@
 			<Socket
 				InCockpit="true"
 				Names="fordClt9000Sticker_1x2_02"
+				NamesBlock="LogLift"
 				Offset="(0; 0; 0)"
 				ParentFrame="BoneSunshieldRight_cdt"
 			/>
@@ -553,6 +580,7 @@
 			<Socket
 				InCockpit="true"
 				Names="fordClt9000Sticker_1x4_01"
+				NamesBlock="LogLift"
 				Offset="(0; 0; 0)"
 				ParentFrame="BoneCabinPrismatic_cdt"
 			/>
@@ -561,6 +589,7 @@
 			<Socket
 				InCockpit="true"
 				Names="fordClt9000Sticker_GlassTop"
+				NamesBlock="LogLift"
 				Offset="(0; 0; 0)"
 				ParentFrame="BoneCabinPrismatic_cdt"
 			/>
@@ -569,6 +598,7 @@
 			<Socket
 				InCockpit="true"
 				Names="fordClt9000Sticker_GlassBottom"
+				NamesBlock="LogLift"
 				Offset="(0; 0; 0)"
 				ParentFrame="BoneCabinPrismatic_cdt"
 			/>
@@ -577,15 +607,16 @@
 			<Socket
 				InCockpit="true"
 				Names="StuffAirfreshener"
+				NamesBlock="LogLift"
 				Offset="(3.648; 3.070; 0.368)"
 				ParentFrame="BoneCabinPrismatic_cdt"
 			/>
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="StuffCurtainFordClt9000" ParentFrame="BoneCabinPrismatic_cdt" />
+			<Socket InCockpit="true" Names="StuffCurtainFordClt9000" NamesBlock="LogLift" ParentFrame="BoneCabinPrismatic_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="AddonHorns" NamesBlock="FordClt9000Top" Offset="(3.137; 3.182; 0)" ParentFrame="BoneCabinPrismatic_cdt" />
+			<Socket Names="AddonHorns" NamesBlock="LogLift, FordClt9000Top" Offset="(3.137; 3.182; 0)" ParentFrame="BoneCabinPrismatic_cdt" />
 		</AddonSockets>
 	</GameData>
 </Truck>

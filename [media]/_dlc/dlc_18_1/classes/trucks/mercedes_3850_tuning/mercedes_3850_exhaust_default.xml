@@ -1,0 +1,37 @@
+<TruckAddon>
+	<TruckData>
+		<Shakers>
+			<Shaker
+				Frame="BoneExhaustShaker"
+				MinAngle="(0.3; 0.000; 0.3)"
+				MaxAngle="(2; 0.001; 2)"
+				MaxFrequency="3.9"
+				ParentFrame="BoneChassis_cdt"
+			/>
+		</Shakers>
+	</TruckData>
+	<Exhaust Dir="(-0.861; -0.508; 0)" Origin="(-2.004; 0.263; 0.401)" Speed="2.0" ParentFrame="BoneExhaustShaker"/>
+	<PhysicsModel Mesh="trucks/mercedes_3850_tuning/mercedes_3850_exhaust_default">
+		<Body ImpactType="Truck" Mass="20" ModelFrame="BoneChassis_cdt">
+			<Constraint Type="Rigid" />
+				<Body Mass="5" ModelFrame="BoneCabin_cdt" Collisions="None">
+					<Constraint	ExplicitParentFrame="0"	Type="Fixed" />
+				</Body>				
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="exhaust"
+		Category="exhaust"
+		Price="1000"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_EXHAUST_DEFAULT_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_EXHAUST_DEFAULT_NAME"
+		/>
+		<InstallSocket Type="Mercedes3850Exhaust" />
+	</GameData>
+</TruckAddon>

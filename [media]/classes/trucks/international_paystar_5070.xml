@@ -337,6 +337,7 @@
 		<CustomizationCameras>
 			<CameraPos FOV="32.0" Interior="true" Name="roof_sticker" InterestPosition="(3.063; 0.409; 0.035)" Position="(6.369; 4.756; -0.739)" />
 			<CameraPos FOV="32.0" Interior="true" Name="sticker_1" InterestPosition="(5.888; 3.28; 1.296)" Position="(4.468; 2.525; -0.512)" />
+			<CameraPos FOV="32.0" Name="loglift_front" InterestPosition="(3.3; 2.05; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-5.463; 4.013; 6.741)" />
 			<CameraPos FOV="32.0" Name="addon_1" InterestPosition="(-0.405; 2.05; -0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-9.463; 4.013; 6.741)" />
 			<CameraPos FOV="32.0" Name="addon_2" InterestPosition="(5.849; 1.487; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(8.761; 3.371; 3.758)" />
 			<CameraPos FOV="32.0" Interior="true" Name="mirror_mount" InterestPosition="(5.888; 2.576; 1.435)" Position="(4.223; 2.608; -0.586)" />
@@ -359,47 +360,44 @@
 		<CraneSocket Pos="(-0.894; 1.076; -0.483)" />
 		<CraneSocket Pos="(-0.894; 1.076; 0.483)" />
 		<AddonSockets>
-			<Socket Names="InternationalPaystar5070SpareWheel" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt">
+			<Socket Names="InternationalPaystar5070SpareWheel" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt">
 				<ExtraParent Frame="BoneCabin_cdt" />
 			</Socket>
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-2.9; 1.7; 0)" />
-			<Socket Names="Semitrailer, SemitrailerOiltank, SemitrailerFoldableLog" Offset="(-3.734; 1.53; 0)" >
+			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" NamesBlock="LogLift" Offset="(-3.0; 1.7; 0)" />
+			<Socket Names="Semitrailer, SemitrailerOiltank, SemitrailerFoldableLog" NamesBlock="LogLift" Offset="(-3.734; 1.53; 0)" >
 				<AddonsShift Offset="(0.027; 0.05; 0)" Types="SaddleMotorized" />
 			</Socket>
 			<Socket Names="Trailer, LogTrailer" Offset="(-5.325; 0.916; 0.000)" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="LogLift" NamesBlock="MetalDetector, MinicraneUS" Offset="(-0.433; 1.235; 0)">
-				<AddonsShift Offset="(-0.7; 0; 0)" Types="InternationalPaystar5070CabinProtector" />
-				<AddonsShift Offset="(-0.7; 0; 0)" Types="InternationalPaystar5070SpareWheel" />
-				<AddonsShift Offset="(0.7; 0; 0)" Types="InternationalPaystar5070SpareWheel, InternationalPaystar5070CabinProtector" />
+			<Socket Names="BunkLog" NamesBlock="LogLift, MinicraneUS, MetalDetector" Offset="(-6.86; 1.234; 0)" >
+				<AddonsShift Offset="(-0.25; 0; 0)" Types="LogLiftKenworth" />
 			</Socket>
-			<Socket Names="BunkLog" NamesBlock="MinicraneUS, MetalDetector" Offset="(-6.86; 1.234; 0)" />
-			<Socket Names="FrameAddonLogShort" NamesBlock="MinicraneUS, MetalDetector, InternationalPaystar5070CabinProtector" Offset="(-2.76; 1.231; 0)" />
-			<Socket Names="FrameAddonLogMedium" NamesBlock="MinicraneUS, Trailer, LogTrailer, MetalDetector, InternationalPaystar5070CabinProtector" Offset="(-2.66; 1.231; 0)" />
-			<Socket Names="SaddleLow" Offset="(-3.734; 1.21; 0)" />
-			<Socket Names="SaddleHigh" Offset="(-2.9; 1.21; 0)" />
-			<Socket Names="FrameAddonTowPlatform"  Offset="(-2.05; 1.23; 0)" NamesBlock="MinicraneUS, MetalDetector, InternationalPaystar5070CabinProtector, Trailer, LogTrailer" />
-			<Socket Names="FrameAddon" Offset="(-2.7; 1.23; 0)" ParentFrame="BoneChassis_cdt">
+			<Socket Names="FrameAddonLogShort" NamesBlock="LogLift, MinicraneUS, MetalDetector, InternationalPaystar5070CabinProtector" Offset="(-2.76; 1.231; 0)" />
+			<Socket Names="FrameAddonLogMedium" NamesBlock="LogLift, MinicraneUS, Trailer, LogTrailer, MetalDetector, InternationalPaystar5070CabinProtector" Offset="(-2.66; 1.231; 0)" />
+			<Socket Names="SaddleLow" NamesBlock="LogLift" Offset="(-3.734; 1.21; 0)" />
+			<Socket Names="SaddleHigh" NamesBlock="LogLift" Offset="(-3.0; 1.21; 0)" />
+			<Socket Names="FrameAddonTowPlatform"  Offset="(-2.05; 1.23; 0)" NamesBlock="LogLift, MinicraneUS, MetalDetector, InternationalPaystar5070CabinProtector, Trailer, LogTrailer" />
+			<Socket Names="FrameAddon" NamesBlock="LogLift" Offset="(-2.7; 1.23; 0)" ParentFrame="BoneChassis_cdt">
 				<AddonsShift Offset="(-0.93; 0; 0)" Types="MinicraneUS" />
 				<AddonsShift Offset="(-0.91; 0; 0)" Types="InternationalPaystar5070CabinProtector" />
 			</Socket>
 			<Socket
 				Names="FrameAddonKung"
-				NamesBlock="InternationalPaystar5070CabinProtector"
+				NamesBlock="LogLift, InternationalPaystar5070CabinProtector"
 				Offset="(-3.3; 1.3; 0)"
 				ParentFrame="BoneChassis_cdt"
 			>
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.1)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.1)" />
 			</Socket>
-			<Socket Names="FrameAddonTank" NamesBlock="InternationalPaystar5070CabinProtector" Offset="(-3.46; 1.23; 0)" ParentFrame="BoneChassis_cdt" />
-			<Socket Names="BigCraneUs" NamesBlock="MinicraneUS, Semitrailer, InternationalPaystar5070CabinProtector" Offset="(-3.182; 1.247; 0)" />
+			<Socket Names="FrameAddonTank" NamesBlock="LogLift, InternationalPaystar5070CabinProtector" Offset="(-3.46; 1.23; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="BigCraneUs" NamesBlock="LogLift, MinicraneUS, Semitrailer, InternationalPaystar5070CabinProtector" Offset="(-3.182; 1.247; 0)" />
 			<!-- <Socket Names="BigCraneRu" NamesBlock="Minicrane, Semitrailer, InternationalPaystar5070CabinProtector" Offset="(-3.65; 1.231; 0)" /> -->
-			<Socket Names="FrameAddonSeismicVibrator" NamesBlock="MinicraneUS, Trailer, InternationalPaystar5070CabinProtector, LogTrailer" Offset="(-0.68; 1.231; 0)" ParentFrame="BoneChassis_cdt" />
-			<Socket Names="FrameAddonMaintainer" NamesBlock="Trailer, MinicraneUS, InternationalPaystar5070CabinProtector, LogTrailer" Offset="(-3.4; 0.2; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="FrameAddonSeismicVibrator" NamesBlock="LogLift, MinicraneUS, Trailer, InternationalPaystar5070CabinProtector, LogTrailer" Offset="(-0.68; 1.231; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="FrameAddonMaintainer" NamesBlock="LogLift, Trailer, MinicraneUS, InternationalPaystar5070CabinProtector, LogTrailer" Offset="(-3.4; 0.2; 0)" ParentFrame="BoneChassis_cdt" />
 			
 			<Socket Names="SaddleMotorized" NamesBlock="MetalDetector, MinicraneUS, InternationalPaystar5070CabinProtector, LogLift" Offset="(-2.560; -0.036; 0.000)" ParentFrame="BoneChassis_cdt" >
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0.000; 0.000; 0.040)" />
@@ -408,96 +406,118 @@
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(1.100; 0.000; -0.040)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(1.100; 0.000; 0.000)" />
 			</Socket>
-			
+
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="MetalDetector" NamesBlock="SemitrailerOiltank, InternationalPaystar5070SpareWheel, FrameAddonKung, FrameAddonTank, FrameAddonSeismicVibrator, FrameAddonMaintainer, FrameAddon, BigCraneUs, BigCraneRu, SaddleHigh" Offset="(-1.864; 0.178; 0)" ParentFrame="BoneChassis_cdt" />
-			<Socket Names="MinicraneUS" NamesBlock="FrameAddonKung, FrameAddonTank, InternationalPaystar5070CabinProtector" Offset="(-0.73; 1.23; 0)">
+			<Socket Names="LogLiftKenworth"
+					NamesBlock="LogLift,
+								FrameAddonLogShort,
+								FrameAddonLogMedium,
+								FrameAddonTowPlatform,
+								FrameAddon,
+								FrameAddonKung,
+								FrameAddonTank,
+								BigCraneUs,
+								FrameAddonSeismicVibrator,
+								FrameAddonMaintainer,
+								SaddleMotorized,
+								MetalDetector,
+								MinicraneUS"
+					Offset="(-1.6; 1.419; 0)">
+				<ExtraParent Frame="BoneCabin_cdt" Offset="(0; 0; -0.05)" />
+				<ExtraParent Frame="BoneCabin_cdt" Offset="(0; 0; 0.05)" />
+			</Socket>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="MetalDetector" NamesBlock="LogLift, SemitrailerOiltank, InternationalPaystar5070SpareWheel, FrameAddonKung, FrameAddonTank, FrameAddonSeismicVibrator, FrameAddonMaintainer, FrameAddon, BigCraneUs, BigCraneRu, SaddleHigh" Offset="(-1.864; 0.178; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="MinicraneUS" NamesBlock="LogLift, FrameAddonKung, FrameAddonTank, InternationalPaystar5070CabinProtector" Offset="(-0.73; 1.23; 0)">
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; -0.025)" />
 				<ExtraParent Frame="BoneChassis_cdt" Offset="(0; 0; 0.025)" />
 			</Socket>
 		</AddonSockets>
 		<AddonSockets DefaultAddon="international_paystar_5070_bumper_default">
-			<Socket Names="InternationalPaystar5070Bumper" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="InternationalPaystar5070Bumper" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="international_paystar_5070_exhaust_default">
-			<Socket Names="InternationalPaystar5070Exhaust" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="InternationalPaystar5070Exhaust" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="international_paystar_5070_fender_default">
-			<Socket Names="InternationalPaystar5070Fender" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="InternationalPaystar5070Fender" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="international_paystar_5070_diff_lock_default">
-			<Socket Names="international_paystar_5070DiffLock" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
+			<Socket Names="international_paystar_5070DiffLock" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="international_paystar_5070_horn_default">
-			<Socket Names="InternationalPaystar5070Horn" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="InternationalPaystar5070Horn" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets DefaultAddon="international_paystar_5070_gabarite_default">
-			<Socket Names="InternationalPaystar5070Gabarite" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="InternationalPaystar5070Gabarite" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="InternationalPaystar5070Visor" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="InternationalPaystar5070Visor" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="InternationalPaystar5070Beacon" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="InternationalPaystar5070Beacon" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="InternationalPaystar5070CabinProtector" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="InternationalPaystar5070CabinProtector" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="InternationalPaystar5070Snorkel" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="InternationalPaystar5070Snorkel" NamesBlock="LogLift" Offset="(0; 0; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket
 				InCockpit="true"
 				Names="StuffDashboard"
+				NamesBlock="LogLift"
 				Offset="(1.118; 2.278; -0.138)"
 				ParentFrame="BoneCabin_cdt"
 			/>
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="internationalPaystar5070Sticker_1x1_01" ParentFrame="BoneCabin_cdt" />
+			<Socket InCockpit="true" Names="internationalPaystar5070Sticker_1x1_01" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="internationalPaystar5070Sticker_1x1_02" ParentFrame="BoneCabin_cdt" />
+			<Socket InCockpit="true" Names="internationalPaystar5070Sticker_1x1_02" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="internationalPaystar5070Sticker_1x1_03" ParentFrame="BoneCabin_cdt" />
+			<Socket InCockpit="true" Names="internationalPaystar5070Sticker_1x1_03" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="internationalPaystar5070Sticker_1x2_01" ParentFrame="BoneCabin_cdt" />
+			<Socket InCockpit="true" Names="internationalPaystar5070Sticker_1x2_01" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="internationalPaystar5070Sticker_1x2_02" ParentFrame="BoneCabin_cdt" />
+			<Socket InCockpit="true" Names="internationalPaystar5070Sticker_1x2_02" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="internationalPaystar5070Sticker_1x2_03" ParentFrame="BoneCabin_cdt" />
+			<Socket InCockpit="true" Names="internationalPaystar5070Sticker_1x2_03" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="internationalPaystar5070Sticker_GlassTop" ParentFrame="BoneCabin_cdt" />
+			<Socket InCockpit="true" Names="internationalPaystar5070Sticker_GlassTop" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket InCockpit="true" Names="internationalPaystar5070Sticker_GlassBottom" ParentFrame="BoneCabin_cdt" />
+			<Socket InCockpit="true" Names="internationalPaystar5070Sticker_GlassBottom" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="internationalPaystar5070Sticker_Door_L" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="internationalPaystar5070Sticker_Door_L" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="internationalPaystar5070Sticker_Roof" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="internationalPaystar5070Sticker_Roof" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="internationalPaystar5070Sticker_Capote" ParentFrame="BoneCabin_cdt" InCockpit="true" />
+			<Socket Names="internationalPaystar5070Sticker_Capote" NamesBlock="LogLift" ParentFrame="BoneCabin_cdt" InCockpit="true" />
 		</AddonSockets>
 		<AddonSockets>
 			<Socket
 				InCockpit="true"
 				Names="StuffAirfreshener"
+				NamesBlock="LogLift"
 				Offset="(1.092; 2.789; 0.038)"
 				ParentFrame="BoneCabin_cdt"
 			/>
 		</AddonSockets>
 		<AddonSockets>
-			<Socket Names="AddonHornsSmall" Offset="(2.511; 2.120; 0)" ParentFrame="BoneCabin_cdt" />
+			<Socket Names="AddonHornsSmall" NamesBlock="LogLift" Offset="(2.511; 2.120; 0)" ParentFrame="BoneCabin_cdt" />
 		</AddonSockets>
 	</GameData>
 	<ControlledConstraints>

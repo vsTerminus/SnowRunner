@@ -424,6 +424,7 @@
 			<CameraPos FOV="32.0" Name="snorkels" InterestPosition="(5; 2.2; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(8.900; 4.3; 5)" />
 			<CameraPos FOV="32.0" Name="rear" InterestPosition="(2.85; 2.45; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-2.114; 4.5; 4)" />
 			<CameraPos FOV="32.0" Name="roof" InterestPosition="(4.35; 3.3; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(8; 5; -4.700)" />
+			<CameraPos FOV="32.0" Name="loglift_front" InterestPosition="(2.7; 2.525; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-6.545; 4.073; 8.427)" />
 			<CameraPos FOV="32.0" Name="addon_1" InterestPosition="(-1.3; 2.325; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-11.545; 3.873; 8.427)" />
 			<CameraPos FOV="32.0" Name="addon_2" InterestPosition="(3.194; 1.807; 0)" MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-8.093; 2.337; -6.718)" />
 			<CameraPos FOV="32.0" Interior="true" Name="door_l_sticker" InterestPosition="(3.756; 2.364; -0.058)" Position="(3.199; 3.144; -2.926)" />

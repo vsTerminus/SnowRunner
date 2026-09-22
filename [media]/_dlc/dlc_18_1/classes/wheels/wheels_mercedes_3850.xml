@@ -1,0 +1,35 @@
+<_templates Include="trucks">
+	<TruckTire>
+		<Offroad Mass="250" RearMassScale="2">
+			<WheelTracks _template="Default" />
+			<WheelTracks _template="DefaultDouble" Rear="true" />
+			<WheelSoftness _template="Average" />
+		</Offroad>
+	</TruckTire>
+</_templates>
+<TruckWheels DamageCapacity="100" Radius="1" Width="0.672" WidthRear="1.19" >
+	<TruckTires>
+		<TruckTire _template="Offroad" Mesh="wheels/tire_mercedes_3850" Name="tire_offroad_mercedes_3850">
+			<WheelFriction
+				_template="Offroad"
+				BodyFriction="2.9"
+				BodyFrictionAsphalt="1.0"
+				SubstanceFriction="1.75"
+			/>
+			<GameData
+				Price="3600"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_OFFROAD_DESC" UiName="UI_TIRE_HEAVY_OFFROAD_DOUBLE_MERCEDES_3850_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>
+		<TruckRim Mesh="wheels/rim_mercedes_3850" Name="rim_mercedes_3850">
+			<GameData>
+				<UiDesc UiDesc="UI_RIM_HEAVY_OFFROAD_SINGLE_1_DESC" UiName="UI_RIM_HEAVY_OFFROAD_DOUBLE_MERCEDES_3850_NAME" />
+			</GameData>
+		</TruckRim>
+	</TruckRims>
+</TruckWheels>

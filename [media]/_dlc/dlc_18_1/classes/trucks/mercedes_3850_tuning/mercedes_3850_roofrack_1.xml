@@ -1,0 +1,92 @@
+<_templates Include="trucks">
+	<Body>
+		<Fuel
+			CenterOfMassOffset="(0; 0; 0)"
+			Collisions="None"
+			Mass="72"
+		>
+			<Constraint
+				AxisLocal="(0; 0; 1)"
+				Type="Hinge"
+				MinLimit="-1.5"
+				MaxLimit="1.5"
+			>
+				<Motor Damping="35" Spring="150" Type="Spring" />
+			</Constraint>
+		</Fuel>
+	</Body>
+</_templates>
+<TruckAddon>
+	<TruckData FuelCapacity="160" RepairsCapacity="150">
+		<LimitedFluid Center="(2.100; 3.221; -0.290)" SizeX="0.445" SizeY="0.146" SizeZ="0.325" Type="Box" ParentFrame="BoneFuel1_cdt"/>
+		<LimitedFluid Center="(2.150; 3.223; -0.765)" SizeX="0.445" SizeY="0.146" SizeZ="0.325" Type="Box" ParentFrame="BoneFuel1_cdt"/>
+		<LimitedFluid Center="(1.589; 3.223; -0.693)" SizeX="0.325" SizeY="0.146" SizeZ="0.445" Type="Box" ParentFrame="BoneFuel1_cdt"/>
+		<LimitedFluid Center="(1.544; 3.221; 0.056)" SizeX="0.325" SizeY="0.146" SizeZ="0.445"  Type="Box" ParentFrame="BoneFuel2_cdt"/>
+		<LimitedFluid Center="(1.544; 3.219; 0.701)" SizeX="0.325" SizeY="0.146" SizeZ="0.445"  Type="Box" ParentFrame="BoneFuel2_cdt"/>
+		<LimitedFluid Center="(1.075; 3.223; -0.596)" SizeX="0.325" SizeY="0.146" SizeZ="0.445" Type="Box" ParentFrame="BoneFuel3_cdt"/>
+		<LimitedFluid Center="(1.091; 3.223; -0.029)" SizeX="0.325" SizeY="0.146" SizeZ="0.445" Type="Box" ParentFrame="BoneFuel3_cdt"/>
+		<LimitedFluid Center="(1.074; 3.223; 0.689)" SizeX="0.325" SizeY="0.146" SizeZ="0.445" Type="Box" ParentFrame="BoneFuel3_cdt"/>
+	</TruckData>
+	<RepairsHide>
+		<Mesh Frame="repair" HideThreshold="0.0" />
+	</RepairsHide>
+	<FuelHide>
+		<Mesh Frame="fuel_01" HideThreshold="0.75" />
+		<Mesh Frame="fuel_02" HideThreshold="0.5" />
+		<Mesh Frame="fuel_03" HideThreshold="0.0" />
+	</FuelHide>
+	<PhysicsModel Mesh="trucks/mercedes_3850_tuning/mercedes_3850_roofrack_1">
+		<Body Mass="30" ModelFrame="BoneCabin_cdt">
+			<Constraint Type="Rigid" />
+			<Body Collisions="None" Mass="80" ModelFrame="BoneFuel1_cdt">
+				<Constraint
+					AxisLocal="(1; 0; 0)"
+					Type="Prismatic"
+					MinLimit="-0.03"
+					MaxLimit="0.02"
+				>
+					<Motor Damping="1200" Spring="2200" Type="Spring" />
+				</Constraint>
+			</Body>
+			
+			<Body _template="Fuel" ModelFrame="BoneFuel2_cdt" />
+			
+			<Body Collisions="None" Mass="80" ModelFrame="BoneFuel3_cdt">
+				<Constraint
+					AxisLocal="(1; 0; 0)"
+					Type="Prismatic"
+					MinLimit="-0.04"
+					MaxLimit="0.02"
+				>
+					<Motor Damping="1200" Spring="2200" Type="Spring" />
+				</Constraint>
+			</Body>
+			<Body Collisions="None" Mass="50" ModelFrame="BoneRepair_cdt">
+				<Constraint
+					AxisLocal="(1; 0; 0)"
+					Type="Prismatic"
+					MinLimit="-0.02"
+					MaxLimit="0.01"
+				>
+					<Motor Damping="2100" Spring="3000" Type="Spring" />
+				</Constraint>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="roof"
+		Category="frame_addons"
+		IsCustomizable="true"
+		Price="2300"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SCOUT_TRUNK_SUPPLIES_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SCOUT_TRUNK_SUPPLIES_NAME"
+		/>
+		<InstallSocket Type="Mercedes3850Roofrack" />
+	</GameData>
+</TruckAddon>

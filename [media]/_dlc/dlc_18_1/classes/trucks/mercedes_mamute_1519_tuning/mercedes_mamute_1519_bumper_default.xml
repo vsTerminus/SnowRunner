@@ -1,0 +1,57 @@
+<_templates Include="trucks">
+	<Body>
+		<Loop
+			Mass="5"
+			Collisions="Default"
+			ImpactType="Truck"
+			CenterOfMassOffset="(0; 0; 0)"
+		>
+			<Constraint
+				PivotOffset="(0; 0; 0)"
+				Type="Hinge"
+				AxisLocal="(0; 0; 1)"
+				MinLimit="0.36"
+				MaxLimit="207.8"
+			>
+				<Motor Spring="1" Damping="0.1" Type="Spring" />
+			</Constraint>
+		</Loop>
+	</Body>
+</_templates>
+<TruckAddon>
+	<TruckData>
+		<Damage>
+			<Multiplier Multiplier="1.0" Type="Engine" />
+		</Damage>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/mercedes_mamute_1519_tuning/mercedes_mamute_1519_bumper_default">
+		<Body ImpactType="Truck" Mass="28" ModelFrame="BoneRoot_cdt">
+			<Constraint Type="Rigid" />
+			<Body _template="Loop" ModelFrame="BoneLoopR_cdt" />
+			<Body _template="Loop" ModelFrame="BoneLoopL_cdt" />
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="default"
+		Category="bumper"
+		Price="800"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<WinchSocket FixedToTruck="true" Pos="(4.031; 1.306; -0.550)" />
+		<WinchSocket FixedToTruck="true" Pos="(4.031; 1.306; 0.550)" />
+		<WinchSocket FixedToTruck="true" Pos="(3.945; 1.377; 0.000)" />
+
+		<CraneSocket FixedToTruck="true" Pos="(4.031; 1.306; -0.550)" />
+		<CraneSocket FixedToTruck="true" Pos="(4.031; 1.306; 0.550)" />
+		<CraneSocket FixedToTruck="true" Pos="(3.945; 1.377; 0.000)" />
+		
+		<UiDesc
+			UiDesc="UI_TUNING_BUMPER_STOCK_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_BUMPER_STOCK_NAME"
+		/>
+		<InstallSocket Type="MercedesMamute1519Bumper" />
+	</GameData>
+</TruckAddon>
