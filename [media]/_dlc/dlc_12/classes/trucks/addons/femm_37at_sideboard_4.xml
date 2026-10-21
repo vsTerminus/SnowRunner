@@ -54,7 +54,7 @@
 		Price="6700"
 		UnlockByExploration="false"
 		UnlockByRank="1"
-		ExcludedCargoTypes="CargoWing2, CargoForcklift, CargoIronRoad"
+		ExcludedCargoTypes="CargoWing2, CargoForcklift, CargoIronRoad, CargoBuildingLifePod"
 	>
 		<UiDesc
 			UiDesc="UI_ADDON_FEMM_37AT_SIDEBOARD_4_DESC"

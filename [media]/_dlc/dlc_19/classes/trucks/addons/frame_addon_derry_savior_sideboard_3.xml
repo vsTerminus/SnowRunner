@@ -1,0 +1,71 @@
+<_templates Include="trucks" />
+<TruckAddon IsChassisFullOcclusion="true">
+	<PhysicsModel Mesh="trucks/addons/frame_addon_derry_savior_sideboard_3">
+		<Body Mass="1000">
+			<Constraint Type="Rigid" />
+			<Body Mass="10" ModelFrame="BoneHooksL_cdt" Collisions="None">
+				<Constraint
+					AxisLocal="(-1; 0; 0)"
+					Type="Hinge"
+					MinLimit="0"
+					MaxLimit="180"
+				/>
+			</Body>
+			<Body Mass="10" ModelFrame="BoneHooksR_cdt" Collisions="None">
+				<Constraint
+					AxisLocal="(1; 0; 0)"
+					Type="Hinge"
+					MinLimit="0"
+					MaxLimit="180"
+				/>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<ReverseSignals>
+			<Light _template="ReverseSignal" Dir="(-1; -0.1; 0)" Pos="(-6.558; 0.996; -0.233)" />
+			<Flare _template="ReverseSignal" Dir="(-1; 0; 0)" Pos="(-6.558; 0.996; -0.233)" Size="0.4" />
+			<Flare _template="BlueStreak" Dir="(-1; 0; 0)" Pos="(-6.558; 0.996; -0.233)" Size="0.55" />
+		</ReverseSignals>
+		<StopSignals>
+			<Light _template="StopSignal" Dir="(-1; -0.1; 0)" Pos="(-6.765; 1.433; 0)" />
+			<Flare _template="StopSignal" Dir="(-1; 0; 0)" Pos="(-6.765; 1.433; 1.185)" Size="0.4" />
+			<Flare _template="StopSignal" Dir="(-1; 0; 0)" Pos="(-6.765; 1.433; -1.185)" Size="0.4" />
+		</StopSignals>
+		<Ignition>
+			<Light _template="StopSignal" Dir="(-1; -0.1; 0)" Pos="(-6.765; 1.433; 0)" />
+			<Flare _template="StopSignal" Dir="(-1; 0; 0)" Pos="(-6.765; 1.433; 1.185)" Size="0.4" />
+			<Flare _template="StopSignal" Dir="(-1; 0; 0)" Pos="(-6.765; 1.433; -1.185)" Size="0.4" />
+			
+			<Flare _template="IgnitionSignalOrange" Dir="(0; 0; -1)" Size="0.15" Pos="(-6.492; 1.464; -1.366)" />
+			<Flare _template="IgnitionSignalOrange" Dir="(0; 0; 1)" Size="0.15" Pos="(-6.492; 1.464; 1.366)" />
+		</Ignition>
+	</ModelAttachments>
+	<GameData
+		CameraPreset="addon_1"
+		Category="frame_addons"
+		IsCustomizable="true"
+		Price="5700"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+		ExcludedCargoTypes="CargoRocketPart2, CargoRocketPart1"
+	>
+	
+		<WinchSocket FixedToTruck="true" Pos="(-6.610; 1.075; -0.387)" />
+		<WinchSocket FixedToTruck="true" Pos="(-6.610; 1.075; 0.387)" />
+		<WinchSocket FixedToTruck="true" Pos="(-6.685; 0.967; 0.000)" />
+
+		<CraneSocket FixedToTruck="true" Pos="(-6.610; 1.075; -0.387)" />
+		<CraneSocket FixedToTruck="true" Pos="(-6.610; 1.075; 0.387)" />
+		<CraneSocket FixedToTruck="true" Pos="(-6.685; 0.967; 0.000)" />
+		
+		<UiDesc
+			UiDesc="UI_ADDON_FRAME_SIDEBOARD_3_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_ADDON_FRAME_SIDEBOARD_3_NAME"
+		/>
+		<InstallSocket Type="FrameAddon3DerrySavior" />
+		<AddonSlots InitialOffset="(-0.22; 1.71; 0)" OffsetStep="(-2.546; 0; 0)" Quantity="3" />
+	</GameData>
+</TruckAddon>

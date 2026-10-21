@@ -1,0 +1,25 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<Snorkel Origin="(2.624; 2.127; 1.112)" />
+	<Snorkel Origin="(2.624; 2.127; -1.112)" />
+	<PhysicsModel Mesh="trucks/wortek_250t_tuning/wortek_250t_snorkel_default">
+		<Body Collisions="Default" Mass="10" ModelFrame="BoneAddon_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="snorkel"
+		Category="snorkel"
+		Price="1000"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SNORKEL_STOCK_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SNORKEL_STOCK_NAME"
+		/>
+		<InstallSocket Type="Wortek250TSnorkel" />
+	</GameData>
+</TruckAddon>

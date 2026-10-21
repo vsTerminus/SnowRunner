@@ -1,0 +1,41 @@
+<ModelBrand
+    DynamicModel="true"
+    NightLightingShadowsAllowCap="true"
+    DayShadowOffsetMult="27"
+>
+	<Subset IsDefault="true" Name="stage_00">
+		<Mesh Name="state_00" />
+
+		<CdtMesh Name="cdt_state_00" />
+	</Subset>
+
+	<Subset Name="stage_01" >
+		<Mesh Name="state_01" />
+		<Mesh Name="state_01_lod1" />
+		<Mesh Name="state_01_lod2" />
+		<Mesh Name="state_01_lod3" />
+		<CdtMesh Name="cdt_state_01" />
+		<AnimTrack Name="stage_1_anim" />
+		<AnimSubset Name="build_animation_0" />
+	</Subset>
+	
+	<AnimSubset Name="build_animation_0"> 
+		<Mesh Name="animesh_01" />
+		<CdtMesh Name="cdt_state_01" />
+	</AnimSubset>
+
+	<TrackEvents TrackName="stage_1_anim">
+		<AnimEvent Key="3">
+			<Sound Name="actors/actor_construction/actor_construct_oil_03" Range="50" Volume="0.05"/>
+			<SFX Dir="(0; 1; 0)" Name="us_log_cabin_01_objective" Pos="(0; 0; 0)" />
+    	</AnimEvent>
+	</TrackEvents>
+
+	<PhysicsModel>
+		<Body Collisions="None" ModelFrame="state_00">
+			<Body Collisions="Dynamic" ModelFrame="state_01" />
+		</Body>
+	</PhysicsModel>
+
+	<Landmark Mesh="landmarks/avalanche_control_02_us19_objective_lmk" />
+</ModelBrand>

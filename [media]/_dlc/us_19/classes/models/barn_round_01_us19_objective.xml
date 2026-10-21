@@ -1,0 +1,62 @@
+<ModelBrand
+	NightLightingShadowsAllowCap="true"
+	DynamicModel="true"
+>
+
+	<Subset IsDefault="true" Name="stage_00">
+		<Mesh Name="barn_01_stage_01" />
+		<Mesh Name="barn_02_stage_00" />
+		<CdtMesh Name="cdt_barn_01_stage_01" />
+		<CdtMesh Name="cdt_barn_02_stage_00" />
+	</Subset>
+
+	<Subset Name="stage_01">
+		<Mesh Name="barn_01_stage_02" />
+		<Mesh Name="barn_02_stage_00" />
+		<CdtMesh Name="cdt_barn_01_stage_02" />
+		<CdtMesh Name="cdt_barn_02_stage_00" />
+		<OnSubsetActivateEvent>
+			<Sound Name="actors/actor_construction/actor_deconstruct_metal" Range="200" Volume="1"/>
+			<SFX Name="constr_wood_01" Dir="(0; 1; 0)" Pos="(0.0; 0.0; 0.0)" />
+			<SFX Name="constr_wood_01" Dir="(0; 1; 0)" Pos="(-12.0; 0.0; 0.0)" />
+		</OnSubsetActivateEvent>
+	</Subset>
+
+		<Subset Name="stage_02">
+		<Mesh Name="barn_01_stage_02" />
+		<Mesh Name="barn_02_stage_01" />
+		<CdtMesh Name="cdt_barn_01_stage_02" />
+		<CdtMesh Name="cdt_barn_02_stage_01" />
+		<OnSubsetActivateEvent>
+			<Sound Name="actors/actor_construction/actor_deconstruct_metal" Range="200" Volume="1"/>
+			<SFX Name="constr_wood_01" Dir="(0; 1; 0)" Pos="(0.0; 0.0; 0.0)" />
+			<SFX Name="constr_wood_01" Dir="(0; 1; 0)" Pos="(-12.0; 0.0; 0.0)" />
+		</OnSubsetActivateEvent>
+	</Subset>
+
+	<Subset Name="stage_03">
+		<Mesh Name="barn_01_stage_02" />
+		<Mesh Name="barn_02_stage_02" />
+		<CdtMesh Name="cdt_barn_01_stage_02" />
+		<CdtMesh Name="cdt_barn_02_stage_02" />
+		<OnSubsetActivateEvent>
+			<Sound Name="actors/actor_construction/actor_deconstruct_metal" Range="200" Volume="1"/>
+			<SFX Name="constr_wood_01" Dir="(0; 1; 0)" Pos="(0.0; 0.0; 0.0)" />
+			<SFX Name="constr_wood_01" Dir="(0; 1; 0)" Pos="(-12.0; 0.0; 0.0)" />
+		</OnSubsetActivateEvent>
+	</Subset>
+
+
+
+
+	<PhysicsModel>
+		<Body Collisions="Dynamic" ModelFrame="barn_01_stage_00">
+			<Body Collisions="Dynamic" ModelFrame="barn_01_stage_01"/>
+			<Body Collisions="Dynamic" ModelFrame="barn_01_stage_02"/>
+			<Body Collisions="Dynamic" ModelFrame="barn_02_stage_00"/>
+			<Body Collisions="Dynamic" ModelFrame="barn_02_stage_01"/>
+			<Body Collisions="Dynamic" ModelFrame="barn_02_stage_02"/>
+		</Body>
+	</PhysicsModel>
+	<Landmark Mesh="landmarks/barn_round_01_us19_objective_lmk" />
+</ModelBrand>

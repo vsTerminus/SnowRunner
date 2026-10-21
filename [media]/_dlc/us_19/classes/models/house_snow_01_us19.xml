@@ -1,0 +1,12 @@
+<ModelBrand
+	Instanced="true"
+	InstancedAsModel="true"
+	NightLightingShadowsAllowCap="true"
+	DayShadowOffsetMult="13"
+>
+	<PhysicsModel>
+		<Body
+			Collisions="None"
+		/>
+	</PhysicsModel>
+</ModelBrand>

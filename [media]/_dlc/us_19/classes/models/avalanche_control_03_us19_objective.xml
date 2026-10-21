@@ -1,0 +1,51 @@
+<ModelBrand
+    DynamicModel="true"
+    NightLightingShadowsAllowCap="true"
+    DayShadowOffsetMult="27"
+>
+	<Subset IsDefault="true" Name="stage_00">
+		<Mesh Name="state_00" />
+		<Mesh Name="state_00_lod1" />
+		<Mesh Name="state_00_lod2" />
+		<Mesh Name="state_00_lod3" />
+		<CdtMesh Name="cdt_state_00" />
+	</Subset>
+
+	<Subset Name="stage_01" >
+		<AnimTrack Name="stage_1_anim" />
+		<AnimSubset Name="build_animation_0" />
+		<Mesh Name="state_02" />
+		<Mesh Name="state_02_lod1" />
+		<Mesh Name="state_02_lod2" />
+		<Mesh Name="state_02_lod3" />
+		<CdtMesh Name="cdt_state_02" />
+	</Subset>
+	
+	<AnimSubset Name="build_animation_0"> 
+		<Mesh Name="animesh_01" />
+		<Mesh Name="animesh_02" />
+		<CdtMesh Name="cdt_state_01" />
+	</AnimSubset>
+
+	<TrackEvents TrackName="stage_1_anim">
+		<AnimEvent Key="1">
+			<Sound Name="actors/actor_construction/actor_construct_trees_roadblock" Range="50" Volume="0.05"/>
+			<SFX Dir="(0; 1; 0)" Name="us_log_cabin_01_objective" Pos="(0; 0; 0)" />
+    	</AnimEvent>
+		<AnimEvent Key="25">
+			<Sound Name="actors/actor_construction/actor_construct_oil_03" Range="50" Volume="0.05"/>
+			<SFX Dir="(0; 1; 0)" Name="us_log_cabin_01_objective" Pos="(0; 0; 0)" />
+    	</AnimEvent>
+	</TrackEvents>
+
+	<PhysicsModel>
+		<Body Collisions="Dynamic" ModelFrame="state_00">
+			<Body Collisions="Dynamic" ModelFrame="state_02" />
+		</Body>
+	</PhysicsModel>
+	<GameData>
+		<WinchSocket Pos="(1.5; 2.366; 1.649)" />
+		<WinchSocket Pos="(1.5; 2.366; -1.649)" />
+	</GameData>
+	<Landmark Mesh="landmarks/avalanche_control_01_us19_objective_lmk" />
+</ModelBrand>

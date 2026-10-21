@@ -1,0 +1,65 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<TruckData>
+		<Damage>
+			<Multiplier Multiplier="0.85" Type="Engine" />
+		</Damage>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/wortek_250t_tuning/wortek_250t_bumper_01">
+		<Body ImpactType="Truck" Mass="90" ModelFrame="BoneAddon_cdt">
+			<Constraint Type="Rigid" />
+			<Body Mass="20" ModelFrame="BoneRope_cdt" Collisions="None">
+				<Constraint
+					Type="Hinge"
+					AxisLocal="(1; 0; 0)"
+					MinLimit="-5"
+					MaxLimit="5"
+				>
+					<Motor Type="Spring" Spring="1250" Damping="20" />
+				</Constraint>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<Ignition>
+			<Flare _template="IgnitionSignalWhite" Dir="(1; 0; 0)" Size="0.5" Pos="(4.135; 1.405; 0.202)" />
+			<Flare _template="IgnitionSignalWhite" Dir="(1; 0; 0)" Size="0.5" Pos="(4.135; 1.405; -0.202)" />
+		</Ignition>
+		<HeadLight>
+			<Model _template="HeadLightRay" Org="(4.135; 1.405; 0.202)" Scale="0.5" />
+			<Flare _template="HeadLight" Dir="(1; 0; 0)" Size="0.25" Pos="(4.135; 1.405; 0.202)" />
+			
+			<Model _template="HeadLightRay" Org="(4.135; 1.405; -0.202)" Scale="0.5" />
+			<Flare _template="HeadLight" Dir="(1; 0; 0)" Size="0.25" Pos="(4.135; 1.405; -0.202)" />
+		</HeadLight>
+	</ModelAttachments>
+	<GameData
+		CameraPreset="default"
+		Category="bumper"
+		Price="1200"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<WinchSocket FixedToTruck="true" Pos="(4.171; 1.295; 0.527)" />
+		<WinchSocket FixedToTruck="true" Pos="(4.113; 1.025; 0.545)" />
+		<WinchSocket FixedToTruck="true" Pos="(4.008; 1.026; 1.113)" />
+		<WinchSocket FixedToTruck="true" Pos="(4.171; 1.295; -0.527)" />
+		<WinchSocket FixedToTruck="true" Pos="(4.113; 1.025; -0.545)" />
+		<WinchSocket FixedToTruck="true" Pos="(4.008; 1.026; -1.113)" />
+		
+		<CraneSocket Pos="(4.171; 1.295; 0.527)" />
+		<CraneSocket Pos="(4.113; 1.025; 0.545)" />
+		<CraneSocket Pos="(4.008; 1.026; 1.113)" />
+		<CraneSocket Pos="(4.171; 1.295; -0.527)" />
+		<CraneSocket Pos="(4.113; 1.025; -0.545)" />
+		<CraneSocket Pos="(4.008; 1.026; -1.113)" />
+
+		<UiDesc
+			UiDesc="UI_TUNING_BUMPER_DEFENDER_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_BUMPER_DEFENDER_NAME"
+		/>
+		<InstallSocket Type="Wortek250TBumper" />
+	</GameData>
+</TruckAddon>

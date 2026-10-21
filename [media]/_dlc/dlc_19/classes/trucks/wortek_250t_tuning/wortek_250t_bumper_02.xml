@@ -1,0 +1,44 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<TruckData>
+		<Damage>
+			<Multiplier Multiplier="0.8" Type="Engine" />
+		</Damage>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/wortek_250t_tuning/wortek_250t_bumper_02">
+		<Body ImpactType="Truck" Mass="110" ModelFrame="BoneAddon_cdt">
+			<Constraint Type="Rigid" />
+			<Body Mass="20" ModelFrame="BoneRope_cdt" Collisions="None">
+				<Constraint
+					Type="Hinge"
+					AxisLocal="(1; 0; 0)"
+					MinLimit="-5"
+					MaxLimit="5"
+				>
+					<Motor Type="Spring" Spring="1250" Damping="20" />
+				</Constraint>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="default"
+		Category="bumper"
+		Price="1400"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<WinchSocket FixedToTruck="true" Pos="(4.174; 1.385; 0.0)" />
+		<WinchSocket FixedToTruck="true" Pos="(4.020; 1.089; 0.0)" />
+		
+		<CraneSocket Pos="(4.174; 1.385; 0.0)" />
+		<CraneSocket Pos="(4.020; 1.089; 0.0)" />
+
+		<UiDesc
+			 UiDesc="UI_TUNING_BUMPER_REBAR_DESC"
+            UiIcon30x30=""
+            UiIcon40x40=""
+            UiName="UI_TUNING_BUMPER_REBAR_NAME"
+		/>
+		<InstallSocket Type="Wortek250TBumper" />
+	</GameData>
+</TruckAddon>

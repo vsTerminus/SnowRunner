@@ -1,0 +1,15 @@
+<ModelBrand
+	NightLightingShadowsAllowCap="true"
+	Instanced="true"
+	InstancedAsModel="true"
+	
+>
+	<PhysicsModel>
+		<Body Collisions="Dynamic" />
+	</PhysicsModel>
+	<GameData>
+		<WinchSocket Pos="(1.5; 2.366; 2.218)" />
+		<WinchSocket Pos="(1.5; 2.366; -2.218)" />
+	</GameData>
+	<Landmark Mesh="landmarks/avalanche_control_01_us19_lmk" />
+</ModelBrand>

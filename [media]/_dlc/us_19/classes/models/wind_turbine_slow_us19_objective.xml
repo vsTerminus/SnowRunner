@@ -1,0 +1,107 @@
+<ModelBrand
+    DayShadowOffsetMult="17"
+	DynamicModel="true"
+	NightLightingShadowsAllowCap="true"
+	
+>
+	<Subset IsDefault="true" Name="state_broken">
+		<Mesh Name="state_00" />
+		<Mesh Name="state_00_lod1" />
+		<Mesh Name="state_00_lod2" />
+		<Mesh Name="state_00_lod3" />
+		<CdtMesh Name="cdt_state_01" />
+		<Mesh Name="state_01" />
+		<Mesh Name="state_01_lod1" />
+		<Mesh Name="state_01_lod2" />
+		<Mesh Name="state_01_lod3" />
+	</Subset>
+	<Subset Name="state_start">
+		<Mesh Name="state_00" />
+		<Mesh Name="state_00_lod1" />
+		<Mesh Name="state_00_lod2" />
+		<Mesh Name="state_00_lod3" />
+		<CdtMesh Name="cdt_state_00" />
+		<Mesh Name="state_02" />
+		<Mesh Name="state_02_lod1" />
+		<Mesh Name="state_02_lod2" />
+		<Mesh Name="state_02_lod3" />
+		<AnimTrack Name="stage_1_anim" />
+		<AnimSubset Name="build_animation_0" />
+	</Subset>
+	<Subset Name="state_end">
+		<Mesh Name="state_00" />
+		<Mesh Name="state_00_lod1" />
+		<Mesh Name="state_00_lod2" />
+		<Mesh Name="state_00_lod3" />
+		<CdtMesh Name="cdt_state_00" />
+		<Mesh Name="state_02" />
+		<Mesh Name="state_02_lod1" />
+		<Mesh Name="state_02_lod2" />
+		<Mesh Name="state_02_lod3" />
+		<AnimTrack Name="stage_2_anim" />
+		<AnimSubset Name="build_animation_1" />
+		<AnimTrackSubset Name="anim_loop" />
+		<OnSubsetActivateEvent>
+			<Sound Name="actors/actor_wind_turbine/actor_wind_turbine_04_loop" FadeInTime="1.5" FadeOutTime="1.0" RangeMin="30" RangeMax="150" IsLoop="true"/>
+		</OnSubsetActivateEvent>
+	</Subset>
+
+	<AnimSubset Name="build_animation_0">
+		<Mesh Name="animesh_01" />
+        <Mesh Name="animesh_02" />
+		<Mesh Name="state_00" />
+		<Mesh Name="state_00_lod1" />
+		<Mesh Name="state_00_lod2" />
+		<Mesh Name="state_00_lod3" />
+		<CdtMesh Name="cdt_state_01" />
+	</AnimSubset>
+
+	<AnimSubset Name="build_animation_1"> <!-- animation_02 -->
+		<Mesh Name="animesh_02" />	
+		<Mesh Name="state_00" />
+		<Mesh Name="state_00_lod1" />
+		<Mesh Name="state_00_lod2" />
+		<Mesh Name="state_00_lod3" />
+		<CdtMesh Name="cdt_state_01" />	
+	</AnimSubset>
+
+	<TrackEvents TrackName="stage_1_anim">
+		<AnimEvent Key="1">
+           	<Fade Time="0.2" />
+			<Sound Name="actors/actor_construction/actor_construct_wind_turbine" Range="150" Volume="0.8" />
+       	</AnimEvent>
+		<AnimEvent Key="33">
+			<SFX Name="bridge_sparks_01" Dir="(0; 1; 0)" Pos="(1.66; 48.027; -5.207)" />
+			<SFX Name="bridge_sparks_01" Dir="(0; 1; 0)" Pos="(1.602; 48.685; -4.42)" />
+			<SFX Name="bridge_sparks_01" Dir="(0; 1; 0)" Pos="(1.75; 47.348; -4.447)" />
+		</AnimEvent>
+
+		<AnimEvent Key="39">
+			<SFX Name="bridge_sparks_01" Dir="(0; 1; 0)" Pos="(-0.706; 46.371; -5.207)" />
+			<SFX Name="bridge_sparks_01" Dir="(0; 1; 0)" Pos="(-1.354; 46.639; -4.418)" />
+			<SFX Name="bridge_sparks_01" Dir="(0; 1; 0)" Pos="(-0.095; 46.052; -4.41)" />
+		</AnimEvent>
+
+		<AnimEvent Key="44">
+			<SFX Name="bridge_sparks_01" Dir="(0; 1; 0)" Pos="(-0.957; 49.247; -5.207)" />
+			<SFX Name="bridge_sparks_01" Dir="(0; 1; 0)" Pos="(-1.539; 48.878; -4.41)" />
+			<SFX Name="bridge_sparks_01" Dir="(0; 1; 0)" Pos="(-0.35; 49.669; -4.536)" />
+		</AnimEvent>
+	</TrackEvents>
+
+	<TrackEvents TrackName="stage_2_anim">
+		<AnimEvent Key="0">
+           	<Fade Time="0.2" />
+			<Sound Name="actors/actor_wind_turbine/actor_wind_turbine_04_loop" FadeInTime="1.5" FadeOutTime="1.0" RangeMin="30" RangeMax="150" IsLoop="true"/>
+       	</AnimEvent>
+	</TrackEvents>
+
+	<PhysicsModel>
+		<Body Collisions="Dynamic" ModelFrame="state_01">
+			<Body Collisions="Dynamic" ModelFrame="state_00" />
+		</Body>
+	</PhysicsModel>
+
+
+	
+</ModelBrand>

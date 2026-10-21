@@ -1,0 +1,9 @@
+<CargoType>
+	<UiDesc
+		UiName="UI_CARGO_CABLE_REEL_NAME"
+		UiDesc="UI_CARGO_CABLE_REEL_DESC"
+		UiIcon20x20="cargoTypeCablerell20"
+		UiIcon40x40="cargoTypeCablerell40"
+		UiIcon100x100="cargoTypeCablerell"
+	/>
+</CargoType>

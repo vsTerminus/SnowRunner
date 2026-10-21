@@ -7,7 +7,7 @@
 		/>
 		<FrontWheel
 			Location="front"
-			SteeringAngle="30"
+			SteeringAngle="33.5"
 			SteeringCastor="0"
 			SteeringJointOffset="0.265"
 			Torque="full"
@@ -78,24 +78,25 @@
 			Origin="(0.63; 0.74; -0.047)"
 			MinDist="15.0"
 		>
-			<Honk			Sound="trucks/tatra_force/tatra_force_honk" />
-			<Handbrake		Sound="trucks/tatra_force/tatra_force_handbrake_on" />
-			<HandbrakeOff	Sound="trucks/tatra_force/tatra_force_handbrake_off" />
-			<Reverse		Sound="trucks/tatra_force/tatra_force_back_beeper" />
-			<BrakesSqueal	Sound="trucks/tatra_force/tatra_force_brakes_squeal" />
-			<BrakeRelease	Sound="trucks/common/truck_brake_release_alt2_rnd_set/truck_brake_release_alt2_rnd" />
-			<EngineRev		Sound="trucks/tatra_force/tatra_force_rev" />
-			<EngineAccel	Sound="trucks/tatra_force/tatra_force_acc" />
-			<EngineStart	Sound="trucks/tatra_force/tatra_force_start" />
-			<EngineStop		Sound="trucks/tatra_force/tatra_force_stop" />
-			<EngineIdle		Sound="trucks/tatra_force/tatra_force_idle" />
-			<EngineIdle_2d	Sound="trucks/tatra_force/tatra_force_idle_2d"	IsSound2D="true" />
-			<EngineLow		Sound="trucks/tatra_force/tatra_force_low" />
-			<EngineLow_2d	Sound="trucks/tatra_force/tatra_force_low_2d"	IsSound2D="true" />
-			<EngineHigh		Sound="trucks/tatra_force/tatra_force_high" />
-			<EngineHigh_2d	Sound="trucks/tatra_force/tatra_force_high_2d"	IsSound2D="true" />
-			<EngineHeavy	Sound="trucks/tatra_force/tatra_force_heavy" />
-			<EngineHeavy_2d	Sound="trucks/tatra_force/tatra_force_heavy_2d"	IsSound2D="true" />
+			<Honk			Sound="trucks/mercedes_3850/mercedes_3850_honk" />
+			<Handbrake		Sound="trucks/mercedes_3850/mercedes_3850_handbrake_on" />
+			<HandbrakeOff	Sound="trucks/mercedes_3850/mercedes_3850_handbrake_off" />
+			<Reverse		Sound="trucks/mercedes_3850/mercedes_3850_back_beeper" />
+			<BrakesSqueal	Sound="trucks/mercedes_3850/mercedes_3850_brakes_squeal" />
+			<BrakeRelease	Sound="trucks/mercedes_3850/mercedes_3850_brake_release" />
+			<EngineRev		Sound="" />
+			<EngineAccel	Sound="trucks/mercedes_3850/mercedes_3850_acc" />
+			<EngineStart	Sound="trucks/mercedes_3850/mercedes_3850_start" />
+			<EngineStop		Sound="trucks/mercedes_3850/mercedes_3850_stop" />
+			<EngineIdle		Sound="trucks/mercedes_3850/mercedes_3850_idle" />
+			<EngineIdle_2d	Sound="trucks/mercedes_3850/mercedes_3850_idle_2d"	IsSound2D="true" />
+			<EngineLow		Sound="trucks/mercedes_3850/mercedes_3850_low" />
+			<EngineLow_2d	Sound="trucks/mercedes_3850/mercedes_3850_low_2d"	IsSound2D="true" />
+			<EngineHigh		Sound="trucks/mercedes_3850/mercedes_3850_high" />
+			<EngineHigh_2d	Sound="trucks/mercedes_3850/mercedes_3850_high_2d"	IsSound2D="true" />
+			<EngineHeavy	Sound="" />
+			<EngineHeavy_2d	Sound=""	IsSound2D="true" />
+			<EngineTrans	Sound="trucks/mercedes_3850/mercedes_3850_turbo" />
 			<ChassisStress	Sound="trucks/common/truck_stress_rnd_set/truck_stress_rnd" />
 			<AbruptStop		Sound="trucks/common/truck_swing_big_rnd_set/truck_swing_big_rnd" />
 		</Sounds>

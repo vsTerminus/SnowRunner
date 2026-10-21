@@ -1,0 +1,121 @@
+<GearboxVariants>
+	<Gearbox
+		AWDConsumptionModifier="1.09"
+		CriticalDamageThreshold="0.75"
+		DamageCapacity="200"
+		DamagedConsumptionModifier="1.136"
+		FuelConsumption="2.5"
+		IdleFuelModifier="0.3"
+		Name="g_derry_savior_special_default"
+		MinBreakFreq="0.0"
+		MaxBreakFreq="10.0"
+	>
+		<ReverseGear AngVel="1.91" FuelModifier="2.0" />
+		<HighGear AngVel="4.0" FuelModifier="1.8" />
+		<Gear AngVel="1.91" FuelModifier="2.0" />
+		<Gear AngVel="2.02" FuelModifier="1.83" />
+		<Gear AngVel="2.28" FuelModifier="1.65" />
+		<Gear AngVel="2.82" FuelModifier="1.5" />
+		<Gear AngVel="3.7" FuelModifier="1.2" />
+		<Gear AngVel="5.0" FuelModifier="0.9" />
+		<GameData
+			Price="3000"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_GEARBOX_SPECIAL_DEFAULT_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_GEARBOX_SPECIAL_DEFAULT_NAME"
+			/>
+			<GearboxParams
+				IsHighGearExists="true"
+				IsLowerGearExists="true"
+				IsLowerPlusGearExists="false"
+				IsLowerMinusGearExists="false"
+			/>
+		</GameData>
+	</Gearbox>
+	<Gearbox
+		AWDConsumptionModifier="1.12"
+		CriticalDamageThreshold="0.87"
+		DamageCapacity="230"
+		DamagedConsumptionModifier="1.17"
+		FuelConsumption="2.6"
+		IdleFuelModifier="0.297"
+		Name="g_derry_savior_special_offroad"
+		MinBreakFreq="0.0"
+		MaxBreakFreq="25.0"
+	>
+		<ReverseGear AngVel="2.09" FuelModifier="2.06" />
+		<HighGear AngVel="4.8" FuelModifier="1.88" />
+		<Gear AngVel="2.09" FuelModifier="2.06" />
+		<Gear AngVel="2.15" FuelModifier="1.93" />
+		<Gear AngVel="2.31" FuelModifier="1.79" />
+		<Gear AngVel="2.63" FuelModifier="1.63" />
+		<Gear AngVel="3.16" FuelModifier="1.46" />
+		<Gear AngVel="3.94" FuelModifier="1.27" />
+		<Gear AngVel="5.03" FuelModifier="1.05" />
+		<Gear AngVel="6.48" FuelModifier="0.75" />
+		<GameData
+			Price="3800"
+			UnlockByExploration="true"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_GEARBOX_SPECIAL_OFFROAD_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_GEARBOX_SPECIAL_OFFROAD_NAME"
+			/>
+			<GearboxParams
+				IsHighGearExists="true"
+				IsLowerGearExists="true"
+				IsLowerPlusGearExists="true"
+				IsLowerMinusGearExists="true"
+			/>
+		</GameData>
+	</Gearbox>
+	<Gearbox
+		AWDConsumptionModifier="1.135"
+		CriticalDamageThreshold="0.65"
+		DamageCapacity="230"
+		DamagedConsumptionModifier="1.171"
+		FuelConsumption="2.6"
+		IdleFuelModifier="0.36"
+		Name="g_derry_savior_special_finetune"
+		MinBreakFreq="0.0"
+		MaxBreakFreq="32.0"
+	>
+		<ReverseGear AngVel="2.09" FuelModifier="1.0" />
+		<HighGear AngVel="4.8" FuelModifier="1.8" />
+		<Gear AngVel="2.09" FuelModifier="1.0" />
+		<Gear AngVel="2.15" FuelModifier="1.0" />
+		<Gear AngVel="2.31" FuelModifier="1.0" />
+		<Gear AngVel="2.63" FuelModifier="1.0" />
+		<Gear AngVel="3.16" FuelModifier="1.0" />
+		<Gear AngVel="3.94" FuelModifier="1.0" />
+		<Gear AngVel="5.03" FuelModifier="1.0" />
+		<Gear AngVel="6.48" FuelModifier="1.0" />
+		<GameData
+			Price="4700"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_GEARBOX_SPECIAL_FINETUNE_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_GEARBOX_SPECIAL_FINETUNE_NAME"
+			/>
+			<GearboxParams
+				IsHighGearExists="true"
+				IsLowerGearExists="true"
+				IsLowerPlusGearExists="true"
+				IsManualLowGear="true"
+				IsLowerMinusGearExists="true"
+			/>
+		</GameData>
+	</Gearbox>
+</GearboxVariants>

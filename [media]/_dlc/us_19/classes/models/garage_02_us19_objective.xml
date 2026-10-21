@@ -1,0 +1,191 @@
+<ModelBrand
+	NightLightingShadowsAllowCap="true"
+	DayShadowOffsetMult="17"
+>
+
+<Subset IsDefault="true" Name="stage_00">
+		<Mesh Name="build_start" />
+		<Mesh Name="state_01_off" />
+        <Mesh Name="state_01_off_lod1" />
+        <Mesh Name="state_01_off_lod2" />
+        <Mesh Name="state_01_off_lod3" />
+		<Mesh Name="state_02_off" />
+        <Mesh Name="state_02_off_lod1" />
+        <Mesh Name="state_02_off_lod2" />
+        <Mesh Name="state_02_off_lod3" />
+		<Mesh Name="state_03_off" />
+        <Mesh Name="state_03_off_lod1" />
+        <Mesh Name="state_03_off_lod2" />
+        <Mesh Name="state_03_off_lod3" />
+		<Mesh Name="state_static" />
+        <Mesh Name="state_static_lod1" />
+        <Mesh Name="state_static_lod2" />
+        <Mesh Name="state_static_lod3" />
+		<CdtMesh Name="cdt_build_start" />
+	</Subset>
+
+	<Subset Name="stage_01">
+		<OnSubsetActivateEvent>
+		<Sound Name="actors/actor_construction/actor_construct_oil_03" Pos="(0; 0; 0)" Volume="1" Range="20"/>
+		<Sound Name="actors/actor_construction/actor_construct_high_tower_01_rus" Pos="(0; 0; 0)" Volume="1" Range="20"/>
+        <SFX Name="stone_smoke_01" Dir="(0; 1; 0)" Pos="(-8.090; 0.370; -17.672)" />
+        <SFX Name="stone_smoke_01" Dir="(0; 1; 0)" Pos="(0.169; 0.569; -16.121)" />
+        <SFX Name="stone_smoke_01" Dir="(0; 1; 0)" Pos="(6.504; 0.539; -12.091)" />
+        <SFX Name="stone_smoke_01" Dir="(0; 1; 0)" Pos="(3.703; 2.379; -16.107)" />
+        <SFX Name="stone_smoke_01" Dir="(0; 1; 0)" Pos="(-5.868; 2.786; -18.417)" />
+        <SFX Name="stone_smoke_01" Dir="(0; 1; 0)" Pos="(2.303; 2.773; -17.969)" />
+        <SFX Name="stone_smoke_01" Dir="(0; 1; 0)" Pos="(8.329; 2.885; -17.357)" />
+        <SFX Name="stone_smoke_01" Dir="(0; 1; 0)" Pos="(7.967; 2.765; -11.242)" />
+        <SFX Name="bridge_sparks_01" Dir="(0; 1; 0)" Pos="(7.479; 4.220; -8.855)" />
+        <SFX Name="bridge_sparks_01" Dir="(0; 1; 0)" Pos="(7.479; 4.220; -8.855)" />
+        <SFX Name="bridge_sparks_01" Dir="(0; 1; 0)" Pos="(7.479; 4.220; -11.210)" />
+        <SFX Name="bridge_sparks_01" Dir="(0; 1; 0)" Pos="(7.479; 4.220; -15.869)" />
+        <SFX Name="bridge_sparks_01" Dir="(0; 1; 0)" Pos="(7.479; 4.220; -17.874)" />
+        <SFX Name="bridge_sparks_01" Dir="(0; 1; 0)" Pos="(5.787; 4.220; -17.874)" />
+        <SFX Name="bridge_sparks_01" Dir="(0; 1; 0)" Pos="(1.091; 4.220; -17.874)" />
+        <SFX Name="bridge_sparks_01" Dir="(0; 1; 0)" Pos="(-2.140; 4.220; -17.874)" />
+        <SFX Name="bridge_sparks_01" Dir="(0; 1; 0)" Pos="(-5.477; 4.220; -17.874)" />
+		</OnSubsetActivateEvent>
+		<Mesh Name="build_start" />
+		<Mesh Name="state_01" />
+        <Mesh Name="state_01_lod1" />
+        <Mesh Name="state_01_lod2" />
+		<Mesh Name="state_02_off" />
+        <Mesh Name="state_02_off_lod1" />
+        <Mesh Name="state_02_off_lod2" />
+        <Mesh Name="state_02_off_lod3" />
+		<Mesh Name="state_03_off" />
+        <Mesh Name="state_03_off_lod1" />
+        <Mesh Name="state_03_off_lod2" />
+        <Mesh Name="state_03_off_lod3" />
+		<Mesh Name="state_static" />
+        <Mesh Name="state_static_lod1" />
+        <Mesh Name="state_static_lod2" />
+        <Mesh Name="state_static_lod3" />
+		<CdtMesh Name="cdt_state_01" />
+	</Subset>
+
+	<Subset Name="stage_02">
+		<OnSubsetActivateEvent>
+		<Sound Name="actors/actor_construction/actor_construct_oil_03" Pos="(0; 0; 0)" Volume="1" Range="20"/>
+		<Sound Name="actors/actor_construction/actor_construct_high_tower_01_rus" Pos="(0; 0; 0)" Volume="1" Range="20"/>
+        <SFX Name="stone_smoke_01" Dir="(0; 1; 0)" Pos="(7.058; 10.078; -8.583)" />
+        <SFX Name="stone_smoke_01" Dir="(0; 1; 0)" Pos="(-18.594; 0.368; -16.724)" />
+        <SFX Name="stone_smoke_01" Dir="(0; 1; 0)" Pos="(7.070; -0.174; -5.165)" />
+        <SFX Name="stone_smoke_01" Dir="(0; 1; 0)" Pos="(6.787; 0.751; 2.033)" />
+        <SFX Name="stone_smoke_01" Dir="(0; 1; 0)" Pos="(-17.269; 0.751; 2.033)" />
+        <SFX Name="stone_smoke_01" Dir="(0; 1; 0)" Pos="(-10.776; 10.024; -16.622)" />
+        <SFX Name="stone_smoke_01" Dir="(0; 1; 0)" Pos="(-19.004; 9.127; -7.274)" />
+        <SFX Name="stone_smoke_01" Dir="(0; 1; 0)" Pos="(-18.938; 9.044; -16.689)" />
+        <SFX Name="stone_smoke_01" Dir="(0; 1; 0)" Pos="(-18.437; 0.532; -12.632)" />
+        <SFX Name="stone_smoke_01" Dir="(0; 1; 0)" Pos="(-18.870; 5.274; -11.467)" />
+        <SFX Name="stone_smoke_01" Dir="(0; 1; 0)" Pos="(-18.457; 3.718; -14.341)" />
+        <SFX Name="stone_smoke_01" Dir="(0; 1; 0)" Pos="(-15.549; 0.970; -17.283)" />
+        <SFX Name="stone_smoke_01" Dir="(0; 1; 0)" Pos="(-15.924; 5.320; -16.622)" />
+        <SFX Name="stone_smoke_01" Dir="(0; 1; 0)" Pos="(3.306; 5.253; -16.897)" />
+        <SFX Name="stone_smoke_01" Dir="(0; 1; 0)" Pos="(7.086; 9.633; -16.717)" />
+        <SFX Name="stone_smoke_01" Dir="(0; 1; 0)" Pos="(1.742; 8.793; -16.810)" />
+        <SFX Name="stone_smoke_01" Dir="(0; 1; 0)" Pos="(1.742; 8.793; -16.810)" />
+        <SFX Name="stone_smoke_01" Dir="(0; 1; 0)" Pos="(-6.308; 8.102; -17.151)" />
+        <SFX Name="stone_smoke_01" Dir="(0; 1; 0)" Pos="(8.981; 5.938; -15.565)" />
+        <SFX Name="stone_smoke_01" Dir="(0; 1; 0)" Pos="(7.058; 10.078; -11.977)" />
+        <SFX Name="stone_smoke_01" Dir="(0; 1; 0)" Pos="(6.605; 2.436; -6.938)" />
+        <SFX Name="stone_smoke_01" Dir="(0; 1; 0)" Pos="(6.605; 7.160; -12.032)" />
+        <SFX Name="stone_smoke_01" Dir="(0; 1; 0)" Pos="(6.522; 7.251; -8.632)" />
+        <SFX Name="bridge_sparks_01" Dir="(0; 1; 0)" Pos="(6.165; 4.744; -0.234)" />
+        <SFX Name="bridge_sparks_01" Dir="(0; 1; 0)" Pos="(6.165; 4.744; 4.705)" />
+        <SFX Name="bridge_sparks_01" Dir="(0; 1; 0)" Pos="(-17.667; 4.741; 4.580)" />
+        <SFX Name="bridge_sparks_01" Dir="(0; 1; 0)" Pos="(-17.667; 4.741; -0.370)" />
+        <SFX Name="bridge_sparks_01" Dir="(0; 1; 0)" Pos="(-18.835; 9.048; -4.731)" />
+        <SFX Name="bridge_sparks_01" Dir="(0; 1; 0)" Pos="(-18.835; 9.048; -6.891)" />
+        <SFX Name="bridge_sparks_01" Dir="(0; 1; 0)" Pos="(-18.835; 9.048; -10.513)" />
+        <SFX Name="bridge_sparks_01" Dir="(0; 1; 0)" Pos="(-18.835; 9.048; -14.457)" />
+        <SFX Name="bridge_sparks_01" Dir="(0; 1; 0)" Pos="(-18.835; 9.048; -16.600)" />
+        <SFX Name="bridge_sparks_01" Dir="(0; 1; 0)" Pos="(-13.860; 9.048; -16.600)" />
+        <SFX Name="bridge_sparks_01" Dir="(0; 1; 0)" Pos="(-9.122; 9.048; -16.600)" />
+        <SFX Name="bridge_sparks_01" Dir="(0; 1; 0)" Pos="(-15.924; 5.263; -16.929)" />
+        <SFX Name="bridge_sparks_01" Dir="(0; 1; 0)" Pos="(-15.924; 5.263; -16.929)" />
+        <SFX Name="bridge_sparks_01" Dir="(0; 1; 0)" Pos="(-9.115; 0.532; -16.572)" />
+        <SFX Name="bridge_sparks_01" Dir="(0; 1; 0)" Pos="(-14.206; 4.333; -16.929)" />
+        <SFX Name="bridge_sparks_01" Dir="(0; 1; 0)" Pos="(-10.776; 6.287; -16.929)" />
+        <SFX Name="bridge_sparks_01" Dir="(0; 1; 0)" Pos="(6.605; 1.533; -5.187)" />
+        <SFX Name="bridge_sparks_01" Dir="(0; 1; 0)" Pos="(6.975; 0.547; -6.881)" />
+        <SFX Name="bridge_sparks_01" Dir="(0; 1; 0)" Pos="(6.605; 10.080; -5.241)" />
+        <SFX Name="bridge_sparks_01" Dir="(0; 1; 0)" Pos="(6.605; 10.024; -10.332)" />
+        <SFX Name="bridge_sparks_01" Dir="(0; 1; 0)" Pos="(6.569; 9.170; -15.369)" />
+        <SFX Name="bridge_sparks_01" Dir="(0; 1; 0)" Pos="(6.975; 5.263; -6.941)" />
+        <SFX Name="bridge_sparks_01" Dir="(0; 1; 0)" Pos="(6.975; 5.263; -10.335)" />
+        <SFX Name="bridge_sparks_01" Dir="(0; 1; 0)" Pos="(6.477; 4.869; -13.800)" />
+		</OnSubsetActivateEvent>
+		<Mesh Name="build_start" />
+		<Mesh Name="state_01" />
+        <Mesh Name="state_01_lod1" />
+        <Mesh Name="state_01_lod2" />
+		<Mesh Name="state_02" />
+        <Mesh Name="state_02_lod1" />
+        <Mesh Name="state_02_lod2" />
+        <Mesh Name="state_02_lod3" />
+		<Mesh Name="state_03_off" />
+        <Mesh Name="state_03_off_lod1" />
+        <Mesh Name="state_03_off_lod2" />
+        <Mesh Name="state_03_off_lod3" />
+		<Mesh Name="state_static" />
+        <Mesh Name="state_static_lod1" />
+        <Mesh Name="state_static_lod2" />
+        <Mesh Name="state_static_lod3" />
+		<CdtMesh Name="cdt_state_02" />
+	</Subset>
+
+	<Subset Name="stage_03">
+		<OnSubsetActivateEvent>
+		<Sound Name="actors/actor_construction/actor_construct_oil_03" Pos="(0; 0; 0)" Volume="1" Range="20"/>
+		<Sound Name="actors/actor_construction/actor_construct_high_tower_01_rus" Pos="(0; 0; 0)" Volume="1" Range="20"/>
+        <SFX Name="bridge_sparks_01" Dir="(0; 1; 0)" Pos="(7.025; 5.320; 24.360)" />
+        <SFX Name="bridge_sparks_01" Dir="(0; 1; 0)" Pos="(7.025; 5.320; 21.592)" />
+        <SFX Name="bridge_sparks_01" Dir="(0; 1; 0)" Pos="(7.025; 5.320; 15.763)" />
+        <SFX Name="bridge_sparks_01" Dir="(0; 1; 0)" Pos="(7.025; 5.320; 11.508)" />
+        <SFX Name="bridge_sparks_01" Dir="(0; 1; 0)" Pos="(7.025; 5.320; 7.126)" />
+        <SFX Name="bridge_sparks_01" Dir="(0; 1; 0)" Pos="(7.025; 5.320; 0.852)" />
+        <SFX Name="bridge_sparks_01" Dir="(0; 1; 0)" Pos="(7.025; 5.320; -3.446)" />
+        <SFX Name="bridge_sparks_01" Dir="(0; 1; 0)" Pos="(-18.526; 5.320; -1.427)" />
+        <SFX Name="bridge_sparks_01" Dir="(0; 1; 0)" Pos="(-18.526; 5.320; 5.027)" />
+        <SFX Name="bridge_sparks_01" Dir="(0; 1; 0)" Pos="(-18.526; 5.320; 9.434)" />
+        <SFX Name="bridge_sparks_01" Dir="(0; 1; 0)" Pos="(-18.526; 5.320; 13.510)" />
+        <SFX Name="bridge_sparks_01" Dir="(0; 1; 0)" Pos="(-18.526; 5.320; 17.882)" />
+        <SFX Name="bridge_sparks_01" Dir="(0; 1; 0)" Pos="(-18.526; 5.320; 22.078)" />
+        <SFX Name="stone_smoke_01" Dir="(0; 1; 0)" Pos="(-18.548; 6.630; 24.256)" />
+        <SFX Name="stone_smoke_01" Dir="(0; 1; 0)" Pos="(-18.165; 6.827; -3.682)" />
+        <SFX Name="stone_smoke_01" Dir="(0; 1; 0)" Pos="(6.666; 6.901; -3.335)" />
+        <SFX Name="stone_smoke_01" Dir="(0; 1; 0)" Pos="(7.126; 5.760; 24.248)" />
+        <SFX Name="stone_smoke_01" Dir="(0; 1; 0)" Pos="(-18.144; 2.706; 22.072)" />
+        <SFX Name="stone_smoke_01" Dir="(0; 1; 0)" Pos="(-19.140; 2.693; 12.073)" />
+        <SFX Name="stone_smoke_01" Dir="(0; 1; 0)" Pos="(6.789; 2.486; 22.534)" />
+        <SFX Name="stone_smoke_01" Dir="(0; 1; 0)" Pos="(7.588; 3.135; 11.706)" />
+		</OnSubsetActivateEvent>
+		<Mesh Name="state_01" />
+        <Mesh Name="state_01_lod1" />
+        <Mesh Name="state_01_lod2" />
+		<Mesh Name="state_02" />
+        <Mesh Name="state_02_lod1" />
+        <Mesh Name="state_02_lod2" />
+        <Mesh Name="state_02_lod3" />
+		<Mesh Name="state_03" />
+        <Mesh Name="state_03_lod1" />
+        <Mesh Name="state_03_lod2" />
+        <Mesh Name="state_03_lod3" />
+		<Mesh Name="state_static" />
+        <Mesh Name="state_static_lod1" />
+        <Mesh Name="state_static_lod2" />
+        <Mesh Name="state_static_lod3" />
+		<CdtMesh Name="cdt_state_03" />
+	</Subset>
+
+<PhysicsModel>
+		<Body Collisions="Dynamic" ModelFrame="build_start">
+			<Body Collisions="Dynamic" ModelFrame="state_01" />
+			<Body Collisions="Dynamic" ModelFrame="state_02" />
+			<Body Collisions="Dynamic" ModelFrame="state_03" />
+		</Body>
+	</PhysicsModel>
+	<Landmark Mesh="landmarks/garage_02_us19_objective_lmk" />
+</ModelBrand>

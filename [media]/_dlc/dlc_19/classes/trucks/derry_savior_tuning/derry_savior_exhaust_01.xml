@@ -1,0 +1,34 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<TruckData>
+		<Shakers>
+			<Shaker Frame="BoneShaker" MinAngle="(0.15; 0.15; 0.15)" MaxAngle="(0.3; 0.3; 0.3)" MaxFrequency="3.9" ParentFrame="BoneAddon_cdt" />
+		</Shakers>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/derry_savior_tuning/derry_savior_exhaust_01">
+		<Body ImpactType="Truck" Mass="15" ModelFrame="BoneAddon_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="cab_back_addon"
+		Category="exhaust"
+		Price="1500"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_EXHAUST_HEATSHIELD_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_EXHAUST_HEATSHIELD_NAME"
+		/>
+		<InstallSocket Type="DerrySaviorExhaust" />
+	</GameData>
+	<Exhaust
+		Dir="(-1.0; 1.0; -1.0)"
+		IsLight="false"
+		Origin="(1.625; 3.612; -1.215)"
+		Speed="2.2"
+	/>
+</TruckAddon>

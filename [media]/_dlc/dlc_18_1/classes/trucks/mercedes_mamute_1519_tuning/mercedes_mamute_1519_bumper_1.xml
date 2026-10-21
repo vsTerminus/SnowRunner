@@ -33,14 +33,14 @@
 	</PhysicsModel>
 	<ModelAttachments>
 		<Ignition>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.031; 2.029; -0.259)" Dir="(1; 0; 0)" Size=".2" ColorMultAtDay="0.25"/>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.031; 2.029; 0.259)" Dir="(1; 0; 0)" Size=".2" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(4.031; 2.029; -0.259)" Dir="(1; 0; 0)" Size=".2" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(4.031; 2.029; 0.259)" Dir="(1; 0; 0)" Size=".2" ColorMultAtDay="0.25"/>
 		</Ignition>
 		<HeadLight>
 			<Model _template="HeadLightRay" Org="(4.031; 2.029; -0.259)" ColorMultAtDay="0.3"/>
 			<Model _template="HeadLightRay" Org="(4.031; 2.029; 0.259)" ColorMultAtDay="0.3"/>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.031; 2.029; -0.259)" Dir="(1; 0; 0)" Size=".36" ColorMultAtDay="0.25"/>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.031; 2.029; 0.259)" Dir="(1; 0; 0)" Size=".36" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(4.031; 2.029; -0.259)" Dir="(1; 0; 0)" Size=".36" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(4.031; 2.029; 0.259)" Dir="(1; 0; 0)" Size=".36" ColorMultAtDay="0.25"/>
 		</HeadLight>
 	</ModelAttachments>
 	<GameData

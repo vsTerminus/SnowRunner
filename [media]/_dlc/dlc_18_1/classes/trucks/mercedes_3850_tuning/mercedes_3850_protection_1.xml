@@ -19,9 +19,9 @@
 			<Model _template="HeadLightRay" Org="(2.856; 3.089; 0)" ColorMultAtDay="0.3"/>
 		</HeadLight>
 		<HeadLight>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(2.856; 3.089; -0.278)" Dir="(1; 0; 0)" Size=".36" ColorMultAtDay="0.25"/>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(2.856; 3.089; 0.278)" Dir="(1; 0; 0)" Size=".36" ColorMultAtDay="0.25"/>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(2.856; 3.089; 0)" Dir="(1; 0; 0)" Size=".36" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(2.856; 3.089; -0.278)" Dir="(1; 0; 0)" Size=".36" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(2.856; 3.089; 0.278)" Dir="(1; 0; 0)" Size=".36" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(2.856; 3.089; 0)" Dir="(1; 0; 0)" Size=".36" ColorMultAtDay="0.25"/>
 		</HeadLight>
 		<Ignition _template="Flasher">
 			<Model

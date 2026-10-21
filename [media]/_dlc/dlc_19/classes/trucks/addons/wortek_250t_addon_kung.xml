@@ -1,0 +1,114 @@
+<_templates Include="trucks">
+	<Body>
+		<Top Collisions="None" Mass="10">
+			<Constraint
+				Type="Fixed"
+				LinearLimitsY="(-0.5; 0.03)"
+			>
+				<Motor Damping="10.5" Spring="2450" Type="Spring" />
+			</Constraint>
+		</Top>
+		<Side Collisions="None" Mass="20" >
+			<Constraint
+				Type="Fixed"
+				LinearLimitsX="(-0.04; 0.04)"
+				LinearLimitsY="(-0.01; 0.01)"
+				LinearLimitsZ="(-0.05; 0.05)"
+			>
+				<Motor Damping="0.1" Spring="3" Type="Spring" />
+			</Constraint>
+		</Side>
+		<Rear Collisions="None" Mass="50">
+			<Constraint
+				Type="Hinge"
+				AxisLocal="(0; 0; 1)"
+				MinLimit="-3"
+				MaxLimit="3"
+			>
+				<Motor Damping="220" Spring="2850" Type="Spring" />
+			</Constraint>
+		</Rear>
+		<Roll Collisions="None" Mass="50" CenterOfMassOffset="(0; -0.1; 0)">
+			<Constraint
+				Type="Hinge"
+				AxisLocal="(1; 0; 0)"
+				MinLimit="-15"
+				MaxLimit="0"
+			>
+				<Motor Damping="2.5" Spring="250" Type="Spring" />
+			</Constraint>
+		</Roll>
+		
+		<Canister Collisions="None" Mass="10">
+			<Constraint
+				Type="Hinge"
+				MinLimit="-1.5"
+				MaxLimit="1.5"
+			>
+				<Motor Damping="15" Spring="300" Type="Spring" />
+			</Constraint>
+		</Canister>
+	</Body>
+</_templates>
+<TruckAddon IsChassisFullOcclusion="true">
+	<TruckData
+		FuelCapacity="160"
+		RepairsCapacity="600"
+	/>
+	<FuelHide>
+		<Mesh Frame="fuel1_kung" HideThreshold="0.5" />
+		<Mesh Frame="fuel2_kung" HideThreshold="0.0" />
+	</FuelHide>
+	<RepairsHide>
+		<Mesh Frame="repair1_kung" HideThreshold="0.5" />
+		<Mesh Frame="repair2_kung" HideThreshold="0.0" />
+	</RepairsHide>
+	<PhysicsModel Mesh="trucks/addons/wortek_250t_addon_kung">
+		<Body Mass="600" CenterOfMassOffset="(0; -0.5; 0)">
+			<Constraint Type="Rigid" />
+			<Body _template="Rear" ModelFrame="BoneTentRight_cdt" >
+				<Constraint	AxisLocal="(1; 0; 0)" />
+			</Body>
+			<Body _template="Rear" ModelFrame="BoneTentLeft_cdt" >
+				<Constraint	AxisLocal="(1; 0; 0)" />
+			</Body>
+			<Body _template="Roll" ModelFrame="BoneTentLeftRolled_cdt" />
+			<Body _template="Top" ModelFrame="BoneTentTop_cdt" />
+			<Body _template="Rear" ModelFrame="BoneTentRear_cdt" />
+			
+			<Body _template="Canister" ModelFrame="BoneCanister1_cdt" >
+				<Constraint	AxisLocal="(0; 0; 1)" />
+			</Body>
+			<Body _template="Canister" ModelFrame="BoneCanister2_cdt" >
+				<Constraint	AxisLocal="(1; 0; 0)" />
+			</Body>
+			
+			<Body ModelFrame="BoneBox1_cdt" Collisions="None" Mass="10">
+				<Constraint
+					AxisLocal="(0; 1; 0)"
+					Type="Hinge"
+					MinLimit="-2.2"
+					MaxLimit="4"
+				>
+					<Motor Damping="150" Spring="20" Type="Spring" />
+				</Constraint>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="addon_1"
+		Category="frame_addons"
+		IsCustomizable="true"
+		Price="5400"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_ADDON_CANVAS_COVERED_BODY_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_ADDON_CANVAS_COVERED_BODY_NAME"
+		/>
+		<InstallSocket Type="Wortek250TFrameModuleKung" />
+	</GameData>
+</TruckAddon>

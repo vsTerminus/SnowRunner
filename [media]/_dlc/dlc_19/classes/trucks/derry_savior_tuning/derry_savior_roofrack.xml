@@ -1,0 +1,36 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<TruckData
+		FuelCapacity="140"
+		RepairsCapacity="150"
+	/>
+	<RepairsHide>
+		<Mesh Frame="repair1" HideThreshold="0.0" />
+	</RepairsHide>
+	<FuelHide>
+		<Mesh Frame="fuel4" HideThreshold="0.72" />
+		<Mesh Frame="fuel3" HideThreshold="0.44" />
+		<Mesh Frame="fuel2" HideThreshold="0.30" />
+		<Mesh Frame="fuel1" HideThreshold="0.0" />
+	</FuelHide>
+	<PhysicsModel Mesh="trucks/derry_savior_tuning/derry_savior_roofrack" >
+		<Body ImpactType="Truck" Mass="20" ModelFrame="BoneAddon_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="roof"
+		Category="frame_addons"
+		Price="2600"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SCOUT_TRUNK_SUPPLIES_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SCOUT_TRUNK_SUPPLIES_NAME"
+		/>
+		<InstallSocket Type="DerrySaviorRoofrack" />
+	</GameData>
+</TruckAddon>

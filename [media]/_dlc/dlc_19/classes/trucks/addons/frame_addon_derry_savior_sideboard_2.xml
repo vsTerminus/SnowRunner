@@ -1,0 +1,82 @@
+<_templates Include="trucks" />
+<TruckAddon IsChassisFullOcclusion="true">
+	<TruckData 
+		FuelCapacity="300"
+		RepairsCapacity="200"
+	>
+		<LimitedFluid Center="(0.828, 1.989, -0.313)" SizeX="0.864" SizeY="0.427" SizeZ="1.373" Type="Box" ParentFrame="BoneRoot_cdt" />
+	</TruckData>
+	<PhysicsModel Mesh="trucks/addons/frame_addon_derry_savior_sideboard_2">
+		<Body Mass="800" ModelFrame="BoneRoot_cdt" >
+			<Constraint Type="Rigid" />	
+			<Body Mass="10" ModelFrame="BoneHooksL_cdt" Collisions="None">
+				<Constraint
+					AxisLocal="(-1; 0; 0)"
+					Type="Hinge"
+					MinLimit="0"
+					MaxLimit="180"
+				/>
+			</Body>
+			<Body Mass="10" ModelFrame="BoneHooksR_cdt" Collisions="None">
+				<Constraint
+					AxisLocal="(1; 0; 0)"
+					Type="Hinge"
+					MinLimit="0"
+					MaxLimit="180"
+				/>
+			</Body>
+			<Body Mass="10" ModelFrame="BoneHose02_cdt" Collisions="None">
+				<Constraint
+					AxisLocal="(1; 0; 0)"
+					Type="Hinge"
+					MinLimit="-20"
+					MaxLimit="23"
+				>
+					<Motor Type="Spring" Spring="100" Damping="0.5"/>
+				</Constraint>
+			</Body>
+			<Body Mass="10" ModelFrame="BoneHose01_cdt" Collisions="None">
+				<Constraint
+					AxisLocal="(1; 0; 0)"
+					Type="Hinge"
+					MinLimit="-8"
+					MaxLimit="8"
+				>
+					<Motor Type="Spring" Spring="25" Damping="1.0"/>
+				</Constraint>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<StopSignals>
+			<Light _template="StopSignal" Dir="(-1; -0.1; 0)" Pos="(-4.916; 1.433; 0)" />
+			<Flare _template="StopSignal" Dir="(-1; 0; 0)" Pos="(-4.916; 1.433; 1.186)" Size="0.4" />
+			<Flare _template="StopSignal" Dir="(-1; 0; 0)" Pos="(-4.916; 1.433; -1.186)" Size="0.4" />
+		</StopSignals>
+		<Ignition>
+			<Light _template="StopSignal" Dir="(-1; -0.1; 0)" Pos="(-4.916; 1.433; 0)" />
+			<Flare _template="StopSignal" Dir="(-1; 0; 0)" Pos="(-4.916; 1.433; 1.186)" Size="0.4" />
+			<Flare _template="StopSignal" Dir="(-1; 0; 0)" Pos="(-4.916; 1.433; -1.186)" Size="0.4" />
+			
+			<Flare _template="IgnitionSignalOrange" Dir="(0; 0; -1)" Size="0.15" Pos="(-4.643; 1.464; -1.366)" />
+			<Flare _template="IgnitionSignalOrange" Dir="(0; 0; 1)" Size="0.15" Pos="(-4.643; 1.464; 1.366)" />
+		</Ignition>
+	</ModelAttachments>
+	<GameData
+		CameraPreset="addon_1"
+		Category="frame_addons"
+		IsCustomizable="true"
+		Price="9800"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_ADDON_FRAME_SIDEBOARD_2_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_ADDON_FRAME_SIDEBOARD_2_NAME"
+		/>
+		<InstallSocket Type="FrameAddonDerrySavior" />
+		<AddonSlots InitialOffset="(-1.016; 1.76; 0.000)" OffsetStep="(-2.518; 0; 0)" Quantity="2" />
+	</GameData>
+</TruckAddon>

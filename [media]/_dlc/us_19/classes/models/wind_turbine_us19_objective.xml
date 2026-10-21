@@ -1,0 +1,41 @@
+<ModelBrand
+    DayShadowOffsetMult="17"
+	DynamicModel="true"
+	NightLightingShadowsAllowCap="true"
+	
+>
+	<Subset IsDefault="true" Name="state_start">
+		<Mesh Name="state_00" />
+		<Mesh Name="state_00_lod1" />
+		<Mesh Name="state_00_lod2" />
+		<Mesh Name="state_00_lod3" />
+		<CdtMesh Name="cdt_state_00" />
+		<Mesh Name="state_01" />
+		<Mesh Name="state_01_lod1" />
+		<Mesh Name="state_01_lod2" />
+		<Mesh Name="state_01_lod3" />
+	</Subset>
+	<Subset Name="state_end">
+		<OnSubsetActivateEvent>
+			<Sound Name="actors/actor_wind_turbine/actor_wind_turbine_04_loop" FadeInTime="1.5" FadeOutTime="1.0" RangeMin="30" RangeMax="150" IsLoop="true"/>
+		</OnSubsetActivateEvent>
+		<Mesh Name="state_00" />
+		<Mesh Name="state_00_lod1" />
+		<Mesh Name="state_00_lod2" />
+		<Mesh Name="state_00_lod3" />
+		<CdtMesh Name="cdt_state_00" />
+		<Mesh Name="state_01" />
+		<Mesh Name="state_01_lod1" />
+		<Mesh Name="state_01_lod2" />
+		<Mesh Name="state_01_lod3" />
+		<AnimTrackSubset Name="anim_loop" />
+	</Subset>
+	
+	<PhysicsModel>
+		<Body Collisions="Dynamic" ModelFrame="state_00">
+		</Body>
+	</PhysicsModel>
+
+	<Landmark Mesh="landmarks/wind_turbine_us19_lmk" />
+	
+</ModelBrand>

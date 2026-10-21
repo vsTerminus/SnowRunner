@@ -1,0 +1,35 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<TruckData>
+		<Shakers>
+			<Shaker Frame="BoneExhaustR" MinAngle="(0.3; 0.3; 0.3)" MaxAngle="(1; 1; 1)" MaxFrequency="3.9" ParentFrame="BoneCabin_cdt" />
+			<Shaker Frame="BoneExhaustL" MinAngle="(0.3; 0.3; 0.3)" MaxAngle="(1; 1; 1)" MaxFrequency="3.9" ParentFrame="BoneCabin_cdt" />
+		</Shakers>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/wortek_250t_tuning/wortek_250t_exhaust_default">
+		<Body Collisions="None" Mass="20" ModelFrame="BoneRoot_cdt">
+			<Constraint Type="Rigid" />
+			<Body Collisions="None" Mass="10" ModelFrame="BoneCabin_cdt">
+				<Constraint ExplicitParentFrame="0" Type="Fixed" />
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="exhaust_0"
+		Category="exhaust"
+		Price="1000"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_EXHAUST_DEFAULT_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_EXHAUST_DEFAULT_NAME"
+		/>
+		<!--<RequiredAddonType Type="Wortek250TExhaust" />-->
+		<InstallSocket Type="Wortek250TExhaustDefault" />
+	</GameData>
+	<Exhaust Dir="(-0.3; 0; 1)" IsLight="false" Origin="(-0.793; 0.482; 1.438)" Speed="2.5" />
+	<Exhaust Dir="(-0.3; 0; -1)" IsLight="false" Origin="(-0.793; 0.482; -1.438)" Speed="2.5" />
+</TruckAddon>

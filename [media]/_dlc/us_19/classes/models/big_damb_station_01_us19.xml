@@ -1,0 +1,12 @@
+<ModelBrand 
+	Instanced="true"
+	InstancedAsModel="true"
+	NightLightingShadowsAllowCap="true"
+>
+	<PhysicsModel>
+		<Body
+			Collisions="Dynamic"
+		/>
+	</PhysicsModel>
+	<Landmark Mesh="landmarks/big_damb_station_01_us19_lmk" />
+</ModelBrand>

@@ -32,7 +32,4 @@
 			Texture="sfx/flare_lamp_01__s_d.tga"
 		/>
 	</PhysicsModel>
-	<GameData>
-		<WinchSocket Pos="(0; 0.8; 0)" />
-	</GameData>
 </ModelBrand>

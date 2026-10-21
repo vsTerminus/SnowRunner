@@ -1,0 +1,24 @@
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/wortek_250t_tuning/wortek_250t_frame_default">
+		<Body Mass="100">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="addon_1"
+		Category="frame_addons"
+		Price="4000"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<WinchSocket Pos="(-4.163; 1.123; 0.000)" />
+		<CraneSocket Pos="(-4.163; 1.123; 0.000)" />
+		<UiDesc
+			UiDesc="UI_TUNING_FRAME_DEFAULT_NAME"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_FRAME_DEFAULT_DESC"
+		/>
+		<InstallSocket Type="Wortek250TFrameDefault" />
+	</GameData>
+</TruckAddon>

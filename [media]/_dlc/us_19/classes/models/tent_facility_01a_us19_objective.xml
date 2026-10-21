@@ -1,0 +1,49 @@
+<ModelBrand 
+	NightLightingShadowsAllowCap="true" DayShadowOffsetMult="17" DynamicModel="true"
+	>
+
+    <Subset IsDefault="true" Name="stage_00">
+		<Mesh Name="state_00" />
+		<CdtMesh Name="cdt_state_00" />
+    </Subset>
+	
+	<Subset Name="stage_01">
+		<OnSubsetActivateEvent>
+			<Sound Name="actors/actor_construction/actor_construct_wooden_power_line" Pos="(0; 0; 0)" Volume="0.5" Range="20"/>
+        	<SFX Name="stone_smoke_01" Dir="(0; 1; 0)" Pos="(0; 0; 0)" />
+		</OnSubsetActivateEvent>
+        <Mesh Name="state_01" />
+		<CdtMesh Name="cdt_state_01" />
+	</Subset>
+
+	<Subset Name="stage_02">
+        <Mesh Name="state_02" />
+		<Mesh Name="state_02_lod1" />
+		<Mesh Name="state_02_lod2" />
+		<Mesh Name="state_02_lod3" />
+		<CdtMesh Name="cdt_state_02" />
+		<AnimTrack Name="anim_track_01" />
+		<AnimSubset Name="build_animation_0" />
+	</Subset>
+	
+	<AnimSubset Name="build_animation_0">
+		<Mesh Name="state_00" />  
+		<CdtMesh Name="cdt_state_00" />
+		<Mesh Name="anim_mesh_01" />
+	</AnimSubset>
+	
+	<TrackEvents TrackName="anim_track_01">
+		<AnimEvent Key="0">
+			<Sound Name="actors/actor_construction/actor_construct_wooden_power_line" Range="20" Volume="0.2"/>
+        	<SFX Name="stone_smoke_01" Dir="(0; 1; 0)" Pos="(0; 0; 0)" />
+		</AnimEvent>
+	</TrackEvents>
+
+	<PhysicsModel>
+		<Body Collisions="Dynamic" ModelFrame="state_00">
+			<Body Collisions="Dynamic" ModelFrame="state_01"/>
+			<Body Collisions="Dynamic" ModelFrame="state_02"/>
+		</Body>
+	</PhysicsModel>
+	<Landmark Mesh="landmarks/tent_facility_01a_us19_objective_lmk" />
+</ModelBrand>

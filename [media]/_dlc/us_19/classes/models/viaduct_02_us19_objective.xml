@@ -1,0 +1,162 @@
+<ModelBrand 
+	NightLightingShadowsAllowCap="true"
+	DynamicModel="true"
+	ClipCameraBridge="true"
+>
+
+	<Subset IsDefault="true" Name="stage_00">
+		<Mesh Name="scaffold_01" />
+		<Mesh Name="scaffold_01_lod1" />
+		<Mesh Name="scaffold_01_lod2" />
+		<Mesh Name="scaffold_01_lod3" />
+		<Mesh Name="scaffold_02" />
+		<Mesh Name="scaffold_02_lod1" />
+		<Mesh Name="scaffold_02_lod2" />
+		<Mesh Name="scaffold_02_lod3" />
+		<Mesh Name="stuff" />
+		<Mesh Name="stuff_lod1" />
+		<Mesh Name="stuff_lod2" />
+		<Mesh Name="stuff_lod3" />
+		<Mesh Name="roadblock" />
+		<Mesh Name="roadblock_lod1" />
+		<Mesh Name="roadblock_lod2" />
+		<Mesh Name="state_01_inner" />
+		<Mesh Name="state_01_outer" />
+		<Mesh Name="static_01" />
+		<Mesh Name="static_01_lod1" />
+		<Mesh Name="static_01_lod2" />
+		<Mesh Name="static_01_lod3" />
+		<Mesh Name="static_02" />
+		<Mesh Name="static_02_lod1" />
+		<Mesh Name="static_02_lod2" />
+		<Mesh Name="static_02_lod3" />
+		<CdtMesh Name="cdt11" />
+		<CdtMesh Name="cdt12" />
+		<CdtMesh Name="cdt13" />
+		<CdtMesh Name="cdt14" />
+		<CdtMesh Name="cdt15" />
+		<CdtMesh Name="cdt16" />
+	</Subset>
+
+	<Subset Name="stage_01">
+		<Mesh Name="static_01" />
+		<Mesh Name="static_01_lod1" />
+		<Mesh Name="static_01_lod2" />
+		<Mesh Name="static_01_lod3" />
+		<Mesh Name="static_02" />
+		<Mesh Name="static_02_lod1" />
+		<Mesh Name="static_02_lod2" />
+		<Mesh Name="static_02_lod3" />
+		<Mesh Name="roadblock" />
+		<Mesh Name="roadblock_lod1" />
+		<Mesh Name="roadblock_lod2" />
+		<Mesh Name="stuff" />
+		<Mesh Name="stuff_lod1" />
+		<Mesh Name="stuff_lod2" />
+		<Mesh Name="stuff_lod3" />
+		<Mesh Name="state_01_outer" />
+		<Mesh Name="state_02_outer" />
+		<AnimTrack Name="anim_track_01" />
+		<AnimSubset Name="build_animation_0" />
+		<CdtMesh Name="cdt12" />
+		<CdtMesh Name="cdt13" />
+		<CdtMesh Name="cdt14" />
+		<CdtMesh Name="cdt15" />
+		<CdtMesh Name="cdt16" />
+	</Subset>
+
+	<Subset Name="stage_02">
+		<Mesh Name="static_01" />
+		<Mesh Name="static_01_lod1" />
+		<Mesh Name="static_01_lod2" />
+		<Mesh Name="static_01_lod3" />
+		<Mesh Name="static_02" />
+		<Mesh Name="static_02_lod1" />
+		<Mesh Name="static_02_lod2" />
+		<Mesh Name="static_02_lod3" />
+		<Mesh Name="railroad_01" />
+		<Mesh Name="railroad_01_lod1" />
+		<Mesh Name="railroad_01_lod2" />
+		<Mesh Name="state_01_outer" />
+		<Mesh Name="state_02_outer" />
+		<AnimTrack Name="anim_track_02" />
+		<AnimSubset Name="build_animation_1" />
+		<CdtMesh Name="cdt13" />
+		<CdtMesh Name="cdt14" />
+		<CdtMesh Name="cdt15" />
+		<CdtMesh Name="cdt16" />
+	</Subset>
+
+	<AnimSubset Name="build_animation_0">
+		<Mesh Name="static_01" />
+		<Mesh Name="static_01_lod1" />
+		<Mesh Name="static_01_lod2" />
+		<Mesh Name="static_01_lod3" />
+		<Mesh Name="static_02" />
+		<Mesh Name="static_02_lod1" />
+		<Mesh Name="static_02_lod2" />
+		<Mesh Name="static_02_lod3" />
+		<Mesh Name="stuff" />
+		<Mesh Name="stuff_lod1" />
+		<Mesh Name="stuff_lod2" />
+		<Mesh Name="stuff_lod3" />
+		<Mesh Name="roadblock" />
+		<Mesh Name="roadblock_lod1" />
+		<Mesh Name="roadblock_lod2" />
+		<Mesh Name="state_01_inner" />
+		<Mesh Name="state_01_outer" />
+		<Mesh Name="anim_01a" />
+		<Mesh Name="anim_01b" />
+        <Mesh Name="anim_02" />
+		<Mesh Name="anim_03" />
+		<CdtMesh Name="cdt11" />
+		<CdtMesh Name="cdt12" />
+		<CdtMesh Name="cdt13" />
+		<CdtMesh Name="cdt14" />
+		<CdtMesh Name="cdt15" />
+		<CdtMesh Name="cdt16" />
+	</AnimSubset>
+
+	<AnimSubset Name="build_animation_1">
+		<Mesh Name="state_01_outer" />
+		<Mesh Name="state_02_outer" />
+		<Mesh Name="static_01" />
+		<Mesh Name="static_01_lod1" />
+		<Mesh Name="static_01_lod2" />
+		<Mesh Name="static_01_lod3" />
+		<Mesh Name="static_02" />
+		<Mesh Name="static_02_lod1" />
+		<Mesh Name="static_02_lod2" />
+		<Mesh Name="static_02_lod3" />
+		<Mesh Name="anim_04" />
+		<Mesh Name="anim_05" />
+		<CdtMesh Name="cdt12" />
+		<CdtMesh Name="cdt13" />
+		<CdtMesh Name="cdt14" />
+		<CdtMesh Name="cdt15" />
+		<CdtMesh Name="cdt16" />
+	</AnimSubset>
+
+	<TrackEvents TrackName="anim_track_01">
+		<AnimEvent Key="15">
+			<Sound Name="actors/actor_construction/actor_construct_rus_drilling_rig_02_03" Pos="(0; 0; 0)" Volume="1" Range="200"/>
+       	</AnimEvent>
+	</TrackEvents>
+
+	<TrackEvents TrackName="anim_track_02">
+		<AnimEvent Key="1">
+			<Sound Name="actors/actor_construction/bridge_wooden_02_objective" Pos="(0; 0; 0)" Volume="1" Range="200"/>
+       	</AnimEvent>
+	</TrackEvents>
+
+	<PhysicsModel>
+		<Body Collisions="Dynamic" ModelFrame="static_01">
+			<Body Collisions="Dynamic" ModelFrame="static_02" />
+			<Body Collisions="Dynamic" ModelFrame="stuff" />
+			<Body Collisions="Dynamic" ModelFrame="state_01_outer" />
+			<Body Collisions="Dynamic" ModelFrame="scaffold_01" />
+			<Body Collisions="Dynamic" ModelFrame="railroad_01" />
+		</Body>
+	</PhysicsModel>
+	<Landmark Mesh="landmarks/viaduct_02_us19_objective_lmk" />
+</ModelBrand>

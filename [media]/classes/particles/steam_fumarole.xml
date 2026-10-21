@@ -1,0 +1,28 @@
+<CombineParticles
+	AirResistance="512"
+	Wind="(0.5; .5; 0.0)"
+	Gravity="(0.1; -0.03; 0)"
+	AspectRatio="0.7"
+	WindDivergence="1"
+	Orientation="AlignedBillboard"
+	SortingPriority="1"
+	IgnoreShadowmap="true"
+	SoftDepth="10" 
+	ZOffset="1"
+>
+	<Texture		
+		Diffuse="sfx/particles/smoke_atlas__s_d_a.tga"
+		NumFramesX="8"
+		NumFramesY="7"	
+	/>
+	<Size Function="(0.5; 3; 2;)" Median=".5" />
+	<Scale Random="0.1" Value="0.5" />
+	<LifeTime Random="10.0" Value="23.2" />
+	<Color>
+		<Key At="0.0" Value="g(255; 200; 179; 100) x 1.3" />
+		<Key At="0.1" Value="g(255; 200; 179; 5) x 21.7" />
+		<Key At="0.3" Value="g(255; 200; 179; 3) x 15" />
+		<Key At="0.6" Value="g(255; 255; 255; 1) x 5" />
+		<Key At="1.0" Value="g(255; 255; 255; 0) x 10" />
+	</Color>
+</CombineParticles>

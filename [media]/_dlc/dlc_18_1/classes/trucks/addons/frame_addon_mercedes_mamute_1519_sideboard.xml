@@ -91,6 +91,6 @@
 			UiName="UI_ADDON_FRAME_SIDEBOARD_2_NAME"
 		/>
 		<InstallSocket Type="MercedesMamute1519Sideboard" />
-		<AddonSlots InitialOffset="(-0.578; 1.839; 0.000)" OffsetStep="(-2.6; 0; 0)" Quantity="2" />
+		<AddonSlots InitialOffset="(-0.578; 1.85; 0.000)" OffsetStep="(-2.6; 0; 0)" Quantity="2" />
 	</GameData>
 </TruckAddon>

@@ -1,0 +1,11 @@
+<ModelBrand
+	DayShadowOffsetMult="17"
+	NightLightingShadowsAllowCap="true"
+	Instanced="true"
+	InstancedAsModel="true"
+>
+	<PhysicsModel>
+		<Body Collisions="Dynamic" />
+	</PhysicsModel>
+	<Landmark Mesh="landmarks/hangar_01_us19_lmk" />
+</ModelBrand>

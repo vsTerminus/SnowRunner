@@ -1,0 +1,37 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<WheelRepairsHide>
+		<Mesh Frame="wheel" HideThreshold="0.0" />
+	</WheelRepairsHide>
+	<TruckData WheelRepairsCapacity="2" />
+	<PhysicsModel Mesh="trucks/derry_savior_tuning/derry_savior_sparewheel">
+		<Body ImpactType="Truck" Mass="35" ModelFrame="BoneAddon_cdt">
+			<Constraint Type="Rigid" />
+			<Body Mass="50" ModelFrame="BoneWheel_cdt" Collisions="None">
+				<Constraint
+					Type="Hinge"
+					AxisLocal="(1; 0; 0)"
+					MinLimit="-1.0"
+					MaxLimit="1.0"
+				>
+					<Motor Type="Spring" Spring="200" Damping="250" />
+				</Constraint>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="spare_wheel"
+		Category="wheel_addon"
+		Price="1500"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SPARE_WHEELS_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SPARE_WHEELS_NAME"
+		/>
+		<InstallSocket Type="DerrySaviorSparewheel" />
+	</GameData>
+</TruckAddon>

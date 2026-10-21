@@ -8,4 +8,5 @@
 			Collisions="Dynamic"
 		/>
 	</PhysicsModel>
+	<Landmark Mesh="landmarks/container_04_lmk" />
 </ModelBrand>

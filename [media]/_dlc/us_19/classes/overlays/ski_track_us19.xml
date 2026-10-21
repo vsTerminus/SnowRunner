@@ -1,0 +1,16 @@
+<OverlayBrand
+	Texture="overlays/ski_track_01__d_a.tga"
+	TextureRelief="overlays/ski_track_01_relief__d_a.tga"
+	IsWetnessAsIce="true"
+	IsSnow="true"
+>
+	<Prebuild
+		DefaultWidth="14"
+		FlattenPart="1"
+		HeightmapOffset="hmoffset_ski_track_us19__s.tga"
+		SnowmapMask="overlay_ski_track_us19__s_d.tga"
+		LandmarkColor="(100; 90; 80)"
+		LandmarkPart="0.8"
+		Layer="2"
+	/>
+</OverlayBrand>

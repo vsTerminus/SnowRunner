@@ -1,0 +1,11 @@
+<_templates Include="trucks" />
+<TruckWheel
+	_template="Heavy"
+	Mesh="wheels/semitrailer_stepdeck_5_multiaxle"
+	Radius="0.626"
+	Width = "0.808"
+>
+	<WheelTracks _template="DefaultDouble" />
+	<WheelSoftness _template="Stiff" />
+	<WheelFriction _template="Highway" />	
+</TruckWheel>

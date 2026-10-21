@@ -1,0 +1,88 @@
+<ModelBrand
+    DynamicModel="true"
+    NightLightingShadowsAllowCap="true"
+    DayShadowOffsetMult="17"
+>
+	<Subset IsDefault="true" Name="stage_01">
+		<Mesh Name="state_00" />
+		<Mesh Name="state_00_lod1" />
+		<Mesh Name="state_00_lod2" />
+		<Mesh Name="state_00_lod3" />
+		<Mesh Name="state_01" />
+		<Mesh Name="state_01_lod1" />
+		<Mesh Name="state_01_lod2" />
+		<Mesh Name="state_01_lod3" />
+		<Mesh Name="state_03" />
+		<Mesh Name="state_03_lod1" />
+		<Mesh Name="state_03_lod2" />
+		<Mesh Name="state_03_lod3" />
+		<Mesh Name="staff_01" />
+		<Mesh Name="staff_01_lod1" />
+		<Mesh Name="staff_01_lod2" />
+		<Mesh Name="staff_01_lod3" />
+		<Mesh Name="staff_02" />
+		<Mesh Name="staff_02_lod1" />
+		<Mesh Name="staff_02_lod2" />
+		<Mesh Name="staff_02_lod3" />
+		<Mesh Name="staff_03" />
+		<Mesh Name="staff_03_lod1" />
+		<Mesh Name="staff_03_lod2" />
+		<Mesh Name="staff_03_lod3" />
+		<CdtMesh Name="cdt_state_00" />
+	</Subset>
+	<Subset Name="stage_02">
+		<Mesh Name="state_00" />
+		<Mesh Name="state_00_lod1" />
+		<Mesh Name="state_00_lod2" />
+		<Mesh Name="state_00_lod3" />
+		<Mesh Name="state_01" />
+		<Mesh Name="state_01_lod1" />
+		<Mesh Name="state_01_lod2" />
+		<Mesh Name="state_01_lod3" />
+		<Mesh Name="state_04" />
+		<Mesh Name="state_04_lod1" />
+		<Mesh Name="state_04_lod2" />
+		<Mesh Name="state_04_lod3" />
+		<Mesh Name="logo_01" />
+		<Mesh Name="logo_01_lod1" />
+		<Mesh Name="logo_01_lod2" />
+		<Mesh Name="logo_01_lod3" />
+		<CdtMesh Name="cdt_state_01" />
+		<AnimTrack Name="stage_1_anim" />
+		<AnimSubset Name="build_animation_0" />
+	</Subset>
+	<AnimSubset Name="build_animation_0">
+		<Mesh Name="animesh_01" />
+        <Mesh Name="animesh_02" />
+		<Mesh Name="animesh_03" />
+		<Mesh Name="state_00" />
+		<Mesh Name="state_00_lod1" />
+		<Mesh Name="state_00_lod2" />
+		<Mesh Name="state_00_lod3" />
+		<Mesh Name="state_01" />
+		<Mesh Name="state_01_lod1" />
+		<Mesh Name="state_01_lod2" />
+		<Mesh Name="state_01_lod3" />
+		<Mesh Name="state_03" />
+		<Mesh Name="state_03_lod1" />
+		<Mesh Name="state_03_lod2" />
+		<Mesh Name="state_03_lod3" />
+		<CdtMesh Name="cdt_state_00" />
+	</AnimSubset>
+	<TrackEvents TrackName="stage_1_anim">
+		<AnimEvent Key="0">
+           		<Fade Time="0.2" />
+				<Sound
+                Name="actors/actor_construction/actor_construct_oil_01"
+                Range="50"
+                Volume="1"
+            />
+       	</AnimEvent>
+	</TrackEvents>
+	<PhysicsModel>
+		<Body Collisions="Dynamic" ModelFrame="state_00">
+			<Body Collisions="Dynamic" ModelFrame="state_01" />
+		</Body>
+	</PhysicsModel>
+	<Landmark Mesh="landmarks/bank_building_01_us19_lmk" />
+</ModelBrand>

@@ -1,0 +1,19 @@
+<ModelBrand
+    DynamicModel="true"
+>
+	<Subset IsDefault="true" Name="stage_00">
+		<Mesh Name="state_00" />
+		<CdtMesh Name="cdt_state_00" />
+	</Subset>
+
+	<Subset Name="stage_01" >
+		<Mesh Name="state_00" />
+		<CdtMesh Name="cdt_state_00" />
+	</Subset>
+
+	<PhysicsModel>
+		<Body Collisions="None" ModelFrame="state_00">
+		</Body>
+	</PhysicsModel>
+	<Landmark Mesh="landmarks/wind_turbine_slow_us19_objective_lmk" />
+</ModelBrand>

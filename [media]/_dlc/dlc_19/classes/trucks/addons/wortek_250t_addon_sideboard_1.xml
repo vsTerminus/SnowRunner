@@ -1,0 +1,88 @@
+<_templates Include="trucks">
+	<Body>
+		<Fuel Collisions="None" Mass="10">
+			<Constraint
+				Type="Hinge"
+				MinLimit="0"
+				MaxLimit="2"
+			>
+				<Motor Damping="2.5" Spring="150" Type="Spring" />
+			</Constraint>
+		</Fuel>
+		<Loops Collisions="None" Mass="5">
+			<Constraint
+				Type="Hinge"
+				MinLimit="-0.5"
+				MaxLimit="225"
+			>
+				<Motor Damping="0.1" Spring="1" Type="Spring" />
+			</Constraint>
+		</Loops>
+		<Belts Collisions="None" Mass="5">
+			<Constraint
+				AxisLocal="(-1; 0; 0)"
+				Type="Hinge"
+				MinLimit="-4.36"
+				MaxLimit="45"
+			>
+				<Motor Damping="1.0" Spring="15" Type="Spring" />
+			</Constraint>
+		</Belts>
+	</Body>
+</_templates>
+<TruckAddon IsChassisFullOcclusion="true">
+	<TruckData FuelCapacity="40">
+		<LimitedFluid Center="(-2.421, 2.024, -1.465)" SizeX="0.303" SizeY="0.365" SizeZ="0.130" Type="Box" ParentFrame="BoneFuelRight_cdt" />
+		<LimitedFluid Center="(-2.043, 2.024, -1.465)" SizeX="0.303" SizeY="0.365" SizeZ="0.130" Type="Box" ParentFrame="BoneFuelRight_cdt" />
+	</TruckData>
+	<FuelHide>
+		<Mesh Frame="fuel" HideThreshold="0.75" />
+	</FuelHide>
+	<PhysicsModel Mesh="trucks/addons/wortek_250t_addon_sideboard_1">
+		<Body Mass="400">
+			<Constraint Type="Rigid" />
+			<Body _template="Loops" ModelFrame="BoneLoopsRight_cdt" >
+				<Constraint	AxisLocal="(1; 0; 0)" />
+			</Body>
+			<Body _template="Loops" ModelFrame="BoneLoopsLeft_cdt" >
+				<Constraint	AxisLocal="(-1; 0; 0)" />
+			</Body>
+			
+			<Body _template="Belts" ModelFrame="BoneBeltsRight_cdt" >
+				<Constraint	AxisLocal="(1; 0; 0)" />
+			</Body>
+			<Body _template="Fuel" ModelFrame="BoneFuelRight_cdt" >
+				<Constraint	AxisLocal="(1; 0; 0)" />
+			</Body>
+			
+			<Body Collisions="None" Mass="15" ModelFrame="BoneBoard_cdt">
+				<Constraint
+					AxisLocal="(0; 0; 1)"
+					Type="Hinge"
+					MinLimit="-0.5"
+					MaxLimit="0.5"
+			>
+					<Motor Damping="10" Spring="250" Type="Spring" />
+				</Constraint>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="addon_1"
+		Category="frame_addons"
+		IsCustomizable="true"
+		Price="4700"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_FRAME_ADDON_SIDEBOARD_1_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_FRAME_ADDON_SIDEBOARD_1_NAME"
+		/>
+		<RequiredAddon Types="" />
+		<InstallSocket Type="Wortek250TSideboard1" />
+		<AddonSlots InitialOffset="(-2.47; 1.85; 0.000)" OffsetStep="(0; 0; 0)" Quantity="1" />
+	</GameData>
+</TruckAddon>

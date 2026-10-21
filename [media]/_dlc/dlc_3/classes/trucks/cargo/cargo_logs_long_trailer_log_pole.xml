@@ -23,7 +23,7 @@
 				ModelFrame="BoneTop_cdt"
 			>
 				<Constraint
-					LinearLimitsX="(-0.4; 0.4)"
+					LinearLimitsX="(-0.2; 0.2)"
 					LinearLimitsY="(0; 0.5)"
 					LinearLimitsZ="(-0.5; 0.5)"
 					Type="Fixed"

@@ -23,7 +23,7 @@
 				AxisLocal="(0; 0; 1)"
 				Type="Hinge"
 				MinLimit="-0.2"
-				MinLimit="0.3"
+				MaxLimit="0.3"
 			>
 				<Motor Damping="0.1" Spring="0.05" Type="Spring" />
 			</Constraint>

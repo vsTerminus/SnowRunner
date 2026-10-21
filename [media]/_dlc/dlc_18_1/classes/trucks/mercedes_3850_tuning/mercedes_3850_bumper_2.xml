@@ -20,8 +20,8 @@
 		<HeadLight>
 			<Model _template="HeadLightRay" Org="(3.100; 0.966; -0.870)" ColorMultAtDay="0.3"/>
 			<Model _template="HeadLightRay" Org="(3.100; 0.966; 0.870)" ColorMultAtDay="0.3"/>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.100; 0.966; -0.870)" Dir="(1; 0; 0)" Size=".36" ColorMultAtDay="0.25"/>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.100; 0.966; 0.870)" Dir="(1; 0; 0)" Size=".36" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(3.100; 0.966; -0.870)" Dir="(1; 0; 0)" Size=".36" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(3.100; 0.966; 0.870)" Dir="(1; 0; 0)" Size=".36" ColorMultAtDay="0.25"/>
 		</HeadLight>
 	</ModelAttachments>
 	<HeadLight _template="Default" Pos="(3.282; 0.184; 0)" ParentFrame="BoneCabin_cdt" />

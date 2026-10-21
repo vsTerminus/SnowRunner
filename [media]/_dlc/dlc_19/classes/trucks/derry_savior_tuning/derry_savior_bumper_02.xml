@@ -1,0 +1,66 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/derry_savior_tuning/derry_savior_bumper_02">
+		<Body ImpactType="Truck" Mass="80" ModelFrame="BoneAddon_cdt">
+			<Constraint Type="Rigid" />
+			<Body Collisions="None" Mass="20" ModelFrame="BoneRope_cdt">
+				<Constraint
+					AxisLocal="(0; 0; 1)"
+					Type="Hinge"
+					MinLimit="-50"
+					MaxLimit="23"
+				>
+					<Motor Damping="3.5" Spring="90" Type="Spring" />
+				</Constraint>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<Ignition>
+			<Flare _template="IgnitionSignalOrange" Dir="(1; 0; 0)" Size="0.2" Pos="(5.415; 1.738; 0.679)" />
+			<Flare _template="IgnitionSignalOrange" Dir="(1; 0; 0)" Size="0.2" Pos="(5.353; 1.184; 0.679)" />
+			<Flare _template="IgnitionSignalOrange" Dir="(1; 0; 0)" Size="0.2" Pos="(5.415; 1.738; -0.679)" />
+			<Flare _template="IgnitionSignalOrange" Dir="(1; 0; 0)" Size="0.2" Pos="(5.353; 1.184; -0.679)" />
+			<Flare _template="IgnitionSignalOrange" Dir="(1; 0; 0)" Size="0.2" Pos="(5.084; 2.042; 1.211)" />
+			<Flare _template="IgnitionSignalOrange" Dir="(1; 0; 0)" Size="0.2" Pos="(5.084; 2.042; -1.211)" />
+			<Flare _template="IgnitionSignalOrange" Dir="(1; 0; 0)" Size="0.2" Pos="(5.000; 1.190; 1.232)" />
+			<Flare _template="IgnitionSignalOrange" Dir="(1; 0; 0)" Size="0.2" Pos="(5.000; 1.190; -1.232)" />
+			
+			<Flare _template="IgnitionSignalWhiteWarm" Dir="(1; 0; 0)" Size="0.5" Pos="(5.142; 1.179; 1.042)" />
+			<Flare _template="IgnitionSignalWhiteWarm" Dir="(1; 0; 0)" Size="0.5" Pos="(5.142; 1.179; -1.042)" />
+		</Ignition>
+		<HeadLight>
+			<Model _template="HeadLightRay" Org="(5.142; 1.179; 1.042)" />
+			<Model _template="HeadLightRay" Org="(5.142; 1.179; -1.042)" />
+			<Flare _template="HeadLight" Dir="(1; 0; 0)" Size="0.5" Pos="(5.142; 1.179; 1.042)" />
+			<Flare _template="HeadLight" Dir="(1; 0; 0)" Size="0.5" Pos="(5.142; 1.179; -1.042)" />
+			<Flare _template="BlueStreak" Dir="(1; 0; 0)" Size="0.85" Pos="(5.142; 1.179; 1.042)" />
+			<Flare _template="BlueStreak" Dir="(1; 0; 0)" Size="0.85" Pos="(5.142; 1.179; -1.042)" />
+		</HeadLight>
+	</ModelAttachments>
+	<GameData
+		CameraPreset="default"
+		Category="bumper"
+		Price="2300"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<WinchSocket FixedToTruck="true" Pos="(4.979; 0.873; -0.442)" />
+		<WinchSocket FixedToTruck="true" Pos="(4.979; 0.873; 0.442)" />
+		<WinchSocket FixedToTruck="true" Pos="(5.082; 1.005; -0.442)" />
+		<WinchSocket FixedToTruck="true" Pos="(5.082; 1.005; 0.442)" />
+		
+		<CraneSocket FixedToTruck="true" Pos="(4.979; 0.873; -0.442)" />
+		<CraneSocket FixedToTruck="true" Pos="(4.979; 0.873; 0.442)" />
+		<CraneSocket FixedToTruck="true" Pos="(5.082; 1.005; -0.442)" />
+		<CraneSocket FixedToTruck="true" Pos="(5.082; 1.005; 0.442)" />
+		
+		<UiDesc
+			UiDesc="UI_TUNING_BUMPER_REBAR_DESC"
+            UiIcon30x30=""
+            UiIcon40x40=""
+            UiName="UI_TUNING_BUMPER_REBAR_NAME"
+		/>
+		<InstallSocket Type="DerrySaviorBumper" />
+	</GameData>
+</TruckAddon>

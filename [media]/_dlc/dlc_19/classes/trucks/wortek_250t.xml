@@ -1,0 +1,681 @@
+<_templates Include="trucks">
+	<Wheel>
+		<FrontAxle
+			ConnectedToHandbrake="false"
+			Location="front"
+			SteeringAngle="35"
+			SteeringCastor="4"
+			SteeringJointOffset="0.25"
+			Torque="full"
+			ParentFrame="BoneCabin_cdt"
+		/>
+		<RearAxle
+			ConnectedToHandbrake="true"
+			Location="rear"
+			Torque="default"
+		/>
+	</Wheel>
+	<Body>
+		<Extinguisher Mass="5" CenterOfMassOffset="(0; -0.05; 0)" Collisions="None" >
+			<Constraint
+				Type="Ragdoll"
+				TwistAxisLocal="(1; 0; 0)"
+				PlaneAxisLocal="(0; 0; 1)"
+				TwistMin="-18"
+				TwistMax="18"
+				PlaneMin="0"
+				PlaneMax="30"
+				Cone="10"
+			>
+				<AllMotor Type="Spring" Spring="0.5" Damping="0.5" />
+			</Constraint>
+		</Extinguisher>
+		<Chain Mass="5" CenterOfMassOffset="(0; 0; 0)" Collisions="None" >
+			<Constraint
+				Type="Hinge"
+				AxisLocal="(0; 0; 1)"
+				MinLimit="-15"
+				MaxLimit="0"
+			>
+				<Motor Type="Spring" Spring="0.1" Damping="0.1" />
+			</Constraint>
+		</Chain>
+		<Mirror Mass="5" CenterOfMassOffset="(0; 0; 0)" Collisions="None" >
+			<Constraint
+				Type="Hinge"
+				AxisLocal="(1; 0; 0)"
+				MinLimit="-2"
+				MaxLimit="2"
+			>
+				<Motor Type="Spring" Spring="1" Damping="1" />
+			</Constraint>
+		</Mirror>
+		<Wiper Mass="3" CenterOfMassOffset="(0; 0; 0)" Collisions="None" >
+			<Constraint
+				Type="Hinge"
+				AxisLocal="(1; 0; 0)"
+				MinLimit="-2"
+				MaxLimit="2"
+			>
+				<Motor Type="Spring" Spring="5" Damping="10" />
+			</Constraint>
+		</Wiper>
+		<Sunshield Mass="2" CenterOfMassOffset="(0.025; 0; 0)" Collisions="None" >
+			<Constraint
+				Type="Hinge"
+				AxisLocal="(0; 0; 1)"
+				MinLimit="0"
+				MaxLimit="8"
+			>
+				<Motor Type="Spring" Spring="12" Damping="0.1" />
+			</Constraint>
+		</Sunshield>
+	</Body>
+</_templates>
+<Truck>
+	<TruckData
+		DiffLockType="Connected"
+		EngineIconMesh="env/engine_wortek_250t"
+		EngineIconScale="1"
+		EngineStartDelay="0.6"
+		ExhaustStartTime="0.6"
+		FuelCapacity="600"
+		Responsiveness="0.08"
+		SteerSpeed="0.02"
+		BackSteerSpeed="0.0175"
+		TruckImage="wortek250Tmchr"
+		TruckType="HEAVY"
+		EngineMarkerOffset="(0.0; 0.0; 0.0)"
+		FueltankMarkerOffset="(0.0; 0.0; 0.0)"
+		SuspensionMarkerOffset="(0.0; 0.0; 0.0)"
+		GearboxMarkerOffset="(0.0; 0.0; 0.0)"
+	>
+		<WinchUpgradeSocket Default="w_heavy_trucks_default" IsUpgradable="true" Type="winches_heavy_trucks" />
+		<Wheels
+			DefaultRim="rim_wortek_250t"
+			DefaultTire="tire_wortek_250t"
+			DefaultWheelType="wheels_wortek_250t"
+		>
+			<Wheel _template="FrontAxle" Pos="(2.217; 0.677; 0.980)" />
+			<Wheel _template="FrontAxle" Pos="(2.217; 0.677; 0.980)" RightSide="true" />
+			<Wheel _template="RearAxle" Pos="(-1.826; 0.677; 1.000)" />
+			<Wheel _template="RearAxle" Pos="(-1.826; 0.677; 1.000)" RightSide="true" />
+			<Wheel _template="RearAxle" Pos="(-3.399; 0.677; 1.000)" />
+			<Wheel _template="RearAxle" Pos="(-3.399; 0.677; 1.000)" RightSide="true" />
+		</Wheels>
+		<SuspensionSocket
+			Default="wortek_250t_suspension_default"
+			Type="s_wortek_250t"
+			MaxWheelRadiusWithoutSuspension="3"
+		/>
+		
+		<CompatibleWheels RearOffsetZ="0.235" OffsetZ="0.27" Scale="0.66" Type="wheels_wortek_250t" />
+		
+		<CompatibleWheels RearOffsetZ="0.215" OffsetZ="0.27" Scale="0.66" Type="wheels_heavy_double1_avenhorn_a15" />
+		<CompatibleWheels RearOffsetZ="0.225" OffsetZ="0.24" Scale="0.66" Type="wheels_heavy_double2_avenhorn_a15" />
+
+		<CompatibleWheels RearOffsetZ="0.215" OffsetZ="0.24" Scale="0.66" Type="wheels_heavy_allterrain_double_avenhorn_a15" />
+		<CompatibleWheels RearOffsetZ="0.235" OffsetZ="0.23" Scale="0.66" Type="wheels_heavy_highway_double_avenhorn_a15" />
+		<CompatibleWheels RearOffsetZ="0.22" OffsetZ="0.245" Scale="0.66" Type="wheels_heavy_offroad_double_avenhorn_a15" />
+		
+		<SteeringWheel Frame="BoneSteering" />
+		<SteeringRack
+			Frame="BoneRack"
+			FrameSteerLeft="BoneRackL"
+			FrameSteerRight="BoneRackR"
+			RackHalfSizeZ="0.883"
+		/>
+		<Steam Origin="(2.880; 2.000; 0.000)" />
+		<SoundsWheels _template="Default" />
+		<SoundsDamage _template="Heavy" />
+		
+		<Sounds
+			_template="Default"
+			AirHissInterval="12.0"
+			MinDist="15.0"
+			DisableReversePitch="true"
+			Origin="(2.000; 1.341; 0.000)"
+			ParentFrame="BoneCabin_cdt"
+		>
+			<Reverse		Sound="" />
+			<BrakesSqueal	Sound="trucks/sleiter_mfk816/sleiter_mfk816_brakes_squeal" />
+			<BrakePull		Sound="trucks/sleiter_mfk816/sleiter_mfk816_brake_pull" />
+			<BrakeRelease	Sound="trucks/sleiter_mfk816/sleiter_mfk816_brake_release" />
+			<Handbrake		Sound="trucks/sleiter_mfk816/sleiter_mfk816_handbrake_on" />
+			<HandbrakeOff	Sound="trucks/sleiter_mfk816/sleiter_mfk816_handbrake_off" />
+			<Honk			Sound="trucks/sleiter_mfk816/sleiter_mfk816_honk" />
+			<EngineRev		Sound="" />
+			<EngineAccel	Sound="trucks/sleiter_mfk816/sleiter_mfk816_acc" />
+			<EngineStart	Sound="trucks/sleiter_mfk816/sleiter_mfk816_start" />
+			<EngineStop		Sound="trucks/sleiter_mfk816/sleiter_mfk816_stop" />
+			<EngineIdle		Sound="trucks/sleiter_mfk816/sleiter_mfk816_idle" />
+			<EngineIdle_2d	Sound="trucks/sleiter_mfk816/sleiter_mfk816_idle_2d"	IsSound2D="true" />
+			<EngineLow		Sound="trucks/sleiter_mfk816/sleiter_mfk816_low" />
+			<EngineLow_2d	Sound="trucks/sleiter_mfk816/sleiter_mfk816_low_2d"	IsSound2D="true" />
+			<EngineHigh		Sound="trucks/sleiter_mfk816/sleiter_mfk816_high" />
+			<EngineHigh_2d	Sound="trucks/sleiter_mfk816/sleiter_mfk816_high_2d"	IsSound2D="true" />
+			<EngineHeavy	Sound="" />
+			<EngineHeavy_2d	Sound=""	IsSound2D="true" />
+			<EngineTurbo	Sound="trucks/sleiter_mfk816/sleiter_mfk816_turbo" />
+			<ChassisStress	Sound="trucks/common/truck_swing_big_old_rnd_set/truck_swing_big_old_rnd" />
+			<AbruptStop		Sound="trucks/common/truck_swing_big_rnd_set/truck_swing_big_rnd" />
+		</Sounds>
+		
+		<Shakers>
+			<Shaker
+				Frame="BoneGearstickL"
+				MinAngle="(0.01; 0; 0.15)"
+				MaxAngle="(0.02; 0; 0.35)"
+				MaxFrequency="0.35"
+				ParentFrame="BoneCabinRagdoll_cdt"
+			/>
+			<Shaker
+				Frame="BoneGearstickR"
+				MinAngle="(0.01; 0; 0.15)"
+				MaxAngle="(0.02; 0; 0.35)"
+				MaxFrequency="0.35"
+				ParentFrame="BoneCabinRagdoll_cdt"
+				LimitDirectionX="Negative"
+				LimitDirectionZ="Negative"
+			/>
+		</Shakers>
+		<Shafts>
+			<Shaft SocketPointA="Shaft1a" SocketPointB="Shaft1b" />
+			<Shaft SocketPointA="Shaft2a" SocketPointB="Shaft2b" />
+			<Shaft SocketPointA="Shaft3a" SocketPointB="Shaft3b" />
+			<Shaft SocketPointA="Shaft4a" SocketPointB="Shaft4b" />
+		</Shafts>
+		<OcclusionMap
+			HalfSizeZ="1.8"
+			MinX="-4.6"
+			MaxX="3.9"
+		/>
+		<!--
+		<Messages Pos="(4.405; 2.804; 0)" ParentFrame="BoneCabinRagdoll_cdt" />
+		-->
+		<LimitedFluid Center="(-0.235, 0.993, -1.237)" SizeX="1.350" SizeY="0.600" SizeZ="0.600" Type="Box" ParentFrame="BoneChassis_cdt" />
+		<LimitedFluid Center="(-0.235, 0.993, 1.237)" SizeX="1.350" SizeY="0.600" SizeZ="0.600" Type="Box" ParentFrame="BoneChassis_cdt" />
+		<Intake Dir="(1; 0; 0)" Origin="(3.750; 1.724; 0.000)" Size="0.656" />
+		<GearboxSocket Default="g_special_wortek_250t_default" Type="gearboxes_wortek_250t" />
+		<FuelTank DamageCapacity="200" />
+		<EngineSocket Default="engine_truck_wortek_250t_0" Type="e_truck_wortek_250t" />
+		<Driver
+			AnimationSet="HeavyTruck"
+			Pos="(1.03; 2.17; 0.527)"
+			SteeringWheelPos="(1.38; 2.455; 0.527)"
+			ParentFrame="BoneCabin_cdt"
+			LegsOffset="(0; -0.065; 0)"
+		/>
+		
+		<Dashboard>
+			<Gauge Damping="0.9" Dir="(-0.502; 0.865; -0.002)" InputRange="(0;45)" InputType="speed" Mesh="trucks/arrows/wortek_350t_arrow_02" Org="(1.619; 2.385; 0.527)" OutputAngles="(-140;120)" />
+			<Gauge Damping="0.9" Dir="(-0.502; 0.865; -0.002)" InputRange="(0;1)" InputType="rpm" Mesh="trucks/arrows/wortek_350t_arrow_01" Org="(1.620; 2.383; 0.527)" OutputAngles="(-150;150)" />
+			<Gauge Damping="0.9" Dir="(-0.502; 0.865; -0.002)" InputRange="(0;1)" InputType="fuel" Mesh="trucks/arrows/wortek_350t_arrow_05" Org="(1.570; 2.347; 0.419)" OutputAngles="(205;150)" />
+			
+			<Gauge Damping="0.9" Dir="(-0.502; 0.865; -0.002)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/wortek_350t_arrow_03" Org="(1.531; 2.326; 0.635)" OutputAngles="(-24;3)" />
+			<Gauge Damping="0.9" Dir="(-0.502; 0.865; -0.002)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/wortek_350t_arrow_04" Org="(1.612; 2.370; 0.419)" OutputAngles="(-38;0)" />
+			<Gauge Damping="0.9" Dir="(-0.502; 0.865; -0.002)" InputRange="(0;1)" InputType="engineEnabled" Mesh="trucks/arrows/wortek_350t_arrow_06" Org="(1.627; 2.380; 0.635)" OutputAngles="(-52;10)" />
+		</Dashboard>
+		
+		<Damage>
+			<DamageArea Type="FuelTank" Min="(-0.957; 0.580; -1.611)" Max="(0.486; 1.346; -0.915)" ParentFrame="BoneChassis_cdt" />
+			<DamageArea Type="FuelTank" Min="(-0.957; 0.580; 0.915)" Max="(0.486; 1.346; 1.611)" ParentFrame="BoneChassis_cdt" />
+			<DamageArea Type="Engine" Min="(2.250; 1.020; -0.600)" Max="(3.750; 2.220; 0.600)" ParentFrame="BoneCabin_cdt" />
+			<DamageArea Type="Gearbox" Min="(0.450; 0.900; -0.350)" Max="(2.150; 1.400; 0.350)" ParentFrame="BoneCabin_cdt" />
+		</Damage>
+		<Camera
+			Center="(-1.6; 0; 0)"
+			RadiusMultiplier="1.1"
+			ParentFrame="BoneChassis_cdt"
+		>
+			<Cockpit
+				_template="Default"
+				LimitsHor="(-2.5; 1.15)"
+				LimitsVer="(-0.55; 0.4)"
+				ViewPos="(0.98; 2.840; 0.527)"
+				ViewDir="(1; -0.05; 0)"
+				ZoomViewPosOffset="(0.4; -0.025; 0)"
+				WindshieldDiffuseTexture="trucks/wortek_250t_glass__d_a.tga"
+				WindshieldShadingTexture="trucks/wortek_250t_glass__sh_d.tga"
+			>
+				<Rear
+					HorTransitionStart="-0.5"
+					HorTransitionEnd="-1.5"
+					LimitsVer="(-0.7; 0.4)"
+					RollAngle="-15" 
+					ViewPosOffset="(0.05; -0.15; 0.6)"
+				/>
+				<Mirror
+					ClipDir="(-0.915; 0; -0.404)"
+					ClipOffset="0.2"
+					FOVScale="2.5"
+					MeshFrame="mirror_left"
+					ReflectionDir="(-0.915; 0; -0.404)"
+					Size="(0.143; 0.143)"
+					Pos="(1.446; 2.756; 1.439)"
+					LookAtOffset="(0; -0.15; 0)"
+					CurveAngle="20" 
+				/>
+				<Mirror
+					ClipDir="(-0.700; 0; 0.45)"
+					ClipOffset="0.2"
+					FOVScale="2.5"
+					MeshFrame="mirror_right"
+					ReflectionDir="(-0.700; 0; 0.45)"
+					Size="(0.143; 0.143)"
+					Pos="(1.446; 2.756; -1.439)"
+					LookAtOffset="(0; -0.15; 0)"
+					CurveAngle="20" 
+				/>
+			</Cockpit>
+		</Camera>
+		<Axles>
+			<Axle Frame="BoneAxle1" ParentFrame="BoneCabin_cdt" />
+			<Axle Frame="BoneAxle2" />
+			<Axle Frame="BoneAxle3" />
+		</Axles>
+	</TruckData>
+	<!--
+	<Rotator EngineTorqueFactor="0" Frame="BoneRotatorL" RotationSpeed="4" />
+	<Rotator EngineTorqueFactor="0" Frame="BoneRotatorR" RotationSpeed="4.1" />
+	-->
+	<PhysicsModel Mesh="trucks/wortek_250t">
+		<NetSync Legacy="false" />
+		<Body
+			CenterOfMassOffset="(0.4; -0.1; 0)"
+			ImpactType="Truck"
+			Mass="5000"
+			ModelFrame="BoneChassis_cdt"
+			NetSync="pv"
+		>
+			<Body
+				ModelFrame="BoneChassisWeighter_cdt"
+				Collisions="None"
+				Mass="7000"
+			>
+				<Constraint Type="Fixed" />
+			</Body>
+			<Body
+				CenterOfMassOffset="(-0.05; -0.15; 0)"
+				ImpactType="Truck"
+				Mass="3000"
+				ModelFrame="BoneCabin_cdt"
+				NetSync="pv"
+			>
+				<Constraint
+					AxisLocal="(1; 0; 0)"
+					Type="Hinge"
+					MinLimit="-10"
+					MaxLimit="10"
+				>
+					<Motor Damping="750000" Spring="1350000" Type="Spring" />
+				</Constraint>
+				<Body
+					ModelFrame="BoneCabinWeighter_cdt"
+					Collisions="None"
+					Mass="5000"
+					CenterOfMassOffset="(0; -0.25; 0)"
+				>
+					<Constraint Type="Fixed" />
+				</Body>
+				<Body _template="Extinguisher" ModelFrame="BoneExtinguisherR_cdt" />
+				<Body _template="Extinguisher" ModelFrame="BoneExtinguisherL_cdt" />
+				<Body _template="Chain" ModelFrame="BoneChainR_cdt" >
+					<Constraint AxisLocal="(0; 0; -1)" />
+				</Body>
+				<Body _template="Chain" ModelFrame="BoneChainL_cdt" />
+				<Body _template="Mirror" ModelFrame="BoneMirrorR_cdt" />
+				<Body _template="Mirror" ModelFrame="BoneMirrorL_cdt" />
+				<Body _template="Wiper" ModelFrame="BoneWiperR_cdt" />
+				<Body _template="Wiper" ModelFrame="BoneWiperL_cdt" />
+				<Body _template="Sunshield" ModelFrame="BoneSunshieldR_cdt" />
+				<Body _template="Sunshield" ModelFrame="BoneSunshieldL_cdt" />
+				<Body
+					Collisions="None"
+					Mass="0.5"
+					ModelFrame="BoneKey1_cdt"
+					CenterOfMassOffset="(0; -0.05; 0)"
+				>
+					<Constraint
+						Type="Hinge"
+						AxisLocal="(0; 0; 1)"
+						MinLimit="-25"
+						MaxLimit="25"
+					>
+						<Motor Type="Spring" Spring="0.05" Damping="0.1" />
+					</Constraint>
+					<Body
+						Collisions="None"
+						Mass="0.5"
+						ModelFrame="BoneKey2_cdt"
+						CenterOfMassOffset="(0; -0.05; 0)"
+					>
+						<Constraint
+							Type="Ragdoll"
+							TwistAxisLocal="(1; 0; 0)"
+							PlaneAxisLocal="(0; 0; 1)"
+							TwistMin="-25"
+							TwistMax="25"
+							PlaneMin="-25"
+							PlaneMax="25"
+							Cone="10"
+						>
+							<AllMotor Type="Spring" Spring="0.05" Damping="0.1" />
+						</Constraint>
+					</Body>
+				</Body>
+				<Body
+					Collisions="None"
+					Mass="1"
+					ModelFrame="BoneGloves_cdt"
+				>
+					<Constraint
+						Type="Fixed"
+						LinearLimitsX="(-0.001; 0.001)"
+						LinearLimitsY="(0.000; 0.001)"
+						LinearLimitsZ="(-0.002; 0.002)"
+					>
+						<Motor Type="Spring" Spring="80" Damping="1" />
+					</Constraint>
+				</Body>
+				<Body
+					Collisions="None"
+					Mass="1"
+					ModelFrame="BoneTieRod_cdt"
+				>
+					<Constraint
+						Type="Hinge"
+						AxisLocal="(1; 0; 0)"
+						MinLimit="-25"
+						MaxLimit="25"
+						Name="TieRod"
+					>
+						<Motor Type="Position" Tau="1" Force="10" />
+					</Constraint>
+				</Body>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<StopSignals>
+			<Light _template="StopSignal" Dir="(-1; -0.1; 0)" Pos="(-4.485; 0.891; 0.000)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="StopSignal" Dir="(-1; 0; 0)" Pos="(-4.485; 0.891; 1.347)" Size="0.35" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="StopSignal" Dir="(-1; 0; 0)" Pos="(-4.485; 0.891; -1.347)" Size="0.35" ParentFrame="BoneChassis_cdt" />
+		</StopSignals>
+		<ReverseSignals>
+			<Light _template="ReverseSignal" Dir="(-1; -0.1; 0)" Pos="(-4.485; 0.891; 0.000)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="ReverseSignal" Dir="(-1; 0; 0)" Pos="(-4.485; 0.891; 1.206)" Size="0.3" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="ReverseSignal" Dir="(-1; 0; 0)" Pos="(-4.485; 0.891; -1.206)" Size="0.3" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="BlueStreak" Dir="(-1; 0; 0)" Pos="(-4.485; 0.891; 1.206)" Size="0.75" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="BlueStreak" Dir="(-1; 0; 0)" Pos="(-4.485; 0.891; -1.206)" Size="0.75" ParentFrame="BoneChassis_cdt" />
+		</ReverseSignals>
+		<Ignition>
+			<!-- Stop Signals -->
+			<Light _template="StopSignal" Dir="(-1; -0.1; 0)" Pos="(-4.485; 0.891; 0.000)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="StopSignal" Dir="(-1; 0; 0)" Pos="(-4.485; 0.891; 1.347)" Size="0.25" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="StopSignal" Dir="(-1; 0; 0)" Pos="(-4.485; 0.891; -1.347)" Size="0.25" ParentFrame="BoneChassis_cdt" />
+			<!-- Ignition Light -->
+			<Light _template="IgnitionSignalWhite" Dir="(1; -0.1; 0)" Pos="(3.553; 1.476; 0.000)" ParentFrame="BoneCabin_cdt" />
+			<!-- Headlights -->
+			<Flare _template="IgnitionSignalWhiteWarm" Dir="(1; 0; 0)" Size="0.6" Pos="(3.553; 1.476; 0.958)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhiteWarm" Dir="(1; 0; 0)" Size="0.6" Pos="(3.553; 1.476; -0.958)" ParentFrame="BoneCabin_cdt" />
+			<!-- Bottom Lights -->
+			<Flare _template="IgnitionSignalWhite" Dir="(1; 0; 0)" Size="0.3" Pos="(3.574; 0.875; 0.886)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhite" Dir="(1; 0; 0)" Size="0.3" Pos="(3.574; 0.875; -0.886)" ParentFrame="BoneCabin_cdt" />
+			<!-- Front Side Beacons -->
+			<Flare _template="IgnitionSignalWhite" Dir="(1; 0; 0)" Size="0.1" Pos="(3.558; 1.520; 1.284)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalWhite" Dir="(1; 0; 0)" Size="0.1" Pos="(3.558; 1.520; -1.284)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalOrange" Dir="(1; 0; 1)" Size="0.25" Pos="(3.558; 1.520; 1.363)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalOrange" Dir="(1; 0; -1)" Size="0.25" Pos="(3.558; 1.520; -1.363)" ParentFrame="BoneCabin_cdt" />
+			<!-- Rear Beacons -->
+			<Flare _template="IgnitionSignalOrange" Dir="(-1; 0; 0)" Size="0.2" Pos="(-4.480; 0.891; 1.503)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="IgnitionSignalOrange" Dir="(0; 0; 1)" Size="0.2" Pos="(-4.411; 0.891; 1.590)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="IgnitionSignalOrange" Dir="(-1; 0; 0)" Size="0.2" Pos="(-4.480; 0.891; -1.503)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="IgnitionSignalOrange" Dir="(0; 0; -1)" Size="0.2" Pos="(-4.411; 0.891; -1.590)" ParentFrame="BoneChassis_cdt" />
+			<!-- Aerial Beacons -->
+			<Flare _template="IgnitionSignalOrange" Dir="(0; 1; 0)" Size="0.5" Pos="(3.335; 2.331; 1.436)" ParentFrame="BoneChassis_cdt" />
+			<Flare _template="IgnitionSignalOrange" Dir="(0; 1; 0)" Size="0.5" Pos="(3.335; 2.331; -1.436)" ParentFrame="BoneChassis_cdt" />
+		</Ignition>
+		<HeadLight>
+			<!-- Headlight -->
+			<Model _template="HeadLightRay" Org="(3.553; 1.476; 0.958)" ParentFrame="BoneCabin_cdt" />
+			<Model _template="HeadLightRay" Org="(3.553; 1.476; -0.958)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="HeadLight" Dir="(1; 0; 0)" Size="0.45" Pos="(3.553; 1.476; 0.958)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="HeadLight" Dir="(1; 0; 0)" Size="0.45" Pos="(3.553; 1.476; -0.958)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="BlueStreak" Dir="(1; 0; 0)" Size="1.0" Pos="(3.553; 1.476; 0.958)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="BlueStreak" Dir="(1; 0; 0)" Size="1.0" Pos="(3.553; 1.476; -0.958)" ParentFrame="BoneCabin_cdt" />
+			<!-- Bottom Headlight -->
+			<Model _template="HeadLightRay" Org="(3.574; 0.875; 0.886)" Dir="(1; -0.2; 0)" Scale="0.6" ParentFrame="BoneCabin_cdt" />
+			<Model _template="HeadLightRay" Org="(3.574; 0.875; -0.886)" Dir="(1; -0.2; 0)" Scale="0.6" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="HeadLight" Dir="(1; 0; 0)" Size="0.3" Pos="(3.574; 0.875; 0.886)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="HeadLight" Dir="(1; 0; 0)" Size="0.3" Pos="(3.574; 0.875; -0.886)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="BlueStreak" Dir="(1; 0; 0)" Size="0.65" Pos="(3.574; 0.875; 0.886)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="BlueStreak" Dir="(1; 0; 0)" Size="0.65" Pos="(3.574; 0.875; -0.886)" ParentFrame="BoneCabin_cdt" />
+		</HeadLight>
+	</ModelAttachments>
+	<Landmark Mesh="landmarks/wortek_250t_lmk" MinScale="1.5" MaxScale="2.5" />
+	<HeadLight _template="Default" Pos="(3.553; 1.476; 0.000)" />
+	<GameData
+		Country="US,NE,CE"
+		Price="94100"
+		UnlockByExploration="true"
+		UnlockByRank="1"
+		ExcludeAddons="pacific_p16_trailer_log_pole, trailer_log_pole_zikz_612h"
+	>
+		<WinchSocket Pos="(-4.543; 0.891; 1.281)" />
+		<WinchSocket Pos="(-4.543; 0.891; -1.281)" />
+		<WinchSocket Pos="(0.699; 1.759; 1.141)" />
+		<WinchSocket Pos="(0.699; 1.759; -1.141)" />
+		
+		<CraneSocket Pos="(-4.543; 0.891; 1.281)" />
+		<CraneSocket Pos="(-4.543; 0.891; -1.281)" />
+		<CraneSocket Pos="(0.699; 1.759; 1.141)" />
+		<CraneSocket Pos="(0.699; 1.759; -1.141)" />
+		<UiDesc
+			UiDesc="UI_VEHICLE_WORTEK_250T_DESC"
+			UiIcon30x30="heavyVehicleImg30"
+			UiIcon328x458="shopImgWortek250T"
+			UiIcon40x40="heavyVehicleImg"
+			UiIconLogo="WortekLogo80"
+			UiName="UI_VEHICLE_WORTEK_250T_NAME"
+		/>
+		<CustomizationCameras>
+			<CameraPos FOV="32.0" Name="default" 	InterestPosition="(5.0; 1.55; 0.000)" 	MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(13.5; 1.250; -4.5)" />
+			<CameraPos FOV="32.0" Name="wheels" 	InterestPosition="(4.2; 0.85; 0.000)" 	MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(10.1; 0.85; -5.0)" />
+			<CameraPos FOV="32.0" Name="addon_1" 	InterestPosition="(1.25; 1.9; 0.000)" 	MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-7.900; 4.800; 6.380)" />
+			<CameraPos FOV="32.0" Name="exhaust_0" 	InterestPosition="(4.2; 0.4; 0.000)" 	MaxXRotation="360" MaxYRotation="360" MaxZoom="0" Position="(5.8; 0.2; 3.1)" />
+			<CameraPos FOV="32.0" Name="exhaust_1" 	InterestPosition="(4.200; 2.200; 0.000)" 	MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(-1.000; 4.200; 4.500)" />
+			<CameraPos FOV="32.0" Name="exhaust_2" 	InterestPosition="(2.600; 2.200; 0.000)" 	MaxXRotation="360" MaxYRotation="360" MaxZoom="1.2" Position="(-2.600; 4.200; 4.500)" />
+			<CameraPos FOV="32.0" Name="roof" 		InterestPosition="(5.15; 2.8; -0.2)" 	MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(9.000; 4.500; -3.000)" />
+			<CameraPos FOV="32.0" Name="snorkel" 	InterestPosition="(4.75; 1.4; 0.000)" 	MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(11.5; 2.4; -4.5)" />			
+			
+			<CameraPos FOV="32.0" Name="hoods" 	InterestPosition="(4.650; 2.500; 0)" 	MaxXRotation="360" MaxYRotation="360" MaxZoom="2" Position="(9.000; 4.500; -3.000)" />
+			
+			<CameraPos FOV="32.0" Interior="true" Name="mirror_mount" 	InterestPosition="(5.800; 3.050; 1.900)" Position="(4.400; 2.750; -0.280)" />
+			<CameraPos FOV="32.0" Interior="true" Name="bubble_head" 	InterestPosition="(5.800; 2.100; 1.650)" Position="(4.000; 2.600; -0.350)" />
+			<CameraPos FOV="32.0" Interior="true" Name="hood_figure" 	InterestPosition="(4.100; 1.500; 0.000)" Position="(8.300; 2.650; -0.450)" />
+			
+			<CameraPos FOV="32.0" Interior="true" Name="curtain" 		InterestPosition="(8.207; 3.032; 0.833)" Position="(5.607; 3.018; -0.836)" />
+			<CameraPos FOV="32.0" Interior="true" Name="sticker" 		InterestPosition="(5.800; 2.100; 1.650)" Position="(4.000; 2.600; -0.350)" />
+			
+			<CameraPos FOV="32.0" Interior="true" Name="sticker_1" 		InterestPosition="(5.800; 3.450; 0.400)" Position="(4.000; 2.600; -0.350)" />
+			<CameraPos FOV="32.0" Interior="true" Name="sticker_2" 		InterestPosition="(5.800; 3.450; 1.900)" Position="(4.000; 2.600; -0.350)" />
+			<CameraPos FOV="32.0" Interior="true" Name="sticker_3" 		InterestPosition="(5.800; 2.000; 0.550)" Position="(4.300; 2.870; -0.650)" />
+			<CameraPos FOV="32.0" Interior="true" Name="sticker_4" 		InterestPosition="(5.800; 1.850; 1.550)" Position="(4.300; 2.900; -0.000)" />
+			
+			<CameraPos FOV="32.0" Interior="true" Name="door_l_sticker" InterestPosition="(3.200; 1.700; 0.200)" Position="(6.200; 2.500; -3.800)" />
+			<CameraPos FOV="32.0" Interior="true" Name="door_r_sticker" InterestPosition="(5.150; 1.850; 0.000)" Position="(6.000; 2.450; 4.000)" />
+			<CameraPos FOV="32.0" Interior="true" Name="roof_sticker" 	InterestPosition="(3.450; 2.200; 0.500)" Position="(6.800; 5.000; -0.900)" />
+			<CameraPos FOV="32.0" Interior="true" Name="capote_sticker" InterestPosition="(4.100; 0.550; 0.450)" Position="(9.300; 4.650; -1.550)" />
+			<CameraPos FOV="32.0" Interior="true" Name="glass_sticker" 	InterestPosition="(3.600; 2.080; 0.100)" Position="(8.800; 3.650; -1.550)" />
+		</CustomizationCameras>
+		
+		<!-- DIFF LOCK -->
+		<AddonSockets
+			DefaultAddon="wortek_250t_diff_lock_default"
+			RequiredAddonIfNoConflicts="wortek_250t_diff_lock_default"
+		>
+			<Socket Names="Wortek250DiffLock" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		
+		<!-- VISUAL ADDONS -->
+		<AddonSockets
+			DefaultAddon="wortek_250t_bumper_default"
+			RequiredAddonIfNoConflicts="wortek_250t_bumper_default"
+		>
+			<Socket Names="Wortek250TBumper" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets DefaultAddon="wortek_250t_snorkel_default" >
+			<Socket Names="Wortek250TSnorkel" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets
+			DefaultAddon="wortek_250t_exhaust_default"
+			RequiredAddonIfNoConflicts="wortek_250t_exhaust_default"
+		>
+			<Socket Names="Wortek250TExhaustDefault" ParentFrame="BoneChassis_cdt">
+				<ExtraParent Frame="BoneCabin_cdt" Offset="(0; 0; 0)" />
+			</Socket>
+			<Socket Names="Wortek250TExhaustA" ParentFrame="BoneChassis_cdt"
+				NamesBlock="TatraCraneWortek250T, Wortek250TFrameModuleKung, Wortek250TFrameModuleFuelTank, Wortek250TSideboard2"
+			>
+				<ExtraParent Frame="BoneCabin_cdt" Offset="(0; 0; 0)" />
+			</Socket>
+			<Socket Names="Wortek250TExhaustB" ParentFrame="BoneChassis_cdt"
+				NamesBlock="TatraCraneWortek250T, Wortek250TSideboard1, Wortek250TSideboard2, LargeSemitrailerOiltank"
+			>
+				<ExtraParent Frame="BoneCabin_cdt" Offset="(0; 0; 0)" />
+			</Socket>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="Wortek250TProtection" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket Names="Wortek250Visor" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		
+		<!-- FRAME -->
+		<AddonSockets
+			DefaultAddon="wortek_250t_frame_default"
+			RequiredAddonIfNoConflicts="wortek_250t_frame_default"
+		>
+			<Socket Names="Wortek250TFrameDefault" ParentFrame="BoneChassis_cdt" NamesBlock="Wortek250TSideboard2" />
+		</AddonSockets>
+		
+		<!-- FRAME ADDONS -->
+		<AddonSockets>
+			<Socket Names="Wortek250TSaddleHigh" ParentFrame="BoneChassis_cdt" >
+				<AddonsShift Offset="(-0.15; 0; 0)" Types="Wortek250TFrameModuleKung" />
+			</Socket>
+			<Socket Names="BunkLog" Offset="(-6.0; 1.668; 0)" ParentFrame="BoneChassis_cdt" NamesBlock="Wortek250TFrameModule" />
+			<Socket Names="Wortek250TSideboard2" ParentFrame="BoneChassis_cdt" NamesBlock="Wortek250TFrameModuleKung, Wortek250TFrameModuleFuelTank" />
+			<Socket Names="Wortek250TSideboard1" ParentFrame="BoneChassis_cdt" NamesBlock="" >
+				<AddonsShift Offset="(-0.08; 0; 0)" Types="Wortek250TFrameModuleFuelTank" />
+			</Socket>
+		</AddonSockets>
+		<!-- FRONT FRAME ADDONS -->
+		<AddonSockets>
+			<Socket Names="Wortek250TFrameModuleKung" ParentFrame="BoneChassis_cdt" NamesBlock="BunkLog" />
+			<Socket Names="Wortek250TFrameModuleFuelTank" ParentFrame="BoneChassis_cdt" NamesBlock="BunkLog, LargeSemitrailerOiltank" />
+		</AddonSockets>
+		
+		<!-- CRANES -->
+		<AddonSockets>
+			<Socket Names="TatraCraneWortek250T" Offset="(0; 0; 0)" ParentFrame="BoneChassis_cdt" 
+				NamesBlock="BunkLog, Wortek250TSideboard2, Wortek250TFrameModuleKung, Wortek250TFrameModuleFuelTank" />
+		</AddonSockets>
+		
+		<!-- TRAILERS -->
+		<AddonSockets>
+			<Socket Names="LargeSemitrailer, LargeSemitrailerOiltank" Offset="(-2.660; 2.092; 0.000)" >
+				<AddonsShift Offset="(-0.15; 0; 0)" Types="Wortek250TFrameModuleKung" />
+			</Socket>
+			<Socket Names="Trailer" Offset="(-4.21; 1.110; 0.000)" >
+				<AddonsShift Offset="(-0.6; 0; 0)" Types="Wortek250TSideboard2" />
+			</Socket>
+		</AddonSockets>
+		
+		<!--  CUSTOMIZATION -->
+		<AddonSockets>
+			<Socket
+				InCockpit="true"
+				Names="StuffAirfreshener"
+				Offset="(1.704; 3.020; -0.376)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket
+				InCockpit="true"
+				Names="StuffDashboard"
+				Offset="(1.700; 2.330; -0.315)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket
+				InCockpit="true"
+				Names="StuffHoodWortek250T"
+				Offset="(0; 0; 0)"
+				ParentFrame="BoneCabin_cdt"
+			/>
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="Wortek250TSticker_1x1_01" ParentFrame="BoneSunshieldL_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="Wortek250TSticker_1x1_02" ParentFrame="BoneSunshieldL_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="Wortek250TSticker_1x1_03" ParentFrame="BoneSunshieldR_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="Wortek250TSticker_1x1_04" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="Wortek250TSticker_1x1_05" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="Wortek250TSticker_1x2_01" ParentFrame="BoneSunshieldR_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="Wortek250TSticker_1x2_02" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="Wortek250TSticker_1x4_01" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="Wortek250TSticker_Glass_Top" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="Wortek250TSticker_Glass_Bottom" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="Wortek250TSticker_Door_L" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="Wortek250TSticker_Door_R" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="Wortek250TSticker_Capote" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+		<AddonSockets>
+			<Socket InCockpit="true" Names="Wortek250TSticker_Roof" ParentFrame="BoneCabin_cdt" />
+		</AddonSockets>
+	</GameData>
+	<ControlledConstraints>
+		<Constraint Id="chassis_steer" IsLinkedSteering="true" Name="TieRod" />
+	</ControlledConstraints>
+	
+	<AutomaticIK>
+		<IKBone ModelFrame="BoneTieRodHinge" ParentFrame="BoneTieRod_cdt">
+			<IKJoint AxisLocal="(0; 1; 0)" Type="Hinge2" />
+			<IKBone
+				AttachOffset="(0; 0; 0)"
+				AttachToFrame="BoneRackL"
+				ModelFrame="BoneTieRodPrismatic"
+			>
+				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
+			</IKBone>
+		</IKBone>
+	</AutomaticIK>
+</Truck>

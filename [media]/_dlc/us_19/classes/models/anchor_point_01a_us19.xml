@@ -1,0 +1,22 @@
+<ModelBrand
+	NightLightingShadowsAllowCap="true"
+	Instanced="true"
+>
+	<PhysicsModel>
+		<Body Collisions="None" ModelFrame="BoneRoot">
+			<Body Collisions="None" Mass="1000" ModelFrame="Bone" >
+				<Constraint
+						AxisLocal="(0; 0; 1)"
+						Type="Hinge"
+						MinLimit="-90"
+						MaxLimit="30"
+					>
+						<Motor Damping="100" Spring="3000" Type="Spring" />
+				</Constraint>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<GameData>
+		<WinchSocket Pos="(-0.08; -0.19; 0.0)" ParentFrame="Bone" />
+	</GameData>
+</ModelBrand>

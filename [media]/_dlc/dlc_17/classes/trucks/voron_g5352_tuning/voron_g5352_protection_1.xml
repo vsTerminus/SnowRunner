@@ -20,10 +20,10 @@
 			<Model _template="HeadLightRay" Org="(4.290; 2.214; 0.810)" ColorMultAtDay="0.3"/>
 		</HeadLight>
 		<HeadLight>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.290; 2.214; -1.008)" Dir="(1; 0; 0)" Size="0.3" ColorMultAtDay="0.25"/>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.290; 2.214; 1.008)" Dir="(1; 0; 0)" Size="0.3" ColorMultAtDay="0.25"/>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.290; 2.214; -0.810)" Dir="(1; 0; 0)" Size="0.3" ColorMultAtDay="0.25"/>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(4.290; 2.214; 0.810)" Dir="(1; 0; 0)" Size="0.3" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(4.290; 2.214; -1.008)" Dir="(1; 0; 0)" Size="0.3" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(4.290; 2.214; 1.008)" Dir="(1; 0; 0)" Size="0.3" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(4.290; 2.214; -0.810)" Dir="(1; 0; 0)" Size="0.3" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(4.290; 2.214; 0.810)" Dir="(1; 0; 0)" Size="0.3" ColorMultAtDay="0.25"/>
 		</HeadLight>
 		<Ignition _template="Flasher">
 			<Model

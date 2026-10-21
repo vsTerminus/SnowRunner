@@ -84,7 +84,7 @@
 						<Motor Force="410000" Tau="0.9" Type="Position" />
 					</Constraint>
 					<Body
-						CenterOfMassOffset="(-0.5; 0; 0)"
+						CenterOfMassOffset="(0; 0; 0)"
 						Mass="400"
 						ModelFrame="BoneArm2_cdt"
                         Collisions="All"
@@ -98,7 +98,7 @@
 							<Motor Force="100000" Tau=".9" Type="Position" />
 						</Constraint>
 						<Body
-							CenterOfMassOffset="(-0.5; 0; 0)"
+							CenterOfMassOffset="(0; 0; 0)"
 							Mass="350"
 							ModelFrame="BoneArm3_cdt"
                             Collisions="All"
@@ -112,7 +112,7 @@
 								<Motor Force="100000" Tau=".9" Type="Position" />
 							</Constraint>
 							<Body
-								CenterOfMassOffset="(-0.5; 0; 0)"
+								CenterOfMassOffset="(0; 0; 0)"
 								Mass="250"
 								ModelFrame="BoneArm4_cdt"
                                 Collisions="All"
@@ -162,7 +162,7 @@
 		<SoundIKLoop Name="trucks/krs_58_bandit/krs_58_bandit_crane_move_loop" Range="20" Volume="1" />
 		<InstallSocket Type="CraneMercedesActros" />
 		<CraneSourceSocket Pos="(3.123; 3.960; 0.000)" ParentFrame="BoneArm4_cdt" />
-		<RequiredAddon Types="mercedes_benz_actros_6x6_subframe, saddle_high_mercedes_actros_6x6, alt_saddle_low_mercedes_actros_6x6" />
+		<RequiredAddon Types="mercedes_benz_actros_6x6_subframe, saddle_high_mercedes_actros_6x6, s_saddle_low_mercedes_actros_6x6" />
 		<AddonType Name="Crane" />
 	</GameData>
 	<ControlledIK
@@ -174,36 +174,6 @@
 		<Chain EndOffset="(1.25; 0; 0)" ModelFrames="BoneRoot_cdt,BoneRotationBase_cdt,BoneArm1_cdt, BoneArm2_cdt, BoneArm3_cdt, BoneArm4_cdt" />
 	</ControlledIK>
 	<AutomaticIK>
-		<IKBone ModelFrame="BoneLegL" ParentFrame="BoneLegL_cdt">
-			<IKJoint AxisLocal="(1; 0; 0)" Type="Hinge2" />
-			<IKBone
-				AttachOffset="(0; 0; 0)"
-				AttachToFrame="BoneFootL_cdt"
-				ModelFrame="BoneFootL"
-			>
-				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
-			</IKBone>
-		</IKBone>
-		<IKBone ModelFrame="BoneLegR" ParentFrame="BoneLegR_cdt">
-			<IKJoint AxisLocal="(1; 0; 0)" Type="Hinge2" />
-			<IKBone
-				AttachOffset="(0; 0; 0)"
-				AttachToFrame="BoneFootR_cdt"
-				ModelFrame="BoneFootR"
-			>
-				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
-			</IKBone>
-		</IKBone>
-		<IKBone ModelFrame="BoneArmHinge" ParentFrame="BoneArm1_cdt">
-			<IKJoint AxisLocal="(1; 0; 0)" Type="Hinge2" />
-			<IKBone
-				AttachOffset="(0; 0; 0)"
-				AttachToFrame="BoneArm4_cdt"
-				ModelFrame="BoneArmPrismatic"
-			>
-				<IKJoint AxisLocal="(1; 0; 0)" Type="Slider" />
-			</IKBone>
-		</IKBone>
 		<IKBone ModelFrame="BonePistonBase" ParentFrame="BoneRotationBase_cdt">
 			<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
 			<IKBone

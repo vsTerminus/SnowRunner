@@ -1,0 +1,39 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/derry_savior_tuning/derry_savior_bumper_default">
+		<Body ImpactType="Truck" Mass="80" ModelFrame="BoneAddon_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<Ignition>
+			<Flare _template="IgnitionSignalOrange" Dir="(1.0; 0.0; 0.0)" Size="0.25" Pos="(4.982; 1.160; 0.784)" ParentFrame="BoneCabin_cdt" />
+			<Flare _template="IgnitionSignalOrange" Dir="(1.0; 0.0; 0.0)" Size="0.25" Pos="(4.982; 1.160; -0.784)" ParentFrame="BoneCabin_cdt" />
+		</Ignition>
+	</ModelAttachments>
+	<GameData
+		CameraPreset="default"
+		Category="bumper"
+		Price="900"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<WinchSocket FixedToTruck="true" Pos="(4.979; 0.873; -0.442)" />
+		<WinchSocket FixedToTruck="true" Pos="(4.979; 0.873; 0.442)" />
+		<WinchSocket FixedToTruck="true" Pos="(5.082; 1.005; -0.442)" />
+		<WinchSocket FixedToTruck="true" Pos="(5.082; 1.005; 0.442)" />
+		
+		<CraneSocket FixedToTruck="true" Pos="(4.979; 0.873; -0.442)" />
+		<CraneSocket FixedToTruck="true" Pos="(4.979; 0.873; 0.442)" />
+		<CraneSocket FixedToTruck="true" Pos="(5.082; 1.005; -0.442)" />
+		<CraneSocket FixedToTruck="true" Pos="(5.082; 1.005; 0.442)" />
+		
+		<UiDesc
+			UiDesc="UI_TUNING_BUMPER_STOCK_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_BUMPER_STOCK_NAME"
+		/>
+		<InstallSocket Type="DerrySaviorBumper" />
+	</GameData>
+</TruckAddon>

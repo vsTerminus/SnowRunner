@@ -1,0 +1,33 @@
+<_templates Include="trucks">
+	<TruckTire>
+		<Offroad _template="Heavy" Mass="285">
+			<WheelTracks _template="Offroad" />
+			<WheelSoftness _template="Average" />
+		</Offroad>
+	</TruckTire>
+</_templates>
+<TruckWheels DamageCapacity="50" Radius="1" Width="0.657">
+	<TruckTires>
+		<TruckTire _template="Offroad" Mesh="wheels/tire_derry_savior" Name="tire_offroad_derry_savior">
+			<WheelFriction _template="HeavyMudtires"
+				BodyFriction="1.5"
+				BodyFrictionAsphalt="0.5"
+				SubstanceFriction="3.25"
+			/>
+			<GameData
+				Price="7200"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_MUDTIRES_DESC" UiName="UI_TIRE_DERRY_SAVIOR_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>
+		<TruckRim Mesh="wheels/rim_derry_savior" Name="rim_derry_savior">
+			<GameData>
+				<UiDesc UiDesc="UI_RIM_HEAVY_MUDTIRES_SINGLE_2_DESC" UiName="UI_RIM_DERRY_SAVIOR_NAME" />
+			</GameData>
+		</TruckRim>
+	</TruckRims>
+</TruckWheels>

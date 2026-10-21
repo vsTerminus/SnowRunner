@@ -1,0 +1,29 @@
+<CombineParticles
+	AirResistance="1024"
+	Gravity="(0; -0.08; 0)"
+	Orientation="AlignedBillboard"
+	SoftDepth="1"
+	OverdrawDegradation="true"
+	Wind="(3.5; 0; 0)"
+	ZOffset="-0.1"
+	WindDivergence="5"
+>
+	<Texture
+		Diffuse="sfx/snow_6x__d_a.tga"
+		NumFramesX="6"
+		RandomFrameOffset="0"
+		AnimSpeed="4"
+	/>
+
+	<Size Function="(0.05; 0.07; 0.09)" Median="0.15" />
+	<Scale Random="0.5" Value="1" />
+	<LifeTime Value="10" Random="0.02" />
+	<Color Value="g(255; 255; 255) x 1">
+		<Key Alpha="455" At="0.0" />
+		<Key Alpha="455" At="0.3" />
+		<Key Alpha="455" At="0.6" />
+		<Key Alpha="455" At="1.0" />
+	</Color>
+
+	<AlphaClip Function="(0.1; 0.4; 1.0)" Median="0.8" />
+</CombineParticles>

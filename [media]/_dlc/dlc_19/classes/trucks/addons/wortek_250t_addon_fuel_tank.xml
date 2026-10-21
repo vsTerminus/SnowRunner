@@ -1,0 +1,59 @@
+<_templates Include="trucks" />
+<TruckAddon IsChassisFullOcclusion="true">
+	<TruckData
+		FuelCapacity="1000"
+		RepairsCapacity="50"
+	>
+		<LimitedFluid
+			Center="(-0.214; 2.490; 0)"
+			LengthX="1.52"
+			RadiusY="0.675"
+			RadiusZ="1.15"
+			Type="Cylinder"
+		/>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/addons/wortek_250t_addon_fuel_tank">
+		<Body Mass="750">
+			<Constraint Type="Rigid" />
+			<Body Mass="10" ModelFrame="BoneExtinguisher_cdt" Collisions="None">
+				<Constraint
+					Type="Hinge"
+					AxisLocal="(0; 0; 1)"
+					MinLimit="0"
+					MaxLimit="30"
+				>
+					<Motor Type="Spring" Spring="1" Damping="0.1" />	
+				</Constraint>
+			</Body>
+			<Body Mass="50" ModelFrame="BoneHose_cdt" Collisions="None">
+				<Constraint
+					Type="Prismatic"
+					AxisLocal="(1; 0; 0)"
+					MinLimit="0"
+					MaxLimit="0.15"
+				>
+					<Motor Type="Spring" Spring="5" Damping="5" />
+				</Constraint>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="addon_1"
+		Category="frame_addons"
+		IsCustomizable="true"
+		Price="4700"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_ADDON_FRAME_TANK_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_ADDON_FRAME_TANK_NAME"
+		/>
+		<InstallSocket Type="Wortek250TFrameModuleFuelTank" />
+	</GameData>
+	<FuelMass>
+		<Body Mass="2800" />
+	</FuelMass>
+</TruckAddon>

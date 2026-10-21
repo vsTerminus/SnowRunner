@@ -1,0 +1,37 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<TruckData>
+		<Shakers>
+			<Shaker Frame="BoneShakerR" MinAngle="(0.3; 0.3; 0.3)" MaxAngle="(1; 1; 1)" MaxFrequency="3.9" ParentFrame="BoneAddon_cdt" />
+			<Shaker Frame="BoneShakerL" MinAngle="(0.3; 0.3; 0.3)" MaxAngle="(1; 1; 1)" MaxFrequency="3.9" ParentFrame="BoneAddon_cdt" />
+		</Shakers>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/wortek_250t_tuning/wortek_250t_exhaust_02b">
+		<Body Collisions="None" Mass="20" ModelFrame="BoneAddon_cdt">
+			<Constraint Type="Rigid" />
+			<Body Collisions="None" Mass="25" ModelFrame="BoneCabin_cdt">
+				<Constraint ExplicitParentFrame="0" Type="Fixed" />
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="exhaust_2"
+		Category="exhaust"
+		Price="2700"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc=""
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_EXHAUST_SLANTCUT_EXTRA_NAME"
+		/>
+		<RequiredAddon Types="wortek_250t_addon_kung, wortek_250t_addon_fuel_tank" />
+		<InstallSocket Type="Wortek250TExhaustB" />
+	</GameData>
+	<Exhaust Dir="(0; 1; 0.3)" IsLight="false" Origin="(-1.258; 3.266; 1.011)" Speed="3.1" ParentFrame="BoneShakerL" />
+	<Exhaust Dir="(0; 1; 0.3)" IsLight="false" Origin="(-1.258; 3.459; 0.866)" Speed="3.1" ParentFrame="BoneShakerL" />
+	<Exhaust Dir="(0; 1; -0.3)" IsLight="false" Origin="(-1.258; 3.266; -1.011)" Speed="3.1" ParentFrame="BoneShakerR" />
+	<Exhaust Dir="(0; 1; -0.3)" IsLight="false" Origin="(-1.258; 3.459; -0.866)" Speed="3.1" ParentFrame="BoneShakerR" />
+</TruckAddon>

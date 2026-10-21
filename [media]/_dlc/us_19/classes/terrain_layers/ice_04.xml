@@ -1,0 +1,17 @@
+<MaterialType 
+	Texture="tiles/ice_04__d_a.tga" 
+	Normal="tiles/ice_04_relief__d_a.tga"
+	IceCracks="tiles/ice_04_cracks__b_uncmp.tga"
+	IceDeep="tiles/ice_04_deep__d.tga"
+	IceDeepDepth="1"
+	NoGrass="false"
+	IsExtrudable="false"
+	IsWetnessAsIce="true"
+	WheelTracks="0"
+	Sound="surfaces/surf_ice_rnd"
+	SkidSound="surfaces/skidding/skidding_ice_loop"
+	IsSnowParticles="true"
+	IsSoil="false"
+	WetnessAlbedoMultiplier="0.1"
+	WetnessRoughnessMultiplier="0.1"
+/>

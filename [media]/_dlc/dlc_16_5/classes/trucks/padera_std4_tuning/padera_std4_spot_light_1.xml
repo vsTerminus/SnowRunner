@@ -12,65 +12,65 @@
 			<Model _template="HeadLightRay" Org="(3.529; 3.129; 0)" ColorMultAtDay="0.3"/>
 		</HeadLight>
 		<HeadLight>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.529; 3.144; -0.443)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.529; 3.144; -0.421)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.529; 3.144; -0.399)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.529; 3.144; -0.377)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.529; 3.144; -0.355)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.529; 3.144; -0.333)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.529; 3.144; -0.311)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.529; 3.144; -0.289)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.529; 3.144; -0.267)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(3.529; 3.144; -0.443)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(3.529; 3.144; -0.421)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(3.529; 3.144; -0.399)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(3.529; 3.144; -0.377)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(3.529; 3.144; -0.355)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(3.529; 3.144; -0.333)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(3.529; 3.144; -0.311)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(3.529; 3.144; -0.289)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(3.529; 3.144; -0.267)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
 			
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.529; 3.117; -0.443)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.529; 3.117; -0.421)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.529; 3.117; -0.399)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.529; 3.117; -0.377)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.529; 3.117; -0.355)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.529; 3.117; -0.333)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.529; 3.117; -0.311)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.529; 3.117; -0.289)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.529; 3.117; -0.267)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(3.529; 3.117; -0.443)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(3.529; 3.117; -0.421)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(3.529; 3.117; -0.399)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(3.529; 3.117; -0.377)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(3.529; 3.117; -0.355)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(3.529; 3.117; -0.333)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(3.529; 3.117; -0.311)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(3.529; 3.117; -0.289)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(3.529; 3.117; -0.267)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
 			
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.529; 3.144; 0.443)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.529; 3.144; 0.421)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.529; 3.144; 0.399)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.529; 3.144; 0.377)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.529; 3.144; 0.355)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.529; 3.144; 0.333)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.529; 3.144; 0.311)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.529; 3.144; 0.289)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.529; 3.144; 0.267)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(3.529; 3.144; 0.443)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(3.529; 3.144; 0.421)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(3.529; 3.144; 0.399)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(3.529; 3.144; 0.377)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(3.529; 3.144; 0.355)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(3.529; 3.144; 0.333)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(3.529; 3.144; 0.311)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(3.529; 3.144; 0.289)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(3.529; 3.144; 0.267)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
 			
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.529; 3.117; 0.443)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.529; 3.117; 0.421)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.529; 3.117; 0.399)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.529; 3.117; 0.377)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.529; 3.117; 0.355)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.529; 3.117; 0.333)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.529; 3.117; 0.311)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.529; 3.117; 0.289)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.529; 3.117; 0.267)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(3.529; 3.117; 0.443)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(3.529; 3.117; 0.421)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(3.529; 3.117; 0.399)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(3.529; 3.117; 0.377)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(3.529; 3.117; 0.355)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(3.529; 3.117; 0.333)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(3.529; 3.117; 0.311)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(3.529; 3.117; 0.289)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(3.529; 3.117; 0.267)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
 			
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.529; 3.144; -0.088)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.529; 3.144; -0.066)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.529; 3.144; -0.044)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.529; 3.144; -0.022)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.529; 3.144; 0)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.529; 3.144; 0.022)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.529; 3.144; 0.044)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.529; 3.144; 0.066)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.529; 3.144; 0.088)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(3.529; 3.144; -0.088)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(3.529; 3.144; -0.066)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(3.529; 3.144; -0.044)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(3.529; 3.144; -0.022)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(3.529; 3.144; 0)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(3.529; 3.144; 0.022)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(3.529; 3.144; 0.044)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(3.529; 3.144; 0.066)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(3.529; 3.144; 0.088)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
 			
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.529; 3.117; -0.088)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.529; 3.117; -0.066)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.529; 3.117; -0.044)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.529; 3.117; -0.022)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.529; 3.117; 0)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.529; 3.117; 0.022)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.529; 3.117; 0.044)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.529; 3.117; 0.066)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(3.529; 3.117; 0.088)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(3.529; 3.117; -0.088)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(3.529; 3.117; -0.066)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(3.529; 3.117; -0.044)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(3.529; 3.117; -0.022)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(3.529; 3.117; 0)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(3.529; 3.117; 0.022)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(3.529; 3.117; 0.044)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(3.529; 3.117; 0.066)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(3.529; 3.117; 0.088)" Dir="(1; 0; 0)" Size=".065" ColorMultAtDay="0.25"/>
 		</HeadLight>
 	</ModelAttachments>
 	<MainHeadLight _template="Multiply1" />

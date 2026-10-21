@@ -1,0 +1,41 @@
+<_templates Include="trucks" />
+<SuspensionSetVariants>	
+	<SuspensionSet
+		_template="Normal"
+		BrokenWheelDamageMultiplier="2"
+		CriticalDamageThreshold="0.55"
+		DamageCapacity="240"
+		Name="wortek_250t_suspension_default"
+	>
+		<Suspension
+			WheelType="front"
+			Damping="0.9"
+			Height="0.065"
+			Strength="0.08" 
+			BrokenSuspensionMax="0.055" 
+			SuspensionMin="-0.23"
+			SuspensionMax="0.055"
+		/>
+		<Suspension 
+			WheelType="rear"
+			Damping="0.7"
+			Height="0.055"
+			Strength="0.032"
+			BrokenSuspensionMax="0.15"
+			SuspensionMin="-0.2"
+			SuspensionMax="0.15"
+		/>
+		<GameData
+			Price="7500"
+			UnlockByExploration="false"
+			UnlockByRank="1"
+		>
+			<UiDesc
+				UiDesc="UI_SUSPENSION_DEFAULT_DESC"
+				UiIcon30x30=""
+				UiIcon40x40=""
+				UiName="UI_SUSPENSION_DEFAULT_NAME"
+			/>
+		</GameData>
+	</SuspensionSet>
+</SuspensionSetVariants>

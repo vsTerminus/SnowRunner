@@ -1,0 +1,89 @@
+﻿<_templates Include="trucks">
+	<Body>
+		<Mudguard Collisions="None" Mass="5">
+			<Constraint
+				AxisLocal="(0; 0; 1)"
+				Type="Hinge"
+				MinLimit="-12"
+				MaxLimit="7"
+			>
+				<Motor Damping="0.5" Spring="5" Type="Spring" />
+			</Constraint>
+		</Mudguard>
+	</Body>
+</_templates>
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/derry_savior_tuning/derry_savior_mudguard_rear">
+		<Body
+			CenterOfMassOffset="(0; 0; 0)"
+			ImpactType="Truck"
+			Mass="50"
+			ModelFrame="BoneChassis_cdt"
+		>
+			<Constraint Type="Rigid" />
+			
+			<Body Collisions="None" Mass="10" ModelFrame="BoneLeftMudguardJiggle_cdt">
+				<Constraint
+					AxisLocal="(1; 0; 0)"
+					Type="Hinge"
+					MinLimit="-7"
+					MaxLimit="7"
+				>
+					<Motor Damping="30" Spring="3500" Type="Spring" />
+				</Constraint>
+				<Body
+					_template="Mudguard"
+					ModelFrame="BoneMudguardRearLeft_cdt"
+				>
+					<Constraint ExplicitParentFrame="0" MinLimit="-20" MaxLimit="16"/>
+				</Body>
+			</Body>
+			
+			
+			<Body Collisions="None" Mass="4" ModelFrame="BoneRightMudguardJiggle_cdt">
+				<Constraint
+					AxisLocal="(1; 0; 0)"
+					Type="Hinge"
+					MinLimit="-7"
+					MaxLimit="7"
+				>
+					<Motor Damping="30" Spring="3500" Type="Spring" />
+				</Constraint>
+				<Body
+					_template="Mudguard"
+					ModelFrame="BoneMudguardRearRight_cdt"
+				>
+					<Constraint ExplicitParentFrame="0" MinLimit="-18" MaxLimit="15"/>
+				</Body>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<StopSignals>
+			<Light _template="StopSignal" Dir="(-1; -0.1; 0)" Pos="(-5.865; 0.891; 0)" />
+			<Flare _template="StopSignal" Dir="(-1; 0; 0)" Pos="(-5.650; 0.877; 0.539)" Size="0.4" />
+			<Flare _template="StopSignal" Dir="(-1; 0; 0)" Pos="(-5.650; 0.877; -0.539)" Size="0.4" />
+		</StopSignals>
+		<Ignition>
+			<Light _template="StopSignal" Dir="(-1; -0.1; 0)" Pos="(-5.865; 0.891; 0)" />
+			<Flare _template="StopSignal" Dir="(-1; 0; 0)" Pos="(-5.650; 0.877; 0.539)" Size="0.25" />
+			<Flare _template="StopSignal" Dir="(-1; 0; 0)" Pos="(-5.650; 0.877; -0.539)" Size="0.25" />
+		</Ignition>
+	</ModelAttachments>
+	<GameData
+		CameraPreset="addon_1"
+		Category="miscellenious"
+		IsCustomizable="true"
+		Price="400"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_MUDGUARD_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_MUDGUARD_NAME"
+		/>
+		<InstallSocket Type="DerrySaviorMudguardRear" />
+	</GameData>
+</TruckAddon>

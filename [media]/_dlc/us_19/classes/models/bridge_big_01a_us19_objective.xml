@@ -1,0 +1,38 @@
+<ModelBrand NightLightingShadowsAllowCap="true" DynamicModel="true">
+
+	<Subset IsDefault="true" Name="state_start">
+		<Mesh Name="state_start" />
+		<Mesh Name="state_start_lod1" />
+		<Mesh Name="state_start_lod2" />
+		<Mesh Name="state_start_lod3" />
+		<CdtMesh Name="cdt_state_start" />
+	</Subset>
+
+	<Subset Name="state_end">
+		<OnSubsetActivateEvent>
+		<Sound Name="actors/actor_construction/actor_construct_rocks_roadblock" Pos="(0; 0; 0)" Volume="1" Range="20"/>
+		<Sound Name="actors/actor_construction/actor_construct_high_tower_01_rus" Pos="(0; 0; 0)" Volume="1" Range="20"/>
+        <SFX Name="stone_smoke_01" Dir="(0; 1; 0)" Pos="(9.1779; -0.259258; 0.199033)" />
+        <SFX Name="stone_smoke_01" Dir="(0; 1; 0)" Pos="(20.1678; -0.3896; -0.237988)" />
+        <SFX Name="stone_smoke_01" Dir="(0; 1; 0)" Pos="(14.7034; 0.259226; -0.751131)" />
+		<SFX Name="stone_smoke_01" Dir="(0; 1; 0)" Pos="(9.1779; -0.259258; -4.199033)" />
+        <SFX Name="stone_smoke_01" Dir="(0; 1; 0)" Pos="(20.1678; -0.3896; -4.237988)" />
+        <SFX Name="stone_smoke_01" Dir="(0; 1; 0)" Pos="(14.7034; 0.259226; -4.751131)" />
+		<SFX Name="stone_smoke_01" Dir="(0; 1; 0)" Pos="(9.1779; -0.259258; 4.199033)" />
+        <SFX Name="stone_smoke_01" Dir="(0; 1; 0)" Pos="(20.1678; -0.3896; 4.237988)" />
+        <SFX Name="stone_smoke_01" Dir="(0; 1; 0)" Pos="(14.7034; 0.259226; 4.751131)" />
+		</OnSubsetActivateEvent>
+		<Mesh Name="state_end" />
+		<Mesh Name="state_end_lod1" />
+		<Mesh Name="state_end_lod2" />
+		<Mesh Name="state_end_lod3" />
+		<CdtMesh Name="cdt_state_end" />
+	</Subset>
+
+	<PhysicsModel>
+		<Body Collisions="Dynamic" ModelFrame="state_start">
+			<Body Collisions="Dynamic" ModelFrame="state_end"/>
+		</Body>
+	</PhysicsModel>
+	<Landmark Mesh="landmarks/bridge_big_01a_us19_objective_lmk" />
+</ModelBrand>

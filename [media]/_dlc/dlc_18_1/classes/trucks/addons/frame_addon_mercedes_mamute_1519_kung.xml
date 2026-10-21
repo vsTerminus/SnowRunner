@@ -49,8 +49,8 @@
 			<Constraint
 				AxisLocal="(1; 0; 0)"
 				Type="Hinge"
-				MinLimit="-1.5"
-				MaxLimit="2.5"
+				MinLimit="-2.0"
+				MaxLimit="2.0"
 			>
 				<Motor Damping="35" Spring="150" Type="Spring" />
 			</Constraint>
@@ -73,7 +73,7 @@
 </_templates>
 <TruckAddon IsChassisFullOcclusion="true">
 	<RepairsHide>
-		<Mesh Frame="repair_02" HideThreshold="0.5" />
+		<Mesh Frame="repair_01" HideThreshold="0.5" />
 		<Mesh Frame="repair_02" HideThreshold="0.0" />
 	</RepairsHide>
 	<WheelRepairsHide>
@@ -90,7 +90,7 @@
 	>
 	</TruckData>
 	<PhysicsModel Mesh="trucks/addons/frame_addon_mercedes_mamute_1519_kung">
-		<Body ImpactType="Truck" Mass="2280" ModelFrame="BoneRoot_cdt">
+		<Body ImpactType="Truck" Mass="2280" ModelFrame="BoneRoot_cdt" CenterOfMassOffset="(0; -0.5; 0)">
 			<Constraint Type="Rigid" />
 			<Body _template="Chain" ModelFrame="BoneChainL_cdt" />
 			<Body _template="Chain" ModelFrame="BoneChainR_cdt" />

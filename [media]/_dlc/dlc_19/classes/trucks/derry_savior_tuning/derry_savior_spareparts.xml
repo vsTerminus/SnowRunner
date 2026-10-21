@@ -1,0 +1,32 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<TruckData FuelCapacity="260" RepairsCapacity="150">
+		<LimitedFluid
+			Center="(0.3; 0.928; -0.805)"
+			SizeX="1.000"
+			SizeY="0.51"
+			SizeZ="0.58"
+			Type="Box"
+		/>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/derry_savior_tuning/derry_savior_spareparts">
+		<Body ImpactType="Truck" Mass="180" ModelFrame="BoneAddon_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="addon_1"
+		Category="frame_addons"
+		Price="3600"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_DERRY_SAVIOR_SPAREPARTS_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_DERRY_SAVIOR_SPAREPARTS_NAME"
+		/>
+		<InstallSocket Type="DerrySaviorSpareparts" />
+	</GameData>
+</TruckAddon>

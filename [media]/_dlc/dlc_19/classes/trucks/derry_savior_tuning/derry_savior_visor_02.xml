@@ -1,0 +1,30 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/derry_savior_tuning/derry_savior_visor_02" />
+	<ModelAttachments>
+		<Ignition>
+			<Flare _template="IgnitionSignalOrange" Dir="(0; 1; 0)" Size="0.5" AspectRatio="1" DirAngle="180" Pos="(3.394; 3.173; 0.919)" />
+			<Flare _template="IgnitionSignalOrange" Dir="(0; 1; 0)" Size="0.5" AspectRatio="1" DirAngle="180" Pos="(3.394; 3.173; 0.185)" />
+			
+			<Flare _template="IgnitionSignalOrange" Dir="(0; 1; 0)" Size="0.5" AspectRatio="1" DirAngle="180" Pos="(3.394; 3.173; 0.000)" />
+			
+			<Flare _template="IgnitionSignalOrange" Dir="(0; 1; 0)" Size="0.5" AspectRatio="1" DirAngle="180" Pos="(3.394; 3.173; -0.919)" />
+			<Flare _template="IgnitionSignalOrange" Dir="(0; 1; 0)" Size="0.5" AspectRatio="1" DirAngle="180" Pos="(3.394; 3.173; -0.185)" />
+		</Ignition>
+	</ModelAttachments>
+	<GameData
+		CameraPreset="roof"
+		Category="top"
+		Price="1200"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_SUNVISOR_STRAIGHTCAP_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_SUNVISOR_STRAIGHTCAP_NAME"
+		/>
+		<InstallSocket Type="DerrySaviorVisor" />
+	</GameData>
+</TruckAddon>

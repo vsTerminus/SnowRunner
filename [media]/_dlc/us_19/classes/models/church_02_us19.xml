@@ -1,0 +1,11 @@
+<ModelBrand
+    DayShadowOffsetMult="17"
+    Instanced="true"
+    InstancedAsModel="true"
+    NightLightingShadowsAllowCap="true"
+>
+	<PhysicsModel>
+		<Body Collisions="Dynamic" />
+	</PhysicsModel>
+	<Landmark Mesh="landmarks/church_02_us19_lmk" />
+</ModelBrand>

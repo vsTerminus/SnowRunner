@@ -59,9 +59,9 @@
 			<Model _template="HeadLightRay" Org="(2.698; 3.235; 0.264)" ColorMultAtDay="0.3"/>
 		</HeadLight>
 		<HeadLight>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(2.698; 3.235; -0.264)" Dir="(1; 0; 0)" Size="0.3" ColorMultAtDay="0.25"/>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(2.698; 3.235; 0)" Dir="(1; 0; 0)" Size="0.3" ColorMultAtDay="0.25"/>
-			<Flare _template="IgnitionSignalWhite" ColorMultAtDay="1" Pos="(2.698; 3.235; 0.264)" Dir="(1; 0; 0)" Size="0.3" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(2.698; 3.235; -0.264)" Dir="(1; 0; 0)" Size="0.3" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(2.698; 3.235; 0)" Dir="(1; 0; 0)" Size="0.3" ColorMultAtDay="0.25"/>
+			<Flare _template="IgnitionSignalWhite" Pos="(2.698; 3.235; 0.264)" Dir="(1; 0; 0)" Size="0.3" ColorMultAtDay="0.25"/>
 		</HeadLight>
 	</ModelAttachments>
 	<GameData

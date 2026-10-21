@@ -202,7 +202,7 @@
 		</Ignition>
 	</ModelAttachments>
 	<Landmark Mesh="landmarks/semitrailer_sideboard_5_lmk" MinScale="1.2" MaxScale="2.2" />
-	<GameData ExcludedCargoTypes="CargoPlane, CargoWing1, CargoWing2, CargoForcklift, CargoBoiler, CargoIronRoad" Price="6800">
+	<GameData ExcludedCargoTypes="CargoPlane, CargoWing1, CargoWing2, CargoForcklift, CargoBoiler, CargoIronRoad, CargoBuildingLifePod" Price="6800">
 		<WinchSocket Pos="(-6.489; 1.355; 0.425)" ParentFrame="BoneCargo_1_cdt" />
 		<WinchSocket Pos="(-6.489; 1.355; -0.425)" ParentFrame="BoneCargo_1_cdt" />
 		<WinchSocket Pos="(0.752; 1.473; 1.028)" ParentFrame="BoneCargo_2_cdt" />

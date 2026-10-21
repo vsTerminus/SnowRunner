@@ -4,10 +4,10 @@
 	<GameData Price="20000">
 		<UiDesc
 			_noinherit="true"
-			UiDesc="UI_SEMITRAILER_ROCKET_DESC"
-			UiIcon30x30="trailerImgRocketFull30"
-			UiIcon40x40="trailerImgRocketFull"
-			UiName="UI_SEMITRAILER_ROCKET_NAME"
+			UiDesc="UI_SEMITRAILER_WIND_BLADE_DESC"
+			UiIcon30x30="trailerWindBlade30"
+			UiIcon40x40="trailerWindBlade40"
+			UiName="UI_SEMITRAILER_WIND_BLADE_NAME"
 		/>
 		
 

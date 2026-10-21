@@ -1,0 +1,52 @@
+<ModelBrand NightLightingShadowsAllowCap="true" DynamicModel="true" NightLightingShadowsAllowCap="true"
+	DayShadowOffsetMult="13">
+
+	<Subset IsDefault="true" Name="state_start">
+		<Mesh Name="state_start" />
+		<Mesh Name="state_start_lod1" />
+		<Mesh Name="state_start_lod2" />
+		<Mesh Name="state_start_lod3" />
+		<Mesh Name="scaffold" />
+		<CdtMesh Name="cdt_state_start" />
+	</Subset>
+
+	<Subset Name="state_end">
+		<Mesh Name="state_end" />
+		<Mesh Name="state_end_lod1" />
+		<Mesh Name="state_end_lod2" />
+		<Mesh Name="state_end_lod3" />
+		<CdtMesh Name="cdt_state_end" />
+		<AnimTrack Name="anim_track_01" />
+		<AnimSubset Name="build_animation_0" />
+	</Subset>
+
+	<AnimSubset Name="build_animation_0">
+		<Mesh Name="state_start" />
+		<Mesh Name="state_start_lod1" />
+		<Mesh Name="state_start_lod2" />
+		<Mesh Name="state_start_lod3" />
+		<Mesh Name="animesh_01" />
+        <Mesh Name="animesh_02" />
+		<Mesh Name="animesh_03" />
+		<Mesh Name="animesh_04" />
+		<Mesh Name="animesh_05" />
+		<CdtMesh Name="cdt_state_end" />
+	</AnimSubset>
+
+	<TrackEvents TrackName="anim_track_01">
+		<AnimEvent Key="1">
+				<Sound
+                Name="actors/actor_construction/bridge_wooden_02_objective"
+                Range="50"
+                Volume="1"
+            />
+       	</AnimEvent>
+	</TrackEvents>
+
+	<PhysicsModel>
+		<Body Collisions="Dynamic" ModelFrame="state_start">
+			<Body Collisions="Dynamic" ModelFrame="state_end"/>
+		</Body>
+	</PhysicsModel>
+	<Landmark Mesh="landmarks/house_16_us19_objective_lmk" />
+</ModelBrand>

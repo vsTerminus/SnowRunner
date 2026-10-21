@@ -1,0 +1,116 @@
+<_templates Include="trucks">
+	<Flare>
+		<IgnitionSignalYellow
+			AspectRatio="1.4"
+			Color="g(238; 195; 34) x 0.4"
+			ColorMultAtDay="0.6"
+			Dir="(1; 0; 0)"
+			DirAngle="135"
+			Size="0.12"
+		/>
+		<IgnitionSignalRedSmall
+			AspectRatio="1.4"
+			Color="g(169; 0; 0) x 0.7"
+			ColorMultAtDay="0.6"
+			Dir="(-1; 0; 0)"
+			DirAngle="135"
+			Size="0.1"
+		/>
+		<IgnitionSignalRed
+			AspectRatio="1.4"
+			Color="g(169; 0; 0) x 0.8"
+			ColorMultAtDay="0.3"
+			Dir="(-1; 0; 0)"
+			DirAngle="90"
+			Size="0.2"
+		/>
+	</Flare>
+	<Body>
+		<Wire Collisions="None" Mass="0.5">
+			<Constraint
+				AxisLocal="(1; 0; 0)"
+				Type="Prismatic"
+				MinLimit="-0.03"
+				MaxLimit="0.03"
+			>
+				<Motor Damping="10" Spring="100" Type="Spring" />
+			</Constraint>
+		</Wire>
+	</Body>
+</_templates>
+<TruckAddon IsChassisFullOcclusion="true">
+	<TruckData FuelCapacity="2800">
+		<LimitedFluid
+			Center="(-2.732; 2.466; 0)"
+			LengthX="7.65"
+			RadiusY="0.934"
+			RadiusZ="1.167"
+			Type="Cylinder"
+		/>
+	</TruckData>
+	<PhysicsModel Mesh="trucks/addons/frame_addon_tank_long_derry_savior">
+		<Body
+			CenterOfMassOffset="(1; 0; 0)"
+			Mass="500"
+			ModelFrame="BoneChassis_cdt"
+		>
+			<Constraint Type="Rigid" />
+			<Body _template="Wire" ModelFrame="BoneWireRear_cdt">
+				<Constraint AxisLocal="(0; 1; 0)" />
+			</Body>
+			<Body Mass="100" ModelFrame="BoneCabin_cdt">
+				<Constraint ExplicitParentFrame="0" Type="Fixed" />
+				<Body _template="Wire" ModelFrame="BoneWireFront_cdt" />
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<StopSignals>
+			<Light _template="StopSignal" Dir="(-0.766; 0; 0.643)" Pos="(-7.685; 0.78; 1.164)" />
+			<Light _template="StopSignal" Dir="(-0.766; 0; -0.643)" Pos="(7.685; 0.78; -1.164)" />
+			<Flare _template="StopSignal" Dir="(-0.766; 0; 0.643)" Pos="(-6.685; 2.241; 1.094)" />
+			<Flare _template="StopSignal" Dir="(-0.766; 0; -0.643)" Pos="(-6.685; 2.241; -1.094)" />
+		</StopSignals>
+		<ReverseSignals>
+			<Light _template="ReverseSignal" Pos="(-6.753; 2.044; 0.977)" />
+			<Light _template="ReverseSignal" Pos="(-6.753; 2.044; -0.977)" />
+			<Flare _template="ReverseSignal" Dir="(-0.901; -0.4; -0.167)" Pos="(-6.753; 2.044; 0.977)" />
+			<Flare _template="ReverseSignal" Dir="(-0.901; -0.4; 0.167)" Pos="(-6.753; 2.044; -0.977)" />
+			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.05" Dir="(-1; 0; 0)" Size="0.4" Pos="(-6.753; 2.044; 0.977)" />
+			<Flare _template="BlueStreak" Color="g(220; 220; 255) x 0.05" Dir="(-1; 0; 0)" Size="0.4" Pos="(-6.753; 2.044; -0.977)" />
+		</ReverseSignals>
+		<Ignition>
+			<Light _template="IgnitionSignalWhite" Dir="(-0.901; 0.167; -0.400)" Pos="(-7.407; 1.035; 1.021)" />
+			<Light _template="IgnitionSignalWhite" Dir="(-0.901; 0.167; 0.400)" Pos="(-7.407; 1.035; -1.021)" />
+			<Flare _template="IgnitionSignalWhite" Dir="(-0.901; 0.167; -0.400)" Size=".25" Pos="(-6.824; 2.496; 1.137)" />
+			<Flare _template="IgnitionSignalWhite" Dir="(-0.901; 0.167; 0.400)" Size=".25" Pos="(-6.824; 2.496; -1.137)" />
+			<Light _template="IgnitionSignalRed" Pos="(-4.383; 0.2; 0)" />
+			<Flare _template="IgnitionSignalYellow" Dir="(0; 0; 1)" Pos="(0.906; 2.350; 1.331)" />
+			<Flare _template="IgnitionSignalYellow" Dir="(0; 0; -1)" Pos="(0.906; 2.350; -1.331)" />
+			<Flare _template="IgnitionSignalYellow" Dir="(0; 0; 1)" Pos="(0.802; 2.350; 1.319)" />
+			<Flare _template="IgnitionSignalYellow" Dir="(0; 0; -1)" Pos="(0.802; 2.350; -1.319)" />
+			<Flare _template="IgnitionSignalRedSmall" Pos="(-3.965; 2.282; 0.154)" />
+			<Flare _template="IgnitionSignalRedSmall" Pos="(-3.965; 2.282; 0)" />
+			<Flare _template="IgnitionSignalRedSmall" Pos="(-3.965; 2.282; -0.154)" />
+		</Ignition>
+	</ModelAttachments>
+	<GameData
+		CameraPreset="addon_1"
+		Category="frame_addons"
+		IsCustomizable="true"
+		Price="6600"
+		UnlockByExploration="false"
+		UnlockByRank="10"
+	>
+		<UiDesc
+			UiDesc="UI_ADDON_FRAME_TANK_LONG_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_ADDON_FRAME_TANK_LONG_NAME"
+		/>
+		<InstallSocket Type="FrameAddonTankLongDerrySavior" />
+	</GameData>
+	<FuelMass>
+		<Body Mass="7840" />
+	</FuelMass>
+</TruckAddon>

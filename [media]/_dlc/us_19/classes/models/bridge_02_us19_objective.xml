@@ -1,0 +1,77 @@
+<ModelBrand 
+	NightLightingShadowsAllowCap="true"
+	DynamicModel="true"
+	>
+	<Landmark Mesh="landmarks/bridge_02_us19_objective_lmk" />
+
+	<Subset Name="stage_00" IsDefault="true">
+		<Mesh Name="static_part_01" />
+		<Mesh Name="static_part_01_lod1" />
+		<Mesh Name="static_part_01_lod2" />
+		<Mesh Name="static_part_01_lod3" />
+		<Mesh Name="break_part_01" />
+		<Mesh Name="break_part_01_lod1" />
+		<Mesh Name="break_part_01_lod2" />
+		<CdtMesh Name="cdt_static_part_01" />
+	</Subset>
+
+	<Subset Name="stage_01" >
+		<AnimSubset Name="build_animation_1"/>
+		<AnimTrack Name="anim_track_01" />
+		<Mesh Name="static_part_01" />
+		<Mesh Name="static_part_01_lod1" />
+		<Mesh Name="static_part_01_lod2" />
+		<Mesh Name="static_part_01_lod3" />
+		<CdtMesh Name="cdt_break_part_01" />
+	</Subset>
+	
+	<AnimSubset Name="build_animation_1"> 
+		<Mesh Name="static_part_01" />
+		<Mesh Name="static_part_01_lod1" />
+		<Mesh Name="static_part_01_lod2" />
+		<Mesh Name="static_part_01_lod3" />
+		<Mesh Name="break_part_anim_01" />
+		<CdtMesh Name="cdt_break_part_01" />
+	</AnimSubset>
+
+	<TrackEvents TrackName="anim_track_01">
+<AnimEvent Key="2">
+		<Sound Name="actors/actor_construction/actor_construct_wooden_bridge" Range="200" Volume="1.2"/>
+        <SFX Name="conveyor_smoke_03" Dir="(0; 1; 0)" Pos="(-2.109; -1.191; -2.673)" />
+        <SFX Name="conveyor_smoke_03" Dir="(0; 1; 0)" Pos="(2.845; -1.191; -2.673)" />
+        <SFX Name="conveyor_smoke_03" Dir="(0; 1; 0)" Pos="(4.918; -1.191; 2.791)" />
+        <SFX Name="conveyor_smoke_03" Dir="(0; 1; 0)" Pos="(-0.228; -1.191; 2.791)" />
+        <SFX Name="conveyor_smoke_03" Dir="(0; 1; 0)" Pos="(-4.491; -1.191; 2.791)" />
+    </AnimEvent>
+<AnimEvent Key="4">
+		<Sound Name="actors/actor_construction/actor_construct_trees_roadblock" Range="200" Volume="1.1"/>
+    </AnimEvent>
+<AnimEvent Key="6">
+		<Sound Name="actors/actor_construction/actor_construct_concrete_block_03" Range="200" Volume="0.2"/>
+    </AnimEvent>
+<AnimEvent Key="8">
+        <SFX Name="bridge02_smoke_01" Dir="(0; 1; 0)" Pos="(-3.360; -1.191; 2.847)" />
+        <SFX Name="bridge02_smoke_01" Dir="(0; 1; 0)" Pos="(-0.361; -1.191; 2.847)" />
+        <SFX Name="bridge02_smoke_01" Dir="(0; 1; 0)" Pos="(3.945; -1.191; 2.847)" />
+		<Sound Name="actors/actor_construction/bridge_wooden_02_objective" Range="200" Volume="0.2"/>
+        <SFX Name="bridge02_smoke_01" Dir="(0; 1; 0)" Pos="(2.820; -1.191; -2.673)" />
+        <SFX Name="bridge02_smoke_01" Dir="(0; 1; 0)" Pos="(-0.167; -1.191; -2.673)" />
+        <SFX Name="bridge02_smoke_01" Dir="(0; 1; 0)" Pos="(-3.544; -1.191; -2.673)" />
+    </AnimEvent>
+<AnimEvent Key="22">
+        <SFX Name="bridge02_smoke_01" Dir="(0; 1; 0)" Pos="(-3.006; -1.191; -3.011)" />
+        <SFX Name="bridge02_smoke_01" Dir="(0; 1; 0)" Pos="(0.312; -1.191; -3.011)" />
+        <SFX Name="bridge02_smoke_01" Dir="(0; 1; 0)" Pos="(3.875; -1.191; -3.011)" />
+        <SFX Name="bridge02_smoke_01" Dir="(0; 1; 0)" Pos="(3.875; -1.191; 2.847)" />
+        <SFX Name="bridge02_smoke_01" Dir="(0; 1; 0)" Pos="(-0.537; -1.191; 2.847)" />
+        <SFX Name="bridge02_smoke_01" Dir="(0; 1; 0)" Pos="(-4.670; -1.191; 2.847)" />
+    </AnimEvent>
+
+	</TrackEvents>
+	
+	<PhysicsModel>
+		<Body Collisions="Dynamic" ModelFrame="static_part_01">
+			<Body Collisions="Dynamic" ModelFrame="break_part_01"/>
+		</Body>
+	</PhysicsModel>
+</ModelBrand>

@@ -1,0 +1,106 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<Rotator EngineTorqueFactor="0" Frame="RotatorBeaconLeft" RotationSpeed="4" RotationAxis="(0; -1; 0)" /> 
+	<Rotator EngineTorqueFactor="0" Frame="RotatorBeaconRight" RotationSpeed="4.0"  RotationAxis="(0; 1; 0)"  />
+	<PhysicsModel Mesh="trucks/derry_savior_tuning/derry_savior_protection_01">
+		<Body ImpactType="Truck" Mass="50" ModelFrame="BoneAddon_cdt">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<Ignition>
+			<!-- LEFT -->
+			<Flare _template="LED" Dir="(1; 0; 0)" Size="0.07" Pos="(3.545; 3.202; 0.648)" />
+			<Flare _template="LED" Dir="(1; 0; 0)" Size="0.07" Pos="(3.545; 3.202; 0.580)" />
+			<Flare _template="LED" Dir="(1; 0; 0)" Size="0.07" Pos="(3.545; 3.202; 0.511)" />
+			<Flare _template="LED" Dir="(1; 0; 0)" Size="0.07" Pos="(3.545; 3.202; 0.443)" />
+			<Flare _template="LED" Dir="(1; 0; 0)" Size="0.07" Pos="(3.545; 3.202; 0.375)" />
+			<Flare _template="LED" Dir="(1; 0; 0)" Size="0.07" Pos="(3.545; 3.202; 0.307)" />
+			<Flare _template="LED" Dir="(1; 0; 0)" Size="0.07" Pos="(3.545; 3.202; 0.238)" />
+			<Flare _template="LED" Dir="(1; 0; 0)" Size="0.07" Pos="(3.545; 3.202; 0.170)" />
+			<Flare _template="LED" Dir="(1; 0; 0)" Size="0.07" Pos="(3.545; 3.202; 0.102)" />
+			<Flare _template="LED" Dir="(1; 0; 0)" Size="0.07" Pos="(3.545; 3.202; 0.034)" />
+			<!-- RIGHT -->
+			<Flare _template="LED" Dir="(1; 0; 0)" Size="0.07" Pos="(3.545; 3.202; -0.648)" />
+			<Flare _template="LED" Dir="(1; 0; 0)" Size="0.07" Pos="(3.545; 3.202; -0.580)" />
+			<Flare _template="LED" Dir="(1; 0; 0)" Size="0.07" Pos="(3.545; 3.202; -0.511)" />
+			<Flare _template="LED" Dir="(1; 0; 0)" Size="0.07" Pos="(3.545; 3.202; -0.443)" />
+			<Flare _template="LED" Dir="(1; 0; 0)" Size="0.07" Pos="(3.545; 3.202; -0.375)" />
+			<Flare _template="LED" Dir="(1; 0; 0)" Size="0.07" Pos="(3.545; 3.202; -0.307)" />
+			<Flare _template="LED" Dir="(1; 0; 0)" Size="0.07" Pos="(3.545; 3.202; -0.238)" />
+			<Flare _template="LED" Dir="(1; 0; 0)" Size="0.07" Pos="(3.545; 3.202; -0.170)" />
+			<Flare _template="LED" Dir="(1; 0; 0)" Size="0.07" Pos="(3.545; 3.202; -0.102)" />
+			<Flare _template="LED" Dir="(1; 0; 0)" Size="0.07" Pos="(3.545; 3.202; -0.034)" />
+		</Ignition>
+		<HeadLight>
+			<!-- LEFT -->
+			<Flare _template="HeadLight" Dir="(1; 0; 0)" Size="0.15" Pos="(3.545; 3.202; 0.648)" />
+			<Flare _template="HeadLight" Dir="(1; 0; 0)" Size="0.15" Pos="(3.545; 3.202; 0.580)" />
+			<Flare _template="HeadLight" Dir="(1; 0; 0)" Size="0.15" Pos="(3.545; 3.202; 0.511)" />
+			<Flare _template="HeadLight" Dir="(1; 0; 0)" Size="0.15" Pos="(3.545; 3.202; 0.443)" />
+			<Flare _template="HeadLight" Dir="(1; 0; 0)" Size="0.15" Pos="(3.545; 3.202; 0.375)" />
+			<Flare _template="HeadLight" Dir="(1; 0; 0)" Size="0.15" Pos="(3.545; 3.202; 0.307)" />
+			<Flare _template="HeadLight" Dir="(1; 0; 0)" Size="0.15" Pos="(3.545; 3.202; 0.238)" />
+			<Flare _template="HeadLight" Dir="(1; 0; 0)" Size="0.15" Pos="(3.545; 3.202; 0.170)" />
+			<Flare _template="HeadLight" Dir="(1; 0; 0)" Size="0.15" Pos="(3.545; 3.202; 0.102)" />
+			<Flare _template="HeadLight" Dir="(1; 0; 0)" Size="0.15" Pos="(3.545; 3.202; 0.034)" />
+			<!-- RIGHT -->
+			<Flare _template="HeadLight" Dir="(1; 0; 0)" Size="0.15" Pos="(3.545; 3.202; -0.648)" />
+			<Flare _template="HeadLight" Dir="(1; 0; 0)" Size="0.15" Pos="(3.545; 3.202; -0.580)" />
+			<Flare _template="HeadLight" Dir="(1; 0; 0)" Size="0.15" Pos="(3.545; 3.202; -0.511)" />
+			<Flare _template="HeadLight" Dir="(1; 0; 0)" Size="0.15" Pos="(3.545; 3.202; -0.443)" />
+			<Flare _template="HeadLight" Dir="(1; 0; 0)" Size="0.15" Pos="(3.545; 3.202; -0.375)" />
+			<Flare _template="HeadLight" Dir="(1; 0; 0)" Size="0.15" Pos="(3.545; 3.202; -0.307)" />
+			<Flare _template="HeadLight" Dir="(1; 0; 0)" Size="0.15" Pos="(3.545; 3.202; -0.238)" />
+			<Flare _template="HeadLight" Dir="(1; 0; 0)" Size="0.15" Pos="(3.545; 3.202; -0.170)" />
+			<Flare _template="HeadLight" Dir="(1; 0; 0)" Size="0.15" Pos="(3.545; 3.202; -0.102)" />
+			<Flare _template="HeadLight" Dir="(1; 0; 0)" Size="0.15" Pos="(3.545; 3.202; -0.034)" />
+
+			<Flare _template="BlueStreak" Dir="(1; 0; 0)" Size="1.2" Pos="(3.545; 3.202; 0.0)" />
+		</HeadLight>
+		
+		<Ignition _template="Flasher">
+			<Model
+				Color="g(255; 50; 5) x 0.55"
+				Dir="(1; 0.222; 0.563)"
+				Org="(2.132; 3.271; -1.165)"
+				Scale="(0.19; 0.19; 0.19)"
+				ParentFrame="RotatorBeaconRight"
+			/>
+			<Light Dir="(-0.796; 0.222; 0.563)" Pos="(2.132; 3.271; -1.165)" ParentFrame="RotatorBeaconRight" />
+			<Flare Color="g(255; 50; 5) x 0.45" Dir="(-0.796; 0.222; 0.563)" Size="1" Pos="(2.132; 3.271; -1.165)" ParentFrame="RotatorBeaconRight" />
+			<Flare Color="g(255; 50; 5) x 0.7" Dir="(-0.796; 0.222; 0.563)" Size="0.7" Pos="(2.132; 3.271; -1.165)" ParentFrame="RotatorBeaconRight" />
+			<Flare Color="g(255; 50; 5) x 0.55" Size="1" Pos="(2.132; 3.271; -1.165)" ParentFrame="RotatorBeaconRight" />
+
+		</Ignition>
+		<Ignition _template="Flasher">
+			<Model
+				Color="g(255; 50; 5) x 0.55"
+				Dir="(1; 0.222; 0.563)"
+				Org="(2.132; 3.271; 1.165)"
+				Scale="(0.19; 0.19; 0.19)"
+				ParentFrame="RotatorBeaconLeft"
+			/>
+			<Light Dir="(-0.796; 0.222; 0.563)" Pos="(2.132; 3.271; -1.165)" ParentFrame="RotatorBeaconLeft" />
+			<Flare Color="g(255; 50; 5) x 0.45" Dir="(-0.796; 0.222; 0.563)" Size="1" Pos="(2.132; 3.271; 1.165)" ParentFrame="RotatorBeaconLeft" />
+			<Flare Color="g(255; 50; 5) x 0.7" Dir="(-0.796; 0.222; 0.563)" Size="0.7" Pos="(2.132; 3.271; 1.165)" ParentFrame="RotatorBeaconLeft" />
+			<Flare Color="g(255; 50; 5) x 0.55" Size="1" Pos="(2.132; 3.271; 1.165)" ParentFrame="RotatorBeaconLeft" />
+
+		</Ignition>
+	</ModelAttachments>
+	<GameData
+		CameraPreset="default"
+		Category="top"
+		Price="2700"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<UiDesc
+			UiDesc="UI_TUNING_BUMPER_SAVIOR_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_BUMPER_SAVIOR_NAME"
+		/>
+		<InstallSocket Type="DerrySaviorProtection" />
+	</GameData>
+</TruckAddon>

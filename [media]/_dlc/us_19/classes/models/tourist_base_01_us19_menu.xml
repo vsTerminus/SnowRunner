@@ -1,0 +1,9 @@
+<ModelBrand
+	DayShadowOffsetMult="30"
+	NightLightingShadowsAllowCap="true"
+>
+	<PhysicsModel>
+		<Body Collisions="Dynamic" />
+	</PhysicsModel>
+	<Landmark Mesh="landmarks/tourist_base_01_us19_lmk" />
+</ModelBrand>

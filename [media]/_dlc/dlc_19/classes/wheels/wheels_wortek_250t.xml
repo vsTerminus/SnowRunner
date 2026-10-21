@@ -1,0 +1,29 @@
+<_templates Include="trucks">
+	<TruckTire>
+		<Mudtires Mass="400" RearMassScale="2">
+			<WheelTracks _template="Offroad" />
+			<WheelSoftness _template="Average" />
+			<WheelFriction _template="HeavyMudtires" BodyFrictionAsphalt="1.0" SubstanceFriction="3.05" />
+		</Mudtires>
+	</TruckTire>
+</_templates>
+<TruckWheels DamageCapacity="100" Radius="1" Width="0.619" WidthRear="1.28">
+	<TruckTires>
+		<TruckTire _template="Mudtires" Mesh="wheels/tire_wortek_250t" Name="tire_wortek_250t">
+			<GameData
+				Price="7400"
+				UnlockByExploration="false"
+				UnlockByRank="1"
+			>
+				<UiDesc UiDesc="UI_TIRE_MUDTIRES_DESC" UiName="UI_TIRE_HEAVY_MUDTIRES_WORTEK_250T_NAME" />
+			</GameData>
+		</TruckTire>
+	</TruckTires>
+	<TruckRims>
+		<TruckRim Mesh="wheels/rim_wortek_250t" Name="rim_wortek_250t">
+			<GameData>
+				<UiDesc UiDesc="UI_RIM_HEAVY_MUDTIRES_SINGLE_1_DESC" UiName="UI_RIM_HEAVY_MUDTIRES_WORTEK_250T_NAME" />
+			</GameData>
+		</TruckRim>
+	</TruckRims>
+</TruckWheels>

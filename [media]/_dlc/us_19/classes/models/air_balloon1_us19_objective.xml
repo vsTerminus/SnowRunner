@@ -1,0 +1,39 @@
+<ModelBrand
+	NightLightingShadowsAllowCap="true"
+	ClipCamera="false"
+	CastDayLightmapShadow="false"
+	CastNightLightmapShadow="false"
+	InBackground="true"
+	DynamicModel="true"
+>
+
+
+<PhysicsModel>
+		<Body Collisions="None" />
+	</PhysicsModel>
+
+
+	<Subset Name="stage_00" IsDefault="true">
+	</Subset>
+
+	<Subset Name="stage_01">
+		<Mesh Name="loop" />
+		<Mesh Name="loop.001" />
+		<Mesh Name="loop.002" />
+		<Mesh Name="loop.003" />
+		<Mesh Name="loop.004" />
+		<CdtMesh Name="cdt" />
+		<AnimTrack Name="anim_loop" />
+		<AnimSubset Name="build_animation_0" />
+		<AnimTrackSubset Name="anim_loop" />
+	</Subset>
+
+	<AnimSubset Name="build_animation_0">
+		<Mesh Name="loop" />
+		<Mesh Name="loop.001" />
+		<Mesh Name="loop.002" />
+		<Mesh Name="loop.003" />
+		<Mesh Name="loop.004" />
+	</AnimSubset>
+
+</ModelBrand>

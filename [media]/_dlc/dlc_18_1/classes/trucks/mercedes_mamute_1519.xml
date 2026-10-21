@@ -45,7 +45,7 @@
 		</Wiper>
 		<Swing
 			CenterOfMassOffset="(0; 0; 0)"
-			Collisions="Default"
+			Collisions="None"
 			ImpactType="Truck"
 			Mass="640"
 		>
@@ -185,32 +185,34 @@
 		<SoundsDamage _template="Heavy" />
 		<Sounds
 			_template="Default"
-			DisableReversePitch="false"
+			DisableReversePitch="true"
 			Origin="(2.6; 1.4; 0)"
 			MinDist="12.0"
 		>
-			<Honk			Sound="trucks/sleiter_st833_chimera/sleiter_st833_chimera_honk" />
-			<Handbrake		Sound="trucks/sleiter_st833_chimera/sleiter_st833_chimera_handbrake_on" />
-			<HandbrakeOff	Sound="trucks/sleiter_st833_chimera/sleiter_st833_chimera_handbrake_off" />
-			<Reverse		Sound="trucks/sleiter_st833_chimera/sleiter_st833_chimera_back_beeper" />
-			<BrakesSqueal	Sound="trucks/sleiter_st833_chimera/sleiter_st833_chimera_brakes_squeal" />
-			<BrakePull		Sound="trucks/sleiter_st833_chimera/sleiter_st833_chimera_brake_pull" />
-			<BrakeRelease	Sound="trucks/sleiter_st833_chimera/sleiter_st833_chimera_brake_release" />
+			<Honk			Sound="trucks/mercedes_mamute_1519/mercedes_mamute_1519_honk" />
+			<Handbrake		Sound="trucks/mercedes_mamute_1519/mercedes_mamute_1519_handbrake_on" />
+			<HandbrakeOff	Sound="trucks/mercedes_mamute_1519/mercedes_mamute_1519_handbrake_off" />
+			<Reverse		Sound="" />
+			<BrakesSqueal	Sound="trucks/mercedes_mamute_1519/mercedes_mamute_1519_brakes_squeal" />
+			<BrakePull		Sound="trucks/mercedes_mamute_1519/mercedes_mamute_1519_brake_pull" />
+			<BrakeRelease	Sound="trucks/mercedes_mamute_1519/mercedes_mamute_1519_brake_release" />
 			<EngineRev		Sound="" />
-			<EngineAccel	Sound="trucks/sleiter_st833_chimera/sleiter_st833_chimera_acc" />
-			<EngineStart	Sound="trucks/sleiter_st833_chimera/sleiter_st833_chimera_start" />
-			<EngineStop		Sound="trucks/sleiter_st833_chimera/sleiter_st833_chimera_stop" />
-			<EngineIdle		Sound="trucks/sleiter_st833_chimera/sleiter_st833_chimera_idle" />
-			<EngineIdle_2d	Sound="trucks/sleiter_st833_chimera/sleiter_st833_chimera_idle_2d"	IsSound2D="true" />
-			<EngineLow		Sound="trucks/sleiter_st833_chimera/sleiter_st833_chimera_low" />
-			<EngineLow_2d	Sound="trucks/sleiter_st833_chimera/sleiter_st833_chimera_low_2d"	IsSound2D="true" />
-			<EngineHigh		Sound="trucks/sleiter_st833_chimera/sleiter_st833_chimera_high" />
-			<EngineHigh_2d	Sound="trucks/sleiter_st833_chimera/sleiter_st833_chimera_high_2d"	IsSound2D="true" />
-			<EngineHeavy	Sound="trucks/sleiter_st833_chimera/sleiter_st833_chimera_heavy" />
-			<EngineHeavy_2d	Sound="trucks/sleiter_st833_chimera/sleiter_st833_chimera_heavy_2d"	IsSound2D="true" />
+			<EngineAccel	Sound="trucks/mercedes_mamute_1519/mercedes_mamute_1519_acc" />
+			<EngineStart	Sound="trucks/mercedes_mamute_1519/mercedes_mamute_1519_start" />
+			<EngineStop		Sound="trucks/mercedes_mamute_1519/mercedes_mamute_1519_stop" />
+			<EngineIdle		Sound="trucks/mercedes_mamute_1519/mercedes_mamute_1519_idle" />
+			<EngineIdle_2d	Sound="trucks/mercedes_mamute_1519/mercedes_mamute_1519_idle_2d"	IsSound2D="true" />
+			<EngineLow		Sound="trucks/mercedes_mamute_1519/mercedes_mamute_1519_low" />
+			<EngineLow_2d	Sound="trucks/mercedes_mamute_1519/mercedes_mamute_1519_low_2d"	IsSound2D="true" />
+			<EngineHigh		Sound="trucks/mercedes_mamute_1519/mercedes_mamute_1519_high" />
+			<EngineHigh_2d	Sound="trucks/mercedes_mamute_1519/mercedes_mamute_1519_high_2d"	IsSound2D="true" />
+			<EngineHeavy	Sound="" />
+			<EngineHeavy_2d	Sound=""	IsSound2D="true" />
+			<EngineTrans	Sound="" />
 			<ChassisStress	Sound="trucks/common/truck_stress_rnd_set/truck_stress_rnd" />
 			<AbruptStop		Sound="trucks/common/truck_swing_big_rnd_set/truck_swing_big_rnd" />
-		</Sounds>
+
+			</Sounds>
 		<Shakers>
 			<Shaker
 				Frame="BoneGearstick"
@@ -269,8 +271,7 @@
 		<CompatibleWheels Type="wheels_heavy_mudtires_single_mercedes_mamute_1519" Scale="0.61" OffsetZ="0.085" />
 		<CompatibleWheels Type="wheels_heavy_mudtires_single2_mercedes_mamute_1519" Scale="0.61" OffsetZ="0.075" />
 		<CompatibleWheels Type="wheels_heavy_offroad_single_mercedes_mamute_1519" Scale="0.61" OffsetZ="0.025" />
-		
-		
+
 		<Camera Center="(-1.4; 0; 0)" ParentFrame="BoneChassis_cdt">
 			<Cockpit
 				_template="Default"
@@ -301,6 +302,7 @@
 			<Axle Frame="BoneAxle3R" IsIndependent="true" />
 		</Axles>
 	</TruckData>
+	
 	<PhysicsModel Mesh="trucks/mercedes_mamute_1519">
 		<NetSync Legacy="false" />
 		<Body
@@ -315,7 +317,7 @@
 				CenterOfMassOffset="(0; 0; 0)"
 				Collisions="None"
 				ImpactType="Truck"
-				Mass="1360"
+				Mass="1450"
 				ModelFrame="BoneSwingAxle_cdt"
 			>
 				<Constraint
@@ -350,7 +352,7 @@
 					<Motor Damping="120000" Spring="400000" Type="Spring" />
 				</Constraint>
 				<Body
-					CenterOfMassOffset="(0; 0; 0)"
+					CenterOfMassOffset="(0.2; -0.4; 0)"
 					Collisions="Default"
 					ImpactType="Truck"
 					Mass="2900"
@@ -602,10 +604,6 @@
 			<Socket Names="FrameAddonTow" Offset="(-2.02; 1.529; 0)">
 				<AddonsShift Offset="(-0.18; 0; 0)" Types="MercedesMamute1519Sparewheel" />
 				<AddonsShift Offset="(-0.22; 0; 0)" Types="MercedesMamute1519Sparewheel02" />
-			</Socket>
-			<Socket Names="FrameAddonSeismicVibratorPaderaSTD4" Offset="(0.82; 1.539; 0)">
-				<AddonsShift Offset="(-0.3; 0; 0)" Types="MercedesMamute1519Sparewheel" />
-				<AddonsShift Offset="(-0.3; 0; 0)" Types="MercedesMamute1519Sparewheel02" />
 			</Socket>
 
 			<Socket Names="SaddleHigh" Offset="(-2; 1.539; 0)" NamesBlock="" >

@@ -1,0 +1,39 @@
+<_templates Include="trucks" />
+<TruckAddon>
+	<PhysicsModel Mesh="trucks/derry_savior_tuning/derry_savior_frame_default" >
+		<NetSync Legacy="true" />
+		<Body Mass="50">
+			<Constraint Type="Rigid" />
+		</Body>
+	</PhysicsModel>
+	<ModelAttachments>
+		<ReverseSignals>
+			<Light _template="ReverseSignal" Dir="(-1; -0.1; 0)" Pos="(-5.695; 0.996; -0.233)" />
+			<Flare _template="ReverseSignal" Dir="(-1; 0; 0)" Pos="(-5.695; 0.996; -0.233)" Size="0.4" />
+			<Flare _template="BlueStreak" Dir="(-1; 0; 0)" Pos="(-5.695; 0.996; -0.233)" Size="0.55" />
+		</ReverseSignals>
+	</ModelAttachments>
+	<GameData
+		CameraPreset="addon_1"
+		Category="frame_addons"
+		IsCustomizable="true"
+		Price="4000"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<WinchSocket Pos="(-5.791; 1.013; 0.387)" FixedToTruck="true" />
+		<WinchSocket Pos="(-5.791; 1.013; -0.387)" FixedToTruck="true" />
+		<WinchSocket Pos="(-5.888; 0.979; 0)" FixedToTruck="true" />
+		
+		<CraneSocket Pos="(-5.791; 1.013; 0.387)" FixedToTruck="true" />
+		<CraneSocket Pos="(-5.791; 1.013; -0.387)" FixedToTruck="true" />
+		<CraneSocket Pos="(-5.888; 0.979; 0)" FixedToTruck="true" />
+		<UiDesc
+			UiDesc="UI_TUNING_FRAME_DEFAULT_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_TUNING_FRAME_DEFAULT_NAME"
+		/>
+		<InstallSocket Type="DerrySaviorFrameDefault" />
+	</GameData>
+</TruckAddon>

@@ -1,0 +1,70 @@
+<ModelBrand
+	DayShadowOffsetMult="30"
+	NightLightingShadowsAllowCap="true"
+>
+
+	<Subset IsDefault="true" Name="stage_00">
+		<Mesh Name="static_01" />
+		<Mesh Name="static_01_lod1" />
+		<Mesh Name="static_01_lod2" />
+		<Mesh Name="static_01_lod3" />
+		<Mesh Name="static_02" />
+		<Mesh Name="static_02_lod1" />
+		<Mesh Name="static_02_lod2" />
+		<Mesh Name="static_02_lod3" />
+		<Mesh Name="hat_static" />
+		<Mesh Name="hat_static_lod1" />
+		<Mesh Name="hat_static_lod2" />
+		<Mesh Name="hat_static_lod3" />
+		<CdtMesh Name="cdt_tourist_base_01_us19_objective" />
+	</Subset>
+
+	<Subset Name="stage_01">
+		<Mesh Name="static_01" />
+		<Mesh Name="static_01_lod1" />
+		<Mesh Name="static_01_lod2" />
+		<Mesh Name="static_01_lod3" />
+		<Mesh Name="static_02" />
+		<Mesh Name="static_02_lod1" />
+		<Mesh Name="static_02_lod2" />
+		<Mesh Name="static_02_lod3" />
+		<Mesh Name="anim_hat_loop" />
+		<Mesh Name="anim_hat_loop_lod1" />
+		<Mesh Name="anim_hat_loop_lod2" />
+		<Mesh Name="anim_hat_loop_lod3" />
+		<CdtMesh Name="cdt_tourist_base_01_us19_objective" />
+		<OnSubsetActivateEvent>
+			<Sound Name="actors/actor_mus_us_winter_gas_station/actor_mus_us_winter_gas_station" RangeMin="40" RangeMax="70" Volume="1" IsLoop="true"/>
+		</OnSubsetActivateEvent>
+		<AnimSubset Name="build_animation_0" /> 
+		<AnimTrack Name="anim_state" />
+		<AnimTrackSubset Name="anim_loop" />
+	</Subset>
+
+	<AnimSubset Name="build_animation_0">
+		<Mesh Name="static_01" />
+		<Mesh Name="static_01_lod1" />
+		<Mesh Name="static_01_lod2" />
+		<Mesh Name="static_01_lod3" />
+		<Mesh Name="static_02" />
+		<Mesh Name="static_02_lod1" />
+		<Mesh Name="static_02_lod2" />
+		<Mesh Name="static_02_lod3" />
+		<Mesh Name="anim_hat_start" />
+	</AnimSubset>
+
+	<TrackEvents TrackName="anim_state">
+		<AnimEvent Key="15">
+				<Sound
+                Name="actors/actor_construction/actor_construct_metal_power_line"
+                Range="50"
+                Volume="1"
+            />
+       	</AnimEvent>
+	</TrackEvents>
+
+	<PhysicsModel>
+		<Body Collisions="Dynamic" />
+	</PhysicsModel>
+	<Landmark Mesh="landmarks/tourist_base_01_us19_objective_lmk" />
+</ModelBrand>

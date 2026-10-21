@@ -173,36 +173,6 @@
 		<Chain EndOffset="(2.348; 0; 0)" ModelFrames="BoneRoot_cdt,BoneRotationBase_cdt,BoneArm1_cdt, BoneArm2_cdt, BoneArm3_cdt, BoneArm4_cdt" />
 	</ControlledIK>
 	<AutomaticIK>
-		<IKBone ModelFrame="BoneLegL" ParentFrame="BoneLegL_cdt">
-			<IKJoint AxisLocal="(1; 0; 0)" Type="Hinge2" />
-			<IKBone
-				AttachOffset="(0; 0; 0)"
-				AttachToFrame="BoneFootL_cdt"
-				ModelFrame="BoneFootL"
-			>
-				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
-			</IKBone>
-		</IKBone>
-		<IKBone ModelFrame="BoneLegR" ParentFrame="BoneLegR_cdt">
-			<IKJoint AxisLocal="(1; 0; 0)" Type="Hinge2" />
-			<IKBone
-				AttachOffset="(0; 0; 0)"
-				AttachToFrame="BoneFootR_cdt"
-				ModelFrame="BoneFootR"
-			>
-				<IKJoint AxisLocal="(0; 1; 0)" Type="Slider" />
-			</IKBone>
-		</IKBone>
-		<IKBone ModelFrame="BoneArmHinge" ParentFrame="BoneArm1_cdt">
-			<IKJoint AxisLocal="(1; 0; 0)" Type="Hinge2" />
-			<IKBone
-				AttachOffset="(0; 0; 0)"
-				AttachToFrame="BoneArm4_cdt"
-				ModelFrame="BoneArmPrismatic"
-			>
-				<IKJoint AxisLocal="(1; 0; 0)" Type="Slider" />
-			</IKBone>
-		</IKBone>
 		<IKBone ModelFrame="BonePistonBase" ParentFrame="BoneRotationBase_cdt">
 			<IKJoint AxisLocal="(0; 0; 1)" Type="Hinge" />
 			<IKBone

@@ -1,0 +1,107 @@
+<_templates Include="trucks">
+	<Body>
+		<Fuel Collisions="None" Mass="10">
+			<Constraint
+				Type="Hinge"
+				MinLimit="0"
+				MaxLimit="2"
+			>
+				<Motor Damping="2.5" Spring="150" Type="Spring" />
+			</Constraint>
+		</Fuel>
+		<Loops Collisions="None" Mass="5">
+			<Constraint
+				Type="Hinge"
+				MinLimit="-0.5"
+				MaxLimit="225"
+			>
+				<Motor Damping="0.1" Spring="1" Type="Spring" />
+			</Constraint>
+		</Loops>
+		<Belts Collisions="None" Mass="5">
+			<Constraint
+				AxisLocal="(-1; 0; 0)"
+				Type="Hinge"
+				MinLimit="-4.36"
+				MaxLimit="45"
+			>
+				<Motor Damping="1.0" Spring="15" Type="Spring" />
+			</Constraint>
+		</Belts>
+	</Body>
+</_templates>
+<TruckAddon IsChassisFullOcclusion="true">
+	<TruckData FuelCapacity="160">
+		<LimitedFluid Center="(0.108; 2.125; 1.464)" SizeX="0.3" SizeY="0.36" SizeZ="0.13" Type="Box" ParentFrame="BoneFuelLeft_cdt" />
+		<LimitedFluid Center="(-0.264; 2.125; 1.464)" SizeX="0.3" SizeY="0.36" SizeZ="0.13" Type="Box" ParentFrame="BoneFuelLeft_cdt" />
+		<LimitedFluid Center="(-0.909; 2.125; 1.464)" SizeX="0.3" SizeY="0.36" SizeZ="0.13" Type="Box" ParentFrame="BoneFuelLeft_cdt" />
+		<LimitedFluid Center="(-1.281; 2.125; 1.464)" SizeX="0.3" SizeY="0.36" SizeZ="0.13" Type="Box" ParentFrame="BoneFuelLeft_cdt" />
+
+		<LimitedFluid Center="(0.108; 2.125; -1.464)" SizeX="0.3" SizeY="0.36" SizeZ="0.13" Type="Box" ParentFrame="BoneFuelRight_cdt" />
+		<LimitedFluid Center="(-0.264; 2.125; -1.464)" SizeX="0.3" SizeY="0.36" SizeZ="0.13" Type="Box" ParentFrame="BoneFuelRight_cdt" />
+		<LimitedFluid Center="(-0.909; 2.125; -1.464)" SizeX="0.3" SizeY="0.36" SizeZ="0.13" Type="Box" ParentFrame="BoneFuelRight_cdt" />
+		<LimitedFluid Center="(-1.281; 2.125; -1.464)" SizeX="0.3" SizeY="0.36" SizeZ="0.13" Type="Box" ParentFrame="BoneFuelRight_cdt" />
+	</TruckData>
+	<FuelHide>
+		<Mesh Frame="fuel1" HideThreshold="0.75" />
+		<Mesh Frame="fuel2" HideThreshold="0.5" />
+		<Mesh Frame="fuel3" HideThreshold="0.25" />
+		<Mesh Frame="fuel4" HideThreshold="0.0" />
+	</FuelHide>
+	<PhysicsModel Mesh="trucks/addons/wortek_250t_addon_sideboard_2">
+		<Body Mass="800">
+			<Constraint Type="Rigid" />
+			<Body _template="Loops" ModelFrame="BoneLoopsRight_cdt" >
+				<Constraint	AxisLocal="(1; 0; 0)" />
+			</Body>
+			<Body _template="Loops" ModelFrame="BoneLoopsLeft_cdt" >
+				<Constraint	AxisLocal="(-1; 0; 0)" />
+			</Body>
+			
+			<Body _template="Belts" ModelFrame="BoneBeltsRight_cdt" >
+				<Constraint	AxisLocal="(1; 0; 0)" />
+			</Body>
+			<Body _template="Belts" ModelFrame="BoneBeltsLeft_cdt" >
+				<Constraint	AxisLocal="(-1; 0; 0)" />
+			</Body>
+
+			<Body _template="Fuel" ModelFrame="BoneFuelLeft_cdt" >
+				<Constraint	AxisLocal="(-1; 0; 0)" />
+			</Body>
+			<Body _template="Fuel" ModelFrame="BoneFuelRight_cdt" >
+				<Constraint	AxisLocal="(1; 0; 0)" />
+			</Body>
+			
+			<Body Collisions="None" Mass="15" ModelFrame="BoneBoard_cdt">
+				<Constraint
+					AxisLocal="(0; 0; 1)"
+					Type="Hinge"
+					MinLimit="-0.5"
+					MaxLimit="0.5"
+			>
+					<Motor Damping="10" Spring="250" Type="Spring" />
+				</Constraint>
+			</Body>
+		</Body>
+	</PhysicsModel>
+	<GameData
+		CameraPreset="addon_1"
+		Category="frame_addons"
+		IsCustomizable="true"
+		Price="7600"
+		UnlockByExploration="false"
+		UnlockByRank="1"
+	>
+		<WinchSocket Pos="(-4.761; 1.124; 0.000)" />
+		<CraneSocket Pos="(-4.761; 1.124; 0.000)" />
+		<UiDesc
+			UiDesc="UI_ADDON_FRAME_SIDEBOARD_2_DESC"
+			UiIcon30x30=""
+			UiIcon40x40=""
+			UiName="UI_ADDON_FRAME_SIDEBOARD_2_NAME"
+		/>
+		<RequiredAddon Types="" />
+		<InstallSocket Type="Wortek250TSideboard2" />
+		<AddonSlots InitialOffset="(-0.849; 1.955; 0.000)" OffsetStep="(-2.667; 0; 0)" Quantity="2" />
+	</GameData>
+</TruckAddon>

@@ -1,0 +1,130 @@
+<ModelBrand 
+	NightLightingShadowsAllowCap="true"
+	DynamicModel="true"
+	>
+	<Landmark Mesh="landmarks/bridge_01_us19_objective_lmk" />
+
+	<Subset Name="state_00" IsDefault="true">
+		<Mesh Name="static" />
+		<Mesh Name="static_lod1" />
+		<Mesh Name="static_lod2" />
+		<Mesh Name="static_lod3" />
+		<Mesh Name="broken" />
+		<Mesh Name="broken_lod1" />
+		<Mesh Name="broken_lod2" />
+		<Mesh Name="broken_lod3" />
+		<CdtMesh Name="cdt_static" />
+	</Subset>
+
+	<Subset Name="state_01" >
+		<AnimSubset Name="build_animation_1"/>
+		<AnimTrack Name="anim_track_01" />
+		<Mesh Name="static" />
+		<Mesh Name="static_lod1" />
+		<Mesh Name="static_lod2" />
+		<Mesh Name="static_lod3" />
+		<CdtMesh Name="cdt_broken" />
+	</Subset>
+
+	<Subset Name="state_02" >
+		<AnimSubset Name="build_animation_2"/>
+		<AnimTrack Name="anim_track_02" />
+		<Mesh Name="repaired" />
+		<Mesh Name="repaired_lod1" />
+		<Mesh Name="repaired_lod2" />
+		<Mesh Name="repaired_lod3" />
+		<Mesh Name="static" />
+		<Mesh Name="static_lod1" />
+		<Mesh Name="static_lod2" />
+		<Mesh Name="static_lod3" />
+		<CdtMesh Name="cdt_repaired" />
+	</Subset>
+	
+	<AnimSubset Name="build_animation_1"> 
+		<Mesh Name="static" />
+		<Mesh Name="static_lod1" />
+		<Mesh Name="static_lod2" />
+		<Mesh Name="static_lod3" />
+		<Mesh Name="animesh_01" />
+		<CdtMesh Name="cdt_broken" />
+	</AnimSubset>
+
+	<AnimSubset Name="build_animation_2"> 
+		<Mesh Name="static" />
+		<Mesh Name="static_lod1" />
+		<Mesh Name="static_lod2" />
+		<Mesh Name="static_lod3" />
+		<Mesh Name="animesh_02" />
+		<CdtMesh Name="cdt_broken" />
+	</AnimSubset>
+
+	<TrackEvents TrackName="anim_track_01">
+		<AnimEvent Key="1">
+		<Sound Name="actors/actor_construction/actor_construct_wooden_bridge" Range="200" Volume="1.2"/>
+        <SFX Name="bridge02_smoke_01" Dir="(0; 1; 0)" Pos="(2.492; 0.476; -3.123)" />
+        <SFX Name="conveyor_smoke_03" Dir="(0; 1; 0)" Pos="(-1.020; 0.476; 0.203)" />
+        <SFX Name="conveyor_smoke_03" Dir="(0; 1; 0)" Pos="(-2.183; 0.647; -1.465)" />
+        <SFX Name="bridge02_smoke_01" Dir="(0; 1; 0)" Pos="(-1.567; -0.507; -3.377)" />
+        <SFX Name="bridge02_smoke_01" Dir="(0; 1; 0)" Pos="(-0.641; -0.507; -1.545)" />
+    </AnimEvent>
+<AnimEvent Key="4">
+        <SFX Name="bridge02_smoke_01" Dir="(0; 1; 0)" Pos="(3.528; -0.507; -1.482)" />
+		<Sound Name="actors/actor_construction/actor_construct_trees_roadblock" Range="200" Volume="1.1"/>
+        <SFX Name="bridge02_smoke_01" Dir="(0; 1; 0)" Pos="(0.303; -0.507; 0.199)" />
+        <SFX Name="bridge02_smoke_01" Dir="(0; 1; 0)" Pos="(-1.567; -0.507; -3.377)" />
+    </AnimEvent>
+<AnimEvent Key="6">
+        <SFX Name="bridge02_smoke_01" Dir="(0; 1; 0)" Pos="(-3.861; -0.507; -2.581)" />
+		<Sound Name="actors/actor_construction/actor_construct_concrete_block_03" Range="200" Volume="0.2"/>
+    </AnimEvent>
+<AnimEvent Key="9">
+        <SFX Name="bridge02_smoke_01" Dir="(0; 1; 0)" Pos="(-0.055; -0.507; 0.434)" />
+        <SFX Name="bridge02_smoke_01" Dir="(0; 1; 0)" Pos="(-2.724; -0.507; -0.641)" />
+    </AnimEvent>
+<AnimEvent Key="20">
+        <SFX Name="bridge02_smoke_01" Dir="(0; 1; 0)" Pos="(-3.181; -0.507; -0.654)" />
+        <SFX Name="bridge02_smoke_01" Dir="(0; 1; 0)" Pos="(-0.055; -0.507; 0.434)" />
+    </AnimEvent>
+<AnimEvent Key="2">
+        <SFX Name="conveyor_smoke_03" Dir="(0; 1; 0)" Pos="(-3.563; 0.476; -2.763)" />
+        <SFX Name="conveyor_smoke_03" Dir="(0; 1; 0)" Pos="(0.412; 0.476; -2.207)" />
+    </AnimEvent>
+<AnimEvent Key="8">
+        <SFX Name="conveyor_smoke_03" Dir="(0; 1; 0)" Pos="(3.130; 0.476; -0.961)" />
+		<Sound Name="actors/actor_construction/bridge_wooden_02_objective" Range="200" Volume="0.2"/>
+    </AnimEvent>
+<AnimEvent Key="28">
+        <SFX Name="bridge02_smoke_01" Dir="(0; 1; 0)" Pos="(-0.574; -5.591; -3.106)" />
+        <SFX Name="bridge02_smoke_01" Dir="(0; 1; 0)" Pos="(0.854; -5.879; -4.568)" />
+        <SFX Name="conveyor_smoke_03" Dir="(0; 1; 0)" Pos="(2.174; -3.534; -3.133)" />
+    </AnimEvent>
+<AnimEvent Key="29">
+        <SFX Name="conveyor_smoke_03" Dir="(0; 1; 0)" Pos="(3.269; -6.191; -2.555)" />
+        <SFX Name="bridge02_smoke_01" Dir="(0; 1; 0)" Pos="(1.612; -6.058; -3.542)" />
+        <SFX Name="conveyor_smoke_03" Dir="(0; 1; 0)" Pos="(-0.800; -4.632; -1.708)" />
+    </AnimEvent>
+<AnimEvent Key="36">
+        <SFX Name="bridge02_smoke_01" Dir="(0; 1; 0)" Pos="(3.794; -4.691; -3.096)" />
+        <SFX Name="bridge02_smoke_01" Dir="(0; 1; 0)" Pos="(-3.240; -5.910; 0.242)" />
+        <SFX Name="conveyor_smoke_03" Dir="(0; 1; 0)" Pos="(0.988; -5.484; -0.289)" />
+    </AnimEvent>
+<AnimEvent Key="33">
+        <SFX Name="conveyor_smoke_03" Dir="(0; 1; 0)" Pos="(-4.449; -5.164; -2.927)" />
+        <SFX Name="conveyor_smoke_03" Dir="(0; 1; 0)" Pos="(1.459; -5.316; -1.732)" />
+    </AnimEvent>
+	</TrackEvents>
+
+
+	<TrackEvents TrackName="anim_track_02">
+		<AnimEvent Key="1">
+		<Sound Name="actors/actor_construction/actor_construct_wooden_bridge" Range="200" Volume="1.2"/>
+    </AnimEvent>
+	</TrackEvents>
+
+	<PhysicsModel>
+		<Body Collisions="Dynamic" ModelFrame="static">
+			<Body Collisions="Dynamic" ModelFrame="broken"/>
+			<Body Collisions="Dynamic" ModelFrame="repaired"/>
+		</Body>
+	</PhysicsModel>
+</ModelBrand>
